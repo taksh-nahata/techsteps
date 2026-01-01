@@ -451,7 +451,6 @@ const LandingPage: React.FC = () => {
                       <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  <span className="text-gray-400">{t('landing.footer.trustedByCount')}</span>
                 </div>
               </div>
             </div>
