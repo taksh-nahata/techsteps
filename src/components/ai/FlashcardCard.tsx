@@ -281,30 +281,6 @@ const FlashcardCard: React.FC<FlashcardCardProps> = ({
                     </motion.div>
                 )}
             </motion.div>
-
-            {/* Swipe Hint Overlay */}
-            {!prefersReducedMotion && (
-                <motion.div
-                    className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex items-center gap-2 text-gray-400 text-sm pointer-events-none"
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 0.6, y: 0 }}
-                    transition={{ delay: 1 }}
-                >
-                    <motion.span
-                        animate={{ x: [-5, 5, -5] }}
-                        transition={{ repeat: Infinity, duration: 2 }}
-                    >
-                        ←
-                    </motion.span>
-                    <span>Swipe to navigate</span>
-                    <motion.span
-                        animate={{ x: [5, -5, 5] }}
-                        transition={{ repeat: Infinity, duration: 2 }}
-                    >
-                        →
-                    </motion.span>
-                </motion.div>
-            )}
         </motion.div>
     );
 };

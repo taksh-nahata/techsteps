@@ -1,5 +1,5 @@
 // Enhanced Service Worker for TechStep PWA
-const CACHE_VERSION = 'v2';
+const CACHE_VERSION = 'v3'; // Increment version to force cache invalidation
 const STATIC_CACHE = `techstep-static-${CACHE_VERSION}`;
 const DYNAMIC_CACHE = `techstep-dynamic-${CACHE_VERSION}`;
 const OFFLINE_CACHE = `techstep-offline-${CACHE_VERSION}`;
@@ -88,6 +88,15 @@ self.addEventListener('fetch', (event) => {
       !url.hostname.includes('fonts.googleapis.com') &&
       !url.hostname.includes('fonts.gstatic.com') &&
       !url.hostname.includes('lottie.host')) {
+    return;
+  }
+
+  // IMPORTANT: Skip caching for JavaScript modules to prevent MIME type errors
+  // Module scripts must always be fetched from network to ensure correct MIME type
+  if (request.destination === 'script' || 
+      request.destination === 'module' ||
+      url.pathname.match(/\.[0-9a-f]{8}\.js$/)) {
+    // Let network handle module requests without caching
     return;
   }
 
@@ -210,13 +219,17 @@ function isLearningContent(url) {
 }
 
 function isStaticAsset(url) {
-  return url.includes('.js') || 
-         url.includes('.css') || 
-         url.includes('.png') || 
-         url.includes('.jpg') || 
-         url.includes('.svg') ||
-         url.includes('.woff') ||
-         url.includes('.woff2');
+  // IMPORTANT: Do NOT cache JavaScript modules - they must come from network
+  // to maintain correct MIME types and prevent version mismatches
+  return (url.includes('.css') || 
+          url.includes('.png') || 
+          url.includes('.jpg') || 
+          url.includes('.jpeg') ||
+          url.includes('.gif') ||
+          url.includes('.svg') ||
+          url.includes('.woff') ||
+          url.includes('.woff2')) &&
+         !url.match(/\.[0-9a-f]{8}\.js$/); // Exclude versioned JS chunks
 }
 
 // Background sync for offline actions (if needed)
@@ -257,4 +270,18 @@ self.addEventListener('notificationclick', (event) => {
   event.waitUntil(
     clients.openWindow('/')
   );
+});
+
+// Message handler for client communication
+self.addEventListener('message', (event) => {
+  // Handle client messages gracefully
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+  
+  // Ensure the message port is properly handled
+  if (event.ports && event.ports.length > 0) {
+    const port = event.ports[0];
+    port.postMessage({ success: true });
+  }
 });

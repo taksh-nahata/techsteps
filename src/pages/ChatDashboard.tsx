@@ -19,7 +19,7 @@ import { LocalStorageService, Conversation } from '../services/LocalStorageServi
 import { StorageService } from '../services/StorageService';
 import { MistralService } from '../services/ai';
 import { GoogleSpeechToTextService } from '../services/GoogleSpeechToTextService';
-import ChatHistory from '../components/ai/ChatHistory';
+import ChatHistorySidebar from '../components/ai/ChatHistorySidebar';
 
 declare global {
   interface Window {
@@ -46,6 +46,7 @@ const ChatDashboardContent: React.FC = () => {
   const [showHistory, setShowHistory] = useState(false);
   const [translationMap, setTranslationMap] = useState<Record<string, string>>({});
   const [isTranslating, setIsTranslating] = useState(false);
+  const [showOriginal, setShowOriginal] = useState(true);
 
   // Sync TTS events with Avatar Context
   useEffect(() => {
@@ -405,7 +406,14 @@ const ChatDashboardContent: React.FC = () => {
 
   return (
     <div className="h-screen w-full relative overflow-hidden bg-gradient-to-br from-indigo-50 via-purple-50 to-fuchsia-50">
-      <div className="absolute top-0 w-full z-40 p-4 flex justify-between items-center">
+      <ChatHistorySidebar
+        conversations={conversations}
+        isOpen={showHistory}
+        onLoad={loadConversation}
+        onDelete={deleteConversation}
+        onToggle={() => setShowHistory(!showHistory)}
+      />
+      <div className="absolute top-0 w-full z-20 p-4 flex justify-between items-center">
         <div className="glass-panel px-4 py-2 rounded-xl font-bold text-indigo-900">TechSteps AI</div>
         <div className="flex items-center gap-2">
           <Link to="/settings" className="p-2 bg-white/50 rounded-full">
@@ -417,12 +425,12 @@ const ChatDashboardContent: React.FC = () => {
         </div>
       </div>
 
-      <div className="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-50 transform md:scale-100 scale-75 origin-bottom-left" title="Click me to use speech-to-text">
+      <div className="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-10 transform md:scale-100 scale-75 origin-bottom-left" title="Click me to use speech-to-text">
         <EnhancedAvatarCompanion onAvatarClick={handleAvatarClick} />
       </div>
 
-      <div className="h-full pt-20 pb-4 px-4 pl-4 md:pl-24 w-full max-w-5xl mx-auto flex flex-col md:flex-row gap-4">
-        <div className={`flex-1 glass-panel rounded-3xl overflow-hidden transition-all duration-500 ease-in-out ${showFlashcards ? 'md:w-1/2' : 'w-full'}`}>
+      <div className="h-full pt-18 pb-5 px-4 md:px-6 w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-4">
+        <div className={`flex-1 ml-40 glass-panel rounded-3xl overflow-hidden transition-all duration-500 ease-in-out ${showFlashcards ? 'md:flex-1' : 'w-full'}`}>
           <div className="flex flex-col h-full">
             <ChatInterface
               messages={messages}
@@ -431,9 +439,11 @@ const ChatDashboardContent: React.FC = () => {
               isListening={avatarState.isListening}
               currentTranscript={currentTranscript}
               onNewChat={handleNewChat}
-              onOpenHistory={openHistory}
+              onOpenHistory={() => setShowHistory(!showHistory)}
               translationMap={translationMap}
               isTranslating={isTranslating}
+              showOriginal={showOriginal}
+              onToggleOriginal={() => setShowOriginal(!showOriginal)}
             />
             {!isLoading && messages.length > 0 && (
               <div className="px-4 pb-4">
@@ -448,13 +458,13 @@ const ChatDashboardContent: React.FC = () => {
         </div>
 
         {isGeneratingFlashcards && (
-          <div className="w-full md:w-1/2 glass-panel rounded-3xl flex items-center justify-center min-h-[300px]">
+          <div className="w-full md:flex-1 glass-panel rounded-3xl flex items-center justify-center min-h-[300px]">
             <FlashcardLoader isVisible={true} message="Generating your guide..." />
           </div>
         )}
 
         {showFlashcards && !isGeneratingFlashcards && (
-          <div className="w-full md:w-1/2 glass-panel rounded-3xl p-4 animate-in slide-in-from-right duration-500 min-h-[300px]">
+          <div className="w-full md:flex-1 glass-panel rounded-3xl p-4 animate-in slide-in-from-right duration-500 min-h-[300px]">
             <FlashcardPanel steps={flashcardSteps} isVisible={true} onClose={() => setShowFlashcards(false)} />
           </div>
         )}
