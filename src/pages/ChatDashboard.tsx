@@ -10,13 +10,16 @@ import EnhancedAvatarCompanion from '../components/ai/EnhancedAvatarCompanion';
 import ChatInterface from '../components/ai/ChatInterface';
 import FlashcardPanel from '../components/ai/FlashcardPanel';
 import FlashcardLoader from '../components/ai/FlashcardLoader';
+import FollowUpQuestions from '../components/ai/FollowUpQuestions';
 import { ttsService } from '../services/TextToSpeechService';
 import { AvatarProvider, useAvatar } from '../contexts/AvatarContext';
 import { parseCommand } from '../utils/CommandParser';
 import { MemoryService, Message } from '../services/MemoryService';
-import { LocalStorageService } from '../services/LocalStorageService';
-import { getAIService } from '../services/ai';
+import { LocalStorageService, Conversation } from '../services/LocalStorageService';
 import { StorageService } from '../services/StorageService';
+import { MistralService } from '../services/ai';
+import { GoogleSpeechToTextService } from '../services/GoogleSpeechToTextService';
+import ChatHistorySidebar from '../components/ai/ChatHistorySidebar';
 
 declare global {
   interface Window {
@@ -37,6 +40,13 @@ const ChatDashboardContent: React.FC = () => {
   const [showFlashcards, setShowFlashcards] = useState(false);
   const [isGeneratingFlashcards, setIsGeneratingFlashcards] = useState(false);
   const [currentTranscript, setCurrentTranscript] = useState('');
+  const [lastUserMessage, setLastUserMessage] = useState('');
+
+  const [conversations, setConversations] = useState<Conversation[]>([]);
+  const [showHistory, setShowHistory] = useState(false);
+  const [translationMap, setTranslationMap] = useState<Record<string, string>>({});
+  const [isTranslating, setIsTranslating] = useState(false);
+  const [showOriginal, setShowOriginal] = useState(true);
 
   // Sync TTS events with Avatar Context
   useEffect(() => {
@@ -49,21 +59,31 @@ const ChatDashboardContent: React.FC = () => {
 
   // Load History
   useEffect(() => {
+    if (!user) return; // Guard against null user during logout
+    
     const loadData = async () => {
-      const userId = user?.uid || 'guest';
-      const localHistory = LocalStorageService.getChatHistory(userId);
-      if (localHistory) {
-        setMessages(localHistory);
-      } else {
-        const history = await MemoryService.getHistory(userId);
-        if (history.length > 0) {
-          setMessages(history);
+      try {
+        const userId = user.uid;
+        const localHistory = LocalStorageService.getChatHistory(userId);
+        if (localHistory) {
+          setMessages(localHistory);
         } else {
-          const welcomeText = t('chat.welcomeMessage', 'Hello {{name}}! I\'m here to help.', { name: userData?.firstName || 'friend' });
-          const welcomeMessage: Message = { id: 'welcome', content: welcomeText, sender: 'ai', timestamp: new Date() };
-          setMessages([welcomeMessage]);
-          await MemoryService.saveMessage(userId, welcomeMessage);
+          const history = await MemoryService.getHistory(userId);
+          if (history.length > 0) {
+            setMessages(history);
+          } else {
+            const welcomeText = t('chat.welcomeMessage', 'Hello {{name}}! I\'m here to help.', { name: userData?.firstName || 'friend' });
+            const welcomeMessage: Message = { id: 'welcome', content: welcomeText, sender: 'ai', timestamp: new Date() };
+            setMessages([welcomeMessage]);
+            await MemoryService.saveMessage(userId, welcomeMessage);
+          }
         }
+        // load saved conversations
+        const convs = LocalStorageService.getConversations(userId);
+        setConversations(convs || []);
+      } catch (error) {
+        console.error('Error loading chat history:', error);
+        // Don't throw error, just continue with empty state
       }
     };
     loadData();
@@ -76,10 +96,80 @@ const ChatDashboardContent: React.FC = () => {
     }
   }, [messages, user?.uid]);
 
+  // Translate entire conversation when language changes
+  useEffect(() => {
+    if (!messages || messages.length === 0) {
+      setTranslationMap({});
+      return;
+    }
+
+    const doTranslate = async () => {
+      setIsTranslating(true);
+      try {
+        const mistralService = new MistralService();
+        const texts = messages.map(m => m.content);
+        const translated = await mistralService.translateTexts(texts, i18n.language);
+        const map: Record<string, string> = {};
+        for (let i = 0; i < messages.length; i++) {
+          map[messages[i].id] = translated[i] || messages[i].content;
+        }
+        setTranslationMap(map);
+      } catch (e) {
+        console.warn('Conversation translation failed:', e);
+        setTranslationMap({});
+      } finally {
+        setIsTranslating(false);
+      }
+    };
+
+    // Debounce small delays to avoid spam calls
+    const timer = setTimeout(() => {
+      doTranslate();
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [i18n.language, messages]);
+
+  const handleNewChat = async () => {
+    const userId = user?.uid || 'guest';
+    try {
+      if (messages && messages.length > 0) {
+        const first = messages.find(m => m.sender === 'user') || messages[0];
+        const title = first ? (first.content.slice(0, 80) || new Date().toLocaleString()) : new Date().toLocaleString();
+        const conv: Conversation = {
+          id: `conv-${Date.now()}`,
+          title,
+          messages,
+          createdAt: new Date().toISOString()
+        };
+        LocalStorageService.saveConversation(userId, conv);
+        setConversations(prev => [conv, ...prev]);
+      }
+      setMessages([]);
+    } catch (e) {
+      console.error('handleNewChat error:', e);
+    }
+  };
+
+  const openHistory = () => setShowHistory(true);
+  const closeHistory = () => setShowHistory(false);
+
+  const loadConversation = (conv: Conversation) => {
+    setMessages(conv.messages.map(m => ({ ...m, timestamp: new Date(m.timestamp) })));
+    setShowHistory(false);
+  };
+
+  const deleteConversation = (id: string) => {
+    const userId = user?.uid || 'guest';
+    const filtered = conversations.filter(c => c.id !== id);
+    setConversations(filtered);
+    LocalStorageService.saveConversations(userId, filtered);
+  };
+
   const handleSendMessage = async (messageContent: string, attachments: File[] = []) => {
     const userId = user?.uid || 'guest';
     setIsLoading(true);
     setThinking(true);
+    setLastUserMessage(messageContent); // Track the user's message for follow-up suggestions
 
     // 1. Check for system commands
     const command = parseCommand(messageContent);
@@ -98,38 +188,45 @@ const ChatDashboardContent: React.FC = () => {
     }
 
     try {
+      // Topic detection: ask Mistral whether this is a new topic
+      try {
+        const mistralService = new MistralService();
+        const prevContents = messages.map(m => m.content);
+        const topicChanged = await mistralService.detectTopicChange(prevContents, messageContent);
+        if (topicChanged) {
+          const proceed = window.confirm(t('chat.moveTopicPrompt', 'This looks like a new topic. Start a new chat?'));
+          if (proceed) {
+            await handleNewChat();
+          }
+        }
+      } catch (e) {
+        console.warn('Topic detection failed, continuing:', e);
+      }
+
       // 2. Add user message
       const userMessage: Message = {
         id: 'user-' + Date.now(),
         content: messageContent,
         sender: 'user',
-        timestamp: new Date()
+        timestamp: new Date(),
+        attachments: [],
       };
 
-      // 3. Process and Upload Attachments
-      const uploadedAttachments: any[] = [];
-      if (attachments && attachments.length > 0) {
-        console.log(`Uploading ${attachments.length} attachments...`);
-        for (const file of attachments) {
-          try {
-            const url = await StorageService.uploadFile(file, `chat-attachments/${userId}`);
-            uploadedAttachments.push({
-              type: file.type.startsWith('image/') ? 'image' : 'file',
-              url,
-              name: file.name
-            });
-          } catch (uploadErr) {
-            console.error(`Failed to upload file ${file.name}:`, uploadErr);
-          }
-        }
-        userMessage.attachments = uploadedAttachments;
+      if (attachments.length > 0) {
+        const uploadPromises = attachments.map(file => StorageService.uploadFile(file, `users/${userId}/uploads`));
+        const fileUrls = await Promise.all(uploadPromises);
+        userMessage.attachments = fileUrls.map((url, index) => ({
+          type: attachments[index].type.startsWith('image/') ? 'image' : 'file',
+          url,
+          name: attachments[index].name,
+        }));
       }
 
       setMessages(prev => [...prev, userMessage]);
       await MemoryService.saveMessage(userId, userMessage);
 
-      // 4. Call Central AI Service
-      const aiService = getAIService();
+      // 3. Call Mistral for all AI tasks (primary response, flashcards, summaries, and facts)
+      const mistralService = new MistralService();
 
       // Fetch known facts and user data for memory focus
       const knownFacts = await MemoryService.getFacts(userId);
@@ -145,11 +242,12 @@ const ChatDashboardContent: React.FC = () => {
         attachments: uploadedAttachments // Pass attachments to the AI service
       };
 
-      const response = await aiService.sendMessage(messageContent, context);
+      // Primary content generation
+      const mistralResponse = await mistralService.sendMessage(messageContent, context);
 
       const aiMessage: Message = {
         id: 'ai-' + Date.now(),
-        content: response.content,
+        content: mistralResponse.content,
         sender: 'ai',
         timestamp: new Date()
       };
@@ -158,28 +256,28 @@ const ChatDashboardContent: React.FC = () => {
       await MemoryService.saveMessage(userId, aiMessage);
 
       // 4. Save any extracted facts and user data to the database
-      if (response.extractedFacts && response.extractedFacts.length > 0) {
-        console.log('Saving learned facts:', response.extractedFacts);
-        for (const fact of response.extractedFacts) {
+      if (mistralResponse.extractedFacts && mistralResponse.extractedFacts.length > 0) {
+        console.log('Saving learned facts:', mistralResponse.extractedFacts);
+        for (const fact of mistralResponse.extractedFacts) {
           await MemoryService.saveFact(userId, fact);
         }
       }
-      if (response.userData) {
-        console.log('Saving user data:', response.userData);
-        await MemoryService.saveUserData(userId, response.userData);
+      if ((mistralResponse as any).userData) {
+        console.log('Saving user data:', (mistralResponse as any).userData);
+        await MemoryService.saveUserData(userId, (mistralResponse as any).userData);
       }
 
-      // 5. Handle Flashcards (NEW)
-      if (response.flashcards && response.flashcards.length > 0) {
-        console.log('Displaying generated flashcards:', response.flashcards);
-        setFlashcardSteps(response.flashcards as FlashcardStep[]);
+      // 5. Handle Flashcards
+      if (mistralResponse.flashcards && mistralResponse.flashcards.length > 0) {
+        console.log('Displaying generated flashcards:', mistralResponse.flashcards);
+        setFlashcardSteps(mistralResponse.flashcards as FlashcardStep[]);
         setShowFlashcards(true);
       } else {
         setShowFlashcards(false);
       }
 
       // 6. Speak (use optimized spokenText if available)
-      const textToSpeak = response.spokenText || response.content;
+      const textToSpeak = mistralResponse.spokenText || mistralResponse.content;
       if (textToSpeak) {
         ttsService.speak(textToSpeak, { lang: i18n.language });
       }
@@ -218,11 +316,32 @@ const ChatDashboardContent: React.FC = () => {
     else startListening();
   };
 
-  const startListening = () => {
+  const handleLogout = async () => {
+    try {
+      await logout();
+      // Navigation happens automatically via ProtectedRoute when user becomes null
+    } catch (error) {
+      console.error('Logout error:', error);
+      // Even if logout fails, redirect to home
+      window.location.href = '/';
+    }
+  };
+
+  const startListening = async () => {
+    // Prefer browser SpeechRecognition when available
     if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
       const SpeechRecognition = (window as any).webkitSpeechRecognition || (window as any).SpeechRecognition;
       const recognition = new SpeechRecognition();
-      recognition.lang = i18n.language === 'en' ? 'en-US' : (i18n.language === 'es' ? 'es-ES' : 'fr-FR');
+      // Map i18n language to recognition.lang (simple mapping, extend as needed)
+      const langMap: Record<string, string> = {
+        en: 'en-US',
+        es: 'es-ES',
+        fr: 'fr-FR',
+        de: 'de-DE',
+        it: 'it-IT',
+        pt: 'pt-PT'
+      };
+      recognition.lang = langMap[i18n.language] || `${i18n.language}-US`;
       recognition.onstart = () => {
         setListening(true);
         setCurrentTranscript('');
@@ -235,47 +354,118 @@ const ChatDashboardContent: React.FC = () => {
         }
       };
       recognition.onend = () => setListening(false);
+      recognition.onerror = (e: any) => {
+        console.warn('Speech recognition error', e);
+        setListening(false);
+      };
       recognition.start();
+      return;
+    }
+
+    // Fallback: record 4 seconds and send to Google STT
+    try {
+      setCurrentTranscript(t('chat.speechRecording', 'Recording...'));
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const mediaRecorder = new MediaRecorder(stream);
+      const chunks: BlobPart[] = [];
+      mediaRecorder.ondataavailable = (e) => chunks.push(e.data);
+      mediaRecorder.start();
+
+      setListening(true);
+      await new Promise(resolve => setTimeout(resolve, 4000));
+      mediaRecorder.stop();
+
+      const stopped = new Promise<void>(resolve => {
+        mediaRecorder.onstop = () => resolve();
+      });
+      await stopped;
+
+      const blob = new Blob(chunks, { type: chunks[0] ? (chunks[0] as Blob).type : 'audio/webm' });
+      stream.getTracks().forEach(t => t.stop());
+      setCurrentTranscript('');
+      setListening(false);
+
+      const langMap: Record<string, string> = {
+        en: 'en-US',
+        es: 'es-ES',
+        fr: 'fr-FR',
+        de: 'de-DE',
+        it: 'it-IT',
+        pt: 'pt-PT'
+      };
+      const languageCode = langMap[i18n.language] || `${i18n.language}-US`;
+      const transcript = await GoogleSpeechToTextService.transcribeAudio(blob, languageCode);
+      if (transcript) {
+        handleSendMessage(transcript);
+      }
+    } catch (e) {
+      console.warn('Fallback STT failed:', e);
+      setListening(false);
+      setCurrentTranscript('');
     }
   };
 
   return (
     <div className="h-screen w-full relative overflow-hidden bg-gradient-to-br from-indigo-50 via-purple-50 to-fuchsia-50">
-      <div className="absolute top-0 w-full z-40 p-4 flex justify-between items-center">
+      <ChatHistorySidebar
+        conversations={conversations}
+        isOpen={showHistory}
+        onLoad={loadConversation}
+        onDelete={deleteConversation}
+        onToggle={() => setShowHistory(!showHistory)}
+      />
+      <div className="absolute top-0 w-full z-20 p-4 flex justify-between items-center">
         <div className="glass-panel px-4 py-2 rounded-xl font-bold text-indigo-900">TechSteps AI</div>
         <div className="flex items-center gap-2">
           <Link to="/settings" className="p-2 bg-white/50 rounded-full">
             <Settings className="w-6 h-6 text-gray-700" />
           </Link>
-          <button onClick={logout} className="p-2 bg-white/50 rounded-full">
+          <button onClick={handleLogout} className="p-2 bg-white/50 rounded-full hover:bg-white transition-colors">
             <LogOut className="w-6 h-6 text-gray-700" />
           </button>
         </div>
       </div>
 
-      <div className="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-50 transform md:scale-100 scale-75 origin-bottom-left" title="Click me to use speech-to-text">
+      <div className="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-10 transform md:scale-100 scale-75 origin-bottom-left" title="Click me to use speech-to-text">
         <EnhancedAvatarCompanion onAvatarClick={handleAvatarClick} />
       </div>
 
-      <div className="h-full pt-20 pb-4 px-4 pl-4 md:pl-24 w-full max-w-5xl mx-auto flex flex-col md:flex-row gap-4">
-        <div className={`flex-1 glass-panel rounded-3xl overflow-hidden transition-all duration-500 ease-in-out ${showFlashcards ? 'md:w-1/2' : 'w-full'}`}>
-          <ChatInterface
-            messages={messages}
-            onSendMessage={handleSendMessage}
-            isLoading={isLoading}
-            isListening={avatarState.isListening}
-            currentTranscript={currentTranscript}
-          />
+      <div className="h-full pt-18 pb-5 px-4 md:px-6 w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-4">
+        <div className={`flex-1 ml-40 glass-panel rounded-3xl overflow-hidden transition-all duration-500 ease-in-out ${showFlashcards ? 'md:flex-1' : 'w-full'}`}>
+          <div className="flex flex-col h-full">
+            <ChatInterface
+              messages={messages}
+              onSendMessage={handleSendMessage}
+              isLoading={isLoading}
+              isListening={avatarState.isListening}
+              currentTranscript={currentTranscript}
+              onNewChat={handleNewChat}
+              onOpenHistory={() => setShowHistory(!showHistory)}
+              translationMap={translationMap}
+              isTranslating={isTranslating}
+              showOriginal={showOriginal}
+              onToggleOriginal={() => setShowOriginal(!showOriginal)}
+            />
+            {!isLoading && messages.length > 0 && (
+              <div className="px-4 pb-4">
+                <FollowUpQuestions
+                  lastUserMessage={lastUserMessage}
+                  onQuestionClick={(question) => handleSendMessage(question)}
+                  isLoading={isLoading}
+                />
+              </div>
+            )}
+          </div>
         </div>
 
         {isGeneratingFlashcards && (
-          <div className="w-full md:w-1/2 glass-panel rounded-3xl flex items-center justify-center min-h-[300px]">
+          <div className="w-full md:flex-1 glass-panel rounded-3xl flex items-center justify-center min-h-[300px]">
             <FlashcardLoader isVisible={true} message="Generating your guide..." />
           </div>
         )}
 
         {showFlashcards && !isGeneratingFlashcards && (
-          <div className="w-full md:w-1/2 glass-panel rounded-3xl p-4 animate-in slide-in-from-right duration-500 min-h-[300px]">
+          <div className="w-full md:flex-1 glass-panel rounded-3xl p-4 animate-in slide-in-from-right duration-500 min-h-[300px]">
             <FlashcardPanel steps={flashcardSteps} isVisible={true} onClose={() => setShowFlashcards(false)} />
           </div>
         )}

@@ -694,6 +694,17 @@
       "understanding": "I'm sorry, I couldn't understand that.",
       "connection": "I'm having trouble connecting right now. Please try again."
     }
+    ,
+    "newChat": "New Chat",
+    "history": "History",
+    "historyEmpty": "No past conversations",
+    "loadConversation": "Load",
+    "deleteConversation": "Delete",
+    "moveTopicPrompt": "This looks like a new topic. Start a new chat?",
+    "translatingChat": "Translating chat...",
+    "speechRecording": "Recording...",
+    "showOriginal": "Original",
+    "showTranslated": "Translated"
   },
   "flashcards": {
     "title": "Step-by-Step Guide",

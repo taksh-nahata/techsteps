@@ -24,6 +24,12 @@ interface ChatInterfaceProps {
   className?: string;
   autoTTSEnabled?: boolean;
   onSpeakMessage?: (message: string) => void;
+  onNewChat?: () => void;
+  onOpenHistory?: () => void;
+  translationMap?: Record<string, string>;
+  isTranslating?: boolean;
+  showOriginal?: boolean;
+  onToggleOriginal?: () => void;
 }
 
 export const ChatInterface: React.FC<ChatInterfaceProps> = ({
@@ -34,7 +40,13 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
   currentTranscript = '',
   className = '',
   autoTTSEnabled = true,
-  onSpeakMessage
+  onSpeakMessage,
+  onNewChat,
+  onOpenHistory,
+  translationMap = {},
+  isTranslating = false,
+  showOriginal = false,
+  onToggleOriginal
 }) => {
   const { t } = useTranslation();
   const [inputValue, setInputValue] = useState('');
@@ -92,8 +104,36 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
 
   return (
     <div className={`flex flex-col h-full ${className}`}>
+      {/* Small header with New Chat and History */}
+      <div className="flex items-center justify-between px-4 py-2 border-b border-gray-100">
+        <div className="font-semibold text-gray-700">Chat</div>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => onNewChat && onNewChat()}
+            className="px-3 py-1 bg-white border rounded text-sm shadow-sm"
+          >
+            {t('chat.newChat', 'New Chat')}
+          </button>
+          <button
+            onClick={() => onOpenHistory && onOpenHistory()}
+            className="px-3 py-1 bg-white border rounded text-sm shadow-sm"
+          >
+            {t('chat.history', 'History')}
+          </button>
+          <button
+            onClick={() => onToggleOriginal && onToggleOriginal()}
+            className="px-3 py-1 bg-white border rounded text-sm shadow-sm"
+          >
+            {showOriginal ? t('chat.showOriginal', 'Original') : t('chat.showTranslated', 'Translated')}
+          </button>
+        </div>
+      </div>
+
       {/* Messages Area */}
       <div className="flex-1 overflow-y-auto px-4 py-4 md:px-6 md:py-6 space-y-4 md:space-y-6 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+        {isTranslating && (
+          <div className="px-4 py-2 text-sm text-gray-600 italic">{t('chat.translatingChat', 'Translating chat...')}</div>
+        )}
         {messages.length === 0 ? (
           <div className="flex items-center justify-center h-full">
             <div className="text-center p-8 bg-white/40 backdrop-blur-sm rounded-3xl border border-white/50 shadow-sm animate-fade-in-up">
@@ -124,7 +164,7 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
                     }
                   `}
                 >
-                  <MarkdownRenderer content={message.content} />
+                  <MarkdownRenderer content={showOriginal ? message.content : (translationMap[message.id] ?? message.content)} />
 
                   {/* Attachments Display */}
                   {message.attachments && message.attachments.length > 0 && (

@@ -71,16 +71,20 @@ function App() {
 
     // Register service worker for PWA functionality
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-          .then((registration) => {
-            console.log('SW registered: ', registration);
-          })
-          .catch((registrationError) => {
-            console.log('SW registration failed: ', registrationError);
-            console.error('Service worker registration failed:', registrationError);
+      // Don't wait for load event - register immediately
+      navigator.serviceWorker.register('/sw.js', { scope: '/' })
+        .then((registration) => {
+          console.log('SW registered: ', registration);
+          
+          // Set up controller change listener
+          navigator.serviceWorker.addEventListener('controllerchange', () => {
+            console.log('Service Worker controller changed');
           });
-      });
+        })
+        .catch((registrationError) => {
+          console.log('SW registration failed: ', registrationError);
+          console.error('Service worker registration failed:', registrationError);
+        });
     }
 
     const handleLanguageChanged = () => {

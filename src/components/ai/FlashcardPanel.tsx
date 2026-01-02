@@ -255,7 +255,13 @@ export const FlashcardPanel: React.FC<FlashcardPanelProps> = ({
           </motion.button>
 
           <motion.button
-            onClick={goToNextStep}
+            onClick={() => {
+              if (isLastStep && isAllCompleted) {
+                onClose();
+              } else {
+                goToNextStep();
+              }
+            }}
             className="flex items-center gap-2 px-6 py-3 rounded-2xl font-semibold text-white shadow-lg hover:shadow-xl transition-all"
             style={{
               background: isLastStep && isAllCompleted
