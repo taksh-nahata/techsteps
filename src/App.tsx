@@ -12,6 +12,7 @@ import Accessibility from './pages/Accessibility';
 import Community from './pages/Community';
 import LearningCenterPage from './pages/LearningCenterPage';
 import ChatDashboard from './pages/ChatDashboard';
+import { GuideEditorPage } from './pages/GuideEditorPage';
 
 
 import ProtectedRoute from './components/routing/ProtectedRoute';
@@ -29,6 +30,7 @@ import { usePerformanceOptimization } from './hooks/usePerformanceOptimization';
 import { ErrorRecoveryProvider, ErrorRecoveryBoundary } from './components/error-recovery';
 import { AccessibilityProvider } from './contexts/AccessibilityContext';
 import { KeyboardNavigationManager, AccessibilityAnnouncer } from './components/accessibility';
+import { GlobalSearch } from './components/common/GlobalSearch';
 import i18n from './i18n';
 import './styles/globals.css';
 
@@ -111,6 +113,7 @@ function App() {
               {showSplash && <TileWaveLoader onComplete={handleSplashComplete} />}
               <Router>
                 <AccessibilityAnnouncer />
+                <GlobalSearch />
                 <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-100">
                   <Routes>
                     <Route path="/" element={
@@ -166,6 +169,14 @@ function App() {
                       element={
                         <ProtectedRoute>
                           <ChatDashboard />
+                        </ProtectedRoute>
+                      }
+                    />
+                    <Route
+                      path="/guide-editor"
+                      element={
+                        <ProtectedRoute>
+                          <GuideEditorPage />
                         </ProtectedRoute>
                       }
                     />

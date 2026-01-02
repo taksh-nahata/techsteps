@@ -1,0 +1,1578 @@
+[
+  {
+    "id": "draft-1767304005962-208",
+    "title": "Secure Email from Unauthorized Access",
+    "problemDescription": "Someone is using your email for malicious activities, including sending hate mail and accessing other accounts.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "email",
+      "security",
+      "unauthorized access"
+    ],
+    "steps": [
+      {
+        "title": "Change Password and Recovery Options",
+        "content": "Update your password and change all authentication methods, including phone numbers and recovery emails, to a secondary one."
+      },
+      {
+        "title": "Check for Similar Email Addresses",
+        "content": "Verify if there is a similar email address (e.g., with a period) that might be causing confusion."
+      },
+      {
+        "title": "Review Account Activity",
+        "content": "Check your account activity for any suspicious logins or changes."
+      },
+      {
+        "title": "Enable Two-Factor Authentication",
+        "content": "Enable two-factor authentication to add an extra layer of security to your account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Google Support",
+            "content": "Reach out to Google Support to report the issue and seek assistance in securing your account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T21:46:45.962Z",
+      "updated": "2026-01-01T21:46:45.962Z",
+      "sourceUrl": "https://old.reddit.com/r/techsupport/comments/1n5vhkg/someone_is_using_my_email_to_have_an_affair_and/",
+      "confidenceScore": 0.8,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767304009363-530",
+    "title": "Fix MSI MAG A850GL PSU Rattling Sound",
+    "problemDescription": "Rattling sound coming from the PSU fan area in an MSI MAG A850GL PC.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "psu",
+      "rattling",
+      "fan",
+      "sound",
+      "msi"
+    ],
+    "steps": [
+      {
+        "title": "Inspect the PSU",
+        "content": "Turn off and unplug your PC. Open the case and carefully inspect the PSU for any loose screws, wires, or debris around the fan area."
+      },
+      {
+        "title": "Remove Obstructions",
+        "content": "If you find any loose objects, carefully remove them. Ensure that no wires or parts are touching the fan blades."
+      },
+      {
+        "title": "Tighten Screws",
+        "content": "Check and tighten all screws on the PSU to ensure it is securely mounted. This can help prevent any internal components from moving around."
+      },
+      {
+        "title": "Test the PC",
+        "content": "Reassemble your PC and power it on. Listen for the rattling sound. If it persists, proceed to the next step."
+      },
+      {
+        "title": "Contact Support",
+        "content": "If the sound continues, contact MSI support or a professional technician for further assistance, as there may be an internal issue with the PSU."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check PCI-E Connections",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect PCI-E Slots",
+            "content": "Ensure that all PCI-E cards are securely seated in their slots and that there are no loose screws or debris around them."
+          },
+          {
+            "title": "Test the PC",
+            "content": "Power on your PC and listen for the rattling sound. If it persists, the issue is likely not related to the PCI-E slots."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T21:46:49.363Z",
+      "updated": "2026-01-01T21:46:49.363Z",
+      "sourceUrl": "https://old.reddit.com/r/techsupport/comments/1pmyv0c/how_to_fix_msi_mag_a850gl_pcie_rattling_sound/",
+      "confidenceScore": 0.8,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767307610647-192",
+    "title": "Accessing Blocked Websites",
+    "problemDescription": "Unable to access a website due to security settings.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "browser",
+      "security",
+      "website",
+      "access"
+    ],
+    "steps": [
+      {
+        "title": "Add Site to Exceptions",
+        "content": "Add the website to your browser's exceptions list."
+      },
+      {
+        "title": "Modify Security Settings",
+        "content": "Adjust your browser's security settings to allow access to the site."
+      },
+      {
+        "title": "Refresh the Page",
+        "content": "Refresh the webpage to apply the changes."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-01T22:46:50.647Z",
+      "updated": "2026-01-01T22:46:50.647Z",
+      "sourceUrl": "https://www.collinsdictionary.com/us/english-language-learning/fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767307615346-915",
+    "title": "Repair a Device",
+    "problemDescription": "How to repair a device that is not working properly.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "repair",
+      "device",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Identify the Problem",
+        "content": "Determine what is wrong with the device. Check for any visible damage or error messages."
+      },
+      {
+        "title": "Gather Tools and Parts",
+        "content": "Collect the necessary tools and replacement parts needed for the repair."
+      },
+      {
+        "title": "Disassemble the Device",
+        "content": "Carefully disassemble the device to access the problematic component."
+      },
+      {
+        "title": "Replace or Repair the Component",
+        "content": "Replace the faulty component with a new one or repair it if possible."
+      },
+      {
+        "title": "Reassemble the Device",
+        "content": "Put the device back together, ensuring all parts are securely in place."
+      },
+      {
+        "title": "Test the Device",
+        "content": "Power on the device and test it to ensure the repair was successful."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Seek Professional Help",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact a Professional",
+            "content": "If the repair is too complex, contact a professional technician for assistance."
+          },
+          {
+            "title": "Provide Details",
+            "content": "Give the technician detailed information about the problem and any steps you have already taken."
+          },
+          {
+            "title": "Follow Instructions",
+            "content": "Follow the technician's instructions for any temporary fixes or further actions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T22:46:55.346Z",
+      "updated": "2026-01-01T22:46:55.346Z",
+      "sourceUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/fix_1",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767307618286-127",
+    "title": "Fix a Problem",
+    "problemDescription": "A problem or bad situation needs to be resolved.",
+    "category": "general",
+    "difficulty": "Medium",
+    "keywords": [
+      "fix",
+      "problem",
+      "repair",
+      "situation"
+    ],
+    "steps": [
+      {
+        "title": "Identify the Problem",
+        "content": "Clearly define and understand the problem or situation that needs to be fixed."
+      },
+      {
+        "title": "Gather Necessary Tools or Information",
+        "content": "Collect all the tools, resources, or information needed to address the problem."
+      },
+      {
+        "title": "Develop a Plan",
+        "content": "Create a step-by-step plan to resolve the issue. This could involve repairing, mending, or servicing the affected item or situation."
+      },
+      {
+        "title": "Execute the Plan",
+        "content": "Follow through with the plan, making any necessary adjustments as you go."
+      },
+      {
+        "title": "Test the Solution",
+        "content": "After implementing the solution, test to ensure the problem is resolved and the situation is satisfactory."
+      },
+      {
+        "title": "Review and Improve",
+        "content": "Reflect on the process and make any improvements for future problem-solving scenarios."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Get Professional Help",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Seek Expert Advice",
+            "content": "If the problem is complex or beyond your expertise, consult a professional or someone with more experience."
+          },
+          {
+            "title": "Follow Professional Guidance",
+            "content": "Implement the advice or instructions provided by the expert to resolve the issue."
+          },
+          {
+            "title": "Verify the Solution",
+            "content": "Ensure that the professional's solution has effectively fixed the problem."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T22:46:58.286Z",
+      "updated": "2026-01-01T22:46:58.286Z",
+      "sourceUrl": "https://www.collinsdictionary.com/dictionary/english/fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767309394985-814",
+    "title": "Fix Slow Android Phone",
+    "problemDescription": "Your Android phone is running slower than usual.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "slow",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Clear App Cache",
+        "content": "Go to Settings > Apps > Select the App > Storage > Clear Cache."
+      },
+      {
+        "title": "Restart Your Phone",
+        "content": "Restart your phone to apply the changes."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-01T23:16:34.985Z",
+      "updated": "2026-01-01T23:16:34.985Z",
+      "sourceUrl": "https://www.facebook.com/ABNewswire/posts/android-repair-101-common-system-issues-safe-fixes-explained-technology/1316875837125306/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767309396812-80",
+    "title": "Fix Android Performance Issues",
+    "problemDescription": "Android phone is running slow or experiencing performance issues.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "performance",
+      "slow",
+      "apps",
+      "permissions"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall Unused Apps",
+        "content": "Go to Settings > Apps > Uninstall unused apps to free up space and resources."
+      },
+      {
+        "title": "Check App Permissions",
+        "content": "Review and adjust app permissions by going to Settings > Apps > Select an app > Permissions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Visit Carrier Store",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Carrier Store",
+            "content": "If issues persist, visit your carrier's store for professional assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:16:36.812Z",
+      "updated": "2026-01-01T23:16:36.812Z",
+      "sourceUrl": "https://www.facebook.com/groups/2494763820688477/posts/3097388060426047/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767309399919-188",
+    "title": "Speed Up Slow Android",
+    "problemDescription": "Your Android device is running slower than usual.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "slow",
+      "performance",
+      "optimization"
+    ],
+    "steps": [
+      {
+        "title": "Check System Resources",
+        "content": "Monitor RAM, CPU, and storage usage using built-in tools or third-party apps to identify resource-heavy processes."
+      },
+      {
+        "title": "Analyze Phone Logs",
+        "content": "Identify error messages and system crashes by checking the phone logs to pinpoint issues."
+      },
+      {
+        "title": "Boot in Safe Mode",
+        "content": "Restart your device in safe mode to disable third-party apps and check if performance improves."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clear Cache and Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear App Cache",
+            "content": "Go to Settings > Apps > Select the app > Clear Cache."
+          },
+          {
+            "title": "Clear App Data",
+            "content": "Go to Settings > Apps > Select the app > Clear Data (Note: This will reset the app to default settings)."
+          }
+        ]
+      },
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup important data to cloud storage or an external device."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:16:39.919Z",
+      "updated": "2026-01-01T23:16:39.919Z",
+      "sourceUrl": "https://www.facebook.com/smartbze/posts/if-your-android-is-running-slow-it-might-be-time-to-try-a-few-troubleshooting-me/1290521481141839/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767309402018-167",
+    "title": "Fix Low Internal Memory on Android",
+    "problemDescription": "Your Android device shows a 'Low Internal Memory' warning.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "memory",
+      "storage"
+    ],
+    "steps": [
+      {
+        "title": "Clear App Cache",
+        "content": "Go to Settings > Apps > Select the app > Storage > Clear Cache."
+      },
+      {
+        "title": "Uninstall Unused Apps",
+        "content": "Go to Settings > Apps > Uninstall apps you no longer use."
+      },
+      {
+        "title": "Move Apps to SD Card",
+        "content": "Go to Settings > Apps > Select the app > Storage > Change > SD Card."
+      },
+      {
+        "title": "Use Cloud Storage",
+        "content": "Upload photos, videos, and files to cloud services like Google Drive or Dropbox."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "Go to Settings > System > Reset options > Erase all data (Factory reset). Warning: This will delete all data on your device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Memory Cleaner App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Memory Cleaner App",
+            "content": "Download and install a memory cleaner app from the Google Play Store."
+          },
+          {
+            "title": "Run the App",
+            "content": "Open the app and follow the on-screen instructions to clean up your device's memory."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:16:42.018Z",
+      "updated": "2026-01-01T23:16:42.018Z",
+      "sourceUrl": "https://www.facebook.com/phoneslaptopsandaccessories/posts/9-common-android-problems-and-how-to-fix-theman-android-smartphone-may-seem-all-/181599880643286/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767309404705-618",
+    "title": "Android 6/Marshmallow Troubleshooting",
+    "problemDescription": "Troubleshooting tips for Android 6/Marshmallow devices.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "marshmallow",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check for Software Updates",
+        "content": "Go to Settings > About phone > System updates to check for the latest software updates."
+      },
+      {
+        "title": "Clear App Cache",
+        "content": "Go to Settings > Apps > Select the problematic app > Storage > Clear Cache."
+      },
+      {
+        "title": "Restart in Safe Mode",
+        "content": "Press and hold the Power button > Tap and hold 'Power off' > Select 'OK' to restart in Safe Mode."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "Go to Settings > Backup & reset > Factory data reset. Note: This will erase all data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Hardware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect the Device",
+            "content": "Look for any physical damage or issues with the device."
+          },
+          {
+            "title": "Test with Another Charger",
+            "content": "Try using a different charger to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:16:44.705Z",
+      "updated": "2026-01-01T23:16:44.705Z",
+      "sourceUrl": "https://www.facebook.com/groups/1330869733593308/posts/5951387238208178/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767309416582-891",
+    "title": "Fix Printer Connection Issues",
+    "problemDescription": "Printer is not connecting or experiencing connection problems.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "connection",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Power Cycle the Printer",
+        "content": "Unplug the printer from the power source, wait for about 30 seconds, and then plug it back in. This can often resolve connection issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Replace Toner Cartridge",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Toner Level",
+            "content": "If the printer indicates a 'low toner' issue, replace the toner cartridge with a new one."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:16:56.582Z",
+      "updated": "2026-01-01T23:16:56.582Z",
+      "sourceUrl": "https://www.facebook.com/groups/it.humor.and.memes/posts/29080484171550657/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767309417762-96",
+    "title": "Unclog Printer Ink Cartridge",
+    "problemDescription": "Ink cartridge is clogged, causing printing issues.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "ink cartridge",
+      "clogged"
+    ],
+    "steps": [
+      {
+        "title": "Use the Printer's Cleaning Utility",
+        "content": "Access the printer's settings or control panel and run the built-in cleaning utility to unclog the ink cartridge."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-01T23:16:57.762Z",
+      "updated": "2026-01-01T23:16:57.762Z",
+      "sourceUrl": "https://www.facebook.com/groups/289100326267138/posts/441081917735644/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767309421264-250",
+    "title": "Fix Paper Jams in Printer",
+    "problemDescription": "Paper jams are a common printer issue that can disrupt printing tasks.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "paper jam",
+      "printing"
+    ],
+    "steps": [
+      {
+        "title": "Turn Off the Printer",
+        "content": "First, turn off the printer to ensure safety."
+      },
+      {
+        "title": "Open the Printer Cover",
+        "content": "Open the printer cover to access the paper path."
+      },
+      {
+        "title": "Remove the Jammed Paper",
+        "content": "Gently pull out the jammed paper. Be careful not to tear it."
+      },
+      {
+        "title": "Check for Additional Paper",
+        "content": "Ensure there are no small pieces of paper left inside the printer."
+      },
+      {
+        "title": "Close the Printer Cover",
+        "content": "Close the printer cover securely."
+      },
+      {
+        "title": "Turn On the Printer",
+        "content": "Turn the printer back on and try printing again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use the Printer's Self-Cleaning Feature",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access the Printer's Menu",
+            "content": "Navigate to the printer's settings menu."
+          },
+          {
+            "title": "Select Self-Cleaning",
+            "content": "Choose the self-cleaning option to automatically clear any paper jams."
+          },
+          {
+            "title": "Follow On-Screen Instructions",
+            "content": "Follow the on-screen instructions to complete the process."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:17:01.264Z",
+      "updated": "2026-01-01T23:17:01.264Z",
+      "sourceUrl": "https://www.facebook.com/groups/518929765800438/posts/1590182148675189/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767309423889-168",
+    "title": "3D Printer Connection Issues",
+    "problemDescription": "Troubleshooting basic connection problems with a 3D printer.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "3d printer",
+      "connection",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check Power Connections",
+        "content": "Ensure the printer is properly plugged into a power source and the power switch is turned on."
+      },
+      {
+        "title": "Verify USB or Network Connection",
+        "content": "If using a USB connection, ensure the cable is securely connected to both the printer and the computer. For network connections, check that the printer is connected to the same network as your computer."
+      },
+      {
+        "title": "Review Instruction Manual",
+        "content": "Follow the instruction sheet provided with the printer to ensure all components are connected properly."
+      },
+      {
+        "title": "Restart Devices",
+        "content": "Turn off and then turn on both the printer and the connected computer to reset the connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Firmware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Visit the manufacturer's website to check for any firmware updates for your 3D printer model."
+          },
+          {
+            "title": "Install Updates",
+            "content": "Follow the instructions provided on the website to download and install the latest firmware."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:17:03.889Z",
+      "updated": "2026-01-01T23:17:03.889Z",
+      "sourceUrl": "https://www.facebook.com/groups/1655261694953377/posts/2295370104275863/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767309425943-537",
+    "title": "Update Printer Drivers",
+    "problemDescription": "Printer not functioning properly due to outdated drivers.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "drivers",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Identify Printer Model",
+        "content": "Find the model number of your printer. This is usually located on the back or bottom of the printer."
+      },
+      {
+        "title": "Visit Manufacturer's Website",
+        "content": "Go to the official website of your printer's manufacturer."
+      },
+      {
+        "title": "Download Latest Drivers",
+        "content": "Search for the support or drivers section, enter your printer model, and download the latest drivers available."
+      },
+      {
+        "title": "Install Drivers",
+        "content": "Run the downloaded driver installation file and follow the on-screen instructions to complete the installation."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "After installation, restart your computer to ensure the new drivers are properly loaded."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-01T23:17:05.943Z",
+      "updated": "2026-01-01T23:17:05.943Z",
+      "sourceUrl": "https://www.facebook.com/groups/575680815243967/posts/782424801236233/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767309441989-189",
+    "title": "Fix Android Wi-Fi Initial Connection Issues",
+    "problemDescription": "Troubleshooting initial connection problems on Android devices.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "android",
+      "connection",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check Router Settings",
+        "content": "Ensure your router supports SQM (Smart Queue Management) to reduce bufferbloat. Consider upgrading to a router with a powerful CPU if needed."
+      },
+      {
+        "title": "Disable Secure DNS",
+        "content": "On your Android device, disable secure DNS settings as this can sometimes interfere with initial connections."
+      },
+      {
+        "title": "Change Wi-Fi Channels",
+        "content": "Try changing the Wi-Fi channel on your router to avoid interference from other networks."
+      },
+      {
+        "title": "Use Ethernet for Critical Tasks",
+        "content": "For tasks requiring low latency and stable connections, such as gaming, use a wired Ethernet connection to the router."
+      },
+      {
+        "title": "Enable VPN on Router",
+        "content": "If dealing with CGNAT or needing to improve latency, enable a VPN on your router with nat-pmp enabled in the VPN profile."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Debug Wi-Fi Issues with Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Wi-Fi Analyzer Apps",
+            "content": "Install a Wi-Fi analyzer app on your Android device to identify and resolve connection issues."
+          },
+          {
+            "title": "Check for Multiple APs",
+            "content": "If you have multiple access points, ensure they are properly configured to avoid interference."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:17:21.989Z",
+      "updated": "2026-01-01T23:17:21.989Z",
+      "sourceUrl": "https://www.reddit.com/r/HomeNetworking/comments/1bowgak/how_to_troubleshoot_initial_connection_issues_on/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767309445610-690",
+    "title": "Reporting Android Bugs and Issues",
+    "problemDescription": "Users struggle to find effective ways to report and get help with Android bugs and issues.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "bugs",
+      "issues",
+      "reporting",
+      "help"
+    ],
+    "steps": [
+      {
+        "title": "Use the Android Issue Tracker",
+        "content": "Go to the Android Issue Tracker at https://issuetracker.google.com/issues?q=componentid:460003 and create a detailed report of the bug. Include steps to reproduce, expected behavior, and actual behavior."
+      },
+      {
+        "title": "Provide Detailed Information",
+        "content": "Ensure your report includes all necessary details such as device model, Android version, and any relevant logs or screenshots."
+      },
+      {
+        "title": "Engage with the Community",
+        "content": "Post your issue on forums like r/AndroidQuestions to seek community support and share your findings with other users."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Manufacturer Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Manufacturer's Support Page",
+            "content": "Go to your device manufacturer's support page and look for a section on reporting bugs or issues."
+          },
+          {
+            "title": "Submit a Support Ticket",
+            "content": "Provide detailed information about the bug and follow the manufacturer's guidelines for reporting."
+          }
+        ]
+      },
+      {
+        "title": "Use Community Health Pages",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Community Health Pages",
+            "content": "Check out community health pages linked by Google for any relevant categories or forums where you can report issues."
+          },
+          {
+            "title": "Post in Relevant Forums",
+            "content": "Engage with the community by posting your issue in relevant forums and seeking advice from other users."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:17:25.610Z",
+      "updated": "2026-01-01T23:17:25.610Z",
+      "sourceUrl": "https://www.reddit.com/r/AndroidQuestions/comments/1c7ztso/how_can_users_get_help_with_android_bugs_and/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767309451306-880",
+    "title": "Troubleshoot Android Lag with ADB",
+    "problemDescription": "Android device experiencing random lag that requires frequent restarts.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "lag",
+      "adb",
+      "troubleshoot"
+    ],
+    "steps": [
+      {
+        "title": "Enable Developer Options",
+        "content": "Go to Settings > About phone > Tap on Build number seven times to enable Developer Options."
+      },
+      {
+        "title": "Enable USB Debugging",
+        "content": "Go to Settings > Developer Options > Enable USB Debugging."
+      },
+      {
+        "title": "Connect Device to Computer",
+        "content": "Connect your Android device to your computer via USB."
+      },
+      {
+        "title": "Install ADB",
+        "content": "Download and install the Android SDK Platform Tools from the official Android website."
+      },
+      {
+        "title": "Open Command Prompt",
+        "content": "Open a command prompt or terminal window on your computer."
+      },
+      {
+        "title": "Navigate to ADB Directory",
+        "content": "Navigate to the directory where ADB is installed using the command line."
+      },
+      {
+        "title": "Check Device Connection",
+        "content": "Type 'adb devices' to ensure your device is recognized. If it is, you should see your device's serial number."
+      },
+      {
+        "title": "Monitor CPU Usage",
+        "content": "Type 'adb shell dumpsys cpuinfo' to get a detailed report of CPU usage."
+      },
+      {
+        "title": "Identify Problematic Apps",
+        "content": "Look for apps consuming excessive CPU resources. Note the package names of these apps."
+      },
+      {
+        "title": "Uninstall or Disable Problematic Apps",
+        "content": "Use the package names to uninstall or disable the problematic apps via ADB or the device settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Third-Party Monitoring Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Monitoring App",
+            "content": "Install a third-party app like 'System Monitor Lite' or 'CPU Monitor' from the Google Play Store."
+          },
+          {
+            "title": "Monitor CPU Usage",
+            "content": "Use the app to monitor CPU usage and identify problematic apps."
+          },
+          {
+            "title": "Uninstall or Disable Problematic Apps",
+            "content": "Uninstall or disable the apps that are causing high CPU usage."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:17:31.306Z",
+      "updated": "2026-01-01T23:17:31.306Z",
+      "sourceUrl": "https://www.reddit.com/r/AndroidQuestions/comments/1cnmq2z/using_adb_to_troubleshoot_problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767309457957-522",
+    "title": "Debugging Phone Hardware Issues",
+    "problemDescription": "Troubleshooting hardware problems on your phone.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "phone",
+      "hardware",
+      "debug",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check for Physical Damage",
+        "content": "Inspect your phone for any visible signs of damage, such as cracks, dents, or water damage."
+      },
+      {
+        "title": "Test Hardware Components",
+        "content": "Test each hardware component individually, such as the screen, buttons, speakers, and cameras, to identify which one is malfunctioning."
+      },
+      {
+        "title": "Perform a Soft Reset",
+        "content": "Restart your phone to see if the issue is resolved. This can help if the problem is due to a temporary software glitch."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Ensure your phone's software is up to date, as updates often include bug fixes and performance improvements."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "If the issue persists, perform a factory reset. Note that this will erase all data on your phone, so back up important information first."
+      },
+      {
+        "title": "Consult a Professional",
+        "content": "If none of the above steps resolve the issue, take your phone to a professional repair service or contact the manufacturer for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Diagnostic Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Diagnostic Apps",
+            "content": "Install diagnostic apps from the Google Play Store that can help identify hardware issues."
+          },
+          {
+            "title": "Run Diagnostics",
+            "content": "Follow the app instructions to run diagnostics on your phone's hardware components."
+          },
+          {
+            "title": "Analyze Results",
+            "content": "Review the diagnostic results to pinpoint the problematic hardware component."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:17:37.957Z",
+      "updated": "2026-01-01T23:17:37.957Z",
+      "sourceUrl": "https://www.reddit.com/r/AndroidQuestions/comments/1b91yck/how_to_debug_a_phone_hardware_problem/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767309459782-832",
+    "title": "Adjust Animation Scale for Smoother Performance",
+    "problemDescription": "Android device feels sluggish or unresponsive.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "performance",
+      "animation",
+      "developer settings"
+    ],
+    "steps": [
+      {
+        "title": "Access Developer Settings",
+        "content": "Go to 'Settings' > 'About phone' > Tap 'Build number' seven times to enable Developer Options."
+      },
+      {
+        "title": "Adjust Animation Scales",
+        "content": "Go to 'Settings' > 'Developer options' > Set 'Window animation scale', 'Transition animation scale', and 'Animator duration scale' to 0.5."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Remove At a Glance Widget",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit Home Screen",
+            "content": "Long-press on the 'At a Glance' widget on the home screen and select 'Remove' or 'Delete'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:17:39.782Z",
+      "updated": "2026-01-01T23:17:39.782Z",
+      "sourceUrl": "https://www.reddit.com/r/Android/comments/1k8nk3p/what_are_some_problems_in_everyday_life_that_you/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767309483367-881",
+    "title": "Fix Intermittent WiFi Connection",
+    "problemDescription": "WiFi connection drops intermittently with no clear cause.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "connection",
+      "intermittent",
+      "modem",
+      "diagnostic"
+    ],
+    "steps": [
+      {
+        "title": "Check Modem Diagnostics",
+        "content": "Access your modem's diagnostic tool to generate a status report and event log. This will provide error codes that can be researched or shared with technicians."
+      },
+      {
+        "title": "Research Error Codes",
+        "content": "Use the error codes from the event log to search for solutions online or consult with IT professionals."
+      },
+      {
+        "title": "Consult Network Engineers",
+        "content": "Share the error logs with network engineers or IT professionals for expert advice."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Basic Troubleshooting",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Modem",
+            "content": "Unplug the modem for 15 seconds and plug it back in."
+          },
+          {
+            "title": "Check Connections",
+            "content": "Ensure all cables are securely connected and there are no loose wires."
+          },
+          {
+            "title": "Change Outlet",
+            "content": "Plug the modem into a different outlet to rule out electrical issues."
+          },
+          {
+            "title": "Move Modem",
+            "content": "Move the modem away from the router to reduce interference."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:18:03.367Z",
+      "updated": "2026-01-01T23:18:03.367Z",
+      "sourceUrl": "https://www.reddit.com/r/HomeNetworking/comments/c64aj8/solved_intermittent_wifi_connection_with_no/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767309485643-946",
+    "title": "Fix Wi-Fi Connected but No Internet",
+    "problemDescription": "Wi-Fi shows connected but no internet access.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "internet",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Access Router Settings",
+        "content": "Open the router settings page on your laptop or computer."
+      },
+      {
+        "title": "Reboot Router",
+        "content": "Perform a reboot of the router from the settings page."
+      },
+      {
+        "title": "Wait for Reboot",
+        "content": "Wait for the router to fully reboot and then check your internet connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Physical Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Power Cycle",
+            "content": "Unplug the router and modem from the power source."
+          },
+          {
+            "title": "Wait",
+            "content": "Wait for about 30 seconds."
+          },
+          {
+            "title": "Reconnect",
+            "content": "Plug the devices back in and wait for them to fully reboot."
+          },
+          {
+            "title": "Check Connection",
+            "content": "Check if the internet connection is restored."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:18:05.643Z",
+      "updated": "2026-01-01T23:18:05.643Z",
+      "sourceUrl": "https://www.reddit.com/r/techsupport/comments/1i5kgqe/how_do_i_fix_wifi_connected_without_internet/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767309488845-705",
+    "title": "Wi-Fi Suddenly Stops Working",
+    "problemDescription": "Wi-Fi network stops working, devices can't connect, and show 'password is incorrect' error.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "connection",
+      "password",
+      "router"
+    ],
+    "steps": [
+      {
+        "title": "Power Cycle the Router",
+        "content": "Unplug the router from the power source, wait for about 30 seconds, and then plug it back in. This can temporarily resolve the issue."
+      },
+      {
+        "title": "Check for Firmware Updates",
+        "content": "Log in to your router's admin panel and check for any available firmware updates. Install them if available."
+      },
+      {
+        "title": "Reset the Router",
+        "content": "If the issue persists, perform a factory reset on the router. Note that this will erase all settings, so you'll need to reconfigure the router afterward."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Replace the Router",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a New Router",
+            "content": "If the router is old or frequently experiencing issues, consider purchasing a new one."
+          },
+          {
+            "title": "Set Up the New Router",
+            "content": "Follow the manufacturer's instructions to set up the new router. Ensure all devices are connected to the new network."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:18:08.845Z",
+      "updated": "2026-01-01T23:18:08.845Z",
+      "sourceUrl": "https://www.reddit.com/r/Network/comments/1dtafwm/wifi_suddenly_stops_working/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767309493403-408",
+    "title": "Computer Not Detecting Home Wi-Fi",
+    "problemDescription": "Computer is unable to detect the home Wi-Fi network.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "connection",
+      "router",
+      "computer"
+    ],
+    "steps": [
+      {
+        "title": "Restart Router and Computer",
+        "content": "Unplug the router and modem, wait for 30 seconds, and plug them back in. Restart your computer after the router has fully rebooted."
+      },
+      {
+        "title": "Check Wi-Fi Settings",
+        "content": "Ensure that Wi-Fi is turned on and the computer is set to automatically connect to known networks."
+      },
+      {
+        "title": "Update Network Drivers",
+        "content": "Go to Device Manager, expand Network adapters, right-click on your Wi-Fi adapter, and select Update driver."
+      },
+      {
+        "title": "Forget and Reconnect to Network",
+        "content": "Go to Network Settings, find your home Wi-Fi, click on it, and select Forget. Then try reconnecting to the network."
+      },
+      {
+        "title": "Check Router Settings",
+        "content": "Ensure that the router is broadcasting the SSID and that the Wi-Fi is enabled. You may need to access the router's admin page to verify these settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Command Prompt to Reset Network Stack",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Command Prompt as Administrator",
+            "content": "Search for Command Prompt, right-click on it, and select Run as administrator."
+          },
+          {
+            "title": "Run Network Commands",
+            "content": "Type the following commands one by one and press Enter after each: netsh winsock reset, netsh int ip reset, ipconfig /release, ipconfig /renew, ipconfig /flushdns."
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Restart your computer and check if the Wi-Fi network is now detectable."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Change Wi-Fi Channel",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Router Settings",
+            "content": "Open a web browser and enter the router's IP address to access the admin page."
+          },
+          {
+            "title": "Change Wi-Fi Channel",
+            "content": "Navigate to the Wi-Fi settings and change the channel to a less crowded one. Save the settings and restart the router."
+          },
+          {
+            "title": "Reconnect to Wi-Fi",
+            "content": "Try reconnecting your computer to the Wi-Fi network."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:18:13.403Z",
+      "updated": "2026-01-01T23:18:13.403Z",
+      "sourceUrl": "https://www.reddit.com/r/computer/comments/rq3o1n/i_cant_find_my_home_wifi_on_my_computer_and_ive/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767309648228-947",
+    "title": "Speed Up Slow Android Phone",
+    "problemDescription": "Android phone is running slower than usual.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "slow",
+      "performance",
+      "speed"
+    ],
+    "steps": [
+      {
+        "title": "Clear App Cache",
+        "content": "Go to Settings > Apps > Select the app > Storage > Clear Cache."
+      },
+      {
+        "title": "Restart Phone",
+        "content": "Restart your phone to apply changes."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-01T23:20:48.229Z",
+      "updated": "2026-01-01T23:20:48.229Z",
+      "sourceUrl": "https://www.facebook.com/ABNewswire/posts/android-repair-101-common-system-issues-safe-fixes-explained-technology/1316875837125306/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767309650034-452",
+    "title": "Fix Android Performance Issues",
+    "problemDescription": "Android phone is running slow or experiencing performance issues.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "performance",
+      "slow",
+      "apps",
+      "permissions"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall Unused Apps",
+        "content": "Go to Settings > Apps > See all apps. Select the apps you don't use and tap 'Uninstall'."
+      },
+      {
+        "title": "Check App Permissions",
+        "content": "For each remaining app, go to Settings > Apps > [App Name] > Permissions. Review and adjust permissions to only what's necessary."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Visit Carrier Store",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Carrier Store",
+            "content": "If the issue persists, visit your carrier's store for professional assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:20:50.034Z",
+      "updated": "2026-01-01T23:20:50.034Z",
+      "sourceUrl": "https://www.facebook.com/groups/2494763820688477/posts/3097388060426047/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767309652825-787",
+    "title": "Fix Slow Android Performance",
+    "problemDescription": "Your Android device is running slower than usual.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "slow",
+      "performance",
+      "optimization"
+    ],
+    "steps": [
+      {
+        "title": "Check System Resources",
+        "content": "Monitor RAM, CPU, and storage usage using built-in tools or third-party apps to identify resource-heavy processes."
+      },
+      {
+        "title": "Analyze Phone Logs",
+        "content": "Check for error messages and system crashes in the phone logs to pinpoint potential issues."
+      },
+      {
+        "title": "Boot in Safe Mode",
+        "content": "Restart your device in safe mode to disable third-party apps and check if performance improves."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Cache and Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear App Cache",
+            "content": "Go to Settings > Apps > Select the app > Clear Cache."
+          },
+          {
+            "title": "Clear App Data",
+            "content": "Go to Settings > Apps > Select the app > Clear Data (note: this will reset the app)."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup important data to cloud storage or an external device."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (Factory reset)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:20:52.825Z",
+      "updated": "2026-01-01T23:20:52.825Z",
+      "sourceUrl": "https://www.facebook.com/smartbze/posts/if-your-android-is-running-slow-it-might-be-time-to-try-a-few-troubleshooting-me/1290521481141839/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767309655541-937",
+    "title": "Fix Low Internal Memory on Android",
+    "problemDescription": "Your Android device shows a 'Low Internal Memory' warning.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "memory",
+      "storage"
+    ],
+    "steps": [
+      {
+        "title": "Clear App Cache",
+        "content": "Go to Settings > Apps > Select an app > Tap 'Clear Cache'."
+      },
+      {
+        "title": "Uninstall Unused Apps",
+        "content": "Go to Settings > Apps > Select unused apps > Tap 'Uninstall'."
+      },
+      {
+        "title": "Move Apps to SD Card",
+        "content": "Go to Settings > Apps > Select an app > Tap 'Move to SD Card' if available."
+      },
+      {
+        "title": "Use Cloud Storage",
+        "content": "Upload photos, videos, and files to cloud services like Google Drive or Dropbox."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "Go to Settings > System > Reset options > Erase all data (Factory reset). Warning: This will delete all data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a File Manager",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a File Manager",
+            "content": "Download and install a file manager app from the Google Play Store."
+          },
+          {
+            "title": "Delete Unnecessary Files",
+            "content": "Use the file manager to find and delete large or unnecessary files."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:20:55.541Z",
+      "updated": "2026-01-01T23:20:55.541Z",
+      "sourceUrl": "https://www.facebook.com/phoneslaptopsandaccessories/posts/9-common-android-problems-and-how-to-fix-theman-android-smartphone-may-seem-all-/181599880643286/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767309657639-399",
+    "title": "Android 6/Marshmallow Troubleshooting",
+    "problemDescription": "Troubleshooting tips for Android 6/Marshmallow devices.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "marshmallow",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check for Software Updates",
+        "content": "Go to Settings > About phone > System updates. Check if there are any available updates for your device."
+      },
+      {
+        "title": "Clear App Cache",
+        "content": "Go to Settings > Apps > Select the problematic app > Storage > Clear Cache."
+      },
+      {
+        "title": "Restart in Safe Mode",
+        "content": "Press and hold the Power button, then tap and hold Power off. Tap OK to restart in Safe Mode. This can help identify if a third-party app is causing issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Ensure all important data is backed up as a factory reset will erase all data."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > Backup & reset > Factory data reset > Reset device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T23:20:57.639Z",
+      "updated": "2026-01-01T23:20:57.640Z",
+      "sourceUrl": "https://www.facebook.com/groups/1330869733593308/posts/5951387238208178/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  }
+]

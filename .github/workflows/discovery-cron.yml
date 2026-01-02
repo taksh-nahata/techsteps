@@ -1,0 +1,37 @@
+name: Discovery Agent Cron
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Runs every hour
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  run-discovery:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to commit changes
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Discovery Agent
+        env:
+          VITE_MISTRAL_API_KEY: ${{ secrets.VITE_MISTRAL_API_KEY }}
+          VITE_TAVILY_API_KEY: ${{ secrets.VITE_TAVILY_API_KEY }}
+        run: npx tsx scripts/discovery-agent.ts
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add src/data/pending_guides.json
+          # Only commit if there are changes
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: automated discovery agent update" && git push)

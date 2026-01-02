@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { motion, PanInfo } from 'framer-motion';
-import { Volume2, VolumeX, Check } from 'lucide-react';
+import { Volume2, VolumeX, Check, ArrowUp, ThumbsUp, ThumbsDown } from 'lucide-react';
 import { FlashcardStep } from '../../types/services';
 import MarkdownRenderer from './MarkdownRenderer';
 
@@ -188,8 +188,8 @@ const FlashcardCard: React.FC<FlashcardCardProps> = ({
                             <motion.button
                                 onClick={handleSpeak}
                                 className={`p-3 rounded-full transition-all ${isSpeaking
-                                        ? 'bg-indigo-100 text-indigo-600 ring-2 ring-indigo-400'
-                                        : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
+                                    ? 'bg-indigo-100 text-indigo-600 ring-2 ring-indigo-400'
+                                    : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
                                     }`}
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }}
@@ -208,27 +208,92 @@ const FlashcardCard: React.FC<FlashcardCardProps> = ({
                             </motion.button>
                         </div>
 
+
+
                         {/* Main Content */}
-                        <div className="flex-1 flex items-center justify-center">
-                            <div className="text-2xl md:text-3xl font-medium leading-relaxed text-gray-800 text-center">
-                                <MarkdownRenderer
-                                    content={step.content.replace(/<[^>]*>/g, '')}
-                                    className="prose prose-lg prose-indigo max-w-none"
-                                />
+                        {/* Main Content - Split Layout */}
+                        <div className="flex-1 w-full flex flex-col md:flex-row gap-6 items-center justify-center p-2">
+                            {/* Visual Side */}
+                            {step.image ? (
+                                <div className="w-full md:w-1/2 h-48 md:h-full max-h-[300px] relative flex items-center justify-center bg-gray-50 rounded-xl border border-gray-100/50 p-2">
+                                    <img
+                                        src={step.image}
+                                        alt="Step visual"
+                                        className="w-full h-full object-contain rounded-lg"
+                                    />
+                                    {step.annotations?.map((anno, idx) => (
+                                        <div
+                                            key={idx}
+                                            className="absolute transform -translate-x-1/2 -translate-y-1/2"
+                                            style={{ left: `${anno.x}%`, top: `${anno.y}%` }}
+                                        >
+                                            {anno.label ? (
+                                                <div className="px-3 py-1.5 rounded-lg text-sm font-medium backdrop-blur-md shadow-lg border border-transparent"
+                                                    style={{
+                                                        backgroundColor: anno.color || '#ef4444',
+                                                        color: 'white',
+                                                        transform: `scale(${anno.size || 1})`
+                                                    }}
+                                                >
+                                                    {anno.label}
+                                                </div>
+                                            ) : anno.type === 'circle' ? (
+                                                <div className="relative">
+                                                    <div
+                                                        className="rounded-full border-4 shadow-[0_0_15px_rgba(0,0,0,0.3)] animate-pulse"
+                                                        style={{
+                                                            width: `${3 * (anno.size || 1)}rem`,
+                                                            height: `${3 * (anno.size || 1)}rem`,
+                                                            borderColor: anno.color || '#ef4444'
+                                                        }}
+                                                    />
+                                                </div>
+                                            ) : (
+                                                <ArrowUp
+                                                    className="drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] stroke-[3] animate-bounce"
+                                                    style={{
+                                                        color: anno.color || '#ef4444',
+                                                        width: `${3 * (anno.size || 1)}rem`,
+                                                        height: `${3 * (anno.size || 1)}rem`
+                                                    }}
+                                                />
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
+                            ) : null}
+
+                            {/* Text Side */}
+                            <div className={`${step.image ? 'w-full md:w-1/2 text-left' : 'w-full text-center'} flex flex-col justify-center`}>
+                                <div className={`font-medium leading-relaxed text-gray-800 ${step.image ? 'text-lg' : 'text-2xl md:text-3xl'}`}>
+                                    <MarkdownRenderer
+                                        content={step.content.replace(/<[^>]*>/g, '')}
+                                        className="prose prose-indigo max-w-none break-words"
+                                    />
+                                </div>
                             </div>
                         </div>
 
-                        {/* Flip Hint */}
-                        {hasInstructions && (
-                            <motion.p
-                                className="text-center text-gray-400 text-sm mt-4"
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ delay: 0.5 }}
-                            >
-                                Tap card to see detailed instructions
-                            </motion.p>
-                        )}
+                        {/* Feedback Section */}
+                        <div className="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between">
+                            <span className="text-xs text-gray-400 font-medium">Was this helpful?</span>
+                            <div className="flex gap-2">
+                                <button
+                                    onClick={() => alert("Thanks for the feedback! (Simulated Save)")}
+                                    className="p-2 hover:bg-green-50 text-gray-400 hover:text-green-600 rounded-lg transition-colors"
+                                    title="Yes, this helped"
+                                >
+                                    <ThumbsUp className="w-4 h-4" />
+                                </button>
+                                <button
+                                    onClick={() => alert("We'll work on improving this guide. (Simulated Save)")}
+                                    className="p-2 hover:bg-red-50 text-gray-400 hover:text-red-500 rounded-lg transition-colors"
+                                    title="No, didn't work"
+                                >
+                                    <ThumbsDown className="w-4 h-4" />
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </motion.div>
 

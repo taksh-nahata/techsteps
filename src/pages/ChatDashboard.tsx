@@ -16,6 +16,7 @@ import { parseCommand } from '../utils/CommandParser';
 import { MemoryService, Message } from '../services/MemoryService';
 import { LocalStorageService } from '../services/LocalStorageService';
 import { getAIService } from '../services/ai';
+import { StorageService } from '../services/StorageService';
 
 declare global {
   interface Window {
@@ -104,10 +105,30 @@ const ChatDashboardContent: React.FC = () => {
         sender: 'user',
         timestamp: new Date()
       };
+
+      // 3. Process and Upload Attachments
+      const uploadedAttachments: any[] = [];
+      if (attachments && attachments.length > 0) {
+        console.log(`Uploading ${attachments.length} attachments...`);
+        for (const file of attachments) {
+          try {
+            const url = await StorageService.uploadFile(file, `chat-attachments/${userId}`);
+            uploadedAttachments.push({
+              type: file.type.startsWith('image/') ? 'image' : 'file',
+              url,
+              name: file.name
+            });
+          } catch (uploadErr) {
+            console.error(`Failed to upload file ${file.name}:`, uploadErr);
+          }
+        }
+        userMessage.attachments = uploadedAttachments;
+      }
+
       setMessages(prev => [...prev, userMessage]);
       await MemoryService.saveMessage(userId, userMessage);
 
-      // 3. Call Central AI Service
+      // 4. Call Central AI Service
       const aiService = getAIService();
 
       // Fetch known facts and user data for memory focus
@@ -120,7 +141,8 @@ const ChatDashboardContent: React.FC = () => {
         userSkillLevel: userData?.skillLevel || 'beginner',
         failureCount: 0,
         knownFacts: knownFacts,
-        userData: customUserData || {}
+        userData: customUserData || {},
+        attachments: uploadedAttachments // Pass attachments to the AI service
       };
 
       const response = await aiService.sendMessage(messageContent, context);

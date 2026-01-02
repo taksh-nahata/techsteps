@@ -1,11 +1,11 @@
 // Service Interface Types for Senior Learning Platform
-import { 
-  AIResponse, 
-  ConversationContext, 
-  Tutorial, 
-  LocalizedContent, 
-  UserAction, 
-  ActionContext, 
+import {
+  AIResponse,
+  ConversationContext,
+  Tutorial,
+  LocalizedContent,
+  UserAction,
+  ActionContext,
   PerformanceData,
   AccessibilitySettings,
   User,
@@ -65,6 +65,15 @@ export interface FlashcardStep {
   estimatedDuration: number;
   methodGroup?: string; // For grouping steps by method (e.g., "Method 1: Using Settings", "Method 2: Using Control Panel")
   methodStepCount?: number; // Total steps in this method group
+  image?: string;
+  annotations?: {
+    type: 'arrow' | 'circle';
+    x: number;
+    y: number;
+    label?: string;
+    color?: string;
+    size?: number;
+  }[];
 }
 
 export interface FlashcardMethod {
