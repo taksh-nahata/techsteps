@@ -238,7 +238,8 @@ const ChatDashboardContent: React.FC = () => {
         userSkillLevel: userData?.skillLevel || 'beginner',
         failureCount: 0,
         knownFacts: knownFacts,
-        userData: customUserData || {}
+        userData: customUserData || {},
+        attachments: uploadedAttachments // Pass attachments to the AI service
       };
 
       // Primary content generation

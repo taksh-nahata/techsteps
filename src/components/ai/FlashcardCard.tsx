@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { motion, PanInfo } from 'framer-motion';
-import { Volume2, VolumeX, Check } from 'lucide-react';
+import { Volume2, VolumeX, Check, ArrowUp, ThumbsUp, ThumbsDown } from 'lucide-react';
 import { FlashcardStep } from '../../types/services';
 import MarkdownRenderer from './MarkdownRenderer';
 
