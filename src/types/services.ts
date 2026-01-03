@@ -6,7 +6,6 @@ import {
   LocalizedContent,
   UserAction,
   ActionContext,
-  PerformanceData,
   AccessibilitySettings,
   User,
   SupportTicket
@@ -67,12 +66,14 @@ export interface FlashcardStep {
   methodStepCount?: number; // Total steps in this method group
   image?: string;
   annotations?: {
-    type: 'arrow' | 'circle';
+    type: 'arrow' | 'circle' | 'blur';
     x: number;
     y: number;
     label?: string;
     color?: string;
     size?: number;
+    width?: number;
+    height?: number;
   }[];
 }
 

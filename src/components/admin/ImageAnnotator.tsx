@@ -1,7 +1,7 @@
 
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { GuideAnnotation, AnnotationType } from '../../types/guides';
-import { MousePointer2, Circle, ArrowUp, X, Type, Upload, Image as ImageIcon } from 'lucide-react';
+import { MousePointer2, Circle, ArrowUp, X, Type, Image as ImageIcon, Droplet } from 'lucide-react';
 
 interface ImageAnnotatorProps {
     imageUrl: string;
@@ -13,7 +13,7 @@ interface ImageAnnotatorProps {
 
 const COLORS = ['#ef4444', '#22c55e', '#3b82f6', '#eab308', '#ffffff', '#000000'];
 
-export const ImageAnnotator: React.FC<ImageAnnotatorProps> = ({ imageUrl, annotations = [], onChange, onImageUpload, onImageUrlChange }) => {
+export const ImageAnnotator: React.FC<ImageAnnotatorProps> = ({ imageUrl, annotations = [], onChange, onImageUpload }) => {
 
     // Tools: 'select' allows moving objects. Others allow creating.
     const [selectedTool, setSelectedTool] = useState<AnnotationType | 'text' | 'select'>('select');
@@ -38,6 +38,8 @@ export const ImageAnnotator: React.FC<ImageAnnotatorProps> = ({ imageUrl, annota
         initialX: number; // For move: initial position %
         initialY: number; // For move: initial position %
         initialSize: number; // For resize
+        initialWidth?: number; // For blur rect resize
+        initialHeight?: number; // For blur rect resize
         handle?: 'nw' | 'ne' | 'sw' | 'se'; // For resize
     } | null>(null);
 
@@ -101,8 +103,34 @@ export const ImageAnnotator: React.FC<ImageAnnotatorProps> = ({ imageUrl, annota
                 setSelectedId(annotations.length);
                 setSelectedTool('select');
             }
+        } else if (selectedTool === 'blur') {
+            // Start creating blur rect
+            const newAnno: GuideAnnotation = {
+                type: 'blur',
+                x, y,
+                width: 1, // Start small
+                height: 1,
+                color: 'transparent',
+            };
+            const newIndex = annotations.length;
+            onChange([...annotations, newAnno]);
+            setSelectedId(newIndex);
+
+            // Immediately start resizing this new blur rect
+            setInteraction({
+                mode: 'resize',
+                startX: e.clientX,
+                startY: e.clientY,
+                initialX: x,
+                initialY: y,
+                initialSize: 1,
+                initialWidth: 0,
+                initialHeight: 0,
+                handle: 'se' // Simulate dragging bottom-right to expand
+            });
+
         } else {
-            // Create Shape
+            // Create Shape (Click to place)
             const newAnno: GuideAnnotation = {
                 type: selectedTool as AnnotationType,
                 x, y,
@@ -129,7 +157,9 @@ export const ImageAnnotator: React.FC<ImageAnnotatorProps> = ({ imageUrl, annota
             startY: e.clientY,
             initialX: anno.x,
             initialY: anno.y,
-            initialSize: anno.size || 1
+            initialSize: anno.size || 1,
+            initialWidth: anno.width || 10,
+            initialHeight: anno.height || 10
         });
     };
 
@@ -145,6 +175,8 @@ export const ImageAnnotator: React.FC<ImageAnnotatorProps> = ({ imageUrl, annota
             initialX: anno.x,
             initialY: anno.y,
             initialSize: anno.size || 1,
+            initialWidth: anno.width || 10,
+            initialHeight: anno.height || 10,
             handle
         });
     };
@@ -168,31 +200,32 @@ export const ImageAnnotator: React.FC<ImageAnnotatorProps> = ({ imageUrl, annota
                     y: Math.max(0, Math.min(100, interaction.initialY + deltaYPercent))
                 });
             } else if (interaction.mode === 'resize') {
-                // Determine scale factor based on handle direction & drag
-                // Simple uniform scaling: dragging OUTWARDS increases size
+                const anno = annotations[selectedId];
 
-                // We use deltaXPixels relative to a base "100px = 1 unit" factor for sensitivity
-                const dragFactor = deltaXPixels / 100;
+                // Check type to determine resize behavior
+                if (anno.type === 'blur') {
+                    // For blur, we resize width/height directly based on percent delta
+                    // Using handle logic for sophisticated resizing
+                    const newWidth = Math.max(2, (interaction.initialWidth || 0) + deltaXPercent);
+                    const newHeight = Math.max(2, (interaction.initialHeight || 0) + deltaYPercent);
 
-                let scaleDelta = 0;
+                    updateAnnotation(selectedId, { width: newWidth, height: newHeight });
 
-                // Adjust direction based on handle
-                if (interaction.handle === 'se' || interaction.handle === 'ne') {
-                    scaleDelta = dragFactor;
                 } else {
-                    scaleDelta = -dragFactor;
-                }
+                    // Standard Size Scaling for Shapes/Text
+                    const dragFactor = deltaXPixels / 100;
+                    let scaleDelta = 0;
 
-                if (interaction.handle === 'ne' || interaction.handle === 'nw') {
-                    // For top handles, moving UP (negative Y) should increase size? 
-                    // Let's stick to X-axis dragging for uniformity to avoid conflict or complex diagonal math
-                    // or just use distance from center?
-                    // Implementation: Just using X delta is intuitive enough for "Corner Drag" 
-                    // if user drags diagonally out.
-                }
+                    // Adjust direction based on handle
+                    if (interaction.handle === 'se' || interaction.handle === 'ne') {
+                        scaleDelta = dragFactor;
+                    } else {
+                        scaleDelta = -dragFactor;
+                    }
 
-                const newSize = Math.max(0.5, Math.min(5, interaction.initialSize + scaleDelta));
-                updateAnnotation(selectedId, { size: newSize });
+                    const newSize = Math.max(0.5, Math.min(5, interaction.initialSize + scaleDelta));
+                    updateAnnotation(selectedId, { size: newSize });
+                }
             }
         };
 
@@ -223,7 +256,7 @@ export const ImageAnnotator: React.FC<ImageAnnotatorProps> = ({ imageUrl, annota
         return (
             <div
                 key={idx}
-                className={`absolute transform -translate-x-1/2 -translate-y-1/2 group/anno ${selectedTool === 'select' ? 'cursor-move' : ''}`}
+                className={`absolute transform -translate-x-1/2 -translate-y-1/2 group/anno pointer-events-auto ${selectedTool === 'select' ? 'cursor-move' : ''}`}
                 style={{ left: `${anno.x}%`, top: `${anno.y}%`, zIndex: isSelected ? 20 : 10 }}
                 onMouseDown={(e) => handleMouseDownAnnotation(e, idx)}
             >
@@ -235,6 +268,20 @@ export const ImageAnnotator: React.FC<ImageAnnotatorProps> = ({ imageUrl, annota
                     >
                         {anno.label}
                     </div>
+                ) : anno.type === 'blur' ? (
+                    <div
+                        className={`absolute border border-indigo-500/30 shadow-sm backdrop-blur-[8px] rounded-md ${isSelected ? 'ring-1 ring-indigo-400' : ''}`}
+                        style={{
+                            width: `${anno.width || 15}%`,
+                            height: `${anno.height || 10}%`,
+                            // Center point logic: For blur, x/y is top-left usually, but our system uses center. 
+                            // Let's keep using center-based positioning for consistency.
+                            // Container handles translation.
+                            left: '50%', top: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                        }}
+                    />
                 ) : (
                     <div className="relative">
                         {anno.type === 'circle' ? (
@@ -264,8 +311,17 @@ export const ImageAnnotator: React.FC<ImageAnnotatorProps> = ({ imageUrl, annota
 
                 {/* SELECTION BOX OVERLAY */}
                 {isSelected && (
-                    <div className="absolute inset-0 -m-4 border border-blue-500 pointer-events-none rounded-lg"
-                        style={{ transform: `scale(${anno.label ? size : 1})` }} // Text scales via transform, shapes via width/height
+                    <div className={`absolute -m-4 border border-blue-500 pointer-events-none rounded-lg z-50
+                        ${anno.type === 'blur' ? 'inset-0 m-0 border-dashed border-2' : 'inset-0'}`}
+                        style={{
+                            transform: anno.type === 'blur'
+                                ? `translate(-50%, -50%)` // Align with the blur center logic
+                                : `scale(${anno.label ? size : 1})`,
+                            width: anno.type === 'blur' ? `${anno.width}%` : undefined,
+                            height: anno.type === 'blur' ? `${anno.height}%` : undefined,
+                            left: anno.type === 'blur' ? '50%' : undefined,
+                            top: anno.type === 'blur' ? '50%' : undefined
+                        }}
                     >
                         {/* Handles */}
                         <div className="absolute -top-1 -left-1 w-3 h-3 bg-white border border-blue-500 rounded-full pointer-events-auto cursor-nw-resize shadow-sm"
@@ -320,6 +376,13 @@ export const ImageAnnotator: React.FC<ImageAnnotatorProps> = ({ imageUrl, annota
                         title="Text Label (T)"
                     >
                         <Type size={18} />
+                    </button>
+                    <button
+                        onClick={() => setSelectedTool('blur')}
+                        className={`p-2 rounded-md transition-all ${selectedTool === 'blur' ? 'bg-indigo-500 text-white shadow-lg' : 'text-gray-400 hover:bg-white/5'}`}
+                        title="Blur Sensitive Info (B)"
+                    >
+                        <Droplet size={18} />
                     </button>
                 </div>
 
