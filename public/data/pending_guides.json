@@ -1574,5 +1574,228 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767463404304-220",
+    "title": "Fix Wi-Fi Connection Issues with Correct Password",
+    "problemDescription": "Wi-Fi connection fails despite correct password.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "connection",
+      "password",
+      "router"
+    ],
+    "steps": [
+      {
+        "title": "Check SSID and Password",
+        "content": "Ensure the SSID (network name) and password are entered correctly, paying attention to uppercase/lowercase and special characters."
+      },
+      {
+        "title": "Change Wireless Mode and Channel",
+        "content": "Switch between 2.4 GHz and 5 GHz bands. Set the channel to Auto or choose a less-crowded channel (1, 6, 11 for 2.4 GHz). Use a Wi-Fi analyzer app to identify interference."
+      },
+      {
+        "title": "Adjust Security Settings",
+        "content": "If your router uses WPA3 or WPA2/WPA3 mixed mode, temporarily set it to WPA2-PSK (AES) for compatibility with older devices."
+      },
+      {
+        "title": "Restart Wi-Fi Connection",
+        "content": "Disable and enable your Wi-Fi connection via the laptop's switch or keyboard function keys."
+      },
+      {
+        "title": "Reset Wi-Fi Adapter",
+        "content": "Disable and enable your Wi-Fi adapter through your network settings."
+      },
+      {
+        "title": "Restart the Router",
+        "content": "Restart the router to which you are trying to connect."
+      },
+      {
+        "title": "Forget Network and Reconnect",
+        "content": "On Windows 10, right-click the network you want to connect to and select 'Forget'. Then restart your router and try to connect again."
+      },
+      {
+        "title": "Factory Reset Router",
+        "content": "If all else fails, perform a factory reset on your router. You will need to re-enter the credentials using the software CD, the device's URL, or a manufacturer's app."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable and Enable Wi-Fi Adapter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Wi-Fi Adapter",
+            "content": "Go to your network settings and disable the Wi-Fi adapter."
+          },
+          {
+            "title": "Enable Wi-Fi Adapter",
+            "content": "After a few seconds, enable the Wi-Fi adapter again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T18:03:24.304Z",
+      "updated": "2026-01-03T18:03:24.304Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-Wi-Fi-issue-though-my-password-is-correct-but-its-unable-to-connect",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767463407563-271",
+    "title": "Fix Wi-Fi Dropping for a Few Seconds",
+    "problemDescription": "Wi-Fi network stops working for a few seconds and then resumes.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "dropping",
+      "connection",
+      "modem"
+    ],
+    "steps": [
+      {
+        "title": "Reboot the Wi-Fi Modem",
+        "content": "Unplug the Wi-Fi modem from the power source, wait for about 30 seconds, and then plug it back in."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-03T18:03:27.563Z",
+      "updated": "2026-01-03T18:03:27.563Z",
+      "sourceUrl": "https://www.quora.com/What-is-causing-my-WiFi-to-stop-working-for-a-few-seconds-and-then-fix-itself",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767463410686-884",
+    "title": "Fix Wi-Fi Connectivity Issues",
+    "problemDescription": "Troubleshoot and resolve common Wi-Fi connectivity issues such as dropped connections or slow speeds.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "connectivity",
+      "troubleshooting",
+      "router",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Test with Ethernet Cable",
+        "content": "Move your computer near the router and connect it with an Ethernet cable to test if the issue is with the Wi-Fi."
+      },
+      {
+        "title": "Test with a Second Router",
+        "content": "Borrow a router from someone else and connect its WAN port to any of the existing router’s LAN ports. Hook up to the new router’s Wi-Fi to see if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable and Reinstall Network Interfaces",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Interfaces",
+            "content": "Disable one interface or all and check for connectivity. Then turn on each interface individually while leaving the others off."
+          },
+          {
+            "title": "Reinstall Drivers",
+            "content": "Uninstall and reinstall each driver on each interface individually while leaving the others off. Repeat with an external USB NIC if necessary."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T18:03:30.686Z",
+      "updated": "2026-01-03T18:03:30.686Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-troubleshoot-network-connectivity-and-implement-wireless-network-connectivity",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767463413466-585",
+    "title": "Fix Wi-Fi Connectivity Issues",
+    "problemDescription": "Troubleshoot and resolve common Wi-Fi connectivity issues such as dropped connections or slow speeds.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "connectivity",
+      "dropped connections",
+      "slow speeds"
+    ],
+    "steps": [
+      {
+        "title": "Connect via Ethernet",
+        "content": "Move your computer near the router and connect it using an Ethernet cable to determine if the issue is with the Wi-Fi connection."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-03T18:03:33.466Z",
+      "updated": "2026-01-03T18:03:33.466Z",
+      "sourceUrl": "https://www.quora.com/How-can-you-troubleshoot-and-resolve-common-Wi-Fi-connectivity-issues-such-as-dropped-connections-or-slow-speeds",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767463417097-929",
+    "title": "Fix Website Loading Issues",
+    "problemDescription": "Some websites are not loading despite a seemingly fine connection to the modem/router.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "internet",
+      "connection",
+      "websites",
+      "loading"
+    ],
+    "steps": [
+      {
+        "title": "Disable Firewall",
+        "content": "Turn off the firewall temporarily to see if you can connect to the websites in question."
+      },
+      {
+        "title": "Test Connection via Telnet",
+        "content": "If you have the tools, send a basic HTTP request via Telnet to determine if the issue is with the website or your connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check DNS Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change DNS Server",
+            "content": "Change your DNS server to a public DNS like Google DNS (8.8.8.8) or Cloudflare DNS (1.1.1.1)."
+          },
+          {
+            "title": "Flush DNS Cache",
+            "content": "Flush your DNS cache by running 'ipconfig /flushdns' in the command prompt (Windows) or 'sudo dscacheutil -flushcache' (Mac)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T18:03:37.097Z",
+      "updated": "2026-01-03T18:03:37.097Z",
+      "sourceUrl": "https://www.quora.com/How-can-you-troubleshoot-internet-connection-issues-if-some-websites-are-not-loading-despite-a-seemingly-fine-connection-to-the-modem-router",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
