@@ -2029,5 +2029,1201 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767467627908-841",
+    "title": "Fix Windows 11 Slow After Update",
+    "problemDescription": "Windows 11 is running slow after a recent update.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "slow",
+      "update",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall the Problematic Update",
+        "content": "Right-click the Start button, open 'Settings,' then go to 'Windows Update' and open 'Update History.' Scroll down and click 'Uninstall Updates' to see a list of recent installations. Find the update that matches the KB number you noted earlier, select it, and click 'Uninstall,' then follow the on-screen instructions."
+      },
+      {
+        "title": "Check for Free Space",
+        "content": "Go to Windows Update > Update History. Note the KB number of the most recent update, then search online to see if others are reporting the same slowdown. If it’s a widespread issue, the update is likely at fault, so uninstall it and wait for Microsoft to release a fix. Even if the problem is affecting only your PC, roll back the update to confirm whether it’s the cause."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Free Up Disk Space",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Disk Space",
+            "content": "Check if your OS drive is running low on space. If it is, clear some storage to free up space."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:13:47.908Z",
+      "updated": "2026-01-03T19:13:47.908Z",
+      "sourceUrl": "https://www.howtogeek.com/fix-slow-windows-after-update/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767467631899-115",
+    "title": "Restore Full Right-Click Menu in Windows 11",
+    "problemDescription": "Windows 11 has a simplified right-click menu that lacks many options.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "right-click menu",
+      "context menu"
+    ],
+    "steps": [
+      {
+        "title": "Use Registry Editor",
+        "content": "Open the Registry Editor by pressing Win + R, typing 'regedit', and hitting Enter."
+      },
+      {
+        "title": "Navigate to the Correct Key",
+        "content": "Go to HKEY_CURRENT_USER\\Software\\Classes\\CLSID."
+      },
+      {
+        "title": "Create a New Key",
+        "content": "Right-click on CLSID, select New > Key, and name it {86ca1aa0-34aa-4e8b-a509-50c905bae2a2}."
+      },
+      {
+        "title": "Modify the Default Value",
+        "content": "Right-click on the newly created key, select New > String Value, name it 'Default', and set its value to 'ContextMenu'."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "Restart your computer to apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Third-Party Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install a Tool",
+            "content": "Download a tool like 'WinAero Tweaker' or 'Windhawk'."
+          },
+          {
+            "title": "Enable Full Context Menu",
+            "content": "Open the tool and look for an option to enable the full context menu."
+          },
+          {
+            "title": "Apply Changes",
+            "content": "Apply the changes and restart your computer if necessary."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:13:51.899Z",
+      "updated": "2026-01-03T19:13:51.899Z",
+      "sourceUrl": "https://www.howtogeek.com/how-i-fixed-the-5-most-annoying-things-about-windows-11/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767467635453-971",
+    "title": "Fix File Explorer Issues on Windows 11",
+    "problemDescription": "File Explorer is not working properly or crashing on Windows 11.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "file explorer",
+      "windows 11",
+      "crash",
+      "not responding"
+    ],
+    "steps": [
+      {
+        "title": "Run a Full System Scan",
+        "content": "Open Windows Security, go to Virus & threat protection, and run a full scan. Wait for the scan to complete and remove any threats found. Restart your PC."
+      },
+      {
+        "title": "Update Windows",
+        "content": "Go to Settings > Windows Update and check for updates. Install any available updates and restart your PC."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Perform a Clean Boot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Configuration",
+            "content": "Press Win + R, type 'msconfig', and press Enter."
+          },
+          {
+            "title": "Disable Non-Essential Services",
+            "content": "Go to the Services tab, check 'Hide all Microsoft services', then click 'Disable all'."
+          },
+          {
+            "title": "Restart in Safe Mode",
+            "content": "Go to the Boot tab, check 'Safe boot', then click 'OK' and restart your PC."
+          },
+          {
+            "title": "Identify Problematic Software",
+            "content": "Enable services one by one to identify which one is causing the issue. Disable or remove the problematic software."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:13:55.453Z",
+      "updated": "2026-01-03T19:13:55.453Z",
+      "sourceUrl": "https://www.howtogeek.com/how-to-fix-file-explorer-issues-on-windows-11/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767467642721-690",
+    "title": "Fix Corrupted Windows Files",
+    "problemDescription": "Windows files are corrupted, causing issues like failed updates or system boot problems.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "corrupted files",
+      "repair",
+      "DISM",
+      "SFC"
+    ],
+    "steps": [
+      {
+        "title": "Run DISM",
+        "content": "Open Command Prompt as Administrator and run the following command to repair the Windows image: `DISM /Online /Cleanup-Image /RestoreHealth`. This ensures that the System File Checker (SFC) can work properly."
+      },
+      {
+        "title": "Check PossibleCorruptions.txt",
+        "content": "Navigate to the C:\\Windows\\WinSxS directory and open the PossibleCorruptions.txt file to identify any corrupted components."
+      },
+      {
+        "title": "Run SFC",
+        "content": "After running DISM, use the System File Checker by typing `sfc /scannow` in the Command Prompt to repair corrupted system files."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows Recovery Environment (WinRE)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access WinRE",
+            "content": "If your computer won't boot, hold the Shift key while selecting Power > Restart. Alternatively, WinRE launches automatically after three failed boot attempts."
+          },
+          {
+            "title": "Run Startup Repair",
+            "content": "In WinRE, select the 'Startup Repair' option and follow the instructions to repair your system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:14:02.721Z",
+      "updated": "2026-01-03T19:14:02.721Z",
+      "sourceUrl": "https://www.howtogeek.com/these-hidden-windows-repair-tricks-fixe-corrupted-filesand-microsoft-wont-tell-you-about-it/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767467646601-959",
+    "title": "Upgrade to Windows 11 on Unsupported Hardware",
+    "problemDescription": "Windows 11 is not officially supported on your hardware, and you cannot upgrade it to meet the requirements.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "upgrade",
+      "unsupported hardware",
+      "macOS"
+    ],
+    "steps": [
+      {
+        "title": "Consider Buying a New Computer",
+        "content": "If your current computer is too old to meet Windows 11 requirements, consider purchasing a new one. This could be a good opportunity to upgrade your hardware."
+      },
+      {
+        "title": "Switch to macOS",
+        "content": "If you're in the market for a new computer, consider switching to macOS. Apple Silicon Macs are powerful and might be a good fit for your needs."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows 11 on Unsupported Hardware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Registry Hack",
+            "content": "There are methods to bypass the Windows 11 hardware requirements using registry hacks. However, this is not officially supported and may lead to instability or other issues."
+          },
+          {
+            "title": "Use a Third-Party Tool",
+            "content": "Some third-party tools can help you install Windows 11 on unsupported hardware. Again, this is not officially supported and may have risks."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:14:06.601Z",
+      "updated": "2026-01-03T19:14:06.601Z",
+      "sourceUrl": "https://www.howtogeek.com/ive-used-windows-11-since-day-1-dont-be-scared-to-join-me/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767467653252-549",
+    "title": "Fix Printer Compatibility Issue In Windows 10",
+    "problemDescription": "Printer not working due to compatibility issues in Windows 10.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "compatibility",
+      "windows 10"
+    ],
+    "steps": [
+      {
+        "title": "Run Compatibility Troubleshooter",
+        "content": "Click on 'Run compatibility troubleshooter', wait while the troubleshooter detects the problem, and click 'Try recommended settings' when prompted."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-03T19:14:13.252Z",
+      "updated": "2026-01-03T19:14:13.252Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/fix-printer-compatibility-issue-in-windows-10.3272796/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767467657101-19",
+    "title": "Fix Shared Printer Issues",
+    "problemDescription": "Shared printers are not working due to recent changes in Windows.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "windows",
+      "shared",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Check Printer Sharing Settings",
+        "content": "Right-click the printer in 'Devices and Printers', select 'Printer properties', go to the 'Sharing' tab, and ensure 'Share this printer' is checked."
+      },
+      {
+        "title": "Verify Network Discovery",
+        "content": "Go to 'Control Panel' > 'Network and Sharing Center' > 'Change advanced sharing settings'. Ensure 'Turn on network discovery' and 'Turn on file and printer sharing' are enabled."
+      },
+      {
+        "title": "Check Firewall Settings",
+        "content": "Open 'Windows Defender Firewall' from the Control Panel, go to 'Allow an app or feature through Windows Defender Firewall', and ensure 'File and Printer Sharing' is allowed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Printer Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Current Drivers",
+            "content": "Go to 'Devices and Printers', right-click the printer, and select 'Remove device'."
+          },
+          {
+            "title": "Download Latest Drivers",
+            "content": "Visit the printer manufacturer's website and download the latest drivers."
+          },
+          {
+            "title": "Install New Drivers",
+            "content": "Run the downloaded installer and follow the on-screen instructions to reinstall the printer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:14:17.101Z",
+      "updated": "2026-01-03T19:14:17.101Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/issues-with-shared-printer.3729079/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767467660397-234",
+    "title": "Fix Epson Printer Issues",
+    "problemDescription": "Epson printer not working across multiple computers, potential malware issue.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "Epson",
+      "malware",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Scan for Malware",
+        "content": "Use Malwarebytes to scan your computer for potential malware or PUP (Potentially Unwanted Program)."
+      },
+      {
+        "title": "Check Printer Heads",
+        "content": "Perform a head clean and nozzle check on the printer to ensure it's not a hardware issue."
+      },
+      {
+        "title": "Test on Another Device",
+        "content": "Try printing from a different computer or device to isolate the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Printer Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Current Drivers",
+            "content": "Go to Control Panel > Programs > Uninstall a Program and remove the current printer drivers."
+          },
+          {
+            "title": "Download Latest Drivers",
+            "content": "Visit the Epson website and download the latest drivers for your printer model."
+          },
+          {
+            "title": "Install New Drivers",
+            "content": "Install the downloaded drivers and restart your computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:14:20.397Z",
+      "updated": "2026-01-03T19:14:20.397Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/i-got-a-really-unusual-serious-issue.3879140/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767467664473-995",
+    "title": "Fix Brother Printer Offline on Windows 10",
+    "problemDescription": "Brother printer shows as offline on Windows 10.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "offline",
+      "windows 10",
+      "brother"
+    ],
+    "steps": [
+      {
+        "title": "Remove the Printer",
+        "content": "Go to Settings > Devices, then select your offline printer and click 'Remove device'."
+      },
+      {
+        "title": "Restart the Router",
+        "content": "Power down your router, wait for about 30 seconds, and then power it back on."
+      },
+      {
+        "title": "Reconnect the Printer",
+        "content": "After the router is back online, reconnect your Brother printer to the network and add it back to your devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Printer Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Printer Properties",
+            "content": "Right-click on the printer in Devices and Printers, then select 'Printer properties'."
+          },
+          {
+            "title": "Check Offline Setting",
+            "content": "Go to the 'Advanced' tab and make sure the 'Work Offline' option is not checked."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:14:24.473Z",
+      "updated": "2026-01-03T19:14:24.473Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/brother-printer-offline-problem.1213206/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767467670947-571",
+    "title": "Fix 3D Prints Looking Like Spaghetti",
+    "problemDescription": "3D prints coming out as tangled messes of strings due to excess filament oozing.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "3d printing",
+      "spaghetti prints",
+      "filament",
+      "adhesion"
+    ],
+    "steps": [
+      {
+        "title": "Use Adhesive for Bed Adhesion",
+        "content": "Apply glue, hairspray, or adhesive to the build plate to ensure the first layer of filament adheres properly."
+      },
+      {
+        "title": "Maintain Consistent Layer Height",
+        "content": "Ensure proper bed adhesion to maintain consistent layer heights, leading to better print quality."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Fix Filament Jam or Clog",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Excess Filament",
+            "content": "If the filament jam or clog occurs near the end of the printing process, remove the excess filament to salvage the print."
+          },
+          {
+            "title": "Identify and Fix the Cause",
+            "content": "Determine the root cause of the filament jam or clog to prevent future occurrences."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Adjust Temperature Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reduce Printing Temperature",
+            "content": "Lower the printing temperature to prevent excess filament from oozing out of the nozzle."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:14:30.947Z",
+      "updated": "2026-01-03T19:14:30.947Z",
+      "sourceUrl": "https://www.tomshardware.com/how-to/stop-spaghetti-3d-prints",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767467683674-844",
+    "title": "Fix Chrome Freezing",
+    "problemDescription": "Chrome browser consistently freezing or not responding.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "freezing",
+      "browser",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Reset Chrome Settings",
+        "content": "Go to Chrome settings, navigate to 'Reset and clean up', and click 'Restore settings to their original defaults'."
+      },
+      {
+        "title": "Reinstall Chrome",
+        "content": "Uninstall Chrome completely using a tool like Revo Uninstaller, reboot your system, and then reinstall Chrome."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Extensions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Extensions",
+            "content": "Go to Chrome settings, navigate to 'Extensions', and disable all extensions. Then, enable them one by one to identify the problematic one."
+          }
+        ]
+      },
+      {
+        "title": "Clear Cache and History",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache and History",
+            "content": "Go to Chrome settings, navigate to 'Privacy and security', and click 'Clear browsing data'. Select 'All time' for the time range and check 'Cookies and other site data' and 'Cached images and files'."
+          }
+        ]
+      },
+      {
+        "title": "Disable Hardware Acceleration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Hardware Acceleration",
+            "content": "Go to Chrome settings, navigate to 'System', and toggle off 'Use hardware acceleration when available'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:14:43.674Z",
+      "updated": "2026-01-03T19:14:43.674Z",
+      "sourceUrl": "https://www.reddit.com/r/chrome/comments/11k929s/chrome_consistently_freezingnot_responding_how_do/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767467687124-115",
+    "title": "Fix 'This site can't be reached' Error on Chrome",
+    "problemDescription": "Chrome displays 'This site can't be reached' error for most websites, with error code ERR_QUIC_PROTOCOL_ERROR.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "error",
+      "connection",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Reset Chrome Browser",
+        "content": "Go to Chrome settings, navigate to 'Reset and clean up', and click on 'Restore settings to their original defaults'. Confirm the action to reset Chrome."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Try a Different Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install and Test Another Browser",
+            "content": "Download and install a different browser like Firefox or Edge. Try accessing the websites that were giving the error in the new browser."
+          }
+        ]
+      },
+      {
+        "title": "Check Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Network Connection",
+            "content": "Ensure your internet connection is stable. Try disconnecting and reconnecting to the network."
+          },
+          {
+            "title": "Change DNS Settings",
+            "content": "Go to your network settings and change the DNS server to a public DNS like Google DNS (8.8.8.8 and 8.8.4.4) or Cloudflare DNS (1.1.1.1)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:14:47.124Z",
+      "updated": "2026-01-03T19:14:47.124Z",
+      "sourceUrl": "https://www.reddit.com/r/chrome/comments/1gmu68n/this_site_cant_be_reached_error_on_chrome/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767467711475-106",
+    "title": "Fix Chrome High RAM Usage",
+    "problemDescription": "Chrome browser is using excessive RAM for 720p video playback.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "ram",
+      "video",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Update Chrome",
+        "content": "Ensure you are using the latest version of Chrome. Go to chrome://settings/help to check for updates."
+      },
+      {
+        "title": "Disable Extensions",
+        "content": "Go to chrome://extensions and disable all extensions to see if any of them are causing high RAM usage."
+      },
+      {
+        "title": "Enable Hardware Acceleration",
+        "content": "Go to chrome://settings/system and enable 'Use hardware acceleration when available'."
+      },
+      {
+        "title": "Clear Cache and Cookies",
+        "content": "Go to chrome://settings/clearBrowserData and clear cached images and files, as well as cookies and other site data."
+      },
+      {
+        "title": "Reset Chrome Settings",
+        "content": "Go to chrome://settings/reset and click 'Restore settings to their original defaults'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Another Browser",
+            "content": "Download and install a different browser like Firefox or Edge."
+          },
+          {
+            "title": "Test Video Playback",
+            "content": "Play the same 720p video in the new browser to see if the issue persists."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Chrome's Task Manager",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Task Manager",
+            "content": "Press Shift + Esc to open Chrome's Task Manager."
+          },
+          {
+            "title": "Identify High RAM Usage",
+            "content": "Identify the tab or extension using the most RAM and end the task."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:15:11.475Z",
+      "updated": "2026-01-03T19:15:11.475Z",
+      "sourceUrl": "https://www.reddit.com/r/chrome/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767467722530-131",
+    "title": "Fix Outlook Not Opening on Windows",
+    "problemDescription": "Outlook fails to open on a Windows PC.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "windows",
+      "app-error",
+      "repair"
+    ],
+    "steps": [
+      {
+        "title": "Use the Office Repair Tool",
+        "content": "Open the Office repair tool, select 'Quick Repair', and click 'Repair'. Wait for the process to complete."
+      },
+      {
+        "title": "Perform an Online Repair",
+        "content": "If the issue persists, use the 'Online Repair' option in the repair tool. This requires an active internet connection and may take longer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Outlook Views",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Outlook with Clean Views",
+            "content": "Press Win + R, type 'outlook.exe /cleanviews', and press Enter. This command clears your view settings and should resolve the issue."
+          }
+        ]
+      },
+      {
+        "title": "Remove Suspicious Add-ins",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Add-ins",
+            "content": "Open Outlook in Safe Mode by typing 'outlook.exe /safe' in the Run box. Disable any suspicious add-ins and restart Outlook."
+          }
+        ]
+      },
+      {
+        "title": "Clear Outlook Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete Cache Files",
+            "content": "Close Outlook, navigate to the cache folder (usually located in %LocalAppData%\\Microsoft\\Outlook), and delete the cache files."
+          }
+        ]
+      },
+      {
+        "title": "Update Outlook",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Open the Microsoft Store, search for Outlook, and click 'Update' if an update is available."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:15:22.530Z",
+      "updated": "2026-01-03T19:15:22.530Z",
+      "sourceUrl": "https://www.howtogeek.com/fix-outlook-not-opening-on-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767467725915-620",
+    "title": "Fix Outlook Crashing While Opening or Creating an Email",
+    "problemDescription": "Outlook crashes when opening or creating an email.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Outlook",
+      "crashing",
+      "email",
+      "Microsoft 365"
+    ],
+    "steps": [
+      {
+        "title": "Repair Microsoft 365 Apps",
+        "content": "Open the Settings app, navigate to Apps > Installed apps. Click the three dots next to Microsoft 365 Apps and choose 'Modify.' Select the 'Online Repair' option and click 'Repair.' Once the repair process is complete, restart your device and check if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Outlook",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Open the Outlook client, click File > Office Account > Update Options > Update Now. Install any available updates and restart Outlook."
+          }
+        ]
+      },
+      {
+        "title": "Create a New FORMS2 Folder",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "End Outlook Tasks",
+            "content": "Open Task Manager, right-click Outlook and any other Office applications running in the background, and select 'End Task.'"
+          },
+          {
+            "title": "Create New Folder",
+            "content": "Create a new FORMS2 folder as suggested by Microsoft."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:15:25.915Z",
+      "updated": "2026-01-03T19:15:25.915Z",
+      "sourceUrl": "https://www.howtogeek.com/outlook-crashing-while-opening-or-creating-an-email-heres-a-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767467728941-164",
+    "title": "Fix Outlook Search Not Working",
+    "problemDescription": "Outlook search functionality is not working or returning incorrect results.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "search",
+      "not working",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Computer",
+        "content": "Restart your Windows PC to resolve minor system problems that might be causing the Outlook search issue."
+      },
+      {
+        "title": "Rebuild the Search Index",
+        "content": "Go to the 'Troubleshooting' section in Outlook, click 'Rebuild,' and then choose 'OK.' Wait while Windows rebuilds the search index."
+      },
+      {
+        "title": "Repair Outlook",
+        "content": "Use Microsoft Office’s built-in repair tool. In the 'User Account Control' prompt, choose 'Yes.' Select the 'Quick Repair' option and choose 'Repair.' If the issue persists, use the 'Online Repair' option for an in-depth diagnosis."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Outlook",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Ensure Outlook is updated to the latest version. Go to 'File' > 'Office Account' > 'Update Options' > 'Update Now.'"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:15:28.941Z",
+      "updated": "2026-01-03T19:15:28.941Z",
+      "sourceUrl": "https://www.howtogeek.com/outlook-search-isnt-working-heres-how-to-fix-it/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767467731213-376",
+    "title": "Fix Microsoft Outlook Not Syncing",
+    "problemDescription": "Microsoft Outlook is not syncing emails, causing delays or missing messages.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "sync",
+      "emails",
+      "not syncing"
+    ],
+    "steps": [
+      {
+        "title": "Check Sorting Order",
+        "content": "Open Outlook and access your email folder. At the top of your email list, click 'By Date' to ensure the most recent emails are displayed at the top."
+      },
+      {
+        "title": "Check Blocked Senders",
+        "content": "Go to the 'Blocked Senders' tab and ensure the person you want to receive emails from isn't on the list. If they are, select their email address and choose 'Remove.' Then, click 'Apply' followed by 'OK.'"
+      },
+      {
+        "title": "Clear Outlook App Cache",
+        "content": "Clear the cache files of the Outlook app to resolve sync issues."
+      },
+      {
+        "title": "Repair Outlook",
+        "content": "If the issue persists, open the repair window in Outlook, choose 'Online Repair,' and select 'Repair.'"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Invest in Antivirus",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Antivirus",
+            "content": "Invest in a good antivirus software to check if a virus caused the damage."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:15:31.213Z",
+      "updated": "2026-01-03T19:15:31.213Z",
+      "sourceUrl": "https://www.howtogeek.com/887298/how-to-fix-microsoft-outlook-not-syncing/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767467734616-597",
+    "title": "Restore EAS Support in Outlook",
+    "problemDescription": "Outlook for Windows lacks Exchange ActiveSync (EAS) support, causing email management issues.",
+    "category": "app-error",
+    "difficulty": "Hard",
+    "keywords": [
+      "Outlook",
+      "EAS",
+      "Exchange ActiveSync",
+      "email management"
+    ],
+    "steps": [
+      {
+        "title": "Contact Microsoft Support",
+        "content": "Reach out to Microsoft Support to request the reintroduction of EAS support in Outlook for Windows."
+      },
+      {
+        "title": "Explore Third-Party EAS Servers",
+        "content": "Investigate third-party EAS servers that may support Outlook and consider integrating them into your email management system."
+      },
+      {
+        "title": "Modify Email Management Practices",
+        "content": "Evaluate and potentially change how your organization manages emails to adapt to the current limitations of Outlook."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Open-Source Mail and Calendar Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Advocate for Open-Sourcing",
+            "content": "Encourage Microsoft to open-source the Mail and Calendar apps, allowing users to maintain and improve them."
+          },
+          {
+            "title": "Contribute to Open-Source Projects",
+            "content": "If the apps are open-sourced, consider contributing to the community efforts to enhance and maintain them."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:15:34.616Z",
+      "updated": "2026-01-03T19:15:34.616Z",
+      "sourceUrl": "https://www.howtogeek.com/new-outlook-for-windows-isnt-worth-using-improvements-it-needs/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767467745638-166",
+    "title": "Fix Alexa Not Responding",
+    "problemDescription": "Alexa is not responding to voice commands or the device is not lit up.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Alexa",
+      "not responding",
+      "voice commands",
+      "Echo"
+    ],
+    "steps": [
+      {
+        "title": "Check Wake Word and Wi-Fi",
+        "content": "Ensure the correct wake word is selected in the Alexa app and all Echo devices are connected to the same Wi-Fi network."
+      },
+      {
+        "title": "Restart the Device",
+        "content": "Unplug the power, wait 30 seconds, then plug it back in."
+      },
+      {
+        "title": "Check Microphone",
+        "content": "Make sure the microphone is turned on."
+      },
+      {
+        "title": "Adjust Command Clarity",
+        "content": "If the device lights up but doesn't respond, try repeating or changing your commands."
+      },
+      {
+        "title": "Update Alexa App",
+        "content": "Update to the latest version of the Alexa app and ensure music services are set up correctly."
+      },
+      {
+        "title": "Verify Contact Information",
+        "content": "Check the voice history in the Alexa app to see if the command was heard correctly and verify contact information."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "If all else fails, perform a factory reset on your Alexa device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Device Proximity",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Move Closer",
+            "content": "Ensure you are within range of the Alexa device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:15:45.639Z",
+      "updated": "2026-01-03T19:15:45.639Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=0mG0jSS9bJA",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767467748808-491",
+    "title": "Fix Alexa Echo Red Ring Problems",
+    "problemDescription": "Your Alexa Echo device has a persistent red ring, indicating a potential issue with the device or its connection.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "Alexa",
+      "Echo",
+      "red ring",
+      "Wi-Fi",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Power Cycle the Echo Device",
+        "content": "Unplug the Echo device from the power outlet. Wait for 30 seconds to 1 minute to clear the memory. Plug the device back in and wait for it to boot up to see if the problem is resolved."
+      },
+      {
+        "title": "Check Wi-Fi Connection",
+        "content": "Open the Alexa app, go to 'Devices' at the bottom, then click 'Echo and Alexa' at the top. Select the problematic Echo device and click 'Wi-Fi' under 'Status' or go to 'Settings' and click 'Wi-Fi Network'. Ensure the device is connected to the correct Wi-Fi network."
+      },
+      {
+        "title": "Reboot the Echo Device",
+        "content": "If the red light ring remains, press and hold the action button on your Echo device for 5 to 15 seconds (depending on the generation) until the orange light spins. This will reboot the device and may resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Microphone Button",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect the Microphone Button",
+            "content": "If the red ring persists, there may be damage to or an issue with the microphone button. This might require a repair or replacement of the device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:15:48.808Z",
+      "updated": "2026-01-03T19:15:48.808Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=tNsYnS_Lr4Y",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767467751453-258",
+    "title": "Fix Alexa Not Responding",
+    "problemDescription": "Alexa is not responding to voice commands or has connectivity issues.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Alexa",
+      "not responding",
+      "connectivity"
+    ],
+    "steps": [
+      {
+        "title": "Check Power and Internet Connection",
+        "content": "Ensure your Alexa device is properly plugged in and the power light is on. Verify that your Wi-Fi network is working and the Alexa app is connected to the internet."
+      },
+      {
+        "title": "Restart the Alexa Device",
+        "content": "Unplug the Alexa device from the power source, wait for about 30 seconds, and then plug it back in. Wait for the device to fully reboot."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Open the Alexa app, go to the 'Settings' menu, and select your device. Check for any available software updates and install them."
+      },
+      {
+        "title": "Reset the Device",
+        "content": "If the issue persists, perform a factory reset by holding down the action button on the top of the device for about 25 seconds until the light ring turns orange, then release the button."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reconnect to Wi-Fi",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reconnect to Wi-Fi",
+            "content": "Open the Alexa app, go to the 'Settings' menu, select your device, and choose 'Change Wi-Fi Network'. Follow the prompts to reconnect to your Wi-Fi network."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:15:51.453Z",
+      "updated": "2026-01-03T19:15:51.453Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=Q78Cdt_jFok",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767467766184-704",
+    "title": "Reset Amazon Echo Device",
+    "problemDescription": "Your Amazon Echo device is not responding or experiencing issues.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Amazon Echo",
+      "Alexa",
+      "reset",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Unplug the Device",
+        "content": "Unplug the power adapter from the back of your Amazon Echo device."
+      },
+      {
+        "title": "Wait for 30 Seconds",
+        "content": "Wait for at least 30 seconds to ensure the device is completely powered off."
+      },
+      {
+        "title": "Plug the Device Back In",
+        "content": "Reconnect the power adapter to the device."
+      },
+      {
+        "title": "Wait for the Light Ring to Turn Orange",
+        "content": "Wait for the light ring on the top of the device to turn orange, indicating it is in setup mode."
+      },
+      {
+        "title": "Set Up the Device Again",
+        "content": "Follow the setup instructions in the Alexa app to reconnect and set up your device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset via Alexa App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open the Alexa App",
+            "content": "Open the Alexa app on your smartphone."
+          },
+          {
+            "title": "Go to Settings",
+            "content": "Go to the 'Settings' section."
+          },
+          {
+            "title": "Select Your Device",
+            "content": "Select the Amazon Echo device you want to reset."
+          },
+          {
+            "title": "Choose 'Reset'",
+            "content": "Choose the 'Reset' option and follow the on-screen instructions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T19:16:06.184Z",
+      "updated": "2026-01-03T19:16:06.184Z",
+      "sourceUrl": "https://www.youtube.com/shorts/h_R3sjXDlkM",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
