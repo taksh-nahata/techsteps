@@ -5301,5 +5301,948 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767478536291-168",
+    "title": "Fix Borked SSD Drive",
+    "problemDescription": "Files on SSD drive are listed but inaccessible, likely due to a corrupted drive.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "ssd",
+      "corrupted",
+      "files",
+      "inaccessible"
+    ],
+    "steps": [
+      {
+        "title": "Use Command Prompt to Check Disk",
+        "content": "Open Command Prompt as an administrator and type 'chkdsk /f /r X:' (replace X with the drive letter of your SSD). This will scan the drive for errors and attempt to fix them."
+      },
+      {
+        "title": "Run System File Checker",
+        "content": "In Command Prompt, type 'sfc /scannow' to scan and repair any corrupted system files."
+      },
+      {
+        "title": "Use DiskPart to Clean and Reformat",
+        "content": "Open Command Prompt as an administrator and type 'diskpart'. Then, type 'list disk', 'select disk X' (replace X with your SSD's number), 'clean', 'create partition primary', 'format fs=ntfs', and 'assign'. This will wipe and reformat the SSD."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Third-Party Disk Repair Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install a Reliable Disk Repair Tool",
+            "content": "Download a reputable disk repair tool like EaseUS Partition Master or MiniTool Partition Wizard."
+          },
+          {
+            "title": "Scan and Repair the SSD",
+            "content": "Use the tool to scan the SSD for errors and follow the on-screen instructions to repair them."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T22:15:36.291Z",
+      "updated": "2026-01-03T22:15:36.291Z",
+      "sourceUrl": "https://lifehacker.com/tech/i-used-chatgpt-to-fix-pc",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767478538414-406",
+    "title": "Remotely Assist Family with Tech Issues",
+    "problemDescription": "Guide family members through technical problems using remote methods.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "remote",
+      "tech support",
+      "family",
+      "video call"
+    ],
+    "steps": [
+      {
+        "title": "Use a Video Call",
+        "content": "Initiate a video call to visually guide your family member through the steps needed to resolve their tech issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Remote Access Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Remote Access Software",
+            "content": "Utilize remote access tools like TeamViewer or AnyDesk to directly control their device and fix the issue yourself."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T22:15:38.414Z",
+      "updated": "2026-01-03T22:15:38.414Z",
+      "sourceUrl": "https://lifehacker.com/how-to-remotely-help-your-family-members-with-their-n-1848133025",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767478541764-379",
+    "title": "Fix Gadget Issues with iFixit's AI Assistant",
+    "problemDescription": "Using an AI assistant to troubleshoot and fix gadget problems accurately and efficiently.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "AI",
+      "troubleshooting",
+      "gadgets",
+      "ifixit",
+      "repairs"
+    ],
+    "steps": [
+      {
+        "title": "Access iFixit's AI Assistant",
+        "content": "Visit the iFixit website or use their app to access the AI assistant."
+      },
+      {
+        "title": "Describe the Problem",
+        "content": "Provide a detailed description of the issue you are experiencing with your gadget."
+      },
+      {
+        "title": "Follow the AI's Guidance",
+        "content": "The AI will guide you through the steps to diagnose and fix the problem."
+      },
+      {
+        "title": "Verify the Solution",
+        "content": "After following the steps, verify that the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Google Search",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Search for the Issue",
+            "content": "Enter the problem and your gadget model into a search engine."
+          },
+          {
+            "title": "Review Results",
+            "content": "Look for reliable sources and forums that discuss the issue."
+          },
+          {
+            "title": "Follow Community Advice",
+            "content": "Implement the suggested solutions from the community."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T22:15:41.764Z",
+      "updated": "2026-01-03T22:15:41.764Z",
+      "sourceUrl": "https://lifehacker.com/tech/ifixit-fixbot-assistant-repairs",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767478549507-221",
+    "title": "Fix Gmail Not Loading in Chrome",
+    "problemDescription": "Gmail fails to load or launch in the Chrome browser.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "chrome",
+      "browser",
+      "loading"
+    ],
+    "steps": [
+      {
+        "title": "Clear Chrome's Cache",
+        "content": "Click the wrench icon in the top right of the browser window, choose 'Options', then 'Under the Hood'. Click 'Clear browsing data', select the items you want to delete, and choose 'Clear browsing data' again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Incognito Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Incognito Window",
+            "content": "Press Ctrl-Shift-N to open an incognito window and sign into your Gmail inbox."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update Chrome",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Click the wrench icon and choose 'About Google Chrome' to open a window listing the version number and indicating whether an update is available."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T22:15:49.507Z",
+      "updated": "2026-01-03T22:15:49.507Z",
+      "sourceUrl": "https://www.cnet.com/culture/fix-gmails-failure-to-launch-in-chrome-and-other-browsers/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767478551169-406",
+    "title": "Fix Slow Chrome Browser",
+    "problemDescription": "Chrome browser is running slower than usual.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "slow",
+      "browser",
+      "speed"
+    ],
+    "steps": [
+      {
+        "title": "Access Chrome Settings",
+        "content": "Click the Menu button (top-right corner of the browser, below the Close button), then click Settings."
+      },
+      {
+        "title": "Show Advanced Settings",
+        "content": "Scroll down and click 'Show advanced settings,' then scroll down further until you find the System section."
+      },
+      {
+        "title": "Disable Hardware Acceleration",
+        "content": "Clear the check box next to 'Use hardware acceleration when available.'"
+      },
+      {
+        "title": "Restart Chrome",
+        "content": "Shut down Chrome and restart it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Switch to Firefox",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Firefox",
+            "content": "Download and install Firefox from the official website."
+          },
+          {
+            "title": "Use Firefox",
+            "content": "Use Firefox as your primary browser to see if the performance improves."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T22:15:51.169Z",
+      "updated": "2026-01-03T22:15:51.169Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/a-quick-fix-for-your-slow-chrome-browser/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767478553934-64",
+    "title": "Fix Chrome Crashing on MacBooks with Intel HD 4000 Graphics",
+    "problemDescription": "Chrome browser crashes on MacBooks with Intel HD 4000 graphics, causing system instability.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "crash",
+      "macbook",
+      "graphics",
+      "intel"
+    ],
+    "steps": [
+      {
+        "title": "Install Latest Development or Canary Release",
+        "content": "Download and install the latest development or Canary release of Chrome from the official website. These versions include workarounds to prevent crashes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Another Web Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to a Different Browser",
+            "content": "Use an alternative web browser like Safari, Firefox, or Edge until the official Chrome update is released."
+          }
+        ]
+      },
+      {
+        "title": "Wait for Official Chrome Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Regularly check for official Chrome updates that may include a fix for the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T22:15:53.934Z",
+      "updated": "2026-01-03T22:15:53.934Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/google-yes-chrome-is-crashing-macbooks/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767478558430-424",
+    "title": "Fix Chrome Crashing Due to Microsoft Family Safety",
+    "problemDescription": "Chrome constantly closes when Microsoft Family Safety is enabled on Windows.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "crashing",
+      "family safety",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Disable Microsoft Family Safety Temporarily",
+        "content": "Go to the Microsoft Family Safety settings and temporarily disable the feature to see if Chrome works normally."
+      },
+      {
+        "title": "Update Chrome",
+        "content": "Ensure Chrome is updated to the latest version by going to Chrome's settings and checking for updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Rename Chrome Executable",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Rename Chrome.exe",
+            "content": "Locate the Chrome executable (usually in C:\\Program Files\\Google\\Chrome\\Application), right-click on it, and rename it to something like 'Chrome1.exe'."
+          },
+          {
+            "title": "Launch the Renamed Executable",
+            "content": "Double-click the renamed executable to launch Chrome."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T22:15:58.430Z",
+      "updated": "2026-01-03T22:15:58.430Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/microsofts-family-safety-feature-is-blocking-chrome-heres-the-workaround/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767478566516-164",
+    "title": "Fix Nexus 7 Screen Flicker",
+    "problemDescription": "The Nexus 7 screen flickers during use.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "nexus 7",
+      "screen flicker",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Disable Wi-Fi Optimization",
+        "content": "Open the Settings screen, tap Wi-Fi, tap the menu button, tap Advanced, and uncheck Wi-Fi optimization."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable NVIDIA PRISM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Root Your Device",
+            "content": "Ensure your Nexus 7 is rooted to proceed with this method."
+          },
+          {
+            "title": "Run a Command or Script",
+            "content": "Follow the instructions on XDA Developers to manually run a command or script to disable NVIDIA PRISM."
+          },
+          {
+            "title": "Use a Paid App",
+            "content": "Alternatively, use the NVidia Tegra PRISM Toggle app available on Google Play."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Adjust Display Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Increase Brightness",
+            "content": "Set your display brightness higher and disable auto-brightness."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T22:16:06.516Z",
+      "updated": "2026-01-03T22:16:06.516Z",
+      "sourceUrl": "https://www.howtogeek.com/131109/the-ultimate-nexus-7-troubleshooting-guide-6-potential-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767478569863-846",
+    "title": "Fix LCD Monitor Flickering or Stuttering",
+    "problemDescription": "LCD monitor screen is flashing or stuttering frequently.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "lcd",
+      "monitor",
+      "flickering",
+      "stuttering",
+      "screen"
+    ],
+    "steps": [
+      {
+        "title": "Check Video Cable",
+        "content": "Ensure the video cable is securely connected at both the monitor and computer ends. Tighten any retention screws if present."
+      },
+      {
+        "title": "Replace Video Cable",
+        "content": "If the issue persists, try replacing the video cable with a new one."
+      },
+      {
+        "title": "Check Power Cable",
+        "content": "Verify that the power cable is securely connected at both ends. Replace the power cable if necessary."
+      },
+      {
+        "title": "Test on Another Computer",
+        "content": "Connect the monitor to another computer or laptop to see if the problem persists. If it does, the issue is likely with the monitor itself."
+      },
+      {
+        "title": "Check Power Source",
+        "content": "Move the power adapter to another plug to test if the issue is due to power deficiency or overloading of the surge protector."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Install New Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Drivers",
+            "content": "Install the latest drivers for your monitor from the manufacturer's website."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Professional Repair or Replacement",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Consult a Professional",
+            "content": "If the issue persists, consult a professional for repair or consider replacing the monitor if the LCD panel is defective."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T22:16:09.863Z",
+      "updated": "2026-01-03T22:16:09.863Z",
+      "sourceUrl": "https://www.howtogeek.com/312115/how-to-fix-the-most-common-problems-with-lcd-monitors/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767478572807-354",
+    "title": "Fix Monitor Flickering in Games",
+    "problemDescription": "Monitor flickers during gameplay due to VRR (Variable Refresh Rate) issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "monitor",
+      "flicker",
+      "VRR",
+      "games",
+      "graphics"
+    ],
+    "steps": [
+      {
+        "title": "Disable AMD FreeSync",
+        "content": "Open AMD Software and navigate to the Gaming tab. Locate the 'AMD FreeSync' option, change it from 'AMD Optimized' or 'On' to 'Off', and exit AMD Software."
+      },
+      {
+        "title": "Cap the Maximum Frame Rate",
+        "content": "In the game settings, cap the maximum frame rate to a value your GPU can consistently maintain. For example, set it to 60fps if you are using ray-tracing effects."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Variable Refresh Rate (VRR)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable VRR in Monitor Settings",
+            "content": "Go to your monitor's settings and disable the VRR feature. This will stop the flickering but may introduce screen tearing or require V-Sync."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T22:16:12.807Z",
+      "updated": "2026-01-03T22:16:12.807Z",
+      "sourceUrl": "https://www.howtogeek.com/does-your-monitor-flicker-in-games-it-could-be-vrr/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767478576052-931",
+    "title": "Fix TV Flickering",
+    "problemDescription": "Your TV is flickering, causing visual discomfort.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "tv",
+      "flickering",
+      "brightness",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Turn Off Auto Brightness Settings",
+        "content": "Disable settings like 'Eco Mode,' 'Auto Brightness,' 'Ambient Light Detection,' or 'Energy Saver' in your TV’s settings. Use manual brightness controls for a more consistent image."
+      },
+      {
+        "title": "Check Lighting Conditions",
+        "content": "Turn off the lights and check if the TV still flickers. If the flickering stops, consider changing the lighting or checking the circuit."
+      },
+      {
+        "title": "Adjust Backlight Settings",
+        "content": "Turn off features like 'Black Frame Insertion' or 'Dynamic Contrast.' If your TV allows, set the PWM frequency of the backlight higher to reduce perceptible flicker."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Replace or Adjust Lighting",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Replace or Adjust Lighting",
+            "content": "If the flickering is caused by external lights, replace them with flicker-free bulbs or adjust their positioning."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T22:16:16.052Z",
+      "updated": "2026-01-03T22:16:16.052Z",
+      "sourceUrl": "https://www.howtogeek.com/reasons-your-tv-looks-like-its-flickering-and-how-to-fix-it/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767478583937-144",
+    "title": "Fix Zoom Camera Issues",
+    "problemDescription": "Zoom camera not working or not being detected.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "camera",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Select the Correct Camera",
+        "content": "In the Zoom settings, go to the 'Camera' section, click the arrow, and choose your camera from the menu."
+      },
+      {
+        "title": "Close Other Programs Using the Camera",
+        "content": "Ensure no other programs are using the camera. If they are, close those programs."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Internet Speed",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run a Speed Test",
+            "content": "Go to Speedtest.net and click 'Go' to test your internet speed."
+          },
+          {
+            "title": "Compare with Zoom Requirements",
+            "content": "Check if your network speed meets Zoom's requirements. If not, consider improving your internet connection."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Zoom Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Request a Troubleshooting Package",
+            "content": "Contact Zoom support and request a troubleshooting package to store log files."
+          },
+          {
+            "title": "Send Log Files to Support",
+            "content": "Install the package, zip the log files, and send them to Zoom support for further analysis."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T22:16:23.937Z",
+      "updated": "2026-01-03T22:16:23.938Z",
+      "sourceUrl": "https://www.howtogeek.com/676235/how-to-troubleshoot-your-zoom-call/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767478587115-590",
+    "title": "Fix Zoom Webcam Not Working",
+    "problemDescription": "Your webcam feed is not visible during a Zoom meeting.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "webcam",
+      "camera",
+      "meeting"
+    ],
+    "steps": [
+      {
+        "title": "Check Webcam Permissions in Browser",
+        "content": "Ensure you've allowed the Zoom site to use your webcam. You should get a prompt to grant this permission when your meeting launches."
+      },
+      {
+        "title": "Select Correct Webcam in Zoom App",
+        "content": "In the Zoom desktop app, go to the settings menu and ensure the correct webcam is selected."
+      },
+      {
+        "title": "Check Device Test Results",
+        "content": "On the Zoom app screen, look for the 'Device Test Results' menu to see if your webcam is working. A green mark indicates it is working."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Fix Zoom Microphone Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Select Correct Microphone",
+            "content": "If your mic isn't working, click the 'Mute' button on the meeting screen and select the appropriate mic device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T22:16:27.115Z",
+      "updated": "2026-01-03T22:16:27.115Z",
+      "sourceUrl": "https://www.howtogeek.com/785072/how-to-join-a-test-zoom-meeting/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767478589266-973",
+    "title": "Prevent Zoom from Unauthorized Camera Access",
+    "problemDescription": "Zoom can start filming you without consent when clicking a link on a webpage.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "camera",
+      "privacy",
+      "security"
+    ],
+    "steps": [
+      {
+        "title": "Disable Video on Join",
+        "content": "Open Zoom settings, go to the 'Video' tab, and toggle on 'Turn my video off when joining meeting'."
+      },
+      {
+        "title": "Uninstall Zoom if Not Frequently Used",
+        "content": "If you don't use Zoom often, consider uninstalling it to prevent any potential unauthorized access."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Uninstall Zoom Web Server on macOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Web Server",
+            "content": "On macOS, check for and uninstall the Zoom web server to ensure complete removal of potential vulnerabilities."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T22:16:29.266Z",
+      "updated": "2026-01-03T22:16:29.266Z",
+      "sourceUrl": "https://www.howtogeek.com/427975/zoom-lets-websites-start-filming-you-without-your-consent-even-on-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767478599396-188",
+    "title": "Fix Windows 10 Bootloop After Driver Verifier",
+    "problemDescription": "Windows 10 is stuck in a bootloop after using Driver Verifier, and safe mode is inaccessible.",
+    "category": "windows",
+    "difficulty": "Hard",
+    "keywords": [
+      "windows 10",
+      "bootloop",
+      "driver verifier",
+      "safe mode"
+    ],
+    "steps": [
+      {
+        "title": "Use Windows Recovery Environment (WinRE)",
+        "content": "1. Boot your computer and repeatedly press the power button to interrupt the boot process three times. This should trigger the Windows Recovery Environment (WinRE)."
+      },
+      {
+        "title": "Access Advanced Startup Options",
+        "content": "2. In WinRE, go to 'Troubleshoot' > 'Advanced options' > 'Command Prompt'."
+      },
+      {
+        "title": "Disable Driver Verifier",
+        "content": "3. In the Command Prompt, type `bcdedit /set {default} bootmenupolicy legacy` and press Enter. Then type `exit` and restart your computer."
+      },
+      {
+        "title": "Boot into Safe Mode",
+        "content": "4. During startup, press F8 (or Shift+F8) to access the Advanced Boot Options menu and select 'Safe Mode'."
+      },
+      {
+        "title": "Disable Driver Verifier in Safe Mode",
+        "content": "5. Once in Safe Mode, open Command Prompt as an administrator and type `verifier /reset` to disable Driver Verifier."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "6. Restart your computer normally to exit Safe Mode."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use System Restore",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access System Restore",
+            "content": "1. Boot into WinRE and go to 'Troubleshoot' > 'Advanced options' > 'System Restore'."
+          },
+          {
+            "title": "Select a Restore Point",
+            "content": "2. Choose a restore point from before you ran Driver Verifier and follow the on-screen instructions to restore your system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T22:16:39.396Z",
+      "updated": "2026-01-03T22:16:39.396Z",
+      "sourceUrl": "http://answers.microsoft.com/en-us/windows/forum/windows_10-windows_install/the-windows%E2%80%9310-upgrade-appears-to-hang/a3359013%E2%80%9380a7%E2%80%934a25-a75d%E2%80%931c828e576c40?tm=1438143969182",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767478603971-674",
+    "title": "Translation Troubleshooting",
+    "problemDescription": "Need to find the correct translation for 'solution' in different languages.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "translation",
+      "solution",
+      "multilingual"
+    ],
+    "steps": [
+      {
+        "title": "Access the Translation Resource",
+        "content": "Visit The Free Dictionary's translation page at https://www.thefreedictionary.com/solution."
+      },
+      {
+        "title": "Search for the Term",
+        "content": "Enter the term 'solution' in the search bar."
+      },
+      {
+        "title": "Browse Translations",
+        "content": "Scroll through the list of translations provided for 'solution' in various languages."
+      },
+      {
+        "title": "Select the Desired Language",
+        "content": "Click on the translation in the language you need."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Translation App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download a Translation App",
+            "content": "Install a reliable translation app like Google Translate or Microsoft Translator."
+          },
+          {
+            "title": "Enter the Term",
+            "content": "Type 'solution' into the app."
+          },
+          {
+            "title": "Select the Target Language",
+            "content": "Choose the language you want the translation for."
+          },
+          {
+            "title": "View the Translation",
+            "content": "The app will display the translation of 'solution' in the selected language."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T22:16:43.971Z",
+      "updated": "2026-01-03T22:16:43.971Z",
+      "sourceUrl": "https://www.thefreedictionary.com/solution",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767478606706-739",
+    "title": "Understanding the Definition of Solution",
+    "problemDescription": "Need a clear understanding of what a solution means in problem-solving contexts.",
+    "category": "general",
+    "difficulty": "Easy",
+    "keywords": [
+      "solution",
+      "definition",
+      "problem-solving"
+    ],
+    "steps": [
+      {
+        "title": "Definition of Solution",
+        "content": "A solution is the act, method, or process of solving a problem. It involves finding a way to address and resolve an issue effectively."
+      },
+      {
+        "title": "Examples of Solution",
+        "content": "Examples include: 'I have a solution that might work.' and 'Is there possibly a solution to it?'"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Understanding the Context",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contextual Usage",
+            "content": "Understand that solutions can be applied to various contexts, such as technology, poverty, and disease."
+          },
+          {
+            "title": "Long-term vs. Short-term",
+            "content": "Recognize that solutions can be long-term or short-term, depending on the nature of the problem."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T22:16:46.706Z",
+      "updated": "2026-01-03T22:16:46.706Z",
+      "sourceUrl": "https://www.yourdictionary.com/solution",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767478611027-313",
+    "title": "Access Merriam-Webster Games & Quizzes",
+    "problemDescription": "How to access and play games and quizzes on Merriam-Webster.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "games",
+      "quizzes",
+      "Merriam-Webster"
+    ],
+    "steps": [
+      {
+        "title": "Visit the Merriam-Webster Website",
+        "content": "Go to the Merriam-Webster website at https://www.merriam-webster.com."
+      },
+      {
+        "title": "Navigate to Games & Quizzes",
+        "content": "Scroll down to the 'Games & Quizzes' section on the homepage."
+      },
+      {
+        "title": "Select a Game or Quiz",
+        "content": "Click on the game or quiz you want to play, such as Quordle, Blossom, The Missing Letter, or Dutch, Yiddish, Japanese, or Hindi? Quiz."
+      },
+      {
+        "title": "Follow the Instructions",
+        "content": "Follow the on-screen instructions to start playing the selected game or quiz."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Search for Games & Quizzes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use the Search Bar",
+            "content": "Type 'games' or 'quizzes' into the search bar on the Merriam-Webster website."
+          },
+          {
+            "title": "Select the Relevant Link",
+            "content": "Click on the link that directs you to the Games & Quizzes section."
+          },
+          {
+            "title": "Choose a Game or Quiz",
+            "content": "Select the game or quiz you want to play from the list provided."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T22:16:51.027Z",
+      "updated": "2026-01-03T22:16:51.027Z",
+      "sourceUrl": "https://www.merriam-webster.com/dictionary/solutions",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
