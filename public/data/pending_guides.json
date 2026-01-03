@@ -1797,5 +1797,237 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767464539750-323",
+    "title": "Fix Printer Issues on Windows",
+    "problemDescription": "Printer not working on a Windows computer.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "windows",
+      "restart"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Computer",
+        "content": "Restart your computer (do not shut it down completely). This can resolve many temporary issues that might be causing the printer to malfunction."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-03T18:22:19.750Z",
+      "updated": "2026-01-03T18:22:19.750Z",
+      "sourceUrl": "https://www.tiktok.com/@cccomputers.ie/video/7310530542775078176",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767464541308-669",
+    "title": "Restart Printer to Fix Common Issues",
+    "problemDescription": "Printer not responding or experiencing common issues.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "restart",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Power Cycle the Printer",
+        "content": "Unplug the printer from the power source. Wait for about 30 seconds, then plug it back in and turn it on."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-03T18:22:21.308Z",
+      "updated": "2026-01-03T18:22:21.308Z",
+      "sourceUrl": "https://www.tiktok.com/@zettegalicia/video/6882331205535157505",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767464545592-190",
+    "title": "Fix Common Printer Issues",
+    "problemDescription": "Troubleshooting and resolving common printer problems effectively.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "troubleshooting",
+      "errors"
+    ],
+    "steps": [
+      {
+        "title": "Check Printer Connections",
+        "content": "Ensure the printer is properly connected to the computer or network. Verify all cables are secure and the printer is turned on."
+      },
+      {
+        "title": "Restart the Printer",
+        "content": "Turn off the printer, wait for a few seconds, and then turn it back on. This can resolve many temporary issues."
+      },
+      {
+        "title": "Check Ink or Toner Levels",
+        "content": "Open the printer settings on your computer and check the ink or toner levels. Replace any empty or low cartridges."
+      },
+      {
+        "title": "Clear Print Queue",
+        "content": "Go to the print queue on your computer, cancel any pending print jobs, and restart the printer."
+      },
+      {
+        "title": "Update Printer Drivers",
+        "content": "Visit the manufacturer's website, download the latest drivers for your printer model, and install them on your computer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Run Printer Troubleshooter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to the Windows Settings on your computer."
+          },
+          {
+            "title": "Navigate to Update & Security",
+            "content": "Click on 'Update & Security' and then select 'Troubleshoot'."
+          },
+          {
+            "title": "Run Printer Troubleshooter",
+            "content": "Select 'Printer' and run the troubleshooter to identify and fix any issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T18:22:25.592Z",
+      "updated": "2026-01-03T18:22:25.592Z",
+      "sourceUrl": "https://www.tiktok.com/@theodandy/video/7549692955649527047",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767464550442-174",
+    "title": "Fix Printer Paper Jams",
+    "problemDescription": "Printer is experiencing frequent paper jams.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "paper jam",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Remove Jammed Paper",
+        "content": "Turn off the printer and carefully remove any jammed paper from the paper tray and print path."
+      },
+      {
+        "title": "Check Rollers and Levers",
+        "content": "Inspect the rollers and levers inside the printer for any misalignment or debris. Adjust them if necessary."
+      },
+      {
+        "title": "Clean the Printer",
+        "content": "Use a soft, lint-free cloth to clean the rollers and other internal components. Ensure there is no dust or debris."
+      },
+      {
+        "title": "Realign the Printer",
+        "content": "Run the printer's built-in alignment tool to ensure proper paper feeding."
+      },
+      {
+        "title": "Test the Printer",
+        "content": "Load a fresh stack of paper and print a test page to verify the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Paper Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Paper Size and Type",
+            "content": "Ensure the paper size and type settings in the printer's software match the paper you are using."
+          },
+          {
+            "title": "Adjust Paper Guides",
+            "content": "Make sure the paper guides in the tray are snug against the paper stack to prevent misfeeding."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T18:22:30.442Z",
+      "updated": "2026-01-03T18:22:30.442Z",
+      "sourceUrl": "https://www.tiktok.com/@bchtechnologies/video/7487602178513833258",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767464554264-587",
+    "title": "Fix Printer Not Pulling Paper",
+    "problemDescription": "Printer fails to pull paper from the tray properly.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "paper",
+      "pulling"
+    ],
+    "steps": [
+      {
+        "title": "Check Paper Alignment",
+        "content": "Ensure the paper is properly aligned in the tray and not skewed."
+      },
+      {
+        "title": "Adjust Paper Guides",
+        "content": "Make sure the paper guides are snug against the paper stack to prevent misfeeding."
+      },
+      {
+        "title": "Clean the Paper Feed Rollers",
+        "content": "Use a lint-free cloth to clean the rubber rollers that pull the paper through the printer."
+      },
+      {
+        "title": "Check for Paper Jams",
+        "content": "Open the printer and remove any jammed paper that might be causing the issue."
+      },
+      {
+        "title": "Replace the Paper Tray",
+        "content": "If the tray is damaged or not functioning properly, consider replacing it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Printer Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Paper Size Settings",
+            "content": "Ensure the printer settings match the paper size you are using."
+          },
+          {
+            "title": "Update Printer Drivers",
+            "content": "Download and install the latest drivers for your printer model."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T18:22:34.264Z",
+      "updated": "2026-01-03T18:22:34.264Z",
+      "sourceUrl": "https://www.tiktok.com/discover/how-to-fix-printer-not-pulling-paper-properly",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
