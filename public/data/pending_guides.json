@@ -3225,5 +3225,1043 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767471456634-629",
+    "title": "Fix Netflix Connection on TV",
+    "problemDescription": "Netflix app fails to connect or stream on your TV.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "netflix",
+      "tv",
+      "connection",
+      "app"
+    ],
+    "steps": [
+      {
+        "title": "Restart Device",
+        "content": "Restart your media streaming device or smart TV."
+      },
+      {
+        "title": "Restart Network",
+        "content": "Restart your home network via the router."
+      },
+      {
+        "title": "Update Device and App",
+        "content": "Check for and install any pending updates for your device and the Netflix app."
+      },
+      {
+        "title": "Reinstall Netflix App",
+        "content": "Uninstall the Netflix app, wait a minute, and then reinstall it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset",
+        "type": "Last Resort",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup any important data or settings."
+          },
+          {
+            "title": "Factory Reset",
+            "content": "Perform a factory reset on your media streaming device or smart TV."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:17:36.634Z",
+      "updated": "2026-01-03T20:17:36.634Z",
+      "sourceUrl": "https://lifehacker.com/what-to-do-if-netflix-wont-connect-on-your-tv-1843677939",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767471459174-443",
+    "title": "Fix Netflix Error tvq-pb-101 (E104) or tvq-pb-101 (1.10.5005)",
+    "problemDescription": "Error code tvq-pb-101 (E104) or tvq-pb-101 (1.10.5005) appears when your device doesn't support Netflix playback.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "netflix",
+      "error",
+      "device",
+      "playback"
+    ],
+    "steps": [
+      {
+        "title": "Contact Manufacturer",
+        "content": "Get in touch with the manufacturer of your device for advice on compatibility."
+      },
+      {
+        "title": "Switch Devices",
+        "content": "Use a different device that supports Netflix playback."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Netflix App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Netflix",
+            "content": "Remove the Netflix app from your device."
+          },
+          {
+            "title": "Reinstall Netflix",
+            "content": "Download and install the Netflix app again from the app store."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:17:39.174Z",
+      "updated": "2026-01-03T20:17:39.174Z",
+      "sourceUrl": "https://lifehacker.com/tech/the-most-common-netflix-error-codes-and-how-to-fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767471461632-355",
+    "title": "Fix TV Remote Not Working",
+    "problemDescription": "TV remote is not responding or controlling the TV.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "tv",
+      "remote",
+      "signal",
+      "batteries"
+    ],
+    "steps": [
+      {
+        "title": "Check for Obstructions",
+        "content": "Ensure there are no objects blocking the IR sensor on the TV, such as a soundbar or other devices."
+      },
+      {
+        "title": "Check Batteries",
+        "content": "Replace the batteries in the remote to ensure they are not depleted."
+      },
+      {
+        "title": "Angle the Remote",
+        "content": "Angle the remote to bypass any obstructions and aim it directly at the IR sensor."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset the Remote",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Batteries",
+            "content": "Take out the batteries from the remote."
+          },
+          {
+            "title": "Press Buttons",
+            "content": "Press and hold the power button for about 30 seconds."
+          },
+          {
+            "title": "Reinsert Batteries",
+            "content": "Put the batteries back in and test the remote again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:17:41.632Z",
+      "updated": "2026-01-03T20:17:41.632Z",
+      "sourceUrl": "https://lifehacker.com/19-exceedingly-simple-solutions-to-your-dads-latest-tec-1847945718",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767471465249-384",
+    "title": "Disable Hotel Mode on TV",
+    "problemDescription": "Your hotel room TV is in hotel mode, preventing you from using HDMI ports or other features.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "hotel mode",
+      "TV",
+      "HDMI",
+      "Samsung",
+      "TCL",
+      "LG"
+    ],
+    "steps": [
+      {
+        "title": "For Samsung TVs",
+        "content": "1. Press Mute on the remote, enter 119, and press OK to bring up the service menu. 2. Find Hospitality Mode and disable it to unlock the TV."
+      },
+      {
+        "title": "For TCL TVs",
+        "content": "1. Access the Settings menu by pressing Settings on the remote. 2. Select System and then Parental Controls. 3. Enter the PIN code (default is 1234). 4. Select Inputs Lock and unlock the input you want to use."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "For LG TVs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Settings",
+            "content": "Press the Settings button on the remote to access the settings menu."
+          },
+          {
+            "title": "Navigate to System Settings",
+            "content": "Select System and then Parental Controls."
+          },
+          {
+            "title": "Enter PIN",
+            "content": "Enter the PIN code (default is 1234)."
+          },
+          {
+            "title": "Unlock Inputs",
+            "content": "Select Inputs Lock and unlock the input you want to use."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:17:45.249Z",
+      "updated": "2026-01-03T20:17:45.249Z",
+      "sourceUrl": "https://lifehacker.com/how-to-outsmart-your-hotel-room-tv-and-use-its-hdmi-por-1841694937",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767471473933-593",
+    "title": "Fix No Sound in Windows 11",
+    "problemDescription": "Windows 11 is not producing any sound.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "sound",
+      "audio"
+    ],
+    "steps": [
+      {
+        "title": "Check Volume Settings",
+        "content": "Ensure the volume is not muted and is turned up."
+      },
+      {
+        "title": "Check Audio Output",
+        "content": "Right-click the volume icon in the taskbar and select 'Open Sound settings'. Ensure the correct output device is selected."
+      },
+      {
+        "title": "Restart Audio Services",
+        "content": "Press Win + R, type 'services.msc', and press Enter. Find 'Windows Audio' and 'Windows Audio Endpoint Builder', right-click each, and select 'Restart'."
+      },
+      {
+        "title": "Update Audio Drivers",
+        "content": "Go to 'Device Manager', expand 'Sound, video and game controllers', right-click your audio device, and select 'Update driver'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Run the Audio Troubleshooter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Press Win + I to open Settings."
+          },
+          {
+            "title": "Go to System",
+            "content": "Click on 'System' in the left sidebar."
+          },
+          {
+            "title": "Troubleshoot",
+            "content": "Scroll down and click on 'Troubleshoot'."
+          },
+          {
+            "title": "Run the Troubleshooter",
+            "content": "Click on 'Other troubleshooters', find 'Playing Audio', and click 'Run'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:17:53.933Z",
+      "updated": "2026-01-03T20:17:53.933Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/windows-11-problems-how-to-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767471477045-622",
+    "title": "Fix Auto HDR Issues in Windows 11",
+    "problemDescription": "Auto HDR causes color issues and game crashes in Windows 11.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "auto hdr",
+      "gaming",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Install the February 2025 Update",
+        "content": "Go to Settings > Windows Update > Check for updates and install the February 2025 update to fix Auto HDR issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Auto HDR Temporarily",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Press Win + I to open Settings."
+          },
+          {
+            "title": "Navigate to Gaming Settings",
+            "content": "Go to Gaming > Game Mode."
+          },
+          {
+            "title": "Disable Auto HDR",
+            "content": "Toggle off the Auto HDR option."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:17:57.045Z",
+      "updated": "2026-01-03T20:17:57.045Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/windows-11s-february-2025-update-fixes-annoying-bugs/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767471481359-474",
+    "title": "Fix PC Freezes and Performance Issues",
+    "problemDescription": "Your PC is freezing or experiencing performance issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "pc",
+      "freeze",
+      "performance",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Enter Safe Mode",
+        "content": "Restart your PC and press the appropriate key (usually F8 or Shift + Restart) to enter Safe Mode. This helps identify if third-party software is causing the issue."
+      },
+      {
+        "title": "Update Drivers",
+        "content": "In Safe Mode, go to Device Manager and update all drivers. Outdated drivers can cause performance issues."
+      },
+      {
+        "title": "Check for Malware",
+        "content": "Run a full system scan using Windows Defender or a trusted antivirus software to check for malware."
+      },
+      {
+        "title": "Clean Up Disk",
+        "content": "Use Disk Cleanup to remove temporary files and free up space. Go to Start, type 'Disk Cleanup', and follow the prompts."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Ensure your Windows operating system is up to date. Go to Settings > Update & Security > Windows Update."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: System Restore",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Restore",
+            "content": "Go to Start, type 'System Restore', and open the tool."
+          },
+          {
+            "title": "Choose a Restore Point",
+            "content": "Select a restore point from before the issues started and follow the prompts to restore your system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:18:01.359Z",
+      "updated": "2026-01-03T20:18:01.359Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/pc-performance-and-freezes-troubleshooting-guide/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767471487303-161",
+    "title": "Fix Windows Update & Shut Down Bug",
+    "problemDescription": "Windows PCs were not shutting down properly after selecting 'Update & Shut Down'.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "update",
+      "shutdown",
+      "bug"
+    ],
+    "steps": [
+      {
+        "title": "Install the Latest Update",
+        "content": "Go to Settings > Windows Update > Check for updates. Install the optional update KB5067036 if available."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Update Installation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download the Update Manually",
+            "content": "Visit the Microsoft Update Catalog, search for KB5067036, and download the appropriate version for your system."
+          },
+          {
+            "title": "Install the Update",
+            "content": "Run the downloaded file and follow the on-screen instructions to install the update."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:18:07.303Z",
+      "updated": "2026-01-03T20:18:07.303Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/windows-finally-fixes-the-update-shut-down-bug-that-kept-pcs-running-all-night/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767471497988-932",
+    "title": "Speed Up Your Computer",
+    "problemDescription": "Your computer is running slow and you want to improve its performance.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "computer",
+      "speed",
+      "performance",
+      "cleanup"
+    ],
+    "steps": [
+      {
+        "title": "Turn off your PC",
+        "content": "Restart your computer to clear temporary files and processes."
+      },
+      {
+        "title": "Update your software",
+        "content": "Ensure your operating system and all installed software are up to date."
+      },
+      {
+        "title": "Update or reinstall drivers",
+        "content": "Update your device drivers to the latest versions or reinstall them if necessary."
+      },
+      {
+        "title": "Delete unnecessary files, apps, and programs",
+        "content": "Remove any files, applications, or programs that you no longer use to free up space and resources."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Disk Cleanup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Disk Cleanup",
+            "content": "Search for 'Disk Cleanup' in the Start menu and open the application."
+          },
+          {
+            "title": "Select files to delete",
+            "content": "Choose the files you want to delete and click 'OK'."
+          },
+          {
+            "title": "Run the cleanup",
+            "content": "Allow the tool to clean up the selected files."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:18:17.988Z",
+      "updated": "2026-01-03T20:18:17.988Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/how-to-clean-and-speed-up-your-pc/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767471499686-161",
+    "title": "Fix Windows 10 Update Issues",
+    "problemDescription": "Windows 10 fails to update or encounters errors during the update process.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "update",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your computer is connected to the internet."
+      },
+      {
+        "title": "Reboot Your Computer",
+        "content": "Restart your computer to refresh the system."
+      },
+      {
+        "title": "Retry the Update",
+        "content": "Attempt the update process again after rebooting."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-03T20:18:19.686Z",
+      "updated": "2026-01-03T20:18:19.686Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/windows-10-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767471502887-982",
+    "title": "Speed Up Windows",
+    "problemDescription": "Windows operating system is running slowly.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "speed",
+      "optimize",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Optimize Storage Devices",
+        "content": "Ensure your storage devices are running efficiently by defragmenting your hard drive or optimizing your SSD."
+      },
+      {
+        "title": "Free Up Disk Space",
+        "content": "Delete unnecessary files and programs to free up disk space. Use Disk Cleanup or Storage Sense to help with this process."
+      },
+      {
+        "title": "Check for Malware",
+        "content": "Run a full system scan using a reliable antivirus software to ensure your computer is free from malware."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Visual Effects",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Properties",
+            "content": "Right-click on 'This PC' and select 'Properties', then click on 'Advanced system settings'."
+          },
+          {
+            "title": "Adjust for Best Performance",
+            "content": "Under the 'Advanced' tab, click on 'Settings' in the Performance section. Choose 'Adjust for best performance'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:18:22.887Z",
+      "updated": "2026-01-03T20:18:22.887Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/how-to-speed-up-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767471504700-126",
+    "title": "Fix Windows 11 Network Issues",
+    "problemDescription": "Can't connect to the internet or experiencing slow connections on Windows 11.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "network",
+      "internet",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Run the Windows Network Troubleshooter",
+        "content": "Go to Settings > System > Troubleshoot > Other troubleshooters. Find Network Adapter and click Run."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Re-indexing Files for Search Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Re-index Files",
+            "content": "Go to Settings > Search > Searching Windows. Click on Advanced Search Indexing Options. Click on Advanced and then click Rebuild."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:18:24.700Z",
+      "updated": "2026-01-03T20:18:24.700Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/windows-11-problems-how-to-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767471519056-834",
+    "title": "Fix Wi-Fi Dropping in Windows 8.1",
+    "problemDescription": "Wi-Fi connection drops or shows 'Limited' in Windows 8.1.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "windows 8.1",
+      "connection drops",
+      "limited"
+    ],
+    "steps": [
+      {
+        "title": "Check IP Configuration",
+        "content": "Open Command Prompt as Administrator and type 'ipconfig /all' to verify if an IP address is obtained."
+      },
+      {
+        "title": "Update Wi-Fi Drivers",
+        "content": "Download and install the latest Wi-Fi drivers from your laptop manufacturer's support website (e.g., Lenovo, Dell, HP)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Wi-Fi Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Wi-Fi Drivers",
+            "content": "Go to Device Manager, find your Wi-Fi adapter, right-click, and select 'Uninstall device'."
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Restart your computer to automatically reinstall the drivers."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Toggle Wi-Fi",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Wi-Fi",
+            "content": "Disable Wi-Fi from the network settings."
+          },
+          {
+            "title": "Turn On Wi-Fi",
+            "content": "Re-enable Wi-Fi to restore the connection temporarily."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:18:39.056Z",
+      "updated": "2026-01-03T20:18:39.056Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/windows-81-wifi-dropping-andor-limited/87531d97-c148-4387-acda-5a31b38c069e?page=67",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767471522883-806",
+    "title": "Fix Wi-Fi and LAN Issues After Windows 10 Update",
+    "problemDescription": "Wi-Fi and LAN stop working after a Windows 10 update.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "wifi",
+      "lan",
+      "update",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Enable IPv6",
+        "content": "Enable IPv6 in the network adapter settings. Run the fixit from 'Re-enable IPv6 on all nontunnel interfaces' and reboot."
+      },
+      {
+        "title": "Troubleshoot Network Problems",
+        "content": "Right-click the network icon in the System Tray and select 'Troubleshoot Problems'."
+      },
+      {
+        "title": "Update or Roll Back Network Driver",
+        "content": "If you have the latest network driver, try rolling back or uninstalling the driver, then restart the PC to reinstall the driver. Try all older drivers from 'Update Driver > Browse > Let Me Pick' list working backwards."
+      },
+      {
+        "title": "Remove and Re-add Network",
+        "content": "Go to Settings > Network & Internet > Wi-Fi > Manage Known Networks, highlight and remove the problematic network, then restart the PC to see if it shows up again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Windows",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall Windows",
+            "content": "As a last resort, reload a fresh Windows on the notebook and install everything."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:18:42.883Z",
+      "updated": "2026-01-03T20:18:42.883Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/wifi-and-lan-stops-working-after-windows-10/bf2e4af0-9d27-4323-89ce-e32f2ea60db0",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767471528277-207",
+    "title": "Fix Wi-Fi Connection Issues on Windows 8.1",
+    "problemDescription": "Troubleshooting Wi-Fi connection problems on Windows 8.1.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "windows 8.1",
+      "network adapter",
+      "troubleshooter"
+    ],
+    "steps": [
+      {
+        "title": "Update Network Drivers",
+        "content": "Download the latest network drivers from the computer manufacturer’s website and install them to check if this resolves the issue."
+      },
+      {
+        "title": "Run Network Troubleshooter",
+        "content": "Open the Network troubleshooter by swiping in from the right edge of the screen, tapping Search (or pointing to the upper-right corner of the screen with a mouse, moving the mouse pointer down, and clicking Search), entering 'network troubleshooter' in the search box, tapping or clicking Settings, and then tapping or clicking 'Identify and repair network problems'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Run Network Adapter Troubleshooter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Network Adapter Troubleshooter",
+            "content": "Swipe in from the right edge of the screen, tap Search (or point to the upper-right corner of the screen with a mouse, move the mouse pointer down, and click Search), enter 'troubleshooting' in the search box, tap or click Settings, and then tap or click Troubleshooting. Tap or click Network and Internet, and then tap or click Network Adapter."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Install Driver in Compatibility Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Driver in Compatibility Mode",
+            "content": "If you have an older version of the driver, install it in compatibility mode. Compatibility mode runs the program using settings from a previous version of Windows."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:18:48.277Z",
+      "updated": "2026-01-03T20:18:48.277Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/problems-connecting-on-wifi-with-windows-81/2f96a1db-30e4-4ca3-bd2d-b607e7eb2cba",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767471531026-291",
+    "title": "Fix Ethernet Connection Issues",
+    "problemDescription": "Ethernet connection not working despite good wireless internet.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "ethernet",
+      "connection",
+      "network",
+      "driver",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall and Reinstall Ethernet Network Adapter Driver",
+        "content": "Uninstall the Ethernet network adapter driver from Device Manager, then restart your computer. Windows will automatically reinstall the driver. Ensure you have the latest driver from the PC manufacturer's website as a backup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Run Network Commands",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Command Prompt as Administrator",
+            "content": "Search for 'Command Prompt', right-click and select 'Run as administrator'."
+          },
+          {
+            "title": "Run Network Commands",
+            "content": "Execute the following commands in order: `netsh int ip reset`, `ipconfig /release`, `ipconfig /renew`, `ipconfig /flushdns`, and `netsh winsock reset`."
+          }
+        ]
+      },
+      {
+        "title": "Use Network Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Network Reset",
+            "content": "Go to Settings > Network & Internet > Advanced network settings > Network reset."
+          },
+          {
+            "title": "Reset Network Settings",
+            "content": "Click 'Reset now' to remove all network adapters and settings. Your PC will restart automatically."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:18:51.026Z",
+      "updated": "2026-01-03T20:18:51.026Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/my-wireless-internet-connection-is-101-good-but/a7a2dc1a-584a-44c3-bc57-7bbbf181758b",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767471537967-216",
+    "title": "Fix iPhone Bluetooth Not Working",
+    "problemDescription": "Your iPhone's Bluetooth is not working or connecting to devices.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "bluetooth",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Toggle Bluetooth Off and On",
+        "content": "Go to Settings > Bluetooth and disable the switch at the top of the page. Wait a few seconds, then enable it again."
+      },
+      {
+        "title": "Hard Restart Your iPhone",
+        "content": "Perform a hard restart by pressing and quickly releasing the Volume Up button, then the Volume Down button, and finally pressing and holding the Side button until the Apple logo appears."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open the Settings app on your iPhone."
+          },
+          {
+            "title": "Navigate to General",
+            "content": "Scroll down and tap on General."
+          },
+          {
+            "title": "Reset Network Settings",
+            "content": "Scroll down to the bottom and tap on Transfer or Reset iPhone. Then tap on Reset and select Reset Network Settings. Note that this will erase all network settings, including Wi-Fi networks and VPN configurations."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:18:57.967Z",
+      "updated": "2026-01-03T20:18:57.967Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/fix-iphone-bluetooth-not-working/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767471540121-353",
+    "title": "Fix Bluetooth Problems on Android",
+    "problemDescription": "Bluetooth connectivity issues on Android devices.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "android",
+      "connectivity"
+    ],
+    "steps": [
+      {
+        "title": "Clear Bluetooth Cache",
+        "content": "Open the Settings app, go to App management > App list. Tap the three dots in the top-right corner, select Show system, and find the Bluetooth app. Clear the cache."
+      },
+      {
+        "title": "Check for System Updates",
+        "content": "Go to Settings > System > System update > Online update. Follow the on-screen instructions to install any available updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Consult a Technician",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit a Reliable Phone Technician",
+            "content": "If the issue persists, there may be a hardware problem. Consult a professional technician."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:19:00.121Z",
+      "updated": "2026-01-03T20:19:00.121Z",
+      "sourceUrl": "https://www.makeuseof.com/ways-to-fix-bluetooth-android/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767471542539-632",
+    "title": "Fix 'Try Connecting Your Device' Bluetooth Error",
+    "problemDescription": "Bluetooth devices fail to connect in Windows, displaying the 'Try connecting your device' error.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "windows",
+      "connection",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Run the Bluetooth Troubleshooter",
+        "content": "Open the Windows search bar, type 'Troubleshoot settings', and press Enter. Select 'Bluetooth' and click 'Run the troubleshooter'. Follow the on-screen instructions to complete the process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Bluetooth Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Press the Windows key + X and select 'Device Manager' from the list."
+          },
+          {
+            "title": "Uninstall Bluetooth Drivers",
+            "content": "Expand the 'Bluetooth' section, right-click on your Bluetooth device, and select 'Uninstall device'. Confirm the action."
+          },
+          {
+            "title": "Restart Your Computer",
+            "content": "Restart your computer to allow Windows to reinstall the Bluetooth drivers automatically."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:19:02.539Z",
+      "updated": "2026-01-03T20:19:02.539Z",
+      "sourceUrl": "https://www.makeuseof.com/try-connecting-device-bluetooth-pairing-error-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767471547190-576",
+    "title": "Fix Bluetooth Device Showing Voice/Music Only",
+    "problemDescription": "Bluetooth device on Windows only allows voice or music, not both.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "windows",
+      "audio",
+      "driver",
+      "services"
+    ],
+    "steps": [
+      {
+        "title": "Update Bluetooth Driver",
+        "content": "Go to Device Manager, expand Bluetooth, right-click your Bluetooth adapter, and select 'Update driver'. Choose 'Search automatically for updated driver software'."
+      },
+      {
+        "title": "Check Bluetooth Services",
+        "content": "Open Services (services.msc), find all Bluetooth-related services (e.g., Bluetooth Support Service), and ensure they are running and set to Automatic startup type."
+      },
+      {
+        "title": "Review Bluetooth Device Properties",
+        "content": "Open Control Panel, go to Device Manager, find your Bluetooth device, right-click and select 'Properties', then review and enable all services under the 'Services' tab."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Roll Back or Uninstall Bluetooth Driver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Roll Back Driver",
+            "content": "In Device Manager, right-click your Bluetooth adapter and select 'Properties'. Go to the 'Driver' tab and click 'Roll Back Driver'."
+          },
+          {
+            "title": "Uninstall Driver",
+            "content": "In Device Manager, right-click your Bluetooth adapter and select 'Uninstall device'. Restart your computer to reinstall the driver automatically."
+          }
+        ]
+      },
+      {
+        "title": "Manually Update Driver from Manufacturer's Website",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Driver",
+            "content": "Visit the manufacturer's website, find the support or downloads section, and download the latest Bluetooth driver for your device."
+          },
+          {
+            "title": "Install Driver",
+            "content": "Run the downloaded driver installer and follow the on-screen instructions to install the driver."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T20:19:07.190Z",
+      "updated": "2026-01-03T20:19:07.190Z",
+      "sourceUrl": "https://www.makeuseof.com/windows-bluetooth-headphone-speaker-connected-voice-only/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
