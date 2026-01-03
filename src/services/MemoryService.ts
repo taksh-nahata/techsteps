@@ -3,7 +3,6 @@ import {
     collection,
     addDoc,
     query,
-    where,
     orderBy,
     getDocs,
     limit,
@@ -11,9 +10,10 @@ import {
     doc,
     setDoc,
     getDoc,
-    updateDoc,
-    arrayUnion
+    arrayUnion,
+    deleteDoc
 } from 'firebase/firestore';
+import { TroubleshootingGuide } from '../types/guides';
 
 export interface Message {
     id: string;
@@ -150,35 +150,48 @@ export const MemoryService = {
         }
     },
 
+
     /**
-     * Cleanup old messages (older than 7 days)
-     * Note: Firestore requires composite index for this query.
-     * We will implement client-side filtering for MVP if index issues arise,
-     * but this is the proper query.
+     * Save a pending guide (AI generated or from discovery) to Firestore
      */
-    cleanupOldMessages: async (userId: string) => {
+    savePendingGuide: async (guide: TroubleshootingGuide) => {
         try {
-            const sevenDaysAgo = new Date();
-            sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
-
-            const messagesRef = collection(db, 'users', userId, 'chats');
-            const q = query(
-                messagesRef,
-                where('timestamp', '<', Timestamp.fromDate(sevenDaysAgo))
-            );
-
-            const snapshot = await getDocs(q);
-            const deletePromises = snapshot.docs.map(doc =>
-                // @ts-ignore - deleteDoc is not imported but we would use deleteDoc(doc.ref)
-                // For MVP, we might skip actual deletion to avoid bulk delete complexity
-                // and just rely on the 'limit(50)' in getHistory.
-                // If strict requirement, we'd import deleteDoc.
-                Promise.resolve()
-            );
-
-            // await Promise.all(deletePromises); 
+            const pendingRef = doc(db, 'pending_guides', guide.id);
+            await setDoc(pendingRef, {
+                ...guide,
+                lastUpdated: Timestamp.now()
+            });
+            console.log(`📝 Saved pending guide to Firebase: ${guide.title}`);
         } catch (error) {
-            // console.error("Error cleaning up:", error);
+            console.error("Error saving pending guide:", error);
+        }
+    },
+
+    /**
+     * Get all pending guides from Firestore
+     */
+    getFirebasePendingGuides: async (): Promise<TroubleshootingGuide[]> => {
+        try {
+            const pendingRef = collection(db, 'pending_guides');
+            const q = query(pendingRef, orderBy('meta.created', 'desc'));
+            const snapshot = await getDocs(q);
+            return snapshot.docs.map(doc => doc.data() as TroubleshootingGuide);
+        } catch (error) {
+            console.error("Error fetching firebase pending guides:", error);
+            return [];
+        }
+    },
+
+    /**
+     * Delete a pending guide from Firestore (after approval or manual deletion)
+     */
+    deletePendingGuide: async (guideId: string) => {
+        try {
+            const pendingRef = doc(db, 'pending_guides', guideId);
+            await deleteDoc(pendingRef);
+            console.log(`🗑️ Deleted pending guide from Firebase: ${guideId}`);
+        } catch (error) {
+            console.error("Error deleting pending guide:", error);
         }
     }
 };

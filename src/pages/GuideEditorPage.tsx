@@ -6,7 +6,8 @@ import { ImageAnnotator } from '../components/admin/ImageAnnotator';
 import { FlashcardPanel } from '../components/ai/FlashcardPanel';
 import { Save, Plus, Trash2, ArrowLeft, Check, Play, FileText, AlertTriangle, Palette, Upload, RefreshCw } from 'lucide-react';
 import guidesData from '../data/guides.json';
-// import pendingGuidesData from '../data/pending_guides.json';
+import { MemoryService } from '../services/MemoryService';
+import { Brain, Search } from 'lucide-react';
 
 // MOCK CONSTANTS
 const MOCK_CATEGORIES = ['wifi', 'windows', 'ios', 'android', 'browser', 'app-error', 'robotics'];
@@ -24,10 +25,26 @@ export const GuideEditorPage: React.FC = () => {
     const [pending, setPending] = useState<TroubleshootingGuide[]>([]);
 
     useEffect(() => {
-        fetch('/data/pending_guides.json?t=' + Date.now())
-            .then(res => res.json())
-            .then(data => setPending(data))
-            .catch(e => console.error("Failed to load pending guides", e));
+        const loadPending = async () => {
+            try {
+                // 1. Fetch from static JSON (Discovery Agent)
+                const jsonRes = await fetch('/data/pending_guides.json?t=' + Date.now());
+                const jsonData = await jsonRes.json();
+
+                // 2. Fetch from Firestore (AI Chat)
+                const firebaseData = await MemoryService.getFirebasePendingGuides();
+
+                // 3. Merge and sort
+                const combined = [...jsonData, ...firebaseData];
+                // Remove duplicates by ID (just in case)
+                const unique = Array.from(new Map(combined.map(g => [g.id, g])).values());
+
+                setPending(unique);
+            } catch (e) {
+                console.error("Failed to load pending guides", e);
+            }
+        };
+        loadPending();
     }, []);
 
     // Persist to LocalStorage (Guides only)
@@ -81,12 +98,18 @@ export const GuideEditorPage: React.FC = () => {
         if (activeTab === 'pending') {
             setGuides([...guides, selectedGuide]);
             setPending(pending.filter(g => g.id !== selectedGuide.id));
+
+            // If it was a Firestore guide, delete it from there too
+            if (selectedGuide.meta.source === 'ai-chat') {
+                MemoryService.deletePendingGuide(selectedGuide.id);
+            }
+
             setActiveTab('active');
         } else {
             setGuides(guides.map(g => g.id === selectedGuide.id ? selectedGuide : g));
         }
 
-        alert("Changes saved locally! (In production this would persist to the backend)");
+        alert("Changes saved locally and approved! (In production this would persist to the backend)");
     };
 
     // Handle Image Upload Helper
@@ -166,8 +189,20 @@ export const GuideEditorPage: React.FC = () => {
                                     : 'bg-white/5 border-transparent hover:bg-white/10'}`}
                         >
                             <div className="font-medium truncate pr-4">{g.title}</div>
-                            <div className="text-xs text-gray-500 flex justify-between mt-2">
-                                <span className={`px-2 py-0.5 rounded-full bg-white/5 uppercase tracking-wider text-[10px]`}>{g.category}</span>
+                            <div className="text-xs text-gray-500 flex justify-between items-center mt-2">
+                                <div className="flex gap-2 items-center">
+                                    <span className={`px-2 py-0.5 rounded-full bg-white/5 uppercase tracking-wider text-[10px]`}>{g.category}</span>
+                                    {g.meta.source === 'ai-chat' && (
+                                        <span className="flex items-center gap-1 text-[10px] text-purple-400 bg-purple-500/10 px-1.5 py-0.5 rounded">
+                                            <Brain size={10} /> AI
+                                        </span>
+                                    )}
+                                    {g.meta.source === 'discovery' && (
+                                        <span className="flex items-center gap-1 text-[10px] text-blue-400 bg-blue-500/10 px-1.5 py-0.5 rounded">
+                                            <Search size={10} /> Web
+                                        </span>
+                                    )}
+                                </div>
                                 <span className={g.meta.difficulty === 'Easy' ? 'text-green-400' : 'text-orange-400'}>{g.meta.difficulty}</span>
                             </div>
                             {selectedGuide?.id === g.id && <div className="absolute left-0 top-0 bottom-0 w-1 bg-indigo-500" />}
@@ -456,6 +491,27 @@ export const GuideEditorPage: React.FC = () => {
                                                     </div>
                                                 )}
                                             </div>
+
+                                            {/* Image Caption for AI */}
+                                            {step.image && (
+                                                <div className="mt-3">
+                                                    <label className="text-[10px] font-semibold text-blue-400 uppercase flex items-center gap-1 mb-1">
+                                                        <span>🤖 AI Caption</span>
+                                                        <span className="text-gray-600 font-normal">(Describe what this image shows)</span>
+                                                    </label>
+                                                    <input
+                                                        type="text"
+                                                        value={step.imageCaption || ''}
+                                                        onChange={e => {
+                                                            const newSteps = [...selectedGuide.steps];
+                                                            newSteps[idx].imageCaption = e.target.value;
+                                                            setSelectedGuide({ ...selectedGuide, steps: newSteps });
+                                                        }}
+                                                        className="w-full bg-blue-500/5 border border-blue-500/20 rounded-lg px-3 py-2 text-sm text-blue-200 placeholder-blue-500/40 focus:border-blue-500/50 outline-none"
+                                                        placeholder="e.g., Screenshot of WiFi settings panel with 'Forget Network' button highlighted"
+                                                    />
+                                                </div>
+                                            )}
                                         </div>
                                     </div>
                                 </div>

@@ -2,13 +2,14 @@ import {
     AIService,
     AIResponse,
     ConversationContext,
-    PageContext,
-    HelpContent,
     AIMessage,
-    FlashcardStep
+    HelpContent,
+    PageContext
 } from '../../types/services';
 import { FALLBACK_CONFIG, GLOBAL_SYSTEM_PROMPT } from './config';
 import { parseAIJSONResponse } from './responseParser';
+import { guideMatchingService } from '../GuideMatchingService';
+import { imageLibraryService } from '../ImageLibraryService';
 
 export class MistralService implements AIService {
     private apiKey: string;
@@ -73,10 +74,50 @@ export class MistralService implements AIService {
     async sendMessage(message: string, context: ConversationContext): Promise<AIResponse> {
         const startTime = Date.now();
 
+        // ========== GUIDE MATCHING - Check for existing guides first ==========
+        const existingMatch = guideMatchingService.findBestMatch(message, 0.5);
+        if (existingMatch && existingMatch.score > 0.6) {
+            console.log(`📚 [Mistral] Found matching guide: "${existingMatch.guide.title}" (${Math.round(existingMatch.score * 100)}% match)`);
+
+            // Convert existing guide to flashcard format
+            const flashcards = existingMatch.guide.steps.map((step, index) => {
+                // Try to find matching images for this step
+                const suggestedImages = imageLibraryService.suggestImagesForStep(step.content, step.title);
+                const imageUrl = step.image || (suggestedImages.length > 0 ? suggestedImages[0].imageUrl : undefined);
+
+                return {
+                    id: step.id || `step-${index + 1}`,
+                    stepNumber: index + 1,
+                    title: step.title,
+                    content: step.content,
+                    instructions: step.content.split('. ').filter((s: string) => s.length > 10),
+                    audioScript: `Step ${index + 1}: ${step.title}. ${step.content}`,
+                    estimatedDuration: 30,
+                    image: imageUrl,
+                    imageCaption: step.imageCaption
+                };
+            });
+
+            return {
+                content: `I found a verified guide that should help you with this!\n\n**${existingMatch.guide.title}**\n\n${existingMatch.guide.problemDescription}`,
+                confidence: 0.95,
+                suggestedActions: [],
+                requiresHumanEscalation: false,
+                flashcards,
+                metadata: {
+                    processingTime: Date.now() - startTime,
+                    model: 'cached-guide',
+                    tokens: 0,
+                    sources: ['TechSteps Guide Library']
+                }
+            };
+        }
+
+        // ========== No match found - Generate with Mistral AI ==========
         try {
             // Build facts context
             let factsPrefix = context.knownFacts && context.knownFacts.length > 0
-                ? `KNOWN USER FACTS:\n${context.knownFacts.map(f => `- ${f}`).join('\n')}\n\n`
+                ? `KNOWN USER FACTS:\n${context.knownFacts.map((f: string) => `- ${f}`).join('\n')}\n\n`
                 : "";
 
             // Optional web search trigger: messages starting with "search: <query>" or containing "search the web for"
@@ -273,7 +314,7 @@ ${JSON.stringify(texts)}
 
     // Mandatory interface implementations
     async escalateToHuman(): Promise<void> { }
-    async getContextualHelp(): Promise<HelpContent> { return {} as any; }
+    async getContextualHelp(_pageContext: PageContext): Promise<HelpContent> { return {} as HelpContent; }
     async trackInteractionQuality(): Promise<void> { }
     async getConversationHistory(): Promise<AIMessage[]> { return []; }
     async clearConversationHistory(): Promise<void> { }

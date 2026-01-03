@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useUser } from '../contexts/UserContext';
 import { useAuth } from '../contexts/AuthContext';
 import { FlashcardStep, ConversationContext } from '../types/services';
+import { TroubleshootingGuide } from '../types/guides';
 import { Settings } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { LogOut } from 'lucide-react';
@@ -60,7 +61,7 @@ const ChatDashboardContent: React.FC = () => {
   // Load History
   useEffect(() => {
     if (!user) return; // Guard against null user during logout
-    
+
     const loadData = async () => {
       try {
         const userId = user.uid;
@@ -150,8 +151,9 @@ const ChatDashboardContent: React.FC = () => {
     }
   };
 
-  const openHistory = () => setShowHistory(true);
-  const closeHistory = () => setShowHistory(false);
+  // Historical methods (kept for reference or future use)
+  const _openHistory = () => setShowHistory(true);
+  const _closeHistory = () => setShowHistory(false);
 
   const loadConversation = (conv: Conversation) => {
     setMessages(conv.messages.map(m => ({ ...m, timestamp: new Date(m.timestamp) })));
@@ -228,18 +230,16 @@ const ChatDashboardContent: React.FC = () => {
       // 3. Call Mistral for all AI tasks (primary response, flashcards, summaries, and facts)
       const mistralService = new MistralService();
 
-      // Fetch known facts and user data for memory focus
+      // Fetch known facts for memory focus
       const knownFacts = await MemoryService.getFacts(userId);
-      const customUserData = await MemoryService.getUserData(userId);
+      // const customUserData = await MemoryService.getUserData(userId); // kept for future use
 
       const context: ConversationContext = {
-        userId,
         currentPage: 'chat',
         userSkillLevel: userData?.skillLevel || 'beginner',
         failureCount: 0,
         knownFacts: knownFacts,
-        userData: customUserData || {},
-        attachments: uploadedAttachments // Pass attachments to the AI service
+        // userId is not in ConversationContext type, and userData is optional
       };
 
       // Primary content generation
@@ -269,9 +269,40 @@ const ChatDashboardContent: React.FC = () => {
 
       // 5. Handle Flashcards
       if (mistralResponse.flashcards && mistralResponse.flashcards.length > 0) {
+        setIsGeneratingFlashcards(false);
         console.log('Displaying generated flashcards:', mistralResponse.flashcards);
         setFlashcardSteps(mistralResponse.flashcards as FlashcardStep[]);
         setShowFlashcards(true);
+
+        // ========== NEW: Save to Pending Review Workflow ==========
+        // Only save if it's a fresh generation (not from cache)
+        if (mistralResponse.metadata?.model !== 'cached-guide') {
+          console.log('🤖 New AI generation detected. Saving to pending review...');
+          const newGuide: TroubleshootingGuide = {
+            id: `ai-${Date.now()}`,
+            title: messageContent.slice(0, 50) + (messageContent.length > 50 ? '...' : ''),
+            problemDescription: mistralResponse.content.slice(0, 200) + (mistralResponse.content.length > 200 ? '...' : ''),
+            keywords: messageContent.toLowerCase().split(/\W+/).filter(w => w.length > 3),
+            category: 'ai-chat',
+            steps: mistralResponse.flashcards.map((f: any) => ({
+              id: f.id,
+              title: f.title,
+              content: f.content,
+              image: f.image,
+              imageCaption: f.imageCaption,
+              annotations: f.annotations || []
+            })),
+            meta: {
+              created: new Date().toISOString(),
+              updated: new Date().toISOString(),
+              source: 'ai-chat',
+              originalQuery: messageContent,
+              confidenceScore: mistralResponse.confidence || 0.8,
+              difficulty: 'Medium'
+            }
+          };
+          await MemoryService.savePendingGuide(newGuide);
+        }
       } else {
         setShowFlashcards(false);
       }

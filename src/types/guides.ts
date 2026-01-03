@@ -20,6 +20,7 @@ export interface GuideStep {
     title: string;
     content: string;
     image?: string; // filename in /public/guides/
+    imageCaption?: string; // Description of image for AI context
     annotations?: GuideAnnotation[];
 }
 
@@ -46,6 +47,8 @@ export interface TroubleshootingGuide {
         created: string; // ISO Date string
         updated: string; // ISO Date string
         sourceUrl?: string;
+        source?: 'discovery' | 'ai-chat' | 'manual';
+        originalQuery?: string;
         confidenceScore: number;
         priorityScore?: number;
         difficulty: 'Easy' | 'Medium' | 'Hard';
