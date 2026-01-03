@@ -1,5 +1,19 @@
 // Service Interface Types for Senior Learning Platform
-import {
+// Re-export types from core for consumers
+export type {
+  AIResponse,
+  ConversationContext,
+  Tutorial,
+  LocalizedContent,
+  UserAction,
+  ActionContext,
+  AccessibilitySettings,
+  User,
+  SupportTicket
+} from './core';
+
+// Import types for use within this file
+import type {
   AIResponse,
   ConversationContext,
   Tutorial,

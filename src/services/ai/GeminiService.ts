@@ -9,12 +9,15 @@ import {
 } from '../../types/services';
 import { DEFAULT_GEMINI_CONFIG, GLOBAL_SYSTEM_PROMPT } from './config';
 import { parseAIJSONResponse } from './responseParser';
+import { guideMatchingService } from '../GuideMatchingService';
+import { imageLibraryService } from '../ImageLibraryService';
 
 export class GeminiService implements AIService {
   private genAI: GoogleGenerativeAI;
   private conversationHistory: Map<string, AIMessage[]> = new Map();
   private failureCount: Map<string, number> = new Map();
   private readonly MAX_FAILURES = DEFAULT_GEMINI_CONFIG.escalationThreshold;
+  private readonly SENIOR_SYSTEM_PROMPT = GLOBAL_SYSTEM_PROMPT;
 
   constructor(apiKey?: string) {
     const key = apiKey || DEFAULT_GEMINI_CONFIG.apiKey;
@@ -34,6 +37,46 @@ export class GeminiService implements AIService {
     const startTime = Date.now();
     const conversationId = this.getConversationId(context);
 
+    // ========== GUIDE MATCHING - Check for existing guides first ==========
+    const existingMatch = guideMatchingService.findBestMatch(message, 0.5);
+    if (existingMatch && existingMatch.score > 0.6) {
+      console.log(`📚 Found matching guide: "${existingMatch.guide.title}" (${Math.round(existingMatch.score * 100)}% match)`);
+
+      // Convert existing guide to flashcard format
+      const flashcards = existingMatch.guide.steps.map((step, index) => {
+        // Try to find matching images for this step
+        const suggestedImages = imageLibraryService.suggestImagesForStep(step.content, step.title);
+        const imageUrl = step.image || (suggestedImages.length > 0 ? suggestedImages[0].imageUrl : undefined);
+
+        return {
+          id: step.id || `step-${index + 1}`,
+          stepNumber: index + 1,
+          title: step.title,
+          content: step.content,
+          instructions: step.content.split('. ').filter((s: string) => s.length > 10),
+          audioScript: `Step ${index + 1}: ${step.title}. ${step.content}`,
+          estimatedDuration: 30,
+          image: imageUrl,
+          imageCaption: step.imageCaption
+        };
+      });
+
+      return {
+        content: `I found a verified guide that should help you with this!\n\n**${existingMatch.guide.title}**\n\n${existingMatch.guide.problemDescription}`,
+        confidence: 0.95,
+        suggestedActions: [],
+        requiresHumanEscalation: false,
+        flashcards,
+        metadata: {
+          processingTime: Date.now() - startTime,
+          model: 'cached-guide',
+          tokens: 0,
+          sources: ['TechSteps Guide Library']
+        }
+      };
+    }
+
+    // ========== No match found - Generate with AI ==========
     // Try primary, then try stable if primary fails with 429
     const modelsToTry = [DEFAULT_GEMINI_CONFIG.primaryModel, DEFAULT_GEMINI_CONFIG.stableModel];
     let lastError: any = null;
@@ -56,7 +99,7 @@ export class GeminiService implements AIService {
         });
 
         const factsPrefix = context.knownFacts && context.knownFacts.length > 0
-          ? `KNOWN USER FACTS:\n${context.knownFacts.map(f => `- ${f}`).join('\n')}\n\n`
+          ? `KNOWN USER FACTS:\n${context.knownFacts.map((f: string) => `- ${f}`).join('\n')}\n\n`
           : "";
 
         const fullPrompt = GLOBAL_SYSTEM_PROMPT + '\n' + factsPrefix + this.buildFullPrompt(message, context);
@@ -104,7 +147,7 @@ export class GeminiService implements AIService {
     throw lastError;
   }
 
-  private incrementFailureCount(conversationId: string) {
+  private _incrementFailureCount(conversationId: string) {
     const currentFailures = this.failureCount.get(conversationId) || 0;
     this.failureCount.set(conversationId, currentFailures + 1);
   }
@@ -205,7 +248,7 @@ export class GeminiService implements AIService {
     try {
       // Use Gemini to format the response as flashcards
       const model = this.genAI.getGenerativeModel({
-        model: DEFAULT_GEMINI_CONFIG.model,
+        model: DEFAULT_GEMINI_CONFIG.primaryModel,
       });
 
       const prompt = `Take this response and format it as a series of flashcard steps for senior learners. Each step should be:
@@ -245,7 +288,7 @@ IMPORTANT GUIDELINES:
       try {
         const parsed = JSON.parse(flashcardText);
         // Ensure each step has an audioScript
-        return parsed.map((step: any, index: number) => ({
+        return parsed.map((step: any, _index: number) => ({
           ...step,
           audioScript: step.audioScript || this.generateAudioScript(step)
         }));
@@ -280,7 +323,7 @@ IMPORTANT GUIDELINES:
   async getContextualHelp(pageContext: PageContext): Promise<HelpContent> {
     try {
       const model = this.genAI.getGenerativeModel({
-        model: DEFAULT_GEMINI_CONFIG.model,
+        model: DEFAULT_GEMINI_CONFIG.primaryModel,
       });
 
       const prompt = `Provide contextual help for a senior user on the page: "${pageContext.title}" (${pageContext.url}). 
@@ -510,7 +553,7 @@ IMPORTANT GUIDELINES:
 
 
 
-  private getUserIdFromConversation(conversationId: string): string {
+  private _getUserIdFromConversation(conversationId: string): string {
     return conversationId.split('-')[0] || 'anonymous-user';
   }
 

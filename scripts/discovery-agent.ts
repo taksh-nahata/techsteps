@@ -43,15 +43,39 @@ interface DraftGuide {
 }
 
 // --- CONFIGURATION ---
-const SEARCH_TOPICS = ['iphone', 'android', 'windows 11', 'macbook', 'wifi', 'printer', 'bluetooth', 'chrome'];
-const SOCIAL_SITES = [
-    'reddit.com',
-    'tiktok.com',
-    'facebook.com',
-    'discussions.apple.com',
-    'answers.microsoft.com',
-    'quora.com'
+const SEARCH_TOPICS = [
+    'iphone', 'android', 'windows 11', 'macbook', 'wifi', 'printer', 'bluetooth', 'chrome',
+    'samsung galaxy', 'google pixel', 'airpods', 'smart tv', 'roku', 'alexa', 'siri',
+    'outlook', 'gmail', 'zoom', 'teams', 'discord', 'whatsapp', 'instagram',
+    'usb not recognized', 'screen flickering', 'slow computer', 'battery drain',
+    'password reset', 'two factor authentication', 'notifications not working'
 ];
+
+const SEARCH_SOURCES = [
+    // Social/Forums
+    'reddit.com',
+    'quora.com',
+    // Apple
+    'discussions.apple.com',
+    // Microsoft
+    'answers.microsoft.com',
+    // StackExchange Network  
+    'superuser.com',
+    'askubuntu.com',
+    'apple.stackexchange.com',
+    'android.stackexchange.com',
+    // Tech Blogs/Sites
+    'howtogeek.com',
+    'lifehacker.com',
+    'tomshardware.com',
+    'makeuseof.com',
+    'digitaltrends.com',
+    'cnet.com',
+    'techradar.com',
+    // Video (descriptions)
+    'youtube.com'
+];
+
 const BLOCKLIST = [
     'porn', 'xxx', 'sex', 'nude', 'nsfw', 'drug', 'gamble', 'casino', 'dating',
     'hack', 'crack', 'pirat', 'torrent', 'warez', 'bypass', 'activator', 'kms',
@@ -84,6 +108,40 @@ function getFeedbackContext(): string {
     if (notes.length === 0) return "";
     const recentNotes = notes.slice(-10);
     return `\n\nCRITICAL - INCORPORATE THE FOLLOWING HUMAN FEEDBACK FROM PREVIOUS RUNS:\n${recentNotes.join('\n')}\n`;
+}
+
+// --- DUPLICATE DETECTION ---
+function normalizeText(text: string): string {
+    return text.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function isDuplicate(newGuide: DraftGuide, existingGuides: DraftGuide[]): boolean {
+    const normalizedTitle = normalizeText(newGuide.title);
+
+    for (const existing of existingGuides) {
+        // Check title similarity
+        const existingTitle = normalizeText(existing.title);
+        const titleWords = normalizedTitle.split(' ');
+        const matchingWords = titleWords.filter(w => w.length > 3 && existingTitle.includes(w));
+        const titleSimilarity = matchingWords.length / titleWords.length;
+
+        if (titleSimilarity > 0.7) {
+            console.log(`  Duplicate detected (title match): "${newGuide.title}" ~ "${existing.title}"`);
+            return true;
+        }
+
+        // Check keyword overlap
+        if (newGuide.keywords && existing.keywords) {
+            const commonKeywords = newGuide.keywords.filter(k =>
+                existing.keywords.some(ek => normalizeText(ek) === normalizeText(k))
+            );
+            if (commonKeywords.length >= 3) {
+                console.log(`  Duplicate detected (keyword overlap): ${commonKeywords.join(', ')}`);
+                return true;
+            }
+        }
+    }
+    return false;
 }
 
 // --- AI GENERATION ---
@@ -241,33 +299,57 @@ async function run() {
     const isContinuous = process.argv.includes('--continuous');
     console.log(`keys: Mistral=${!!MISTRAL_API_KEY}, Tavily=${!!TAVILY_API_KEY}`);
 
-    async function cycle() {
-        console.log(`\n=== AUTOMATION CYCLE START: ${new Date().toISOString()} ===`);
-        const feedback = getFeedbackContext();
+    await cycle();
 
-        // 1. Build Query
+    if (isContinuous) {
+        setInterval(cycle, 60 * 60 * 1000);
+    }
+}
+
+// --- MAIN CYCLE (UPDATED) ---
+async function cycle() {
+    console.log(`\n=== AUTOMATION CYCLE START: ${new Date().toISOString()} ===`);
+    const feedback = getFeedbackContext();
+
+    // Load existing guides for duplicate detection
+    let existingGuides: DraftGuide[] = [];
+    try {
+        if (fs.existsSync(OUTPUT_FILE)) {
+            existingGuides = [...existingGuides, ...JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf8'))];
+        }
+        if (fs.existsSync(GUIDES_FILE)) {
+            existingGuides = [...existingGuides, ...JSON.parse(fs.readFileSync(GUIDES_FILE, 'utf8'))];
+        }
+    } catch (e) {
+        console.log('Could not load existing guides for dedup.');
+    }
+
+    // Run MULTIPLE queries to get more guides
+    const NUM_QUERIES = 5; // Run 5 different queries per cycle
+    const allNewGuides: DraftGuide[] = [];
+
+    for (let q = 0; q < NUM_QUERIES; q++) {
+        // Pick random topic and source
         const topic = SEARCH_TOPICS[Math.floor(Math.random() * SEARCH_TOPICS.length)];
-        const site = SOCIAL_SITES[Math.floor(Math.random() * SOCIAL_SITES.length)];
-        const dork = `site:${site}`;
-        const query = `how to fix ${topic} issue solved ${dork}`;
+        const source = SEARCH_SOURCES[Math.floor(Math.random() * SEARCH_SOURCES.length)];
+        const query = `how to fix ${topic} issue solved site:${source}`;
 
-        console.log(`Running Query: "${query}"`);
+        console.log(`\n[Query ${q + 1}/${NUM_QUERIES}] "${query}"`);
 
         let sourceData: any[] = [];
 
-        // 2. Try TAVILY (Primary)
+        // Try TAVILY (Primary)
         if (TAVILY_API_KEY) {
-            console.log("Using Tavily API...");
             const tavilyResults = await searchTavily(query);
             if (tavilyResults && tavilyResults.length > 0) {
-                console.log(`Tavily found ${tavilyResults.length} high-quality results.`);
+                console.log(`  Tavily found ${tavilyResults.length} results.`);
                 sourceData = tavilyResults;
             }
         }
 
-        // 3. Fallback to DDG + Scraper
+        // Fallback to DDG + Scraper
         if (sourceData.length === 0) {
-            console.log("Using Basic Scraper Fallback...");
+            console.log('  Fallback: DuckDuckGo scraper...');
             const urls = await searchWebDuckDuckGo(query);
             for (const url of urls) {
                 const data = await scrapePageContent(url);
@@ -275,32 +357,34 @@ async function run() {
             }
         }
 
-        console.log(`Processing ${sourceData.length} sources...`);
-
-        // 4. GENERATE
-        const newGuides = [];
+        // Generate guides from sources
         for (const item of sourceData) {
             if (!isSafeContent(item.title) || !isSafeContent(item.body)) continue;
 
-            console.log(`Generating AI Guide from: ${item.title.substring(0, 40)}...`);
+            console.log(`  Generating from: ${item.title.substring(0, 50)}...`);
             const guide = await generateGuideFromContent(item.title, item.body, item.url, feedback);
-            if (guide) newGuides.push(guide);
+
+            if (guide) {
+                // Check for duplicates
+                const allExisting = [...existingGuides, ...allNewGuides];
+                if (!isDuplicate(guide, allExisting)) {
+                    allNewGuides.push(guide);
+                    console.log(`  ✓ New guide added: "${guide.title}"`);
+                }
+            }
         }
 
-        // 5. SAVE
-        if (newGuides.length > 0) {
-            const current = fs.existsSync(OUTPUT_FILE) ? JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf8')) : [];
-            fs.writeFileSync(OUTPUT_FILE, JSON.stringify([...current, ...newGuides], null, 2));
-            console.log(`Saved ${newGuides.length} new guides.`);
-        } else {
-            console.log("No guides generated this cycle.");
-        }
+        // Small delay between queries to avoid rate limits
+        await new Promise(r => setTimeout(r, 1000));
     }
 
-    await cycle();
-
-    if (isContinuous) {
-        setInterval(cycle, 60 * 60 * 1000);
+    // SAVE all new guides
+    if (allNewGuides.length > 0) {
+        const current = fs.existsSync(OUTPUT_FILE) ? JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf8')) : [];
+        fs.writeFileSync(OUTPUT_FILE, JSON.stringify([...current, ...allNewGuides], null, 2));
+        console.log(`\n=== CYCLE COMPLETE: Saved ${allNewGuides.length} new guides ===`);
+    } else {
+        console.log('\n=== CYCLE COMPLETE: No new guides generated ===');
     }
 }
 

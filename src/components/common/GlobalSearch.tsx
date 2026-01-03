@@ -1,8 +1,11 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Search, X, BookOpen, ChevronRight, Hash, Monitor, Wifi, Shield } from 'lucide-react';
-import guidesData from '../../data/guides.json';
+import { Search, X, BookOpen, ChevronRight, Monitor, Wifi, Shield } from 'lucide-react';
+import guidesDataRaw from '../../data/guides.json';
+import { TroubleshootingGuide } from '../../types/guides';
+
+const guidesData = guidesDataRaw as TroubleshootingGuide[];
 
 // Basic fuzzy search or filter
 const filterGuides = (query: string) => {

@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { motion, PanInfo } from 'framer-motion';
-import { Volume2, VolumeX, Check, ArrowUp, ThumbsUp, ThumbsDown } from 'lucide-react';
+import { Volume2, VolumeX, Check } from 'lucide-react';
 import { FlashcardStep } from '../../types/services';
 import MarkdownRenderer from './MarkdownRenderer';
 
@@ -123,7 +123,7 @@ const FlashcardCard: React.FC<FlashcardCardProps> = ({
             {/* 3D Flip Container - Fixed Aspect Ratio */}
             <motion.div
                 className="relative cursor-pointer w-full max-w-2xl"
-                style={{ 
+                style={{
                     transformStyle: 'preserve-3d',
                     aspectRatio: '4 / 3'
                 }}
@@ -194,8 +194,8 @@ const FlashcardCard: React.FC<FlashcardCardProps> = ({
                             <motion.button
                                 onClick={handleSpeak}
                                 className={`p-2 rounded-full transition-all flex-shrink-0 ${isSpeaking
-                                        ? 'bg-indigo-100 text-indigo-600 ring-2 ring-indigo-400'
-                                        : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
+                                    ? 'bg-indigo-100 text-indigo-600 ring-2 ring-indigo-400'
+                                    : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
                                     }`}
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }}

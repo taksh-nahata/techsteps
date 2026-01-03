@@ -1,7 +1,7 @@
 {
-  "name": "senior-tech-helper",
+  "name": "techsteps",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -48,7 +48,7 @@
   "devDependencies": {
     "@axe-core/playwright": "^4.10.2",
     "@eslint/js": "^9.9.1",
-    "@playwright/test": "^1.54.1",
+    "@playwright/test": "^1.55.1",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
@@ -66,7 +66,7 @@
     "google-translate-api-x": "^10.7.2",
     "jest-axe": "^10.0.0",
     "jsdom": "^26.1.0",
-    "playwright": "^1.54.1",
+    "playwright": "^1.55.1",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "terser": "^5.43.1",
