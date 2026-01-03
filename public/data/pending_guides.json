@@ -6244,5 +6244,1070 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767482130390-331",
+    "title": "Fix Monitor Screen Flicker",
+    "problemDescription": "Screen flickering issue on a monitor.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "monitor",
+      "flicker",
+      "screen"
+    ],
+    "steps": [
+      {
+        "title": "Disable Motion Blur",
+        "content": "Access your monitor's settings menu and disable the motion blur feature."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-03T23:15:30.390Z",
+      "updated": "2026-01-03T23:15:30.390Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/problem-with-screen-flicker.3565202/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767482135182-232",
+    "title": "Fix Screen Flickering in Google Chrome",
+    "problemDescription": "Screen flickering issue, especially when using Google Chrome.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "screen flickering",
+      "Google Chrome",
+      "GPU issue"
+    ],
+    "steps": [
+      {
+        "title": "Update Chrome",
+        "content": "Ensure you are using the latest version of Google Chrome. Go to Chrome Settings > About Chrome to check for updates."
+      },
+      {
+        "title": "Disable Hardware Acceleration",
+        "content": "Go to Chrome Settings > Advanced > System and disable 'Use hardware acceleration when available'."
+      },
+      {
+        "title": "Check for GPU Driver Updates",
+        "content": "Update your GPU drivers to the latest version from the manufacturer's website."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Chrome Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Chrome Settings",
+            "content": "Go to Chrome Settings > Advanced > Reset and clean up > Restore settings to their original defaults."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Different Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch Browsers",
+            "content": "Try using a different browser like Firefox or Edge to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T23:15:35.182Z",
+      "updated": "2026-01-03T23:15:35.182Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/screen-flickering-gpu-issue.3623536/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767482138184-840",
+    "title": "Fix Screen Flickering at the Top",
+    "problemDescription": "Screen flickering only at the top of the display.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen",
+      "flickering",
+      "hardware",
+      "video card"
+    ],
+    "steps": [
+      {
+        "title": "Test with a Different Video Card",
+        "content": "Try using a different video card to see if the flickering stops. If it does, the original video card may be faulty."
+      },
+      {
+        "title": "Check for Loose Connections",
+        "content": "Ensure that all cables connecting the video card to the monitor are securely connected."
+      },
+      {
+        "title": "Update Graphics Drivers",
+        "content": "Update the graphics drivers to the latest version to ensure compatibility and fix any potential bugs."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Monitor Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Adjust Refresh Rate",
+            "content": "Change the refresh rate in the display settings to see if it resolves the flickering issue."
+          },
+          {
+            "title": "Test with Another Monitor",
+            "content": "Connect the computer to a different monitor to determine if the issue is with the original monitor."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T23:15:38.184Z",
+      "updated": "2026-01-03T23:15:38.184Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/screen-flickering-only-at-the-top.259089/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767482141078-301",
+    "title": "Fix Monitor Blinking or Going Black",
+    "problemDescription": "Monitor keeps blinking on and off or going black for a few seconds.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "monitor",
+      "blinking",
+      "black screen",
+      "HDMI"
+    ],
+    "steps": [
+      {
+        "title": "Check the Cable",
+        "content": "Try using a different cable to connect your monitor to the computer."
+      },
+      {
+        "title": "Change HDMI Port",
+        "content": "Switch to a different HDMI port on your computer or monitor."
+      },
+      {
+        "title": "Test with Another Monitor",
+        "content": "Connect your computer to a different monitor or display to check if the issue persists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Graphics Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Press Win + X and select Device Manager."
+          },
+          {
+            "title": "Update Drivers",
+            "content": "Expand the Display adapters section, right-click on your graphics card, and select Update driver."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T23:15:41.078Z",
+      "updated": "2026-01-03T23:15:41.078Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/monitor-keeps-blinking-on-and-off-going-black-for-few-seconds.3436474/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767482154112-186",
+    "title": "Fix Missing Bluetooth Option in Windows 11",
+    "problemDescription": "Bluetooth option is missing in Windows 11, preventing Bluetooth devices from connecting.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "windows 11",
+      "missing option",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Enable Bluetooth Support Service",
+        "content": "1. Press Win + R to open the Run dialog. 2. Type services.msc in the text field and press Enter. 3. Double-click on Bluetooth Support Service to open its properties. 4. Use the drop-down menu next to Startup type to select Automatic. 5. Hit Apply to save changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Run Bluetooth Troubleshooter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Bluetooth Troubleshooter",
+            "content": "1. Press Win + I to launch the Settings app. 2. In the System tab, click Troubleshoot. 3. Select Other troubleshooters. 4. Click the Run button next to Bluetooth."
+          }
+        ]
+      },
+      {
+        "title": "Run SFC and DISM Scans",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run SFC and DISM Scans",
+            "content": "1. Press Win + X and select Terminal (Admin) from the list. 2. Select Yes when the User Account Control (UAC) prompt shows up. 3. In the console, run the following command: sfc /scannow"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T23:15:54.112Z",
+      "updated": "2026-01-03T23:15:54.112Z",
+      "sourceUrl": "https://www.makeuseof.com/windows-11-missing-bluetooth/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767482159828-197",
+    "title": "Fix Bluetooth Audio Stutter on Windows 10",
+    "problemDescription": "Bluetooth audio stuttering or choppy sound on Windows 10 PC.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "audio",
+      "stutter",
+      "windows 10"
+    ],
+    "steps": [
+      {
+        "title": "Run the Bluetooth Troubleshooter",
+        "content": "Go to Settings > Update & Security > Troubleshoot > Bluetooth. Run the Bluetooth troubleshooter and follow the on-screen instructions."
+      },
+      {
+        "title": "Test the Connection",
+        "content": "After the troubleshooter finishes, reconnect your Bluetooth earphones to check if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Bluetooth Headphones",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Factory Reset Headphones",
+            "content": "Consult your headset’s manual for instructions. Typically, this involves holding down the power button for five to seven seconds."
+          },
+          {
+            "title": "Reconnect Headphones",
+            "content": "After resetting, reconnect your headphones to your PC and test the audio."
+          }
+        ]
+      },
+      {
+        "title": "Restart Bluetooth Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disconnect and Unpair",
+            "content": "Go to Windows 10 Bluetooth settings, disconnect your headset, and unpair it."
+          },
+          {
+            "title": "Turn Off and On Bluetooth",
+            "content": "Turn off your computer’s Bluetooth, wait a few seconds, then turn it back on."
+          },
+          {
+            "title": "Reconnect Headphones",
+            "content": "Pair and reconnect your headset to your PC and test the audio."
+          }
+        ]
+      },
+      {
+        "title": "Move Closer to Your PC",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Improve Signal Strength",
+            "content": "Move closer to your Windows PC to ensure a stronger Bluetooth signal."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T23:15:59.828Z",
+      "updated": "2026-01-03T23:15:59.828Z",
+      "sourceUrl": "https://www.makeuseof.com/windows-10-bluetooth-audio-stutter-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767482168243-41",
+    "title": "Fix Amazon Echo Audio Streaming Issues",
+    "problemDescription": "Amazon Echo device is not streaming audio properly.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "Amazon Echo",
+      "audio streaming",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Power-Cycle Devices",
+        "content": "Turn off your router, modem, and Amazon Echo device. Wait for about 30 seconds, then turn them back on in the same order."
+      },
+      {
+        "title": "Test Audio Streaming",
+        "content": "After power-cycling, try streaming audio for a few minutes to see if the issue is resolved."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-03T23:16:08.243Z",
+      "updated": "2026-01-03T23:16:08.243Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/these-8-problems-plague-the-amazon-echo-heres-how-you-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767482171170-705",
+    "title": "Fix Amazon Echo Connectivity Issues",
+    "problemDescription": "Amazon Echo has connectivity issues, such as cutting out or skipping responses.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "amazon echo",
+      "connectivity",
+      "wifi",
+      "internet",
+      "reboot"
+    ],
+    "steps": [
+      {
+        "title": "Contact Your ISP",
+        "content": "Contact your Internet Service Provider (ISP) to check if there are any known issues affecting multiple users."
+      },
+      {
+        "title": "Relocate Your Echo and Router",
+        "content": "Move your Amazon Echo and router to a central location in your house, away from other electronics, and place them higher in the room."
+      },
+      {
+        "title": "Reboot Your Echo",
+        "content": "Unplug your Amazon Echo from the power source, wait a few seconds, and then plug it back in."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reboot Your Router",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unplug Your Router",
+            "content": "Unplug your router from the power source."
+          },
+          {
+            "title": "Wait",
+            "content": "Wait for about 30 seconds."
+          },
+          {
+            "title": "Plug Your Router Back In",
+            "content": "Plug your router back into the power source and wait for it to fully reboot."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T23:16:11.170Z",
+      "updated": "2026-01-03T23:16:11.170Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/how-to-fix-connectivity-issues-with-the-amazon-echo/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767482174510-320",
+    "title": "Alexa Not Understanding Commands",
+    "problemDescription": "Alexa is having trouble understanding your voice commands.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Alexa",
+      "voice commands",
+      "understanding",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Power-Cycle Devices",
+        "content": "Turn off your router, modem, and Alexa speaker. Wait for about 30 seconds, then turn them back on."
+      },
+      {
+        "title": "Stream Audio",
+        "content": "Play some audio through your Alexa device for a few minutes to see if the issue resolves."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check for Software Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Alexa App",
+            "content": "Ensure your Alexa app is updated to the latest version."
+          },
+          {
+            "title": "Update Alexa Device",
+            "content": "Go to the Alexa app, select your device, and check for any available updates."
+          }
+        ]
+      },
+      {
+        "title": "Adjust Device Placement",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Move Alexa Device",
+            "content": "Relocate your Alexa device to a different spot in the room to improve sound quality."
+          },
+          {
+            "title": "Reduce Background Noise",
+            "content": "Minimize background noise to help Alexa better understand your commands."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T23:16:14.510Z",
+      "updated": "2026-01-03T23:16:14.510Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/is-alexa-having-trouble-understanding-you-solve-these-common-amazon-echo-issues/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767482177742-886",
+    "title": "Alexa Misunderstanding Commands",
+    "problemDescription": "Alexa is not understanding your commands or responding incorrectly.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "alexa",
+      "voice",
+      "commands",
+      "misunderstanding"
+    ],
+    "steps": [
+      {
+        "title": "Train Alexa to Understand Your Voice",
+        "content": "Open the Alexa app, tap More in the lower right corner, tap Settings, then tap Your Profile at the top. Follow the prompts to train Alexa to better understand your voice."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Change Alexa's Wake Word",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Alexa App and Go to Settings",
+            "content": "Open the Alexa app and tap More in the lower right corner, then tap Settings."
+          },
+          {
+            "title": "Change Wake Word",
+            "content": "Tap Device Settings, find the device whose wake word you'd like to change and tap on it. Scroll down to almost the bottom and tap Wake Word, then tap which one you'd like to use."
+          },
+          {
+            "title": "Repeat for Other Devices",
+            "content": "Tap the back button (<) in the upper left corner twice to return to the list of devices; repeat as needed for your other Echo speakers or displays."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T23:16:17.742Z",
+      "updated": "2026-01-03T23:16:17.742Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/alexa-can-you-chill-quick-and-easy-workarounds-for-5-minor-issues/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767482182019-141",
+    "title": "Remove Alexa Devices from Amazon Account",
+    "problemDescription": "How to deregister Alexa devices from your Amazon account.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Alexa",
+      "Amazon",
+      "deregister",
+      "account",
+      "smart home"
+    ],
+    "steps": [
+      {
+        "title": "Open Alexa App or Web Portal",
+        "content": "Open the Alexa app on your iOS or Android device, or go to the web portal at alexa.amazon.com."
+      },
+      {
+        "title": "Navigate to Device Settings",
+        "content": "Go to the 'Settings' menu and select 'Device Settings'."
+      },
+      {
+        "title": "Select the Device to Deregister",
+        "content": "Find the device you want to remove from the list of registered Alexa devices."
+      },
+      {
+        "title": "Deregister the Device",
+        "content": "Tap on the device and select 'Deregister'. Confirm the action if prompted."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Deregister DIY or Emulated Alexa Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Alexa App or Web Portal",
+            "content": "Open the Alexa app on your iOS or Android device, or go to the web portal at alexa.amazon.com."
+          },
+          {
+            "title": "Navigate to Device Settings",
+            "content": "Go to the 'Settings' menu and select 'Device Settings'."
+          },
+          {
+            "title": "Select the Device to Deregister",
+            "content": "Find the DIY or emulated device you want to remove from the list of registered Alexa devices."
+          },
+          {
+            "title": "Remove the Device",
+            "content": "Since there is no 'Deregister' button, simply remove the device from the list. If you want to use it again in the future, you will need to reauthorize it with your Amazon account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T23:16:22.019Z",
+      "updated": "2026-01-03T23:16:22.019Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/how-to-remove-alexa-devices-from-your-account/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767482190149-993",
+    "title": "Zoom Not Detecting Camera/Microphone on Mac",
+    "problemDescription": "Zoom application fails to detect or access the camera and microphone on a Mac.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "camera",
+      "microphone",
+      "mac",
+      "permissions"
+    ],
+    "steps": [
+      {
+        "title": "Create a New User Profile",
+        "content": "Create a new user profile on your Mac to resolve potential profile corruption issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Grant Full Disk Access",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Preferences",
+            "content": "Go to System Preferences > Security & Privacy > Privacy."
+          },
+          {
+            "title": "Add Zoom to Full Disk Access",
+            "content": "Under the Privacy tab, select Full Disk Access and add Zoom to the list."
+          }
+        ]
+      },
+      {
+        "title": "Check Camera and Microphone Permissions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Preferences",
+            "content": "Go to System Preferences > Security & Privacy > Privacy."
+          },
+          {
+            "title": "Verify Zoom Permissions",
+            "content": "Ensure that Zoom is listed and checked under both Camera and Microphone permissions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T23:16:30.149Z",
+      "updated": "2026-01-03T23:16:30.149Z",
+      "sourceUrl": "https://discussions.apple.com/thread/251266261",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767482195979-97",
+    "title": "Fix Zoom Error Code 5003 on Mac",
+    "problemDescription": "Zoom displays 'Unable to connect' with error code 5003, despite having internet and no firewall/proxy.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "error code 5003",
+      "mac",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Mac",
+        "content": "Log out, sleep, restart, or shut down your Mac, then turn it back on."
+      },
+      {
+        "title": "Use Safe Mode",
+        "content": "Boot your Mac in Safe Mode to check for software conflicts. Restart your Mac, then immediately press and hold the Shift key until the login screen appears."
+      },
+      {
+        "title": "Check Network Settings",
+        "content": "Ensure your Mac is connected to the internet and there are no network restrictions. Try switching to a different network if possible."
+      },
+      {
+        "title": "Reinstall Zoom",
+        "content": "Uninstall Zoom completely, then download and install the latest version from the official Zoom website."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Firewall and Proxy Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Firewall Settings",
+            "content": "Ensure your Mac's firewall is turned off. Go to System Preferences > Security & Privacy > Firewall and turn it off temporarily."
+          },
+          {
+            "title": "Check Proxy Settings",
+            "content": "Go to System Preferences > Network > Advanced > Proxies and ensure no proxy is enabled."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Zoom Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Zoom Support",
+            "content": "Check out Zoom's official support pages for network firewall or proxy server settings and error codes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T23:16:35.979Z",
+      "updated": "2026-01-03T23:16:35.979Z",
+      "sourceUrl": "https://discussions.apple.com/thread/251638765",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767482198110-141",
+    "title": "Fix MacBook Camera Not Working on Zoom",
+    "problemDescription": "MacBook camera not working on Zoom after updating to Mojave or Catalina.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "zoom",
+      "camera",
+      "mojave",
+      "catalina"
+    ],
+    "steps": [
+      {
+        "title": "Update Zoom to Compatible Version",
+        "content": "Install the default Zoom app and check for updates in the Zoom menu bar. Install the version compatible with your Mac's operating system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Downgrade to High Sierra",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a High Sierra Partition",
+            "content": "Partition your hard drive and set up a High Sierra partition."
+          },
+          {
+            "title": "Install Zoom on High Sierra",
+            "content": "Install and use Zoom on the High Sierra partition."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T23:16:38.110Z",
+      "updated": "2026-01-03T23:16:38.111Z",
+      "sourceUrl": "https://discussions.apple.com/thread/251251747",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767482200342-406",
+    "title": "Disable Zoom on iPhone",
+    "problemDescription": "iPhone is stuck in a zoom feature in accessibility settings.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "zoom",
+      "accessibility",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Use Three-Finger Gesture",
+        "content": "Tap with three fingers on the screen and slide to navigate until you can enter your passcode."
+      },
+      {
+        "title": "Access Settings",
+        "content": "Tap with three fingers on the screen and slide until you can tap Settings."
+      },
+      {
+        "title": "Turn Off Zoom",
+        "content": "Go to Settings -> Accessibility -> Zoom -> turn it Off."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Double Tap with Three Fingers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Double Tap",
+            "content": "Tap the screen twice with three fingers to toggle zoom off."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T23:16:40.342Z",
+      "updated": "2026-01-03T23:16:40.342Z",
+      "sourceUrl": "https://discussions.apple.com/thread/253875514",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767482204779-938",
+    "title": "Fix Zoom Crashing Network on MacBook Pro",
+    "problemDescription": "Zoom causes network disconnections on MacBook Pro, especially when using Ethernet.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "network",
+      "macbook",
+      "ethernet",
+      "disconnection"
+    ],
+    "steps": [
+      {
+        "title": "Use a USB-Ethernet Adapter",
+        "content": "Connect a USB-Ethernet adapter to your MacBook Pro and use it for the network connection instead of the built-in Ethernet port."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Connect Directly to Router",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect MacBook to Router",
+            "content": "Connect your MacBook Pro directly to the router using an Ethernet cable (without using an Ethernet switch)."
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Restart your MacBook Pro after connecting it directly to the router."
+          }
+        ]
+      },
+      {
+        "title": "Use Zoom Web Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Zoom via Web Browser",
+            "content": "Access Zoom through the website instead of the desktop application."
+          }
+        ]
+      },
+      {
+        "title": "Update Zoom and Use a Compatible Hub",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download M1-Specific Zoom Version",
+            "content": "Download and install the Zoom version specifically designed for M1 Macs."
+          },
+          {
+            "title": "Use a Compatible Hub",
+            "content": "Purchase and use a compatible hub like the Uni 8-in-1 hub for Ethernet connectivity."
+          },
+          {
+            "title": "Change DHCP Settings",
+            "content": "Change the DHCP setting from 'manually' to 'Using DHCP' in System Preferences/Network."
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Restart your MacBook Pro after making these changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T23:16:44.779Z",
+      "updated": "2026-01-03T23:16:44.779Z",
+      "sourceUrl": "https://discussions.apple.com/thread/251774751",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767482214926-530",
+    "title": "Fix Zoom Webcam or Audio Issues",
+    "problemDescription": "Webcam or audio not working during a Zoom call.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "webcam",
+      "audio",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check Connections",
+        "content": "Ensure your webcam and microphone are properly connected to your device."
+      },
+      {
+        "title": "Restart Zoom",
+        "content": "Close and reopen the Zoom application to refresh the connection."
+      },
+      {
+        "title": "Check Permissions",
+        "content": "Verify that Zoom has permission to access your camera and microphone in your device's settings."
+      },
+      {
+        "title": "Update Zoom",
+        "content": "Ensure you are using the latest version of Zoom by checking for updates in the application settings."
+      },
+      {
+        "title": "Test Hardware",
+        "content": "Try using your webcam and microphone with another application to ensure they are functioning properly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Zoom",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Zoom",
+            "content": "Remove the Zoom application from your device."
+          },
+          {
+            "title": "Download Latest Version",
+            "content": "Download the latest version of Zoom from the official website."
+          },
+          {
+            "title": "Install Zoom",
+            "content": "Install the downloaded version and try using your webcam and microphone again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T23:16:54.926Z",
+      "updated": "2026-01-03T23:16:54.926Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-problems-with-zoom-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767482217700-337",
+    "title": "Troubleshoot Common Zoom Issues",
+    "problemDescription": "Fix common problems encountered while using Zoom.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "troubleshooting",
+      "video conferencing"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure you have a stable internet connection. Restart your router if necessary."
+      },
+      {
+        "title": "Update Zoom",
+        "content": "Make sure you are using the latest version of Zoom. Update the app if needed."
+      },
+      {
+        "title": "Restart the App",
+        "content": "Close and reopen the Zoom app to resolve minor glitches."
+      },
+      {
+        "title": "Check Audio and Video Settings",
+        "content": "Verify that your microphone and camera are properly connected and selected in the Zoom settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Zoom",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Zoom",
+            "content": "Go to your device's settings and uninstall the Zoom app."
+          },
+          {
+            "title": "Download and Install",
+            "content": "Download the latest version of Zoom from the official website and install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T23:16:57.700Z",
+      "updated": "2026-01-03T23:16:57.700Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/how-to-use-zoom/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767482219733-562",
+    "title": "Fix Zoom Issues on Chromebook with Family Link",
+    "problemDescription": "Google's Family Link parental controls may interfere with Zoom meetings on Chromebooks.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Chromebook",
+      "Zoom",
+      "Family Link",
+      "parental controls"
+    ],
+    "steps": [
+      {
+        "title": "Disable Family Link Parental Controls",
+        "content": "Temporarily disable the parental controls in Google's Family Link to see if it resolves the Zoom issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Zoom and Chromebook",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Zoom",
+            "content": "Ensure Zoom is updated to the latest version."
+          },
+          {
+            "title": "Update Chromebook",
+            "content": "Check for and install any available Chromebook updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T23:16:59.733Z",
+      "updated": "2026-01-03T23:16:59.733Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-chromebook-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767482227532-476",
+    "title": "Fix Google Meet Audio Issues",
+    "problemDescription": "No audio or distorted audio during a Google Meet call.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "google meet",
+      "audio",
+      "microphone",
+      "sound"
+    ],
+    "steps": [
+      {
+        "title": "Check Microphone Settings",
+        "content": "Ensure your microphone is selected as the default input device in Google Meet settings."
+      },
+      {
+        "title": "Restart the Browser",
+        "content": "Close and reopen your browser to refresh the connection and settings."
+      },
+      {
+        "title": "Update Browser",
+        "content": "Ensure your browser is up-to-date to avoid compatibility issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Browser Permissions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Allow Microphone Access",
+            "content": "Go to your browser settings and ensure microphone access is allowed for Google Meet."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T23:17:07.532Z",
+      "updated": "2026-01-03T23:17:07.532Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-google-meet-problems-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
