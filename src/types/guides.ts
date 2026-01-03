@@ -1,4 +1,4 @@
-export type AnnotationType = 'arrow' | 'circle';
+export type AnnotationType = 'arrow' | 'circle' | 'blur';
 export type Direction = 'up' | 'down' | 'left' | 'right';
 
 export interface GuideAnnotation {
@@ -9,6 +9,8 @@ export interface GuideAnnotation {
     label?: string;
     color?: string; // hex code
     size?: number; // scale factor (default 1)
+    width?: number; // For blur rect (percentage)
+    height?: number; // For blur rect (percentage)
     rotation?: number; // Degrees (0-360)
 }
 
