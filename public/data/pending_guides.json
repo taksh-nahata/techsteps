@@ -4263,5 +4263,1043 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767474895344-749",
+    "title": "Fix Gmail Has Stopped Error on Android",
+    "problemDescription": "Gmail app crashes and displays 'Unfortunately Gmail Has Stopped' error on Android.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "android",
+      "app crash",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Force Stop Gmail App",
+        "content": "Go to Settings > Apps > Gmail > Force stop. Wait a few seconds, then reopen the Gmail app."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use an Alternative Email App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Outlook or Another Email App",
+            "content": "Download and install an alternative email app like Outlook from the Google Play Store. Access your Gmail account through the alternative app until the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:14:55.344Z",
+      "updated": "2026-01-03T21:14:55.344Z",
+      "sourceUrl": "https://www.makeuseof.com/fix-unfortunately-gmail-has-stopped-error-android/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767474897917-729",
+    "title": "Fix Gmail Attachment Failed Error",
+    "problemDescription": "Gmail fails to attach files to emails due to browser extensions or other issues.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "attachment",
+      "browser",
+      "extension"
+    ],
+    "steps": [
+      {
+        "title": "Disable Browser Extensions",
+        "content": "Disable all browser extensions and then re-enable them one at a time to identify the problematic extension."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Incognito Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Incognito Mode",
+            "content": "Enable incognito mode or private browsing mode in your browser and sign back into your Gmail account to check if an extension is causing the error."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:14:57.917Z",
+      "updated": "2026-01-03T21:14:57.917Z",
+      "sourceUrl": "https://www.makeuseof.com/ways-to-fix-attachment-failed-error-gmail/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767474902475-127",
+    "title": "Fix Gmail Not Receiving Emails",
+    "problemDescription": "Gmail is not receiving emails, which could be due to various reasons such as account bugs, full storage, blocked senders, or mail forwarding settings.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "emails",
+      "not receiving",
+      "account",
+      "bug"
+    ],
+    "steps": [
+      {
+        "title": "Log Out and Log Back In",
+        "content": "Sign out of your Gmail account, restart your browser, and then log back in with your credentials."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Gmail Account Storage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Storage",
+            "content": "Ensure your Gmail account has enough storage space. If it's full, delete unnecessary emails or empty the trash."
+          }
+        ]
+      },
+      {
+        "title": "Unblock Senders",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unblock Sender",
+            "content": "Go to Gmail settings, navigate to Filters and Blocked Addresses, and remove any blocked senders who should be able to contact you."
+          }
+        ]
+      },
+      {
+        "title": "Disable Mail Forwarding",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Forwarding",
+            "content": "Check your Gmail settings to ensure mail forwarding is not enabled, as it might be redirecting your emails to another account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:15:02.475Z",
+      "updated": "2026-01-03T21:15:02.475Z",
+      "sourceUrl": "https://www.makeuseof.com/troubleshooting-tips-gmail-stops-receiving-emails/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767474906871-628",
+    "title": "Prevent Emails from Going to Spam in Gmail",
+    "problemDescription": "Legitimate emails are being marked as spam in Gmail.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "spam",
+      "emails",
+      "blocked sender"
+    ],
+    "steps": [
+      {
+        "title": "Unblock the Sender or Domain",
+        "content": "Go to Gmail and search for an email from the sender you want to unblock. Open the email and click on the three-dot menu (More) in the top-right corner. Select 'Unblock [sender]' from the dropdown menu."
+      },
+      {
+        "title": "Create a Filter to Whitelist the Sender or Domain",
+        "content": "Go to Gmail and click on the search bar. Click on the three-line menu (Show search options) on the right side of the search bar. In the 'From' field, enter the sender's email address or domain. Click 'Create filter' and then 'Create filter' again. Check the box for 'Never send it to Spam' and click 'Create filter' to save."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check for Accidental Unsubscription",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Subscription Status",
+            "content": "Check if you have accidentally unsubscribed from the sender's emails. Look for an unsubscribe link in a previous email from the sender and click on it to resubscribe."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:15:06.871Z",
+      "updated": "2026-01-03T21:15:06.871Z",
+      "sourceUrl": "https://www.makeuseof.com/stop-emails-from-going-to-spam-in-gmail/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767474910025-821",
+    "title": "Fix Email Syncing on Android",
+    "problemDescription": "Emails are not syncing on your Android device.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "email",
+      "sync",
+      "android",
+      "account",
+      "password"
+    ],
+    "steps": [
+      {
+        "title": "Remove and Re-add Your Email Account",
+        "content": "Open your email app, go to settings, and remove the problematic email account. Then, re-add the account by entering your email address and password."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Your Password",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Password in Email App",
+            "content": "Open your email app, go to account settings, and update your password. Ensure you update the password on all devices using the same email account."
+          }
+        ]
+      },
+      {
+        "title": "Clear Cache and Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache and Data",
+            "content": "Go to your device's settings, find the email app in the list of apps, and clear the cache and data."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:15:10.025Z",
+      "updated": "2026-01-03T21:15:10.025Z",
+      "sourceUrl": "https://www.makeuseof.com/email-stopped-syncing-android-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767474918347-133",
+    "title": "Fix Screen Flickering on Windows 11",
+    "problemDescription": "Screen flickering issue on Windows 11.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "screen flickering",
+      "display issue"
+    ],
+    "steps": [
+      {
+        "title": "Update Display Drivers",
+        "content": "Go to Settings > Windows Update > Advanced options > Optional updates. Check for any available driver updates, especially for your display adapter, and install them."
+      },
+      {
+        "title": "Reinstall or Rollback Drivers",
+        "content": "Open Device Manager, expand Display adapters, right-click your display driver, and select 'Uninstall device'. Restart your PC to reinstall the driver. If the issue started recently, you can also use the 'Roll Back Driver' option."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to Settings > Windows Update and check for any available updates. Install them to ensure your system has the latest fixes."
+      },
+      {
+        "title": "Remove Third-Party Apps",
+        "content": "Uninstall any recently installed third-party apps that might be causing the flickering. Go to Settings > Apps > Installed apps and uninstall suspicious or unnecessary applications."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Turn Off Animation Effects",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Animation Effects",
+            "content": "Navigate to Settings > Accessibility > Visual Effects > Animation effects and turn off every animation effect on your system."
+          }
+        ]
+      },
+      {
+        "title": "Change Background to Solid Color",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Background to Solid Color",
+            "content": "Go to Settings > Personalization > Background and set the background to a solid color instead of Slideshow."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:15:18.347Z",
+      "updated": "2026-01-03T21:15:18.347Z",
+      "sourceUrl": "https://www.makeuseof.com/windows-11-fix-screen-flickering/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767474921579-732",
+    "title": "Fix Windows 10/11 Screen Flickering",
+    "problemDescription": "Screen flickering or flashing on Windows 10/11 systems.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "screen",
+      "flickering",
+      "flashing"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall Problematic Apps",
+        "content": "1. Press Windows Key + I to open Settings. 2. Click Apps > Apps & features. 3. Click Sort by and choose Installation date. 4. Click the offending app and click Uninstall. You may need to restart your system for the changes to take full effect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Create a New Windows User Profile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a New Account",
+            "content": "1. Press Windows Key + I to open Settings. 2. Go to Accounts > Family & other users. 3. Click Add someone else to this PC (Windows 10) or Add account (Windows 11) and follow the wizard."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:15:21.579Z",
+      "updated": "2026-01-03T21:15:21.579Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/fix-windows-10-screen-flashing-problem/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767474925584-504",
+    "title": "Fix MacBook Screen Flickering",
+    "problemDescription": "MacBook screen flickering or flashing issues.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "macbook",
+      "screen",
+      "flickering",
+      "update",
+      "cache"
+    ],
+    "steps": [
+      {
+        "title": "Update System Software",
+        "content": "Open the System Settings app, go to General, click Software Update, and install any available updates."
+      },
+      {
+        "title": "Clear System Cache",
+        "content": "Install Onyx, grant it full-disk access in System Settings > Privacy & Security > Full Disk Access, open Onyx, switch to the Maintenance tab, keep default selections, and click Run Tasks."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Hardware Acceleration in Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Hardware Acceleration",
+            "content": "In Chrome, click the three-dots icon, go to Settings > System, and disable Use hardware acceleration when available."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:15:25.584Z",
+      "updated": "2026-01-03T21:15:25.584Z",
+      "sourceUrl": "https://www.makeuseof.com/fix-macbook-screen-flickering/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767474928348-758",
+    "title": "Fix Phone Display Flickering",
+    "problemDescription": "Your phone's display is flickering, which can be caused by various software or hardware issues.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "phone",
+      "display",
+      "flickering",
+      "screen"
+    ],
+    "steps": [
+      {
+        "title": "Disable Hardware Overlays",
+        "content": "Enable Developer Options by going to Settings > About Phone > Tap Build Number 7 times. Then, go to Developer Options and disable Hardware Overlays."
+      },
+      {
+        "title": "Turn Off Night Light",
+        "content": "Go to Settings > Display and turn off the Night Light feature. On Samsung Galaxy phones, this feature is called Eye Comfort Shield."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Auto-Brightness",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Auto-Brightness",
+            "content": "Go to Settings > Display and turn off the Auto-Brightness or Adaptive Brightness feature."
+          }
+        ]
+      },
+      {
+        "title": "Restart Your Phone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Power Off and On",
+            "content": "Turn off your phone completely, then press and hold the power button to turn it back on."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:15:28.348Z",
+      "updated": "2026-01-03T21:15:28.348Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/phone-display-flickering-fixes/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767474936707-772",
+    "title": "Fix Zoom Crashing Due to Graphics Acceleration",
+    "problemDescription": "Zoom application crashes randomly, possibly due to graphics acceleration issues.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "crash",
+      "graphics",
+      "acceleration",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Disable Hardware Acceleration in Zoom",
+        "content": "Open Zoom, go to Settings > General, and disable 'Enable hardware acceleration'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Reliability History",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Reliability History",
+            "content": "Press Win + S, type 'Reliability History', and open the 'View reliability history' app."
+          },
+          {
+            "title": "Analyze Error Codes",
+            "content": "Look for error codes or events around the time Zoom started crashing again after reinstalling Windows."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Run Windows Troubleshooters",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Press Win + I to open Windows Settings."
+          },
+          {
+            "title": "Navigate to Troubleshoot",
+            "content": "Go to Update & Security > Troubleshoot."
+          },
+          {
+            "title": "Run Troubleshooters",
+            "content": "Select the appropriate troubleshooter and run it to find and fix potential issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:15:36.707Z",
+      "updated": "2026-01-03T21:15:36.707Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/zoom-keeps-crashing-possibly-a-graphics-issues.3701287/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767474938467-992",
+    "title": "Fix Zoom Connection Instability",
+    "problemDescription": "Zoom connection drops or becomes unstable during use.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "connection",
+      "instability",
+      "wifi",
+      "ethernet"
+    ],
+    "steps": [
+      {
+        "title": "Replace Ethernet Cable",
+        "content": "If the device is hardwired, replace the Ethernet cable with a new one. If the issue persists, check the in-wall cabling and wall plates."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-03T21:15:38.467Z",
+      "updated": "2026-01-03T21:15:38.467Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/troubleshooting-zoom-connection-instability.3696398/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767474940954-314",
+    "title": "Stop Windows 10 Screen from Zooming In and Out",
+    "problemDescription": "Windows 10 screen is zooming in and out unexpectedly.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 10",
+      "screen zoom",
+      "touchpad"
+    ],
+    "steps": [
+      {
+        "title": "Disable Swipe to Zoom in Touchpad Settings",
+        "content": "Go to Control Panel, open Touchpad options (under Synaptics), and disable the swipe to zoom function."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Animations in Ease of Access Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Click the Windows icon on the bottom left, then click the gear icon to open Settings."
+          },
+          {
+            "title": "Navigate to Ease of Access",
+            "content": "Go to Ease of Access > Other options on the left side."
+          },
+          {
+            "title": "Disable Animations",
+            "content": "Turn off 'Play animations in Windows'. Restart your laptop."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:15:40.954Z",
+      "updated": "2026-01-03T21:15:40.954Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/how-do-i-stop-my-windows-10-screen-from-zooming-in-and-out.2395265/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767474944117-567",
+    "title": "Fix Logitech External Webcam Video Not Working",
+    "problemDescription": "Logitech external webcam video is not working on both desktop and laptop, despite the device being recognized by Windows.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "webcam",
+      "Logitech",
+      "video",
+      "Windows"
+    ],
+    "steps": [
+      {
+        "title": "Check Webcam on Another Device",
+        "content": "Plug the webcam into another device to verify if the issue is with the webcam itself or the computer."
+      },
+      {
+        "title": "Uninstall and Reinstall Drivers",
+        "content": "Uninstall the webcam drivers from Device Manager, then restart your computer to allow Windows to reinstall the drivers automatically."
+      },
+      {
+        "title": "Update Webcam Firmware",
+        "content": "Visit the Logitech support website to download and install the latest firmware for your webcam model."
+      },
+      {
+        "title": "Test Webcam with Different Software",
+        "content": "Use different software (e.g., Skype, Zoom, or a webcam testing tool) to see if the issue is specific to one application."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Webcam Troubleshooter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to Settings > Update & Security > Troubleshoot."
+          },
+          {
+            "title": "Run Webcam Troubleshooter",
+            "content": "Select 'Camera' and run the troubleshooter to detect and fix any issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:15:44.117Z",
+      "updated": "2026-01-03T21:15:44.117Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/logitech-external-webcam-video-not-working.3579792/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767474952899-947",
+    "title": "Fix TV No Signal Error",
+    "problemDescription": "TV displays 'No Signal' error despite all devices being plugged in.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "tv",
+      "no signal",
+      "input",
+      "smart tv"
+    ],
+    "steps": [
+      {
+        "title": "Check Connections",
+        "content": "Ensure all devices are properly plugged in and check for any loose cables."
+      },
+      {
+        "title": "Verify Device Power",
+        "content": "Check if the devices have power by looking for indicator lights on the front."
+      },
+      {
+        "title": "Cycle Through Inputs",
+        "content": "Use the remote to step through all available inputs (TV, HDMI1, HDMI2, etc.) to see if any signal appears."
+      },
+      {
+        "title": "Reboot Smart TV",
+        "content": "Unplug the smart TV from power, wait 30 seconds, then plug it back in and switch it off."
+      },
+      {
+        "title": "Check Antenna Connection",
+        "content": "Ensure the antenna is properly connected if using an over-the-air signal."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Device Faults",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test Devices on Another TV",
+            "content": "Connect the devices to another TV to verify if they are working properly."
+          },
+          {
+            "title": "Inspect HDMI Cables",
+            "content": "Check for any damage or wear on the HDMI cables and replace if necessary."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:15:52.899Z",
+      "updated": "2026-01-03T21:15:52.899Z",
+      "sourceUrl": "https://www.quora.com/Why-does-my-TV-say-no-signal-but-everything-is-plugged-in",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767474954226-728",
+    "title": "Troubleshoot Hisense Smart TV",
+    "problemDescription": "Hisense Smart TV not responding or displaying issues.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "hisense",
+      "smart tv",
+      "troubleshoot",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check Connections",
+        "content": "Ensure all cables are properly connected and the TV is powered on."
+      },
+      {
+        "title": "Reset the TV",
+        "content": "If the TV is still not working, try resetting it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Software Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Software",
+            "content": "Go to settings and check for any available software updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:15:54.226Z",
+      "updated": "2026-01-03T21:15:54.226Z",
+      "sourceUrl": "https://www.quora.com/How-do-you-troubleshoot-a-Hisense-Smart-TV",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767474955726-737",
+    "title": "Update Smart TV Apps",
+    "problemDescription": "Smart TV apps are outdated and not functioning properly.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "smart tv",
+      "apps",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Check for Updates",
+        "content": "Go to your TV's settings and look for a 'Software Update' or 'System Update' option."
+      },
+      {
+        "title": "Update Apps",
+        "content": "Navigate to the app store on your smart TV and update all installed apps to the latest versions."
+      },
+      {
+        "title": "Restart TV",
+        "content": "Restart your TV to ensure all updates are properly applied."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Problematic Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall App",
+            "content": "Go to the app store and uninstall the problematic app."
+          },
+          {
+            "title": "Reinstall App",
+            "content": "Download and install the app again from the app store."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:15:55.726Z",
+      "updated": "2026-01-03T21:15:55.726Z",
+      "sourceUrl": "https://www.quora.com/What-are-some-common-problems-with-smart-TVs",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767474958433-736",
+    "title": "Fix TV Black Screen with Sound",
+    "problemDescription": "TV screen is black but audio is working.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "tv",
+      "black screen",
+      "audio",
+      "signal",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check for Signal or TV Issue",
+        "content": "Press the menu button on your TV remote. If the menu appears clear and bright but the image is still black, it's a signal issue. If the screen remains dark, it's a TV issue."
+      },
+      {
+        "title": "Verify TV Signal",
+        "content": "Ensure the TV is receiving a signal and is not in radio or music mode. Consult your TV manual to confirm the correct input source."
+      },
+      {
+        "title": "Test Screen with Torch",
+        "content": "Use a torch to shine light on the screen. If you see movement, it indicates the screen is receiving a signal but the backlight is faulty."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Connections",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect Cables",
+            "content": "Ensure all cables (HDMI, power, etc.) are securely connected. Try unplugging and reconnecting them."
+          },
+          {
+            "title": "Restart TV",
+            "content": "Turn off the TV, unplug it from the power source, wait for a few minutes, and then plug it back in and turn it on."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:15:58.433Z",
+      "updated": "2026-01-03T21:15:58.433Z",
+      "sourceUrl": "https://www.quora.com/My-TV-is-dark-I-only-hear-sounds-What-should-I-do",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767474961189-445",
+    "title": "Fix TV with Black Screen",
+    "problemDescription": "TV turns on but the screen remains black.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "tv",
+      "black screen",
+      "inverter circuit"
+    ],
+    "steps": [
+      {
+        "title": "Check for Inverter Circuit Issue",
+        "content": "Shine a torch into the screen to see if there is any display. If you can see a faint image, the inverter circuit is likely faulty."
+      },
+      {
+        "title": "Replace the Inverter Circuit",
+        "content": "If the inverter circuit is faulty, you will need to replace it. This typically involves opening the TV and locating the inverter board, which is usually found behind the screen."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Connections",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect Cables and Connections",
+            "content": "Ensure all cables are securely connected, especially the power cable and any HDMI or other input cables."
+          },
+          {
+            "title": "Test with Different Input Source",
+            "content": "Try switching to a different input source to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:16:01.189Z",
+      "updated": "2026-01-03T21:16:01.189Z",
+      "sourceUrl": "https://www.quora.com/How-do-you-fix-a-TV-that-turns-on-but-the-screen-is-black",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767474969718-579",
+    "title": "Fix Android 12 Battery Drain",
+    "problemDescription": "Apps are causing excessive battery drain on Android 12.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "battery",
+      "drain",
+      "apps"
+    ],
+    "steps": [
+      {
+        "title": "Check Battery Usage by Apps",
+        "content": "Go to Settings > Apps > See all apps. Select any apps that may be or are draining your battery and then go to Battery."
+      },
+      {
+        "title": "Restrict Background Activity",
+        "content": "In the Battery settings of the problematic app, select 'Restrict background activity' to limit its battery usage."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Optimize Battery Usage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Battery Saver Mode",
+            "content": "Go to Settings > Battery > Battery Saver and turn it on to reduce battery consumption."
+          },
+          {
+            "title": "Uninstall Unnecessary Apps",
+            "content": "Remove apps that you don't use frequently to reduce background processes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:16:09.718Z",
+      "updated": "2026-01-03T21:16:09.718Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-android-12-problems-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767474975864-272",
+    "title": "Fix Samsung One UI 7 Battery Drain",
+    "problemDescription": "Samsung One UI 7 update causing excessive battery drain.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery",
+      "drain",
+      "samsung",
+      "one ui 7"
+    ],
+    "steps": [
+      {
+        "title": "Clear App Cache in Recovery Mode",
+        "content": "1. Power off your device. 2. Press and hold the Power and Volume Up buttons simultaneously to enter Recovery Mode. 3. Use the Volume buttons to navigate to 'Wipe Cache Partition' and press the Power button to select it. 4. Reboot your device."
+      },
+      {
+        "title": "Allow Time for One UI 7 to Learn Usage Patterns",
+        "content": "Give your device up to two weeks to adapt to your usage patterns and optimize battery usage."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Background Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Power-Hungry Apps",
+            "content": "Go to Settings > Battery > Battery Usage to see which apps are consuming the most power."
+          },
+          {
+            "title": "Close or Restrict Background Apps",
+            "content": "Close unnecessary apps or restrict their background activity in Settings > Apps > [App Name] > Battery."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:16:15.864Z",
+      "updated": "2026-01-03T21:16:15.864Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/that-long-delayed-samsung-one-ui-7-update-is-causing-battery-drain-issues-for-some/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767474977650-855",
+    "title": "Reboot Google Pixel 9",
+    "problemDescription": "Your Google Pixel 9 is experiencing issues and needs a restart to resolve them.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "reboot",
+      "pixel 9",
+      "restart"
+    ],
+    "steps": [
+      {
+        "title": "Reboot Your Phone",
+        "content": "Press and hold the power button until the power menu appears. Tap 'Restart' and confirm."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-03T21:16:17.650Z",
+      "updated": "2026-01-03T21:16:17.650Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/google-pixel-9-problems-common-issues-how-to-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767474980503-146",
+    "title": "Improve Smartphone Battery Life",
+    "problemDescription": "Smartphone battery drains quickly.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "battery",
+      "smartphone",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Use a Static Wallpaper",
+        "content": "Set a wallpaper that doesn't shift or move to reduce battery consumption."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Screen Brightness",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Lower Brightness",
+            "content": "Reduce screen brightness to save battery life."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Enable Battery Saver Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Activate Battery Saver",
+            "content": "Go to settings and enable battery saver mode to extend battery life."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-03T21:16:20.503Z",
+      "updated": "2026-01-03T21:16:20.503Z",
+      "sourceUrl": "https://www.digitaltrends.com/wearables/how-to-save-battery-life-on-your-smartphone/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
