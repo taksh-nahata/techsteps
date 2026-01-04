@@ -12993,5 +12993,776 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767514904258-661",
+    "title": "Fix Bootloop with SP Flash Tool",
+    "problemDescription": "Device stuck in a bootloop and unable to access recovery mode.",
+    "category": "android",
+    "difficulty": "Hard",
+    "keywords": [
+      "bootloop",
+      "recovery",
+      "SP Flash Tool",
+      "backup",
+      "flash"
+    ],
+    "steps": [
+      {
+        "title": "Backup All Regions",
+        "content": "Use SP Flash Tool to create a complete backup of all regions before proceeding."
+      },
+      {
+        "title": "Prepare SP Flash Tool",
+        "content": "Download and extract SP Flash Tool version 5.16 or newer to a folder (Folder1) on your PC."
+      },
+      {
+        "title": "Extract Boot Image",
+        "content": "Extract the boot.img from the firmware and place it in the same folder (Folder1)."
+      },
+      {
+        "title": "Open Scatter File",
+        "content": "Open the Scatter file in SP Flash Tool and unselect Preloader."
+      },
+      {
+        "title": "Select Download Method",
+        "content": "Select DOWNLOAD as the method of Flash in SP Flash Tool."
+      },
+      {
+        "title": "Flash the Device",
+        "content": "Turn off the device, connect it to the PC via USB, and hit start in SP Flash Tool. Wait for the flash process to complete."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: TWRP Terminal Commands",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Files",
+            "content": "Go into TWRP -> Advanced -> Terminal. Enter the following commands to backup files to the SD card: `cp /dev/block/platform/soc.0/7824900.sdhci/by-name/mota /sdcard/mota2` and `cp /dev/zero of=/dev/block/platform/soc.0/7824900.sdhci/by-name/misc /sdcard/misc2`."
+          },
+          {
+            "title": "Execute Commands",
+            "content": "Type these commands exactly: `dd if=/dev/zero of=/dev/block/platform/soc.0/7824900.sdhci/by-name/mota` and `dd if=/dev/zero of=/dev/block/platform/soc.0/7824900.sdhci/by-name/misc`. Hit ENTER after each command."
+          },
+          {
+            "title": "Restart the Device",
+            "content": "Restart the phone after executing the commands."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T08:21:44.258Z",
+      "updated": "2026-01-04T08:21:44.258Z",
+      "sourceUrl": "https://superuser.com/questions/1382376/please-help-bootloop-cant-get-into-recovery",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767514906363-629",
+    "title": "Unlock Samsung Phone via Bluetooth Exploit",
+    "problemDescription": "Gain access to a locked Samsung phone by exploiting a Bluetooth vulnerability.",
+    "category": "android",
+    "difficulty": "Hard",
+    "keywords": [
+      "samsung",
+      "android",
+      "bluetooth",
+      "unlock",
+      "exploit"
+    ],
+    "steps": [
+      {
+        "title": "Enable Bluetooth on the Locked Device",
+        "content": "Ensure Bluetooth is turned on for the locked Samsung phone."
+      },
+      {
+        "title": "Connect to the Device via Bluetooth",
+        "content": "Use a compatible device to connect to the locked Samsung phone via Bluetooth."
+      },
+      {
+        "title": "Exploit the Bluetooth Vulnerability",
+        "content": "Utilize known Bluetooth vulnerabilities to gain access to the device. This may require specialized tools or software."
+      },
+      {
+        "title": "Access the Device",
+        "content": "Once the exploit is successful, you should be able to access the device's data or settings."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-04T08:21:46.363Z",
+      "updated": "2026-01-04T08:21:46.363Z",
+      "sourceUrl": "https://superuser.com/questions/1663600/breaking-into-samsung-phone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767514916023-763",
+    "title": "Factory Reset Galaxy Tab 3",
+    "problemDescription": "Unable to perform a factory reset on a Galaxy Tab 3 due to issues in manual mode.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "factory reset",
+      "Galaxy Tab 3",
+      "manual mode",
+      "CSC-code"
+    ],
+    "steps": [
+      {
+        "title": "Backup Data",
+        "content": "Ensure all important data is backed up as the factory reset will erase everything."
+      },
+      {
+        "title": "Enter Recovery Mode",
+        "content": "Press and hold the Power, Volume Up, and Home buttons simultaneously to enter Recovery Mode."
+      },
+      {
+        "title": "Navigate to Factory Reset",
+        "content": "Use the Volume buttons to navigate to the 'Wipe data/factory reset' option and select it using the Power button."
+      },
+      {
+        "title": "Confirm Reset",
+        "content": "Confirm the factory reset by selecting 'Yes' and wait for the process to complete."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Alternative Method: Using Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to the Settings menu on your Galaxy Tab 3."
+          },
+          {
+            "title": "Navigate to Backup and Reset",
+            "content": "Select 'Backup and reset' from the Settings menu."
+          },
+          {
+            "title": "Factory Data Reset",
+            "content": "Tap on 'Factory data reset' and follow the on-screen instructions to complete the reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T08:21:56.023Z",
+      "updated": "2026-01-04T08:21:56.023Z",
+      "sourceUrl": "https://superuser.com/questions/1520101/factory-resetting-a-galaxy-tab-3",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767514931708-933",
+    "title": "Remove Unwanted Keyboards on Samsung Galaxy",
+    "problemDescription": "Samsung Galaxy device has many unwanted keyboards that cannot be removed.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "samsung",
+      "keyboard",
+      "android",
+      "uninstall"
+    ],
+    "steps": [
+      {
+        "title": "Access Keyboard Settings",
+        "content": "Go to Settings => General Management => Samsung Keyboard settings => Languages and types => Manage input languages."
+      },
+      {
+        "title": "Remove Unwanted Languages",
+        "content": "Uncheck the languages you do not want to use."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Uninstall Keyboard Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open the Settings app on your Samsung Galaxy."
+          },
+          {
+            "title": "Navigate to Apps",
+            "content": "Tap on 'Apps' or 'Application Manager'."
+          },
+          {
+            "title": "Find and Uninstall",
+            "content": "Find the unwanted keyboard apps and tap on 'Uninstall'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T08:22:11.708Z",
+      "updated": "2026-01-04T08:22:11.708Z",
+      "sourceUrl": "https://superuser.com/questions/1810955/samsung-galaxy-suddenly-installed-many-unremivale-keyboards",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767514939291-667",
+    "title": "Windows Not Detecting Android Device",
+    "problemDescription": "Windows laptop does not recognize connected Android device via USB, only charges it.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "android",
+      "usb",
+      "connection",
+      "device detection"
+    ],
+    "steps": [
+      {
+        "title": "Enable USB Debugging on Android",
+        "content": "Go to 'Settings' > 'About phone' > Tap 'Build number' seven times to enable Developer options. Then, go to 'Developer options' and enable 'USB debugging'."
+      },
+      {
+        "title": "Check USB Connection Mode",
+        "content": "On your Android device, pull down the notification panel and change the USB connection mode from 'Charging' to 'File Transfer (MTP)' or 'Transfer files'."
+      },
+      {
+        "title": "Update USB Drivers on Windows",
+        "content": "Open 'Device Manager' on your Windows laptop. Look for 'Other devices' or 'Portable devices' and update the drivers for your Android device."
+      },
+      {
+        "title": "Try a Different USB Port or Cable",
+        "content": "Switch to a different USB port on your laptop or use a different USB cable to connect your Android device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Install ADB Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download ADB Drivers",
+            "content": "Download and install the appropriate ADB drivers for your Android device from the manufacturer's website."
+          },
+          {
+            "title": "Install Drivers",
+            "content": "Follow the installation instructions provided by the manufacturer to install the ADB drivers on your Windows laptop."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T08:22:19.291Z",
+      "updated": "2026-01-04T08:22:19.291Z",
+      "sourceUrl": "https://superuser.com/questions/1368691/windows-cant-detect-my-android-device",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767514954793-487",
+    "title": "Fix Windows Boot After Windows 11 Update in Dual Boot",
+    "problemDescription": "Windows fails to boot after a Windows 11 update in a dual boot setup with Ubuntu.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "dual boot",
+      "bootloader",
+      "windows 11",
+      "grub"
+    ],
+    "steps": [
+      {
+        "title": "Boot into Ubuntu",
+        "content": "Start your computer and boot into Ubuntu."
+      },
+      {
+        "title": "Open Terminal",
+        "content": "Open a terminal window in Ubuntu."
+      },
+      {
+        "title": "Run Boot-Repair",
+        "content": "Install and run Boot-Repair by executing the following commands:\n\n```bash\nsudo add-apt-repository ppa:yannubuntu/boot-repair\nsudo apt-get update\nsudo apt-get install -y boot-repair\nboot-repair\n```"
+      },
+      {
+        "title": "Follow Boot-Repair Instructions",
+        "content": "Follow the on-screen instructions provided by Boot-Repair to repair the Windows bootloader."
+      },
+      {
+        "title": "Reboot Your Computer",
+        "content": "After the repair process is complete, reboot your computer."
+      },
+      {
+        "title": "Select Windows from GRUB",
+        "content": "From the GRUB menu, select the Windows option to boot into Windows."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Repair Using Windows Recovery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a Windows Recovery USB",
+            "content": "Create a Windows recovery USB drive using another computer."
+          },
+          {
+            "title": "Boot from Recovery USB",
+            "content": "Boot your computer from the Windows recovery USB drive."
+          },
+          {
+            "title": "Access Command Prompt",
+            "content": "Navigate to Troubleshoot > Advanced Options > Command Prompt."
+          },
+          {
+            "title": "Run Bootrec Commands",
+            "content": "Execute the following commands in the Command Prompt:\n\n```bash\nbootrec /fixmbr\nbootrec /fixboot\nbootrec /scanos\nbootrec /rebuildbcd\n```"
+          },
+          {
+            "title": "Reboot Your Computer",
+            "content": "After running the commands, reboot your computer and try booting into Windows."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T08:22:34.793Z",
+      "updated": "2026-01-04T08:22:34.793Z",
+      "sourceUrl": "https://askubuntu.com/questions/1468939/cannot-boot-to-windows-in-dual-boot-or-by-uefi-after-windows-11-update",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767514961060-823",
+    "title": "Fix GRUB Errors After Windows 11 Boot",
+    "problemDescription": "GRUB errors appear after booting Windows 11 in a dual-boot setup with Ubuntu.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "grub",
+      "windows 11",
+      "dual-boot",
+      "ubuntu"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall GRUB",
+        "content": "Open a terminal in Ubuntu and run the command `sudo grub-install` to reinstall GRUB."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check EFI Directory",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect EFI Directory",
+            "content": "Check the `/boot/efi` directory for any changes or corruption that might be causing the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T08:22:41.060Z",
+      "updated": "2026-01-04T08:22:41.060Z",
+      "sourceUrl": "https://askubuntu.com/questions/1410019/windows-11-booting-causes-weird-non-critical-grub-errors",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767514989493-395",
+    "title": "Fix Windows Boot After Ubuntu Installation",
+    "problemDescription": "Unable to boot into Windows after installing Ubuntu.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "ubuntu",
+      "boot",
+      "dual-boot"
+    ],
+    "steps": [
+      {
+        "title": "Use Windows Installation Media",
+        "content": "Insert your Windows installation DVD/USB and boot from it. Choose your language and click Next. Click 'Repair your computer'."
+      },
+      {
+        "title": "Access Command Prompt",
+        "content": "In the recovery options, select 'Command Prompt'."
+      },
+      {
+        "title": "Run Bootrec Commands",
+        "content": "Type the following commands one by one and press Enter after each:\n\n```\nbootrec /fixboot\nbootrec /fixmbr\n```"
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "After running the commands, restart your computer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows Recovery Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter Windows Recovery Mode",
+            "content": "Press 'esc' (or the appropriate key for your computer) while booting to enter recovery mode."
+          },
+          {
+            "title": "Navigate to Command Prompt",
+            "content": "Click on 'Troubleshoot', then 'Advanced options', and choose 'Command Prompt'."
+          },
+          {
+            "title": "Run Bootrec Commands",
+            "content": "Type the following commands one by one and press Enter after each:\n\n```\nbootrec /fixmbr\nbootrec /fixboot\nbootrec /scanos\nbootrec /rebuildbcd\n```"
+          },
+          {
+            "title": "Restart Your Computer",
+            "content": "After running the commands, restart your computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T08:23:09.493Z",
+      "updated": "2026-01-04T08:23:09.493Z",
+      "sourceUrl": "https://askubuntu.com/questions/217904/unable-to-boot-into-windows-after-installing-ubuntu-how-to-fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767515029617-634",
+    "title": "Enable Chrome's Pause/Play Feature",
+    "problemDescription": "Enable the new Pause/Play feature in Google Chrome to control media playback.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "browser",
+      "pause",
+      "play",
+      "media"
+    ],
+    "steps": [
+      {
+        "title": "Update Google Chrome",
+        "content": "Ensure you have the latest version of Google Chrome (Chrome 79 or later)."
+      },
+      {
+        "title": "Access Chrome Settings",
+        "content": "Click the three stacked dots in the upper-right corner of your Chrome browser."
+      },
+      {
+        "title": "Check for Updates",
+        "content": "Mouse over 'Help' and select 'About Google Chrome'. If it says 'Google Chrome is up to date', you can proceed."
+      },
+      {
+        "title": "Relaunch Chrome",
+        "content": "Click 'Relaunch' to restart your browser and apply the update."
+      },
+      {
+        "title": "Use the Pause/Play Feature",
+        "content": "Once updated, you can use the Pause/Play button to control media playback directly from your browser."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download the Latest Version",
+            "content": "Go to the official Google Chrome website and download the latest version manually."
+          },
+          {
+            "title": "Install the Update",
+            "content": "Follow the installation prompts to update your browser."
+          },
+          {
+            "title": "Relaunch Chrome",
+            "content": "Restart your browser to apply the update and enable the new feature."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T08:23:49.617Z",
+      "updated": "2026-01-04T08:23:49.617Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/google-has-finally-solved-this-common-browser-problem-try-it-out-now/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767515042369-368",
+    "title": "Fix ADB 'Device Not Found' Error",
+    "problemDescription": "ADB command returns 'device not found' error when trying to use it with an Android device.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "adb",
+      "device not found",
+      "usb debugging",
+      "usb drivers"
+    ],
+    "steps": [
+      {
+        "title": "Restore Missing INF Files",
+        "content": "Locate the missing usb.inf and usb.pnf files in C:\\Windows\\system32\\driverstore\\filerepository and copy them back to C:\\Windows\\inf."
+      },
+      {
+        "title": "Reinstall Device Drivers",
+        "content": "Uninstall the device from Device Manager and reinstall it, manually selecting the Google USB driver."
+      },
+      {
+        "title": "Enable USB Debugging",
+        "content": "Ensure USB debugging is enabled on your Android device."
+      },
+      {
+        "title": "Update USB Connection Mode",
+        "content": "Change the USB connection mode to 'Camera (PTP)' in Settings > Storage > Menu > USB Computer connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update ADB Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download ADB Version",
+            "content": "Try using different versions of ADB, such as 1.0.31 or 1.0.26."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Moborobo",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Moborobo",
+            "content": "Install Moborobo to manage your device, though it may not resolve the ADB issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T08:24:02.369Z",
+      "updated": "2026-01-04T08:24:02.369Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/55650/how-to-fix-error-device-not-found-when-i-try-to-use-adb",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767515050328-104",
+    "title": "Fix USB Device Not Recognized",
+    "problemDescription": "PC does not recognize the connected USB device, showing an error.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "usb",
+      "device",
+      "connection",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Open Device Manager",
+        "content": "Click on Start and type `devmgmt.msc` or go to Control Panel and click on Device Manager."
+      },
+      {
+        "title": "Find Unknown Devices",
+        "content": "Locate any unknown devices under the USB section."
+      },
+      {
+        "title": "Remove Unknown Devices",
+        "content": "Right-click on the unknown device and select 'Uninstall device'."
+      },
+      {
+        "title": "Restart Computer",
+        "content": "Restart your computer to allow it to recognize the device again."
+      },
+      {
+        "title": "Install Huawei USB Driver",
+        "content": "Download and install the Huawei USB driver from the manufacturer's website."
+      },
+      {
+        "title": "Use Huawei PC Suite",
+        "content": "Alternatively, use Huawei PC Suite for Windows, which may not require a separate USB driver."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Driver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Driver",
+            "content": "Right-click on the Unknown Device, click on Properties, then the Driver tab, and then click Update Driver."
+          },
+          {
+            "title": "Download Driver",
+            "content": "If updating doesn't work, download the driver for your device from the manufacturer’s website."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check USB Cable",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect USB Cable",
+            "content": "Check if the USB cable is damaged or broken."
+          },
+          {
+            "title": "Replace Cable",
+            "content": "Replace the USB cable if it is damaged."
+          },
+          {
+            "title": "Turn Off USB Debugging",
+            "content": "Turn off USB debugging on your Android device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T08:24:10.328Z",
+      "updated": "2026-01-04T08:24:10.328Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/125399/no-usb-connection-mode-available-pc-shows-the-error-usb-device-not-recognized",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767515077379-957",
+    "title": "Reduce Battery Drain on HP Probook 445 G7",
+    "problemDescription": "Battery drains significantly when the laptop is off, especially over extended periods.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery",
+      "drain",
+      "laptop",
+      "HP Probook"
+    ],
+    "steps": [
+      {
+        "title": "Remove the Battery",
+        "content": "If your laptop has a removable battery, remove it when the laptop will not be used for more than a few weeks. This reduces the drain from ~10% per week to ~2% per week."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable USB Charging When Off",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check BIOS Settings",
+            "content": "Look for a BIOS option to disable USB charging when the laptop is off. This option may not be available on all laptops."
+          },
+          {
+            "title": "Install a Battery Switch",
+            "content": "For laptops with an internal battery, consider installing a multiple-pole switch to the battery. This requires technical knowledge and should be done by someone familiar with electronics."
+          }
+        ]
+      },
+      {
+        "title": "Disable Quick Boot and USB Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Quick Boot in Windows",
+            "content": "Go to Settings > Update & Security > Recovery > Advanced startup > Restart now. Then go to Troubleshoot > Advanced options > Startup Settings > Restart. Press F4 to disable Quick Boot."
+          },
+          {
+            "title": "Disable USB Devices in BIOS",
+            "content": "Enter BIOS settings (usually by pressing F2 or Esc during startup), navigate to the USB settings, and disable USB devices. Note that this may not completely stop the drain."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T08:24:37.379Z",
+      "updated": "2026-01-04T08:24:37.379Z",
+      "sourceUrl": "https://superuser.com/questions/1724574/how-can-i-reduce-battery-drain-on-my-hp-probook-445-g7-while-its-off",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767515099024-467",
+    "title": "Fix Laptop Battery Drain When Shut Down",
+    "problemDescription": "Laptop battery drains when the laptop is shut down, indicating it might be entering sleep mode instead of fully powering off.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery",
+      "drain",
+      "shut down",
+      "windows 10"
+    ],
+    "steps": [
+      {
+        "title": "Disable Hibernate",
+        "content": "Open Command Prompt as Administrator and run the following commands to disable hibernate, which can sometimes cause the laptop to enter a sleep state instead of fully shutting down: `powercfg.exe /h off`."
+      },
+      {
+        "title": "Enable Hibernate",
+        "content": "After disabling hibernate, re-enable it by running: `powercfg.exe /h on`."
+      },
+      {
+        "title": "Disable Hibernate Again",
+        "content": "Finally, disable hibernate again by running: `powercfg.exe /h off`. This sequence can help reset the power settings and ensure the laptop fully powers off."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Power Options",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Power Options",
+            "content": "Go to Control Panel > Hardware and Sound > Power Options."
+          },
+          {
+            "title": "Choose What the Power Buttons Do",
+            "content": "Click on 'Choose what the power buttons do' and then click on 'Change settings that are currently unavailable'."
+          },
+          {
+            "title": "Disable Fast Startup",
+            "content": "Uncheck the box for 'Turn on fast startup (recommended)' and save changes. This can help ensure the laptop fully powers off instead of entering a sleep state."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T08:24:59.024Z",
+      "updated": "2026-01-04T08:24:59.024Z",
+      "sourceUrl": "https://superuser.com/questions/1245507/battery-draining-when-laptop-shut-down",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
