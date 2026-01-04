@@ -8435,5 +8435,922 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767498407262-777",
+    "title": "Fix WhatsApp Web QR Code Not Loading",
+    "problemDescription": "WhatsApp Web QR code fails to load or connect on Chrome/Firefox on Ubuntu.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "web",
+      "qr",
+      "code",
+      "loading",
+      "chrome",
+      "firefox",
+      "ubuntu"
+    ],
+    "steps": [
+      {
+        "title": "Remove Device Registration",
+        "content": "Remove your device registration in WhatsApp."
+      },
+      {
+        "title": "Clear Cookies and Cached Data",
+        "content": "Clear all cookies and cached data from your browser."
+      },
+      {
+        "title": "Restart Browser",
+        "content": "Restart your browser to apply the changes."
+      },
+      {
+        "title": "Load QR Code",
+        "content": "The QR code should now load, allowing you to register again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Proxy Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Proxy Settings",
+            "content": "Go to 'System Settings' -> 'Network' -> 'Proxy'."
+          },
+          {
+            "title": "Clear SOCKS Server",
+            "content": "Delete the SOCKS server line and set the port to 0."
+          },
+          {
+            "title": "Authenticate",
+            "content": "Authenticate in WhatsApp Web with the adjusted settings."
+          },
+          {
+            "title": "Restore Settings",
+            "content": "Restore your previous SOCKS proxy settings after authentication."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T03:46:47.262Z",
+      "updated": "2026-01-04T03:46:47.262Z",
+      "sourceUrl": "https://askubuntu.com/questions/594695/whatsapp-web-qr-code-not-loading-on-chrome-firefox-on-ubuntu-14-04",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767498411861-365",
+    "title": "Fix WhatsApp Webapp Browser Issue on Ubuntu",
+    "problemDescription": "WhatsApp Webapp shows browser installation prompts instead of working correctly.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "WhatsApp",
+      "Ubuntu",
+      "Webapp",
+      "Browser",
+      "Fix"
+    ],
+    "steps": [
+      {
+        "title": "Navigate to Application Cache",
+        "content": "Go to `/.config/UnofficialWhatsApp/Application Cache`"
+      },
+      {
+        "title": "Close the App",
+        "content": "Close the WhatsApp Webapp."
+      },
+      {
+        "title": "Remove the Index File",
+        "content": "Delete the `index` file in the Application Cache directory."
+      },
+      {
+        "title": "Change Permissions",
+        "content": "Run `sudo chmod 000 'Application Cache'` to make the directory inaccessible."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use WhatsApp Web via Mobile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open WhatsApp on Mobile",
+            "content": "Open WhatsApp on your mobile device."
+          },
+          {
+            "title": "Scan the QR Code",
+            "content": "Go to WhatsApp Web on your mobile, scan the QR code displayed on your Ubuntu browser."
+          },
+          {
+            "title": "Access WhatsApp",
+            "content": "Your WhatsApp will open in the browser without needing to install anything."
+          }
+        ]
+      },
+      {
+        "title": "Install WhatsApp via Snap",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update and Install Snapd",
+            "content": "Run `sudo apt update` and `sudo apt install snapd`."
+          },
+          {
+            "title": "Install WhatsApp",
+            "content": "Run `sudo snap install whatsapp-linux-app`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T03:46:51.861Z",
+      "updated": "2026-01-04T03:46:51.861Z",
+      "sourceUrl": "https://askubuntu.com/questions/684415/install-whatsapp-webapp-on-ubuntu",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767498414580-205",
+    "title": "Enable WhatsApp Calls on Ubuntu",
+    "problemDescription": "WhatsApp desktop version does not support audio and video calls on Ubuntu.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "ubuntu",
+      "calls",
+      "audio",
+      "video"
+    ],
+    "steps": [
+      {
+        "title": "Install an Android Emulator",
+        "content": "Download and install an Android emulator like Genymotion on your Ubuntu system."
+      },
+      {
+        "title": "Set Up the Emulator",
+        "content": "Follow the emulator's setup instructions to create a virtual Android device."
+      },
+      {
+        "title": "Install WhatsApp",
+        "content": "Open the Google Play Store within the emulator, search for WhatsApp, and install it."
+      },
+      {
+        "title": "Log In to WhatsApp",
+        "content": "Open WhatsApp in the emulator and log in using your phone number. You may need to verify your number via SMS."
+      },
+      {
+        "title": "Use WhatsApp Calls",
+        "content": "Now you can make audio and video calls using WhatsApp within the emulator."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Skype",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Skype",
+            "content": "Download and install Skype on your Ubuntu system."
+          },
+          {
+            "title": "Set Up Skype",
+            "content": "Log in to your Skype account or create a new one."
+          },
+          {
+            "title": "Make Calls",
+            "content": "Use Skype to make audio and video calls as an alternative to WhatsApp."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Windows VM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Virtual Machine Manager",
+            "content": "Install Virt Manager on your Ubuntu system."
+          },
+          {
+            "title": "Create a Windows VM",
+            "content": "Set up a Windows virtual machine within Virt Manager."
+          },
+          {
+            "title": "Add Peripherals",
+            "content": "Add your webcam, microphone, and headset to the Windows VM."
+          },
+          {
+            "title": "Install WhatsApp",
+            "content": "Install the WhatsApp desktop application on the Windows VM."
+          },
+          {
+            "title": "Use WhatsApp Calls",
+            "content": "Log in to WhatsApp and use the calling features within the Windows VM."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T03:46:54.580Z",
+      "updated": "2026-01-04T03:46:54.580Z",
+      "sourceUrl": "https://askubuntu.com/questions/1241251/ubuntu-whatsapp-desktop-app-with-call-features",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767498416866-740",
+    "title": "Install WhatsApp on Linux",
+    "problemDescription": "How to use WhatsApp on Linux with notifications and autostart.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "linux",
+      "install",
+      "notifications",
+      "autostart"
+    ],
+    "steps": [
+      {
+        "title": "Install Whatsie",
+        "content": "Open a terminal and run the command: `sudo snap install whatsie`."
+      },
+      {
+        "title": "Enable Autostart",
+        "content": "Search for 'Startup Applications' in the menu, and add whatsie to the list of apps that are autostarted."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use WhatsApp Web",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access WhatsApp Web",
+            "content": "Open a web browser and go to web.whatsapp.com."
+          },
+          {
+            "title": "Scan QR Code",
+            "content": "Scan the QR code with your phone to log in."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T03:46:56.866Z",
+      "updated": "2026-01-04T03:46:56.866Z",
+      "sourceUrl": "https://askubuntu.com/questions/1546818/is-there-a-whatsapp-solution-for-linux",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767498418930-263",
+    "title": "Fix WhatsApp Web on Chromium",
+    "problemDescription": "WhatsApp Web asks to update Chrome while using Chromium.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "web",
+      "chromium",
+      "user agent"
+    ],
+    "steps": [
+      {
+        "title": "Change User Agent via Chromium Settings",
+        "content": "Open Chromium and navigate to WhatsApp Web. Click on the three-dot menu in the top-right corner, go to 'More Tools', and select 'Developer Tools'. In the Developer Tools panel, click on the three-dot menu again, go to 'More Tools', and select 'Network Conditions'. Under 'User Agent', select 'Chrome' from the dropdown menu."
+      },
+      {
+        "title": "Clear Cookies and Temporary Data",
+        "content": "Before applying the user agent change, clear all cookies and temporary data. Go to 'Settings' in Chromium, navigate to 'Privacy and security', and click on 'Clear browsing data'. Select 'Cookies and other site data' and 'Cached images and files', then click 'Clear data'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Chrome Extension",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a User Agent Switcher Extension",
+            "content": "Search for a reliable user agent switcher extension in the Chrome Web Store, such as 'User-Agent Switcher for Chrome'. Install the extension and follow the instructions to switch your user agent to Chrome."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T03:46:58.930Z",
+      "updated": "2026-01-04T03:46:58.930Z",
+      "sourceUrl": "https://askubuntu.com/questions/1100645/whatsapp-web-is-asking-to-update-chrome-while-using-chromium",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767498427378-156",
+    "title": "Fix Wireless Headphones Cutting Out",
+    "problemDescription": "Wireless headphones frequently disconnect due to interference, range limits, battery issues, or outdated software.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wireless",
+      "headphones",
+      "disconnect",
+      "interference",
+      "range"
+    ],
+    "steps": [
+      {
+        "title": "Check for Interference",
+        "content": "Ensure there are no other electronic devices causing interference near your headphones and the connected device."
+      },
+      {
+        "title": "Reduce Distance",
+        "content": "Move closer to the connected device to stay within the optimal range for your headphones."
+      },
+      {
+        "title": "Check Battery Level",
+        "content": "Ensure your headphones are fully charged or have sufficient battery life."
+      },
+      {
+        "title": "Update Software",
+        "content": "Update the firmware of your headphones and the connected device to the latest version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Bluetooth Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Forget Device",
+            "content": "On your connected device, forget the headphones and re-pair them."
+          },
+          {
+            "title": "Restart Devices",
+            "content": "Restart both your headphones and the connected device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T03:47:07.378Z",
+      "updated": "2026-01-04T03:47:07.378Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/my-wireless-headphones-used-to-disconnect-constantly-heres-what-finally-fixed-it/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767498431004-836",
+    "title": "Fix iPhone Bluetooth After 1.1.4 Update",
+    "problemDescription": "Bluetooth not working after updating to iPhone 1.1.4.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "iphone",
+      "update",
+      "airplane mode"
+    ],
+    "steps": [
+      {
+        "title": "Turn Off Bluetooth",
+        "content": "Go to Settings and turn off Bluetooth."
+      },
+      {
+        "title": "Enable Airplane Mode",
+        "content": "Slide Airplane Mode to On and wait a few seconds."
+      },
+      {
+        "title": "Disable Airplane Mode",
+        "content": "Slide Airplane Mode back to Off."
+      },
+      {
+        "title": "Turn On Bluetooth",
+        "content": "Go back to Settings and turn on Bluetooth."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-04T03:47:11.004Z",
+      "updated": "2026-01-04T03:47:11.004Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/bluetooth-not-working-after-iphone-1-1-4-simple-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767498440682-886",
+    "title": "Bluetooth Connection Issues",
+    "problemDescription": "Bluetooth devices failing to connect or maintain a stable connection.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "connection",
+      "wireless"
+    ],
+    "steps": [
+      {
+        "title": "Check Device Compatibility",
+        "content": "Ensure both devices support the same Bluetooth version and are within range (typically 30 feet)."
+      },
+      {
+        "title": "Restart Bluetooth Devices",
+        "content": "Turn off Bluetooth on both devices, wait for a few seconds, and then turn it back on."
+      },
+      {
+        "title": "Update Bluetooth Drivers",
+        "content": "On your computer, go to Device Manager, find the Bluetooth adapter, right-click, and select 'Update driver'."
+      },
+      {
+        "title": "Clear Bluetooth Cache",
+        "content": "On Android devices, go to Settings > Apps > Bluetooth, and clear the cache and data."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "On iOS devices, go to Settings > General > Reset > Reset Network Settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Bluetooth Troubleshooter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Windows Troubleshooter",
+            "content": "On Windows, go to Settings > Update & Security > Troubleshoot > Bluetooth > Run the troubleshooter."
+          },
+          {
+            "title": "Use Third-Party Tools",
+            "content": "Consider using third-party Bluetooth troubleshooting tools available online."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T03:47:20.682Z",
+      "updated": "2026-01-04T03:47:20.682Z",
+      "sourceUrl": "https://www.cnet.com/tech/tech-industry/bye-bye-bluetooth/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767498453405-374",
+    "title": "Fix Wi-Fi Random Disconnections",
+    "problemDescription": "Wi-Fi randomly disconnects and cannot reconnect immediately.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "disconnecting",
+      "connection",
+      "adapter"
+    ],
+    "steps": [
+      {
+        "title": "Check Wi-Fi Adapter",
+        "content": "Ensure your Wi-Fi adapter is functioning properly. Try moving it to a different USB port if it's a USB adapter."
+      },
+      {
+        "title": "Update Wi-Fi Drivers",
+        "content": "Update the drivers for your Wi-Fi adapter to the latest version."
+      },
+      {
+        "title": "Check for Interference",
+        "content": "Ensure there are no sources of interference near your router or device."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Reset your network settings to default."
+      },
+      {
+        "title": "Replace or Upgrade Adapter",
+        "content": "If the issue persists, consider replacing or upgrading your Wi-Fi adapter, especially if it's a USB adapter."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change Wi-Fi Channel",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Router Settings",
+            "content": "Log in to your router's admin panel."
+          },
+          {
+            "title": "Change Wi-Fi Channel",
+            "content": "Change the Wi-Fi channel to a less crowded one."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Power Saving",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Open Device Manager on your computer."
+          },
+          {
+            "title": "Disable Power Saving",
+            "content": "Find your Wi-Fi adapter, right-click on it, select 'Properties', go to the 'Power Management' tab, and uncheck 'Allow the computer to turn off this device to save power'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T03:47:33.405Z",
+      "updated": "2026-01-04T03:47:33.405Z",
+      "sourceUrl": "https://www.reddit.com/r/ZephyrusG14/comments/nx3s2o/wifi_keeps_randomly_disconnecting_does_anyone/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767498472599-525",
+    "title": "Fix Gmail Script Errors",
+    "problemDescription": "Gmail scripts stop working due to JavaScript changes.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "javascript",
+      "script",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Check for Updates",
+        "content": "Ensure your browser and Gmail are updated to the latest versions."
+      },
+      {
+        "title": "Disable Conflicting Scripts",
+        "content": "Identify and disable any third-party scripts that may be causing conflicts."
+      },
+      {
+        "title": "Clear Browser Cache",
+        "content": "Clear your browser's cache and cookies to resolve any temporary issues."
+      },
+      {
+        "title": "Use HTTPS",
+        "content": "Ensure you are using HTTPS by checking the URL and enabling it in your Gmail settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Google Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Report the Issue",
+            "content": "Report the issue to Google Support through the Gmail Help Center."
+          },
+          {
+            "title": "Follow Google's Guidance",
+            "content": "Follow any additional steps or workarounds provided by Google Support."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T03:47:52.599Z",
+      "updated": "2026-01-04T03:47:52.599Z",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gmail",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767498475406-252",
+    "title": "Fix Gmail Bounce Back Due to Authentication",
+    "problemDescription": "Emails sent to Gmail accounts are bouncing back due to authentication issues.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "email",
+      "Gmail",
+      "authentication",
+      "bounce back"
+    ],
+    "steps": [
+      {
+        "title": "Enable SMTP Authentication",
+        "content": "Ensure that SMTP authentication is enabled in your email client settings. This can usually be found in the account settings or outgoing server settings."
+      },
+      {
+        "title": "Verify Your Email Account",
+        "content": "Make sure that your email account is verified and properly set up in your email client. Check the account settings to ensure all information is correct."
+      },
+      {
+        "title": "Check for Secure Connection",
+        "content": "Ensure that your email client is using a secure connection (SSL/TLS) for sending emails. This can be set in the outgoing server settings."
+      },
+      {
+        "title": "Update Email Client",
+        "content": "Update your email client to the latest version to ensure compatibility with Gmail's security protocols."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Email Provider",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "If the issue persists, contact your email provider's support team for further assistance. They may be able to provide additional troubleshooting steps or resolve the issue on their end."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T03:47:55.406Z",
+      "updated": "2026-01-04T03:47:55.406Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum/all/emails-i-send-to-gmail-accounts-are-bouncing-back/abde5bb8-1ad7-4619-99b5-d417f73210db",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767498478582-214",
+    "title": "Upgrade Browser for Gmail Compatibility",
+    "problemDescription": "Gmail not working correctly due to unsupported browser.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "browser",
+      "compatibility",
+      "upgrade"
+    ],
+    "steps": [
+      {
+        "title": "Identify Current Browser",
+        "content": "Check if you are using Internet Explorer, especially an older version."
+      },
+      {
+        "title": "Download a Modern Browser",
+        "content": "Visit the official website of a modern browser like Google Chrome and download the latest version."
+      },
+      {
+        "title": "Install the Browser",
+        "content": "Follow the installation instructions to complete the setup."
+      },
+      {
+        "title": "Access Gmail",
+        "content": "Open Gmail in the newly installed browser to check if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Gmail Mobile App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Gmail App",
+            "content": "Go to Google Play or the Apple App Store and download the Gmail app."
+          },
+          {
+            "title": "Install and Open",
+            "content": "Install the app and open it to access your Gmail account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T03:47:58.582Z",
+      "updated": "2026-01-04T03:47:58.582Z",
+      "sourceUrl": "http://www.gmail.com/mail/help/intl/en-US/about.html?__shortid__=1wZ9",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767498481655-881",
+    "title": "Recover Missing Folders in Outlook",
+    "problemDescription": "Two folders are missing from the Outlook inbox.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "outlook",
+      "folders",
+      "missing",
+      "recover"
+    ],
+    "steps": [
+      {
+        "title": "Check Folder Visibility",
+        "content": "Right-click on the inbox and select 'Folder Permissions'. Ensure the folders are not hidden or set to 'Hidden'."
+      },
+      {
+        "title": "Search for Folders",
+        "content": "Use the search bar in Outlook to search for the missing folders by name."
+      },
+      {
+        "title": "Check Deleted Items",
+        "content": "Look in the 'Deleted Items' folder to see if the folders were accidentally moved or deleted."
+      },
+      {
+        "title": "Restore from Backup",
+        "content": "If the folders were deleted, restore them from a backup if available."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Rebuild Outlook Data File",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Close Outlook",
+            "content": "Ensure Outlook is completely closed."
+          },
+          {
+            "title": "Run ScanPST",
+            "content": "Use the Inbox Repair Tool (ScanPST.exe) to scan and repair your Outlook data file."
+          },
+          {
+            "title": "Open Outlook",
+            "content": "After repairing, open Outlook to see if the folders have been restored."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T03:48:01.655Z",
+      "updated": "2026-01-04T03:48:01.655Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum?tab=Threads%5BOutlook.com",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767498490389-749",
+    "title": "Fix iPhone Update Issues",
+    "problemDescription": "Your iPhone is unable to download or install the latest iOS update.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iPhone",
+      "update",
+      "iOS",
+      "VPN",
+      "restart"
+    ],
+    "steps": [
+      {
+        "title": "Disable VPN",
+        "content": "Turn off your VPN and try updating your iPhone again. If you need to keep your VPN on, try switching to a different server."
+      },
+      {
+        "title": "Restart Your iPhone",
+        "content": "Restart your iPhone by holding the Side button and Volume Up or Down until you see 'Slide to Power Off'. Alternatively, ask Siri to restart your iPhone."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update via Computer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect to Computer",
+            "content": "Connect your iPhone to your Mac or PC using a suitable cable."
+          },
+          {
+            "title": "Use Finder or iTunes",
+            "content": "On a Mac, open Finder and select your iPhone. On a PC, open iTunes and select your device. Click on the 'General' tab and select 'Check for Update'."
+          }
+        ]
+      },
+      {
+        "title": "Check Apple's System Status",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Apple's System Status Page",
+            "content": "Go to Apple's System Status page to ensure there are no ongoing issues with their update servers."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T03:48:10.389Z",
+      "updated": "2026-01-04T03:48:10.389Z",
+      "sourceUrl": "https://www.howtogeek.com/why-wont-my-iphone-update-fixes-to-update-ios/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767498495237-269",
+    "title": "Fix iPhone Bad Signal",
+    "problemDescription": "Your iPhone is experiencing a weak or unstable signal.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "signal",
+      "network",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your iPhone",
+        "content": "Turn your iPhone off and then back on to refresh network connections and terminate any problematic background processes."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > General > Reset Network Settings, enter your password, and confirm the reset. This will delete saved network information and carrier settings, potentially fixing any software-related issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Replace SIM Card",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Your Carrier",
+            "content": "If the issue persists and you're the only one experiencing it, contact your network provider to request a new SIM card. SIM cards can fail or become outdated, and replacing it might resolve the signal issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T03:48:15.237Z",
+      "updated": "2026-01-04T03:48:15.237Z",
+      "sourceUrl": "https://www.howtogeek.com/355014/what-to-do-if-your-iphone-is-getting-a-bad-signal/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767498498584-544",
+    "title": "Fix iPhone Bluetooth Issues",
+    "problemDescription": "Bluetooth connectivity problems on iPhone or iPad.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "iphone",
+      "ipad",
+      "connectivity"
+    ],
+    "steps": [
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > General > Reset and tap 'Reset Network Settings'. This will reset all network settings, including Bluetooth."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset or Restore from Backup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure you have a recent backup of your data using iTunes or iCloud."
+          },
+          {
+            "title": "Factory Reset",
+            "content": "Go to Settings > General > Reset and tap 'Erase All Content and Settings'. This will restore your device to factory settings."
+          },
+          {
+            "title": "Restore from Backup",
+            "content": "After the reset, restore your data from the backup you created earlier."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T03:48:18.584Z",
+      "updated": "2026-01-04T03:48:18.584Z",
+      "sourceUrl": "https://www.howtogeek.com/278170/how-to-troubleshoot-bluetooth-problems-on-your-iphone-or-ipad/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
