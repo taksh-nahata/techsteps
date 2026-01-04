@@ -24125,5 +24125,1047 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767564938364-612",
+    "title": "Fix Discord Not Working",
+    "problemDescription": "Discord is not functioning properly or crashing.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "app-error",
+      "crash",
+      "reinstall"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall Discord",
+        "content": "Go to the Control Panel, click on 'Uninstall a program', find Discord, right-click, and select 'Uninstall'."
+      },
+      {
+        "title": "Reinstall Discord",
+        "content": "Download Discord from the official website, install it, and log into your account."
+      },
+      {
+        "title": "Restart Computer",
+        "content": "Restart your computer a few times to see if the problem is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Download Discord from Microsoft Store",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Microsoft Store",
+            "content": "Go to the search section and open the Microsoft Store."
+          },
+          {
+            "title": "Search for Discord",
+            "content": "Type 'Discord' in the search bar and download it."
+          },
+          {
+            "title": "Repair Discord",
+            "content": "Open the downloaded file, accept the license agreement, select 'Repair Discord', choose your version, and click 'Repair'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T22:15:38.364Z",
+      "updated": "2026-01-04T22:15:38.364Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=F4WrpVQ9G_g",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767564943901-970",
+    "title": "Fix RTC Connecting on Discord",
+    "problemDescription": "Discord is having trouble connecting to the Real-Time Communication (RTC) service.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "rtc",
+      "connection",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Change Network Adapter Settings",
+        "content": "Open the Start menu and go to Settings > Network & Internet > Change adapter options. Locate your internet connection, right-click on it, and select 'Properties'. Scroll down to 'Internet Protocol Version 4 (TCP/IPv4)', select it, and click 'Properties'. Ensure that 'Obtain an IP address automatically' and 'Obtain DNS server address automatically' are selected. Click 'OK' to save changes."
+      },
+      {
+        "title": "Flush DNS",
+        "content": "Press the Windows key + R to open the Run dialog, type 'cmd', and press Enter. In the Command Prompt, type 'ipconfig /flushdns' and press Enter. This will clear your DNS cache and allow your PC to connect to websites anew."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change DNS Server",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change DNS Server",
+            "content": "If flushing the DNS doesn't work, try changing your DNS server. Open the Start menu and go to Settings > Network & Internet > Change adapter options. Locate your internet connection, right-click on it, and select 'Properties'. Scroll down to 'Internet Protocol Version 4 (TCP/IPv4)', select it, and click 'Properties'. Select 'Use the following DNS server addresses' and enter a public DNS server like Google's (8.8.8.8 and 8.8.4.4) or Cloudflare's (1.1.1.1). Click 'OK' to save changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T22:15:43.901Z",
+      "updated": "2026-01-04T22:15:43.901Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=EV2QeMzTrXY",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767564955989-688",
+    "title": "Fix Discord “No Route” or “RTC Connecting” Error",
+    "problemDescription": "Discord shows 'No Route' or 'RTC Connecting' error, preventing proper connection.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "no route",
+      "rtc connecting",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Close Discord and End Task",
+        "content": "Open Discord on your system, then close it completely. Open Task Manager (Ctrl+Shift+Esc), find Discord in the list, right-click, and select 'End Task'."
+      },
+      {
+        "title": "Flush DNS",
+        "content": "Open Command Prompt as Administrator (type 'cmd' in the search bar, right-click, and select 'Run as administrator'). Type 'ipconfig /flushdns' and press Enter."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Open Control Panel, go to 'Network and Internet', then 'Network and Sharing Center'. Click on 'Change adapter settings', right-click on your Wi-Fi, and select 'Disable'. Wait a few seconds, then right-click again and select 'Enable'."
+      },
+      {
+        "title": "Reopen Discord",
+        "content": "After completing the above steps, search for Discord again and open it to see if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Firewall and Antivirus",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Temporarily Disable Firewall/Antivirus",
+            "content": "Temporarily disable your firewall or antivirus software to check if they are blocking Discord."
+          },
+          {
+            "title": "Add Discord to Exceptions",
+            "content": "If disabling works, add Discord to the exceptions list in your firewall or antivirus settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T22:15:55.989Z",
+      "updated": "2026-01-04T22:15:55.989Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=_XL0-IINywE",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767564960468-699",
+    "title": "Fix Discord Keeps Crashing",
+    "problemDescription": "Discord application crashes frequently.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "crashing",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Restart Discord",
+        "content": "Close Discord completely and reopen it to see if the issue is resolved."
+      },
+      {
+        "title": "Update Discord",
+        "content": "Check for updates within Discord settings or download the latest version from the official website."
+      },
+      {
+        "title": "Clear Cache",
+        "content": "Go to Discord settings, navigate to 'Appearance', and click on 'Clear Cache'."
+      },
+      {
+        "title": "Disable Hardware Acceleration",
+        "content": "In Discord settings, go to 'Advanced' and toggle off 'Hardware Acceleration'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 5: Reinstall Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Discord",
+            "content": "Uninstall Discord from your computer."
+          },
+          {
+            "title": "Download Latest Version",
+            "content": "Download the latest version of Discord from the official website."
+          },
+          {
+            "title": "Install Discord",
+            "content": "Install the downloaded version and check if the issue is resolved."
+          }
+        ]
+      },
+      {
+        "title": "Method 6: Check for Conflicting Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Conflicting Software",
+            "content": "Check for any software that might be conflicting with Discord, such as antivirus programs."
+          },
+          {
+            "title": "Disable or Uninstall",
+            "content": "Disable or uninstall the conflicting software temporarily to see if it resolves the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T22:16:00.468Z",
+      "updated": "2026-01-04T22:16:00.468Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=3p68V8fz9Oc",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767564968030-705",
+    "title": "Fix DNS SERVFAIL for AWS Hosted Domains",
+    "problemDescription": "DNS lookup for domains hosted on AWS Route 53 fails with SERVFAIL using Google DNS (8.8.8.8, 8.8.4.4).",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "dns",
+      "servfail",
+      "aws",
+      "route53",
+      "google dns"
+    ],
+    "steps": [
+      {
+        "title": "Change DNS Server",
+        "content": "Switch your DNS server to an alternative provider like 1.1.1.1 (Cloudflare) or 9.9.9.9 (Quad9)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use EC2 Default Resolver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use EC2 Default Resolver",
+            "content": "If you are using AWS EC2, use the default DNS resolver provided by AWS."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Wait for AWS Resolution",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check AWS Status",
+            "content": "Monitor the AWS status page for updates on the issue and wait for AWS to resolve the problem."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T22:16:08.030Z",
+      "updated": "2026-01-04T22:16:08.030Z",
+      "sourceUrl": "https://superuser.com/questions/1316750/dns-lookup-for-instagram-com-gives-servfail-other-domains-work-ok-google-publ",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767564971825-717",
+    "title": "Identify App Causing Spam Websites on Android",
+    "problemDescription": "Unwanted new tabs or spam websites opening in Firefox on Android.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "firefox",
+      "spam",
+      "websites",
+      "adware"
+    ],
+    "steps": [
+      {
+        "title": "Check Wi-Fi Network",
+        "content": "Try using a different Wi-Fi network to see if the problem persists. If it doesn't, the issue is likely with the original network."
+      },
+      {
+        "title": "Review Installed Apps",
+        "content": "Uninstall recently installed apps, especially those around the time the issue started. Pay attention to any suspicious or unfamiliar apps."
+      },
+      {
+        "title": "Contact ISP",
+        "content": "Contact your Internet Service Provider (ISP) for assistance, as they might be able to help identify or block the source of the spam."
+      },
+      {
+        "title": "Check Mobile Network",
+        "content": "Test if the issue occurs on your mobile network. If it doesn't, consider changing your current Wi-Fi network."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup your important data."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset)."
+          },
+          {
+            "title": "Restore Data",
+            "content": "After the reset, restore your data and monitor if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T22:16:11.825Z",
+      "updated": "2026-01-04T22:16:11.825Z",
+      "sourceUrl": "https://superuser.com/questions/1378474/finding-out-what-app-causes-unwanted-new-tabs-in-firefox-on-android",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767564976045-331",
+    "title": "Fix Broken Dependencies with apt",
+    "problemDescription": "The apt package manager is unable to install or upgrade packages due to broken dependencies.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "apt",
+      "dependencies",
+      "fix",
+      "broken",
+      "install"
+    ],
+    "steps": [
+      {
+        "title": "Clear the apt cache",
+        "content": "Run the command `sudo apt clean` to clear the apt cache."
+      },
+      {
+        "title": "Update the package list",
+        "content": "Run the command `sudo apt update` to update the package list."
+      },
+      {
+        "title": "Fix broken dependencies",
+        "content": "Run the command `sudo apt --fix-broken install` to fix broken dependencies."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Purge faulty packages",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify faulty packages",
+            "content": "Use the command `sudo apt-get install -f` to identify faulty packages."
+          },
+          {
+            "title": "Purge faulty packages",
+            "content": "Run the command `sudo apt-get purge <package-name>` for each faulty package."
+          },
+          {
+            "title": "Fix broken dependencies",
+            "content": "Run the command `sudo apt --fix-broken install` to fix broken dependencies."
+          }
+        ]
+      },
+      {
+        "title": "Disable automatic updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable automatic updates",
+            "content": "Run the command `sudo systemctl stop apt-daily.timer` and `sudo systemctl disable apt-daily.timer` to disable automatic updates."
+          },
+          {
+            "title": "Fix broken dependencies",
+            "content": "Run the command `sudo apt --fix-broken install` to fix broken dependencies."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T22:16:16.045Z",
+      "updated": "2026-01-04T22:16:16.045Z",
+      "sourceUrl": "https://superuser.com/questions/1386209/how-to-solve-this-dependencies-apt-fix-broken-install",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767564980227-161",
+    "title": "Fix Slow or Unresponsive Internet on Windows 10/11",
+    "problemDescription": "Internet connection is slow or unresponsive on Windows 10/11.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "internet",
+      "connection",
+      "slow",
+      "unresponsive",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Test Your Internet Connection",
+        "content": "Perform a speed test using a browser. Go to `speedtest.net` or `fast.com` and run a test to check your internet speed and responsiveness."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Wi-Fi Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Wi-Fi Connection",
+            "content": "If you're using Wi-Fi, check if a cabled LAN connection works better. Common Wi-Fi issues include crowded channels, radio interference, long distance, thick walls/floors, or defective hardware."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Test Different Router or Direct WAN Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try Another Router or Direct WAN Connection",
+            "content": "If possible, try using another router or a direct WAN connection without a router. Ensure your local firewall is active and secure."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Switch WAN Connectivity",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch WAN Connectivity",
+            "content": "If possible, switch your WAN connectivity from DSL to LTE or a similar alternative."
+          }
+        ]
+      },
+      {
+        "title": "Method 5: Contact ISP",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Your ISP",
+            "content": "Call your Internet Service Provider (ISP) to check for any known problems in your area."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T22:16:20.227Z",
+      "updated": "2026-01-04T22:16:20.227Z",
+      "sourceUrl": "https://superuser.com/questions/1919006/why-am-i-experiencing-internet-connection-issues-on-windows-10-11-multiple-comp",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767564984066-585",
+    "title": "Troubleshoot Unknown System Issues",
+    "problemDescription": "When encountering an unknown system issue, you need a structured approach to identify and resolve the problem.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "troubleshoot",
+      "system",
+      "issue",
+      "diagnose"
+    ],
+    "steps": [
+      {
+        "title": "Document System Changes",
+        "content": "Keep a log of all system changes, including app and OS updates, new or removed hardware, and any unusual events."
+      },
+      {
+        "title": "Describe the Problem",
+        "content": "Write a detailed description of the problem to understand it better."
+      },
+      {
+        "title": "Track Recent Activities",
+        "content": "Identify what you were doing when the issue first occurred and any unusual events that happened around the same time."
+      },
+      {
+        "title": "Consider Possible Causes",
+        "content": "Think about potential causes, even if they are not immediately obvious."
+      },
+      {
+        "title": "Gather More Information",
+        "content": "Use tools like Event Viewer, SysInternals Tools, Performance Analysis, or Debugging tools to gather more data."
+      },
+      {
+        "title": "Snapshot System Logs",
+        "content": "Take snapshots of system logs to analyze them for clues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Seek Expert Help",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Consult Online Forums",
+            "content": "Post detailed information about the issue on forums like SuperUser to get advice from experts."
+          },
+          {
+            "title": "Provide Complete Information",
+            "content": "Ensure you provide all relevant details about your setup and the problem to avoid wasting time."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T22:16:24.066Z",
+      "updated": "2026-01-04T22:16:24.066Z",
+      "sourceUrl": "https://superuser.com/questions/260043/how-do-i-troubleshoot-when-i-have-no-clue-where-to-start",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767564996637-345",
+    "title": "Fix WhatsApp Installation on Ubuntu",
+    "problemDescription": "Unable to install WhatsApp on Ubuntu after successful transaction.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "ubuntu",
+      "installation",
+      "dependency"
+    ],
+    "steps": [
+      {
+        "title": "Download WhatsApp DEB File",
+        "content": "Download the appropriate DEB file for your system from the official WhatsApp website."
+      },
+      {
+        "title": "Install WhatsApp",
+        "content": "Open a terminal and navigate to the directory where the DEB file is downloaded. Run the command `sudo dpkg -i path/to/debfile` to install WhatsApp."
+      },
+      {
+        "title": "Fix Dependencies",
+        "content": "If there are missing dependencies, run `sudo apt-get -f install` to fix them. Then reinstall the DEB file using the same command as in Step 2."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Install WhatsApp via Yowsup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Required Dependencies",
+            "content": "Open a terminal and run the command `sudo apt-get install python python-dateutil python-argparse`."
+          },
+          {
+            "title": "Download Yowsup",
+            "content": "Run the command `wget https://github.com/tgalal/yowsup/archive/master.zip` to download the Yowsup program."
+          },
+          {
+            "title": "Install Unzip Utility",
+            "content": "If you don't have an unzip utility, install it by running `sudo apt-get install unzip`."
+          },
+          {
+            "title": "Unzip the File",
+            "content": "Unzip the downloaded file by running `unzip master.zip`."
+          },
+          {
+            "title": "Navigate to the Working Directory",
+            "content": "Change directories into the working directory by running `cd yowsup-master/src`."
+          },
+          {
+            "title": "Rename Configuration File",
+            "content": "Rename the main configuration file by running `mv config.example yowsup-cli.config`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T22:16:36.637Z",
+      "updated": "2026-01-04T22:16:36.637Z",
+      "sourceUrl": "https://askubuntu.com/questions/733191/cant-install-whatsapp-after-making-successful-transaction-please-help",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767565014386-583",
+    "title": "Fix 'This PC Can't Run Windows 11' Error",
+    "problemDescription": "Error message indicating your PC doesn't meet Windows 11 requirements due to missing TPM 2.0 and Secure Boot.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "TPM",
+      "Secure Boot",
+      "installation error"
+    ],
+    "steps": [
+      {
+        "title": "Access UEFI Firmware Settings",
+        "content": "1. Open the Start menu and click on the Settings icon. 2. Go to Update & Security, then click Recovery. 3. Under Advanced startup, click Restart now. 4. After restarting, click Troubleshoot, then Advanced options, followed by UEFI Firmware Settings. 5. Your device will restart again, taking you to the BIOS/UEFI settings."
+      },
+      {
+        "title": "Enable TPM 2.0 and Secure Boot",
+        "content": "6. In the BIOS/UEFI settings, navigate to the Security or Advanced tab. 7. Enable TPM 2.0 and Secure Boot. 8. Save changes and exit the BIOS/UEFI settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Traditional BIOS Access",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access BIOS During Boot",
+            "content": "1. Restart your computer. 2. Immediately press the key to enter BIOS (usually F2, F10, F12, or Delete). 3. Navigate to the Security or Advanced tab and enable TPM 2.0 and Secure Boot. 4. Save changes and exit."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T22:16:54.386Z",
+      "updated": "2026-01-04T22:16:54.386Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/how-to-fix-this-pc-cant-run-windows-11-error-tpm-and-secure-boot/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767565023607-788",
+    "title": "Speed Up Slow PC",
+    "problemDescription": "Your PC is running slower than usual.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "slow",
+      "pc",
+      "speed",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Update Windows",
+        "content": "Go to the Windows Settings app, click Windows Update, and use the Check for updates button to scan for and install any available updates."
+      },
+      {
+        "title": "Check Running Processes",
+        "content": "Open Task Manager, click on the Details tab to view all running processes, and close any unnecessary applications or processes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reduce Animations and Change Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reduce Animations",
+            "content": "Go to Settings > Accessibility > Visual effects and reduce or turn off animations."
+          },
+          {
+            "title": "Change Themes",
+            "content": "Go to Settings > Personalization > Themes and select a lighter theme."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T22:17:03.607Z",
+      "updated": "2026-01-04T22:17:03.607Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/here-is-why-your-computer-is-slow/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767565029755-590",
+    "title": "Optimize PC Performance with Microsoft PC Manager",
+    "problemDescription": "Slow performance and excessive pop-ups on Windows PC.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "performance",
+      "optimization",
+      "pop-ups"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install Microsoft PC Manager",
+        "content": "Visit the official Microsoft PC Manager download page and install the application."
+      },
+      {
+        "title": "Run Health Checkup",
+        "content": "Open Microsoft PC Manager and use the Health Checkup feature to scan for and fix problems."
+      },
+      {
+        "title": "Enable Pop-Up Management",
+        "content": "Use the Pop-Up Management feature to reduce annoying ads and pop-ups from apps."
+      },
+      {
+        "title": "Boost PC Performance",
+        "content": "Use the Boost Your PC feature to manage tasks and background activities, freeing up memory."
+      },
+      {
+        "title": "Manage Storage",
+        "content": "Use the Manage Your Storage feature to clean up old, unneeded files and automatically manage disk space."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manual Optimization",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Startup Programs",
+            "content": "Go to Task Manager > Startup tab and disable unnecessary programs."
+          },
+          {
+            "title": "Clean Up Disk",
+            "content": "Use the built-in Disk Cleanup tool to remove temporary files."
+          },
+          {
+            "title": "Update Windows",
+            "content": "Ensure your Windows operating system is up to date."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T22:17:09.755Z",
+      "updated": "2026-01-04T22:17:09.755Z",
+      "sourceUrl": "https://download.cnet.com/microsoft-pc-manager/3000-windows-microsoft-pc-manager.html",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767565038381-625",
+    "title": "Fix Printer Troubleshooting Error",
+    "problemDescription": "Printer troubleshooter fails to start, preventing the detection and resolution of printing issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "troubleshooter",
+      "driver",
+      "uninstall",
+      "reinstall"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall Printer Drivers",
+        "content": "Press Windows key + X, click Programs and Features. Locate and select the Brother printer drivers in the list of programs. Click Uninstall and follow the on-screen instructions. Reboot your system."
+      },
+      {
+        "title": "Reinstall Printer Drivers",
+        "content": "Download and install the latest drivers from the manufacturer's website compatible with your Windows version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Run Printer Troubleshooter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Built-in Printer Troubleshooter",
+            "content": "Use the built-in printer troubleshooter to automatically detect and fix any incorrect settings that could cause issues with printing."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T22:17:18.381Z",
+      "updated": "2026-01-04T22:17:18.381Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/bizarre-printing-problem/d99ab8a5-7459-4993-879b-5a807f8807e3",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767565041655-296",
+    "title": "Fix Printer Not Printing in Windows 10",
+    "problemDescription": "Printer is not printing in Windows 10.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "windows 10",
+      "printing",
+      "troubleshoot"
+    ],
+    "steps": [
+      {
+        "title": "Run the Printer Troubleshooter",
+        "content": "Go to Start > Settings > Update & Security > Troubleshoot > Printer. Follow the on-screen instructions to troubleshoot printer issues."
+      },
+      {
+        "title": "Remove and Re-add the Printer",
+        "content": "Go to Settings > Devices > Printers & scanners. Click your printer and select 'Remove device'. Then, click 'Add a printer' and follow the instructions to re-add the printer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update or Reinstall Printer Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Driver Updates",
+            "content": "Visit the printer manufacturer's website (e.g., HP for HP Envy 4520) and download the latest drivers for your printer model."
+          },
+          {
+            "title": "Reinstall the Drivers",
+            "content": "Uninstall the current printer drivers from your computer, then install the newly downloaded drivers."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T22:17:21.655Z",
+      "updated": "2026-01-04T22:17:21.655Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/my-printer-will-not-print/8eaf2081-6324-4ea7-a04d-5364f7795915",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767565044407-714",
+    "title": "Fix Samsung SCX-4300 Printer Issues on Windows 7",
+    "problemDescription": "Samsung SCX-4300 printer not responding, showing SPL ERROR Incomplete Session by timeout, and Wi-Fi connectivity issues on Windows 7.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "Samsung SCX-4300",
+      "Windows 7",
+      "Wi-Fi",
+      "SPL ERROR"
+    ],
+    "steps": [
+      {
+        "title": "Update Printer Drivers",
+        "content": "Download and install the latest drivers for the Samsung SCX-4300 printer from the official Samsung website."
+      },
+      {
+        "title": "Check Printer Port Settings",
+        "content": "Ensure the printer port settings are correct. Go to Control Panel > Devices and Printers, right-click on the printer, select 'Printer properties', and verify the port settings."
+      },
+      {
+        "title": "Reset Printer Spooler",
+        "content": "Stop and restart the Print Spooler service. Open Command Prompt as administrator and run the following commands: `net stop spooler`, `net start spooler`."
+      },
+      {
+        "title": "Check Wi-Fi Connectivity",
+        "content": "Ensure the printer is connected to the same Wi-Fi network as your computer. Restart the router and the printer to refresh the connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Printer Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Reset the printer's network settings to default. This can usually be done through the printer's control panel or menu."
+          },
+          {
+            "title": "Reconfigure Wi-Fi",
+            "content": "Reconfigure the Wi-Fi settings on the printer, ensuring it connects to the correct network with the right credentials."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Wired Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect via USB",
+            "content": "If Wi-Fi issues persist, connect the printer directly to the computer using a USB cable and ensure the printer is set to use the USB connection."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T22:17:24.407Z",
+      "updated": "2026-01-04T22:17:24.407Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/printer-problems-samsung-scx-4300-windows-7-64-bit/6887e47b-56cc-4b55-926a-3ce236875b34",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767565048108-350",
+    "title": "Install HP Photosmart 3210i Driver on Windows 7",
+    "problemDescription": "Unable to install or use HP Photosmart 3210i printer driver on Windows 7.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "HP",
+      "Photosmart",
+      "3210i",
+      "driver",
+      "Windows 7"
+    ],
+    "steps": [
+      {
+        "title": "Download and Run HP Print and Scan Doctor",
+        "content": "Download and run the HP Print and Scan Doctor tool to diagnose and resolve printing and scanning problems automatically."
+      },
+      {
+        "title": "Disconnect the Printer",
+        "content": "Ensure the printer is not connected to the computer before running the installer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check HP Support Forums",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit HP Support Forums",
+            "content": "If the problem persists, visit the HP Support Forums for further assistance."
+          }
+        ]
+      },
+      {
+        "title": "Verify Driver Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check HP Website",
+            "content": "Look for driver support on the HP website to see if they still support the model number."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T22:17:28.108Z",
+      "updated": "2026-01-04T22:17:28.108Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/win-7-driver-for-hp-photosmart-3210i-printer/4fcc9e32-7542-4304-b0e5-765b99e4cd93",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767565056960-149",
+    "title": "Excel Cannot Connect to Printer",
+    "problemDescription": "Excel is unable to connect to the printer when attempting to print a file.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "excel",
+      "print",
+      "printer",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check Printer Connection",
+        "content": "Ensure the printer is properly connected to your computer and turned on."
+      },
+      {
+        "title": "Restart Printer",
+        "content": "Turn off the printer, wait for a few seconds, and then turn it back on."
+      },
+      {
+        "title": "Restart Excel",
+        "content": "Close and reopen Excel to see if the issue is resolved."
+      },
+      {
+        "title": "Update Printer Drivers",
+        "content": "Go to the printer manufacturer's website, download the latest drivers, and install them."
+      },
+      {
+        "title": "Check Printer Settings in Excel",
+        "content": "Open Excel, go to File > Print, and ensure the correct printer is selected."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Printer Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Printer Drivers",
+            "content": "Go to Control Panel > Devices and Printers, right-click on the printer, and select 'Remove device'."
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Restart your computer to complete the uninstallation process."
+          },
+          {
+            "title": "Reinstall Printer Drivers",
+            "content": "Download the latest drivers from the printer manufacturer's website and install them."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Print to PDF",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Print to PDF",
+            "content": "If the issue persists, try printing to a PDF file and then print the PDF."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T22:17:36.960Z",
+      "updated": "2026-01-04T22:17:36.960Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/officeversion_other-excel/problem-opening-excel-unable-to-read-file/a45e9577-30e6-4613-ad5d-65fa771d8691?msgId=2a29b3d8-4a7a-45bd-a198-4aa31ca96efd&tab=AllReplies",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
