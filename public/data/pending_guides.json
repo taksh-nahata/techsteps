@@ -12308,5 +12308,690 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767511118908-400",
+    "title": "Fix PowerBook G4 Titanium Screen Flickering",
+    "problemDescription": "Screen flickering issues on PowerBook G4 Titanium models, particularly 550MHz and 667MHz.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "PowerBook G4",
+      "screen flickering",
+      "Titanium",
+      "resolution switching"
+    ],
+    "steps": [
+      {
+        "title": "Check for AppleCare Coverage",
+        "content": "If your PowerBook G4 Titanium is under AppleCare coverage, contact Apple Support to see if a repair is available."
+      },
+      {
+        "title": "Disconnect External Devices",
+        "content": "Disconnect any external, bus-powered devices such as FireWire drives, as they may be contributing to the flickering issue."
+      },
+      {
+        "title": "Look for Driver Updates",
+        "content": "Check for potential driver updates from ATI, the manufacturer of the graphics cards in these models."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: HTML Test Document",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use HTML Test Document",
+            "content": "An Ars Technica user created an HTML document that reproduces the flickering problem. You can use this to test and potentially identify the cause."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T07:18:38.908Z",
+      "updated": "2026-01-04T07:18:38.908Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/powerbook-g4-titanium-screen-resolution-switching-flickering-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767511122817-403",
+    "title": "Fix Screen Flickering on Intel-based iMacs",
+    "problemDescription": "Screen flickering or distortion on Intel-based iMacs, particularly after display sleep.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "screen flickering",
+      "iMac",
+      "display issue",
+      "macOS"
+    ],
+    "steps": [
+      {
+        "title": "Disable Screen Dimming",
+        "content": "Go to System Preferences > Displays and disable the 'Automatically adjust brightness' option."
+      },
+      {
+        "title": "Prevent Display Sleep",
+        "content": "Go to System Preferences > Energy Saver and set 'Turn display off after' to 'Never'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update EFI Firmware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to the Apple menu > About This Mac > Software Update > Advanced and check for EFI updates."
+          },
+          {
+            "title": "Install Update",
+            "content": "If an EFI update is available, download and install it. Restart your iMac to apply the update."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Schedule a Repair",
+            "content": "Contact Apple Support or visit an Apple Store to schedule a repair. Mention the issue and any previous troubleshooting steps taken."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T07:18:42.817Z",
+      "updated": "2026-01-04T07:18:42.817Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/screen-flickering-intel-based-imacs-also-affected/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767511125165-251",
+    "title": "Fix MacBook Pro Display Flickering",
+    "problemDescription": "MacBook Pro display flickers when scrolling or adjusting brightness.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "MacBook",
+      "display",
+      "flickering",
+      "scrolling",
+      "brightness"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Energy Saver Settings",
+        "content": "Go to System Preferences > Energy Saver and disable 'Automatic graphics switching' and adjust the display brightness settings to prevent dimming before sleep or when running on battery."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: External Hard Drive Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove and Externalize Hard Drive",
+            "content": "Remove the hard drive and place it into an external hard drive enclosure. Attach it to the computer and boot from the external drive to see if the flickering problem disappears."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T07:18:45.165Z",
+      "updated": "2026-01-04T07:18:45.165Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/macbook-screen-flickering-macbook-pro-display-refresh-problems-when-scrolling/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767511126662-330",
+    "title": "Fix 24-inch Cinema Display Flickering",
+    "problemDescription": "Intermittent display flickering on a 24-inch Apple LED Cinema Display connected to a Thunderbolt-enabled Mac.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "Apple",
+      "Cinema Display",
+      "flickering",
+      "Thunderbolt",
+      "firmware update"
+    ],
+    "steps": [
+      {
+        "title": "Check Connection",
+        "content": "Ensure the 24-inch LED Cinema Display is directly connected to a Thunderbolt-enabled Mac. Avoid using Mini DisplayPort extender cables."
+      },
+      {
+        "title": "Install Firmware Update",
+        "content": "If you are experiencing flickering, install the private firmware update provided by Apple for the 24-inch LED Cinema Display."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Avoid Unnecessary Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Do Not Update if Not Flickering",
+            "content": "If your monitor is not experiencing flickering issues, it is advisable not to apply the update to avoid potential complications."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T07:18:46.662Z",
+      "updated": "2026-01-04T07:18:46.662Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/apple-issues-private-update-for-flickering-24-inch-cinema-display/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767511134802-610",
+    "title": "Fix 'Aw, Snap!' Error on Chromebook",
+    "problemDescription": "Chrome cannot load web pages and displays an 'Aw, Snap!' error.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chromebook",
+      "chrome",
+      "aw snap",
+      "browser error"
+    ],
+    "steps": [
+      {
+        "title": "Close Unnecessary Tabs",
+        "content": "Close any unnecessary browser tabs and windows to free up system resources."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your Chromebook is connected to the internet."
+      },
+      {
+        "title": "Clear Browser Cache",
+        "content": "Go to Chrome settings, navigate to 'Privacy and security', then 'Clear browsing data', and select 'Cached images and files'."
+      },
+      {
+        "title": "Open Incognito Window",
+        "content": "Try opening the web page in an incognito window to bypass potential extensions or settings issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Delete Cookies",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Save Passwords",
+            "content": "Save your online passwords before proceeding."
+          },
+          {
+            "title": "Delete Cookies",
+            "content": "Go to Chrome settings, navigate to 'Privacy and security', then 'Cookies and other site data', and click 'Remove all'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T07:18:54.802Z",
+      "updated": "2026-01-04T07:18:54.802Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-chromebook-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767511139022-842",
+    "title": "Enable Chrome's Memory Saver",
+    "problemDescription": "Chrome uses too much memory and drains battery quickly.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "memory",
+      "battery",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Update Chrome",
+        "content": "Ensure you have the latest version of Chrome (version 108 or later)."
+      },
+      {
+        "title": "Enable Memory Saver",
+        "content": "Go to Chrome settings, navigate to 'Performance', and toggle on 'Memory Saver'."
+      },
+      {
+        "title": "Enable Energy Saver",
+        "content": "In the same 'Performance' section, toggle on 'Energy Saver' to optimize battery usage."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install an Alternative Browser",
+            "content": "Consider using browsers like Firefox or Edge which may have better memory management."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T07:18:59.022Z",
+      "updated": "2026-01-04T07:18:59.022Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/google-chrome-memory-saver-energy-saver/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767511145666-496",
+    "title": "Reset Chromebook",
+    "problemDescription": "Your Chromebook is experiencing lag and performance issues.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chromebook",
+      "reset",
+      "performance",
+      "lag"
+    ],
+    "steps": [
+      {
+        "title": "Backup Your Data",
+        "content": "Ensure all important data is backed up to Google Drive or an external storage device."
+      },
+      {
+        "title": "Prepare a Second PC and Flash Drive",
+        "content": "Have a second PC and a flash drive or SD card with at least 8GB of space ready."
+      },
+      {
+        "title": "Download the Chromebook Recovery Utility",
+        "content": "On the second PC, download the Chromebook Recovery Utility from the Chrome Web Store."
+      },
+      {
+        "title": "Create a Recovery Media",
+        "content": "Follow the instructions in the Recovery Utility to create a recovery media on the flash drive or SD card."
+      },
+      {
+        "title": "Insert the Recovery Media into the Chromebook",
+        "content": "Insert the flash drive or SD card into the Chromebook."
+      },
+      {
+        "title": "Turn On the Chromebook",
+        "content": "Turn on the Chromebook and press Ctrl + Alt + Shift + R to enter recovery mode."
+      },
+      {
+        "title": "Follow the On-Screen Instructions",
+        "content": "Follow the on-screen instructions to reset the Chromebook using the recovery media."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Powerwash Your Chromebook",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure all important data is backed up to Google Drive or an external storage device."
+          },
+          {
+            "title": "Enter Recovery Mode",
+            "content": "Turn on the Chromebook and press Ctrl + Alt + Shift + R to enter recovery mode."
+          },
+          {
+            "title": "Select Powerwash",
+            "content": "Follow the on-screen instructions to select the Powerwash option, which will reset the Chromebook to factory settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T07:19:05.666Z",
+      "updated": "2026-01-04T07:19:05.666Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/how-to-reset-a-chromebook/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767511156236-469",
+    "title": "Fix AirPort Connection Issues",
+    "problemDescription": "AirPort shows network as accessible but fails to connect or has dropouts.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "airport",
+      "connection",
+      "dropouts"
+    ],
+    "steps": [
+      {
+        "title": "Use AirPort Setup Assistant",
+        "content": "Open AirPort Setup Assistant, click 'Make changes to existing AirPort Base Station', and enter your WEP or WPA password if prompted."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable IP Address Distribution",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open AirPort Admin Utility",
+            "content": "Launch the AirPort Admin Utility."
+          },
+          {
+            "title": "Turn Off IP Distribution",
+            "content": "Navigate to the settings and turn off 'Distribute IP Addresses'."
+          }
+        ]
+      },
+      {
+        "title": "Toggle Firmware Versions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Latest Firmware",
+            "content": "Download and install the latest firmware version from your router manufacturer."
+          },
+          {
+            "title": "Try Older Firmware",
+            "content": "If issues persist, try installing older firmware versions to find a more stable connection."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T07:19:16.236Z",
+      "updated": "2026-01-04T07:19:16.236Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/tutorial-fixing-wireless-connectivity-including-airport-problems-dropouts-slow-speed-more/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767511176268-956",
+    "title": "Fix Zoom Webcam Access Issues",
+    "problemDescription": "Zoom is unable to access your webcam, preventing video calls.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "webcam",
+      "permissions",
+      "video call"
+    ],
+    "steps": [
+      {
+        "title": "Check App Permissions",
+        "content": "Go to your device's settings and ensure that Zoom has permission to access your webcam."
+      },
+      {
+        "title": "Restart the Call",
+        "content": "Restart your Zoom call and make sure to press 'Allow' when prompted about camera and microphone access."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use the Web Version of Zoom",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Web Browser",
+            "content": "Open your preferred web browser."
+          },
+          {
+            "title": "Join Zoom Meeting via Web",
+            "content": "Go to the Zoom website and join your meeting using the web version instead of the installed app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T07:19:36.268Z",
+      "updated": "2026-01-04T07:19:36.268Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-problems-with-zoom-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767511179705-630",
+    "title": "Update Zoom on Mac to Fix Security Flaw",
+    "problemDescription": "Zoom on Mac has a major security flaw that needs to be patched immediately.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "mac",
+      "security",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Open the Zoom App",
+        "content": "Launch the Zoom application on your Mac."
+      },
+      {
+        "title": "Check for Updates",
+        "content": "Click on your profile picture in the top-right corner, then select 'Check for Updates'."
+      },
+      {
+        "title": "Install the Update",
+        "content": "If an update is available, follow the prompts to download and install it."
+      },
+      {
+        "title": "Restart Zoom",
+        "content": "After the update is installed, restart the Zoom application to ensure the changes take effect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manually Download the Latest Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit the Zoom Website",
+            "content": "Go to the official Zoom website."
+          },
+          {
+            "title": "Download the Latest Version",
+            "content": "Navigate to the download page and download the latest version of Zoom for Mac."
+          },
+          {
+            "title": "Install the Downloaded Version",
+            "content": "Open the downloaded file and follow the installation instructions."
+          },
+          {
+            "title": "Restart Your Mac",
+            "content": "After installation, restart your Mac to ensure all changes are applied."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T07:19:39.705Z",
+      "updated": "2026-01-04T07:19:39.705Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/zoom-security-update-for-mac/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767511182324-698",
+    "title": "Fix Multi-Monitor Window Location Issues",
+    "problemDescription": "Windows does not remember window locations when monitors are disconnected and reconnected.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "multi-monitor",
+      "windows",
+      "display",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Enable Window Location Memory in Windows 11",
+        "content": "Update to Windows 11 if you haven't already. Go to Settings > System > Display. In the Multiple Displays section, enable the option 'Remember Window Locations Based on Monitor Connection'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Roll Back Display Driver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Press Win + X and select Device Manager."
+          },
+          {
+            "title": "Locate Display Adapters",
+            "content": "Expand the Display Adapters section and select your display adapter."
+          },
+          {
+            "title": "Roll Back Driver",
+            "content": "Go to the Driver tab, and choose 'Roll Back Driver' if available."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T07:19:42.324Z",
+      "updated": "2026-01-04T07:19:42.324Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-multi-monitor-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767511184848-836",
+    "title": "Fix Google Meet Server Issues",
+    "problemDescription": "Google Meet is not working due to server issues.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "google meet",
+      "server issues",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check Google Server Status",
+        "content": "Visit IsItDown to verify if Google is experiencing server issues."
+      },
+      {
+        "title": "Set Up Alternative Meeting",
+        "content": "If Google Meet is down, create a Zoom meeting and invite participants, explaining the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Generalized Fixes for Other Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your Device",
+            "content": "Restart your computer or mobile device to resolve potential software glitches."
+          },
+          {
+            "title": "Check Internet Connection",
+            "content": "Ensure your internet connection is stable and try again."
+          },
+          {
+            "title": "Update Google Meet",
+            "content": "Make sure you are using the latest version of Google Meet."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T07:19:44.848Z",
+      "updated": "2026-01-04T07:19:44.848Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-google-meet-problems-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767511204377-977",
+    "title": "Improve Wi-Fi Signal by Repositioning Router",
+    "problemDescription": "Slow or unstable Wi-Fi connection due to router placement.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "slow",
+      "router",
+      "position",
+      "signal"
+    ],
+    "steps": [
+      {
+        "title": "Move Router to a Central Location",
+        "content": "Place your router in a central location in your home to maximize coverage."
+      },
+      {
+        "title": "Elevate the Router",
+        "content": "Keep the router off the floor and away from obstacles like walls, cabinets, and electronics."
+      },
+      {
+        "title": "Avoid Interference",
+        "content": "Ensure the router is not near devices that can cause interference, such as microwaves, aquariums, or bulky furniture."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Change Wi-Fi Channels",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Router Settings",
+            "content": "Log in to your router's admin panel, usually via a web browser."
+          },
+          {
+            "title": "Find Wi-Fi Settings",
+            "content": "Navigate to the Wi-Fi settings or wireless settings section."
+          },
+          {
+            "title": "Change Channel",
+            "content": "Select a less crowded channel for your Wi-Fi network."
+          },
+          {
+            "title": "Save and Reboot",
+            "content": "Save the changes and reboot your router to apply the new settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T07:20:04.377Z",
+      "updated": "2026-01-04T07:20:04.377Z",
+      "sourceUrl": "https://www.cnet.com/home/internet/how-to-speed-up-slow-internet/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
