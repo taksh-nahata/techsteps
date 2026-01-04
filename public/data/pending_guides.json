@@ -23630,5 +23630,500 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767561281374-441",
+    "title": "Completely Clear Instagram from iPhone",
+    "problemDescription": "Instagram app retains data and account info after deletion and reinstallation.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "iphone",
+      "delete",
+      "data",
+      "clear"
+    ],
+    "steps": [
+      {
+        "title": "Delete Instagram and its data",
+        "content": "Go to Settings > General > iPhone Storage. Wait for your apps to populate the list, then find and tap on Instagram. Tap on Delete App to delete the app and all its data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Log out of Instagram",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Log out of your account",
+            "content": "Go to Instagram settings and log out of your account before deleting the app to prevent data retention."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T21:14:41.374Z",
+      "updated": "2026-01-04T21:14:41.374Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/373580/how-to-completely-clear-instagram-from-iphone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767561284124-54",
+    "title": "Fix Instagram Stories Not Loading on iOS",
+    "problemDescription": "Instagram stories are not loading or freezing on iPhone with iOS 14.1.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "stories",
+      "ios",
+      "loading",
+      "freezing"
+    ],
+    "steps": [
+      {
+        "title": "Update Instagram App",
+        "content": "Go to the App Store, search for Instagram, and update it to the latest version."
+      },
+      {
+        "title": "Update iOS",
+        "content": "Go to Settings > General > Software Update and install the latest iOS version (iOS 14.2 or later)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Instagram",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Instagram",
+            "content": "Press and hold the Instagram app icon, then tap 'Remove App' and confirm."
+          },
+          {
+            "title": "Reinstall Instagram",
+            "content": "Go to the App Store, search for Instagram, and reinstall it."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > General > Reset > Reset Network Settings."
+          },
+          {
+            "title": "Restart iPhone",
+            "content": "Turn off your iPhone and turn it back on."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T21:14:44.124Z",
+      "updated": "2026-01-04T21:14:44.124Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/405794/instagram-does-not-load-stories",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767561287207-952",
+    "title": "Fix Instagram Download Issue on iPad",
+    "problemDescription": "Instagram cannot be downloaded on iPad despite multiple attempts and troubleshooting steps.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "download",
+      "ipad",
+      "app store"
+    ],
+    "steps": [
+      {
+        "title": "Wait and Retry",
+        "content": "Wait for about 15-20 minutes and then try downloading Instagram again."
+      },
+      {
+        "title": "Check with iPhone",
+        "content": "If you have an iPhone, try downloading Instagram on it. If it's already installed, the 'Get' button should change to 'Open'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use iPhone Only Option",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use iPhone Only Option in App Store",
+            "content": "Ensure you are using the iPhone only option in the App Store on your iPad."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T21:14:47.207Z",
+      "updated": "2026-01-04T21:14:47.207Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/392111/instagram-could-not-be-downloaded-at-this-time-no-matter-how-i-try-i-am-not-ab",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767561292682-295",
+    "title": "Fix Instagram Upload Error on iPhone",
+    "problemDescription": "Instagram shows 'Could not open photo. Please try again in a moment' error when uploading pictures due to iCloud storage optimization.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "upload",
+      "iphone",
+      "storage",
+      "icloud"
+    ],
+    "steps": [
+      {
+        "title": "Disable iCloud Storage Optimization",
+        "content": "Go to Settings > [Your Name] > iCloud > Photos. Turn off 'Optimize iPhone Storage'."
+      },
+      {
+        "title": "Verify Photo Availability",
+        "content": "Open the photo you want to upload and try to edit it to ensure the original is available."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Free Up Storage Space",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete Unnecessary Files",
+            "content": "Remove apps, photos, or other files you no longer need to free up space."
+          },
+          {
+            "title": "Restart Your iPhone",
+            "content": "After freeing up space, restart your iPhone and try uploading the photo again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T21:14:52.682Z",
+      "updated": "2026-01-04T21:14:52.682Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/364332/instagram-upload-picture-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767561303628-788",
+    "title": "Fix Android Overheating and High Battery Drain",
+    "problemDescription": "Android device is overheating and experiencing high battery drain.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "overheating",
+      "battery drain"
+    ],
+    "steps": [
+      {
+        "title": "Turn Off Automatic App Updates",
+        "content": "Go to Google Play Store settings and disable automatic app updates to prevent a problematic app from causing battery drain."
+      },
+      {
+        "title": "Clear RAM and Recent Applications",
+        "content": "Manually clear the RAM and close recent applications to free up system resources."
+      },
+      {
+        "title": "Use Battery Doctor",
+        "content": "Install and use Battery Doctor to close background apps and optimize battery usage."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Rogue Apps with Xposed App Opps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Xposed Framework",
+            "content": "Root your device and install the Xposed Framework."
+          },
+          {
+            "title": "Install Xposed App Opps Module",
+            "content": "Download and install the Xposed App Opps module from the Xposed Module Repository."
+          },
+          {
+            "title": "Disable Problematic Apps",
+            "content": "Use the Xposed App Opps module to identify and disable apps with excessive spyware or battery usage."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T21:15:03.628Z",
+      "updated": "2026-01-04T21:15:03.628Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/104051/how-to-troubleshoot-overheating-and-high-battery-drain-in-an-android-device",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767561345016-338",
+    "title": "Contact Gmail Support",
+    "problemDescription": "How to reach out to Google support for Gmail issues.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "support",
+      "contact"
+    ],
+    "steps": [
+      {
+        "title": "Visit Gmail Support Page",
+        "content": "Go to support.google.com/mail."
+      },
+      {
+        "title": "Sign In",
+        "content": "Sign in with your Google account."
+      },
+      {
+        "title": "Select Your Issue",
+        "content": "Choose the category that best describes your problem."
+      },
+      {
+        "title": "Follow Prompts",
+        "content": "Follow the on-screen instructions to get help."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Call Gmail Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Dial Support Number",
+            "content": "Call 650 562 5550 to reach Gmail support."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T21:15:45.016Z",
+      "updated": "2026-01-04T21:15:45.016Z",
+      "sourceUrl": "https://www.reddit.com/r/GoogleSupport/comments/1n301cq/how_do_i_reach_out_to_google_support_gmail/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767561355565-519",
+    "title": "Fix Smart Home Device Issues",
+    "problemDescription": "Troubleshoot common problems with smart home and home security devices.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "smart home",
+      "troubleshooting",
+      "home security"
+    ],
+    "steps": [
+      {
+        "title": "Reboot the Device",
+        "content": "Unplug the smart home device from its power source, wait for about 30 seconds, and then plug it back in."
+      },
+      {
+        "title": "Update Firmware",
+        "content": "Check for and install any available firmware updates for the device through the manufacturer's app or website."
+      },
+      {
+        "title": "Forget and Reconnect the Device",
+        "content": "In the app, remove (or 'forget') the smart device and then reconnect it to the network."
+      },
+      {
+        "title": "Check Device Compatibility",
+        "content": "Ensure that the smart device is compatible with other devices in your smart home ecosystem."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Network Connectivity",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your Router",
+            "content": "Unplug your router, wait for 30 seconds, and then plug it back in to restart it."
+          },
+          {
+            "title": "Check Wi-Fi Signal",
+            "content": "Ensure that your smart home device is within range of your Wi-Fi network and that the signal is strong."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T21:15:55.565Z",
+      "updated": "2026-01-04T21:15:55.565Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/quick-fixes-to-troubleshoot-your-smart-home-and-home-security-devices/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767561360274-591",
+    "title": "Improve TV Dialogue Clarity",
+    "problemDescription": "TV dialogue is hard to hear or understand.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "TV",
+      "audio",
+      "dialogue",
+      "sound",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Adjust TV Sound Settings",
+        "content": "Navigate to your TV's sound settings menu and explore options like 'Dialogue Enhancement', 'Voice Clarity', or 'Sound Mode'. Enable or adjust these settings to improve dialogue audibility."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: External Sound System",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect External Speakers or Soundbar",
+            "content": "If your TV's built-in speakers are insufficient, connect an external sound system, soundbar, or headphones for better audio quality and dialogue clarity."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update TV Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Software Updates",
+            "content": "Ensure your TV's software is up-to-date, as updates may include audio improvements or new sound settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T21:16:00.274Z",
+      "updated": "2026-01-04T21:16:00.274Z",
+      "sourceUrl": "https://www.cnet.com/tech/home-entertainment/simple-fixes-to-make-dialogue-more-audible-on-your-tv/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767561363819-934",
+    "title": "Improve TV Picture Quality with Calibration",
+    "problemDescription": "Your TV's picture quality is not optimal and needs calibration.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "TV",
+      "calibration",
+      "picture quality",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Get a Setup Disc or Use Built-in Calibration",
+        "content": "Obtain a setup disc like the Spears & Munsil UHD disc or use the built-in calibration routine on your Apple TV."
+      },
+      {
+        "title": "Adjust Contrast Settings",
+        "content": "Turn up the contrast control until you start losing detail. Then, turn it back down until you see the detail again. Find the ideal range for your content."
+      },
+      {
+        "title": "Set Color Temperature",
+        "content": "Switch to your TV's warm color temperature mode and observe for a few days. If it still seems off, try the standard mode. Avoid the cool mode as it may appear too blue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Hire a Professional Calibrator",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Find a TV Calibrator",
+            "content": "Search for professional TV calibrators in your area who use specialized test equipment to calibrate your TV."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T21:16:03.819Z",
+      "updated": "2026-01-04T21:16:03.819Z",
+      "sourceUrl": "https://www.cnet.com/tech/home-entertainment/your-tv-can-look-better-by-changing-these-basic-settings/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767561367007-496",
+    "title": "Disable Soap Opera Effect on TV",
+    "problemDescription": "Your TV has an unnatural, overly smooth look due to motion interpolation settings.",
+    "category": "tv",
+    "difficulty": "Medium",
+    "keywords": [
+      "tv",
+      "soap opera effect",
+      "motion interpolation",
+      "picture settings"
+    ],
+    "steps": [
+      {
+        "title": "Switch to Filmmaker or Cinema Mode",
+        "content": "Navigate to your TV's picture settings and select Filmmaker, Movie, Cinema, or Calibrated mode. This should eliminate or reduce the soap opera effect and improve color accuracy."
+      },
+      {
+        "title": "Adjust Brightness if Needed",
+        "content": "If the Movie mode appears too dark, adjust the Backlight or Brightness (for LCD TVs) or OLED Light (for OLED TVs) to your preference."
+      },
+      {
+        "title": "Disable Motion Interpolation",
+        "content": "Check the advanced or expert settings in your TV's menu to ensure motion interpolation (soap opera effect) is turned off."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Custom Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Manually Adjust Settings",
+            "content": "If your TV does not have a Filmmaker or Cinema mode, manually adjust the motion settings to disable interpolation and tweak other picture settings for a more natural look."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T21:16:07.007Z",
+      "updated": "2026-01-04T21:16:07.007Z",
+      "sourceUrl": "https://www.cnet.com/tech/home-entertainment/how-to-disable-the-annoying-soap-opera-effect-thats-ruining-your-tv/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
