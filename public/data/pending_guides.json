@@ -18517,5 +18517,997 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767539729593-602",
+    "title": "Fix MacBook Restarting Issue",
+    "problemDescription": "MacBook keeps restarting unexpectedly.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "MacBook",
+      "restart",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Update macOS",
+        "content": "Go to System Preferences > Software Update and install all available updates. Restart your MacBook as prompted."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-04T15:15:29.593Z",
+      "updated": "2026-01-04T15:15:29.593Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/apple-macbook-keeps-restarting/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767539734074-662",
+    "title": "Fix Mac Wi-Fi Issues",
+    "problemDescription": "Your Mac is connected to Wi-Fi but has no internet access or a weak connection.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "mac",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Mac",
+        "content": "Restart your Mac to refresh the system and potentially resolve Wi-Fi issues."
+      },
+      {
+        "title": "Check Wi-Fi Settings",
+        "content": "Go to System Preferences > Network > Wi-Fi and ensure Wi-Fi is turned on and connected to the correct network."
+      },
+      {
+        "title": "Forget and Reconnect to the Network",
+        "content": "In the Wi-Fi settings, click on the network name and select 'Forget This Network', then reconnect to it."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Go to System Preferences > Software Update and install any available updates for macOS."
+      },
+      {
+        "title": "Reset SMC",
+        "content": "Shut down your Mac, then press and hold the power button for 10 seconds to reset the SMC (System Management Controller)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset NVRAM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Shut Down Your Mac",
+            "content": "Turn off your Mac completely."
+          },
+          {
+            "title": "Press Power Button",
+            "content": "Press the power button to turn on your Mac, then immediately press and hold Command (⌘) + Option + P + R for about 20 seconds."
+          },
+          {
+            "title": "Release Keys",
+            "content": "Release the keys and allow your Mac to continue starting up normally."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T15:15:34.074Z",
+      "updated": "2026-01-04T15:15:34.074Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/mac-user-guide-tips-tricks-tutorials/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767539739893-544",
+    "title": "Fix MacBook Air M2 Single External Display Issue",
+    "problemDescription": "MacBook Air M2 can only use one external display, limiting multi-monitor setups.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "MacBook",
+      "display",
+      "external monitor",
+      "M2"
+    ],
+    "steps": [
+      {
+        "title": "Check DisplayPort Configuration",
+        "content": "Ensure your external monitor is connected via a DisplayPort or USB-C cable that supports video output. Verify the cable is properly connected to both the MacBook and the monitor."
+      },
+      {
+        "title": "Update macOS",
+        "content": "Go to System Preferences > Software Update and install any available updates. This can resolve compatibility issues with external displays."
+      },
+      {
+        "title": "Use Target Display Mode",
+        "content": "If you have an older MacBook Pro with Thunderbolt 3 ports, you can use it as a secondary display for your MacBook Air M2. Connect the two devices using a Thunderbolt 3 cable and follow the on-screen instructions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Display Adapter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Display Adapter",
+            "content": "Buy a USB-C to HDMI or DisplayPort adapter that supports video output."
+          },
+          {
+            "title": "Connect the Adapter",
+            "content": "Plug the adapter into one of the USB-C ports on your MacBook Air M2 and connect your external monitor to the adapter."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T15:15:39.893Z",
+      "updated": "2026-01-04T15:15:39.893Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-macbook-air-m2-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767539744020-601",
+    "title": "Fix MacBook Overheating",
+    "problemDescription": "MacBook overheating and shutting down unexpectedly.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "macbook",
+      "overheating",
+      "shutdown"
+    ],
+    "steps": [
+      {
+        "title": "Check for Blocked Vents",
+        "content": "Ensure that the vents on your MacBook are not blocked by objects or surfaces."
+      },
+      {
+        "title": "Clean the Vents",
+        "content": "Use compressed air to clean the vents and remove any dust or debris."
+      },
+      {
+        "title": "Check Activity Monitor",
+        "content": "Open Activity Monitor to see if any applications are using excessive CPU resources."
+      },
+      {
+        "title": "Update macOS",
+        "content": "Ensure your MacBook is running the latest version of macOS to benefit from performance improvements and bug fixes."
+      },
+      {
+        "title": "Reset SMC",
+        "content": "Reset the System Management Controller (SMC) by shutting down the MacBook, pressing and holding the power button for 10 seconds, and then turning it back on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Cooling Pad",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Cooling Pad",
+            "content": "Buy a cooling pad designed for MacBooks."
+          },
+          {
+            "title": "Place MacBook on Cooling Pad",
+            "content": "Position your MacBook on the cooling pad to improve airflow and reduce overheating."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T15:15:44.020Z",
+      "updated": "2026-01-04T15:15:44.020Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-macbook-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767539747601-93",
+    "title": "Fix MacBook Air Won't Turn On",
+    "problemDescription": "MacBook Air fails to power on despite being plugged in.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "power",
+      "startup"
+    ],
+    "steps": [
+      {
+        "title": "Check Power Connection",
+        "content": "Ensure the power cable is securely connected to both the MacBook Air and the power outlet. Try a different power outlet or cable if possible."
+      },
+      {
+        "title": "Reset the SMC",
+        "content": "Shut down the MacBook Air. Press and hold the Shift + Control + Option keys on the left side of the built-in keyboard, then press and hold the power button for 10 seconds. Release all keys and wait a few seconds before pressing the power button to turn on the MacBook Air."
+      },
+      {
+        "title": "Reset the NVRAM",
+        "content": "Shut down the MacBook Air. Press the power button to turn it on, then immediately press and hold the Command + Option + P + R keys for about 20 seconds. Release the keys and allow the MacBook Air to complete the startup process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Physical Damage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect the Device",
+            "content": "Look for any visible signs of damage, such as liquid spills or physical trauma, which might be causing the issue."
+          },
+          {
+            "title": "Contact Apple Support",
+            "content": "If physical damage is suspected, contact Apple Support or visit an Apple Store for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T15:15:47.601Z",
+      "updated": "2026-01-04T15:15:47.601Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-macbook-air-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767539756294-42",
+    "title": "Automate Teams Meeting Invites with Apple Calendar",
+    "problemDescription": "Automatically create Microsoft Teams meeting invites directly in Apple Calendar.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Apple Calendar",
+      "Microsoft Teams",
+      "Power Automate",
+      "Meeting Invites"
+    ],
+    "steps": [
+      {
+        "title": "Set Up Power Automate Flow",
+        "content": "Go to Power Automate and create a new flow. Choose the appropriate trigger for your Outlook version (e.g., V3)."
+      },
+      {
+        "title": "Configure the Flow",
+        "content": "In the flow builder, set up the steps to create a Teams meeting link. Ensure the flow includes actions to generate the meeting link and update the calendar event."
+      },
+      {
+        "title": "Test the Flow",
+        "content": "Run the flow and wait for the calendar to refresh. The meeting event in Apple Calendar should now include the Teams meeting link."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manual Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Teams Calendar for Meetings",
+            "content": "Create meeting events directly in the Teams calendar and use Apple Calendar for other events."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T15:15:56.294Z",
+      "updated": "2026-01-04T15:15:56.294Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/422608/automatic-teams-meeting-invites-with-apple-calendar",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767539760461-302",
+    "title": "Fix Microsoft Teams Window Focus on Mac",
+    "problemDescription": "Microsoft Teams on Mac does not focus on the proper window when switching applications.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "Mac",
+      "window focus",
+      "AppleScript"
+    ],
+    "steps": [
+      {
+        "title": "Replace Chrome Window Notifications with macOS Notifications",
+        "content": "Go to Microsoft Teams settings and replace the Chrome window notifications with real macOS notifications. This can sometimes solve the window focus issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use AppleScript (Limited Success)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Attempt to Use AppleScript",
+            "content": "Write an AppleScript to force the issue, although it may not work due to lack of hooks for AppleScript in Teams."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T15:16:00.461Z",
+      "updated": "2026-01-04T15:16:00.461Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/422803/make-microsoft-teams-focus-on-the-proper-window",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767539763355-183",
+    "title": "Fix CMD+Tab Not Working for Teams",
+    "problemDescription": "Microsoft Teams does not respond to CMD+Tab shortcuts, making it difficult to switch windows.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "teams",
+      "cmd+tab",
+      "window switching",
+      "macos"
+    ],
+    "steps": [
+      {
+        "title": "Check Teams Window Focus",
+        "content": "Ensure that the Teams window is not in focus when using CMD+Tab. If Teams is the last window used, CMD+Tab will not switch away from it."
+      },
+      {
+        "title": "Update Teams",
+        "content": "Make sure you are using the latest version of Microsoft Teams. Go to Teams > Check for Updates."
+      },
+      {
+        "title": "Reinstall Teams",
+        "content": "If the issue persists, uninstall and reinstall Microsoft Teams to ensure a clean installation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Third-Party Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Window Management Tool",
+            "content": "Consider using third-party window management tools that can help manage window focus and switching more effectively."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T15:16:03.355Z",
+      "updated": "2026-01-04T15:16:03.355Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/463256/using-cmdtab-does-not-work-for-teams",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767539767412-734",
+    "title": "Clear Microsoft Teams Cached Login on Mac",
+    "problemDescription": "Microsoft Teams retains cached login credentials on Mac, making it difficult to remove accounts from the login chooser.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "microsoft teams",
+      "cached login",
+      "mac",
+      "credentials"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall macOS",
+        "content": "Reinstall macOS from recovery or backup to clear cached login credentials. This method ensures that system keychain and root certificates are preserved, and it's a reliable way to remove cached data without causing system issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check and Remove ADALcache Items",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify ADALcache Items",
+            "content": "Use tools like `eslogger` to trace files and HTTP traffic related to Teams. Look for ADALcache items that might be storing login credentials."
+          },
+          {
+            "title": "Remove Identified Items",
+            "content": "Carefully remove the identified ADALcache items. Be cautious as the process may vary based on the version of Teams and macOS."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Microsoft Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Raise an Issue",
+            "content": "Raise an issue on the MicrosoftTeams-msinternal GitHub or contact Microsoft Support for assistance. Provide detailed information about the problem and the steps you've already taken."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T15:16:07.413Z",
+      "updated": "2026-01-04T15:16:07.413Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/458362/where-does-microsoft-teams-store-its-cached-login-credentials",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767539770795-170",
+    "title": "Mute/Unmute Microsoft Teams Microphone Without Focusing Teams",
+    "problemDescription": "Mute or unmute the microphone in Microsoft Teams without focusing the application.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "microsoft teams",
+      "mute",
+      "microphone",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Use Touch Portal to Mute/Unmute at System Level",
+        "content": "Download and install Touch Portal on your Windows machine. Use the built-in features to create an action that mutes or unmutes the microphone at the operating system level. This will also toggle the mute icon in Teams, providing a visual indicator to your co-workers."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Keyboard Shortcut",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Keyboard Shortcut",
+            "content": "Use the keyboard shortcut Command+Shift+M to mute or unmute the microphone in Teams. This requires focusing the Teams application, but it is a quick alternative if Touch Portal is not available."
+          }
+        ]
+      },
+      {
+        "title": "Use Touch Portal on Mobile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Mobile Hot Button",
+            "content": "Consider using Touch Portal on your mobile device to create a hot button for muting/unmuting. Note that the application may not be signed, so use with caution."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T15:16:10.795Z",
+      "updated": "2026-01-04T15:16:10.795Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/410517/mute-unmute-microsoft-teams-microphone-using-mouse-button-when-teams-is-not-focu",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767539783390-596",
+    "title": "Fix One Device Not Connecting to Wi-Fi",
+    "problemDescription": "A single device is unable to connect to the Wi-Fi network.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "connection",
+      "device"
+    ],
+    "steps": [
+      {
+        "title": "Restart Wi-Fi on Device",
+        "content": "Turn off the Wi-Fi on your device, then re-enable it."
+      },
+      {
+        "title": "Restart Device",
+        "content": "Restart the device and try connecting again."
+      },
+      {
+        "title": "Restart Router",
+        "content": "Restart the router by unplugging it, waiting a few seconds, and plugging it back in."
+      },
+      {
+        "title": "Use Ethernet Cable",
+        "content": "Connect your laptop to the router directly using an Ethernet cable to check if the issue is with the Wi-Fi."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Built-in Troubleshooters",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Windows Troubleshooter",
+            "content": "Search for 'wifi troubleshooting' and open 'Identify and Repair Network Issues' to run diagnostics."
+          },
+          {
+            "title": "MacOS Wireless Diagnostics",
+            "content": "Hold the Options key and click the AirPort (Wi-Fi) icon on the menu bar. Find 'Open Wireless Diagnostics' and follow the on-screen instructions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T15:16:23.390Z",
+      "updated": "2026-01-04T15:16:23.390Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/wi-fi-problems-and-solutions/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767539791401-85",
+    "title": "Improve Wi-Fi Signal Through Walls",
+    "problemDescription": "Poor Wi-Fi signal in certain buildings or rooms due to walls blocking the signal.",
+    "category": "wifi",
+    "difficulty": "Hard",
+    "keywords": [
+      "wifi",
+      "signal",
+      "connection",
+      "walls"
+    ],
+    "steps": [
+      {
+        "title": "Analyze Wave Reflection",
+        "content": "Send certain waves through the medium (walls) and measure how these waves are reflected by the material."
+      },
+      {
+        "title": "Calculate Compensating Structure",
+        "content": "Use the reflection data to calculate a compensating structure that will allow waves to pass through the walls completely."
+      },
+      {
+        "title": "Implement Anti-Reflective Structure",
+        "content": "Add an anti-reflective structure to the environment to eliminate the reflection of Wi-Fi signals."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Wi-Fi Extenders or Mesh Networks",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase Wi-Fi Extenders",
+            "content": "Buy Wi-Fi extenders or mesh network systems to boost the signal in areas with poor connectivity."
+          },
+          {
+            "title": "Position Extenders Strategically",
+            "content": "Place the extenders or mesh nodes in locations that provide optimal coverage throughout the building."
+          },
+          {
+            "title": "Configure Network Settings",
+            "content": "Set up the extenders or mesh network according to the manufacturer's instructions to ensure seamless connectivity."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T15:16:31.401Z",
+      "updated": "2026-01-04T15:16:31.401Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/researchers-fix-wi-fi-connectivity-with-anti-reflective-coating/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767539809779-267",
+    "title": "Fix Missing Notifications on Android Wear",
+    "problemDescription": "Notifications aren't coming through on your Android Wear device.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "wear",
+      "notifications",
+      "missing"
+    ],
+    "steps": [
+      {
+        "title": "Check App Permissions",
+        "content": "Pull down the notification shade on your Android Wear device, tap the gear icon, then scroll down to 'Apps'."
+      },
+      {
+        "title": "Verify Android Wear Permissions",
+        "content": "Find and tap on the Android Wear app in the Apps menu. Ensure that all necessary permissions are enabled, especially for calendar, phone calls, and SMS messages."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-04T15:16:49.779Z",
+      "updated": "2026-01-04T15:16:49.779Z",
+      "sourceUrl": "https://www.howtogeek.com/305522/how-to-fix-notifications-that-arent-coming-through-on-android-wear/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767539812366-369",
+    "title": "Fix Missing Gmail Notifications on Android",
+    "problemDescription": "Gmail notifications not appearing on your Android device.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "notifications",
+      "android",
+      "sync"
+    ],
+    "steps": [
+      {
+        "title": "Enable Device Notifications",
+        "content": "Open the Settings app and search for 'notifications'. Tap 'Lock Screen' and ensure 'Hide Lock Screen Notifications' is disabled."
+      },
+      {
+        "title": "Enable App Notifications",
+        "content": "In the Notifications menu, select 'Gmail' and ensure notifications are allowed, including during Do Not Disturb mode."
+      },
+      {
+        "title": "Enable Sync",
+        "content": "Go to Gmail settings, tap your account, and ensure 'Sync Gmail' is enabled. Toggle it off and on if needed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Toggle Notification Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Toggle Settings",
+            "content": "Sometimes toggling notification settings on and off can resolve the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T15:16:52.366Z",
+      "updated": "2026-01-04T15:16:52.366Z",
+      "sourceUrl": "https://www.howtogeek.com/not-receiving-gmail-notifications-heres-how-to-fix-it/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767539815071-199",
+    "title": "Manage Chrome Notifications",
+    "problemDescription": "Chrome notifications can be intrusive and may be granted accidentally.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "notifications",
+      "permissions"
+    ],
+    "steps": [
+      {
+        "title": "Use Secondary Panel for Notification Permissions",
+        "content": "Implement a secondary panel in Chrome that allows users to proactively enable notifications for specific websites. This prevents accidental permission grants."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Expire Notification Permissions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Permissions to Expire",
+            "content": "Configure notification permissions to expire over time. This encourages users to reconsider their notification preferences and deny permissions if they've had a bad experience."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Active Tab Notifications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Require Active Tabs for Notifications",
+            "content": "Implement a system where notifications are only allowed when the tab is active. Users can then 'upgrade' permissions to allow notifications even when the tab is inactive."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T15:16:55.071Z",
+      "updated": "2026-01-04T15:16:55.071Z",
+      "sourceUrl": "https://www.howtogeek.com/chrome-notification-changes-proposal/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767539824802-741",
+    "title": "Fix Roku Remote Pairing Issues",
+    "problemDescription": "Roku remote not responding or pairing with the device.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "roku",
+      "remote",
+      "pairing",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Reset the Roku Device",
+        "content": "Hold the reset button on the side of the Roku stick until it turns off and then back on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset the Network Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Navigate to Settings > Network > Set up connection > Wireless."
+          },
+          {
+            "title": "Re-enter WiFi Password",
+            "content": "Re-enter your WiFi password to reset the network connection."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T15:17:04.802Z",
+      "updated": "2026-01-04T15:17:04.803Z",
+      "sourceUrl": "https://www.reddit.com/r/Roku/comments/1hmqfx2/there_is_a_serious_problem_with_roku_remotes_i_am/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767539828462-389",
+    "title": "Fix Roku Apps Not Working",
+    "problemDescription": "Most Roku apps have stopped working and restarting the device or router does not resolve the issue.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Roku",
+      "apps",
+      "not working",
+      "factory reset"
+    ],
+    "steps": [
+      {
+        "title": "Perform a System Restart",
+        "content": "Go to Settings > System > Power > System Restart and restart your Roku device."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "If the restart does not work, perform a factory reset. Go to Settings > System > Advanced system settings > Factory reset. Note that this will erase all settings and require you to log back into your apps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reboot and Reinstall Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot Roku",
+            "content": "Unplug the Roku device from the power source, wait for a few minutes, and then plug it back in."
+          },
+          {
+            "title": "Reinstall Apps",
+            "content": "Uninstall and reinstall the problematic apps from the Roku Channel Store."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Free Up Space",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Unused Apps",
+            "content": "Delete any unused apps to free up space on your Roku device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T15:17:08.462Z",
+      "updated": "2026-01-04T15:17:08.462Z",
+      "sourceUrl": "https://www.reddit.com/r/Roku/comments/1nbwurx/most_of_my_roku_apps_just_stopped_working/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767539832628-149",
+    "title": "Fix Roku TV Black Screen During Video Playback",
+    "problemDescription": "Roku TV screen turns black when selecting a video, but works fine otherwise.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "roku",
+      "black screen",
+      "video playback",
+      "streaming"
+    ],
+    "steps": [
+      {
+        "title": "Disable Auto-Adjust Display Refresh Rate",
+        "content": "Go to 'Settings > System > Advanced system Settings > Advanced display settings' and disable 'Auto-adjust display refresh rate'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Switch Channels",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch Channels",
+            "content": "Briefly switch to another channel and then switch back to the original channel."
+          }
+        ]
+      },
+      {
+        "title": "YouTube Specific Fix",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable 1-Touch Play",
+            "content": "Go to 'Roku settings > System > Control other devices' and uncheck '1-touch play' if it is checked, then restart the system."
+          }
+        ]
+      },
+      {
+        "title": "Check HDMI Connections",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test HDMI Cable and Port",
+            "content": "Test with a different HDMI cable and port to rule out a faulty connection."
+          }
+        ]
+      },
+      {
+        "title": "Reset and Power Cycle",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Power Cycle",
+            "content": "Unplug the TV for 10 minutes, then plug it back in. If that doesn't work, perform a factory reset."
+          }
+        ]
+      },
+      {
+        "title": "Adjust Brightness",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Lower Backlight",
+            "content": "Adjust the backlight settings to a lower level."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T15:17:12.628Z",
+      "updated": "2026-01-04T15:17:12.628Z",
+      "sourceUrl": "https://www.reddit.com/r/Roku/comments/1i2tbif/my_roku_tv_screen_is_black_but_only_when_i_select/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767539834825-794",
+    "title": "Roku HDMI Connection Issue",
+    "problemDescription": "Roku device shows 'Sorry, something went wrong when loading this video' error, and restarting doesn't fix it.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Roku",
+      "HDMI",
+      "video loading",
+      "connection issue"
+    ],
+    "steps": [
+      {
+        "title": "Unplug and Replug HDMI",
+        "content": "Unplug the Roku device from the HDMI port and plug it back in. This action has been confirmed to resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Advanced system settings > Factory reset. Note that this will erase all settings and installed channels."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T15:17:14.825Z",
+      "updated": "2026-01-04T15:17:14.825Z",
+      "sourceUrl": "https://www.reddit.com/r/Roku/comments/1nq4zr5/is_there_a_fix_for_this/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767539837913-407",
+    "title": "Fix Roku Ultra App Crashes and Glitches",
+    "problemDescription": "Roku Ultra devices are experiencing app crashes and screen glitches while streaming content.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Roku",
+      "app crash",
+      "glitch",
+      "streaming"
+    ],
+    "steps": [
+      {
+        "title": "Update Roku Software",
+        "content": "Ensure your Roku Ultra has the latest software updates installed."
+      },
+      {
+        "title": "Reinstall Problematic Apps",
+        "content": "Delete and reinstall the apps that are causing issues (e.g., ESPN, HBO Max, Disney Plus)."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure a stable internet connection, as intermittent connectivity can cause streaming issues."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "Perform a factory reset on your Roku Ultra if the problem persists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use MyVideoBuzz",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download MyVideoBuzz",
+            "content": "Follow the directions to download and install MyVideoBuzz."
+          },
+          {
+            "title": "Use as Alternative",
+            "content": "Use MyVideoBuzz as an alternative streaming service for your content."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T15:17:17.913Z",
+      "updated": "2026-01-04T15:17:17.913Z",
+      "sourceUrl": "https://www.reddit.com/r/Roku/comments/lenm4y/constant_issues_with_my_roku_ultra_help/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
