@@ -9352,5 +9352,796 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767501911325-128",
+    "title": "Fix Stuck/Disabled Zooming on Trackpad",
+    "problemDescription": "Zooming (two-finger pinch) on the trackpad gets stuck or disabled unexpectedly.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "trackpad",
+      "zooming",
+      "macos",
+      "pinch to zoom"
+    ],
+    "steps": [
+      {
+        "title": "Disable and Re-enable Pinch to Zoom",
+        "content": "Go to `System Preferences` → `Trackpad` → `Scroll & Zoom` and uncheck then recheck the `Zoom in or out` option."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart the System",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your Mac",
+            "content": "If the issue persists, try restarting your Mac to temporarily resolve the problem."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Run Diagnostics",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Diagnostics",
+            "content": "Press and hold the `D` key at startup to run diagnostics. If that doesn't work, press and hold both the `Option` and `D` keys to run diagnostics from the internet."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T04:45:11.325Z",
+      "updated": "2026-01-04T04:45:11.325Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/291578/how-to-fix-stuck-disabled-zooming-on-trackpad",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767501913911-465",
+    "title": "Improve Zoom Performance on Multiple Monitors in macOS",
+    "problemDescription": "Zoom performance is poor when using multiple monitors in macOS.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "performance",
+      "multiple monitors",
+      "macos"
+    ],
+    "steps": [
+      {
+        "title": "Disable Mouse Inertia",
+        "content": "Go to System Preferences > Accessibility > Zoom > Mouse Options and set Scrolling to 'without inertia'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Zoom Features",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Zoom Features",
+            "content": "Go to System Preferences > Accessibility > Zoom and turn off all zoom features, especially the 'Zoom using scroll wheel' option."
+          }
+        ]
+      },
+      {
+        "title": "Use Mirroring",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Mirroring",
+            "content": "Use mirroring mode instead of extending your desktop across multiple monitors."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T04:45:13.911Z",
+      "updated": "2026-01-04T04:45:13.911Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/156322/yosemite-accessibility-zoom-multiple-monitors-poor-performance",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767501920198-75",
+    "title": "Fix FaceTime Camera Issue on macOS",
+    "problemDescription": "FaceTime cannot connect to the camera on macOS, while other apps can use it without issues.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "facetime",
+      "camera",
+      "macos",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Mac",
+        "content": "Restart your Mac to temporarily resolve the issue. This is a common fix for many software-related problems."
+      },
+      {
+        "title": "Check for Hardware Issues",
+        "content": "If the problem persists, consider that it might be a hardware issue. Heat buildup could cause a component to electrically disconnect. Monitor the device for patterns and consider a hardware repair if necessary."
+      },
+      {
+        "title": "Perform an Erase Install",
+        "content": "Back up your data and perform an erase install of macOS to rule out software errors. This will reinstall the operating system and can resolve underlying software issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Monitor Usage Patterns",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Gather Data",
+            "content": "Collect data over a week or two to identify patterns. Note when the error occurs, how long after boot, when the device sleeps, and which apps were last used."
+          },
+          {
+            "title": "Analyze Patterns",
+            "content": "Analyze the gathered data to identify any patterns that might be causing the issue. This can help in narrowing down the problem."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T04:45:20.198Z",
+      "updated": "2026-01-04T04:45:20.198Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/416097/facetime-on-macos-cannot-connect-to-camera-but-all-other-apps-can",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767501922521-451",
+    "title": "Reset Screen Zoom to Default on Mac",
+    "problemDescription": "How to reset screen zoom to 1:1 on a Mac using a keyboard shortcut.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "macos",
+      "zoom",
+      "keyboard shortcut",
+      "accessibility"
+    ],
+    "steps": [
+      {
+        "title": "Use Keyboard Shortcut",
+        "content": "Press `⌥` (Option) + `⌘` (Command) + `-` (minus key) to zoom out until the screen returns to 1:1 zoom level."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Zoom Temporarily",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Temporarily Disable Zoom",
+            "content": "Press `⌥` (Option) + `⌘` (Command) + `8` to disable zoom temporarily. Note that this will revert to the previous zoom level when re-enabled."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T04:45:22.521Z",
+      "updated": "2026-01-04T04:45:22.521Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/33444/how-do-you-reset-screen-zoom-to-zero",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767501926261-314",
+    "title": "MacBook Web Access Blocked Despite Working Connection",
+    "problemDescription": "MacBook shows connected to network but cannot access web pages or applications.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "connection",
+      "macbook",
+      "web access"
+    ],
+    "steps": [
+      {
+        "title": "Disable Firewall and Security Software",
+        "content": "Temporarily disable any firewall or security software installed on your MacBook to check if it resolves the issue. Remember to re-enable them afterward for security purposes."
+      },
+      {
+        "title": "Verify Date and Time Settings",
+        "content": "Ensure that the date and time settings on your MacBook are accurate. Incorrect date and time settings can sometimes cause issues with secure connections."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to System Preferences > Network, select your connection, and click the minus (-) button to remove it. Then add it back by clicking the plus (+) button and selecting the appropriate interface."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T04:45:26.261Z",
+      "updated": "2026-01-04T04:45:26.261Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/461306/web-access-blocked-but-ping-and-dns-is-fine-on-all-interfaces",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767501936667-487",
+    "title": "Secure Your Account with Authenticator App",
+    "problemDescription": "Using SMS for 2FA can be insecure as it relies on phone number access.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "MFA",
+      "2FA",
+      "Authenticator App",
+      "SMS",
+      "Security"
+    ],
+    "steps": [
+      {
+        "title": "Download an Authenticator App",
+        "content": "Download a trusted authenticator app like Google Authenticator, Microsoft Authenticator, or Authy on your device."
+      },
+      {
+        "title": "Link the App to Your Account",
+        "content": "Open the authenticator app and follow the instructions to link it to your account. This usually involves scanning a QR code provided by the service."
+      },
+      {
+        "title": "Use the App for Verification",
+        "content": "Instead of waiting for an SMS code, open the authenticator app and enter the code displayed. This code changes every 30 seconds."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Hardware Tokens",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Hardware Token",
+            "content": "Buy a hardware token device that supports MFA, such as a YubiKey."
+          },
+          {
+            "title": "Register the Token",
+            "content": "Follow the service's instructions to register your hardware token with your account."
+          },
+          {
+            "title": "Use the Token for Verification",
+            "content": "When prompted for a verification code, insert the hardware token into your device and follow the on-screen instructions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T04:45:36.667Z",
+      "updated": "2026-01-04T04:45:36.667Z",
+      "sourceUrl": "https://www.howtogeek.com/devops/what-is-multi-factor-authentication-mfa-and-how-is-it-different-from-2fa/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767501942088-531",
+    "title": "Enable Two-Factor Authentication for SSH Logins",
+    "problemDescription": "Enable two-factor authentication (2FA) for SSH logins to enhance security.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "SSH",
+      "Two-Factor Authentication",
+      "Security"
+    ],
+    "steps": [
+      {
+        "title": "Install Google Authenticator PAM",
+        "content": "Install Google's Pluggable Authentication Module (PAM) using your distro's package manager. For example, on Ubuntu, run: `sudo apt-get install libpam-google-authenticator`."
+      },
+      {
+        "title": "Initialize Google Authenticator",
+        "content": "Run the initialization command: `google-authenticator`. Follow the prompts to set up the authenticator."
+      },
+      {
+        "title": "Modify SSH Configuration",
+        "content": "Open the SSH configuration file: `sudo nano /etc/ssh/sshd_config`."
+      },
+      {
+        "title": "Enable ChallengeResponseAuthentication",
+        "content": "Find the `ChallengeResponseAuthentication` option and set it to `yes`: `ChallengeResponseAuthentication yes`."
+      },
+      {
+        "title": "Override SSH Keys",
+        "content": "Add the following line to the end of `sshd_config` to ensure SSH keys do not override 2FA: `AuthenticationMethods publickey,keyboard-interactive`."
+      },
+      {
+        "title": "Disable Password-Based Authentication",
+        "content": "Comment out the line containing `@include common-auth` by adding a `#` at the beginning: `#@include common-auth`."
+      },
+      {
+        "title": "Restart SSH Service",
+        "content": "Restart the SSH service to apply the changes: `sudo systemctl restart sshd`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Authy",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Authy PAM",
+            "content": "Install Authy's PAM module using your distro's package manager."
+          },
+          {
+            "title": "Configure Authy",
+            "content": "Follow the Authy documentation to configure the PAM module for SSH."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T04:45:42.088Z",
+      "updated": "2026-01-04T04:45:42.088Z",
+      "sourceUrl": "https://www.howtogeek.com/devops/how-to-enable-two-factor-for-ssh-logins/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767501946269-547",
+    "title": "Set Up Authy for Two-Factor Authentication",
+    "problemDescription": "Using SMS for two-factor authentication is insecure; switch to a more secure method.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "two-factor authentication",
+      "SMS",
+      "Authy",
+      "security"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install Authy",
+        "content": "Download the Authy app from the App Store (iOS) or Google Play Store (Android)."
+      },
+      {
+        "title": "Register Your Account",
+        "content": "Open the Authy app and follow the prompts to register your account using your email address."
+      },
+      {
+        "title": "Set Up Two-Factor Authentication",
+        "content": "Go to the security settings of the service you want to protect and select Authy as your two-factor authentication method. Follow the instructions to link your account."
+      },
+      {
+        "title": "Verify Your Account",
+        "content": "Authy will generate a verification code. Enter this code in the service's two-factor authentication setup to complete the process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Google Authenticator",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install Google Authenticator",
+            "content": "Download the Google Authenticator app from the App Store (iOS) or Google Play Store (Android)."
+          },
+          {
+            "title": "Set Up Two-Factor Authentication",
+            "content": "Go to the security settings of the service you want to protect and select Google Authenticator as your two-factor authentication method. Follow the instructions to link your account."
+          },
+          {
+            "title": "Verify Your Account",
+            "content": "Google Authenticator will generate a verification code. Enter this code in the service's two-factor authentication setup to complete the process."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T04:45:46.269Z",
+      "updated": "2026-01-04T04:45:46.269Z",
+      "sourceUrl": "https://www.howtogeek.com/310418/why-you-shouldnt-use-sms-for-two-factor-authentication/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767501953318-148",
+    "title": "Increase Discord File Upload Limit",
+    "problemDescription": "Discord users are limited to an 8MB file upload size.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "file upload",
+      "limit",
+      "nitro"
+    ],
+    "steps": [
+      {
+        "title": "Upgrade to Nitro Basic or Nitro",
+        "content": "Purchase a Nitro Basic or Nitro subscription to increase your file upload limit to 25MB."
+      },
+      {
+        "title": "Wait for the Update",
+        "content": "If you are a non-Nitro user, wait for the update that increases the file upload limit to 25MB for all users."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Alternative File Sharing Methods",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Compress Files",
+            "content": "Use file compression tools to reduce the size of files before uploading."
+          },
+          {
+            "title": "Use Cloud Storage",
+            "content": "Upload files to cloud storage services like Google Drive or Dropbox and share the link in Discord."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T04:45:53.318Z",
+      "updated": "2026-01-04T04:45:53.318Z",
+      "sourceUrl": "https://www.techradar.com/news/discord-finally-fixed-its-biggest-problem-and-its-about-time",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767501969739-185",
+    "title": "Stream Videos from PC to TV",
+    "problemDescription": "How to stream videos from a PC to a TV using various methods.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "stream",
+      "videos",
+      "PC",
+      "TV",
+      "PLEX",
+      "DLNA",
+      "BubbleUPnP"
+    ],
+    "steps": [
+      {
+        "title": "Use PLEX",
+        "content": "Install PLEX on your PC and Roku device. Set up PLEX to handle streaming videos from your PC to your TV via the Roku device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use MHL to HDMI Adapter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for MHL Connector",
+            "content": "Ensure your phone has an MHL connector."
+          },
+          {
+            "title": "Get MHL to HDMI Adapter",
+            "content": "Purchase an MHL to HDMI adapter."
+          },
+          {
+            "title": "Connect Phone to TV",
+            "content": "Connect your phone to the TV using the MHL to HDMI adapter."
+          },
+          {
+            "title": "Use Video Player",
+            "content": "Use a video player to stream content from your PC to your TV."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use BubbleUPnP",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install DLNA/UPnP Server",
+            "content": "Install a DLNA/UPnP server on your PC."
+          },
+          {
+            "title": "Use BubbleUPnP",
+            "content": "Use BubbleUPnP as a DLNA server and control point to stream videos from your PC to your TV."
+          },
+          {
+            "title": "Control Playback",
+            "content": "Use BubbleUPnP to control playback on your TV, which acts as a renderer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T04:46:09.739Z",
+      "updated": "2026-01-04T04:46:09.739Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/62763/how-to-stream-videos-from-pc-to-tv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767501976427-757",
+    "title": "Remap Wacom Tablet Input on Android 11",
+    "problemDescription": "Remap Wacom tablet input to rotate counter-clockwise 90 degrees in portrait mode and adjust orientation in landscape mode.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "wacom",
+      "android",
+      "input",
+      "remap",
+      "idc"
+    ],
+    "steps": [
+      {
+        "title": "Create IDC Configuration File",
+        "content": "Create a new IDC file for your Wacom tablet in `/system/usr/idc/` directory. For example, `Wacom_Bamboo_One_S_Pen.idc`."
+      },
+      {
+        "title": "Define Basic Configuration",
+        "content": "Add the following lines to your IDC file to enable orientation awareness:\n\n```\ntouch.deviceType = pointer\ntouch.orientationAware = 1\n```"
+      },
+      {
+        "title": "Adjust Scaling and Output",
+        "content": "Modify the `xScale`, `yScale`, `output.x`, and `output.y` parameters to match the display proportions. For example:\n\n```\noutput.x = (raw.x - raw.x.min) * (output.width / raw.width)\noutput.y = (raw.y - raw.y.min) * (output.height / raw.height)\n```"
+      },
+      {
+        "title": "Verify Configuration",
+        "content": "Use the command `dumpsys input | grep -i wacom` to verify that the configuration file is detected and the `OrientationAware` parameter is set to `true`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Simple Float Values",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Simple Float Values",
+            "content": "If the scaling does not work as expected, try using simple float values for `output.x` and `output.y`:\n\n```\noutput.x = 1.0\noutput.y = 1.0\n```"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T04:46:16.427Z",
+      "updated": "2026-01-04T04:46:16.427Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/253804/remapping-wacom-tablet-input-on-android-11-using-idc-files",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767501980061-921",
+    "title": "Chromebox vs Android TV",
+    "problemDescription": "Understanding the differences between Chromebox and Android TV for media and computing needs.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Chromebox",
+      "Android TV",
+      "Chrome OS",
+      "Android",
+      "media device"
+    ],
+    "steps": [
+      {
+        "title": "Understand Chromebox",
+        "content": "Chromeboxes are small computers running Chrome OS, designed for use with a larger monitor. They function as Chrome OS desktops, similar to Chromebooks but in a desktop form factor."
+      },
+      {
+        "title": "Understand Android TV",
+        "content": "Android TV devices are media-focused, running a version of Android tailored for television. They deliver media (video, music, pictures, and games) and are designed for a '10-foot experience' from a couch."
+      },
+      {
+        "title": "Compare Functionality",
+        "content": "Chromeboxes are more like lightweight computers with the ability to run Chrome OS and some Android apps, while Android TV devices are optimized for media consumption with a remote or gamepad interface."
+      },
+      {
+        "title": "Choose Based on Needs",
+        "content": "If you need a computer-like experience with Chrome OS, choose a Chromebox. If you need a media device for your TV, choose an Android TV device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Alternative: Use Android TV for Media",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Consider Android TV for Media",
+            "content": "Android TV devices are better suited for media consumption and offer more functionality than a Chromecast."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T04:46:20.061Z",
+      "updated": "2026-01-04T04:46:20.061Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/93501/what-is-the-difference-between-chromebox-and-android-tv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767501987653-75",
+    "title": "Fix Galaxy S8 Audio Issues",
+    "problemDescription": "Audio cuts off unexpectedly on Samsung Galaxy S8/S8 Plus.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "audio",
+      "Galaxy S8",
+      "Samsung",
+      "sound",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Apply Pressure to Speaker Area",
+        "content": "Press firmly an inch or two above the speakers on your Galaxy S8/S8 Plus. Be careful not to damage the phone while applying pressure."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Go to Settings > General management > Reset > Factory data reset. Back up your data before proceeding."
+          },
+          {
+            "title": "Remove microSD Card",
+            "content": "If you use a microSD card, remove it during the reset and reinstall it afterward."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Follow the on-screen instructions to complete the factory reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T04:46:27.653Z",
+      "updated": "2026-01-04T04:46:27.653Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/having-audio-problems-on-your-galaxy-s8-heres-the-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767501990657-528",
+    "title": "Video Chat with Samsung Support",
+    "problemDescription": "Need assistance with troubleshooting your Samsung Galaxy S7.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "samsung",
+      "support",
+      "troubleshooting",
+      "galaxy s7"
+    ],
+    "steps": [
+      {
+        "title": "Access Samsung Support",
+        "content": "Open the Samsung Members app on your Galaxy S7."
+      },
+      {
+        "title": "Navigate to Support",
+        "content": "Tap on the 'Support' tab at the bottom of the screen."
+      },
+      {
+        "title": "Initiate Video Chat",
+        "content": "Select 'Live Chat' and then choose 'Video Call' to connect with a Samsung expert."
+      },
+      {
+        "title": "Follow Expert Instructions",
+        "content": "Allow the Samsung expert to guide you through the troubleshooting process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Phone Call Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Dial Samsung Support",
+            "content": "Call Samsung's customer support line at 1-800-SAMSUNG (1-800-726-7864)."
+          },
+          {
+            "title": "Explain Your Issue",
+            "content": "Describe the problem you are experiencing with your Galaxy S7."
+          },
+          {
+            "title": "Follow Verbal Instructions",
+            "content": "Follow the instructions provided by the support representative."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T04:46:30.657Z",
+      "updated": "2026-01-04T04:46:30.657Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/video-chat-with-a-samsung-rep-to-troubleshoot-your-galaxy-s7/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767501997380-671",
+    "title": "Improve Phone Signal",
+    "problemDescription": "Your phone has a weak or spotty signal.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "phone",
+      "signal",
+      "android",
+      "restart"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Phone",
+        "content": "Hold down the power button, or the power button and the volume down key (depending on your Android phone), until the on-screen menu shows up, and then tap Restart. If your phone doesn't offer a restart option, you can simply tap Power Off to shut down your device, and then boot it back up with the power button."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Your Carrier",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Your Carrier",
+            "content": "If the restart doesn't work, contact your carrier to begin troubleshooting after you've tried these fixes."
+          }
+        ]
+      },
+      {
+        "title": "Use a Signal Booster",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Signal Booster",
+            "content": "If all else fails, try a signal booster to improve cell reception."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T04:46:37.380Z",
+      "updated": "2026-01-04T04:46:37.380Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/how-to-get-better-phone-signal/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
