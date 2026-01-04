@@ -25167,5 +25167,979 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767568551020-681",
+    "title": "Fix Google Classroom Sign-In Issues",
+    "problemDescription": "Unable to sign in to Google Classroom with the correct email and password.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Google Classroom",
+      "sign-in",
+      "account",
+      "password"
+    ],
+    "steps": [
+      {
+        "title": "Verify the Correct Email Account",
+        "content": "Ensure you are using the email account connected to Google Classroom."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Make sure you have an active Internet connection to sign in to your account."
+      },
+      {
+        "title": "Contact School Administrator",
+        "content": "If your school’s administrator doesn’t automatically activate Classroom for new students, contact your teacher for assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Your Password",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Forgot Password",
+            "content": "If you forgot your password, follow the steps to reset it."
+          }
+        ]
+      },
+      {
+        "title": "Post to Help Community",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Seek Community Help",
+            "content": "Post your issue in the help community to get answers from community members."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T23:15:51.020Z",
+      "updated": "2026-01-04T23:15:51.020Z",
+      "sourceUrl": "https://support.google.com/edu/classroom/answer/6315899?hl=en",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767568553815-813",
+    "title": "Fix Problems Downloading Apps",
+    "problemDescription": "Issues encountered while downloading apps from Google Play Store.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "app",
+      "download",
+      "Google Play"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your device is connected to a stable Wi-Fi or mobile data network."
+      },
+      {
+        "title": "Restart Device",
+        "content": "Restart your device to clear temporary glitches that might be causing the issue."
+      },
+      {
+        "title": "Clear Cache and Data",
+        "content": "Go to Settings > Apps > Google Play Store > Storage > Clear Cache and Clear Data."
+      },
+      {
+        "title": "Update Google Play Store",
+        "content": "Open Google Play Store, go to Settings, and check for updates."
+      },
+      {
+        "title": "Check Storage Space",
+        "content": "Ensure your device has enough storage space to download the app."
+      },
+      {
+        "title": "Reinstall Google Play Services",
+        "content": "Uninstall and reinstall Google Play Services from the Play Store."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for System Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Device",
+            "content": "Go to Settings > System > System Update and install any available updates."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Different Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch Account",
+            "content": "Try downloading the app using a different Google account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T23:15:53.815Z",
+      "updated": "2026-01-04T23:15:53.815Z",
+      "sourceUrl": "https://support.google.com/googleplay/answer/14122894?hl=en",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767568558264-268",
+    "title": "Link Google Workspace Account to Assignments",
+    "problemDescription": "Instructors unable to link their Google Workspace for Education account to Assignments.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Google Workspace",
+      "Assignments",
+      "LMS",
+      "sign in",
+      "account linking"
+    ],
+    "steps": [
+      {
+        "title": "Verify Account Type",
+        "content": "Ensure you are using your Google Workspace for Education account provided by your institution, not a personal email account."
+      },
+      {
+        "title": "Enable Third-Party Cookies",
+        "content": "Check if third-party cookies are disabled in your browser settings and enable them if necessary."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check LMS Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Admin Configuration",
+            "content": "Verify with your administrator that the LMS is configured to allow grade passback."
+          },
+          {
+            "title": "Firewall Check",
+            "content": "Ensure there are no firewalls blocking grade passback requests from Assignments."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T23:15:58.264Z",
+      "updated": "2026-01-04T23:15:58.264Z",
+      "sourceUrl": "https://support.google.com/edu/assignments/answer/9069220?hl=en",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767568562060-154",
+    "title": "Troubleshoot Google Nest Setup Issues",
+    "problemDescription": "Issues during the setup of Google Nest speakers, displays, or other devices.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "Google Nest",
+      "setup",
+      "troubleshooting",
+      "speakers",
+      "displays"
+    ],
+    "steps": [
+      {
+        "title": "Check Device Compatibility",
+        "content": "Ensure your device is compatible with the Google Nest ecosystem."
+      },
+      {
+        "title": "Verify Internet Connection",
+        "content": "Make sure your internet connection is stable and working properly."
+      },
+      {
+        "title": "Restart the Device",
+        "content": "Power off the device, wait for a few seconds, and then power it back on."
+      },
+      {
+        "title": "Update Firmware",
+        "content": "Check for and install any available firmware updates for your device."
+      },
+      {
+        "title": "Reinstall the Google Home App",
+        "content": "Uninstall and reinstall the Google Home app to ensure it is functioning correctly."
+      },
+      {
+        "title": "Check for Interference",
+        "content": "Ensure there are no other devices causing interference with your Google Nest device."
+      },
+      {
+        "title": "Contact Support",
+        "content": "If the issue persists, contact Google Nest support for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Community Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Post to the Help Community",
+            "content": "Post your issue on the Google Nest help community forum for assistance from other users."
+          },
+          {
+            "title": "Contact Google Support",
+            "content": "Provide detailed information about your issue to Google support for personalized help."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T23:16:02.060Z",
+      "updated": "2026-01-04T23:16:02.060Z",
+      "sourceUrl": "https://support.google.com/googlenest/answer/15542711?hl=en",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767568569066-818",
+    "title": "Switch 2FA Apps Between Devices",
+    "problemDescription": "Transferring 2FA codes from one authenticator app to another across devices.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "2FA",
+      "authenticator",
+      "transfer",
+      "security"
+    ],
+    "steps": [
+      {
+        "title": "Disable 2FA Temporarily",
+        "content": "Log into your accounts and disable 2FA temporarily."
+      },
+      {
+        "title": "Re-enable 2FA",
+        "content": "Set up 2FA again and scan the provided QR code using the authenticator app on each device."
+      },
+      {
+        "title": "Sync with Authy",
+        "content": "Sign into Authy on your second device using your phone number or the first device. Ensure all 2FA codes are synchronized."
+      },
+      {
+        "title": "Disable Multi-device",
+        "content": "Go back to your original device and disable the 'Allow Multi-device' setting to prevent further syncs."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Transfer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Export Codes",
+            "content": "Export the 2FA codes from the original authenticator app."
+          },
+          {
+            "title": "Import Codes",
+            "content": "Import the exported codes into the new authenticator app on the new device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T23:16:09.066Z",
+      "updated": "2026-01-04T23:16:09.066Z",
+      "sourceUrl": "https://lifehacker.com/how-do-i-switch-from-one-2fa-authentication-app-to-anot-1842296754",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767568571748-654",
+    "title": "Enable HTTPS on Facebook",
+    "problemDescription": "Facebook reverts to HTTP from HTTPS when using applications.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "facebook",
+      "https",
+      "security",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Check Account Settings",
+        "content": "Go to your Facebook Account Settings and look for the HTTPS option under 'Account Security'."
+      },
+      {
+        "title": "Enable HTTPS",
+        "content": "Ensure that HTTPS is enabled. This will automatically redirect you to secure pages when you leave insecure application pages."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Wait for Rollout",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Back Later",
+            "content": "If you don't see the HTTPS option immediately, check back in a few days as the feature is rolling out gradually."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T23:16:11.748Z",
+      "updated": "2026-01-04T23:16:11.748Z",
+      "sourceUrl": "https://lifehacker.com/enable-two-factor-authentication-to-add-extra-security-5793591",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767568576486-262",
+    "title": "Recover Access to Authy with Multi-Device Setup",
+    "problemDescription": "You've lost access to your primary device with Authy and need to recover access to your two-factor authentication accounts.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "two-factor authentication",
+      "Authy",
+      "account recovery",
+      "multi-device"
+    ],
+    "steps": [
+      {
+        "title": "Enable Multi-Device on Primary Device",
+        "content": "Open Settings in Authy on your primary device and tap Devices. Enable 'Allow Multi-device.'"
+      },
+      {
+        "title": "Install Authy on Second Device",
+        "content": "On your second device, install Authy. When you first open the app, enter the phone number of your primary device."
+      },
+      {
+        "title": "Use Existing Device for Verification",
+        "content": "In the popup that says 'Get Account Verification Via', tap 'Use Existing Device.' On your primary device, verify and accept the addition of the new device."
+      },
+      {
+        "title": "Disable Multi-Device",
+        "content": "Go back to Settings on your primary device and tap 'Devices' again. Disable 'Allow multi-device' to prevent additional devices from being added."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Service Provider",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact the Company",
+            "content": "Call or message the company that runs the service you’re trying to access. Note that the account recovery process can take several business days."
+          }
+        ]
+      },
+      {
+        "title": "Create a New Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Start a New Account",
+            "content": "If the backup options fail and the company cannot provide access, you may need to start a brand-new account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T23:16:16.486Z",
+      "updated": "2026-01-04T23:16:16.486Z",
+      "sourceUrl": "https://lifehacker.com/what-do-i-do-if-i-use-two-factor-authentication-and-los-1668727532",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767568580414-174",
+    "title": "Recover Email Account Without Recovery Codes",
+    "problemDescription": "You've lost your recovery codes and can't access your email account.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "email",
+      "recovery",
+      "2FA",
+      "account access"
+    ],
+    "steps": [
+      {
+        "title": "Contact Customer Support",
+        "content": "Reach out to the email service's customer support. Explain your situation and provide any necessary verification details they may require."
+      },
+      {
+        "title": "Verify Your Identity",
+        "content": "Be prepared to verify your identity through security questions, secondary email addresses, or other personal information linked to your account."
+      },
+      {
+        "title": "Follow Service-Specific Instructions",
+        "content": "Follow any additional steps provided by the customer support team to regain access to your account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Account Recovery Options",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Backup Codes",
+            "content": "Look for any backup codes you might have saved or printed when you initially set up 2FA."
+          },
+          {
+            "title": "Use Trusted Devices",
+            "content": "If you have access to a trusted device that is already linked to your account, you might be able to use it to regain access."
+          },
+          {
+            "title": "Use Security Questions",
+            "content": "Attempt to answer any security questions you set up when creating the account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T23:16:20.414Z",
+      "updated": "2026-01-04T23:16:20.414Z",
+      "sourceUrl": "https://lifehacker.com/how-do-i-get-into-my-email-if-ive-lost-my-recovery-code-1844635316",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767568583338-658",
+    "title": "Remove Keyloggers and Reset Devices",
+    "problemDescription": "An ex or unauthorized person is accessing your accounts despite changing passwords and enabling 2FA.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "security",
+      "keylogger",
+      "accounts",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Backup Critical Information",
+        "content": "Back up all your important data to an external drive or cloud storage."
+      },
+      {
+        "title": "Factory Reset Devices",
+        "content": "Perform a factory reset on all your devices to remove any potential keyloggers or remote-access utilities."
+      },
+      {
+        "title": "Reinstall Software",
+        "content": "After resetting, reinstall only trusted software and applications."
+      },
+      {
+        "title": "Change Passwords Again",
+        "content": "Change all your passwords once more and ensure two-factor authentication (2FA) is enabled on all accounts."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Security Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Scan for Malware",
+            "content": "Use reputable antivirus software to scan your devices for any malware or keyloggers."
+          },
+          {
+            "title": "Remove Detected Threats",
+            "content": "Follow the software's instructions to remove any detected threats."
+          },
+          {
+            "title": "Monitor Activity",
+            "content": "Regularly monitor your devices for any suspicious activity."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T23:16:23.338Z",
+      "updated": "2026-01-04T23:16:23.338Z",
+      "sourceUrl": "https://lifehacker.com/how-to-stop-an-ex-from-breaking-into-your-accounts-1829056513",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767568591791-628",
+    "title": "Fix macOS Sequoia USB Connectivity Issues",
+    "problemDescription": "USB devices not detected or taking too long to connect on macOS Sequoia.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macos",
+      "sequoia",
+      "usb",
+      "connectivity",
+      "issues"
+    ],
+    "steps": [
+      {
+        "title": "Contact Apple Support",
+        "content": "Reach out to Apple Support and describe the USB connectivity issues you're experiencing. Provide details about your Mac model and the specific USB devices affected."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Wait for Apple Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Regularly check for macOS updates as Apple may release a fix in a future update."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T23:16:31.791Z",
+      "updated": "2026-01-04T23:16:31.791Z",
+      "sourceUrl": "https://www.techradar.com/computing/mac-os/psa-macos-sequoia-is-reportedly-causing-frustrating-usb-problems-for-some-users",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767568601184-711",
+    "title": "Fix Windows 11 Start Menu Search",
+    "problemDescription": "Unable to search in Windows 11 Start Menu.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "start menu",
+      "search"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Click the Start menu, then click the cog icon on the left to open the Settings window."
+      },
+      {
+        "title": "Navigate to Troubleshoot",
+        "content": "Click ‘Update & Security’ then ‘Troubleshoot’."
+      },
+      {
+        "title": "Run the Troubleshooter",
+        "content": "Click on ‘Windows Update’ then ‘Run the troubleshooter’ and follow the instructions."
+      },
+      {
+        "title": "Apply the Fix",
+        "content": "If the troubleshooter finds a solution, click ‘Apply this fix’."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use an External USB Wi-Fi Dongle",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect the Dongle",
+            "content": "If you have an external USB Wi-Fi dongle, connect it to your computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T23:16:41.184Z",
+      "updated": "2026-01-04T23:16:41.184Z",
+      "sourceUrl": "https://www.techradar.com/how-to/windows-11-problems-how-to-fix-the-most-common-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767568607528-485",
+    "title": "Fix AirPods No Sound or Glitchy Audio",
+    "problemDescription": "AirPods have no sound or glitchy audio.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods",
+      "no sound",
+      "glitchy audio",
+      "Bluetooth"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Volume",
+        "content": "Ensure the audio is not muted or too low. Play some audio through your AirPods while adjusting the volume to confirm you're changing the media volume, not the ringer volume."
+      },
+      {
+        "title": "Repair AirPods",
+        "content": "Unpair and then re-pair your AirPods with your device."
+      },
+      {
+        "title": "Check Bluetooth Connection",
+        "content": "Ensure your AirPods are close to the paired device, stay in the same room, and avoid obstacles between the devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Adjust Router Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Router Settings",
+            "content": "Use a web browser to view all your router options."
+          },
+          {
+            "title": "Modify Bluetooth Coexistence",
+            "content": "Look for Bluetooth-related options and try tweaking them. For example, set Wireless-Professional-Bluetooth Coexistence to Pre-Emptive if available."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T23:16:47.528Z",
+      "updated": "2026-01-04T23:16:47.528Z",
+      "sourceUrl": "https://www.makeuseof.com/fix-airpods-no-sound/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767568611523-263",
+    "title": "Fix AirPods Disconnecting From iPhone",
+    "problemDescription": "AirPods frequently disconnect from the iPhone.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "airpods",
+      "disconnecting",
+      "iphone",
+      "bluetooth"
+    ],
+    "steps": [
+      {
+        "title": "Toggle Airplane Mode",
+        "content": "Go to the Control Center and tap the Airplane Mode icon to turn it on. Wait for a few seconds, then tap the icon again to turn it off."
+      },
+      {
+        "title": "Reconnect AirPods",
+        "content": "Take the AirPods out of the case and follow the onscreen prompts on your iPhone to reconnect them. Tap 'Connect' on the AirPods notification, wait for the connection, and then tap 'Done'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to the Settings app on your iPhone."
+          },
+          {
+            "title": "Reset Network Settings",
+            "content": "Tap on 'General', then scroll down and tap on 'Transfer or Reset iPhone'. Select 'Reset' and then 'Reset Network Settings'. Confirm the action if prompted."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T23:16:51.523Z",
+      "updated": "2026-01-04T23:16:51.523Z",
+      "sourceUrl": "https://www.makeuseof.com/how-to-fix-airpods-disconnecting-from-iphone/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767568619420-23",
+    "title": "Prevent AirPods Battery Drain",
+    "problemDescription": "AirPods battery draining too quickly.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "airpods",
+      "battery",
+      "drain",
+      "charge"
+    ],
+    "steps": [
+      {
+        "title": "Charge at 40-50%",
+        "content": "Place your AirPods back in their case to charge when the battery falls below 40 or 50 percent. Do the same for the case itself."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Troubleshoot Charging Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Connections",
+            "content": "Ensure your AirPods are properly seated in the case and the case is connected to a power source."
+          },
+          {
+            "title": "Clean Contacts",
+            "content": "Clean the metal contacts on both the AirPods and the case with a soft, dry cloth."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T23:16:59.420Z",
+      "updated": "2026-01-04T23:16:59.420Z",
+      "sourceUrl": "https://www.makeuseof.com/how-to-stop-airpods-battery-dying/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767568625546-286",
+    "title": "Fix Android Phone Freezing and Lagging",
+    "problemDescription": "Your Android phone is freezing or lagging, causing slow performance and unresponsiveness.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "freezing",
+      "lagging",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Reboot the Phone",
+        "content": "Restart your phone to clear temporary system and app-level issues."
+      },
+      {
+        "title": "Force-Close or Restart Misbehaving Apps",
+        "content": "Go to Settings > Apps > [App] > Force stop or swipe the app away in Recents."
+      },
+      {
+        "title": "Free Up RAM and Background Load",
+        "content": "Close background apps in Recents and disable or limit background activity for heavy apps in Settings > Apps > Battery or Background restriction."
+      },
+      {
+        "title": "Free Up Storage Space",
+        "content": "Remove large unused apps, videos, or duplicate photos to free up storage space."
+      },
+      {
+        "title": "Backup Data and Factory Reset",
+        "content": "Backup your data (contacts, photos, messages) then go to Settings > System > Reset options > Erase all data (factory reset) to remove software causes and restore original performance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Firmware (Advanced)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Follow Manufacturer Instructions",
+            "content": "For persistent issues after reset, reflash official firmware using manufacturer tools. Follow manufacturer instructions precisely."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T23:17:05.546Z",
+      "updated": "2026-01-04T23:17:05.546Z",
+      "sourceUrl": "https://www.quora.com/What-are-some-ways-to-fix-Android-phone-freezing-and-lagging-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767568633123-230",
+    "title": "Fix Android Phone Stuck in Recovery Mode",
+    "problemDescription": "Android phone is stuck in recovery mode and cannot exit it.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "recovery mode",
+      "volume button"
+    ],
+    "steps": [
+      {
+        "title": "Clean the Volume Buttons",
+        "content": "Shut down the phone. Blow canned air on the power and volume buttons to remove any debris. Try starting the phone normally."
+      },
+      {
+        "title": "Perform a Factory Reset",
+        "content": "If the issue persists, backup your data and perform a full factory reset to restore the phone to its default settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clean the Volume Buttons Internally",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open the Phone",
+            "content": "Remove the motherboard from the outer chassis of the phone."
+          },
+          {
+            "title": "Clean the Buttons",
+            "content": "Use contact cleaner to clean the volume buttons and remove any accumulated gunk."
+          },
+          {
+            "title": "Reassemble the Phone",
+            "content": "Put the motherboard back into the chassis and reassemble the phone."
+          }
+        ]
+      },
+      {
+        "title": "Reflash the Stock ROM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup any important data from the phone."
+          },
+          {
+            "title": "Flash the ROM",
+            "content": "Reflash the stock ROM without wiping the phone to fix any corrupted Android software."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T23:17:13.123Z",
+      "updated": "2026-01-04T23:17:13.123Z",
+      "sourceUrl": "https://www.quora.com/My-Android-phone-is-stuck-in-recovery-mode-How-do-I-fix-it-Even-if-I-reboot-it-it-still-opens-recovery-mode-my-volume-down-button-is-broken",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767568637448-413",
+    "title": "Fix System UI Not Responding on Android",
+    "problemDescription": "System UI is not responding, asking to wait or close the app.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "system ui",
+      "not responding",
+      "factory reset"
+    ],
+    "steps": [
+      {
+        "title": "Backup Data",
+        "content": "Backup all important data to cloud storage or an external device."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "Go to Settings > System > Reset options > Erase all data (factory reset). Follow the on-screen instructions to complete the reset."
+      },
+      {
+        "title": "Setup Phone",
+        "content": "After the reset, set up your phone again and sign in to your Google account."
+      },
+      {
+        "title": "Update System Apps",
+        "content": "Open the Google Play Store, go to Settings > About > Check for updates. Install any available updates."
+      },
+      {
+        "title": "Check Storage",
+        "content": "Ensure you have at least 2GB of free storage space. Go to Settings > Storage to check and free up space if needed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear System UI Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open the Settings app on your Android device."
+          },
+          {
+            "title": "Navigate to Apps",
+            "content": "Go to Apps > See all apps > System UI."
+          },
+          {
+            "title": "Clear Cache",
+            "content": "Tap on 'Clear Cache' and then 'Clear Data'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T23:17:17.448Z",
+      "updated": "2026-01-04T23:17:17.448Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-the-problem-on-my-phone-I-keep-getting-a-system-UI-not-responding-asking-me-to-wait-or-close-the-app-Why-is-it-popping-up",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767568641478-707",
+    "title": "Fix Android Phone Won't Turn On",
+    "problemDescription": "Your Android phone is not turning on or responding.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "phone",
+      "power",
+      "battery"
+    ],
+    "steps": [
+      {
+        "title": "Check the Battery",
+        "content": "Ensure the battery is properly connected and not faulty. If the battery is removable, try removing and reinserting it. If the battery is non-removable, try charging the phone for at least 30 minutes."
+      },
+      {
+        "title": "Inspect the Charging Circuit",
+        "content": "Check the charging port for any debris or damage. Try using a different charging cable and adapter. If possible, test the phone with a different power source."
+      },
+      {
+        "title": "Perform a Hard Reset",
+        "content": "Press and hold the power button and volume down button simultaneously for about 10-15 seconds. This may force the phone to restart."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Replace the Battery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Replace the Battery",
+            "content": "If the battery is faulty, replace it with a new one. This can often resolve issues where the phone won't turn on."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T23:17:21.478Z",
+      "updated": "2026-01-04T23:17:21.478Z",
+      "sourceUrl": "https://www.quora.com/What-troubleshooting-steps-would-you-take-when-your-Android-phone-wont-turn-on",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
