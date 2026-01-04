@@ -17712,5 +17712,810 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767536097706-149",
+    "title": "Fix Windows USB Device Recognition Issue",
+    "problemDescription": "Windows 10 fails to recognize USB devices on power-up, but they work after a reset or in BIOS.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "usb",
+      "driver",
+      "recognition"
+    ],
+    "steps": [
+      {
+        "title": "Disable and Re-enable Renesas USB 3.0 Drivers",
+        "content": "1. Open Device Manager and locate 'Renesas USB 3.0 eXtensive Host Controller'. 2. Right-click and select 'Disable device'. 3. Reboot your computer. 4. After reboot, re-enable the Renesas USB 3.0 drivers."
+      },
+      {
+        "title": "Disable and Re-enable USB Mass Storage Device",
+        "content": "1. Open Device Manager and locate 'USB Mass Storage Device'. 2. Right-click and select 'Disable device'. 3. Right-click again and select 'Enable device'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Uninstall and Reinstall Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Drivers",
+            "content": "1. Open Device Manager and locate the problematic USB devices. 2. Right-click and select 'Uninstall device'."
+          },
+          {
+            "title": "Reinstall Drivers",
+            "content": "1. Reboot your computer. 2. Windows should automatically reinstall the drivers."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T14:14:57.706Z",
+      "updated": "2026-01-04T14:14:57.706Z",
+      "sourceUrl": "https://www.reddit.com/r/Windows10/comments/7cfcc0/help_driver_issue_windows_wont_recognize_usb/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767536111216-47",
+    "title": "Fix Windows 11 USB Device Not Recognized",
+    "problemDescription": "USB device is not recognized by Windows 11, with continuous disconnect and reconnect sounds.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "usb",
+      "device not recognized",
+      "headphones"
+    ],
+    "steps": [
+      {
+        "title": "Update USB Drivers",
+        "content": "1. Press `Win + X` and select `Device Manager`. 2. Expand `Universal Serial Bus controllers`. 3. Right-click on the USB device and select `Update driver`. 4. Choose `Search automatically for updated driver software`."
+      },
+      {
+        "title": "Check USB Ports and Cable",
+        "content": "1. Try different USB ports on your computer. 2. If possible, test the USB device on another computer to rule out device issues. 3. Ensure the USB cable is not damaged."
+      },
+      {
+        "title": "Run the USB Troubleshooter",
+        "content": "1. Go to `Settings` > `Update & Security` > `Troubleshoot`. 2. Select `Hardware and Devices` and run the troubleshooter."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Power Management Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable USB Selective Suspend",
+            "content": "1. Go to `Control Panel` > `Power Options`. 2. Click on `Change plan settings` next to your selected power plan. 3. Click on `Change advanced power settings`. 4. Expand `USB settings` and then `USB selective suspend setting`. 5. Set both `On battery` and `Plugged in` to `Disabled`. 6. Click `Apply` and then `OK`."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check Device Manager for Errors",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall and Reinstall USB Controllers",
+            "content": "1. Press `Win + X` and select `Device Manager`. 2. Expand `Universal Serial Bus controllers`. 3. Right-click on each USB controller and select `Uninstall device`. 4. Restart your computer to allow Windows to reinstall the USB controllers."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T14:15:11.216Z",
+      "updated": "2026-01-04T14:15:11.216Z",
+      "sourceUrl": "https://www.reddit.com/r/techsupport/comments/1bzalku/windows_11_usb_device_not_recognized/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767536133757-356",
+    "title": "AirPods Only Left One Connects Initially",
+    "problemDescription": "Only the left AirPod connects initially, requiring a second attempt for both to connect.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods",
+      "connection",
+      "firmware",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Reset AirPods Firmware",
+        "content": "Keep both AirPods in the case, open the lid, and hold down the back button on the case for a few seconds. Ensure your phone is nearby. The LED light will start flashing white, then turn orange. Release the button when the light turns orange."
+      },
+      {
+        "title": "Reinsert AirPods",
+        "content": "After resetting, put both AirPods back in the case, wait a second, then take them out and put them back in your ears. This should allow both AirPods to connect successfully."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Replace AirPods",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Consider New AirPods",
+            "content": "If the issue persists, consider purchasing new AirPods, especially if they are sweat or water-resistant models, as they may have improved connectivity."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T14:15:33.757Z",
+      "updated": "2026-01-04T14:15:33.757Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/464839/when-putting-airpods-in-only-left-one-connects-initially",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767536139198-275",
+    "title": "Fix AirPods Choppy Connection on Mac",
+    "problemDescription": "AirPods have choppy or unreliable connection when paired with a Mac, but work fine with an iPhone.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "airpods",
+      "mac",
+      "bluetooth",
+      "connection",
+      "audio"
+    ],
+    "steps": [
+      {
+        "title": "Reset NVRAM on Your Mac",
+        "content": "Power on your Mac while holding the `option` + `command` + `P` + `R` keys for about 20 seconds. This resets the Bluetooth module and may resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Revert to macOS 10.12.3",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restore to macOS 10.12.3",
+            "content": "If the issue persists, consider restoring your Mac to macOS 10.12.3 or an earlier version, as this has been reported to resolve the problem for some users."
+          }
+        ]
+      },
+      {
+        "title": "Change Sound Input Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Preferences",
+            "content": "Go to `System Preferences` > `Sound` > `Input`."
+          },
+          {
+            "title": "Change Sound Input",
+            "content": "Change the sound input from `AirPods` to `Internal Microphone`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T14:15:39.198Z",
+      "updated": "2026-01-04T14:15:39.198Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/277923/airpods-choppy-unreliable-when-connected-to-mac-but-not-iphone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767536142384-683",
+    "title": "Fix AirPods Low Volume on Android",
+    "problemDescription": "AirPods volume is suddenly too low on an Android device.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "airpods",
+      "volume",
+      "android",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Reset AirPods",
+        "content": "Press and hold the button on the back of the AirPods case for 15 seconds to reset them."
+      },
+      {
+        "title": "Repair AirPods",
+        "content": "After resetting, repair the AirPods to your Android device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Absolute Volume",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Developer Options",
+            "content": "Go to Settings > About phone > Tap Build number seven times to enable Developer Options."
+          },
+          {
+            "title": "Disable Absolute Volume",
+            "content": "Go to Settings > Developer Options > Disable 'Disable Absolute Volume'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T14:15:42.384Z",
+      "updated": "2026-01-04T14:15:42.384Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/414623/airpods-volume-suddenly-too-low-in-android-mobile-device",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767536145471-63",
+    "title": "Fix AirPods Pro V2 Case Chirping",
+    "problemDescription": "AirPods Pro V2 case emits chirping or beeping sounds when picked up.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "AirPods",
+      "chirping",
+      "beeping",
+      "case",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Reset AirPods",
+        "content": "Put your AirPods in their charging case and close the lid. Wait 30 seconds. Open the lid and put your AirPods in your ears. Go to Settings > Bluetooth. If your AirPods appear as connected, tap the More Info button next to your AirPods, tap Forget This Device, and confirm. If your AirPods don't appear, proceed to the next step."
+      },
+      {
+        "title": "Re-pair AirPods",
+        "content": "Put your AirPods back in their charging case with the lid open. Follow the setup instructions on your iPhone to re-pair your AirPods."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Tape the Case Speakers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Tape the Speakers",
+            "content": "Tape the speakers inside the AirPods case to prevent the chirping sound."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Understand Anti-Tracking Feature",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Understand the Feature",
+            "content": "The chirping sound is an anti-tracking feature designed to alert you if someone is trying to track your AirPods."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T14:15:45.471Z",
+      "updated": "2026-01-04T14:15:45.471Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/454304/airpod-pro-v2-case-chirps-beeps-when-i-pick-it-up",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767536148999-963",
+    "title": "Fix AirPods Pro Screeching and Distortion",
+    "problemDescription": "AirPods Pro are screeching, distorting, and oversensitive, especially on one side.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods Pro",
+      "screeching",
+      "distortion",
+      "oversensitive"
+    ],
+    "steps": [
+      {
+        "title": "Reset AirPods",
+        "content": "Place your AirPods Pro in their charging case and ensure they are on charge. Leave them in the case for at least 5 minutes. This can help reset any temporary software issues causing the distortion."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Wait for Automatic Firmware Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Wait for Update",
+            "content": "Sometimes, the issue may resolve itself after a firmware update. Wait for a few days to see if Apple releases a firmware update that addresses the problem."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T14:15:48.999Z",
+      "updated": "2026-01-04T14:15:48.999Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/401283/screeching-distorting-and-oversensitive-airpods-pro",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767536155085-154",
+    "title": "Fix MacBook Click Issues",
+    "problemDescription": "Unable to click on anything on your MacBook.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "click",
+      "recovery",
+      "os x"
+    ],
+    "steps": [
+      {
+        "title": "Restart in Recovery Mode",
+        "content": "Hold down COMMAND-R while restarting your MacBook."
+      },
+      {
+        "title": "Reinstall OS X",
+        "content": "Once in Recovery Mode, reinstall OS X."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-04T14:15:55.085Z",
+      "updated": "2026-01-04T14:15:55.085Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-my-MacBook-with-the-problem-that-I-couldnt-click-on-anything",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767536163126-365",
+    "title": "MacBook Pro Repair Guide",
+    "problemDescription": "Common issues with MacBook Pro and their solutions.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "MacBook Pro",
+      "repair",
+      "common issues"
+    ],
+    "steps": [
+      {
+        "title": "Identify the Issue",
+        "content": "Determine the specific problem your MacBook Pro is experiencing, such as overheating, battery drain, or screen issues."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Ensure your macOS is up to date, as updates often include bug fixes and performance improvements."
+      },
+      {
+        "title": "Clean the Device",
+        "content": "Use compressed air to clean the vents and keyboard to prevent overheating and debris buildup."
+      },
+      {
+        "title": "Reset SMC and NVRAM",
+        "content": "Follow the steps to reset the System Management Controller (SMC) and Non-Volatile Random Access Memory (NVRAM) to resolve power and performance issues."
+      },
+      {
+        "title": "Replace the Battery",
+        "content": "If the battery is draining quickly or not holding a charge, consider replacing it with a new one."
+      },
+      {
+        "title": "Repair or Replace the Screen",
+        "content": "If the screen has dead pixels, lines, or other display issues, it may need to be repaired or replaced."
+      },
+      {
+        "title": "Check for Hardware Issues",
+        "content": "Inspect the hardware components, such as the hard drive, RAM, and fans, for any signs of damage or failure."
+      },
+      {
+        "title": "Consult a Professional",
+        "content": "If the issue persists, take your MacBook Pro to an authorized service provider or Apple Store for professional repair."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "DIY Repairs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Follow Online Tutorials",
+            "content": "Search for detailed tutorials and guides online that provide step-by-step instructions for specific repairs."
+          },
+          {
+            "title": "Use Specialized Tools",
+            "content": "Invest in specialized tools and kits designed for MacBook Pro repairs to ensure precision and safety."
+          },
+          {
+            "title": "Join Forums and Communities",
+            "content": "Join online forums and communities dedicated to MacBook Pro repairs to seek advice and share experiences with other users."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T14:16:03.126Z",
+      "updated": "2026-01-04T14:16:03.126Z",
+      "sourceUrl": "https://buzzmeeh7.quora.com/A-Comprehensive-Guide-to-MacBook-Pro-Repair-Solutions-to-Common-Issues-Owning-a-MacBook-Pro-is-a-fantastic-experience",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767536166837-132",
+    "title": "Fix Slow Old Mac",
+    "problemDescription": "An old Mac has become slow and unresponsive.",
+    "category": "macOS",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "slow",
+      "performance",
+      "diagnostics"
+    ],
+    "steps": [
+      {
+        "title": "Check for Disk Errors",
+        "content": "Use Disk Utility to scan and repair any disk errors that might be causing performance issues."
+      },
+      {
+        "title": "Run Apple Diagnostics",
+        "content": "Restart your Mac and hold the 'D' key to boot into Apple Diagnostics, which will check the status of your RAM and other hardware components."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Free Up Disk Space",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete Unnecessary Files",
+            "content": "Remove large files, old downloads, and unused applications to free up disk space."
+          },
+          {
+            "title": "Clear Cache Files",
+            "content": "Use a cleaning tool like CleanMyMac or manually clear cache files to improve performance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T14:16:06.837Z",
+      "updated": "2026-01-04T14:16:06.837Z",
+      "sourceUrl": "https://www.quora.com/How-can-you-fix-an-old-Mac-that-has-become-really-slow-and-unresponsive",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767536171039-690",
+    "title": "Fix MacBook Display Issues",
+    "problemDescription": "MacBook display has poor backlight or a 'Stage' effect.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "display",
+      "backlight",
+      "stage effect"
+    ],
+    "steps": [
+      {
+        "title": "Check Display Settings",
+        "content": "Go to System Preferences > Displays and adjust the brightness and color settings."
+      },
+      {
+        "title": "Reset SMC",
+        "content": "Shut down your MacBook, then press and hold Shift + Control + Option + Power button for 10 seconds. Release and turn on your MacBook."
+      },
+      {
+        "title": "Update macOS",
+        "content": "Go to System Preferences > Software Update and install any available updates."
+      },
+      {
+        "title": "Contact Apple Support",
+        "content": "If the issue persists, contact Apple Support or visit an Apple Store for professional assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Replace Display Cable",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open the MacBook",
+            "content": "Carefully open the MacBook and locate the display cable."
+          },
+          {
+            "title": "Replace the Cable",
+            "content": "Replace the display cable with a new one and reassemble the MacBook."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T14:16:11.039Z",
+      "updated": "2026-01-04T14:16:11.039Z",
+      "sourceUrl": "https://www.quora.com/What-are-the-most-common-hardware-issues-with-MacBook",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767536173618-616",
+    "title": "MacBook USB Port Issues",
+    "problemDescription": "MacBook users often face issues with limited USB ports and proprietary peripherals.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "MacBook",
+      "USB ports",
+      "peripherals"
+    ],
+    "steps": [
+      {
+        "title": "Use a USB Hub",
+        "content": "Purchase a USB hub to expand the number of available USB ports."
+      },
+      {
+        "title": "Check Compatibility",
+        "content": "Ensure that any peripherals you purchase are compatible with MacBook USB standards."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Wireless Alternatives",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Wireless Devices",
+            "content": "Opt for wireless peripherals such as Bluetooth mice, keyboards, and headphones to reduce reliance on USB ports."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T14:16:13.618Z",
+      "updated": "2026-01-04T14:16:13.618Z",
+      "sourceUrl": "https://www.quora.com/What-are-some-common-issues-with-Apple-laptops-specifically-MacBooks-What-factors-should-be-considered-before-buying-one",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767536179697-821",
+    "title": "Fix Chrome Not Opening on Mac",
+    "problemDescription": "Google Chrome application fails to open on macOS.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "mac",
+      "not opening",
+      "force quit"
+    ],
+    "steps": [
+      {
+        "title": "Force Quit Chrome via Terminal",
+        "content": "Open Terminal and run the following command to force quit all Chrome processes: `ps -ef | grep '/Applications/Google Chrome.app' | awk '{print $2}' | xargs kill -9`."
+      },
+      {
+        "title": "Reopen Chrome",
+        "content": "After force quitting, reopen Google Chrome from the Applications folder or Dock."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-04T14:16:19.697Z",
+      "updated": "2026-01-04T14:16:19.697Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/175957/the-application-google-chrome-is-not-open-anymore",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767536188498-714",
+    "title": "Fix Chrome Clickable Elements on MacBook",
+    "problemDescription": "Some buttons and links are not clickable in Google Chrome on MacBook Pro M1 with Sonoma 14.0 OS.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "macbook",
+      "clickable",
+      "buttons",
+      "links"
+    ],
+    "steps": [
+      {
+        "title": "Update macOS",
+        "content": "Update your macOS to Sonoma 14.1."
+      },
+      {
+        "title": "Update Google Chrome",
+        "content": "Ensure you have the latest version of Google Chrome installed."
+      },
+      {
+        "title": "Check for Adware Extensions",
+        "content": "Remove any suspicious or adware extensions from Chrome."
+      },
+      {
+        "title": "Enable GPU Rasterization",
+        "content": "Go to `chrome://flags/#enable-gpu-rasterization` and enable GPU rasterization."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Switch to Another Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Vivaldi, Firefox, or Safari",
+            "content": "Download and install an alternative browser like Vivaldi, Firefox, or Safari for better performance and privacy."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T14:16:28.498Z",
+      "updated": "2026-01-04T14:16:28.498Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/465731/issue-with-google-chrome-experience-on-mac-book",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767536193417-693",
+    "title": "Fix Video Stuttering in Chrome with Hardware Acceleration",
+    "problemDescription": "Video stuttering in Google Chrome when hardware acceleration is enabled.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "video",
+      "stuttering",
+      "hardware acceleration"
+    ],
+    "steps": [
+      {
+        "title": "Disable Hardware Acceleration",
+        "content": "Go to chrome://flags/#enable-npapi and disable hardware acceleration and any related video acceleration settings."
+      },
+      {
+        "title": "Browse in Incognito Mode",
+        "content": "Open Chrome in Incognito Mode to check if extensions are causing the issue."
+      },
+      {
+        "title": "Clear Browsing Data",
+        "content": "Delete cached files and cookies via 'Clear Browsing Data...'."
+      },
+      {
+        "title": "Disable Unused Plugins",
+        "content": "Disable unused plugins under chrome://plugins."
+      },
+      {
+        "title": "Disable Extensions",
+        "content": "Disable all extensions under chrome://extensions."
+      },
+      {
+        "title": "Update Graphics Card Drivers",
+        "content": "Update your graphics card drivers using the latest update in macOS."
+      },
+      {
+        "title": "Use Default Theme",
+        "content": "Switch to the default theme in Chrome."
+      },
+      {
+        "title": "Reset Browser Settings",
+        "content": "Reset your browser settings to default."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Display Resolution",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Revert to Default Resolution",
+            "content": "Revert the display resolution to default to fix the issue."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Keyboard Backlight",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Keyboard Backlight",
+            "content": "Go to System Preferences > Keyboard and uncheck 'Turn keyboard backlight off'."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Use Chrome Canary",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Chrome Canary",
+            "content": "Try using Chrome Canary to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T14:16:33.417Z",
+      "updated": "2026-01-04T14:16:33.417Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/296883/video-stuttering-in-google-chrome-with-hardware-acceleration-enabled",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767536196575-298",
+    "title": "Fix Chrome Scrolling Delay on Mac",
+    "problemDescription": "Chrome delays the first scroll on a Mac after the mouse is idle for a few seconds.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "scrolling",
+      "mac",
+      "delay"
+    ],
+    "steps": [
+      {
+        "title": "Disable Keyboard Backlight Power Saving",
+        "content": "Go to System Preferences > Keyboard and uncheck 'Turn keyboard backlight off after 5 seconds'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Hardware Acceleration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Chrome Settings",
+            "content": "Click on the three dots in the top right corner of Chrome and select 'Settings'."
+          },
+          {
+            "title": "Disable Hardware Acceleration",
+            "content": "Scroll down to the 'System' section and uncheck 'Use hardware acceleration when available'. Restart Chrome."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T14:16:36.575Z",
+      "updated": "2026-01-04T14:16:36.575Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/130880/chrome-delays-first-scroll",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
