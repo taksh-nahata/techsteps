@@ -21045,5 +21045,900 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767550948032-914",
+    "title": "Fix Slow and Unresponsive Alexa",
+    "problemDescription": "Alexa devices are slow and unresponsive, with delays in processing requests and playing music.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "alexa",
+      "slow",
+      "unresponsive",
+      "wifi",
+      "music"
+    ],
+    "steps": [
+      {
+        "title": "Check Wi-Fi Connection",
+        "content": "Ensure your Alexa devices are connected to a stable Wi-Fi network. Restart your router and modem to refresh the connection."
+      },
+      {
+        "title": "Restart Alexa Devices",
+        "content": "Unplug your Alexa devices from the power source, wait for 30 seconds, and then plug them back in."
+      },
+      {
+        "title": "Update Alexa Software",
+        "content": "Make sure your Alexa devices are running the latest software. Go to the Alexa app, select 'Settings,' then 'Device Settings,' and check for updates."
+      },
+      {
+        "title": "Reset Alexa Devices",
+        "content": "If the issue persists, perform a factory reset on your Alexa devices. This can be done through the Alexa app under 'Settings' and 'Device Settings'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Move Alexa Devices Closer to the Router",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Relocate Devices",
+            "content": "Move your Alexa devices closer to the Wi-Fi router to improve signal strength and reduce latency."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Interfering Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Interference",
+            "content": "Check for other devices that might be causing interference, such as cordless phones, microwaves, or other Wi-Fi networks, and disable them temporarily to see if the issue resolves."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T18:22:28.032Z",
+      "updated": "2026-01-04T18:22:28.032Z",
+      "sourceUrl": "https://www.reddit.com/r/alexa/comments/1l9ch7w/alexa_really_slow_and_unresponsive/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767550951611-702",
+    "title": "Fix Alexa Saying Sorry Something Went Wrong",
+    "problemDescription": "Alexa repeatedly responds with 'Sorry something went wrong' to all commands.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "alexa",
+      "error",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Alexa App",
+        "content": "Close the Alexa app completely and reopen it to see if the issue persists."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your device is connected to a stable internet connection, as Alexa requires an active connection to function properly."
+      },
+      {
+        "title": "Update Alexa App",
+        "content": "Go to the app store on your device and update the Alexa app to the latest version."
+      },
+      {
+        "title": "Reinstall the Alexa App",
+        "content": "Uninstall the Alexa app and then reinstall it from the app store."
+      },
+      {
+        "title": "Check for Device Compatibility",
+        "content": "Ensure your device meets the minimum requirements to run the Alexa app."
+      },
+      {
+        "title": "Contact Amazon Support",
+        "content": "If the issue persists, contact Amazon customer support for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Alexa Device",
+            "content": "Perform a factory reset on your Alexa device by holding down the action button for 25 seconds until the light ring turns orange."
+          },
+          {
+            "title": "Reconfigure Device",
+            "content": "After the reset, set up your Alexa device again using the Alexa app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T18:22:31.611Z",
+      "updated": "2026-01-04T18:22:31.611Z",
+      "sourceUrl": "https://www.reddit.com/r/amazonecho/comments/ax2liq/alexa_keeps_saying_sorry_something_went_wrong/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767550960021-83",
+    "title": "Fix Printer Issues After Ubuntu 20.04 Install",
+    "problemDescription": "Printer not working after installing Ubuntu 20.04.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "ubuntu",
+      "20.04",
+      "install"
+    ],
+    "steps": [
+      {
+        "title": "Remove and Reinstall Printer via GUI",
+        "content": "Uninstall the printer using the printer settings GUI. Then, add a new printer and it should automatically find the driver and load it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Install HPLIP GUI and Plugins",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install HPLIP GUI",
+            "content": "Run `sudo hp-setup -i` and `sudo apt install hplip-gui` in the terminal."
+          },
+          {
+            "title": "Install Required Plugins",
+            "content": "From the HPLIP GUI, go to actions and then install the required plugin."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall Printer Packages",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update and Remove Packages",
+            "content": "Run `sudo apt-get update` and then `sudo apt-get remove hplip cups-filters cups hplip-data system-config-printer-udev`."
+          },
+          {
+            "title": "Install Required Packages",
+            "content": "Run `sudo apt-get install build-essential tix groff dc axel cups` and then `sudo apt-get install cups-filters unp system-config-printer-gnome`."
+          },
+          {
+            "title": "Install HPLIP from HP's Developer Portal",
+            "content": "Download and install the latest version of HPLIP from the HP Developer Portal."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T18:22:40.021Z",
+      "updated": "2026-01-04T18:22:40.021Z",
+      "sourceUrl": "https://askubuntu.com/questions/1233521/printer-problems-after-installing-ubuntu-20-04",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767550966380-843",
+    "title": "Fix Printer Stuck at Processing Status",
+    "problemDescription": "Printer is stuck at processing status in Ubuntu.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "ubuntu",
+      "cups",
+      "processing",
+      "stuck"
+    ],
+    "steps": [
+      {
+        "title": "Manually Insert Printer IP Address",
+        "content": "Go to CUPS interface (http://localhost:631), select your printer, and manually insert the printer's IP address in the connection settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restart CUPS Service",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart CUPS",
+            "content": "Open a terminal and run the command: `sudo service cups restart`."
+          }
+        ]
+      },
+      {
+        "title": "Remove and Re-add Printer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Printer",
+            "content": "Go to CUPS interface, select your printer, and click 'Remove Printer'."
+          },
+          {
+            "title": "Add Printer",
+            "content": "Click 'Add Printer' and follow the prompts. Select the correct driver for your printer model instead of the default generic driver."
+          }
+        ]
+      },
+      {
+        "title": "Use Advanced Printer Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Advanced Settings",
+            "content": "Click the 'Advanced Printer Settings' button on the bottom right in the CUPS interface to access the old GUI and reinstall the printer."
+          }
+        ]
+      },
+      {
+        "title": "Release Old IP Lease",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Release and Renew IP",
+            "content": "If you recently switched routers, ensure your printer has released its old IP lease and obtained a new one from the new router."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T18:22:46.380Z",
+      "updated": "2026-01-04T18:22:46.380Z",
+      "sourceUrl": "https://askubuntu.com/questions/1088858/printer-is-stuck-at-processing-status",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767550968901-473",
+    "title": "Fix Ubuntu Network Printer Not Printing",
+    "problemDescription": "Network printer is found but print jobs are stuck in the queue and not printing.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "ubuntu",
+      "network printer",
+      "print queue",
+      "CUPS"
+    ],
+    "steps": [
+      {
+        "title": "Resume the Printer",
+        "content": "Open the CUPS web interface at `http://localhost:631` and select the Printers tab. Click on the printer's name and choose the 'Resume Printer' option from the Maintenance drop-down menu."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restart the Printer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart the Printer",
+            "content": "If the printer is not responding, try restarting it. This can often clear any issues with the print queue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T18:22:48.901Z",
+      "updated": "2026-01-04T18:22:48.901Z",
+      "sourceUrl": "https://askubuntu.com/questions/82016/network-printer-found-but-cannot-print",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767550972724-567",
+    "title": "Fix Brother Printer on Ubuntu 20.10",
+    "problemDescription": "Brother printer stops working after Ubuntu 20.10 update, showing 'processing' indefinitely.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "brother",
+      "printer",
+      "ubuntu",
+      "driver",
+      "20.10"
+    ],
+    "steps": [
+      {
+        "title": "Reset Printer Connection",
+        "content": "Unplug the printer, delete it from the list of printers in Ubuntu, then plug the printer back in and wait for Ubuntu to detect it."
+      },
+      {
+        "title": "Cancel Driver Search",
+        "content": "Cancel the search for drivers as the printer is driverless, then print a test page to verify the connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Install Generic CUPS Printer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Generic Printer",
+            "content": "Install a generic printer (CUPS) and attempt to print again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Download Brother Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Drivers",
+            "content": "Download the Linux installer and drivers from Brother's website and follow the installation instructions."
+          },
+          {
+            "title": "Configure URI",
+            "content": "Try different URI variations provided by Brother to configure the printer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T18:22:52.724Z",
+      "updated": "2026-01-04T18:22:52.724Z",
+      "sourceUrl": "https://askubuntu.com/questions/1330203/brother-printer-has-stopped-working-with-20-10",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767550976664-100",
+    "title": "HP Printer Not Detected with HPLIP",
+    "problemDescription": "HP printer is not detected using HPLIP on Ubuntu.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "HP",
+      "printer",
+      "HPLIP",
+      "Ubuntu",
+      "detection"
+    ],
+    "steps": [
+      {
+        "title": "Install the Latest HPLIP",
+        "content": "Download and install the latest version of HPLIP from the official HP website. This version may include updates and dependencies not available in the Ubuntu repositories."
+      },
+      {
+        "title": "Run the HPLIP Installer",
+        "content": "Execute the downloaded installer to install HPLIP and any required dependencies."
+      },
+      {
+        "title": "Detect the Printer",
+        "content": "After installation, use the HPLIP tool to detect the printer. The printer should now be recognized."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Printer Compatibility",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Printer Model",
+            "content": "Ensure that the printer model is compatible with the installed version of HPLIP."
+          },
+          {
+            "title": "Check for Additional Drivers",
+            "content": "Look for any additional drivers or firmware updates specific to the printer model."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T18:22:56.664Z",
+      "updated": "2026-01-04T18:22:56.664Z",
+      "sourceUrl": "https://askubuntu.com/questions/1067102/cant-detect-hp-printer-with-hplip",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767550990913-420",
+    "title": "Fix Car Battery Drain",
+    "problemDescription": "Your car battery is draining faster than expected.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "car",
+      "battery",
+      "drain",
+      "amps",
+      "fuse"
+    ],
+    "steps": [
+      {
+        "title": "Set Up Your Multimeter",
+        "content": "Set your multimeter to amps (10A) and ensure it has alligator clips for easy connection."
+      },
+      {
+        "title": "Disconnect the Battery",
+        "content": "Disconnect the negative terminal of your car battery."
+      },
+      {
+        "title": "Connect the Multimeter",
+        "content": "Attach one alligator clip to the negative battery terminal and the other to a good ground point on the car."
+      },
+      {
+        "title": "Check for Current Draw",
+        "content": "Observe the multimeter reading. A normal reading should be around 50mA or less. Higher readings indicate a drain."
+      },
+      {
+        "title": "Pull Fuses One by One",
+        "content": "Start pulling fuses one by one and observe the multimeter. If the current draw drops significantly after pulling a fuse, you've found the culprit."
+      },
+      {
+        "title": "Identify the Problem",
+        "content": "Once you've identified the problematic circuit, inspect the components in that circuit for issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Parasitic Draw",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disconnect the Battery",
+            "content": "Disconnect the negative terminal of your car battery."
+          },
+          {
+            "title": "Connect a Test Light",
+            "content": "Connect a test light between the negative terminal and the ground. If the light glows, there is a parasitic draw."
+          },
+          {
+            "title": "Pull Fuses One by One",
+            "content": "Pull fuses one by one and observe the test light. If the light goes out, you've found the problematic circuit."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T18:23:10.913Z",
+      "updated": "2026-01-04T18:23:10.913Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=bwGhdOeGQGk",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767551003636-773",
+    "title": "Diagnose Car Battery Parasitic Drain",
+    "problemDescription": "Your car battery drains overnight or after days of no use due to parasitic drain.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "car battery",
+      "parasitic drain",
+      "diagnose",
+      "multimeter",
+      "clamp"
+    ],
+    "steps": [
+      {
+        "title": "Gather Tools",
+        "content": "You will need a digital multimeter and a clamp-on ammeter (available at Harbor Freight)."
+      },
+      {
+        "title": "Prepare the Multimeter",
+        "content": "Set your multimeter to measure DC current (usually 10A or 20A range)."
+      },
+      {
+        "title": "Attach the Clamp",
+        "content": "Place the clamp around the positive battery terminal. Ensure it's securely in place."
+      },
+      {
+        "title": "Measure Current",
+        "content": "Observe the current reading on the multimeter. A reading above 50mA indicates a parasitic drain."
+      },
+      {
+        "title": "Disconnect the Battery",
+        "content": "Disconnect the battery to stop the drain and prevent further issues."
+      },
+      {
+        "title": "Inspect Electrical Components",
+        "content": "Check for any faulty or malfunctioning electrical components that might be causing the drain."
+      },
+      {
+        "title": "Reconnect the Battery",
+        "content": "Once the issue is resolved, reconnect the battery and test the current again to ensure the problem is fixed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Battery Load Tester",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Gather Tools",
+            "content": "You will need a battery load tester."
+          },
+          {
+            "title": "Connect the Tester",
+            "content": "Connect the load tester to the battery terminals."
+          },
+          {
+            "title": "Perform the Test",
+            "content": "Follow the manufacturer's instructions to perform the load test."
+          },
+          {
+            "title": "Analyze Results",
+            "content": "Analyze the results to determine if there is a parasitic drain."
+          },
+          {
+            "title": "Address Issues",
+            "content": "Address any issues identified during the test."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T18:23:23.636Z",
+      "updated": "2026-01-04T18:23:23.636Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=xBVmbYBxMyo",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767551010382-984",
+    "title": "Fix iPhone Not Receiving Android Texts",
+    "problemDescription": "iPhone not receiving texts from Android devices after switching from Pixel.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "android",
+      "texts",
+      "messages",
+      "transfer"
+    ],
+    "steps": [
+      {
+        "title": "Modify SMS Settings on Android Device",
+        "content": "On the Android device (e.g., Pixel), open the text conversation with the iPhone user. Click on the three dots in the upper right corner, select 'Details', and enable 'Only send SMS and MMS messages'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Log Out of Google Account on Android",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Log Out of Google Account",
+            "content": "Log out of the Google account on the Android device, restart the phone, and turn off 'send text through WiFi'."
+          },
+          {
+            "title": "Re-add Contacts",
+            "content": "Delete and re-add the iPhone user's contact information to start fresh."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T18:23:30.382Z",
+      "updated": "2026-01-04T18:23:30.382Z",
+      "sourceUrl": "https://discussions.apple.com/thread/252624669",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767551012844-487",
+    "title": "Fix iPhone Texting Issues with Google Pixel Users",
+    "problemDescription": "iPhone users cannot send texts to Google Pixel users, but pictures and group messages work.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "texting",
+      "google pixel",
+      "verizon"
+    ],
+    "steps": [
+      {
+        "title": "Contact Your Carrier",
+        "content": "Report the issue to Verizon, as SMS is a carrier feature. They may need to resolve the issue on their end."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use a Third-Party App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Messaging App",
+            "content": "Use a third-party messaging app like Facebook Messenger to communicate with the Google Pixel user."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T18:23:32.844Z",
+      "updated": "2026-01-04T18:23:32.844Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255691746",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767551015887-199",
+    "title": "Fix Google Photos Video Download Issues",
+    "problemDescription": "Videos downloaded from Google Photos to a Mac do not play properly.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "google photos",
+      "video download",
+      "mac",
+      "pixel"
+    ],
+    "steps": [
+      {
+        "title": "Disable Efficient Storage on Pixel",
+        "content": "Go to your Pixel phone's camera settings and turn off the 'efficient storage' option. This will allow videos to be uploaded to Google Photos in a format that can be properly downloaded to a Mac."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Email Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Video to Non-Apple Device",
+            "content": "Download the video from Google Photos onto a non-Apple device, such as a Pixel phone."
+          },
+          {
+            "title": "Email Video to Yourself",
+            "content": "Email the video to yourself from the non-Apple device."
+          },
+          {
+            "title": "Download Video from Email",
+            "content": "Open the email on your Mac and download the video attachment."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T18:23:35.887Z",
+      "updated": "2026-01-04T18:23:35.887Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255195689",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767551020229-262",
+    "title": "Disassociate Google Pixel Book from iPhone",
+    "problemDescription": "Google Pixel Book is paired with an iPhone and needs to be disassociated due to malware issues.",
+    "category": "android",
+    "difficulty": "Hard",
+    "keywords": [
+      "google",
+      "pixel",
+      "book",
+      "iphone",
+      "disassociate",
+      "malware"
+    ],
+    "steps": [
+      {
+        "title": "Reset Device",
+        "content": "Perform a full device reset on your Google Pixel Book."
+      },
+      {
+        "title": "Change Google Security Settings",
+        "content": "Modify your Google security settings to enhance protection."
+      },
+      {
+        "title": "Offload Google Key Lock App",
+        "content": "Uninstall or offload the Google Key Lock app from your device."
+      },
+      {
+        "title": "Change Passwords",
+        "content": "Update all relevant passwords to ensure security."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Disassociation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unpair Devices",
+            "content": "Go to the Bluetooth settings on both devices and manually unpair them."
+          },
+          {
+            "title": "Check for Malware",
+            "content": "Run a thorough scan for any remaining malware on your Google Pixel Book."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T18:23:40.229Z",
+      "updated": "2026-01-04T18:23:40.229Z",
+      "sourceUrl": "https://discussions.apple.com/thread/253873096",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767551023545-890",
+    "title": "Apple TV App Login Issue on Google Pixel 10",
+    "problemDescription": "Unable to log into the Apple TV app on a Google Pixel 10 due to verification code not being sent.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Apple TV",
+      "Google Pixel 10",
+      "login",
+      "verification code"
+    ],
+    "steps": [
+      {
+        "title": "Remove Hardware Key from Apple ID",
+        "content": "Go to your Apple ID account settings and remove the hardware key associated with your account. This should allow you to log in without the need for a verification code."
+      },
+      {
+        "title": "Re-add Hardware Key After Login",
+        "content": "After successfully logging in, re-add the hardware key to your Apple ID account to secure it again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open a Support Case",
+            "content": "Contact Apple Support and open a support case for this issue. They may be able to provide further assistance or updates on the issue."
+          },
+          {
+            "title": "Vote for Helpful Posts",
+            "content": "Search the Apple Community for additional answers and vote for any posts you find helpful."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T18:23:43.545Z",
+      "updated": "2026-01-04T18:23:43.545Z",
+      "sourceUrl": "https://discussions.apple.com/thread/256130488",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767551039831-412",
+    "title": "Improve Slow Upload Speeds",
+    "problemDescription": "Slow upload speeds can be frustrating and may be due to outdated firmware or hardware.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "slow upload",
+      "wifi",
+      "router",
+      "firmware",
+      "internet speed"
+    ],
+    "steps": [
+      {
+        "title": "Check and Update Router Firmware",
+        "content": "Access your router's admin page via its unique URL (usually an IP address), log in with the credentials (often found on a sticker on the router), and navigate to the firmware settings. Update the firmware to the latest version."
+      },
+      {
+        "title": "Consider Upgrading Your Router",
+        "content": "If your router is several years old, contact your Internet Service Provider (ISP) to inquire about upgrading to a newer model. Long-term customers may qualify for a free upgrade."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Connection Type",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Wired Connection",
+            "content": "For more stable and faster upload speeds, connect your device directly to the router using an Ethernet cable instead of relying on a Wi-Fi connection."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T18:23:59.831Z",
+      "updated": "2026-01-04T18:23:59.831Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/how-to-fix-slow-upload-speeds/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767551047799-315",
+    "title": "Fix Google Home Wi-Fi Connection Issues",
+    "problemDescription": "Google Home device fails to connect or maintain a stable Wi-Fi connection.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "Google Home",
+      "Wi-Fi",
+      "connection",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Router",
+        "content": "Unplug your router, wait for 30 seconds, and then plug it back in. This can help reset the network and improve connectivity."
+      },
+      {
+        "title": "Move the Google Home Device",
+        "content": "Ensure the Google Home device is placed closer to the router or in an area with better Wi-Fi signal strength."
+      },
+      {
+        "title": "Check for Interference",
+        "content": "Identify and remove any potential sources of interference, such as other electronic devices or physical obstructions."
+      },
+      {
+        "title": "Factory Reset the Google Home Device",
+        "content": "Press and hold the reset button on the back of the Google Home device for about 15 seconds until the light ring turns white, then follow the setup instructions in the Google Home app."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update the Google Home App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Open the Google Play Store or App Store, search for the Google Home app, and update it to the latest version."
+          }
+        ]
+      },
+      {
+        "title": "Change Wi-Fi Frequency Band",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Router Settings",
+            "content": "Log in to your router's admin page and change the Wi-Fi frequency band from 2.4GHz to 5GHz or vice versa."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T18:24:07.799Z",
+      "updated": "2026-01-04T18:24:07.799Z",
+      "sourceUrl": "https://www.digitaltrends.com/home/common-google-home-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
