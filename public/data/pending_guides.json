@@ -7309,5 +7309,1131 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767489735633-404",
+    "title": "Fix ASUS T100 Battery Drain in Sleep Mode",
+    "problemDescription": "ASUS T100 battery drains quickly while in sleep mode.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery",
+      "drain",
+      "sleep",
+      "ASUS T100"
+    ],
+    "steps": [
+      {
+        "title": "Force Hibernation",
+        "content": "Open Command Prompt as an administrator and type 'shutdown /h' to force hibernation instead of sleep mode."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Current Drivers",
+            "content": "Go to Device Manager, find the drivers related to your ASUS T100, and uninstall them."
+          },
+          {
+            "title": "Restart Your Computer",
+            "content": "Restart your computer to allow Windows to reinstall the drivers automatically."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:22:15.633Z",
+      "updated": "2026-01-04T01:22:15.633Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/windows8_1-performance/asus-t100-battery-drain/249ce432-f8f0-41cd-a089-1f6667ed8976",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767489737456-884",
+    "title": "Free Up Memory on Surface RT",
+    "problemDescription": "Surface RT tablet has low memory or storage space.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "surface",
+      "memory",
+      "storage",
+      "reset",
+      "refresh"
+    ],
+    "steps": [
+      {
+        "title": "Perform a Reset",
+        "content": "Go to Settings > Update & Security > Recovery. Under 'Reset this PC', click 'Get started' and follow the prompts to reset your Surface RT. This will remove apps and settings but keep your files."
+      },
+      {
+        "title": "Delete Windows.old Folder",
+        "content": "After resetting, manually delete the 'windows.old' folder if it remains. This folder contains files from the previous Windows installation and can take up significant space."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Microsoft Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reach Out to Support",
+            "content": "Contact Microsoft Support for further assistance with memory issues. They can provide personalized help and solutions."
+          }
+        ]
+      },
+      {
+        "title": "Check Storage Management",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Review Storage Usage",
+            "content": "Refer to the article on how Surface manages storage space to understand and optimize your storage usage."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:22:17.456Z",
+      "updated": "2026-01-04T01:22:17.456Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/surface/forum/surfwinrt-surfusing/surface-rt-tablet-memory-how-much-should-i-have/933796a3-9f34-4202-8eb1-043cd8f87e68",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767489740494-871",
+    "title": "Fix Laptop Battery Not Fully Charging",
+    "problemDescription": "Laptop battery not charging to full capacity.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery",
+      "charge",
+      "laptop",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Check Battery Health",
+        "content": "Go to Control Panel > Power Options > Battery Report. Generate a battery report to check the battery health and usage history."
+      },
+      {
+        "title": "Update Battery Drivers",
+        "content": "Open Device Manager, expand Batteries, right-click on Microsoft ACPI-Compliant Control Method Battery, and select Update driver."
+      },
+      {
+        "title": "Calibrate the Battery",
+        "content": "Fully discharge the battery, then charge it to 100% without interruption. This can help recalibrate the battery gauge."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to Settings > Update & Security > Windows Update and check for any pending updates that might include battery-related fixes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Battery Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Shut Down the Laptop",
+            "content": "Turn off the laptop completely."
+          },
+          {
+            "title": "Remove the Battery",
+            "content": "Unplug the power cord and remove the battery if possible."
+          },
+          {
+            "title": "Hold the Power Button",
+            "content": "Hold the power button for about 30 seconds to discharge any residual power."
+          },
+          {
+            "title": "Reassemble and Recharge",
+            "content": "Reinsert the battery, plug in the power cord, and turn on the laptop. Let it charge fully."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:22:20.494Z",
+      "updated": "2026-01-04T01:22:20.494Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/battery-dont-fully-charge/14b80de8-779c-4d1f-bf67-11e8d0c5a779",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767489743165-411",
+    "title": "Fix NVIDIA Driver Crash (Event ID 153)",
+    "problemDescription": "NVIDIA driver crashes with Event ID 153 error, causing display issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "nvidia",
+      "driver",
+      "crash",
+      "event id 153"
+    ],
+    "steps": [
+      {
+        "title": "Update NVIDIA Drivers",
+        "content": "Download and install the latest NVIDIA drivers from the official NVIDIA website."
+      },
+      {
+        "title": "Roll Back Driver",
+        "content": "Go to Device Manager, find your NVIDIA display adapter, right-click and select 'Properties'. Under the 'Driver' tab, click 'Roll Back Driver'."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Ensure your Windows operating system is up to date by checking for updates in Settings > Update & Security."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clean Install Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Current Drivers",
+            "content": "Use Display Driver Uninstaller (DDU) to completely remove existing NVIDIA drivers."
+          },
+          {
+            "title": "Install Latest Drivers",
+            "content": "Download the latest drivers from NVIDIA's website and install them."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:22:23.165Z",
+      "updated": "2026-01-04T01:22:23.165Z",
+      "sourceUrl": "http://answers.microsoft.com/en-us/windows/forum/windows_10-windows_install/the-windows%E2%80%9310-upgrade-appears-to-hang/a3359013%E2%80%9380a7%E2%80%934a25-a75d%E2%80%931c828e576c40?tm=1438143969182",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767489747898-713",
+    "title": "Free Up Space on D Drive in Windows 10",
+    "problemDescription": "Your D drive is running out of space in Windows 10.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "storage",
+      "disk space"
+    ],
+    "steps": [
+      {
+        "title": "Check Storage Usage",
+        "content": "Go to Start > Settings > System > Storage. Double-click the D drive to see what files are taking up space."
+      },
+      {
+        "title": "Run Disk Cleanup",
+        "content": "Open Command Prompt or PowerShell as Administrator and type 'cleanmgr.exe'. Alternatively, search for 'Disk Cleanup' in the Start menu or Cortana."
+      },
+      {
+        "title": "Move or Delete Files",
+        "content": "Move files to another drive or external storage, or uninstall programs you no longer use."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Extend Partition",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Disk Management",
+            "content": "Right-click the Start button and select 'Disk Management'. Shrink a partition with free space and extend the D drive."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:22:27.898Z",
+      "updated": "2026-01-04T01:22:27.898Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/im-running-windows-10-out-of-space-on-d-drive-what/3f6e36b5-648a-43ec-bef7-ddd19a027f7b",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767489755218-687",
+    "title": "Fix Smart TV Using USB Stick",
+    "problemDescription": "Your smart TV is not functioning properly and needs a firmware update.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "smart tv",
+      "firmware update",
+      "usb stick"
+    ],
+    "steps": [
+      {
+        "title": "Gather Required Items",
+        "content": "Ensure you have a USB thumb drive, your smart TV's model number, and the TV remote."
+      },
+      {
+        "title": "Format the USB Drive",
+        "content": "Format the USB drive to ensure it is compatible with your smart TV."
+      },
+      {
+        "title": "Download Firmware Update",
+        "content": "Search for your TV's model number followed by 'manual firmware download' on the manufacturer's website."
+      },
+      {
+        "title": "Transfer Firmware to USB",
+        "content": "Copy the downloaded firmware update file to the formatted USB stick."
+      },
+      {
+        "title": "Update TV Firmware",
+        "content": "Insert the USB stick into the service port of your smart TV and follow the on-screen instructions to update the firmware."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Service Port",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Service Port",
+            "content": "Locate the service port on your smart TV, which is typically used for data transfer and charging."
+          },
+          {
+            "title": "Connect USB Stick",
+            "content": "Insert the USB stick into the service port to ensure proper data transfer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:22:35.218Z",
+      "updated": "2026-01-04T01:22:35.218Z",
+      "sourceUrl": "https://www.makeuseof.com/how-fix-smart-tv-with-just-usb-stick/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767489758067-693",
+    "title": "Fix Smart TV Connection Issues",
+    "problemDescription": "Your smart TV is having trouble connecting to the internet or responding to the remote.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "smart tv",
+      "wifi",
+      "connection",
+      "remote"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Modem",
+        "content": "Unplug your modem for 60 seconds, then plug it back in."
+      },
+      {
+        "title": "Check Network Settings",
+        "content": "Open the TV’s main menu and look for an option related to the network, internet, or Wi-Fi. Ensure you have the correct password and that the TV is close enough to the router for a steady connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Fix Remote Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Batteries",
+            "content": "Ensure the remote has batteries and they are not depleted."
+          },
+          {
+            "title": "Clear Obstructions",
+            "content": "Move any objects that might be blocking the infrared signal between the remote and the TV."
+          },
+          {
+            "title": "Check Power Source",
+            "content": "Verify that the TV is plugged in and that the outlet is working by testing it with another device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:22:38.067Z",
+      "updated": "2026-01-04T01:22:38.067Z",
+      "sourceUrl": "https://www.makeuseof.com/common-smart-tv-issues-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767489764791-752",
+    "title": "Fix Smart TV App Glitches",
+    "problemDescription": "Smart TV apps may display glitches, such as overlapping text or frequent disconnections.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "smart tv",
+      "app glitch",
+      "YouTube",
+      "Bluetooth",
+      "HDMI"
+    ],
+    "steps": [
+      {
+        "title": "Update the TV Software",
+        "content": "Ensure your TV's firmware is up to date. Go to Settings > Support > Software Update > Update Now."
+      },
+      {
+        "title": "Reinstall the Problematic App",
+        "content": "Uninstall the app causing issues (e.g., YouTube) and reinstall it from the app store."
+      },
+      {
+        "title": "Reset the TV to Factory Settings",
+        "content": "If the issue persists, reset the TV to factory settings. Go to Settings > General > Reset > Enter PIN > Reset."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for App-Specific Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update the App",
+            "content": "Check if there are any updates available for the problematic app and install them."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use External Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect External Streaming Devices",
+            "content": "Use external streaming devices like Chromecast, Fire Stick, or Apple TV to access apps with fewer glitches."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:22:44.791Z",
+      "updated": "2026-01-04T01:22:44.791Z",
+      "sourceUrl": "https://www.makeuseof.com/reasons-to-not-buy-smart-tv/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767489776043-249",
+    "title": "Transfer WhatsApp Chat History from iOS to Android",
+    "problemDescription": "Unable to transfer WhatsApp chat history from iOS to Android devices.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "WhatsApp",
+      "chat history",
+      "transfer",
+      "iOS",
+      "Android"
+    ],
+    "steps": [
+      {
+        "title": "Prepare Your Devices",
+        "content": "Ensure both your iOS and Android devices are charged and connected to a stable Wi-Fi network."
+      },
+      {
+        "title": "Install WhatsApp on Android",
+        "content": "Download and install WhatsApp from the Google Play Store on your Android device."
+      },
+      {
+        "title": "Connect Devices with Lightning to USB-C Cable",
+        "content": "Use a Lightning to USB-C cable to connect your iOS device to your Android device."
+      },
+      {
+        "title": "Follow On-Screen Instructions",
+        "content": "Open WhatsApp on your Android device and follow the on-screen instructions to transfer your chat history."
+      },
+      {
+        "title": "Complete the Transfer",
+        "content": "Wait for the transfer process to complete. This may take some time depending on the size of your chat history."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Email Chat",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Email Individual Chats",
+            "content": "Open WhatsApp on your iOS device, go to the chat you want to transfer, tap on the contact's name, and select 'Export Chat'. Choose to attach media or not, then email the chat to yourself."
+          },
+          {
+            "title": "Transfer to Android",
+            "content": "On your Android device, open the email and download the chat file. You can then import it into a notes app or save it for future reference."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:22:56.043Z",
+      "updated": "2026-01-04T01:22:56.043Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/whatsapp-just-solved-the-biggest-problem-for-mobile-phone-users/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767489779355-210",
+    "title": "Report Fake News on WhatsApp",
+    "problemDescription": "WhatsApp users need to report fake news and misinformation to prevent the spread of harmful content.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "WhatsApp",
+      "fake news",
+      "report",
+      "misinformation"
+    ],
+    "steps": [
+      {
+        "title": "Identify Fake News",
+        "content": "Look for messages marked as 'Frequently Forwarded' or messages that seem suspicious or unverified."
+      },
+      {
+        "title": "Report the Message",
+        "content": "Long-press the message and select the 'Report' option. Follow the prompts to report the message to WhatsApp."
+      },
+      {
+        "title": "Block the Sender",
+        "content": "If the sender is spreading misinformation repeatedly, consider blocking them to prevent further messages."
+      },
+      {
+        "title": "Leave or Report the Group",
+        "content": "If the fake news is being spread within a group, leave the group or report it to WhatsApp."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Spread Awareness",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Educate Others",
+            "content": "Share awareness messages about the consequences of spreading unverified information."
+          },
+          {
+            "title": "Use Verified Sources",
+            "content": "Encourage others to verify information from reliable sources before sharing."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:22:59.355Z",
+      "updated": "2026-01-04T01:22:59.355Z",
+      "sourceUrl": "https://www.digitaltrends.com/social-media/whatsapp-india-fake-news-lynchings/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767489781777-909",
+    "title": "PC Won't Turn On: Troubleshooting Guide",
+    "problemDescription": "Your computer is not turning on, which could be due to hardware or software issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "pc",
+      "turn on",
+      "troubleshooting",
+      "hardware",
+      "software"
+    ],
+    "steps": [
+      {
+        "title": "Check for Short Circuits",
+        "content": "Remove all components from the case and rebuild the system on your desk to identify any short circuits. Alternatively, tilt the case from side to side to locate any errant screws causing issues."
+      },
+      {
+        "title": "Reset the CMOS",
+        "content": "Reset the CMOS (Complementary Metal-Oxide-Semiconductor) to restore default settings, which can resolve power-related issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Windows",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Windows Settings",
+            "content": "If hardware checks are inconclusive, reset Windows to its original settings using a Windows recovery guide."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:23:01.777Z",
+      "updated": "2026-01-04T01:23:01.777Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/pc-troubleshooting-guide/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767489786193-697",
+    "title": "Fix GPU Visual Artifacts",
+    "problemDescription": "Strange squares, lines, or flickering on your screen indicating a potential GPU issue.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "gpu",
+      "artifacts",
+      "flickering",
+      "lines",
+      "squares"
+    ],
+    "steps": [
+      {
+        "title": "Check Connections",
+        "content": "Ensure all cables are securely connected to your GPU and monitor."
+      },
+      {
+        "title": "Update Drivers",
+        "content": "Download and install the latest GPU drivers from the manufacturer's website."
+      },
+      {
+        "title": "Test in Safe Mode",
+        "content": "Boot your computer in Safe Mode to see if the issue persists, which can help determine if it's a driver or hardware issue."
+      },
+      {
+        "title": "Check for Overheating",
+        "content": "Monitor your GPU temperatures using software like MSI Afterburner. If it's overheating, clean the fans and ensure proper ventilation."
+      },
+      {
+        "title": "Test with Another Monitor",
+        "content": "Connect your GPU to a different monitor to rule out any issues with your current display."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Drivers",
+            "content": "Go to Device Manager, find your GPU under Display adapters, right-click, and select Uninstall device."
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Restart your computer to allow Windows to reinstall the basic drivers."
+          },
+          {
+            "title": "Install Latest Drivers",
+            "content": "Download and install the latest drivers from the manufacturer's website."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Hardware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect GPU",
+            "content": "Open your computer case and visually inspect the GPU for any signs of damage or wear."
+          },
+          {
+            "title": "Test in Another PC",
+            "content": "If possible, test the GPU in another computer to see if the issue persists."
+          },
+          {
+            "title": "Replace GPU",
+            "content": "If the issue continues, it may be time to replace your GPU."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:23:06.193Z",
+      "updated": "2026-01-04T01:23:06.193Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-gpu-problems-how-to-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767489795159-978",
+    "title": "Fix iPhone Volume Issues",
+    "problemDescription": "iPhone volume is too low or not working properly.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "volume",
+      "sound",
+      "audio"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your iPhone",
+        "content": "Perform a force-restart to clear any minor software issues. This won't delete any personal data."
+      },
+      {
+        "title": "Check for Debris in Headphone Jack",
+        "content": "Shine a light into the headphone jack to look for any blockages. Use a soft brush or compressed air to clean it if necessary."
+      },
+      {
+        "title": "Dislodge Debris with Headphones or Charging Cable",
+        "content": "Insert and remove headphones or a charging cable a few times to dislodge any dirt inside the jack. Test the volume after each attempt."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Bluetooth Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disconnect Bluetooth Devices",
+            "content": "If you use AirPods or other Bluetooth devices, disconnect them and test the volume again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:23:15.159Z",
+      "updated": "2026-01-04T01:23:15.159Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/iphone-volume-not-working-like-it-should/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767489799660-768",
+    "title": "Factory Reset iPhone",
+    "problemDescription": "Your iPhone is experiencing software or OS-related issues that cannot be resolved with basic troubleshooting.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "reset",
+      "software",
+      "os"
+    ],
+    "steps": [
+      {
+        "title": "Backup Your Data",
+        "content": "Before proceeding, ensure you back up all your iPhone data to avoid losing important information."
+      },
+      {
+        "title": "Navigate to Settings",
+        "content": "Open the Settings app on your iPhone."
+      },
+      {
+        "title": "Go to General Settings",
+        "content": "Tap on 'General' in the Settings menu."
+      },
+      {
+        "title": "Transfer or Reset iPhone",
+        "content": "Select 'Transfer or Reset iPhone'."
+      },
+      {
+        "title": "Erase All Content and Settings",
+        "content": "Tap on 'Erase All Content and Settings' to perform a factory reset."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update iOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Navigate to Settings",
+            "content": "Open the Settings app on your iPhone."
+          },
+          {
+            "title": "Go to General Settings",
+            "content": "Tap on 'General' in the Settings menu."
+          },
+          {
+            "title": "Check for Software Update",
+            "content": "Select 'Software Update' to check for the latest iOS version and install any available updates."
+          }
+        ]
+      },
+      {
+        "title": "Update Your Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open the App Store",
+            "content": "Launch the App Store app on your iPhone."
+          },
+          {
+            "title": "Go to the Updates Section",
+            "content": "Tap on your profile icon at the top right and scroll down to see available updates."
+          },
+          {
+            "title": "Update Apps",
+            "content": "Tap 'Update' next to each app that has an available update, or tap 'Update All' to update all apps at once."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:23:19.660Z",
+      "updated": "2026-01-04T01:23:19.660Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/iphone-troubleshooting-tips/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767489802065-311",
+    "title": "Fix iPhone 13 Touchscreen Issues",
+    "problemDescription": "The touchscreen on your iPhone 13 is not responding or working properly.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "touchscreen",
+      "ios",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Update iOS",
+        "content": "Ensure your iPhone 13 is running the latest version of iOS."
+      },
+      {
+        "title": "Clean the Screen",
+        "content": "Thoroughly clean your iPhone's screen with a soft, lint-free cloth."
+      },
+      {
+        "title": "Disconnect Cables",
+        "content": "Disconnect all cables connected to your iPhone."
+      },
+      {
+        "title": "Restart Your iPhone",
+        "content": "Restart your iPhone 13 and check if the touchscreen starts working again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Toggle Wi-Fi Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Wi-Fi",
+            "content": "Head to Settings > Wi-Fi. Tap the toggle at the top right of the screen to turn off Wi-Fi."
+          },
+          {
+            "title": "Wait and Turn On Wi-Fi",
+            "content": "Wait for 30 seconds, then tap the toggle again to enable Wi-Fi."
+          }
+        ]
+      },
+      {
+        "title": "Forget and Reconnect to Wi-Fi Network",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Wi-Fi Settings",
+            "content": "Open Settings > Wi-Fi."
+          },
+          {
+            "title": "Forget Network",
+            "content": "Tap and hold the corresponding network, then tap Forget This Network."
+          },
+          {
+            "title": "Reconnect to Network",
+            "content": "Try to reconnect from the Wi-Fi settings menu."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:23:22.065Z",
+      "updated": "2026-01-04T01:23:22.065Z",
+      "sourceUrl": "https://www.makeuseof.com/iphone-13-issues/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767489805567-504",
+    "title": "Fix iPhone That Won't Turn On",
+    "problemDescription": "Your iPhone is not responding and won't turn on.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "turn on",
+      "battery",
+      "restart"
+    ],
+    "steps": [
+      {
+        "title": "Charge the iPhone",
+        "content": "Connect your iPhone to a charger and let it charge for at least an hour. If the battery is completely dead, it may take some time to turn on."
+      },
+      {
+        "title": "Force Restart the iPhone",
+        "content": "Perform a force restart based on your iPhone model. This can help if the device is stuck in a boot loop or during an iOS upgrade."
+      },
+      {
+        "title": "Connect to a Computer",
+        "content": "Plug your iPhone into a computer using a USB cable. If recognized, back up your data using the Apple Devices app (Windows) or Finder (macOS)."
+      },
+      {
+        "title": "Replace the Battery",
+        "content": "If the above steps don't work, the battery might be completely dead. Consider replacing the battery, which is a relatively easy fix."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Physical Damage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect the iPhone",
+            "content": "Check for any visible signs of physical damage that might be preventing the iPhone from turning on."
+          },
+          {
+            "title": "Contact Apple Support",
+            "content": "If physical damage is found, contact Apple Support or visit an Apple Store for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:23:25.567Z",
+      "updated": "2026-01-04T01:23:25.567Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/iphone-wont-turn-on/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767489814837-510",
+    "title": "Fix Zoom Issues on Ubuntu 20.04",
+    "problemDescription": "Zoom not working or having issues on Ubuntu 20.04 due to outdated version.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "ubuntu",
+      "app-error",
+      "installation"
+    ],
+    "steps": [
+      {
+        "title": "Remove Old Zoom Client",
+        "content": "Open a terminal and type `sudo apt remove zoom-client` to remove the old Zoom client."
+      },
+      {
+        "title": "Download Latest Zoom Client",
+        "content": "Download the latest Zoom client from the official Zoom website."
+      },
+      {
+        "title": "Install Zoom via Snap",
+        "content": "In the terminal, type `sudo snap install zoom-client` to install Zoom using Snap."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Install via .deb Package",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Old Zoom Client",
+            "content": "Open a terminal and type `sudo apt remove zoom-client` to remove the old Zoom client."
+          },
+          {
+            "title": "Download Latest Zoom Client",
+            "content": "Download the latest Zoom client from the official Zoom website."
+          },
+          {
+            "title": "Install via .deb Package",
+            "content": "Open the terminal in the directory of the downloaded `zoom_amd64.deb` file and type `sudo dpkg -i zoom_amd64.deb`."
+          },
+          {
+            "title": "Fix Broken Dependencies",
+            "content": "If you encounter an error, type `sudo apt install --fix-broken` to fix any broken dependencies."
+          },
+          {
+            "title": "Reinstall Zoom",
+            "content": "After fixing the dependencies, type `sudo dpkg -i zoom_amd64.deb` again to complete the installation."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Easy Installation via Ubuntu Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Old Zoom Client",
+            "content": "Open a terminal and type `sudo apt remove zoom-client` to remove the old Zoom client."
+          },
+          {
+            "title": "Download Latest Zoom Client",
+            "content": "Download the latest Zoom client from the official Zoom website."
+          },
+          {
+            "title": "Install via Ubuntu Software",
+            "content": "Double left-click the downloaded file and install it using Ubuntu Software."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:23:34.837Z",
+      "updated": "2026-01-04T01:23:34.837Z",
+      "sourceUrl": "https://askubuntu.com/questions/1294485/troubles-with-zoom-on-ubuntu-20-04",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767489816412-5",
+    "title": "Fix Zoom Screen Share on Wayland",
+    "problemDescription": "Zoom screen sharing not working properly on Ubuntu 22.04 with Wayland.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "wayland",
+      "screen share",
+      "ubuntu"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall Zoom from Debian Package",
+        "content": "Purge the current Zoom installation and reinstall using the Debian package. This has worked for some users."
+      },
+      {
+        "title": "Run Zoom with GNOME Desktop Environment",
+        "content": "Launch Zoom with the command `XDG_CURRENT_DESKTOP=GNOME` to force it to use the GNOME desktop environment."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Run Zoom with XCB Platform",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use XCB Platform",
+            "content": "Launch Zoom with the command `QT_QPA_PLATFORM=xcb` to use the XCB platform."
+          }
+        ]
+      },
+      {
+        "title": "Install Pipewire",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Pipewire",
+            "content": "Install Pipewire on your system to potentially resolve screen sharing issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:23:36.412Z",
+      "updated": "2026-01-04T01:23:36.412Z",
+      "sourceUrl": "https://askubuntu.com/questions/1483678/has-anyone-actually-managed-to-use-zoom-screen-share-on-wayland-strictly-no-x11",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767489821680-276",
+    "title": "Fix Zoom Low Resolution on Ubuntu",
+    "problemDescription": "Zoom application has low resolution on Ubuntu 20.04 LTS.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "resolution",
+      "ubuntu",
+      "low resolution"
+    ],
+    "steps": [
+      {
+        "title": "Edit Zoom Configuration File",
+        "content": "Open the terminal and navigate to the Zoom configuration directory: `cd ~/.config/`"
+      },
+      {
+        "title": "Open zoomus.conf File",
+        "content": "Open the `zoomus.conf` file with a text editor, for example: `nano zoomus.conf`"
+      },
+      {
+        "title": "Modify the scaleFactor",
+        "content": "Find the line `scaleFactor=2` and change it to `scaleFactor=1`."
+      },
+      {
+        "title": "Save and Close",
+        "content": "Save the changes and close the text editor."
+      },
+      {
+        "title": "Restart Zoom",
+        "content": "Restart the Zoom application to apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Enable AutoScale",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit Zoom Configuration File",
+            "content": "Open the terminal and navigate to the Zoom configuration directory: `cd ~/.config/`"
+          },
+          {
+            "title": "Open zoomus.conf File",
+            "content": "Open the `zoomus.conf` file with a text editor, for example: `nano zoomus.conf`"
+          },
+          {
+            "title": "Modify the autoScale",
+            "content": "Find the line `autoscale=false` and change it to `autoscale=true`."
+          },
+          {
+            "title": "Save and Close",
+            "content": "Save the changes and close the text editor."
+          },
+          {
+            "title": "Restart Zoom",
+            "content": "Restart the Zoom application to apply the changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T01:23:41.680Z",
+      "updated": "2026-01-04T01:23:41.680Z",
+      "sourceUrl": "https://askubuntu.com/questions/1253288/zoom-meeting-resolution-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
