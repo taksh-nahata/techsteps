@@ -13764,5 +13764,610 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767518151863-339",
+    "title": "Windows 10 Update Blocked by USB Drive",
+    "problemDescription": "Some PCs are blocked from receiving the May 2019 Windows 10 update due to connected USB or SD drives.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "update",
+      "usb",
+      "sd",
+      "blocked"
+    ],
+    "steps": [
+      {
+        "title": "Disconnect External Drives",
+        "content": "Unplug all external USB drives and SD cards from your PC."
+      },
+      {
+        "title": "Retry Update",
+        "content": "Attempt to install the Windows 10 update again."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-04T09:15:51.863Z",
+      "updated": "2026-01-04T09:15:51.863Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/may-2019-windows-10-update-blocked-for-some-pcs/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767518153727-7",
+    "title": "Fix Apple CarPlay Connection Issues",
+    "problemDescription": "Apple CarPlay fails to connect or frequently disconnects.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "Apple CarPlay",
+      "connection",
+      "USB adapter"
+    ],
+    "steps": [
+      {
+        "title": "Use a USB-A to USB-C Adapter",
+        "content": "Connect your iPhone to the car's USB-C port using a USB-A to USB-C adapter and a USB-C cable."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Try Different Cables",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test Various Cables",
+            "content": "Try using different USB cables, including official Apple Lightning cables and third-party cables of various styles and lengths."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T09:15:53.727Z",
+      "updated": "2026-01-04T09:15:53.727Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/apple-carplay-connection-problem-adapter-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767518158472-792",
+    "title": "Fix Windows 10 Installation Media Issues",
+    "problemDescription": "Windows 10 installation fails due to faulty CD/DVD burner or USB drive.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "installation",
+      "media",
+      "usb",
+      "cd/dvd"
+    ],
+    "steps": [
+      {
+        "title": "Use a Different USB Drive or External Disc Burner",
+        "content": "If the installation fails, try using a different USB drive or an external disc burner to create the installation media."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-04T09:15:58.472Z",
+      "updated": "2026-01-04T09:15:58.472Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-problems-with-installing-windows-10-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767518171947-17",
+    "title": "Fix Office 365 Problems with Troubleshooting Tools",
+    "problemDescription": "Troubleshoot and resolve common issues with Office 365 applications.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Office 365",
+      "troubleshooting",
+      "Outlook",
+      "installation"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install Support and Recovery Assistant",
+        "content": "Download and install the Support and Recovery Assistant for Office 365."
+      },
+      {
+        "title": "Run the Program",
+        "content": "Run the program on the machine where you're experiencing the problem and accept the licensing terms."
+      },
+      {
+        "title": "Select the Issue",
+        "content": "On the main page, select the issue you're having. For example, choose 'Outlook' if you're troubleshooting a startup problem with Outlook."
+      },
+      {
+        "title": "Follow the Troubleshooter Steps",
+        "content": "Follow the steps in the troubleshooter to narrow down the issue and let the troubleshooter try to fix it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Repair Office 365 Installation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Re-run Office 365 Setup",
+            "content": "Go to the Control Panel, find Office 365 in the list of installed programs, and select 'Repair'."
+          },
+          {
+            "title": "Follow the Repair Process",
+            "content": "Follow the on-screen instructions to complete the repair process. This can help resolve installation problems and fix individual Office programs that won't start or keep crashing."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T09:16:11.947Z",
+      "updated": "2026-01-04T09:16:11.947Z",
+      "sourceUrl": "https://www.howtogeek.com/271183/how-to-use-office-365s-troubleshooting-tools-to-fix-common-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767518179440-373",
+    "title": "Fix Samsung Galaxy S21 Overheating",
+    "problemDescription": "Samsung Galaxy S21, S21+, or S21 Ultra overheating after software update.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "samsung",
+      "galaxy s21",
+      "overheating",
+      "software update"
+    ],
+    "steps": [
+      {
+        "title": "Update Software",
+        "content": "Ensure your phone is updated to the latest software version released by Samsung in June."
+      },
+      {
+        "title": "Avoid Overnight Charging",
+        "content": "Do not leave your phone plugged in and charging unattended or overnight."
+      },
+      {
+        "title": "Contact Samsung",
+        "content": "If the issue persists, contact Samsung for support or consider returning the device for a replacement."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Back up all important data from your phone."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > General Management > Reset > Factory Data Reset and follow the on-screen instructions."
+          },
+          {
+            "title": "Contact Samsung",
+            "content": "If the issue persists after the reset, contact Samsung for a repair or replacement."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T09:16:19.440Z",
+      "updated": "2026-01-04T09:16:19.440Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-samsung-galaxy-s21-problems-how-to-solve/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767518181277-41",
+    "title": "Fix Samsung Galaxy S8 Not Responding",
+    "problemDescription": "Your Samsung Galaxy S8 is frozen or not responding to touch.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "samsung",
+      "galaxy s8",
+      "frozen",
+      "not responding"
+    ],
+    "steps": [
+      {
+        "title": "Force Restart",
+        "content": "Turn your phone off, then press and hold the Power key until you see the Samsung logo, then release the Power key."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter Safe Mode",
+            "content": "Press and hold the Power key, then touch and hold the Power off icon. Tap Safe Mode, then wait for your phone to restart."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T09:16:21.277Z",
+      "updated": "2026-01-04T09:16:21.277Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-galaxy-s8-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767518182323-215",
+    "title": "Fix Galaxy Note 9 Quiet Notifications",
+    "problemDescription": "Galaxy Note 9 notifications are not audible or silent.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "notifications",
+      "samsung",
+      "galaxy note 9"
+    ],
+    "steps": [
+      {
+        "title": "Update Samsung Pay",
+        "content": "Ensure your Samsung Pay app is updated to the latest version, as the issue is linked to a recent update."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change Launcher",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Nova Launcher",
+            "content": "Download and install Nova Launcher from the Google Play Store."
+          },
+          {
+            "title": "Set Nova Launcher as Default",
+            "content": "Go to Settings > Apps > Default Apps and set Nova Launcher as your default launcher."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T09:16:22.323Z",
+      "updated": "2026-01-04T09:16:22.323Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-galaxy-note-9-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767518185634-963",
+    "title": "Fix Galaxy Note 8 App Freezing",
+    "problemDescription": "Galaxy Note 8 devices experiencing app freezing, particularly with Contacts app and related functions.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "Galaxy Note 8",
+      "app freezing",
+      "Contacts app",
+      "Samsung"
+    ],
+    "steps": [
+      {
+        "title": "Update Apps",
+        "content": "Update all apps in the Samsung Galaxy Store and the Google Play Store."
+      },
+      {
+        "title": "Contact Samsung Support",
+        "content": "Contact Samsung support at 1-800-SAMSUNG (U.S.) or visit Samsung’s country-specific site for support options."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Remove Google Contacts App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Google Contacts",
+            "content": "Uninstall the Google Contacts app if it is installed, as it may be conflicting with Samsung’s Contacts app."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Evaluation and Repair",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Samsung Support",
+            "content": "Contact Samsung support to arrange an evaluation and repair, especially if freeze-ups are frequent."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T09:16:25.634Z",
+      "updated": "2026-01-04T09:16:25.634Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-note-8-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767518188423-686",
+    "title": "Restart Samsung Galaxy S20",
+    "problemDescription": "Your Samsung Galaxy S20 is frozen or unresponsive.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "samsung",
+      "galaxy s20",
+      "restart",
+      "frozen"
+    ],
+    "steps": [
+      {
+        "title": "Power Off",
+        "content": "Press and hold the Volume Down and Power buttons together until the power options appear."
+      },
+      {
+        "title": "Select Power Off",
+        "content": "Tap Power Off."
+      },
+      {
+        "title": "Wait for Shutdown",
+        "content": "Once your device has shut down, wait a few seconds before turning it back on."
+      },
+      {
+        "title": "Power On",
+        "content": "Press and hold the Power button to turn your device back on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Force Restart",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Press and Hold",
+            "content": "Press and hold the Volume Down and Power buttons together for about 10 seconds until the device vibrates and restarts."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T09:16:28.423Z",
+      "updated": "2026-01-04T09:16:28.423Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-samsung-galaxy-s20-problems-how-to-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767518195557-12",
+    "title": "Fix Screen Flickering in Windows 10",
+    "problemDescription": "Screen flickering issue in Windows 10, often caused by display drivers or loose monitor cables.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "screen flickering",
+      "display drivers"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall Display Drivers",
+        "content": "Boot your PC into Safe Mode by opening 'Settings' using Windows+i, then clicking 'Update & Security'. Remove the display drivers, and your PC will automatically reinstall them from Windows updates."
+      },
+      {
+        "title": "Check Monitor Cables",
+        "content": "Unplug your monitor's cable and plug it back in securely from both the back of the monitor and on the PC. Ensure the cable is fully tightened and not loose."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Identify and Uninstall Problematic Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Find the Problematic App",
+            "content": "Determine when your screen started to flicker to identify the problematic app."
+          },
+          {
+            "title": "Uninstall the App",
+            "content": "Uninstall the identified app using the standard uninstall process."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T09:16:35.557Z",
+      "updated": "2026-01-04T09:16:35.557Z",
+      "sourceUrl": "https://www.howtogeek.com/721510/how-to-fix-screen-flickering-in-windows-10/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767518200505-320",
+    "title": "Fix Screen Flickering on Android",
+    "problemDescription": "Screen flickering on an Android phone can be caused by software glitches, hardware issues, or unstable charging.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "screen flickering",
+      "software update",
+      "safe mode"
+    ],
+    "steps": [
+      {
+        "title": "Enter Safe Mode",
+        "content": "Press and hold the Power button until the Power off option appears. Tap and hold 'Power off' until the 'Reboot to safe mode' prompt appears. Tap 'OK'."
+      },
+      {
+        "title": "Check for Flickering in Safe Mode",
+        "content": "Use the phone normally in Safe Mode. If the screen does not flicker, the issue is caused by a third-party app."
+      },
+      {
+        "title": "Uninstall Problematic Apps",
+        "content": "Exit Safe Mode by restarting your phone. Uninstall recently installed apps one by one to identify the culprit."
+      },
+      {
+        "title": "Update Your Android OS",
+        "content": "Go to Settings > System > Software Update (or just Settings > Software Update on some devices). Tap 'Download and install' if an update is available."
+      },
+      {
+        "title": "Check Charging Equipment",
+        "content": "Ensure you are using a stable power source and a good quality charging cable. Try a different charger if possible."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check for Hardware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect for Physical Damage",
+            "content": "Look for any signs of physical damage or water exposure that might be causing the screen flickering."
+          },
+          {
+            "title": "Consult a Professional",
+            "content": "If hardware issues are suspected, take your phone to a professional repair service."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T09:16:40.505Z",
+      "updated": "2026-01-04T09:16:40.505Z",
+      "sourceUrl": "https://www.howtogeek.com/how-to-fix-screen-flickering-on-android-phones/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767518205218-649",
+    "title": "Fix Flickering External Screen on Mac",
+    "problemDescription": "The external screen connected to a Mac flickers, especially during motion.",
+    "category": "mac",
+    "difficulty": "Easy",
+    "keywords": [
+      "mac",
+      "flickering",
+      "external screen",
+      "adaptive sync"
+    ],
+    "steps": [
+      {
+        "title": "Disable Adaptive Sync",
+        "content": "Click the Apple button at the top left of the screen and select System Preferences. Then, choose Displays and turn off Adaptive Sync."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Reliable Cable",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a High-Quality Cable",
+            "content": "Ensure you are using a reliable cable that supports flicker-free 4K 60Hz or 1440p 165Hz display output."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Try Different Plug-in Sequences",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Power-Cycle the Adapter",
+            "content": "Unplug the adapter from the Mac and the monitor from the adapter. Then, plug the adapter in first, then attach the monitor."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T09:16:45.218Z",
+      "updated": "2026-01-04T09:16:45.218Z",
+      "sourceUrl": "https://www.howtogeek.com/805459/mac-flickering-external-screen/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767518223111-936",
+    "title": "Fix Browser Blocking Video Content",
+    "problemDescription": "Your browser is blocking video content, preventing you from accessing it.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "browser",
+      "video",
+      "blocking",
+      "content"
+    ],
+    "steps": [
+      {
+        "title": "Add Site to Exceptions",
+        "content": "Add the website to your browser's exceptions list to allow the content."
+      },
+      {
+        "title": "Modify Security Settings",
+        "content": "Adjust your browser's security settings to permit the video content."
+      },
+      {
+        "title": "Refresh the Page",
+        "content": "After making the changes, refresh the page to load the video."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Browser Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Browser Settings",
+            "content": "Go to your browser's settings menu."
+          },
+          {
+            "title": "Clear Cache",
+            "content": "Navigate to the privacy or history section and clear the cache."
+          },
+          {
+            "title": "Restart Browser",
+            "content": "Close and reopen your browser to apply the changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T09:17:03.111Z",
+      "updated": "2026-01-04T09:17:03.111Z",
+      "sourceUrl": "https://www.collinsdictionary.com/us/english-language-learning/fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
