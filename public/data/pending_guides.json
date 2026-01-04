@@ -11220,5 +11220,1093 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767507856104-203",
+    "title": "Fix 2FA Activation Error in WordPress",
+    "problemDescription": "Error activating 2FA in WordPress with Google Authenticator due to time mismatch.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "2FA",
+      "WordPress",
+      "Google Authenticator",
+      "time mismatch"
+    ],
+    "steps": [
+      {
+        "title": "Check and Sync Time",
+        "content": "Ensure the time on your laptop/desktop is accurate by checking it against time.is."
+      },
+      {
+        "title": "Set Time Zone Automatically",
+        "content": "Set the time zone to update automatically on both your laptop/desktop and phone."
+      },
+      {
+        "title": "Rescan QR Code",
+        "content": "Delete the initial WordPress link in the Google Authenticator app and rescan the QR code."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-04T06:24:16.104Z",
+      "updated": "2026-01-04T06:24:16.104Z",
+      "sourceUrl": "https://www.reddit.com/r/Wordpress/comments/1mocear/fixing_the_activating_2fa_error_using_the_google/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767507859438-215",
+    "title": "Fix Two-Factor Authentication Password Incorrect",
+    "problemDescription": "Two-factor authentication password is incorrect when using Google Authenticator on Android.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "two-factor",
+      "authentication",
+      "password",
+      "Google Authenticator"
+    ],
+    "steps": [
+      {
+        "title": "Verify the Correct App",
+        "content": "Ensure you are using the correct app (Google Authenticator) and that it is the latest version."
+      },
+      {
+        "title": "Check the QR Code",
+        "content": "Make sure the QR code was scanned correctly and that the code was entered accurately."
+      },
+      {
+        "title": "Time Synchronization",
+        "content": "Verify that the time on your Android device is synchronized correctly, as time discrepancies can cause issues with two-factor authentication."
+      },
+      {
+        "title": "Re-scan the QR Code",
+        "content": "If the issue persists, try re-scanning the QR code and re-entering the one-time password."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Entry",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Manual Entry",
+            "content": "If scanning the QR code fails, manually enter the secret key provided by the service into Google Authenticator."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "If all else fails, contact the support team of the service you are trying to authenticate with for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:24:19.438Z",
+      "updated": "2026-01-04T06:24:19.438Z",
+      "sourceUrl": "https://www.reddit.com/r/redditdev/comments/18wkqv/twofactor_authentication_password_incorrect/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767507864620-276",
+    "title": "Facebook 2FA Login Issue",
+    "problemDescription": "User unable to log in to Facebook due to two-factor authentication issues.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "facebook",
+      "2FA",
+      "login",
+      "authentication"
+    ],
+    "steps": [
+      {
+        "title": "Use Backup Codes",
+        "content": "If you have backup codes, use one of them to log in. These codes are provided when you set up 2FA."
+      },
+      {
+        "title": "Request a Login Code via Email or SMS",
+        "content": "If you don't have backup codes, go to the login page and select 'Need another way to authenticate?' and choose to receive a code via email or SMS."
+      },
+      {
+        "title": "Contact Facebook Support",
+        "content": "If you still can't log in, contact Facebook support for assistance. Provide them with the necessary details to verify your identity."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Trusted Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Trusted Device",
+            "content": "If you have a trusted device that is already logged into your Facebook account, you can use it to log in and manage your 2FA settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:24:24.620Z",
+      "updated": "2026-01-04T06:24:24.620Z",
+      "sourceUrl": "https://www.reddit.com/r/facebook/comments/1b7l06x/facebook_2_factor_authentication_problem_how_to/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767507868469-476",
+    "title": "Recover Instagram Account with 2FA Issue",
+    "problemDescription": "Unable to access Instagram account due to 2-factor authentication issues and account disablement.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Instagram",
+      "2FA",
+      "account recovery",
+      "disabled account"
+    ],
+    "steps": [
+      {
+        "title": "Contact Instagram Support",
+        "content": "Reach out to Instagram support via their Help Center, explaining your 2FA issue and account disablement. Be clear and concise about the problem."
+      },
+      {
+        "title": "Submit Support Requests",
+        "content": "Submit multiple support requests if necessary, as it may take several attempts to get a response. Ensure each request includes detailed information about your issue."
+      },
+      {
+        "title": "Appeal Account Disablement",
+        "content": "If your account is disabled, appeal the decision through the provided link in the disablement email. Follow the instructions carefully."
+      },
+      {
+        "title": "Provide Detailed Information",
+        "content": "In your appeals and support requests, provide as much detail as possible about your issue, including any changes to your account information (e.g., phone number no longer associated with the account)."
+      },
+      {
+        "title": "Be Persistent",
+        "content": "Continue to follow up on your support requests and appeals. Persistence is key, as it may take several attempts to resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Facebook Account Recovery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Facebook Help Center",
+            "content": "Go to the Facebook Help Center and search for account recovery options."
+          },
+          {
+            "title": "Follow Recovery Steps",
+            "content": "Follow the steps provided to recover your account. This may involve verifying your identity through various methods."
+          },
+          {
+            "title": "Contact Facebook Support",
+            "content": "If you continue to face issues, contact Facebook support directly for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:24:28.469Z",
+      "updated": "2026-01-04T06:24:28.469Z",
+      "sourceUrl": "https://www.reddit.com/r/Instagram/comments/opj2dv/got_my_account_back_after_2fa_issue_and_disabled/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767507879178-712",
+    "title": "Fix Windows File Sharing Between Devices",
+    "problemDescription": "File sharing doesn't work both ways between Windows 10 and 11 devices.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "file sharing",
+      "windows 10",
+      "windows 11",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Check Workgroup Names",
+        "content": "Ensure both devices have the same workgroup name. Navigate to Control Panel > System and Security > System, then select 'Computer name, domain, and workgroup settings' to verify and update if necessary."
+      },
+      {
+        "title": "Enable Network Discovery",
+        "content": "On both devices, ensure network discovery is enabled. Go to Control Panel > Network and Internet > Network and Sharing Center > Advanced sharing settings, and enable network discovery."
+      },
+      {
+        "title": "Verify Network Connection",
+        "content": "Ensure both devices are connected to the same network. Check the network settings on both devices to confirm they are on the same network."
+      },
+      {
+        "title": "Check Antivirus Settings",
+        "content": "Temporarily disable your antivirus software to see if it is blocking the file sharing. If it resolves the issue, adjust the antivirus settings to allow file sharing."
+      },
+      {
+        "title": "Restart Devices",
+        "content": "After making the above changes, restart both devices to ensure all settings take effect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Standard Sharing",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up Standard Sharing",
+            "content": "Use standard sharing methods as Homegroup was removed in Windows 10 V1803. Ensure all computers are in the same workgroup for standard sharing."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Test Connection via Command Prompt",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test Connection",
+            "content": "From a command prompt, use the command 'NET USE T: \\IP_of_other_computer\\Folder' to authenticate and test the connection. Note any errors that occur."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:24:39.178Z",
+      "updated": "2026-01-04T06:24:39.178Z",
+      "sourceUrl": "https://superuser.com/questions/1768525/file-sharing-doesnt-work-both-ways-windows-10-and-11",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767507881632-285",
+    "title": "Divide and Conquer Troubleshooting",
+    "problemDescription": "When you're unsure where to start troubleshooting a problem.",
+    "category": "general",
+    "difficulty": "Medium",
+    "keywords": [
+      "troubleshooting",
+      "problem-solving",
+      "diagnosis"
+    ],
+    "steps": [
+      {
+        "title": "Isolate the Problem",
+        "content": "Disconnect or remove non-essential components or software to identify the problematic element."
+      },
+      {
+        "title": "Test Components Individually",
+        "content": "Reconnect components in halves, checking for the problem each time, to narrow down the cause."
+      },
+      {
+        "title": "Use Another System for Testing",
+        "content": "If available, test the suspected component or software on another system to confirm the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset to Default",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Settings",
+            "content": "Reset the system or device to its default settings to rule out configuration issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:24:41.632Z",
+      "updated": "2026-01-04T06:24:41.632Z",
+      "sourceUrl": "https://superuser.com/questions/260043/how-do-i-troubleshoot-when-i-have-no-clue-where-to-start",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767507885872-835",
+    "title": "Fix Windows 10 CMD net view /all Error 6118",
+    "problemDescription": "The command 'net view /all' returns error 6118, indicating the list of servers is not available.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "command prompt",
+      "network",
+      "error 6118"
+    ],
+    "steps": [
+      {
+        "title": "Enable SMB 1.0/CIFS",
+        "content": "Open 'Turn Windows features on or off' from the Control Panel. Check the box for 'SMB 1.0/CIFS Client' and click OK to enable the protocol."
+      },
+      {
+        "title": "Restart the Computer",
+        "content": "After enabling the protocol, restart your computer to apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Set Up a Workgroup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a Workgroup",
+            "content": "Go to 'System Properties' and under the 'Computer Name' tab, click 'Change'. Enter a workgroup name and click OK."
+          },
+          {
+            "title": "Restart the Computer",
+            "content": "Restart your computer to apply the workgroup settings."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Create a Homegroup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Homegroup Settings",
+            "content": "Go to 'Control Panel' > 'Network and Internet' > 'HomeGroup'."
+          },
+          {
+            "title": "Create a Homegroup",
+            "content": "Click 'Create a homegroup' and follow the on-screen instructions to set up the homegroup."
+          },
+          {
+            "title": "Restart the Computer",
+            "content": "Restart your computer to apply the homegroup settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:24:45.872Z",
+      "updated": "2026-01-04T06:24:45.872Z",
+      "sourceUrl": "https://superuser.com/questions/1347496/windows-10-cmd-net-view-all-returns-error-6118-list-of-servers-not-available",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767507891611-286",
+    "title": "Fix Windows Cannot Access Other Computer Error 0x80004005",
+    "problemDescription": "Windows 8 cannot access another computer on the network, displaying error code 0x80004005.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "networking",
+      "firewall",
+      "workgroup"
+    ],
+    "steps": [
+      {
+        "title": "Access Network and Sharing Center",
+        "content": "Press `Win`+`R`, type `control /name Microsoft.NetworkAndSharingCenter`, and press Enter."
+      },
+      {
+        "title": "Change Advanced Sharing Settings",
+        "content": "Click on 'Change advanced sharing settings' on the left pane."
+      },
+      {
+        "title": "Configure Private Profile",
+        "content": "Expand the 'Private' sharing profile and ensure 'Turn on network discovery' and 'Turn on file and printer sharing' are selected."
+      },
+      {
+        "title": "Configure Guest or Public Profile",
+        "content": "Expand the 'Guest or Public' profile and ensure 'Turn off network discovery' and 'Turn off file and printer sharing' are selected."
+      },
+      {
+        "title": "Verify IP and Subnet Mask",
+        "content": "Ensure the IP address and subnet mask on the Windows 8 machine match those of the Windows 7 machine."
+      },
+      {
+        "title": "Find Hostname of W8",
+        "content": "Type `cmd /c \"hostname & pause\"` in the Run command box to find the hostname of the Windows 8 machine."
+      },
+      {
+        "title": "Access W8 from W7",
+        "content": "On the Windows 7 machine, type `\\HOSTNAME_OF_W8_BOX` in the Run command box to access files and folders on the Windows 8 machine."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Firewall Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Review Inbound Firewall Rules",
+            "content": "Check the inbound firewall rules on the Windows 7 machine to ensure they are not blocking the connection."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:24:51.611Z",
+      "updated": "2026-01-04T06:24:51.611Z",
+      "sourceUrl": "https://superuser.com/questions/792422/windows-cannot-access-other-computer-error-code-0x80004005",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767507893731-131",
+    "title": "Fix Windows 10 DNS Resolution Issues",
+    "problemDescription": "Windows 10 can't resolve hostnames, but ping works with IP addresses.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "dns",
+      "hostname",
+      "resolution"
+    ],
+    "steps": [
+      {
+        "title": "Change DNS Servers to Google DNS",
+        "content": "Manually set the DNS servers to Google's public DNS: `8.8.8.8` and `8.8.4.4`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check and Modify Registry Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Tcpip Hive",
+            "content": "Backup the Tcpip hive in the registry."
+          },
+          {
+            "title": "Compare with Another Computer",
+            "content": "Compare the Tcpip hive with a similar computer's registry."
+          },
+          {
+            "title": "Modify Registry Keys",
+            "content": "Modify the keys under `[HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters]` if necessary."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable NetBIOS over TCP",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable NetBIOS",
+            "content": "Untick the 'Use NetBIOS over TCP' box in the network adapter properties."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Use a Linux Live CD",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot from Linux Live CD",
+            "content": "Boot your computer using a Linux Live CD to verify if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:24:53.731Z",
+      "updated": "2026-01-04T06:24:53.731Z",
+      "sourceUrl": "https://superuser.com/questions/1019467/windows-10-cant-resolve-hostnames-ping-with-ip-works-but-not-with-hostname",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767507899978-682",
+    "title": "Fix Windows 10 Notification Area Not Showing Banners",
+    "problemDescription": "Windows 10 notification area suddenly stopped showing notification banners despite notifications being enabled and Focus Assist being off.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "notifications",
+      "notification area",
+      "explorer.exe"
+    ],
+    "steps": [
+      {
+        "title": "Open Task Manager",
+        "content": "Press Ctrl+Shift+Esc to open Task Manager."
+      },
+      {
+        "title": "End Task for explorer.exe",
+        "content": "Find 'Windows Explorer' in the list, right-click it, and select 'End task'."
+      },
+      {
+        "title": "Restart explorer.exe",
+        "content": "In Task Manager, click on 'File' > 'Run new task'. Type 'explorer.exe' and press Enter."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Your Computer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Save Your Work",
+            "content": "Save any open documents or work."
+          },
+          {
+            "title": "Restart",
+            "content": "Click on the Start menu, select the power icon, and choose 'Restart'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:24:59.978Z",
+      "updated": "2026-01-04T06:24:59.978Z",
+      "sourceUrl": "https://superuser.com/questions/1884853/how-to-fix-windows-10s-notification-area-suddenly-stopped-showing-notification",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767507902489-650",
+    "title": "Fix Outlook Desktop Notifications Not Showing Up",
+    "problemDescription": "Outlook desktop notifications and sounds are not showing up on Windows 10.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "notifications",
+      "windows 10"
+    ],
+    "steps": [
+      {
+        "title": "Reset Notification Settings",
+        "content": "Disable all notification-oriented settings in Outlook and Windows 10, then re-enable them. Restart Outlook after making these changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Outlook Profile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a New Profile",
+            "content": "Go to File > Info > Account Settings > Manage Profiles. Add a new profile with the same settings as the existing one and use the new profile."
+          }
+        ]
+      },
+      {
+        "title": "Disable Scheduled Send/Receive",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Scheduled Send/Receive",
+            "content": "Go to the Send/Receive tab, choose Send/Receive Groups, and put a check next to Disable Scheduled Send/Receive."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:25:02.489Z",
+      "updated": "2026-01-04T06:25:02.489Z",
+      "sourceUrl": "https://superuser.com/questions/1421976/outlook-desktop-notifications-not-showing-up",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767507904899-666",
+    "title": "Fix Windows 10 Notifications Not Opening",
+    "problemDescription": "Notifications in Windows 10 Action Center do not open when clicked.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "notifications",
+      "action center"
+    ],
+    "steps": [
+      {
+        "title": "Reset Windows Store Cache",
+        "content": "Open the Command Prompt as an administrator and run the command: wsreset.exe. This will reset the Windows Store cache, which can resolve issues with notifications."
+      },
+      {
+        "title": "Re-register Notification Settings",
+        "content": "Open PowerShell as an administrator and run the following commands one by one: Get-AppxPackage | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register \"$($_.InstallLocation)\\AppXManifest.xml\"}. This will re-register all apps, including the Action Center."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Windows",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > Update & Security > Windows Update and check for updates. Install any available updates, as they may contain fixes for notification issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Create a New User Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a New User",
+            "content": "Go to Settings > Accounts > Family & other users and create a new user account. Log in to the new account and check if the notification issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:25:04.899Z",
+      "updated": "2026-01-04T06:25:04.899Z",
+      "sourceUrl": "https://superuser.com/questions/1376344/notifications-wont-open-when-i-click-on-them-on-windows-10",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767507907810-271",
+    "title": "Fix Outlook Taskbar Notification Badge",
+    "problemDescription": "Outlook taskbar icon does not show notification badge for new emails.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "taskbar",
+      "notification",
+      "badge",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Reset Windows Explorer",
+        "content": "Open Task Manager (Ctrl+Shift+Esc), find 'Windows Explorer' under the 'Processes' tab, right-click and select 'Restart'."
+      },
+      {
+        "title": "Repair Office Installation",
+        "content": "Go to 'Control Panel' > 'Programs' > 'Programs and Features', select 'Microsoft Office', click 'Change', then choose 'Quick Repair' and follow the prompts."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Rebuild Windows Search Index",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Indexing Options",
+            "content": "Press Win + S, type 'Indexing Options', and open it."
+          },
+          {
+            "title": "Rebuild Index",
+            "content": "Click 'Advanced', then 'Rebuild', and follow the prompts."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Recreate Outlook Profile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Mail Setup",
+            "content": "Press Win + R, type 'control mlcfg32.cpl', and press Enter."
+          },
+          {
+            "title": "Show Profiles",
+            "content": "Click 'Show Profiles', then 'Add' to create a new profile and set it as default."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:25:07.810Z",
+      "updated": "2026-01-04T06:25:07.810Z",
+      "sourceUrl": "https://superuser.com/questions/1816903/taskbar-icon-does-not-show-notification-when-new-mail-arrives",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767507909599-758",
+    "title": "Basic Software Troubleshooting",
+    "problemDescription": "You're experiencing software issues and don't know where to start troubleshooting.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "troubleshooting",
+      "software",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Reboot into Safe Mode",
+        "content": "Restart your computer and boot into Safe Mode to disable all non-essential services and drivers."
+      },
+      {
+        "title": "Disable Start-up Entries",
+        "content": "Use Task Manager or System Configuration to disable start-up programs one by one."
+      },
+      {
+        "title": "Enable/Disable Settings",
+        "content": "Systematically enable or disable settings to isolate the issue."
+      },
+      {
+        "title": "Try Default Configuration",
+        "content": "Reset the software or system to its default configuration to rule out custom settings as the cause."
+      },
+      {
+        "title": "Test Assumptions",
+        "content": "Verify each assumption you make about the cause of the problem."
+      },
+      {
+        "title": "Change One Thing at a Time",
+        "content": "Modify only one variable at a time to identify the root cause."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Sysinternals Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Sysinternals Tools",
+            "content": "Visit the Sysinternals website and download the necessary tools."
+          },
+          {
+            "title": "Analyze System",
+            "content": "Use tools like Process Explorer, Autoruns, and Process Monitor to analyze system behavior and identify issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:25:09.599Z",
+      "updated": "2026-01-04T06:25:09.599Z",
+      "sourceUrl": "https://superuser.com/questions/260043/how-do-i-troubleshoot-when-i-have-no-clue-where-to-start",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767507918711-626",
+    "title": "Fix iPhone Camera Accidental Activation",
+    "problemDescription": "iPhone camera activates accidentally when resting your thumb on the control button.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "camera",
+      "accidental activation"
+    ],
+    "steps": [
+      {
+        "title": "Change Camera Control Setting",
+        "content": "Go to Settings, scroll down, and choose Camera. Tap on Camera Control and change it from single click to double click."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Case with a Camera Cover",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Case",
+            "content": "Buy a case that has a cover for the camera button."
+          },
+          {
+            "title": "Install the Case",
+            "content": "Put the case on your iPhone to prevent accidental presses on the camera button."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:25:18.711Z",
+      "updated": "2026-01-04T06:25:18.711Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=aI7fvxc_4ZM",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767507922208-716",
+    "title": "Fix iPhone Issues",
+    "problemDescription": "Common problems with iPhone and their solutions.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "issues",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your iPhone",
+        "content": "Hold down the power button and slide to power off. Wait 30 seconds, then turn it back on."
+      },
+      {
+        "title": "Update iOS",
+        "content": "Go to Settings > General > Software Update. Install any available updates."
+      },
+      {
+        "title": "Reset All Settings",
+        "content": "Go to Settings > General > Reset > Reset All Settings. This won't delete your data but will reset settings to default."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restore iPhone via iTunes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect to iTunes",
+            "content": "Connect your iPhone to your computer and open iTunes."
+          },
+          {
+            "title": "Restore iPhone",
+            "content": "Click on the iPhone icon in iTunes, then click 'Restore iPhone'. Follow the on-screen instructions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:25:22.208Z",
+      "updated": "2026-01-04T06:25:22.208Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=Ztc0HMpOep4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767507927223-605",
+    "title": "Troubleshoot iPhone Issues",
+    "problemDescription": "General troubleshooting guide for any iPhone issue.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "troubleshooting",
+      "issues"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your iPhone",
+        "content": "Press and hold the power button until the 'slide to power off' option appears. Slide to power off, then wait for 30 seconds before pressing the power button to turn it back on."
+      },
+      {
+        "title": "Force Restart",
+        "content": "If the issue persists, perform a force restart. For iPhone 8 and later, quickly press and release the Volume Up button, then the Volume Down button, and finally press and hold the Side button until the Apple logo appears."
+      },
+      {
+        "title": "Update iOS",
+        "content": "Go to Settings > General > Software Update. If an update is available, tap 'Download and Install'."
+      },
+      {
+        "title": "Reset All Settings",
+        "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset All Settings. This will not delete your data but will reset settings to default."
+      },
+      {
+        "title": "Restore iPhone",
+        "content": "If all else fails, you may need to restore your iPhone. Connect it to a computer with iTunes or Finder, then follow the prompts to restore the device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for App Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Close Background Apps",
+            "content": "Double-click the Home button (or swipe up from the bottom of the screen and pause for iPhone X and later) and swipe up on the apps to close them."
+          },
+          {
+            "title": "Update Apps",
+            "content": "Go to the App Store, tap your profile picture, and update any available apps."
+          },
+          {
+            "title": "Reinstall Problematic Apps",
+            "content": "Delete the app causing issues and reinstall it from the App Store."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:25:27.223Z",
+      "updated": "2026-01-04T06:25:27.223Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=Zmc6PPUoZqg",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767507929968-345",
+    "title": "Fix iPhone Activation Issue",
+    "problemDescription": "iPhone X or later cannot be activated due to baseband CPU issues.",
+    "category": "ios",
+    "difficulty": "Hard",
+    "keywords": [
+      "iphone",
+      "activation",
+      "baseband",
+      "cpu"
+    ],
+    "steps": [
+      {
+        "title": "Check Baseband CPU",
+        "content": "Use specialized diagnostic tools to check the baseband CPU for any hardware issues."
+      },
+      {
+        "title": "Replace Faulty Components",
+        "content": "If the baseband CPU is faulty, replace it with a new one. Ensure the replacement is compatible with your iPhone model."
+      },
+      {
+        "title": "Restore iOS",
+        "content": "After replacing the baseband CPU, restore the iOS using iTunes or Finder to ensure the device is activated properly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Software Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force Restart",
+            "content": "Perform a force restart by pressing and quickly releasing the Volume Up button, then the Volume Down button, and finally holding the Side button until the Apple logo appears."
+          },
+          {
+            "title": "Update iOS",
+            "content": "Ensure your iPhone is running the latest version of iOS. Go to Settings > General > Software Update and install any available updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:25:29.968Z",
+      "updated": "2026-01-04T06:25:29.968Z",
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLvg5nI9Nr6whmdXlAMB3XAt4fCW8WhkRf",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767507936714-917",
+    "title": "Fix Microsoft Teams Error 80080300",
+    "problemDescription": "Microsoft Teams error 80080300 prevents the app from running on Windows 11 or 10.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "microsoft teams",
+      "error 80080300",
+      "windows 11",
+      "windows 10"
+    ],
+    "steps": [
+      {
+        "title": "Run Teams in Compatibility Mode",
+        "content": "Navigate to the Microsoft Teams installation directory: `C:\\Users\\<user folder>\\AppData\\Local\\Microsoft\\WindowsApps\\MicrosoftTeams_8wekyb3d8bbwe`. Right-click on the Microsoft Teams executable, select 'Properties', go to the 'Compatibility' tab, and check the box for 'Run this program in compatibility mode for'. Choose an earlier version of Windows (e.g., Windows 10) and apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Microsoft Teams",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Microsoft Teams",
+            "content": "Go to the Control Panel, navigate to 'Programs and Features', find Microsoft Teams in the list, and click 'Uninstall'."
+          },
+          {
+            "title": "Reinstall Microsoft Teams",
+            "content": "Download the latest version of Microsoft Teams from the official website and install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:25:36.714Z",
+      "updated": "2026-01-04T06:25:36.714Z",
+      "sourceUrl": "https://www.makeuseof.com/how-to-fix-microsoft-teams-error-80080300-windows-11/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767507951370-904",
+    "title": "Fix Microsoft Teams caa70004 Error",
+    "problemDescription": "Microsoft Teams displays error caa70004 due to compatibility issues with Windows updates.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "microsoft teams",
+      "error caa70004",
+      "windows compatibility"
+    ],
+    "steps": [
+      {
+        "title": "Run Teams in Compatibility Mode",
+        "content": "Right-click on the Microsoft Teams.exe file, select 'Properties', go to the 'Compatibility' tab, check 'Run this program in compatibility mode for', and select 'Windows 8'. Click 'Apply' and then 'OK'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Microsoft Teams",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Teams",
+            "content": "Go to 'Settings' > 'Apps & Features', find Microsoft Teams, and click 'Uninstall'."
+          },
+          {
+            "title": "Reinstall Teams",
+            "content": "Visit the Microsoft Teams store page, click 'Get in Store', and select 'Install'."
+          }
+        ]
+      },
+      {
+        "title": "Use Program Compatibility Troubleshooter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Troubleshooter",
+            "content": "Search for 'Troubleshoot' in the Windows search bar, select 'Additional troubleshooters', and run the 'Program Compatibility Troubleshooter'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T06:25:51.370Z",
+      "updated": "2026-01-04T06:25:51.370Z",
+      "sourceUrl": "https://www.makeuseof.com/microsoft-teams-caa70004-error-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
