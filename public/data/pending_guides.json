@@ -10143,5 +10143,1082 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767504141843-884",
+    "title": "Fix Instagram Videos on Chromium",
+    "problemDescription": "Instagram videos won't play on Chromium but work on Firefox and other platforms.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "chromium",
+      "video",
+      "ubuntu"
+    ],
+    "steps": [
+      {
+        "title": "Install Chromium Codecs FFmpeg Extra",
+        "content": "Open a terminal and run the following command to install the necessary codecs: `sudo apt install chromium-codecs-ffmpeg-extra`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall PepperFlash",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall PepperFlash",
+            "content": "If the first method doesn't work, you can try reinstalling PepperFlash by running `sudo apt install pepperflashplugin-nonfree` in the terminal."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T05:22:21.843Z",
+      "updated": "2026-01-04T05:22:21.843Z",
+      "sourceUrl": "https://askubuntu.com/questions/949232/cant-play-instagram-videos-on-chromium",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767504147003-177",
+    "title": "Fix Locale Issue on Ubuntu",
+    "problemDescription": "Locale settings are not correctly applied, causing display or input issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "locale",
+      "ubuntu",
+      "settings",
+      "language"
+    ],
+    "steps": [
+      {
+        "title": "Check Current Locale Settings",
+        "content": "Run the `locale` command to list the current locale settings for your user account."
+      },
+      {
+        "title": "Edit .bash_profile",
+        "content": "Open the `~/.bash_profile` file in a text editor. If the file does not exist, create it."
+      },
+      {
+        "title": "Add Locale Settings",
+        "content": "Add the following lines to the file to set the desired locale settings:\n\n```bash\nexport LANGUAGE=en_US.UTF-8\nexport LANG=en_US.UTF-8\nexport LC_ALL=en_US.UTF-8\n```"
+      },
+      {
+        "title": "Save and Apply Changes",
+        "content": "Save the file and run the following command to apply the changes:\n\n```bash\nsource ~/.bash_profile\n```"
+      },
+      {
+        "title": "Verify Changes",
+        "content": "Run the `locale` command again to verify that the changes have been applied."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Edit /etc/profile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit /etc/profile",
+            "content": "Open the `/etc/profile` file in a text editor with root privileges."
+          },
+          {
+            "title": "Add Locale Settings",
+            "content": "Add the same lines as in the previous method to the file."
+          },
+          {
+            "title": "Save and Apply Changes",
+            "content": "Save the file and run the following command to apply the changes:\n\n```bash\nsource /etc/profile\n```"
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disconnect/Reconnect SSH",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disconnect SSH",
+            "content": "Disconnect your SSH session."
+          },
+          {
+            "title": "Reconnect SSH",
+            "content": "Reconnect to the SSH session to see if the changes are visible."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T05:22:27.003Z",
+      "updated": "2026-01-04T05:22:27.003Z",
+      "sourceUrl": "https://askubuntu.com/questions/162391/how-do-i-fix-my-locale-issue",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767504152171-813",
+    "title": "Fix Broken Packages in Ubuntu",
+    "problemDescription": "Unable to correct problems due to held broken packages in Ubuntu.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "broken packages",
+      "aptitude",
+      "dependencies"
+    ],
+    "steps": [
+      {
+        "title": "Install aptitude",
+        "content": "Run the following commands to install aptitude, a more powerful package manager: `sudo apt update && sudo apt install aptitude`."
+      },
+      {
+        "title": "Fix broken packages",
+        "content": "Use aptitude to fix broken packages by running: `sudo aptitude -f install`. This will suggest resolving conflicting dependencies and broken packages."
+      },
+      {
+        "title": "Install the correct package version",
+        "content": "If there are specific package version conflicts, install the correct version using: `sudo apt install <package>=<version>`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Force install package",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force install",
+            "content": "Use the following command to force install a package: `sudo apt -f install`."
+          }
+        ]
+      },
+      {
+        "title": "Add a custom PPA",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Add PPA",
+            "content": "If the package is not available in the default repositories, add a custom PPA using: `sudo add-apt-repository <ppa>`."
+          },
+          {
+            "title": "Search for PPA",
+            "content": "Search online for the package and version to find a suitable PPA."
+          }
+        ]
+      },
+      {
+        "title": "Remove a package",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purge package",
+            "content": "If the package is causing issues, remove it using: `sudo apt purge <package>`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T05:22:32.171Z",
+      "updated": "2026-01-04T05:22:32.171Z",
+      "sourceUrl": "https://askubuntu.com/questions/223237/unable-to-correct-problems-you-have-held-broken-packages",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767504158521-729",
+    "title": "Fix 'The system is running in low-graphics mode' Error",
+    "problemDescription": "The system is running in low-graphics mode error occurs during boot, indicating graphics issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "low-graphics",
+      "boot",
+      "graphics mode",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Step 1: Boot into Recovery Mode",
+        "content": "Restart your computer and hold down the Shift key (or press Esc on some systems) to access the GRUB menu. Select 'Advanced options for Ubuntu' and then choose 'Recovery mode'."
+      },
+      {
+        "title": "Step 2: Drop to Root Shell",
+        "content": "In Recovery Mode, select 'Drop to root shell prompt'."
+      },
+      {
+        "title": "Step 3: Remount Filesystem",
+        "content": "Remount the filesystem as read-write by typing: mount -o remount,rw /"
+      },
+      {
+        "title": "Step 4: Reconfigure Xorg",
+        "content": "Reconfigure Xorg by typing: dpkg-reconfigure xserver-xorg"
+      },
+      {
+        "title": "Step 5: Reinstall Video Drivers",
+        "content": "Reinstall the video drivers by typing: apt-get install --reinstall xserver-xorg-video-intel (or the appropriate driver for your graphics card)."
+      },
+      {
+        "title": "Step 6: Update System",
+        "content": "Update the system by typing: apt-get update && apt-get upgrade."
+      },
+      {
+        "title": "Step 7: Reboot",
+        "content": "Reboot the system by typing: reboot."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Nomodeset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Step 1: Edit GRUB Configuration",
+            "content": "Boot into Recovery Mode and select 'Drop to root shell prompt'."
+          },
+          {
+            "title": "Step 2: Edit GRUB Configuration",
+            "content": "Edit the GRUB configuration file by typing: nano /etc/default/grub."
+          },
+          {
+            "title": "Step 3: Add Nomodeset",
+            "content": "Find the line starting with GRUB_CMDLINE_LINUX and add nomodeset to the end of the line."
+          },
+          {
+            "title": "Step 4: Update GRUB",
+            "content": "Update GRUB by typing: update-grub."
+          },
+          {
+            "title": "Step 5: Reboot",
+            "content": "Reboot the system by typing: reboot."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T05:22:38.521Z",
+      "updated": "2026-01-04T05:22:38.521Z",
+      "sourceUrl": "https://askubuntu.com/questions/141606/how-to-fix-the-system-is-running-in-low-graphics-mode-error",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767504163285-244",
+    "title": "Fix 'sudo: unable to resolve host (none)'",
+    "problemDescription": "Error message 'sudo: unable to resolve host (none)' appears when using sudo commands.",
+    "category": "linux",
+    "difficulty": "Easy",
+    "keywords": [
+      "sudo",
+      "host",
+      "ubuntu",
+      "linux",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Edit the /etc/hosts file",
+        "content": "Open the /etc/hosts file using a text editor with sudo privileges. For example, use the command 'sudo nano /etc/hosts'."
+      },
+      {
+        "title": "Add the correct host entry",
+        "content": "Add the following line to the file: '127.0.0.1 localhost.localdomain localhost 127.0.1.1 ubuntu'. Make sure to replace 'ubuntu' with your actual hostname if it's different."
+      },
+      {
+        "title": "Save and exit",
+        "content": "Save the changes and exit the text editor. In nano, you can do this by pressing Ctrl+O to save, then Ctrl+X to exit."
+      },
+      {
+        "title": "Reboot your computer",
+        "content": "Reboot your computer to apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Edit /etc/hosts and /etc/hostname",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit the /etc/hosts file",
+            "content": "Open the /etc/hosts file using a text editor with sudo privileges. For example, use the command 'sudo vi /etc/hosts'."
+          },
+          {
+            "title": "Modify the top part of the file",
+            "content": "Edit the top part of the file to look like this: '127.0.0.1 localhost 127.0.1.1 localhost myhostname'. Replace 'myhostname' with your actual hostname."
+          },
+          {
+            "title": "Edit the /etc/hostname file",
+            "content": "Open the /etc/hostname file using a text editor with sudo privileges. For example, use the command 'sudo vi /etc/hostname'."
+          },
+          {
+            "title": "Set the correct hostname",
+            "content": "Ensure the file contains only your hostname, e.g., 'myhostname'."
+          },
+          {
+            "title": "Save and exit",
+            "content": "Save the changes and exit the text editor."
+          },
+          {
+            "title": "Reboot your computer",
+            "content": "Reboot your computer to apply the changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T05:22:43.285Z",
+      "updated": "2026-01-04T05:22:43.285Z",
+      "sourceUrl": "https://askubuntu.com/questions/59458/error-message-sudo-unable-to-resolve-host-none",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767504170080-379",
+    "title": "Fix iPhone Performance Issues",
+    "problemDescription": "iPhone is slow, freezing, or having Wi-Fi connectivity problems.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "performance",
+      "freezing",
+      "wifi",
+      "slow"
+    ],
+    "steps": [
+      {
+        "title": "Force Restart Your iPhone",
+        "content": "Perform a force restart based on your iPhone model. This can resolve many common issues."
+      },
+      {
+        "title": "Check iPhone Storage",
+        "content": "Go to Settings > General > iPhone Storage. Review what's taking up space and follow the recommended actions to free up storage."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update iOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > General > Software Update. Install any available updates to ensure your iPhone is running the latest software."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T05:22:50.080Z",
+      "updated": "2026-01-04T05:22:50.080Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/having-iphone-issues-heres-how-to-fix-it-yourself/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767504176410-671",
+    "title": "Fix iPhone Stuck in SOS Mode",
+    "problemDescription": "Your iPhone is stuck in SOS mode and cannot connect to a cellular network.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "sos mode",
+      "cellular network",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your iPhone",
+        "content": "Perform a restart to see if the issue resolves."
+      },
+      {
+        "title": "Toggle Cellular Data",
+        "content": "Turn off Cellular Data and then turn it back on."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Go to Settings > General > Software Update and install any available updates."
+      },
+      {
+        "title": "Enable Data Roaming (if traveling internationally)",
+        "content": "Go to Settings > Cellular > your phone number and toggle on Data Roaming."
+      },
+      {
+        "title": "Contact Your Carrier",
+        "content": "If the issue persists, contact your phone carrier to check for outages or account issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open the Settings app on your iPhone."
+          },
+          {
+            "title": "Reset Network Settings",
+            "content": "Tap on General > Transfer or Reset iPhone > Reset > Reset Network Settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T05:22:56.410Z",
+      "updated": "2026-01-04T05:22:56.410Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/how-to-fix-an-iphone-stuck-in-sos-mode/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767504188120-486",
+    "title": "Fix Microsoft Teams Crashing on Windows",
+    "problemDescription": "Microsoft Teams keeps crashing on Windows 11 or 10.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "microsoft",
+      "teams",
+      "crashing",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "End the Microsoft Teams Process in Task Manager",
+        "content": "Press Win + R to open the Run dialog. Type taskmgr and click OK to open the Task Manager. In the Process tab, look for any tasks associated with Microsoft Teams. Select the process and click End task. Close Task Manager and launch the Microsoft Teams app to check if the app works without crashing."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update the Display Adapter Driver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update the Display Adapter Driver",
+            "content": "Incompatible Intel HD graphics drivers can cause Microsoft Teams to crash. To update the display adapter driver, open Device Manager, find the display adapter, right-click on it, and select Update driver."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T05:23:08.120Z",
+      "updated": "2026-01-04T05:23:08.120Z",
+      "sourceUrl": "https://www.makeuseof.com/microsoft-teams-keeps-crashing-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767504191781-129",
+    "title": "Fix Microsoft Teams Repeated Sign-In Prompts",
+    "problemDescription": "Microsoft Teams keeps asking you to sign in repeatedly.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "microsoft",
+      "teams",
+      "sign-in",
+      "cache",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Clear Microsoft Teams Cache",
+        "content": "Close Microsoft Teams completely. Navigate to the Teams cache folder located at %AppData%\\Microsoft\\Teams. Delete all files and folders within this directory. Restart Microsoft Teams."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Microsoft Teams",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Launch Microsoft Teams. Click on your profile icon and select 'Settings'. Go to 'About Teams' and check for updates. Install any available updates."
+          }
+        ]
+      },
+      {
+        "title": "Remove App Credentials",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Credentials",
+            "content": "Go to Windows Settings > Accounts > Access work or school. Select your Microsoft Teams account and click 'Remove'. Restart Teams and sign in again."
+          }
+        ]
+      },
+      {
+        "title": "Restart Microsoft Teams",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart the App",
+            "content": "Close Microsoft Teams completely and reopen it. This may resolve the issue as the app rebuilds its cache."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T05:23:11.781Z",
+      "updated": "2026-01-04T05:23:11.781Z",
+      "sourceUrl": "https://www.makeuseof.com/microsoft-teams-keeps-asking-sign-in-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767504194560-477",
+    "title": "Fix Screen Sharing in Microsoft Teams",
+    "problemDescription": "Screen sharing not working in Microsoft Teams.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Teams",
+      "screen sharing",
+      "app error"
+    ],
+    "steps": [
+      {
+        "title": "Clear Microsoft Teams Cache",
+        "content": "Close Microsoft Teams. Open File Explorer and navigate to `%appdata%\\Microsoft\\teams`. Delete all files in this folder. Restart Microsoft Teams and check if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Microsoft Teams",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Open Microsoft Teams. Click the menu icon at the top and select Settings. Switch to the About Teams tab and check if a newer version is available. If an update is available, install it."
+          }
+        ]
+      },
+      {
+        "title": "Reinstall Microsoft Teams",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Microsoft Teams",
+            "content": "Go to Control Panel > Programs > Programs and Features. Find Microsoft Teams in the list, right-click on it, and select Uninstall."
+          },
+          {
+            "title": "Reinstall Microsoft Teams",
+            "content": "Download the latest version of Microsoft Teams from the official website and install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T05:23:14.560Z",
+      "updated": "2026-01-04T05:23:14.560Z",
+      "sourceUrl": "https://www.makeuseof.com/screen-sharing-not-working-in-microsoft-teams/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767504197745-1",
+    "title": "Fix Microsoft Teams Error Code 503 on Windows 11",
+    "problemDescription": "Microsoft Teams displays error code 503 due to various issues, including administrative rights, corrupted cache, or internet connectivity problems.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "error code 503",
+      "Windows 11",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Restart Microsoft Teams",
+        "content": "Close and reopen Microsoft Teams to see if the error resolves."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Visit an internet speed checking website to ensure your connection is stable and meets the required speed."
+      },
+      {
+        "title": "Run Microsoft Teams with Administrative Rights",
+        "content": "Right-click on the Microsoft Teams shortcut and select 'Run as administrator'. Reboot the system and check if the problem persists."
+      },
+      {
+        "title": "Reset Microsoft Teams Cache",
+        "content": "Close Microsoft Teams, navigate to the cache folder (usually located at %AppData%\\Microsoft\\Teams), and delete all files within it. Restart Microsoft Teams."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Windows Credentials",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Windows Credential Manager",
+            "content": "Press Win + S, type 'Credential Manager', and open it."
+          },
+          {
+            "title": "Remove Microsoft Teams Credentials",
+            "content": "Under 'Windows Credentials', find any entries related to Microsoft Teams and remove them."
+          },
+          {
+            "title": "Restart Microsoft Teams",
+            "content": "Open Microsoft Teams and sign in again to see if the error is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T05:23:17.745Z",
+      "updated": "2026-01-04T05:23:17.745Z",
+      "sourceUrl": "https://www.makeuseof.com/windows-11-microsoft-teams-error-503/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767504208955-812",
+    "title": "Fix Outlook Synchronization Issues",
+    "problemDescription": "Outlook is not synchronizing with the email server, causing delayed emails or missing calendar updates.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "synchronization",
+      "email",
+      "server"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure you have a stable internet connection. Verify that your device is connected to the internet and the connection is active."
+      },
+      {
+        "title": "Reset Outlook Profile",
+        "content": "Go to Control Panel > Mail > Show Profiles > Add. Create a new profile and set it as default. This can resolve profile-related synchronization issues."
+      },
+      {
+        "title": "Clear Outlook Cache",
+        "content": "Close Outlook. Navigate to the cache folder (usually located in C:\\Users\\[YourUsername]\\AppData\\Local\\Microsoft\\Outlook). Delete the contents of the cache folder."
+      },
+      {
+        "title": "Verify Server Settings",
+        "content": "Check your account settings in Outlook. Ensure that the incoming and outgoing server settings are correct. For IMAP accounts, verify the server protocols and ports."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Advanced Troubleshooting Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Microsoft Support and Recovery Assistant",
+            "content": "Download and run the Microsoft Support and Recovery Assistant for Office 365. This tool can diagnose and fix synchronization issues automatically."
+          },
+          {
+            "title": "Check Server Status",
+            "content": "Visit the email service provider's website to check if there are any ongoing server issues or maintenance that might be affecting synchronization."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T05:23:28.955Z",
+      "updated": "2026-01-04T05:23:28.955Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=9AUhdUqx4N8",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767504211768-909",
+    "title": "Fix Outlook Not Opening",
+    "problemDescription": "Microsoft Outlook application fails to open or launch.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "outlook",
+      "app-error",
+      "microsoft",
+      "office"
+    ],
+    "steps": [
+      {
+        "title": "Step 1: Restart Your Computer",
+        "content": "Restart your computer to ensure any temporary glitches are resolved."
+      },
+      {
+        "title": "Step 2: Run Outlook in Safe Mode",
+        "content": "Press the Windows key + R, type 'outlook /safe', and press Enter. If Outlook opens in Safe Mode, a problematic add-in may be causing the issue."
+      },
+      {
+        "title": "Step 3: Repair Office Installation",
+        "content": "Go to Control Panel > Programs > Programs and Features. Select Microsoft Office, click on 'Change', and choose 'Quick Repair' or 'Online Repair'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Outlook",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Step 1: Open Microsoft Store",
+            "content": "Open the Microsoft Store application."
+          },
+          {
+            "title": "Step 2: Check for Updates",
+            "content": "Go to the 'Downloads and Updates' section and check for any available updates for Outlook."
+          },
+          {
+            "title": "Step 3: Install Updates",
+            "content": "Install any available updates and restart your computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T05:23:31.768Z",
+      "updated": "2026-01-04T05:23:31.768Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=vRFRgovVQ4A",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767504219299-360",
+    "title": "Troubleshoot Outlook 365",
+    "problemDescription": "Outlook 365 not functioning properly or experiencing errors.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Outlook 365",
+      "troubleshooting",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure the device has a stable internet connection."
+      },
+      {
+        "title": "Restart Outlook",
+        "content": "Close and reopen Outlook to see if the issue persists."
+      },
+      {
+        "title": "Update Outlook",
+        "content": "Check for and install any available updates for Outlook."
+      },
+      {
+        "title": "Repair Office Installation",
+        "content": "Use the Office Repair tool to fix any corrupted files."
+      },
+      {
+        "title": "Check Add-ins",
+        "content": "Disable add-ins one by one to identify if any are causing the issue."
+      },
+      {
+        "title": "Create a New Profile",
+        "content": "Create a new Outlook profile to see if the problem is profile-specific."
+      },
+      {
+        "title": "Reinstall Outlook",
+        "content": "Uninstall and reinstall Outlook as a last resort."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Start Outlook in Safe Mode",
+            "content": "Hold the Ctrl key while starting Outlook to open it in Safe Mode."
+          },
+          {
+            "title": "Test Functionality",
+            "content": "Check if the issue persists in Safe Mode. If not, the problem is likely caused by an add-in."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T05:23:39.299Z",
+      "updated": "2026-01-04T05:23:39.299Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=BTqzY8r-fnw",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767504225516-371",
+    "title": "Google Pixel Not Detected by ADB Devices",
+    "problemDescription": "Google Pixel device is not being recognized by the 'adb devices' command on Ubuntu.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "adb",
+      "Google Pixel",
+      "Ubuntu",
+      "USB mode"
+    ],
+    "steps": [
+      {
+        "title": "Change USB Mode on Google Pixel",
+        "content": "Pull down the notification menu on your Google Pixel and change the USB mode from 'Charge this device' to 'Transfer files'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check and Set Up Udev Rules",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up Udev Rules",
+            "content": "Ensure that you have set up the appropriate udev rules for your Google Pixel device on your Ubuntu system."
+          },
+          {
+            "title": "Restart ADB Server",
+            "content": "Run the commands 'adb kill-server' followed by 'adb start-server' to restart the ADB server."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Re-enable Developer Options",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Re-enable Developer Options",
+            "content": "Go to the settings section of your Google Pixel and re-enable the developer options."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Contact Google Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Google Support",
+            "content": "If the above methods do not work, contact Google directly for more explicit instructions on getting the phone to interact with Ubuntu."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T05:23:45.516Z",
+      "updated": "2026-01-04T05:23:45.516Z",
+      "sourceUrl": "https://askubuntu.com/questions/868122/google-pixel-not-picked-up-by-adb-devices",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767504231090-550",
+    "title": "Fix Google Pixel 4 MTP Connection Issues on Ubuntu",
+    "problemDescription": "Google Pixel 4 not mounting properly on Ubuntu, showing greyed-out icon and MTP initialization errors.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "mtp",
+      "ubuntu",
+      "pixel 4",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Install Required Packages",
+        "content": "Ensure you have the necessary packages installed. Open a terminal and run: `sudo apt-get install mtp-tools mtpfs jmtpfs`"
+      },
+      {
+        "title": "Check USB Configuration",
+        "content": "Make sure your phone is set to File Transfer mode. Plug in the USB cable and select 'File Transfer' or 'Android Auto' on your Pixel 4."
+      },
+      {
+        "title": "Create a Mount Point",
+        "content": "Create a directory where you will mount the phone's storage. For example: `mkdir ~/Pixel4`"
+      },
+      {
+        "title": "Mount the Device",
+        "content": "Try to mount the device using mtpfs: `mtpfs ~/Pixel4`. If this fails, try using jmtpfs: `jmtpfs ~/Pixel4`."
+      },
+      {
+        "title": "Check for Errors",
+        "content": "If you encounter errors, check the system logs for more details: `dmesg | tail`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different USB Port or Cable",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try a Different USB Port",
+            "content": "Sometimes, the issue can be with the USB port. Try using a different USB port on your computer."
+          },
+          {
+            "title": "Use a Different USB Cable",
+            "content": "Ensure the USB cable is not damaged. Try using a different cable to connect your phone."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update MTP Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update MTP Tools",
+            "content": "Ensure you have the latest version of mtp-tools. You can check for updates using your package manager or download the latest version from the official repository."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T05:23:51.090Z",
+      "updated": "2026-01-04T05:23:51.090Z",
+      "sourceUrl": "https://askubuntu.com/questions/1351193/cant-connect-pixel-4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767504236146-35",
+    "title": "Fix Android File Transfer to Ubuntu",
+    "problemDescription": "Unable to transfer files from Android (Pixel 6/7) to Ubuntu via USB.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "ubuntu",
+      "file transfer",
+      "usb",
+      "pixel"
+    ],
+    "steps": [
+      {
+        "title": "Install gmtp Package",
+        "content": "Open a terminal and run the following commands to install the gmtp package: sudo apt update && sudo apt install gmtp."
+      },
+      {
+        "title": "Connect with a Suitable USB-C Cable",
+        "content": "Use a USB-C to USB-C cable designed for fast data transfer. Avoid using USB2-USB-C cables or cables intended solely for charging."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use USB-C to USB-A Cable",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect with USB-C to USB-A Cable",
+            "content": "Try using a USB-C to USB-A cable if USB-C to USB-C does not work."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Cloud Storage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Upload Files to Cloud Storage",
+            "content": "Upload files from your Android device to a cloud storage service like Google Drive and then download them on your Ubuntu machine."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T05:23:56.146Z",
+      "updated": "2026-01-04T05:23:56.146Z",
+      "sourceUrl": "https://askubuntu.com/questions/1378047/file-transfer-from-pixel-6-android-12-to-ubuntu",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767504241925-541",
+    "title": "ADB Device Not Showing in List",
+    "problemDescription": "ADB device list doesn't show connected Android phone.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "adb",
+      "android",
+      "device",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Enable USB Debugging",
+        "content": "On your Android device, go to Settings > About Phone > Tap Build Number 7 times to enable Developer Options. Then, go to Settings > Developer Options > Enable USB Debugging."
+      },
+      {
+        "title": "Connect Device",
+        "content": "Connect your Android device to your computer using a USB cable."
+      },
+      {
+        "title": "Check ADB Devices",
+        "content": "Open a terminal or command prompt and run the command 'adb devices' to check if your device is listed."
+      },
+      {
+        "title": "Install Device Drivers",
+        "content": "If the device is not listed, ensure you have the necessary USB drivers installed on your computer."
+      },
+      {
+        "title": "Restart ADB Server",
+        "content": "If the device is still not listed, restart the ADB server by running the commands 'adb kill-server' followed by 'adb start-server'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Add Vendor ID",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Find Vendor ID",
+            "content": "Find the vendor ID of your device by running 'lsusb' on Linux or checking Device Manager on Windows."
+          },
+          {
+            "title": "Edit ADB Rules",
+            "content": "Edit the ADB rules file (usually located at /etc/udev/rules.d/51-android.rules on Linux) and add a new rule for your vendor ID."
+          },
+          {
+            "title": "Restart ADB Server",
+            "content": "Restart the ADB server and check if the device is now listed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T05:24:01.925Z",
+      "updated": "2026-01-04T05:24:01.925Z",
+      "sourceUrl": "https://askubuntu.com/questions/863587/adb-device-list-doesnt-show-phone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
