@@ -19509,5 +19509,983 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767543502216-483",
+    "title": "Fix Zoom Connectivity Issues",
+    "problemDescription": "Experiencing connectivity issues with Zoom on a MacBook, causing stress during meetings.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "connectivity",
+      "macbook",
+      "meetings"
+    ],
+    "steps": [
+      {
+        "title": "Check Zoom Forums",
+        "content": "Visit Zoom's official forums to see if there are any known issues or solutions related to your problem."
+      },
+      {
+        "title": "Schedule Meetings Earlier",
+        "content": "Try moving your Zoom meetings to earlier in the day, such as mid-morning or lunchtime, as these times may have better connectivity."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Wi-Fi and MacBook",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your MacBook",
+            "content": "Restart your MacBook to resolve any potential software glitches."
+          },
+          {
+            "title": "Check Wi-Fi Connection",
+            "content": "Ensure your Wi-Fi connection is stable and consider restarting your router."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T16:18:22.216Z",
+      "updated": "2026-01-04T16:18:22.216Z",
+      "sourceUrl": "https://discussions.apple.com/thread/251946321",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767543506953-914",
+    "title": "Fix Zoom Freezing on MacBook M1 Pro",
+    "problemDescription": "Zoom freezes and disconnects during conferences on MacBook M1 Pro with macOS 13.3.1.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "freezing",
+      "macbook",
+      "m1 pro",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection Speed",
+        "content": "Use a speed testing app like speedtest.net, fast.com, or any other preferred speed testing app to check your internet connection speed. A slow connection can cause Zoom to freeze or stutter."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Zoom",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Zoom",
+            "content": "Go to the Applications folder, find Zoom, and drag it to the Trash."
+          },
+          {
+            "title": "Empty Trash",
+            "content": "Right-click on the Trash icon and select 'Empty Trash' to completely remove Zoom."
+          },
+          {
+            "title": "Reinstall Zoom",
+            "content": "Download the latest version of Zoom from the official website and install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T16:18:26.953Z",
+      "updated": "2026-01-04T16:18:26.953Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254799458",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767543525646-571",
+    "title": "Windows 10 HDMI Output to TV Not Working",
+    "problemDescription": "Windows 10 PC not displaying output on TV through HDMI after upgrade from Windows 7.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 10",
+      "hdmi",
+      "tv",
+      "display",
+      "upgrade"
+    ],
+    "steps": [
+      {
+        "title": "Update Display Drivers",
+        "content": "Go to Device Manager, expand 'Display adapters', right-click your graphics card, and select 'Update driver'. Choose 'Search automatically for updated driver software'."
+      },
+      {
+        "title": "Check Display Settings",
+        "content": "Right-click on the desktop and select 'Display settings'. Ensure the correct display is selected and set to 'Extend' or 'Duplicate' as needed."
+      },
+      {
+        "title": "Run the Windows Audio Troubleshooter",
+        "content": "Go to Settings > Update & Security > Troubleshoot > Playing Audio > Run the troubleshooter."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Graphics Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Current Drivers",
+            "content": "In Device Manager, right-click your graphics card and select 'Uninstall device'. Check 'Delete the driver software for this device' and confirm."
+          },
+          {
+            "title": "Download and Install Latest Drivers",
+            "content": "Visit the manufacturer's website (e.g., NVIDIA, AMD, Intel) to download and install the latest drivers for your graphics card."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check HDMI Cable and Ports",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test with Another Cable",
+            "content": "Try using a different HDMI cable to ensure the issue is not with the cable itself."
+          },
+          {
+            "title": "Check Ports on Both Devices",
+            "content": "Inspect the HDMI ports on both the PC and TV for any damage or debris. Try using different ports if available."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T16:18:45.646Z",
+      "updated": "2026-01-04T16:18:45.646Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/windows-10-upgrade-un-compatible-with-hdtv-through/f27a16b8-b103-42a6-9e97-a783749ad26d",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767543529820-173",
+    "title": "Fix HDMI Connection After Windows Reset",
+    "problemDescription": "HDMI connection to TV not working after Windows 10 system reset.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "hdmi",
+      "windows 10",
+      "system reset",
+      "tv monitor"
+    ],
+    "steps": [
+      {
+        "title": "Check HDMI Connection",
+        "content": "Ensure the HDMI cable is securely connected to both the laptop and the TV."
+      },
+      {
+        "title": "Restart Devices",
+        "content": "Restart both the laptop and the TV to refresh the connection."
+      },
+      {
+        "title": "Update Display Drivers",
+        "content": "Go to Device Manager, expand 'Display adapters', right-click your graphics card, and select 'Update driver'."
+      },
+      {
+        "title": "Check Display Settings",
+        "content": "Press 'Win + P' to open Project settings and ensure the correct display mode is selected."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Display Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Display Drivers",
+            "content": "In Device Manager, right-click your graphics card and select 'Uninstall device'."
+          },
+          {
+            "title": "Restart Laptop",
+            "content": "Restart your laptop to allow Windows to reinstall the drivers automatically."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Different HDMI Port or Cable",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try Another HDMI Port",
+            "content": "Connect the HDMI cable to a different port on the TV."
+          },
+          {
+            "title": "Use a Different HDMI Cable",
+            "content": "Test with a different HDMI cable to rule out cable issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T16:18:49.820Z",
+      "updated": "2026-01-04T16:18:49.820Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/system-reset-while-using-a-tv-hdmi-as-my-monitor/a37ddabb-1d04-4aa9-94ab-ce27069a1ec1",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767543533075-511",
+    "title": "Fix Touch Screen Driver Not Working",
+    "problemDescription": "Touch screen driver stops working randomly and won't turn on.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "touch screen",
+      "driver",
+      "windows",
+      "not working"
+    ],
+    "steps": [
+      {
+        "title": "Update or Reinstall the Driver",
+        "content": "1. Press `Win + X` and select `Device Manager`. 2. Expand `Human Interface Devices`. 3. Right-click on `HID-compliant touch screen` and select `Update driver`. 4. Choose `Search automatically for updated driver software`. 5. If the issue persists, right-click and select `Uninstall device`, then restart your computer to reinstall the driver automatically."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Run the Windows Hardware Troubleshooter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run the Troubleshooter",
+            "content": "1. Go to `Settings` > `Update & Security` > `Troubleshoot`. 2. Select `Hardware and Devices` and click `Run the troubleshooter`. 3. Follow the on-screen instructions to complete the process."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Windows Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Latest Updates",
+            "content": "1. Go to `Settings` > `Update & Security` > `Windows Update`. 2. Click `Check for updates` and install any available updates. 3. Restart your computer after the updates are installed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T16:18:53.075Z",
+      "updated": "2026-01-04T16:18:53.075Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/touch-screen-driver-used-to-work-randomly-now/73b71dab-bb08-4d58-88b6-88e109547b7c",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767543536668-931",
+    "title": "Fix Windows 8 Screen Resolution on HDTV",
+    "problemDescription": "Windows 8 screen resolution is too small or not recognized when connected to an HDTV via HDMI.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 8",
+      "screen resolution",
+      "HDTV",
+      "HDMI"
+    ],
+    "steps": [
+      {
+        "title": "Update Graphics Drivers",
+        "content": "Download and install the latest graphics drivers from the manufacturer's website."
+      },
+      {
+        "title": "Adjust Display Settings",
+        "content": "Right-click the desktop, select 'Screen Resolution', and choose the recommended resolution for your HDTV."
+      },
+      {
+        "title": "Check HDMI Connection",
+        "content": "Ensure the HDMI cable is securely connected to both the computer and the HDTV."
+      },
+      {
+        "title": "Use Intel HD Graphics Control Panel",
+        "content": "Open the Intel HD Graphics Control Panel, go to 'Display', and adjust the resolution settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Custom Resolution",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Custom Resolution Utility",
+            "content": "Download and install the Custom Resolution Utility (CRU) from the manufacturer's website."
+          },
+          {
+            "title": "Create Custom Resolution",
+            "content": "Use CRU to create a custom resolution that matches your HDTV's native resolution."
+          },
+          {
+            "title": "Apply Custom Resolution",
+            "content": "Restart your computer and select the custom resolution from the display settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T16:18:56.668Z",
+      "updated": "2026-01-04T16:18:56.668Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/windows_8-hardware/windows-8-screen-resolution-problem/60c40962-0cda-4f14-a445-137e76783f25",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767543542666-347",
+    "title": "Fix .epf Certificate Issue on Windows 8",
+    "problemDescription": "Unable to access the US Patent Office website due to an .epf certificate problem on Windows 8.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 8",
+      "certificate",
+      "us patent office",
+      ".epf"
+    ],
+    "steps": [
+      {
+        "title": "Update Root Certificates",
+        "content": "Ensure your Windows 8 system has the latest root certificates installed. Go to 'Control Panel' > 'Clock, Language, and Region' > 'Date and Time' > 'Internet Time' tab > 'Change settings' > 'Update now'."
+      },
+      {
+        "title": "Import the .epf Certificate",
+        "content": "Manually import the .epf certificate into your system. Right-click the .epf file > 'Install Certificate' > follow the prompts to place it in the 'Local Machine' store."
+      },
+      {
+        "title": "Check Certificate Trust Settings",
+        "content": "Verify that the certificate is trusted. Open 'Certificate Manager' (certmgr.msc) > navigate to the 'Trusted Root Certification Authorities' store > ensure the certificate is listed and enabled."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Compatibility Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Browser in Compatibility Mode",
+            "content": "If the issue persists, try running your browser in compatibility mode. Right-click the browser shortcut > 'Properties' > 'Compatibility' tab > check 'Run this program in compatibility mode for' and select an earlier version of Windows."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T16:19:02.666Z",
+      "updated": "2026-01-04T16:19:02.666Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/issues-while-accessing-us-patent-office-web-site/3007aba2-594d-4343-a393-33cfe50e6b8b",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767543551089-596",
+    "title": "Fix Outlook Freezing or Not Responding",
+    "problemDescription": "Outlook freezes or stops responding when opening or sending emails or files.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "freezing",
+      "not responding",
+      "email"
+    ],
+    "steps": [
+      {
+        "title": "Repair Office Installation",
+        "content": "Go to Control Panel > Programs > Programs and Features. Select Microsoft Office, click on Change, and choose Quick Repair. Follow the prompts to complete the repair process."
+      },
+      {
+        "title": "Update Outlook",
+        "content": "Open Outlook, go to File > Office Account > Update Options > Update Now. Install any available updates and restart Outlook."
+      },
+      {
+        "title": "Disable Add-ins",
+        "content": "Open Outlook in Safe Mode by holding the Ctrl key while launching Outlook. If Outlook works fine in Safe Mode, disable add-ins one by one to identify the problematic one. Go to File > Options > Add-ins, select COM Add-ins, and click Go. Uncheck add-ins and restart Outlook."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Create a New Outlook Profile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a New Profile",
+            "content": "Go to Control Panel > Mail > Show Profiles. Click Add, enter a new profile name, and follow the prompts to set up the profile. Set this profile as the default and restart Outlook."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T16:19:11.089Z",
+      "updated": "2026-01-04T16:19:11.089Z",
+      "sourceUrl": "https://onlineoffice365help.quora.com/Via-Microsoft-tech-support-Fix-Common-Outlook-Issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767543555331-25",
+    "title": "Fix Outlook Not Sending/Receiving Emails",
+    "problemDescription": "Outlook desktop app shows an error message and fails to send or receive emails.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "outlook",
+      "email",
+      "error",
+      "send",
+      "receive"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Computer",
+        "content": "Close all applications and restart your computer to resolve potential system issues."
+      },
+      {
+        "title": "Reopen Outlook",
+        "content": "After the restart, open the Outlook application again and check if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Internet Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Internet Connection",
+            "content": "Ensure your computer is connected to the internet."
+          },
+          {
+            "title": "Restart Router",
+            "content": "If needed, restart your router to refresh the connection."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Repair Outlook Profile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Control Panel",
+            "content": "Go to Control Panel > Mail > Show Profiles."
+          },
+          {
+            "title": "Repair Profile",
+            "content": "Select your profile and click 'Repair' to fix any issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T16:19:15.331Z",
+      "updated": "2026-01-04T16:19:15.331Z",
+      "sourceUrl": "https://www.quora.com/Why-does-my-work-mail-on-my-Outlook-desktop-app-show-an-error-message-and-doesnt-send-or-receive-mails-anymore-How-can-I-fix-that",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767543560321-352",
+    "title": "Fix Outlook Not Downloading Images",
+    "problemDescription": "Outlook stopped downloading images in emails after a recent update.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "images",
+      "emails",
+      "download"
+    ],
+    "steps": [
+      {
+        "title": "Close All Office Applications",
+        "content": "Ensure all Microsoft Office applications are closed."
+      },
+      {
+        "title": "Open Control Panel",
+        "content": "Go to Start > Control Panel."
+      },
+      {
+        "title": "Select Category View",
+        "content": "In the Control Panel, select Category View."
+      },
+      {
+        "title": "Uninstall a Program",
+        "content": "In the Programs section, select Uninstall a Program."
+      },
+      {
+        "title": "Repair Office Installation",
+        "content": "Find Microsoft Office in the list of installed programs, select it, and choose the Repair option."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Email Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Outlook Settings",
+            "content": "Go to File > Options > Trust Center > Trust Center Settings > Automatic Download."
+          },
+          {
+            "title": "Enable Automatic Download",
+            "content": "Ensure the option to automatically download images is enabled."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T16:19:20.321Z",
+      "updated": "2026-01-04T16:19:20.321Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-my-Outlook-problem-All-of-a-sudden-on-or-about-9-16-2021-or-so-it-stopped-downloading-images-within-my-emails-Ive-updated-my-OS-and-apps-Microsoft-help-suggested-I-click-on-a-non-existent-options-icon",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767543567569-156",
+    "title": "Fix Outlook Not Sending or Receiving Emails",
+    "problemDescription": "Outlook is not sending or receiving any emails.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "emails",
+      "sending",
+      "receiving"
+    ],
+    "steps": [
+      {
+        "title": "Repair Office Installation",
+        "content": "Close all Office applications. Go to Start > Control Panel. Select Category View. In the Programs section, select Uninstall a Program. Find Microsoft Office in the list, right-click on it, and select Change. Choose Quick Repair and follow the on-screen instructions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Account Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Email Account Settings",
+            "content": "Open Outlook and go to File > Account Settings > Account Settings. Select your email account and click Change. Verify the incoming and outgoing server settings, and ensure the correct port numbers are used."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update Outlook",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Outlook",
+            "content": "Go to File > Office Account > Update Options > Update Now. Follow the prompts to install any available updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T16:19:27.569Z",
+      "updated": "2026-01-04T16:19:27.569Z",
+      "sourceUrl": "https://www.quora.com/I-have-an-issue-with-Outlook-where-it-s-not-sending-or-receiving-any-emails-What-are-the-solutions",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767543576837-525",
+    "title": "Disable Zooming on Text Input Focus",
+    "problemDescription": "Zooming occurs when focusing on text input fields on Android devices.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "zoom",
+      "text input",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Display Settings",
+        "content": "Go to your device's display settings and adjust the display size to contain more content, which can prevent auto-zoom."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows Manipulator App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Windows Manipulator",
+            "content": "Install the Windows Manipulator app from the Google Play Store."
+          },
+          {
+            "title": "Set DPI Lower",
+            "content": "Open the app and set the DPI significantly lower to reduce zooming."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Firefox and Adjust Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Firefox",
+            "content": "Launch the Firefox browser on your Android device."
+          },
+          {
+            "title": "Access about:config",
+            "content": "Type `about:config` in the address bar and press Enter."
+          },
+          {
+            "title": "Disable Auto-Zoom",
+            "content": "Search for `formhelper.autozoom` and set it to `false`."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Use Alternative Browsers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install FlashFox Pro",
+            "content": "Install the FlashFox Pro browser from the Google Play Store."
+          },
+          {
+            "title": "Use FlashFox Pro",
+            "content": "Use FlashFox Pro for browsing, as it does not zoom on focus frequently."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T16:19:36.837Z",
+      "updated": "2026-01-04T16:19:36.837Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/86238/how-do-i-disable-zooming-on-text-input-focus",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767543582459-512",
+    "title": "Enable Audio in Zoom for Android TV",
+    "problemDescription": "Zoom audio not working on Android TV due to missing microphone.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "audio",
+      "android tv",
+      "microphone"
+    ],
+    "steps": [
+      {
+        "title": "Connect a Microphone",
+        "content": "Plug in a USB or Bluetooth microphone to your Android TV Box. A Logitech H310 headset with microphone has been confirmed to work."
+      },
+      {
+        "title": "Restart Zoom",
+        "content": "After connecting the microphone, restart the Zoom app to enable audio communication."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-04T16:19:42.459Z",
+      "updated": "2026-01-04T16:19:42.459Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/228841/how-to-solve-the-audio-problem-in-zoom-cloud-meeting-for-android-tv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767543590344-9",
+    "title": "Fix Microphone Not Working with Speaker On",
+    "problemDescription": "Microphone stops working when speaker is turned on during calls or video calls.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "microphone",
+      "speaker",
+      "android",
+      "zoom",
+      "whatsapp"
+    ],
+    "steps": [
+      {
+        "title": "Check App Permissions",
+        "content": "Ensure the app has permission to use the microphone and speaker. Go to Settings > Apps > Select the app > Permissions and enable both Microphone and Speaker."
+      },
+      {
+        "title": "Restart the Device",
+        "content": "Restart your Android device to reset any temporary software glitches that might be causing the issue."
+      },
+      {
+        "title": "Update the App",
+        "content": "Check for updates for the app causing the issue (e.g., Zoom, WhatsApp) in the Google Play Store and install any available updates."
+      },
+      {
+        "title": "Clear App Cache",
+        "content": "Go to Settings > Apps > Select the app > Storage > Clear Cache and Clear Data. This can resolve issues caused by corrupted app data."
+      },
+      {
+        "title": "Test with Different Apps",
+        "content": "Try using different apps to see if the issue is specific to one app or occurs across multiple apps. This can help identify if the problem is with the app or the device settings."
+      },
+      {
+        "title": "Check for System Updates",
+        "content": "Go to Settings > System > System Update and install any available system updates. This can resolve bugs and improve device performance."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "If the issue persists, consider performing a factory reset. Backup your data first, then go to Settings > System > Reset Options > Erase All Data (Factory Reset)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Microphone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect an External Microphone",
+            "content": "If possible, connect an external microphone to your device and test if the issue persists. This can help determine if the problem is with the built-in microphone or the device settings."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Hardware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect the Microphone",
+            "content": "Check the microphone for any physical damage or blockages. Clean the microphone gently with a soft brush or compressed air."
+          },
+          {
+            "title": "Test in Safe Mode",
+            "content": "Restart your device in Safe Mode to see if the issue is caused by a third-party app. To enter Safe Mode, press and hold the Power button, then long-press the Power Off option and tap OK."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T16:19:50.344Z",
+      "updated": "2026-01-04T16:19:50.344Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/232000/microphone-does-not-work-when-speaker-is-on",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767543600819-410",
+    "title": "Fix Discord GIFs Not Playing on Android 12",
+    "problemDescription": "GIFs in Discord are not automatically playing on Android 12.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "discord",
+      "gifs",
+      "autoplay"
+    ],
+    "steps": [
+      {
+        "title": "Enable Auto-Play GIFs",
+        "content": "Go to Discord. Select Settings, then choose Accessibility. Select Automatically play GIFs."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-04T16:20:00.819Z",
+      "updated": "2026-01-04T16:20:00.819Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-android-12-problems-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767543604584-371",
+    "title": "Simplify Video Calls with Discord",
+    "problemDescription": "Setting up and managing video calls can be frustrating with traditional apps like Skype or Zoom.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "video chat",
+      "simplicity",
+      "security",
+      "client-server"
+    ],
+    "steps": [
+      {
+        "title": "Use Discord for Video Calls",
+        "content": "Instead of using traditional video chat apps like Skype or Zoom, use Discord for your video calls. Discord offers a seamless and simple user experience."
+      },
+      {
+        "title": "Leverage Existing Contact List",
+        "content": "Use your existing Discord contact list to initiate video calls. There's no need to create a separate contact list or juggle multiple apps."
+      },
+      {
+        "title": "Prioritize Security",
+        "content": "Discord uses a client-server model for video chat, which prioritizes security over peer-to-peer connections."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Zoom for Video Calls",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install Zoom",
+            "content": "Download and install the Zoom app from the official website or app store."
+          },
+          {
+            "title": "Create an Account",
+            "content": "Create a Zoom account if you don't already have one."
+          },
+          {
+            "title": "Schedule or Start a Meeting",
+            "content": "Schedule a meeting in advance or start an instant meeting."
+          },
+          {
+            "title": "Invite Participants",
+            "content": "Invite participants by sharing the meeting link or using the contact list within Zoom."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T16:20:04.584Z",
+      "updated": "2026-01-04T16:20:04.584Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/discords-video-chat-feature-better-than-we-hoped/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767543607929-97",
+    "title": "Fix Discord Slowing Down Nvidia GPU",
+    "problemDescription": "Discord may be slowing down your Nvidia GPU due to a recent update bug.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "nvidia",
+      "gpu",
+      "slowdown",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Update Discord",
+        "content": "Ensure you have the latest version of Discord installed, as updates may contain bug fixes."
+      },
+      {
+        "title": "Disable Hardware Acceleration",
+        "content": "Go to User Settings > Advanced > Disable 'Enable Hardware Acceleration'."
+      },
+      {
+        "title": "Check for Nvidia Driver Updates",
+        "content": "Update your Nvidia GPU drivers to the latest version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Discord",
+            "content": "Uninstall Discord from your computer."
+          },
+          {
+            "title": "Reinstall Discord",
+            "content": "Download and install the latest version of Discord from the official website."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T16:20:07.929Z",
+      "updated": "2026-01-04T16:20:07.929Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/discord-slowing-down-nvidia-gpus/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767543615976-765",
+    "title": "Discord Bot Language Learning Setup",
+    "problemDescription": "Setting up a Discord bot to learn languages.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "bot",
+      "language",
+      "learning"
+    ],
+    "steps": [
+      {
+        "title": "Invite the Bot to Your Server",
+        "content": "Go to the bot's official website and click on the 'Invite' button. Select your Discord server and authorize the bot to join."
+      },
+      {
+        "title": "Configure the Bot",
+        "content": "Once the bot is in your server, use the command !languages to see the list of available languages. Use !setlanguage [language code] to set your preferred language."
+      },
+      {
+        "title": "Start Learning",
+        "content": "Begin a conversation with the bot by typing a message in the channel. The bot will respond in the language you've set, helping you practice."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Voice Channels",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Voice Commands",
+            "content": "Some versions of the bot support voice commands. Use !voice on to enable voice interactions."
+          },
+          {
+            "title": "Speak to the Bot",
+            "content": "Join a voice channel and speak to the bot. It will respond in the language you've set, providing real-time feedback."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T16:20:15.976Z",
+      "updated": "2026-01-04T16:20:15.976Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/this-ai-inundated-discord-bot-can-help-you-learn-languages/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
