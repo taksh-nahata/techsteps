@@ -16737,5 +16737,980 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767533229457-181",
+    "title": "Fix Mac Won't Boot",
+    "problemDescription": "Mac not booting or starting up, likely due to software issues.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "boot",
+      "startup",
+      "recovery",
+      "time machine"
+    ],
+    "steps": [
+      {
+        "title": "Enter Recovery Mode",
+        "content": "Press and hold the power button and Command + R keys simultaneously to enter Recovery Mode."
+      },
+      {
+        "title": "Restore from Time Machine Backup",
+        "content": "If you have a recent Time Machine backup, restore it to see if it resolves the issue."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "If you don't have a Time Machine backup, choose Reinstall macOS from the menu and follow the on-screen instructions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset SMC",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disconnect Power",
+            "content": "For recent MacBooks, disconnect the power cable and hold the power button for 10 seconds. For older MacBooks, disconnect the power cable and remove the battery for at least 10 seconds. For desktop Macs, disconnect the power cord for at least 10 seconds."
+          },
+          {
+            "title": "Reconnect Power and Restart",
+            "content": "Reconnect the power and try to restart your Mac."
+          }
+        ]
+      },
+      {
+        "title": "Reset NVRAM or PRAM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Shut Down Mac",
+            "content": "Shut down your Mac completely."
+          },
+          {
+            "title": "Press Power Button",
+            "content": "Press the power button to turn on your Mac, then immediately press and hold the Option + Command + P + R keys for about 20 seconds."
+          },
+          {
+            "title": "Release Keys",
+            "content": "Release the keys and allow your Mac to continue starting up normally."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T13:27:09.457Z",
+      "updated": "2026-01-04T13:27:09.457Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/mac-wont-boot-step-step-guide-waking/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767533232285-904",
+    "title": "Fix Unresponsive macOS",
+    "problemDescription": "Your Mac is unresponsive and not registering any clicks.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "macos",
+      "unresponsive",
+      "restart"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Mac",
+        "content": "Click the Apple menu and choose Restart or Shut Down. If your Mac is unresponsive, press and hold the power button for a few seconds to force a restart or shut down."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Force Quit Misbehaving Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force Quit the App",
+            "content": "Press Command + Option + Esc to open the Force Quit Applications window. Select the unresponsive app and click Force Quit."
+          }
+        ]
+      },
+      {
+        "title": "Update macOS and Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update macOS",
+            "content": "Select System Preferences from the Apple menu, click the Software Update icon, and follow the instructions."
+          },
+          {
+            "title": "Update Apps",
+            "content": "Open the App Store and click Updates in the sidebar. For apps obtained outside the App Store, choose the Check for Updates option in the app’s main menu or preferences window."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T13:27:12.285Z",
+      "updated": "2026-01-04T13:27:12.285Z",
+      "sourceUrl": "https://www.makeuseof.com/basic-troubleshooting-tips-fix-common-macos-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767533242633-299",
+    "title": "Fix Mac Under Warranty",
+    "problemDescription": "Your Mac is experiencing issues and you want to know how to get it fixed.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "mac",
+      "warranty",
+      "repair",
+      "apple"
+    ],
+    "steps": [
+      {
+        "title": "Check Warranty Status",
+        "content": "Find your Mac's serial number (located on the bottom of your machine or under Apple > About This Mac). Enter the serial number into Apple's warranty checker to determine if your Mac is still under warranty."
+      },
+      {
+        "title": "Contact Apple Support",
+        "content": "If your Mac is under warranty, take it to an Apple Store or contact Apple Support to schedule a repair."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Third-Party Repair Services",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Find Authorized Service Providers",
+            "content": "If your Mac is out of warranty, consider using third-party authorized Apple service points for a slightly cheaper repair option."
+          },
+          {
+            "title": "Compare Costs",
+            "content": "Compare the costs of third-party services with Apple's out-of-warranty repair prices to make an informed decision."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T13:27:22.633Z",
+      "updated": "2026-01-04T13:27:22.633Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/macos-beginners-guide/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767533248657-399",
+    "title": "Fix Text Notifications on Android",
+    "problemDescription": "Text notifications are not working on an Android device.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "text",
+      "notifications"
+    ],
+    "steps": [
+      {
+        "title": "Enable Notifications for Messages App",
+        "content": "Go to Settings > Notifications > App Notifications, find the Messages app, and make sure notifications are turned on."
+      },
+      {
+        "title": "Check Phone Settings",
+        "content": "Ensure that your phone's general notification settings are not muted or disabled."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your Phone",
+            "content": "Sometimes, a simple restart can resolve notification issues. Restart your Android device and check if the notifications are working."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update Messages App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update the Messages App",
+            "content": "Go to the Google Play Store, search for the Messages app, and update it to the latest version if an update is available."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T13:27:28.657Z",
+      "updated": "2026-01-04T13:27:28.657Z",
+      "sourceUrl": "https://www.quora.com/Why-are-my-text-notifications-not-working-on-Android",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767533250234-971",
+    "title": "Enable App Notifications on Lenovo K3 Note",
+    "problemDescription": "No app notifications appearing on the status bar or notification panel, only sounds and vibrations.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "notifications",
+      "lenovo",
+      "app notifications"
+    ],
+    "steps": [
+      {
+        "title": "Check App Notification Settings",
+        "content": "Go to Settings > Notifications > App Notifications, find the app you're not receiving notifications from, and ensure notifications are turned on."
+      },
+      {
+        "title": "Verify Do Not Disturb Mode",
+        "content": "Ensure that Do Not Disturb mode is not enabled, as it can suppress notifications."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Notification Channels",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open App Settings",
+            "content": "Go to Settings > Apps > [Select the app] > Notifications."
+          },
+          {
+            "title": "Check Notification Channels",
+            "content": "Ensure that all notification channels for the app are enabled."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T13:27:30.234Z",
+      "updated": "2026-01-04T13:27:30.234Z",
+      "sourceUrl": "https://www.quora.com/Why-am-I-not-getting-notifications-from-any-app-on-my-status-bar-or-on-the-notification-panel-of-my-Lenovo-K3-note-Im-just-getting-them-as-sounds-and-vibration",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767533253965-460",
+    "title": "Fix Missing Text Message Notifications on Android",
+    "problemDescription": "Android phone not receiving text message notifications.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "text messages",
+      "notifications"
+    ],
+    "steps": [
+      {
+        "title": "Check Notification Settings",
+        "content": "Go to Settings > Notifications > App Notifications, find the Messages app, and ensure notifications are turned on."
+      },
+      {
+        "title": "Verify Do Not Disturb",
+        "content": "Check if Do Not Disturb is enabled in Settings > Sound & vibration > Do Not Disturb."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Phone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Device",
+            "content": "Restart your phone to refresh system settings."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Clear Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Messages App Cache",
+            "content": "Go to Settings > Apps > Messages > Storage > Clear Cache."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T13:27:33.965Z",
+      "updated": "2026-01-04T13:27:33.965Z",
+      "sourceUrl": "https://www.quora.com/Why-do-I-no-longer-receive-text-message-notifications-on-my-Android-phone-and-how-do-I-fix-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767533256561-805",
+    "title": "Fix Missing Text Notifications on Samsung S25 Ultra",
+    "problemDescription": "Samsung S25 Ultra not receiving text notifications.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "samsung",
+      "s25",
+      "notifications",
+      "text",
+      "messages"
+    ],
+    "steps": [
+      {
+        "title": "Enable Notifications for Messages App",
+        "content": "Go to Settings > Notifications > App Notifications, find the Messages app, and ensure notifications are enabled."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Do Not Disturb Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Do Not Disturb",
+            "content": "Go to Settings > Sounds and vibration > Do Not Disturb and ensure it is turned off."
+          }
+        ]
+      },
+      {
+        "title": "Restart the Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your Phone",
+            "content": "Restart your Samsung S25 Ultra to refresh the system and resolve any temporary glitches."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T13:27:36.561Z",
+      "updated": "2026-01-04T13:27:36.561Z",
+      "sourceUrl": "https://www.quora.com/Why-am-I-not-receiving-text-notifications-on-a-Samsung-S25-Ultra",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767533258763-529",
+    "title": "Fix Missing Notifications on Phone",
+    "problemDescription": "Phone suddenly stopped showing notifications.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "notifications",
+      "phone",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Reboot Your Phone",
+        "content": "Restart your phone to refresh the system and potentially resolve notification issues."
+      },
+      {
+        "title": "Review App Notification Settings",
+        "content": "Go to Settings > Apps > [App Name] > Notifications and ensure notifications are enabled."
+      },
+      {
+        "title": "Disable Software Battery Optimizations",
+        "content": "Navigate to Settings > Battery > Battery Optimization and disable it for the problematic app."
+      },
+      {
+        "title": "Check for Proprietary Power",
+        "content": "Ensure that no third-party power-saving apps are interfering with notifications."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Your Phone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > System > System Update and install any available updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T13:27:38.763Z",
+      "updated": "2026-01-04T13:27:38.763Z",
+      "sourceUrl": "https://www.quora.com/My-phone-suddenly-stopped-showing-notification-how-can-I-correct-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767533266276-144",
+    "title": "Fix Mac Stuck on Verifying Outlook",
+    "problemDescription": "Mac is stuck on 'Verifying Outlook' for days without progress.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "outlook",
+      "verifying",
+      "stuck"
+    ],
+    "steps": [
+      {
+        "title": "Force Quit Outlook",
+        "content": "Press `Option + Command + Esc` to open the Force Quit Applications window. Select Microsoft Outlook from the list and click the 'Force Quit' button."
+      },
+      {
+        "title": "Restart Your Mac",
+        "content": "Restart your Mac to clear any temporary issues that might be causing the verification process to hang."
+      },
+      {
+        "title": "Create a New Outlook Profile",
+        "content": "A corrupted Outlook profile can cause issues during verification. Create a new Outlook profile to resolve the problem."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Office/Outlook",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Microsoft Office or Outlook",
+            "content": "Go to the Applications folder, find Microsoft Office or Outlook, and drag it to the Trash."
+          },
+          {
+            "title": "Reinstall Microsoft Office or Outlook",
+            "content": "Download the latest version of Microsoft Office or Outlook from the official website and install it."
+          }
+        ]
+      },
+      {
+        "title": "Contact Microsoft Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Microsoft Support",
+            "content": "If the issue persists, contact Microsoft Support for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T13:27:46.276Z",
+      "updated": "2026-01-04T13:27:46.276Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255098081",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767533268952-333",
+    "title": "Fix Outlook.com Email Access Issues on Safari",
+    "problemDescription": "Outlook.com email access problems when using Safari on Mac.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "Outlook.com",
+      "Safari",
+      "Mac",
+      "email",
+      "access"
+    ],
+    "steps": [
+      {
+        "title": "Create a New macOS User Account",
+        "content": "Log out of your current macOS account, create a new user account, log into the new account, and try accessing Outlook.com via Safari."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use a Different Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to Another Browser",
+            "content": "Try accessing Outlook.com using a different web browser like Chrome or Firefox to see if the issue persists."
+          }
+        ]
+      },
+      {
+        "title": "Use Apple Mail or Another Dedicated Mail Client",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up Apple Mail",
+            "content": "Configure Apple Mail to access your Outlook.com account by following the instructions on Apple's support website."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T13:27:48.952Z",
+      "updated": "2026-01-04T13:27:48.952Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255942474",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767533272017-846",
+    "title": "Fix Outlook.com Issues After iOS 18 Update",
+    "problemDescription": "Outlook.com app issues on iOS 18, including inability to respond, forward, or move emails.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "outlook",
+      "email",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Re-add Email Accounts",
+        "content": "Go to Settings > Mail > Accounts. Delete your email accounts and then re-add them."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use the Mail App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to Mail App",
+            "content": "Download and use the Mail app from the App Store as a temporary solution."
+          }
+        ]
+      },
+      {
+        "title": "Disable VPN Connect on Demand",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable VPN",
+            "content": "Go to Settings > General > VPN & Device Management > VPN. Turn off VPN Status and disable 'Connect on demand' for ExpressVPN Lightway."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T13:27:52.017Z",
+      "updated": "2026-01-04T13:27:52.017Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255766293",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767533276121-736",
+    "title": "Fix Outlook Exchange Not Connecting on Mac",
+    "problemDescription": "Outlook Exchange account fails to connect on Mac.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "Outlook",
+      "Exchange",
+      "Mac",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Remove and Re-add Outlook Account",
+        "content": "Go to Mail settings, remove your Outlook email account, and then re-add it."
+      },
+      {
+        "title": "Select Account Type",
+        "content": "When re-adding the account, choose 'Business' if 'Personal' doesn't work."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-04T13:27:56.121Z",
+      "updated": "2026-01-04T13:27:56.121Z",
+      "sourceUrl": "https://discussions.apple.com/thread/253444241",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767533283698-26",
+    "title": "Fix Difficulty Answering Calls on Android 12",
+    "problemDescription": "Users are experiencing issues with answering calls on Android 12, with the problem persisting even after updates.",
+    "category": "android",
+    "difficulty": "Hard",
+    "keywords": [
+      "android",
+      "android 12",
+      "calls",
+      "answering calls"
+    ],
+    "steps": [
+      {
+        "title": "Wait for Future Updates",
+        "content": "As there is no direct solution currently available, the best course of action is to wait for a future Android update that may resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check for Temporary Fixes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your Device",
+            "content": "Sometimes, a simple restart can temporarily fix the issue."
+          },
+          {
+            "title": "Check for Software Updates",
+            "content": "Ensure your device is running the latest version of Android 12, as updates may include fixes for this issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T13:28:03.698Z",
+      "updated": "2026-01-04T13:28:03.698Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-android-12-problems-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767533289478-548",
+    "title": "Use Android Recovery Mode to Fix Your Device",
+    "problemDescription": "Your Android phone or tablet needs maintenance or a factory reset.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "recovery mode",
+      "factory reset",
+      "maintenance"
+    ],
+    "steps": [
+      {
+        "title": "Enter Recovery Mode",
+        "content": "Power off your device. Press and hold the Power button and the Volume Up button simultaneously until the Android logo appears. Release the buttons and wait for the Recovery Mode menu to appear."
+      },
+      {
+        "title": "Navigate the Recovery Menu",
+        "content": "Use the Volume buttons to navigate and the Power button to select options. Choose the appropriate option based on your needs (e.g., 'Apply update from ADB', 'Wipe data/factory reset', etc.)."
+      },
+      {
+        "title": "Perform the Selected Action",
+        "content": "Follow the on-screen instructions to complete the selected action. For a factory reset, confirm the action and wait for the process to complete."
+      },
+      {
+        "title": "Reboot the Device",
+        "content": "After the process is complete, select 'Reboot system now' to restart your device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using ADB to Enter Recovery Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable USB Debugging",
+            "content": "Go to Settings > About phone > Tap Build number seven times to enable Developer options. Go back to Settings > Developer options > Enable USB Debugging."
+          },
+          {
+            "title": "Connect to Computer",
+            "content": "Connect your device to a computer via USB and open a command prompt or terminal window."
+          },
+          {
+            "title": "Enter ADB Command",
+            "content": "Type 'adb devices' to ensure your device is recognized. Then type 'adb reboot recovery' to enter Recovery Mode."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T13:28:09.478Z",
+      "updated": "2026-01-04T13:28:09.478Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/use-recovery-mode-android/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767533292031-72",
+    "title": "Fix Google Pixel Quick Charging Issue",
+    "problemDescription": "After updating to Android Pie, the Google Pixel may not charge quickly with non-Power Delivery (PD) USB-C chargers.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "google pixel",
+      "quick charging",
+      "android pie",
+      "usb-c charger"
+    ],
+    "steps": [
+      {
+        "title": "Use the Original Charger",
+        "content": "Use the 18W rapid charger that came with your Pixel, as it is a Power Delivery (PD) charger and does not exhibit this behavior."
+      },
+      {
+        "title": "Wait for the Official Fix",
+        "content": "Google is aware of the issue and is verifying a fix. Keep your device updated to the latest software version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Charger",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try a Different PD Charger",
+            "content": "If you don't have the original charger, try using a different Power Delivery (PD) USB-C charger."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T13:28:12.031Z",
+      "updated": "2026-01-04T13:28:12.031Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/google-pixel-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767533304089-125",
+    "title": "Fix Notifications Not Working on iPhone",
+    "problemDescription": "Notifications are not appearing or working on your iPhone.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "notifications",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Check Notification Settings",
+        "content": "Go to Settings > Notifications and ensure notifications are enabled for the desired apps."
+      },
+      {
+        "title": "Enable Notifications for Apps",
+        "content": "In the Notifications menu, select the app and ensure 'Allow Notifications' is toggled on."
+      },
+      {
+        "title": "Check Do Not Disturb",
+        "content": "Ensure Do Not Disturb is not enabled by swiping down from the top right corner and checking the Control Center."
+      },
+      {
+        "title": "Restart Your iPhone",
+        "content": "Restart your iPhone to refresh the system and potentially resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update iOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > General > Software Update and install any available updates."
+          }
+        ]
+      },
+      {
+        "title": "Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Settings",
+            "content": "Go to Settings > General > Reset > Reset Network Settings. Note that this will reset Wi-Fi networks and passwords."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T13:28:24.089Z",
+      "updated": "2026-01-04T13:28:24.089Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=uhu3g0dkhY8",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767533305721-663",
+    "title": "Fix Notifications Not Working in iOS 26",
+    "problemDescription": "Notifications are not working after updating to iOS 26.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "notifications",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your iPhone",
+        "content": "Hold the power button and slide to power off. Wait 30 seconds, then turn your iPhone back on."
+      },
+      {
+        "title": "Check Notification Settings",
+        "content": "Go to Settings > Notifications and ensure the app you're having issues with has notifications enabled."
+      },
+      {
+        "title": "Update iOS",
+        "content": "Go to Settings > General > Software Update and install any available updates."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > General > Reset > Reset Network Settings. This will reset Wi-Fi networks and passwords, cellular settings, and VPN and APN settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset All Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset All Settings",
+            "content": "Go to Settings > General > Reset > Reset All Settings. This will reset all settings to default but will not delete your data."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T13:28:25.721Z",
+      "updated": "2026-01-04T13:28:25.721Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=3E4KuecDDwA",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767533309881-349",
+    "title": "Fix Notifications Not Working on Google Chrome",
+    "problemDescription": "Google Chrome notifications are not working or not appearing.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "notifications",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Check Notification Settings",
+        "content": "Go to Chrome settings by clicking the three dots in the top right corner, then select 'Settings'. Navigate to 'Privacy and security' and click on 'Site Settings'. Under 'Permissions', find 'Notifications' and ensure the correct settings are enabled."
+      },
+      {
+        "title": "Clear Browser Cache",
+        "content": "Clear your browser cache by going to 'Settings' > 'Privacy and security' > 'Clear browsing data'. Select 'Cached images and files' and click 'Clear data'."
+      },
+      {
+        "title": "Update Google Chrome",
+        "content": "Ensure your browser is up to date by clicking the three dots in the top right corner, then selecting 'Help' > 'About Google Chrome'. Chrome will automatically check for updates and install them if available."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Chrome Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Settings",
+            "content": "Go to 'Settings' > 'Reset settings' > 'Restore settings to their original defaults'. Confirm the action to reset Chrome settings to default."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T13:28:29.881Z",
+      "updated": "2026-01-04T13:28:29.881Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=_yPYM4-NJOE&pp=0gcJCU0KAYcqIYzv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767533312854-60",
+    "title": "Fix iPhone Not Receiving Push Notifications",
+    "problemDescription": "iPhone is not receiving push notifications.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "push notifications",
+      "notifications"
+    ],
+    "steps": [
+      {
+        "title": "Check Notification Settings",
+        "content": "Go to Settings > Notifications and ensure that notifications are enabled for the apps you want to receive alerts from."
+      },
+      {
+        "title": "Enable Background App Refresh",
+        "content": "Go to Settings > General > Background App Refresh and make sure it is turned on."
+      },
+      {
+        "title": "Check Do Not Disturb",
+        "content": "Ensure that Do Not Disturb is not enabled. Go to Settings > Do Not Disturb and turn it off if it is on."
+      },
+      {
+        "title": "Restart Your iPhone",
+        "content": "Restart your iPhone to refresh the system and potentially resolve any temporary glitches."
+      },
+      {
+        "title": "Update iOS",
+        "content": "Go to Settings > General > Software Update and install any available updates to ensure your iPhone is running the latest version of iOS."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open the Settings app on your iPhone."
+          },
+          {
+            "title": "Navigate to General",
+            "content": "Tap on General."
+          },
+          {
+            "title": "Reset Network Settings",
+            "content": "Scroll down and tap on Reset, then select Reset Network Settings. This will reset all network-related settings to default."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T13:28:32.854Z",
+      "updated": "2026-01-04T13:28:32.854Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=GTVN7ajJVXY",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
