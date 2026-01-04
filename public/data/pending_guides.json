@@ -20487,5 +20487,563 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767546848774-939",
+    "title": "Disable Fast Startup to Reduce Battery Drain",
+    "problemDescription": "Windows 10 laptop battery drains significantly while turned off.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "battery",
+      "fast startup",
+      "drain"
+    ],
+    "steps": [
+      {
+        "title": "Open Power Options",
+        "content": "Go to Control Panel > Power Options."
+      },
+      {
+        "title": "Change What the Power Buttons Do",
+        "content": "Click on 'Choose what the power buttons do' on the left side."
+      },
+      {
+        "title": "Change Settings Currently Unavailable",
+        "content": "Click on 'Change settings that are currently unavailable'."
+      },
+      {
+        "title": "Disable Fast Startup",
+        "content": "Uncheck the box for 'Turn on fast startup (recommended)' and click 'Save changes'."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-04T17:14:08.774Z",
+      "updated": "2026-01-04T17:14:08.774Z",
+      "sourceUrl": "https://superuser.com/questions/1488515/does-windows-10-fast-startup-feature-drain-battery-while-laptop-is-turned-off",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767546896394-131",
+    "title": "Fix Bluetooth Connectivity Issues After iOS 26.1 Update",
+    "problemDescription": "Bluetooth devices fail to connect or disconnect frequently after updating to iOS 26.1.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "ios",
+      "connection",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Device",
+        "content": "Power off your iPhone, iPad, or Mac, then power it back on to clear temporary software issues affecting Bluetooth."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Forget and Re-pair Bluetooth Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Forget the Device",
+            "content": "Go to Settings > Bluetooth, tap the 'i' icon next to the problematic device, and select 'Forget This Device'."
+          },
+          {
+            "title": "Re-pair the Device",
+            "content": "Put the Bluetooth device in pairing mode and reconnect it to your iPhone, iPad, or Mac."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for VPN Interference",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable VPN",
+            "content": "Go to Settings > VPN and turn off any active VPN connections."
+          },
+          {
+            "title": "Test Bluetooth",
+            "content": "Attempt to connect your Bluetooth devices again after disabling the VPN."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Contact Apple Support",
+        "type": "Official Solution",
+        "steps": [
+          {
+            "title": "Visit Apple Support",
+            "content": "Go to the Apple Support page for further assistance if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T17:14:56.394Z",
+      "updated": "2026-01-04T17:14:56.394Z",
+      "sourceUrl": "https://discussions.apple.com/thread/256180011",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767546902595-614",
+    "title": "Fix Bluetooth Streaming Issues on iPhone",
+    "problemDescription": "Bluetooth audio skips, speeds up, disconnects, or drops calls on iPhone.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "audio",
+      "streaming",
+      "iphone",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Disable Apple Private Relay",
+        "content": "Go to Settings > Apple ID > iCloud > Private Relay and turn it off. This has been known to interfere with Bluetooth streaming."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Your iPhone Daily",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Your iPhone",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset All Settings. This can temporarily fix the issue but is not a permanent solution."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T17:15:02.595Z",
+      "updated": "2026-01-04T17:15:02.595Z",
+      "sourceUrl": "https://discussions.apple.com/thread/256114444",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767546914967-633",
+    "title": "Browser Crashes When Printing with Specific Printer Driver",
+    "problemDescription": "Browser crashes when printing using a specific manufacturer's printer driver, but works fine with other drivers.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "browser",
+      "printer",
+      "driver",
+      "crash",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall the Problematic Printer Driver",
+        "content": "Go to Control Panel > Devices and Printers, right-click on the printer with the problematic driver, and select 'Remove device'."
+      },
+      {
+        "title": "Reinstall the Printer Driver",
+        "content": "Download the latest driver from the manufacturer's website and install it. Ensure it's compatible with your Windows version."
+      },
+      {
+        "title": "Update Browser",
+        "content": "Ensure your browser is up-to-date. Go to browser settings and check for updates."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to Settings > Update & Security > Windows Update and check for any pending updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use a Different Printer Driver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Generic Printer Driver",
+            "content": "Use the built-in Windows printer driver or a different manufacturer's driver that is compatible with your printer."
+          }
+        ]
+      },
+      {
+        "title": "Run Browser in Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Launch Browser in Safe Mode",
+            "content": "Start your browser in safe mode to check if any extensions are causing the issue. For Chrome, use 'chrome.exe --disable-extensions --incognito' in the run dialog."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T17:15:14.967Z",
+      "updated": "2026-01-04T17:15:14.967Z",
+      "sourceUrl": "https://www.reddit.com/r/it/comments/1hxu4a2/confusing_windows_and_printer_issue_bet_you/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767546918664-741",
+    "title": "Fix Printer Not Printing Black Ink After Refill",
+    "problemDescription": "Printer refuses to print black ink after cartridge refill, with no error messages.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "black ink",
+      "refill",
+      "printing issue"
+    ],
+    "steps": [
+      {
+        "title": "Poke a Pinhole in the Cartridge",
+        "content": "Carefully poke a small pinhole near the top of the cartridge where air usually enters to allow air to flow in."
+      },
+      {
+        "title": "Wipe the Nozzle",
+        "content": "Clean the nozzle of the cartridge to ensure there are no blockages."
+      },
+      {
+        "title": "Run a Cleaning Cycle",
+        "content": "Run one cleaning cycle on the printer to clear any remaining blockages and ensure proper ink flow."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Cleaning the Heads",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clean the Print Heads",
+            "content": "Follow the printer's manual instructions to clean the print heads."
+          },
+          {
+            "title": "Deep Cleaning",
+            "content": "Perform a deep cleaning cycle if the initial cleaning does not work."
+          },
+          {
+            "title": "Swap Cartridges",
+            "content": "Try swapping the cartridges to see if the issue persists with the other cartridge."
+          },
+          {
+            "title": "Firmware Reset",
+            "content": "Reset the printer's firmware to its default settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T17:15:18.664Z",
+      "updated": "2026-01-04T17:15:18.664Z",
+      "sourceUrl": "https://www.reddit.com/r/printers/comments/1nzuuer/how_i_finally_fixed_my_printer_refusing_to_print/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767546922237-557",
+    "title": "Common Printer Issues and Fixes",
+    "problemDescription": "Common issues encountered with ink and laser printers and their solutions.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "ink",
+      "laser",
+      "service",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Paper Jams",
+        "content": "Check for any visible paper jams and remove them carefully. Ensure the paper is loaded correctly and not wrinkled."
+      },
+      {
+        "title": "Ink or Toner Issues",
+        "content": "For ink printers, check if the ink cartridges are properly installed and not empty. For laser printers, ensure the toner cartridge is correctly seated and has enough toner."
+      },
+      {
+        "title": "Print Quality Problems",
+        "content": "Clean the printhead for ink printers. For laser printers, check the drum unit and replace it if necessary."
+      },
+      {
+        "title": "Connection Problems",
+        "content": "Ensure the printer is properly connected to the computer or network. Check cables and restart both the printer and the computer."
+      },
+      {
+        "title": "Error Messages",
+        "content": "Refer to the printer's manual for specific error codes and follow the recommended troubleshooting steps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Advanced Troubleshooting",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Firmware Updates",
+            "content": "Check the manufacturer's website for firmware updates for your printer model and install them if available."
+          },
+          {
+            "title": "Calibration",
+            "content": "Run a calibration process to ensure the printer is aligned correctly, especially for color printers."
+          },
+          {
+            "title": "Deep Cleaning",
+            "content": "Perform a deep cleaning of the printer, including the rollers and internal components, to remove any dust or debris."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T17:15:22.237Z",
+      "updated": "2026-01-04T17:15:22.237Z",
+      "sourceUrl": "https://www.reddit.com/r/printers/comments/1dlz9xy/need_the_knowledge_about_most_common_issues/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767546944580-823",
+    "title": "Fix Printer Offline Issue",
+    "problemDescription": "Printer shows as offline and won't print.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "offline",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check Printer Status",
+        "content": "Ensure the printer is turned on and connected to the same network as your computer."
+      },
+      {
+        "title": "Restart Printer",
+        "content": "Turn the printer off, wait for 30 seconds, and then turn it back on."
+      },
+      {
+        "title": "Restart Print Spooler",
+        "content": "On your computer, open Services, find Print Spooler, right-click and select Restart."
+      },
+      {
+        "title": "Set Printer as Default",
+        "content": "Go to Control Panel > Devices and Printers, right-click the printer and select Set as default printer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Printer Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Right-click the Start button and select Device Manager."
+          },
+          {
+            "title": "Update Drivers",
+            "content": "Expand Printers, right-click your printer, and select Update driver."
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Restart your computer to apply the changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T17:15:44.580Z",
+      "updated": "2026-01-04T17:15:44.580Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-printer-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767546948084-829",
+    "title": "Unjam a Printer",
+    "problemDescription": "A printer jam stops printing and requires immediate attention to prevent damage.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "jam",
+      "paper",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Turn Off the Printer",
+        "content": "Safely turn off the printer to avoid any potential electrical hazards."
+      },
+      {
+        "title": "Open Accessible Trays and Doors",
+        "content": "Open any paper trays or doors that are easily accessible to check inside."
+      },
+      {
+        "title": "Check for the Jammed Paper",
+        "content": "Carefully inspect the printer's paper path for any jammed paper."
+      },
+      {
+        "title": "Remove the Jammed Paper",
+        "content": "Gently pull out the jammed paper, ensuring not to tear it and cause further issues."
+      },
+      {
+        "title": "Consult the Printer Manual",
+        "content": "Refer to the specific instructions for your printer model to clear difficult jams, as mechanisms vary by make and model."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disconnect Printheads for HP Smart Tank 5101",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disconnect Printheads",
+            "content": "Disconnect the printheads from the ink supply."
+          },
+          {
+            "title": "Turn the Printer on Its Face",
+            "content": "Turn the printer on its face to open a panel on the bottom."
+          },
+          {
+            "title": "Clear the Jam",
+            "content": "Access and clear the jammed paper through the opened panel."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T17:15:48.084Z",
+      "updated": "2026-01-04T17:15:48.084Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/how-to-unjam-a-printer/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767546951571-239",
+    "title": "Find Printer IP Address and WPS PIN",
+    "problemDescription": "You need to locate your printer's IP address or WPS PIN for setup and troubleshooting.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "IP address",
+      "WPS PIN",
+      "wireless network"
+    ],
+    "steps": [
+      {
+        "title": "Check Printer Manual or Online",
+        "content": "Consult your printer's manual or search online using the model number to confirm if it supports WPS and to find the specific wireless features."
+      },
+      {
+        "title": "Use Printer's Menu",
+        "content": "Navigate through your printer's menu to locate the network settings where the IP address and WPS PIN are usually displayed."
+      },
+      {
+        "title": "Connect to a Computer or Router",
+        "content": "If your printer doesn't have Wi-Fi or you can't find the IP address, connect it directly to a computer or router using an Ethernet or USB cable."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use a Mobile App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Printer App",
+            "content": "Download and install the mobile app specific to your printer model."
+          },
+          {
+            "title": "Connect to Printer",
+            "content": "Follow the app's instructions to connect to your printer and access the network settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T17:15:51.571Z",
+      "updated": "2026-01-04T17:15:51.571Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/how-to-find-your-printer-ip-address-and-wps-pin/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767546954563-562",
+    "title": "Connect Printer to Windows 10",
+    "problemDescription": "Troubleshooting steps to connect a printer to a Windows 10 computer.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "windows 10",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Turn on Devices",
+        "content": "Ensure both the printer and your computer are turned on."
+      },
+      {
+        "title": "Activate Wireless Capabilities",
+        "content": "Activate the wireless capabilities on both the printer and the computer."
+      },
+      {
+        "title": "Add Printer",
+        "content": "Go to Settings > Devices > Printers & Scanners > Add a printer or scanner."
+      },
+      {
+        "title": "Select Printer",
+        "content": "Select your printer from the list and follow the on-screen instructions to complete the setup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: USB Connection",
+        "type": "Alternative Method",
+        "steps": [
+          {
+            "title": "Connect via USB",
+            "content": "Connect the printer to your computer using a USB cable."
+          },
+          {
+            "title": "Install Driver",
+            "content": "Install the printer driver if prompted."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T17:15:54.563Z",
+      "updated": "2026-01-04T17:15:54.563Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/how-to-set-up-a-new-printer-in-windows-10/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
