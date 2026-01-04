@@ -22604,5 +22604,1031 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767557902314-703",
+    "title": "Report Android OS Bugs to Google",
+    "problemDescription": "How to get Android OS bugs fixed and reported to the right people.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "bug",
+      "fix",
+      "google",
+      "report"
+    ],
+    "steps": [
+      {
+        "title": "Narrow Down the Problem",
+        "content": "Try to identify the specific issue and reproduce it consistently. This will help in providing detailed information to Google."
+      },
+      {
+        "title": "Report the Bug to Google",
+        "content": "Go to the Android Issue Tracker (https://issuetracker.google.com/issues?q=componentid:460005) and create a detailed report. Include steps to reproduce, expected behavior, and actual behavior."
+      },
+      {
+        "title": "Provide Detailed Information",
+        "content": "Include logs, screenshots, and any other relevant information that can help Google understand and fix the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Manufacturer Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact the Phone Manufacturer",
+            "content": "If the bug is specific to your device, contact the manufacturer's support team. They may provide a patch or workaround."
+          },
+          {
+            "title": "Return the Phone",
+            "content": "If the issue is severe and cannot be resolved, consider returning the phone and demanding a refund or replacement."
+          }
+        ]
+      },
+      {
+        "title": "Avoid Problematic Applications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Problematic Applications",
+            "content": "If the issue is caused by a specific application, uninstall it and avoid using it until the issue is resolved."
+          },
+          {
+            "title": "Reset the Phone",
+            "content": "As a temporary fix, reset the phone to its factory settings. Note that this will erase all data on the phone."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:18:22.314Z",
+      "updated": "2026-01-04T20:18:22.314Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/8795/how-do-you-get-android-os-bugs-fixed",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767557912188-965",
+    "title": "Fix Google Play Services Has Stopped Error",
+    "problemDescription": "The Google Play Services app repeatedly crashes and displays an error message.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "google play services",
+      "app crash"
+    ],
+    "steps": [
+      {
+        "title": "Update Google Play Services",
+        "content": "Go to APKMirror, find the latest version of Google Play Services, download it, and install it."
+      },
+      {
+        "title": "Uninstall Updates",
+        "content": "If you encounter any issues, go to Settings → Applications → All → Google Play Store → Uninstall Updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Google Play Services Cache",
+            "content": "Go to Settings → Applications → All → Google Play Services → Clear Cache."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reboot Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot Your Device",
+            "content": "Perform a simple reboot of your Android phone or tablet."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Deactivate Device Admin Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Deactivate Device Admin Apps",
+            "content": "Go to Settings → Device admin apps and deactivate Find My Device and Google Play if they are listed."
+          }
+        ]
+      },
+      {
+        "title": "Method 5: Install Custom ROM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Custom ROM",
+            "content": "As a last resort, install a custom ROM that is stable and free of bugs."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:18:32.188Z",
+      "updated": "2026-01-04T20:18:32.188Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/122918/google-play-services-has-stopped-message-continually-popping-up-on-my-samsung-ph",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767557918225-271",
+    "title": "Fix 'Android is starting' Optimization on Every Boot",
+    "problemDescription": "Android device shows 'Android is starting' optimization screen on every boot.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "optimization",
+      "boot",
+      "recovery",
+      "cache"
+    ],
+    "steps": [
+      {
+        "title": "Clear Cache Partition",
+        "content": "1. Power off the phone. 2. Press and hold the volume down button, then press and hold the power button for about 4 seconds. 3. Release both buttons. 4. Use the volume buttons to navigate to 'Recovery' and press the volume up button to boot into recovery. 5. Use the volume buttons to move down to 'wipe cache partition' and select it with the power button. 6. Wait for the process to complete, then reboot the device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Free Up Storage Space",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete Unnecessary Files",
+            "content": "Increase free storage space by deleting photos, downloads, or other unnecessary files to ensure you have at least 5GB of free space."
+          }
+        ]
+      },
+      {
+        "title": "Uninstall Problematic Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify and Remove Problematic Apps",
+            "content": "Uninstall apps one-by-one and reboot the device after each uninstallation to identify if a specific app is causing the optimization issue."
+          }
+        ]
+      },
+      {
+        "title": "Update or Reinstall SuperSU",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update SuperSU",
+            "content": "If the issue is related to SuperSU, download and install the latest stable release of SuperSU."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:18:38.225Z",
+      "updated": "2026-01-04T20:18:38.225Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/113428/how-to-fix-android-is-starting-optimization-on-every-boot",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767557919908-661",
+    "title": "Pre-Troubleshooting Steps for Android",
+    "problemDescription": "Basic steps to take before attempting advanced troubleshooting on an Android device.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "troubleshooting",
+      "backup",
+      "reboot",
+      "storage"
+    ],
+    "steps": [
+      {
+        "title": "Backup Your Data",
+        "content": "Backup your personal data and app data separately to a secure location."
+      },
+      {
+        "title": "Reboot Your Device",
+        "content": "Turn off your device, remove the SIM card, battery, and SD card (if detachable), and wait for about 30 minutes before turning it back on."
+      },
+      {
+        "title": "Free Up Storage Space",
+        "content": "Ensure you have at least 50MB of free storage space for smooth app operation."
+      },
+      {
+        "title": "Reinstall Problematic Apps",
+        "content": "If an app is causing issues, uninstall and reinstall it. Also, try clearing the app cache to free up space."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Third-Party Reboot Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Reboot App",
+            "content": "Use a third-party reboot app to restart your device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:18:39.908Z",
+      "updated": "2026-01-04T20:18:39.908Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/36466/what-should-i-do-before-i-try-advanced-troubleshooting",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767557928140-843",
+    "title": "Fix Authenticator Sync Issues",
+    "problemDescription": "Authenticator apps not working due to time or counter sync issues.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "authenticator",
+      "2fa",
+      "sync",
+      "TOTP",
+      "HOTP"
+    ],
+    "steps": [
+      {
+        "title": "Check Time Sync for TOTP",
+        "content": "Ensure your device's time is synchronized with the server. Enable automatic time synchronization in your device settings."
+      },
+      {
+        "title": "Resync Counter for HOTP",
+        "content": "If using HOTP, avoid generating multiple codes without using them. If out of sync, contact the service provider for counter resync options."
+      },
+      {
+        "title": "Use Backup Codes",
+        "content": "If the authenticator app fails, use backup codes provided during setup to regain access and resync the authenticator."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Service Provider",
+            "content": "If issues persist, contact the service provider's support team for assistance in resyncing the authenticator."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:18:48.140Z",
+      "updated": "2026-01-04T20:18:48.140Z",
+      "sourceUrl": "https://superuser.com/questions/1845383/how-do-authenticators-work",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767557931097-252",
+    "title": "Fix Google Authenticator Sync Issue",
+    "problemDescription": "Google Authenticator shows a syncing message and the sync icon is grayed out.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "google",
+      "authenticator",
+      "sync",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Access Account Settings",
+        "content": "Click on your account in the upper right corner of the Google Authenticator app."
+      },
+      {
+        "title": "Disable Account Sync",
+        "content": "Select 'Use without an account.' A warning pop-up will appear."
+      },
+      {
+        "title": "Confirm Action",
+        "content": "Click 'Continue' to proceed. This will disable syncing and delete codes from all devices except the current one."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Wait for Automatic Sync",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ensure Device is Online",
+            "content": "Make sure your device has an active internet connection."
+          },
+          {
+            "title": "Refresh Authenticator Codes",
+            "content": "Wait for the app to automatically sync the next time you refresh your Authenticator codes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:18:51.097Z",
+      "updated": "2026-01-04T20:18:51.097Z",
+      "sourceUrl": "https://superuser.com/questions/1850458/how-do-i-fix-google-authenticator-saying-syncing-will-continue-when-your-devic",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767557934579-805",
+    "title": "Set Up Google Authenticator on Multiple Devices",
+    "problemDescription": "How to set up Google Authenticator on multiple devices for 2-Step Verification.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Google Authenticator",
+      "2-Step Verification",
+      "multiple devices"
+    ],
+    "steps": [
+      {
+        "title": "Download Google Authenticator",
+        "content": "Ensure Google Authenticator is downloaded on all devices you want to use."
+      },
+      {
+        "title": "Access 2-Step Verification",
+        "content": "Go to the 2-Step Verification page."
+      },
+      {
+        "title": "Remove Existing Setup",
+        "content": "If you've already set up Google Authenticator for your account, delete that account from Authenticator to start fresh. If not, skip this step."
+      },
+      {
+        "title": "Set Up 2-Step Verification",
+        "content": "Follow the directions to set up 2-Step Verification for the mobile app. Scan the generated QR code or enter the secret key on all devices."
+      },
+      {
+        "title": "Verify Setup",
+        "content": "Check that all devices are working correctly by entering the verification codes from each device and clicking Verify. Then click Save."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Switch to Authy",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Authy",
+            "content": "Download Authy on all devices you want to use."
+          },
+          {
+            "title": "Set Up Authy",
+            "content": "Follow the directions to set up 2-Step Verification using Authy, ensuring to scan the QR code or enter the secret key on all devices."
+          },
+          {
+            "title": "Verify Setup",
+            "content": "Check that all devices are working correctly by entering the verification codes from each device and clicking Verify. Then click Save."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:18:54.579Z",
+      "updated": "2026-01-04T20:18:54.579Z",
+      "sourceUrl": "https://superuser.com/questions/742726/google-authenticator-and-second-device-setup",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767557937050-541",
+    "title": "Set Up Google 2FA with Third-Party OTP App",
+    "problemDescription": "Users cannot set up Google Authenticator as a 2FA option during initial enrollment because 2FA must be enabled first.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "2FA",
+      "Google Authenticator",
+      "OTP",
+      "Two-Factor Authentication"
+    ],
+    "steps": [
+      {
+        "title": "Enable 2FA Initially",
+        "content": "First, enable 2FA using a phone number or Google's app. This is required to set up Google Authenticator later."
+      },
+      {
+        "title": "Set Up Google Authenticator",
+        "content": "After enabling 2FA, you can then set up Google Authenticator as your preferred 2FA method."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Workaround for Org Admins",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enforce 2FA with Specific Settings",
+            "content": "As an org admin, enforce 2FA with the setting 'Any except verification codes via text, phone call' to allow users to use Authenticator apps during initial enrollment."
+          },
+          {
+            "title": "Generate Backup Codes",
+            "content": "If users get locked out, generate backup codes for them to regain access."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:18:57.050Z",
+      "updated": "2026-01-04T20:18:57.050Z",
+      "sourceUrl": "https://superuser.com/questions/1658659/how-to-set-up-google-2fa-with-third-party-otp-app",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767557946875-27",
+    "title": "Fix Crossed Circle Notification on Kindle Fire",
+    "problemDescription": "A crossed circle notification icon appears on Amazon Kindle Fire, indicating an issue with Alexa functionality.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "kindle fire",
+      "notification",
+      "alexa",
+      "crossed circle"
+    ],
+    "steps": [
+      {
+        "title": "Enable Alexa",
+        "content": "Go to settings and activate Alexa to remove the notification."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Enable Hands-Free Alexa",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Notification Bar",
+            "content": "Swipe down from the top of the screen to access the notification bar."
+          },
+          {
+            "title": "Toggle Hands-Free Alexa",
+            "content": "Find the Alexa notification and toggle the hands-free feature on."
+          }
+        ]
+      },
+      {
+        "title": "Check Silent Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Volume Settings",
+            "content": "Ensure that the device is not in silent mode by checking the volume settings."
+          },
+          {
+            "title": "Adjust Notification Sounds",
+            "content": "If silent mode is enabled, disable it to remove the crossed circle notification."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:19:06.875Z",
+      "updated": "2026-01-04T20:19:06.875Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/230409/what-does-a-crossed-circle-system-notification-icon-mean-on-amazon-kindle-fire",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767557949175-724",
+    "title": "Control Kindle Fire Wi-Fi via Alexa",
+    "problemDescription": "Alexa cannot control Kindle Fire's Wi-Fi switch directly, and there's no built-in way to automate Wi-Fi reconnection.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "Alexa",
+      "Kindle Fire",
+      "Wi-Fi",
+      "automation",
+      "routine"
+    ],
+    "steps": [
+      {
+        "title": "Use a Third-Party App for Scheduled Wi-Fi Control",
+        "content": "Install a third-party app like 'WiFi Scheduler' or 'Tasker' on your Kindle Fire to schedule Wi-Fi on/off times. These apps can work offline and automate Wi-Fi reconnection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manual Routine via Alexa",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a Custom Alexa Routine",
+            "content": "Set up an Alexa Routine with a custom phrase like 'Alexa, reconnect Wi-Fi on Kindle Fire' and use the 'Custom' action to trigger a script or app that toggles Wi-Fi on your Kindle Fire."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:19:09.175Z",
+      "updated": "2026-01-04T20:19:09.175Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/251278/can-alexa-control-kindle-fires-wifi-switch",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767557952425-736",
+    "title": "Disable Amazon Alexa Battery Drain Notifications",
+    "problemDescription": "Amazon Alexa app notifications about battery drain keep reappearing even when the app is not in use.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "notifications",
+      "battery",
+      "amazon alexa"
+    ],
+    "steps": [
+      {
+        "title": "Disable Notifications for Amazon Alexa App",
+        "content": "Go to your phone's Settings, then navigate to Apps & notifications. Find the Amazon Alexa app in the list, tap on it, and select 'Notifications'. Turn off all notification options."
+      },
+      {
+        "title": "Force Stop the Amazon Alexa App",
+        "content": "In the Amazon Alexa app settings, tap on 'Force stop' to ensure the app is not running in the background."
+      },
+      {
+        "title": "Uninstall or Disable the App",
+        "content": "If the notifications persist, consider uninstalling the Amazon Alexa app or disabling it completely from your device settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Notification Blocker App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Notification Blocker App",
+            "content": "Download and install a notification blocker app from the Google Play Store."
+          },
+          {
+            "title": "Configure the App",
+            "content": "Open the notification blocker app and add the Amazon Alexa app to the list of apps whose notifications you want to block."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:19:12.425Z",
+      "updated": "2026-01-04T20:19:12.425Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/242362/any-way-to-disable-the-blank-is-draining-the-battery-notifications",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767557954989-712",
+    "title": "Fix Amazon AppStore Required Dialog",
+    "problemDescription": "Apps installed from the Amazon AppStore fail to start, displaying a dialog that requires the Amazon AppStore to be open.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "amazon",
+      "appstore",
+      "dialog",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall Amazon AppStore",
+        "content": "Uninstall the current Amazon AppStore app. Download the latest version directly from amazon.com. Enable 'Unknown Sources' in Settings > Security to allow the installation of third-party apps. Install the downloaded Amazon AppStore APK and update it to the latest version."
+      },
+      {
+        "title": "Keep Amazon AppStore Running",
+        "content": "Open the Amazon AppStore and return to the home screen without closing the app. Launch the desired app while the Amazon AppStore is still running in the background."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Keep Amazon AppStore Running",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Keep Amazon AppStore Running",
+            "content": "Open the Amazon AppStore and return to the home screen without closing the app. Launch the desired app while the Amazon AppStore is still running in the background."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:19:14.989Z",
+      "updated": "2026-01-04T20:19:14.989Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/125763/dialog-amazon-appstore-required-apps-prevented-from-starting",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767557960578-638",
+    "title": "Fix Conflicting Packages for Google Play Services",
+    "problemDescription": "Error message 'Conflicting Packages exist' when trying to update Google Play Services.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "google play services",
+      "conflicting packages",
+      "update error"
+    ],
+    "steps": [
+      {
+        "title": "Update Google Play Services via F-Droid",
+        "content": "Install the microG core package from F-Droid. This may resolve conflicts and allow some apps to function properly."
+      },
+      {
+        "title": "Check for Updates",
+        "content": "After installing the microG core package, check for updates within the F-Droid app to ensure you have the latest version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset",
+        "type": "Radical Solution",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup all important data as a factory reset will erase all data on the device."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset). Follow the on-screen instructions to complete the reset."
+          },
+          {
+            "title": "Reinstall Apps",
+            "content": "After the reset, reinstall necessary apps and check if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:19:20.578Z",
+      "updated": "2026-01-04T20:19:20.578Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/252643/conflicting-packages-exist-for-google-play-services-itself-cannot-be-uninstal",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767557968280-123",
+    "title": "Fix Discord Weird Error",
+    "problemDescription": "Discord displays a weird error with strange characters.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "error",
+      "weird characters"
+    ],
+    "steps": [
+      {
+        "title": "Delete Discord Data",
+        "content": "Go to C:\\Users\\AppData\\Roaming\\discord and delete the associated data. You'll need to log back in to Discord after this."
+      },
+      {
+        "title": "Restart Desktop",
+        "content": "If the issue persists, restart your desktop."
+      },
+      {
+        "title": "Reinstall Discord",
+        "content": "If the error still appears, uninstall Discord and then reinstall it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Rootkit",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Kaspersky TDSS Killer",
+            "content": "Create a portable USB setup with Kaspersky TDSS Killer to check for and remove any rootkits."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:19:28.280Z",
+      "updated": "2026-01-04T20:19:28.280Z",
+      "sourceUrl": "https://superuser.com/questions/1753838/i-am-getting-a-weird-error-should-i-be-worried-the-error-has-weird-characters",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767557969444-896",
+    "title": "Discord Picking Up Internal PC Audio",
+    "problemDescription": "Discord is picking up audio from an internal microphone despite using an external one.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "microphone",
+      "audio",
+      "headset"
+    ],
+    "steps": [
+      {
+        "title": "Disable the Built-in Microphone",
+        "content": "Go to Control Panel -> Sound -> Recording tab and disable the built-in microphone of your headset."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Globally Mute Yourself in Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use the Mute Button",
+            "content": "Click the mute button in the main menu bar or use the shortcut `Ctrl` + `Shift` + `M` to mute yourself globally."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:19:29.444Z",
+      "updated": "2026-01-04T20:19:29.444Z",
+      "sourceUrl": "https://superuser.com/questions/1933113/why-is-discord-picking-up-internal-pc-audio-when-on-a-headset",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767557972729-745",
+    "title": "Fix Discord iOS Push Notifications",
+    "problemDescription": "iPhone not showing Discord push notifications.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "ios",
+      "notifications",
+      "push"
+    ],
+    "steps": [
+      {
+        "title": "Check Server Notification Settings",
+        "content": "Go to the Discord app, select the server, tap the server name, and ensure notifications are not set to silent."
+      },
+      {
+        "title": "Enable Discord App Notifications",
+        "content": "Open the Discord app, go to Settings > Notifications, and ensure notifications are turned on."
+      },
+      {
+        "title": "Keep Discord Running",
+        "content": "Avoid force closing Discord. Keep it running in the background by leaving it in the multitasking view."
+      },
+      {
+        "title": "Enable Mobile Data Permission",
+        "content": "If notifications only work on Wi-Fi, go to iPhone Settings > Discord > Mobile Data and enable it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset to Default",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Notification Settings",
+            "content": "Reset Discord notification settings to default if the issue persists."
+          }
+        ]
+      },
+      {
+        "title": "Contact Discord Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Raise a Support Ticket",
+            "content": "Contact Discord support to check if there is an issue on their end preventing notifications."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:19:32.729Z",
+      "updated": "2026-01-04T20:19:32.729Z",
+      "sourceUrl": "https://superuser.com/questions/1458831/my-phone-ios-wont-show-any-discord-push-notifications-yet-it-will-show-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767557980026-714",
+    "title": "Prevent Discord Audio Device Prompts",
+    "problemDescription": "Discord keeps prompting about switching audio devices.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "audio",
+      "device",
+      "prompt"
+    ],
+    "steps": [
+      {
+        "title": "Disable Unwanted Audio Devices",
+        "content": "Go to the old Control Panel, click Hardware and Sound, and then click Sound. In the list, find the device that Discord keeps trying to switch to, right-click it, and select 'Disable'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Prompt in Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Click 'Don't Show Me This Again'",
+            "content": "When the prompt appears, click the 'Don't show me this again' option to prevent Discord from asking about the audio device switch in the future."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:19:40.026Z",
+      "updated": "2026-01-04T20:19:40.026Z",
+      "sourceUrl": "https://superuser.com/questions/1647452/how-can-i-prevent-discord-app-from-prompting-about-audio-devices",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767557987596-155",
+    "title": "Fix Apple TV+ Not Loading on Roku",
+    "problemDescription": "Apple TV+ app fails to load or display properly on Roku devices.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "apple tv",
+      "roku",
+      "display",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Change Display Type Settings",
+        "content": "Go to Settings on your Roku, navigate to Display type, and deselect 'Auto Detect'. Try different display types such as '4K 60 Hz TV' or lower quality settings until Apple TV+ works."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open a Support Case",
+            "content": "If the issue persists, contact Apple Support or Roku Support to open a case and seek further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:19:47.596Z",
+      "updated": "2026-01-04T20:19:47.596Z",
+      "sourceUrl": "https://discussions.apple.com/thread/253210445",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767557994882-430",
+    "title": "Fix Apple TV App Not Playing Movies on Roku",
+    "problemDescription": "The Apple TV app on Roku is not playing movies, with issues ranging from sound problems to playback errors.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "apple tv",
+      "roku",
+      "movies",
+      "playback",
+      "sound"
+    ],
+    "steps": [
+      {
+        "title": "Change Audio Settings",
+        "content": "Go to your Roku settings, select audio, and change it from Auto (Dolby Digital) to Stereo."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Set Roku to 1080p",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Resolution",
+            "content": "If the problem seems to be related to 4K, set your Roku to 1080p resolution."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Clear Roku Cache and Reinstall Apple TV",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Roku Cache",
+            "content": "Push the home button 5 times, up button 1 time, rewind button 2 times, fast forward button 2 times. The Roku will reboot with a clear cache."
+          },
+          {
+            "title": "Reinstall Apple TV",
+            "content": "After the Roku reboots, reinstall the Apple TV app and log in."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:19:54.882Z",
+      "updated": "2026-01-04T20:19:54.882Z",
+      "sourceUrl": "https://discussions.apple.com/thread/250757623",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767558000583-714",
+    "title": "Fix Continuous Play on Roku Devices",
+    "problemDescription": "Continuous play feature stops working on Roku devices when using the Apple TV app.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Roku",
+      "Apple TV",
+      "continuous play",
+      "streaming"
+    ],
+    "steps": [
+      {
+        "title": "Reset Apple TV App Settings",
+        "content": "Go to the Apple TV app settings on your Roku device and reset all settings to default."
+      },
+      {
+        "title": "Uninstall and Reinstall the Apple TV App",
+        "content": "Uninstall the Apple TV app from your Roku device, then reinstall it from the Roku Channel Store."
+      },
+      {
+        "title": "Restart Roku Device",
+        "content": "Unplug your Roku device from the power source, wait for 30 seconds, and then plug it back in."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Submit Feedback to Apple",
+            "content": "Report the issue through Apple’s feedback form for the Apple TV app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T20:20:00.583Z",
+      "updated": "2026-01-04T20:20:00.583Z",
+      "sourceUrl": "https://discussions.apple.com/thread/256170182",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
