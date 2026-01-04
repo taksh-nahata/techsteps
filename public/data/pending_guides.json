@@ -21940,5 +21940,669 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767554004203-47",
+    "title": "Fix USB Device Not Recognized Spam",
+    "problemDescription": "USB device not recognized message appears repeatedly even without any USB devices connected.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "usb",
+      "device",
+      "not recognized",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Update USB Drivers",
+        "content": "1. Press `Win + X` and select `Device Manager`. 2. Expand `Universal Serial Bus controllers`. 3. Right-click on each USB device and select `Update driver`. 4. Choose `Search automatically for updated driver software`. 5. Restart your PC."
+      },
+      {
+        "title": "Disable USB Selective Suspend",
+        "content": "1. Press `Win + R`, type `powercfg.cpl`, and press `Enter`. 2. Click `Choose what the power buttons do`. 3. Click `Change settings that are currently unavailable`. 4. Click `Change advanced power settings`. 5. Expand `USB settings` and then `USB selective suspend setting`. 6. Set it to `Disabled` and click `OK`. 7. Restart your PC."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Windows Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Windows Updates",
+            "content": "1. Press `Win + I` to open `Settings`. 2. Go to `Update & Security`. 3. Click `Check for updates`. 4. Install any available updates and restart your PC."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Perform a System Restore",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restore to Previous State",
+            "content": "1. Press `Win + R`, type `rstrui`, and press `Enter`. 2. Follow the prompts to choose a restore point before the issue started. 3. Complete the system restore process."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T19:13:24.203Z",
+      "updated": "2026-01-04T19:13:24.203Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/usb-device-was-not-recognized-spam.3469923/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767554019433-184",
+    "title": "Fix Apple TV App on Roku",
+    "problemDescription": "Apple TV app not working properly on Roku device.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Roku",
+      "Apple TV",
+      "app-error",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Roku",
+        "content": "Unplug your Roku device from the power source, wait for 1 minute, and then plug it back in."
+      },
+      {
+        "title": "Update Roku Software",
+        "content": "Go to Settings > System > System update > Check now to ensure your Roku is up to date."
+      },
+      {
+        "title": "Reinstall Apple TV App",
+        "content": "Delete the Apple TV app from your Roku, then reinstall it from the Roku Channel Store."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Apple Support",
+            "content": "If the issue persists, visit the Apple Support page at https://support.apple.com/ for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T19:13:39.433Z",
+      "updated": "2026-01-04T19:13:39.433Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255131723",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767554022887-141",
+    "title": "Apple TV Won't Load on Roku",
+    "problemDescription": "Apple TV app fails to load or display content on Roku devices.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "apple tv",
+      "roku",
+      "app error",
+      "video won't load"
+    ],
+    "steps": [
+      {
+        "title": "Restart Roku and Apple TV",
+        "content": "Unplug both your Roku device and modem. Wait for a few minutes, then plug them back in. This can help reset the connection and resolve loading issues."
+      },
+      {
+        "title": "Reinstall Apple TV App",
+        "content": "Remove the Apple TV app from your Roku device. Restart Roku, then reinstall the Apple TV app. This can resolve issues caused by corrupted app data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Adjust Roku Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Video Quality Settings",
+            "content": "Go to the Apple TV app settings on Roku and adjust the video quality settings to a lower resolution. This can help if the issue is related to streaming quality."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T19:13:42.887Z",
+      "updated": "2026-01-04T19:13:42.887Z",
+      "sourceUrl": "https://discussions.apple.com/thread/253210445",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767554031180-383",
+    "title": "Apple TV Login on New Roku TV Error",
+    "problemDescription": "Users are unable to log in to the Apple TV app on their new Roku TV, encountering an error message.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "apple tv",
+      "roku tv",
+      "login error",
+      "network settings"
+    ],
+    "steps": [
+      {
+        "title": "Update Roku TV System Software",
+        "content": "Ensure your Roku TV system software is up-to-date by going to Settings > System > System update > Check now."
+      },
+      {
+        "title": "Update Apple TV App",
+        "content": "Verify that the Apple TV app is up-to-date. If not, update it manually from the Roku Channel Store."
+      },
+      {
+        "title": "Check Network Settings",
+        "content": "Ensure your router or firewall is not blocking Apple authentication servers. If you have custom network settings, reset them to default or switch from a backup provider to your main network."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Roku TV Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > Network > Reset network connection. This can resolve login issues by resetting the network configuration."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T19:13:51.180Z",
+      "updated": "2026-01-04T19:13:51.180Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254794767",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767554040246-994",
+    "title": "Fix Bluetooth Not Available on MacBook Pro",
+    "problemDescription": "Bluetooth is not available on MacBook Pro running Mojave 10.14.2 or later.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "macbook pro",
+      "mojave",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check Monitor Cables",
+        "content": "Ensure that the cables connecting your external monitors to your MacBook Pro are not causing interference. Try using different cables or disconnecting the monitors temporarily to see if the issue resolves."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset PRAM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Step 1",
+            "content": "Shut down your MacBook Pro."
+          },
+          {
+            "title": "Step 2",
+            "content": "Press the power button and immediately hold down the Command (⌘) + Option + P + R keys for about 20 seconds."
+          },
+          {
+            "title": "Step 3",
+            "content": "Release the keys and allow your Mac to restart normally."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Delete .plist Files",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Step 1",
+            "content": "Open Finder and navigate to /Library/Preferences/SystemConfiguration/."
+          },
+          {
+            "title": "Step 2",
+            "content": "Delete the following files: com.apple.Bluetooth.plist and NetworkInterfaces.plist."
+          },
+          {
+            "title": "Step 3",
+            "content": "Restart your MacBook Pro."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Check Internal Cable Connections",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Step 1",
+            "content": "Inspect the cable that connects the motherboard to the Wi-Fi/Bluetooth device near the hinge."
+          },
+          {
+            "title": "Step 2",
+            "content": "Ensure the cable is securely connected. If it is loose, gently push down on the bottom of the laptop case in the middle to secure it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T19:14:00.246Z",
+      "updated": "2026-01-04T19:14:00.246Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/348387/bluetooth-not-available-mojave-10-14-2",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767554045318-812",
+    "title": "Fix MacBook Pro Bluetooth Connection Issues",
+    "problemDescription": "MacBook Pro shows Bluetooth headphones as connected even when they are turned off or out of range.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "macbook",
+      "connection",
+      "headphones"
+    ],
+    "steps": [
+      {
+        "title": "Force-Quit Problematic Apps",
+        "content": "Close any applications that might be interfering with Bluetooth functionality."
+      },
+      {
+        "title": "Restart Your Mac",
+        "content": "Perform a standard restart to see if the issue resolves."
+      },
+      {
+        "title": "Reset the SMC",
+        "content": "If the problem persists, reset the System Management Controller (SMC). This can often resolve underlying hardware communication issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update macOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to System Preferences > Software Update and install any available updates."
+          }
+        ]
+      },
+      {
+        "title": "Reset Bluetooth Module",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Bluetooth Plists",
+            "content": "Delete the following files: ~/Library/Preferences/com.apple.Bluetooth.plist and /Library/Preferences/com.apple.Bluetooth.plist."
+          },
+          {
+            "title": "Restart Your Mac",
+            "content": "After deleting the files, restart your Mac to reset the Bluetooth module."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T19:14:05.318Z",
+      "updated": "2026-01-04T19:14:05.318Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/370404/how-to-fix-bluetooth-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767554055855-230",
+    "title": "Fix Bluetooth Issues After Sleep in OS X Yosemite",
+    "problemDescription": "Bluetooth devices fail to connect after waking Mac from sleep in OS X Yosemite.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "sleep",
+      "yosemite",
+      "macos"
+    ],
+    "steps": [
+      {
+        "title": "Unload and Reload Bluetooth Kernel Extension",
+        "content": "Open Terminal and run the following commands to unload and reload the Bluetooth kernel extension:\n\n`sudo kextunload -b com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport`\n`sudo kextload -b com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport`"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Create a 1-Click Solution with Automator",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Automator",
+            "content": "Launch Automator from your Applications folder."
+          },
+          {
+            "title": "Create a New Application",
+            "content": "Select 'Application' as the type of document you want to create."
+          },
+          {
+            "title": "Add a Run Shell Script Action",
+            "content": "In the Actions library, search for 'Run Shell Script' and drag it into the workflow area."
+          },
+          {
+            "title": "Enter the Script",
+            "content": "Replace the default text with the following commands:\n\n`sudo kextunload -b com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport`\n`sudo kextload -b com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport`"
+          },
+          {
+            "title": "Save the Application",
+            "content": "Save the Automator application to a convenient location."
+          }
+        ]
+      },
+      {
+        "title": "Reinstall macOS",
+        "type": "Last Resort",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure you have a complete backup of your data before proceeding."
+          },
+          {
+            "title": "Reinstall macOS",
+            "content": "Follow the steps to reinstall macOS from the Recovery partition or a bootable installer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T19:14:15.855Z",
+      "updated": "2026-01-04T19:14:15.855Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/156863/bluetooth-issues-after-sleep-in-os-x-yosemite-10-10",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767554063049-533",
+    "title": "Fix notify-send Not Working on Ubuntu 14.04",
+    "problemDescription": "The notify-send command is not displaying notifications on Ubuntu 14.04, while other system notifications work fine.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "notification",
+      "notify-send",
+      "14.04"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall notify-osd",
+        "content": "Purge the notification-daemon package and reinstall notify-osd: `sudo apt-get purge notification-daemon && sudo apt-get autoremove && sudo apt-get install --reinstall notify-osd`."
+      },
+      {
+        "title": "Restart the System",
+        "content": "After reinstalling notify-osd, restart your system to ensure the changes take effect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Install a 3rd Party Indicator",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a 3rd Party Indicator",
+            "content": "Install a third-party indicator that supports notifications and see if it resolves the issue."
+          }
+        ]
+      },
+      {
+        "title": "Check for Intermittent Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Monitor Notification Behavior",
+            "content": "Monitor the behavior of notifications to identify any patterns or triggers for the intermittent issue."
+          },
+          {
+            "title": "Use DISPLAY=:0",
+            "content": "Try using the `DISPLAY=:0` command to ensure notifications are being sent to the correct display."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T19:14:23.049Z",
+      "updated": "2026-01-04T19:14:23.049Z",
+      "sourceUrl": "https://askubuntu.com/questions/470958/notify-send-not-working-on-14-04-but-volume-and-brightness-notifications-do",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767554066229-471",
+    "title": "Fix Unthemed Notify-OSD Notifications",
+    "problemDescription": "Notify-OSD notifications appear unthemed in the top-left corner.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "notify-osd",
+      "notifications",
+      "ubuntu",
+      "theming"
+    ],
+    "steps": [
+      {
+        "title": "Remove Dunst Notification Daemon",
+        "content": "Execute the following commands in the terminal to remove the Dunst notification daemon and send a test notification:"
+      },
+      {
+        "title": "Execute Commands",
+        "content": "sudo apt-get purge dunst\nkillall dunst\nnotify-send \"Hello\""
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Purge i3 and Related Packages",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove i3 and Related Packages",
+            "content": "Execute the following command to remove i3 and related packages, which may include the conflicting notification daemon:"
+          },
+          {
+            "title": "Execute Command",
+            "content": "sudo apt-get purge i3 i3-wm i3lock suckless-tools i3status dunst"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T19:14:26.229Z",
+      "updated": "2026-01-04T19:14:26.229Z",
+      "sourceUrl": "https://askubuntu.com/questions/371020/notify-osd-notifications-appear-unthemed-in-top-left-corner",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767554068741-680",
+    "title": "Fix Slack Notifications on Ubuntu",
+    "problemDescription": "Slack notifications not showing up properly in Ubuntu.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "slack",
+      "notifications",
+      "ubuntu",
+      "electron"
+    ],
+    "steps": [
+      {
+        "title": "Create Notification Fix File",
+        "content": "Open a terminal and run the following command: `sudo touch /usr/lib/libunity-electron_notification_fix`."
+      },
+      {
+        "title": "Restart Slack",
+        "content": "Close and reopen Slack to see if the notifications are working properly."
+      },
+      {
+        "title": "Restart System",
+        "content": "If notifications are still not working, restart your system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Electron Applications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Ensure that Slack and other Electron-based applications are updated to the latest version, as the issue is fixed in Electron but requires application updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T19:14:28.741Z",
+      "updated": "2026-01-04T19:14:28.741Z",
+      "sourceUrl": "https://askubuntu.com/questions/766306/notifications-not-showing-up-properly-in-slack-and-other-electron-apps",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767554086228-634",
+    "title": "Fix iPhone Face ID Not Working",
+    "problemDescription": "Face ID on your iPhone is not working or recognizing your face.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iPhone",
+      "Face ID",
+      "not working",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your iPhone",
+        "content": "Turn off your iPhone and turn it back on to see if the issue is resolved."
+      },
+      {
+        "title": "Update iOS",
+        "content": "Go to Settings > General > Software Update and install the latest iOS version."
+      },
+      {
+        "title": "Check Face ID Settings",
+        "content": "Navigate to Settings > Face ID & Passcode and ensure Face ID is enabled for all desired functions."
+      },
+      {
+        "title": "Reset Face ID",
+        "content": "In Settings > Face ID & Passcode, tap Reset Face ID and follow the prompts to set up Face ID again."
+      },
+      {
+        "title": "Add an Alternate Appearance",
+        "content": "If needed, add an alternate appearance in Settings > Face ID & Passcode to improve recognition."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clean Your iPhone Camera",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clean the Camera",
+            "content": "Gently clean the front camera and sensor area with a soft, lint-free cloth to remove any obstructions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T19:14:46.228Z",
+      "updated": "2026-01-04T19:14:46.228Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/iphone-face-id-not-working-try-fixing-it-with-these-steps/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767554102325-228",
+    "title": "Restart or Reboot iPhone",
+    "problemDescription": "Your iPhone is frozen or unresponsive.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "frozen",
+      "restart",
+      "reboot"
+    ],
+    "steps": [
+      {
+        "title": "Access Home Screen",
+        "content": "If possible, press the Home button to return to the home screen."
+      },
+      {
+        "title": "Hold Home and Lock Buttons",
+        "content": "Press and hold the Home button. Do not release it, then press and hold the Lock button simultaneously."
+      },
+      {
+        "title": "Ignore Slide to Turn Off",
+        "content": "Continue holding both buttons until you see the red Slide to Turn Off indicator, then ignore it."
+      },
+      {
+        "title": "Wait for Apple Logo",
+        "content": "Keep holding the buttons until the white Apple Logo appears, then release the buttons."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restore iPhone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup iPhone",
+            "content": "Backup your iPhone using iTunes or iCloud."
+          },
+          {
+            "title": "Restore iPhone",
+            "content": "Go to Settings > General > Reset > Erase All Content and Settings."
+          },
+          {
+            "title": "Restore from Backup",
+            "content": "After the restore process completes, restore your iPhone from the backup."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T19:15:02.325Z",
+      "updated": "2026-01-04T19:15:02.325Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/iphone-troubleshooting-roundup/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
