@@ -15309,5 +15309,983 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767525232440-555",
+    "title": "Fix System UI Not Responding on Google Pixel",
+    "problemDescription": "System UI not responding when playing videos on Google Pixel devices.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "system ui",
+      "google pixel",
+      "video playback"
+    ],
+    "steps": [
+      {
+        "title": "Backup Your Data",
+        "content": "Before proceeding, ensure you back up all important data to avoid loss."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "Go to Settings > System > Reset options > Erase all data (factory reset). Follow the on-screen instructions to complete the reset."
+      },
+      {
+        "title": "Set Up Your Phone",
+        "content": "After the reset, set up your phone as new."
+      },
+      {
+        "title": "Update System Apps",
+        "content": "Open the Google Play Store, go to Settings > About, and check for updates. Install any available updates for system apps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update System Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for System Updates",
+            "content": "Go to Settings > System > System update and check for any available system software updates."
+          },
+          {
+            "title": "Install Updates",
+            "content": "If updates are available, install them and restart your device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T11:13:52.440Z",
+      "updated": "2026-01-04T11:13:52.440Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-the-problem-on-my-phone-I-keep-getting-a-system-UI-not-responding-asking-me-to-wait-or-close-the-app-Why-is-it-popping-up",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767525235087-104",
+    "title": "Fix Dead/Stuck Pixel on LCD Screen",
+    "problemDescription": "A dead or stuck pixel appears as a tiny dot that doesn't change color with the rest of the screen.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "dead pixel",
+      "stuck pixel",
+      "LCD screen",
+      "pixel repair"
+    ],
+    "steps": [
+      {
+        "title": "Use Pixel Repair Software",
+        "content": "Search for 'stuck pixel repair' software online. Download and run a reputable tool that cycles through colors and patterns to fix the stuck pixel."
+      },
+      {
+        "title": "Apply Gentle Pressure",
+        "content": "If software doesn't work, gently massage the area around the stuck pixel with a soft cloth or your finger to apply light pressure."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Color Cycling",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open a Full-Screen Image",
+            "content": "Display a full-screen image of a solid color (e.g., red, blue, green) for a few minutes."
+          },
+          {
+            "title": "Repeat with Different Colors",
+            "content": "Repeat the process with different solid colors to help unstick the pixel."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T11:13:55.087Z",
+      "updated": "2026-01-04T11:13:55.087Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-a-dead-stuck-pixel-I-ran-a-pixel-test-on-my-monitor-spotted-a-tiny-green-dot-on-a-black-background-other-colors-are-fine-like-white-blue-green-yellow-Is-it-a-dead-pixel-or-just-stuck-Thanks",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767525238427-813",
+    "title": "Fix Google Pixel 4 Freezing Issue",
+    "problemDescription": "Google Pixel 4 freezes momentarily due to overheating.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "google",
+      "pixel",
+      "freezing",
+      "overheating"
+    ],
+    "steps": [
+      {
+        "title": "Close Unnecessary Apps",
+        "content": "Close all background apps to reduce the load on the processor."
+      },
+      {
+        "title": "Restart the Device",
+        "content": "Restart your Pixel 4 to clear temporary files and processes that might be causing the issue."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Go to Settings > System > System update to ensure your device has the latest software updates."
+      },
+      {
+        "title": "Remove the Case",
+        "content": "Remove the phone case to allow better heat dissipation."
+      },
+      {
+        "title": "Avoid Direct Sunlight",
+        "content": "Keep your phone away from direct sunlight and other heat sources."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "If the issue persists, perform a factory reset. Note that this will erase all data on your device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter Safe Mode",
+            "content": "Press and hold the Power button until the Power menu appears. Tap and hold the Power Off option until the Safe Mode prompt appears. Tap OK to restart in Safe Mode."
+          },
+          {
+            "title": "Check for Issues",
+            "content": "If the freezing stops in Safe Mode, a third-party app is likely causing the problem. Uninstall recently installed apps one by one to identify the culprit."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T11:13:58.427Z",
+      "updated": "2026-01-04T11:13:58.427Z",
+      "sourceUrl": "https://www.quora.com/What-is-wrong-with-my-Google-Pixel-4-Can-I-fix-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767525243593-117",
+    "title": "Fix Pixel 6 Pro Video Recording Stopping While Zooming",
+    "problemDescription": "Google Pixel 6 Pro stops video recording when zooming during recording.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel 6 pro",
+      "video recording",
+      "zoom",
+      "camera app",
+      "crash"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Device",
+        "content": "Restart your Google Pixel 6 Pro to clear any temporary glitches that might be causing the camera app to crash."
+      },
+      {
+        "title": "Update the Camera App",
+        "content": "Ensure your camera app is updated to the latest version. Go to the Google Play Store, search for the camera app, and update it if an update is available."
+      },
+      {
+        "title": "Clear Camera App Cache",
+        "content": "Go to Settings > Apps > Camera > Storage & cache > Clear Cache. This can resolve issues caused by corrupted cache files."
+      },
+      {
+        "title": "Check for System Updates",
+        "content": "Make sure your device's software is up to date. Go to Settings > System > System update and install any available updates."
+      },
+      {
+        "title": "Reset App Preferences",
+        "content": "Go to Settings > Apps > Camera > Storage & cache > Reset app preferences. This can help if the issue is related to app settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Backup your important data as a factory reset will erase all data from your device."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset). Follow the on-screen instructions to complete the reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T11:14:03.593Z",
+      "updated": "2026-01-04T11:14:03.593Z",
+      "sourceUrl": "https://www.quora.com/Why-does-my-Google-Pixel-6-Pro-stop-video-recording-when-I-zoom-while-recording-the-video-How-do-I-fix-this",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767525251435-759",
+    "title": "Windows 10 Setup: USB Thumb Drive Issue",
+    "problemDescription": "Windows 10 setup may fail or show driver missing errors due to a connected USB thumb drive.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 10",
+      "setup",
+      "usb",
+      "installation",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Disconnect USB Thumb Drive",
+        "content": "Restart the Windows 10 setup process. When you reach the screen where you can choose installation options, disconnect the USB thumb drive."
+      },
+      {
+        "title": "Proceed with Custom Installation",
+        "content": "Go through the Custom installation options. When setup is ready to copy files, it will prompt you to reconnect the installation source (your USB)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Create Bootable USB",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Borrow or Buy USB Thumb Drive",
+            "content": "Obtain an 8 GB USB thumb drive."
+          },
+          {
+            "title": "Download Windows 10 ISO",
+            "content": "Go to a working computer and download the official Windows 10 ISO files."
+          },
+          {
+            "title": "Create Bootable USB",
+            "content": "Use the downloaded ISO to create a bootable copy on the USB thumb drive."
+          },
+          {
+            "title": "Perform Clean Install",
+            "content": "Follow the steps to perform a clean install of Windows 10 using the bootable USB."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T11:14:11.435Z",
+      "updated": "2026-01-04T11:14:11.435Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/widnows-10/a5887e3f-378a-42d4-85da-eaf0bd2aa48f",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767525261072-398",
+    "title": "Fix Kinect v2 Not Recognized on Surface Book",
+    "problemDescription": "Kinect v2 is not recognized after Windows and Surface Book firmware updates.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "kinect",
+      "surface book",
+      "windows update",
+      "usb",
+      "drivers"
+    ],
+    "steps": [
+      {
+        "title": "Update or Reinstall Kinect Drivers",
+        "content": "1. Open Device Manager. 2. Locate Kinect v2 under 'Other devices' or 'Universal Serial Bus devices'. 3. Right-click and select 'Update driver'. 4. Choose 'Search automatically for updated driver software'. 5. If the issue persists, uninstall the driver and restart your computer to reinstall it automatically."
+      },
+      {
+        "title": "Check USB Port and Power Supply",
+        "content": "1. Ensure the Kinect is connected to a USB 3.0 port. 2. Verify the power supply is adequate (Kinect v2 requires a dedicated power supply). 3. Try connecting the Kinect directly to the Surface Book without using a docking station."
+      },
+      {
+        "title": "Set Kinect to Use Nvidia Graphics",
+        "content": "1. Open the Kinect configuration tool. 2. Navigate to the graphics settings. 3. Ensure the Kinect service is set to use the Nvidia graphics card."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: System Restore",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restore to Previous State",
+            "content": "1. Open the Start menu and type 'System Restore'. 2. Select 'Create a restore point'. 3. Click 'System Restore' and follow the prompts to restore your computer to a point before the updates were installed."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Microsoft Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Seek Professional Help",
+            "content": "1. Visit the Microsoft Support website. 2. Contact Microsoft Support for further assistance if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T11:14:21.072Z",
+      "updated": "2026-01-04T11:14:21.072Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/windows%5C_10-hardware/kinect-v2-does-not-work-with-surface-book-with/fb4b3f74-e494-46f2-8144-23f2ec88a844",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767525264384-575",
+    "title": "Use Alt Codes in Word 2010 on Surface Pro 2",
+    "problemDescription": "Alt codes are not working in Word 2010 on Surface Pro 2 due to the lack of a number pad.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "alt codes",
+      "word 2010",
+      "surface pro 2",
+      "number pad"
+    ],
+    "steps": [
+      {
+        "title": "Connect a Full-Size Keyboard",
+        "content": "Attach a full-size external keyboard with a number pad to your Surface Pro 2. This will allow you to use Alt codes as you would on a traditional keyboard."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use On-Screen Keyboard",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open On-Screen Keyboard",
+            "content": "Go to Start > All Programs > Accessories > Ease of Access > On-Screen Keyboard."
+          },
+          {
+            "title": "Enable Number Pad",
+            "content": "Click on the Options button in the On-Screen Keyboard, then check 'Turn on numeric keypad'."
+          },
+          {
+            "title": "Use Alt Codes",
+            "content": "Use the On-Screen Keyboard's number pad to input Alt codes by holding the Alt key and typing the code on the numeric keypad."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T11:14:24.384Z",
+      "updated": "2026-01-04T11:14:24.384Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/all/cant-use-alt-codes-in-word-2010-on-surface-pro-2/d70f9945-8b89-42bc-91da-9cc1608f7963",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767525277765-797",
+    "title": "Fix Gmail Annoyances",
+    "problemDescription": "Common issues and frustrations with Gmail and how to resolve them.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "annoyances",
+      "fix",
+      "chrome extensions"
+    ],
+    "steps": [
+      {
+        "title": "Use Chrome Extensions",
+        "content": "Install Chrome extensions designed to address specific Gmail issues. These extensions can help manage and resolve common problems."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Desktop and Laptop Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Explore Additional Tools",
+            "content": "Try desktop and laptop tools specifically designed to enhance Gmail functionality and address common issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T11:14:37.765Z",
+      "updated": "2026-01-04T11:14:37.765Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/gmail-annoyances-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767525282663-455",
+    "title": "Use Gmail's Manage Subscriptions to Clean Your Inbox",
+    "problemDescription": "Your Gmail inbox is cluttered with unwanted subscription emails.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "inbox",
+      "subscriptions",
+      "unsubscribe"
+    ],
+    "steps": [
+      {
+        "title": "Access Manage Subscriptions",
+        "content": "Open Gmail and click on the 'Manage Subscriptions' option in the sidebar."
+      },
+      {
+        "title": "Review Subscriptions",
+        "content": "Browse through the list of active subscriptions to see who emails you the most and how often."
+      },
+      {
+        "title": "Unsubscribe",
+        "content": "Click on the 'Unsubscribe' button next to the subscriptions you no longer want to receive."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use One-Click Unsubscribe",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Email",
+            "content": "Open an email from a subscription you want to unsubscribe from."
+          },
+          {
+            "title": "Click Unsubscribe",
+            "content": "Click on the 'Unsubscribe' link usually found at the bottom of the email."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T11:14:42.663Z",
+      "updated": "2026-01-04T11:14:42.663Z",
+      "sourceUrl": "https://www.makeuseof.com/use-gmail-manage-subscription-feature/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767525291355-144",
+    "title": "Fix Sticky Key on MacBook",
+    "problemDescription": "A key on your MacBook keyboard is sticky or unresponsive.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "keyboard",
+      "sticky key",
+      "clean"
+    ],
+    "steps": [
+      {
+        "title": "Power Off Your MacBook",
+        "content": "Turn off your MacBook and unplug it before starting the cleaning process."
+      },
+      {
+        "title": "Spray Compressed Air",
+        "content": "Use a can of compressed air to spray your keyboard from left to right, ensuring you cover the sticky key area."
+      },
+      {
+        "title": "Clean with Isopropyl Alcohol",
+        "content": "Wipe the affected area with isopropyl alcohol using a microfiber cleaning cloth or cotton swab. Avoid dousing the keyboard directly with alcohol and do not use rubbing alcohol."
+      },
+      {
+        "title": "Remove the Keycap (if necessary)",
+        "content": "If the key is still sticky, carefully remove the keycap to clean the gunk lodged underneath. Ensure your MacBook does not have a butterfly switch keyboard (used from 2015 to 2019) before attempting this."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Professional Help",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact a Professional",
+            "content": "If the above methods fail, consider contacting a professional for assistance, especially if your MacBook has a butterfly switch keyboard."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T11:14:51.355Z",
+      "updated": "2026-01-04T11:14:51.355Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/need-to-fix-a-sticky-key-on-your-macbook-keyboard-heres-how/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767525293965-58",
+    "title": "Mac OS X Troubleshooting Basics",
+    "problemDescription": "Common issues with Mac OS X and basic troubleshooting techniques.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "macos",
+      "troubleshooting",
+      "guide"
+    ],
+    "steps": [
+      {
+        "title": "Read the eBook",
+        "content": "Access and read the 'Be Your Own Mac OS X Troubleshooting Guru: The Basics' eBook for introductory techniques and routines."
+      },
+      {
+        "title": "Familiarize Yourself",
+        "content": "Understand the basic tenets of Mac OS X troubleshooting to address common problems."
+      },
+      {
+        "title": "Apply Techniques",
+        "content": "Use the techniques and routines outlined in the eBook to troubleshoot and resolve issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Community Forums",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Search Forums",
+            "content": "Look for similar issues and solutions in Mac OS X community forums."
+          },
+          {
+            "title": "Ask for Help",
+            "content": "Post your specific problem in relevant forums to get advice from experienced users."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T11:14:53.965Z",
+      "updated": "2026-01-04T11:14:53.965Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/be-your-own-mac-os-x-troubleshooting-guru-the-basicsi-12/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767525297222-967",
+    "title": "Mac Troubleshooting Toolkit",
+    "problemDescription": "Recommended tools for troubleshooting Mac systems.",
+    "category": "mac",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "troubleshooting",
+      "tools"
+    ],
+    "steps": [
+      {
+        "title": "Prepare Your Toolkit",
+        "content": "Familiarize yourself with the following tools to have them ready when troubleshooting issues on your Mac."
+      },
+      {
+        "title": "File Investigation Tools",
+        "content": "Use tools like Disk Utility, Disk Inventory X, or WhatSize to investigate and manage files on your Mac."
+      },
+      {
+        "title": "System Monitoring Tools",
+        "content": "Utilize tools such as Activity Monitor, Console, or iStat Menus to monitor system events and performance."
+      },
+      {
+        "title": "Hardware Control Tools",
+        "content": "Tools like EtreCheck, OnyX, or Macs Fan Control can help you control and monitor hardware aspects of your Mac."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Community Recommended Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Third-Party Tools",
+            "content": "Explore third-party tools like CleanMyMac, DaisyDisk, or MacBooster for additional troubleshooting capabilities."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T11:14:57.222Z",
+      "updated": "2026-01-04T11:14:57.222Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/troubleshooting-toolkit-recommendations-for-mac-users/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767525300768-701",
+    "title": "Fix Mac OS X 10.1.2 Copy/Paste Issues",
+    "problemDescription": "Copy and paste functionality not working in Mac OS X 10.1.2, especially with external applications.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "macos",
+      "copy",
+      "paste",
+      "10.1.2",
+      "classic"
+    ],
+    "steps": [
+      {
+        "title": "Restart Classic Environment",
+        "content": "Open the Console application and check for any errors related to the pasteboard. If you find errors, restart the Classic environment to resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check File Size",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify File Size",
+            "content": "If the issue occurs only with large files, try copying and pasting smaller files to see if the problem persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T11:15:00.768Z",
+      "updated": "2026-01-04T11:15:00.768Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/troubleshooting-mac-os-x-10-1-2-login-items-copypaste-vpc-amp-panic-sleep-issues-more/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767525304405-681",
+    "title": "MacBook Power Issues",
+    "problemDescription": "Troubleshooting power-related problems on a MacBook.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "power",
+      "battery",
+      "charging"
+    ],
+    "steps": [
+      {
+        "title": "Check the Power Adapter",
+        "content": "Ensure the power adapter is properly connected to the MacBook and the power outlet. Try a different outlet or power adapter if available."
+      },
+      {
+        "title": "Inspect the Charging Port",
+        "content": "Look for any debris or damage in the charging port. Clean it gently with a soft brush if necessary."
+      },
+      {
+        "title": "Restart the MacBook",
+        "content": "Restart your MacBook to see if the issue resolves itself."
+      },
+      {
+        "title": "Check Battery Health",
+        "content": "Go to System Preferences > Battery > Battery to check the battery health and see if it needs servicing."
+      },
+      {
+        "title": "Reset the SMC",
+        "content": "Shut down the MacBook, then press and hold the power button for 10 seconds to reset the System Management Controller (SMC)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset NVRAM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Shut Down the MacBook",
+            "content": "Turn off your MacBook completely."
+          },
+          {
+            "title": "Press the Power Button",
+            "content": "Press the power button to turn on the MacBook, then immediately press and hold the Option + Command + P + R keys for about 20 seconds."
+          },
+          {
+            "title": "Release the Keys",
+            "content": "Release the keys and allow the MacBook to start normally."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T11:15:04.405Z",
+      "updated": "2026-01-04T11:15:04.405Z",
+      "sourceUrl": "https://www.cnet.com/videos/solve-macbook-power-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767525316218-467",
+    "title": "Fix Outlook Error: Microsoft.Exchange.Data.Directory.AADriveStoreAccessNonLocalException",
+    "problemDescription": "Outlook fails to open with the error: Microsoft.Exchange.Data.Directory.AADriveStoreAccessNonLocalException.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "error",
+      "exchange",
+      "directory",
+      "access"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your device is connected to the internet. Restart your router if necessary."
+      },
+      {
+        "title": "Restart Outlook",
+        "content": "Close Outlook completely and reopen it to see if the issue persists."
+      },
+      {
+        "title": "Update Outlook",
+        "content": "Go to File > Office Account > Update Options > Update Now to ensure you have the latest version of Outlook."
+      },
+      {
+        "title": "Repair Office Installation",
+        "content": "Go to Control Panel > Programs > Programs and Features. Select Microsoft Office and choose Repair."
+      },
+      {
+        "title": "Check Exchange Server Status",
+        "content": "Verify that your Exchange server is operational and accessible. Contact your IT administrator if needed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Recreate Outlook Profile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Mail Applet",
+            "content": "Go to Control Panel > Mail > Show Profiles."
+          },
+          {
+            "title": "Create a New Profile",
+            "content": "Click Add, follow the prompts to create a new profile, and set it as the default."
+          },
+          {
+            "title": "Restart Outlook",
+            "content": "Open Outlook with the new profile to see if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T11:15:16.218Z",
+      "updated": "2026-01-04T11:15:16.218Z",
+      "sourceUrl": "https://answers.microsoft.com/da-dk/windows/forum/all/apple-mobile-device-driver-not-in-device-manager/2a8d002e-777e-42c6-b905-1ba7a5ed6e95?page=5",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767525320240-679",
+    "title": "Fixing a Broken Laptop",
+    "problemDescription": "Your laptop is not working due to a broken part or assembly.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "laptop",
+      "repair",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Assess the Damage",
+        "content": "Identify the broken part or assembly that needs repair."
+      },
+      {
+        "title": "Gather Tools and Replacement Parts",
+        "content": "Obtain the necessary tools and replacement parts for the repair."
+      },
+      {
+        "title": "Disassemble the Laptop",
+        "content": "Carefully disassemble the laptop to access the broken part."
+      },
+      {
+        "title": "Replace the Broken Part",
+        "content": "Replace the broken part with the new one, ensuring it is securely attached."
+      },
+      {
+        "title": "Reassemble the Laptop",
+        "content": "Put the laptop back together, ensuring all parts are properly aligned and secured."
+      },
+      {
+        "title": "Test the Laptop",
+        "content": "Power on the laptop and test all functions to ensure the repair was successful."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Professional Repair",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Find a Professional Repair Service",
+            "content": "Locate a reputable laptop repair service in your area."
+          },
+          {
+            "title": "Schedule an Appointment",
+            "content": "Contact the repair service to schedule an appointment for the repair."
+          },
+          {
+            "title": "Transport the Laptop",
+            "content": "Take the laptop to the repair service or arrange for pickup if available."
+          },
+          {
+            "title": "Pay for the Repair",
+            "content": "Pay the repair service for their work and any replacement parts."
+          },
+          {
+            "title": "Retrieve the Laptop",
+            "content": "Pick up the laptop once the repair is complete and test all functions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T11:15:20.240Z",
+      "updated": "2026-01-04T11:15:20.240Z",
+      "sourceUrl": "https://www.wordwebonline.com/en/FIX",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767525324109-694",
+    "title": "Fix PowerPoint Error",
+    "problemDescription": "PowerPoint crashes with an error message and needs to be closed.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "powerpoint",
+      "error",
+      "crash",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Computer",
+        "content": "Close PowerPoint and restart your computer to see if the issue is resolved."
+      },
+      {
+        "title": "Update PowerPoint",
+        "content": "Ensure you have the latest updates for PowerPoint. Go to File > Account > Update Options > Update Now."
+      },
+      {
+        "title": "Repair Office Installation",
+        "content": "Go to Control Panel > Programs > Programs and Features. Select Microsoft Office, choose Change, and then select Quick Repair or Online Repair."
+      },
+      {
+        "title": "Check for Corrupted Files",
+        "content": "Open PowerPoint and go to File > Open. Navigate to the file causing the issue, right-click, and select Open and Repair."
+      },
+      {
+        "title": "Create a New Presentation",
+        "content": "If the issue persists, create a new presentation and copy the content from the problematic file to the new one."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall PowerPoint",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall PowerPoint",
+            "content": "Go to Control Panel > Programs > Programs and Features. Select Microsoft Office and choose Uninstall."
+          },
+          {
+            "title": "Reinstall PowerPoint",
+            "content": "Download the latest version of Microsoft Office from the official website and follow the installation instructions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T11:15:24.109Z",
+      "updated": "2026-01-04T11:15:24.109Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/officeversion_other-word/cant-find-my-word/7cc57d66-b23c-4815-9862-90dbb5145150?msgId=dddd8330-46bd-40ea-891e-71efdfb80a23",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767525327484-973",
+    "title": "Understand the Meaning of 'Fix'",
+    "problemDescription": "Clarify the various meanings and uses of the word 'fix'.",
+    "category": "general",
+    "difficulty": "Easy",
+    "keywords": [
+      "fix",
+      "meaning",
+      "definition",
+      "usage"
+    ],
+    "steps": [
+      {
+        "title": "Consult a Dictionary",
+        "content": "Look up the word 'fix' in a reliable dictionary like Britannica Dictionary to understand its various meanings and usages."
+      },
+      {
+        "title": "Read Examples",
+        "content": "Go through the example sentences provided to see how 'fix' is used in different contexts."
+      },
+      {
+        "title": "Understand Phrasal Verbs",
+        "content": "Pay attention to phrasal verbs like 'fix up' and their specific meanings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Online Resources",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Search Online",
+            "content": "Use search engines to find additional explanations and examples of the word 'fix'."
+          },
+          {
+            "title": "Watch Educational Videos",
+            "content": "Look for educational videos or tutorials that explain the word 'fix' and its various uses."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T11:15:27.484Z",
+      "updated": "2026-01-04T11:15:27.484Z",
+      "sourceUrl": "https://www.britannica.com/dictionary/fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
