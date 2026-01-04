@@ -14369,5 +14369,945 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767521770068-86",
+    "title": "Fix 'You Need The Official WhatsApp to Use This Account' Error",
+    "problemDescription": "Error message stating you need the official WhatsApp to use your account.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "error",
+      "account",
+      "official"
+    ],
+    "steps": [
+      {
+        "title": "Update WhatsApp",
+        "content": "Go to your Play Store (Android) or App Store (iPhone) and update WhatsApp to the latest version."
+      },
+      {
+        "title": "Contact WhatsApp Support",
+        "content": "Open WhatsApp, go to Settings > Help > Contact Us. Type your number with country code (e.g., +23490...) and click Next. This will send a message to WhatsApp Help Center."
+      },
+      {
+        "title": "Wait for Response",
+        "content": "Wait 24-48 hours for an automated response from WhatsApp. They will resolve the issue automatically."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall WhatsApp",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall WhatsApp",
+            "content": "Uninstall WhatsApp from your device."
+          },
+          {
+            "title": "Reinstall WhatsApp",
+            "content": "Download and install the official WhatsApp app from the Play Store or App Store."
+          },
+          {
+            "title": "Verify Account",
+            "content": "Open WhatsApp and verify your account with the registered number."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T10:16:10.068Z",
+      "updated": "2026-01-04T10:16:10.068Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=MSea6VXmjZQ",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767521774523-315",
+    "title": "Fix 'You Need The Official WhatsApp to Use This' Error",
+    "problemDescription": "Error message stating you need the official WhatsApp to use the app.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "WhatsApp",
+      "error",
+      "official app",
+      "blocked"
+    ],
+    "steps": [
+      {
+        "title": "Update WhatsApp",
+        "content": "Go to the Play Store, check for WhatsApp updates, and install any available updates."
+      },
+      {
+        "title": "Try WhatsApp Business",
+        "content": "Uninstall your current WhatsApp version, then install WhatsApp Business from the Play Store. Try activating your number using WhatsApp Business."
+      },
+      {
+        "title": "Use SIM Card in Another Phone",
+        "content": "Remove your SIM card from the current phone and insert it into another phone. Download and install WhatsApp on the new phone, then activate your number."
+      },
+      {
+        "title": "Contact WhatsApp Support",
+        "content": "Use your phone's browser to visit the WhatsApp Help Center. Select 'Contact WhatsApp', click on 'Contact Us' under WhatsApp Messenger support, and provide your phone number."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall WhatsApp",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall WhatsApp",
+            "content": "Uninstall the current WhatsApp application from your phone."
+          },
+          {
+            "title": "Reinstall WhatsApp",
+            "content": "Go to the Play Store, search for WhatsApp, and reinstall the official version."
+          },
+          {
+            "title": "Activate Your Number",
+            "content": "Open WhatsApp and try activating your number again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T10:16:14.523Z",
+      "updated": "2026-01-04T10:16:14.523Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=ANo-GiWhJlc",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767521783334-122",
+    "title": "Fix WhatsApp Keeps Crashing",
+    "problemDescription": "WhatsApp crashes or fails to open when trying to use it.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "crash",
+      "app-error",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Clear App Cache",
+        "content": "Go to your device's Settings, find WhatsApp, tap on 'Storage', and then select 'Clear Cache'."
+      },
+      {
+        "title": "Update WhatsApp",
+        "content": "Open the Play Store, search for WhatsApp, and update it to the latest version if an update is available."
+      },
+      {
+        "title": "Clear App Data",
+        "content": "Go to Settings, find WhatsApp, tap on 'Storage', and then select 'Clear Data'. Make sure to back up your chats before doing this."
+      },
+      {
+        "title": "Close Background Apps",
+        "content": "Close all background applications and then try opening WhatsApp again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Storage Space",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Storage",
+            "content": "Go to Settings, search for 'Storage', and check if your device has enough storage space. Free up space if necessary."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T10:16:23.334Z",
+      "updated": "2026-01-04T10:16:23.334Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=kamM7Ok6NeE",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767521792610-957",
+    "title": "Unban WhatsApp Account",
+    "problemDescription": "Your WhatsApp account has been banned or suspended without a clear reason.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "WhatsApp",
+      "account",
+      "banned",
+      "suspended",
+      "unban"
+    ],
+    "steps": [
+      {
+        "title": "Contact WhatsApp Support via Feedback",
+        "content": "Open WhatsApp, go to Settings > Help > Contact Us. Select 'No' when asked if the issue is resolved, then choose 'Solution doesn't work'. Send a message explaining your situation."
+      },
+      {
+        "title": "Post on WhatsApp's Official Facebook Page",
+        "content": "Go to WhatsApp's official Facebook page and post a comment on their latest post explaining that your account was banned without reason and request an unban."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Visit WhatsApp Help Center",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Search for WhatsApp Help Center",
+            "content": "Search for 'my WhatsApp account was suspended' on Google and click on the first link to the WhatsApp Help Center."
+          },
+          {
+            "title": "Follow Help Center Instructions",
+            "content": "Follow the instructions provided in the Help Center to appeal the ban."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T10:16:32.610Z",
+      "updated": "2026-01-04T10:16:32.610Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=bBZnA56qMJY",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767521801529-928",
+    "title": "Fix WhatsApp and Messenger on iPhone 5",
+    "problemDescription": "WhatsApp and Messenger apps are not working on an iPhone 5 running iOS 8.1.3.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "messenger",
+      "iphone",
+      "ios",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Update iOS",
+        "content": "Update the iPhone to a newer version of iOS, as the apps may not be fully compatible with iOS 8.1.3."
+      },
+      {
+        "title": "Reinstall Apps",
+        "content": "Delete the WhatsApp and Messenger apps from the iPhone and reinstall them from the App Store."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset to Factory Defaults",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup the iPhone data to iCloud or iTunes."
+          },
+          {
+            "title": "Factory Reset",
+            "content": "Reset the iPhone to factory defaults, keeping the same iOS version."
+          },
+          {
+            "title": "Set Up as New Device",
+            "content": "Set up the iPhone as a new device and try installing the apps again."
+          },
+          {
+            "title": "Restore Backup",
+            "content": "If the apps work, restore the backup and hope for the best."
+          }
+        ]
+      },
+      {
+        "title": "Wipe and Restore",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Wipe Device",
+            "content": "Wipe the device completely and set it up as a new device."
+          },
+          {
+            "title": "Install Apps",
+            "content": "Install the WhatsApp and Messenger apps to see if they work."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T10:16:41.529Z",
+      "updated": "2026-01-04T10:16:41.529Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/231840/why-is-whatsapp-and-messenger-no-longer-working-on-iphone-5",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767521804681-130",
+    "title": "Fix WhatsApp Crashing on iPhone When Linking to Web",
+    "problemDescription": "WhatsApp crashes on iPhone when attempting to link to WhatsApp Web, often requiring a reinstall.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "iphone",
+      "crash",
+      "web",
+      "backup"
+    ],
+    "steps": [
+      {
+        "title": "Backup WhatsApp Data",
+        "content": "Use the official 'Move to iOS' app to back up your WhatsApp data."
+      },
+      {
+        "title": "Reset iPhone to Factory Settings",
+        "content": "Go to Settings > General > Transfer or Reset iPhone > Erase All Content and Settings."
+      },
+      {
+        "title": "Reinstall WhatsApp",
+        "content": "After resetting, reinstall WhatsApp from the App Store and restore using the official backup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear App Cache and Reinstall",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Log Out of WhatsApp",
+            "content": "Log out of your WhatsApp account on your iPhone."
+          },
+          {
+            "title": "Quit App Store",
+            "content": "Force quit the App Store to clear its cache."
+          },
+          {
+            "title": "Reinstall WhatsApp",
+            "content": "Uninstall and reinstall WhatsApp from the App Store, then log in again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T10:16:44.681Z",
+      "updated": "2026-01-04T10:16:44.681Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/452004/whatsapp-crashing-when-linking-to-web",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767521808583-793",
+    "title": "Fix WhatsApp iCloud Backup Stuck at 0%",
+    "problemDescription": "WhatsApp iCloud backup is stuck at 0% and not progressing.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "icloud",
+      "backup",
+      "stuck",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Check iCloud Storage",
+        "content": "Ensure you have enough iCloud storage. WhatsApp requires 2.05x the backup size available on your iPhone and in iCloud."
+      },
+      {
+        "title": "Upgrade iCloud Storage",
+        "content": "If your backup is larger than 2.4 GB, consider upgrading your iCloud storage plan to at least 50 GB."
+      },
+      {
+        "title": "Turn Off and On WhatsApp in iCloud",
+        "content": "Go to Settings > [Your Name] > iCloud > Manage Storage > Backups > WhatsApp > Turn Off > Turn On."
+      },
+      {
+        "title": "Delete WhatsApp Data from iCloud",
+        "content": "Delete WhatsApp data from iCloud Drive and try to backup again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact WhatsApp Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact WhatsApp Support",
+            "content": "Reach out to WhatsApp support for assistance, as they may provide additional solutions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T10:16:48.583Z",
+      "updated": "2026-01-04T10:16:48.583Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/362590/whatsapp-icloud-backup-stuck-at-0-and-just-wont-move",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767521811075-928",
+    "title": "Fix WhatsApp Button Issue on iOS",
+    "problemDescription": "The Next button in WhatsApp for iOS is not clickable due to overlapping text.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "ios",
+      "button",
+      "text",
+      "display"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Text Size",
+        "content": "Go to Settings -> Display & Brightness and change Text Size to the smallest setting. This should reduce the text above the button enough to make it clickable."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall WhatsApp",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall WhatsApp",
+            "content": "Delete the WhatsApp app from your iPhone."
+          },
+          {
+            "title": "Reinstall WhatsApp",
+            "content": "Download and install WhatsApp again from the App Store."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Restart iPhone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your iPhone",
+            "content": "Restart your iPhone to see if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T10:16:51.075Z",
+      "updated": "2026-01-04T10:16:51.075Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/473296/is-this-a-bug-in-whatsapp-for-ios",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767521819557-613",
+    "title": "Speed Up Computer by Updating Software",
+    "problemDescription": "Your computer is running slow due to outdated software.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "computer",
+      "speed",
+      "software",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Update Software",
+        "content": "Ensure your computer’s software is up to date by checking for updates in the system settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Problematic Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Right-click on the Start button and select Device Manager on the Power Menu."
+          },
+          {
+            "title": "Uninstall Device",
+            "content": "Select and right-click on the component that may be causing issues and select Uninstall Device on the pop-up menu."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T10:16:59.557Z",
+      "updated": "2026-01-04T10:16:59.557Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/how-to-clean-and-speed-up-your-pc/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767521826603-667",
+    "title": "Fix Surface Pro 7 Sluggish Performance",
+    "problemDescription": "Surface Pro 7 is running slow due to high memory or CPU usage.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "surface pro 7",
+      "slow performance",
+      "memory usage",
+      "cpu usage"
+    ],
+    "steps": [
+      {
+        "title": "Check Memory and CPU Usage",
+        "content": "Click on the Memory, CPU, and Disk sections in the Task Manager to identify which applications are consuming the most resources."
+      },
+      {
+        "title": "Close Resource-Intensive Applications",
+        "content": "Close any applications that are using a significant amount of memory or CPU, such as Google Chrome."
+      },
+      {
+        "title": "Update Windows",
+        "content": "Go to Settings > System > Windows Update and install any available updates. Restart your device after the update."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Display Settings for External Monitor",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Refresh Rate",
+            "content": "Ensure the external display has a supported refresh rate. Refer to the guide 'Common multi-monitor problems and how to fix them' for detailed solutions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T10:17:06.603Z",
+      "updated": "2026-01-04T10:17:06.603Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/quick-fixes-for-surface-7-pro-common-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767521836176-537",
+    "title": "Fix Windows 10 Audio Screeching",
+    "problemDescription": "Audio is screeching during playback on Windows 10.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "audio",
+      "screeching",
+      "playback"
+    ],
+    "steps": [
+      {
+        "title": "Clean Temporary Files",
+        "content": "Use a free program like CCleaner to remove trackers and clear out temporary files and other bloatware cluttering up your computer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Audio Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Right-click the Start button and select 'Device Manager'."
+          },
+          {
+            "title": "Update Audio Drivers",
+            "content": "Expand the 'Sound, video and game controllers' section, right-click your audio device, and select 'Update driver'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T10:17:16.176Z",
+      "updated": "2026-01-04T10:17:16.176Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/windows-10-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767521844125-802",
+    "title": "Fix AirPods Not Playing Sound",
+    "problemDescription": "AirPods are not playing any sound despite being connected.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods",
+      "sound",
+      "connection",
+      "iOS"
+    ],
+    "steps": [
+      {
+        "title": "Check Volume Levels",
+        "content": "Ensure the volume on your AirPods is not accidentally turned down, especially if you have the second-gen AirPods Pro with touch controls."
+      },
+      {
+        "title": "Update iOS",
+        "content": "Go to the Settings app on your iPhone or iPad and make sure all software updates have been applied."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset AirPods Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset AirPods",
+            "content": "Put the AirPods back in the charging case, wait for around 30 seconds, then take them back out and put them back in your ears again."
+          },
+          {
+            "title": "Toggle Bluetooth",
+            "content": "Turn Bluetooth on and off on your phone or tablet, then repeat the first step."
+          }
+        ]
+      },
+      {
+        "title": "Clean AirPods and Case",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clean AirPods and Case",
+            "content": "Use a soft cloth or swab to carefully clean the inside and bottom of the charging case, and thoroughly clean the stems of your AirPods to ensure proper contact with the charging pins."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T10:17:24.125Z",
+      "updated": "2026-01-04T10:17:24.125Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-airpods-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767521846537-498",
+    "title": "Fix AirPods Pro Noise-Cancellation Issues",
+    "problemDescription": "AirPods Pro users experiencing degraded noise-cancellation performance after firmware update 2C54.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods",
+      "noise-cancellation",
+      "firmware",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Wait for Apple's Official Fix",
+        "content": "Apple has acknowledged the issue and is working on a solution. Wait for the next firmware update to resolve the noise-cancellation problems."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Temporary Workaround: Listen to Bass-Forward Tracks",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Play Music Loudly",
+            "content": "To mask the reduced noise-cancellation performance, play your favorite bass-forward tracks at a higher volume."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T10:17:26.537Z",
+      "updated": "2026-01-04T10:17:26.537Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/apple-airpods-pro-noise-cancellation-problems-what-to-do/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767521849228-650",
+    "title": "Fix Bluetooth Headphones Not Pairing",
+    "problemDescription": "Bluetooth headphones not pairing or not producing sound.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "headphones",
+      "pairing",
+      "sound"
+    ],
+    "steps": [
+      {
+        "title": "Reset Devices",
+        "content": "Reset both your headphones and the device you're trying to pair them with."
+      },
+      {
+        "title": "Check Bluetooth Settings",
+        "content": "Go to the Bluetooth settings on your host device to see if the headphones are connected."
+      },
+      {
+        "title": "Re-pair Headphones",
+        "content": "If not connected, re-pair the headphones. If connected but no sound, check the volume settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Automatic Pairing for Apple Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open AirPods Case",
+            "content": "For Apple devices, simply open the AirPods case near your phone to automatically pair them."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T10:17:29.228Z",
+      "updated": "2026-01-04T10:17:29.228Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/common-headphone-issues-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767521861225-382",
+    "title": "Repair AirPods with Replacement Batteries",
+    "problemDescription": "AirPods batteries degrade over time, leading to reduced usage and eventual disposal.",
+    "category": "app-error",
+    "difficulty": "Hard",
+    "keywords": [
+      "AirPods",
+      "battery",
+      "repair",
+      "e-waste",
+      "disposable"
+    ],
+    "steps": [
+      {
+        "title": "Find a Professional Repair Service",
+        "content": "Locate a professional repair service that specializes in electronic devices, particularly AirPods."
+      },
+      {
+        "title": "Obtain Replacement Parts",
+        "content": "Ensure the repair service can source replacement batteries and other necessary parts."
+      },
+      {
+        "title": "Diagnose the Issue",
+        "content": "Have the repair service diagnose the specific problem with your AirPods to confirm battery replacement is needed."
+      },
+      {
+        "title": "Perform the Battery Replacement",
+        "content": "Allow the professional to replace the old battery with a new one, ensuring proper tools and techniques are used."
+      },
+      {
+        "title": "Test the AirPods",
+        "content": "After the repair, test the AirPods to ensure they function correctly and the battery life has improved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "DIY Repair with Specialized Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Gather Necessary Tools",
+            "content": "Obtain specialized tools such as a small screwdriver set, tweezers, and a heat gun for opening the AirPods."
+          },
+          {
+            "title": "Open the AirPods",
+            "content": "Carefully open the AirPods using the heat gun and tools, being cautious not to damage the internal components."
+          },
+          {
+            "title": "Replace the Battery",
+            "content": "Remove the old battery and replace it with a new one, ensuring proper connections."
+          },
+          {
+            "title": "Reassemble the AirPods",
+            "content": "Carefully reassemble the AirPods, ensuring all parts are securely in place."
+          },
+          {
+            "title": "Test the AirPods",
+            "content": "Test the AirPods to ensure they function correctly and the battery life has improved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T10:17:41.225Z",
+      "updated": "2026-01-04T10:17:41.225Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/the-big-problem-with-tiny-earbuds/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767521868184-284",
+    "title": "Identify and Stop Spam Website Opener on Android",
+    "problemDescription": "Your Android device opens spam websites in the default browser when connected to Wi-Fi.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "spam",
+      "browser",
+      "wifi"
+    ],
+    "steps": [
+      {
+        "title": "Check Recently Installed Apps",
+        "content": "Go to Settings → Apps → See all apps. Look for any recently installed apps that might be causing the issue. Uninstall any suspicious or recently added apps."
+      },
+      {
+        "title": "Disable System Apps",
+        "content": "Go to Settings → Apps → System apps/All apps. Find the app causing the issue, then disable it, force-stop it, or reboot your device."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "If the issue persists, perform a factory reset on your device. Note that this will erase all data, so back up important information first."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change Default Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch Default Browser",
+            "content": "Change the default browser to a different one (e.g., from Android browser to Chrome or vice versa) to see if the issue persists with a different browser."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T10:17:48.184Z",
+      "updated": "2026-01-04T10:17:48.184Z",
+      "sourceUrl": "https://superuser.com/questions/1378474/finding-out-what-app-causes-unwanted-new-tabs-in-firefox-on-android",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767521872494-118",
+    "title": "Fix Android File Transfer Aborts",
+    "problemDescription": "File transfer from Windows to Android aborts after a minute or two.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "file transfer",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Remove Restricted Characters from Filenames",
+        "content": "Ensure that the filenames being transferred do not contain restricted characters such as `?` and `\"`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Keep Android Phone Awake During Transfer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Developer Mode",
+            "content": "Go to Settings > About Phone > Tap on Build Number seven times to enable Developer Mode."
+          },
+          {
+            "title": "Keep Phone Awake While Charging",
+            "content": "Go to Settings > Developer Options > Enable 'Stay awake' option."
+          }
+        ]
+      },
+      {
+        "title": "Disable Sync in Google Photos",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Google Photos",
+            "content": "Launch the Google Photos app on your Android device."
+          },
+          {
+            "title": "Disable Sync",
+            "content": "Go to Settings > Backup > Turn off 'Backup' option."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T10:17:52.494Z",
+      "updated": "2026-01-04T10:17:52.494Z",
+      "sourceUrl": "https://superuser.com/questions/1812057/windows-to-android-file-transfer-aborts-after-a-minute-or-two",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767521882551-113",
+    "title": "Fix Android Studio Update Error",
+    "problemDescription": "Error resolving packages when updating Android Studio, specifically with the Android Emulator package.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "studio",
+      "update",
+      "error",
+      "emulator"
+    ],
+    "steps": [
+      {
+        "title": "Change Update Channel",
+        "content": "In Android Studio, go to 'Appearance and Behaviour - System Settings' and choose 'Updates'. Set 'Automatically check updates for' to 'Canary Channel'."
+      },
+      {
+        "title": "Update Android Emulator",
+        "content": "Switch to 'Android SDK' -> 'SDK Tools' and update the 'Android Emulator' to the required version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset to Default",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Settings",
+            "content": "Reset Android Studio settings to default. This can sometimes resolve unexpected issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T10:18:02.551Z",
+      "updated": "2026-01-04T10:18:02.551Z",
+      "sourceUrl": "https://superuser.com/questions/1472490/when-i-try-to-update-android-studio-i-get-error-resolving-packages",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
