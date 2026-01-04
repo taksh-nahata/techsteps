@@ -16287,5 +16287,455 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767529815215-853",
+    "title": "Fix Wi-Fi Issues in Windows 11",
+    "problemDescription": "Wi-Fi connectivity problems in Windows 11.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "windows 11",
+      "connectivity"
+    ],
+    "steps": [
+      {
+        "title": "Check Router and Cables",
+        "content": "Inspect your Wi-Fi router and its cables for any visible damage or frayed cables. Replace any damaged parts if necessary."
+      },
+      {
+        "title": "Update Network Adapters",
+        "content": "Go to Device Manager, expand 'Network Adapters', right-click on your Wi-Fi adapter, and select 'Update Driver'. Follow the prompts to update the driver."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Router",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Router",
+            "content": "Unplug your router, wait for 30 seconds, and plug it back in. This can often resolve connectivity issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for ISP Outages",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for ISP Outages",
+            "content": "Contact your Internet Service Provider (ISP) to check if there are any known outages or issues in your area."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T12:30:15.215Z",
+      "updated": "2026-01-04T12:30:15.215Z",
+      "sourceUrl": "https://www.howtogeek.com/fix-wi-fi-issues-windows-11/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767529847375-836",
+    "title": "Fix Zoom App Errors",
+    "problemDescription": "Troubleshooting common errors in the Zoom app.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "app-error",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Clear App Cache and Data",
+        "content": "Go to your device settings, find the Zoom app, and clear both the cache and data."
+      },
+      {
+        "title": "Check ISP Connection",
+        "content": "Ensure your internet connection is stable and working properly by testing with other apps or devices."
+      },
+      {
+        "title": "Verify App Permissions",
+        "content": "Make sure the Zoom app has all the necessary permissions, such as camera, microphone, and storage access."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Zoom",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Zoom",
+            "content": "Uninstall the Zoom app from your device."
+          },
+          {
+            "title": "Restart Device",
+            "content": "Restart your device to clear any residual data."
+          },
+          {
+            "title": "Reinstall Zoom",
+            "content": "Download and install the Zoom app again from the official app store."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T12:30:47.375Z",
+      "updated": "2026-01-04T12:30:47.375Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-solve-an-issue-error-in-Zoom",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767529848727-55",
+    "title": "Fix Zoom Meeting Freezing and Lagging",
+    "problemDescription": "Zoom meetings are freezing or lagging during use.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "freezing",
+      "lagging",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Free Up RAM",
+        "content": "Open Task Manager (Ctrl+Shift+Esc), identify resource-heavy applications, and close them to free up RAM."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-04T12:30:48.727Z",
+      "updated": "2026-01-04T12:30:48.727Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-stop-Zoom-Meeting-from-freezing-and-lagging",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767529852049-632",
+    "title": "Fix Zoom Meeting Issues",
+    "problemDescription": "Common technical problems encountered during Zoom meetings.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "meeting",
+      "technical",
+      "issues"
+    ],
+    "steps": [
+      {
+        "title": "Check Zoom Service Status",
+        "content": "Visit Zoom's service status page to ensure there are no ongoing outages or issues."
+      },
+      {
+        "title": "Update Zoom",
+        "content": "Ensure you are using the latest version of Zoom by updating the application."
+      },
+      {
+        "title": "Use the Desktop Client",
+        "content": "If possible, switch from the web version to the desktop client for better performance."
+      },
+      {
+        "title": "Whitelist Zoom Emails",
+        "content": "Add Zoom's email addresses to your email client's whitelist to avoid missing important notifications."
+      },
+      {
+        "title": "Check Your Internet Connection",
+        "content": "Verify your internet connection is stable and strong enough to support video conferencing."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Your Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your Computer or Mobile Device",
+            "content": "Sometimes, simply restarting your device can resolve underlying issues causing Zoom problems."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T12:30:52.049Z",
+      "updated": "2026-01-04T12:30:52.049Z",
+      "sourceUrl": "https://www.quora.com/What-are-the-most-common-technical-problems-with-Zoom-meetings",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767529866682-895",
+    "title": "Enable Automatic Switching on AirPods",
+    "problemDescription": "AirPods not automatically switching between devices.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "airpods",
+      "automatic switching",
+      "bluetooth",
+      "multipoint"
+    ],
+    "steps": [
+      {
+        "title": "Check Compatibility",
+        "content": "Ensure both devices are compatible with automatic switching."
+      },
+      {
+        "title": "Enable Automatic Switching",
+        "content": "Go to the Bluetooth settings on your iOS device, select your AirPods, and enable 'Automatic Ear Detection' and 'Automatic Switching'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset AirPods",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset AirPods",
+            "content": "Press and hold the setup button on the back of the AirPods case for about 15 seconds until the status light flashes amber and then white."
+          },
+          {
+            "title": "Re-pair AirPods",
+            "content": "Re-pair your AirPods with your devices and enable automatic switching again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T12:31:06.682Z",
+      "updated": "2026-01-04T12:31:06.682Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/multipoint-wireless-headphones.3857196/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767529870796-740",
+    "title": "Bluetooth Disappeared on Windows",
+    "problemDescription": "Bluetooth functionality suddenly stops working and disappears from settings.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "windows",
+      "disappeared",
+      "airpods"
+    ],
+    "steps": [
+      {
+        "title": "Disable Bluetooth in BIOS",
+        "content": "Restart your computer and enter the BIOS settings (usually by pressing F2, Del, or Esc during startup). Navigate to the Bluetooth settings and disable it."
+      },
+      {
+        "title": "Update Windows",
+        "content": "After disabling Bluetooth in BIOS, update your Windows to the latest version. Go to Settings > Update & Security > Windows Update > Check for updates."
+      },
+      {
+        "title": "Re-enable Bluetooth in BIOS",
+        "content": "After the Windows update, re-enter the BIOS settings and re-enable Bluetooth."
+      },
+      {
+        "title": "Reinstall Bluetooth Driver",
+        "content": "Download the latest Bluetooth driver from your motherboard manufacturer's support website (e.g., ASUS support downloads section). Install the driver and restart your computer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Run Bluetooth Troubleshooter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to Settings > Update & Security > Troubleshoot > Additional troubleshooters."
+          },
+          {
+            "title": "Run Bluetooth Troubleshooter",
+            "content": "Select Bluetooth and run the troubleshooter. Follow the on-screen instructions to fix any issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T12:31:10.796Z",
+      "updated": "2026-01-04T12:31:10.796Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/fans-recommendation-problems-with-bluetooth.3725704/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767529875077-184",
+    "title": "Fix Microsoft Phone Link Setup Issue",
+    "problemDescription": "Difficulty setting up Microsoft Phone Link on Windows 11 with an iPhone.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Phone Link",
+      "Windows 11",
+      "iPhone",
+      "setup issue"
+    ],
+    "steps": [
+      {
+        "title": "Check Compatibility",
+        "content": "Ensure your iPhone is compatible with Microsoft Phone Link. As of now, Microsoft Phone Link supports Android devices primarily, with limited iPhone functionality."
+      },
+      {
+        "title": "Update Software",
+        "content": "Make sure both your Windows 11 and iPhone are updated to the latest software versions."
+      },
+      {
+        "title": "Follow Official Instructions",
+        "content": "Follow the official Microsoft instructions for setting up Phone Link with an iPhone. This may involve specific steps for iOS devices."
+      },
+      {
+        "title": "Check Bluetooth and Network",
+        "content": "Ensure Bluetooth is enabled on both devices and they are connected to the same network."
+      },
+      {
+        "title": "Restart Devices",
+        "content": "Restart both your Windows 11 PC and iPhone to resolve any temporary glitches."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Alternative Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Third-Party Apps",
+            "content": "Consider using third-party apps like 'Your Phone Companion' or other similar apps that might offer better compatibility with iPhones."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T12:31:15.077Z",
+      "updated": "2026-01-04T12:31:15.077Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/problem-setting-up-microsoft-phone-link.3854982/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767529884996-399",
+    "title": "MacBook Pro Battery Drains While Connected to AC Power",
+    "problemDescription": "MacBook Pro battery drains even when connected to AC power, showing 'Battery not charging' in the menu bar.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "MacBook Pro",
+      "battery drain",
+      "AC power",
+      "charging issue"
+    ],
+    "steps": [
+      {
+        "title": "Unplug and Replug the Power Cord",
+        "content": "Unplug the power cord from the power supply and plug it back in. This action can reset the charging system and resolve the issue temporarily."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check for Hardware Overheating",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Monitor Device Stress",
+            "content": "Ensure your MacBook is not under excessive stress from running multiple resource-intensive applications simultaneously, as this can cause overheating and battery drain."
+          },
+          {
+            "title": "Change Charging Side",
+            "content": "Try charging your MacBook from the opposite side of the device to potentially alleviate any hardware overheating issues."
+          }
+        ]
+      },
+      {
+        "title": "Verify Charger Compatibility",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Charger Wattage",
+            "content": "Ensure you are using the correct wattage charging adapter for your MacBook Pro model. Using an incompatible charger can lead to charging issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T12:31:24.996Z",
+      "updated": "2026-01-04T12:31:24.996Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/388328/macbook-pro-battery-drains-when-connected-to-ac-power",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767529894348-616",
+    "title": "MacBook Pro Battery Draining",
+    "problemDescription": "MacBook Pro battery is draining instead of charging, even when the laptop is in sleep mode.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "battery",
+      "draining",
+      "charging",
+      "MacBook Pro"
+    ],
+    "steps": [
+      {
+        "title": "Check Battery Health",
+        "content": "Go to System Information > Power and check the battery health. If it shows 'Service Recommended', the battery needs replacement."
+      },
+      {
+        "title": "Replace the Battery",
+        "content": "If the battery is old (e.g., six years) and draining rapidly, replace it even if it doesn't show a 'Service Recommended' flag."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset SMC",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Shut Down the MacBook",
+            "content": "Turn off your MacBook Pro completely."
+          },
+          {
+            "title": "Press and Hold",
+            "content": "Press and hold the Shift + Control + Option keys on the left side of the keyboard, along with the Power button, for 10 seconds."
+          },
+          {
+            "title": "Release and Restart",
+            "content": "Release all keys, then press the Power button to turn on your MacBook Pro."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-04T12:31:34.348Z",
+      "updated": "2026-01-04T12:31:34.348Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/424910/is-it-a-battery-problem-or-smc-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
