@@ -36605,5 +36605,789 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767630201255-919",
+    "title": "Restart Browser to Fix Lag",
+    "problemDescription": "Browser is slow and unresponsive.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "browser",
+      "slow",
+      "lag",
+      "restart"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Browser",
+        "content": "Close the browser completely and reopen it."
+      },
+      {
+        "title": "Restart the Computer",
+        "content": "Restart your computer to clear any faulty processes."
+      },
+      {
+        "title": "Reopen the Browser",
+        "content": "Launch the browser again to see if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Your Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to the browser's settings or help menu to check for updates."
+          },
+          {
+            "title": "Install Updates",
+            "content": "Download and install any available updates."
+          }
+        ]
+      },
+      {
+        "title": "Upgrade Your Computer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Assess Hardware",
+            "content": "Evaluate your computer's hardware, such as RAM and storage."
+          },
+          {
+            "title": "Upgrade Components",
+            "content": "Consider upgrading to an SSD or adding more RAM."
+          },
+          {
+            "title": "Cool Down Computer",
+            "content": "Use a laptop cooler or air conditioner to reduce temperature and improve performance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T16:23:21.255Z",
+      "updated": "2026-01-05T16:23:21.255Z",
+      "sourceUrl": "https://lifehacker.com/tech/ten-ways-to-speed-up-a-laggy-internet-browser",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767630207403-931",
+    "title": "Revive Your Slow, Overheating Laptop",
+    "problemDescription": "Your laptop is running slow and overheating due to dust accumulation and outdated hardware.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "laptop",
+      "slow",
+      "overheating",
+      "clean",
+      "hard drive"
+    ],
+    "steps": [
+      {
+        "title": "Clean the Vents and Fan",
+        "content": "Find the vents on your laptop, usually on the back or bottom, and use compressed air to blow out dust. This improves airflow and cooling."
+      },
+      {
+        "title": "Open the Laptop",
+        "content": "Unscrew the back panel and lift the keyboard to access the internal components. This may vary depending on your laptop model."
+      },
+      {
+        "title": "Clean the Internal Components",
+        "content": "Use compressed air to blow out dust from the internal components, including the fan, heat sink, and other areas."
+      },
+      {
+        "title": "Clean the Keyboard",
+        "content": "Use compressed air to clean the keyboard. For a more thorough cleaning, gently pop off the keys and clean under them."
+      },
+      {
+        "title": "Upgrade the Hard Drive",
+        "content": "Replace the old hard drive with a new 2.5\" hard drive. This will provide more storage space and potentially improve performance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use an External Cooling Pad",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Cooling Pad",
+            "content": "Buy a laptop cooling pad that fits your laptop's size."
+          },
+          {
+            "title": "Place the Laptop on the Cooling Pad",
+            "content": "Position your laptop on the cooling pad to improve airflow and reduce overheating."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T16:23:27.403Z",
+      "updated": "2026-01-05T16:23:27.403Z",
+      "sourceUrl": "https://lifehacker.com/give-your-old-slow-overheating-laptop-new-life-and-an-5934602",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767630223056-907",
+    "title": "Fix Slow Internet Speeds",
+    "problemDescription": "Family complains about slow internet speeds, likely due to ISP issues or outdated software.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "internet",
+      "speed",
+      "ISP",
+      "malware",
+      "updates"
+    ],
+    "steps": [
+      {
+        "title": "Run a Speed Test",
+        "content": "Use an online speed test tool to measure the actual upload and download speeds provided by the ISP. Document the results to show the family."
+      },
+      {
+        "title": "Run a System Scan",
+        "content": "Ensure the family's PC has up-to-date antivirus and anti-malware software. Run a complete system scan to detect and remove any malware."
+      },
+      {
+        "title": "Update Software",
+        "content": "Update all frequently used applications, including the web browser, security software, email client, and music player, to their latest versions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact ISP",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Gather Evidence",
+            "content": "Collect multiple speed test results over different times of the day to show consistent slow speeds."
+          },
+          {
+            "title": "Contact ISP",
+            "content": "Call the ISP and provide the speed test results as evidence of the slow speeds. Request an investigation or upgrade."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T16:23:43.056Z",
+      "updated": "2026-01-05T16:23:43.056Z",
+      "sourceUrl": "https://lifehacker.com/how-to-fix-your-family-s-computer-this-holiday-so-the-r-5862161",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767630228514-529",
+    "title": "Fix Black Horizontal Lines on MacBook Pro",
+    "problemDescription": "Black horizontal lines appearing on the MacBook Pro display.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "display",
+      "lines",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Reset the PRAM and SMC",
+        "content": "Shut down your MacBook Pro. Hold down the Command + Option + P + R keys together. Turn on your MacBook Pro and keep holding the keys until you hear the startup sound twice. Release the keys and let your MacBook Pro start up normally."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Boot in Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot in Safe Mode",
+            "content": "Shut down your MacBook Pro. Press the power button to turn on your MacBook Pro. Immediately hold down the Shift key. Release the Shift key when you see the Apple logo."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T16:23:48.514Z",
+      "updated": "2026-01-05T16:23:48.514Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254790210",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767630235370-910",
+    "title": "Fix MacBook Pro Black Screen",
+    "problemDescription": "MacBook Pro displays a black screen and does not turn on.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "macbook",
+      "black screen",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Reset SMC",
+        "content": "Press and hold Command + Option + P + R simultaneously until the Mac reboots."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Force Restart",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force Restart",
+            "content": "Press and hold Shift + Control + Option + Power all at once, then release together. Press the power button to reboot the Mac."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T16:23:55.370Z",
+      "updated": "2026-01-05T16:23:55.370Z",
+      "sourceUrl": "https://discussions.apple.com/thread/8529208",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767630245912-460",
+    "title": "Access Closed Apple Support Thread",
+    "problemDescription": "Unable to access a closed Apple Support Community thread.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "apple",
+      "support",
+      "thread",
+      "closed"
+    ],
+    "steps": [
+      {
+        "title": "Search for Similar Threads",
+        "content": "Use the search bar in the Apple Support Community to find similar threads that may have the information you need."
+      },
+      {
+        "title": "Vote for Helpful Posts",
+        "content": "If you find a helpful post in an open thread, vote for it to help others find the solution."
+      },
+      {
+        "title": "Create a New Thread",
+        "content": "If you cannot find a solution, create a new thread with your specific issue to get help from the community."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Apple Support Website",
+            "content": "Go to the official Apple Support website."
+          },
+          {
+            "title": "Use the Support Assistant",
+            "content": "Use the support assistant tool to get personalized help based on your Apple products and issues."
+          },
+          {
+            "title": "Contact Support Directly",
+            "content": "If you need immediate assistance, contact Apple Support directly through phone, chat, or email."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T16:24:05.912Z",
+      "updated": "2026-01-05T16:24:05.912Z",
+      "sourceUrl": "https://discussions.apple.com/thread/252236499",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767630255428-825",
+    "title": "Fix Google Pixel 7 Connectivity Issues",
+    "problemDescription": "Google Pixel 7 or 7 Pro experiencing network or connectivity problems.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "google",
+      "pixel",
+      "7",
+      "connectivity",
+      "issues",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Airplane Mode Toggle",
+        "content": "Turn on Airplane Mode for 30 seconds, then turn it off. This will refresh the networks and reconnect your device."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "Press and hold the power button and volume up button simultaneously, then tap on 'Restart' to reboot your Pixel 7."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to your device's Settings."
+          },
+          {
+            "title": "Navigate to Network Settings",
+            "content": "Head to the 'System' section and tap on 'Reset options'."
+          },
+          {
+            "title": "Reset Network",
+            "content": "Select 'Reset Wi-Fi, mobile & Bluetooth' and confirm the action."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T16:24:15.428Z",
+      "updated": "2026-01-05T16:24:15.428Z",
+      "sourceUrl": "https://www.howtogeek.com/tips-to-fix-connectivity-issues-with-your-google-pixel-7-and-7-pro/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767630264754-432",
+    "title": "Fix Google Pixel Notification Delays",
+    "problemDescription": "Google Pixel users are experiencing delayed or missed notifications, with notifications flooding in when the phone is unlocked.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "google",
+      "pixel",
+      "notifications",
+      "delay",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Check Battery Optimization Settings",
+        "content": "Go to Settings > Apps > [Select the problematic app] > Battery > Battery Optimization and disable it for the app."
+      },
+      {
+        "title": "Clear App Cache and Data",
+        "content": "Go to Settings > Apps > [Select the problematic app] > Storage > Clear Cache and Clear Data."
+      },
+      {
+        "title": "Update Apps and System",
+        "content": "Ensure all apps and the system are up to date by going to the Google Play Store and checking for updates, and then going to Settings > System > System Update."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset App Preferences",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset App Preferences",
+            "content": "Go to Settings > Apps > Menu (three dots) > Reset App Preferences. This will reset all app preferences, including permissions, defaults, and notifications."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset",
+        "type": "Last Resort",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup all important data as a factory reset will erase all data from the device."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset Options > Erase All Data (Factory Reset). Follow the on-screen instructions to complete the reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T16:24:24.754Z",
+      "updated": "2026-01-05T16:24:24.754Z",
+      "sourceUrl": "https://www.howtogeek.com/google-pixel-notification-issues-getting-worse/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767630268471-670",
+    "title": "Improve Pixel Performance and Battery Life",
+    "problemDescription": "Google Pixel users experience underwhelming thermals, battery life, and performance due to Tensor chip issues.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel",
+      "performance",
+      "battery life",
+      "thermals",
+      "tensor chip"
+    ],
+    "steps": [
+      {
+        "title": "Update to the Latest Software",
+        "content": "Ensure your Pixel device is running the latest software version, as Google may have released optimizations for performance and battery life."
+      },
+      {
+        "title": "Adjust Performance Settings",
+        "content": "Go to Settings > System > Developer options and enable 'Limit background processes' to reduce strain on the CPU."
+      },
+      {
+        "title": "Optimize Battery Usage",
+        "content": "Go to Settings > Battery > Battery optimizer and enable it for all apps to improve battery life."
+      },
+      {
+        "title": "Clear Cache and Data",
+        "content": "Go to Settings > Apps > [App Name] > Storage > Clear Cache and Clear Data for problematic apps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure all important data is backed up to Google Drive or another cloud service."
+          },
+          {
+            "title": "Perform a Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset)."
+          },
+          {
+            "title": "Restore Data",
+            "content": "After the reset, restore your data from the backup."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T16:24:28.471Z",
+      "updated": "2026-01-05T16:24:28.471Z",
+      "sourceUrl": "https://www.howtogeek.com/google-might-be-about-to-fix-the-pixels-biggest-problem-for-good/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767630272522-43",
+    "title": "Reduce Pixel Screen Flicker",
+    "problemDescription": "Pixel screens may cause headaches due to display flicker, especially at lower refresh rates.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel",
+      "screen",
+      "flicker",
+      "headache",
+      "display"
+    ],
+    "steps": [
+      {
+        "title": "Enable Flicker Reduction Setting",
+        "content": "Wait for Google's software update that may include a basic flicker-reduction setting. This update is expected later in the year, potentially around the Pixel 10 launch."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Third-Party Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a PWM Reduction App",
+            "content": "Download and install a third-party app designed to reduce PWM (Pulse Width Modulation) flicker. These apps can manually adjust the refresh rate and brightness to minimize flicker."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Adjust Display Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Increase Refresh Rate",
+            "content": "Manually set the display refresh rate to the highest available setting (e.g., 120Hz or higher) to reduce the perception of flicker."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T16:24:32.522Z",
+      "updated": "2026-01-05T16:24:32.522Z",
+      "sourceUrl": "https://www.howtogeek.com/tired-of-pixel-screens-giving-you-a-headache-pixel-10-might-finally-fix-that/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767630275518-494",
+    "title": "Fix Download Pending in Google Play Store",
+    "problemDescription": "Downloads in the Google Play Store are stuck on 'Pending'.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "play store",
+      "download pending"
+    ],
+    "steps": [
+      {
+        "title": "Force Stop the Play Store App",
+        "content": "Go to Settings > Apps > Google Play Store > Force Stop. Then, reopen the Play Store and try downloading again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clear Play Store Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache",
+            "content": "Go to Settings > Apps > Google Play Store > Storage > Clear Cache. Restart the Play Store and attempt the download again."
+          }
+        ]
+      },
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Ensure all important data is backed up."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > General Management > Reset > Factory Data Reset. Click on the 'Reset' button and confirm the action."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T16:24:35.518Z",
+      "updated": "2026-01-05T16:24:35.518Z",
+      "sourceUrl": "https://www.howtogeek.com/android-troubleshooting-tips-to-fix-all-kinds-of-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767630299591-39",
+    "title": "Fix Pixel 9a Wi-Fi No Internet After Inactivity",
+    "problemDescription": "Pixel 9a loses Wi-Fi connection after inactivity, showing 'Connected / No Internet' until manually toggled.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "android",
+      "pixel",
+      "no internet"
+    ],
+    "steps": [
+      {
+        "title": "Toggle Wi-Fi",
+        "content": "Turn off Wi-Fi and then turn it back on to restore the internet connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > System > Reset options > Reset Wi-Fi, mobile & Bluetooth. Note: This will reset all network settings to default."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Adaptive Battery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Adaptive Battery",
+            "content": "Go to Settings > Battery > Adaptive preferences > Disable Adaptive Battery."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Disable Private DNS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Private DNS",
+            "content": "Go to Settings > Network & internet > Private DNS > Select 'Off'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T16:24:59.591Z",
+      "updated": "2026-01-05T16:24:59.591Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/261654/why-does-my-pixel-9a-lose-wi-fi-after-inactivity",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767630315261-897",
+    "title": "Fix Pixel Navigation Issues",
+    "problemDescription": "Pixel devices experiencing delayed or unresponsive navigation gestures or three-button navigation issues.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel",
+      "navigation",
+      "gestures",
+      "update",
+      "bug"
+    ],
+    "steps": [
+      {
+        "title": "Update Your Pixel Device",
+        "content": "Go to Settings > System > System update. Check for the August 2025 update and install it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Your Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart",
+            "content": "If the update does not resolve the issue, try restarting your device to see if the problem persists."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Google Support",
+            "content": "If the issue continues after the update and restart, contact Google Support for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T16:25:15.261Z",
+      "updated": "2026-01-05T16:25:15.261Z",
+      "sourceUrl": "https://lifehacker.com/tech/the-august-update-for-android-16-fixes-these-issues-with-your-pixel",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767630318811-604",
+    "title": "Fix Randomly Crashing Apps on Pixel 10",
+    "problemDescription": "Apps on your Pixel 10 are crashing randomly, likely due to a recent Google Play services update.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel 10",
+      "app crash",
+      "google play services"
+    ],
+    "steps": [
+      {
+        "title": "Update Google Play Services",
+        "content": "Ensure your Google Play Services are updated to the latest version, as Google has issued an official fix for the problem."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "Restart your Pixel 10 to apply any pending updates and see if the issue persists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Uninstall the October Google Play Services Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall the Update",
+            "content": "Go to Settings > Apps > Google Play Services > Uninstall updates. Note that this will log you out of your Google accounts."
+          },
+          {
+            "title": "Restart Your Device",
+            "content": "Restart your Pixel 10 to apply the changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T16:25:18.811Z",
+      "updated": "2026-01-05T16:25:18.811Z",
+      "sourceUrl": "https://lifehacker.com/tech/how-to-fix-randomly-crashing-apps-on-pixel-10",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767630321091-976",
+    "title": "Fix Pixel 6 Connectivity Issues",
+    "problemDescription": "Pixel 6 users experience connectivity issues, including dropped connections and 'No SIM' alerts.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel 6",
+      "connectivity",
+      "android",
+      "no sim"
+    ],
+    "steps": [
+      {
+        "title": "Update Carrier Services",
+        "content": "Go to the Play Store, navigate to 'My apps & games', and check for updates for 'Carrier Services'. Install any pending updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reboot Your Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot",
+            "content": "Restart your Pixel 6 by holding the power button and selecting 'Restart'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T16:25:21.091Z",
+      "updated": "2026-01-05T16:25:21.091Z",
+      "sourceUrl": "https://lifehacker.com/how-to-fix-your-pixel-6s-connectivity-issues-1848149259",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
