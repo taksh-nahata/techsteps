@@ -29404,5 +29404,833 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767594699531-854",
+    "title": "Fix Android Notifications Not Showing Up",
+    "problemDescription": "Android notifications are not appearing or working as expected.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "notifications",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Reboot Your Phone",
+        "content": "Hold the power button and select Restart to reboot your phone. This can resolve temporary hiccups and restart core services that might be interfering with notifications."
+      },
+      {
+        "title": "Review the App's Notification Settings",
+        "content": "Go to your phone's Settings, then Apps & notifications. Select the app in question and ensure notifications are enabled. Adjust settings like 'Make sounds' and 'Show notifications' as needed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Do Not Disturb Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Do Not Disturb",
+            "content": "Swipe down from the top of your screen to access the quick settings menu. Ensure that Do Not Disturb mode is turned off."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T06:31:39.531Z",
+      "updated": "2026-01-05T06:31:39.531Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/android-notification-fixes/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767594702429-229",
+    "title": "Fix Windows Mail Notifications Not Working",
+    "problemDescription": "Mail app notifications are not appearing on Windows.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "mail",
+      "notifications"
+    ],
+    "steps": [
+      {
+        "title": "Check In-App Notification Settings",
+        "content": "Open the Mail app, go to Settings > Notifications, and ensure notifications are enabled for your account."
+      },
+      {
+        "title": "Enable Mail App Notifications From Windows Settings",
+        "content": "Go to Windows Settings > System > Notifications & actions, and ensure Mail is allowed to send notifications."
+      },
+      {
+        "title": "Check Mailbox Sync Settings",
+        "content": "In the Mail app, go to Settings > Manage Accounts, select your account, and ensure the sync settings are correctly configured."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Mail App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset the Mail App",
+            "content": "Go to Windows Settings > Apps > Apps & features, find the Mail app, and select Advanced options. Click Reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T06:31:42.429Z",
+      "updated": "2026-01-05T06:31:42.429Z",
+      "sourceUrl": "https://www.makeuseof.com/windows-mail-notifications-not-working/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767594705361-715",
+    "title": "Fix Phone Link App Notifications Not Working",
+    "problemDescription": "Phone Link app notifications are not appearing on Windows.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "phone link",
+      "notifications",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Press Win + I to open the Settings app."
+      },
+      {
+        "title": "Enable Notifications",
+        "content": "Check the boxes that read 'Show notification banners' and 'Show notifications in notification center'."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-05T06:31:45.361Z",
+      "updated": "2026-01-05T06:31:45.361Z",
+      "sourceUrl": "https://www.makeuseof.com/phone-link-app-notifications-not-working-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767594709271-319",
+    "title": "Fix iPhone Not Showing Notifications",
+    "problemDescription": "Your iPhone is not displaying notifications for apps or calls.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "notifications",
+      "alerts",
+      "silent mode"
+    ],
+    "steps": [
+      {
+        "title": "Check Silent Mode",
+        "content": "Ensure your iPhone is not in Silent mode by checking the switch on the side of your device. If the switch is set to orange, Silent mode is on. Flip the switch to turn it off."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Notification Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to the Settings app on your iPhone."
+          },
+          {
+            "title": "Select Notifications",
+            "content": "Tap on Notifications."
+          },
+          {
+            "title": "Check App Settings",
+            "content": "Select the app for which you want to enable notifications and ensure Allow Notifications is turned on."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Restart Your iPhone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Device",
+            "content": "Press and hold the power button until the slide to power off appears. Slide to power off your iPhone. Wait for about 30 seconds, then press and hold the power button again to turn it back on."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T06:31:49.271Z",
+      "updated": "2026-01-05T06:31:49.271Z",
+      "sourceUrl": "https://www.makeuseof.com/notifications-dont-show-up-iphone-fixes/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767594718154-629",
+    "title": "Restore WhatsApp from Old Phone",
+    "problemDescription": "Unable to restore WhatsApp chats and media on a new phone.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "restore",
+      "backup",
+      "transfer"
+    ],
+    "steps": [
+      {
+        "title": "Copy WhatsApp Folder from Old Phone",
+        "content": "Connect your old phone to a computer and locate the WhatsApp folder. This is usually found in the internal storage under 'WhatsApp'."
+      },
+      {
+        "title": "Transfer WhatsApp Folder to New Phone",
+        "content": "Disconnect the old phone and connect the new phone to the computer. Copy the entire WhatsApp folder from the computer to the new phone's internal storage, ensuring it is placed in the same location."
+      },
+      {
+        "title": "Install WhatsApp on New Phone",
+        "content": "Install WhatsApp from the app store on your new phone. Open the app and follow the setup process. WhatsApp should recognize the backup and restore your chats and media."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Google Drive Backup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup WhatsApp to Google Drive",
+            "content": "On your old phone, open WhatsApp and go to Settings > Chats > Chat backup. Tap on 'Back up to Google Drive' and follow the prompts to back up your chats."
+          },
+          {
+            "title": "Restore from Google Drive on New Phone",
+            "content": "On your new phone, install WhatsApp and verify the same phone number used on the old phone. During the setup process, WhatsApp will prompt you to restore your chats from Google Drive."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T06:31:58.154Z",
+      "updated": "2026-01-05T06:31:58.154Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/cant-restore-whatsapp.3489190/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767594721146-418",
+    "title": "Fix WhatsApp Desktop Uninstalling Itself",
+    "problemDescription": "WhatsApp Desktop app keeps uninstalling itself unexpectedly.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "desktop",
+      "uninstall",
+      "reinstall"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall via Control Panel",
+        "content": "Go to Control Panel > Programs > Programs and Features. Find WhatsApp in the list, right-click on it, and select Uninstall."
+      },
+      {
+        "title": "Reinstall WhatsApp Desktop",
+        "content": "Download the latest version of WhatsApp Desktop from the official website and install it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Conflicting Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Conflicting Software",
+            "content": "Check if any other software or system processes are interfering with WhatsApp. Use Task Manager to identify and end any suspicious processes."
+          },
+          {
+            "title": "Run a System Scan",
+            "content": "Use an antivirus or malware scanner to check for any malicious software that might be causing the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T06:32:01.146Z",
+      "updated": "2026-01-05T06:32:01.146Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/whatsapp-desktop-app-uninstalling-itself.3730694/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767594722339-229",
+    "title": "Fix WhatsApp Media Disappearing",
+    "problemDescription": "WhatsApp media files randomly disappear from the app.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "media",
+      "disappearing",
+      "app"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall WhatsApp",
+        "content": "Uninstall the WhatsApp application from your device, then reinstall it from the official app store."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-05T06:32:02.339Z",
+      "updated": "2026-01-05T06:32:02.339Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/whatsapp-media-randomly-disappears.3827586/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767594725881-745",
+    "title": "Fix TPM 2.0 Issue",
+    "problemDescription": "TPM 2.0 not functioning properly after troubleshooting steps.",
+    "category": "windows",
+    "difficulty": "Hard",
+    "keywords": [
+      "TPM",
+      "Windows",
+      "Hardware"
+    ],
+    "steps": [
+      {
+        "title": "Contact MSI Support",
+        "content": "Reach out to MSI support for assistance with the TPM 2.0 issue."
+      },
+      {
+        "title": "Replace TPM Module",
+        "content": "If recommended by MSI, replace the TPM module."
+      },
+      {
+        "title": "Replace Motherboard",
+        "content": "If the TPM module replacement does not resolve the issue, consider replacing the motherboard."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: BIOS Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update BIOS",
+            "content": "Check for and install the latest BIOS update from MSI's website."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T06:32:05.881Z",
+      "updated": "2026-01-05T06:32:05.881Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/tpm-2-0-issue-troubleshooting-steps-already-taken.3813696/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767594730406-31",
+    "title": "Common PC Troubleshooting Steps",
+    "problemDescription": "General guide for troubleshooting common PC issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "pc",
+      "troubleshooting",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Check Connections",
+        "content": "Ensure all cables and peripherals are properly connected."
+      },
+      {
+        "title": "Restart Your PC",
+        "content": "Perform a simple restart to resolve temporary software glitches."
+      },
+      {
+        "title": "Update Drivers",
+        "content": "Update your device drivers through Device Manager or the manufacturer's website."
+      },
+      {
+        "title": "Run System File Checker",
+        "content": "Open Command Prompt as administrator and type 'sfc /scannow' to check for and repair system file corruption."
+      },
+      {
+        "title": "Check for Malware",
+        "content": "Run a full system scan using your antivirus software."
+      },
+      {
+        "title": "Use System Restore",
+        "content": "Restore your system to a previous state using System Restore."
+      },
+      {
+        "title": "Check Event Viewer",
+        "content": "Open Event Viewer to look for any error messages or warnings that might indicate the source of the problem."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Safe Mode Troubleshooting",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Restart your PC and press F8 repeatedly to enter Safe Mode."
+          },
+          {
+            "title": "Troubleshoot in Safe Mode",
+            "content": "Use Safe Mode to uninstall problematic software or drivers."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Clean Boot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Configuration",
+            "content": "Press Win + R, type 'msconfig', and press Enter."
+          },
+          {
+            "title": "Selective Startup",
+            "content": "Go to the Services tab, check 'Hide all Microsoft services', and click 'Disable all'."
+          },
+          {
+            "title": "Restart Your PC",
+            "content": "Restart your PC and check if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T06:32:10.406Z",
+      "updated": "2026-01-05T06:32:10.406Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/common-pc-troubleshooting-steps.2223646/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767594744324-132",
+    "title": "PC Won't Turn On: Troubleshooting Guide",
+    "problemDescription": "Your computer is not powering on or booting up.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "pc",
+      "boot",
+      "power",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check RAM",
+        "content": "Try booting with just one stick of RAM. If successful, the other stick may be defective. Also, try changing the RAM slot to check for damaged slots."
+      },
+      {
+        "title": "Reset CMOS",
+        "content": "Reset the CMOS using the motherboard's reset button. If there isn't one, remove the CMOS battery for a few minutes and then reinsert it."
+      },
+      {
+        "title": "Verify Connections",
+        "content": "Ensure all power and data connections for your storage drives (SSD or HDD) are securely plugged in. For SATA drives, check both the power and data connections."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Graphics Card",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reseat the Graphics Card",
+            "content": "Remove and reinsert the graphics card to ensure it is properly seated in its slot."
+          }
+        ]
+      },
+      {
+        "title": "Verify Front Panel Connectors",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check USB Connectors",
+            "content": "Ensure that all front panel USB connectors are properly attached to the motherboard."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T06:32:24.325Z",
+      "updated": "2026-01-05T06:32:24.325Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/pc-troubleshooting-guide/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767594749402-188",
+    "title": "Fix Windows 10 Printer Not Found",
+    "problemDescription": "Windows 10 is unable to detect a connected printer.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "printer",
+      "not found"
+    ],
+    "steps": [
+      {
+        "title": "Open Printer Settings",
+        "content": "Go to Settings > Devices > Printers & Scanners."
+      },
+      {
+        "title": "Add Printer",
+        "content": "Click on 'Add a printer or scanner'."
+      },
+      {
+        "title": "Manual Printer Addition",
+        "content": "If the printer is not found, click 'The printer that I want isn’t listed'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Printer Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Right-click the Start button and select Device Manager."
+          },
+          {
+            "title": "Update Drivers",
+            "content": "Expand the 'Printer queues' section, right-click your printer, and select 'Update driver'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T06:32:29.402Z",
+      "updated": "2026-01-05T06:32:29.402Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/windows-10-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767594764995-266",
+    "title": "Remove Someone Else's iMessage Registration from Your Android",
+    "problemDescription": "Someone else has registered your phone number to their iMessage account, causing issues on your Android device.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "imessage",
+      "number",
+      "registration"
+    ],
+    "steps": [
+      {
+        "title": "Contact the Person Who Registered Your Number",
+        "content": "Reach out to the person who registered your number to their iMessage account and ask them to remove it from their Apple ID."
+      },
+      {
+        "title": "Ask the Person to Contact Apple Support",
+        "content": "If the person is cooperative, ask them to contact Apple Support to have your number removed from their iMessage account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Your Carrier",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Your Carrier",
+            "content": "If the person is unresponsive or uncooperative, contact your carrier to see if they can help disassociate your number from the iMessage account."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Wait for the Number to Become Available",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Wait for the Grace Period",
+            "content": "After the carrier's grace period, the number will be disassociated from the person's Apple ID and can be reassigned."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T06:32:44.995Z",
+      "updated": "2026-01-05T06:32:44.995Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/461071/i-have-an-android-but-someone-else-has-registered-my-number-to-their-imessage-a",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767594767059-572",
+    "title": "Fix Android File Transfer Not Recognizing Device",
+    "problemDescription": "MacBook Pro running macOS 13.1 fails to recognize Samsung A52 with Android 13 via Android File Transfer unless the computer is restarted with the device connected.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "file transfer",
+      "macbook",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Restart with Device Connected",
+        "content": "Restart your MacBook Pro with the Android device already connected via USB cable."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Wireless File Transfer Alternatives",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Syncthing",
+            "content": "Download and install Syncthing on both your MacBook Pro and Android device to sync files wirelessly."
+          },
+          {
+            "title": "Use Soduto with KDE Connect",
+            "content": "Install Soduto on your MacBook Pro and KDE Connect on your Android device to send files wirelessly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T06:32:47.059Z",
+      "updated": "2026-01-05T06:32:47.059Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/454045/macbook-pro-android-file-transfer-says-could-not-connect-even-though-my-andr",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767594773426-974",
+    "title": "Fix Microsoft Teams Issues",
+    "problemDescription": "Troubleshooting common problems with Microsoft Teams.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "microsoft",
+      "teams",
+      "troubleshooting",
+      "sign out"
+    ],
+    "steps": [
+      {
+        "title": "Sign Out of Teams",
+        "content": "Sign out of Microsoft Teams to clear the cache and fix common issues."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-05T06:32:53.426Z",
+      "updated": "2026-01-05T06:32:53.426Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=epEBc4UK3AY",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767594778067-685",
+    "title": "Fix MS Teams Not Working on Windows",
+    "problemDescription": "Microsoft Teams is not working on Windows 10 or Windows 11.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "ms teams",
+      "windows 10",
+      "windows 11",
+      "app not working"
+    ],
+    "steps": [
+      {
+        "title": "Terminate and Reset MS Teams",
+        "content": "Go to the Start menu, find Microsoft Teams, right-click on the icon, select 'App settings', scroll down to 'Terminate', and click the 'Terminate' button. Then click 'Reset' and confirm by clicking 'Reset' again. Wait for the process to complete."
+      },
+      {
+        "title": "Repair MS Teams",
+        "content": "After resetting, click on 'Repair' to repair any potential issues with the application."
+      },
+      {
+        "title": "Restart MS Teams",
+        "content": "Go back to the Start menu, scroll down to Microsoft Teams, open it, and log in again. The application should now be working."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Alternative Fix: Reinstall MS Teams",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall MS Teams",
+            "content": "Go to the Start menu, find Microsoft Teams, right-click on the icon, and select 'Uninstall'. Follow the prompts to uninstall the application."
+          },
+          {
+            "title": "Download and Install MS Teams",
+            "content": "Download the latest version of Microsoft Teams from the official website and install it. Log in and check if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T06:32:58.067Z",
+      "updated": "2026-01-05T06:32:58.067Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=xPHF1uUY8b0",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767594782441-533",
+    "title": "Microsoft Teams Troubleshooting with Admin Center",
+    "problemDescription": "Troubleshoot various Microsoft Teams issues using automated diagnostics in the Microsoft 365 admin center.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "troubleshooting",
+      "admin center",
+      "diagnostics"
+    ],
+    "steps": [
+      {
+        "title": "Access the Microsoft 365 Admin Center",
+        "content": "Log in to your Microsoft 365 admin center using your administrator credentials."
+      },
+      {
+        "title": "Navigate to the Teams Admin Center",
+        "content": "In the admin center, go to the Teams admin center by selecting 'Show all' and then 'Teams'."
+      },
+      {
+        "title": "Run Automated Diagnostics",
+        "content": "In the Teams admin center, select 'Diagnostics & reports' and then 'Run diagnostics'. Follow the prompts to run the automated diagnostics."
+      },
+      {
+        "title": "Review the Results",
+        "content": "After the diagnostics complete, review the results to identify any issues with Microsoft Teams."
+      },
+      {
+        "title": "Address Identified Issues",
+        "content": "Follow the recommended actions provided in the diagnostics report to resolve the identified issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Troubleshooting",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Internet Connection",
+            "content": "Ensure that your internet connection is stable and working properly."
+          },
+          {
+            "title": "Update Microsoft Teams",
+            "content": "Make sure you are using the latest version of Microsoft Teams. Go to 'Help' and then 'Check for updates'."
+          },
+          {
+            "title": "Clear Cache and Cookies",
+            "content": "Clear the cache and cookies in your web browser if you are using the web version of Teams."
+          },
+          {
+            "title": "Reinstall Microsoft Teams",
+            "content": "If the issue persists, uninstall and then reinstall Microsoft Teams."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T06:33:02.441Z",
+      "updated": "2026-01-05T06:33:02.441Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=sYk1gpqPeWs",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767594785579-320",
+    "title": "Fix Teams Rooms Pro Management Connectivity",
+    "problemDescription": "Teams Rooms devices lose connectivity to the Microsoft Teams Rooms Pro Management portal, becoming unmonitored and generating incidents.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "Teams Rooms",
+      "connectivity",
+      "management",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Download and Run the Agent Test Tool",
+        "content": "Download the Agent Test Tool on the affected Teams Rooms device. Navigate to Settings and run the tool to diagnose connectivity issues."
+      },
+      {
+        "title": "Check Agent Installation",
+        "content": "Ensure the Teams Rooms Pro Management Agent is installed and running on the device. If the installation has failed, verify the Microsoft Manage Rooms program in the Windows Apps and Features list."
+      },
+      {
+        "title": "Contact Microsoft Support",
+        "content": "Open a Microsoft Support case and attach logs generated from running the Agent Test Tool. This will help engineers further troubleshoot the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Incident Instructions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Review Incident Instructions",
+            "content": "All incidents have specific instructions on why they are raised and what to do to remediate the problem. Follow the instructions provided in the incident details."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T06:33:05.579Z",
+      "updated": "2026-01-05T06:33:05.579Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=OXdEA8BEQuQ",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
