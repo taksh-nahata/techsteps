@@ -27301,5 +27301,1084 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767588833975-379",
+    "title": "Fix 'Google Chrome is not open anymore' Error",
+    "problemDescription": "Chrome fails to open links from other applications, showing an error message.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "error",
+      "links",
+      "mac"
+    ],
+    "steps": [
+      {
+        "title": "Kill Chrome Processes via Terminal",
+        "content": "Open Terminal and run the following command to force quit all Chrome processes: `ps -ef | grep '/Applications/Google Chrome.app' | awk '{print $2}' | xargs kill -9`. Then, reopen Chrome."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-05T04:53:53.975Z",
+      "updated": "2026-01-05T04:53:53.975Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/175957/the-application-google-chrome-is-not-open-anymore",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767588838907-9",
+    "title": "Fix Chrome Making Mac Unresponsive",
+    "problemDescription": "Chrome browser causing Mac to become unresponsive or slow.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "mac",
+      "unresponsive",
+      "slow"
+    ],
+    "steps": [
+      {
+        "title": "Restart Chrome",
+        "content": "Close and reopen Chrome to kill all processes."
+      },
+      {
+        "title": "Run in Incognito Mode",
+        "content": "Check if the issue persists in Incognito mode to identify if extensions are causing the problem."
+      },
+      {
+        "title": "Create a New Profile",
+        "content": "Create a new Chrome profile without extensions to test if extensions are the cause."
+      },
+      {
+        "title": "Install Performance Addons",
+        "content": "Install addons like OneTab or ad blockers to limit page processing and reduce resource usage."
+      },
+      {
+        "title": "Check Network Logs",
+        "content": "Review network logs at chrome://net-internals/ to identify any network-related issues."
+      },
+      {
+        "title": "Move Profile Folder",
+        "content": "Move your Chrome profile folder to a quick access drive to improve disk access speed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use The Great Suspender",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install The Great Suspender",
+            "content": "Install the Chrome plugin 'The Great Suspender' to help manage CPU usage and reduce unresponsiveness."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Run Chrome with Different User Data Directory",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Chrome with Custom User Data Directory",
+            "content": "Launch Chrome with the `--user-data-dir=\"\"` flag to run it with a different user data directory."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Disable Hang Monitor",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Chrome with Hang Monitor Disabled",
+            "content": "Launch Chrome with the `--disable-hang-monitor` flag to suppress hang monitor dialogs."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:53:58.907Z",
+      "updated": "2026-01-05T04:53:58.907Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/120723/why-causes-chrome-to-make-my-mac-unresponsive",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767588842348-445",
+    "title": "Fix WebGL Not Working on Chrome for macOS",
+    "problemDescription": "WebGL is not working on Google Chrome for macOS, and the Chrome GPU page shows errors.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "WebGL",
+      "Chrome",
+      "macOS",
+      "browser",
+      "GPU"
+    ],
+    "steps": [
+      {
+        "title": "Backup Chrome Data",
+        "content": "Ensure you are logged into Chrome and your data is synced to your Google account. This will backup your bookmarks, passwords, and settings."
+      },
+      {
+        "title": "Uninstall Chrome",
+        "content": "Go to the Applications folder, find Google Chrome, and drag it to the Trash. Alternatively, you can use a third-party uninstaller."
+      },
+      {
+        "title": "Delete Chrome Support Files",
+        "content": "Delete any remaining Chrome files. These are typically found in ~/Library/Application Support/Google/Chrome/ and ~/Library/Caches/Google/Chrome/."
+      },
+      {
+        "title": "Download and Install Chrome",
+        "content": "Download the latest version of Google Chrome from the official website and install it."
+      },
+      {
+        "title": "Restore Data",
+        "content": "Log into Chrome with your Google account to restore your synced data."
+      },
+      {
+        "title": "Verify WebGL",
+        "content": "Go to chrome://gpu to check if WebGL is now working."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Enable GPU Flags",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable GPU Flags",
+            "content": "Go to chrome://flags and search for 'ignore-gpu-blocklist'. Enable this flag and restart Chrome."
+          },
+          {
+            "title": "Check WebGL",
+            "content": "Verify if WebGL is working by visiting chrome://gpu."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:54:02.348Z",
+      "updated": "2026-01-05T04:54:02.348Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/465008/webgl-is-not-working-on-google-chrome-for-macos-the-chrome-gpu-page-shows-tha",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767588847685-194",
+    "title": "Fix Siri Not Finding Home or Contacts on iPhone",
+    "problemDescription": "Siri cannot locate your home address or contact information.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "siri",
+      "ios",
+      "contacts",
+      "home",
+      "jailbreak"
+    ],
+    "steps": [
+      {
+        "title": "Delete Cache Files",
+        "content": "Use a file manager app like iFile to locate and delete the following files: `/var/mobile/Library/Caches/com.apple.LaunchServices-045.csstore` and `/var/mobile/Library/Caches/com.apple.mobile.installation.plist`."
+      },
+      {
+        "title": "Reboot Device",
+        "content": "Close the file manager app and reboot your iPhone. After restarting, your apps will reload, and Siri should function correctly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart iPhone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart iPhone",
+            "content": "Perform a standard restart of your iPhone. This can sometimes resolve issues with Siri not accessing contacts or other information."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:54:07.685Z",
+      "updated": "2026-01-05T04:54:07.685Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/99717/siri-can-no-longer-find-my-home",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767588850576-2",
+    "title": "Fix Siri Voice Feedback Not Working on iPhone 6 (iOS 9)",
+    "problemDescription": "Siri voice feedback is not functioning on iPhone 6 with iOS 9.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "siri",
+      "iphone",
+      "voice feedback",
+      "ios 9"
+    ],
+    "steps": [
+      {
+        "title": "Check Volume",
+        "content": "Ensure the volume is turned up when invoking Siri."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > General > Reset > Reset Network Settings."
+      },
+      {
+        "title": "Reset All Settings",
+        "content": "If the issue persists, reset all device settings by going to Settings > General > Reset > Reset All Settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Change Siri Voice",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Siri Voice",
+            "content": "Go to Settings > Siri & Search > Siri Voice and select a different voice."
+          }
+        ]
+      },
+      {
+        "title": "Full Restore",
+        "type": "Last Resort",
+        "steps": [
+          {
+            "title": "Full Restore",
+            "content": "If all else fails, perform a full restore of your iPhone."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:54:10.576Z",
+      "updated": "2026-01-05T04:54:10.576Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/212910/siri-voice-feedback-not-functioning-on-iphone-6-ios-9",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767588852569-310",
+    "title": "Siri Can't Text Contacts",
+    "problemDescription": "Siri can call, email, or show contact info but can't text them.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "siri",
+      "text",
+      "contacts",
+      "facebook"
+    ],
+    "steps": [
+      {
+        "title": "Disable Facebook Contacts Sync",
+        "content": "Go to Settings -> Facebook -> Contacts and turn off the Contacts option."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Siri Data Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Apple Support",
+            "content": "Request Apple to delete the cache of data from your iPhone that Apple stores on its servers to process Siri requests."
+          }
+        ]
+      },
+      {
+        "title": "Disable Other Contact Apps Sync",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Sync for Other Apps",
+            "content": "Turn off the ability for other contact applications like Twitter and Outlook to update your contacts."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:54:12.569Z",
+      "updated": "2026-01-05T04:54:12.569Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/210164/siri-cant-text-someone-even-though-it-can-call-them-email-them-and-show-me-th",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767588857303-917",
+    "title": "Fix Siri Not Working on iPhone",
+    "problemDescription": "Siri is not responding to voice commands, with no apparent microphone or processing issues.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "siri",
+      "iphone",
+      "microphone",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Reset All Settings",
+        "content": "Go to Settings > General > Reset > Reset All Settings. This will reset all settings to default without deleting your data."
+      },
+      {
+        "title": "Hard Reboot",
+        "content": "Press and hold both the Home button and the Power button simultaneously until the Apple logo appears. This will force the device to restart."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Headphone Microphone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect Headphones",
+            "content": "Plug in a pair of headphones with a microphone and try using Siri through the headphone microphone."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check Microphone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test Microphone",
+            "content": "Call someone and switch to speakerphone. If the other person cannot hear you, the issue might be with the microphone."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:54:17.303Z",
+      "updated": "2026-01-05T04:54:17.303Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/177248/siri-stopped-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767588860881-825",
+    "title": "Fix Siri Audio Problem on macOS",
+    "problemDescription": "Siri is unable to hear you on your MacBook Pro with macOS Sierra 10.12.4, indicating a Siri Audio Problem that temporarily resolves after a restart.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "siri",
+      "audio",
+      "macos",
+      "dictation"
+    ],
+    "steps": [
+      {
+        "title": "Open Terminal",
+        "content": "Open the Terminal application on your Mac."
+      },
+      {
+        "title": "Run the Command",
+        "content": "Type the following command and press Enter: `sudo kill -9 \u001bps ax|grep 'coreaudio[a-z]' | awk '{print $1}'\u001b`."
+      },
+      {
+        "title": "Wait for Siri to Work",
+        "content": "Within 5 seconds, Siri should start working again without needing to log out or reboot."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restart Your Mac",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your Mac",
+            "content": "Restart your Mac to temporarily resolve the Siri audio problem."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:54:20.881Z",
+      "updated": "2026-01-05T04:54:20.881Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/281854/siri-is-unable-to-hear-me",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767588868246-187",
+    "title": "Factory Reset Samsung Galaxy S20",
+    "problemDescription": "Unable to factory reset Samsung Galaxy S20 due to Samsung Account verification issues.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "factory reset",
+      "Samsung Galaxy S20",
+      "Samsung Account"
+    ],
+    "steps": [
+      {
+        "title": "Use a Different Network",
+        "content": "If your phone cannot access the Samsung Account site over your current network, switch to a different network, such as a mobile hotspot from another device."
+      },
+      {
+        "title": "Verify Samsung Account",
+        "content": "Go to Settings > General Management > Reset > Factory data reset. Tap Reset and Delete all. Enter your Samsung Account credentials to verify your account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Hardware Button Method",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter Recovery Mode",
+            "content": "Hold the Home, Power, and Volume Up buttons simultaneously to enter Samsung recovery mode."
+          },
+          {
+            "title": "Navigate to Factory Reset",
+            "content": "Use the volume keys to navigate to the Factory Reset option and the Home button to select it."
+          },
+          {
+            "title": "Confirm Reset",
+            "content": "Wait for the reset to complete, then restart your phone."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:54:28.246Z",
+      "updated": "2026-01-05T04:54:28.246Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/236547/cant-factory-reset-samsung-galaxy-s20",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767588872149-816",
+    "title": "Fix Samsung Galaxy S6 Back Button Pressing Itself",
+    "problemDescription": "Samsung Galaxy S6 back button presses by itself due to hardware or software issues.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "galaxy s6",
+      "back button",
+      "hardware",
+      "software"
+    ],
+    "steps": [
+      {
+        "title": "Check for Hardware Issues",
+        "content": "Visit a service center or local repair shop to inspect the digitizer under the back button for faults."
+      },
+      {
+        "title": "Replace the Perimeter Strip",
+        "content": "Have the strip that runs around the perimeter of the phone replaced, as it contains the sensors for the back button and other functions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Cool Down the Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Let the Device Cool Down",
+            "content": "If the issue occurs when the device reaches a certain temperature, let it cool down and see if the problem persists."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Close Running Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Smart Manager",
+            "content": "Run Smart Manager to close all running apps, which might be causing interference with the back button."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:54:32.149Z",
+      "updated": "2026-01-05T04:54:32.149Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/149886/samsung-galaxy-s6-back-button-presses-by-itself",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767588876333-557",
+    "title": "Fix Samsung Galaxy S2 Touchscreen Issues",
+    "problemDescription": "Part of the touchscreen on a Samsung Galaxy S2 is not responding to touch.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "touchscreen",
+      "Samsung Galaxy S2",
+      "software update",
+      "hardware issue"
+    ],
+    "steps": [
+      {
+        "title": "Update Device Software",
+        "content": "Upgrade the device's software to the latest version using the software provided by the manufacturer. This can resolve software errors causing the touchscreen malfunction."
+      },
+      {
+        "title": "Clean Device Contacts and Screen",
+        "content": "Turn off the device and clean the contacts and screen using isopropyl alcohol and a small brush. This ensures there is no dirt or debris interfering with the touchscreen."
+      },
+      {
+        "title": "Restart the Device",
+        "content": "Turn the device off, wait a few seconds, and then turn it back on. This can clear out any software errors causing the touchscreen to malfunction."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Remove and Reinsert Battery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove the Battery",
+            "content": "If possible, remove the device's battery and wait ten seconds before putting it back in. This can sometimes resolve persistent software issues."
+          }
+        ]
+      },
+      {
+        "title": "Check for Malfunctioning Cards",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove SD or SIM Card",
+            "content": "Check if the issue is caused by a malfunctioning SD or SIM card by removing them and testing the touchscreen without them."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:54:36.333Z",
+      "updated": "2026-01-05T04:54:36.333Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/15197/part-of-touch-screen-is-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767588883926-122",
+    "title": "Fix Force Close Loop on Android",
+    "problemDescription": "Your Android device is stuck in a continuous force close loop, preventing normal use.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "force close",
+      "loop",
+      "recovery mode",
+      "cache partition"
+    ],
+    "steps": [
+      {
+        "title": "Boot into Recovery Mode",
+        "content": "Power off your device. Hold down the Volume Up + Home + Power buttons simultaneously until the Samsung logo appears, then release the buttons."
+      },
+      {
+        "title": "Wipe Cache Partition",
+        "content": "Use the Volume buttons to navigate to 'Wipe cache partition' and press the Power button to select it. Confirm the action and wait for the process to complete."
+      },
+      {
+        "title": "Reboot Your Device",
+        "content": "After the cache partition is wiped, navigate to 'Reboot system now' and press the Power button to restart your device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset (Last Resort)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "If possible, backup your data using a cloud service or connect your device to a computer to transfer files."
+          },
+          {
+            "title": "Boot into Recovery Mode",
+            "content": "Power off your device. Hold down the Volume Up + Home + Power buttons simultaneously until the Samsung logo appears, then release the buttons."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Use the Volume buttons to navigate to 'Wipe data/factory reset' and press the Power button to select it. Confirm the action and wait for the process to complete."
+          },
+          {
+            "title": "Reboot Your Device",
+            "content": "After the factory reset is complete, navigate to 'Reboot system now' and press the Power button to restart your device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:54:43.926Z",
+      "updated": "2026-01-05T04:54:43.926Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/22961/how-to-fix-a-force-close-loop-on-android-with-phone-access",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767588891222-625",
+    "title": "Fix Roku HDMI Connection Issues",
+    "problemDescription": "Roku device experiencing video or audio issues due to HDMI connection problems.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "roku",
+      "hdmi",
+      "connection",
+      "video",
+      "audio"
+    ],
+    "steps": [
+      {
+        "title": "Check HDMI Cable",
+        "content": "Try swapping your Roku's HDMI cable with another HDMI cable you have. If the issue resolves, replace the faulty cable."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Fix Audio Distortion",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Adjust Volume Mode",
+            "content": "Begin playback of the desired video, then press the Star or Asterisk (\\*) button. Scroll to Volume Mode and select OFF by scrolling right."
+          }
+        ]
+      },
+      {
+        "title": "Reset HDMI Handshake",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Power Cycle Devices",
+            "content": "Unplug the Roku and the connected TV from power for about 1 minute, then plug them back in to reset the HDMI handshake."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:54:51.222Z",
+      "updated": "2026-01-05T04:54:51.222Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/common-roku-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767588894419-681",
+    "title": "Pair or Reset Roku Remote",
+    "problemDescription": "Roku remote not responding or not paired with the device.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Roku",
+      "remote",
+      "pair",
+      "reset",
+      "Bluetooth"
+    ],
+    "steps": [
+      {
+        "title": "Remove Batteries",
+        "content": "Take the batteries out of your Roku remote."
+      },
+      {
+        "title": "Turn On Roku Device",
+        "content": "Turn on your Roku device."
+      },
+      {
+        "title": "Reinsert Batteries",
+        "content": "Reinsert the batteries into the remote."
+      },
+      {
+        "title": "Pair the Remote",
+        "content": "The remote should automatically pair with the Roku device. If not, press the pairing button on the back of the remote and the pairing button on the Roku device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Roku Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unplug Roku",
+            "content": "Unplug the power cable from your Roku device."
+          },
+          {
+            "title": "Wait",
+            "content": "Wait for about five seconds."
+          },
+          {
+            "title": "Plug Back In",
+            "content": "Plug the power cable back in. This can sometimes help solve Bluetooth problems."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:54:54.419Z",
+      "updated": "2026-01-05T04:54:54.419Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/how-to-pair-roku-remote/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767588898142-856",
+    "title": "Fix Fire TV Stick Remote Not Working",
+    "problemDescription": "The Fire TV Stick remote is not responding or working properly.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "fire tv",
+      "remote",
+      "not working"
+    ],
+    "steps": [
+      {
+        "title": "Replace Batteries",
+        "content": "Replace the batteries in the Fire TV Stick remote."
+      },
+      {
+        "title": "Check Range",
+        "content": "Ensure you are within 10 feet (3 meters) of your Fire TV device."
+      },
+      {
+        "title": "Restart Fire TV Stick",
+        "content": "Restart your Fire TV Stick by going to Settings > Applications > Manage installed applications > Select the app > Clear cache and Clear data > Restart your Fire TV device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall the App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall the App",
+            "content": "Go to Settings > Applications > Manage installed applications > Select the app > Uninstall."
+          },
+          {
+            "title": "Reinstall the App",
+            "content": "Navigate to the App & games section to install your application again."
+          },
+          {
+            "title": "Restart Fire TV Stick",
+            "content": "Restart your Fire TV device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:54:58.142Z",
+      "updated": "2026-01-05T04:54:58.142Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/amazon-fire-tv-stick-problems-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767588901168-764",
+    "title": "Fix Roku Common Issues",
+    "problemDescription": "Troubleshooting common problems with Roku devices.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "Roku",
+      "troubleshooting",
+      "common issues"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your Roku device is connected to a stable internet connection."
+      },
+      {
+        "title": "Restart Roku Device",
+        "content": "Unplug the Roku device from the power source, wait for 30 seconds, and then plug it back in."
+      },
+      {
+        "title": "Update Roku Software",
+        "content": "Go to Settings > System > System update > Check now to ensure your Roku software is up to date."
+      },
+      {
+        "title": "Check HDMI Connection",
+        "content": "Make sure the HDMI cable is securely connected to both the Roku device and the TV."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "If the issue persists, perform a factory reset by going to Settings > System > Advanced system settings > Factory reset."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Re-pair Remote",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Batteries",
+            "content": "Remove the batteries from the Roku remote."
+          },
+          {
+            "title": "Re-insert Batteries",
+            "content": "Re-insert the batteries and pair the remote again by pressing the pairing button on the remote and the Roku device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:55:01.168Z",
+      "updated": "2026-01-05T04:55:01.168Z",
+      "sourceUrl": "https://www.digitaltrends.com/topic/how-to/page/2/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767588904084-283",
+    "title": "Set Up Roku Indoor Camera SE",
+    "problemDescription": "Guide to setting up the Roku Indoor Camera SE for the first time.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "Roku",
+      "Indoor Camera SE",
+      "setup",
+      "installation"
+    ],
+    "steps": [
+      {
+        "title": "Check Requirements",
+        "content": "Ensure you have an electrical outlet nearby and a 2.4GHz wireless network (5GHz networks are not supported). Record the device's MAC address for troubleshooting."
+      },
+      {
+        "title": "Power On the Camera",
+        "content": "Connect the USB cable to the camera and plug it into an electrical outlet or USB port. Wait for the LED indicator light to turn solid red, indicating the power is on."
+      },
+      {
+        "title": "Download the Roku Smart Home App",
+        "content": "Download the Roku Smart Home app on your phone or tablet."
+      },
+      {
+        "title": "Launch the App and Create an Account",
+        "content": "Open the Roku Smart Home app and create an account if needed. Follow the in-app instructions to complete the setup process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Alternative Setup Method",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check LED Indicator Light",
+            "content": "If the LED light is flashing red, the camera is ready to connect to Wi-Fi. If it's flashing red and blue, it's connecting to your network. A solid blue light means the setup is complete."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:55:04.084Z",
+      "updated": "2026-01-05T04:55:04.084Z",
+      "sourceUrl": "https://www.digitaltrends.com/home/how-to-set-up-roku-indoor-camera-se/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767588910823-784",
+    "title": "Fix macOS Catalina Bluetooth Issues",
+    "problemDescription": "Bluetooth devices not working in macOS Catalina.",
+    "category": "macOS",
+    "difficulty": "Easy",
+    "keywords": [
+      "macOS",
+      "Catalina",
+      "Bluetooth",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Delete Bluetooth Preferences File",
+        "content": "Open Finder, click on 'Go' in the top menu, then 'Go to Folder...'. Type in '/Library/Preferences'. Select and delete the file 'com.apple.Bluetooth.plist', then restart your Mac."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Fix macOS Catalina Mouse Problems",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete Mouse Preferences Files",
+            "content": "Open the ~/Library/Preferences/ directory in Finder and delete the following files: 'com.apple.AppleMultitouchMouse.plist' and 'com.apple.driver.AppleBluetoothMultitouch.mouse.plist'. Restart your Mac."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:55:10.823Z",
+      "updated": "2026-01-05T04:55:10.823Z",
+      "sourceUrl": "https://www.techradar.com/how-to/macos-catalina-problems-how-to-fix-the-most-common-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767588919828-611",
+    "title": "Fix Mac Audio Balance Issue",
+    "problemDescription": "Audio stops playing from the left speaker on MacBook Pro, affecting both Bluetooth and wired headphones.",
+    "category": "macOS",
+    "difficulty": "Medium",
+    "keywords": [
+      "macOS",
+      "audio",
+      "balance",
+      "headphones",
+      "Bluetooth"
+    ],
+    "steps": [
+      {
+        "title": "Reset Audio Settings",
+        "content": "Go to System Preferences > Sound > Output. Select your headphones and click on the gear icon to reset the audio settings."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Ensure your macOS is up to date by going to System Preferences > Software Update."
+      },
+      {
+        "title": "Reset NVRAM/PRAM",
+        "content": "Shut down your Mac, then turn it on and immediately press and hold Option + Command + P + R for about 20 seconds to reset NVRAM/PRAM."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Third-Party Audio Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install Audio Software",
+            "content": "Download a third-party audio management tool like SoundSource or Boom 3D."
+          },
+          {
+            "title": "Adjust Audio Settings",
+            "content": "Use the software to manually adjust the audio balance settings for your headphones."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Schedule an Appointment",
+            "content": "Contact Apple Support or visit an Apple Store to schedule an appointment."
+          },
+          {
+            "title": "Explain the Issue",
+            "content": "Describe the audio balance problem to the support representative and ask for a diagnosis."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:55:19.828Z",
+      "updated": "2026-01-05T04:55:19.828Z",
+      "sourceUrl": "https://www.techradar.com/computing/mac-os/its-2025-and-apple-has-still-not-fixed-this-ancient-mac-bug-but-heres-a-solution",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767588924329-292",
+    "title": "Connect Bluetooth Speaker to Computer",
+    "problemDescription": "Pairing a Bluetooth speaker with a computer.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "speaker",
+      "computer",
+      "pairing"
+    ],
+    "steps": [
+      {
+        "title": "Enable Bluetooth on Computer",
+        "content": "Go to your computer's Bluetooth settings and ensure Bluetooth is turned on."
+      },
+      {
+        "title": "Put Speaker in Pairing Mode",
+        "content": "Press and hold the Bluetooth button or power button on your speaker until the LED indicator flashes, indicating it's in pairing mode."
+      },
+      {
+        "title": "Find and Connect to Speaker",
+        "content": "In the Bluetooth settings on your computer, find your speaker in the list of available devices and click 'Connect'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Spotlight on macOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Spotlight Search",
+            "content": "Press Command + Space to open Spotlight search on your Mac."
+          },
+          {
+            "title": "Search for Bluetooth",
+            "content": "Type 'Bluetooth' in the search field and press Enter."
+          },
+          {
+            "title": "Manage Bluetooth Settings",
+            "content": "Click on the arrow to go to Manage Bluetooth Settings."
+          },
+          {
+            "title": "Select Speaker",
+            "content": "Find your Bluetooth speaker under 'Not paired' and select it to start the pairing process."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T04:55:24.329Z",
+      "updated": "2026-01-05T04:55:24.329Z",
+      "sourceUrl": "https://www.techradar.com/audio/wireless-bluetooth-speakers/how-to-connect-your-bluetooth-speaker-to-your-computer",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
