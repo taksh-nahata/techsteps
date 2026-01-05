@@ -37389,5 +37389,944 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767633630641-242",
+    "title": "Fix YouTube TV Not Working on Roku",
+    "problemDescription": "YouTube TV app is not opening or visible on Roku devices.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "youtube tv",
+      "roku",
+      "app error",
+      "not working"
+    ],
+    "steps": [
+      {
+        "title": "Update Roku Software",
+        "content": "Ensure your Roku device has the latest software update installed."
+      },
+      {
+        "title": "Reinstall YouTube TV App",
+        "content": "Uninstall and then reinstall the YouTube TV app from the Roku Channel Store."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Access YouTube TV via Standard YouTube App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open YouTube App",
+            "content": "Launch the standard YouTube app on your Roku device."
+          },
+          {
+            "title": "Navigate to YouTube TV",
+            "content": "Scroll to the bottom-left of the YouTube app's interface to access YouTube TV."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T17:20:30.641Z",
+      "updated": "2026-01-05T17:20:30.641Z",
+      "sourceUrl": "https://lifehacker.com/tech/try-these-fixes-if-youtube-tv-stopped-working-on-your-roku",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767633635599-490",
+    "title": "Chromecast Factory Reset Issue",
+    "problemDescription": "Chromecast 2nd-gen and Chromecast Audio devices may not set up after a factory reset due to a known issue.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "chromecast",
+      "factory reset",
+      "setup issue"
+    ],
+    "steps": [
+      {
+        "title": "Wait for Google's Official Fix",
+        "content": "Google is aware of the issue and working on a fix. Do not perform a factory reset on your device. Wait for Google to release an official fix and follow their instructions when available."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reddit Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Follow Complicated Reddit Workaround",
+            "content": "If you urgently need to use your Chromecast, search for the detailed workaround on Reddit. Note that this is complex and may not guarantee success."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T17:20:35.599Z",
+      "updated": "2026-01-05T17:20:35.599Z",
+      "sourceUrl": "https://lifehacker.com/tech/dont-fix-older-chromecast-with-factory-reset-says-google",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767633639988-352",
+    "title": "Block Ads on Smart TV via Router",
+    "problemDescription": "Annoying ads appearing on Samsung, LG, and Roku smart TVs.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "smart tv",
+      "ads",
+      "router",
+      "block"
+    ],
+    "steps": [
+      {
+        "title": "Access Router Settings",
+        "content": "Open a web browser and enter your router's IP address (commonly 192.168.1.1) to log in."
+      },
+      {
+        "title": "Block Ad Domains",
+        "content": "Navigate to the 'Parental Controls' or 'Ad Blocking' section and add the following domains to the block list: us.rdx2.lgtvsdp.com, yumenetworks.com, aic-ngfts.lge.com (for LG TVs); cooper.logs.roku.com, track.sr.roku.com, p.ads.roku.com, bif.sr.roku.com, traces.sr.roku.com, cloudservices.roku.com, scribe.logs.roku.com, amarillo.sb.roku.com (for Roku TVs)."
+      },
+      {
+        "title": "Save Changes",
+        "content": "Apply the changes and restart your router if necessary."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Third-Party Ad Blocking Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install an Ad Blocker",
+            "content": "Install a third-party ad-blocking app on your smart TV if available, such as AdGuard or Blokada."
+          },
+          {
+            "title": "Configure the App",
+            "content": "Follow the app's instructions to block ads by adding the same domains listed above."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T17:20:39.988Z",
+      "updated": "2026-01-05T17:20:39.988Z",
+      "sourceUrl": "https://lifehacker.com/tech/how-to-block-ads-on-your-smart-tv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767633644314-786",
+    "title": "Enable Bluetooth Headphones on Roku",
+    "problemDescription": "Roku devices do not support Bluetooth headphones by default.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "Roku",
+      "Bluetooth",
+      "headphones",
+      "streaming"
+    ],
+    "steps": [
+      {
+        "title": "Check Device Compatibility",
+        "content": "Ensure your Roku device supports Bluetooth headphones. Refer to Roku's official website or user manual for compatibility details."
+      },
+      {
+        "title": "Update Roku Software",
+        "content": "Go to Settings > System > System update > Check now to ensure your Roku device has the latest software version."
+      },
+      {
+        "title": "Enable Bluetooth",
+        "content": "Navigate to Settings > Remotes & accessories > Bluetooth. Follow the on-screen instructions to pair your Bluetooth headphones."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Bluetooth Transmitter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Bluetooth Transmitter",
+            "content": "Buy a compatible Bluetooth audio transmitter that can connect to your Roku device's audio output."
+          },
+          {
+            "title": "Connect Transmitter to Roku",
+            "content": "Plug the Bluetooth transmitter into the audio output port of your Roku device or TV."
+          },
+          {
+            "title": "Pair Headphones",
+            "content": "Follow the transmitter's instructions to pair your Bluetooth headphones."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T17:20:44.314Z",
+      "updated": "2026-01-05T17:20:44.314Z",
+      "sourceUrl": "https://lifehacker.com/tech/roku-ai-assistant-update",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767633653047-589",
+    "title": "Fix Windows 11 File Explorer Not Opening",
+    "problemDescription": "Windows 11 File Explorer fails to open or respond.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "file explorer",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Restart File Explorer",
+        "content": "Open Task Manager (Ctrl+Shift+Esc), find 'Windows Explorer' under the 'Processes' tab, right-click and select 'Restart'."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "If restarting File Explorer doesn't work, restart your computer to resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update GPU Driver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update GPU Driver",
+            "content": "Go to 'Device Manager', expand 'Display adapters', right-click your GPU, and select 'Update driver'."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Repair Install Windows 11",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Repair Install",
+            "content": "Use the Windows 11 installation media to perform a repair install, keeping your files and settings intact."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T17:20:53.047Z",
+      "updated": "2026-01-05T17:20:53.047Z",
+      "sourceUrl": "https://www.makeuseof.com/common-windows-11-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767633656577-440",
+    "title": "Fix Windows 11 Startup Issues",
+    "problemDescription": "Windows 11 fails to boot or starts up improperly.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "startup",
+      "boot",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check for External Problems",
+        "content": "Inspect all cables connected to your monitor and power supply. Ensure they are securely connected and replace any faulty cables if necessary."
+      },
+      {
+        "title": "Verify System Requirements",
+        "content": "Ensure your PC meets the minimum system requirements for Windows 11. If not, consider upgrading your hardware or using a different operating system."
+      },
+      {
+        "title": "Boot into Safe Mode",
+        "content": "If your system boots into Safe Mode, a third-party process is likely causing the issue. Uninstall recently installed programs to identify and remove the problematic software."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Advanced Startup Options",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Advanced Startup",
+            "content": "Go to Settings > Update & Security > Recovery > Advanced startup > Restart now."
+          },
+          {
+            "title": "Troubleshoot",
+            "content": "Select Troubleshoot > Advanced options > Startup Settings > Restart. This will allow you to boot into Safe Mode and troubleshoot further."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T17:20:56.577Z",
+      "updated": "2026-01-05T17:20:56.577Z",
+      "sourceUrl": "https://www.makeuseof.com/windows-11-startup-issues-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767633666742-467",
+    "title": "Fix Windows Troubleshooters Not Working",
+    "problemDescription": "Windows troubleshooting tools are not functioning properly.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "troubleshooters",
+      "system file checker",
+      "DISM"
+    ],
+    "steps": [
+      {
+        "title": "Run System File Checker (SFC)",
+        "content": "Open Command Prompt as an administrator and type 'sfc /scannow' to scan and repair corrupted system files."
+      },
+      {
+        "title": "Run Deployment Image Servicing and Management (DISM)",
+        "content": "In the same Command Prompt window, type 'DISM /Online /Cleanup-Image /RestoreHealth' to repair the Windows image."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Enable or Restart Required Services",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Services",
+            "content": "Press Win + R, type 'services.msc', and press Enter."
+          },
+          {
+            "title": "Locate and Restart Services",
+            "content": "Find the services related to troubleshooting, right-click on them, and select 'Restart'. If they are not running, start them."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T17:21:06.742Z",
+      "updated": "2026-01-05T17:21:06.742Z",
+      "sourceUrl": "https://www.makeuseof.com/troubleshooters-not-working-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767633674753-678",
+    "title": "Fix Corrupted Windows Notification Area",
+    "problemDescription": "The Windows notification area (system tray) is corrupted or not displaying icons properly.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "notification area",
+      "system tray",
+      "corrupted"
+    ],
+    "steps": [
+      {
+        "title": "Open Registry Editor",
+        "content": "Press the Windows key, type 'regedit', and press Enter to open the Registry Editor."
+      },
+      {
+        "title": "Navigate to TrayNotify Key",
+        "content": "Navigate to HKEY_CURRENT_USER\\Software\\Classes\\Local Settings\\Software\\Microsoft\\Windows\\CurrentVersion\\TrayNotify."
+      },
+      {
+        "title": "Delete IconStreams and PastIconStream",
+        "content": "Delete both IconStreams and PastIconStream in the right pane."
+      },
+      {
+        "title": "Restart Windows Explorer",
+        "content": "Press Ctrl-Alt-Delete, select Task Manager, go to the Processes tab, choose explorer.exe, and click End Process. Then, go to the Applications tab, click New Task, enter 'explorer.exe', and press Enter."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Customize Notification Area Properties",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Notification Area Properties",
+            "content": "Go to Notification Area Properties."
+          },
+          {
+            "title": "Customize Icon Handling",
+            "content": "Customize how Explorer handles previous tray icons to reset the notification area."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Ensure Windows Module Installer is Running",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Command Prompt as Administrator",
+            "content": "Open a 64-bit CMD.exe if using a 64-bit Windows."
+          },
+          {
+            "title": "Check Windows Module Installer Service",
+            "content": "Ensure that the 'Windows Module Installer' service is running."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T17:21:14.753Z",
+      "updated": "2026-01-05T17:21:14.753Z",
+      "sourceUrl": "https://superuser.com/questions/905724/how-to-fix-corrupted-windows-notification-area",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767633680369-542",
+    "title": "Enable App Notifications in Windows 10",
+    "problemDescription": "The 'Show app notifications' option is grayed out and cannot be enabled in Windows 10.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 10",
+      "notifications",
+      "registry edit"
+    ],
+    "steps": [
+      {
+        "title": "Open Registry Editor",
+        "content": "Press the Windows key + R to open the Run dialog, type 'regedit', and press Enter."
+      },
+      {
+        "title": "Navigate to the PushNotifications Key",
+        "content": "In the Registry Editor, navigate to the following path: HKEY_CURRENT_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications"
+      },
+      {
+        "title": "Modify the NoToastApplicationNotification Value",
+        "content": "Find the 'NoToastApplicationNotification' entry, double-click it, and change its value to '0'. If the entry does not exist, you can create it as a new DWORD (32-bit) Value and set it to '0'."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "Close the Registry Editor and restart your computer for the changes to take effect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Download and Run a Registry Fix",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download the Registry Fix",
+            "content": "Download a registry fix file from a trusted source that sets the 'NoToastApplicationNotification' value to '0'."
+          },
+          {
+            "title": "Run the Registry Fix",
+            "content": "Run the downloaded file and follow the on-screen instructions to apply the changes."
+          },
+          {
+            "title": "Restart Your Computer",
+            "content": "Restart your computer to apply the changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T17:21:20.369Z",
+      "updated": "2026-01-05T17:21:20.369Z",
+      "sourceUrl": "https://superuser.com/questions/954312/cant-enable-show-app-notifications-in-windows-10",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767633682801-821",
+    "title": "Fix Microsoft Account Notification",
+    "problemDescription": "Annoying notification prompting to fix your Microsoft account.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "microsoft account",
+      "notification"
+    ],
+    "steps": [
+      {
+        "title": "Create a Local Account",
+        "content": "Go to Settings -> Accounts -> Your info. Click 'Sign in with a local account instead'. Confirm your current Microsoft account password. Choose a username and password for your local account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Shared Experiences",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Navigate to Settings",
+            "content": "Go to Settings -> Accounts -> Email & app accounts."
+          },
+          {
+            "title": "Disable Shared Experiences",
+            "content": "Disable the Shared Experiences feature to stop the notifications."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T17:21:22.801Z",
+      "updated": "2026-01-05T17:21:22.801Z",
+      "sourceUrl": "https://superuser.com/questions/1123583/you-need-to-fix-your-microsoft-account-notification",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767633687084-412",
+    "title": "Fix Windows 10 Start Menu, Notification Center, and Store Apps",
+    "problemDescription": "Windows 10 Start menu, notification center, and store apps not working due to a recent update.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "start menu",
+      "notification center",
+      "store apps"
+    ],
+    "steps": [
+      {
+        "title": "Open Command Prompt as Administrator",
+        "content": "Right-click on the Start menu and select 'Command Prompt (Admin)' or 'Windows PowerShell (Admin)'."
+      },
+      {
+        "title": "Run PowerShell Command",
+        "content": "Type 'PowerShell' in the Command Prompt and press Enter. Then, paste the following command and press Enter:\n\n`Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register \"$($_.InstallLocation)\\AppXManifest.xml\"}`"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Alternative Method: Run PowerShell Directly",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open PowerShell as Administrator",
+            "content": "Press `(Windows key)`+`R` on your keyboard, type `PowerShell`, and hit `Enter`. Right-click on the PowerShell icon on the taskbar and select 'Run as administrator'."
+          },
+          {
+            "title": "Run the PowerShell Command",
+            "content": "Paste the following command in the Administrator: Windows PowerShell window and press the `Enter` key:\n\n`Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register \"$($_.InstallLocation)\\AppXManifest.xml\"}`"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T17:21:27.084Z",
+      "updated": "2026-01-05T17:21:27.084Z",
+      "sourceUrl": "https://superuser.com/questions/950680/windows-10-start-menu-notification-center-store-apps-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767633688617-159",
+    "title": "Fix Windows 10 Notification Center Link Issue",
+    "problemDescription": "Windows 10 Notification Center does not open links after a Windows update.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "notification",
+      "link",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Reset Notification Settings to Default",
+        "content": "Go to the Privacy Control Panel (CPL) and reset the Notification system settings to default."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-05T17:21:28.617Z",
+      "updated": "2026-01-05T17:21:28.617Z",
+      "sourceUrl": "https://superuser.com/questions/1415047/windows-10-notification-center-doesnt-open-the-link",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767633696624-840",
+    "title": "Speed Up Slow Mac",
+    "problemDescription": "Mac running slow due to auto-launching programs and full hard drive.",
+    "category": "macOS",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "slow",
+      "speed",
+      "optimize"
+    ],
+    "steps": [
+      {
+        "title": "Disable Login Items",
+        "content": "Go to Apple menu > System Preferences > Users & Groups > Login Items tab. Delete all entries. Shut down your Mac and choose 'No' when asked if you want open applications to reopen at restart."
+      },
+      {
+        "title": "Free Up Hard Drive Space",
+        "content": "Ensure your boot hard drive is less than 50% full to maintain optimal performance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Defragment Hard Drive",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup your user data to an external storage drive (not just Time Machine)."
+          },
+          {
+            "title": "Defragment",
+            "content": "Use a safe defragmentation method to optimize your hard drive."
+          },
+          {
+            "title": "Seek Professional Help",
+            "content": "If all else fails, take your Mac to a professional repair service."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T17:21:36.624Z",
+      "updated": "2026-01-05T17:21:36.624Z",
+      "sourceUrl": "https://discussions.apple.com/docs/DOC-3521",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767633701676-256",
+    "title": "Fix Slow Mac by Reinstalling macOS",
+    "problemDescription": "Mac is extremely slow even after deleting cache files and downloads.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "slow",
+      "reinstall",
+      "macos"
+    ],
+    "steps": [
+      {
+        "title": "Open Disk Utility",
+        "content": "Select Disk Utility from the Utility Menu and click on the Continue button."
+      },
+      {
+        "title": "Select the Drive",
+        "content": "When Disk Utility loads, select the drive (out-dented entry) from the Device list."
+      },
+      {
+        "title": "Erase the Drive",
+        "content": "Click on the Erase button in Disk Utility's toolbar. A panel will drop down."
+      },
+      {
+        "title": "Set the Format",
+        "content": "Set the Format type to APFS (for SSDs only) or Mac OS Extended (Journaled)."
+      },
+      {
+        "title": "Apply the Changes",
+        "content": "Click on the Apply button, then wait for the Done button to activate and click on it."
+      },
+      {
+        "title": "Quit Disk Utility",
+        "content": "Quit Disk Utility and return to the Utility Menu."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "Select Install OS X and click on the Continue button."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check for Excessive CPU Usage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify the Process",
+            "content": "Use Activity Monitor to identify processes using excessive CPU."
+          },
+          {
+            "title": "Quit or Force Quit",
+            "content": "Quit or force quit the identified process."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T17:21:41.676Z",
+      "updated": "2026-01-05T17:21:41.676Z",
+      "sourceUrl": "https://discussions.apple.com/thread/251456853",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767633712942-954",
+    "title": "Fix Slow iMac Performance",
+    "problemDescription": "iMac running slow and unresponsive.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "imac",
+      "slow",
+      "performance",
+      "macos"
+    ],
+    "steps": [
+      {
+        "title": "Unplug Third-Party Accessories",
+        "content": "Disconnect all third-party accessories and test each one individually to identify if any are causing the slowdown."
+      },
+      {
+        "title": "Test in Safe Mode",
+        "content": "Start your Mac in Safe Mode to isolate the issue. Follow the instructions from Apple Support: [Start up your Mac in safe mode](https://support.apple.com/guide/mac-help/mchlp2301/mac)."
+      },
+      {
+        "title": "Reset PRAM and SMC",
+        "content": "Reset the PRAM (Parameter RAM) and SMC (System Management Controller) following the instructions on Apple's support website."
+      },
+      {
+        "title": "Clear Cache and Temporary Files",
+        "content": "Clear system caches and temporary files using third-party tools like CleanMyMac or follow manual guides online."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall macOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure all important data is backed up using Time Machine or another backup solution."
+          },
+          {
+            "title": "Reinstall macOS",
+            "content": "Follow the steps to reinstall macOS from the Apple Support website."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T17:21:52.942Z",
+      "updated": "2026-01-05T17:21:52.942Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255013794",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767633731165-798",
+    "title": "Fix Microsoft Teams Server Connection Error",
+    "problemDescription": "Microsoft Teams fails to connect to the server, displaying 'Sorry, but we can't connect to the server right now. Please try again later.'",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "server connection",
+      "error",
+      "Outlook"
+    ],
+    "steps": [
+      {
+        "title": "Regrant Delegate Permission",
+        "content": "Regrant the delegate permission for the shared calendar in Outlook. This can often resolve permission-related issues that prevent Teams from functioning correctly."
+      },
+      {
+        "title": "Create a New Shared Calendar",
+        "content": "Create a new shared calendar to test if the issue persists. This can help determine if the problem is specific to the current calendar."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clear Cache and Reinstall Teams",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache",
+            "content": "Navigate to '%userprofile%\\appdata\\local\\Packages\\MSTeams\\_8wekyb3d8bbwe\\LocalCache\\Microsoft\\MSTeams' and delete the cache files."
+          },
+          {
+            "title": "Reinstall Teams",
+            "content": "Uninstall Microsoft Teams and then reinstall it from the official website."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T17:22:11.165Z",
+      "updated": "2026-01-05T17:22:11.165Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum/all/dear-team-how-can-i-resolve-this-problem-of/d845d3f4-e5dd-4d5f-ade1-a06c4a6fedb8",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767633732927-292",
+    "title": "Microsoft Modern Wireless Headset Auto-Mute Issue",
+    "problemDescription": "The microphone on your Microsoft Modern Wireless Headset auto-mutes when the mouthpiece is rotated up, causing you to lose the ability to hear other participants in Microsoft Teams meetings.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "headset",
+      "microphone",
+      "auto-mute",
+      "Microsoft Teams"
+    ],
+    "steps": [
+      {
+        "title": "Check Microphone Settings in Teams",
+        "content": "Open Microsoft Teams on your computer and go to the settings. Look for the audio or microphone settings section and make sure that the correct microphone (your headset) is selected and not muted. Verify that there are no conflicting settings that might be causing the auto-mute behavior."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-05T17:22:12.927Z",
+      "updated": "2026-01-05T17:22:12.927Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/on-my-microsoft-modern-wireless-headset-why-am-i/96fe50d2-9aa9-4907-b004-da10f128c0f0",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767633737295-878",
+    "title": "Enable Online Archive in Office 365",
+    "problemDescription": "Users are unable to access their online archive in Outlook due to it being disabled.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "office 365",
+      "outlook",
+      "online archive",
+      "exchange admin center"
+    ],
+    "steps": [
+      {
+        "title": "Access Exchange Admin Center",
+        "content": "Log in to the Office 365 Exchange Admin Center using an admin account."
+      },
+      {
+        "title": "Navigate to Recipients",
+        "content": "In the Exchange Admin Center, go to 'Recipients' in the left-hand menu."
+      },
+      {
+        "title": "Select Mailboxes",
+        "content": "Click on 'Mailboxes' under the 'Recipients' section."
+      },
+      {
+        "title": "Enable Online Archive",
+        "content": "Select the user's mailbox and click on the pencil icon to edit. Check the box for 'Enable online archive' and save the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Microsoft Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a New Thread",
+            "content": "If the issue persists, create a new thread in the Microsoft Q&A forum."
+          },
+          {
+            "title": "Share Tenant Information",
+            "content": "Share your tenant information via Private Message (PM) to Microsoft support for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T17:22:17.295Z",
+      "updated": "2026-01-05T17:22:17.295Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/msoffice_outlook-mso_other/online-archive/ec469e06-dac5-4bbc-baca-658b572f4e97",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767633741908-8",
+    "title": "Fix KB5003646 Installation Failure",
+    "problemDescription": "KB5003646 update fails to install on Windows.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "update",
+      "KB5003646",
+      "installation"
+    ],
+    "steps": [
+      {
+        "title": "Run Windows Update Troubleshooter",
+        "content": "Go to Settings > Update & Security > Troubleshoot > Additional troubleshooters > Windows Update > Run the troubleshooter."
+      },
+      {
+        "title": "Manually Reset Windows Update Components",
+        "content": "Open Command Prompt as Administrator and run the following commands one by one: net stop wuauserv, net stop cryptSvc, net stop bits, net stop msiserver, ren C:\\Windows\\SoftwareDistribution SoftwareDistribution.old, ren C:\\Windows\\System32\\catroot2 catroot2.old, net start wuauserv, net start cryptSvc, net start bits, net start msiserver."
+      },
+      {
+        "title": "Check for System File Corruption",
+        "content": "Run Command Prompt as Administrator and execute the command: sfc /scannow."
+      },
+      {
+        "title": "Use DISM Tool",
+        "content": "Run Command Prompt as Administrator and execute the command: DISM /Online /Cleanup-Image /RestoreHealth."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Manual Reset",
+            "content": "Manually reset Windows Update components as described in the steps above, ensuring all services are stopped and restarted correctly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T17:22:21.908Z",
+      "updated": "2026-01-05T17:22:21.908Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/kb5003646-fails-to-install/24677f6a-58f6-4828-9b2e-d9de8090435a",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
