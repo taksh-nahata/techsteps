@@ -35916,5 +35916,694 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767626436761-388",
+    "title": "Fix Slow PC After Windows 11 Update",
+    "problemDescription": "Your PC is running slowly after the latest Windows 11 update, possibly due to reduced SSD speeds.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "slow pc",
+      "ssd speed",
+      "update issue"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall the Latest Update",
+        "content": "Go to Settings > Windows Update > Update history > Uninstall updates. Select the latest update and click Uninstall."
+      },
+      {
+        "title": "Restart Your PC",
+        "content": "After uninstalling the update, restart your PC to apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Wait for Official Fix",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Regularly check for new updates from Microsoft that may address this issue."
+          },
+          {
+            "title": "Delay Future Updates",
+            "content": "Consider pausing updates until Microsoft confirms the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T15:20:36.761Z",
+      "updated": "2026-01-05T15:20:36.761Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/windows-11-update-affects-ssd-speeds/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767626442146-280",
+    "title": "Fix GPU Frame Rate Drops",
+    "problemDescription": "Frame rate drops and stuttering in games, often accompanied by overheating.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "gpu",
+      "frame rate",
+      "overheating",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Check GPU Temperatures",
+        "content": "Use software like MSI Afterburner or HWMonitor to check your GPU temperatures. Ensure they are within safe operating ranges (typically below 85°C under load)."
+      },
+      {
+        "title": "Improve GPU Cooling",
+        "content": "Clean dust from your GPU and ensure proper airflow in your PC case. Consider upgrading your cooling solution if necessary."
+      },
+      {
+        "title": "Update GPU Drivers",
+        "content": "Download and install the latest drivers for your GPU from the manufacturer's website. This can resolve performance issues and bugs."
+      },
+      {
+        "title": "Adjust In-Game Settings",
+        "content": "Lower graphics settings in games to reduce the load on your GPU. This can help maintain a stable frame rate."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall GPU Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Current Drivers",
+            "content": "Use Display Driver Uninstaller (DDU) to completely remove your current GPU drivers."
+          },
+          {
+            "title": "Install Latest Drivers",
+            "content": "Download and install the latest drivers from the manufacturer's website."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Background Processes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Task Manager",
+            "content": "Press Ctrl+Shift+Esc to open Task Manager."
+          },
+          {
+            "title": "End Unnecessary Processes",
+            "content": "Identify and end any unnecessary processes that might be consuming GPU resources."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T15:20:42.146Z",
+      "updated": "2026-01-05T15:20:42.146Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/my-gpu-was-an-absolute-nightmare-heres-how-i-fixed-it/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767626454348-760",
+    "title": "Reset AirPods When Not Working",
+    "problemDescription": "AirPods not connecting or functioning properly.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "airpods",
+      "reset",
+      "connectivity",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Unpair AirPods from Device",
+        "content": "On iPhone or iPad, go to Bluetooth settings, tap the (i) next to your AirPods, scroll down and choose 'Forget This Device', then 'Forget Device' on the popup. On Mac, go to Bluetooth in System Preferences, right-click on your AirPods and choose 'Remove'."
+      },
+      {
+        "title": "Perform Hard Reset",
+        "content": "Press and hold the setup button on the back of the AirPods case for about 15 seconds until the status light flashes amber and then white."
+      },
+      {
+        "title": "Re-pair AirPods",
+        "content": "Open the AirPods case lid and press and hold the setup button until the status light flashes white. Then, follow the on-screen instructions to pair your AirPods with your device again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Simple Re-pairing",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unpair and Re-pair",
+            "content": "Unpair your AirPods from your device and then re-pair them by following the standard pairing process."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T15:20:54.348Z",
+      "updated": "2026-01-05T15:20:54.348Z",
+      "sourceUrl": "https://au.lifehacker.com/hardware/44771/news/how-to-use-your-airpods-hidden-reset-feature-when-they-refuse-to-cooperate",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767626470096-926",
+    "title": "Reset and Optimize AirPods Pro Settings",
+    "problemDescription": "AirPods Pro not functioning properly or need optimization.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "airpods",
+      "settings",
+      "optimization",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Unpair and Re-pair AirPods Pro",
+        "content": "On your iPhone, go to AirPods Pro settings, tap 'Forget This Device,' and confirm. On Mac, right-click your AirPods and select 'Remove.'"
+      },
+      {
+        "title": "Run Ear Tip Fit Test",
+        "content": "Go to AirPods Pro settings on iOS, tap 'Ear Tip Fit Test,' follow the instructions, and ensure a good seal."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Rename AirPods Pro",
+        "type": "Optional Customization",
+        "steps": [
+          {
+            "title": "Rename AirPods Pro",
+            "content": "Go to Settings > Bluetooth, tap the 'i' icon next to your AirPods, and rename them."
+          }
+        ]
+      },
+      {
+        "title": "Enable and Customize Adaptive Audio",
+        "type": "Optional Customization",
+        "steps": [
+          {
+            "title": "Enable Adaptive Audio",
+            "content": "Long-press the volume slider in Control Center, long-press Noise Control, and choose Adaptive."
+          },
+          {
+            "title": "Customize Adaptive Audio",
+            "content": "Go to Settings > Bluetooth, tap 'More Info' next to your AirPods, tap 'Adaptive Audio,' and adjust the slider to your preference."
+          }
+        ]
+      },
+      {
+        "title": "Set Up Conversation Awareness (AirPods Pro 2)",
+        "type": "Optional Customization",
+        "steps": [
+          {
+            "title": "Enable Conversation Awareness",
+            "content": "Go to Settings > Bluetooth, tap 'More Info' next to your AirPods, and enable 'Conversation Awareness.'"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T15:21:10.096Z",
+      "updated": "2026-01-05T15:21:10.096Z",
+      "sourceUrl": "https://lifehacker.com/best-apple-airpods-pro-settings",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767626473254-68",
+    "title": "Repairing AirPods Pro 3",
+    "problemDescription": "AirPods Pro 3 are designed in a way that makes them difficult to repair due to strong glue and sealed casing.",
+    "category": "app-error",
+    "difficulty": "Hard",
+    "keywords": [
+      "AirPods",
+      "repair",
+      "iFixit",
+      "Apple"
+    ],
+    "steps": [
+      {
+        "title": "Heat the AirPods",
+        "content": "Use a heat source to loosen the strong glue that seals the casing. Be careful not to melt the plastic."
+      },
+      {
+        "title": "Pry Open the Casing",
+        "content": "Use sharp tools to pry open the buds. Avoid disfiguring the case while slicing it open."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Apple Support Website",
+            "content": "Go to the Apple Support website and navigate to the AirPods section."
+          },
+          {
+            "title": "Schedule a Repair",
+            "content": "Schedule a repair appointment with Apple Support or visit an Apple Store."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T15:21:13.254Z",
+      "updated": "2026-01-05T15:21:13.254Z",
+      "sourceUrl": "https://lifehacker.com/tech/airpods-pro-3-are-unrepairable",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767626476451-950",
+    "title": "Fix Static in AirPods Pro 3",
+    "problemDescription": "Static noise is heard in AirPods Pro 3, potentially due to hardware or software issues.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "airpods",
+      "static",
+      "noise",
+      "ios",
+      "apple"
+    ],
+    "steps": [
+      {
+        "title": "Contact Apple Support",
+        "content": "Reach out to Apple Support or visit an Apple Store to report the issue."
+      },
+      {
+        "title": "Request a Replacement",
+        "content": "Ask for a replacement unit, as Apple may swap out affected AirPods Pro 3 even if they pass diagnostic tests."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Temporarily Disable Noise Controls",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Active Noise Cancellation and Transparency",
+            "content": "Go to Settings > Bluetooth > AirPods Pro 3 > Noise Control and turn off Active Noise Cancellation and Transparency modes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T15:21:16.452Z",
+      "updated": "2026-01-05T15:21:16.452Z",
+      "sourceUrl": "https://lifehacker.com/tech/airpods-pro-3-static-reports",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767626488816-843",
+    "title": "Clean Apple AirPods with Fun-Tak and Toothpick",
+    "problemDescription": "Wax and dirt buildup in Apple AirPods' speaker mesh and hollow.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "airpods",
+      "clean",
+      "wax",
+      "dirt",
+      "fun-tak",
+      "toothpick"
+    ],
+    "steps": [
+      {
+        "title": "Prepare Fun-Tak",
+        "content": "Grab a small piece of Fun-Tak and stretch and knead it to warm it up."
+      },
+      {
+        "title": "Clean Speaker Mesh",
+        "content": "Press the Fun-Tak against the speaker mesh a few times to pick up wax and dirt."
+      },
+      {
+        "title": "Use Toothpick for Stubborn Debris",
+        "content": "Use a wooden toothpick to gently remove any remaining wax or dirt from the speaker hollow."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Q-tip and Toothbrush",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Q-tip Attempt",
+            "content": "Use a Q-tip to try and remove wax and dirt, though this may just smoosh the debris further in."
+          },
+          {
+            "title": "Toothbrush Attempt",
+            "content": "Use an old toothbrush to attempt to scrub out the wax and dirt, though results may vary."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T15:21:28.816Z",
+      "updated": "2026-01-05T15:21:28.816Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/are-your-apple-earbuds-full-of-gunk-heres-how-to-clean-your-airpods/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767626495961-667",
+    "title": "Clean AirPods or Wireless Earbuds",
+    "problemDescription": "Your AirPods or wireless earbuds are grimy and need a deep clean.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "airpods",
+      "earbuds",
+      "cleaning",
+      "maintenance"
+    ],
+    "steps": [
+      {
+        "title": "Disinfect the Exterior",
+        "content": "Use a disinfecting or alcohol wipe to clean the exterior surface of the AirPods or earbuds. Avoid the mesh speaker part."
+      },
+      {
+        "title": "Dry the Buds",
+        "content": "Dry the buds completely with a clean cloth before using them again. Alcohol dries quickly, so this should take less than a minute."
+      },
+      {
+        "title": "Clean Silicone Tips",
+        "content": "Detach the silicone tips from the earphones and soak them in warm, soapy water for about 30 minutes. Agitate the container for stubborn stains."
+      },
+      {
+        "title": "Wipe and Dry Silicone Tips",
+        "content": "Use a soft cloth or cotton swab to wipe away any remaining earwax or dirt. Set the silicone tips aside to air dry completely."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Deep Clean Ear Cushions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Prepare Soaking Solution",
+            "content": "Mix one teaspoon of liquid laundry detergent with one cup of tepid water in a container."
+          },
+          {
+            "title": "Soak Ear Cushions",
+            "content": "Remove the ear cushions and soak them in the solution."
+          },
+          {
+            "title": "Wipe and Dry",
+            "content": "Wipe the ear cushions and headband thoroughly with a clean cloth. Lay the headphones flat to dry for at least a day before reattaching the cushions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T15:21:35.961Z",
+      "updated": "2026-01-05T15:21:35.961Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/grimy-airpods-or-wireless-earbuds-heres-the-right-way-to-deep-clean-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767626501873-867",
+    "title": "Adjust AirPods Max for Comfort",
+    "problemDescription": "AirPods Max are heavy and may not fit comfortably out of the box.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods Max",
+      "comfort",
+      "fit",
+      "adjustment"
+    ],
+    "steps": [
+      {
+        "title": "Adjust the Mesh Canopy Headband",
+        "content": "To achieve a comfortable and secure fit, adjust the mesh canopy headband to sit a little more forward on your head."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-05T15:21:41.873Z",
+      "updated": "2026-01-05T15:21:41.873Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/best-noise-canceling-headphones/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767626511812-188",
+    "title": "Prove Internet Disconnection to ISP",
+    "problemDescription": "Your ISP denies there's an issue with your internet connection, despite frequent disconnections.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "internet",
+      "connection",
+      "disconnection",
+      "ISP",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Use Net Uptime Monitor",
+        "content": "Download and install Net Uptime Monitor. This tool will log your internet disconnections and provide you with evidence to present to your ISP."
+      },
+      {
+        "title": "Collect Logs",
+        "content": "Allow the tool to run for a sufficient period to gather data on your internet disconnections. Ensure you have a detailed log of the issues."
+      },
+      {
+        "title": "Contact Your ISP",
+        "content": "Present the logs to your ISP as evidence of the disconnections. This should help them acknowledge the issue and take appropriate action."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Replace Modem or Router",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a New Modem or Router",
+            "content": "Buy a better modem or router to see if it resolves the issue."
+          },
+          {
+            "title": "Contact ISP for Replacement",
+            "content": "Ask your ISP to replace your modem or router if they suspect it might be the cause of the problem."
+          }
+        ]
+      },
+      {
+        "title": "Check Cabling",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect Cabling",
+            "content": "Check all the cables connected to your modem and router to ensure they are properly connected and not damaged."
+          },
+          {
+            "title": "Replace Cables if Necessary",
+            "content": "If you find any issues with the cables, replace them with new ones."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T15:21:51.812Z",
+      "updated": "2026-01-05T15:21:51.812Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/this-tool-proved-my-internet-was-disconnecting/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767626519439-194",
+    "title": "Google Nest Mini Won't Turn On",
+    "problemDescription": "The Google Nest Mini device does not power on.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "Google Nest Mini",
+      "power",
+      "turn on"
+    ],
+    "steps": [
+      {
+        "title": "Check Power Source",
+        "content": "Ensure the Google Nest Mini is properly plugged into a working power outlet."
+      },
+      {
+        "title": "Inspect Power Cord",
+        "content": "Verify that the power cord is securely connected to both the Nest Mini and the power outlet."
+      },
+      {
+        "title": "Reset the Device",
+        "content": "Unplug the Nest Mini, wait for 30 seconds, and then plug it back in to reset it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Physical Damage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect for Damage",
+            "content": "Look for any visible signs of damage to the power cord or the device itself."
+          },
+          {
+            "title": "Try a Different Outlet",
+            "content": "Plug the Nest Mini into a different power outlet to rule out issues with the original outlet."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T15:21:59.439Z",
+      "updated": "2026-01-05T15:21:59.439Z",
+      "sourceUrl": "https://www.digitaltrends.com/home/common-google-nest-mini-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767626522975-432",
+    "title": "Fix Pixel 9 Wi-Fi Connection Issues",
+    "problemDescription": "Pixel 9 not connecting properly to Wi-Fi after a software update.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "Pixel 9",
+      "Wi-Fi",
+      "connection",
+      "software update"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Phone",
+        "content": "Restart your Pixel 9 to see if the Wi-Fi connection improves."
+      },
+      {
+        "title": "Forget and Reconnect to Wi-Fi",
+        "content": "Go to Settings > Network & Internet > Wi-Fi, tap the gear icon next to your network, and select 'Forget'. Then reconnect to the network."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Go to Settings > System > System update to check for and install any available updates."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > System > Reset options > Reset Wi-Fi, mobile & Bluetooth. Note that this will reset all network settings to default."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Airplane Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Airplane Mode",
+            "content": "Turn on Airplane mode for about 30 seconds."
+          },
+          {
+            "title": "Disable Airplane Mode",
+            "content": "Turn off Airplane mode and check if the Wi-Fi connection is restored."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T15:22:02.975Z",
+      "updated": "2026-01-05T15:22:02.975Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/google-pixel-9-problems-common-issues-how-to-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767626537173-151",
+    "title": "Fix Wi-Fi After Windows 11 Update",
+    "problemDescription": "Wi-Fi not working after installing Windows 11 updates KB5032288 and KB5033375.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "windows 11",
+      "update",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Install the Latest Update",
+        "content": "Go to Settings > Windows Update > Check for updates and install any available updates, especially those that address the known issues with KB5032288 and KB5033375."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable 802.11r",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Router Settings",
+            "content": "Log in to your router's admin panel by entering the router's IP address in a web browser."
+          },
+          {
+            "title": "Disable 802.11r",
+            "content": "Navigate to the wireless settings and disable the 802.11r feature. The exact steps may vary depending on your router brand."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Uninstall the Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Update History",
+            "content": "Go to Settings > Windows Update > Update history."
+          },
+          {
+            "title": "Uninstall the Update",
+            "content": "Click on 'Uninstall updates' and remove the problematic updates KB5032288 and KB5033375."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T15:22:17.173Z",
+      "updated": "2026-01-05T15:22:17.173Z",
+      "sourceUrl": "https://lifehacker.com/tech/windows-11-update-breaks-wi-fi-heres-how-to-fix-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
