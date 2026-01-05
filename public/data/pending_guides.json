@@ -39590,5 +39590,645 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767644479718-746",
+    "title": "Fix Windows PC Login PIN Issue",
+    "problemDescription": "Unable to log in to your Windows PC using your PIN.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "login",
+      "pin",
+      "password"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Computer",
+        "content": "Sometimes, a simple reboot can fix temporary problems that prevent the PIN from working."
+      },
+      {
+        "title": "Try Signing in with Your Password",
+        "content": "Instead of using the PIN, try signing in with your Microsoft account password."
+      },
+      {
+        "title": "Use the 'Forgot my password' Option",
+        "content": "If the password doesn't work, use the 'Forgot my password' option on the sign-in page."
+      },
+      {
+        "title": "Reset Password Online",
+        "content": "On another device, visit account.live.com/password/reset and follow the instructions. Look for alternative verification methods like email or security questions."
+      },
+      {
+        "title": "Start in Safe Mode",
+        "content": "On the sign-in screen, hold down the Shift key while clicking Restart. Select Troubleshoot, then Advanced options, then Startup Settings, and click Restart again. After the next restart, press the number 4 key to enter Safe Mode. Once in Safe Mode, try signing in with your password and see if that works."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset PIN via Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Sign in with Password",
+            "content": "Sign in to your PC using your Microsoft account password."
+          },
+          {
+            "title": "Go to Settings",
+            "content": "Click on the Start menu and select Settings (gear icon)."
+          },
+          {
+            "title": "Navigate to Sign-in Options",
+            "content": "Go to Accounts > Sign-in options."
+          },
+          {
+            "title": "Remove and Re-add PIN",
+            "content": "Under PIN, select 'I forgot my PIN' and follow the prompts to remove and set up a new PIN."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T20:21:19.718Z",
+      "updated": "2026-01-05T20:21:19.718Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/i-need-help-with-my-pin-to-log-in-my-pc/aafa959c-815b-4b94-ad6a-1914c1f405f0",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767644484604-989",
+    "title": "Microsoft Account Recovery",
+    "problemDescription": "User needs to recover or reset their Microsoft account password.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "account",
+      "recovery",
+      "password",
+      "Microsoft"
+    ],
+    "steps": [
+      {
+        "title": "Identify Account Type",
+        "content": "Determine if you are using a work/school account or a personal Microsoft account."
+      },
+      {
+        "title": "Work/School Account",
+        "content": "If using a work/school account, refer to the document 'Reset passwords - Microsoft 365 admin | Microsoft Learn' and coordinate with your Office 365 Global Administrator."
+      },
+      {
+        "title": "Personal Account",
+        "content": "If using a personal Microsoft account, refer to the document 'Reset a forgotten Microsoft account password - Microsoft Support'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Microsoft Support",
+            "content": "If you are unable to resolve the issue through the provided documents, contact Microsoft Support for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T20:21:24.604Z",
+      "updated": "2026-01-05T20:21:24.604Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum/all/account-recovery/4419822a-ba3f-4059-a13a-9d8d78a9bdbf",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767644495262-72",
+    "title": "Laptop Not Booting Past 'Please Wait' Screen",
+    "problemDescription": "Laptop shows 'Please Wait' screen and does not proceed to login screen.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "boot",
+      "windows",
+      "login",
+      "safe mode"
+    ],
+    "steps": [
+      {
+        "title": "Boot into Safe Mode",
+        "content": "Restart your computer and repeatedly press the F8 key (or Shift+F8 for some systems) to access the Windows Start-up Settings. Select 'Safe Mode' and press Enter. Check if the issue persists in Safe Mode."
+      },
+      {
+        "title": "Update or Roll Back Drivers",
+        "content": "If the issue is resolved in Safe Mode, update your drivers or roll back to a previous version. Go to Device Manager, right-click on the device, and select 'Update driver' or 'Roll Back Driver'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Remove and Reinsert Battery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Power Off and Remove Battery",
+            "content": "Turn off your laptop completely. Remove the battery and hold the power button for 30 seconds to discharge any residual power."
+          },
+          {
+            "title": "Reinsert Battery and Boot",
+            "content": "Reinsert the battery and turn on your laptop. Check if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T20:21:35.262Z",
+      "updated": "2026-01-05T20:21:35.262Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/windows8_1-performance/i-have-to-remove-the-battery-and-put-back-to-boot/98f368ea-dc4a-480a-9d20-45cc67ff7bb6",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767644505968-776",
+    "title": "Fix Chrome and Firefox Crashes",
+    "problemDescription": "Chrome and Firefox browsers are crashing the computer.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "browser",
+      "crash",
+      "chrome",
+      "firefox"
+    ],
+    "steps": [
+      {
+        "title": "Disable Malfunctioning Extensions in Chrome",
+        "content": "Type 'about:plugins' in the Chrome address bar, press ENTER, and disable all unwanted items."
+      },
+      {
+        "title": "Disable Sandbox Feature in Chrome",
+        "content": "Right-click the Chrome desktop shortcut, select Properties, go to the Shortcut tab, and in the Target textbox, add '--no-sandbox' at the end. Click Apply and then OK."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Chrome Quick-Fix",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Chrome Quick-Fix",
+            "content": "Use Chrome Quick-Fix to automatically repair the problem."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T20:21:45.968Z",
+      "updated": "2026-01-05T20:21:45.968Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/suddenly-firefox-and-chrome-crashes-my-computer.1350913/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767644514358-264",
+    "title": "Fix Chrome Randomly Signing Out",
+    "problemDescription": "Google Chrome randomly signs out of accounts after relaunching.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "sign out",
+      "browser",
+      "extensions"
+    ],
+    "steps": [
+      {
+        "title": "Remove Extensions",
+        "content": "Disable or remove all extensions, especially Google Docs Offline, Grammarly, Return YouTube Dislikes, uBlock Origin Lite, and YouTube Row Fixer."
+      },
+      {
+        "title": "Clean Install Chrome",
+        "content": "Uninstall Chrome completely using Revo Uninstaller, delete all related files, folders, and registry entries. Use IOBit Unlocker for stubborn files and clear the Windows Prefetch folder."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Flush DNS and reset Winsock. Restart your PC and reinstall Chrome."
+      },
+      {
+        "title": "Check for System Issues",
+        "content": "Ensure your system is stable and free from BSODs or other critical errors."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Chrome Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Chrome",
+            "content": "Go to Chrome settings, navigate to Advanced, and click 'Restore settings to their original defaults'."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Malware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Scan for Malware",
+            "content": "Run a full system scan using a reliable antivirus or anti-malware tool."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T20:21:54.358Z",
+      "updated": "2026-01-05T20:21:54.358Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/solved-google-chrome-randomly-signing-me-out-after-relaunching-it.3878864/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767644528878-47",
+    "title": "Fix Two-Factor Authentication Login Issues",
+    "problemDescription": "Troubleshooting steps to resolve problems with two-factor authentication login.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "two-factor",
+      "authentication",
+      "login",
+      "issues"
+    ],
+    "steps": [
+      {
+        "title": "Check Your Internet Connection",
+        "content": "Ensure you have a stable internet connection as two-factor authentication requires network access."
+      },
+      {
+        "title": "Verify the Correct App or Service",
+        "content": "Make sure you are using the correct app or service for two-factor authentication."
+      },
+      {
+        "title": "Check the Time on Your Device",
+        "content": "Ensure your device's time and date are set correctly, as time synchronization is crucial for two-factor authentication."
+      },
+      {
+        "title": "Reinstall the Authentication App",
+        "content": "If you are using an authenticator app, try reinstalling it to resolve any potential software issues."
+      },
+      {
+        "title": "Contact Support",
+        "content": "If the issue persists, contact the support team of the service you are trying to access for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Backup Codes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Locate Backup Codes",
+            "content": "Find the backup codes provided by the service when you initially set up two-factor authentication."
+          },
+          {
+            "title": "Enter Backup Code",
+            "content": "Use one of the backup codes to log in and regain access to your account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T20:22:08.878Z",
+      "updated": "2026-01-05T20:22:08.878Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=C71j2hctYY8",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767644533284-503",
+    "title": "Fix Apple ID Two-Factor Authentication Lost Phone Number",
+    "problemDescription": "You can't access your Apple ID due to losing the phone number associated with two-factor authentication.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "apple",
+      "id",
+      "two-factor",
+      "authentication",
+      "lost",
+      "phone",
+      "number"
+    ],
+    "steps": [
+      {
+        "title": "Cancel the current login attempt",
+        "content": "On the login screen, tap on 'Cancel' after entering your Apple ID and password."
+      },
+      {
+        "title": "Select 'Did not get a verification code'",
+        "content": "Tap on 'Did not get a verification code' on the two-factor authentication screen."
+      },
+      {
+        "title": "Change the two-factor authentication number",
+        "content": "Tap on 'Continue' to change the two-factor authentication number associated with your Apple ID."
+      },
+      {
+        "title": "Complete the sign-in process",
+        "content": "After changing the number, you should be able to sign in to your Apple ID."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Account Recovery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Tap on 'Cannot use this number'",
+            "content": "On the two-factor authentication screen, tap on 'Cannot use this number'."
+          },
+          {
+            "title": "Start account recovery",
+            "content": "Tap on 'Start account recovery'."
+          },
+          {
+            "title": "Enter the old number",
+            "content": "Enter the old phone number you have lost and tap on 'Continue'."
+          },
+          {
+            "title": "Send a verification code",
+            "content": "Tap on 'Continue' and then 'Send code' to receive a six-digit code."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T20:22:13.284Z",
+      "updated": "2026-01-05T20:22:13.284Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=SZ7ie0N2aEQ",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767644543182-48",
+    "title": "Fix Facebook Two-Factor Authentication Problem",
+    "problemDescription": "Facebook Two-Factor Authentication not working or causing login issues.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "facebook",
+      "two-factor authentication",
+      "login issue"
+    ],
+    "steps": [
+      {
+        "title": "Check Your Phone Number or Authentication App",
+        "content": "Ensure that the phone number or authentication app linked to your Facebook account is correct and accessible."
+      },
+      {
+        "title": "Request Login Codes",
+        "content": "Go to Facebook's login page and select 'Forgot Password' or 'Need Another Way to Authenticate'. Follow the prompts to request login codes."
+      },
+      {
+        "title": "Use Backup Codes",
+        "content": "If you have backup codes, use one of them to log in. You can find these codes in your email or in the settings of your Facebook account."
+      },
+      {
+        "title": "Update Two-Factor Authentication Settings",
+        "content": "Once logged in, go to Settings & Privacy > Settings > Security and Login > Two-Factor Authentication. Update your settings to ensure they are correct."
+      },
+      {
+        "title": "Contact Facebook Support",
+        "content": "If the issue persists, contact Facebook Support for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Two-Factor Authentication Temporarily",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Security Settings",
+            "content": "Go to Settings & Privacy > Settings > Security and Login > Two-Factor Authentication."
+          },
+          {
+            "title": "Disable Two-Factor Authentication",
+            "content": "Temporarily disable two-factor authentication to see if it resolves the issue."
+          },
+          {
+            "title": "Re-enable Two-Factor Authentication",
+            "content": "After troubleshooting, re-enable two-factor authentication and set it up again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T20:22:23.182Z",
+      "updated": "2026-01-05T20:22:23.182Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=gSO1ukzf-VU",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767644544436-528",
+    "title": "Fix Google Authenticator Not Working",
+    "problemDescription": "Google Authenticator is not generating or accepting codes.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "google",
+      "authenticator",
+      "not working",
+      "2fa"
+    ],
+    "steps": [
+      {
+        "title": "Check Date and Time Settings",
+        "content": "Ensure your device's date and time settings are accurate and set to automatic."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-05T20:22:24.436Z",
+      "updated": "2026-01-05T20:22:24.436Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=XkoX60vsETg",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767644551004-6",
+    "title": "Speed Up a Slow Computer",
+    "problemDescription": "Your computer is running slowly and needs optimization.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "slow computer",
+      "optimization",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Update .NET Framework",
+        "content": "Ensure you have the latest .NET Framework installed from the control panel."
+      },
+      {
+        "title": "Manage Startup Programs",
+        "content": "Reduce the number of startup programs to decrease boot-up load."
+      },
+      {
+        "title": "Update Operating System and Software",
+        "content": "Regularly update your operating system and all installed software for optimal performance and security."
+      },
+      {
+        "title": "Declutter Your System",
+        "content": "Uninstall unnecessary programs and delete temporary files to free up space."
+      },
+      {
+        "title": "Run a Full Antivirus Scan",
+        "content": "Perform a full antivirus scan to identify and remove any malware that might be slowing down your system."
+      },
+      {
+        "title": "Perform Disk Cleanup and Defragmentation",
+        "content": "Regularly perform disk cleanup and defragmentation to maintain system performance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Office Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Microsoft Office",
+            "content": "Ensure your Microsoft Office suite is up to date for better performance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T20:22:31.004Z",
+      "updated": "2026-01-05T20:22:31.004Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=H56Onkm5f1k",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767644574462-679",
+    "title": "Fix Chrome Installation Issues",
+    "problemDescription": "Unable to install Google Chrome on your computer.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "installation",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Download Offline Installer",
+        "content": "Visit the Chrome website, scroll down to Chrome Family, and download the offline installer."
+      },
+      {
+        "title": "Run the Installer",
+        "content": "Locate the downloaded file and double-click to run the installer."
+      },
+      {
+        "title": "Follow Installation Prompts",
+        "content": "Follow the on-screen instructions to complete the installation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Browser Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Browser Settings",
+            "content": "Go to your current browser's settings."
+          },
+          {
+            "title": "Clear Cache",
+            "content": "Navigate to the privacy or history section and clear the cache."
+          },
+          {
+            "title": "Retry Installation",
+            "content": "Attempt to install Chrome again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T20:22:54.462Z",
+      "updated": "2026-01-05T20:22:54.462Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/cant-install-chrome-you-arent-alone-heres-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767644586389-974",
+    "title": "Fix Google Drive Refused to Connect",
+    "problemDescription": "Google Drive shows a 'refused to connect' error when trying to access it.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "Google Drive",
+      "connection error",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Clear Browser Cache and Cookies",
+        "content": "Go to your browser settings, navigate to the privacy and security section, and clear your browsing data, including cache and cookies."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Internet Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Internet Connection",
+            "content": "Ensure your internet connection is stable and working properly."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Browser Extensions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Extensions",
+            "content": "Go to your browser settings, navigate to the extensions section, and disable all extensions to see if any are causing the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T20:23:06.389Z",
+      "updated": "2026-01-05T20:23:06.389Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/drive-google-refused-to-connect/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
