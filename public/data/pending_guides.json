@@ -38328,5 +38328,675 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767637611167-305",
+    "title": "Sync iPad with Non-iPhone",
+    "problemDescription": "iPad won't sync with a new Samsung Galaxy J5 (2016) using the same Apple ID.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iPad",
+      "sync",
+      "Samsung",
+      "Apple ID"
+    ],
+    "steps": [
+      {
+        "title": "Create a New Apple ID for iPad",
+        "content": "Go to Settings > iTunes & App Stores > Tap on your Apple ID > Sign Out. Then, create a new Apple ID specifically for your iPad."
+      },
+      {
+        "title": "Sign Out from iCloud on iPad",
+        "content": "Go to Settings > iCloud > Tap on your Apple ID > Sign Out. This will allow you to use your iPad independently from your iPhone."
+      },
+      {
+        "title": "Reconfigure Sync Settings",
+        "content": "After signing out, reconfigure your sync settings for apps, photos, and other data on your iPad using the new Apple ID."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use iCloud for Data Backup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup iPad Data",
+            "content": "Before making changes, ensure all important data on your iPad is backed up to iCloud."
+          },
+          {
+            "title": "Sign Out and Sign In",
+            "content": "Sign out from iCloud and sign back in with the same Apple ID to refresh the sync settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T18:26:51.167Z",
+      "updated": "2026-01-05T18:26:51.167Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/247164/ipad-and-android-phone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767637613782-97",
+    "title": "Fix iPad Hotspot IP Address Issue",
+    "problemDescription": "iPad fails to get an IP address when using a Samsung mobile hotspot, especially with strong LTE signals.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "hotspot",
+      "ip address",
+      "ios",
+      "lte",
+      "3g"
+    ],
+    "steps": [
+      {
+        "title": "Switch to 3G/4G",
+        "content": "On your iPad, turn off LTE network and use 3G/4G instead."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Remove Unnecessary Profiles",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Profiles",
+            "content": "Go to `Settings app → General → Profile`."
+          },
+          {
+            "title": "Delete Profile",
+            "content": "Delete any unnecessary profiles that might be interfering with the hotspot functionality."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T18:26:53.782Z",
+      "updated": "2026-01-05T18:26:53.782Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/114435/how-do-i-troubleshoot-personal-hotspot-mode-failing-to-issue-ip-addresses",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767637617068-771",
+    "title": "MacBook Pro Can't See Android Hotspot",
+    "problemDescription": "MacBook Pro unable to detect Android phone's Wi-Fi hotspot.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "hotspot",
+      "android",
+      "macbook"
+    ],
+    "steps": [
+      {
+        "title": "Switch to 5GHz Band",
+        "content": "Go to your Android phone's hotspot settings and switch the Wi-Fi band to 5GHz."
+      },
+      {
+        "title": "Check Password for Spaces",
+        "content": "Ensure there are no extra spaces in your hotspot password."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings on MacBook",
+            "content": "Go to System Preferences > Network > Advanced > Wi-Fi > Remove all known networks > OK > Apply."
+          }
+        ]
+      },
+      {
+        "title": "Use 2.5GHz Band",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to 2.5GHz Band",
+            "content": "If your Android phone only supports 2.5GHz, ensure the hotspot is set to this band."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T18:26:57.068Z",
+      "updated": "2026-01-05T18:26:57.068Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/410333/macbook-pro-cant-see-my-android-phone-wifi-hotspot",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767637624119-783",
+    "title": "Fix Move to iOS Code Mismatch",
+    "problemDescription": "Move to iOS app expects a 10-digit code on Android, but iPhone provides a 6-digit code.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "migration",
+      "android",
+      "ios",
+      "move to ios",
+      "code mismatch"
+    ],
+    "steps": [
+      {
+        "title": "Check iPhone and Android Compatibility",
+        "content": "Ensure both devices are compatible with the Move to iOS app. The iPhone should be running iOS 12.4 or later, and the Android device should be running Android 4.0 or later."
+      },
+      {
+        "title": "Restart Both Devices",
+        "content": "Restart both the iPhone and the Android device to ensure a clean start."
+      },
+      {
+        "title": "Reinitiate the Transfer Process",
+        "content": "On the iPhone, go to Settings > General > Reset > Erase All Content and Settings to reset the iPhone to factory settings. Then, during the setup process, select 'Move Data from Android' to generate a new code."
+      },
+      {
+        "title": "Enter the Code on Android",
+        "content": "On the Android device, open the Move to iOS app and enter the 6-digit code provided by the iPhone. If the app still expects a 10-digit code, proceed to the next step."
+      },
+      {
+        "title": "Update the Move to iOS App",
+        "content": "Ensure the Move to iOS app on the Android device is updated to the latest version. Sometimes, app updates resolve compatibility issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Data Transfer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Cloud Services",
+            "content": "Use cloud services like Google Drive or iCloud to manually transfer data from the Android device to the iPhone."
+          },
+          {
+            "title": "Use Third-Party Apps",
+            "content": "Use third-party apps like Smart Switch or Google Photos to transfer data."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T18:27:04.119Z",
+      "updated": "2026-01-05T18:27:04.119Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/307307/issue-with-move-to-ios-android-app-to-migrate-to-iphone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767637645052-444",
+    "title": "Reinstall Windows 11 with December 2024 Update",
+    "problemDescription": "Windows 11 users cannot install security updates due to issues with October or November updates installed via physical media.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "security updates",
+      "reinstall",
+      "update issue"
+    ],
+    "steps": [
+      {
+        "title": "Download Windows 11 Installation Media",
+        "content": "Navigate to Microsoft’s Windows 11 download page and scroll down to 'Create Windows 11 Installation Media'."
+      },
+      {
+        "title": "Run Media Creation Tool",
+        "content": "Open mediacreationtool.exe and follow the instructions in the app to create installation media with the December 2024 update included."
+      },
+      {
+        "title": "Reinstall Windows 11",
+        "content": "Use the created installation media to reinstall Windows 11 on your system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check for Automatic Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Update Source",
+            "content": "If you downloaded the Windows 11 October or November updates through Windows Update or the Microsoft Update Catalog website, no further action is needed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T18:27:25.052Z",
+      "updated": "2026-01-05T18:27:25.052Z",
+      "sourceUrl": "https://lifehacker.com/tech/some-windows-11-users-can-no-longer-install-security-updates",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767637664669-494",
+    "title": "Fix AirPods Case Flashing Orange",
+    "problemDescription": "The AirPods case is flashing orange, indicating a charging or pairing issue.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "airpods",
+      "orange light",
+      "charging",
+      "pairing"
+    ],
+    "steps": [
+      {
+        "title": "Wait for Charging",
+        "content": "Keep the AirPods in the case and wait for the case or AirPods to charge enough. The flashing light should stop once they are sufficiently charged."
+      },
+      {
+        "title": "Reset and Re-pair AirPods",
+        "content": "Place the AirPods in the case, wait 30 seconds, then press and hold the setup button on the back of the case for at least 15 seconds. Follow the on-screen instructions to re-pair your AirPods with your iPhone."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reboot the Audio Source",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot Device",
+            "content": "If the issue persists, reboot the device you are using as the audio source and check if the problem is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T18:27:44.669Z",
+      "updated": "2026-01-05T18:27:44.669Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/why-my-airpods-case-flashing-orange-and-how-to-fix-it/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767637668691-423",
+    "title": "Fix One AirPod Not Working",
+    "problemDescription": "One of your AirPods is not working or has connectivity issues.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods",
+      "connectivity",
+      "audio"
+    ],
+    "steps": [
+      {
+        "title": "Reset Your AirPods",
+        "content": "Open the lid of your AirPods case, then press and hold the setup button on the back of the case for about 15 seconds until the status light flashes amber, then white."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clean Your AirPods",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clean the AirPods",
+            "content": "Use a soft, dry, lint-free cloth to clean the AirPods and the charging contacts. Ensure there is no debris or dirt blocking the speaker or microphone."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reconnect the AirPods",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reconnect the AirPods",
+            "content": "Go to your iPhone's settings, tap on Bluetooth, and forget the AirPods. Then, place the AirPods back in the case, close the lid, wait for a few seconds, and reopen the lid. Hold the AirPods case near your iPhone and follow the on-screen instructions to reconnect."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T18:27:48.691Z",
+      "updated": "2026-01-05T18:27:48.691Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/how-to-fix-it-when-one-airpod-isnt-working/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767637681582-958",
+    "title": "Recover Facebook Account After Disabling 2FA",
+    "problemDescription": "Unable to access Facebook account after disabling two-factor authentication.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "facebook",
+      "2fa",
+      "account recovery"
+    ],
+    "steps": [
+      {
+        "title": "Log in via Mobile Web",
+        "content": "Use a mobile device to access Facebook through the mobile web browser."
+      },
+      {
+        "title": "Set Up Recovery Codes",
+        "content": "Follow the prompts to set up recovery codes, which will help you regain access to your account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Facebook Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Facebook Help Center",
+            "content": "Go to the Facebook Help Center and navigate to the account recovery section."
+          },
+          {
+            "title": "Submit a Recovery Request",
+            "content": "Fill out the form with the required information and submit a request for account recovery."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T18:28:01.582Z",
+      "updated": "2026-01-05T18:28:01.582Z",
+      "sourceUrl": "https://www.quora.com/I-turned-off-the-two-authentication-factors-in-Facebook-and-now-I-can-t-access-my-account-How-do-I-resolve-this",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767637691528-736",
+    "title": "Recover Instagram Account Without Authenticator App",
+    "problemDescription": "Instagram account recovery when two-factor authentication (2FA) is enabled but the Authenticator app was never set up.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "instagram",
+      "recovery",
+      "2FA",
+      "authenticator",
+      "account"
+    ],
+    "steps": [
+      {
+        "title": "Access Instagram Settings",
+        "content": "Tap on the three horizontal lines in the top right corner to open the menu."
+      },
+      {
+        "title": "Navigate to Security Settings",
+        "content": "Select 'Settings' from the menu, then tap on 'Security.'"
+      },
+      {
+        "title": "Reset Two-Factor Authentication",
+        "content": "Under the Security section, select 'Two-Factor Authentication,' then tap on 'Authentication App' and choose 'Reset' or 'Change.'"
+      },
+      {
+        "title": "Verify Identity",
+        "content": "You might be prompted to verify your identity through various methods, such as entering your account password or receiving a verification code via email or SMS."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-05T18:28:11.528Z",
+      "updated": "2026-01-05T18:28:11.528Z",
+      "sourceUrl": "https://www.quora.com/How-can-I-recover-my-Instagram-account-if-I-never-set-up-the-Authenticator-app-but-it-s-asking-for-a-2FA-code-I-don-t-have",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767637704211-79",
+    "title": "Fix Accidental Touches on Google Pixel",
+    "problemDescription": "Google Pixel devices experiencing accidental touches due to a software issue.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "google",
+      "pixel",
+      "touch",
+      "accidental",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Update Your Pixel Device",
+        "content": "Go to Settings > System > System update. Check for and install any available updates to ensure you have the latest software fix."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Screen Protector",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Apply a Screen Protector",
+            "content": "Install a high-quality screen protector to reduce the sensitivity of the touch screen and prevent accidental touches."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Adjust Touch Sensitivity",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Developer Options",
+            "content": "Go to Settings > About phone > Build number. Tap on the Build number seven times to enable Developer Options."
+          },
+          {
+            "title": "Adjust Touch Sensitivity",
+            "content": "Go to Settings > System > Developer options. Look for the 'Pointer location' or 'Show touches' option and adjust the settings to reduce sensitivity."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T18:28:24.211Z",
+      "updated": "2026-01-05T18:28:24.211Z",
+      "sourceUrl": "https://www.makeuseof.com/google-has-finally-fixed-this-frustrating-pixel-issue/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767637706704-841",
+    "title": "Fix Pixel 10 Display Responsiveness",
+    "problemDescription": "The Google Pixel 10 screen feels unresponsive or laggy.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel 10",
+      "display",
+      "responsiveness",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Enable Smooth Display",
+        "content": "Navigate to Settings -> Display and touch, scroll down to the Other display controls section, and flip the Smooth display toggle on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Adjust Screen White Balance with Adaptive Tone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Adaptive Tone",
+            "content": "Open Settings, go to Display and touch, scroll to the Color section, and toggle on the Adaptive tone option."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T18:28:26.704Z",
+      "updated": "2026-01-05T18:28:26.704Z",
+      "sourceUrl": "https://www.makeuseof.com/google-pixel-10-settings-to-change/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767637710032-770",
+    "title": "Fix Google Pixel Software Issues After Update",
+    "problemDescription": "Google Pixel phone settings and colors are messed up after a major update.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "google",
+      "pixel",
+      "software",
+      "update",
+      "settings",
+      "colors"
+    ],
+    "steps": [
+      {
+        "title": "Backup Your Data",
+        "content": "Before proceeding, back up your important data to Google Drive or an external storage device."
+      },
+      {
+        "title": "Reset Your Phone",
+        "content": "Go to Settings > System > Reset options > Erase all data (factory reset). Follow the on-screen instructions to complete the reset."
+      },
+      {
+        "title": "Restore Data",
+        "content": "After the reset, restore your data from the backup. Go to Settings > System > Backup > App data, settings, and restore."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Google Support for Specific Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Google Support",
+            "content": "If certain issues persist after the reset, contact Google Support for specific troubleshooting steps related to your Pixel model."
+          }
+        ]
+      },
+      {
+        "title": "Check for Extended Repair Programs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Google's Website",
+            "content": "Check if your Pixel model is eligible for an extended repair program. Visit the Google Pixel 7a Extended Repair Program website or similar for your model."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T18:28:30.032Z",
+      "updated": "2026-01-05T18:28:30.032Z",
+      "sourceUrl": "https://www.makeuseof.com/i-will-never-buy-a-google-pixel/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767637713585-851",
+    "title": "Pixel 9 Pro Free Display Repair Program",
+    "problemDescription": "Pixel 9 Pro owners experiencing specific display issues may be eligible for a free repair.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Pixel 9 Pro",
+      "display repair",
+      "Google repair program"
+    ],
+    "steps": [
+      {
+        "title": "Check Eligibility",
+        "content": "Visit the Google repair site to check if your Pixel 9 Pro or Pixel 9 Pro XL is eligible for the free display repair program."
+      },
+      {
+        "title": "Verify Display Issues",
+        "content": "Ensure your device has either a vertical line running from bottom to top or display flickering, as these are the specific issues covered by the program."
+      },
+      {
+        "title": "Initiate Repair",
+        "content": "Follow the instructions on the Google repair site to initiate the repair process if your device qualifies."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Google Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "If you are unsure about your eligibility or need further assistance, contact Google Support for guidance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T18:28:33.585Z",
+      "updated": "2026-01-05T18:28:33.585Z",
+      "sourceUrl": "https://www.makeuseof.com/pixel-9-pro-free-display-repair-program/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767637715487-300",
+    "title": "Disable At a Glance Widget on Pixel",
+    "problemDescription": "Users cannot disable or reposition the At a Glance widget on Pixel phones.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel",
+      "android",
+      "widget",
+      "customization"
+    ],
+    "steps": [
+      {
+        "title": "Use ADB Command",
+        "content": "Connect your Pixel phone to a computer, enable Developer Options, and use the ADB command to disable the At a Glance widget."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Wait for Google Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Regularly check for system updates as Google may address this issue in a future release."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T18:28:35.487Z",
+      "updated": "2026-01-05T18:28:35.487Z",
+      "sourceUrl": "https://www.makeuseof.com/why-i-keep-coming-back-to-pixel/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
