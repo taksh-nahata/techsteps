@@ -28380,5 +28380,1029 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767591191100-750",
+    "title": "Fix Pixel Overheating and Battery Drain",
+    "problemDescription": "Google Pixel 6 and 7 series devices experiencing overheating and battery drain after May 2023 security patch.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel",
+      "overheating",
+      "battery drain",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Wait for Automatic Fix",
+        "content": "Google has rolled out a server-side fix. Ensure your device is connected to the internet and wait for the fix to apply automatically."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manual Troubleshooting",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Device",
+            "content": "Restart your Pixel device to ensure the fix is applied."
+          },
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > System > System update to check for any pending updates."
+          },
+          {
+            "title": "Monitor Device",
+            "content": "Observe your device for a few hours to see if the battery drain and overheating issues persist."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T05:33:11.100Z",
+      "updated": "2026-01-05T05:33:11.100Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/google-fixes-pixel-update-error-leading-to-overheating-battery-drain-issues/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767591194596-700",
+    "title": "Enable Hold for Me on Google Pixel",
+    "problemDescription": "You want to use the Hold for Me feature on your Google Pixel phone to avoid waiting on hold during calls.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "google",
+      "pixel",
+      "hold for me",
+      "calls"
+    ],
+    "steps": [
+      {
+        "title": "Open the Phone App",
+        "content": "Open the Phone app on your Google Pixel device."
+      },
+      {
+        "title": "Access Settings",
+        "content": "Tap the three dots in the top right corner and select Settings."
+      },
+      {
+        "title": "Enable Hold for Me",
+        "content": "Tap Hold for Me and turn on the switch next to it."
+      },
+      {
+        "title": "Use Hold for Me",
+        "content": "When on a call and placed on hold, tap the Hold for Me button and press Start."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Set Up Automatic Call Screening",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open the Phone App",
+            "content": "Open the Phone app on your Google Pixel device."
+          },
+          {
+            "title": "Access Settings",
+            "content": "Tap the three dots in the top right corner and select Settings."
+          },
+          {
+            "title": "Select Spam and Call Screen",
+            "content": "Choose Spam and Call Screen from the settings menu."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T05:33:14.596Z",
+      "updated": "2026-01-05T05:33:14.596Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/google-pixel-tips-tricks-try-these-features-on-your-pixel-phone/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767591196639-692",
+    "title": "Pixel 10 Wireless Charging Issues",
+    "problemDescription": "Pixel 10 series phones may not charge properly or at all with older wireless chargers, especially when a case is on the phone.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "Pixel 10",
+      "wireless charging",
+      "Pixel Stand",
+      "Qi charging"
+    ],
+    "steps": [
+      {
+        "title": "Remove the Phone Case",
+        "content": "Take off any case on your Pixel 10 phone, as cases can interfere with wireless charging."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Try Different Charging Positions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Rotate the Phone",
+            "content": "Try placing the phone horizontally on the wireless charger instead of vertically."
+          }
+        ]
+      },
+      {
+        "title": "Use a Different Wireless Charger",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Upgrade to a Newer Charger",
+            "content": "Consider using a newer wireless charger that supports Qi 2 standards for better compatibility."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T05:33:16.639Z",
+      "updated": "2026-01-05T05:33:16.639Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/your-pixel-10-might-have-issues-with-older-wireless-chargers/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767591201361-439",
+    "title": "Contact Google Support from Pixel Phone",
+    "problemDescription": "Need to contact Google support for assistance with your Pixel phone.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "google",
+      "support",
+      "pixel",
+      "chat",
+      "phone"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Open the Settings app on your Pixel phone."
+      },
+      {
+        "title": "Access Support",
+        "content": "Tap on the Support tab at the top of the screen."
+      },
+      {
+        "title": "Choose Support Option",
+        "content": "Select the appropriate support option based on your needs (e.g., Chat, Phone Support)."
+      },
+      {
+        "title": "Initiate Chat",
+        "content": "Tap on the Chat button and fill in the Chat request form with your issue or question."
+      },
+      {
+        "title": "Wait for Response",
+        "content": "You will be placed in a queue. You can leave the support app and browse or set your phone down. You will receive an alert when a representative is ready to help."
+      },
+      {
+        "title": "Start Chat",
+        "content": "Once connected, the chat will work like any messenger app. Follow the instructions provided by the support representative."
+      },
+      {
+        "title": "Request Phone Call",
+        "content": "If needed, request a phone call for direct assistance. The support representative can access your screen to guide you through troubleshooting."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Built-in Guide",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Search the Guide",
+            "content": "For basic questions, search the built-in guide for quick answers."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T05:33:21.361Z",
+      "updated": "2026-01-05T05:33:21.361Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/how-to-use-google-pixels-built-in-support-tool/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767591205518-897",
+    "title": "Fix Pixel 8 Pro Camera Issues",
+    "problemDescription": "The Pixel 8 Pro camera may experience various issues that affect photo quality and functionality.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Pixel 8 Pro",
+      "camera",
+      "issues",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Device",
+        "content": "Restart your Pixel 8 Pro to see if the camera issues are resolved."
+      },
+      {
+        "title": "Update Software",
+        "content": "Ensure your device is running the latest software version by going to Settings > System > System update."
+      },
+      {
+        "title": "Clear Camera App Cache",
+        "content": "Go to Settings > Apps > Camera > Storage & cache > Clear cache."
+      },
+      {
+        "title": "Check for Physical Obstructions",
+        "content": "Ensure there are no obstructions or damage to the camera lens."
+      },
+      {
+        "title": "Reset Camera Settings",
+        "content": "Open the Camera app, tap the gear icon, and select 'Reset settings'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup your data to Google Drive or another storage solution."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T05:33:25.518Z",
+      "updated": "2026-01-05T05:33:25.518Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/the-pixel-8-pro-camera-has-some-issues-heres-how-to-sidestep-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767591218469-722",
+    "title": "Clear iPhone Browser Cache",
+    "problemDescription": "Your iPhone browser is slow or not displaying websites correctly due to a full cache.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iPhone",
+      "browser",
+      "cache",
+      "clear"
+    ],
+    "steps": [
+      {
+        "title": "Open Safari",
+        "content": "Open the Safari app on your iPhone."
+      },
+      {
+        "title": "Access Settings",
+        "content": "Tap the three dots in the bottom right to open more options, then swipe over to Settings in the top menu bar."
+      },
+      {
+        "title": "Navigate to Privacy and Security",
+        "content": "Scroll down and tap Privacy and security."
+      },
+      {
+        "title": "Delete Browsing Data",
+        "content": "Tap Delete browsing data. Select the intended time range (anywhere from Last 15 minutes to All time). Make sure that Cookies and Site Data are checked in the Browsing data menu, along with Cached Images and Files. Finally, hit Delete data at the bottom of the screen."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clear Chrome Cache",
+        "type": "Alternative Browser",
+        "steps": [
+          {
+            "title": "Open Chrome",
+            "content": "Open the Chrome app on your iPhone."
+          },
+          {
+            "title": "Access Settings",
+            "content": "Tap the three dots in the top right to open the menu, then tap History."
+          },
+          {
+            "title": "Clear Browsing Data",
+            "content": "Scroll down to Clear Browsing Data. Choose the data types you want to clear (e.g., browsing history, cookies, cached images and files) and tap Clear Browsing Data."
+          }
+        ]
+      },
+      {
+        "title": "Clear All Web Site Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Safari",
+            "content": "Open the Safari app on your iPhone."
+          },
+          {
+            "title": "Access Settings",
+            "content": "Tap the three dots in the bottom right to open more options, then swipe over to Settings in the top menu bar."
+          },
+          {
+            "title": "Navigate to Privacy and Security",
+            "content": "Scroll down and tap Privacy and security."
+          },
+          {
+            "title": "Clear All Web Site Data",
+            "content": "Tap Web Site Data at the top of the menu and then Clear All Web Site Data."
+          }
+        ]
+      },
+      {
+        "title": "Clear History and Website Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Open the Settings app on your iPhone."
+          },
+          {
+            "title": "Navigate to Safari",
+            "content": "Scroll down and tap Safari."
+          },
+          {
+            "title": "Clear History and Website Data",
+            "content": "Scroll down to History and Website Data and choose Clear History and Website Data. Choose Clear History and Data in the pop-up box -- you can choose anywhere from the last hour to all history."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T05:33:38.469Z",
+      "updated": "2026-01-05T05:33:38.469Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/iphone-browser-clear-cache/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767591221989-571",
+    "title": "Repair Browser Issues with Anvi Browser Repair Tool",
+    "problemDescription": "Fix browser problems like registry errors, networking settings, and flash crash issues.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "browser",
+      "repair",
+      "internet explorer",
+      "google chrome",
+      "mozilla firefox"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install Anvi Browser Repair Tool",
+        "content": "Visit the official website or a trusted source to download the Anvi Browser Repair Tool. Follow the installation instructions to install the software on your Windows computer."
+      },
+      {
+        "title": "Launch the Tool",
+        "content": "Open the Anvi Browser Repair Tool after installation."
+      },
+      {
+        "title": "Select the Browser to Repair",
+        "content": "Choose the browser you want to repair from the list of options (Internet Explorer, Google Chrome, Mozilla Firefox)."
+      },
+      {
+        "title": "Run the Repair Process",
+        "content": "Click on the repair button to start the process. The tool will automatically fix registry errors, networking settings, flash crash problems, and other issues."
+      },
+      {
+        "title": "Optimize Browser Settings",
+        "content": "Use the additional features to optimize browser settings, block malicious websites, and clean browser data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manual Browser Repair",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Browser Cache and Cookies",
+            "content": "Go to your browser settings and clear the cache and cookies."
+          },
+          {
+            "title": "Reset Browser Settings",
+            "content": "Reset the browser to default settings to fix any configuration issues."
+          },
+          {
+            "title": "Update Browser",
+            "content": "Ensure your browser is up to date with the latest version."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T05:33:41.989Z",
+      "updated": "2026-01-05T05:33:41.989Z",
+      "sourceUrl": "https://download.cnet.com/anvi-browser-repair-tool/3000-18512_4-75835298.html",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767591228704-850",
+    "title": "Fix Google Pixel Auto-Rotation Issues",
+    "problemDescription": "The auto-rotation feature on Google Pixel devices may lag or not work properly.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "auto-rotation",
+      "google pixel",
+      "tasker"
+    ],
+    "steps": [
+      {
+        "title": "Install Tasker",
+        "content": "Download and install Tasker from the Google Play Store."
+      },
+      {
+        "title": "Create a New Profile",
+        "content": "Open Tasker and create a new profile."
+      },
+      {
+        "title": "Set Up Auto-Rotation Trigger",
+        "content": "In the new profile, set the trigger to activate when the screen is rotated."
+      },
+      {
+        "title": "Configure Task",
+        "content": "Create a task that adjusts the screen orientation based on the device's accelerometer data."
+      },
+      {
+        "title": "Save and Activate",
+        "content": "Save the profile and activate it. The auto-rotation should now work more smoothly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use IFTTT for Voice Command Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up IFTTT",
+            "content": "Download and install the IFTTT app from the Google Play Store."
+          },
+          {
+            "title": "Create a New Applet",
+            "content": "Open IFTTT and create a new applet."
+          },
+          {
+            "title": "Configure Voice Command",
+            "content": "Set up the applet to handle voice commands based on your preferences."
+          },
+          {
+            "title": "Save and Activate",
+            "content": "Save the applet and activate it. This should help manage voice commands between your phone and smart speaker."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T05:33:48.704Z",
+      "updated": "2026-01-05T05:33:48.704Z",
+      "sourceUrl": "https://lifehacker.com/how-to-fix-the-google-pixels-most-annoying-quirks-acco-1823366439",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767591230532-923",
+    "title": "Fix Randomly Crashing Apps on Pixel 10",
+    "problemDescription": "Apps on your Pixel 10 are crashing randomly, especially after the October Google Play services update.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel 10",
+      "crashing apps",
+      "google play services"
+    ],
+    "steps": [
+      {
+        "title": "Install the Official Fix",
+        "content": "Check for system updates on your Pixel 10 and install any available updates from Google."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Uninstall the October Google Play Services Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall the Update",
+            "content": "Go to Settings > Apps > Google Play Services > Uninstall updates. Note that this will log you out of your Google accounts."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T05:33:50.532Z",
+      "updated": "2026-01-05T05:33:50.532Z",
+      "sourceUrl": "https://lifehacker.com/tech/how-to-fix-randomly-crashing-apps-on-pixel-10",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767591233822-938",
+    "title": "Fix Pixel Navigation Glitch After Android 16 Update",
+    "problemDescription": "Pixel users experience navigation issues after the Android 16 update, making it difficult to use on-screen navigation buttons or swipe around the device.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel",
+      "navigation",
+      "glitch",
+      "android 16",
+      "launcher"
+    ],
+    "steps": [
+      {
+        "title": "Switch Android Launcher",
+        "content": "Change your Android launcher to the default Pixel launcher. If you're using a third-party launcher like Nova, switch back to the Pixel launcher to see if the navigation issues are resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Software Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > System > System update to check if there are any pending updates that might fix the navigation glitch."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Restart Your Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Device",
+            "content": "Sometimes, a simple restart can resolve temporary software glitches. Restart your Pixel device and check if the navigation issues persist."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T05:33:53.822Z",
+      "updated": "2026-01-05T05:33:53.822Z",
+      "sourceUrl": "https://lifehacker.com/tech/updated-pixel-navigation-glitch-fixes",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767591237694-64",
+    "title": "FixBot AI Assistant for Device Repairs",
+    "problemDescription": "Using AI to accurately guide users through device repairs.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "AI",
+      "repair",
+      "device",
+      "assistant"
+    ],
+    "steps": [
+      {
+        "title": "Access FixBot",
+        "content": "Visit the iFixit website or use their app to access FixBot."
+      },
+      {
+        "title": "Describe the Issue",
+        "content": "Provide a detailed description of the problem you're experiencing with your device."
+      },
+      {
+        "title": "Follow AI Guidance",
+        "content": "Follow the step-by-step instructions provided by FixBot to diagnose and repair the issue."
+      },
+      {
+        "title": "Verify the Solution",
+        "content": "After following the steps, verify that the problem is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Community Forums",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Search for Solutions",
+            "content": "Search for similar issues in community forums or support pages."
+          },
+          {
+            "title": "Follow Community Advice",
+            "content": "Follow the advice and steps provided by other users who have resolved similar issues."
+          },
+          {
+            "title": "Verify the Solution",
+            "content": "After following the steps, verify that the problem is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T05:33:57.694Z",
+      "updated": "2026-01-05T05:33:57.694Z",
+      "sourceUrl": "https://lifehacker.com/tech/ifixit-fixbot-assistant-repairs",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767591253505-437",
+    "title": "Fix Zoom In Shortcut in Browser Dev Tools",
+    "problemDescription": "The ⌘ + shortcut for zooming in does not work in the dev tools of most browsers on macOS Ventura.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "browser",
+      "dev tools",
+      "zoom",
+      "shortcut",
+      "macOS"
+    ],
+    "steps": [
+      {
+        "title": "Use Numpad Plus Key",
+        "content": "If your Mac has a numpad, use the `+` key on the numpad with the ⌘ key to zoom in."
+      },
+      {
+        "title": "Use Browser Zoom Settings",
+        "content": "Check if your browser has a setting to enable or change the zoom shortcut. This can usually be found in the browser's settings or preferences menu."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Safari",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to Safari",
+            "content": "Safari does not have this issue, so you can use Safari for development tasks that require zooming in the dev tools."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Mouse Scroll",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Mouse Scroll with Modifier Key",
+            "content": "Some browsers allow zooming in and out using the mouse scroll wheel while holding down a modifier key like ⌘ or Ctrl."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T05:34:13.505Z",
+      "updated": "2026-01-05T05:34:13.505Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/461821/zoom-in-shortcut-does-not-work-in-the-dev-tool-interface-of-most-browsers",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767591257546-174",
+    "title": "Reset Screen Zoom to Default on Mac",
+    "problemDescription": "How to reset screen zoom to 1:1 using a keyboard shortcut on Mac.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "mac",
+      "zoom",
+      "keyboard",
+      "shortcut"
+    ],
+    "steps": [
+      {
+        "title": "Enable Keyboard Shortcuts for Zoom",
+        "content": "Go to System Preferences > Accessibility > Zoom and enable the 'Use keyboard shortcuts to zoom' checkbox."
+      },
+      {
+        "title": "Use Keyboard Shortcut to Reset Zoom",
+        "content": "Press Command + Option + - to zoom out until the screen returns to 1:1."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Mouse Wheel",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Mouse Wheel to Reset Zoom",
+            "content": "Use the mouse wheel to scroll down until the zoom level returns to 1:1."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T05:34:17.546Z",
+      "updated": "2026-01-05T05:34:17.546Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/33444/how-do-you-reset-screen-zoom-to-zero",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767591263367-438",
+    "title": "Fix Discord Connection Issues",
+    "problemDescription": "Discord is not connecting or experiencing issues.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "connection",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Clear Discord Cache",
+        "content": "Close Discord, navigate to the Discord installation directory, and delete the 'cache' folder."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "Restart your computer or device to refresh the system."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your internet connection is stable and try reconnecting to Discord."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Discord",
+            "content": "Uninstall Discord from your device."
+          },
+          {
+            "title": "Download Latest Version",
+            "content": "Download the latest version of Discord from the official website."
+          },
+          {
+            "title": "Install and Launch",
+            "content": "Install the downloaded version and launch Discord."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T05:34:23.367Z",
+      "updated": "2026-01-05T05:34:23.367Z",
+      "sourceUrl": "https://www.quora.com/How-can-I-fix-my-discord-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767591265406-167",
+    "title": "Fix Discord Stuck on Connecting",
+    "problemDescription": "Discord is stuck on 'connecting...' and not connecting to the server.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "connecting",
+      "network",
+      "firewall",
+      "DNS"
+    ],
+    "steps": [
+      {
+        "title": "Change Network Connection Settings",
+        "content": "Go to your device's network settings and ensure that you are connected to a stable network. Try switching between Wi-Fi and mobile data to see if the issue persists."
+      },
+      {
+        "title": "Modify DNS Settings",
+        "content": "Change your DNS settings to a public DNS like Google DNS (8.8.8.8 and 8.8.4.4) or Cloudflare DNS (1.1.1.1). This can help resolve any DNS-related issues."
+      },
+      {
+        "title": "Allow Discord Through Firewall",
+        "content": "Ensure that your firewall is not blocking Discord. Add an exception for Discord in your firewall settings to allow it to connect to the internet."
+      },
+      {
+        "title": "Correct Date and Time",
+        "content": "Make sure that the date and time on your device are set correctly. Incorrect date and time settings can cause issues with Discord's connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Discord",
+            "content": "Uninstall the Discord app from your device."
+          },
+          {
+            "title": "Reinstall Discord",
+            "content": "Download and install the latest version of Discord from the official website or app store."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T05:34:25.406Z",
+      "updated": "2026-01-05T05:34:25.406Z",
+      "sourceUrl": "https://www.quora.com/Whys-my-Discord-constantly-on-connecting-Its-not-a-WiFi-problem-and-I-tried-restarting-my-phone-and-uninstalling-and-installing-Discord-again-it-doesnt-work-on-my-tablet-too-I-have-a-server-for-my-school-work-that-I",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767591268765-573",
+    "title": "Fix Discord Voice Connection Issues",
+    "problemDescription": "Discord voice calls or channels fail to connect, with WebRTC test showing failed reflexive connectivity.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "voice",
+      "connection",
+      "WebRTC"
+    ],
+    "steps": [
+      {
+        "title": "Close Discord Application",
+        "content": "Ensure Discord is completely closed."
+      },
+      {
+        "title": "Open Run Dialog",
+        "content": "Press Windows key + R to open the Run dialog box."
+      },
+      {
+        "title": "Open Control Panel",
+        "content": "Type 'control' in the Run dialog box and press Enter to open the Control Panel."
+      },
+      {
+        "title": "Check Network Settings",
+        "content": "Navigate to Network and Internet settings and ensure your network configuration is correct."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Firewall Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Firewall Settings",
+            "content": "Go to Control Panel > System and Security > Windows Defender Firewall."
+          },
+          {
+            "title": "Allow Discord Through Firewall",
+            "content": "Click on 'Allow an app or feature through Windows Defender Firewall' and ensure Discord is allowed."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update Network Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Press Windows key + X and select Device Manager."
+          },
+          {
+            "title": "Update Network Drivers",
+            "content": "Expand the 'Network adapters' section, right-click on your network adapter, and select 'Update driver'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T05:34:28.765Z",
+      "updated": "2026-01-05T05:34:28.765Z",
+      "sourceUrl": "https://www.quora.com/I-m-having-trouble-with-Discord-voice-wether-it-be-a-call-or-a-channel-It-doesn-t-connect-and-I-ve-tried-all-the-steps-On-the-WebRTC-test-it-says-I-failed-reflexive-connectivity-I-ve-looked-everywhere-and-I-still",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767591270017-197",
+    "title": "Join Discord Server",
+    "problemDescription": "New Discord user unable to join any server.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "server",
+      "join"
+    ],
+    "steps": [
+      {
+        "title": "Open Discord",
+        "content": "Open Discord using any web browser."
+      },
+      {
+        "title": "Explore Public Servers",
+        "content": "Click on 'Explore Public Servers'."
+      },
+      {
+        "title": "Search Server",
+        "content": "Search for the server you want to join."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-05T05:34:30.017Z",
+      "updated": "2026-01-05T05:34:30.017Z",
+      "sourceUrl": "https://www.quora.com/I-am-new-to-Discord-and-I-am-unable-to-join-any-Discord-server-I-have-also-tried-with-different-IDs-What-should-I-do",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767591274339-775",
+    "title": "Disable @everyone for Regular Members",
+    "problemDescription": "Regular members can spam @everyone notifications in your Discord server.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "notifications",
+      "spam"
+    ],
+    "steps": [
+      {
+        "title": "Access Server Settings",
+        "content": "Open your Discord server and click on the server name to open the dropdown menu. Select 'Server Settings'."
+      },
+      {
+        "title": "Navigate to Roles",
+        "content": "In the Server Settings menu, click on the 'Roles' tab on the left sidebar."
+      },
+      {
+        "title": "Edit @everyone Role",
+        "content": "Find the '@everyone' role in the list and click on it to edit."
+      },
+      {
+        "title": "Disable @everyone",
+        "content": "Under the 'Permissions' tab, scroll down to the 'General Permissions' section. Find the 'Mention @everyone, Here, and All Roles' permission and disable it by clicking on the checkmark next to it."
+      },
+      {
+        "title": "Save Changes",
+        "content": "Click 'Save Changes' at the bottom of the page to apply the new settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Bots to Manage Pings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Bot",
+            "content": "Invite a bot like Dyno or MEE6 to your server that can manage and restrict @everyone pings."
+          },
+          {
+            "title": "Configure Bot Settings",
+            "content": "Set up the bot to restrict @everyone pings to specific roles or users."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T05:34:34.339Z",
+      "updated": "2026-01-05T05:34:34.339Z",
+      "sourceUrl": "https://www.quora.com/What-are-some-common-mistakes-people-make-when-setting-up-their-Discord-servers",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
