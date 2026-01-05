@@ -35148,5 +35148,773 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767622887644-626",
+    "title": "Force Restart iPhone with Home Button",
+    "problemDescription": "Your iPhone is frozen or unresponsive and needs a force restart.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iPhone",
+      "force restart",
+      "home button",
+      "frozen"
+    ],
+    "steps": [
+      {
+        "title": "Press and Hold Buttons",
+        "content": "Press and hold the home button and the lock/wake button simultaneously for about 10 seconds."
+      },
+      {
+        "title": "Wait for Apple Logo",
+        "content": "Release the buttons when you see the Apple logo on the screen. Your iPhone will restart."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Force Restart iPhone without Home Button",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Press and Hold Volume Button",
+            "content": "For iPhones without a home button, press and hold the volume up or volume down button along with the lock/wake button for about 10 seconds."
+          },
+          {
+            "title": "Wait for Apple Logo",
+            "content": "Release the buttons when you see the Apple logo on the screen. Your iPhone will restart."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T14:21:27.644Z",
+      "updated": "2026-01-05T14:21:27.644Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/having-iphone-issues-heres-how-to-fix-it-yourself/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767622903880-551",
+    "title": "Speed Up a Slow iPhone",
+    "problemDescription": "Your iPhone is running slower than usual and experiencing lag.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "speed",
+      "lag",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Clear 'Other' Storage",
+        "content": "Go to Settings > General > iPhone Storage to see what's taking up space under 'Other'. Delete unnecessary files and apps to free up space."
+      },
+      {
+        "title": "Reset Your iPhone",
+        "content": "Go to Settings > General > Transfer or Reset iPhone > Erase All Content and Settings. This will reset your iPhone, removing junk from 'Other' storage."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update iOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > General > Software Update. Install any available updates to ensure your iPhone has the latest performance improvements."
+          }
+        ]
+      },
+      {
+        "title": "Close Background Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Double-Tap Home Button",
+            "content": "Swipe up on apps to close them. This can free up RAM and improve performance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T14:21:43.880Z",
+      "updated": "2026-01-05T14:21:43.880Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/dont-live-with-a-slow-iphone-heres-how-to-speed-it-up-and-get-rid-of-lag/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767622907743-58",
+    "title": "Fix Frozen or Slow iOS UI",
+    "problemDescription": "iOS device is frozen or running slowly.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "frozen",
+      "slow",
+      "ui"
+    ],
+    "steps": [
+      {
+        "title": "Force Restart",
+        "content": "Press and quickly release the Volume Up button, then the Volume Down button. Finally, press and hold the Side button until the Apple logo appears."
+      },
+      {
+        "title": "Update iOS",
+        "content": "Go to Settings > General > Software Update and install any available updates."
+      },
+      {
+        "title": "Free Up Storage",
+        "content": "Go to Settings > General > iPhone Storage and delete unnecessary apps or files."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset All Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset All Settings",
+            "content": "Go to Settings > General > Reset > Reset All Settings. Note that this will not delete your data but will reset settings like network settings, keyboard settings, etc."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T14:21:47.743Z",
+      "updated": "2026-01-05T14:21:47.743Z",
+      "sourceUrl": "https://www.cnet.com/pictures/seven-common-ios-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767622917839-84",
+    "title": "Fix Speech Recognition Language Mismatch Error",
+    "problemDescription": "Error message stating 'The recognizer language must match the language of...' when using speech recognition.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "speech recognition",
+      "language mismatch",
+      "windows",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Disable Document Review",
+        "content": "Click on Start, open Control Panel, navigate to Speech Recognition Options, click Advanced Speech Options, and remove the checkmark next to 'Allow computer to review your documents'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Change System Locale",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Locale",
+            "content": "Change the system locale to a different one, restart the computer, and then change it back to your preferred locale."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T14:21:57.839Z",
+      "updated": "2026-01-05T14:21:57.839Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/receiving-error-the-recognizer-language-must-match/2df2822e-6c98-4d17-bf16-74a5c71fe2ee",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767622927983-47",
+    "title": "Fix Ctrl+C and Ctrl+A Not Working",
+    "problemDescription": "Keyboard shortcuts Ctrl+C (copy) and Ctrl+A (select all) are not functioning.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "keyboard",
+      "shortcuts",
+      "windows",
+      "ctrl+c",
+      "ctrl+a"
+    ],
+    "steps": [
+      {
+        "title": "Run a Full System Scan",
+        "content": "1. Disable all third-party antivirus software, leaving only Windows Defender active. 2. Press Windows+i, go to Update & Security > Windows Security > Virus & threat protection. 3. Under Scan options, select Full scan and run it. 4. After the full scan, select Offline scan and run it. 5. Restart your computer."
+      },
+      {
+        "title": "Update Drivers and BIOS",
+        "content": "1. Visit the manufacturer's website and search for your laptop model. 2. Download and install the latest drivers, BIOS, and chipset updates. 3. Restart your computer."
+      },
+      {
+        "title": "Uninstall and Reinstall Keyboard Drivers",
+        "content": "1. Press Windows+X and select Device Manager. 2. Expand the Keyboards section. 3. Right-click on each keyboard driver and select Uninstall device. 4. Restart your computer to automatically reinstall the drivers."
+      },
+      {
+        "title": "Run DISM Command",
+        "content": "1. Right-click on the Start button and select either PowerShell (Admin) or Command Prompt (Admin). 2. Type the following command and press Enter: `DISM.exe /Online /Cleanup-image /Restorehealth`. 3. Wait for the process to complete, which may take up to 30 minutes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Create a New Administrator User Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create New User Account",
+            "content": "1. Press Windows+i, go to Accounts > Family & other users. 2. Under Other users, select Add someone else to this PC. 3. Follow the prompts to create a new user account with administrative privileges. 4. Log in to the new account and check if the keyboard shortcuts work."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T14:22:07.983Z",
+      "updated": "2026-01-05T14:22:07.983Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/keyboard-combination-ctrlc-and-ctrla-not-working/c1014ffa-a499-440b-8f08-16ffcc2eb78d",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767622932604-45",
+    "title": "Fix Windows 11 Widgets Not Opening",
+    "problemDescription": "Widgets in Windows 11 are not opening or working.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "widgets",
+      "not opening",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Install the Latest Windows Updates",
+        "content": "Go to Settings > Windows Update > Check for updates and install any available updates."
+      },
+      {
+        "title": "Use System File Checker",
+        "content": "Open Command Prompt as Administrator and run the command 'sfc /scannow' to check and fix corrupted system files."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use System Restore",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Restore",
+            "content": "Go to Control Panel > System and Security > System > System Protection > System Restore."
+          },
+          {
+            "title": "Follow On-Screen Instructions",
+            "content": "Follow the on-screen instructions to restore your Windows to a point before the issue occurred."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T14:22:12.604Z",
+      "updated": "2026-01-05T14:22:12.604Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/widgets-in-windows-11-not-openingworking/b030e3e0-6853-4456-ab10-31145a6b09d7",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767622935357-75",
+    "title": "Fix promqry.exe Common Language Runtime Debugging Services",
+    "problemDescription": "The promqry.exe process is causing issues with the Common Language Runtime Debugging Services.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "promqry.exe",
+      "debugging",
+      "services",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Perform a Clean Boot",
+        "content": "Follow the steps in the Microsoft article to perform a clean boot and identify the problematic program or service."
+      },
+      {
+        "title": "Reset Computer to Normal Startup",
+        "content": "After troubleshooting, reset your computer to start as usual by following these steps: a. Click Start, type 'msconfig.exe' in the Start Search box, and press ENTER. b. On the General tab, click the 'Normal Startup' option, and then click OK. c. When prompted to restart the computer, click Restart."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-05T14:22:15.357Z",
+      "updated": "2026-01-05T14:22:15.357Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/promqryexe-common-language-runtime-debugging/b9be8034-7bcd-49fe-8711-67249237a2b6",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767622948827-961",
+    "title": "Fix Error 0x80070490 Element Not Found",
+    "problemDescription": "Error 0x80070490 occurs when trying to upload files or import photos in Windows.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "error",
+      "0x80070490",
+      "file upload",
+      "photo import"
+    ],
+    "steps": [
+      {
+        "title": "Run System File Checker",
+        "content": "Open Command Prompt as Administrator and type 'sfc /scannow' to scan and repair system files."
+      },
+      {
+        "title": "Update Windows",
+        "content": "Ensure your Windows operating system is up to date by checking for updates in the Windows Update settings."
+      },
+      {
+        "title": "Check File Permissions",
+        "content": "Verify that you have the necessary permissions to access and modify the files in question."
+      },
+      {
+        "title": "Use System Restore",
+        "content": "Restore your system to a point before the error started occurring using System Restore."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Service Support",
+            "content": "If the issue persists while uploading files to Shutterfly and Walgreens, contact their support for better assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T14:22:28.827Z",
+      "updated": "2026-01-05T14:22:28.827Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/windows8_1-files/error-0x80070490-element-not-found/8630a5eb-326f-4510-a6e6-0c84692ac63f",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767622956601-172",
+    "title": "Fix Access Subreport Printing Issue",
+    "problemDescription": "When printing subreports in Access, the criteria changes and all records print instead of the specific one searched for.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "access",
+      "subreport",
+      "printing",
+      "criteria"
+    ],
+    "steps": [
+      {
+        "title": "Check the Report's Record Source",
+        "content": "Ensure that the subreport's record source is properly linked to the main form's data. The subreport should use the main form's data as a filter."
+      },
+      {
+        "title": "Use the Master/Child Links Property",
+        "content": "Set the Master/Child Links property of the subreport to link the subreport to the main form's data. This ensures that the subreport filters based on the main form's data."
+      },
+      {
+        "title": "Modify the Subreport's Query",
+        "content": "If the subreport uses a query, modify the query to include the criteria from the main form. This can be done using the `Forms!MainFormName!ControlName` syntax to reference the main form's data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use VBA to Set the Filter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open the VBA Editor",
+            "content": "Press `Alt + F11` to open the VBA editor."
+          },
+          {
+            "title": "Add Code to the Form's On Print Event",
+            "content": "Add the following code to the `On Print` event of the main form to set the filter for the subreport:\n\n```vba\nPrivate Sub Form_Print(Cancel As Integer, PrintOut As Integer)\n    Me!SubreportName.Filter = \"CustomerNumber = '\" & Me!CustomerNumber & \"'\"\n    Me!SubreportName.FilterOn = True\nEnd Sub\n```"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T14:22:36.601Z",
+      "updated": "2026-01-05T14:22:36.601Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/all/printing-subreports/2e50fd5b-e137-4fb9-9118-7d24fa25f47a",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767622966760-599",
+    "title": "Fix Dialog Box Open Error in Word 2013",
+    "problemDescription": "Word 2013 displays an error stating a dialog box is open when trying to open a document.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "word",
+      "dialog box",
+      "error",
+      "2013"
+    ],
+    "steps": [
+      {
+        "title": "Disable Add-ins",
+        "content": "Disable each add-in one at a time, restart Word, and check if the issue persists. This will help identify if an add-in is causing the problem."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Run 'Fix it' from KB Article",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Run 'Fix it'",
+            "content": "Download the 'Fix it' tool from the relevant KB article and run it. Save the 'Fix it' before running if you're on a 64-bit operating system."
+          },
+          {
+            "title": "Verify Issue",
+            "content": "Check if the issue reoccurs after running the 'Fix it' tool."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T14:22:46.760Z",
+      "updated": "2026-01-05T14:22:46.760Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/all/dialogue-box-is-open-error-word-2013/e40a04fc-46cc-49d8-b842-4abef28ca9cb",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767622973008-206",
+    "title": "Fix Google Chrome Toolbar Space Problem",
+    "problemDescription": "Google Chrome toolbar has excessive space or glitches on Mac.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "toolbar",
+      "mac",
+      "glitch"
+    ],
+    "steps": [
+      {
+        "title": "Uncheck 'Make Chrome Primary Browser'",
+        "content": "Open Chrome, go to Settings, and uncheck the option 'Make Chrome my Primary Browser'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable 'Share Stats with Google'",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uncheck 'Share Stats with Google'",
+            "content": "Open Chrome, go to Settings, and uncheck the option 'Share stats with Google'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T14:22:53.008Z",
+      "updated": "2026-01-05T14:22:53.008Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/434411/google-chrome-toolbar-space-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767622980152-53",
+    "title": "Identify and Fix Dead or Stuck Pixels on Apple Device",
+    "problemDescription": "Determine if the issue is a dead or stuck pixel on an Apple device and how to address it.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "dead pixel",
+      "stuck pixel",
+      "Apple device",
+      "display issue"
+    ],
+    "steps": [
+      {
+        "title": "Identify the Issue",
+        "content": "Observe the affected area on the screen. Note the color and behavior of the pixels. If a group of pixels are 'turned on' when they shouldn't be, it might be a stuck pixel. If pixels are permanently off, it could be a dead pixel."
+      },
+      {
+        "title": "Contact Apple Support",
+        "content": "Contact Apple Support and explain the issue. They may offer troubleshooting steps or advise on warranty coverage for replacement."
+      },
+      {
+        "title": "Use Pixel Fixing Apps",
+        "content": "Try using apps designed to fix dead or stuck pixels. These apps often display moving colors and patterns to stimulate the affected pixels."
+      },
+      {
+        "title": "Apply Gentle Pressure",
+        "content": "Gently press on the affected area of the screen with a soft cloth. Sometimes, this can temporarily fix stuck pixels."
+      },
+      {
+        "title": "Seek Professional Help",
+        "content": "If the issue persists, consider taking the device to an Apple Store or authorized service provider for a professional diagnosis and potential repair or replacement."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: DIY Pixel Fixing",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Black Screen",
+            "content": "Display a black screen for an extended period to see if the stuck pixel turns off."
+          },
+          {
+            "title": "Use a White Screen",
+            "content": "Display a white screen to see if the dead pixel becomes visible."
+          },
+          {
+            "title": "Repeat the Process",
+            "content": "Alternate between black and white screens several times to stimulate the affected pixels."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T14:23:00.152Z",
+      "updated": "2026-01-05T14:23:00.152Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/199691/is-this-a-dead-pixel-or-stuck-pixel",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767622985398-50",
+    "title": "Transfer Data from iPhone 6 to Pixel 6 Pro",
+    "problemDescription": "Unable to transfer data from iPhone 6 to Pixel 6 Pro using a cable or Google One.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "data transfer",
+      "iPhone",
+      "Pixel",
+      "Google One"
+    ],
+    "steps": [
+      {
+        "title": "Use Google's Switch to Android App",
+        "content": "Download and install the 'Switch to Android' app from the Apple App Store on your iPhone 6. On your Pixel 6 Pro, go to Settings > Google > Transfer data from iPhone. Follow the on-screen instructions to connect both devices to the same Wi-Fi network and pair them via Bluetooth. Select the data you want to transfer and start the process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Google One",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Subscribe to Google One",
+            "content": "Ensure you have a Google One subscription. On your iPhone, download the Google One app from the App Store. Open the app and sign in with your Google account. Follow the prompts to back up your data to Google Drive."
+          },
+          {
+            "title": "Restore on Pixel 6 Pro",
+            "content": "On your Pixel 6 Pro, sign in with the same Google account. During the setup process, choose to restore data from Google One. Select the data you want to restore and complete the setup."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Manual Transfer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a USB Cable",
+            "content": "Connect your iPhone 6 to a computer and use iTunes or Finder to back up your data. Disconnect the iPhone and connect your Pixel 6 Pro to the same computer. Use the included data transfer tool to move the data from the iTunes/Finder backup to your Pixel 6 Pro."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T14:23:05.398Z",
+      "updated": "2026-01-05T14:23:05.398Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/443591/how-does-one-transfer-data-from-an-iphone-6-to-a-pixel-6-pro-that-has-already-be",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767622993166-198",
+    "title": "Restore Google Messages Backup to iPhone",
+    "problemDescription": "User needs to restore text message backup from Google Drive to a new iPhone after their Android phone bricked.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "text messages",
+      "Google Messages",
+      "iPhone",
+      "backup",
+      "Google Drive"
+    ],
+    "steps": [
+      {
+        "title": "Use a Third-Party Tool",
+        "content": "Use a third-party tool like 'MobileTrans' or 'Dr.Fone' to transfer messages from Google Drive to your iPhone."
+      },
+      {
+        "title": "Connect Devices",
+        "content": "Connect your iPhone to your computer and follow the instructions provided by the third-party tool to restore the backup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Transfer via Working Android Phone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Move to iOS App",
+            "content": "If you have access to a working Android phone, use the 'Move to iOS' app to transfer messages to your iPhone."
+          },
+          {
+            "title": "Restore Backup on Android",
+            "content": "First, restore the Google Messages backup to the working Android phone, then use the 'Move to iOS' app to transfer the messages to your iPhone."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T14:23:13.166Z",
+      "updated": "2026-01-05T14:23:13.166Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/433767/restore-text-messages-from-google-messages-to-new-iphone-android-phone-is-brick",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767623016442-995",
+    "title": "Fix Text Selection in OneNote 2016",
+    "problemDescription": "Users cannot select text in OneNote 2016 on Windows 10.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "onenote",
+      "text selection",
+      "windows 10",
+      "app error"
+    ],
+    "steps": [
+      {
+        "title": "Check for Bluetooth Device Interference",
+        "content": "Ensure that any connected Bluetooth devices, such as a Surface pen, are not causing interference. Disconnect the device and check if the issue persists."
+      },
+      {
+        "title": "Update OneNote and Windows",
+        "content": "Make sure both OneNote 2016 and Windows 10 are up to date with the latest patches and updates."
+      },
+      {
+        "title": "Repair Office Installation",
+        "content": "Go to Control Panel > Programs > Programs and Features. Select Microsoft Office 2016 and choose 'Change' > 'Quick Repair'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Relevant Articles",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Search for Specific Solutions",
+            "content": "Look for articles and forums specific to OneNote 2016 issues, as general Office solutions may not apply."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T14:23:36.442Z",
+      "updated": "2026-01-05T14:23:36.442Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/msoffice_onenote-mso_other/cannot-select-text-in-onenote-2016-64-bit-windows/ac3c9da7-64f5-4735-91f7-e7dd95d9a4c3",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767623019186-67",
+    "title": "Reset Microsoft Universal Foldable Keyboard",
+    "problemDescription": "Unable to pair Microsoft Universal Foldable Keyboard with an Android device.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "keyboard",
+      "pairing",
+      "android",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Power Cycle Your Android Device",
+        "content": "Restart your Android phone by turning it off and then turning it back on."
+      },
+      {
+        "title": "Attempt to Pair Again",
+        "content": "After the phone restarts, try to pair the keyboard with your Android device again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset the Keyboard",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Locate the Reset Button",
+            "content": "Find the small reset button on the keyboard, usually located near the battery compartment."
+          },
+          {
+            "title": "Press and Hold the Reset Button",
+            "content": "Use a paperclip or similar tool to press and hold the reset button for about 5-10 seconds until the keyboard's LED indicator flashes."
+          },
+          {
+            "title": "Release the Reset Button",
+            "content": "Release the button and wait for the keyboard to reset to its factory settings."
+          },
+          {
+            "title": "Pair the Keyboard Again",
+            "content": "Attempt to pair the keyboard with your Android device once more."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T14:23:39.186Z",
+      "updated": "2026-01-05T14:23:39.186Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/cant-pair-universal-foldable-keyboard/fc15a0ce-938a-4051-b65e-060e6506a6a8",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
