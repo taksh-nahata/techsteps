@@ -30862,5 +30862,877 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767601569344-127",
+    "title": "Fix Phone Not Connecting to PC Due to Realtek Driver",
+    "problemDescription": "Phone fails to connect to PC, potentially due to Realtek driver issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "phone",
+      "connection",
+      "Realtek",
+      "driver",
+      "PC"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall Problematic Drivers",
+        "content": "Open Device Manager, look for 'Other devices' and 'Unknown devices', uninstall all drivers with yellow exclamation marks, and check 'Delete the driver software for this device'."
+      },
+      {
+        "title": "Restart and Rescan",
+        "content": "Restart the computer, then click 'Action' in the menu bar and select 'Scan for hardware changes'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Install Audio Driver from Repository",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Open Device Manager and follow the on-screen instructions to add Realtek High Definition Audio in the Sound, video and game controllers category."
+          },
+          {
+            "title": "Disable UAA Bus Driver",
+            "content": "Expand System Devices in Device Manager, find Microsoft UAA Bus Driver for High Definition Audio, right-click and select Disable, then try to install the Realtek driver again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T08:26:09.344Z",
+      "updated": "2026-01-05T08:26:09.344Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/my-phone-doesnt-connect-to-the-pc-and-it-appears/dd9c1fbb-2b6e-4006-9708-73234862ca97",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767601581184-13",
+    "title": "Fix Outlook App Crashing on Android",
+    "problemDescription": "Outlook app for Android crashes immediately after opening.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "outlook",
+      "android",
+      "crash",
+      "app"
+    ],
+    "steps": [
+      {
+        "title": "Install Office or Microsoft 365 App",
+        "content": "Download and install the 'Office' or 'Microsoft 365' app from the Google Play Store."
+      },
+      {
+        "title": "Restart Outlook",
+        "content": "After installing the Office app, try opening the Outlook app again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Outlook Web App (OWA)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Outlook Web",
+            "content": "Use the Outlook Web App (OWA) through a browser as an alternative."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T08:26:21.184Z",
+      "updated": "2026-01-05T08:26:21.184Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum/all/i-just-instaled-outlook-app-for-android-and-it/30a41422-1dd2-4b75-87fc-79b71b28a984",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767601584285-47",
+    "title": "Recover Outlook/Hotmail Account Without Access to Old Phone Number",
+    "problemDescription": "Unable to recover an old Outlook/Hotmail account linked to Facebook without access to the old phone number or recovery info.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Outlook",
+      "Hotmail",
+      "account recovery",
+      "Facebook",
+      "phone number"
+    ],
+    "steps": [
+      {
+        "title": "Contact Microsoft Support",
+        "content": "Go to the Microsoft Recovery Page and follow the instructions to contact Microsoft Support for account recovery."
+      },
+      {
+        "title": "Provide Verification Information",
+        "content": "Provide as much verification information as possible, such as linked social media accounts, previous email addresses, and any other relevant details."
+      },
+      {
+        "title": "Follow Up on Request",
+        "content": "Follow up on your request with Microsoft Support if you do not receive a response within a few days."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Facebook to Recover Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Log in to Facebook",
+            "content": "Log in to your Facebook account that is linked to the Outlook/Hotmail account."
+          },
+          {
+            "title": "Check Linked Accounts",
+            "content": "Check if Facebook provides any options to recover or link the Outlook/Hotmail account."
+          },
+          {
+            "title": "Contact Facebook Support",
+            "content": "If no options are available, contact Facebook Support for assistance in recovering the linked account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T08:26:24.285Z",
+      "updated": "2026-01-05T08:26:24.285Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum?tab=Threads%5BOutlook.com",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767601590512-12",
+    "title": "Fix Hotmail Login Verification Issue",
+    "problemDescription": "Hotmail account cannot be verified with family safety settings on a desktop PC.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "Hotmail",
+      "login",
+      "verification",
+      "family safety"
+    ],
+    "steps": [
+      {
+        "title": "Check Family Safety Settings",
+        "content": "Go to the Family Safety settings on the Microsoft account associated with your son's Hotmail account. Ensure that the desktop PC is added and verified under the family safety settings."
+      },
+      {
+        "title": "Update Windows",
+        "content": "Ensure that the desktop PC is running the latest version of Windows. Go to Settings > Update & Security > Windows Update and check for updates."
+      },
+      {
+        "title": "Verify Account Settings",
+        "content": "Log in to your son's Hotmail account on a different device or browser to ensure that the account settings are correct and that there are no restrictions or issues with the account itself."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Browser Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Browser to Default",
+            "content": "Reset the browser settings to default. This can often resolve issues related to login and verification processes."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Microsoft Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "If the issue persists, contact Microsoft Support for further assistance. They can provide specific troubleshooting steps based on the account and device details."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T08:26:30.512Z",
+      "updated": "2026-01-05T08:26:30.512Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/office_2007-customize/windows-common-controls-6-sp6-keeps-going-missing/e5b4cda7-2b8a-4aaf-896f-0184de41d04d?msgId=4f89af44-dfc7-4afe-b198-800fcc6ce26f",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767601601982-939",
+    "title": "Facebook Two-Factor Authentication Login Issue",
+    "problemDescription": "Unable to log in to Facebook due to two-factor authentication error.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "facebook",
+      "login",
+      "two-factor authentication"
+    ],
+    "steps": [
+      {
+        "title": "Create a Dummy Account",
+        "content": "Set up a new Facebook account using a different email address."
+      },
+      {
+        "title": "Use Your Phone Number",
+        "content": "Log in to the dummy account and use your original phone number associated with your main account."
+      },
+      {
+        "title": "Disable Two-Factor Authentication",
+        "content": "Navigate to the security settings in the dummy account and disable two-factor authentication."
+      },
+      {
+        "title": "Log in to Main Account",
+        "content": "Attempt to log in to your main Facebook account without two-factor authentication."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Facebook Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Report the Issue",
+            "content": "Go to the Facebook Help Center and report the two-factor authentication issue."
+          },
+          {
+            "title": "Wait for Response",
+            "content": "Wait for Facebook support to respond and provide further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T08:26:41.982Z",
+      "updated": "2026-01-05T08:26:41.982Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-log-back-in-on-Facebook-having-an-error-with-two-factor-authentication",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767601612023-24",
+    "title": "Recover Email with Two-Step Verification",
+    "problemDescription": "Unable to recover email due to two-step verification on a new phone.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "email",
+      "recovery",
+      "two-step verification",
+      "IMAP",
+      "POP3"
+    ],
+    "steps": [
+      {
+        "title": "Install an Email Client",
+        "content": "Download and install an email client on your computer."
+      },
+      {
+        "title": "Configure Email Client",
+        "content": "Set up the email client to access your email using IMAP4 or POP3."
+      },
+      {
+        "title": "Enable TLS",
+        "content": "Ensure that TLS (Transport Layer Security) is enabled for secure communication."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Email Provider Support",
+            "content": "Reach out to your email provider's support team for assistance in recovering your account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T08:26:52.023Z",
+      "updated": "2026-01-05T08:26:52.023Z",
+      "sourceUrl": "https://www.quora.com/I-cant-recover-my-email-because-I-put-two-step-verification-on-a-new-phone-What-do-I-do",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767601615949-476",
+    "title": "Stop Unexpected Two-Factor Authentication Codes",
+    "problemDescription": "Receiving two-factor authentication codes when not requesting them.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "two-factor authentication",
+      "OTP",
+      "security",
+      "hacking"
+    ],
+    "steps": [
+      {
+        "title": "Check Recent Login Attempts",
+        "content": "Review your account's recent login activity to identify any unauthorized access attempts."
+      },
+      {
+        "title": "Enable Two-Factor Authentication",
+        "content": "Ensure two-factor authentication is enabled on your account to add an extra layer of security."
+      },
+      {
+        "title": "Change Your Password",
+        "content": "Update your password to a strong, unique one that you haven't used elsewhere."
+      },
+      {
+        "title": "Review Connected Devices",
+        "content": "Check and remove any unfamiliar devices from your account settings."
+      },
+      {
+        "title": "Contact Support",
+        "content": "If the issue persists, contact the support team of the service you're using for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Password Manager",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Password Manager",
+            "content": "Install a reputable password manager to generate and store strong, unique passwords for each of your accounts."
+          },
+          {
+            "title": "Update Passwords",
+            "content": "Use the password manager to update your passwords across all your accounts."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T08:26:55.949Z",
+      "updated": "2026-01-05T08:26:55.949Z",
+      "sourceUrl": "https://www.quora.com/Why-do-I-keep-getting-two-factor-authentication-codes-when-I-m-not-even-asking-for-it-Is-someone-trying-to-hack-my-account",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767601622892-532",
+    "title": "Gmail 2-Step Verification Bypass",
+    "problemDescription": "User is locked out of Gmail due to 2-step verification and cannot receive SMS codes.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "2-step verification",
+      "sms",
+      "locked out"
+    ],
+    "steps": [
+      {
+        "title": "Use Backup Codes",
+        "content": "If you have previously set up backup codes, use one of them to log in. These codes are generated when you enable 2-step verification and can be used as a backup method."
+      },
+      {
+        "title": "Try Another Phone Number",
+        "content": "If you have another phone number registered with your Google account, try receiving the verification code on that number."
+      },
+      {
+        "title": "Use a Trusted Device",
+        "content": "If you have previously logged in from a trusted device, try logging in from that device. Google may recognize it and allow you to log in without a verification code."
+      },
+      {
+        "title": "Contact Google Support",
+        "content": "If none of the above methods work, contact Google Support for assistance. They may be able to help you regain access to your account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Google Prompt",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Google Prompt",
+            "content": "If you have Google Prompt enabled, you can use it to verify your identity. Google Prompt sends a push notification to your device, which you can approve to log in."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Security Key",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Physical Security Key",
+            "content": "If you have a physical security key, such as a YubiKey, you can use it to verify your identity and log in to your account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T08:27:02.892Z",
+      "updated": "2026-01-05T08:27:02.892Z",
+      "sourceUrl": "https://www.quora.com/I-am-logged-out-of-my-Gmail-I-know-the-password-but-there-s-a-2-step-verification-My-phone-is-not-receiving-any-messages-so-I-can-t-receive-the-code-What-can-I-do",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767601633063-627",
+    "title": "Fix Instagram Not Loading",
+    "problemDescription": "Instagram app fails to load or becomes unresponsive.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "app",
+      "loading",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Close & Reopen Instagram",
+        "content": "Swipe Instagram away from Recent Apps and relaunch the application."
+      },
+      {
+        "title": "Update the App",
+        "content": "Open Google Play or App Store, search for Instagram, and tap Update if available."
+      },
+      {
+        "title": "Check Instagram Server Status",
+        "content": "Search 'Is Instagram down' and use DownDetector to confirm any outages."
+      },
+      {
+        "title": "Clear App Cache (Android)",
+        "content": "Go to Settings → Apps → Instagram → Storage → Clear cache."
+      },
+      {
+        "title": "Offload App (iOS)",
+        "content": "Go to Settings → Instagram → Offload App to remove cache and reload the application."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Instagram",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Instagram",
+            "content": "Go to your device's settings and uninstall the Instagram app."
+          },
+          {
+            "title": "Reinstall Instagram",
+            "content": "Download and install Instagram again from the Google Play Store or App Store."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T08:27:13.063Z",
+      "updated": "2026-01-05T08:27:13.063Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=mmzULBTvSJw",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767601636349-377",
+    "title": "Fix Instagram Bug or Glitch",
+    "problemDescription": "Instagram app is experiencing bugs or glitches.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "bug",
+      "glitch",
+      "app"
+    ],
+    "steps": [
+      {
+        "title": "Close and Reopen the App",
+        "content": "Fully close the Instagram app by swiping it up and then reopen it to see if the issue is resolved."
+      },
+      {
+        "title": "Update the App",
+        "content": "Go to the App Store (iOS) or Play Store (Android), search for Instagram, and update it if an update is available."
+      },
+      {
+        "title": "Reinstall the App",
+        "content": "If updating doesn't work, uninstall the app and then reinstall it from the App Store or Play Store."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear App Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache (Android)",
+            "content": "Go to Settings > Apps > Instagram > Storage > Clear Cache."
+          },
+          {
+            "title": "Clear Cache (iOS)",
+            "content": "Go to Settings > General > iPhone Storage > Instagram > Offload App."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T08:27:16.349Z",
+      "updated": "2026-01-05T08:27:16.349Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=VOd_FLE_DK8",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767601642617-275",
+    "title": "Fix Instagram Login Errors",
+    "problemDescription": "Unable to log in to Instagram due to various errors.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "login",
+      "error",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your device is connected to a stable internet network."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-05T08:27:22.617Z",
+      "updated": "2026-01-05T08:27:22.617Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=DZbSdBrFGuE",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767601652591-519",
+    "title": "Fix Instagram App Issues",
+    "problemDescription": "Troubleshooting common bugs and issues with the Instagram application.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "app",
+      "bugs",
+      "issues"
+    ],
+    "steps": [
+      {
+        "title": "Update the App",
+        "content": "Go to your device's app store, search for Instagram, and update it to the latest version."
+      },
+      {
+        "title": "Restart the App",
+        "content": "Close the Instagram app completely and then reopen it."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "Restart your smartphone or tablet to clear any temporary glitches."
+      },
+      {
+        "title": "Clear App Cache",
+        "content": "Go to your device's settings, find the Instagram app, and clear its cache."
+      },
+      {
+        "title": "Reinstall the App",
+        "content": "Uninstall the Instagram app and then reinstall it from the app store."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Internet Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ensure Wi-Fi or Mobile Data",
+            "content": "Make sure your device is connected to a stable internet connection."
+          },
+          {
+            "title": "Switch Networks",
+            "content": "Try switching between Wi-Fi and mobile data to see if the issue persists."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Log Out and Log Back In",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Log Out of Instagram",
+            "content": "Go to your profile, tap on the three lines in the top right corner, and select 'Log Out'."
+          },
+          {
+            "title": "Log Back In",
+            "content": "Open the Instagram app again and log back into your account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T08:27:32.591Z",
+      "updated": "2026-01-05T08:27:32.591Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=JVV2PO0Y0o4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767601661661-309",
+    "title": "Fix Chrome Not Opening in Windows",
+    "problemDescription": "Google Chrome fails to open or launch on Windows.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "windows",
+      "browser",
+      "not opening"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Computer",
+        "content": "Restart your computer to resolve any temporary issues that might be preventing Chrome from opening."
+      },
+      {
+        "title": "End Chrome Tasks",
+        "content": "Press Ctrl+Alt+Delete to open Task Manager, select any running Google Chrome tasks, and click 'End Task'."
+      },
+      {
+        "title": "Reinstall Google Chrome",
+        "content": "Uninstall Google Chrome from your computer, then download and install the latest version from the official website."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Run Chrome in Compatibility Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Right-Click Chrome Shortcut",
+            "content": "Right-click on the Google Chrome shortcut and select 'Properties'."
+          },
+          {
+            "title": "Compatibility Tab",
+            "content": "Go to the 'Compatibility' tab and check 'Run this program in compatibility mode for'."
+          },
+          {
+            "title": "Select Windows Version",
+            "content": "Choose an earlier version of Windows from the dropdown menu and click 'Apply' then 'OK'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T08:27:41.661Z",
+      "updated": "2026-01-05T08:27:41.661Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=32d7ipEKfHw",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767601669035-386",
+    "title": "Fix Google Chrome Black Screen",
+    "problemDescription": "Google Chrome opens to a black screen and does not display any content.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "black screen",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Create a Chrome Shortcut with GPU Disabled",
+        "content": "1. Search for Chrome in the Start menu or taskbar.\n2. Right-click on Chrome and select 'Open file location'.\n3. Right-click on Chrome again and select 'Show more options', then choose 'Create shortcut'.\n4. Right-click the newly created shortcut and select 'Properties'.\n5. In the 'Target' field, add `--disable-gpu` after the existing text.\n6. Click 'Apply' and then 'OK' to save the changes."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-05T08:27:49.035Z",
+      "updated": "2026-01-05T08:27:49.035Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=wJFL0ayDJQ8",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767601673287-110",
+    "title": "Fix Browser Problems",
+    "problemDescription": "Experiencing issues with your browser, such as crashes, slow performance, or display errors.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "browser",
+      "crash",
+      "slow",
+      "performance",
+      "display"
+    ],
+    "steps": [
+      {
+        "title": "Scan for Malware",
+        "content": "Use a reputable antivirus or anti-malware tool to scan your computer for malicious software that might be causing browser issues."
+      },
+      {
+        "title": "Clear the Cache",
+        "content": "Clear your browser's cache to remove temporary files that might be causing problems. This can usually be done through the browser's settings or history menu."
+      },
+      {
+        "title": "Test with Extensions Disabled",
+        "content": "Disable all browser extensions and test if the problem persists. If the issue resolves, enable extensions one by one to identify the problematic one."
+      },
+      {
+        "title": "Review Security Software Settings",
+        "content": "Check your security software settings to ensure they are not blocking or interfering with your browser's functionality."
+      },
+      {
+        "title": "Reinstall the Browser",
+        "content": "Uninstall and then reinstall your browser to ensure a clean installation and resolve any potential corruption issues."
+      },
+      {
+        "title": "Consider Switching to a Different Browser",
+        "content": "If the problem persists, try using a different browser to see if the issue is specific to your current browser. For example, if you're using Chrome, try Firefox, and vice versa."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update the Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Ensure your browser is up to date by checking for and installing any available updates. This can often resolve compatibility issues and bugs."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T08:27:53.287Z",
+      "updated": "2026-01-05T08:27:53.287Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=Pb8M2FReiwo",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767601683160-924",
+    "title": "Fix Bluetooth SPP COM Port Access Denied",
+    "problemDescription": "Access is denied when trying to connect to Bluetooth SPP COM port.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "com port",
+      "access denied",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Run Application as Administrator",
+        "content": "Right-click on the application and select 'Run as administrator'."
+      },
+      {
+        "title": "Change Bluetooth Service Logon Account",
+        "content": "Click start, type 'Services.msc' in the search box, and press enter. In the Services window, search for 'Bluetooth Support Service'. Double-click on the service and stop it in the general tab. Click on the logon tab and select 'Local System account'. Click 'Apply' and 'OK', then start the service again from the general tab."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Perform Clean Boot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Perform Clean Boot",
+            "content": "Perform a clean boot to eliminate software conflicts. This helps to identify if any third-party application is causing the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T08:28:03.160Z",
+      "updated": "2026-01-05T08:28:03.160Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/bluetooth-spp-com-port-access-is-denied-when-try/ebce8ad7-5a0f-4378-b576-dd75cbdb9f7b",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767601690430-581",
+    "title": "Fix Bluetooth Not Available on Windows 10",
+    "problemDescription": "Bluetooth is not available on your Windows 10 device.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "windows 10",
+      "device manager"
+    ],
+    "steps": [
+      {
+        "title": "Open Device Manager",
+        "content": "Right-click on the Start menu and select Device Manager."
+      },
+      {
+        "title": "Locate Bluetooth Driver",
+        "content": "Narrow down to the Bluetooth driver and right-click on it to select its Properties."
+      },
+      {
+        "title": "Adjust Power Management Settings",
+        "content": "Select the Power Management tab from the top menu. Uncheck the option 'Allow the computer to turn off this device to save power' and click on OK."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Bluetooth Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Bluetooth Device",
+            "content": "Go to Device Manager, find your Bluetooth device, right-click on it, and select 'Uninstall device'."
+          },
+          {
+            "title": "Restart Your Computer",
+            "content": "Restart your computer to allow Windows to reinstall the Bluetooth device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T08:28:10.430Z",
+      "updated": "2026-01-05T08:28:10.430Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/error-message-bluetooth-is-not-available-on-this/c5b3e40e-35c1-45aa-b582-68fd1f514948",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
