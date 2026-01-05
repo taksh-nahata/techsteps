@@ -40894,5 +40894,859 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767655054737-294",
+    "title": "Fix Stuck Pixels on MacBook Pro",
+    "problemDescription": "Stuck or dead pixels on the MacBook Pro screen.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "stuck pixel",
+      "dead pixel",
+      "MacBook Pro",
+      "screen issue"
+    ],
+    "steps": [
+      {
+        "title": "Contact an Apple Authorized Repair Shop",
+        "content": "Find a local Apple Authorized Repair shop. They can repair the issue under Applecare, even if it's within acceptable limits."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Pixel Fixer Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Pixel Fixer Software",
+            "content": "Download and install a pixel fixer software like JScreenFix or Udclient."
+          },
+          {
+            "title": "Run the Software",
+            "content": "Follow the instructions to run the software, which will attempt to fix the stuck pixel by cycling through colors."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Manual Massage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Gently Massage the Pixel",
+            "content": "Using a soft cloth or your finger, gently massage the area around the stuck pixel. Be careful not to apply too much pressure."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T23:17:34.737Z",
+      "updated": "2026-01-05T23:17:34.737Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/536/how-common-are-stuck-or-dead-pixels-on-the-macbook-pro",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767655057424-480",
+    "title": "Fix BGR to RGB Subpixel Layout on Mac",
+    "problemDescription": "Fonts appear distorted on an external BGR display connected to a Mac due to incorrect subpixel rendering.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "subpixel",
+      "BGR",
+      "RGB",
+      "Mac",
+      "display"
+    ],
+    "steps": [
+      {
+        "title": "Rotate Display 180 Degrees",
+        "content": "Go to System Preferences > Displays. Click on the Rotation dropdown and select 180 degrees. This will switch the display from BGR to RGB pixel orientation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Edit PixelEncoding Property",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Modify com.apple.windowserver.plist",
+            "content": "Open Terminal and navigate to ~/Library/Preferences/ByHost/. Locate the com.apple.windowserver..plist file and edit the PixelEncoding property from `--------RRRRRRRRGGGGGGGGBBBBBBBB` to `--------BBBBBBBBGGGGGGGGRRRRRRRR`. Reboot your Mac after making the changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T23:17:37.424Z",
+      "updated": "2026-01-05T23:17:37.424Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/171141/bgr-rgb-pixel-layout-problem-how-to-fix-wrong-subpixel-optimization-in-lcd-f",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767655063612-433",
+    "title": "Android USB-C Phone Not Recognized by MacBook Pro",
+    "problemDescription": "Android USB-C phone not recognized by 2016 MacBook Pro without an adapter.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "usb-c",
+      "macbook pro",
+      "adapter",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Use a USB-C to USB-C Cable",
+        "content": "Ensure you are using a USB-C to USB-C cable that supports data transfer. Some cables are charging-only and do not support data transfer."
+      },
+      {
+        "title": "Check for Driver Updates",
+        "content": "Make sure your MacBook Pro has the latest drivers installed, especially the Multiport driver, which is necessary for USB-C connectivity."
+      },
+      {
+        "title": "Restart Both Devices",
+        "content": "Restart both your Android phone and MacBook Pro to ensure a fresh connection attempt."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use an Adapter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Plug in an Adapter",
+            "content": "If the phone is not recognized without an adapter, try using a USB-C to USB-A adapter or a hub that supports data transfer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T23:17:43.612Z",
+      "updated": "2026-01-05T23:17:43.612Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/265337/android-usb-c-phone-not-working-without-adapter",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767655075269-167",
+    "title": "Reset Bluetooth Module on OS X Yosemite/El Capitan",
+    "problemDescription": "Bluetooth connectivity issues on OS X Yosemite and El Capitan.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "connectivity",
+      "os x",
+      "yosemite",
+      "el capitan"
+    ],
+    "steps": [
+      {
+        "title": "Access Bluetooth Debug Menu",
+        "content": "Hold SHIFT+ALT and click the Bluetooth icon in the top menu bar."
+      },
+      {
+        "title": "Reset Bluetooth Module",
+        "content": "From the debug menu, select DEBUG > Reset The Bluetooth Module."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset All Apple Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Bluetooth Debug Menu",
+            "content": "Hold SHIFT+ALT and click the Bluetooth icon in the top menu bar."
+          },
+          {
+            "title": "Factory Reset",
+            "content": "From the debug menu, select Factory Resetting All Apple Devices."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T23:17:55.269Z",
+      "updated": "2026-01-05T23:17:55.269Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/212198/severe-bluetooth-connectivity-issues-os-x-yosemiteel-capitan",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767655095836-360",
+    "title": "Recover Access with Lost 2FA Device",
+    "problemDescription": "You've lost your phone with 2FA enabled and need to regain access to your accounts.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "2FA",
+      "lost phone",
+      "authentication",
+      "recovery"
+    ],
+    "steps": [
+      {
+        "title": "Prepare Before Losing Your Phone",
+        "content": "Set up backup methods for 2FA before you lose your phone. Use apps like Authy or Google Authenticator that allow multi-device support."
+      },
+      {
+        "title": "Use Backup Codes",
+        "content": "If you have backup codes, use them to log in and then disable 2FA or switch to a new device."
+      },
+      {
+        "title": "Contact Support",
+        "content": "Reach out to the support team of the service you're locked out of. Explain your situation and provide any necessary verification."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Authy Multi-Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Multi-Device on Authy",
+            "content": "Open Settings in Authy on your primary device and tap Devices."
+          },
+          {
+            "title": "Allow Multi-Device",
+            "content": "Enable 'Allow Multi-device.'"
+          },
+          {
+            "title": "Install Authy on New Device",
+            "content": "On your second device, install Authy."
+          },
+          {
+            "title": "Enter Primary Device Number",
+            "content": "When you first open the app, it will prompt you for a phone number. Enter the phone number of your primary device."
+          },
+          {
+            "title": "Use Existing Device",
+            "content": "In the popup that says 'Get Account Verification Via', tap 'Use Existing Device.'"
+          },
+          {
+            "title": "Verify New Device",
+            "content": "On your primary device you will get a notification that asks you to verify the addition of a new device. Tap 'Accept.'"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T23:18:15.836Z",
+      "updated": "2026-01-05T23:18:15.836Z",
+      "sourceUrl": "https://lifehacker.com/what-do-i-do-if-i-use-two-factor-authentication-and-los-1668727532",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767655099716-91",
+    "title": "Set Up Two-Factor Authentication",
+    "problemDescription": "How to enable and choose the best two-factor authentication method for your accounts.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "two-factor authentication",
+      "2FA",
+      "security",
+      "account protection"
+    ],
+    "steps": [
+      {
+        "title": "Choose Your 2FA Method",
+        "content": "Select a 2FA method such as SMS codes, email codes, authenticator apps, or hardware keys."
+      },
+      {
+        "title": "Enable 2FA",
+        "content": "Go to your account settings and enable two-factor authentication using your chosen method."
+      },
+      {
+        "title": "Follow Setup Instructions",
+        "content": "Follow the instructions provided by the service to complete the setup process."
+      },
+      {
+        "title": "Verify Your Identity",
+        "content": "Verify your identity using the chosen 2FA method when prompted."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use One-Button Authentication",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Compatibility",
+            "content": "Ensure your service supports one-button authentication (e.g., Google, Blizzard)."
+          },
+          {
+            "title": "Enable One-Button Auth",
+            "content": "Enable one-button authentication in your account settings."
+          },
+          {
+            "title": "Verify with a Tap",
+            "content": "When prompted, tap 'Yes, that’s me' to verify your identity."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T23:18:19.716Z",
+      "updated": "2026-01-05T23:18:19.716Z",
+      "sourceUrl": "https://lifehacker.com/which-form-of-two-factor-authentication-should-i-use-1784769336",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767655112335-713",
+    "title": "Fix Screen Sharing in Ubuntu 22.04",
+    "problemDescription": "Screen sharing not working in Ubuntu 22.04 across platforms like Zoom, Teams, and Google Meet.",
+    "category": "ubuntu",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "screen sharing",
+      "network issue",
+      "firewall"
+    ],
+    "steps": [
+      {
+        "title": "Check Network Bandwidth",
+        "content": "Ensure that your network has sufficient bandwidth for all users. Limited bandwidth can cause screen sharing issues."
+      },
+      {
+        "title": "Inspect Firewall Settings",
+        "content": "Check if your firewall is blocking, throttling, or timing out URLs that screen sharing applications use. Adjust firewall settings to allow these connections."
+      },
+      {
+        "title": "Restart the Application and Meeting",
+        "content": "If the issue persists, try leaving the meeting and rejoining it. Sometimes, this can resolve temporary glitches in the screen sharing functionality."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Switch to X11",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch Display Server",
+            "content": "If you are using Wayland, switch to X11 as it might resolve screen sharing issues on Ubuntu 22.04."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T23:18:32.335Z",
+      "updated": "2026-01-05T23:18:32.335Z",
+      "sourceUrl": "https://askubuntu.com/questions/1407494/screen-share-not-working-in-ubuntu-22-04-in-all-platforms-zoom-teams-google-m",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767655116952-861",
+    "title": "Fix Microsoft Teams Screen Sharing on Ubuntu 21.04 with Wayland",
+    "problemDescription": "Microsoft Teams screen sharing not working on Ubuntu 21.04 with Wayland display server.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "microsoft teams",
+      "ubuntu",
+      "wayland",
+      "screen sharing"
+    ],
+    "steps": [
+      {
+        "title": "Enable Cookies for Teams Websites",
+        "content": "Add the following six websites to the list of websites for which cookies are enabled in your browser settings: teams.microsoft.com, login.microsoftonline.com, login.live.com, aadcdn.microsoftonline-p.com, statics.teams.cdn.office.net, and tsfms.teams.microsoft.com."
+      },
+      {
+        "title": "Reload Teams Page",
+        "content": "Log out of Microsoft Teams and reload the main Teams page."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Switch to Xorg",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Display Server",
+            "content": "From the start window session of Ubuntu, select your profile, right-click on the icon, and change from 'Ubuntu' to 'Ubuntu xorg'."
+          }
+        ]
+      },
+      {
+        "title": "Install Beta Version of Edge",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Edge Beta",
+            "content": "Install the beta version of Microsoft Edge and log in to Teams as a desktop app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T23:18:36.952Z",
+      "updated": "2026-01-05T23:18:36.952Z",
+      "sourceUrl": "https://askubuntu.com/questions/1329667/microsoft-teams-and-wayland-will-screen-sharing-be-fixed-in-21-04",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767655120022-597",
+    "title": "Fix APT-GET Update Temporary Failure",
+    "problemDescription": "APT-GET update fails with 'Temporary failure resolving' error.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "apt-get",
+      "update",
+      "temporary failure",
+      "resolving"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your system is connected to the internet."
+      },
+      {
+        "title": "Check DNS Configuration",
+        "content": "Verify your DNS settings in /etc/resolv.conf. Ensure it contains valid nameservers, such as those provided by your ISP or a public DNS like Google's (8.8.8.8)."
+      },
+      {
+        "title": "Restart Networking Service",
+        "content": "Restart the networking service to apply changes. Use the command: sudo systemctl restart networking."
+      },
+      {
+        "title": "Update APT-GET",
+        "content": "Try running the update command again: sudo apt-get update."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Mirror",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit Sources List",
+            "content": "Open the sources list file: sudo nano /etc/apt/sources.list."
+          },
+          {
+            "title": "Change Mirror",
+            "content": "Replace the current mirror with a different one. For example, change 'us.archive.ubuntu.com' to 'archive.ubuntu.com'."
+          },
+          {
+            "title": "Update APT-GET",
+            "content": "Run the update command again: sudo apt-get update."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Proxy Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Environment Variables",
+            "content": "Check if there are any proxy settings in your environment variables. Use the command: env | grep -i proxy."
+          },
+          {
+            "title": "Remove Proxy Settings",
+            "content": "If proxy settings are found, remove them using the command: unset http_proxy && unset https_proxy."
+          },
+          {
+            "title": "Update APT-GET",
+            "content": "Run the update command again: sudo apt-get update."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T23:18:40.022Z",
+      "updated": "2026-01-05T23:18:40.022Z",
+      "sourceUrl": "https://askubuntu.com/questions/91543/apt-get-update-fails-to-fetch-files-temporary-failure-resolving-error",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767655123207-80",
+    "title": "Fix 'Package is in a very bad inconsistent state' Error",
+    "problemDescription": "The error 'Package is in a very bad inconsistent state' occurs when there are issues with package dependencies or corruption in the package management system.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "package",
+      "error",
+      "inconsistent",
+      "state",
+      "ubuntu"
+    ],
+    "steps": [
+      {
+        "title": "Clean and Update Packages",
+        "content": "Run the following commands in sequence to clean the package status and update your system:"
+      },
+      {
+        "title": "Run Commands",
+        "content": "1. `sudo apt-get autoclean`\n2. `sudo apt-get update`\n3. `sudo apt-get upgrade`\n4. `sudo apt-get install -f`"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall the Problematic Package",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall Package",
+            "content": "If the above steps do not work, try reinstalling the problematic package using the command: `sudo apt reinstall [package]`"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T23:18:43.207Z",
+      "updated": "2026-01-05T23:18:43.207Z",
+      "sourceUrl": "https://askubuntu.com/questions/148715/how-to-fix-package-is-in-a-very-bad-inconsistent-state-error",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767655125872-16",
+    "title": "Fix E:Error PkgProblemResolver::Resolve generated breaks",
+    "problemDescription": "This error occurs when there are dependency issues or held packages in Ubuntu's package manager.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "package manager",
+      "dependency",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Check for Held Packages",
+        "content": "Open a terminal and run the command 'apt-mark showhold' to check if any packages are held."
+      },
+      {
+        "title": "Unhold Packages",
+        "content": "If packages are held, unhold them using the command 'sudo apt-mark unhold <package-name>' for each held package."
+      },
+      {
+        "title": "Update and Upgrade",
+        "content": "Run 'sudo apt update' followed by 'sudo apt upgrade' to update the package lists and upgrade the packages."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Fix Broken Packages",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Fix Broken Packages",
+            "content": "Execute the command 'sudo apt-get install -f' to attempt to fix broken packages."
+          },
+          {
+            "title": "Clean and Update",
+            "content": "Run 'sudo apt-get clean' and then 'sudo apt-get update' to clean the package cache and update the package lists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T23:18:45.872Z",
+      "updated": "2026-01-05T23:18:45.872Z",
+      "sourceUrl": "https://askubuntu.com/questions/124845/eerror-pkgproblemresolverresolve-generated-breaks-this-may-be-caused-by-hel",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767655132220-599",
+    "title": "Fix Ubuntu 18 Overheating on MacBook 6.2",
+    "problemDescription": "Ubuntu 18 on a MacBook 6.2 (mid 2010) experiences overheating and graphics issues.",
+    "category": "linux",
+    "difficulty": "Easy",
+    "keywords": [
+      "ubuntu",
+      "macbook",
+      "overheating",
+      "graphics"
+    ],
+    "steps": [
+      {
+        "title": "Update and Upgrade System",
+        "content": "Open the terminal with `Ctrl`+`Alt`+`T` and run the following commands: `sudo apt-get update` and `sudo apt-get upgrade`."
+      },
+      {
+        "title": "Install macfanctld",
+        "content": "Run the command `sudo apt-get install macfanctld` to install the fan control utility."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Alternative Graphics Fix",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Proprietary Drivers",
+            "content": "Consider installing proprietary graphics drivers if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T23:18:52.220Z",
+      "updated": "2026-01-05T23:18:52.220Z",
+      "sourceUrl": "https://askubuntu.com/questions/1407974/ubuntu-18-installation-on-a-macbook-6-2-mid-2010-has-graphics-and-overheating",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767655135683-484",
+    "title": "Fix MacBook Pro Graphics Issues on Ubuntu",
+    "problemDescription": "Graphics issues on MacBook Pro 2015 running Ubuntu 24.04, causing large white areas on the screen.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "graphics",
+      "MacBook Pro",
+      "Ubuntu",
+      "DMAR",
+      "intel_iommu"
+    ],
+    "steps": [
+      {
+        "title": "Edit GRUB Configuration",
+        "content": "Open the GRUB configuration file with sudo privileges: `sudo nano /etc/default/grub`."
+      },
+      {
+        "title": "Modify GRUB Command Line",
+        "content": "Add `intel_iommu=igfx_off` to the `GRUB_CMDLINE_LINUX_DEFAULT` list in the file."
+      },
+      {
+        "title": "Update GRUB",
+        "content": "Save the changes and update GRUB with the command: `sudo update-grub`."
+      },
+      {
+        "title": "Reboot",
+        "content": "Reboot your MacBook Pro to apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Kernel Logs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "View Kernel Logs",
+            "content": "Check for DMA errors in the kernel logs using: `sudo dmesg`."
+          },
+          {
+            "title": "Identify Errors",
+            "content": "Look for errors related to DMAR and DMA to understand the root cause."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T23:18:55.683Z",
+      "updated": "2026-01-05T23:18:55.683Z",
+      "sourceUrl": "https://askubuntu.com/questions/1517262/macbook-pro-graphics-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767655138546-121",
+    "title": "Fix MacBook Pro 14,2 (2017) Camera on Ubuntu 24.04",
+    "problemDescription": "MacBook Pro 14,2 (2017) camera not working on Ubuntu 24.04 due to missing drivers.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "camera",
+      "ubuntu",
+      "driver",
+      "facetimehd"
+    ],
+    "steps": [
+      {
+        "title": "Install Dependencies",
+        "content": "Open a terminal and run the following commands to install the required dependencies:"
+      },
+      {
+        "title": "Clone the facetimehd Repository",
+        "content": "Run the following command to clone the facetimehd repository:"
+      },
+      {
+        "title": "Compile and Install the Driver",
+        "content": "Follow the instructions in the facetimehd repository to compile and install the driver."
+      },
+      {
+        "title": "Rescan PCI Bus",
+        "content": "Run the following command to rescan the PCI bus and load the driver:"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Apple-bce-driver (Blocked)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Extract Firmware from macOS",
+            "content": "Extract the firmware from macOS and use it to activate the internal camera bridge."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T23:18:58.546Z",
+      "updated": "2026-01-05T23:18:58.546Z",
+      "sourceUrl": "https://askubuntu.com/questions/1552591/macbook-pro-14-2-2017-intel-audio-input-mic-camera-issues-on-ubuntu-24-04",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767655143771-959",
+    "title": "Fix Ubuntu 11.10 Drivers on MacBook Air 2011",
+    "problemDescription": "Ubuntu 11.10 on MacBook Air 2011 has issues with touchpad, keyboard, and screen backlight.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "macbook",
+      "drivers",
+      "touchpad",
+      "keyboard",
+      "backlight"
+    ],
+    "steps": [
+      {
+        "title": "Update System and Install Drivers",
+        "content": "Open Terminal and run the following commands to update your system and install necessary drivers:\n\n```\nsudo apt-get update\nsudo apt-get upgrade\nsudo apt-get install macfanctld\n```"
+      },
+      {
+        "title": "Install Broadcom Wireless Driver",
+        "content": "Install the Broadcom wireless driver with the following command:\n\n```\nsudo apt-get install bcmwl-kernel-source\n```"
+      },
+      {
+        "title": "Install Touchpad Driver",
+        "content": "Install the touchpad driver with the following command:\n\n```\nsudo apt-get install xserver-xorg-input-synaptics\n```"
+      },
+      {
+        "title": "Reboot the System",
+        "content": "After installing the drivers, reboot your system to apply the changes:\n\n```\nsudo reboot\n```"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Driver Installation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Drivers",
+            "content": "Download the necessary drivers from the Ubuntu repositories or official websites."
+          },
+          {
+            "title": "Install Drivers",
+            "content": "Install the downloaded drivers using the dpkg command:\n\n```\nsudo dpkg -i /path/to/downloaded/driver.deb\n```"
+          },
+          {
+            "title": "Configure Drivers",
+            "content": "Configure the drivers as needed, especially for the touchpad and keyboard."
+          },
+          {
+            "title": "Reboot the System",
+            "content": "Reboot your system to apply the changes:\n\n```\nsudo reboot\n```"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T23:19:03.771Z",
+      "updated": "2026-01-05T23:19:03.771Z",
+      "sourceUrl": "https://askubuntu.com/questions/164898/ubuntu-11-10-on-macbook-air-2011-problems-with-drivers",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767655147581-282",
+    "title": "Fix MacBook Pro 14,2 Driver and Sleep Mode Issues",
+    "problemDescription": "Difficulty installing drivers and authentication errors after sleep mode on MacBook Pro 14,2.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "drivers",
+      "sleep mode",
+      "authentication"
+    ],
+    "steps": [
+      {
+        "title": "Update macOS",
+        "content": "Ensure your MacBook Pro is running the latest version of macOS. Go to System Preferences > Software Update and install any available updates."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "If updating doesn't resolve the issue, consider reinstalling macOS. This can often fix driver-related problems. Use the Recovery Mode (Command + R at startup) to reinstall macOS without losing data."
+      },
+      {
+        "title": "Reset SMC and NVRAM",
+        "content": "Reset the System Management Controller (SMC) and Non-Volatile Random-Access Memory (NVRAM). This can resolve sleep mode and authentication issues. Instructions for resetting SMC and NVRAM can be found on Apple's support website."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Third-Party Software Conflicts",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot in Safe Mode",
+            "content": "Restart your MacBook Pro in Safe Mode (hold Shift during startup). This will disable third-party software and help identify if a third-party application is causing the issue."
+          },
+          {
+            "title": "Uninstall Problematic Software",
+            "content": "If the issue resolves in Safe Mode, uninstall recently installed third-party software that might be causing conflicts."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T23:19:07.581Z",
+      "updated": "2026-01-05T23:19:07.581Z",
+      "sourceUrl": "https://askubuntu.com/questions/1549362/problems-setting-up-macbook-pro-14-2",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
