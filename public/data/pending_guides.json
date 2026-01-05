@@ -31734,5 +31734,638 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767605287058-424",
+    "title": "Fix Google Pixel 6 Fingerprint Scanner After Screen Repair",
+    "problemDescription": "Fingerprint scanner stops working after screen repair on Google Pixel 6.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "google",
+      "pixel",
+      "fingerprint",
+      "scanner",
+      "screen",
+      "repair"
+    ],
+    "steps": [
+      {
+        "title": "Use a Professional Repair Service",
+        "content": "Send your Google Pixel 6 to a reputable repair shop with experience in fixing Google Pixel 6 smartphones."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Software Update for Call Features",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Software Updates",
+            "content": "Ensure your device has the latest software update that includes a fix for call features issues."
+          }
+        ]
+      },
+      {
+        "title": "Fix for Greenish Tint and Flickering",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Press the Power Button Firmly",
+            "content": "Hold the power button down until the phone switches on to avoid flickering issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T09:28:07.058Z",
+      "updated": "2026-01-05T09:28:07.058Z",
+      "sourceUrl": "https://www.techradar.com/news/google-pixel-6-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767605289402-815",
+    "title": "Fix Google Pixel Display Issues",
+    "problemDescription": "Google Pixel devices may experience screen flickering, sudden shutdowns, frozen or fuzzy displays, and system instability.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "google",
+      "pixel",
+      "display",
+      "flickering",
+      "shutdown",
+      "freeze"
+    ],
+    "steps": [
+      {
+        "title": "Update Your Device",
+        "content": "Go to Settings > System > System update. Check for the October update and install it to apply the fixes for display issues and system instability."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Your Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart",
+            "content": "If the update does not resolve the issue immediately, restart your device to ensure all changes take effect."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T09:28:09.402Z",
+      "updated": "2026-01-05T09:28:09.402Z",
+      "sourceUrl": "https://www.techradar.com/phones/google-pixel-phones/a-big-google-pixel-software-update-is-rolling-out-now-and-it-promises-to-fix-6-annoying-bugs-and-display-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767605292194-472",
+    "title": "Pixel 7/7 Pro Battery Overheating and Swelling",
+    "problemDescription": "Google Pixel 7 and Pixel 7 Pro users are experiencing battery overheating and swelling issues.",
+    "category": "android",
+    "difficulty": "Hard",
+    "keywords": [
+      "Pixel 7",
+      "Pixel 7 Pro",
+      "battery",
+      "overheating",
+      "swelling"
+    ],
+    "steps": [
+      {
+        "title": "Contact Google Support",
+        "content": "Reach out to Google Support to report the issue and inquire about repair or refund options."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Ensure your device is running the latest software version, as Google may release updates to address the issue."
+      },
+      {
+        "title": "Avoid Using the Device",
+        "content": "If the battery is swollen, stop using the device immediately to prevent further damage."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Community Workaround: Battery Replacement",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Find a Trusted Repair Service",
+            "content": "Locate a reputable repair service that can replace the battery if Google's official support is not available."
+          },
+          {
+            "title": "Backup Your Data",
+            "content": "Before sending your device for repair, ensure all your data is backed up."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T09:28:12.194Z",
+      "updated": "2026-01-05T09:28:12.194Z",
+      "sourceUrl": "https://www.techradar.com/phones/google-pixel-phones/watch-out-now-some-pixel-7-and-pixel-7-pro-owners-are-seeing-battery-overheating-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767605295097-255",
+    "title": "Pixel 10 AI Troubleshooting",
+    "problemDescription": "Troubleshooting technical issues on Google Pixel 10 using AI-powered agent.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel 10",
+      "troubleshooting",
+      "ai",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Access AI Troubleshooting Agent",
+        "content": "Open the settings menu on your Pixel 10 and navigate to the support or troubleshooting section."
+      },
+      {
+        "title": "Describe the Issue",
+        "content": "Provide a clear description of the technical issue you are experiencing."
+      },
+      {
+        "title": "Follow AI Guidance",
+        "content": "Follow the step-by-step instructions provided by the AI agent to resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Voice Translate for Real-Time Translation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Google Phone App",
+            "content": "Launch the Google Phone app on your Pixel 10."
+          },
+          {
+            "title": "Enable Voice Translate",
+            "content": "Activate the Voice Translate feature within the app settings."
+          },
+          {
+            "title": "Initiate Call",
+            "content": "Make a call and use the Voice Translate feature to translate the conversation in real-time."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T09:28:15.097Z",
+      "updated": "2026-01-05T09:28:15.097Z",
+      "sourceUrl": "https://www.techradar.com/phones/google-pixel-phones/13-things-we-saw-at-the-wild-google-pixel-10-launch-including-the-best-pixel-phones-yet",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767605301797-835",
+    "title": "Fix Siri Suggestions Not Appearing on iPhone",
+    "problemDescription": "Siri suggestions are not showing up on your iPhone.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "siri",
+      "suggestions",
+      "iphone",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Update iOS",
+        "content": "Go to Settings > General > Software Update and install the latest iOS version if available."
+      },
+      {
+        "title": "Check Siri & Search Settings",
+        "content": "Navigate to Settings > Siri & Search and ensure Siri is turned on. Toggle it off and on again to troubleshoot."
+      },
+      {
+        "title": "Restart Your iPhone",
+        "content": "Power off your iPhone and turn it back on to restart it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Siri Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Siri Settings",
+            "content": "Go to Settings > Siri & Search and reset all Siri settings to default."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T09:28:21.797Z",
+      "updated": "2026-01-05T09:28:21.797Z",
+      "sourceUrl": "https://www.makeuseof.com/siri-suggestions-not-appearing-on-iphone-fixes/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767605307262-349",
+    "title": "Fix Siri Not Working on Apple Watch",
+    "problemDescription": "Siri is not responding or working properly on your Apple Watch.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "siri",
+      "apple watch",
+      "microphone",
+      "settings",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Check Siri Settings",
+        "content": "Ensure Siri is enabled to respond to voice commands. Go to Settings > Siri on your Apple Watch and verify that 'Hey Siri' and 'Allow Siri When Locked' are turned on."
+      },
+      {
+        "title": "Check Your Microphone",
+        "content": "Ensure the microphone is not obstructed. Clean the area between the Digital Crown and the side button."
+      },
+      {
+        "title": "Update watchOS",
+        "content": "Update your Apple Watch to the latest watchOS version. Go to Settings > General > Software Update and install any available updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restart Apple Watch",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Power Off Apple Watch",
+            "content": "Press and hold the side button until the Power Off slider appears. Drag the slider to turn off your Apple Watch."
+          },
+          {
+            "title": "Power On Apple Watch",
+            "content": "Wait for a few seconds, then press and hold the side button again to turn your Apple Watch back on."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T09:28:27.263Z",
+      "updated": "2026-01-05T09:28:27.263Z",
+      "sourceUrl": "https://www.makeuseof.com/how-to-fix-siri-not-working-on-apple-watch/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767605310898-422",
+    "title": "Fix Hey Siri Not Working on iPhone",
+    "problemDescription": "Hey Siri feature is not responding or working properly on your iPhone.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "Hey Siri",
+      "iPhone",
+      "Siri",
+      "voice assistant"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your iPhone",
+        "content": "Turn off your iPhone and turn it back on after a minute. This can resolve temporary glitches."
+      },
+      {
+        "title": "Check Siri Settings",
+        "content": "Go to Settings > Siri & Search and ensure that 'Hey Siri' is turned on."
+      },
+      {
+        "title": "Remove Phone Case",
+        "content": "If your iPhone is in a case, remove it to ensure the microphones are not blocked."
+      },
+      {
+        "title": "Avoid Face Down Position",
+        "content": "Make sure your iPhone is not placed face down, as this can prevent Siri from hearing you."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Enable Bluetooth on Nearby Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Bluetooth Settings",
+            "content": "If you have multiple devices nearby that work with 'Hey Siri,' ensure Bluetooth is enabled on these devices."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T09:28:30.898Z",
+      "updated": "2026-01-05T09:28:30.898Z",
+      "sourceUrl": "https://www.makeuseof.com/hey-siri-not-working-iphone-how-to-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767605320904-161",
+    "title": "Reset Siri on iPhone, iPad, or Mac",
+    "problemDescription": "Siri struggles to recognize your voice or 'Hey Siri' is not working.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "siri",
+      "reset",
+      "voice recognition",
+      "iphone",
+      "ipad",
+      "mac"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Go to the Settings app on your iPhone or iPad."
+      },
+      {
+        "title": "Navigate to Siri & Search",
+        "content": "Tap on 'Siri & Search' in the Settings menu."
+      },
+      {
+        "title": "Turn Off Siri",
+        "content": "Toggle off 'Listen for Hey Siri', 'Press Side Button for Siri', and 'Allow Siri When Locked'."
+      },
+      {
+        "title": "Turn On Siri",
+        "content": "Toggle on the same options you turned off in the previous step."
+      },
+      {
+        "title": "Retrain Siri",
+        "content": "Repeat five phrases to retrain Siri to recognize your voice."
+      },
+      {
+        "title": "Complete Setup",
+        "content": "Once you've repeated the last phrase, tap 'Done' and continue using Siri as usual."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Siri on Mac",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Settings",
+            "content": "Go to the System Settings app on your Mac."
+          },
+          {
+            "title": "Navigate to Siri & Spotlight",
+            "content": "Click on 'Siri & Spotlight' in the System Settings menu."
+          },
+          {
+            "title": "Turn Off Siri",
+            "content": "Toggle off 'Ask Siri' and 'Listen for Hey Siri'."
+          },
+          {
+            "title": "Turn On Siri",
+            "content": "Toggle on the same options you turned off in the previous step."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T09:28:40.904Z",
+      "updated": "2026-01-05T09:28:40.904Z",
+      "sourceUrl": "https://www.makeuseof.com/reset-siri-on-iphone-ipad-mac/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767605344243-977",
+    "title": "Speed Up PC by Managing Startup Apps",
+    "problemDescription": "Your PC is slow due to too many startup applications.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "pc",
+      "slow",
+      "startup",
+      "apps",
+      "speed up"
+    ],
+    "steps": [
+      {
+        "title": "Open Task Manager",
+        "content": "Press Ctrl+Shift+Escape to open Task Manager."
+      },
+      {
+        "title": "Go to the Startup Tab",
+        "content": "Navigate to the Startup tab in Task Manager."
+      },
+      {
+        "title": "Disable Unnecessary Startup Apps",
+        "content": "Select the applications you don't need to start automatically and click 'Disable'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Uninstall Unused Applications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Add or Remove Programs",
+            "content": "Search for 'Add or remove programs' in the Start menu."
+          },
+          {
+            "title": "Uninstall Unused Apps",
+            "content": "Go through the list and uninstall applications you haven't used in a long time."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T09:29:04.243Z",
+      "updated": "2026-01-05T09:29:04.243Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=-G-DByczbWA",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767605352126-779",
+    "title": "Fix Windows 11 Lagging and Slow Performance",
+    "problemDescription": "Windows 11 is running slowly and experiencing lag.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "lagging",
+      "slow performance",
+      "optimization"
+    ],
+    "steps": [
+      {
+        "title": "Delete Temporary Files",
+        "content": "1. Press Win + R, type %temp%, and press Enter. 2. Press Ctrl + A to select all files. 3. Press Shift + Delete to permanently delete the files. 4. Click Yes to confirm."
+      },
+      {
+        "title": "Delete Temporary Files from %10%",
+        "content": "1. Press Win + R, type %10%, and press Enter. 2. Press Ctrl + A to select all files. 3. Press Shift + Delete to permanently delete the files. 4. Click Yes to confirm."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "Restart your computer to apply the changes."
+      },
+      {
+        "title": "Uninstall Faulty Applications",
+        "content": "If the issue persists, uninstall any recently installed or unused applications that might be causing the problem."
+      },
+      {
+        "title": "Disable Unnecessary Features",
+        "content": "1. Go to Settings > Privacy & Security > General. 2. Disable features you don't use, such as Camera, Microphone, Voice Activation, Contacts, Calendar, Phone Calls, Email, Task Messaging, and Radios."
+      },
+      {
+        "title": "Disable Notifications",
+        "content": "1. Go to Settings > System > Notifications. 2. Disable all notifications, including Do Not Disturb."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Startup Programs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Task Manager",
+            "content": "Press Ctrl + Shift + Esc to open Task Manager."
+          },
+          {
+            "title": "Disable Startup Programs",
+            "content": "Go to the Startup tab and disable any programs that are not essential."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T09:29:12.126Z",
+      "updated": "2026-01-05T09:29:12.126Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=Jlwh75z8H_Q",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767605382244-993",
+    "title": "Fix iOS App Notifications Not Working",
+    "problemDescription": "Third-party apps on iOS suddenly stop delivering notifications without any changes in settings.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "ios",
+      "notifications",
+      "apps",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall the App",
+        "content": "Uninstall the app completely and then reinstall it from the App Store."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Notification Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Settings",
+            "content": "Go to Settings > Notifications and ensure the app has notifications enabled."
+          },
+          {
+            "title": "Reboot Device",
+            "content": "Restart your iOS device to see if the issue resolves."
+          },
+          {
+            "title": "Open the App",
+            "content": "Open the app in question to ensure it's not running in the background without sending notifications."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T09:29:42.244Z",
+      "updated": "2026-01-05T09:29:42.244Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/404763/is-there-a-known-fix-for-apps-that-suddenly-stop-delivering-notifications-for-an",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767605388737-279",
+    "title": "Fix iOS 12 Notification Tap to Open App",
+    "problemDescription": "Tapping on notifications does not open the corresponding app in iOS 12.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "notification",
+      "app",
+      "open"
+    ],
+    "steps": [
+      {
+        "title": "Tap the App Icon",
+        "content": "Tap the app icon on the top left of the notification window to open the app."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Toggle Notifications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off and On Notifications",
+            "content": "Go to Settings > Notifications, turn off notifications for the app, then turn them back on."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Set Up Face ID",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Face ID",
+            "content": "Go to Settings > Face ID & Passcode, set up Face ID if it's not already configured."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T09:29:48.737Z",
+      "updated": "2026-01-05T09:29:48.737Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/336840/ios-12-tapping-on-notification-to-open-app-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
