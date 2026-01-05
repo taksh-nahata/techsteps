@@ -26996,5 +26996,310 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767585075402-48",
+    "title": "Fix Windows 11 Blue Screen Issue",
+    "problemDescription": "Windows 11 users are experiencing blue screen errors due to a recent update.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "blue screen",
+      "update",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "For Enterprise Devices",
+        "content": "Network admins should install and configure the Windows 11 24H2 and Windows Server 2025 KB5053656 250412_03103 Known Issue Rollback Group Policy. Navigate to Computer Configuration > Administrative Templates > and apply the Group Policy. Restart affected devices to apply the settings."
+      },
+      {
+        "title": "For Personal Devices",
+        "content": "Wait for the automatic update from Windows Update and Microsoft Update. Restart your PC to apply the fix faster."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Apply Known Issue Rollback (KIR)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install KIR",
+            "content": "Download the Known Issue Rollback (KIR) from Microsoft's support page and follow the instructions to apply it to your device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T03:51:15.402Z",
+      "updated": "2026-01-05T03:51:15.402Z",
+      "sourceUrl": "https://lifehacker.com/tech/microsoft-has-a-fix-for-windows-latest-blue-screen-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767585078475-60",
+    "title": "Fix Windows 11 24H2 Update Installation Issue",
+    "problemDescription": "Windows 11 users cannot install security updates due to issues with the October or November 2024 updates.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "update",
+      "security",
+      "installation"
+    ],
+    "steps": [
+      {
+        "title": "Download New Installation Media",
+        "content": "Navigate to Microsoft’s Windows 11 download page and scroll down to 'Create Windows 11 Installation Media'."
+      },
+      {
+        "title": "Run Media Creation Tool",
+        "content": "Open mediacreationtool.exe and follow the instructions in the app to create new installation media with the December 2024 update included."
+      },
+      {
+        "title": "Reinstall Windows",
+        "content": "Use the newly created installation media to reinstall Windows 11."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check for Automatic Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Update Source",
+            "content": "If you downloaded the Windows 11 October or November updates through Windows Update or the Microsoft Update Catalog website, no further action is needed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T03:51:18.475Z",
+      "updated": "2026-01-05T03:51:18.475Z",
+      "sourceUrl": "https://lifehacker.com/tech/some-windows-11-users-can-no-longer-install-security-updates",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767585099212-306",
+    "title": "Fix Zoom App Error",
+    "problemDescription": "Troubleshooting common errors in the Zoom app.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "app error",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check for Updates",
+        "content": "Visit your device’s app store to check for Zoom app updates. Also, check for system updates via your device’s settings menu."
+      },
+      {
+        "title": "Clear Cache and Data",
+        "content": "Go to your device’s settings menu and clear the cache and data for the Zoom app to remove temporary files and free up space."
+      },
+      {
+        "title": "Uninstall and Reinstall Zoom",
+        "content": "Uninstall the Zoom app from your device and then reinstall it to alleviate any streaming issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Network and Permissions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Firewall/Proxy",
+            "content": "If you are on a network with a firewall or proxy, contact a network administrator to check your firewall settings."
+          },
+          {
+            "title": "Verify ISP",
+            "content": "Check if the problem is with your Internet Service Provider (ISP)."
+          },
+          {
+            "title": "Check App Permissions",
+            "content": "Ensure that necessary app permissions are given for the Zoom app to work properly."
+          },
+          {
+            "title": "Restart Device",
+            "content": "Restart your device to resolve any underlying issues."
+          },
+          {
+            "title": "Close Other Apps",
+            "content": "Close other apps and launch Zoom to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T03:51:39.212Z",
+      "updated": "2026-01-05T03:51:39.212Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-solve-an-issue-error-in-Zoom",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767585131504-161",
+    "title": "Fix APT-GET Connection to Ubuntu Archives",
+    "problemDescription": "APT-GET fails to connect to Ubuntu archives during updates.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "apt-get",
+      "ubuntu",
+      "archives",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Replace Quotes in Sources List",
+        "content": "Edit the sources list file using a text editor, such as nano or vim, and replace all curly quotes (`“`, `”`) with straight quotes (`'`, `'`). Save the file and retry the update command."
+      },
+      {
+        "title": "Update APT",
+        "content": "Run the command `sudo apt update` to refresh the package lists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change to a Regional Server",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit Sources List",
+            "content": "Edit the sources list file located at `/etc/apt/sources.list` (for Ubuntu versions before 24) or `/etc/apt/sources.list.d/ubuntu.sources` (for Ubuntu 24 and later)."
+          },
+          {
+            "title": "Find a Mirror",
+            "content": "Find a regional mirror server that is currently reachable. Replace the main server URL with the regional server URL in the sources list file."
+          },
+          {
+            "title": "Update APT",
+            "content": "Run the command `sudo apt update` to refresh the package lists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T03:52:11.504Z",
+      "updated": "2026-01-05T03:52:11.504Z",
+      "sourceUrl": "https://askubuntu.com/questions/1198621/apt-get-cannot-connect-to-ubuntu-archives",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767585137487-464",
+    "title": "Fix SSH Connection with Public Key",
+    "problemDescription": "Unable to SSH into a remote server even after adding the public key to authorized_keys.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "ssh",
+      "public key",
+      "authorized_keys",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Create a New SSH Key on MacOSX",
+        "content": "Generate a new SSH key on your MacOSX machine using the command: `ssh-keygen -t rsa -b 4096`."
+      },
+      {
+        "title": "Configure SSH Client",
+        "content": "Edit the SSH configuration file on your local machine: `vim ~/.ssh/config`. Add the following lines:\n\n```\nPubkeyAuthentication yes\nAuthorizedKeysFile %h/.ssh/authorized_keys\nPasswordAuthentication no\n```"
+      },
+      {
+        "title": "Save and Exit",
+        "content": "Save the changes by pressing the `escape` key, then typing `:wq` to write the buffer and quit vim."
+      },
+      {
+        "title": "Restart SSH Service",
+        "content": "Restart the SSH service on your local machine using the command: `sudo systemctl restart ssh` or `sudo systemctl restart sshd`."
+      },
+      {
+        "title": "Attempt SSH Connection",
+        "content": "Logout and try to SSH into your remote server from your client local machine again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset to Default",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset SSH Configuration",
+            "content": "Reset the SSH configuration to default settings and try connecting again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T03:52:17.487Z",
+      "updated": "2026-01-05T03:52:17.487Z",
+      "sourceUrl": "https://askubuntu.com/questions/871751/cant-ssh-even-with-public-key-added-to-authorized-keys",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767585142223-579",
+    "title": "Fix Arrow Keys, Home, End, Tab-Complete in Shell",
+    "problemDescription": "Arrow keys, Home, End, and tab-complete keys not working in the shell.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "shell",
+      "keys",
+      "ubuntu",
+      "bash"
+    ],
+    "steps": [
+      {
+        "title": "Install Vim",
+        "content": "Run the command `sudo apt-get install vim` to install Vim, which may resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Change Login Shell to Bash",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Shell",
+            "content": "Run the command `sudo chsh -s /bin/bash` to change the login shell to Bash."
+          },
+          {
+            "title": "Start New Session",
+            "content": "Start a new login session for the changes to take effect."
+          },
+          {
+            "title": "Copy Default .bashrc",
+            "content": "Copy the default .bashrc from /etc/skel to get default settings like color prompt and LS_COLORS."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T03:52:22.223Z",
+      "updated": "2026-01-05T03:52:22.223Z",
+      "sourceUrl": "https://askubuntu.com/questions/325807/arrow-keys-home-end-tab-complete-keys-not-working-in-shell",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
