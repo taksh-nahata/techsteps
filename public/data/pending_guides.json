@@ -32367,5 +32367,728 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767608448517-936",
+    "title": "Reset Samsung Device",
+    "problemDescription": "Fix any type of problems on your Samsung device by resetting it.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "reset",
+      "factory data reset",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Access Settings",
+        "content": "Go to your device's settings."
+      },
+      {
+        "title": "Search for Factory Reset",
+        "content": "Search for 'factory' in the settings search bar."
+      },
+      {
+        "title": "Initiate Factory Data Reset",
+        "content": "Tap on 'Factory data reset' and follow the on-screen instructions to reset your device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clear App Cache and Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Press and Hold App Icon",
+            "content": "Press and hold the icon of the problematic app."
+          },
+          {
+            "title": "Access App Info",
+            "content": "Tap on the 'i' icon to access app information."
+          },
+          {
+            "title": "Clear Cache and Data",
+            "content": "Go to the storage section and clear the cache and data."
+          }
+        ]
+      },
+      {
+        "title": "Update Applications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Play Store",
+            "content": "Open the Google Play Store."
+          },
+          {
+            "title": "Manage Apps and Device",
+            "content": "Go to 'Apps' and then 'Manage apps and device'."
+          },
+          {
+            "title": "Update Applications",
+            "content": "Check for and install any available updates for your applications."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T10:20:48.517Z",
+      "updated": "2026-01-05T10:20:48.517Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=3d-RT7ng0DU",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767608455244-613",
+    "title": "Fix Android Phone Won't Turn On",
+    "problemDescription": "Your Android phone is unresponsive and won't turn on.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "phone",
+      "won't turn on",
+      "hard boot",
+      "recovery menu"
+    ],
+    "steps": [
+      {
+        "title": "Perform a Hard Boot",
+        "content": "Press and hold the Power button for at least 30 seconds to perform a hard boot."
+      },
+      {
+        "title": "Access Recovery Menu",
+        "content": "If the phone still doesn't turn on, press and hold the Power button and the Volume Up button simultaneously for about 15 seconds."
+      },
+      {
+        "title": "Navigate Recovery Menu",
+        "content": "Use the Volume buttons to navigate and the Power button to select options in the recovery menu. Choose 'Reboot system now' to restart your phone."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Charge the Phone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect to Charger",
+            "content": "Connect your phone to a charger and let it charge for at least 30 minutes."
+          },
+          {
+            "title": "Attempt to Turn On",
+            "content": "After charging, try turning on your phone again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T10:20:55.244Z",
+      "updated": "2026-01-05T10:20:55.244Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=VYg6rs0x-rQ",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767608472198-860",
+    "title": "Prevent iOS Devices from Interfering with Bluetooth",
+    "problemDescription": "iOS devices are interfering with Bluetooth connections.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "ios",
+      "bluetooth",
+      "interference"
+    ],
+    "steps": [
+      {
+        "title": "Delete Bluetooth Preferences File",
+        "content": "Delete the Bluetooth preferences file located at /Library/Preferences/com.apple.Bluetooth.plist and reboot your device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Remove Devices from Friend's Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Log in to Friend's Account",
+            "content": "Log in to your friend's iCloud account."
+          },
+          {
+            "title": "Delete Bluetooth Devices",
+            "content": "Delete the interfering devices from the Bluetooth settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T10:21:12.198Z",
+      "updated": "2026-01-05T10:21:12.198Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/341960/prevent-friends-ios-devices-from-interfering-with-bluetooth",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767608482739-454",
+    "title": "Fix Evolution Gmail Authentication",
+    "problemDescription": "Evolution email client fails to authenticate with Gmail, showing timeout or password errors.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "evolution",
+      "gmail",
+      "authentication",
+      "oauth2",
+      "password"
+    ],
+    "steps": [
+      {
+        "title": "Change Authentication Method to OAuth2",
+        "content": "Go to Edit --> Accounts --> Mailbox settings for both receive and send. Change the authentication method from 'Password' to 'OAuth2'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Verify Server Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Server Settings",
+            "content": "Ensure you are using the server imap.gmail.com, port 993, and have encryption set to TLS on a dedicated port."
+          },
+          {
+            "title": "Test Supported Authentication Types",
+            "content": "Check for supported authentication types and try both 'Password' and 'OAuth2'. If 'OAuth2' times out, try 'Password' and ensure you are entering the correct password."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T10:21:22.739Z",
+      "updated": "2026-01-05T10:21:22.739Z",
+      "sourceUrl": "https://askubuntu.com/questions/1492933/evolution-will-not-connect-with-gmail-errors-are-failed-to-authenticate-timeo",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767608487940-729",
+    "title": "Fix Gmail Password Prompt Loop",
+    "problemDescription": "Gmail keeps asking for password repeatedly on Ubuntu.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "password",
+      "ubuntu",
+      "prompt"
+    ],
+    "steps": [
+      {
+        "title": "Sign Out and Reboot",
+        "content": "Sign out of your Gmail account and reboot your computer. Then sign back in."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Contacts in GNOME Search",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to Settings -> Search."
+          },
+          {
+            "title": "Deselect Contacts",
+            "content": "Deselect the Contacts option to stop GNOME Search from checking Contacts."
+          }
+        ]
+      },
+      {
+        "title": "Edit accounts.conf File",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Locate accounts.conf",
+            "content": "Navigate to `~/.config/goa-1.0/accounts.conf`."
+          },
+          {
+            "title": "Edit the File",
+            "content": "Remove the specific entry causing the issue. Do not delete the entire file, as you will need to recreate your configuration."
+          }
+        ]
+      },
+      {
+        "title": "Generate Application-Specific Password",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Generate Password",
+            "content": "If using Google's Two-Factor Authentication, generate an application-specific password from Google."
+          },
+          {
+            "title": "Use the Password",
+            "content": "Enter the generated password in the prompt to stop the repeated password requests."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T10:21:27.940Z",
+      "updated": "2026-01-05T10:21:27.940Z",
+      "sourceUrl": "https://askubuntu.com/questions/207337/access-prompt-keeps-asking-for-gmail-password",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767608494860-162",
+    "title": "Enable Less Secure App Access for Gmail",
+    "problemDescription": "Emails sent from the command line to a Gmail account are being blocked.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "command line",
+      "email",
+      "less secure app access"
+    ],
+    "steps": [
+      {
+        "title": "Activate Less Secure App Access",
+        "content": "Go to your Gmail account settings and activate 'Less secure app access'. This will allow emails to be sent from the command line without being blocked by Google."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Gmail Port Configuration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Gmail Port",
+            "content": "Ensure that Gmail is receiving on port 587 and that the traffic is being handled correctly. This might involve checking your network configuration or firewall settings."
+          }
+        ]
+      },
+      {
+        "title": "Check Username Format",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Username Format",
+            "content": "If your Gmail username contains a '.' before the '@gmail.com', ensure that the `mail` and `sendmail` commands are correctly interpreting this format. This might involve escaping the '.' or using a different command syntax."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T10:21:34.860Z",
+      "updated": "2026-01-05T10:21:34.860Z",
+      "sourceUrl": "https://askubuntu.com/questions/486950/why-cant-i-send-emails-from-the-command-line-to-my-gmail-account",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767608503028-576",
+    "title": "Fix Vizio TV That Won't Turn On",
+    "problemDescription": "Vizio TV does not respond when attempting to turn it on.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Vizio",
+      "TV",
+      "power",
+      "remote",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Power Cycle the TV",
+        "content": "Unplug the TV from the wall and wait for 30 seconds. Plug the power cord back in and try turning on the TV using the button on the TV itself, not the remote."
+      },
+      {
+        "title": "Check the Remote",
+        "content": "If the TV turns on, the issue is with the remote. Replace the batteries in the remote. If that doesn't work, consider getting a replacement remote from Vizio."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Professional Repair",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact a TV Repair Person",
+            "content": "If the issue persists, it might be a problem with the logic board or power supply unit. Contact a local TV repair person who can diagnose and fix the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T10:21:43.028Z",
+      "updated": "2026-01-05T10:21:43.028Z",
+      "sourceUrl": "https://www.techradar.com/how-to/how-to-fix-a-vizio-tv-that-wont-turn-on",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767608506908-16",
+    "title": "Fix Google TV Home Screen Errors",
+    "problemDescription": "Google TV home screen not loading or displaying errors.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "google tv",
+      "home screen",
+      "error",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Update Your Device",
+        "content": "Ensure your Google TV or Android TV is running the latest software version. The fix for the home screen error began rolling out on August 16."
+      },
+      {
+        "title": "Log Out and Log Back In",
+        "content": "If the error persists, log out of your Google account and log back in. This has been reported to resolve the issue for some users."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure you have backed up any important data or settings."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset > Factory data reset. Follow the on-screen instructions to complete the reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T10:21:46.908Z",
+      "updated": "2026-01-05T10:21:46.908Z",
+      "sourceUrl": "https://www.techradar.com/televisions/struggling-with-google-tv-home-screen-errors-youre-not-alone-but-a-fix-is-now-arriving",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767608509490-177",
+    "title": "Fix Samsung TV Privacy Pop-up",
+    "problemDescription": "A persistent pop-up appears on Samsung TVs, disrupting the viewing experience.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Samsung TV",
+      "pop-up",
+      "privacy",
+      "network settings"
+    ],
+    "steps": [
+      {
+        "title": "Block Internet Access",
+        "content": "Go to your TV's network settings and configure it to have local network access only, without wide area network access. This prevents the TV from accessing the internet but allows it to communicate with other devices on your local network."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Samsung Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reach Out to Samsung",
+            "content": "Contact Samsung support for assistance. Some users have reported that Samsung support may not have a fix, but it's worth trying as they might have updates or solutions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T10:21:49.490Z",
+      "updated": "2026-01-05T10:21:49.490Z",
+      "sourceUrl": "https://www.techradar.com/televisions/infuriating-pop-up-appearing-on-your-samsung-tv-youre-not-alone-but-there-may-be-a-fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767608516576-438",
+    "title": "Enable HDMI 2.1 Features on Your TV",
+    "problemDescription": "Your TV is not utilizing HDMI 2.1 features like 4K 120Hz support.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "TV",
+      "HDMI",
+      "4K",
+      "120Hz",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Access HDMI Control Settings",
+        "content": "Go to your TV's Settings menu and look for 'HDMI Control'."
+      },
+      {
+        "title": "Select Enhanced Mode",
+        "content": "Click on 'HDMI Control' and set it to 'Enhanced' to activate HDMI 2.1 features, including 4K 120Hz support."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update TV Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Navigate to System Settings",
+            "content": "Go to your TV’s System Settings."
+          },
+          {
+            "title": "Check for Updates",
+            "content": "Look for the 'Check for Update' or 'Software Update' option and follow the prompts to update your TV's software."
+          }
+        ]
+      },
+      {
+        "title": "Adjust Motion Smoothing",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Motion Smoothing Settings",
+            "content": "Navigate to your TV’s System Settings and find the motion smoothing settings."
+          },
+          {
+            "title": "Disable or Adjust Motion Smoothing",
+            "content": "Change or disable motion smoothing according to your preference."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T10:21:56.576Z",
+      "updated": "2026-01-05T10:21:56.576Z",
+      "sourceUrl": "https://www.techradar.com/televisions/got-a-new-tv-here-are-6-mistakes-people-make-when-setting-up-their-tv-and-how-you-can-avoid-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767608523879-592",
+    "title": "Optimize LG OLED TV Settings",
+    "problemDescription": "Your LG OLED TV may not be set up for the best viewing experience out of the box.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "LG OLED TV",
+      "settings",
+      "viewing experience"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Picture Settings",
+        "content": "Navigate to the picture settings menu and experiment with different presets to find the one that suits your viewing environment and preferences."
+      },
+      {
+        "title": "Turn Off Motion Processing",
+        "content": "Disable motion processing to reduce judder and maintain a more natural look."
+      },
+      {
+        "title": "Customize TruMotion Settings",
+        "content": "If judder is still an issue, select 'Custom' in the TruMotion menu and set 'Blur' and 'judder reduction' to a setting of three or four each."
+      },
+      {
+        "title": "Disable Eco Mode",
+        "content": "Turn off eco mode settings to ensure your TV is not dimming the screen or adjusting other settings to save power, which can affect picture quality."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Professional Calibration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Hire a Professional",
+            "content": "Consider hiring a professional calibrator to fine-tune your TV settings for the best possible picture quality."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T10:22:03.879Z",
+      "updated": "2026-01-05T10:22:03.879Z",
+      "sourceUrl": "https://www.techradar.com/features/5-mistakes-everyone-makes-with-lg-oled-tvs-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767608531311-30",
+    "title": "Mac Not Accepting Password",
+    "problemDescription": "MacBook Pro refuses to accept the password even after multiple resets.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "password",
+      "login",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Reset NVRAM",
+        "content": "Reset the NVRAM by shutting down the Mac, then turning it on and immediately pressing and holding Command+Option+P+R for about 20 seconds. Release the keys and allow the Mac to boot normally."
+      },
+      {
+        "title": "Create a New Admin Account",
+        "content": "Back up all important data. Then, restart the Mac in Recovery Mode by holding Command+R during startup. Open Terminal from the Utilities menu and create a new admin account using the command: 'csrutil disable' followed by 'reboot'. After rebooting, create a new admin account through System Preferences."
+      },
+      {
+        "title": "Test the New Account",
+        "content": "Log into the new admin account to verify that the issue is resolved. If successful, migrate your data from the backup to the new account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Keyboard Layout",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Keyboard Layout",
+            "content": "Ensure that the keyboard layout is correct when entering the password. Sometimes, a mismatch in the keyboard layout can cause the password to be rejected."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T10:22:11.311Z",
+      "updated": "2026-01-05T10:22:11.311Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/394229/mac-not-accepting-password-even-with-password-resets",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767608539817-95",
+    "title": "Fix Keychain Password Entry Issue",
+    "problemDescription": "Unable to enter password to reset keychain on macOS Yosemite.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "keychain",
+      "password",
+      "reset",
+      "macOS",
+      "Yosemite"
+    ],
+    "steps": [
+      {
+        "title": "Disable Guest User Account",
+        "content": "Go to System Preferences > Users & Groups. Unlock the settings by clicking the lock icon and entering your administrator password. Select the Guest User account and click the '-' button to disable it."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "Download the El Capitan installer to a thumb drive and install it on your MacBook Pro. This will reinstall the operating system and may resolve keychain issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Follow Article Steps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Follow Article Instructions",
+            "content": "Follow the steps outlined in the article linked by 200_success to resolve the keychain password entry issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T10:22:19.817Z",
+      "updated": "2026-01-05T10:22:19.817Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/199024/cannot-enter-password-to-reset-keychain",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767608544584-643",
+    "title": "Reset OS X Snow Leopard Password Without Recovery Mode",
+    "problemDescription": "OS X Snow Leopard won't boot into Recovery mode, need to reset admin password.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "os x",
+      "snow leopard",
+      "password reset",
+      "recovery mode"
+    ],
+    "steps": [
+      {
+        "title": "Boot into Single User Mode",
+        "content": "Restart your Mac and hold down Command (⌘) + S during startup to boot into Single User Mode."
+      },
+      {
+        "title": "Mount the File System",
+        "content": "Once in Single User Mode, type 'mount -uw /' to mount the file system as writable."
+      },
+      {
+        "title": "Reset the Password",
+        "content": "Type 'passwd username' (replace 'username' with the actual username) and enter a new password twice when prompted."
+      },
+      {
+        "title": "Reboot the System",
+        "content": "Type 'reboot' to restart your Mac."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use a Bootable Installer or New Drive",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Prepare a Bootable Installer",
+            "content": "Create a bootable installer on a new drive or use an existing one."
+          },
+          {
+            "title": "Boot from the Installer",
+            "content": "Insert the bootable installer into your Mac and hold down the Option key during startup to select it."
+          },
+          {
+            "title": "Reset the Password",
+            "content": "Use the installer's utilities to reset the admin password."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T10:22:24.584Z",
+      "updated": "2026-01-05T10:22:24.584Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/363738/os-x-snow-leopard-wont-boot-into-recovery-mode-need-to-reset-admin-password",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
