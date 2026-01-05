@@ -30232,5 +30232,635 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767597894809-337",
+    "title": "Fix Chrome Browser Rendering Issue",
+    "problemDescription": "Chrome browser is not rendering web pages correctly.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "browser",
+      "rendering",
+      "issue"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your internet connection is stable and working properly."
+      },
+      {
+        "title": "Restart Chrome",
+        "content": "Close and reopen Chrome to ensure it properly closes and restarts."
+      },
+      {
+        "title": "Disable Extensions",
+        "content": "Go to Chrome settings, navigate to Extensions, and disable all extensions to see if any are causing the issue."
+      },
+      {
+        "title": "Scan for Malware",
+        "content": "Use Chrome's built-in malware scanner to check for any malicious software affecting the browser."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Chrome Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Settings",
+            "content": "Go to Chrome settings, navigate to Advanced, and click on 'Restore settings to their original defaults'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T07:24:54.809Z",
+      "updated": "2026-01-05T07:24:54.809Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-this-Chrome-browser-rendering-issue",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767597896657-709",
+    "title": "Fix Chrome and Google Not Working",
+    "problemDescription": "Chrome browser and Google services are not working properly.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "google",
+      "browser",
+      "not working"
+    ],
+    "steps": [
+      {
+        "title": "Clear Browser Cache",
+        "content": "Go to Chrome settings, navigate to 'Privacy and security', select 'Clear browsing data', choose 'All time' as the time range, check 'Cached images and files', and click 'Clear data'."
+      },
+      {
+        "title": "Restart Chrome",
+        "content": "Close all Chrome windows and reopen the browser."
+      },
+      {
+        "title": "Close Unnecessary Tabs",
+        "content": "Close any tabs that are not in use to free up system resources."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Chrome Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Chrome Settings",
+            "content": "Go to Chrome settings, scroll down to 'Advanced', then scroll to the bottom and click 'Restore settings to their original defaults'."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Malware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Scan for Malware",
+            "content": "Use a reputable antivirus software to scan your computer for malware that might be affecting Chrome."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T07:24:56.657Z",
+      "updated": "2026-01-05T07:24:56.657Z",
+      "sourceUrl": "https://www.quora.com/My-Chrome-and-Google-are-not-working-What-should-I-do-now",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767597910203-356",
+    "title": "Outlook IMAP Setup on Pixel 8 Pro",
+    "problemDescription": "Cannot set up IMAP email address in Outlook on a new Pixel 8 Pro.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "imap",
+      "pixel 8 pro",
+      "email setup"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your Pixel 8 Pro is connected to a stable internet connection. Try switching between Wi-Fi and mobile data to see if the issue persists."
+      },
+      {
+        "title": "Test on Different Device",
+        "content": "If possible, test the same email setup on a different device to determine if the issue is specific to the Pixel 8 Pro."
+      },
+      {
+        "title": "Verify Email Settings",
+        "content": "Double-check the IMAP settings provided by your web hosting service. Ensure the incoming and outgoing server addresses, ports, and SSL settings are correct."
+      },
+      {
+        "title": "Update Outlook App",
+        "content": "Make sure you are using the latest version of the Outlook app. Update the app from the Google Play Store if necessary."
+      },
+      {
+        "title": "Clear App Cache",
+        "content": "Go to Settings > Apps > Outlook > Storage > Clear Cache. This can resolve issues caused by corrupted cache data."
+      },
+      {
+        "title": "Reinstall Outlook App",
+        "content": "Uninstall and reinstall the Outlook app to ensure a clean installation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Microsoft Support",
+            "content": "If the issue persists, contact Microsoft Support for further assistance. Provide them with detailed information about the problem and the steps you have already taken."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T07:25:10.203Z",
+      "updated": "2026-01-05T07:25:10.203Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum/all/cannot-get-imap-email-address-set-up-in-outlook-on/dbdd81e6-eefb-40e2-8d91-9f60ec5ed661",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767597912764-418",
+    "title": "Adjust Monitor Brightness Without Buttons",
+    "problemDescription": "Unable to adjust the brightness of an external monitor without physical buttons.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "monitor",
+      "brightness",
+      "adjust",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Use Monitor Software",
+        "content": "Download and install the manufacturer's control software for your monitor. This software often allows you to adjust brightness and other settings."
+      },
+      {
+        "title": "Check Display Settings",
+        "content": "Go to Settings > System > Display > Brightness & color. Ensure that the brightness slider is not grayed out or locked."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Third-Party Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Third-Party Software",
+            "content": "Download a third-party monitor control software like Monitorian or f.lux, which can help adjust brightness settings."
+          },
+          {
+            "title": "Install and Configure",
+            "content": "Install the software and configure it to control your monitor's brightness."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T07:25:12.764Z",
+      "updated": "2026-01-05T07:25:12.764Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/office_2010-excel/excel-2010-view-side-by-side-left-to-right-not-top/5198bb4d-8454-e011-8dfc-68b599b31bf5?msgId=eae88dbb-8754-e011-8dfc-68b599b31bf5&tab=MoreHelp&page=1",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767597916853-519",
+    "title": "Search Emails by Date Range in Outlook 2010",
+    "problemDescription": "How to search for emails within a specific date range in Outlook 2010.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Outlook",
+      "search",
+      "date range",
+      "emails"
+    ],
+    "steps": [
+      {
+        "title": "Open the Search Folder",
+        "content": "Click on the 'Folder' tab in the Outlook ribbon and select 'New Search Folder'."
+      },
+      {
+        "title": "Select Date Range",
+        "content": "In the 'Custom Search Folder' dialog box, select 'Create a custom Search Folder' and click 'Choose'."
+      },
+      {
+        "title": "Define Criteria",
+        "content": "In the 'Search Folder' criteria, select 'Only items received in the last' and choose the desired date range."
+      },
+      {
+        "title": "Name and Create",
+        "content": "Give your search folder a name and click 'OK' to create it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Advanced Find",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Advanced Find",
+            "content": "Press 'Ctrl + Shift + F' to open the Advanced Find dialog box."
+          },
+          {
+            "title": "Set Date Range",
+            "content": "In the 'Advanced Find' dialog box, go to the 'More Choices' tab and set the date range under 'Received in or after' and 'Received in or before'."
+          },
+          {
+            "title": "Search",
+            "content": "Click 'Find Now' to display the emails within the specified date range."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T07:25:16.853Z",
+      "updated": "2026-01-05T07:25:16.853Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/office_2010-outlook/date-range-search-in-outlook-2010-for-a-specific/c0b2140b-085a-e011-8dfc-68b599b31bf5?msgId=08b4c88a-125a-e011-8dfc-68b599b31bf5&page=2",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767597923335-267",
+    "title": "Fix Google Account Lockout Due to Two-Factor Authentication",
+    "problemDescription": "You're locked out of your Google account because two-factor authentication (2FA) is blocking access.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "google",
+      "two-factor",
+      "account",
+      "lockout",
+      "app-specific password"
+    ],
+    "steps": [
+      {
+        "title": "Access Google My Account",
+        "content": "Go to the Google My Account site and sign in using your password and two-factor authentication."
+      },
+      {
+        "title": "Navigate to Security Settings",
+        "content": "From the left sidebar, select 'Security.' In the 'How You Sign In to Google' section, click '2-Step Verification.'"
+      },
+      {
+        "title": "Create an App-Specific Password",
+        "content": "On the 2-Step Verification screen, click the right-arrow icon next to 'App Passwords.' On the App Passwords page, click the 'App Name' field and type the name of the app you want to create a password for. Click 'Create.'"
+      },
+      {
+        "title": "Generate and Use the App-Specific Password",
+        "content": "A Generated App Password window will open. Copy the generated password and paste it directly into your app or save it temporarily. Close the window by clicking 'Done.'"
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-05T07:25:23.335Z",
+      "updated": "2026-01-05T07:25:23.335Z",
+      "sourceUrl": "https://www.howtogeek.com/locked-out-by-two-factor-heres-how-i-fixed-it-with-app-specific-passwords/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767597925895-381",
+    "title": "Recover Google Account with 2FA Backup Codes",
+    "problemDescription": "You can't access your Google account due to not having your 2FA device.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "2FA",
+      "backup codes",
+      "Google account",
+      "recovery"
+    ],
+    "steps": [
+      {
+        "title": "Access the 'Having Trouble' Link",
+        "content": "When prompted for your 2FA code, click the 'Having Trouble' link."
+      },
+      {
+        "title": "Select Backup Code Option",
+        "content": "Choose the 'Enter One of Your 8-Digit Backup Codes' option."
+      },
+      {
+        "title": "Enter Backup Code",
+        "content": "Enter one of your backup codes to log in."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Generate New Backup Codes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Sign in to Your Google Account",
+            "content": "Go to your Google Account settings."
+          },
+          {
+            "title": "Navigate to 2-Step Verification",
+            "content": "Under 'Sign in & Security', choose 'Signing in to Google' and then '2-Step Verification'."
+          },
+          {
+            "title": "Access Backup Codes",
+            "content": "Scroll to the 'Backup Codes' section and click 'Show Codes'."
+          },
+          {
+            "title": "Download or Print Codes",
+            "content": "Download and/or print the backup codes and keep them in a safe place."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T07:25:25.895Z",
+      "updated": "2026-01-05T07:25:25.895Z",
+      "sourceUrl": "https://www.howtogeek.com/358723/psa-make-sure-you-have-a-backup-for-two-factor-authentication/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767597929600-299",
+    "title": "Recover 2FA/MFA Access with QR Code Backup",
+    "problemDescription": "Lost access to 2FA/MFA codes due to a broken or lost device.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "2FA",
+      "MFA",
+      "Google Authenticator",
+      "QR code",
+      "backup"
+    ],
+    "steps": [
+      {
+        "title": "Print the QR Code",
+        "content": "Before setting up 2FA, print the QR code provided by the website. You can either print the entire page or copy and paste the QR image into an image editing tool and print it."
+      },
+      {
+        "title": "Store the Printed QR Code",
+        "content": "Keep the printed QR code in a safe and secure location."
+      },
+      {
+        "title": "Reinstall Google Authenticator",
+        "content": "If you lose access to your 2FA codes, reinstall Google Authenticator on your new device."
+      },
+      {
+        "title": "Rescan the QR Code",
+        "content": "Use the camera on your new device to rescan the printed QR code in Google Authenticator. This will restore your 2FA codes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use a Password Manager with 2FA Backup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Choose a Password Manager",
+            "content": "Select a password manager that supports 2FA backup, such as Bitwarden or 1Password."
+          },
+          {
+            "title": "Store 2FA Codes",
+            "content": "Use the password manager to store your 2FA codes securely."
+          },
+          {
+            "title": "Restore Codes",
+            "content": "If you lose access to your 2FA codes, use the password manager to restore them on your new device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T07:25:29.600Z",
+      "updated": "2026-01-05T07:25:29.600Z",
+      "sourceUrl": "https://www.howtogeek.com/devops/the-trick-to-almost-never-loosing-2fa-mfa-access/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767597948324-831",
+    "title": "Speed Up a Slow iPhone",
+    "problemDescription": "Your iPhone is running slower than usual and experiencing lag.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "slow",
+      "speed up",
+      "lag"
+    ],
+    "steps": [
+      {
+        "title": "Clear 'Other' Storage",
+        "content": "Go to Settings > General > iPhone Storage. Review the 'Other' storage category and delete unnecessary files or apps to free up space."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update iOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > General > Software Update. If an update is available, download and install it."
+          }
+        ]
+      },
+      {
+        "title": "Restart Your iPhone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart",
+            "content": "Press and hold the power button, then slide to power off. Wait a few seconds, then press the power button again to turn it back on."
+          }
+        ]
+      },
+      {
+        "title": "Reset All Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Settings",
+            "content": "Go to Settings > General > Reset > Reset All Settings. This will reset all settings to default without deleting your data."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T07:25:48.324Z",
+      "updated": "2026-01-05T07:25:48.324Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/dont-live-with-a-slow-iphone-heres-how-to-speed-it-up-and-get-rid-of-lag/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767597956239-765",
+    "title": "Fix iPhone 16 Pro WiFi Connection Issues",
+    "problemDescription": "iPhone 16 Pro experiencing WiFi connectivity problems, such as dropping connections or failing to open web pages.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "wifi",
+      "connection",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Reconnect to WiFi",
+        "content": "Go to Settings > Wi-Fi, tap the (i) icon next to your WiFi network, and select 'Forget This Network'. Then reconnect by entering your WiFi password."
+      },
+      {
+        "title": "Update iOS",
+        "content": "Ensure your iPhone is running the latest iOS version by going to Settings > General > Software Update."
+      },
+      {
+        "title": "Adjust Router Security Settings",
+        "content": "Log into your Unifi router and set the security mode to WPA2/WPA3 Mixed Mode."
+      },
+      {
+        "title": "Disable Private Wi-Fi Address",
+        "content": "In WiFi settings, tap the (i) icon next to your WiFi network and turn off 'Private Wi-Fi Address'."
+      },
+      {
+        "title": "Switch WiFi Bands",
+        "content": "Try switching between the 2.4 GHz and 5 GHz bands in your WiFi settings to see which one works better."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Connect as Hidden Network",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect as Hidden Network",
+            "content": "In WiFi settings, tap 'Other' and manually enter your WiFi name and password as if it were a hidden network."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T07:25:56.239Z",
+      "updated": "2026-01-05T07:25:56.239Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255770387",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767597962999-868",
+    "title": "Fix iPhone 15 Wi-Fi and Data Connection Issues",
+    "problemDescription": "iPhone 15 series devices may experience Wi-Fi and data connection issues due to compatibility problems with older modems or routers.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone 15",
+      "wifi",
+      "data connection",
+      "modem",
+      "router"
+    ],
+    "steps": [
+      {
+        "title": "Update Your Modem or Router",
+        "content": "Contact your ISP and inquire about updating your modem or router to a newer model that supports WPA3 encryption, as the iPhone 15 series uses WPA3 while older modems may only support WPA2."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Temporary Fixes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings. Note that this is likely only a temporary solution."
+          },
+          {
+            "title": "Restart Your Modem",
+            "content": "Unplug your modem, wait for about 30 seconds, and then plug it back in. This can sometimes resolve connectivity issues temporarily."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T07:26:02.999Z",
+      "updated": "2026-01-05T07:26:02.999Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255269078",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767597965796-329",
+    "title": "Fix iOS 17.2 Wi-Fi Connectivity Issues",
+    "problemDescription": "Wi-Fi connectivity issues and slow speeds on iOS 17.2.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "ios",
+      "connectivity",
+      "slow speed"
+    ],
+    "steps": [
+      {
+        "title": "Disable Limit IP Address Tracking",
+        "content": "Go to Settings > Wi-Fi > Select your network > Toggle off 'Limit IP Address Tracking'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Private Wi-Fi Address",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Private Wi-Fi Address",
+            "content": "Go to Settings > Wi-Fi > Select your network > Tap the 'i' icon > Toggle off 'Private Wi-Fi Address'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T07:26:05.796Z",
+      "updated": "2026-01-05T07:26:05.796Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255342871",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
