@@ -34365,5 +34365,788 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767620341036-140",
+    "title": "Identify Problematic Android App",
+    "problemDescription": "Determine which Android app is causing issues on your device.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "app",
+      "problem",
+      "memory"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall Unnecessary Apps",
+        "content": "Remove all unnecessary apps from your device to free up memory."
+      },
+      {
+        "title": "Clear App Cache",
+        "content": "Clear the cache of the problematic app to resolve performance issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart in Safe Mode",
+            "content": "Restart your device in Safe Mode to identify if a third-party app is causing the problem."
+          },
+          {
+            "title": "Uninstall Suspicious Apps",
+            "content": "Uninstall any suspicious or recently installed apps while in Safe Mode."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T13:39:01.037Z",
+      "updated": "2026-01-05T13:39:01.037Z",
+      "sourceUrl": "https://www.quora.com/How-do-you-know-which-Android-app-is-causing-problems-in-your-phone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767620346550-96",
+    "title": "Fix Android Stuck in Recovery Mode",
+    "problemDescription": "Android phone is stuck in recovery mode and won't boot normally.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "recovery mode",
+      "stuck",
+      "boot"
+    ],
+    "steps": [
+      {
+        "title": "Clean the Buttons",
+        "content": "Shut down the phone, then blow canned air on the power and volume buttons to clean them."
+      },
+      {
+        "title": "Force Restart",
+        "content": "Hold the volume up and power button simultaneously for a few seconds to force restart the phone."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "If the issue persists, perform a full factory reset to clear any corrupted data."
+      },
+      {
+        "title": "Reflash Stock ROM",
+        "content": "If the phone is still stuck, reflash the stock ROM without wiping the phone to restore the operating system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Fix Volume Down Button",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Repair or Replace Button",
+            "content": "If the volume down button is stuck, repair or replace it to prevent the phone from entering recovery mode."
+          }
+        ]
+      },
+      {
+        "title": "Take to a Professional",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit a Repair Shop",
+            "content": "If you are unable to fix the issue yourself, take the phone to a professional repair shop."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T13:39:06.550Z",
+      "updated": "2026-01-05T13:39:06.550Z",
+      "sourceUrl": "https://www.quora.com/My-Android-phone-is-stuck-in-recovery-mode-How-do-I-fix-it-Even-if-I-reboot-it-it-still-opens-recovery-mode-my-volume-down-button-is-broken",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767620350028-298",
+    "title": "Fix Google Play Store Errors on Android",
+    "problemDescription": "Errors occurring in the Google Play Store on an Android device.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "google play store",
+      "app error",
+      "cache"
+    ],
+    "steps": [
+      {
+        "title": "Clear Google Play Store Cache and Data",
+        "content": "Go to Settings > Apps > Google Play Store > Clear cache and Clear data. Reboot your phone."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Remove and Re-add Email Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Existing Email Account",
+            "content": "Go to Settings > Accounts and remove your existing email account."
+          },
+          {
+            "title": "Add New Email Account",
+            "content": "Add a new email account under 'Accounts' in the settings page."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup all data on your phone memory."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T13:39:10.028Z",
+      "updated": "2026-01-05T13:39:10.028Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-this-problem-with-my-Android-phone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767620359925-516",
+    "title": "Fix Common Android Issues",
+    "problemDescription": "Troubleshoot and resolve common problems on an Android device.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "troubleshooting",
+      "restart",
+      "software update",
+      "factory reset"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Device",
+        "content": "Hold the power button and select 'Restart' to reboot your Android device."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Go to 'Settings' > 'System' > 'System Update' and install any available updates."
+      },
+      {
+        "title": "Reset to Factory Settings",
+        "content": "Go to 'Settings' > 'System' > 'Reset options' > 'Erase all data (factory reset)'. Note: This will erase all data on your device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Consult a Professional for Hardware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Hardware Issue",
+            "content": "Determine if the issue is hardware-related, such as a broken screen."
+          },
+          {
+            "title": "Contact Manufacturer or Technician",
+            "content": "Consult a professional technician or the device manufacturer for repair options."
+          }
+        ]
+      },
+      {
+        "title": "Report Bugs to Manufacturer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Document the Bug",
+            "content": "Describe the bug, including symptoms, conditions, and expected behavior."
+          },
+          {
+            "title": "Report the Bug",
+            "content": "Submit the bug report to the device manufacturer or relevant online forums."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T13:39:19.925Z",
+      "updated": "2026-01-05T13:39:19.925Z",
+      "sourceUrl": "https://www.quora.com/How-do-you-fix-an-Android",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767620398111-84",
+    "title": "Fix Outlook Crashes on Media Preview",
+    "problemDescription": "Outlook crashes when previewing media files (.wav).",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "crash",
+      "media preview",
+      "wav"
+    ],
+    "steps": [
+      {
+        "title": "Repair Office Installation",
+        "content": "Go to Control Panel > Programs > Programs and Features. Select Microsoft Office, click 'Change', and choose 'Repair'. Follow the on-screen instructions to complete the repair process."
+      },
+      {
+        "title": "Disable Add-ins",
+        "content": "Open Outlook in Safe Mode by holding the Ctrl key while launching Outlook. If Outlook works fine in Safe Mode, disable add-ins one by one to identify the problematic one. Go to File > Options > Add-ins, select COM Add-ins, and click 'Go'. Uncheck add-ins and restart Outlook."
+      },
+      {
+        "title": "Update Windows Media Player",
+        "content": "Ensure Windows Media Player is up to date. Go to Control Panel > Programs > Windows Features and ensure Windows Media Player is checked. Restart your computer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Windows Media Player",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Windows Media Player",
+            "content": "Go to Control Panel > Programs > Turn Windows features on or off. Uncheck Windows Media Player and restart your computer."
+          },
+          {
+            "title": "Reinstall Windows Media Player",
+            "content": "Follow the same steps to reinstall Windows Media Player by checking the box and restarting your computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T13:39:58.111Z",
+      "updated": "2026-01-05T13:39:58.111Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/msoffice_install-mso_other/outlook-crashes-whenever-i-preview-a-media-file/38991dc5-d317-499b-9a33-4d8e6a4bfdc0",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767620401486-783",
+    "title": "Fix Outlook Running Slow",
+    "problemDescription": "Outlook is running slow with an hourglass cursor constantly spinning.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "slow",
+      "hourglass",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Move Stuck Mails",
+        "content": "If you have mails stuck in the outbox, move them to a different folder (e.g., Drafts). If you are unable to move the mails, click on File and then click on Work Offline. Then try to move the mails stuck in the Outbox. Ensure no mails are left in the Outbox."
+      },
+      {
+        "title": "Restart in Safe Mode with Networking",
+        "content": "Restart your computer in Safe Mode with Networking. To do this, click on the Start menu, hold the Shift key, and click on Restart. Then, go to Troubleshoot > Advanced options > Startup Settings > Restart. After your PC restarts, press F5 to select Safe Mode with Networking."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Antivirus Interference",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Antivirus Temporarily",
+            "content": "If Outlook works fine in Safe Mode, the issue might be with your antivirus software. Try disabling your antivirus temporarily to see if it resolves the problem."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T13:40:01.486Z",
+      "updated": "2026-01-05T13:40:01.486Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/msoffice_install-mso_other-mso_archive/outlook-runs-slow-hour-glass-spins-extremely-slow/2a68c98d-708d-4199-94cf-5acc33ab0a7b",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767620405536-527",
+    "title": "Fix Office Update: Cannot Close Program",
+    "problemDescription": "Office update fails due to an open Office program or corrupted installation files.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "office",
+      "update",
+      "windows",
+      "corruption"
+    ],
+    "steps": [
+      {
+        "title": "End Office Processes",
+        "content": "Open Task Manager (Ctrl+Shift+Esc), go to the 'Details' tab, and end any Office application processes (e.g., Winword.exe, excel.exe, powerpoint.exe, onenote.exe)."
+      },
+      {
+        "title": "Restart in Clean Boot",
+        "content": "Restart your computer in Clean Boot mode to prevent background applications from interfering with the update. Refer to the Microsoft article on how to restart in Clean Boot."
+      },
+      {
+        "title": "Repair Office Installation",
+        "content": "Perform a Quick Repair or Online Repair of the Office 2013 suite. Follow the instructions in the Microsoft article on repairing Office 2013."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Office",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Office",
+            "content": "Go to Control Panel > Programs > Programs and Features, select Microsoft Office 2013, and click Uninstall."
+          },
+          {
+            "title": "Reinstall Office",
+            "content": "Download the Office 2013 installation file from the Microsoft website and follow the installation instructions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T13:40:05.536Z",
+      "updated": "2026-01-05T13:40:05.536Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/msoffice_install-mso_windows8/office-update-cannot-close-program-system/6ceb23ee-342d-4f7b-a326-b771548972c8",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767620409630-367",
+    "title": "Fix Outlook 2016 Group Member Addition Error",
+    "problemDescription": "Cannot add users to a group in Outlook 2016, works only in OWA.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "group",
+      "error",
+      "OWA"
+    ],
+    "steps": [
+      {
+        "title": "Verify Group Creation Method",
+        "content": "Ensure the group was created in Outlook using the method described in the article 'Create a group in Outlook'."
+      },
+      {
+        "title": "Check Member Addition Steps",
+        "content": "Follow the steps outlined in 'Add and remove group members in Outlook' to add members."
+      },
+      {
+        "title": "Gather Screenshots",
+        "content": "Take screenshots of the error when adding a group member in Outlook 2016 and when adding the same member in OWA."
+      },
+      {
+        "title": "Contact Support",
+        "content": "Provide the screenshots and details to Microsoft Support for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use OWA for Group Management",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access OWA",
+            "content": "Log in to Outlook Web App (OWA)."
+          },
+          {
+            "title": "Add Group Members",
+            "content": "Add group members using OWA until the issue is resolved in Outlook 2016."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T13:40:09.630Z",
+      "updated": "2026-01-05T13:40:09.630Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/all/cannot-add-user-to-a-group-error-message-you-can/743861ec-62e3-4bbb-9a61-d36d1eaffa05",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767620417050-366",
+    "title": "Fix Gmail and Android Apps Crashing",
+    "problemDescription": "Gmail and other Android apps are crashing due to a bug in Android System WebView.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "gmail",
+      "crash",
+      "webview",
+      "chrome"
+    ],
+    "steps": [
+      {
+        "title": "Update Android System WebView and Google Chrome",
+        "content": "Go to Google Play Store, search for 'Android System WebView' and 'Google Chrome', then update both to the latest versions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Uninstall WebView Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall WebView Updates",
+            "content": "Go to Settings > Apps > tap the three dots in the top right corner > Show system apps > search for Android System WebView > select Uninstall updates."
+          },
+          {
+            "title": "Restart Your Phone",
+            "content": "After uninstalling the updates, restart your phone to apply the changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T13:40:17.051Z",
+      "updated": "2026-01-05T13:40:17.051Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/gmail-android-apps-crashing-phones-heres-googles-simple-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767620426537-942",
+    "title": "Fix Gmail Slowness by Using Older Interface",
+    "problemDescription": "Gmail is slow due to the new interface, and you want to switch back to the older version.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "slowness",
+      "browser",
+      "interface"
+    ],
+    "steps": [
+      {
+        "title": "Enable Safari Debug Menu",
+        "content": "Open Tinker Tool and enable the Safari Debug menu."
+      },
+      {
+        "title": "Change User Agent",
+        "content": "Launch Safari, go to the Debug menu, and select Debug > User Agent > Safari 2.0.4."
+      },
+      {
+        "title": "Log into Gmail",
+        "content": "Log into Gmail. The site will now think you're using an older browser and display the older interface."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Older Version Link",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Log into Gmail",
+            "content": "Log into your Gmail account."
+          },
+          {
+            "title": "Switch to Older Interface",
+            "content": "Click the 'Older Version' link at the upper right of the Gmail web page."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T13:40:26.537Z",
+      "updated": "2026-01-05T13:40:26.537Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/gmail-slowness-a-possible-solution/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767620432477-835",
+    "title": "Free Up Google Drive Space by Clearing Spam",
+    "problemDescription": "Your Google Drive is running out of space due to accumulated spam emails.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "google drive",
+      "gmail",
+      "spam",
+      "storage",
+      "cleanup"
+    ],
+    "steps": [
+      {
+        "title": "Access Spam Folder",
+        "content": "Open the Gmail app and log into your account. Tap the hamburger icon in the top-left corner of the screen next to Search in mail. Tap Spam."
+      },
+      {
+        "title": "Delete Spam Messages",
+        "content": "Tap Delete all spam messages now or Empty spam now. Confirm the action if prompted."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Delete Spam via Desktop",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Log into Gmail",
+            "content": "Log into your Gmail account on your desktop."
+          },
+          {
+            "title": "Access Spam Folder",
+            "content": "Click Spam on the left side of the screen. If you don't see Spam, click More and Spam should be in the expanded menu."
+          },
+          {
+            "title": "Delete Spam Messages",
+            "content": "In your Spam folder, click Delete all spam messages now. Click OK in the pop-up."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Download and Delete Emails",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Gmail on Desktop",
+            "content": "Open and log into your Gmail account on your desktop."
+          },
+          {
+            "title": "Download Emails",
+            "content": "Click on the email you want to download. Click the three stacked dots in the upper-right corner of your screen. Click Download. Your emails will download as a .eml file."
+          },
+          {
+            "title": "Delete Emails",
+            "content": "Once your emails are downloaded and moved onto your hard drive, feel free to delete them from your account and empty your trash bins."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T13:40:32.477Z",
+      "updated": "2026-01-05T13:40:32.477Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/free-up-more-google-drive-space-at-no-cost-with-these-hacks/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767620440022-262",
+    "title": "Free Up Gmail Storage by Archiving Emails",
+    "problemDescription": "You want to free up storage space in your Gmail account by archiving emails to a new account.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "storage",
+      "archive",
+      "inbox zero"
+    ],
+    "steps": [
+      {
+        "title": "Create a New Gmail Account",
+        "content": "Create a new Gmail account that will serve as your archive account."
+      },
+      {
+        "title": "Access Settings in Your Original Account",
+        "content": "Log in to your original Gmail account, click the gear icon at the top, and select 'See all settings'."
+      },
+      {
+        "title": "Add the New Account for Importing Emails",
+        "content": "Go to the 'Accounts and Import' tab, then select 'Add a mail account' next to 'Check mail from other accounts'."
+      },
+      {
+        "title": "Enter Original Account Details",
+        "content": "Enter the name of your original Gmail account and select 'Next'."
+      },
+      {
+        "title": "Import Emails from Original Account",
+        "content": "Select 'Import emails from my other account (POP3)' and click 'Next'."
+      },
+      {
+        "title": "Enter Password and Set Up Import",
+        "content": "Enter the password of your original Gmail account. You might need to create a Google app password. Select port 995, check the boxes for secure connection, labeling, and archiving incoming messages, then click 'Add Account'."
+      },
+      {
+        "title": "Delete the Original Account from Archive Settings",
+        "content": "Log in to your new archive account, go to 'Accounts and Import', and select 'delete' for your original account under 'Check mail from other accounts'. Confirm the deletion."
+      },
+      {
+        "title": "Remove Google App Password (Optional)",
+        "content": "If you created a Google app password, go back to the password settings and delete it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Alternative Method: Use Gmail Filters",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a Filter",
+            "content": "Go to your original Gmail account, click the search bar, and select 'Show search options'."
+          },
+          {
+            "title": "Set Filter Criteria",
+            "content": "Set the criteria for the emails you want to archive (e.g., older than a year)."
+          },
+          {
+            "title": "Apply the Filter",
+            "content": "Click 'Create filter' and select 'Skip the Inbox' and 'Apply the label'."
+          },
+          {
+            "title": "Archive Emails",
+            "content": "Apply the filter to existing emails and archive them."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T13:40:40.022Z",
+      "updated": "2026-01-05T13:40:40.022Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/gmail-inbox-zero-15gb-free-storage-space/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767620447553-285",
+    "title": "Fix Windows 10 Bluetooth Connectivity Issues",
+    "problemDescription": "Bluetooth devices that were previously connected are no longer working after a Windows 10 update.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "bluetooth",
+      "connectivity"
+    ],
+    "steps": [
+      {
+        "title": "Update Bluetooth Driver",
+        "content": "Open Device Manager, locate the Bluetooth driver, and update it to the latest version compatible with Windows 10. The system should automatically search and update the driver."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Re-pair Bluetooth Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Un-pair the Device",
+            "content": "Go to Bluetooth settings and un-pair (or forget) the problematic device."
+          },
+          {
+            "title": "Re-pair the Device",
+            "content": "Reconnect the device by re-pairing it with your Windows 10 machine."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T13:40:47.553Z",
+      "updated": "2026-01-05T13:40:47.553Z",
+      "sourceUrl": "https://www.techradar.com/how-to/100-common-windows-10-problems/5",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767620462251-150",
+    "title": "Reconnect Bluetooth Devices on Mac",
+    "problemDescription": "Bluetooth devices like keyboards or mice disconnect from your Mac and won't reconnect automatically.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "mac",
+      "reconnect",
+      "keyboard",
+      "mouse"
+    ],
+    "steps": [
+      {
+        "title": "Turn on the Device",
+        "content": "Switch on the disconnected Bluetooth device."
+      },
+      {
+        "title": "Reconnect Manually",
+        "content": "Select the device in the Bluetooth menu and reconnect it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Show Bluetooth in Menu Bar",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Bluetooth Menu",
+            "content": "Go to System Preferences > Bluetooth and tick 'Show Bluetooth in menu bar'."
+          },
+          {
+            "title": "Click the Icon",
+            "content": "Click the Bluetooth icon in the menu bar and turn on Bluetooth."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use iPhone as Hotspot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn on Hotspot",
+            "content": "Go to Settings > Personal Hotspot on your iPhone and turn it on."
+          },
+          {
+            "title": "Connect via Bluetooth",
+            "content": "Select your iPhone in your Mac's Bluetooth preferences pane, right-click, and choose 'Connect to Network'."
+          },
+          {
+            "title": "Alternative Connection",
+            "content": "If that doesn't work, go to System Preferences > Network > Bluetooth PAN, pick your iPhone from the Devices list, and click Connect."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T13:41:02.251Z",
+      "updated": "2026-01-05T13:41:02.251Z",
+      "sourceUrl": "https://www.techradar.com/how-to/computing/how-to-master-bluetooth-on-your-mac-1318586",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
