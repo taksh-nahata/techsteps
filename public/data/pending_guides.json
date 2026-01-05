@@ -33564,5 +33564,806 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767616604688-640",
+    "title": "Fix Slow PC",
+    "problemDescription": "Your PC is running slower than usual.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "slow",
+      "pc",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Disable Startup Programs",
+        "content": "Open Task Manager by pressing Ctrl+Shift+Esc, go to the 'Startup' tab, and disable programs that you don't need to start automatically."
+      },
+      {
+        "title": "Clean Dust from Hardware",
+        "content": "Use compressed air to blow dust out of your PC's vents and fans to improve cooling and performance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disk Cleanup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Disk Cleanup",
+            "content": "Search for 'Disk Cleanup' in the Start menu, select the drive you want to clean, and follow the prompts to remove temporary files and other unnecessary data."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T12:36:44.688Z",
+      "updated": "2026-01-05T12:36:44.688Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-a-slow-PC",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767616612532-835",
+    "title": "Fix Slow Computer Performance",
+    "problemDescription": "Your computer is running slower than usual.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "slow",
+      "computer",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Clean Out Caches",
+        "content": "Clear your browser and system caches to free up space and improve performance."
+      },
+      {
+        "title": "Defragment Your Hard Drive",
+        "content": "Use the built-in defragmentation tool to optimize your hard drive."
+      },
+      {
+        "title": "Optimize Your Hard Drive",
+        "content": "Use the built-in disk optimization tool to improve performance."
+      },
+      {
+        "title": "Remove Duplicate Files",
+        "content": "Use a duplicate file finder tool to identify and remove duplicate files."
+      },
+      {
+        "title": "Run an Antivirus Scan",
+        "content": "Use a reliable antivirus software to scan and remove any malware."
+      },
+      {
+        "title": "Remove Unnecessary Programs",
+        "content": "Uninstall programs you no longer use to free up system resources."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Upgrade Hardware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Add More RAM",
+            "content": "Increase your computer's memory to improve performance."
+          },
+          {
+            "title": "Upgrade to an SSD",
+            "content": "Replace your traditional hard drive with a solid-state drive for faster access times."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T12:36:52.532Z",
+      "updated": "2026-01-05T12:36:52.532Z",
+      "sourceUrl": "https://www.quora.com/How-can-I-troubleshoot-a-computer-that-is-running-slow",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767616617410-903",
+    "title": "Fix High CPU Temperatures",
+    "problemDescription": "Your PC is experiencing slow performance or crashing programs due to high CPU temperatures.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "pc",
+      "performance",
+      "cpu",
+      "temperature",
+      "crash"
+    ],
+    "steps": [
+      {
+        "title": "Download and Run Speccy",
+        "content": "Download and install Speccy from the official website. Run the program to check your CPU temperatures."
+      },
+      {
+        "title": "Check CPU Temperatures",
+        "content": "If the CPU temperatures are high (typically above 80°C), it indicates a potential issue."
+      },
+      {
+        "title": "Inspect CPU Fan",
+        "content": "Check if the CPU fan is functioning properly. If the fan is not spinning or making unusual noises, it may have failed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clean Dust from PC",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Power Off and Unplug",
+            "content": "Turn off your PC and unplug it from the power source."
+          },
+          {
+            "title": "Open the Case",
+            "content": "Open the PC case and use compressed air to clean dust from the CPU fan, heatsink, and other components."
+          },
+          {
+            "title": "Reassemble and Test",
+            "content": "Reassemble the PC, plug it back in, and power it on. Check the CPU temperatures again using Speccy."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T12:36:57.410Z",
+      "updated": "2026-01-05T12:36:57.410Z",
+      "sourceUrl": "https://www.quora.com/How-can-I-troubleshoot-common-PC-issues-such-as-slow-performance-or-crashing-programs",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767616639440-386",
+    "title": "Fix Outlook Email Sending on Hardwired Connection",
+    "problemDescription": "Outlook emails not sending when using a hardwired connection, but working fine on Wi-Fi.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "email",
+      "hardwired",
+      "connection",
+      "firewall"
+    ],
+    "steps": [
+      {
+        "title": "Disable Windows Firewall",
+        "content": "Go to Control Panel, then Network Connections. Right-click on Internet connections and disable the firewall."
+      },
+      {
+        "title": "Check Outlook Profile Settings",
+        "content": "Verify and correct Outlook Profile settings to ensure they are configured properly."
+      },
+      {
+        "title": "Remove Suspicious Emails",
+        "content": "Remove any emails from Outlook that you suspect might be causing issues."
+      },
+      {
+        "title": "Open Outlook in Safe Mode",
+        "content": "Launch Outlook in Safe Mode to resolve potential add-in or profile issues."
+      },
+      {
+        "title": "Use Inbox Repair Tool",
+        "content": "If the issue is caused by a corrupt or damaged file, use the Inbox Repair Tool to repair minor corruption issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Internet Connections",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Internet Connection",
+            "content": "Ensure that the internet connection is stable and working properly on the hardwired connection."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T12:37:19.440Z",
+      "updated": "2026-01-05T12:37:19.440Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/outlook-emails-not-sending-on-hardwired-connection.3546127/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767616645615-53",
+    "title": "Fix Unloaded Microsoft Outlook Add-ins",
+    "problemDescription": "Microsoft Outlook add-ins are unloaded despite correct registry settings.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "Outlook",
+      "add-ins",
+      "registry",
+      "Windows"
+    ],
+    "steps": [
+      {
+        "title": "Access User Registry Keys",
+        "content": "Open the Registry Editor by pressing Win + R, typing 'regedit', and hitting Enter."
+      },
+      {
+        "title": "Navigate to User Registry",
+        "content": "Go to HKEY_CURRENT_USER\\Software\\Microsoft\\Office\\<Outlook Version>\\Addins\\<Add-in Name>."
+      },
+      {
+        "title": "Modify Load Behavior",
+        "content": "Change the 'LoadBehavior' value to '3' to enable the add-in."
+      },
+      {
+        "title": "Restart Outlook",
+        "content": "Close and reopen Microsoft Outlook to apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Edit Local Machine Registry",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Local Machine Registry",
+            "content": "Open the Registry Editor and navigate to HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Office\\<Outlook Version>\\Addins\\<Add-in Name>."
+          },
+          {
+            "title": "Modify Load Behavior",
+            "content": "Change the 'LoadBehavior' value to '3' to enable the add-in."
+          },
+          {
+            "title": "Restart Outlook",
+            "content": "Close and reopen Microsoft Outlook to apply the changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T12:37:25.615Z",
+      "updated": "2026-01-05T12:37:25.615Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/unloaded-microsoft-outlook-add-ins-with-correct-registry.3575546/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767616650610-915",
+    "title": "Fix Outlook 2016 Disappearing Folders",
+    "problemDescription": "Folders in Outlook 2016 are disappearing, likely due to IMAP/POP mailbox issues.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "folders",
+      "disappearing",
+      "IMAP",
+      "POP"
+    ],
+    "steps": [
+      {
+        "title": "Check Mailbox Type",
+        "content": "Verify if you are using IMAP or POP for your email account. IMAP is generally more reliable for syncing folders."
+      },
+      {
+        "title": "Switch to IMAP",
+        "content": "If you are using POP, switch to IMAP. This can often resolve syncing issues and prevent folders from disappearing."
+      },
+      {
+        "title": "Update Outlook",
+        "content": "Ensure that Outlook 2016 is fully updated. Go to File > Office Account > Update Options > Update Now."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Recreate PST File",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a New PST File",
+            "content": "Create a new PST file in Outlook and manually move your emails and folders to the new file."
+          },
+          {
+            "title": "Set as Default",
+            "content": "Set the new PST file as the default data file in Outlook."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T12:37:30.610Z",
+      "updated": "2026-01-05T12:37:30.610Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/outlook-2016-disappearing-folders.3581078/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767616653628-653",
+    "title": "Outlook: Unrecognized Emails in Sent & Drafts",
+    "problemDescription": "Unrecognized emails appearing in Outlook's Sent and Drafts folders.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "sent",
+      "drafts",
+      "malware",
+      "virus"
+    ],
+    "steps": [
+      {
+        "title": "Check for Malware",
+        "content": "Run a full system scan using Malwarebytes. Repeat the scan until no threats are found."
+      },
+      {
+        "title": "Scan for Adware",
+        "content": "Use AdwCleaner to scan for and remove any adware that may be causing the issue."
+      },
+      {
+        "title": "Review Background Apps",
+        "content": "Check all running background applications and investigate any that are unrecognized or unexpected."
+      },
+      {
+        "title": "Check Email Timestamps",
+        "content": "Examine the dates and times of the suspicious emails and look for any logged events around those times."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Browser Extensions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Review Browser Extensions",
+            "content": "Check your browser extensions for any that might be accessing your Outlook account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T12:37:33.628Z",
+      "updated": "2026-01-05T12:37:33.628Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/outlook-items-in-sent-drafts-which-i-didnt-create-hack-or-virus.3888684/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767616670259-578",
+    "title": "Fix Gmail Storage Full Error When It's Not",
+    "problemDescription": "Gmail shows an 'Account storage is full' error even when storage usage is below the limit.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "storage",
+      "error",
+      "full"
+    ],
+    "steps": [
+      {
+        "title": "Check Storage Usage",
+        "content": "Go to Google One storage manager (one.google.com/storage) to verify your actual storage usage."
+      },
+      {
+        "title": "Empty Trash",
+        "content": "Empty the trash in Gmail, Google Drive, and Google Photos to free up space."
+      },
+      {
+        "title": "Wait for Synchronization",
+        "content": "Allow up to 24 hours for Google to synchronize and update storage usage."
+      },
+      {
+        "title": "Check for Hidden Data",
+        "content": "Review large emails, attachments, or hidden files in Google Drive that might be consuming space."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Google Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "If the issue persists, contact Google Support for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T12:37:50.259Z",
+      "updated": "2026-01-05T12:37:50.259Z",
+      "sourceUrl": "https://www.reddit.com/r/gsuitelegacymigration/comments/10mvhgz/gmail_says_account_storage_is_full_but_its_not/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767616674463-378",
+    "title": "Recover Locked Gmail Account",
+    "problemDescription": "Unable to access Gmail account due to lockout.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "account",
+      "lockout",
+      "recovery"
+    ],
+    "steps": [
+      {
+        "title": "Use Familiar Devices and Locations",
+        "content": "Attempt to recover your account from a device and browser that you have previously used to log into your Gmail account. This can help Google recognize your activity as legitimate."
+      },
+      {
+        "title": "Switch Browsers and Devices",
+        "content": "Try accessing your account from different browsers and devices that you have used in the past. This can sometimes trigger different recovery options."
+      },
+      {
+        "title": "Complete Waiting Period",
+        "content": "If your account has been locked for a specific period (e.g., 40 days), you may need to wait until the waiting period is over before attempting recovery again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Google Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Google Account Recovery Page",
+            "content": "Go to the Google Account Recovery page and follow the prompts to recover your account."
+          },
+          {
+            "title": "Provide Verification Information",
+            "content": "Enter as much verification information as possible, such as previous passwords, recovery email addresses, and phone numbers associated with the account."
+          },
+          {
+            "title": "Request Assistance",
+            "content": "If you are unable to recover your account through the automated process, look for an option to contact Google Support directly for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T12:37:54.463Z",
+      "updated": "2026-01-05T12:37:54.463Z",
+      "sourceUrl": "https://www.reddit.com/r/GMail/comments/lh8qiy/getting_locked_out_of_gmail_account_my_experience/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767616686052-613",
+    "title": "Fix Outlook Gmail Authentication Error",
+    "problemDescription": "Outlook fails to authenticate with Gmail accounts, showing 'Invalid credentials' error.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "gmail",
+      "authentication",
+      "error",
+      "credentials"
+    ],
+    "steps": [
+      {
+        "title": "Update Gmail Password in Outlook",
+        "content": "Go to Outlook settings, navigate to the Gmail account settings, and update the password to match the current Gmail password."
+      },
+      {
+        "title": "Reset Keychain Access",
+        "content": "Open 'Keychain Access' on your Mac, find the Gmail entries, and delete them. Restart Outlook and re-enter your Gmail credentials when prompted."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset SIM Card (If Using iPhone)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove and Reinsert SIM Card",
+            "content": "If you are experiencing issues with your iPhone, try removing the SIM card, waiting a few seconds, and then reinserting it. This has been known to resolve related email issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T12:38:06.052Z",
+      "updated": "2026-01-05T12:38:06.052Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlook-and-gmail-issues/147b74cf-1bd5-436a-b321-943bbd95c4ff",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767616703153-67",
+    "title": "Prevent Visio from Opening Unwanted Stencils",
+    "problemDescription": "Visio keeps opening annoying stencils even if they are not needed.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "visio",
+      "stencils",
+      "unwanted",
+      "opening"
+    ],
+    "steps": [
+      {
+        "title": "Close Unwanted Stencils",
+        "content": "Close any unwanted stencils that are currently open in Visio."
+      },
+      {
+        "title": "Reset Stencil Settings",
+        "content": "Go to File > Options > Advanced. Under the General section, click on the Reset All Stencil Settings button."
+      },
+      {
+        "title": "Disable Auto-Open Stencils",
+        "content": "Go to File > Options > Advanced. Under the General section, uncheck the box that says 'Automatically open stencils when opening a drawing.'"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manually Remove Stencils from Startup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Locate Startup Folder",
+            "content": "Go to File > Options > Advanced. Under the General section, click on the File Locations button. Find the Startup folder location."
+          },
+          {
+            "title": "Remove Unwanted Stencils",
+            "content": "Navigate to the Startup folder and remove any unwanted stencil files (.vss, .vst, .vssx, .vstx)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T12:38:23.153Z",
+      "updated": "2026-01-05T12:38:23.153Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/office_2007-visio/visio-keeps-opening-annoying-stencils-even-if-they/76984cbb-69a6-447b-af85-6c94e72813b6?msgId=a9c6e059-3d0c-4f30-beea-e884d77d9e09&tab=AllReplies&status=AllReplies",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767616712142-20",
+    "title": "Limit WhatsApp Broadcast Messages",
+    "problemDescription": "Users want to limit the number of messages sent in WhatsApp broadcast lists.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "WhatsApp",
+      "broadcast",
+      "messages",
+      "limit"
+    ],
+    "steps": [
+      {
+        "title": "Update WhatsApp",
+        "content": "Ensure you have the latest version of WhatsApp installed, as the feature is expected to arrive in a stable update soon."
+      },
+      {
+        "title": "Access Broadcast List Settings",
+        "content": "Open WhatsApp and go to the broadcast list where you want to set a message limit."
+      },
+      {
+        "title": "Set Message Limit",
+        "content": "In the broadcast list settings, set a monthly cap on the number of messages that can be sent. For example, set a 30-day limit to default to a 30-message limit."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Set WhatsApp as Default Messaging App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update iOS",
+            "content": "Make sure you’re updated to iOS 18.2 or newer."
+          },
+          {
+            "title": "Go to Settings",
+            "content": "Open the Settings app on your iPhone."
+          },
+          {
+            "title": "Set Default Apps",
+            "content": "Navigate to Apps then Default Apps. Select the Messaging and Calling menus to set WhatsApp as the default messaging app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T12:38:32.142Z",
+      "updated": "2026-01-05T12:38:32.142Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/in-too-many-whatsapp-groups-theres-a-fix-coming-for-that/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767616717262-922",
+    "title": "Link WhatsApp to Web",
+    "problemDescription": "How to connect your WhatsApp account to WhatsApp Web on a computer.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "WhatsApp",
+      "Web",
+      "Link",
+      "QR Code",
+      "Phone Number"
+    ],
+    "steps": [
+      {
+        "title": "Open WhatsApp Web",
+        "content": "Go to the WhatsApp Web website on your computer."
+      },
+      {
+        "title": "Enter Phone Number",
+        "content": "On the next screen, enter the phone number associated with your WhatsApp account and select Next."
+      },
+      {
+        "title": "Enter Verification Code",
+        "content": "You'll be shown an eight-digit code. Enter this code into WhatsApp on your phone."
+      },
+      {
+        "title": "Open WhatsApp on Your Phone",
+        "content": "Open WhatsApp on your smartphone."
+      },
+      {
+        "title": "Navigate to Linked Devices",
+        "content": "Select You > Linked devices on an iPhone or the three-dot menu and Linked devices on an Android phone."
+      },
+      {
+        "title": "Link a Device",
+        "content": "Select Link a device."
+      },
+      {
+        "title": "Link with Phone Number",
+        "content": "From the QR code screen, choose Link with phone number instead and enter the eight-digit code from WhatsApp Web when prompted."
+      },
+      {
+        "title": "Scan QR Code (Alternative Method)",
+        "content": "Hold your phone up to the QR code on your computer to pair it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Enable App Lock for Privacy",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Settings",
+            "content": "In WhatsApp Web, select Settings with the gear icon above your profile picture in the lower left corner."
+          },
+          {
+            "title": "Navigate to Privacy",
+            "content": "From the Settings menu, select Privacy, and then scroll down and select App lock (formerly Screen lock)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T12:38:37.262Z",
+      "updated": "2026-01-05T12:38:37.262Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/how-to-use-whatsapp-web/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767616720666-944",
+    "title": "Fix Google Pixel 9 Touchscreen Issues",
+    "problemDescription": "The touchscreen on your Google Pixel 9 is not responding correctly.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "touchscreen",
+      "Pixel 9",
+      "Android",
+      "hardware",
+      "software"
+    ],
+    "steps": [
+      {
+        "title": "Reboot Your Phone",
+        "content": "Restart your Google Pixel 9 to see if the touchscreen issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Wait for a Software Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > System > System update to check for any available updates."
+          },
+          {
+            "title": "Install Update",
+            "content": "If an update is available, install it and check if the issue is resolved."
+          }
+        ]
+      },
+      {
+        "title": "Contact Google Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "If the issue persists, contact Google support for further assistance, as it might be a hardware issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T12:38:40.666Z",
+      "updated": "2026-01-05T12:38:40.666Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/google-pixel-9-problems-common-issues-how-to-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767616723405-343",
+    "title": "Fix Media App Battery Optimization Issue on Android 12",
+    "problemDescription": "Media apps stop working or close unexpectedly due to battery optimization.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "battery",
+      "media app",
+      "optimization"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Click on the Settings app on your Android device."
+      },
+      {
+        "title": "Navigate to Apps",
+        "content": "Select Apps, then choose All apps."
+      },
+      {
+        "title": "Select Your Media App",
+        "content": "Find and select the media app that is experiencing issues."
+      },
+      {
+        "title": "Adjust Battery Settings",
+        "content": "Tap on Battery, then choose Unrestricted to disable battery optimization for the app."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-05T12:38:43.405Z",
+      "updated": "2026-01-05T12:38:43.405Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-android-12-problems-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
