@@ -33090,5 +33090,479 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767611758207-377",
+    "title": "Enable Android Default Print Service",
+    "problemDescription": "Unable to print files using Android's Default Print Service.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "print",
+      "default print service"
+    ],
+    "steps": [
+      {
+        "title": "Enable Printing Service",
+        "content": "Go to Settings -> Advanced -> Printing -> Select it, then enable."
+      },
+      {
+        "title": "Search for Printers",
+        "content": "The service will search for printers in your network based on the WiFi you're connected to."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check App Compatibility",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify App Support",
+            "content": "Ensure the app you are using supports printing functionality."
+          },
+          {
+            "title": "Try Different App",
+            "content": "If the current app doesn't support printing, try using a different app that does."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T11:15:58.207Z",
+      "updated": "2026-01-05T11:15:58.207Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/206323/how-to-print-files-using-the-androids-default-print-service",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767611761085-546",
+    "title": "Change Thermal Printer's Bluetooth Baud Rate",
+    "problemDescription": "Thermal printer prints intermittently with white rows when connected via Bluetooth, likely due to incorrect baud rate.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "thermal printer",
+      "bluetooth",
+      "baud rate",
+      "printing issues"
+    ],
+    "steps": [
+      {
+        "title": "Check Printer Manual",
+        "content": "Consult the printer's manual (XP-318B/XP-318BM) for instructions on changing the Bluetooth baud rate."
+      },
+      {
+        "title": "Use Printer Software",
+        "content": "If available, use the manufacturer's software to adjust the baud rate settings for the Bluetooth connection."
+      },
+      {
+        "title": "Contact Manufacturer Support",
+        "content": "Reach out to the printer's manufacturer support for specific guidance on changing the baud rate."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Third-Party Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Research Third-Party Tools",
+            "content": "Look for third-party software or tools that can modify the baud rate of Bluetooth connections."
+          },
+          {
+            "title": "Follow Tool Instructions",
+            "content": "Follow the instructions provided by the third-party tool to change the baud rate."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T11:16:01.085Z",
+      "updated": "2026-01-05T11:16:01.085Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/230779/how-to-change-a-thermal-printer-s-bluetooth-baud-rate",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767611765373-37",
+    "title": "Print Option Missing in Share Menu",
+    "problemDescription": "The print option is not appearing in the share menu on an Android device.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "print",
+      "share menu"
+    ],
+    "steps": [
+      {
+        "title": "Perform a Soft Reset",
+        "content": "Press and hold the power and volume-down buttons together for 12-15 seconds to perform a soft reset. This should make the print icon reappear in the Chrome menu."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Enable Print Spooler",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Print Spooler Settings",
+            "content": "Go to your device's app settings and check if the print spooler (Samsung system app) is disabled. If it is, enable it."
+          }
+        ]
+      },
+      {
+        "title": "Install HP Plugin",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install HP Plugin",
+            "content": "Install the HP Plugin from the Google Play Store. This should make the print option appear in the share menu."
+          },
+          {
+            "title": "Use the Print Option",
+            "content": "Click the print button, select your printer, and it should work."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T11:16:05.373Z",
+      "updated": "2026-01-05T11:16:05.373Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/167450/print-option-not-showing-up-in-share-menu",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767611769599-691",
+    "title": "Fix Android to Windows 7 Bluetooth Connection Issues",
+    "problemDescription": "Paired Android and Windows 7 devices fail to maintain a stable Bluetooth connection.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "connection",
+      "android",
+      "windows 7"
+    ],
+    "steps": [
+      {
+        "title": "Reset Bluetooth Settings on Android",
+        "content": "Go to Settings > Bluetooth on your Android device, and forget the Windows 7 device. Then, restart both the Android device and the Windows 7 PC."
+      },
+      {
+        "title": "Re-pair the Devices",
+        "content": "After restarting, re-pair the devices by making them discoverable and initiating the pairing process again from both devices."
+      },
+      {
+        "title": "Check Bluetooth Drivers on Windows 7",
+        "content": "Ensure that the Bluetooth drivers on your Windows 7 PC are up to date. You can do this by going to Device Manager and updating the drivers."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Bluetooth for Specific Actions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Initiate a Bluetooth Action",
+            "content": "Understand that Bluetooth connection is not constant. It is only active when you initiate an action like file transfer. Once the action is complete, the connection goes back to standby mode."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T11:16:09.599Z",
+      "updated": "2026-01-05T11:16:09.599Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/26448/connecting-android-devices-to-windows-7-via-bluetooth",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767611777570-193",
+    "title": "Print to CUPS on Another Computer in LAN",
+    "problemDescription": "Configure CUPS to accept print jobs from another computer on the same network.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "CUPS",
+      "printing",
+      "network",
+      "LAN",
+      "Android",
+      "Chromebook",
+      "iPhone"
+    ],
+    "steps": [
+      {
+        "title": "Edit CUPS Configuration File",
+        "content": "Open the CUPS configuration file located at `/etc/cups/cupsd.conf` in a text editor."
+      },
+      {
+        "title": "Allow Network Access",
+        "content": "Modify the `<Location />` section to allow access from your local network. For example, to allow access from the 192.168.0.0/24 subnet, add the following lines:\n```\n<Location />\nOrder allow,deny\nAllow localhost\nAllow 192.168.0.\n</Location>\n```"
+      },
+      {
+        "title": "Configure CUPS to Listen on the Correct Address",
+        "content": "Add a `Listen` directive to the `cupsd.conf` file to specify the hostname and port (631) that CUPS should listen on. For example:\n```\nListen <hostname>:631\n```"
+      },
+      {
+        "title": "Restart CUPS Service",
+        "content": "After making the changes, restart the CUPS service to apply the new configuration. On Debian-based systems, you can use the following command:\n```\nbash\nsudo systemctl restart cups\n```"
+      },
+      {
+        "title": "Configure Devices to Use CUPS",
+        "content": "On your Android, Chromebook, or iPhone, set up the printer to use the CUPS server. Ensure that the devices are on the same network and that the CUPS server is accessible."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use IPP Everywhere",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up CUPS for IPP Everywhere",
+            "content": "Configure CUPS to support IPP Everywhere. This should make the printer directly available on your Android, Chromebook, and possibly iPhone."
+          },
+          {
+            "title": "Ensure Compatibility",
+            "content": "Ensure that you have CUPS 1.5+ and Android 4.4+ or an IPP Everywhere-compatible printer."
+          },
+          {
+            "title": "Debugging",
+            "content": "If issues arise, refer to debugging tutorials specific to your setup."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T11:16:17.570Z",
+      "updated": "2026-01-05T11:16:17.570Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/43774/how-to-print-to-cups-running-on-another-computer-in-the-lan",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767611794078-564",
+    "title": "Fix Frequent Wi-Fi Disconnections on Android",
+    "problemDescription": "Wi-Fi keeps disconnecting and reconnecting frequently on Android devices.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "android",
+      "disconnecting",
+      "reconnecting"
+    ],
+    "steps": [
+      {
+        "title": "Forget Known Networks",
+        "content": "Go to Settings > Wi-Fi, tap and hold each known network, and select 'Remove' to forget them. This prevents your device from automatically connecting to these networks."
+      },
+      {
+        "title": "Check Router Settings",
+        "content": "Access your router's setup page, ensure the channel is set to 'Auto', and the security settings are set to 'WPA-PSK[TKIP] + WPA2-PSK[AES]'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reduce Interference",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Wi-Fi Channel",
+            "content": "Manually change the Wi-Fi channel on your router to a less crowded one to reduce interference from other networks."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T11:16:34.078Z",
+      "updated": "2026-01-05T11:16:34.078Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/82088/wifi-keeps-disconnecting-and-reconnecting-frequently",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767611811124-323",
+    "title": "Fix Stuck/Disabled Zooming on Trackpad",
+    "problemDescription": "Zooming (two-finger pinch) on the trackpad gets stuck or disabled unexpectedly.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "trackpad",
+      "zoom",
+      "macos",
+      "gestures"
+    ],
+    "steps": [
+      {
+        "title": "Toggle Zoom Settings",
+        "content": "Go to System Preferences > Trackpad > Scroll & Zoom. Uncheck 'Zoom in or out' and then check it again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Safe Mode Restart",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Step 1: Shut Down",
+            "content": "Fully shut down your MacBook."
+          },
+          {
+            "title": "Step 2: Restart in Safe Mode",
+            "content": "Restart your MacBook and immediately press and hold the `Shift` key. Release it when you see the login window."
+          },
+          {
+            "title": "Step 3: Test Zoom Functionality",
+            "content": "Test if zooming works in different applications (e.g., Safari, Photoshop)."
+          },
+          {
+            "title": "Step 4: Exit Safe Mode",
+            "content": "Restart your MacBook normally to exit Safe Mode."
+          },
+          {
+            "title": "Step 5: Verify Zoom",
+            "content": "Test zooming again to see if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T11:16:51.124Z",
+      "updated": "2026-01-05T11:16:51.124Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/291578/how-to-fix-stuck-disabled-zooming-on-trackpad",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767611838205-116",
+    "title": "Improve Wi-Fi Range on End Devices",
+    "problemDescription": "Wi-Fi range issues often stem from the end device's limited antenna and low power radios.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "range",
+      "connection",
+      "end device"
+    ],
+    "steps": [
+      {
+        "title": "Check Device Placement",
+        "content": "Ensure your device is within a reasonable range of the router. Move closer to the router to test if the signal improves."
+      },
+      {
+        "title": "Reduce Interference",
+        "content": "Keep your device away from other electronic devices that may cause interference, such as microwaves, cordless phones, and Bluetooth devices."
+      },
+      {
+        "title": "Update Device Drivers",
+        "content": "Ensure your device's Wi-Fi drivers are up to date. This can often resolve connectivity issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Wi-Fi Extender",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Wi-Fi Extender",
+            "content": "Buy a Wi-Fi extender that is compatible with your router."
+          },
+          {
+            "title": "Set Up the Extender",
+            "content": "Follow the manufacturer's instructions to set up the extender in a location that provides better coverage to your device."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Upgrade Your Router",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Research Router Options",
+            "content": "Look for routers with stronger antennas and better range capabilities."
+          },
+          {
+            "title": "Purchase and Set Up the New Router",
+            "content": "Follow the manufacturer's instructions to set up the new router and ensure it is placed in an optimal location."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T11:17:18.205Z",
+      "updated": "2026-01-05T11:17:18.205Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/wifi-range-problem-need-help-solutions.3571617/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767611842099-159",
+    "title": "Fix Wi-Fi Disconnection After 10 Minutes",
+    "problemDescription": "Wi-Fi connection on a single PC degrades or disconnects after approximately 10 minutes of use.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "disconnection",
+      "interference",
+      "WLANSVC"
+    ],
+    "steps": [
+      {
+        "title": "Restart WLANSVC Service",
+        "content": "Open Command Prompt as Administrator and run the following commands to restart the WLANSVC service: `net stop WLANSVC` followed by `net start WLANSVC`. This can be automated using a batch file for convenience."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Interference",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Interfering Signals",
+            "content": "Use a Wi-Fi analyzer tool to check for interfering signals in your environment. Move your router or change the Wi-Fi channel to avoid interference."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update Wi-Fi Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Wi-Fi Drivers",
+            "content": "Visit the manufacturer's website to download and install the latest Wi-Fi drivers for your PC. This can sometimes resolve connectivity issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T11:17:22.099Z",
+      "updated": "2026-01-05T11:17:22.099Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/wireless-connection-on-single-pc-suddenly-degrades-after-around-10-minutes.3784679/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
