@@ -26141,5 +26141,860 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767576086424-815",
+    "title": "Fix Display Too Zoomed in Windows 11",
+    "problemDescription": "The display appears too zoomed in on Windows 11.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "display",
+      "zoom",
+      "resolution"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Display Scale and Resolution",
+        "content": "Right-click the Start button and select 'System' or 'Display settings'. Adjust the scale and resolution to your preference, then click 'Save changes'."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "If the issue persists, restart your computer to see if the problem is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Graphics Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Driver Updates",
+            "content": "Go to 'Device Manager', expand 'Display adapters', right-click your graphics card, and select 'Update driver'."
+          },
+          {
+            "title": "Install Updates",
+            "content": "Follow the prompts to install any available updates for your graphics driver."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T01:21:26.424Z",
+      "updated": "2026-01-05T01:21:26.424Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=HyWMBn7gc3w",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767576091603-193",
+    "title": "Fix Zoom and Teams Connection Issues",
+    "problemDescription": "Zoom and Teams are having connection issues due to network problems.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "teams",
+      "connection",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Check Network Connection",
+        "content": "Verify the network connection at the campus. Ensure that the network is stable and there are no outages or disruptions."
+      },
+      {
+        "title": "Restart Router",
+        "content": "Restart the router to refresh the network connection. Unplug the router, wait for 30 seconds, and then plug it back in."
+      },
+      {
+        "title": "Contact IT Support",
+        "content": "If the issue persists, contact the campus IT support team to report the network problem and seek assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Mobile Hotspot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Hotspot",
+            "content": "Enable the hotspot feature on your mobile device."
+          },
+          {
+            "title": "Connect to Hotspot",
+            "content": "Connect your computer to the mobile hotspot to bypass the campus network."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T01:21:31.603Z",
+      "updated": "2026-01-05T01:21:31.603Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=IKyAej5gc5E",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767576103113-822",
+    "title": "Improve iPhone/iPad Dictation Accuracy",
+    "problemDescription": "iPhone or iPad dictation feature is not accurate or reliable.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "dictation",
+      "accuracy",
+      "iphone",
+      "ipad"
+    ],
+    "steps": [
+      {
+        "title": "Enable Dictation",
+        "content": "Go to Settings > General > Keyboard > Enable Dictation."
+      },
+      {
+        "title": "Train Dictation",
+        "content": "Use Dictation frequently to help it learn your voice and improve accuracy."
+      },
+      {
+        "title": "Use Siri Alongside Dictation",
+        "content": "Since Dictation and Siri rely on the same training, using Siri more can also improve Dictation accuracy."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Keyboard Dictionary",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Keyboard Dictionary",
+            "content": "Go to Settings > General > Reset > Reset Keyboard Dictionary. This can help if Dictation is misinterpreting specific words."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update iOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update iOS",
+            "content": "Ensure your iPhone or iPad is running the latest version of iOS, as updates often include improvements to Dictation."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T01:21:43.113Z",
+      "updated": "2026-01-05T01:21:43.113Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/why-is-the-iphone-ipad-dictation-feature-so-terrible.3857537/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767576105446-434",
+    "title": "Apple Silicon iMac Screen Deterioration",
+    "problemDescription": "Apple Silicon iMacs may experience screen deterioration after two years, potentially due to a design flaw, manufacturing defect, or substandard parts.",
+    "category": "ios",
+    "difficulty": "Hard",
+    "keywords": [
+      "iMac",
+      "screen",
+      "deterioration",
+      "Apple",
+      "hardware"
+    ],
+    "steps": [
+      {
+        "title": "Contact Apple Support",
+        "content": "Reach out to Apple Support to report the issue and inquire about potential repairs or replacements."
+      },
+      {
+        "title": "Check for Official Announcements",
+        "content": "Monitor Apple's official channels for any announcements regarding a fix or recall for the screen issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Seek Community Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Join Apple Community Forums",
+            "content": "Participate in discussions on Apple's community forums to share your experience and learn from others who may have found temporary solutions."
+          },
+          {
+            "title": "Contact a Senior Apple Representative",
+            "content": "Attempt to escalate your case to a senior Apple representative, as some users have reported receiving free repairs through this method."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T01:21:45.446Z",
+      "updated": "2026-01-05T01:21:45.446Z",
+      "sourceUrl": "https://www.tomshardware.com/software/macos/apple-silicon-imacs-appear-to-suffer-from-screen-deterioration-after-two-years-flood-of-user-complaints-hit-apple-community-forums",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767576108936-710",
+    "title": "Fix Mac Bricked After macOS Monterey Update",
+    "problemDescription": "Mac becomes non-functional after updating to macOS Monterey.",
+    "category": "macos",
+    "difficulty": "Hard",
+    "keywords": [
+      "macos",
+      "monterey",
+      "bricked",
+      "update",
+      "apple"
+    ],
+    "steps": [
+      {
+        "title": "Restore from Time Machine Backup",
+        "content": "If you have a Time Machine backup, restore your Mac to a state before the macOS Monterey update."
+      },
+      {
+        "title": "Use macOS Recovery",
+        "content": "Boot your Mac into macOS Recovery mode by turning it off, then turning it on and immediately holding down Command (⌘) + R until you see an Apple logo or a spinning globe."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "In macOS Recovery, select 'Reinstall macOS' and follow the on-screen instructions to reinstall the operating system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Wait for Apple's Official Fix",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Monitor Apple's official website or support channels for any updates or patches related to macOS Monterey that address the bricking issue."
+          },
+          {
+            "title": "Contact Apple Support",
+            "content": "If your Mac is still under warranty or covered by AppleCare, contact Apple Support for assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T01:21:48.936Z",
+      "updated": "2026-01-05T01:21:48.936Z",
+      "sourceUrl": "https://www.tomshardware.com/news/apple-macos-monterey-bricking-macs",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767576113019-53",
+    "title": "Use iPad as Second Screen for Mac",
+    "problemDescription": "Learn how to use an iPad as a second screen for your Mac.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iPad",
+      "Mac",
+      "second screen",
+      "Sidecar"
+    ],
+    "steps": [
+      {
+        "title": "Open Quick Menu",
+        "content": "Click the Quick Menu icon in the menu bar, located to the left of the Siri icon and clock."
+      },
+      {
+        "title": "Select Screen Mirroring",
+        "content": "Click on Screen Mirroring to activate Sidecar and use your iPad as a second screen."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Sidecar Settings",
+        "type": "Alternative Method",
+        "steps": [
+          {
+            "title": "Open Sidecar Settings",
+            "content": "Go to System Preferences on your Mac and select Sidecar."
+          },
+          {
+            "title": "Connect iPad",
+            "content": "Ensure your iPad is connected to the same Wi-Fi network and follow the on-screen instructions to connect."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T01:21:53.019Z",
+      "updated": "2026-01-05T01:21:53.019Z",
+      "sourceUrl": "https://www.tomshardware.com/how-to/use-an-ipad-as-a-second-screen-for-your-mac",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767576116149-642",
+    "title": "Fix Windows 10 End of Life (EOL) Issues",
+    "problemDescription": "Windows 10 has reached its end of life, causing security and update issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "eol",
+      "end of life",
+      "security",
+      "updates"
+    ],
+    "steps": [
+      {
+        "title": "Upgrade to Windows 11",
+        "content": "Ensure your PC meets the system requirements for Windows 11. Visit the official Microsoft website to download and install the latest version of Windows 11."
+      },
+      {
+        "title": "Check for Updates",
+        "content": "If you cannot upgrade, ensure your Windows 10 system is set to receive updates manually. Go to Settings > Update & Security > Windows Update > Check for updates."
+      },
+      {
+        "title": "Install Security Patches",
+        "content": "Manually download and install any available security patches from the Microsoft Update Catalog."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Third-Party Security Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Antivirus Software",
+            "content": "Install a reputable third-party antivirus software to protect your system from threats."
+          },
+          {
+            "title": "Enable Firewall",
+            "content": "Ensure your firewall is enabled and configured to block unauthorized access."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T01:21:56.149Z",
+      "updated": "2026-01-05T01:21:56.149Z",
+      "sourceUrl": "https://www.tomshardware.com/archive/2025/06",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767576121370-208",
+    "title": "Reset AirPods Max for Reliable Connection",
+    "problemDescription": "AirPods Max connected but not working reliably, requiring frequent resets.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods Max",
+      "connection",
+      "reset",
+      "reliable"
+    ],
+    "steps": [
+      {
+        "title": "Reset AirPods Max",
+        "content": "Press and hold the noise control button and the Digital Crown on your AirPods Max for about 10 seconds until the status light flashes amber and then white."
+      },
+      {
+        "title": "Reconnect AirPods Max",
+        "content": "After resetting, reconnect your AirPods Max to your device and check if the connection is stable."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Chat with Apple Support",
+            "content": "If the issue persists, contact Apple Support to discuss potential firmware issues and further troubleshooting steps."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T01:22:01.370Z",
+      "updated": "2026-01-05T01:22:01.370Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/455300/airpods-max-connected-but-no-longer-working-reliably",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767576132758-121",
+    "title": "Fix AirPods Going Silent on iPhone",
+    "problemDescription": "AirPods abruptly stop playing sound while connected to an iPhone, but the music player continues to run.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "airpods",
+      "silent",
+      "iphone",
+      "connection",
+      "music"
+    ],
+    "steps": [
+      {
+        "title": "Restart AirPods",
+        "content": "Close the AirPods case lid, wait for 30 seconds, then reopen it."
+      },
+      {
+        "title": "Reconnect AirPods",
+        "content": "Go to your iPhone's Bluetooth settings, forget the AirPods, then reconnect them."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset AirPods",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset AirPods",
+            "content": "Press and hold the setup button on the back of the AirPods case for about 15 seconds until the status light flashes amber, then reconnect them to your iPhone."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T01:22:12.758Z",
+      "updated": "2026-01-05T01:22:12.758Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/334933/airpods-abruptly-go-silent-while-listening-to-music-from-iphone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767576139875-625",
+    "title": "Fix Instagram Not Loading on Browser",
+    "problemDescription": "Instagram shows a white screen with the logo and doesn't load when accessed via a browser.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "browser",
+      "loading",
+      "white screen"
+    ],
+    "steps": [
+      {
+        "title": "Try a Different Web Browser",
+        "content": "Switch to a different browser like Microsoft Edge to see if the issue persists."
+      },
+      {
+        "title": "Disable VPN",
+        "content": "If you're using a VPN, disable it as it might be causing the issue."
+      },
+      {
+        "title": "Restart Your Router",
+        "content": "Turn off your router for a few minutes and then turn it back on to refresh the connection."
+      },
+      {
+        "title": "Try a Different Device",
+        "content": "Attempt to log into Instagram on a different device or someone else's device to isolate the problem."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Browser Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache",
+            "content": "Clear your browser's cache and cookies, then try accessing Instagram again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T01:22:19.875Z",
+      "updated": "2026-01-05T01:22:19.875Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/instagram-not-loading-on-browser.3736573/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767576147969-627",
+    "title": "Instagram Unfollow Issue",
+    "problemDescription": "Users are finding they've unfollowed people on Instagram without intentionally doing so.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "unfollow",
+      "bug",
+      "account"
+    ],
+    "steps": [
+      {
+        "title": "Check Account Activity",
+        "content": "Review your Instagram account activity to see if there are any unfamiliar login locations or devices."
+      },
+      {
+        "title": "Update Instagram App",
+        "content": "Ensure you are using the latest version of the Instagram app, as bugs are often fixed in updates."
+      },
+      {
+        "title": "Log Out and Log Back In",
+        "content": "Log out of your Instagram account and then log back in to refresh your session."
+      },
+      {
+        "title": "Check for Third-Party Apps",
+        "content": "Review any third-party apps or services connected to your Instagram account that might be causing the issue."
+      },
+      {
+        "title": "Contact Instagram Support",
+        "content": "If the problem persists, contact Instagram Support for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Password",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Your Password",
+            "content": "Reset your Instagram password to ensure your account security and see if this resolves the issue."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Clear App Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear App Cache",
+            "content": "Clear the cache of the Instagram app on your device to resolve any potential glitches."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T01:22:27.969Z",
+      "updated": "2026-01-05T01:22:27.969Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/why-do-i-keep-finding-ive-unfollowed-people-on-instagram-that-i-havent.3865114/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767576150560-964",
+    "title": "Fix Facebook Login Issue on Shared Device",
+    "problemDescription": "Facebook login is saved on a shared MacBook, allowing access to connected accounts.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "facebook",
+      "login",
+      "password",
+      "privacy"
+    ],
+    "steps": [
+      {
+        "title": "Change Your Facebook Password",
+        "content": "Go to your Facebook settings, navigate to 'Security and Login', and change your password to a new, strong one."
+      },
+      {
+        "title": "Log Out of All Devices",
+        "content": "After changing your password, log out of Facebook on all devices to ensure no one else can access your account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Revoke Access Tokens",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Facebook Settings",
+            "content": "Navigate to 'Settings & Privacy' and then 'Settings'."
+          },
+          {
+            "title": "Access Apps and Websites",
+            "content": "Click on 'Apps and Websites' and remove any suspicious or unwanted connections."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T01:22:30.560Z",
+      "updated": "2026-01-05T01:22:30.560Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/password-problem.3670060/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767576153743-766",
+    "title": "Fix Router Packet Loss",
+    "problemDescription": "Experiencing lag spikes and random internet drops that temporarily resolve after rebooting the router.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "packet loss",
+      "router",
+      "lag spikes",
+      "internet drops"
+    ],
+    "steps": [
+      {
+        "title": "Reboot the Router",
+        "content": "Unplug the router from the power source, wait for about 30 seconds, and then plug it back in. This can temporarily resolve packet loss issues."
+      },
+      {
+        "title": "Check for Firmware Updates",
+        "content": "Log in to your router's admin panel and check for any available firmware updates. Installing the latest firmware can resolve known issues and improve performance."
+      },
+      {
+        "title": "Change Wi-Fi Channel",
+        "content": "Access your router's settings and switch to a less crowded Wi-Fi channel. This can help reduce interference and improve connection stability."
+      },
+      {
+        "title": "Replace the Router",
+        "content": "If the issue persists, consider replacing the router with a different brand or model. Ensure the new router is compatible with your internet service provider's requirements."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact ISP",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Your Internet Service Provider",
+            "content": "Reach out to your ISP and report the issue. They may be able to diagnose and resolve problems on their end, such as signal issues or line problems."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T01:22:33.743Z",
+      "updated": "2026-01-05T01:22:33.743Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/packet-loss-for-over-10-months.3691719/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767576159597-850",
+    "title": "Fix WhatsApp Not Working",
+    "problemDescription": "WhatsApp is not functioning properly or not connecting.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "app",
+      "connection",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Restart WhatsApp",
+        "content": "Close WhatsApp properly by swiping it away in the multitasking screen or app switcher, then reopen it."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your device is connected to the internet by testing with another app or browser."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restart Your Phone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your Phone",
+            "content": "If restarting WhatsApp doesn't work, try restarting your entire phone."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T01:22:39.597Z",
+      "updated": "2026-01-05T01:22:39.598Z",
+      "sourceUrl": "https://www.howtogeek.com/845564/whatsapp-not-working-9-troubleshooting-tips/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767576164495-432",
+    "title": "Disable WhatsApp Read Receipts",
+    "problemDescription": "Prevent WhatsApp contacts from seeing when you've read their messages.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "privacy",
+      "read receipts"
+    ],
+    "steps": [
+      {
+        "title": "Open WhatsApp Settings",
+        "content": "Open WhatsApp and tap the three-dot menu icon in the upper-right corner, then select 'Settings'."
+      },
+      {
+        "title": "Navigate to Privacy Settings",
+        "content": "Tap the 'Privacy' option in the list."
+      },
+      {
+        "title": "Disable Read Receipts",
+        "content": "Tap the 'Read Receipts' switch to turn it off."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Last Online Time",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open WhatsApp Settings",
+            "content": "Open WhatsApp and tap the three-dot menu icon in the upper-right corner, then select 'Settings'."
+          },
+          {
+            "title": "Navigate to Privacy Settings",
+            "content": "Tap the 'Privacy' option in the list."
+          },
+          {
+            "title": "Disable Last Seen and Online",
+            "content": "Tap 'Last Seen and Online'."
+          },
+          {
+            "title": "Select Nobody",
+            "content": "Select 'Nobody' from the listed options."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T01:22:44.495Z",
+      "updated": "2026-01-05T01:22:44.495Z",
+      "sourceUrl": "https://www.howtogeek.com/282092/how-to-stop-your-whatsapp-friends-from-knowing-youve-read-their-messages/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767576166703-675",
+    "title": "Format WhatsApp Messages",
+    "problemDescription": "How to format text in WhatsApp for better readability and emphasis.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "WhatsApp",
+      "formatting",
+      "text",
+      "bold",
+      "monospace"
+    ],
+    "steps": [
+      {
+        "title": "Monospace Text",
+        "content": "Enclose the text in three pairs of backticks (```) to make it monospace. Example: ```This is monospace text.```"
+      },
+      {
+        "title": "Bold Text",
+        "content": "Place asterisks (*) around the word or phrase to make it bold. Example: *This is bold text*."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Inline Code",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inline Code",
+            "content": "Enclose the text in single backticks (`) to make it inline code. Example: `This is inline code`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T01:22:46.703Z",
+      "updated": "2026-01-05T01:22:46.703Z",
+      "sourceUrl": "https://www.howtogeek.com/spice-up-your-whatsapp-messages-with-these-formatting-tricks/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767576169607-217",
+    "title": "Use WhatsApp on iPad",
+    "problemDescription": "WhatsApp did not have an official iPad app until recently.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "ipad",
+      "app"
+    ],
+    "steps": [
+      {
+        "title": "Download the Official WhatsApp App",
+        "content": "Go to the App Store on your iPad and search for 'WhatsApp'. Download and install the official WhatsApp app."
+      },
+      {
+        "title": "Set Up WhatsApp",
+        "content": "Open the WhatsApp app and follow the on-screen instructions to set up your account using your phone number."
+      },
+      {
+        "title": "Enable Multitasking Features",
+        "content": "Take advantage of iPadOS multitasking features like Stage Manager, Split View, and Slide Over to use WhatsApp alongside other apps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use WhatsApp Web",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Safari",
+            "content": "Open the Safari browser on your iPad."
+          },
+          {
+            "title": "Go to WhatsApp Web",
+            "content": "Visit web.whatsapp.com in the Safari browser."
+          },
+          {
+            "title": "Scan the QR Code",
+            "content": "Open WhatsApp on your phone, go to Settings > Linked Devices, and scan the QR code displayed on your iPad."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T01:22:49.607Z",
+      "updated": "2026-01-05T01:22:49.607Z",
+      "sourceUrl": "https://www.howtogeek.com/whatsapp-finally-releases-an-official-ipad-app/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
