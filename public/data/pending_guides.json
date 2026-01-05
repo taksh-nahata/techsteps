@@ -38998,5 +38998,597 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767640743132-144",
+    "title": "Reset Outlook Password When Verification Fails",
+    "problemDescription": "Unable to reset Outlook password due to verification failure.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Outlook",
+      "password",
+      "verification",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Use Account Recovery Options",
+        "content": "Go to the Microsoft Recovery Page (https://account.live.com/resetpassword.aspx) and select 'I forgot my password'. Follow the prompts to verify your identity using alternative methods such as email or security questions."
+      },
+      {
+        "title": "Check for Account Suspension",
+        "content": "If verification fails, your account might be suspended. Contact Microsoft Support for further assistance."
+      },
+      {
+        "title": "Upgrade Browser",
+        "content": "Ensure you are using a supported browser like Microsoft Edge for the latest features and security updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Microsoft Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Microsoft Support",
+            "content": "Go to the Microsoft Support page and choose 'Contact Us' for direct assistance."
+          },
+          {
+            "title": "Provide Account Details",
+            "content": "Be ready to provide account details and any verification information you have."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T19:19:03.132Z",
+      "updated": "2026-01-05T19:19:03.132Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windowslive/forum/mail-signin/hotmail-account-doesnt-exist-anymore/bb287db1-9f90-4a4c-8989-5b6fa1c22574?msgId=c26ee12a-ef9a-4de8-bf57-14a1dddfd425",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767640782184-295",
+    "title": "Upgrade Wireless Network Adapter",
+    "problemDescription": "Wi-Fi connection issues due to outdated or inefficient network adapter.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "network adapter",
+      "connection issues"
+    ],
+    "steps": [
+      {
+        "title": "Assess Current Adapter",
+        "content": "Check if your current wireless network adapter is outdated or inefficient, especially if you're using a USB dongle."
+      },
+      {
+        "title": "Upgrade to PCIe Card",
+        "content": "Purchase and install a PCIe wireless network adapter card for better performance and reliability."
+      },
+      {
+        "title": "Install Drivers",
+        "content": "Ensure you install the latest drivers for the new network adapter to maximize compatibility and performance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a USB Dongle",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check USB Dongle Compatibility",
+            "content": "Ensure your USB dongle is compatible with your PC and supports the latest Wi-Fi standards."
+          },
+          {
+            "title": "Update Drivers",
+            "content": "Update the drivers for your USB dongle to the latest version available."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T19:19:42.184Z",
+      "updated": "2026-01-05T19:19:42.184Z",
+      "sourceUrl": "https://www.reddit.com/r/techsupport/comments/1bomwpd/advice_on_what_to_do_about_wifi_problems_and_what/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767640794537-926",
+    "title": "Fix Discord Scaling in Safari 11.1.2",
+    "problemDescription": "Discord is not scaling correctly or showing the entire page in Safari 11.1.2.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "safari",
+      "discord",
+      "scaling",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Use a Different Browser",
+        "content": "Switch to a different browser like Chrome or Firefox to access Discord without scaling issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Safari",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to the App Store and check for updates to Safari."
+          },
+          {
+            "title": "Install Updates",
+            "content": "Install any available updates to see if the issue is resolved."
+          }
+        ]
+      },
+      {
+        "title": "Reset Safari Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Safari Preferences",
+            "content": "Go to Safari > Preferences."
+          },
+          {
+            "title": "Reset Settings",
+            "content": "Click on the Advanced tab and reset settings to default."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T19:19:54.537Z",
+      "updated": "2026-01-05T19:19:54.537Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/387245/safari-11-1-2-discord-is-not-showing-entire-page-or-scaling-correctly",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767640799363-110",
+    "title": "Allow Discord Keystrokes on macOS Catalina",
+    "problemDescription": "Discord.app on macOS Catalina requests permission to receive keystrokes from any application.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "macos",
+      "keystrokes",
+      "permissions"
+    ],
+    "steps": [
+      {
+        "title": "Enable Accessibility Permissions",
+        "content": "Go to System Preferences > Security & Privacy > Privacy > Accessibility. Check the box next to Discord to allow it to receive keystrokes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use In-App Push-to-Talk",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Discord App",
+            "content": "Ensure Discord is open and running in the foreground to use the push-to-talk feature."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T19:19:59.363Z",
+      "updated": "2026-01-05T19:19:59.363Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/389359/discord-app-macos-catalina-10-15-4-19e287-would-like-to-receive-keystrokes-fro",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767640801229-746",
+    "title": "Disable Microphone Access for Discord on Mac",
+    "problemDescription": "Discord microphone is always on, even when not in an audio chat room.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "microphone",
+      "privacy",
+      "mac"
+    ],
+    "steps": [
+      {
+        "title": "Revoke Microphone Access",
+        "content": "Go to System Settings -> Privacy & Security -> Microphone. Then, uncheck the box next to Discord to revoke microphone access."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Mute Microphone in Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Mute Microphone in Discord",
+            "content": "If you are in an audio chat room, you can mute your microphone by clicking on the microphone icon in the Discord app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T19:20:01.229Z",
+      "updated": "2026-01-05T19:20:01.229Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/468139/is-the-microphone-in-mac-discord-app-always-on-if-so-can-i-withdraw-permission",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767640806653-238",
+    "title": "Fix macOS Freezing",
+    "problemDescription": "macOS freezes every few days, possibly due to RAM or application conflicts.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macos",
+      "freeze",
+      "ram",
+      "applications"
+    ],
+    "steps": [
+      {
+        "title": "Check RAM Compatibility",
+        "content": "Ensure all RAM modules are compatible and properly seated. Use Apple's recommended RAM specifications."
+      },
+      {
+        "title": "Monitor System Resources",
+        "content": "Use Activity Monitor to check for high CPU or RAM usage when the system freezes."
+      },
+      {
+        "title": "Update macOS",
+        "content": "Ensure your macOS is up to date with the latest software updates."
+      },
+      {
+        "title": "Disable Problematic Applications",
+        "content": "Temporarily disable or uninstall recently installed applications, especially those known to cause issues (e.g., VirtualBox, Vagrant)."
+      },
+      {
+        "title": "Check for Kernel Panics",
+        "content": "Review system logs for kernel panics or other critical errors that might indicate hardware or driver issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset SMC and NVRAM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset SMC",
+            "content": "Shut down your Mac, then press and hold the power button for 10 seconds. Release the button and turn on your Mac."
+          },
+          {
+            "title": "Reset NVRAM",
+            "content": "Shut down your Mac, then press and hold the power button until the startup sound is heard. Immediately press and hold Command + Option + P + R for 20 seconds."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T19:20:06.653Z",
+      "updated": "2026-01-05T19:20:06.653Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/328783/macos-freezes-every-few-days",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767640827529-456",
+    "title": "Report a Bug on Instagram",
+    "problemDescription": "You need to report a bug or issue you're experiencing on Instagram.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "bug",
+      "report",
+      "issue"
+    ],
+    "steps": [
+      {
+        "title": "Shake Your Phone",
+        "content": "While encountering the problem, shake your phone to trigger a prompt."
+      },
+      {
+        "title": "Select 'Report a Problem'",
+        "content": "Tap 'Report a Problem' in the prompt that appears."
+      },
+      {
+        "title": "Describe the Bug",
+        "content": "Type your issue in the text field. Instagram will automatically attach a screenshot."
+      },
+      {
+        "title": "Add Additional Images (Optional)",
+        "content": "Tap 'Gallery' or 'Take Screenshot' to add more images if needed."
+      },
+      {
+        "title": "Submit the Report",
+        "content": "Follow the on-screen instructions to submit your bug report."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Report a Post",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open the Post",
+            "content": "Go to the post you want to report."
+          },
+          {
+            "title": "Tap the Three Dots",
+            "content": "In the top-right corner of the post, tap the three dots."
+          },
+          {
+            "title": "Select 'Report'",
+            "content": "Choose 'Report' from the menu."
+          },
+          {
+            "title": "Choose a Reason",
+            "content": "Select why you're reporting the post and follow the on-screen instructions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T19:20:27.529Z",
+      "updated": "2026-01-05T19:20:27.529Z",
+      "sourceUrl": "https://www.howtogeek.com/847993/how-to-contact-instagram/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767640830750-283",
+    "title": "Clear Instagram Cache on iPhone",
+    "problemDescription": "Instagram is running slow or crashing on your iPhone.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "cache",
+      "iphone",
+      "slow",
+      "crash"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Launch the Settings app on your iPhone."
+      },
+      {
+        "title": "Find Instagram",
+        "content": "Scroll down and select 'Instagram' from the list of apps."
+      },
+      {
+        "title": "Clear Cache",
+        "content": "Tap 'Storage' and then select 'Clear Cache' in the bottom-right corner."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Uninstall and Reinstall Instagram",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Instagram",
+            "content": "Tap and hold the Instagram app icon, then select 'Remove App' and confirm by tapping 'Delete App'."
+          },
+          {
+            "title": "Reinstall Instagram",
+            "content": "Visit the App Store, search for Instagram, and download it again. Launch the app and log into your account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T19:20:30.750Z",
+      "updated": "2026-01-05T19:20:30.750Z",
+      "sourceUrl": "https://www.howtogeek.com/837307/how-to-clear-your-instagram-cache/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767640834496-123",
+    "title": "Recover Forgotten Instagram Password",
+    "problemDescription": "You can't log in to your Instagram account because you forgot your password.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "password",
+      "recovery",
+      "forgot"
+    ],
+    "steps": [
+      {
+        "title": "Go to Instagram's Website",
+        "content": "Visit Instagram's website and click the 'Forgot Password' link near the bottom of the page."
+      },
+      {
+        "title": "Enter Account Information",
+        "content": "Enter your account username, email address, or phone number linked to your account, then click the 'Send Login Link' button."
+      },
+      {
+        "title": "Check Your Email or Phone",
+        "content": "If you entered an email address, check your inbox for a reset link. If you entered a phone number, check for a security code."
+      },
+      {
+        "title": "Reset Your Password",
+        "content": "Follow the instructions in the email or enter the security code to create a new password for your account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use the Instagram App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open the Instagram App",
+            "content": "Open the Instagram app on your device."
+          },
+          {
+            "title": "Tap 'Forgot Password?'",
+            "content": "Tap 'Forgot Password?' on the login screen."
+          },
+          {
+            "title": "Enter Your Email or Phone Number",
+            "content": "Enter your email address or phone number linked to your account."
+          },
+          {
+            "title": "Follow the Instructions",
+            "content": "Follow the instructions sent to your email or phone to reset your password."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T19:20:34.496Z",
+      "updated": "2026-01-05T19:20:34.496Z",
+      "sourceUrl": "https://www.howtogeek.com/357257/how-to-recover-your-forgotten-instagram-password/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767640838338-353",
+    "title": "Fix Instagram Feed Refresh Issues",
+    "problemDescription": "Instagram feed refreshes randomly, causing posts to disappear and disrupting the user experience.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Instagram",
+      "refresh",
+      "feed",
+      "app-error",
+      "bug"
+    ],
+    "steps": [
+      {
+        "title": "Update the Instagram App",
+        "content": "Ensure you have the latest version of the Instagram app installed on your device. This will include the latest bug fixes and improvements."
+      },
+      {
+        "title": "Clear App Cache",
+        "content": "Go to your device settings, find the Instagram app, and clear the cache. This can resolve issues caused by corrupted cache files."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your internet connection is stable. A weak or unstable connection can cause the app to refresh unexpectedly."
+      },
+      {
+        "title": "Disable Automatic Refresh",
+        "content": "Go to Instagram settings and look for options related to feed refresh. Disable any automatic refresh settings if available."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Instagram",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Instagram",
+            "content": "Uninstall the Instagram app from your device."
+          },
+          {
+            "title": "Reinstall Instagram",
+            "content": "Download and install the latest version of Instagram from the app store."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T19:20:38.338Z",
+      "updated": "2026-01-05T19:20:38.338Z",
+      "sourceUrl": "https://www.howtogeek.com/instagram-is-finally-fixing-its-crazy-making-refresh-style/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767640847634-875",
+    "title": "Fix Attachments Not Showing in Outlook",
+    "problemDescription": "Attachments are not visible in Outlook emails.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "outlook",
+      "attachments",
+      "email",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Restart Outlook",
+        "content": "Close and reopen Outlook to resolve minor issues."
+      },
+      {
+        "title": "Check Email for Attachments",
+        "content": "Ensure the email actually has an attachment."
+      },
+      {
+        "title": "Clear Outlook Cache",
+        "content": "Go to the Outlook cache folder, select all files (Ctrl+A), right-click, and choose 'Delete'."
+      },
+      {
+        "title": "Launch Outlook",
+        "content": "After clearing the cache, open Outlook and check if attachments are visible."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Home or Insert Tab",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Attach Files Using Home or Insert Tab",
+            "content": "Use the 'Home' or 'Insert' tab to attach files to outgoing emails."
+          },
+          {
+            "title": "Drag and Drop Files",
+            "content": "Drag and drop files directly into the email."
+          },
+          {
+            "title": "Change File Extension",
+            "content": "Change the file extension if Outlook is blocking it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T19:20:47.634Z",
+      "updated": "2026-01-05T19:20:47.634Z",
+      "sourceUrl": "https://www.howtogeek.com/874745/how-to-fix-the-attachments-not-showing-in-outlook-issue/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
