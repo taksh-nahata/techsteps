@@ -40230,5 +40230,669 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767651479637-817",
+    "title": "Fix Outlook Verification Hanging on Mac",
+    "problemDescription": "Outlook on Mac is stuck verifying for several days.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "mac",
+      "verification",
+      "hanging"
+    ],
+    "steps": [
+      {
+        "title": "Start Outlook in Safe Mode",
+        "content": "Hold down the `Shift` key while launching Outlook to disable third-party add-ins. If Outlook opens successfully, disable or update the problematic add-in."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Repair Outlook Profile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a New Outlook Profile",
+            "content": "Go to System Preferences > Internet Accounts > Add Account. Create a new Outlook profile and see if that resolves the issue."
+          }
+        ]
+      },
+      {
+        "title": "Reinstall Office/Outlook",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall and Reinstall Microsoft Office or Outlook",
+            "content": "If the above steps do not work, uninstall and then reinstall Microsoft Office or Outlook."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T22:17:59.637Z",
+      "updated": "2026-01-05T22:17:59.637Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255098081",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767651485717-537",
+    "title": "Fix Outlook and Hotmail Sync on iPhone",
+    "problemDescription": "Outlook and Hotmail accounts not syncing properly on iPhone.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "hotmail",
+      "sync",
+      "iphone",
+      "apple mail"
+    ],
+    "steps": [
+      {
+        "title": "Delete Accounts in Apple Mail",
+        "content": "Go to Settings > Mail > Accounts and delete your Outlook and Hotmail accounts."
+      },
+      {
+        "title": "Clear Safari History and Data",
+        "content": "Navigate to Settings > Safari and tap 'Clear History and Website Data'."
+      },
+      {
+        "title": "Reboot Your iPhone",
+        "content": "Restart your iPhone to ensure all changes take effect."
+      },
+      {
+        "title": "Reinstall Accounts",
+        "content": "Re-add your Hotmail accounts in Apple Mail by selecting 'Outlook' as the mail server type."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Microsoft Exchange",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset iPhone",
+            "content": "Perform a reset of your iPhone to clear all settings."
+          },
+          {
+            "title": "Reinstall Using Microsoft Exchange",
+            "content": "Reinstall your Outlook and Hotmail accounts using 'Microsoft Exchange' as the mail server type."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T22:18:05.717Z",
+      "updated": "2026-01-05T22:18:05.717Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255992045",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767651512250-908",
+    "title": "Fix PC Performance Issues",
+    "problemDescription": "Your PC is running slow or freezing, which could be due to insufficient RAM.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "pc",
+      "performance",
+      "ram",
+      "freezing"
+    ],
+    "steps": [
+      {
+        "title": "Check RAM Usage",
+        "content": "Open Task Manager by pressing Ctrl+Shift+Esc and go to the Performance tab. Monitor the RAM usage while using your PC."
+      },
+      {
+        "title": "Upgrade RAM",
+        "content": "If RAM usage is consistently high, purchase and install additional RAM modules compatible with your PC."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Optimize Startup Programs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Startup Programs",
+            "content": "Open Task Manager, go to the Startup tab, and disable unnecessary programs that launch at startup."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T22:18:32.250Z",
+      "updated": "2026-01-05T22:18:32.250Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/pc-performance-and-freezes-troubleshooting-guide/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767651520761-92",
+    "title": "MacBook Pro Won't Boot After Battery Depletion",
+    "problemDescription": "MacBook Pro fails to boot after the battery is completely depleted.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "boot",
+      "battery",
+      "depleted"
+    ],
+    "steps": [
+      {
+        "title": "Reset the Power Manager",
+        "content": "Disconnect the power cord, remove the battery, then hold the power button for at least 5 seconds. Reinsert the battery and reconnect the power cord."
+      },
+      {
+        "title": "Reset the PRAM",
+        "content": "Turn on the MacBook Pro and immediately press and hold the Command (⌘) + Option + P + R keys simultaneously for about 20 seconds, then release them. The Mac will reset the PRAM to default settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Run Apple Hardware Test",
+        "type": "Diagnostic",
+        "steps": [
+          {
+            "title": "Initiate Hardware Test",
+            "content": "Insert the Mac OS X Installer disc, restart the MacBook Pro, and hold the D key to start the Apple Hardware Test. Follow the on-screen instructions."
+          },
+          {
+            "title": "Note Error Codes",
+            "content": "If the test detects a hardware problem, it will display an error code. Write down the error code and contact Apple support or visit a Genius Bar."
+          }
+        ]
+      },
+      {
+        "title": "Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Call Apple Support",
+            "content": "If none of the above steps solve your issue, call Apple support or visit a Genius Bar."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T22:18:40.761Z",
+      "updated": "2026-01-05T22:18:40.761Z",
+      "sourceUrl": "https://superuser.com/questions/216064/macbook-pro-wont-boot-after-battery-is-depleted",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767651528527-309",
+    "title": "Fix iMac Stuck on Loading Screen",
+    "problemDescription": "iMac is stuck on loading screen, mouse disappears, and login window reappears when attempting to log in.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "imac",
+      "loading",
+      "login",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Restart from System CD",
+        "content": "Hold down the 'c' key during startup to boot from your system CD."
+      },
+      {
+        "title": "Use Disk Utility",
+        "content": "Once booted from the CD, use Disk Utility to check your hard drive for errors."
+      },
+      {
+        "title": "Reinstall System",
+        "content": "If Disk Utility cannot fix the issue, consider reinstalling your system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Safe Mode Login",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Hold down the 'shift' key during startup to boot into Safe Mode."
+          },
+          {
+            "title": "Login and Troubleshoot",
+            "content": "Once in Safe Mode, log in and troubleshoot any potential software issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T22:18:48.527Z",
+      "updated": "2026-01-05T22:18:48.527Z",
+      "sourceUrl": "https://superuser.com/questions/180543/troubleshooting-an-imac/180564",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767651531409-290",
+    "title": "Fix 'The application can't be opened' on Mac",
+    "problemDescription": "The application cannot be opened on a Mac due to permission issues.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "application",
+      "permission",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Open Terminal",
+        "content": "Press CMD + Space to open Spotlight, type 'terminal', and press Enter."
+      },
+      {
+        "title": "Navigate to the Application",
+        "content": "Use the `cd` command to navigate to the directory where the application is stored. For example: `cd /Applications`"
+      },
+      {
+        "title": "Change Permissions",
+        "content": "Run the command `chmod +x \"ApplicationName.app/Contents/MacOS/ApplicationName\"` to make the application executable. If you encounter permission issues, use `sudo chmod +x \"ApplicationName.app/Contents/MacOS/ApplicationName\"`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use The Unarchiver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open the Application Zip File",
+            "content": "Right-click on the application zip file and select 'Open With'."
+          },
+          {
+            "title": "Choose The Unarchiver",
+            "content": "Select 'The Unarchiver' from the list of options to unzip the application."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T22:18:51.409Z",
+      "updated": "2026-01-05T22:18:51.409Z",
+      "sourceUrl": "https://superuser.com/questions/1345755/how-to-fix-the-application-cant-be-opened-on-mac",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767651534731-79",
+    "title": "MacBook Pro Random Sleep and Wake Issue",
+    "problemDescription": "MacBook Pro randomly sleeps and fails to wake up, possibly due to a faulty Hall sensor or keyboard ribbon cable.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "sleep",
+      "wake",
+      "hall sensor",
+      "keyboard"
+    ],
+    "steps": [
+      {
+        "title": "Check and Reconnect the Keyboard Ribbon Cable",
+        "content": "Disconnect the keyboard ribbon cable from the ZIF connector and then reconnect it firmly. This is a common cause of the issue and can often resolve the problem."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Trick the Hall Sensor",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Lift the Lid Twice Quickly",
+            "content": "Lift the lid of the MacBook Pro up and down twice about 1/2 inch quickly. The Hall sensor and OS kernel may interpret this as a single event, potentially resolving the sleep issue."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check Keyboard Illumination",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Keyboard Illumination",
+            "content": "Ensure that the keyboard illuminates on startup. If it does not, the computer may sleep immediately at login and fail to wake. This could indicate a deeper hardware issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T22:18:54.731Z",
+      "updated": "2026-01-05T22:18:54.731Z",
+      "sourceUrl": "https://superuser.com/questions/433668/macbook-pro-randomly-sleeps-and-wont-wake-up",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767651542824-575",
+    "title": "Fix Streaming and Voice Assistant Issues After Router Update",
+    "problemDescription": "Streaming services and voice assistants are connected but not working correctly after a router firmware update.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "network",
+      "streaming",
+      "voice assistant",
+      "router",
+      "firmware"
+    ],
+    "steps": [
+      {
+        "title": "Check Router Settings",
+        "content": "Log in to your router's admin panel and verify that the settings related to streaming and voice assistants are correctly configured."
+      },
+      {
+        "title": "Update Router Firmware",
+        "content": "Ensure that your router's firmware is up to date. Sometimes, rolling back to a previous version can resolve issues."
+      },
+      {
+        "title": "Check for ISP Issues",
+        "content": "Contact your Internet Service Provider (ISP) to check if there are any known issues or outages in your area."
+      },
+      {
+        "title": "Test with Different Devices",
+        "content": "Try using different devices to see if the issue is specific to certain devices or if it's a general network problem."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Reset the network settings on your devices to ensure there are no conflicts or misconfigurations."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change DNS Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change DNS Servers",
+            "content": "Change the DNS servers on your router or devices to a public DNS like Google DNS (8.8.8.8 and 8.8.4.4) or Cloudflare DNS (1.1.1.1)."
+          },
+          {
+            "title": "Test Connection",
+            "content": "After changing the DNS settings, test the connection to see if the issue is resolved."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset Router",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Router Settings",
+            "content": "Backup your router settings before performing a factory reset."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Perform a factory reset on your router and reconfigure it from scratch."
+          },
+          {
+            "title": "Test Connection",
+            "content": "After the reset, test the connection to see if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T22:19:02.824Z",
+      "updated": "2026-01-05T22:19:02.824Z",
+      "sourceUrl": "https://superuser.com/questions/1766932/steps-to-analyse-network-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767651545076-953",
+    "title": "Fix Seagate HDD Periodic Disconnects",
+    "problemDescription": "A Seagate HDD periodically disconnects and reconnects from the system.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "Seagate",
+      "HDD",
+      "disconnect",
+      "USB",
+      "power"
+    ],
+    "steps": [
+      {
+        "title": "Change USB Port",
+        "content": "Move the Seagate HDD to a different USB port on your computer. Ensure the new port is not a 'power only' port and is capable of data transfer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Power Cycle the Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disconnect and Reconnect Power",
+            "content": "Disconnect the power supply from the Seagate HDD, wait for a few seconds, and then reconnect it. This can sometimes resolve intermittent power issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T22:19:05.076Z",
+      "updated": "2026-01-05T22:19:05.076Z",
+      "sourceUrl": "https://superuser.com/questions/1311947/seagate-hdd-periodically-disables-enables",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767651549675-598",
+    "title": "Block SSDP Discovery for Specific Devices",
+    "problemDescription": "Prevent Amazon Alexa from discovering a Wemo smart switch using SSDP while keeping other device discovery functional.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "SSDP",
+      "Alexa",
+      "Wemo",
+      "firewall",
+      "iptables"
+    ],
+    "steps": [
+      {
+        "title": "Identify the IP Addresses",
+        "content": "Determine the IP addresses of your Alexa devices and the Wemo switch. You can find these in your router's DHCP client list or using network scanning tools."
+      },
+      {
+        "title": "Access Your Router's Firewall",
+        "content": "Log in to your router's administration interface. This is typically done by entering the router's IP address in a web browser."
+      },
+      {
+        "title": "Create Firewall Rules",
+        "content": "Add firewall rules to block SSDP traffic between the Alexa devices and the Wemo switch. For example, using iptables, you can add rules like: `iptables -I FORWARD -d <Wemo_IP> -j DROP` and `iptables -I FORWARD -s <Alexa_IP> -j DROP`. Replace `<Wemo_IP>` and `<Alexa_IP>` with the actual IP addresses."
+      },
+      {
+        "title": "Test the Configuration",
+        "content": "Verify that the Alexa app no longer discovers the Wemo switch but can still discover other devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Network Monitoring Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Network Monitoring Tool",
+            "content": "Install a tool like Wireshark or tcpdump to monitor network traffic."
+          },
+          {
+            "title": "Capture SSDP Traffic",
+            "content": "Capture the SSDP traffic between the Alexa devices and the Wemo switch to understand the specific packets being exchanged."
+          },
+          {
+            "title": "Create Custom Firewall Rules",
+            "content": "Based on the captured traffic, create custom firewall rules to block only the relevant SSDP packets."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T22:19:09.675Z",
+      "updated": "2026-01-05T22:19:09.675Z",
+      "sourceUrl": "https://superuser.com/questions/1174295/selectively-dropping-ssdp-discovery-packets",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767651555823-576",
+    "title": "Block Voice Assistants on Home Network",
+    "problemDescription": "Prevent devices from connecting to voice assistant services on your home network.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "voice assistants",
+      "network blocking",
+      "firewall",
+      "privacy"
+    ],
+    "steps": [
+      {
+        "title": "Identify Assistant Backend IPs",
+        "content": "Research and list the IP addresses or domains of the voice assistant services you want to block (e.g., Siri, Bixby, Google Assistant, Alexa, Cortana)."
+      },
+      {
+        "title": "Access Router Firewall Settings",
+        "content": "Log in to your router's admin panel. This is typically done by entering the router's IP address in a web browser."
+      },
+      {
+        "title": "Create Firewall Rules",
+        "content": "Navigate to the firewall settings and create rules to block outgoing connections to the identified IPs or domains. Save the rules."
+      },
+      {
+        "title": "Test the Blocking",
+        "content": "Test the blocking by attempting to use the voice assistants on your devices. Verify that they cannot connect to their respective services."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Parental Controls",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Parental Controls",
+            "content": "Use parental control features on your router to block access to specific websites or services."
+          },
+          {
+            "title": "Configure Device-Specific Rules",
+            "content": "Set up rules for each device to block connections to voice assistant services."
+          }
+        ]
+      },
+      {
+        "title": "Use Third-Party Firewall Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Firewall Software",
+            "content": "Install third-party firewall software on your router or a dedicated device."
+          },
+          {
+            "title": "Configure Blocking Rules",
+            "content": "Set up the software to block connections to voice assistant services."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T22:19:15.823Z",
+      "updated": "2026-01-05T22:19:15.823Z",
+      "sourceUrl": "https://superuser.com/questions/1469528/block-siri-bixby-google-assistant-alexa-cortana-in-home-network",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767651561247-690",
+    "title": "Fix Invalid Command Error in ask-cli",
+    "problemDescription": "Error when trying to create a new Alexa skill using ask-cli command line tool.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "ask-cli",
+      "Alexa skill",
+      "command line",
+      "npm",
+      "Ubuntu"
+    ],
+    "steps": [
+      {
+        "title": "Update npm and ask-cli",
+        "content": "Ensure you have the latest versions of npm and ask-cli installed. Run the following commands to update them:"
+      },
+      {
+        "title": "Update npm",
+        "content": "sudo npm install -g npm@latest"
+      },
+      {
+        "title": "Update ask-cli",
+        "content": "sudo npm install -g ask-cli@latest"
+      },
+      {
+        "title": "Verify Installation",
+        "content": "Check the installed versions to ensure they are up-to-date. Run: ask --version and npm --version."
+      },
+      {
+        "title": "Use Correct Command Syntax",
+        "content": "Ensure you are using the correct syntax for the ask new command. The correct syntax is: ask new --template --url <url>."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall ask-cli",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall ask-cli",
+            "content": "Run the following command to uninstall ask-cli: sudo npm uninstall -g ask-cli."
+          },
+          {
+            "title": "Reinstall ask-cli",
+            "content": "Reinstall ask-cli using the following command: sudo npm install -g ask-cli."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-05T22:19:21.247Z",
+      "updated": "2026-01-05T22:19:21.247Z",
+      "sourceUrl": "https://superuser.com/questions/1433445/unable-to-create-a-new-alexa-skill-from-command-line-invalid-command",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
