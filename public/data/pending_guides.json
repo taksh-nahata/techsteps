@@ -52223,5 +52223,518 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767723923805-112",
+    "title": "Fix Windows 11 Virtual Keyboard Issue",
+    "problemDescription": "Virtual on-screen keyboard fails to open after returning from the lock screen in Windows 11.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "keyboard",
+      "lock screen"
+    ],
+    "steps": [
+      {
+        "title": "Update Windows 11",
+        "content": "Ensure your Windows 11 system is updated to the latest version. This issue is resolved in the latest updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart the Touch Keyboard Service",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Services",
+            "content": "Press Win + R, type 'services.msc', and press Enter."
+          },
+          {
+            "title": "Locate the Service",
+            "content": "Find 'Touch Keyboard and Handwriting Panel Service' in the list."
+          },
+          {
+            "title": "Restart the Service",
+            "content": "Right-click on the service and select 'Restart'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T18:25:23.805Z",
+      "updated": "2026-01-06T18:25:23.805Z",
+      "sourceUrl": "https://www.techradar.com/computing/windows/microsoft-fixes-seriously-annoying-pc-gaming-bug-with-windows-11-update",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767723997295-76",
+    "title": "Fix Printer Connection in Windows",
+    "problemDescription": "Printer is not responding or printing due to connection issues, driver errors, or physical jams.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "connection",
+      "windows",
+      "troubleshoot"
+    ],
+    "steps": [
+      {
+        "title": "Check for Paper Jams",
+        "content": "Inspect the printer for any paper jams. Remove any jammed paper carefully."
+      },
+      {
+        "title": "Verify Printer Connection",
+        "content": "Ensure the printer is properly connected to the computer via USB or network."
+      },
+      {
+        "title": "Update Printer Drivers",
+        "content": "Go to 'Device Manager', find your printer under 'Printer queues', right-click and select 'Update driver'."
+      },
+      {
+        "title": "Restart Printer and Computer",
+        "content": "Turn off both the printer and the computer, wait for a few seconds, and then turn them back on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Printer Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Current Drivers",
+            "content": "Go to 'Device Manager', find your printer, right-click and select 'Uninstall device'."
+          },
+          {
+            "title": "Download Latest Drivers",
+            "content": "Visit the printer manufacturer's website and download the latest drivers for your printer model."
+          },
+          {
+            "title": "Install New Drivers",
+            "content": "Run the downloaded driver installation file and follow the on-screen instructions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T18:26:37.295Z",
+      "updated": "2026-01-06T18:26:37.295Z",
+      "sourceUrl": "https://www.makeuseof.com/troubleshoot-printer-connection-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767724006246-802",
+    "title": "Fix Printer Error 0x8000ffff in Windows",
+    "problemDescription": "The printer error 0x8000ffff occurs in Windows, preventing printing.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "error",
+      "0x8000ffff",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Run the Printer Troubleshooter",
+        "content": "Go to Settings > Update & Security > Troubleshoot > Additional troubleshooters > Printer. Run the troubleshooter and follow the on-screen instructions."
+      },
+      {
+        "title": "Clear Print Spooler Files",
+        "content": "Open Services, stop the Print Spooler service, delete all files in the C:\\Windows\\System32\\spool\\PRINTERS folder, then restart the Print Spooler service."
+      },
+      {
+        "title": "Reinstall the Printer",
+        "content": "Uninstall the printer from Devices and Printers, then reinstall it using the manufacturer's software or Windows' built-in drivers."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Printer Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download the Latest Drivers",
+            "content": "Visit the printer manufacturer's website, download the latest drivers for your printer model, and install them."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T18:26:46.246Z",
+      "updated": "2026-01-06T18:26:46.246Z",
+      "sourceUrl": "https://www.makeuseof.com/printer-error-0x8000ffff-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767724009564-97",
+    "title": "Fix Printer in Error State",
+    "problemDescription": "The printer is showing an error state and cannot print.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "error state",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Run Printer Troubleshooter",
+        "content": "Open the Settings app, go to Update & Security > Troubleshoot > Additional troubleshooters. Select Printer and run the troubleshooter. Wait for it to complete and fix any issues."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Open the Settings app, go to System > Windows Update, and click Check for updates. Install any pending updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Printer Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Current Drivers",
+            "content": "Go to Device Manager, expand Printer queues, right-click your printer, and select Uninstall device."
+          },
+          {
+            "title": "Reinstall Drivers",
+            "content": "Download the latest drivers from the manufacturer's website and install them."
+          }
+        ]
+      },
+      {
+        "title": "Reboot the Printer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off the Printer",
+            "content": "Press the Power button to turn off the printer."
+          },
+          {
+            "title": "Wait and Turn On",
+            "content": "Wait for about 30 seconds, then press the Power button again to turn it back on."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T18:26:49.564Z",
+      "updated": "2026-01-06T18:26:49.564Z",
+      "sourceUrl": "https://www.makeuseof.com/fix-printer-in-error-state-windows-10/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767724016691-909",
+    "title": "Update Microsoft Authenticator App on New Phone",
+    "problemDescription": "How to transfer and update the Microsoft Authenticator app to a new phone.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Authenticator",
+      "new phone",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Backup Your Accounts",
+        "content": "Open the Microsoft Authenticator app on your old phone. Tap on the three dots (menu) in the top right corner and select 'Backup accounts'. Follow the prompts to back up your accounts to the cloud."
+      },
+      {
+        "title": "Install the App on New Phone",
+        "content": "Download and install the Microsoft Authenticator app from the app store on your new phone."
+      },
+      {
+        "title": "Restore Your Accounts",
+        "content": "Open the app on your new phone and sign in with the same Microsoft account you used to back up your accounts. The app will automatically restore your accounts."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manual Account Recovery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "If you cannot restore from a backup, contact Microsoft Support for assistance in manually recovering your accounts."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T18:26:56.691Z",
+      "updated": "2026-01-06T18:26:56.691Z",
+      "sourceUrl": "https://answers.microsoft.com/de-de/outlook_com/forum/all/how-to-create-an-account/2f8bf9d2-6ff5-4412-a1dc-c872e3090aad",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767724024050-871",
+    "title": "Fix Office 365 Load Issue on Mac",
+    "problemDescription": "Office 365 fails to load on a Mac.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Office 365",
+      "Mac",
+      "load issue",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check System Requirements",
+        "content": "Ensure your Mac meets the system requirements for Office 365. Verify that your macOS version is supported."
+      },
+      {
+        "title": "Update Office 365",
+        "content": "Open the Microsoft AutoUpdate application and check for updates. Install any available updates for Office 365."
+      },
+      {
+        "title": "Repair Office Installation",
+        "content": "Go to the Microsoft 365 portal, sign in with your account, and navigate to the 'Install Status' section. Click on 'Repair' to repair the Office installation."
+      },
+      {
+        "title": "Reinstall Office 365",
+        "content": "If the issue persists, uninstall Office 365 completely and then reinstall it from the Microsoft 365 portal."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Conflicting Applications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Conflicting Applications",
+            "content": "Check if any third-party applications or security software might be interfering with Office 365. Temporarily disable these applications to see if the issue resolves."
+          },
+          {
+            "title": "Restart Your Mac",
+            "content": "After disabling conflicting applications, restart your Mac and try loading Office 365 again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T18:27:04.050Z",
+      "updated": "2026-01-06T18:27:04.050Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/office_2007-customize/windows-common-controls-6-sp6-keeps-going-missing/e5b4cda7-2b8a-4aaf-896f-0184de41d04d?msgId=4f89af44-dfc7-4afe-b198-800fcc6ce26f",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767724034943-205",
+    "title": "Fix Awaiting Endpoint Error on Discord",
+    "problemDescription": "Discord shows 'Awaiting Endpoint' error, preventing connection to voice channels.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "awaiting endpoint",
+      "connection error"
+    ],
+    "steps": [
+      {
+        "title": "Restart Discord",
+        "content": "Disconnect from voice channels, close Discord, and reopen it."
+      },
+      {
+        "title": "Check for Updates",
+        "content": "Press Ctrl + R (Windows) or Command + R (Mac) to manually check for and install updates."
+      },
+      {
+        "title": "Restart Computer",
+        "content": "Reboot your computer to resolve potential system-related issues."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Verify your internet connection by visiting other websites or playing videos."
+      },
+      {
+        "title": "Disable VPN",
+        "content": "If you're using a VPN, disable it temporarily to check if it's causing the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Discord",
+            "content": "Go to Control Panel > Programs > Uninstall a Program and remove Discord."
+          },
+          {
+            "title": "Reinstall Discord",
+            "content": "Download the latest version of Discord from the official website and install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T18:27:14.943Z",
+      "updated": "2026-01-06T18:27:14.943Z",
+      "sourceUrl": "https://www.makeuseof.com/how-to-fix-awaiting-endpoint-discord/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767724037964-239",
+    "title": "Fix Discord Web Client Audio Issues",
+    "problemDescription": "Discord web client is not playing audio.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "audio",
+      "web client",
+      "no sound"
+    ],
+    "steps": [
+      {
+        "title": "Check Discord Status",
+        "content": "Visit Discord's status page to ensure there are no ongoing audio-related issues."
+      },
+      {
+        "title": "Restart Discord Web Client and Browser",
+        "content": "Close and reopen the Discord web client and your browser to rule out temporary glitches."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Hardware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test Audio Device",
+            "content": "Ensure your audio device is functioning properly and try replacing it if necessary."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T18:27:17.964Z",
+      "updated": "2026-01-06T18:27:17.964Z",
+      "sourceUrl": "https://www.makeuseof.com/windows-discord-web-client-muted/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767724046544-833",
+    "title": "Fix Laggy or Poor-Quality Discord Streams",
+    "problemDescription": "Discord streams are laggy, stuttery, or of poor quality.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "lag",
+      "stutter",
+      "quality",
+      "stream"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall Discord",
+        "content": "Uninstall Discord from your Windows device. Download the latest version from the Discord website and install it."
+      },
+      {
+        "title": "Clear Discord Cache",
+        "content": "Open the AppData folder in Windows File Explorer and delete all files in the Discord cache folder."
+      },
+      {
+        "title": "Close Resource-Hogging Apps",
+        "content": "Close any other applications that may be consuming significant system resources."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Discord Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Discord Settings",
+            "content": "Click on the gear icon in the bottom left corner of the Discord window."
+          },
+          {
+            "title": "Adjust Video Settings",
+            "content": "Navigate to the 'Voice & Video' tab and adjust the video settings to a lower resolution or frame rate."
+          },
+          {
+            "title": "Adjust Advanced Settings",
+            "content": "Go to the 'Advanced' tab and enable 'Enable Quality of Service High Packet Priority' and 'Enable Discord PTB (Public Test Build)' if available."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T18:27:26.544Z",
+      "updated": "2026-01-06T18:27:26.544Z",
+      "sourceUrl": "https://www.makeuseof.com/fix-poor-quality-stream-discord-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767724049842-450",
+    "title": "Fix Discord Not Opening",
+    "problemDescription": "Discord application fails to launch or open on your computer.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "app",
+      "launch",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Delete Temporary Files",
+        "content": "Navigate to `C:\\Users\\username\\AppData\\Local\\Temp` and delete all temporary files."
+      },
+      {
+        "title": "Flush DNS Cache",
+        "content": "Open Command Prompt as an administrator and type `ipconfig /flushdns` to flush your DNS cache."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Discord Web App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Discord Web App",
+            "content": "Open your web browser and go to the Discord web app at `https://discord.com/login` to use Discord through your browser."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T18:27:29.842Z",
+      "updated": "2026-01-06T18:27:29.842Z",
+      "sourceUrl": "https://www.makeuseof.com/8-easy-ways-to-fix-discord-when-it-wont-open/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
