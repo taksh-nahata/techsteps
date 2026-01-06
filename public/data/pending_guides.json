@@ -49447,5 +49447,704 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767709193720-210",
+    "title": "Restore Missing Chromecast Controls",
+    "problemDescription": "Chromecast controls are missing when casting from Chrome browser.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "chromecast",
+      "controls",
+      "chrome",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Update Chrome Browser",
+        "content": "Open Chrome, click the More icon (three dots), and select 'Update Google Chrome' if available. After the update completes, relaunch Chrome."
+      },
+      {
+        "title": "Check Casting Site",
+        "content": "Go back to the site you were casting from and verify that the Chromecast controls have returned."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reboot Mobile Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot Device",
+            "content": "If the issue persists, reboot your mobile device. This can sometimes resolve the problem until a major device update is available."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T14:19:53.720Z",
+      "updated": "2026-01-06T14:19:53.720Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/common-google-chromecast-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767709200730-88",
+    "title": "Fix Chrome OS is Missing or Damaged on Pixelbook",
+    "problemDescription": "Your Pixelbook displays 'Chrome OS is missing or damaged' error during boot.",
+    "category": "chromeos",
+    "difficulty": "Medium",
+    "keywords": [
+      "chromeos",
+      "pixelbook",
+      "boot error",
+      "damaged"
+    ],
+    "steps": [
+      {
+        "title": "Reboot Your Pixelbook",
+        "content": "First, try rebooting your Pixelbook to see if the issue resolves itself."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Powerwash Your Pixelbook",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Step 1: Backup Your Data",
+            "content": "Ensure all your important data is backed up, as Powerwash will erase all local data."
+          },
+          {
+            "title": "Step 2: Access Settings",
+            "content": "Click on the time in the bottom right corner, then click the Settings gear icon."
+          },
+          {
+            "title": "Step 3: Navigate to Advanced",
+            "content": "Scroll down and click on 'Advanced' to reveal more options."
+          },
+          {
+            "title": "Step 4: Reset Settings",
+            "content": "Scroll down to the 'Reset settings' section and click 'Powerwash'."
+          },
+          {
+            "title": "Step 5: Confirm Powerwash",
+            "content": "Click the blue Continue button to confirm."
+          },
+          {
+            "title": "Step 6: Follow On-Screen Instructions",
+            "content": "Follow the steps displayed on your Pixelbook to complete the Powerwash process."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall Chrome OS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Step 1: Prepare a Second PC",
+            "content": "You will need a second PC to download a new copy of Chrome OS and create a bootable flash drive."
+          },
+          {
+            "title": "Step 2: Download Chrome OS",
+            "content": "Download the Chrome OS image from the official source."
+          },
+          {
+            "title": "Step 3: Create Bootable Flash Drive",
+            "content": "Use the downloaded image to create a bootable flash drive."
+          },
+          {
+            "title": "Step 4: Boot from Flash Drive",
+            "content": "Insert the bootable flash drive into your Pixelbook and boot from it."
+          },
+          {
+            "title": "Step 5: Follow Installation Instructions",
+            "content": "Follow the on-screen instructions to reinstall Chrome OS on your Pixelbook."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T14:20:00.730Z",
+      "updated": "2026-01-06T14:20:00.730Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/most-common-pixelbook-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767709210043-263",
+    "title": "Fix Flickering Lights in Smartphone Videos",
+    "problemDescription": "Lights flicker in smartphone videos due to mismatched frame rates and electric current cycles.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "smartphone",
+      "video",
+      "flickering",
+      "frame rate",
+      "PAL",
+      "NTSC"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Video Format and Frame Rate",
+        "content": "Change your camera settings to match the local electric current cycle. For 50Hz regions (Europe, Asia, Africa, South America), set your camera to PAL format and 25 fps. For 60Hz regions (US, Canada), set your camera to NTSC format and 30 fps or 60 fps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Video Editing App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit the Video",
+            "content": "Use a video editing app to adjust the frame rate of the recorded video to match the local electric current cycle."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T14:20:10.044Z",
+      "updated": "2026-01-06T14:20:10.044Z",
+      "sourceUrl": "https://lifehacker.com/why-lights-flicker-in-your-smartphone-videos-and-how-t-1850877053",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767709221509-434",
+    "title": "Fix Display Flickering and Thumbnail Issues with Wintoys",
+    "problemDescription": "Display flickering or thumbnails not loading correctly on your PC.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "display",
+      "flickering",
+      "thumbnails",
+      "PC",
+      "Wintoys"
+    ],
+    "steps": [
+      {
+        "title": "Open Wintoys",
+        "content": "Launch the Wintoys application on your PC."
+      },
+      {
+        "title": "Access the Graphics Tab",
+        "content": "Click on the Graphics tab in the left pane."
+      },
+      {
+        "title": "Restart Graphics Driver",
+        "content": "Click the option to restart the graphics driver to resolve display flickering issues."
+      },
+      {
+        "title": "Rebuild Icons Cache",
+        "content": "Click the option to rebuild the icons cache to fix thumbnail loading issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Optimize Performance with Wintoys",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Unwanted Apps",
+            "content": "Go to the Apps tab and uninstall programs you don't need."
+          },
+          {
+            "title": "Scan Running Processes",
+            "content": "Navigate to the Services tab and scan all running processes."
+          },
+          {
+            "title": "Stop Unnecessary Services",
+            "content": "Use the \"Unnecessary\" filter to identify and stop non-essential services."
+          },
+          {
+            "title": "Optimize Startup Apps",
+            "content": "Go to the Boost tab and use the Startup Apps feature to prevent unwanted apps from starting at boot."
+          },
+          {
+            "title": "Remove Junk Files",
+            "content": "Check the Health tab and click \"Declutter\" to remove junk files."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T14:20:21.509Z",
+      "updated": "2026-01-06T14:20:21.509Z",
+      "sourceUrl": "https://lifehacker.com/this-free-app-unlocks-hidden-features-on-your-pc-1850473800",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767709224966-559",
+    "title": "Reduce Motion Blur on TV",
+    "problemDescription": "Motion blur on TV during fast-moving scenes.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "motion blur",
+      "TV settings",
+      "picture quality"
+    ],
+    "steps": [
+      {
+        "title": "Enable Motion Blur Reduction",
+        "content": "Turn on the Motion Blur Reduction setting on your TV."
+      },
+      {
+        "title": "Test the Setting",
+        "content": "Watch a fast-moving scene to see if the blur is reduced. Check for flickering or dimming."
+      },
+      {
+        "title": "Adjust as Needed",
+        "content": "If flickering or dimming is noticeable, turn the setting off and compare the picture quality."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Adjust Noise Reduction for Low-Quality Sources",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Noise Reduction",
+            "content": "Turn on Noise Reduction (DNR) for old or low-quality sources like VHS tapes or SD broadcasts."
+          },
+          {
+            "title": "Test the Setting",
+            "content": "Watch the content to see if the picture quality improves."
+          },
+          {
+            "title": "Disable for HD Content",
+            "content": "Turn off Noise Reduction for HD content like Blu-Ray to avoid unnecessary processing."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T14:20:24.966Z",
+      "updated": "2026-01-06T14:20:24.966Z",
+      "sourceUrl": "https://lifehacker.com/enhancement-or-gimmick-your-tvs-advanced-picture-setti-1682343703",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767709240962-625",
+    "title": "Set Up Alexa+ for Advanced Smart Home Control",
+    "problemDescription": "Configure Alexa+ for seamless smart home automation and ambient computing.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "Alexa",
+      "smart home",
+      "automation",
+      "ambient computing"
+    ],
+    "steps": [
+      {
+        "title": "Check Eligibility",
+        "content": "Ensure you are an Amazon Prime member to avoid the $20 monthly subscription fee for Alexa+."
+      },
+      {
+        "title": "Access Early Access",
+        "content": "Sign up for the early access program for Alexa+ through Amazon's official channels."
+      },
+      {
+        "title": "Configure Commands and Automations",
+        "content": "Use the Alexa companion app to set up commands, automations, and select connected services."
+      },
+      {
+        "title": "Enable Matter Support",
+        "content": "Ensure your devices are compatible with Matter for seamless integration and automation."
+      },
+      {
+        "title": "Test Contextual Chatbot",
+        "content": "Sign up to try the contextual chatbot feature before its official launch."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Classic Alexa for Basic Commands",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Classic Alexa",
+            "content": "Use the basic version of Alexa for playing music, setting timers, and executing pre-configured routines."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T14:20:40.962Z",
+      "updated": "2026-01-06T14:20:40.962Z",
+      "sourceUrl": "https://lifehacker.com/tech/your-most-important-smart-home-decision-is-the-ecosystem-you-choose",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767709243859-491",
+    "title": "Fix Smart Home Device Offline Issues",
+    "problemDescription": "Smart home devices frequently go offline and require resetting or reinstallation.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "smart home",
+      "offline",
+      "connection",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Check for Updates",
+        "content": "Ensure your smart home hub and devices have the latest firmware updates."
+      },
+      {
+        "title": "Reset the Device",
+        "content": "Perform a reset on the problematic device by following the manufacturer's instructions."
+      },
+      {
+        "title": "Reconnect to the Hub",
+        "content": "Reconnect the device to your smart home hub and test the connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset and Reinstallation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Factory Reset",
+            "content": "Perform a factory reset on the device if a simple reset does not work."
+          },
+          {
+            "title": "Reinstall the Device",
+            "content": "Reinstall the device in your smart home system and set it up again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T14:20:43.859Z",
+      "updated": "2026-01-06T14:20:43.859Z",
+      "sourceUrl": "https://lifehacker.com/tech/why-you-dont-need-a-smart-tech-middleman",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767709252420-414",
+    "title": "Fix macOS Big Sur Installation Issues",
+    "problemDescription": "macOS Big Sur fails to install or boot properly.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macOS",
+      "Big Sur",
+      "installation",
+      "boot",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Use macOS Recovery Mode",
+        "content": "Restart your Mac and press Command + Option + R during boot to start the recovery system over the Internet. If that doesn't work, try Shift + Option + Command + R."
+      },
+      {
+        "title": "Force Restart Your Mac",
+        "content": "Press and hold the power button for a few seconds until the Mac turns off. Wait a few seconds, then turn it back on to boot into macOS Big Sur."
+      },
+      {
+        "title": "Check Disk Space",
+        "content": "Open the Apple menu, click on 'About This Mac,' select 'Storage,' and ensure you have at least 15GB of free space. If not, free up disk space by going to Storage > Manage."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Create an External Startup Disk",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Follow Apple's Instructions",
+            "content": "Follow Apple’s instructions to create an external Mac startup disk if your Mac continues to fail to boot."
+          }
+        ]
+      },
+      {
+        "title": "Switch to Ethernet",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Wired Connection",
+            "content": "Switch from a Wi-Fi connection to an Ethernet cable to ensure a more reliable internet connection during installation."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T14:20:52.420Z",
+      "updated": "2026-01-06T14:20:52.420Z",
+      "sourceUrl": "https://www.techradar.com/how-to/macos-11-big-sur-problems-how-to-fix-the-most-common-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767709257867-768",
+    "title": "Reset Sync Data on Mac OS X",
+    "problemDescription": "Failed to sync data with MobileMe on Mac OS X.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "macos",
+      "sync",
+      "mobileme",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Open System Preferences",
+        "content": "Go to the Apple menu and select 'System Preferences'."
+      },
+      {
+        "title": "Access MobileMe Settings",
+        "content": "Click on 'MobileMe' and then go to the 'Sync' tab."
+      },
+      {
+        "title": "Reset Sync Data",
+        "content": "Click 'Advanced', then click 'Reset Sync Data'."
+      },
+      {
+        "title": "Replace Sync Info",
+        "content": "Choose 'All Sync Info' from the 'Replace' popup menu, then click the right arrow button to sync from Mac to MobileMe."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-06T14:20:57.867Z",
+      "updated": "2026-01-06T14:20:57.867Z",
+      "sourceUrl": "https://www.techradar.com/news/computing/apple/20-common-mac-os-x-problems-solved-664676/4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767709265423-257",
+    "title": "Fix Gmail Messages Stuck in Outbox",
+    "problemDescription": "Messages are stuck in the outbox of the Gmail app, but only for Gmail accounts.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "outbox",
+      "android",
+      "email"
+    ],
+    "steps": [
+      {
+        "title": "Check Email Quota",
+        "content": "Log into your email account via a web browser and check if you have exceeded your email quota. If you are over quota, free up some space and try sending the messages again."
+      },
+      {
+        "title": "Re-add Gmail Account",
+        "content": "Remove your Gmail account from the Gmail app and then re-add it to ensure all settings are correctly configured."
+      },
+      {
+        "title": "Check Outgoing Mail Settings",
+        "content": "Verify that your outgoing mail settings are set to Port 465 with SSL. If you are on a work or school network, they might have blocked insecure outgoing connections."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Auto Sync",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Auto Sync",
+            "content": "Ensure that auto sync is enabled for your Gmail account in the Gmail app settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T14:21:05.423Z",
+      "updated": "2026-01-06T14:21:05.423Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/102832/messages-stuck-in-outbox-of-gmail-app-but-only-for-gmail",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767709269254-684",
+    "title": "Fix Google Sign-In Error on Android",
+    "problemDescription": "Persistent Google sign-in error on Android devices, even with correct password.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "google",
+      "sign-in",
+      "error",
+      "password"
+    ],
+    "steps": [
+      {
+        "title": "Generate an Application-Specific Password",
+        "content": "1. Log in to your Gmail account.\n2. Navigate to 'My Account' by clicking on your profile name.\n3. Go to the 'Security' section.\n4. Scroll down to 'Application-Specific Passwords'.\n5. Generate a new password for your Android device.\n6. Use this new password to sign in on your Android device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Background Sync for Google+",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Background Sync",
+            "content": "1. Go to your device's settings.\n2. Navigate to 'Apps' or 'Application Manager'.\n3. Find and select 'Google+'.\n4. Disable 'Background sync' for Google+.\n5. Restart your device if necessary."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall Google+",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall Google+",
+            "content": "1. Uninstall Google+ from your device.\n2. Restart your device.\n3. Reinstall Google+ from the Google Play Store.\n4. Sign in with your Google account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T14:21:09.254Z",
+      "updated": "2026-01-06T14:21:09.254Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/24979/persistent-google-sign-in-error-even-with-correct-password",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767709276515-289",
+    "title": "Fix Google Messages Text to Email Issue",
+    "problemDescription": "Google Messages app fails to send texts to email, while ordinary texting works fine.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "google",
+      "messages",
+      "text",
+      "email",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Clear Cache and Data",
+        "content": "Go to Settings > Apps > Google Messages > Storage > Clear Cache and Clear Data. Ensure you back up your messages before clearing data."
+      },
+      {
+        "title": "Reboot the Device",
+        "content": "Restart your device to see if the issue is resolved."
+      },
+      {
+        "title": "Check Message Storage",
+        "content": "Delete old messages to free up space, as a full message storage might cause issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup all important data as a factory reset will erase everything."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > General Management > Reset > Factory Data Reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T14:21:16.515Z",
+      "updated": "2026-01-06T14:21:16.515Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/261787/troubleshooting-a-google-message-issue-text-to-email",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767709280790-127",
+    "title": "Fix Google Account Crash on Android",
+    "problemDescription": "Google account crashes on the 'Checking info' screen when trying to add or sign in to a Google account on Android.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "google account",
+      "crash",
+      "login issue"
+    ],
+    "steps": [
+      {
+        "title": "Reset App Preferences",
+        "content": "Go to Settings > Apps > Menu (three dots) > Reset app preferences. This will reset all app preferences to default, which can resolve crashes caused by corrupted app settings."
+      },
+      {
+        "title": "Clear Google Services Framework Data",
+        "content": "Go to Settings > Apps > Google Services Framework > Storage > Clear Data. This will clear the data associated with Google Services Framework, which might be causing the crash."
+      },
+      {
+        "title": "Reinstall Google Play Services",
+        "content": "Uninstall updates for Google Play Services by going to Settings > Apps > Google Play Services > Uninstall Updates. Then, restart your device and try adding the Google account again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup all important data as a factory reset will erase all data on your device."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > Backup & reset > Factory data reset > Reset device. Follow the on-screen instructions to complete the reset."
+          },
+          {
+            "title": "Restore Data",
+            "content": "After the reset, restore your data from the backup and try adding the Google account again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T14:21:20.790Z",
+      "updated": "2026-01-06T14:21:20.790Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/204789/how-to-fix-crashes-on-checking-info-screen-when-trying-to-add-a-google-account",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
