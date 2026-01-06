@@ -44375,5 +44375,773 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767680866288-214",
+    "title": "Fix Slow or Laggy Dictation/Siri on iPhone",
+    "problemDescription": "Dictation and Siri responses are slow or laggy on your iPhone.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "dictation",
+      "Siri",
+      "laggy",
+      "slow",
+      "iPhone"
+    ],
+    "steps": [
+      {
+        "title": "Delete Siri and Dictation History",
+        "content": "Go to Settings > Siri > Siri & Dictation History and delete the history."
+      },
+      {
+        "title": "Disable Dictation",
+        "content": "Go to Settings > General > Keyboards and turn off 'Enable Dictation'."
+      },
+      {
+        "title": "Reset Your iPhone",
+        "content": "Press Volume Up, then Volume Down, then hold the Power/Siri button until the phone turns off and the Apple logo appears."
+      },
+      {
+        "title": "Re-enable Dictation",
+        "content": "Go back to Settings > Keyboards and turn 'Enable Dictation' back on."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-06T06:27:46.288Z",
+      "updated": "2026-01-06T06:27:46.288Z",
+      "sourceUrl": "https://www.reddit.com/r/iphone/comments/1fz1u2m/for_those_experiencing_slow_or_laggy_dictation_or/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767680869509-451",
+    "title": "Fix Siri Response Faults on HomePod",
+    "problemDescription": "HomePod lights up but immediately turns off when using 'Hey Siri' or 'Siri' voice trigger.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "siri",
+      "homepod",
+      "voice trigger",
+      "response fault"
+    ],
+    "steps": [
+      {
+        "title": "Reset HomePod",
+        "content": "Press and hold the top of your HomePod until you see the 'Siri' screen. Then, press and hold the back of the HomePod for 10 seconds to reset it."
+      },
+      {
+        "title": "Restart HomePod",
+        "content": "Unplug the HomePod, wait for 10 seconds, and then plug it back in."
+      },
+      {
+        "title": "Update Firmware",
+        "content": "Ensure your HomePod is on the latest firmware by checking in the Home app."
+      },
+      {
+        "title": "Check Room Settings",
+        "content": "Verify that all HomePods are in the same 'room' in the Home app, even if you have an open floor plan."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Turn Siri On and Off",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Siri",
+            "content": "Go to Settings > Siri & Search, then turn off 'Listen for Hey Siri' and 'Allow Siri When Locked'."
+          },
+          {
+            "title": "Re-enable Siri",
+            "content": "After a few minutes, go back to the same settings and turn Siri back on."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T06:27:49.509Z",
+      "updated": "2026-01-06T06:27:49.509Z",
+      "sourceUrl": "https://www.reddit.com/r/HomePod/comments/1ibhbc4/is_anyone_else_experiencing_siri_response_faults/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767680874141-995",
+    "title": "Fix Siri Not Responding Properly on Mac",
+    "problemDescription": "Siri responds with 'ok' or 'that's done' instead of answering questions.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "siri",
+      "mac",
+      "response",
+      "issue"
+    ],
+    "steps": [
+      {
+        "title": "Reset Siri",
+        "content": "Go to System Preferences > Siri & Spotlight. Click 'Siri' and then click 'Reset Siri'."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Ensure your macOS is up to date. Go to System Preferences > Software Update and install any available updates."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "Reinstall macOS to resolve performance issues. This can be done by booting into Recovery Mode and selecting 'Reinstall macOS'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Downgrade macOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Important Data",
+            "content": "Back up all important data using Time Machine or another backup method."
+          },
+          {
+            "title": "Downgrade macOS",
+            "content": "Downgrade to an earlier macOS version that runs better on your Mac. This involves a total wipe and reset."
+          }
+        ]
+      },
+      {
+        "title": "Optimize Browser Performance",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Tab Hibernate Extension",
+            "content": "Install and use the Tab Hibernate extension (v 0.3.2) to manage memory usage from numerous tabs."
+          }
+        ]
+      },
+      {
+        "title": "Monitor Activity with Activity Monitor",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Activity Monitor",
+            "content": "Open Activity Monitor to identify apps and processes consuming a lot of CPU or RAM."
+          },
+          {
+            "title": "Identify and Close Resource-Intensive Apps",
+            "content": "Close any apps or processes that are consuming excessive resources."
+          }
+        ]
+      },
+      {
+        "title": "Clear Caches and Temporary Files",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Caches",
+            "content": "Regularly clear caches and temporary files to free up space and improve performance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T06:27:54.141Z",
+      "updated": "2026-01-06T06:27:54.141Z",
+      "sourceUrl": "https://www.reddit.com/r/applehelp/comments/ejizhq/something_is_wrong_with_my_siri_if_i_ask_any/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767680876445-267",
+    "title": "Fix iPhone 16 Not Responding to 'Hey Siri'",
+    "problemDescription": "iPhone 16 does not respond to 'Hey Siri' voice command.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iPhone",
+      "Siri",
+      "voice command",
+      "Apple Intelligence"
+    ],
+    "steps": [
+      {
+        "title": "Update iOS",
+        "content": "Ensure your iPhone 16 is updated to the latest iOS version, including the Apple Intelligence update, as this may resolve Siri responsiveness issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Siri Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Hey Siri",
+            "content": "Go to Settings > Siri & Search > Turn on Listen for 'Hey Siri'."
+          },
+          {
+            "title": "Reset Siri",
+            "content": "Go to Settings > Siri & Search > Siri Voice > Reset Siri Voice."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T06:27:56.445Z",
+      "updated": "2026-01-06T06:27:56.445Z",
+      "sourceUrl": "https://www.reddit.com/r/iphone/comments/1fmu74o/iphone_16_not_responding_to_hey_siri/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767680880913-219",
+    "title": "Fix Siri Performance Issues in iOS 26.4",
+    "problemDescription": "Siri is not responding or performing poorly in iOS 26.4.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "siri",
+      "ios",
+      "performance",
+      "bug",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Update to the Latest iOS Version",
+        "content": "Ensure your device is running the latest version of iOS. Go to Settings > General > Software Update and install any available updates."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "Restart your iPhone or iPad to clear temporary glitches. Press and hold the power button, then slide to power off. Wait for a few seconds and turn it back on."
+      },
+      {
+        "title": "Reset Siri Settings",
+        "content": "Go to Settings > Siri & Search. Turn off Siri, then turn it back on after a few seconds."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset All Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset All Settings",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset All Settings. This will not delete your data but will reset all settings to default."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Apple Support",
+            "content": "If the issue persists, contact Apple Support or visit an Apple Store for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T06:28:00.913Z",
+      "updated": "2026-01-06T06:28:00.913Z",
+      "sourceUrl": "https://www.reddit.com/r/apple/comments/1oasywg/apple_employees_have_concerns_over_siri/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767680904710-48",
+    "title": "Router Reset for Internet Issues",
+    "problemDescription": "Troubleshooting internet connection problems by resetting the router.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "router",
+      "reset",
+      "internet",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Locate the Reset Button",
+        "content": "Find the small reset button on your router, usually marked 'reset' and located on the back or bottom."
+      },
+      {
+        "title": "Press and Hold the Reset Button",
+        "content": "Use a paperclip or small object to press and hold the reset button for about 10 seconds until the router lights flash."
+      },
+      {
+        "title": "Wait for Router to Reboot",
+        "content": "Release the button and wait for the router to reboot and reset to its default settings."
+      },
+      {
+        "title": "Reconnect to the Router",
+        "content": "Look for the default network name and password on the sticker at the bottom of the router and reconnect your devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reboot the Router",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unplug the Router",
+            "content": "Unplug the router from the power source."
+          },
+          {
+            "title": "Wait for 30 Seconds",
+            "content": "Wait for about 30 seconds to ensure all power is drained."
+          },
+          {
+            "title": "Plug the Router Back In",
+            "content": "Plug the router back into the power source and wait for it to fully reboot."
+          },
+          {
+            "title": "Reconnect Devices",
+            "content": "Reconnect your devices to the router and check if the internet connection is restored."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T06:28:24.710Z",
+      "updated": "2026-01-06T06:28:24.710Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=Un-lieuCQBI",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767680910858-405",
+    "title": "Fix Outlook Startup Issues",
+    "problemDescription": "Outlook fails to start due to corrupted installation or damaged data files.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Outlook",
+      "startup",
+      "repair",
+      "corrupted",
+      "installation"
+    ],
+    "steps": [
+      {
+        "title": "Repair Office Suite",
+        "content": "Press Windows key + I to open Settings, click Apps, find Microsoft Office, select it, then click Modify."
+      },
+      {
+        "title": "Run Quick Repair",
+        "content": "Follow the prompts in the Quick Repair Wizard for Microsoft Office."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Repair Email Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Mail Setup",
+            "content": "Open the Control Panel, search for Mail, and launch the Mail Setup window."
+          },
+          {
+            "title": "Repair Account",
+            "content": "Click Email Accounts, find your account, and click Repair."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T06:28:30.858Z",
+      "updated": "2026-01-06T06:28:30.858Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/fix-common-microsoft-outlook-issues/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767680918455-112",
+    "title": "Fix Outlook 'Something Went Wrong' Error",
+    "problemDescription": "Microsoft Outlook displays 'Something Went Wrong' error on Windows.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "error",
+      "windows",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Run Microsoft Office Repair Tool",
+        "content": "Go to Control Panel > Programs > Programs and Features. Select Microsoft Office, click Change, and choose Quick Repair. If the issue persists, perform an Online Repair."
+      },
+      {
+        "title": "Start Outlook in Safe Mode",
+        "content": "Press Win + R, type 'outlook /safe', and press Enter. If Outlook works fine, disable all add-ins and re-enable them one by one to identify the problematic add-in."
+      },
+      {
+        "title": "Clear Outlook Cache",
+        "content": "Close Outlook. Navigate to %LocalAppData%\\Microsoft\\Outlook and delete the 'RoamCache' folder. Restart Outlook."
+      },
+      {
+        "title": "Repair Outlook Profile",
+        "content": "Go to Control Panel > Mail > Show Profiles. Select your profile and click Properties. Use the Repair option to fix any issues with your Outlook profile."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Microsoft Office",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Microsoft Office",
+            "content": "Go to Control Panel > Programs > Programs and Features. Select Microsoft Office and click Uninstall."
+          },
+          {
+            "title": "Reinstall Microsoft Office",
+            "content": "Download the latest version of Microsoft Office from the official website and follow the installation instructions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T06:28:38.455Z",
+      "updated": "2026-01-06T06:28:38.455Z",
+      "sourceUrl": "https://www.makeuseof.com/microsoft-outloos-something-went-wrong-error-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767680926735-194",
+    "title": "Fix Discord Freezing When Tabbed Out",
+    "problemDescription": "Discord freezes semi-randomly when the application is not in focus.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "freezing",
+      "tabbed out",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Close Discord and Background Processes",
+        "content": "Close Discord completely and open Task Manager (Ctrl+Shift+Esc). End all Discord-related background processes, then restart Discord."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Hardware Acceleration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Discord Settings",
+            "content": "Click on the gear icon in the bottom left corner to open User Settings."
+          },
+          {
+            "title": "Navigate to Advanced",
+            "content": "In the left sidebar, scroll down and click on 'Advanced'."
+          },
+          {
+            "title": "Disable Hardware Acceleration",
+            "content": "Under the Advanced section, toggle off 'Hardware Acceleration' and restart Discord."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T06:28:46.735Z",
+      "updated": "2026-01-06T06:28:46.735Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/discord-freezes-semi-randomly-when-tabbed-out.3845731/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767680932874-964",
+    "title": "Fix Discord Suspension on Windows",
+    "problemDescription": "Discord gets suspended in Task Manager and doesn't open.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "suspension",
+      "task manager",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Run Windows Troubleshooters",
+        "content": "Go to Settings > Update & Security > Troubleshoot and run the built-in Windows 10 Troubleshooters."
+      },
+      {
+        "title": "Run SFC Scan",
+        "content": "Open Command Prompt as administrator and run 'sfc /scannow' to check for and repair system file corruption."
+      },
+      {
+        "title": "Check Reliability History and Event Viewer",
+        "content": "Look for any related error messages or entries in Reliability History or Event Viewer to identify potential causes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Discord",
+            "content": "Uninstall Discord using a dedicated uninstaller to ensure complete removal."
+          },
+          {
+            "title": "Reinstall Discord",
+            "content": "Download the latest version of Discord from the official website and install it."
+          },
+          {
+            "title": "Run Discord in Safe Mode",
+            "content": "Boot your PC into Safe Mode and try running Discord to see if it works."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Antivirus and Firewall",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Antivirus",
+            "content": "Temporarily disable your antivirus software to see if it's causing the issue."
+          },
+          {
+            "title": "Disable Firewall",
+            "content": "Turn off your firewall temporarily to check if it's interfering with Discord."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Scan for Malware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Malwarebytes",
+            "content": "Perform a full system scan using Malwarebytes to detect and remove any malware."
+          },
+          {
+            "title": "Run Kaspersky",
+            "content": "Use Kaspersky to perform a thorough scan of your system for any potential threats."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T06:28:52.874Z",
+      "updated": "2026-01-06T06:28:52.874Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/discord-getting-suspended.3608099/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767680935175-338",
+    "title": "Fix Keyboard Keys Getting Stuck in Games During Discord Calls",
+    "problemDescription": "Keyboard keys get stuck in games while in a Discord call.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "keyboard",
+      "stuck",
+      "Discord",
+      "games"
+    ],
+    "steps": [
+      {
+        "title": "Disable Background Processes",
+        "content": "Temporarily disable as many background processes as possible and note what you disable. Check if the keyboard issue stops."
+      },
+      {
+        "title": "Reinstall Disabled Processes",
+        "content": "If the issue stops, reinstall the disabled processes one at a time, allowing time and at least one restart between each reinstall."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Open Game First",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Launch Game Before Discord",
+            "content": "Open the game first, then start Discord. This may help avoid the keyboard issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T06:28:55.175Z",
+      "updated": "2026-01-06T06:28:55.175Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/my-keyboard-keys-get-stuck-in-games-while-in-a-discord-call.3852155/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767680937526-314",
+    "title": "Fix Discord Lag Spikes",
+    "problemDescription": "Experiencing extreme lag spikes on Discord only.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "lag",
+      "packet loss",
+      "latency"
+    ],
+    "steps": [
+      {
+        "title": "Check for Packet Loss",
+        "content": "Open a Command Prompt window and run a constant ping command to 8.8.8.8 in the background. When you experience lag spikes on Discord, check this window to see if there is packet loss or very large latency spikes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Video Streaming",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Video Streaming",
+            "content": "Ensure that there is no video streaming or other high-bandwidth activities running in the background that might be causing the lag spikes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T06:28:57.526Z",
+      "updated": "2026-01-06T06:28:57.526Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/extreme-lag-spikes-on-discord-only.3870477/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767680947362-740",
+    "title": "Fix Cloudflare Outage Issues",
+    "problemDescription": "Cloudflare outage causing widespread service disruptions across various platforms.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "Cloudflare",
+      "outage",
+      "internet",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Wait for Cloudflare to Resolve the Issue",
+        "content": "Cloudflare has already resolved the issue. If you are still experiencing problems, wait a few minutes for the changes to propagate across the internet."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Service Status",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Downdetector",
+            "content": "Go to Downdetector and check if other users are reporting issues with the same service."
+          },
+          {
+            "title": "Contact Support",
+            "content": "If the issue persists, contact the support team of the service you are trying to access."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T06:29:07.362Z",
+      "updated": "2026-01-06T06:29:07.362Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/cloudflare-fixes-outage-that-caused-problems-across-the-internet/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767680950393-728",
+    "title": "Fix Discord App Bugs on Android",
+    "problemDescription": "Discord app is buggy after the latest update on Android.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "android",
+      "bugs",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Update Discord App",
+        "content": "Go to the Google Play Store, search for Discord, and update the app to the latest version."
+      },
+      {
+        "title": "Clear App Cache",
+        "content": "Go to Settings > Apps > Discord > Storage > Clear Cache."
+      },
+      {
+        "title": "Restart Device",
+        "content": "Restart your Android device to ensure all changes take effect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Discord App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Discord",
+            "content": "Go to Settings > Apps > Discord > Uninstall."
+          },
+          {
+            "title": "Reinstall Discord",
+            "content": "Download and install Discord again from the Google Play Store."
+          }
+        ]
+      },
+      {
+        "title": "Adjust Font Size",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Discord Settings",
+            "content": "Open the Discord app and go to Settings."
+          },
+          {
+            "title": "Change Font Size",
+            "content": "Navigate to Appearance > Text Size and adjust the font size to your preference."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T06:29:10.393Z",
+      "updated": "2026-01-06T06:29:10.393Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/discord-fans-say-bye-to-that-android-support-coming-soon-message/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
