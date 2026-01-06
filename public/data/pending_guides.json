@@ -41748,5 +41748,174 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767662216932-77",
+    "title": "Fix Slow SSD on Windows",
+    "problemDescription": "Your PC feels sluggish and apps launch slowly due to SSD performance issues.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "ssd",
+      "slow",
+      "windows",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Free Up SSD Space",
+        "content": "Ensure your SSD has at least 15-20% free space by uninstalling unused software, cleaning out large downloads, and moving media or archives off the drive."
+      },
+      {
+        "title": "Check for Windows Issues",
+        "content": "Walk through a checklist of Windows-level issues that might be affecting SSD performance, such as disabling unnecessary startup programs, updating drivers, and checking for system errors."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update SSD Firmware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Firmware Updates",
+            "content": "Visit the manufacturer's website to check for and install any available firmware updates for your SSD."
+          },
+          {
+            "title": "Update Firmware",
+            "content": "Follow the manufacturer's instructions to update the SSD firmware, which can improve performance and fix known issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Windows Superfetch",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Services",
+            "content": "Press Win + R, type 'services.msc', and press Enter."
+          },
+          {
+            "title": "Disable Superfetch",
+            "content": "Find 'Superfetch' in the list, right-click it, and select 'Properties'. Set the 'Startup type' to 'Disabled' and click 'Stop' to stop the service."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T01:16:56.932Z",
+      "updated": "2026-01-06T01:16:56.932Z",
+      "sourceUrl": "https://www.howtogeek.com/i-finally-fixed-my-slow-ssd-by-fixing-these-5-windows-issues/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767662224294-976",
+    "title": "Speed Up Sluggish Windows PC",
+    "problemDescription": "Windows PC is running slow and needs optimization.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "speed",
+      "optimization",
+      "cleanup"
+    ],
+    "steps": [
+      {
+        "title": "Use WinDirStat to Analyze Disk Usage",
+        "content": "Download and install WinDirStat. Run the tool to scan your hard drive and visualize disk usage. Identify large files or unnecessary data that can be removed."
+      },
+      {
+        "title": "Clean Up with BleachBit",
+        "content": "Download and install BleachBit. Use it to clean temporary files, cache, and other unnecessary data. Select the appropriate options for your system."
+      },
+      {
+        "title": "Search and Manage Files with Everything",
+        "content": "Download and install Everything. Use it to quickly locate and manage files, helping to declutter your system and free up space."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Cleanup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete Temporary Files",
+            "content": "Go to File Explorer, type %temp% in the address bar, and press Enter. Delete all files in the temporary folder."
+          },
+          {
+            "title": "Uninstall Unused Programs",
+            "content": "Go to Control Panel > Programs > Uninstall a Program. Uninstall any programs you no longer use."
+          },
+          {
+            "title": "Disable Startup Programs",
+            "content": "Open Task Manager (Ctrl+Shift+Esc), go to the Startup tab, and disable programs that are not essential for startup."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T01:17:04.294Z",
+      "updated": "2026-01-06T01:17:04.294Z",
+      "sourceUrl": "https://www.howtogeek.com/3-free-windows-tools-i-use-to-revive-sluggish-pcs/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767662234533-763",
+    "title": "Speed Up a Laggy Internet Browser",
+    "problemDescription": "Your internet browser is running slow and laggy.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "browser",
+      "slow",
+      "laggy",
+      "speed up"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Browser and Computer",
+        "content": "Close your browser, restart your computer, and then reopen the browser to see if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Your Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to your browser's settings and check for any available updates. Install them if available."
+          }
+        ]
+      },
+      {
+        "title": "Upgrade Your Computer Hardware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Consider Hardware Upgrades",
+            "content": "If the issue persists, consider upgrading your computer's hardware, such as replacing a hard drive with an SSD or adding more RAM."
+          },
+          {
+            "title": "Cool Down Your Computer",
+            "content": "Use a laptop cooler, air conditioner, or other methods to cool down your computer, as overheating can cause performance issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T01:17:14.533Z",
+      "updated": "2026-01-06T01:17:14.533Z",
+      "sourceUrl": "https://lifehacker.com/tech/ten-ways-to-speed-up-a-laggy-internet-browser",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
