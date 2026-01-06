@@ -46608,5 +46608,564 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767691438360-845",
+    "title": "Fix iPhone to Google Pixel Group SMS Delivery",
+    "problemDescription": "Group SMS from iPhone fails to deliver to Google Pixel while individual SMS work.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "google pixel",
+      "sms",
+      "group messaging",
+      "mms"
+    ],
+    "steps": [
+      {
+        "title": "Delete and Recreate Group Conversation",
+        "content": "Open Messages, swipe left on the group conversation, tap Delete, then create a new group message with the same participants."
+      },
+      {
+        "title": "Check MMS Settings",
+        "content": "Go to Settings > Messages and ensure MMS Messaging is turned on. If the option is not available, your carrier may not support this feature."
+      },
+      {
+        "title": "Verify Contact Information",
+        "content": "Ensure that the phone number or email address for the Google Pixel contact is correct."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart iPhone",
+            "content": "Restart your iPhone by pressing and holding the power button, then sliding to power off. Wait 30 seconds, then turn it back on."
+          },
+          {
+            "title": "Restart Google Pixel",
+            "content": "Restart your Google Pixel by pressing and holding the power button, then tapping 'Restart'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T09:23:58.360Z",
+      "updated": "2026-01-06T09:23:58.360Z",
+      "sourceUrl": "https://discussions.apple.com/thread/8398996",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767691440288-329",
+    "title": "Pixel 3 Charging Issue After Data Transfer",
+    "problemDescription": "Google Pixel 3 stops charging after transferring data from an iPhone.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel 3",
+      "charging",
+      "data transfer",
+      "iphone"
+    ],
+    "steps": [
+      {
+        "title": "Check Charging Accessories",
+        "content": "Try using a different charging cable or power adapter to see if the problem persists."
+      },
+      {
+        "title": "Contact Google Support",
+        "content": "If the issue continues, reach out to Google Support for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Battery Health",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Battery Replacement",
+            "content": "Consider replacing the battery if the phone is old and the battery is original."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T09:24:00.288Z",
+      "updated": "2026-01-06T09:24:00.288Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255585957",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767691459270-212",
+    "title": "Fix Siri Not Working on Apple Watch",
+    "problemDescription": "Siri is not responding or working properly on your Apple Watch.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "siri",
+      "apple watch",
+      "not working",
+      "voice assistant"
+    ],
+    "steps": [
+      {
+        "title": "Clean the Microphone",
+        "content": "Use a lint-free and slightly damp cloth to gently wipe away any dirt obstructing your microphone."
+      },
+      {
+        "title": "Increase Siri's Volume",
+        "content": "Ensure Siri's volume settings are not too low. Adjust the volume settings to hear Siri's responses clearly."
+      },
+      {
+        "title": "Restart Your Apple Watch",
+        "content": "Press and hold the side button. Tap the Power icon, drag the Power Off slider to the right, wait a few seconds, then press and hold the side button until the Apple logo appears."
+      },
+      {
+        "title": "Update watchOS",
+        "content": "Go to the Settings app on your Apple Watch, tap on General, then Software Update. Install any available updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Siri Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Siri",
+            "content": "On your Apple Watch, go to Settings > Siri and ensure that Siri is enabled."
+          },
+          {
+            "title": "Check Language Settings",
+            "content": "Ensure that the language settings for Siri match your preferred language."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T09:24:19.270Z",
+      "updated": "2026-01-06T09:24:19.270Z",
+      "sourceUrl": "https://www.makeuseof.com/how-to-fix-siri-not-working-on-apple-watch/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767691471373-245",
+    "title": "Replace or Fix BIOS Battery Drain",
+    "problemDescription": "BIOS battery drains quickly, lasting only a few months instead of the expected duration.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "bios",
+      "battery",
+      "drain",
+      "motherboard"
+    ],
+    "steps": [
+      {
+        "title": "Inspect the Motherboard",
+        "content": "Check the motherboard for any visible issues, such as corrosion or damage around the battery compartment."
+      },
+      {
+        "title": "Check the Battery Switch",
+        "content": "Ensure the switch that activates/deactivates the battery is not stuck closed. If it is, gently clean or repair it."
+      },
+      {
+        "title": "Replace the Battery",
+        "content": "If the battery is faulty, replace it with a new CMOS battery."
+      },
+      {
+        "title": "Check for Power Supply Issues",
+        "content": "Ensure there are no conflicts between the power supply unit (PSU) and the battery."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset BIOS Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear CMOS",
+            "content": "Clear the CMOS by removing the battery for a few minutes or using the jumper on the motherboard."
+          },
+          {
+            "title": "Reconfigure BIOS",
+            "content": "Reconfigure the BIOS settings after clearing the CMOS."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T09:24:31.373Z",
+      "updated": "2026-01-06T09:24:31.373Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/bios-battery.3758423/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767691480190-484",
+    "title": "Fix Windows 10 Battery Drain",
+    "problemDescription": "Windows 10 battery drains rapidly after upgrade.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 10",
+      "battery drain",
+      "power settings"
+    ],
+    "steps": [
+      {
+        "title": "Check Battery Report",
+        "content": "Open Command Prompt as administrator and type 'powercfg /batteryreport' to generate a battery report. This will help identify what's consuming battery power."
+      },
+      {
+        "title": "Adjust Power Settings",
+        "content": "Go to Settings > System > Power & sleep. Adjust screen timeout and sleep settings to more conservative values."
+      },
+      {
+        "title": "Disable Background Apps",
+        "content": "Go to Settings > Privacy > Background apps. Turn off apps that are not needed to run in the background."
+      },
+      {
+        "title": "Update Drivers",
+        "content": "Ensure all drivers, especially graphics and chipset drivers, are up to date. Use Device Manager or manufacturer's website to update them."
+      },
+      {
+        "title": "Disable Startup Programs",
+        "content": "Open Task Manager (Ctrl+Shift+Esc), go to the Startup tab, and disable programs that are not essential."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to Settings > Update & Security > Windows Update. Install any pending updates, as they may include fixes for battery issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Power Plan",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Power Plan",
+            "content": "Go to Control Panel > Power Options. Select 'Choose what the power buttons do' > 'Change what the power buttons do' > 'Change advanced power settings'. Reset to default settings."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Cortana",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Cortana",
+            "content": "Go to Settings > Cortana > Permissions & History. Turn off all permissions and toggle 'Cortana' to off."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T09:24:40.190Z",
+      "updated": "2026-01-06T09:24:40.190Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/windows-10-battery-drain-problem.2391257/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767691501219-963",
+    "title": "Fix USB Device Not Recognized in Windows 10",
+    "problemDescription": "USB device is not detected or recognized by Windows 10.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "usb",
+      "windows 10",
+      "device not recognized"
+    ],
+    "steps": [
+      {
+        "title": "Open Device Manager",
+        "content": "Press the Windows key, type 'Device Manager', and open it."
+      },
+      {
+        "title": "Locate USB Controllers",
+        "content": "In Device Manager, scroll down to 'Universal Serial Bus controllers' and double-click on it."
+      },
+      {
+        "title": "Identify Problematic Device",
+        "content": "Look for your USB device in the list. If you see any device marked with a blue icon or a yellow exclamation mark, right-click on the problematic device and select 'Uninstall device'."
+      },
+      {
+        "title": "Reconnect USB Device",
+        "content": "If your USB device isn't listed, unplug it and then plug it back in. The device should appear with a yellow exclamation mark signaling a driver issue."
+      },
+      {
+        "title": "Update Drivers",
+        "content": "Once the scan is complete, check if your USB device appears in the list. If it does, select it and click 'Next' to install the necessary drivers."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Run Hardware Troubleshooter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open PowerShell",
+            "content": "Open the search box, type 'PowerShell', and open the Windows PowerShell."
+          },
+          {
+            "title": "Run Hardware Troubleshooter",
+            "content": "Type 'msdt.exe -id DeviceDiagnostic' and press Enter to run the hardware troubleshooter."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T09:25:01.219Z",
+      "updated": "2026-01-06T09:25:01.219Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=TT4gQgOcw9A",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767691510672-102",
+    "title": "Fix USB Device Not Recognized",
+    "problemDescription": "USB drive is not recognized or corrupted and needs repair.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "usb",
+      "drive",
+      "not recognized",
+      "corrupted",
+      "diskpart"
+    ],
+    "steps": [
+      {
+        "title": "Backup Data",
+        "content": "Before starting, back up any important data from the USB drive using a backup method of your choice."
+      },
+      {
+        "title": "Open Diskpart",
+        "content": "Press the Windows key, type 'Diskpart', and open the Diskpart utility."
+      },
+      {
+        "title": "List Disks",
+        "content": "In the Diskpart command prompt, type 'list disk' and press Enter to display all connected disks."
+      },
+      {
+        "title": "Select USB Drive",
+        "content": "Identify your USB drive by its size, type 'select disk X' (replace X with the number of your USB drive), and press Enter."
+      },
+      {
+        "title": "Clean the Disk",
+        "content": "Type 'clean' and press Enter to remove all data and partitions from the USB drive."
+      },
+      {
+        "title": "Create a New Partition",
+        "content": "Type 'create partition primary' and press Enter to create a new primary partition."
+      },
+      {
+        "title": "Format the Partition",
+        "content": "Type 'format fs=fat32 quick' (or 'format fs=ntfs quick' for NTFS) and press Enter to format the partition."
+      },
+      {
+        "title": "Assign a Drive Letter",
+        "content": "Type 'assign letter=X' (replace X with the desired drive letter) and press Enter to assign a drive letter to the USB drive."
+      },
+      {
+        "title": "Exit Diskpart",
+        "content": "Type 'exit' and press Enter to close the Diskpart utility."
+      },
+      {
+        "title": "Verify the USB Drive",
+        "content": "Check if the USB drive is now recognized and functioning properly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use File Explorer to Format",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open File Explorer",
+            "content": "Right-click the Start button and select 'File Explorer'."
+          },
+          {
+            "title": "Locate the USB Drive",
+            "content": "In File Explorer, locate your USB drive under 'This PC'."
+          },
+          {
+            "title": "Format the Drive",
+            "content": "Right-click the USB drive and select 'Format'. Choose the file system (FAT32 or NTFS), set any desired options, and click 'Start' to format the drive."
+          },
+          {
+            "title": "Verify the USB Drive",
+            "content": "Check if the USB drive is now recognized and functioning properly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T09:25:10.672Z",
+      "updated": "2026-01-06T09:25:10.672Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=BCJYkUl7ZjM",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767691524783-472",
+    "title": "Fix Gmail Sign-In Issue on Ubuntu",
+    "problemDescription": "Unable to sign into Gmail while other websites work fine on Ubuntu.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "ubuntu",
+      "firefox",
+      "login",
+      "cookies"
+    ],
+    "steps": [
+      {
+        "title": "Clear Google/Gmail Cookies",
+        "content": "Remove all Google/Gmail cookies from your browser and try to load the site again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable IPv6 in Firefox",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Firefox Configuration",
+            "content": "Type about:config in the address bar and press Enter."
+          },
+          {
+            "title": "Find and Toggle IPv6 Setting",
+            "content": "Find network.dns.disableIPv6 in the list, right-click, and select Toggle."
+          },
+          {
+            "title": "Restart Firefox",
+            "content": "Restart Firefox and try to sign in to Gmail again."
+          }
+        ]
+      },
+      {
+        "title": "Start Firefox in Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Close Firefox",
+            "content": "Close the Firefox browser."
+          },
+          {
+            "title": "Open Firefox in Safe Mode",
+            "content": "Open a terminal and type firefox -safe-mode."
+          },
+          {
+            "title": "Disable Extensions",
+            "content": "If the issue is resolved, disable all extensions from the safe mode starting dialog and enable them one-by-one to find the culprit."
+          }
+        ]
+      },
+      {
+        "title": "Create a New Ubuntu User",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a New User",
+            "content": "Go to System >> Administration >> Users and Groups and create a new Ubuntu user."
+          },
+          {
+            "title": "Test Gmail Login",
+            "content": "Try signing into Gmail with the new user account."
+          },
+          {
+            "title": "Identify Gnome Settings Issue",
+            "content": "If the issue is resolved, identify which Gnome settings are affecting the Gmail login."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T09:25:24.783Z",
+      "updated": "2026-01-06T09:25:24.783Z",
+      "sourceUrl": "https://askubuntu.com/questions/13142/cannot-sign-into-gmail-all-other-websites-are-opening",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767691527990-352",
+    "title": "Fix Sendmail Gmail Relay Issue",
+    "problemDescription": "Sendmail requires a reload to send emails via Gmail relay after upgrading to Ubuntu 24.04.1 LTS.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "sendmail",
+      "gmail",
+      "relay",
+      "ubuntu",
+      "email"
+    ],
+    "steps": [
+      {
+        "title": "Edit Sendmail Configuration",
+        "content": "Open the sendmail configuration file for editing: `sudo nano /etc/mail/sendmail.mc`."
+      },
+      {
+        "title": "Add Gmail Relay Settings",
+        "content": "Add the following lines to the configuration file to set up Gmail as a relay: `define(`SMART_HOST', `smtp.gmail.com')dnl` and `define(`RELAY_MAILER_ARGS', `TCP $h 587 10')dnl define(`ESMTP_MAILER_ARGS', `TCP $h 587 10')dnl`."
+      },
+      {
+        "title": "Generate Sendmail Configuration",
+        "content": "Generate the sendmail configuration file by running: `sudo m4 /etc/mail/sendmail.mc > /etc/mail/sendmail.cf`."
+      },
+      {
+        "title": "Restart Sendmail Service",
+        "content": "Restart the sendmail service to apply the changes: `sudo systemctl restart sendmail`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Cron Job",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a Cron Job",
+            "content": "Create a cron job to automatically reload sendmail at regular intervals: `sudo crontab -e`."
+          },
+          {
+            "title": "Add Reload Command",
+            "content": "Add the following line to the crontab file to reload sendmail every hour: `0 * * * * /usr/sbin/service sendmail reload`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T09:25:27.990Z",
+      "updated": "2026-01-06T09:25:27.990Z",
+      "sourceUrl": "https://askubuntu.com/questions/1531249/must-reload-sendmail-for-gmail-relay",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
