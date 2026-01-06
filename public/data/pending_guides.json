@@ -45143,5 +45143,776 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767684236102-161",
+    "title": "Fix Password Reset Problem",
+    "problemDescription": "Unable to reset your password due to errors or issues.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "password",
+      "reset",
+      "troubleshooting",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure you have a stable internet connection."
+      },
+      {
+        "title": "Verify Email/Username",
+        "content": "Double-check the email address or username you're using."
+      },
+      {
+        "title": "Reset Link",
+        "content": "Request a new password reset link if the previous one expired."
+      },
+      {
+        "title": "Check Spam Folder",
+        "content": "Look for the password reset email in your spam or junk folder."
+      },
+      {
+        "title": "Contact Support",
+        "content": "If all else fails, contact the platform's support team for assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Browser Cache Clear",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Browser Cache",
+            "content": "Clear your browser cache and cookies, then try the password reset process again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Different Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try Another Device",
+            "content": "Attempt the password reset process from a different device or browser."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T07:23:56.102Z",
+      "updated": "2026-01-06T07:23:56.102Z",
+      "sourceUrl": "https://www.youtube.com/shorts/tOkMy_YuksM",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767684238955-436",
+    "title": "Gmail Password Reset Email Not Received",
+    "problemDescription": "You are not receiving password reset emails from Gmail.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "password reset",
+      "email",
+      "account recovery"
+    ],
+    "steps": [
+      {
+        "title": "Check the Email Address",
+        "content": "Ensure there are no typos in the email address you're using to request the password reset."
+      },
+      {
+        "title": "Review Email Rules or Filters",
+        "content": "Check if any rules or filters in your email client are redirecting or deleting the password reset emails."
+      },
+      {
+        "title": "Disable Email Forwarding",
+        "content": "If you have email forwarding set up, disable it temporarily to see if the password reset emails are being redirected."
+      },
+      {
+        "title": "Contact Google Support",
+        "content": "If the issue persists, contact Google Support directly for further assistance. Visit the Gmail help Forum or the Google Account Help Center for contact options."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Spam Folder",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Spam Folder",
+            "content": "Sometimes password reset emails might be marked as spam. Check your spam folder for the password reset email."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T07:23:58.955Z",
+      "updated": "2026-01-06T07:23:58.955Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=yXcGFJx5ktc",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767684254545-100",
+    "title": "Fix Roku Boot/Recovery Loop on TCL TV",
+    "problemDescription": "TCL Roku TV stuck in a boot/recovery loop, unable to complete setup.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "roku",
+      "boot loop",
+      "recovery loop",
+      "tcl tv",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Drain Power",
+        "content": "Unplug the TV and hold the power button for 20 seconds to drain any residual power."
+      },
+      {
+        "title": "Hold Reset Button",
+        "content": "Hold in the reset button on the TV."
+      },
+      {
+        "title": "Plug in TV",
+        "content": "After 20 seconds, with the reset button still depressed, plug in the TV."
+      },
+      {
+        "title": "Hold Power Button",
+        "content": "Keeping the reset button depressed, hold the power button for 30 seconds."
+      },
+      {
+        "title": "Release Buttons",
+        "content": "Let go of both buttons."
+      },
+      {
+        "title": "Power On TV",
+        "content": "If the TV doesn't come on automatically after 60 seconds, press the power button."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: USB Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Prepare USB",
+            "content": "Download the latest firmware update from the manufacturer's website and save it to a USB drive."
+          },
+          {
+            "title": "Insert USB",
+            "content": "Insert the USB drive into the TV's USB port."
+          },
+          {
+            "title": "Update Firmware",
+            "content": "Follow the on-screen instructions to update the firmware. Note that this method may not work if the TV is unable to complete the recovery process."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T07:24:14.545Z",
+      "updated": "2026-01-06T07:24:14.545Z",
+      "sourceUrl": "https://www.reddit.com/r/tcltvs/comments/1av2a6b/roku_bootrecovery_loop_issue_fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767684262781-641",
+    "title": "Roku Remote Not Responding",
+    "problemDescription": "Roku remote is not responding, and common troubleshooting steps do not resolve the issue.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "Roku",
+      "remote",
+      "not responding",
+      "batteries"
+    ],
+    "steps": [
+      {
+        "title": "Remove and Reinsert Batteries",
+        "content": "Take the batteries out of the Roku remote completely and then put them back in. This action often resolves the issue of the remote not waking up."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Replace Remote or Roku Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Replace Remote",
+            "content": "Purchase a new remote and pair it with the Roku device."
+          },
+          {
+            "title": "Replace Roku Device",
+            "content": "Buy a new Roku device if the issue persists across multiple remotes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T07:24:22.781Z",
+      "updated": "2026-01-06T07:24:22.781Z",
+      "sourceUrl": "https://www.reddit.com/r/Roku/comments/1hmqfx2/there_is_a_serious_problem_with_roku_remotes_i_am/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767684264289-565",
+    "title": "Roku TV Not Working",
+    "problemDescription": "Roku TVs are not functioning and need troubleshooting.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Roku",
+      "TV",
+      "not working",
+      "crashing"
+    ],
+    "steps": [
+      {
+        "title": "Remove Problematic Channels",
+        "content": "Uninstall any channels that are causing the TV to crash."
+      },
+      {
+        "title": "Restart the TV",
+        "content": "Unplug the TV from the wall for a moment to perform a hard reset."
+      },
+      {
+        "title": "Re-add Channels",
+        "content": "After restarting, reinstall the channels that were removed."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-06T07:24:24.289Z",
+      "updated": "2026-01-06T07:24:24.289Z",
+      "sourceUrl": "https://www.reddit.com/r/Roku/comments/18x7oro/none_of_my_roku_tvs_work_anymore_what_do_i_do/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767684271618-768",
+    "title": "Roku Stick Frequent Stuck/Unresponsive Fix",
+    "problemDescription": "Roku Stick 4K frequently becomes stuck or unresponsive, requiring unplugging and replugging to reboot.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "roku",
+      "stuck",
+      "unresponsive",
+      "reboot"
+    ],
+    "steps": [
+      {
+        "title": "Check Power Source",
+        "content": "Ensure the Roku Stick is properly powered. If using USB, try a different USB port or a powered USB hub to provide consistent power."
+      },
+      {
+        "title": "Update Roku Software",
+        "content": "Go to Settings > System > System update > Check now to ensure your Roku Stick is running the latest software."
+      },
+      {
+        "title": "Remove Interfering Devices",
+        "content": "Disconnect any other USB devices or power sources that might be causing interference."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "If the issue persists, perform a factory reset by going to Settings > System > Advanced system settings > Factory reset."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different HDMI Port",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change HDMI Port",
+            "content": "Try connecting the Roku Stick to a different HDMI port on your TV to rule out any issues with the port itself."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Overheating",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ensure Proper Ventilation",
+            "content": "Make sure the Roku Stick has adequate ventilation and is not overheating. Avoid placing it in enclosed spaces."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T07:24:31.618Z",
+      "updated": "2026-01-06T07:24:31.618Z",
+      "sourceUrl": "https://www.reddit.com/r/Roku/comments/1awbtnl/roku_stick_frequent_stuck_unresponsive/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767684278570-291",
+    "title": "Fix Mac Mail 'Account Already Exists' Error with Gmail",
+    "problemDescription": "Error when trying to add a Gmail account to Mac Mail, stating the account already exists.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "mail",
+      "gmail",
+      "account",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Sign Out of iCloud",
+        "content": "Sign out of your iCloud account on your Mac using your normal account."
+      },
+      {
+        "title": "Re-enter Credentials",
+        "content": "Enter a wrong password first, then the correct password to refresh the account information."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Add Gmail Manually",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Add Other Account",
+            "content": "Instead of clicking the Google logo, choose 'Add Other Account...' in Mac Mail."
+          },
+          {
+            "title": "Enter Server Details",
+            "content": "Use 'pop.gmail.com' as the incoming server and 'smtp.gmail.com' as the outgoing server."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check Google Blocking",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Gmail via Browser",
+            "content": "Start your browser and sign in to Gmail."
+          },
+          {
+            "title": "Unblock Connection",
+            "content": "Follow the prompts to unblock any blocked connection attempts."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T07:24:38.570Z",
+      "updated": "2026-01-06T07:24:38.570Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/180785/mac-mail-account-already-exists-error-when-adding-gmail",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767684287578-377",
+    "title": "Fix Gmail on iPad Not Working",
+    "problemDescription": "Gmail account not working on iPad with error message 'The mail server imap.gmail.com is not responding.'",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "ipad",
+      "imap",
+      "mail server",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Remove and Re-add Gmail Account",
+        "content": "Go to Settings > Mail > Accounts > Select the problematic Gmail account > Delete Account. Then, re-add the account by going back to Accounts > Add Account > Gmail and follow the setup instructions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reduce Number of Devices Accessing Gmail",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Close Mail Apps on Other Devices",
+            "content": "Close the Mail app on other devices (iMac, notebooks, etc.) to reduce the number of devices accessing the Gmail account simultaneously. Gmail has a limit of 10 devices that can access the same email account at a given time."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T07:24:47.578Z",
+      "updated": "2026-01-06T07:24:47.578Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/71149/gmail-on-ipad-not-working-error-message",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767684291189-35",
+    "title": "Fix Gmail SMTP Server Going Offline in Mail.app",
+    "problemDescription": "Gmail SMTP server intermittently goes offline in Mail.app, especially after enabling two-factor authentication.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "smtp",
+      "mail.app",
+      "two-factor authentication",
+      "offline"
+    ],
+    "steps": [
+      {
+        "title": "Reset App-Specific Password",
+        "content": "Generate a new app-specific password for Mail.app in your Google account settings and update the password in Mail.app."
+      },
+      {
+        "title": "Restart Mail.app",
+        "content": "Close and reopen Mail.app to see if the connection is restored."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Authenticate via Safari",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Log in to Google",
+            "content": "Log into your Google account using Safari and complete the two-factor authentication process."
+          },
+          {
+            "title": "Check Mail.app",
+            "content": "After authenticating, check if Mail.app can now connect to the Gmail SMTP server."
+          }
+        ]
+      },
+      {
+        "title": "Check for CAPTCHA Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify CAPTCHA",
+            "content": "Ensure that you are not encountering a CAPTCHA-based issue by checking your Google account security settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T07:24:51.189Z",
+      "updated": "2026-01-06T07:24:51.189Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/53885/gmail-smtp-server-going-offline",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767684295090-747",
+    "title": "Fix iPhone Overriding Account Email with Gmail",
+    "problemDescription": "iPhone is overriding the Outlook account email with a Gmail address when sending emails.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "email",
+      "outlook",
+      "gmail",
+      "account"
+    ],
+    "steps": [
+      {
+        "title": "Remove Gmail Connected Account from Outlook.com",
+        "content": "Go to Outlook.com settings, navigate to Mail > Accounts > Connected Accounts, and remove the Gmail account that is linked to your Outlook account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reconfigure Email Accounts on iPhone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove and Re-add Outlook Account",
+            "content": "Go to Settings > Mail > Accounts, select the Outlook account, and remove it. Then, re-add the Outlook account to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T07:24:55.090Z",
+      "updated": "2026-01-06T07:24:55.090Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/277050/iphone-is-overriding-my-account-email-with-a-different-address",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767684300146-370",
+    "title": "Discord Service Outage",
+    "problemDescription": "Discord users experiencing issues across various features due to a service outage.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Discord",
+      "outage",
+      "service recovery"
+    ],
+    "steps": [
+      {
+        "title": "Wait for Official Resolution",
+        "content": "Discord is working with its provider to resolve the issues. Wait for official updates from Discord's status page or social media channels."
+      },
+      {
+        "title": "Check Discord Status Page",
+        "content": "Visit Discord's status page to monitor the recovery progress and confirm when all features are back online."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Discord Application",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Close Discord",
+            "content": "Close the Discord application completely."
+          },
+          {
+            "title": "Restart Discord",
+            "content": "Reopen the Discord application to see if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T07:25:00.146Z",
+      "updated": "2026-01-06T07:25:00.146Z",
+      "sourceUrl": "https://www.cnet.com/news-live/google-cloud-stumbled-and-unplugged-the-internet-heres-how-the-crash-loop-began/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767684304523-600",
+    "title": "Set Up Midjourney for AI Image Generation",
+    "problemDescription": "You want to use Midjourney for AI image generation but are unsure how to set it up.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Midjourney",
+      "AI",
+      "Discord",
+      "image generation"
+    ],
+    "steps": [
+      {
+        "title": "Create a Discord Account",
+        "content": "Sign up for a Discord account if you don't already have one."
+      },
+      {
+        "title": "Subscribe to a Midjourney Plan",
+        "content": "Choose and subscribe to a Midjourney plan that suits your needs."
+      },
+      {
+        "title": "Join the Midjourney Server",
+        "content": "Join the Midjourney Server on Discord."
+      },
+      {
+        "title": "Join a Channel",
+        "content": "Join a channel such as #General or #Newbie to start using Midjourney."
+      },
+      {
+        "title": "Write a Prompt",
+        "content": "Describe the image you want to generate in a clear and detailed prompt."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Alternative AI Image Generators",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Research Other Tools",
+            "content": "Look into other AI image generator tools that might be available on different platforms."
+          },
+          {
+            "title": "Compare Features",
+            "content": "Compare the features and limitations of these tools to find one that meets your needs."
+          },
+          {
+            "title": "Set Up the Alternative Tool",
+            "content": "Follow the setup instructions for the chosen alternative tool."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T07:25:04.523Z",
+      "updated": "2026-01-06T07:25:04.523Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/what-is-midjourney-heres-what-you-need-to-know-about-the-ai-image-generator/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767684310269-700",
+    "title": "AI Chatbot Providing Incorrect Information",
+    "problemDescription": "AI chatbots, like Google's Gemini Live, are providing incorrect information, making them unreliable.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "AI",
+      "chatbot",
+      "incorrect information",
+      "Gemini Live"
+    ],
+    "steps": [
+      {
+        "title": "Verify Information",
+        "content": "Cross-check the information provided by the AI chatbot with reliable sources to confirm its accuracy."
+      },
+      {
+        "title": "Update the AI Model",
+        "content": "Ensure that the AI model is updated to the latest version, as updates often include bug fixes and improved accuracy."
+      },
+      {
+        "title": "Provide Feedback",
+        "content": "Report the incorrect information to the developers of the AI chatbot. This helps them improve the model and reduce the likelihood of similar errors in the future."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Multiple AI Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Consult Multiple AI Chatbots",
+            "content": "Use multiple AI chatbots to gather information on the same topic. Comparing responses can help identify inaccuracies."
+          },
+          {
+            "title": "Human Verification",
+            "content": "Have a human expert review the information provided by the AI chatbots to ensure accuracy."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T07:25:10.269Z",
+      "updated": "2026-01-06T07:25:10.269Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/features/a-cambrian-explosion-ais-radical-reshaping-of-your-phone-coming-soon/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767684313472-105",
+    "title": "Update HP Support Assistant for Windows",
+    "problemDescription": "HP Support Assistant for Windows is not functioning properly or needs performance improvements.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "HP Support Assistant",
+      "Windows",
+      "update",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Download the Latest Version",
+        "content": "Visit the official download page at https://download.cnet.com/hp-support-assistant/3000-windows-hp-support-assistant.html and download the latest version (9.46.17.0 as of the last update)."
+      },
+      {
+        "title": "Install the Update",
+        "content": "Run the downloaded installer and follow the on-screen instructions to complete the installation."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "After installation, restart your computer to ensure all changes take effect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use HP Support Assistant's Built-in Update Feature",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open HP Support Assistant",
+            "content": "Launch HP Support Assistant from the Start menu or desktop shortcut."
+          },
+          {
+            "title": "Check for Updates",
+            "content": "Go to the settings or preferences section and look for an option to check for updates."
+          },
+          {
+            "title": "Install Available Updates",
+            "content": "If updates are available, follow the prompts to download and install them."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T07:25:13.472Z",
+      "updated": "2026-01-06T07:25:13.472Z",
+      "sourceUrl": "https://download.cnet.com/hp-support-assistant/3000-windows-hp-support-assistant.html",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767684332388-836",
+    "title": "Fix Ubuntu Desktop Screen Zoomed In on Boot",
+    "problemDescription": "Ubuntu desktop screen is zoomed in automatically right from boot.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "ubuntu",
+      "screen",
+      "zoom",
+      "boot"
+    ],
+    "steps": [
+      {
+        "title": "Access Accessibility Menu",
+        "content": "On the top right of the boot screen, click on the shape icon to open the accessibility menu."
+      },
+      {
+        "title": "Disable Zoom",
+        "content": "Uncheck the 'zoom' option in the accessibility menu."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-06T07:25:32.388Z",
+      "updated": "2026-01-06T07:25:32.388Z",
+      "sourceUrl": "https://askubuntu.com/questions/1467722/desktop-screen-zoomed-in-automatically-right-from-boot-time-in-settings-zoom",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
