@@ -52736,5 +52736,520 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767726887617-485",
+    "title": "Fix Instagram Download Issue on iPad",
+    "problemDescription": "Instagram cannot be downloaded on iPad despite multiple attempts.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "appstore",
+      "instagram",
+      "download"
+    ],
+    "steps": [
+      {
+        "title": "Wait and Retry",
+        "content": "Wait for 15-20 minutes and try downloading Instagram again."
+      },
+      {
+        "title": "Check on iPhone",
+        "content": "If you have an iPhone, check if Instagram can be downloaded on it. If it can, the issue might be specific to your iPad."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset to Default",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Settings",
+            "content": "Go to Settings > General > Reset > Reset All Settings. This will reset your iPad to default settings, which might resolve the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T19:14:47.617Z",
+      "updated": "2026-01-06T19:14:47.617Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/392111/instagram-could-not-be-downloaded-at-this-time-no-matter-how-i-try-i-am-not-ab",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767726892372-808",
+    "title": "Fix iOS App Location Services Issue",
+    "problemDescription": "An app on iOS is not registering or using location services correctly.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "ios",
+      "location services",
+      "app error"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall and Reinstall the App",
+        "content": "Uninstall the problematic app and then reinstall it from the App Store. This can resolve issues where the app's data or settings are corrupted."
+      },
+      {
+        "title": "Check Location Permissions",
+        "content": "Go to Settings > Privacy > Location Services and ensure the app has the necessary permissions enabled."
+      },
+      {
+        "title": "Restart the Device",
+        "content": "Restart your iOS device to clear any temporary issues that might be affecting the app's functionality."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Location & Privacy Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Location & Privacy",
+            "content": "Go to Settings > General > Reset > Reset Location & Privacy. This will reset all location settings to default, which might resolve the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T19:14:52.372Z",
+      "updated": "2026-01-06T19:14:52.372Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/44673/help-with-troubleshooting-location-services-where-one-app-isnt-registering",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767726903090-35",
+    "title": "Switch to Discord for Better Video Chat",
+    "problemDescription": "Users are experiencing better video chat quality and features on Discord compared to other platforms like Skype.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "video chat",
+      "Discord",
+      "Skype",
+      "migration"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install Discord",
+        "content": "Go to the Discord website or app store, download, and install the Discord application on your device."
+      },
+      {
+        "title": "Create an Account",
+        "content": "Sign up for a new account or log in if you already have one."
+      },
+      {
+        "title": "Join or Create a Server",
+        "content": "Join an existing server or create your own server to start using Discord's video chat features."
+      },
+      {
+        "title": "Invite Contacts",
+        "content": "Invite your contacts to join your server or add them as friends to start video chatting."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Discord's Web Version",
+        "type": "Alternative Method",
+        "steps": [
+          {
+            "title": "Access Discord Web",
+            "content": "Go to the Discord website and log in to your account."
+          },
+          {
+            "title": "Join a Server",
+            "content": "Join a server or create a new one."
+          },
+          {
+            "title": "Start Video Chat",
+            "content": "Use the video chat feature directly from your web browser."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T19:15:03.090Z",
+      "updated": "2026-01-06T19:15:03.090Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/discords-video-chat-feature-better-than-we-hoped/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767726912215-731",
+    "title": "Fix Windows 10 Creators Update Download Issues",
+    "problemDescription": "The Windows 10 Creators Update fails to download or gets stuck during the process.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "update",
+      "download",
+      "creators update"
+    ],
+    "steps": [
+      {
+        "title": "Run Windows Update Troubleshooter",
+        "content": "Go to Settings > Update & Security > Troubleshoot > Additional troubleshooters > Windows Update > Run the troubleshooter."
+      },
+      {
+        "title": "Restart Windows Update Services",
+        "content": "Open Command Prompt as administrator and run the following commands: net stop wuauserv, net stop bits, net stop cryptSvc, net stop msiserver. Then run: ren C:\\Windows\\SoftwareDistribution SoftwareDistribution.old, ren C:\\Windows\\System32\\catroot2 catroot2.old. Finally, run: net start wuauserv, net start bits, net start cryptSvc, net start msiserver."
+      },
+      {
+        "title": "Manually Download the Update",
+        "content": "Visit the Microsoft Update Catalog, search for the Creators Update, and download the appropriate package for your system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Media Creation Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Media Creation Tool",
+            "content": "Go to the Microsoft website and download the Media Creation Tool."
+          },
+          {
+            "title": "Run the Tool",
+            "content": "Run the tool and follow the on-screen instructions to upgrade your system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T19:15:12.215Z",
+      "updated": "2026-01-06T19:15:12.215Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/windows-creators-update-problems-fixes/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767726927732-674",
+    "title": "Fix Safari 3.1 Gmail and Google Reader Issues",
+    "problemDescription": "Users experience issues with Gmail and Google Reader in Safari 3.1, such as inability to type capital letters and problems accessing full reports.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "Safari",
+      "Gmail",
+      "Google Reader",
+      "browser",
+      "popup blocker"
+    ],
+    "steps": [
+      {
+        "title": "Enable Debug Menu",
+        "content": "Open Terminal (located in Applications/Utilities) and enter the following command: `defaults write com.apple.Safari IncludeDebugMenu 1`. Press return and quit then re-launch Safari."
+      },
+      {
+        "title": "Change User Agent ID",
+        "content": "With the debug menu enabled, change the Safari 'user agent' ID to see if it resolves the issue."
+      },
+      {
+        "title": "Disable Popup Blocker",
+        "content": "If you encounter a message about a popup blocker preventing Gmail from opening, try disabling the popup blocker in Safari."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Separate Text Editor",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Type in a Separate Text Editor",
+            "content": "Type your Gmail messages in a separate text editor and then paste the content into Gmail."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use PithHelmet Fix",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install PithHelmet Fix",
+            "content": "Install the PithHelmet fix to allow it to work with Safari 3.1, though it is generally recommended to avoid using input managers."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T19:15:27.732Z",
+      "updated": "2026-01-06T19:15:27.732Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/safari-3-1-google-readergmail-problems-pithhelmet-fix-secure-site-issues-more/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767726940830-897",
+    "title": "Fix Chrome Not Loading Pages Properly",
+    "problemDescription": "Google Chrome displays garbled graphics, missing UI elements, or fails to load pages completely.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "graphics",
+      "loading",
+      "hardware acceleration"
+    ],
+    "steps": [
+      {
+        "title": "Disable Hardware Acceleration",
+        "content": "Go to Chrome's Settings, navigate to the 'System' menu, and disable 'Use hardware acceleration when available'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Launch Chrome with GPU Disabled",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Launch Chrome with Command Line Argument",
+            "content": "Open a terminal and launch Chrome with the `--disable-gpu` argument: `google-chrome --disable-gpu`."
+          }
+        ]
+      },
+      {
+        "title": "Reinstall Graphics Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Graphics Drivers",
+            "content": "Reinstall graphics drivers and libraries such as mesa and vulkan, then repeat the above steps."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T19:15:40.830Z",
+      "updated": "2026-01-06T19:15:40.830Z",
+      "sourceUrl": "https://askubuntu.com/questions/1469276/chrome-not-loading-pages-properly",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767726950098-590",
+    "title": "Fix Chrome SIGSEGV Error on Ubuntu",
+    "problemDescription": "Chrome crashes with a SIGSEGV error when playing YouTube videos, requiring a system reboot.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "crash",
+      "sigsegv",
+      "ubuntu",
+      "hardware acceleration"
+    ],
+    "steps": [
+      {
+        "title": "Disable Hardware Acceleration",
+        "content": "Go to Chrome settings, navigate to 'System', and disable 'Use hardware acceleration when available'. Restart your machine for the changes to take effect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Chrome Extensions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Extensions",
+            "content": "Disable your Chrome extensions one by one until you isolate the extension causing the problem. Re-enable all other extensions except the problematic one."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Sign Out and Back Into Facebook",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Sign Out of Facebook",
+            "content": "Sign out of Facebook in Chrome and then sign back in with your Facebook password."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T19:15:50.098Z",
+      "updated": "2026-01-06T19:15:50.098Z",
+      "sourceUrl": "https://askubuntu.com/questions/1311601/something-went-wrong-while-displaying-this-webpage-error-code-sigsegv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767726952917-228",
+    "title": "Fix Google Chrome Not Starting",
+    "problemDescription": "Google Chrome fails to start, showing a spinner and then quitting.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "browser",
+      "ubuntu",
+      "not starting"
+    ],
+    "steps": [
+      {
+        "title": "Reset Chrome Configuration",
+        "content": "Delete all files in `/home/USERNAME/.config/google-chrome/` to force Chrome to regenerate configuration and profile files."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall libnss3",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install libnss3",
+            "content": "Run the command `sudo apt-get install libnss3` to reinstall the library."
+          },
+          {
+            "title": "Launch Chrome",
+            "content": "Open Google Chrome to verify the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T19:15:52.917Z",
+      "updated": "2026-01-06T19:15:52.917Z",
+      "sourceUrl": "https://askubuntu.com/questions/488823/google-chrome-not-starting",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767726966331-955",
+    "title": "Fix Mac Startup Problems Using Recovery Mode",
+    "problemDescription": "Your Mac won't start up properly, and you need to troubleshoot using Recovery Mode.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "startup",
+      "recovery mode",
+      "disk utility"
+    ],
+    "steps": [
+      {
+        "title": "Boot into Recovery Mode",
+        "content": "Turn off your Mac. Then, turn it back on and immediately press and hold the appropriate key combination for your Mac model to enter Recovery Mode. For Intel-based Macs, press Command (⌘) + R. For Apple Silicon Macs, press and hold the power button until you see the startup options."
+      },
+      {
+        "title": "Use Disk Utility to Run First Aid",
+        "content": "In the macOS Utilities window, select 'Disk Utility' and click 'Continue'. Select your Mac's main hard drive from the sidebar, then click the 'First Aid' tab and click 'Run'. This will check and repair any disk issues."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "If Disk Utility doesn't resolve the issue, select 'Reinstall macOS' from the macOS Utilities window and follow the on-screen instructions. This will reinstall macOS without erasing your files."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restore from Time Machine Backup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Recovery Mode",
+            "content": "Follow the steps to boot into Recovery Mode as described above."
+          },
+          {
+            "title": "Restore from Backup",
+            "content": "In the macOS Utilities window, select 'Restore from Time Machine Backup' and follow the on-screen instructions to restore your Mac from a Time Machine backup."
+          }
+        ]
+      },
+      {
+        "title": "Get Online Help",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Recovery Mode",
+            "content": "Follow the steps to boot into Recovery Mode as described above."
+          },
+          {
+            "title": "Access Safari",
+            "content": "In the macOS Utilities window, select 'Safari' to get online and visit the Apple Support site for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T19:16:06.331Z",
+      "updated": "2026-01-06T19:16:06.331Z",
+      "sourceUrl": "https://www.howtogeek.com/393221/how-to-fix-mac-startup-problems-using-recovery-mode/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767726969171-333",
+    "title": "Increase Mac Performance",
+    "problemDescription": "Your Mac is running slow due to low storage or excessive animations.",
+    "category": "macOS",
+    "difficulty": "Easy",
+    "keywords": [
+      "mac",
+      "performance",
+      "storage",
+      "animations"
+    ],
+    "steps": [
+      {
+        "title": "Free Up Storage",
+        "content": "Delete unnecessary files and consider adding more storage to your Mac to ensure it has enough space for updates and other operations."
+      },
+      {
+        "title": "Disable Animations",
+        "content": "Go to System Preferences > Accessibility > Display and check 'Reduce motion' to turn off fancy animations and improve performance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manage Startup Items",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Preferences",
+            "content": "Go to System Preferences > Users & Groups."
+          },
+          {
+            "title": "Select Login Items",
+            "content": "Click on the 'Login Items' tab."
+          },
+          {
+            "title": "Remove Unnecessary Items",
+            "content": "Select items you don't need to start automatically and click the '-' button to remove them."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T19:16:09.171Z",
+      "updated": "2026-01-06T19:16:09.171Z",
+      "sourceUrl": "https://www.howtogeek.com/448236/10-quick-steps-to-increase-mac-performance/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
