@@ -51564,5 +51564,664 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767720121755-943",
+    "title": "Fix WhatsApp Calls Over Wi-Fi on iOS 14",
+    "problemDescription": "WhatsApp calls fail to connect over Wi-Fi on iOS 14.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "ios",
+      "wifi",
+      "calls"
+    ],
+    "steps": [
+      {
+        "title": "Enable Local Network Access",
+        "content": "Open the Settings app on your iPhone, go to WhatsApp settings, and ensure that 'Local Network' access is enabled."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Report the Issue",
+            "content": "Contact Apple Support and report the issue. Multiple users have reported this problem, so it might require a software update."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall WhatsApp",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall and Reinstall",
+            "content": "Uninstall WhatsApp from your iPhone and then reinstall it from the App Store."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T17:22:01.755Z",
+      "updated": "2026-01-06T17:22:01.755Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/401600/cant-make-whatsapp-calls-over-wi-fi-on-ios14",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767720130010-434",
+    "title": "Fix iPhone Battery Draining Fast",
+    "problemDescription": "iPhone battery is draining quickly, even with normal usage.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "battery",
+      "draining",
+      "fast"
+    ],
+    "steps": [
+      {
+        "title": "Check Battery Usage",
+        "content": "Go to Settings > Battery to see which apps are using the most battery."
+      },
+      {
+        "title": "Review Insights and Suggestions",
+        "content": "Scroll down to the Insights and Suggestions section for recommendations on which apps and settings to change."
+      },
+      {
+        "title": "Turn Off Location Services",
+        "content": "Disable location services when not in use, as tracking your location drains the battery."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Display Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reduce Screen Brightness",
+            "content": "Lower the screen brightness to save battery life."
+          },
+          {
+            "title": "Enable Auto-Brightness",
+            "content": "Go to Settings > Accessibility > Display & Text Size > Auto-Brightness to enable this feature."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update iOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > General > Software Update to check for and install the latest iOS updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T17:22:10.010Z",
+      "updated": "2026-01-06T17:22:10.010Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/iphone-battery-draining-fast-heres-8-iphone-battery-tips-to-make-it-last-all-day/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767720135322-234",
+    "title": "Disable Keyboard Haptic Feedback on iPhone",
+    "problemDescription": "Keyboard haptic feedback may drain your iPhone battery.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "battery",
+      "settings",
+      "haptic feedback"
+    ],
+    "steps": [
+      {
+        "title": "Turn off Keyboard Haptic Feedback",
+        "content": "Go to Settings > Sounds & Haptics > Keyboard Feedback and toggle off Haptic."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-06T17:22:15.322Z",
+      "updated": "2026-01-06T17:22:15.322Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/you-probably-dont-need-these-3-ios-features-turn-them-off-to-save-battery/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767720161042-435",
+    "title": "Fix Graphics Update Flickering and Flash Video Issues",
+    "problemDescription": "Graphics update causing flickering and problems with Flash video playback.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "graphics",
+      "flickering",
+      "flash",
+      "video",
+      "safari"
+    ],
+    "steps": [
+      {
+        "title": "Reset System Settings",
+        "content": "Reset the PRAM, SMC, and perform general maintenance routines to reset boot caches and other temporary items."
+      },
+      {
+        "title": "Reset Safari",
+        "content": "Clear cookies, caches, and other Safari content using the 'Reset Safari' option in the Safari application menu."
+      },
+      {
+        "title": "Reinstall Flash",
+        "content": "Uninstall and reinstall the latest version of Flash."
+      },
+      {
+        "title": "Downgrade Flash",
+        "content": "If the issue persists, downgrade to a prior version of Flash that does not use video acceleration."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Third-Party Cleaning Utility",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Cleaning Utility",
+            "content": "Install a third-party cleaning utility like OnyX or MacKeeper."
+          },
+          {
+            "title": "Clear Safari Content",
+            "content": "Use the utility to clear Safari cookies, caches, and other content more thoroughly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T17:22:41.042Z",
+      "updated": "2026-01-06T17:22:41.042Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/graphics-update-causing-flickering-problems-with-flash-video/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767720163374-842",
+    "title": "Fix Mac Mini Flickering Screen",
+    "problemDescription": "Mac Mini screen flickers or goes black when connected via HDMI.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "Mac Mini",
+      "flickering",
+      "HDMI",
+      "screen",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Use Alternative Display Input",
+        "content": "If your display has alternative inputs (e.g., DisplayPort, Thunderbolt), connect your Mac Mini using one of these instead of HDMI."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Wait for Intel Driver Update",
+        "type": "Official Fix",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Monitor Apple's software updates for the release of an Intel driver update or a standalone display software update, which is expected to address the flickering issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T17:22:43.374Z",
+      "updated": "2026-01-06T17:22:43.374Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/flickering-mac-minis-to-get-a-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767720173933-62",
+    "title": "Add Trusted Phone Number for Two-Factor Authentication",
+    "problemDescription": "Unable to receive two-factor authentication codes due to lack of trusted phone numbers.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "two-factor authentication",
+      "trusted phone number",
+      "iPhone"
+    ],
+    "steps": [
+      {
+        "title": "Add a Trusted Phone Number",
+        "content": "Go to Settings > [your name] > Password & Security > Turn on Two-Factor Authentication. Follow the prompts to add a trusted phone number."
+      },
+      {
+        "title": "Verify the Phone Number",
+        "content": "Enter the verification code sent to the new phone number to confirm it as a trusted number."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use a Friend's or Relative's Phone Number",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ask a Friend or Relative",
+            "content": "Ask a friend or relative to provide a trusted phone number that you can use for two-factor authentication."
+          },
+          {
+            "title": "Add the Phone Number",
+            "content": "Follow the same steps as above to add and verify the friend's or relative's phone number as a trusted number."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T17:22:53.933Z",
+      "updated": "2026-01-06T17:22:53.933Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255691641",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767720177001-551",
+    "title": "Fix Two-Factor Authentication Not Working on iPhone",
+    "problemDescription": "Two-factor authentication fails on iPhone, even with the correct code.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "two-factor authentication",
+      "iPhone",
+      "Apple ID",
+      "verification code"
+    ],
+    "steps": [
+      {
+        "title": "Use a Trusted Device or Phone Number",
+        "content": "Get your verification code from a trusted device running iOS 9 and later or OS X El Capitan and later, or have it sent to your trusted phone number."
+      },
+      {
+        "title": "Combine Password and Verification Code",
+        "content": "Type your password followed by the six-digit verification code directly into the password field."
+      },
+      {
+        "title": "Ensure Correct Code Entry",
+        "content": "Double-check that you are entering the correct verification code and that it hasn't expired."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Two-Factor Authentication",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Two-Factor Authentication",
+            "content": "If the issue persists, you may need to reset your two-factor authentication. Go to your Apple ID account settings and follow the instructions to reset two-factor authentication."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T17:22:57.001Z",
+      "updated": "2026-01-06T17:22:57.001Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254063091",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767720185607-657",
+    "title": "Disable Two-Factor Authentication on Apple ID",
+    "problemDescription": "User wants to disable two-factor authentication on their Apple ID but cannot find the option.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "two-factor authentication",
+      "Apple ID",
+      "disable",
+      "security"
+    ],
+    "steps": [
+      {
+        "title": "Check for Apple Email",
+        "content": "Look for an email from Apple confirming the activation of two-factor authentication. Check your junk mail folder if you don't see it in your inbox."
+      },
+      {
+        "title": "Review Apple's Documentation",
+        "content": "Read the document 'Two-factor authentication for Apple ID' on Apple Support to understand the implications and limitations of disabling two-factor authentication."
+      },
+      {
+        "title": "Understand the Limitations",
+        "content": "Note that if you recently activated two-factor authentication, you can turn it off within two weeks of enrollment. However, if your Apple ID is new, two-factor authentication is enabled by default and cannot be turned off."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Apple Support",
+            "content": "If you are unable to disable two-factor authentication through the standard methods, contact Apple Support for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T17:23:05.607Z",
+      "updated": "2026-01-06T17:23:05.608Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254581520",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767720190532-860",
+    "title": "Fix iCloud 2-Factor Authentication Stuck on Windows",
+    "problemDescription": "iCloud 2-Factor Authentication gets stuck at verifying on Windows 10.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "icloud",
+      "2-factor authentication",
+      "windows 10",
+      "verification"
+    ],
+    "steps": [
+      {
+        "title": "Check for Third-Party Security Software",
+        "content": "Ensure there is no third-party security software interfering with iCloud for Windows or iTunes. Follow Apple's guide to resolve issues between iCloud for Windows, iTunes, and third-party security software."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "Restart your Windows 10 computer to clear any temporary issues."
+      },
+      {
+        "title": "Reinstall iCloud and iTunes",
+        "content": "Uninstall and then reinstall iCloud and iTunes to ensure a clean installation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use iCloud Web App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access iCloud via Web Browser",
+            "content": "If 2-Factor Authentication works on the iCloud web app (icloud.com), use this as an alternative until the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T17:23:10.532Z",
+      "updated": "2026-01-06T17:23:10.532Z",
+      "sourceUrl": "https://discussions.apple.com/thread/253589751",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767720196971-303",
+    "title": "Fix WhatsApp Media Not Downloading",
+    "problemDescription": "WhatsApp is not downloading images and media files.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "media",
+      "download",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Force Close WhatsApp",
+        "content": "Force-close the WhatsApp app and reopen it to fix temporary issues."
+      },
+      {
+        "title": "Check WhatsApp Server Status",
+        "content": "Visit DownDetector or Outage.Report to check if WhatsApp servers are down."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > Connection & sharing > Reset Wi-Fi, mobile networks, and Bluetooth. Authenticate with your phone's password or PIN."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update WhatsApp",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update WhatsApp",
+            "content": "Go to the Google Play Store, search for WhatsApp, and update it to the latest version."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T17:23:16.971Z",
+      "updated": "2026-01-06T17:23:16.971Z",
+      "sourceUrl": "https://www.makeuseof.com/whatsapp-not-downloading-media-how-to-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767720200267-387",
+    "title": "Fix WhatsApp Desktop Not Working on Windows",
+    "problemDescription": "WhatsApp Desktop app is not functioning properly on Windows.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "desktop",
+      "windows",
+      "not working"
+    ],
+    "steps": [
+      {
+        "title": "Log Out and Back Into WhatsApp",
+        "content": "In the WhatsApp window, click the Settings icon and select Log out. Then, open WhatsApp on your phone, tap Linked devices, and select Link a device to sign back in on your computer."
+      },
+      {
+        "title": "Ensure Same Network Connection",
+        "content": "Connect both your computer and phone to the same Wi-Fi network to avoid connection issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset the WhatsApp Desktop App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset WhatsApp Desktop",
+            "content": "Revert the app to its default settings to fix potential issues."
+          }
+        ]
+      },
+      {
+        "title": "Update WhatsApp Desktop",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update WhatsApp",
+            "content": "Ensure you have the latest version of WhatsApp Desktop installed to resolve any bugs or compatibility issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T17:23:20.267Z",
+      "updated": "2026-01-06T17:23:20.267Z",
+      "sourceUrl": "https://www.makeuseof.com/whatsapp-desktop-not-working-tips-to-fix-it/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767720204213-598",
+    "title": "Fix WhatsApp Web QR Code Scan Issue",
+    "problemDescription": "Unable to scan QR code on WhatsApp Web.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "qr code",
+      "scan issue",
+      "whatsapp web"
+    ],
+    "steps": [
+      {
+        "title": "Check WhatsApp Status",
+        "content": "Visit IsItDownRightNow to check if WhatsApp is experiencing any outages or issues."
+      },
+      {
+        "title": "Verify with a Friend",
+        "content": "Ask a friend to test WhatsApp Web on their device to rule out local issues."
+      },
+      {
+        "title": "Clean Camera Lens",
+        "content": "Ensure the camera lens on your mobile device is clean and free of dust or smudges."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Verify that your internet connection is stable and working properly."
+      },
+      {
+        "title": "Clear Browser Cache",
+        "content": "Clear your browser cache and cookies, then try scanning the QR code again."
+      },
+      {
+        "title": "Use a Different Browser",
+        "content": "Try accessing WhatsApp Web using a different browser to see if the issue persists."
+      },
+      {
+        "title": "Link Using Phone Number",
+        "content": "If scanning the QR code fails, try linking your device using your phone number instead."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact WhatsApp Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open WhatsApp Settings",
+            "content": "Open the WhatsApp mobile app and go to Settings."
+          },
+          {
+            "title": "Navigate to Help",
+            "content": "Tap on the Help option."
+          },
+          {
+            "title": "Contact Us",
+            "content": "Select the Contact Us option to report the issue to WhatsApp support."
+          },
+          {
+            "title": "Email Support",
+            "content": "If the issue persists, email support@whatsapp.com with details of the problem."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T17:23:24.213Z",
+      "updated": "2026-01-06T17:23:24.213Z",
+      "sourceUrl": "https://www.makeuseof.com/fixes-to-scan-qr-code-whatsapp-web/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767720208750-459",
+    "title": "Fix WhatsApp Not Showing Contact Names",
+    "problemDescription": "WhatsApp is not displaying contact names, showing only phone numbers instead.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "contacts",
+      "names",
+      "display"
+    ],
+    "steps": [
+      {
+        "title": "Check WhatsApp Backend Status",
+        "content": "Visit Downdetector's official website, search for 'WhatsApp', and check if there are any reported issues. If there are, wait for WhatsApp to resolve the problem."
+      },
+      {
+        "title": "Save the Contact",
+        "content": "Ensure the contact is saved in your phone's address book. WhatsApp relies on this information to display names."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update WhatsApp",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update WhatsApp",
+            "content": "Go to your device's app store, search for WhatsApp, and update it to the latest version if an update is available."
+          }
+        ]
+      },
+      {
+        "title": "Reinstall WhatsApp",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall WhatsApp",
+            "content": "Uninstall WhatsApp from your device, then reinstall it from the app store."
+          }
+        ]
+      },
+      {
+        "title": "Clear WhatsApp Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear WhatsApp Cache",
+            "content": "Go to your device's settings, find the Apps or Application Manager section, select WhatsApp, and clear the cache."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T17:23:28.750Z",
+      "updated": "2026-01-06T17:23:28.750Z",
+      "sourceUrl": "https://www.makeuseof.com/whatsapp-not-showing-contact-names-fixes/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
