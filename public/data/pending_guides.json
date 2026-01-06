@@ -48043,5 +48043,592 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767698195624-878",
+    "title": "Contact Google Support for Pixel 4 Issues",
+    "problemDescription": "Troubleshooting and resolving issues with your Google Pixel 4.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "google",
+      "pixel 4",
+      "support",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Contact Google Support via Phone",
+        "content": "Open your phone's Settings app, tap Tips & support, tap Contact us, enter info about your issue, and tap Next step Chat or Get a call."
+      },
+      {
+        "title": "Contact Google Support via Web",
+        "content": "Open the Pixel Phone Help Center, select Contact us at the bottom of any page, enter info about your issue, and select Next step Chat or Get a call."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Software Reset or Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Software Reset",
+            "content": "If the issue is software-related, try resetting your phone or installing the latest updates."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Hardware Issue",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Customer Service",
+            "content": "If the issue is hardware-related, visit the customer service support for assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T11:16:35.624Z",
+      "updated": "2026-01-06T11:16:35.624Z",
+      "sourceUrl": "https://www.quora.com/What-is-wrong-with-my-Google-Pixel-4-Can-I-fix-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767698197369-755",
+    "title": "Fix Blurry Photos on Google Pixel 7/7 Pro",
+    "problemDescription": "Photos taken with Google Pixel 7 or 7 Pro appear blurry.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "google",
+      "pixel",
+      "photo",
+      "blurry",
+      "unblur"
+    ],
+    "steps": [
+      {
+        "title": "Use the Photo Unblurr Feature",
+        "content": "Open the Google Photos app and select the blurry photo. Tap the 'Unblur' button to enhance the image quality."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Camera Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable HDR+",
+            "content": "Go to the Camera app, tap the settings icon, and enable HDR+ to improve photo quality."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T11:16:37.369Z",
+      "updated": "2026-01-06T11:16:37.369Z",
+      "sourceUrl": "https://mjaysmartphonetecharticles.quora.com/https-khanjunaid23-blogspot-com-2022-10-google-pixel-7-7-pro-software-solutions-html-Google-Pixel-7-7-Pro-Softwa",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767698200410-760",
+    "title": "Fix Google Pixel 6 Pro Video Recording Stopping While Zooming",
+    "problemDescription": "Google Pixel 6 Pro stops video recording when zooming during the process.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "google",
+      "pixel",
+      "6",
+      "pro",
+      "video",
+      "recording",
+      "zoom"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Phone",
+        "content": "Restart your Google Pixel 6 Pro to see if the issue persists."
+      },
+      {
+        "title": "Clear Camera App Cache",
+        "content": "Go to Settings > Apps > Camera > Storage > Clear Cache."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Go to Settings > System > System update > Check for update."
+      },
+      {
+        "title": "Boot in Safe Mode",
+        "content": "Press and hold the Power button until your phone turns off, then press and hold the Power button again until it turns back on. Release the Power button and immediately hold down the Volume down button. If the issue doesn't occur in Safe Mode, it might be caused by a third-party app."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Camera App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Camera App Updates",
+            "content": "Go to the Google Play Store and check if there are any updates available for the Camera app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T11:16:40.410Z",
+      "updated": "2026-01-06T11:16:40.410Z",
+      "sourceUrl": "https://www.quora.com/Why-does-my-Google-Pixel-6-Pro-stop-video-recording-when-I-zoom-while-recording-the-video-How-do-I-fix-this",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767698206778-953",
+    "title": "Fix Google Pixel Stuck on Boot Screen",
+    "problemDescription": "Google Pixel phone is stuck on the boot screen and won't proceed further.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "google pixel",
+      "boot screen",
+      "stuck",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Force Restart",
+        "content": "Press and hold the Power button for about 30 seconds to force restart your device."
+      },
+      {
+        "title": "Boot into Safe Mode",
+        "content": "Press and hold the Power button until the Google logo appears, then release. Immediately press and hold the Volume Down button until the device finishes booting. If the device boots into Safe Mode, an indicator will appear in the lower left of the screen."
+      },
+      {
+        "title": "Wipe Cache Partition",
+        "content": "Power off your device. Press and hold the Power button and Volume Down button simultaneously until the bootloader menu appears. Use the Volume buttons to navigate to 'Recovery Mode' and press the Power button to select it. Use the Volume buttons to navigate to 'Wipe Cache Partition' and press the Power button to select it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Ensure you have backed up your data as this process will erase all data."
+          },
+          {
+            "title": "Enter Recovery Mode",
+            "content": "Power off your device. Press and hold the Power button and Volume Down button simultaneously until the bootloader menu appears. Use the Volume buttons to navigate to 'Recovery Mode' and press the Power button to select it."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Use the Volume buttons to navigate to 'Wipe Data/Factory Reset' and press the Power button to select it. Confirm the action and wait for the process to complete."
+          }
+        ]
+      },
+      {
+        "title": "Use Dr.Fone - System Repair (Android)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install Dr.Fone",
+            "content": "Download and install Wondershare Dr.Fone on your computer."
+          },
+          {
+            "title": "Connect Your Device",
+            "content": "Connect your Google Pixel to the computer using a USB cable."
+          },
+          {
+            "title": "Enter Recovery Mode",
+            "content": "Follow the on-screen instructions to put your device into Recovery Mode."
+          },
+          {
+            "title": "Repair System",
+            "content": "Select 'System Repair' and follow the prompts to repair your device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T11:16:46.778Z",
+      "updated": "2026-01-06T11:16:46.778Z",
+      "sourceUrl": "https://wondersharedrfone.quora.com/6-Ways-to-Solve-Google-Pixel-Screen-Stuck-On-Boot",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767698210069-79",
+    "title": "Google Pixel Won't Turn On While Charging",
+    "problemDescription": "Google Pixel device does not power on despite being connected to a charger.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "google",
+      "pixel",
+      "charging",
+      "power",
+      "boot"
+    ],
+    "steps": [
+      {
+        "title": "Verify Charger and Cable",
+        "content": "Try a known-good USB-C cable and a charger rated for Pixel (18–30W USB-PD). Avoid low-power or damaged cables."
+      },
+      {
+        "title": "Check Power Source",
+        "content": "Try charging from a wall outlet, not a USB port on a computer."
+      },
+      {
+        "title": "Check Battery and Charging Subsystem",
+        "content": "If the phone still doesn't turn on, check the battery and charging subsystem for damage."
+      },
+      {
+        "title": "Access Recovery/Fastboot",
+        "content": "If you can access recovery/fastboot, wipe the cache partition first. If that fails, perform a factory reset or reinstall factory images via fastboot."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Motherboard",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect Motherboard",
+            "content": "If the battery and charging subsystem are okay, the problem might be with the motherboard."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T11:16:50.069Z",
+      "updated": "2026-01-06T11:16:50.069Z",
+      "sourceUrl": "https://www.quora.com/Why-wont-my-Google-Pixel-turn-on-even-if-it-is-charging",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767698216736-585",
+    "title": "Fix iPhone That Won't Turn On",
+    "problemDescription": "Your iPhone is not turning on, stuck in a boot loop, or showing the Apple logo.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "won't turn on",
+      "boot loop",
+      "apple logo"
+    ],
+    "steps": [
+      {
+        "title": "Force Restart Your iPhone",
+        "content": "Perform a force restart based on your iPhone model. This can help if your iPhone is stuck in a boot loop or showing the Apple logo."
+      },
+      {
+        "title": "Check Battery Health",
+        "content": "If the force restart doesn't work, your iPhone's battery might be completely dead. This is common if the device has been unused for a long time."
+      },
+      {
+        "title": "Replace the Battery",
+        "content": "Replace the battery if it is dead. This is a relatively easy fix and can often resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Seek Professional Help",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Apple or a Third-Party Service Provider",
+            "content": "If the battery replacement doesn't work, the issue might be more severe, such as water or static electricity damage. Take your iPhone to Apple or a third-party service provider to assess the damage and explore repair options."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T11:16:56.736Z",
+      "updated": "2026-01-06T11:16:56.736Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/iphone-wont-turn-on/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767698221639-512",
+    "title": "Fix iPhone Black Screen of Death",
+    "problemDescription": "Your iPhone screen is black and unresponsive, known as the black screen of death.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "black screen",
+      "display issue"
+    ],
+    "steps": [
+      {
+        "title": "Force Restart Your iPhone",
+        "content": "Press and quickly release the Volume Up button, then the Volume Down button. Press and hold the Side button until the Apple logo appears."
+      },
+      {
+        "title": "Boot into Recovery Mode",
+        "content": "Connect your iPhone to a computer and open iTunes or Finder. Follow the specific button combination for your iPhone model to enter recovery mode."
+      },
+      {
+        "title": "Factory Reset Your iPhone",
+        "content": "In iTunes or Finder, choose 'Restore iPhone' to erase and reset your iPhone to factory settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Problematic Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall the App",
+            "content": "Press and hold the app icon, then tap 'Remove App' and confirm."
+          },
+          {
+            "title": "Reinstall the App",
+            "content": "Go to the App Store, search for the app, and tap 'Get' or the cloud icon to reinstall."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Third-Party Repair Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install Fonelab",
+            "content": "Download Fonelab from the official website and install it on your computer."
+          },
+          {
+            "title": "Connect Your iPhone",
+            "content": "Connect your iPhone to the computer and follow the on-screen instructions to diagnose and fix the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T11:17:01.639Z",
+      "updated": "2026-01-06T11:17:01.639Z",
+      "sourceUrl": "https://www.makeuseof.com/most-common-iphone-display-issues-and-how-to-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767698238383-379",
+    "title": "Diagnose Android Battery Issues",
+    "problemDescription": "Your Android device's battery is draining too quickly or not holding a charge.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "battery",
+      "diagnose"
+    ],
+    "steps": [
+      {
+        "title": "Check Battery Health",
+        "content": "Use an app like AccuBattery to monitor your battery's health and understand the normal wear and tear of charge-drain cycles."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-06T11:17:18.383Z",
+      "updated": "2026-01-06T11:17:18.383Z",
+      "sourceUrl": "https://www.reddit.com/r/Android/comments/y4z28v/goto_strategies_for_diagnosing_battery_issues_on/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767698248045-320",
+    "title": "Fix iOS 16 Battery Drain",
+    "problemDescription": "Battery drains faster after updating to iOS 16.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery",
+      "drain",
+      "ios",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Check Battery Usage",
+        "content": "Go to Settings > Battery > Battery Usage to identify apps consuming the most battery."
+      },
+      {
+        "title": "Update Apps",
+        "content": "Ensure all apps are updated to their latest versions, as older versions may not be optimized for iOS 16."
+      },
+      {
+        "title": "Reset All Settings",
+        "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset All Settings. This won't delete your data but will reset settings that might be causing battery drain."
+      },
+      {
+        "title": "Restore iPhone",
+        "content": "If the issue persists, back up your iPhone and restore it using iTunes or Finder. This will reinstall iOS and may resolve underlying software issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Background App Refresh",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Background App Refresh",
+            "content": "Go to Settings > General > Background App Refresh and disable it for apps that you don't need to refresh in the background."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Turn Off Location Services",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Location Services",
+            "content": "Go to Settings > Privacy > Location Services and disable it for apps that don't need your location."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T11:17:28.045Z",
+      "updated": "2026-01-06T11:17:28.045Z",
+      "sourceUrl": "https://www.reddit.com/r/iPhone13ProMax/comments/1nlbebw/battery_drains_considerably_faster_on_ios_26/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767698264266-481",
+    "title": "TV Not Detected via Thunderbolt HDMI",
+    "problemDescription": "TV is not detected when connected to a laptop via Thunderbolt HDMI cable.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "TV",
+      "HDMI",
+      "Thunderbolt",
+      "connection",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Power Cycle the TV",
+        "content": "Disconnect all HDMI sources from the TV. Unplug the power from the TV for 10 minutes. Plug the TV back in and reconnect the cable to your laptop. Repeat this process for each HDMI port."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Access Secret Menu for Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Power Off the TV",
+            "content": "Turn off the TV."
+          },
+          {
+            "title": "Access Secret Menu",
+            "content": "On your remote control, press Mute and Power simultaneously (or sequentially). The TV will turn on with a secret menu."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Press Enter a few times in the secret menu to initiate a deep Factory Mode Reset."
+          }
+        ]
+      },
+      {
+        "title": "Reset TV via Exit Button",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Hold Exit Button",
+            "content": "Hold the Exit button on the TV remote for around 30 seconds to reset the TV."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T11:17:44.266Z",
+      "updated": "2026-01-06T11:17:44.266Z",
+      "sourceUrl": "https://superuser.com/questions/1079488/my-tv-is-not-detected-when-i-connect-to-my-laptop-through-thunderbolt-hdmi-cable",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767698276978-297",
+    "title": "Fix Notifications Not Working on Google Chrome",
+    "problemDescription": "Notifications are not appearing or working in Google Chrome.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "notifications",
+      "Google Chrome",
+      "browser settings"
+    ],
+    "steps": [
+      {
+        "title": "Open Chrome Settings",
+        "content": "Open Google Chrome and click on the menu icon (three vertical dots) in the top right corner. Select 'Settings' from the dropdown menu."
+      },
+      {
+        "title": "Navigate to Site Settings",
+        "content": "In the Settings menu, scroll down and click on 'Privacy and security' in the left sidebar. Then, click on 'Site Settings'."
+      },
+      {
+        "title": "Check Notification Permissions",
+        "content": "Scroll down to the 'Permissions' section and click on 'Notifications'. Ensure that the toggle at the top is set to 'Sites can ask to send notifications'."
+      },
+      {
+        "title": "Manage Notification Settings for Specific Sites",
+        "content": "Under 'Allowed' or 'Blocked', click on the three vertical dots next to the site you want to manage and select 'Remove' or 'Block' as needed."
+      },
+      {
+        "title": "Clear Notification Permissions",
+        "content": "If notifications still don't work, scroll down to the bottom of the 'Notifications' page and click on 'Clear all site data and permissions'. Confirm the action."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Browser Extensions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Extensions",
+            "content": "Go to the Chrome menu, select 'More Tools', and then 'Extensions'. Disable all extensions and check if notifications work. If they do, enable extensions one by one to identify the culprit."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T11:17:56.978Z",
+      "updated": "2026-01-06T11:17:56.978Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=_yPYM4-NJOE",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
