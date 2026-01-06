@@ -54698,5 +54698,484 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767737897052-216",
+    "title": "Fix Ubuntu 20.04 Display Issue on MacBook Pro (Late 2006)",
+    "problemDescription": "Blank screen when trying to install or boot Ubuntu 20.04 on a MacBook Pro (Late 2006).",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "Ubuntu",
+      "MacBook Pro",
+      "display issue",
+      "installation"
+    ],
+    "steps": [
+      {
+        "title": "Try an External Monitor",
+        "content": "Connect an external monitor to the MacBook Pro to see if the display issue is specific to the built-in screen."
+      },
+      {
+        "title": "Check for Compatible Linux Distributions",
+        "content": "Research and try different Linux distributions that are known to work well with older Mac hardware, such as Lubuntu or Xubuntu, which have lighter desktop environments."
+      },
+      {
+        "title": "Reset PRAM",
+        "content": "Reset the PRAM (Parameter RAM) on the MacBook Pro by restarting the computer and immediately holding down the Command + Option + P + R keys for about 20 seconds."
+      },
+      {
+        "title": "Check for Bootable USB/DVD Issues",
+        "content": "Ensure that the Live/DVD or USB is not corrupted and is properly created. Try creating a new bootable USB/DVD using a different tool or method."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Boot Method",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try Booting in Safe Mode",
+            "content": "Attempt to boot the MacBook Pro in safe mode by holding down the Shift key during startup."
+          },
+          {
+            "title": "Use a Different Kernel Parameter",
+            "content": "Edit the boot parameters to include 'nomodeset' or 'xforcevesa' to bypass the default graphics drivers."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T22:18:17.052Z",
+      "updated": "2026-01-06T22:18:17.052Z",
+      "sourceUrl": "https://askubuntu.com/questions/1340025/macbook-pro-late-2006-video-driver-issue",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767737909130-836",
+    "title": "Fix Logitech C270 Webcam Issues with Teams",
+    "problemDescription": "Logitech C270 webcam not working properly with Microsoft Teams on Windows 10.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "webcam",
+      "Teams",
+      "Windows 10",
+      "Logitech C270",
+      "driver"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall Chipset Drivers",
+        "content": "Reinstall the chipset drivers on your Windows 10 system to ensure compatibility with the Logitech C270 webcam."
+      },
+      {
+        "title": "Install Logitech Webcam Software",
+        "content": "Download and install the official Logitech webcam software from the Logitech website. Run the installer as an administrator by right-clicking the installer and selecting 'Run as Administrator'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Logitech Driver via Windows Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Optional Updates",
+            "content": "Go to Settings > Update & Security > Windows Update > View optional updates. Look for any optional updates related to Logitech drivers and install them."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T22:18:29.130Z",
+      "updated": "2026-01-06T22:18:29.130Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/logitech-c270-webcam-and-teams.3677852/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767737914198-149",
+    "title": "Prioritize Teams Calls with QoS on Asus RT-N66R",
+    "problemDescription": "Teams calls are experiencing issues due to lack of QoS prioritization on Asus RT-N66R router.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "QoS",
+      "Teams",
+      "Asus RT-N66R",
+      "Office365",
+      "router"
+    ],
+    "steps": [
+      {
+        "title": "Access Router Admin Interface",
+        "content": "Log in to your Asus RT-N66R router's admin interface."
+      },
+      {
+        "title": "Navigate to QoS Settings",
+        "content": "Go to the 'Traffic Manager' or 'QoS' section in the admin interface."
+      },
+      {
+        "title": "Enable QoS",
+        "content": "Enable QoS and select 'Manual' or 'Custom' settings."
+      },
+      {
+        "title": "Add Teams Ports",
+        "content": "Add the following ports to prioritize Teams traffic: 50,000-50,019 for audio and other relevant ports for video."
+      },
+      {
+        "title": "Save and Apply Settings",
+        "content": "Save the settings and apply them to your router."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reduce Bandwidth Usage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Bandwidth-Hogging Devices",
+            "content": "Use the router's admin interface to identify devices or applications consuming excessive bandwidth."
+          },
+          {
+            "title": "Limit Bandwidth Usage",
+            "content": "Limit the bandwidth usage of these devices or applications to free up bandwidth for Teams calls."
+          }
+        ]
+      },
+      {
+        "title": "Upgrade Internet Plan",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Assess Current Bandwidth",
+            "content": "Assess your current internet plan and determine if it meets your needs."
+          },
+          {
+            "title": "Upgrade Plan",
+            "content": "Upgrade to a higher bandwidth plan if necessary to ensure smooth Teams calls."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T22:18:34.198Z",
+      "updated": "2026-01-06T22:18:34.198Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/asus-rt-n66r-qos-ms-teams.3627805/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767737917384-896",
+    "title": "Fix Teams Meeting Add-in for Microsoft Office",
+    "problemDescription": "The Teams meeting add-in for Microsoft Office is not working due to a missing or incorrect folder version.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Teams",
+      "Office",
+      "add-in",
+      "Microsoft"
+    ],
+    "steps": [
+      {
+        "title": "Copy and Rename the Correct Folder",
+        "content": "Navigate to the directory 'C:\\Users\\user\\AppData\\Local\\Microsoft\\TeamsMeetingAdd-in'. Identify the highest version folder (e.g., 1.25.18202), copy it, and rename the copy to the version specified in the error (e.g., 1.25.06502)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Office and Teams",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall and Reinstall",
+            "content": "Uninstall both Microsoft Office and Teams, then reinstall them to ensure all components are correctly installed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T22:18:37.384Z",
+      "updated": "2026-01-06T22:18:37.384Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/teams-meeting-add-in-for-microsoft-office-is-not-working.3885786/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767737934874-322",
+    "title": "Fix Zoom Meeting Links in Firefox",
+    "problemDescription": "Zoom meeting links do not launch in Firefox on Ubuntu.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "firefox",
+      "ubuntu",
+      "links",
+      "launch"
+    ],
+    "steps": [
+      {
+        "title": "Reset Firefox Default Applications",
+        "content": "Go to Firefox settings, navigate to 'General' and under 'Applications', find 'zoommtg' or 'Zoom' and set the action to 'Use Zoom (in Firefox)' or 'Use Zoom (default)'."
+      },
+      {
+        "title": "Check Zoom Desktop Launcher",
+        "content": "Ensure the original Zoom .desktop launcher is in place and not corrupted. You can find it in /usr/share/applications/ or ~/.local/share/applications/."
+      },
+      {
+        "title": "Reinstall Zoom",
+        "content": "If the issue persists, reinstall Zoom using the official package from the Zoom website or via the terminal with 'sudo apt install --reinstall zoom'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual .desktop File Creation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a New .desktop File",
+            "content": "Create a new .desktop file in ~/.local/share/applications/ named 'zoom.desktop' with the following content:\n[Desktop Entry]\nName=Zoom\nExec=zoom\nTerminal=false\nType=Application\nCategories=Network;Application;\nStartupNotify=true\nMimeType=x-scheme-handler/zoommtg;"
+          },
+          {
+            "title": "Update MIME Types",
+            "content": "Run 'xdg-mime default zoom.desktop x-scheme-handler/zoommtg' in the terminal to set the default application for Zoom links."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T22:18:54.874Z",
+      "updated": "2026-01-06T22:18:54.874Z",
+      "sourceUrl": "https://askubuntu.com/questions/1470573/cannot-launch-zoom-meeting-links",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767737953086-408",
+    "title": "Pixel 4a Battery Replacement After Software Update",
+    "problemDescription": "Google's software update for Pixel 4a causes battery issues.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel 4a",
+      "battery",
+      "software update",
+      "replacement"
+    ],
+    "steps": [
+      {
+        "title": "Backup Your Device",
+        "content": "Before proceeding, back up your device to ensure no data is lost during the process."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "Perform a factory reset on your Pixel 4a to prepare for the battery replacement."
+      },
+      {
+        "title": "Visit a Google Store or Authorized Service Center",
+        "content": "Take your device in-person to a Google Store or an authorized service center for the battery replacement."
+      },
+      {
+        "title": "Opt for Free Battery Replacement or Credit",
+        "content": "Choose between a free battery replacement, a one-time payment of $50, or a $100 credit towards a new Pixel phone."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Mail-in Service",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Google Support",
+            "content": "Contact Google Support to arrange for a mail-in service for the battery replacement."
+          },
+          {
+            "title": "Ship Your Device",
+            "content": "Ship your device to the specified address, ensuring it is well-packaged to avoid damage."
+          },
+          {
+            "title": "Wait for Return",
+            "content": "Wait for the device to be repaired and returned to you."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T22:19:13.086Z",
+      "updated": "2026-01-06T22:19:13.086Z",
+      "sourceUrl": "https://lifehacker.com/tech/google-pixel-4a-software-update",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767737959362-248",
+    "title": "Fix a Frozen Mac",
+    "problemDescription": "Your Mac is frozen and unresponsive.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "mac",
+      "frozen",
+      "unresponsive"
+    ],
+    "steps": [
+      {
+        "title": "Boot into Safe Mode",
+        "content": "Turn off or restart your Mac, then press and hold the Shift key as it boots. Release the key when you see the login window and log in. 'Safe Boot' should appear at the top right."
+      },
+      {
+        "title": "Test for Freezing Issue",
+        "content": "With your Mac booted in Safe mode, test again for the freezing issue. If the problem is resolved, restart your Mac and test again."
+      },
+      {
+        "title": "Update macOS",
+        "content": "Go to System Preferences > Software Update and install any available updates. Set your Mac to automatically install updates for best results."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Force Quit Applications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force Quit Frozen Applications",
+            "content": "Press Command + Option + Esc to open the Force Quit Applications window. Select the frozen application and click 'Force Quit'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T22:19:19.362Z",
+      "updated": "2026-01-06T22:19:19.362Z",
+      "sourceUrl": "https://www.howtogeek.com/685412/how-to-fix-a-frozen-mac/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767737966740-319",
+    "title": "Diagnose Mac Hardware Issues",
+    "problemDescription": "Your Mac is experiencing hardware-related issues that prevent it from starting up properly.",
+    "category": "macOS",
+    "difficulty": "Medium",
+    "keywords": [
+      "Mac",
+      "hardware",
+      "diagnose",
+      "Apple Diagnostics"
+    ],
+    "steps": [
+      {
+        "title": "Run Apple Diagnostics",
+        "content": "Restart your Mac and immediately hold down the D key to run Apple Diagnostics. This tool will scan your hardware and provide error codes if any issues are detected."
+      },
+      {
+        "title": "Note Error Codes",
+        "content": "Write down any error codes provided by Apple Diagnostics. These codes will help identify the specific hardware issues."
+      },
+      {
+        "title": "Consult Apple Support",
+        "content": "If your Mac is under warranty or AppleCare, take the error codes to an Apple Store technician. If your Mac is out of warranty, research the error codes online or contact a local repair shop for assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall macOS",
+        "type": "Software Solution",
+        "steps": [
+          {
+            "title": "Create a Bootable macOS Installer",
+            "content": "Use another Mac to create a bootable macOS installer on a USB drive."
+          },
+          {
+            "title": "Boot from USB",
+            "content": "Insert the USB drive into the problematic Mac and hold down the Option key while turning it on to boot from the USB drive."
+          },
+          {
+            "title": "Reinstall macOS",
+            "content": "Follow the on-screen instructions to reinstall macOS, which can resolve software-related issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T22:19:26.740Z",
+      "updated": "2026-01-06T22:19:26.740Z",
+      "sourceUrl": "https://www.howtogeek.com/283338/how-to-scan-and-diagnose-hardware-issues-on-your-mac-with-apples-built-in-tools/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767737970871-832",
+    "title": "Fix Mac Frequent Restarts",
+    "problemDescription": "Your Mac is experiencing sudden and frequent restarts.",
+    "category": "macOS",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "restart",
+      "crash",
+      "problem"
+    ],
+    "steps": [
+      {
+        "title": "Check for Software Updates",
+        "content": "Ensure your macOS is up to date by going to System Preferences > Software Update and installing any available updates."
+      },
+      {
+        "title": "Run Disk Utility",
+        "content": "Boot into Recovery Mode by restarting your Mac and holding down Command (⌘) + R. Once in Recovery Mode, open Disk Utility and run First Aid on your startup disk."
+      },
+      {
+        "title": "Reset SMC",
+        "content": "Reset the System Management Controller (SMC) by shutting down your Mac, then pressing and holding the power button for 10 seconds."
+      },
+      {
+        "title": "Check for Malware",
+        "content": "Run a malware scan using a reputable antivirus software to ensure your Mac is not infected."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Safe Mode Boot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Restart your Mac and hold down the Shift key until the Apple logo appears. This will boot your Mac into Safe Mode, which can help identify if a login item or startup item is causing the issue."
+          },
+          {
+            "title": "Disable Login Items",
+            "content": "Go to System Preferences > Users & Groups > Login Items and disable any unnecessary login items."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T22:19:30.871Z",
+      "updated": "2026-01-06T22:19:30.871Z",
+      "sourceUrl": "https://www.howtogeek.com/448234/8-warning-signs-your-mac-might-have-a-problem-and-how-to-fix-it/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
