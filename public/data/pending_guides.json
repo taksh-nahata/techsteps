@@ -41917,5 +41917,835 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767670032640-107",
+    "title": "Enable IM Sound Notifications in Skype",
+    "problemDescription": "Skype IM sound notifications are not working.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "skype",
+      "notifications",
+      "sound",
+      "IM"
+    ],
+    "steps": [
+      {
+        "title": "Open Skype Settings",
+        "content": "Launch Skype and click on the three dots (More options) in the top right corner, then select 'Settings'."
+      },
+      {
+        "title": "Navigate to Notifications",
+        "content": "In the Settings menu, click on 'Notifications'."
+      },
+      {
+        "title": "Enable Sound Notifications",
+        "content": "Under the 'Messages' section, toggle on 'Play sounds'."
+      },
+      {
+        "title": "Adjust Notification Settings",
+        "content": "Ensure that the notification settings for your specific contacts or groups are also enabled."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Volume Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check System Volume",
+            "content": "Ensure that your system volume is not muted and is set to an audible level."
+          },
+          {
+            "title": "Check Skype Volume",
+            "content": "Within Skype, go to 'Settings' > 'Audio & Video' and adjust the 'Ringtone volume' slider."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall Skype",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Skype",
+            "content": "Uninstall Skype from your computer."
+          },
+          {
+            "title": "Reinstall Skype",
+            "content": "Download the latest version of Skype from the official website and install it."
+          },
+          {
+            "title": "Check Notifications",
+            "content": "After reinstalling, go back to 'Settings' > 'Notifications' and ensure 'Play sounds' is enabled."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T03:27:12.640Z",
+      "updated": "2026-01-06T03:27:12.640Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/skype/forum/all/im-sound-notification/4e13193a-4623-49b0-bb10-4be7796a1f6f",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767670035068-657",
+    "title": "Reset Toshiba Satellite to Original Settings",
+    "problemDescription": "Windows Update and System Recovery not working on Toshiba Satellite with Vista SP2.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "toshiba",
+      "vista",
+      "recovery",
+      "reset",
+      "windows update"
+    ],
+    "steps": [
+      {
+        "title": "Check System Information",
+        "content": "Click Start, right-click Computer, and select Properties to determine if you have Vista 32-bit or 64-bit installed and check the installed Service Pack."
+      },
+      {
+        "title": "Install Service Packs and Updates",
+        "content": "Ensure all necessary Service Packs and Windows Updates are installed to resolve potential issues with System Recovery."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Recovery Partition",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Locate Recovery Partition",
+            "content": "Check for a hidden recovery partition on your hard drive using disk management tools."
+          },
+          {
+            "title": "Run Recovery",
+            "content": "If found, use the recovery partition to reset your laptop to its original settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T03:27:15.068Z",
+      "updated": "2026-01-06T03:27:15.068Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/toshiba-satellite-laptop-with-vista-sp2-trying-to/74739a6a-8637-4590-a456-7baf6f388f20",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767670039034-481",
+    "title": "Fix Microsoft 365 Purchase Not Installing on Mac",
+    "problemDescription": "Microsoft 365 Home Office package purchased but not installing or working on Mac.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft 365",
+      "Mac",
+      "installation",
+      "purchase",
+      "Office"
+    ],
+    "steps": [
+      {
+        "title": "Verify Purchase Details",
+        "content": "Ensure the product key or license details are correct and match the purchased package."
+      },
+      {
+        "title": "Check System Requirements",
+        "content": "Confirm your Mac meets the system requirements for Microsoft 365. This includes macOS version, processor, and available storage."
+      },
+      {
+        "title": "Download and Install Office for Mac",
+        "content": "Go to the Microsoft 365 download page, sign in with your Microsoft account, and download the Office for Mac installer. Follow the on-screen instructions to complete the installation."
+      },
+      {
+        "title": "Activate Office",
+        "content": "Open any Office application (e.g., Word, Excel) and sign in with the Microsoft account used for the purchase. Follow the prompts to activate the software."
+      },
+      {
+        "title": "Check for Updates",
+        "content": "After installation, open any Office application and go to Help > Check for Updates to ensure you have the latest version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Microsoft Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "If the issue persists, contact Microsoft Support for further assistance. Provide them with the purchase details and any error messages you encounter."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T03:27:19.034Z",
+      "updated": "2026-01-06T03:27:19.034Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/office_2007-customize/display-xl-2007-dialog-box-with-xltm-as-default/71aa5d28-3bd0-4b02-b64b-8c34d642165a?msgId=d21868ce-3d73-41b4-8a48-c88299283629&tab=question&status=AllReplies",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767670042563-595",
+    "title": "Fix Excel 2007 Close Button Issue",
+    "problemDescription": "The top-right close button in Excel 2007 does not work as expected.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "excel",
+      "close button",
+      "taskbar",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Access Excel Options",
+        "content": "Go to the 'Excel Options' menu by clicking on the Office button in the top-left corner and selecting 'Excel Options'."
+      },
+      {
+        "title": "Navigate to Advanced Settings",
+        "content": "In the Excel Options window, click on the 'Advanced' tab."
+      },
+      {
+        "title": "Adjust Display Settings",
+        "content": "Scroll down to the 'Display' section and uncheck the option 'Show all Windows in the Taskbar'."
+      },
+      {
+        "title": "Save Changes",
+        "content": "Click 'OK' at the bottom right of the Excel Options window to apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Upgrade to Excel 2010 or Later",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Consider Upgrading",
+            "content": "This issue is a known quirk in Excel 2007 and has been corrected in Excel 2010 and later versions. Consider upgrading to a newer version of Excel if possible."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T03:27:22.563Z",
+      "updated": "2026-01-06T03:27:22.563Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/msoffice_excel-mso_winother/excel-2007-top-right-close-button/f95105db-85a5-4ad5-ad68-2fcf87b8687a",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767670049115-953",
+    "title": "Fix Windows 11 File Explorer Not Opening",
+    "problemDescription": "Windows 11 File Explorer is not opening or responding.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "file explorer",
+      "not opening"
+    ],
+    "steps": [
+      {
+        "title": "Restart File Explorer",
+        "content": "Open Task Manager (Ctrl+Shift+Esc), find 'Windows Explorer' under the 'Processes' tab, right-click it, and select 'Restart'."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "If restarting the process doesn't work, restart your computer to see if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update GPU Driver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update GPU Driver",
+            "content": "Go to 'Device Manager', expand 'Display adapters', right-click your GPU, and select 'Update driver'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T03:27:29.115Z",
+      "updated": "2026-01-06T03:27:29.115Z",
+      "sourceUrl": "https://www.makeuseof.com/common-windows-11-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767670068027-872",
+    "title": "Fix Instagram Account Error on iPhone",
+    "problemDescription": "Instagram account shows 'Something went wrong' error and won't load.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "instagram",
+      "error",
+      "iphone",
+      "account"
+    ],
+    "steps": [
+      {
+        "title": "Delete and Reinstall Instagram",
+        "content": "Delete the Instagram app from your iPhone and then reinstall it from the App Store. Do not open the app yet."
+      },
+      {
+        "title": "Access Instagram Website in Private Mode",
+        "content": "Open Safari and enable Private Mode. Search for the Instagram website and click on it. When prompted to open the app, click 'Cancel' to stay on the website."
+      },
+      {
+        "title": "Log In and Refresh",
+        "content": "Log in to your Instagram account on the website. If you see an error message, refresh the page 2-3 times and then click the blue 'Open' button on the right side of the screen."
+      },
+      {
+        "title": "Switch Between App and Website",
+        "content": "Open the Instagram app and log in. You may still see the error. Switch between the app and the website, refreshing both until the error disappears."
+      },
+      {
+        "title": "Final Step",
+        "content": "After refreshing both the app and the website, go back to the website and click the blue 'Open' button again. This should resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Instagram Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "If the above steps do not work, contact Instagram Support through the app or website and report the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T03:27:48.027Z",
+      "updated": "2026-01-06T03:27:48.027Z",
+      "sourceUrl": "https://www.reddit.com/r/Instagram/comments/1d2vp1k/were_sorry_but_something_went_wrong_please_try/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767670074091-716",
+    "title": "Reorder Instagram Highlights",
+    "problemDescription": "Instagram highlights are not reordering as expected.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "highlights",
+      "reorder"
+    ],
+    "steps": [
+      {
+        "title": "Add a New Story to the Highlight",
+        "content": "Add a new story to the highlight you want to move to the front."
+      },
+      {
+        "title": "Delete the Story",
+        "content": "Delete the story if you don't want it in the highlight. The highlight will stay in the far left position."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Hide Stories Before Posting",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open Instagram and go to your settings."
+          },
+          {
+            "title": "Hide Stories and Live",
+            "content": "Select 'hide stories and live' and hide all your followers from viewing your story."
+          },
+          {
+            "title": "Post Your Story",
+            "content": "Post your story and add it to your highlights."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T03:27:54.091Z",
+      "updated": "2026-01-06T03:27:54.091Z",
+      "sourceUrl": "https://www.reddit.com/r/Instagram/comments/1q4zn93/instagram_causes_crashes_in_the_new_update/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767670078044-854",
+    "title": "Fix Instagram Account Status and Monetization Issues",
+    "problemDescription": "Your Instagram account is experiencing issues with status or monetization.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "instagram",
+      "account",
+      "status",
+      "monetization"
+    ],
+    "steps": [
+      {
+        "title": "Check Account Status",
+        "content": "Go to your Instagram profile and check if there are any notifications or messages regarding your account status."
+      },
+      {
+        "title": "Review Instagram's Community Guidelines",
+        "content": "Ensure your account complies with Instagram's community guidelines and terms of service."
+      },
+      {
+        "title": "Contact Instagram Support",
+        "content": "Use the Instagram app to report a problem. Go to Settings > Help > Report a Problem and describe the issue in detail."
+      },
+      {
+        "title": "Verify Account Information",
+        "content": "Make sure all your account information, including payment details for monetization, is up-to-date and accurate."
+      },
+      {
+        "title": "Wait for Review",
+        "content": "If your account is under review, wait for Instagram to notify you of any updates or decisions regarding your account status."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Community Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Instagram Status Page",
+            "content": "Visit Instagram's official status page or social media channels to see if there are any ongoing issues affecting multiple users."
+          },
+          {
+            "title": "Engage with Instagram Community",
+            "content": "Join Instagram communities or forums to see if other users are experiencing similar issues and share potential solutions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T03:27:58.044Z",
+      "updated": "2026-01-06T03:27:58.044Z",
+      "sourceUrl": "https://www.reddit.com/r/AskReddit/comments/1gxug8m/how_do_you_solve_your_instagram_account_status/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767670091946-113",
+    "title": "Delete or Hide Chats in Microsoft Teams",
+    "problemDescription": "How to delete or hide individual chats in Microsoft Teams.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Teams",
+      "delete chats",
+      "hide chats",
+      "edit messages"
+    ],
+    "steps": [
+      {
+        "title": "Edit a Sent Message",
+        "content": "Hover over the message you want to edit, then click Edit. Make your changes and click Done to save the update."
+      },
+      {
+        "title": "Delete a Sent Message",
+        "content": "Hover over the message you want to delete, click More options, and then select Delete."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Hide Unimportant Chats",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Archive a Chat",
+            "content": "To hide unimportant chats, you can archive them. Right-click on the chat you want to hide and select Archive."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T03:28:11.946Z",
+      "updated": "2026-01-06T03:28:11.946Z",
+      "sourceUrl": "https://www.digitaltrends.com/tablets/how-to-delete-chats-in-microsoft-teams/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767670095228-696",
+    "title": "Record a Microsoft Teams Meeting",
+    "problemDescription": "How to record a Microsoft Teams meeting for later analysis or compliance.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Teams",
+      "recording",
+      "meeting"
+    ],
+    "steps": [
+      {
+        "title": "Start Recording",
+        "content": "During a meeting, click on the three dots (More actions) in the meeting controls and select 'Start recording'."
+      },
+      {
+        "title": "Confirm Recording",
+        "content": "A notification will appear confirming that the recording has started. All participants will be notified that the meeting is being recorded."
+      },
+      {
+        "title": "Stop Recording",
+        "content": "To stop the recording, click on the three dots again and select 'Stop recording'."
+      },
+      {
+        "title": "Access the Recording",
+        "content": "After the meeting, the recording will be processed and saved to the meeting organizer's OneDrive or SharePoint. A link to the recording will be shared in the meeting chat."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Schedule a Recording",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Schedule the Meeting",
+            "content": "When scheduling a meeting, include a note that the meeting will be recorded."
+          },
+          {
+            "title": "Start Recording",
+            "content": "At the start of the meeting, follow the same steps as above to begin recording."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T03:28:15.228Z",
+      "updated": "2026-01-06T03:28:15.228Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/how-to-record-microsoft-teams-meeting/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767670098222-467",
+    "title": "Fix Windows 11 Blue Screen After Update",
+    "problemDescription": "Windows 11 users are experiencing blue screens after installing the latest update (KB5029351).",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "blue screen",
+      "update",
+      "KB5029351"
+    ],
+    "steps": [
+      {
+        "title": "Report the Issue to Microsoft",
+        "content": "Launch the Feedback Hub by pressing Windows key + F. Choose 'Summarize your feedback' and then 'Explain in more detail'. Describe the problem and any relevant details."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Uninstall the Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Press Windows key + I to open Settings."
+          },
+          {
+            "title": "Go to Windows Update",
+            "content": "Click on 'Windows Update' in the left sidebar."
+          },
+          {
+            "title": "View Update History",
+            "content": "Click on 'Update history' and then 'Uninstall updates'."
+          },
+          {
+            "title": "Uninstall KB5029351",
+            "content": "Find the update KB5029351 in the list and click 'Uninstall'. Follow the prompts to complete the uninstallation."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T03:28:18.222Z",
+      "updated": "2026-01-06T03:28:18.222Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/windows-11-update-causes-blue-screens/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767670109792-172",
+    "title": "Fix MacBook Pro Running Slow and Freezing",
+    "problemDescription": "MacBook Pro is running slow and freezing frequently, even after restarts and disk cleanup.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "slow",
+      "freezing",
+      "restart",
+      "cleanup"
+    ],
+    "steps": [
+      {
+        "title": "Check Activity Monitor",
+        "content": "Open Activity Monitor from Applications > Utilities to see if any processes are using excessive CPU or memory."
+      },
+      {
+        "title": "Manage Startup Items",
+        "content": "Go to System Preferences > Users & Groups > Login Items and remove any unnecessary startup applications."
+      },
+      {
+        "title": "Clean Up Disk Space",
+        "content": "Use the built-in Storage Management tool or third-party software to clean up disk space and optimize storage."
+      },
+      {
+        "title": "Reset SMC",
+        "content": "Shut down your MacBook, then press and hold Shift + Control + Option on the left side of the keyboard and the power button simultaneously for 10 seconds. Release all keys and turn on your Mac."
+      },
+      {
+        "title": "Reset NVRAM",
+        "content": "Shut down your MacBook, then turn it on and immediately press and hold Option + Command + P + R for about 20 seconds. Release the keys and allow your Mac to continue booting normally."
+      },
+      {
+        "title": "Update macOS",
+        "content": "Go to System Preferences > Software Update and install any available updates."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "If the issue persists, consider reinstalling macOS using the Recovery Mode (hold Command + R during startup)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Safe Mode Boot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Shut down your MacBook, then turn it on and immediately press and hold the Shift key until the login screen appears."
+          },
+          {
+            "title": "Check Performance",
+            "content": "If the MacBook runs normally in Safe Mode, it indicates that a login item or startup application might be causing the issue."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disk Utility",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Disk Utility",
+            "content": "Boot into Recovery Mode (hold Command + R during startup), then go to Utilities > Disk Utility."
+          },
+          {
+            "title": "Repair Disk",
+            "content": "Select your startup disk and click on 'First Aid' to repair any disk errors."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T03:28:29.792Z",
+      "updated": "2026-01-06T03:28:29.792Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/275246/macbook-pro-running-slow-freezing",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767670113435-803",
+    "title": "Fix MacBook Slow Performance and Loud Fan After Battery Replacement",
+    "problemDescription": "MacBook running slow and fan loudly after battery replacement, not due to overheating.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "slow performance",
+      "loud fan",
+      "battery replacement"
+    ],
+    "steps": [
+      {
+        "title": "Reset SMC",
+        "content": "Shut down your MacBook. Press and hold Control + Option + Shift + Power button for 10 seconds. Release all keys and power on your MacBook."
+      },
+      {
+        "title": "Update macOS",
+        "content": "Go to System Preferences > Software Update and install the latest macOS update."
+      },
+      {
+        "title": "Check Activity Monitor",
+        "content": "Open Activity Monitor from Applications > Utilities and check for any processes using high CPU or memory."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "Backup your data and reinstall macOS using the Recovery Mode (hold Command + R during startup)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Battery Calibration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Discharge Battery",
+            "content": "Use your MacBook until it shuts down due to low battery."
+          },
+          {
+            "title": "Fully Charge",
+            "content": "Plug in your MacBook and let it charge to 100% without interruption."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Hardware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Apple Store",
+            "content": "Schedule an appointment at an Apple Store or authorized service provider to check for any hardware issues related to the battery replacement."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T03:28:33.435Z",
+      "updated": "2026-01-06T03:28:33.435Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/444734/computer-and-internet-extremely-slow-and-fan-constantly-running-audibly-2016-15",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767670124390-306",
+    "title": "Fix Slow Booting on MacBook Air",
+    "problemDescription": "MacBook Air is slow to boot and shutdown, with freezing and unresponsiveness after entering the password.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "slow boot",
+      "active directory",
+      "network configuration"
+    ],
+    "steps": [
+      {
+        "title": "Unbind from Active Directory",
+        "content": "Unbind the MacBook Air from the Active Directory domain. Ensure the computer name is present in the AD Computers list."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset PRAM and NVRAM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Shut Down the Computer",
+            "content": "Turn off your MacBook Air completely."
+          },
+          {
+            "title": "Locate Keys",
+            "content": "Find the `⌥` (Option), `⌘` (Command), `P`, and `R` keys on the keyboard."
+          },
+          {
+            "title": "Turn On and Hold Keys",
+            "content": "Turn on the computer and immediately hold down the `⌥`+`⌘`+`P`+`R` keys simultaneously for about 20 seconds."
+          },
+          {
+            "title": "Release Keys",
+            "content": "Release the keys and allow the MacBook to complete the boot process."
+          }
+        ]
+      },
+      {
+        "title": "Check Network Configuration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Network Speed",
+            "content": "Check your network configuration and ensure it meets the required speed. If it is slow, consider repairing or upgrading your network hardware."
+          }
+        ]
+      },
+      {
+        "title": "Backup and Zero the SSD",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Back up all important data to an external drive or cloud storage."
+          },
+          {
+            "title": "Zero the SSD",
+            "content": "Use a tool to zero the SSD, ensuring the drive and OS support TRIM to allow the controller to mark the entire drive as clean."
+          },
+          {
+            "title": "Restore Backup",
+            "content": "Once the SSD is clean, restore your backup to the MacBook Air."
+          }
+        ]
+      },
+      {
+        "title": "Clean Install of macOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Back up all important data to an external drive or cloud storage."
+          },
+          {
+            "title": "Erase Hard Drive",
+            "content": "Completely erase the hard drive using Disk Utility."
+          },
+          {
+            "title": "Reinstall macOS",
+            "content": "Reinstall the operating system from the install disk or recovery partition."
+          },
+          {
+            "title": "Restore Data",
+            "content": "Restore your backed-up data to the MacBook Air."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T03:28:44.390Z",
+      "updated": "2026-01-06T03:28:44.390Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/35846/macbook-air-has-suddenly-become-very-slow-at-booting-and-shutdown",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
