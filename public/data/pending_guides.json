@@ -42747,5 +42747,880 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767674278674-134",
+    "title": "Fix Stuck Tabs in Google Chrome",
+    "problemDescription": "Pinned tabs and startup pages get stuck in 'contacting server' mode and never load.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "tabs",
+      "loading",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Create a New Chrome Profile",
+        "content": "Create a new Chrome profile to eliminate data corruption issues."
+      },
+      {
+        "title": "Disable Synchronization",
+        "content": "Ensure the new profile is not synchronized with your Google account."
+      },
+      {
+        "title": "Avoid Using CCleaner",
+        "content": "Stop using CCleaner or deselect Google Chrome in its settings to prevent data corruption."
+      },
+      {
+        "title": "Clear Cache Through Chrome",
+        "content": "Manually clear the cache through Chrome's settings instead of using third-party tools."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Inspect Network Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect Network Issues",
+            "content": "Go to `chrome://net-internals` to inspect and fix network-related problems."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Enable Logging",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Logging",
+            "content": "Pass `--log-net-log=C:\\blah.txt` as a command-line parameter to log network issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T04:37:58.674Z",
+      "updated": "2026-01-06T04:37:58.674Z",
+      "sourceUrl": "https://superuser.com/questions/472785/google-chrome-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767674281997-29",
+    "title": "Fix Chrome Not Loading Webpages",
+    "problemDescription": "Google Chrome is not loading any webpages while other browsers like Firefox work fine.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "browser",
+      "not loading",
+      "webpages"
+    ],
+    "steps": [
+      {
+        "title": "Run Chrome with Verbose Logging",
+        "content": "Open a terminal and run the following command to start Chrome with verbose logging: `google-chrome -v=1`. This can help identify and fix the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Remove Citrix Workspace Conflict",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Move ld.so.preload File",
+            "content": "If the issue started after installing Citrix Workspace, run the following command in the terminal: `sudo mv /etc/ld.so.preload /etc/ld.so.preload.org`. This can resolve conflicts caused by Citrix Workspace."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Problematic Extensions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Chrome Extensions",
+            "content": "Type `chrome://extensions/` in the address bar and press Enter."
+          },
+          {
+            "title": "Disable Extensions",
+            "content": "Disable extensions one by one until you find the problematic one, then remove it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T04:38:01.997Z",
+      "updated": "2026-01-06T04:38:01.997Z",
+      "sourceUrl": "https://superuser.com/questions/1622092/google-chrome-not-loading-any-webpages-meanwhile-firefox-and-other-internet-bas",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767674286808-377",
+    "title": "Fix Chrome Blank Page After Displaying for a Split Second",
+    "problemDescription": "Chrome displays a webpage for a brief moment then goes blank.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "blank page",
+      "browser",
+      "display issue"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Shared Memory Settings",
+        "content": "Increase the shared memory limit by entering the command `# sysctl kern.ipc.shmall=17731` in the terminal. To make this change permanent, add the line `echo 'kern.ipc.shmall=17731' >> /etc/sysctl.conf` to your system configuration file."
+      },
+      {
+        "title": "Properly Exit Chrome",
+        "content": "Right-click the Chrome icon in the system tray (notifications area) and select 'Exit' to ensure a clean exit. Alternatively, you can end the task via Task Manager if the icon method is unavailable."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Adblock with Specific Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Adblock Settings",
+            "content": "Use Adblock with the 'block ads in videos and flash' option enabled to potentially resolve the issue."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Switch Browsers or Wait for Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Different Browser",
+            "content": "If the issue persists, consider using a different browser until Chrome releases a fix for the Content-Length header bug."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T04:38:06.808Z",
+      "updated": "2026-01-06T04:38:06.808Z",
+      "sourceUrl": "https://superuser.com/questions/440416/chrome-displays-a-page-for-split-second-then-it-goes-blank",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767674292375-726",
+    "title": "Fix Chrome Failing to Launch After Windows Update",
+    "problemDescription": "Chrome fails to launch after installing Windows update KB5004237.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "windows update",
+      "KB5004237",
+      "launch issue"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall Chrome and Extensions",
+        "content": "Uninstall Google Chrome and any extensions. Make sure to back up your favorites and bookmarks."
+      },
+      {
+        "title": "Run System File Checker and DISM",
+        "content": "Open Command Prompt as Administrator and run the following commands one by one: `dism.exe /online /cleanup-image /restorehealth` and `SFC /SCANNOW`. Restart your computer after the scans complete."
+      },
+      {
+        "title": "Reinstall Chrome",
+        "content": "After restarting, install Google Chrome again and test if it launches successfully."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Uninstall the Problematic Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall KB5004237",
+            "content": "Go to Settings > Update & Security > View update history > Uninstall updates. Find KB5004237 and uninstall it."
+          },
+          {
+            "title": "Prevent Automatic Reinstallation",
+            "content": "To prevent Windows Update from reinstalling the update, you may need to use a tool like 'Show or Hide Updates' from Microsoft."
+          }
+        ]
+      },
+      {
+        "title": "Repair Install Windows 10",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure all important data is backed up."
+          },
+          {
+            "title": "Perform a Repair Install",
+            "content": "Download the Windows 10 Media Creation Tool and perform a repair install to fix any underlying system issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T04:38:12.375Z",
+      "updated": "2026-01-06T04:38:12.375Z",
+      "sourceUrl": "https://superuser.com/questions/1663525/chrome-fails-to-launch-after-windows-update-installs-kb5004237",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767674295785-429",
+    "title": "Fix Google Chrome Error 138",
+    "problemDescription": "Google Chrome is unable to access the internet due to firewall or antivirus software blocking it.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "error 138",
+      "firewall",
+      "antivirus"
+    ],
+    "steps": [
+      {
+        "title": "Add Chrome as a Permitted Program",
+        "content": "Open your firewall or antivirus software settings and add Google Chrome as a permitted program."
+      },
+      {
+        "title": "Reset Permissions",
+        "content": "If Chrome is already permitted, remove it from the list and add it again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Create a New Chrome User Profile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create New Profile",
+            "content": "Go to Chrome settings and create a new user profile."
+          }
+        ]
+      },
+      {
+        "title": "Reinstall Chrome",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Chrome",
+            "content": "Uninstall Google Chrome from your computer."
+          },
+          {
+            "title": "Rename Chrome Directory",
+            "content": "Rename the Chrome directory in Program Files to something else."
+          },
+          {
+            "title": "Reinstall Chrome",
+            "content": "Download and reinstall Google Chrome."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T04:38:15.785Z",
+      "updated": "2026-01-06T04:38:15.785Z",
+      "sourceUrl": "https://superuser.com/questions/353813/google-chrome-giving-error-138",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767674308108-803",
+    "title": "Repair iOS Without iTunes",
+    "problemDescription": "Fix over 150 iOS system issues without using iTunes.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iOS",
+      "repair",
+      "iTunes",
+      "AnyFix",
+      "system issues"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install AnyFix",
+        "content": "Download AnyFix from the official website and install it on your computer."
+      },
+      {
+        "title": "Connect Your Device",
+        "content": "Connect your iPhone, iPad, iPod touch, or Apple TV to your computer using a USB cable."
+      },
+      {
+        "title": "Select Repair Mode",
+        "content": "Open AnyFix and select the appropriate repair mode based on your device's issue (e.g., 'iOS System Repair')."
+      },
+      {
+        "title": "Follow On-Screen Instructions",
+        "content": "Follow the on-screen instructions to complete the repair process. AnyFix will guide you through the steps."
+      },
+      {
+        "title": "Complete the Repair",
+        "content": "Once the repair process is complete, your device should restart and function normally."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Locked iPhone/iPad without Password",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install AnyFix",
+            "content": "Download AnyFix from the official website and install it on your computer."
+          },
+          {
+            "title": "Connect Your Device",
+            "content": "Connect your locked iPhone, iPad, or iPod touch to your computer using a USB cable."
+          },
+          {
+            "title": "Select Reset Mode",
+            "content": "Open AnyFix and select the 'Reset Locked Device' option."
+          },
+          {
+            "title": "Follow On-Screen Instructions",
+            "content": "Follow the on-screen instructions to reset your device without entering a passcode."
+          },
+          {
+            "title": "Complete the Reset",
+            "content": "Once the reset process is complete, your device should restart and be accessible without a passcode."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T04:38:28.108Z",
+      "updated": "2026-01-06T04:38:28.108Z",
+      "sourceUrl": "https://duckduckgo.com/y.js?ad_domain=imobie.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=c6O2tadGAQqOihdkLCUwrAAEvxKEATBSmiCcw961QPv36fEs36cWAeL5gIhPj8qqU6exY7ZxmkkN5T3gkO91O1yZZeUuQrZBt7%2DC8yTQlluK3E4xr5HdAWnDX1uubk_fSCWaXFDPmAS7GMyH59KES3LMau_24Kqyu4oEK%2D%2DrLcw.ctfCgMeWJlCl569dtwbX7Q&rut=869a0d6a3a82177a0cf5b4abbb0d610beb6dc14bde0dd2143c7fb609cc93bfe4&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De80FoHjnxhKEuT7I_fHpc2uzVUCUzq0_SG%2DnGWmCRvznuJ4xLVP%2DYUQzcG7PJ9kEMBAFRKfA23hAJsd%2DMP958VkxnpzucdeRXN7IQG5cC0WLUMbtIuDtz_C2QIh6Hm5bKOfw%2DBVgL1k76y_aLbgsYtm8MK2ZBEBCj2EcwjWiwVwFJ3nyqs4wsnKPBsMdxu1PnZeNZo22Luv%2Dn%2DjcXR044VhSUas4k%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuaW1vYmllLmNvbSUyZmFueWZpeCUyZmlvcy1zeXN0ZW0tcmVjb3ZlcnkuaHRtJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2bXNjbGtpZCUzZDA5Nzc2MDM2ZjYxZDEzOTBhZGMwMDk2YTY3YTEyNmZlJTI2dXRtX2NhbXBhaWduJTNkc2VhcmNoX0FGX2VuXzIwMjUwOTAzX2JyYW5kJTI2dXRtX3Rlcm0lM2RhbnlmaXglMjUyMGlvcyUyNTIwc3lzdGVtJTI1MjByZXBhaXIlMjZ1dG1fY29udGVudCUzZEFkJTI1MjBHcm91cCUyNTIwMQ%26rlid%3D09776036f61d1390adc0096a67a126fe&vqd=4-268454986867072058769269045481063549300&iurl=%7B1%7DIG%3D443AE8889AE046CA8D3ABE3FE52C2255%26CID%3D0E8C24DAB49768983AFB3203B511699D%26ID%3DDevEx%2C5045.1",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767674311555-546",
+    "title": "Reset File and Folder Permissions in Windows 11",
+    "problemDescription": "Can't access apps and files due to modified security settings in Windows 11.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "permissions",
+      "security",
+      "files",
+      "apps"
+    ],
+    "steps": [
+      {
+        "title": "Use System Restore",
+        "content": "1. Press `Win + S` to open the search bar, type 'System Restore', and select 'Create a restore point'. 2. In the System Properties window, click on the 'System Restore' button. 3. Follow the prompts to choose a restore point from before the issue started and complete the restoration process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manually Reset Permissions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Take Ownership of Files and Folders",
+            "content": "1. Right-click on the file or folder and select 'Properties'. 2. Go to the 'Security' tab and click 'Advanced'. 3. Click 'Change' next to the owner's name and enter your username, then click 'Check Names' and 'OK'. 4. Check 'Replace owner on subcontainers and objects' and click 'Apply'. 5. Repeat the process to take ownership of all affected files and folders."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T04:38:31.555Z",
+      "updated": "2026-01-06T04:38:31.555Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/security-issue-cant-access-apps-and-files/95dca701-871a-4957-bb8d-82c7e23ee19d",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767674315190-927",
+    "title": "Recover Rockstar Account Without 2FA",
+    "problemDescription": "User cannot access Rockstar account due to lost 2FA authenticator and mobile phone.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "2FA",
+      "authenticator",
+      "account recovery",
+      "Rockstar"
+    ],
+    "steps": [
+      {
+        "title": "Contact Rockstar Support",
+        "content": "Reach out to Rockstar support through their official website or help center. Explain your situation and provide any necessary details to verify your identity."
+      },
+      {
+        "title": "Provide Verification Details",
+        "content": "Be prepared to provide any verification details such as account creation date, associated email addresses, or any other information that can help prove ownership of the account."
+      },
+      {
+        "title": "Follow Support Instructions",
+        "content": "Follow the instructions provided by Rockstar support to regain access to your account. This may involve answering security questions or undergoing a verification process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Backup Codes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Backup Codes",
+            "content": "If you have any backup codes saved from when you initially set up 2FA, use one of these codes to regain access to your account."
+          },
+          {
+            "title": "Contact Support with Backup Codes",
+            "content": "If you have backup codes, contact Rockstar support and provide them with one of these codes to verify your identity and regain access."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T04:38:35.190Z",
+      "updated": "2026-01-06T04:38:35.190Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum?tab=Threads%5BOutlook.com",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767674319890-692",
+    "title": "Connect Desktop to iPhone Hotspot",
+    "problemDescription": "Desktop unable to connect to iPhone hotspot.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "desktop",
+      "iphone",
+      "hotspot",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check Hotspot Settings on iPhone",
+        "content": "Ensure the hotspot is enabled on your iPhone. Go to Settings > Personal Hotspot and turn it on."
+      },
+      {
+        "title": "Verify Wi-Fi Connection on Desktop",
+        "content": "On your desktop, go to the Wi-Fi settings and select the iPhone hotspot network."
+      },
+      {
+        "title": "Check Password",
+        "content": "Ensure you are using the correct password for the iPhone hotspot. The password is usually the same as your iPhone's lock screen password."
+      },
+      {
+        "title": "Restart Devices",
+        "content": "Restart both your iPhone and desktop to refresh the network settings."
+      },
+      {
+        "title": "Update Network Drivers",
+        "content": "Update the network drivers on your desktop to ensure compatibility with the hotspot."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use USB Tethering",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect iPhone to Desktop",
+            "content": "Use a USB cable to connect your iPhone to the desktop."
+          },
+          {
+            "title": "Enable USB Tethering",
+            "content": "On your iPhone, go to Settings > Personal Hotspot and enable 'Allow Others to Join'."
+          },
+          {
+            "title": "Configure Network Settings",
+            "content": "On your desktop, configure the network settings to use the USB connection for internet access."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T04:38:39.890Z",
+      "updated": "2026-01-06T04:38:39.890Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/desktop-wont-connect-to-iphone-hotspot/3af8063e-07ca-452f-9378-e0b8ab5ec770",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767674336179-850",
+    "title": "Reset Windows 10 Password via CMD",
+    "problemDescription": "Unable to reset Windows 10 password using Command Prompt.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "password",
+      "reset",
+      "cmd"
+    ],
+    "steps": [
+      {
+        "title": "Create a Bootable USB Drive",
+        "content": "Create a Windows bootable USB drive using another computer."
+      },
+      {
+        "title": "Boot from USB",
+        "content": "Insert the USB drive into the locked computer and boot from it."
+      },
+      {
+        "title": "Open Command Prompt",
+        "content": "Press Shift + F10 to open the Command Prompt window in administrator mode."
+      },
+      {
+        "title": "Navigate to System32",
+        "content": "Run the command: `Cd c:/Windows/system32`."
+      },
+      {
+        "title": "Backup utilman.exe",
+        "content": "Run the command: `Ren utilman.exe utilman.exe.bak`."
+      },
+      {
+        "title": "Replace utilman.exe with cmd.exe",
+        "content": "Run the command: `Copy cmd.exe utilman.bak`."
+      },
+      {
+        "title": "Restart the Computer",
+        "content": "Restart the computer normally."
+      },
+      {
+        "title": "Access Command Prompt via Ease of Access",
+        "content": "Click the ease of access icon at the bottom right corner to open Command Prompt with admin rights."
+      },
+      {
+        "title": "Reset the Password",
+        "content": "Run the commands: `net user username /passwordreq:no` and `net user username new_password`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using net user command directly",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Command Prompt as Administrator",
+            "content": "If you can log in to an admin account, open Command Prompt as Administrator."
+          },
+          {
+            "title": "Reset the Password",
+            "content": "Run the commands: `net user username /passwordreq:no` and `net user username new_password`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T04:38:56.179Z",
+      "updated": "2026-01-06T04:38:56.179Z",
+      "sourceUrl": "https://superuser.com/questions/1282318/windows-10-reset-password-on-cmd-is-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767674340124-832",
+    "title": "Fix Windows 7 Password Change Denied",
+    "problemDescription": "Unable to change password in Windows 7 due to 'Access is denied' error.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "password",
+      "access denied",
+      "user accounts"
+    ],
+    "steps": [
+      {
+        "title": "Change System Date",
+        "content": "Boot into BIOS and change the system date to a day before the event."
+      },
+      {
+        "title": "Log into Windows",
+        "content": "Log into Windows with the old credentials."
+      },
+      {
+        "title": "Correct User Account Settings",
+        "content": "Go to user account settings and uncheck `Password never expires` and `User cannot change password`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Hidden Administrator Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Hidden Administrator Account",
+            "content": "Press `Ctrl-Alt-Del` to bring up the login screen and log in using the hidden administrator account."
+          },
+          {
+            "title": "Change Password",
+            "content": "Once logged in, change the password through the user account settings."
+          }
+        ]
+      },
+      {
+        "title": "Reset Password via CD",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot from CD",
+            "content": "Boot the computer from a password reset CD."
+          },
+          {
+            "title": "Reset Password",
+            "content": "Follow the instructions on the CD to reset the password."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T04:39:00.124Z",
+      "updated": "2026-01-06T04:39:00.124Z",
+      "sourceUrl": "https://superuser.com/questions/683047/unable-to-change-password-access-is-denied",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767674343706-683",
+    "title": "Forgotten Password Wizard Not Opening",
+    "problemDescription": "The Forgotten Password Wizard in Windows does not open or stay visible.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "password",
+      "wizard",
+      "focus"
+    ],
+    "steps": [
+      {
+        "title": "Close the Hidden Wizard",
+        "content": "If the Forgotten Password Wizard is open but hidden, close it using the X button or through Task Manager (it will appear under rundll32)."
+      },
+      {
+        "title": "Open the Wizard via Command Prompt",
+        "content": "Open Command Prompt and type: RunDll32.exe keymgr.dll,PRShowSaveWizardExW"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows Search",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Search for the Wizard",
+            "content": "Search for 'Create a password reset disk' in the Taskbar search."
+          },
+          {
+            "title": "Bring to Focus",
+            "content": "If the wizard opens but hides, try pressing Alt+Tab to bring it to focus."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T04:39:03.706Z",
+      "updated": "2026-01-06T04:39:03.706Z",
+      "sourceUrl": "https://superuser.com/questions/1696216/forgotten-password-wizard-stupidly-hides-itself-repeatedly-even-when-tried-to-br",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767674362373-898",
+    "title": "Enable Local Network Access for Chrome on Mac",
+    "problemDescription": "Chrome cannot access local network addresses on Mac.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "local network",
+      "mac",
+      "privacy",
+      "security"
+    ],
+    "steps": [
+      {
+        "title": "Access Local Network Settings",
+        "content": "Go to System Settings => Privacy and Security => Local Network."
+      },
+      {
+        "title": "Enable Chrome Access",
+        "content": "Ensure the slider for Chrome is set to enable local network access."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Chrome Permissions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force Quit Chrome",
+            "content": "Close Google Chrome completely using Cmd + Option + Esc, select Google Chrome from the list, and force quit."
+          },
+          {
+            "title": "Disable Chrome Permissions",
+            "content": "Go to System Settings -> Privacy & Security -> Local Network. Uncheck any of the Google Chrome slides, which will uncheck all at once. Also, uncheck Google Chrome Helper (GPU)."
+          },
+          {
+            "title": "Re-enable Chrome Permissions",
+            "content": "Enable again any Google Chrome and Google Chrome Helper. Open Google Chrome and navigate to any local address. The popup will appear to ask again for the permissions."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Toggle Chrome Permissions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Chrome from Local Network",
+            "content": "Disable Chrome from the Apple Menu under Privacy & Security, Local Networks, by sliding Google Chrome to off."
+          },
+          {
+            "title": "Restart Chrome",
+            "content": "Restart Chrome and go to a local address to verify the error."
+          },
+          {
+            "title": "Force Quit Chrome Again",
+            "content": "Force Quit Chrome again."
+          },
+          {
+            "title": "Re-enable Chrome Permissions",
+            "content": "Reverse the second step and re-enable Google Chrome. Restart Chrome and 'Allow' access if asked to local addresses sought."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T04:39:22.373Z",
+      "updated": "2026-01-06T04:39:22.373Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255906354",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767674373080-225",
+    "title": "Fix Click Issues on Google Chrome for Mac",
+    "problemDescription": "Click functionality not working on Google Chrome app on MacBook.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "mac",
+      "click",
+      "gpu"
+    ],
+    "steps": [
+      {
+        "title": "Enable GPU Rasterization",
+        "content": "Open a new tab in Chrome and type 'chrome://flags/#enable-gpu-rasterization' in the address bar. Press Enter. Click the dropdown menu next to 'GPU rasterization' and select 'Enabled'. Restart Chrome for the changes to take effect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Chrome in Full Screen Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Full Screen Mode",
+            "content": "Try using Chrome in full screen mode. Some users reported that this resolves the click issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T04:39:33.080Z",
+      "updated": "2026-01-06T04:39:33.080Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255228566",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767674376375-152",
+    "title": "Fix Google Chrome Not Working on Mac",
+    "problemDescription": "Google Chrome stops working and fails to update or reinstall properly on macOS.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "mac",
+      "update",
+      "uninstall",
+      "permissions"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall Old Chrome Version",
+        "content": "Download the new Chrome file. Uninstall the older version by moving it to the Trash."
+      },
+      {
+        "title": "Check File Permissions",
+        "content": "For each item, go to File > Get Info. Ensure 'Locked' is deselected and check Sharing & Permissions to confirm the items are not Read Only or No Access."
+      },
+      {
+        "title": "Reinstall Chrome",
+        "content": "After ensuring all files are unlocked and have proper permissions, reinstall the new Chrome version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Remove Downloaded Files",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Locate Downloaded Files",
+            "content": "Go to your Downloads folder and find the Chrome-related files."
+          },
+          {
+            "title": "Move to Trash",
+            "content": "Move the identified files to the Trash to clear any conflicts."
+          },
+          {
+            "title": "Reinstall Chrome",
+            "content": "Proceed with the installation of the new Chrome version."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T04:39:36.375Z",
+      "updated": "2026-01-06T04:39:36.375Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255905365",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
