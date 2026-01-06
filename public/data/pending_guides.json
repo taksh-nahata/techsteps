@@ -54045,5 +54045,658 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767734302981-542",
+    "title": "Disable Type to Siri on iOS 18",
+    "problemDescription": "The Type to Siri feature is accidentally triggered, causing inconvenience.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iOS",
+      "Siri",
+      "Type to Siri",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Access Siri Settings",
+        "content": "Go to Settings > Apple Intelligence & Siri."
+      },
+      {
+        "title": "Disable Type to Siri",
+        "content": "Tap on Talk & Type to Siri and toggle off the Type to Siri option."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Avoid Accidental Activation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Be Mindful of Taps",
+            "content": "Avoid double-tapping at the bottom center of your iPhone to prevent accidentally enabling the Type to Siri feature."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T21:18:22.981Z",
+      "updated": "2026-01-06T21:18:22.981Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/my-quick-fix-for-the-3-most-frustrating-ios-18-settings-on-your-iphone/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767734308617-158",
+    "title": "Fix Voice Assistant Command Issues",
+    "problemDescription": "Voice assistants like Siri and Google Assistant often fail to understand natural, multi-layered commands.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "voice assistant",
+      "commands",
+      "Google Assistant",
+      "Siri",
+      "natural language"
+    ],
+    "steps": [
+      {
+        "title": "Use Google Assistant with Natural Language",
+        "content": "Instead of using choppy, keyword-heavy commands, speak naturally to Google Assistant. For example, say 'Hey Google, text Mom that I'm running late and add a smiley emoji' instead of separate commands."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Your Voice Assistant",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Your Device",
+            "content": "Ensure your device is updated to the latest Android version to access the new Google Assistant features."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T21:18:28.617Z",
+      "updated": "2026-01-06T21:18:28.617Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/google-can-put-siri-to-shame-and-fix-the-biggest-problem-with-voice-assistants/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767734320922-262",
+    "title": "Fix Windows 8.1 Tablet Battery Drain",
+    "problemDescription": "Windows 8.1 tablet experiences significant battery drain while on standby.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery",
+      "drain",
+      "standby",
+      "windows 8.1",
+      "tablet"
+    ],
+    "steps": [
+      {
+        "title": "Update Windows and Drivers",
+        "content": "Ensure your Windows 8.1 tablet is fully updated, including all available driver updates, as outdated software can cause battery drain issues."
+      },
+      {
+        "title": "Disable Connected Standby",
+        "content": "Go to Control Panel > Power Options > Change plan settings > Change advanced power settings. Locate 'Sleep' and set 'Connected Standby' to 'Disabled'."
+      },
+      {
+        "title": "Check for Background Apps",
+        "content": "Press Win + I to open Settings, then navigate to 'Privacy' > 'Background apps'. Disable apps that are not essential to run in the background."
+      },
+      {
+        "title": "Adjust Screen Timeout Settings",
+        "content": "Go to Control Panel > Power Options > Change plan settings > Change advanced power settings. Set 'Turn off the display' to a shorter time, such as 2 minutes."
+      },
+      {
+        "title": "Run Power Troubleshooter",
+        "content": "Go to Settings > Update & Security > Troubleshoot > Power. Run the troubleshooter to identify and fix any power-related issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Power Plan",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Power Plan",
+            "content": "Go to Control Panel > Power Options. Click on 'Choose what the power buttons do' > 'Change what the power buttons do'. Click on 'Restore default settings for this plan'."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Fast Startup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Fast Startup",
+            "content": "Go to Control Panel > Power Options > Choose what the power buttons do > Change what the power buttons do. Uncheck 'Turn on fast startup (recommended)' and save changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T21:18:40.922Z",
+      "updated": "2026-01-06T21:18:40.922Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/power-drain-issues-putting-the-tablet-on-standby/969bc808-c260-41d3-9eb0-b3925ded4066",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767734339390-629",
+    "title": "Fix Windows 10 Random Restarts",
+    "problemDescription": "Windows 10 Pro randomly restarts without a Blue Screen of Death (BSOD).",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "restart",
+      "crash",
+      "event viewer"
+    ],
+    "steps": [
+      {
+        "title": "Check Event Viewer for Errors",
+        "content": "Open Event Viewer by pressing Win + X and selecting Event Viewer. Navigate to Windows Logs > System and look for critical errors around the time of the restart."
+      },
+      {
+        "title": "Update Device Drivers",
+        "content": "Ensure all drivers, especially for the AMD Ryzen 7 7700x and AMD Radeon RX 6700 XT, are up to date. Use the Device Manager or visit the manufacturer's website for the latest drivers."
+      },
+      {
+        "title": "Run Windows Memory Diagnostic",
+        "content": "Press Win + R, type mdsched.exe, and press Enter. Follow the prompts to check for memory issues."
+      },
+      {
+        "title": "Check for Overheating",
+        "content": "Use a tool like HWMonitor or Core Temp to check CPU and GPU temperatures. Ensure proper cooling and clean any dust from the system."
+      },
+      {
+        "title": "Perform a Clean Boot",
+        "content": "Press Win + R, type msconfig, and press Enter. Go to the Services tab, check 'Hide all Microsoft services', and click 'Disable all'. Then go to the Startup tab and click 'Open Task Manager' to disable all startup items."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Graphics Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Current Drivers",
+            "content": "Go to Device Manager, expand Display adapters, right-click on your graphics card, and select 'Uninstall device'. Check the box to delete the driver software."
+          },
+          {
+            "title": "Download Latest Drivers",
+            "content": "Visit the AMD website and download the latest drivers for your Radeon RX 6700 XT."
+          },
+          {
+            "title": "Install New Drivers",
+            "content": "Run the downloaded installer and follow the on-screen instructions to install the new drivers."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T21:18:59.390Z",
+      "updated": "2026-01-06T21:18:59.390Z",
+      "sourceUrl": "http://answers.microsoft.com/en-us/windows/forum/windows_10-windows_install/the-windows%E2%80%9310-upgrade-appears-to-hang/a3359013%E2%80%9380a7%E2%80%934a25-a75d%E2%80%931c828e576c40?tm=1438143969182",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767734341911-467",
+    "title": "Understanding the Meaning of 'Solution'",
+    "problemDescription": "Clarifying the definition and usage of the term 'solution'.",
+    "category": "general",
+    "difficulty": "Easy",
+    "keywords": [
+      "definition",
+      "meaning",
+      "solution"
+    ],
+    "steps": [
+      {
+        "title": "Primary Definition",
+        "content": "A solution is an answer to a problem or an explanation."
+      },
+      {
+        "title": "Scientific Definition",
+        "content": "In science, a solution is a homogeneous mixture of a substance dissolved in a liquid, gas, or solid."
+      },
+      {
+        "title": "Medical Definition",
+        "content": "In medicine, a solution refers to a liquid in which a substance is dissolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Additional Usage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Solution Set",
+            "content": "In mathematics, a solution set is the set of all solutions to a given equation or system of equations."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T21:19:01.911Z",
+      "updated": "2026-01-06T21:19:01.911Z",
+      "sourceUrl": "https://www.merriam-webster.com/dictionary/solutions",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767734355440-424",
+    "title": "Restart iPhone to Fix Common Issues",
+    "problemDescription": "Your iPhone is experiencing common issues like freezing, crashing, or slow performance.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "restart",
+      "freeze",
+      "crash",
+      "slow performance"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Open the Settings app on your iPhone."
+      },
+      {
+        "title": "Go to General",
+        "content": "Tap on 'General'."
+      },
+      {
+        "title": "Shut Down",
+        "content": "Tap on the 'Shut Down' option."
+      },
+      {
+        "title": "Slide to Power Off",
+        "content": "Move the slider to the right to turn off your iPhone."
+      },
+      {
+        "title": "Wait and Restart",
+        "content": "Wait a few seconds, then long-press the power button to turn on your iPhone."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Force Restart",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Press and Hold",
+            "content": "Press and hold the side button and volume up button simultaneously."
+          },
+          {
+            "title": "Slide to Power Off",
+            "content": "Move the slider to the right to turn off your iPhone."
+          },
+          {
+            "title": "Wait and Restart",
+            "content": "Wait a few seconds, then long-press the power button to turn on your iPhone."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Siri",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Activate Siri",
+            "content": "Say 'Hey Siri' or press and hold the side button to activate Siri."
+          },
+          {
+            "title": "Restart Command",
+            "content": "Say 'Restart my iPhone' and follow the on-screen instructions."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Restore from Backup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect to Computer",
+            "content": "Connect your iPhone to your computer and open iTunes or Finder."
+          },
+          {
+            "title": "Restore Backup",
+            "content": "Select your iPhone, go to 'General' or 'Settings', and choose 'Restore Backup'."
+          },
+          {
+            "title": "Choose Backup",
+            "content": "Select a backup from before the issue started and restore it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T21:19:15.440Z",
+      "updated": "2026-01-06T21:19:15.440Z",
+      "sourceUrl": "https://www.howtogeek.com/iphone-troubleshooting-tips-to-fix-all-kinds-of-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767734359103-320",
+    "title": "Fix Crashing Apps on iPhone or iPad",
+    "problemDescription": "Apps on your iPhone or iPad are frequently crashing.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iPhone",
+      "iPad",
+      "app crash",
+      "restart"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Device",
+        "content": "Press and hold the Side (lock) button and one of the volume buttons until the 'Slide to Power Off' menu appears. Drag the slider to turn off your device. Wait for about 30 seconds, then press and hold the Side button again until the Apple logo appears to turn it back on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restart Using Siri",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Activate Siri",
+            "content": "Trigger Siri by saying 'Hey Siri' or pressing and holding the Side button."
+          },
+          {
+            "title": "Ask to Restart",
+            "content": "Say 'restart my iPhone' or 'restart my iPad' and confirm the request when prompted."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T21:19:19.103Z",
+      "updated": "2026-01-06T21:19:19.103Z",
+      "sourceUrl": "https://www.howtogeek.com/427757/how-to-troubleshoot-iphone-and-ipad-app-crashes/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767734363056-653",
+    "title": "Fix Siri Smart Home Device Issues",
+    "problemDescription": "Siri is not reliably controlling smart home devices, causing connectivity and responsiveness problems.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "siri",
+      "smart home",
+      "apple tv",
+      "modem",
+      "reboot"
+    ],
+    "steps": [
+      {
+        "title": "Set Apple TV 4K as Permanent Home Hub",
+        "content": "Go to the Home app on your iOS device, tap the Home icon, then tap Home Settings. Select your Apple TV 4K as the permanent Home Hub."
+      },
+      {
+        "title": "Reset Apple TV 4K",
+        "content": "Unplug the Apple TV 4K from power, wait for 30 seconds, then plug it back in. This can help resolve connectivity issues."
+      },
+      {
+        "title": "Reboot Modem Weekly",
+        "content": "Set up a smart plug to automatically reboot your modem once a week. This can help maintain a stable connection for your smart home devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manually Control Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Physical Switches",
+            "content": "If Siri or the Home app fails to control a device, manually toggle the physical switch to turn the device on or off."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T21:19:23.056Z",
+      "updated": "2026-01-06T21:19:23.056Z",
+      "sourceUrl": "https://www.howtogeek.com/siri-is-ruining-my-smart-home/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767734368005-11",
+    "title": "Fix Cannot Connect to App Store on iPhone or iPad",
+    "problemDescription": "Unable to connect to the App Store on your iPhone or iPad.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "app store",
+      "connection",
+      "iphone",
+      "ipad"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Device",
+        "content": "Restart your iPhone or iPad by asking Siri to 'restart my iPhone' or 'restart my iPad', or manually turn it off and on again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open the Settings app on your iPhone or iPad."
+          },
+          {
+            "title": "Navigate to Reset Options",
+            "content": "Go to General > Transfer or Reset iPhone/iPad > Reset."
+          },
+          {
+            "title": "Reset Network Settings",
+            "content": "Select 'Reset Network Settings' and confirm your choice. Wait for the reset to complete."
+          },
+          {
+            "title": "Reconnect to Wi-Fi",
+            "content": "Go to Settings > Wi-Fi and reconnect to your local wireless network. Try connecting to the App Store again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T21:19:28.005Z",
+      "updated": "2026-01-06T21:19:28.005Z",
+      "sourceUrl": "https://www.howtogeek.com/900670/how-to-fix-cannot-connect-to-app-store-on-iphone-or-ipad/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767734379651-504",
+    "title": "Fix Windows 10 Start Menu & Search Bar Unresponsive",
+    "problemDescription": "Windows 10 Start Menu and Search Bar become unresponsive after opening an app.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "start menu",
+      "search bar",
+      "unresponsive"
+    ],
+    "steps": [
+      {
+        "title": "Restart Windows Explorer",
+        "content": "Open Task Manager (Ctrl+Shift+Esc), find 'Windows Explorer' under the 'Processes' tab, right-click it, and select 'Restart'."
+      },
+      {
+        "title": "Run System File Checker",
+        "content": "Open Command Prompt as Administrator and type 'sfc /scannow'. Wait for the scan to complete and restart your computer."
+      },
+      {
+        "title": "Create a New User Account",
+        "content": "Go to Settings > Accounts > Family & other users > Add someone else to this PC. Follow the prompts to create a new account and check if the issue persists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: PowerShell Commands",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run PowerShell Commands",
+            "content": "Open PowerShell as Administrator and run the following commands one by one: 'Get-AppXPackage -AllUsers |Where-Object BasePath -like '*SystemApps*' | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register \"$($_.InstallLocation)\\$($_.Name)*\"}'"
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset Windows",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Windows",
+            "content": "Go to Settings > Update & Security > Recovery > Reset this PC. Choose 'Keep my files' and follow the prompts to reset your PC."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T21:19:39.651Z",
+      "updated": "2026-01-06T21:19:39.651Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/windows-10-start-menu-search-bar-unresponsive/369c76ae-1b6d-469f-bf88-a1886e249d6e",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767734383932-986",
+    "title": "Disable Copilot Pop-up in Microsoft 365",
+    "problemDescription": "Annoying 'Chat with Copilot' pop-up appears every time a Word or Excel document is opened, even when Copilot is disabled.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Copilot",
+      "Microsoft 365",
+      "pop-up",
+      "Word",
+      "Excel"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall Copilot App",
+        "content": "Go to your system's application settings and uninstall the Copilot app to prevent it from running in the background."
+      },
+      {
+        "title": "Disable Copilot in Office Settings",
+        "content": "Open any Office application, go to 'File' > 'Options' > 'General'. Look for Copilot settings and ensure it is disabled."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Registry Editor (Advanced)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Registry Editor",
+            "content": "Press 'Win + R', type 'regedit', and press Enter."
+          },
+          {
+            "title": "Navigate to Copilot Settings",
+            "content": "Go to 'HKEY_CURRENT_USER\\Software\\Microsoft\\Office\\16.0\\Common\\Copilot'."
+          },
+          {
+            "title": "Modify or Create DisableCopilot DWORD",
+            "content": "If 'DisableCopilot' exists, set its value to '1'. If not, create a new DWORD (32-bit) named 'DisableCopilot' and set its value to '1'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T21:19:43.932Z",
+      "updated": "2026-01-06T21:19:43.932Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/office_2013_release-powerpoint/pen-lagsfails-in-slide-show-view-in-powerpoint/a8e214d2-a0fe-4237-960e-2b0234a0f983?msgId=ecf1dda6-b03f-4440-abd4-86e85525036f",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767734396015-617",
+    "title": "Fix Ctrl+C and Ctrl+A Not Working",
+    "problemDescription": "Keyboard shortcuts Ctrl+C (copy) and Ctrl+A (select all) are not functioning.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "keyboard",
+      "shortcut",
+      "windows",
+      "copy",
+      "select all"
+    ],
+    "steps": [
+      {
+        "title": "Check for Hardware Issues",
+        "content": "Test using the virtual keyboard to see if the shortcuts work. If they do, the issue is likely with your physical keyboard."
+      },
+      {
+        "title": "Try an External Keyboard",
+        "content": "Connect an external keyboard to determine if the problem persists. If the shortcuts work with the external keyboard, your main keyboard may be faulty."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Keyboard Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Keyboard Layout",
+            "content": "Ensure the correct keyboard layout is selected in Windows settings."
+          },
+          {
+            "title": "Update Keyboard Drivers",
+            "content": "Go to Device Manager, find the keyboard under 'Keyboards', right-click and select 'Update driver'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T21:19:56.015Z",
+      "updated": "2026-01-06T21:19:56.015Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/keyboard-combination-ctrlc-and-ctrla-not-working/c1014ffa-a499-440b-8f08-16ffcc2eb78d",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
