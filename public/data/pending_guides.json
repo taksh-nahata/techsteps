@@ -51005,5 +51005,564 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767716594595-467",
+    "title": "Fix Screen Flickering on Android",
+    "problemDescription": "Screen flickering on an Android device can be caused by various factors, including software glitches, app conflicts, or display settings.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "screen flickering",
+      "display issue"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Phone",
+        "content": "Swipe down from the top of the screen and tap on the power icon or press and hold the power button. In the menu that comes up, tap 'Restart' or 'Reboot'. Wait for your phone to power off, and then come on."
+      },
+      {
+        "title": "Boot Your Phone In Safe Mode",
+        "content": "Press and hold the power button until the power menu appears. Tap and hold the 'Power Off' option until the 'Reboot to Safe Mode' prompt appears. Tap 'OK'. If the screen does not flicker in Safe Mode, a third-party app is likely causing the issue."
+      },
+      {
+        "title": "Uninstall Problematic Apps",
+        "content": "Exit Safe Mode and uninstall recently installed third-party apps that might be causing the flickering."
+      },
+      {
+        "title": "Disable Adaptive Brightness",
+        "content": "Go to Settings > Display > Adaptive Brightness. Turn off Adaptive Brightness and manually adjust your brightness to see if this stabilizes the display."
+      },
+      {
+        "title": "Perform A System Update",
+        "content": "Open the Settings app and tap on 'Software Update.' (You may need to go to 'System' first.) Follow the prompts to update your Android OS."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Charging Cable For Damage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect the Charging Cable",
+            "content": "Check the charging cable for any visible damage or wear. Try using a different charging cable to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T16:23:14.595Z",
+      "updated": "2026-01-06T16:23:14.595Z",
+      "sourceUrl": "https://www.howtogeek.com/how-to-fix-screen-flickering-on-android-phones/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767716611714-898",
+    "title": "Fix Microsoft Teams Outage Due to Expired Certificate",
+    "problemDescription": "Microsoft Teams is down due to an expired authentication certificate.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "outage",
+      "certificate",
+      "authentication"
+    ],
+    "steps": [
+      {
+        "title": "Check Microsoft's Official Announcements",
+        "content": "Visit Microsoft's official Twitter account or Admin center for updates on the outage and any actions you need to take."
+      },
+      {
+        "title": "Wait for Microsoft to Resolve the Issue",
+        "content": "Microsoft will investigate and deploy a fix to the affected infrastructure. This process may take a few hours."
+      },
+      {
+        "title": "Verify Service Restoration",
+        "content": "Once Microsoft confirms the issue is resolved, check if you can access Microsoft Teams again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Microsoft Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Microsoft Support",
+            "content": "If the issue persists, contact Microsoft Support for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T16:23:31.714Z",
+      "updated": "2026-01-06T16:23:31.714Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/microsoft-teams-outage-due-to-expired-certificate-company-says/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767716614479-832",
+    "title": "Microsoft Outlook and Teams Outage Troubleshooting",
+    "problemDescription": "Microsoft Outlook and Teams are experiencing widespread outages, affecting users' access to email and productivity tools.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft",
+      "Outlook",
+      "Teams",
+      "outage",
+      "downtime"
+    ],
+    "steps": [
+      {
+        "title": "Check Microsoft's Official Status Page",
+        "content": "Visit Microsoft's official status page or their X (formerly Twitter) account for real-time updates on the outage and estimated resolution time."
+      },
+      {
+        "title": "Wait for Automatic Resolution",
+        "content": "Microsoft is actively working on a fix. According to their updates, the fix has reached approximately 90% of affected environments by late morning."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Alternative Communication Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to Alternative Email and Collaboration Tools",
+            "content": "If the outage persists, consider using alternative email services like Gmail or collaboration tools like Slack or Zoom for communication and scheduling."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T16:23:34.479Z",
+      "updated": "2026-01-06T16:23:34.479Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/reports-of-microsoft-outlook-and-teams-outages-spiking-monday/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767716619263-510",
+    "title": "Resolve Global Team Conflicts",
+    "problemDescription": "Managing conflicts and misunderstandings in global virtual teams.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "global teams",
+      "conflict resolution",
+      "virtual collaboration"
+    ],
+    "steps": [
+      {
+        "title": "Encourage Open Communication",
+        "content": "Foster an environment where team members feel comfortable expressing concerns and conflicts openly."
+      },
+      {
+        "title": "Be Hypervigilant",
+        "content": "As a team leader, actively monitor for signs of conflict and address them proactively before they escalate."
+      },
+      {
+        "title": "Establish Clear Communication Protocols",
+        "content": "Implement routines for sharing information and knowledge across different time zones and locations."
+      },
+      {
+        "title": "Build Trust",
+        "content": "Promote trust among team members to reduce misunderstandings and interpersonal friction."
+      },
+      {
+        "title": "Be Intentional",
+        "content": "As a leader, be intentional about fostering a positive and collaborative team environment."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Cultural Sensitivity Training",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Provide Training",
+            "content": "Offer cultural sensitivity training to help team members understand and navigate cultural differences."
+          },
+          {
+            "title": "Encourage Empathy",
+            "content": "Promote empathy and understanding among team members to reduce cultural misunderstandings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T16:23:39.263Z",
+      "updated": "2026-01-06T16:23:39.264Z",
+      "sourceUrl": "https://www.cnet.com/tech/tech-industry/the-challenge-of-global-employees/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767716623826-702",
+    "title": "Fix Cortana Not Working",
+    "problemDescription": "Cortana is not responding or assisting as expected.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "cortana",
+      "windows",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Restart Cortana",
+        "content": "Go to Start > Cortana > Settings and turn it off and on again."
+      },
+      {
+        "title": "Check Microphone Settings",
+        "content": "Navigate to Settings > Sound and ensure your microphone is properly connected and set as the default device."
+      },
+      {
+        "title": "Restart Device",
+        "content": "Restart your computer to apply any pending updates that might fix the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Create a New Local User",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create New User",
+            "content": "Go to Settings > Accounts > Family & other users. Click Add someone else to this PC and follow the prompts to create a new user."
+          },
+          {
+            "title": "Switch Accounts",
+            "content": "Log into the new user account, then log back into your original account to see if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T16:23:43.826Z",
+      "updated": "2026-01-06T16:23:43.826Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/windows-10-troubleshooting-the-most-common-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767716639773-144",
+    "title": "Fix Gmail Not Receiving Emails",
+    "problemDescription": "Gmail account is not receiving new emails.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "email",
+      "not receiving"
+    ],
+    "steps": [
+      {
+        "title": "Log Out and Log Back In",
+        "content": "Sign out of your Gmail account, restart your browser, and then log back in using your credentials."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Unblock Sender",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Blocked Addresses",
+            "content": "Go to Gmail settings, navigate to Filters and Blocked Addresses, and unblock the sender if they are listed."
+          },
+          {
+            "title": "Request Resend",
+            "content": "Ask the sender to resend the email after unblocking."
+          }
+        ]
+      },
+      {
+        "title": "Check Internet Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test Internet Speed",
+            "content": "Visit an internet speed testing website to check your connection speed."
+          },
+          {
+            "title": "Contact ISP",
+            "content": "If the speed is lower than expected, contact your Internet Service Provider (ISP) to fix the connection."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T16:23:59.773Z",
+      "updated": "2026-01-06T16:23:59.773Z",
+      "sourceUrl": "https://www.makeuseof.com/troubleshooting-tips-gmail-stops-receiving-emails/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767716643031-988",
+    "title": "Fix Gmail Signature Issue for Multiple Email Addresses",
+    "problemDescription": "Gmail only allows one signature, causing issues when managing multiple email addresses.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "signature",
+      "email",
+      "multiple addresses"
+    ],
+    "steps": [
+      {
+        "title": "Access Gmail Settings",
+        "content": "Go to Gear > Settings > General."
+      },
+      {
+        "title": "Locate Signature Section",
+        "content": "Scroll down to the signature section."
+      },
+      {
+        "title": "Modify Signature Settings",
+        "content": "Underneath the window where you can enter your signature, mark the checkbox next to 'Insert this signature before quoted text in replies' and remove the '--' line that precedes it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Chrome Extensions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Chrome Extensions",
+            "content": "Explore and install Chrome extensions designed to enhance Gmail functionality, which may offer more signature management options."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T16:24:03.031Z",
+      "updated": "2026-01-06T16:24:03.031Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/gmail-annoyances-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767716668936-765",
+    "title": "Exit Zoom Mode on iPhone",
+    "problemDescription": "iPhone is stuck in Zoom mode and cannot exit.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "zoom",
+      "magnification",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Double-Tap with Three Fingers",
+        "content": "Double-tap the screen with three fingers (without lifting your fingers after the second tap), then drag up or down to adjust the zoom level."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Triple-Tap with Three Fingers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Triple-Tap with Three Fingers",
+            "content": "Triple-tap the screen with three fingers, then drag the Zoom Level slider to adjust the zoom level."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T16:24:28.936Z",
+      "updated": "2026-01-06T16:24:28.936Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255039218",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767716681848-977",
+    "title": "Fix iPhone Won't Turn On",
+    "problemDescription": "Your iPhone is not turning on or is stuck on the Apple logo.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "turn on",
+      "apple logo",
+      "black screen"
+    ],
+    "steps": [
+      {
+        "title": "Force Restart Your iPhone",
+        "content": "Perform a force restart on your iPhone. The steps vary depending on your iPhone model. For iPhone 8 and later, quickly press and release the Volume Up button, then the Volume Down button, and finally press and hold the Side button until the Apple logo appears. For earlier models, refer to Apple's support page for specific instructions."
+      },
+      {
+        "title": "Update iOS Using iTunes/Finder",
+        "content": "Connect your iPhone to a computer with iTunes (or Finder on macOS Catalina and later) and update your iPhone to the latest iOS version. This can sometimes resolve software issues that prevent the device from turning on."
+      },
+      {
+        "title": "Use iOS System Recovery",
+        "content": "Launch iOS System Recovery software and ensure your iPhone is recognized. Click on the iOS System Recovery function, choose the 'Download' tab, and download the compatible firmware to repair your iPhone. Install the firmware to fix the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check for Physical Damage or Battery Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect for Physical Damage",
+            "content": "Check your iPhone for any visible physical damage that might be causing it not to turn on."
+          },
+          {
+            "title": "Test with a Different Charger",
+            "content": "Try using a different charging cable and power adapter to ensure the issue is not with the charging accessories."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T16:24:41.848Z",
+      "updated": "2026-01-06T16:24:41.848Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255307814",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767716688680-17",
+    "title": "Reset iPhone Settings",
+    "problemDescription": "Troubleshooting general iPhone issues by resetting settings.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "settings",
+      "reset",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Reset All Settings",
+        "content": "Go to Settings > General > Transfer & Reset > Reset > Reset All Settings and confirm the action. This will reset all personalized settings to their default values without erasing your data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restart the Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Simple Restart",
+            "content": "Turn off your iPhone, wait for a few seconds, and then turn it back on. This can resolve temporary software glitches."
+          }
+        ]
+      },
+      {
+        "title": "Force Restart iPhone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force Restart",
+            "content": "If a simple restart does not solve the issue, perform a force restart. The method varies depending on your iPhone model. For example, for iPhone 8 or later, quickly press and release the Volume Up button, then the Volume Down button, and finally press and hold the Side button until the Apple logo appears."
+          }
+        ]
+      },
+      {
+        "title": "Check and Remove Corporate iPhone Profile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact System Administrator",
+            "content": "If this is your corporate iPhone, contact the system administrator to check and remove any corporate profiles that might be causing the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T16:24:48.680Z",
+      "updated": "2026-01-06T16:24:48.680Z",
+      "sourceUrl": "https://discussions.apple.com/docs/DOC-250008306",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767716701566-492",
+    "title": "Enter iPhone Diagnostics Mode",
+    "problemDescription": "Need to enter diagnostics mode on your iPhone for troubleshooting.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "diagnostics",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Power Off Your iPhone",
+        "content": "First, power off your iPhone completely. Wait for at least 20-30 seconds after it turns off."
+      },
+      {
+        "title": "Hold Volume Buttons",
+        "content": "While the iPhone is off, hold both the volume up and volume down buttons simultaneously."
+      },
+      {
+        "title": "Connect the Charger",
+        "content": "While still holding the volume buttons, plug in the charger. It's recommended to use a power adapter rather than a computer for this step."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Alternative Method: Using a Computer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Power Off Your iPhone",
+            "content": "First, power off your iPhone completely. Wait for at least 20-30 seconds after it turns off."
+          },
+          {
+            "title": "Hold Volume Buttons",
+            "content": "While the iPhone is off, hold both the volume up and volume down buttons simultaneously."
+          },
+          {
+            "title": "Connect to Computer",
+            "content": "While still holding the volume buttons, connect the iPhone to a computer using a USB cable. Ensure the computer is powered on."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T16:25:01.566Z",
+      "updated": "2026-01-06T16:25:01.566Z",
+      "sourceUrl": "https://discussions.apple.com/docs/DOC-250009885",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
