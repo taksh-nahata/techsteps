@@ -55177,5 +55177,456 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767741478051-230",
+    "title": "Fix Notifications Not Working on Google Chrome",
+    "problemDescription": "Notifications are not working on Google Chrome, preventing users from receiving alerts from websites and web apps.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "notifications",
+      "browser settings"
+    ],
+    "steps": [
+      {
+        "title": "Open Chrome Settings",
+        "content": "Open Google Chrome and click on the menu icon (three vertical dots) in the top-right corner, then select 'Settings'."
+      },
+      {
+        "title": "Navigate to Site Settings",
+        "content": "In the Settings menu, scroll down and click on 'Privacy and security' in the left sidebar, then select 'Site Settings'."
+      },
+      {
+        "title": "Check Notification Permissions",
+        "content": "Under 'Permissions,' find and click on 'Notifications.' Ensure that notifications are not blocked and that the correct sites are allowed to send notifications."
+      },
+      {
+        "title": "Clear Notification Permissions",
+        "content": "If notifications are still not working, click on 'Site Settings' again and scroll down to 'Notifications.' Click on the trash can icon to clear all notification permissions, then re-add the sites you want to receive notifications from."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Browser Extensions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Extensions",
+            "content": "Go to Chrome Settings > Extensions and disable all extensions. Then, enable them one by one to identify if any extension is causing the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T23:17:58.051Z",
+      "updated": "2026-01-06T23:17:58.051Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=_yPYM4-NJOE",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767741481264-175",
+    "title": "Fix Android Notifications Not Working",
+    "problemDescription": "Android phone notifications are not showing up or working.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "notifications",
+      "software glitch"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Phone",
+        "content": "Press and hold the power button until the restart screen appears. Tap the restart icon to restart your phone."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update or Reinstall the App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update the App",
+            "content": "Open the Google Play Store, search for the app with notification issues, and tap 'Update' if available."
+          },
+          {
+            "title": "Reinstall the App",
+            "content": "If updating doesn't work, uninstall the app and then reinstall it from the Google Play Store."
+          }
+        ]
+      },
+      {
+        "title": "Update Android System",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for System Updates",
+            "content": "Go to Settings > System > System Update. Follow the prompts to download and install any available updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T23:18:01.264Z",
+      "updated": "2026-01-06T23:18:01.264Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=nxt75IsDZMM",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767741491133-428",
+    "title": "Fix Notifications Not Working on Google Chrome",
+    "problemDescription": "Notifications are not working on Google Chrome.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "notifications",
+      "google chrome",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Enable Notifications in Chrome Settings",
+        "content": "Open Google Chrome, click the three-dot menu in the upper right corner, select 'Settings', then click 'Privacy and security' on the left side. Click on 'Site settings' and then 'Notifications'. Ensure that notifications are turned on and that the radio button is set to allow sites to send notifications."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-06T23:18:11.133Z",
+      "updated": "2026-01-06T23:18:11.133Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=mpuf_oycU1Y",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767741505618-8",
+    "title": "Set Up DLNA Server on Ubuntu 14.04",
+    "problemDescription": "Setting up a DLNA server on Ubuntu 14.04 to stream media files to devices like Roku.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "DLNA",
+      "Ubuntu",
+      "Roku",
+      "media",
+      "server"
+    ],
+    "steps": [
+      {
+        "title": "Install minidlna",
+        "content": "Open a terminal and run the following commands to install minidlna: `sudo apt-get update && sudo apt-get install minidlna`."
+      },
+      {
+        "title": "Configure minidlna",
+        "content": "Edit the configuration file: `sudo nano /etc/minidlna.conf`. Update the `media_dir` parameter to point to your media directory, e.g., `media_dir=/home/myUserName/videos`."
+      },
+      {
+        "title": "Set Permissions",
+        "content": "Ensure the correct permissions are set for your media files: `find /home/myUserName/videos/ -type d ! -perm 0775 -exec chmod -v 0775 {} \\); find /home/myUserName/videos/ -type f ! -perm 0444 -exec chmod -v 0444 {} \\);`."
+      },
+      {
+        "title": "Restart minidlna",
+        "content": "Restart the minidlna service to apply changes: `sudo service minidlna restart`."
+      },
+      {
+        "title": "Convert Media Files",
+        "content": "Use HandBrake or ffmpeg to convert your media files to compatible formats. For example, convert AVI to MP4: `ffmpeg -i input.avi -c:v libx264 -c:a aac output.mp4`."
+      },
+      {
+        "title": "Check Device Compatibility",
+        "content": "Ensure your DLNA client (e.g., Roku) supports the media formats you are trying to stream. Change file extensions or create symbolic links if necessary."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restart DLNA Service on Router",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Service",
+            "content": "If using a router with a built-in DLNA server, restart the service or reboot the router if needed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T23:18:25.618Z",
+      "updated": "2026-01-06T23:18:25.618Z",
+      "sourceUrl": "https://askubuntu.com/questions/817500/how-to-set-up-a-dlna-server-on-ubuntu-14-04",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767741509972-509",
+    "title": "Fix Ubuntu Wi-Fi Connection Issues",
+    "problemDescription": "Wireless/Wi-Fi connection not working on Ubuntu.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "ubuntu",
+      "connection",
+      "diagnose"
+    ],
+    "steps": [
+      {
+        "title": "Run Wireless Info Script",
+        "content": "Open a terminal with `Ctrl`+`Alt`+`T` and run the following commands to download and execute the wireless info script: `wget -N -t 5 -T 10 https://github.com/Ubuntu-Forums/wireless-info/raw/master/wireless-info && chmod +x wireless-info && ./wireless-info`. This will create a `wireless-info.txt` file and possibly a `wireless-info.tar.gz` archive with masked sensitive information."
+      },
+      {
+        "title": "Check Wireless Hardware",
+        "content": "If you suspect driver issues, run `lshw -C network` to display details of your network hardware. For PCI cards, use `lspci`, and for USB wireless devices, use `lsusb`. You may need to run these commands as root."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Network Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Network Status",
+            "content": "Run `nm-tool` to check the status of your network connections."
+          },
+          {
+            "title": "Check RF Kill Switch",
+            "content": "Run `rfkill` and `rfkill --list` to check if the Wi-Fi is blocked by a hardware or software switch."
+          },
+          {
+            "title": "Restart Network Interface",
+            "content": "Run `ifdown wlan0` followed by `ifup wlan0` to restart your wireless network interface."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T23:18:29.972Z",
+      "updated": "2026-01-06T23:18:29.972Z",
+      "sourceUrl": "https://askubuntu.com/questions/425155/my-wireless-wifi-connection-does-not-work-what-information-is-needed-to-diagnos",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767741518439-146",
+    "title": "Screencast Ubuntu to TV via Roku",
+    "problemDescription": "Cast Ubuntu 14.04 screen to TV using Roku 3 over the same network.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "screencast",
+      "ubuntu",
+      "roku",
+      "tv",
+      "miracast"
+    ],
+    "steps": [
+      {
+        "title": "Install MiracleCast",
+        "content": "Open a terminal and run the following commands to install MiracleCast: sudo add-apt-repository ppa:mc-ppas/ppa && sudo apt-get update && sudo apt-get install miracast."
+      },
+      {
+        "title": "Enable Miracast on Roku",
+        "content": "Ensure your Roku 3 supports Miracast. Navigate to the Roku settings and enable screen mirroring."
+      },
+      {
+        "title": "Connect to Roku",
+        "content": "Open MiracleCast on your Ubuntu machine and select your Roku device from the list of available Miracast receivers."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using VLC",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install VLC",
+            "content": "Install VLC media player if not already installed: sudo apt-get install vlc."
+          },
+          {
+            "title": "Configure VLC",
+            "content": "Open VLC, go to Media > Open Capture Device, and select your screen as the capture device."
+          },
+          {
+            "title": "Stream to Roku",
+            "content": "In VLC, go to Tools > Stream, select your Roku device as the destination, and start streaming."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T23:18:38.439Z",
+      "updated": "2026-01-06T23:18:38.439Z",
+      "sourceUrl": "https://askubuntu.com/questions/554496/screencast-to-a-tv-through-a-roku",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767741526864-570",
+    "title": "Disable Microsoft Recall Feature",
+    "problemDescription": "Microsoft's Recall feature captures and stores screenshots and text data from your PC, posing potential privacy risks.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "privacy",
+      "recall",
+      "screenshots",
+      "data"
+    ],
+    "steps": [
+      {
+        "title": "Open Windows Settings",
+        "content": "Click on the Start button and select the Settings icon (gear symbol)."
+      },
+      {
+        "title": "Navigate to Recall Settings",
+        "content": "In the Settings window, go to 'Privacy & security' and then select 'Recall' from the left-hand menu."
+      },
+      {
+        "title": "Disable Recall Feature",
+        "content": "Toggle the switch to turn off the Recall feature."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Group Policy Editor",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Group Policy Editor",
+            "content": "Press Win + R, type 'gpedit.msc', and press Enter."
+          },
+          {
+            "title": "Navigate to Recall Settings",
+            "content": "Go to 'Computer Configuration' > 'Administrative Templates' > 'Windows Components' > 'Recall'."
+          },
+          {
+            "title": "Disable Recall",
+            "content": "Double-click on 'Disable Recall' and set it to 'Enabled'. Click 'Apply' and then 'OK'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T23:18:46.864Z",
+      "updated": "2026-01-06T23:18:46.864Z",
+      "sourceUrl": "https://lifehacker.com/tech/microsofts-new-recall-feature-is-equal-parts-cool-and-dangerous",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767741529085-505",
+    "title": "Improve Workplace Productivity and Positivity",
+    "problemDescription": "Struggling with productivity and maintaining a positive attitude at work.",
+    "category": "productivity",
+    "difficulty": "Easy",
+    "keywords": [
+      "productivity",
+      "workplace",
+      "positivity",
+      "time management"
+    ],
+    "steps": [
+      {
+        "title": "Maintain a To-Do List",
+        "content": "Keep track of tasks and prioritize them based on importance and deadlines. Work through the list efficiently."
+      },
+      {
+        "title": "Stay Productive During Downtimes",
+        "content": "Use downtimes to work on tasks that will make busy periods easier. Keep your workplace organized."
+      },
+      {
+        "title": "Manage Negative Feelings",
+        "content": "Find healthy ways to vent negative feelings outside of work. This could include journaling, exercising, or talking to friends."
+      },
+      {
+        "title": "Be Positive Toward Everyone",
+        "content": "Actively seek out positive traits in people. Think about good things about those you know to see them in a more positive light."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Build Skills During Downtimes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Skill Gaps",
+            "content": "Identify areas where you can improve your skills. This could be related to your job or personal development."
+          },
+          {
+            "title": "Use Downtimes for Learning",
+            "content": "Use downtimes to learn new skills or improve existing ones. This could include online courses, reading, or practicing."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T23:18:49.085Z",
+      "updated": "2026-01-06T23:18:49.085Z",
+      "sourceUrl": "https://lifehacker.com/you-already-have-the-fundamental-skills-you-need-to-suc-1759311627",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767741563061-986",
+    "title": "Fix Chrome Unable to Connect to Internet",
+    "problemDescription": "Chrome is unable to connect to the Internet due to conflicts with security software.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "internet",
+      "connection",
+      "security",
+      "software"
+    ],
+    "steps": [
+      {
+        "title": "Update Covenant Eyes",
+        "content": "If you are using Covenant Eyes internet filtering software, upgrade to version 5 or later. This requires a full uninstall of the previous version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Norton 360 Premier Edition Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Smart Firewall",
+            "content": "Temporarily turn off the Smart Firewall feature in Norton 360 Premier Edition."
+          },
+          {
+            "title": "Enable Google Chrome in Norton",
+            "content": "Go to the Programs section in Norton and enable Google Chrome."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T23:19:23.061Z",
+      "updated": "2026-01-06T23:19:23.061Z",
+      "sourceUrl": "https://superuser.com/questions/804438/chrome-is-unable-to-connect-to-the-internet",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
