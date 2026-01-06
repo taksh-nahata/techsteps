@@ -53251,5 +53251,799 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767730816145-422",
+    "title": "Fix External Hard Drive Not Showing Up",
+    "problemDescription": "External hard drive is not being detected by the computer.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "external hard drive",
+      "not showing up",
+      "connection",
+      "drivers"
+    ],
+    "steps": [
+      {
+        "title": "Reboot Your Computer",
+        "content": "Restart your computer to refresh the system and potentially resolve any temporary issues."
+      },
+      {
+        "title": "Check Physical Connection",
+        "content": "Disconnect and reconnect the hard drive. Try different USB ports or use a different cable."
+      },
+      {
+        "title": "Update Drivers",
+        "content": "Go to Device Manager > Disk Drives > Right-click your external hard drive > Update driver > Search automatically for drivers."
+      },
+      {
+        "title": "Reinstall Drivers",
+        "content": "In Device Manager > Disk Drives > Right-click your external hard drive > Uninstall device > Uninstall. Then, reconnect your hard drive."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Cable or Port",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try Different USB Ports",
+            "content": "Connect the hard drive to a different USB port on your computer."
+          },
+          {
+            "title": "Use a Different Cable",
+            "content": "Replace the current USB cable with a different one to ensure the connection is stable."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T20:20:16.145Z",
+      "updated": "2026-01-06T20:20:16.145Z",
+      "sourceUrl": "https://www.techradar.com/how-to/how-to-fix-an-external-hard-drive-thats-not-showing-up",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767730830615-282",
+    "title": "Fix Windows 11 Start Menu Search Issue",
+    "problemDescription": "Unable to search in Windows 11 Start Menu.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "start menu",
+      "search issue"
+    ],
+    "steps": [
+      {
+        "title": "Run the Windows Update Troubleshooter",
+        "content": "Click the Start menu, then click the cog icon on the left to open the Settings window. Click 'Update & Security', then 'Troubleshoot'. Click on 'Windows Update', then 'Run the troubleshooter' and follow the instructions. Click 'Apply this fix' if the troubleshooter finds a solution."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use an External USB Wi-Fi Dongle",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect the USB Wi-Fi Dongle",
+            "content": "If you have an external USB Wi-Fi dongle, connect it to your computer as a temporary workaround."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T20:20:30.615Z",
+      "updated": "2026-01-06T20:20:30.615Z",
+      "sourceUrl": "https://www.techradar.com/how-to/windows-11-problems-how-to-fix-the-most-common-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767730839271-779",
+    "title": "Fix Samsung Galaxy S2 Stuck on Boot Screen",
+    "problemDescription": "Samsung Galaxy S2 is stuck on the boot screen after an OTA upgrade.",
+    "category": "android",
+    "difficulty": "Hard",
+    "keywords": [
+      "samsung",
+      "galaxy s2",
+      "boot",
+      "recovery",
+      "rom"
+    ],
+    "steps": [
+      {
+        "title": "Download the Correct ROM",
+        "content": "Download the correct ROM for your Samsung Galaxy S2 from a trusted source like CyanogenMod."
+      },
+      {
+        "title": "Transfer ROM to SD Card",
+        "content": "Transfer the downloaded ROM to the SD card of your device."
+      },
+      {
+        "title": "Boot into Recovery Mode",
+        "content": "Boot your device into recovery mode. This can usually be done by holding down the Volume Up + Home + Power buttons simultaneously."
+      },
+      {
+        "title": "Perform a Clean Wipe",
+        "content": "In recovery mode, perform a clean wipe of the device. This includes wiping the cache partition, dalvik cache, and performing a factory reset."
+      },
+      {
+        "title": "Flash the New ROM",
+        "content": "Select the option to install the ROM from the SD card and follow the on-screen instructions to flash the new ROM."
+      },
+      {
+        "title": "Reboot the Device",
+        "content": "After the flashing process is complete, reboot your device."
+      },
+      {
+        "title": "Set Up Google Account",
+        "content": "Once the device boots up, set up your Google account to restore your data and contacts."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Bootloader Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Bootloader",
+            "content": "Ensure that the bootloader is compatible with the ROM you are trying to flash."
+          },
+          {
+            "title": "Flash Correct Bootloader",
+            "content": "If necessary, flash the correct bootloader for your device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T20:20:39.271Z",
+      "updated": "2026-01-06T20:20:39.271Z",
+      "sourceUrl": "https://superuser.com/questions/430980/samsung-galaxy-s2-stuck-on-boot-screen-after-an-ota-upgrade",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767730843212-478",
+    "title": "Factory Reset Galaxy Tab 3",
+    "problemDescription": "Galaxy Tab 3 crashes during manual mode factory reset.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "factory reset",
+      "Galaxy Tab 3",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Backup Data",
+        "content": "Back up your data if it hasn't been done already."
+      },
+      {
+        "title": "Access Settings",
+        "content": "From the Home screen, touch Apps, then touch Settings."
+      },
+      {
+        "title": "Navigate to Backup and Reset",
+        "content": "Touch the Accounts tab, then touch Back up and reset."
+      },
+      {
+        "title": "Initiate Factory Reset",
+        "content": "Touch Factory data reset, then touch Reset device."
+      },
+      {
+        "title": "Confirm Reset",
+        "content": "Touch Erase everything to confirm the factory reset."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Mode Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Manual Mode",
+            "content": "Press and hold the On, Volume Up, and Start buttons simultaneously."
+          },
+          {
+            "title": "Apply Multi-CSC",
+            "content": "Wait for the Multi-CSC to be applied, then proceed with the reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T20:20:43.212Z",
+      "updated": "2026-01-06T20:20:43.212Z",
+      "sourceUrl": "https://superuser.com/questions/1520101/factory-resetting-a-galaxy-tab-3",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767730846283-712",
+    "title": "Samsung S6 Not Recognized by Windows 10",
+    "problemDescription": "Samsung S6 is not being recognized by Windows 10 after a system cache wipe.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "s6",
+      "windows 10",
+      "usb",
+      "driver"
+    ],
+    "steps": [
+      {
+        "title": "Change USB Connection Setting on Phone",
+        "content": "Unlock your Samsung S6, swipe down the notification panel, and change the USB connection setting from 'Photo Media Device' to 'File Transfer' or 'MTP' mode."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update or Reinstall Samsung Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Current Drivers",
+            "content": "Go to Device Manager, find the problematic device under 'Universal Serial Bus controllers' or 'Other devices', right-click and select 'Uninstall device'."
+          },
+          {
+            "title": "Download and Install Latest Samsung Drivers",
+            "content": "Visit the official Samsung website, download the latest USB drivers for your device, and install them."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T20:20:46.283Z",
+      "updated": "2026-01-06T20:20:46.283Z",
+      "sourceUrl": "https://superuser.com/questions/1669915/samsung-s6-not-recognized-by-win10",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767730871292-783",
+    "title": "Fix Google Pixel 2 Touch Screen Not Working",
+    "problemDescription": "The touch screen on a Google Pixel 2 suddenly stops responding.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "touch screen",
+      "Google Pixel 2",
+      "hardware issue",
+      "software issue"
+    ],
+    "steps": [
+      {
+        "title": "Press on the Screen",
+        "content": "Press firmly on the center of the phone screen with both thumbs to jostle the hardware and potentially re-seat the connector or re-ground the capacitive touch sensor."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reboot into Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect a Mouse",
+            "content": "Use an OTG adapter to connect a computer mouse to your phone."
+          },
+          {
+            "title": "Reboot into Safe Mode",
+            "content": "Use the mouse to navigate and reboot your phone into safe mode to check if the issue is software-based."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T20:21:11.292Z",
+      "updated": "2026-01-06T20:21:11.292Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/232564/my-google-pixel-2s-touch-screen-suddenly-quit-working-how-can-i-fix-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767730877326-476",
+    "title": "Pixel 3a XL Crashes on Specific Wi-Fi",
+    "problemDescription": "Pixel 3a XL repeatedly crashes and reboots when connecting to a specific Wi-Fi network.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel",
+      "wifi",
+      "crash",
+      "reboot"
+    ],
+    "steps": [
+      {
+        "title": "Forget the Problematic Network",
+        "content": "Go to Settings > Network & Internet > Wi-Fi. Tap and hold the problematic network, then select 'Forget network'."
+      },
+      {
+        "title": "Disable Wi-Fi Immediately After Reboot",
+        "content": "After your device reboots, immediately disable Wi-Fi to prevent it from connecting to the problematic network."
+      },
+      {
+        "title": "Re-enable Wi-Fi and Connect to a Different Network",
+        "content": "Once you've disabled Wi-Fi, re-enable it and connect to a different Wi-Fi network to ensure stability."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > System > Reset options > Reset Wi-Fi, mobile & Bluetooth. Note that this will reset all network settings and saved networks."
+          }
+        ]
+      },
+      {
+        "title": "Boot in Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot in Safe Mode",
+            "content": "Restart your device in Safe Mode to check if a third-party app is causing the issue. To boot in Safe Mode, press and hold the Power button until the 'Power off' option appears, then press and hold 'Power off' until the 'Reboot to safe mode' option appears. Tap 'OK'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T20:21:17.326Z",
+      "updated": "2026-01-06T20:21:17.326Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/221440/pixel-3a-xl-repeatedly-crashes-and-reboots-when-connecting-to-a-specific-wi-fi-n",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767730881387-304",
+    "title": "Fix Pixel 6 Restarting, Overheating, and Battery Drain",
+    "problemDescription": "Pixel 6 constantly restarting, overheating, and draining battery rapidly.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel 6",
+      "restarting",
+      "overheating",
+      "battery drain"
+    ],
+    "steps": [
+      {
+        "title": "Collect Bug Report",
+        "content": "Connect your Pixel 6 to a computer with ADB, authorize the connection, and run `adb bugreport` to create a bug report zip file."
+      },
+      {
+        "title": "Analyze Bug Report",
+        "content": "Upload the bug report to Battery Historian at [https://batteryhistorian.com/](https://batteryhistorian.com/) to identify which app is using excessive CPU."
+      },
+      {
+        "title": "Identify Problematic Apps",
+        "content": "Review the Battery Historian report to find apps consuming too much CPU and causing the issues."
+      },
+      {
+        "title": "Remove or Disable Problematic Apps",
+        "content": "Uninstall or disable the identified apps to resolve the performance and battery drain issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset to Default Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup important data to avoid loss during the reset process."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset)."
+          },
+          {
+            "title": "Restore Data",
+            "content": "After the reset, restore your data from the backup."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T20:21:21.387Z",
+      "updated": "2026-01-06T20:21:21.387Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/257568/pixel-6-constantly-restarting-overheating-and-draining-battery-rapidly-how-t",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767730886936-17",
+    "title": "Pixel 7 Won't Turn On After Sudden Shutdown",
+    "problemDescription": "Google Pixel 7 suddenly shuts off and won't turn back on, even after a hard reset.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "Pixel 7",
+      "shutdown",
+      "won't turn on",
+      "hard reset",
+      "internal connectors"
+    ],
+    "steps": [
+      {
+        "title": "Check for Physical Damage",
+        "content": "Inspect the phone for any visible signs of damage, especially around the ports and screen. Look for any loose or disconnected internal components."
+      },
+      {
+        "title": "Attempt a Hard Reset",
+        "content": "Press and hold the Power button and Volume Down button simultaneously for about 15 seconds to perform a hard reset."
+      },
+      {
+        "title": "Check the Charger and Battery",
+        "content": "Try using a different charger and cable to ensure the issue isn't with the charging accessories. Also, check if the battery is properly seated."
+      },
+      {
+        "title": "Look for YouTube Tutorials",
+        "content": "Search for YouTube videos that show how to fix internal connector issues specific to the Google Pixel 7."
+      },
+      {
+        "title": "Seek Professional Repair",
+        "content": "If the above steps don't work, take the phone to a professional repair shop for a thorough inspection and repair."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: DIY Repair",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open the Phone",
+            "content": "Carefully open the phone to access the internal components. Follow a reliable guide or tutorial."
+          },
+          {
+            "title": "Reconnect Loose Connectors",
+            "content": "Check for any loose or disconnected connectors, especially the screen connector, and reconnect them securely."
+          },
+          {
+            "title": "Reassemble the Phone",
+            "content": "After ensuring all connectors are secure, reassemble the phone and test if it turns on."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T20:21:26.936Z",
+      "updated": "2026-01-06T20:21:26.936Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/257936/my-google-pixel-7-shut-off-on-its-own-and-wont-turn-back-on-ive-tried-to-hard",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767730894291-64",
+    "title": "Reset Password on MacBook via Recovery Mode",
+    "problemDescription": "Password reset not working on MacBook.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "password",
+      "reset",
+      "macbook",
+      "recovery mode"
+    ],
+    "steps": [
+      {
+        "title": "Enter Recovery Mode",
+        "content": "Restart your MacBook and immediately press and hold Command + R to enter recovery mode."
+      },
+      {
+        "title": "Open Terminal",
+        "content": "From the Utilities menu, choose Terminal."
+      },
+      {
+        "title": "Reset Password",
+        "content": "Type 'resetpassword' in the Terminal and press Enter. Follow the prompts to choose your user account and set a new password."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Double-Check Password Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Password Again",
+            "content": "Ensure you are entering the new password correctly, paying close attention to capitalization and numbers."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T20:21:34.291Z",
+      "updated": "2026-01-06T20:21:34.291Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255587589",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767730904082-358",
+    "title": "Reset AT&T Email Password on iPhone 15 Pro",
+    "problemDescription": "Unable to reset AT&T email password directly on iPhone 15 Pro.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "email",
+      "password",
+      "reset",
+      "att"
+    ],
+    "steps": [
+      {
+        "title": "Change Email Location to Yahoo",
+        "content": "Change your AT&T email location to Yahoo. This can be done by contacting Apple Support for assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Password on Email Server",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Password on Original Email Server",
+            "content": "Reset the password on the email server where the email account was originally set up."
+          }
+        ]
+      },
+      {
+        "title": "Remove and Re-add Email Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Email Account from iPhone",
+            "content": "Go to Settings > Mail > Accounts, select the email account, and tap 'Delete Account'."
+          },
+          {
+            "title": "Change Password on Email Provider's Website",
+            "content": "Log in to your email provider's website and change the password."
+          },
+          {
+            "title": "Re-add Email Account to iPhone",
+            "content": "Go back to Settings > Mail > Accounts, tap 'Add Account', and follow the prompts to add the email account back to your iPhone."
+          }
+        ]
+      },
+      {
+        "title": "Reset Password via Service Provider's Website",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Log in to Service Provider's Website",
+            "content": "Log in to your email service provider's website."
+          },
+          {
+            "title": "Change Password",
+            "content": "Navigate to the account settings and change the password."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T20:21:44.082Z",
+      "updated": "2026-01-06T20:21:44.082Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255761399",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767730906507-38",
+    "title": "Apple ID Password Reset Not Working",
+    "problemDescription": "Apple ID password reset is not being accepted.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "apple",
+      "password",
+      "reset",
+      "icloud"
+    ],
+    "steps": [
+      {
+        "title": "Contact Apple Support",
+        "content": "Go to the Apple Support page, click on 'More Products and Services', then 'Apple ID', 'Other Apple ID Topics', and finally 'Lost or forgotten Apple ID password'. Follow the instructions to confirm the password reset."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Password in iCloud Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open the Settings app on your iOS device."
+          },
+          {
+            "title": "Navigate to iCloud",
+            "content": "Tap on 'iCloud' and then select 'Account'."
+          },
+          {
+            "title": "Enter New Password",
+            "content": "Enter the new password in the appropriate field and save the changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T20:21:46.507Z",
+      "updated": "2026-01-06T20:21:46.507Z",
+      "sourceUrl": "https://discussions.apple.com/thread/6427088",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767730909250-399",
+    "title": "Fix Apple ID Server Connection Error on Mac Recovery Assistant",
+    "problemDescription": "Error connecting to Apple ID server when using Mac Recovery Assistant to reset login password.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "apple id",
+      "mac recovery",
+      "password reset"
+    ],
+    "steps": [
+      {
+        "title": "Access Terminal in MacOS Utilities",
+        "content": "After booting into MacOS Utilities, select 'Utilities' from the top menu bar and choose 'Terminal'."
+      },
+      {
+        "title": "Run Reset Password Command",
+        "content": "Type 'resetpassword' in the Terminal and press Enter."
+      },
+      {
+        "title": "Reset Date and Time",
+        "content": "If the password reset assistant leads to the same Apple ID issue, reset the date and time on your Mac."
+      },
+      {
+        "title": "Retry Password Reset",
+        "content": "After resetting the date and time, follow the prompts in the 'Reset Password Assistant' to reset your password using your Apple ID."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Internet Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ensure Stable Internet",
+            "content": "Make sure your Mac is connected to a stable internet connection before attempting to reset the password."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T20:21:49.250Z",
+      "updated": "2026-01-06T20:21:49.250Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254711990",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767730920318-99",
+    "title": "Fix Windows 11 Start Menu Issues",
+    "problemDescription": "The Start menu in Windows 11 is not responding or functioning properly.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "start menu",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your PC",
+        "content": "Press the Windows Key + D to switch to the desktop, then press Alt + F4. Select 'Restart' and click 'OK'."
+      },
+      {
+        "title": "Run Windows Update Troubleshooter",
+        "content": "Click the Start menu, then the cog icon to open Settings. Go to 'Update & Security' > 'Troubleshoot' > 'Windows Update' > 'Run the troubleshooter'. Follow the instructions and apply any fixes found."
+      },
+      {
+        "title": "Install Windows Update KB5006746",
+        "content": "Download and install the Windows Update KB5006746 via the Windows Update app in Windows 11."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use DISM and SFC Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Command Prompt as Administrator",
+            "content": "Right-click the Start button and select 'Command Prompt (Admin)' or 'Windows PowerShell (Admin)'."
+          },
+          {
+            "title": "Run DISM Command",
+            "content": "Type 'DISM /Online /Cleanup-Image /RestoreHealth' and press Enter. Wait for the process to complete."
+          },
+          {
+            "title": "Run SFC Command",
+            "content": "Type 'sfc /scannow' and press Enter. Wait for the scan to complete and restart your PC."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T20:22:00.318Z",
+      "updated": "2026-01-06T20:22:00.318Z",
+      "sourceUrl": "https://www.techradar.com/how-to/windows-11-problems-how-to-fix-the-most-common-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767730923020-907",
+    "title": "Fix Windows 11 Update Issues",
+    "problemDescription": "Windows 11 update causing problems shortly after installation.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "update",
+      "uninstall"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall the Update",
+        "content": "Go to the Start menu, search for 'Windows Update', view your update history, and select 'Uninstall Update'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Wait for Official Fix",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Regularly check for new updates from Microsoft that may fix the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T20:22:03.020Z",
+      "updated": "2026-01-06T20:22:03.020Z",
+      "sourceUrl": "https://www.techradar.com/features/5-annoying-windows-11-problems-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
