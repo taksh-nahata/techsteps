@@ -50146,5 +50146,864 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767712759868-42",
+    "title": "Fix Alexa App Crashing",
+    "problemDescription": "The Alexa app on iPhone keeps crashing unexpectedly.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "alexa",
+      "app",
+      "crash",
+      "iphone"
+    ],
+    "steps": [
+      {
+        "title": "Contact Amazon Support",
+        "content": "Reach out to Amazon's tech support for assistance, as they are the ones who can fix the issue."
+      },
+      {
+        "title": "Log Out and Reinstall",
+        "content": "Open the app, log out of your Amazon account, delete the app, restart your iPhone, and reinstall the Alexa app."
+      },
+      {
+        "title": "Test with Different Account",
+        "content": "Log in with a different Amazon account to see if the app crashes. This helps determine if the issue is account-specific."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Wait for Amazon Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Wait for Amazon Support",
+            "content": "If the above steps do not resolve the issue, wait for Amazon support to reach the app developer for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T15:19:19.868Z",
+      "updated": "2026-01-06T15:19:19.868Z",
+      "sourceUrl": "https://discussions.apple.com/thread/8508510",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767712772497-582",
+    "title": "Fix Apple Music on Alexa or Kids Echo Dot",
+    "problemDescription": "Apple Music not connecting to Alexa or Kids Echo Dot.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "apple music",
+      "alexa",
+      "kids echo dot",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Deregister and Reregister the Echo Dot",
+        "content": "In the Alexa App, go to 'Echo Dot Settings' and deregister the device. Keep the Alexa App open until the device is finished deregistering and starts the setup process again. Follow the setup options in the Alexa App."
+      },
+      {
+        "title": "Enable and Disable Amazon Kids Mode",
+        "content": "After setup, go to 'Echo Dot Settings' and enable 'Amazon Kids' Mode. Then, go to the Amazon Kids Parent Dashboard, hit the cog wheel, and ensure under 'Alexa Settings' 'Manage Music' that 'Apple Music' is enabled with a blue switch and check mark. Finally, go back to 'Echo Dot Settings' and disable 'Amazon Kids' mode."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Amazon Kids Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Amazon Kids Mode",
+            "content": "Go back to 'Echo Dot Settings' and set 'Amazon Kids' Mode to 'Enabled'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T15:19:32.497Z",
+      "updated": "2026-01-06T15:19:32.497Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254736525",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767712784293-555",
+    "title": "Fix Blue Screen of Death (BSOD) Errors",
+    "problemDescription": "Frequent Blue Screen of Death (BSOD) errors occurring on Windows.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "BSOD",
+      "Windows",
+      "troubleshooting",
+      "blue screen"
+    ],
+    "steps": [
+      {
+        "title": "Use the Blue Screen Troubleshooting Guide",
+        "content": "Follow the official Microsoft blue screen troubleshooting guide for detailed steps."
+      },
+      {
+        "title": "Update Drivers",
+        "content": "Update drivers from the manufacturer's website or visit the provided link for driver updates."
+      },
+      {
+        "title": "Run System File Checker",
+        "content": "Press Windows key + X, select Command Prompt (Admin), type 'sfc /scannow', and press Enter. Restart the computer."
+      },
+      {
+        "title": "Run DISM Commands",
+        "content": "Press Windows key + X, select Command Prompt (Admin), type 'DISM.exe /Online /Cleanup-image /Scanhealth' and 'DISM.exe /Online /Cleanup-image /Restorehealth', pressing Enter after each command. Restart the PC."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Perform an In-Place Upgrade",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "For Windows 11",
+            "content": "Follow the video guide for performing an in-place upgrade on Windows 11."
+          },
+          {
+            "title": "For Windows 10",
+            "content": "Follow the video guide for performing an in-place upgrade on Windows 10."
+          }
+        ]
+      },
+      {
+        "title": "Update BIOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Manufacturer's Website",
+            "content": "Visit your computer manufacturer's website for BIOS updates and follow the instructions."
+          }
+        ]
+      },
+      {
+        "title": "Clean Install of Windows",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Follow the Clean Install Guide",
+            "content": "Check out the provided link for the best clean install of your Windows operating system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T15:19:44.293Z",
+      "updated": "2026-01-06T15:19:44.293Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/i-have-been-getting-plural-blue-screen-of-death/28891cef-da09-483d-a021-d3d9e55de42e",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767712789152-347",
+    "title": "Fix Windows Failing to Boot",
+    "problemDescription": "Windows fails to boot after a restart and requires repair.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "boot",
+      "repair",
+      "recovery"
+    ],
+    "steps": [
+      {
+        "title": "Access Advanced Startup Options",
+        "content": "Power on and off your computer three times. On the third time, it will boot into the Advanced Recovery environment."
+      },
+      {
+        "title": "Navigate to Troubleshoot",
+        "content": "Click 'Advanced Options', then 'Troubleshoot'."
+      },
+      {
+        "title": "Reset Your PC",
+        "content": "Click 'Reset this PC', then 'Keep my files'. Choose your account and follow the prompts to reset Windows while keeping your files."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clean Install Windows 10",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Recovery Environment",
+            "content": "Boot into the recovery environment and follow the steps to perform a clean install of Windows 10."
+          },
+          {
+            "title": "Delete All Partitions",
+            "content": "Delete all partitions down to Unallocated Space for a clean installation."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Command Prompt Repair",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Command Prompt",
+            "content": "From Advanced Troubleshoot options, select Command Prompt."
+          },
+          {
+            "title": "Run Repair Commands",
+            "content": "Run commands like sfc /scannow, DISM, and a full Disk Check to repair Windows."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T15:19:49.152Z",
+      "updated": "2026-01-06T15:19:49.152Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/pc-said-it-needed-repair-i-restart-it-and-now-it/c4966e5a-36e8-46bf-be02-fe6c76411960",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767712797385-709",
+    "title": "Windows Store Updates Causing Issues",
+    "problemDescription": "Windows Store updates are causing system instability and unwanted behavior.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "updates",
+      "windows store",
+      "system instability"
+    ],
+    "steps": [
+      {
+        "title": "Pause Updates",
+        "content": "Go to Settings > Update & Security > Windows Update > Pause updates for 7 days."
+      },
+      {
+        "title": "Uninstall Updates",
+        "content": "Go to Settings > Update & Security > Windows Update > View update history > Uninstall updates. Select the problematic updates and uninstall them."
+      },
+      {
+        "title": "Hide Updates",
+        "content": "After uninstalling, go to Settings > Update & Security > Windows Update > Advanced options > View your update history > Uninstall updates. Right-click the update and select 'Hide update'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Windows Store",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable via Services",
+            "content": "Press Win + R, type 'services.msc', find 'Windows Store' service, right-click and select 'Properties'. Set Startup type to 'Disabled' and stop the service."
+          },
+          {
+            "title": "Disable via Group Policy",
+            "content": "Press Win + R, type 'gpedit.msc', navigate to Computer Configuration > Administrative Templates > Windows Components > Store. Enable 'Turn off the Store application'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T15:19:57.385Z",
+      "updated": "2026-01-06T15:19:57.385Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/what-are-these-updates-for/177a0a7b-7b9c-4621-8a25-aaffcf71712a",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767712804361-51",
+    "title": "Fix LG Smart TV Streaming Issues",
+    "problemDescription": "LG Smart TV shows connected but does not load streaming content.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "lg",
+      "smart tv",
+      "streaming",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Power Cycle the TV",
+        "content": "Unplug the TV for a minute and then plug it back in to reset the system."
+      },
+      {
+        "title": "Check for Updates",
+        "content": "Ensure your TV's webOS and streaming apps are up to date."
+      },
+      {
+        "title": "Reinstall the Streaming App",
+        "content": "Delete and reinstall the problematic streaming app."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Ethernet Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect via Ethernet",
+            "content": "Use a direct Ethernet connection instead of WiFi to improve streaming stability."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Factory Reset the TV",
+            "content": "If all else fails, perform a factory reset of your TV to resolve underlying issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T15:20:04.361Z",
+      "updated": "2026-01-06T15:20:04.361Z",
+      "sourceUrl": "https://www.reddit.com/r/LGOLED/comments/1did7lk/lg_smart_tv_shows_connected_but_does_not_load/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767712809073-767",
+    "title": "Fix Smart TV Wi-Fi Connectivity Issues",
+    "problemDescription": "Smart TV experiencing inconsistent Wi-Fi connectivity despite being close to the router.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "smart tv",
+      "wifi",
+      "connectivity",
+      "lg"
+    ],
+    "steps": [
+      {
+        "title": "Restart the TV and Router",
+        "content": "Unplug both the TV and the router, wait for 30 seconds, and then plug them back in. This can often resolve connectivity issues."
+      },
+      {
+        "title": "Check Wi-Fi Signal Strength",
+        "content": "Ensure that the TV is within a strong Wi-Fi signal range. Move the router closer to the TV if necessary."
+      },
+      {
+        "title": "Update TV Firmware",
+        "content": "Check for and install any available firmware updates for the TV. This can resolve software-related connectivity issues."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to the TV's settings menu and reset the network settings to default. This can resolve configuration issues."
+      },
+      {
+        "title": "Use Ethernet Connection",
+        "content": "If possible, connect the TV to the router using an Ethernet cable for a more stable connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use a Wi-Fi Extender",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Wi-Fi Extender",
+            "content": "Place a Wi-Fi extender or mesh network device between the router and the TV to boost the signal strength."
+          }
+        ]
+      },
+      {
+        "title": "Disconnect from Wi-Fi",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disconnect TV from Wi-Fi",
+            "content": "Disconnect the TV from Wi-Fi and use an external streaming device like a Roku or Xbox One for streaming services."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T15:20:09.073Z",
+      "updated": "2026-01-06T15:20:09.073Z",
+      "sourceUrl": "https://www.reddit.com/r/cordcutters/comments/r3ocom/do_all_smart_tvs_just_suck/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767712813303-218",
+    "title": "Prevent Smart TV from Secretly Connecting to the Internet",
+    "problemDescription": "Smart TVs may attempt to connect to the internet even when disconnected, posing privacy concerns.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "smart tv",
+      "privacy",
+      "internet connection",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Disable Network Settings",
+        "content": "Go to the TV's settings menu and disable all network-related options, including Wi-Fi, Ethernet, and any automatic connection features."
+      },
+      {
+        "title": "Use a Non-Smart TV",
+        "content": "Consider purchasing a non-smart TV and using an external streaming device that you can control and disconnect when not in use."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Firewall",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up a Firewall",
+            "content": "Use a firewall to block all outgoing connections from the TV to the internet, ensuring it cannot connect without your knowledge."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Perform a Factory Reset",
+            "content": "Reset the TV to its factory settings to remove any preconfigured network settings that might cause it to connect automatically."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T15:20:13.303Z",
+      "updated": "2026-01-06T15:20:13.303Z",
+      "sourceUrl": "https://www.reddit.com/r/privacy/comments/1drv1ux/smart_tvs_that_wont_try_to_secretly_connect_to/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767712820446-67",
+    "title": "Fix Notification Issues on MagicOS",
+    "problemDescription": "Notifications not working properly on MagicOS devices.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "notifications",
+      "MagicOS",
+      "settings",
+      "battery optimization"
+    ],
+    "steps": [
+      {
+        "title": "Adjust App Launch Settings",
+        "content": "Go to Settings > Battery > App Launch, find the app, disable 'Manage automatically,' select 'Manage manually,' and enable 'Auto-launch,' 'Secondary launch,' and 'Run in background.'"
+      },
+      {
+        "title": "Disable Battery Optimization",
+        "content": "Go to Settings > Apps > Apps/App Management > three-dot menu > Special access > Battery optimization. Change the filter to 'All apps,' find the app, and set it to 'Don't optimize.'"
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-06T15:20:20.446Z",
+      "updated": "2026-01-06T15:20:20.446Z",
+      "sourceUrl": "https://www.reddit.com/r/Honor/comments/1k66wmn/a_fix_for_notification_issue/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767712823330-212",
+    "title": "Fix iOS Text Message Notifications",
+    "problemDescription": "iPhone 15 Pro Max with latest iOS not receiving text message notifications, only showing red badge.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "text",
+      "notifications",
+      "iphone"
+    ],
+    "steps": [
+      {
+        "title": "Turn Off Phone and Send Text",
+        "content": "Turn off your iPhone and have someone send you a text message while it's off. Wait a minute or two after they send the message and turn the phone back on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Notification Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to Settings > Notifications > Messages."
+          },
+          {
+            "title": "Verify Settings",
+            "content": "Ensure that Allow Notifications is turned on and that Banners and Sounds are selected."
+          }
+        ]
+      },
+      {
+        "title": "Restart Phone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart iPhone",
+            "content": "Restart your iPhone by pressing and holding the power button and either volume button until the power off slider appears. Drag the slider to turn off your iPhone. Wait 30 seconds, then press and hold the power button again until the Apple logo appears."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T15:20:23.330Z",
+      "updated": "2026-01-06T15:20:23.331Z",
+      "sourceUrl": "https://www.reddit.com/r/ios/comments/1dgy3uk/no_longer_receiving_notifications_for_text/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767712828880-971",
+    "title": "Fix Android App Notifications Not Working",
+    "problemDescription": "Some Android apps are not showing push notifications, particularly those downloaded from Google Play.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "notifications",
+      "google play",
+      "f-droid",
+      "side loaded"
+    ],
+    "steps": [
+      {
+        "title": "Check App Permissions",
+        "content": "Go to Settings > Apps > [App Name] > Permissions and ensure that notifications are enabled."
+      },
+      {
+        "title": "Clear App Cache and Data",
+        "content": "Go to Settings > Apps > [App Name] > Storage > Clear Cache and Clear Data."
+      },
+      {
+        "title": "Update the App",
+        "content": "Open Google Play Store, search for the app, and update it if an update is available."
+      },
+      {
+        "title": "Check Notification Settings in the App",
+        "content": "Open the app, go to its settings, and ensure that notifications are enabled within the app."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "Restart your Android device to refresh system processes."
+      },
+      {
+        "title": "Check for System Updates",
+        "content": "Go to Settings > System > System Update and install any available updates."
+      },
+      {
+        "title": "Reset App Preferences",
+        "content": "Go to Settings > Apps > Menu (three dots) > Reset app preferences."
+      },
+      {
+        "title": "Reinstall the App",
+        "content": "Uninstall the app from your device and reinstall it from the Google Play Store."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use F-Droid or Side Load Older Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download from F-Droid",
+            "content": "Download the app from F-Droid, an alternative app store, and install it."
+          },
+          {
+            "title": "Side Load Older APKs",
+            "content": "Download the APK file from a trusted source and side load it onto your device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T15:20:28.880Z",
+      "updated": "2026-01-06T15:20:28.880Z",
+      "sourceUrl": "https://www.reddit.com/r/AndroidQuestions/comments/1l80gti/some_android_app_notifications_not_working/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767712849152-124",
+    "title": "Fix Overscan on HDMI HDTV",
+    "problemDescription": "Overscan issue on HDMI HDTV causing the display to be cut off.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "overscan",
+      "HDMI",
+      "HDTV",
+      "display",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Access TV Factory Settings",
+        "content": "Press Menu on your TV remote and enter the factory settings code (e.g., '2008' for Kogan Smart TV)."
+      },
+      {
+        "title": "Adjust Overscan Settings",
+        "content": "Look for the Overscan option in the factory settings and adjust it to your preference."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change Display Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Display Mode",
+            "content": "Go to your computer's display settings and change the display mode to 1920x1080 at 60Hz."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Adjust Viewport Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open NVIDIA XServer Settings",
+            "content": "Open the NVIDIA XServer Settings on your computer."
+          },
+          {
+            "title": "Set Viewport",
+            "content": "Set the viewport to `viewportout=1776x999+96+54` or similar settings to adjust the display."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T15:20:49.152Z",
+      "updated": "2026-01-06T15:20:49.152Z",
+      "sourceUrl": "https://askubuntu.com/questions/4358/how-do-i-fix-overscan-on-my-hdmi-hdtv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767712852239-92",
+    "title": "Repair Samsung Smart TV Hard Drive File System",
+    "problemDescription": "The hard drive file system used for a Samsung Smart TV is corrupted and needs repair.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "hard drive",
+      "file system",
+      "Samsung Smart TV",
+      "repair"
+    ],
+    "steps": [
+      {
+        "title": "Check the File System",
+        "content": "Run the `fsck` command to check the file system for errors. This will attempt to repair the superblock if it is valid."
+      },
+      {
+        "title": "Use an Alternate Superblock",
+        "content": "If the superblock is corrupt, try running `e2fsck` with an alternate superblock. The command is `sudo e2fsck -b 8193 /dev/sdc` (replace `/dev/sdc` with your actual device identifier)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Valid File System",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Device",
+            "content": "Ensure the device is valid and contains an ext2 file system. If it contains swap or ufs or something else, the superblock is corrupt."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T15:20:52.239Z",
+      "updated": "2026-01-06T15:20:52.239Z",
+      "sourceUrl": "https://askubuntu.com/questions/418079/how-to-repair-a-hard-drive-file-system-used-for-samsung-smart-tv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767712856982-46",
+    "title": "Fix Multiple Displays in Ubuntu 24.04",
+    "problemDescription": "After upgrading to Ubuntu 24.04, multiple displays are not working.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "displays",
+      "nvidia",
+      "graphics"
+    ],
+    "steps": [
+      {
+        "title": "Get BusIDs",
+        "content": "Run the following command to get your BusIDs: `lspci -vnn | grep -A 12 VGA`."
+      },
+      {
+        "title": "Backup xorg.conf",
+        "content": "Backup your current xorg.conf file: `sudo cp /etc/X11/xorg.conf /etc/X11/xorg.conf.bak`."
+      },
+      {
+        "title": "Edit xorg.conf",
+        "content": "Edit the xorg.conf file: `sudo nano /etc/X11/xorg.conf`. Add the necessary sections for your graphics cards."
+      },
+      {
+        "title": "Install NVIDIA Driver",
+        "content": "Install the NVIDIA driver: `sudo apt-get install nvidia-driver-560`."
+      },
+      {
+        "title": "Select NVIDIA Driver in Software & Updates",
+        "content": "Open Software & Updates, go to the additional drivers tab, select the NVIDIA driver metapackage from nvidia-driver-560 (proprietary), and apply changes."
+      },
+      {
+        "title": "Disable Secure Boot",
+        "content": "Disable Secure Boot in BIOS."
+      },
+      {
+        "title": "Update Intramfs and Reboot",
+        "content": "Update Intramfs: `sudo update-initramfs -u` and reboot your system: `sudo reboot`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Both Graphics Cards",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Add Sections to xorg.conf",
+            "content": "Add the necessary sections to your xorg.conf file to use both graphics cards."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T15:20:56.982Z",
+      "updated": "2026-01-06T15:20:56.982Z",
+      "sourceUrl": "https://askubuntu.com/questions/1512666/after-ubuntu-24-04-upgrade-multiple-displays-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767712863289-176",
+    "title": "Fix 4K 60Hz Refresh Rate Unavailable",
+    "problemDescription": "4K resolution is limited to 30Hz refresh rate on Ubuntu.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "4K",
+      "refresh rate",
+      "Ubuntu",
+      "HDMI",
+      "TV settings"
+    ],
+    "steps": [
+      {
+        "title": "Generate Custom Resolution",
+        "content": "Open a terminal and run the following command to generate a custom resolution with a 54Hz refresh rate:\n`cvt 3840 2160 54`"
+      },
+      {
+        "title": "Create New Mode",
+        "content": "Take the output from the previous command and use it to create a new mode with the following command, replacing the output values as necessary:\n`xrandr --newmode \"3840x2160_54.00\" 637.50 3840 4152 4568 5296 2160 2163 2168 2230 -hsync +vsync`"
+      },
+      {
+        "title": "Apply New Mode",
+        "content": "Set your monitor to the new resolution and refresh rate using the following command, replacing `HDMI-1` with your display identifier:\n`xrandr --addmode HDMI-1 3840x2160_54.00`\n`xrandr --output HDMI-1 --mode 3840x2160_54.00`"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Change TV HDMI Protocol",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access TV Settings",
+            "content": "Go to your TV's settings and find the \"Input Settings\" for the HDMI port you are using."
+          },
+          {
+            "title": "Set HDMI Protocol",
+            "content": "Change the HDMI protocol from \"Auto\" to \"2.0\"."
+          },
+          {
+            "title": "Reboot",
+            "content": "Reboot your computer and check the display settings with `xrandr` to see if the 60Hz option is now available."
+          }
+        ]
+      },
+      {
+        "title": "Switch to Wayland",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Log Out",
+            "content": "Log out of your current session."
+          },
+          {
+            "title": "Select Wayland",
+            "content": "At the login screen, select \"Wayland\" as your session type."
+          },
+          {
+            "title": "Set Display Settings",
+            "content": "Log in and set your display to 4K 60Hz."
+          },
+          {
+            "title": "Switch Back to Xorg",
+            "content": "Log out again, select \"Xorg\" as your session type, and log back in."
+          },
+          {
+            "title": "Restore Settings",
+            "content": "Set your desired display settings again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T15:21:03.289Z",
+      "updated": "2026-01-06T15:21:03.289Z",
+      "sourceUrl": "https://askubuntu.com/questions/1202308/refresh-rate-of-60-not-available-for-4k-resolution",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
