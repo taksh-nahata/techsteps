@@ -48630,5 +48630,466 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767702919495-54",
+    "title": "Fix Apple ID Two-Factor Authentication Approval Issue",
+    "problemDescription": "Unable to approve a Mac for iCloud account due to missing approval dialog on another device.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "apple id",
+      "two-factor authentication",
+      "approval issue",
+      "icloud"
+    ],
+    "steps": [
+      {
+        "title": "Verify Device from Another Device",
+        "content": "Ensure you have another device signed into iCloud. If the device is out of battery, plug it in to charge and verify the Mac from this device."
+      },
+      {
+        "title": "Check for Approval Dialog",
+        "content": "After verifying, check the other device for an approval dialog. If it doesn't appear, try restarting both devices."
+      },
+      {
+        "title": "Toggle Two-Factor Authentication",
+        "content": "If the approval dialog still doesn't appear, try turning two-factor authentication off and on again on your Apple ID settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Return to Previous Security Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Return to Previous Security Settings",
+            "content": "Go to your Apple ID security settings and try to return to your previous security settings before enabling two-factor authentication."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T12:35:19.495Z",
+      "updated": "2026-01-06T12:35:19.495Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/334097/apple-id-two-factor-authentication-cant-approve-this-mac",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767702924144-461",
+    "title": "Secure Apple ID After Compromise",
+    "problemDescription": "Your Apple ID password was compromised, but you've regained control with 2FA. Now, you need to secure your account and check for any unauthorized access.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "apple id",
+      "password",
+      "2fa",
+      "security",
+      "account"
+    ],
+    "steps": [
+      {
+        "title": "Change Your Apple ID Password",
+        "content": "Go to the Apple ID account page and change your password to a long, complicated one that you haven't used before or elsewhere."
+      },
+      {
+        "title": "Check for Active Logins",
+        "content": "Request your account data to see if there are any active or recent login attempts. Uncheck all irrelevant boxes to get an email about data availability."
+      },
+      {
+        "title": "Review Trusted Devices and Phone Numbers",
+        "content": "Ensure that only your trusted devices (MacBook, iPad, iPhone) and phone numbers are listed in your Apple ID settings. Remove any unfamiliar devices or numbers."
+      },
+      {
+        "title": "Check Keychain Items",
+        "content": "On iOS, go to Settings > Passwords & Accounts > Website & App Passwords. On Mac, use Keychain Access to review and remove any suspicious saved passwords."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Enable Additional Security Features",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Two-Factor Authentication (2FA)",
+            "content": "Ensure that 2FA is enabled on your Apple ID. This adds an extra layer of security by requiring a verification code for logins."
+          },
+          {
+            "title": "Use a Password Manager",
+            "content": "Consider using a password manager to generate and store unique, complex passwords for all your accounts."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T12:35:24.144Z",
+      "updated": "2026-01-06T12:35:24.144Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/374227/apple-id-password-compromised-2fa-rescued-what-next",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767702925491-407",
+    "title": "iCloud Two-Factor Authentication Recovery",
+    "problemDescription": "User cannot access iCloud due to too many failed two-factor authentication attempts.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "two-factor",
+      "authentication",
+      "icloud",
+      "recovery"
+    ],
+    "steps": [
+      {
+        "title": "Initiate Account Recovery",
+        "content": "Go to the iForgot website and request an account recovery. This process will take approximately 2 weeks."
+      },
+      {
+        "title": "Follow Recovery Instructions",
+        "content": "Follow the instructions provided by Apple to complete the account recovery process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Apple Support",
+            "content": "If you need immediate access, contact Apple Support for assistance with your two-factor authentication issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T12:35:25.491Z",
+      "updated": "2026-01-06T12:35:25.491Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/464331/two-factor-authentication-problem-on-first-attempt-you-have-sent-too-many-codes",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767702941900-91",
+    "title": "Fix Yubikey 2FA on Ubuntu 22.04 Firefox",
+    "problemDescription": "Yubikey 2FA does not work on Ubuntu 22.04 Firefox installed via apt.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "yubikey",
+      "2FA",
+      "Ubuntu",
+      "Firefox",
+      "AppArmor"
+    ],
+    "steps": [
+      {
+        "title": "Modify AppArmor Configuration",
+        "content": "Create a file at `/etc/apparmor.d/local/usr.bin.firefox` and paste the appropriate snippet to allow Firefox to access the Yubikey."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Firefox",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Firefox",
+            "content": "Remove the currently installed Firefox via apt."
+          },
+          {
+            "title": "Remove Mozilla Folder",
+            "content": "Delete the `~/.mozilla` folder to clear all personal settings."
+          },
+          {
+            "title": "Reinstall Firefox",
+            "content": "Reinstall Firefox either from the official website or via apt."
+          }
+        ]
+      },
+      {
+        "title": "Install Firefox from Official Website",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Firefox",
+            "content": "Download the latest Firefox tarball from the official website."
+          },
+          {
+            "title": "Extract and Install",
+            "content": "Extract the tarball to `/opt/` and create a symbolic link to `/usr/local/bin/firefox`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T12:35:41.900Z",
+      "updated": "2026-01-06T12:35:41.900Z",
+      "sourceUrl": "https://askubuntu.com/questions/1441951/yubikey-2fa-does-not-work-on-ubuntu-22-04-firefox-from-apt",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767702946117-225",
+    "title": "Configure 2FA TOTP for OpenConnect AnyConnect VPN",
+    "problemDescription": "NetworkManager does not support 2FA TOTP for OpenConnect AnyConnect VPN connections.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "vpn",
+      "2fa",
+      "totp",
+      "openconnect",
+      "anyconnect"
+    ],
+    "steps": [
+      {
+        "title": "Install Required Packages",
+        "content": "Install openconnect and NetworkManager plugins: `sudo apt-get install openconnect network-manager-openconnect network-manager-openconnect-gnome`."
+      },
+      {
+        "title": "Configure VPN Connection",
+        "content": "Set up your VPN connection in Settings->VPN. In the VPN settings, set Token mode to Disabled."
+      },
+      {
+        "title": "Install oathtool",
+        "content": "Install oathtool for generating TOTP tokens: `sudo apt-get install oathtool`."
+      },
+      {
+        "title": "Configure Identity Tab",
+        "content": "In the Identity tab of the VPN connection configuration, set `UserAgent` to `AnyConnect`, `VPN Protocol` to `Cisco AnyConnect or OpenConnect`, and `Token Mode` to `TOTP -- manually entered`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Community Workaround: Manual TOTP Entry",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Token Mode",
+            "content": "Set Token mode to Disabled in the VPN settings."
+          },
+          {
+            "title": "Manually Enter TOTP",
+            "content": "Manually enter the TOTP token when prompted during the VPN connection process."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T12:35:46.117Z",
+      "updated": "2026-01-06T12:35:46.117Z",
+      "sourceUrl": "https://askubuntu.com/questions/1495653/networkmanager-does-not-support-2fa-totp-for-openconnect-anyconnect-vpn",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767702976977-463",
+    "title": "Fix Wi-Fi Authentication Errors",
+    "problemDescription": "Devices can't connect to Wi-Fi or encounter authentication errors.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "authentication",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Confirm SSID and Password",
+        "content": "Ensure you are using the correct network name (SSID) and password."
+      },
+      {
+        "title": "Forget and Rejoin Network",
+        "content": "On your device, forget the network and then rejoin it with the correct credentials."
+      },
+      {
+        "title": "Reboot Devices",
+        "content": "Restart your device and the router to refresh the connection."
+      },
+      {
+        "title": "Disable MAC Filtering",
+        "content": "If MAC filtering is enabled, disable it or add the device's MAC address to the allowed list."
+      },
+      {
+        "title": "Update Firmware/Drivers",
+        "content": "Update the firmware on your router and the wireless drivers on your device."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Reset the network settings on your device if it is still not connecting."
+      },
+      {
+        "title": "Test with Ethernet",
+        "content": "Connect your device via Ethernet to determine if the issue is Wi-Fi-specific."
+      },
+      {
+        "title": "Check Cables and Connectors",
+        "content": "Inspect and replace any damaged coax, phone, or Ethernet cables and check connectors and splitters."
+      },
+      {
+        "title": "Use Mesh Wi-Fi or Extenders",
+        "content": "Improve coverage by using mesh Wi-Fi systems or additional access points."
+      },
+      {
+        "title": "Contact ISP",
+        "content": "If the issue persists, contact your ISP for line diagnostics and potential technician visits."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reserve IPs or Increase DHCP Pool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reserve IPs",
+            "content": "Reserve IP addresses for devices to prevent DHCP exhaustion."
+          },
+          {
+            "title": "Increase DHCP Pool",
+            "content": "Increase the DHCP pool size on your router to accommodate more devices."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reboot Modem and Router",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot Modem and Router",
+            "content": "Unplug both the modem and router, wait for a few seconds, and then plug them back in."
+          },
+          {
+            "title": "Check Status LEDs",
+            "content": "Ensure all status LEDs on the modem and router are solid and not blinking."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Run Speed Tests",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect via Ethernet",
+            "content": "Connect a laptop directly to the router via Ethernet."
+          },
+          {
+            "title": "Run Speed Tests",
+            "content": "Use speedtest.net or fast.com to compare wired and wireless speeds."
+          },
+          {
+            "title": "Test at Different Times",
+            "content": "Run the tests at different times to check for consistency."
+          }
+        ]
+      },
+      {
+        "title": "Method 5: Check ISP Outage and Provisioning",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check ISP Outage Page",
+            "content": "Visit your ISP's outage page to see if there are any reported issues."
+          },
+          {
+            "title": "Verify Account Provisioning",
+            "content": "Ensure your account is properly provisioned and there are no service interruptions."
+          }
+        ]
+      },
+      {
+        "title": "Method 6: Collect Diagnostics",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Collect Speed Tests",
+            "content": "Gather speed test results, ping, and traceroute data."
+          },
+          {
+            "title": "Check Modem Logs",
+            "content": "Review modem logs for any error messages or issues."
+          },
+          {
+            "title": "Contact ISP with Results",
+            "content": "Provide the collected diagnostics to your ISP for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T12:36:16.977Z",
+      "updated": "2026-01-06T12:36:16.977Z",
+      "sourceUrl": "https://www.quora.com/What-are-the-most-common-customer-complaints-about-internet-connectivity-and-what-are-the-most-common-solutions",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767702983532-213",
+    "title": "Speed Up a Slow PC by Uninstalling Unnecessary Programs",
+    "problemDescription": "Your Windows PC is running slow due to unnecessary programs consuming resources.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "slow pc",
+      "uninstall programs",
+      "speed up"
+    ],
+    "steps": [
+      {
+        "title": "Open Control Panel",
+        "content": "Click on the Start menu and type 'Control Panel' to open it."
+      },
+      {
+        "title": "Uninstall Unnecessary Programs",
+        "content": "Go to 'Programs and Features' and uninstall programs you don't use or need."
+      },
+      {
+        "title": "Check Task Manager for Resource Usage",
+        "content": "Open Task Manager by right-clicking the taskbar and selecting 'Task Manager' or pressing Ctrl+Shift+Escape. Sort by 'CPU', 'Memory', and 'Disk' to identify resource-heavy applications."
+      },
+      {
+        "title": "Close Resource-Intensive Applications",
+        "content": "Close any applications using too many resources normally. If you can't, consider uninstalling them."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Your PC / Reinstall Windows",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to Settings > Update & Security > Recovery."
+          },
+          {
+            "title": "Reset This PC",
+            "content": "Under 'Reset this PC', click 'Get started' and follow the prompts to reset your PC or reinstall Windows."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T12:36:23.532Z",
+      "updated": "2026-01-06T12:36:23.532Z",
+      "sourceUrl": "https://www.howtogeek.com/228570/10-quick-ways-to-speed-up-a-slow-windows-pc/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
