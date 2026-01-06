@@ -49091,5 +49091,361 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767706537023-123",
+    "title": "Samsung Galaxy S6 Interfering with Apple Pay",
+    "problemDescription": "Samsung Galaxy S6 is causing Apple Pay on iPhone 6 to activate unintentionally due to NFC interference.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "NFC",
+      "Apple Pay",
+      "interference",
+      "Samsung Galaxy S6",
+      "iPhone 6"
+    ],
+    "steps": [
+      {
+        "title": "Turn Off Samsung Payment Feature",
+        "content": "Disable the NFC payment feature on your Samsung Galaxy S6 to prevent interference with Apple Pay on your iPhone 6."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Turn Off Apple Pay",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Apple Pay",
+            "content": "Go to the Wallet & Apple Pay settings on your iPhone 6 and turn off Apple Pay to prevent unintended activations."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Keep Devices Apart",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Maintain Distance",
+            "content": "Keep your Samsung Galaxy S6 and iPhone 6 apart to avoid NFC interference that triggers Apple Pay."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T13:35:37.023Z",
+      "updated": "2026-01-06T13:35:37.023Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/195934/samsung-galaxy-6-sets-off-apple-pay-on-iphone-6",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767706571628-584",
+    "title": "Reset Graphics Driver",
+    "problemDescription": "Your graphics driver is not functioning properly and needs to be reset.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "graphics driver",
+      "reset",
+      "windows",
+      "display"
+    ],
+    "steps": [
+      {
+        "title": "Open Device Manager",
+        "content": "In Windows Search, type in Device Manager and left-click to launch it. Alternatively, right-click the Windows icon on your Taskbar and select Device Manager, or press Windows + X and then M."
+      },
+      {
+        "title": "Uninstall Graphics Driver",
+        "content": "In Device Manager, find and expand the 'Display adapters' section. Right-click on your graphics driver and select 'Uninstall Device'. Confirm the uninstall operation when prompted."
+      },
+      {
+        "title": "Restart Your PC",
+        "content": "Restart your computer to complete the uninstallation process."
+      },
+      {
+        "title": "Reinstall Graphics Driver",
+        "content": "For integrated graphics, Windows will automatically update the driver upon restart. For discrete graphics, download the appropriate driver installer from AMD, Intel, or Nvidia. Run the installer and follow the prompts to reinstall the driver."
+      },
+      {
+        "title": "Final Restart",
+        "content": "Restart your PC again to ensure the new driver is properly installed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Windows Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Press Windows + I to open Settings."
+          },
+          {
+            "title": "Go to Update & Security",
+            "content": "Click on 'Update & Security' and then 'Windows Update'."
+          },
+          {
+            "title": "Check for Updates",
+            "content": "Click on 'Check for updates' and let Windows download and install the latest drivers."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T13:36:11.628Z",
+      "updated": "2026-01-06T13:36:11.628Z",
+      "sourceUrl": "https://www.techradar.com/computing/gpu/how-to-reset-graphics-driver",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767706574382-447",
+    "title": "Fix Google Pixel 9 Screen Flickering",
+    "problemDescription": "Google Pixel 9 screen flickering in certain apps, especially when using Battery Saver.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "Google Pixel 9",
+      "screen flickering",
+      "Battery Saver",
+      "refresh rate"
+    ],
+    "steps": [
+      {
+        "title": "Change Refresh Rate to 60Hz",
+        "content": "Go to your phone's settings, navigate to Display, and set the refresh rate to 60Hz. This can help reduce screen flickering in certain apps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Adjust Haptic Intensity",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Haptic Settings",
+            "content": "Go to Settings, then Sound & vibration, and select Vibration & haptics. Adjust the haptic intensity to your preference."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T13:36:14.382Z",
+      "updated": "2026-01-06T13:36:14.382Z",
+      "sourceUrl": "https://www.techradar.com/phones/google-pixel-phones/is-your-google-pixel-9-screen-flickering-or-are-the-haptics-a-lot-more-intense-you-arent-alone-and-thankfully-theres-a-fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767706577464-114",
+    "title": "Fix Surface Display Flickering",
+    "problemDescription": "Surface Book or Surface Pro 4 display flickering issue.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "surface",
+      "display",
+      "flickering",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Install the latest firmware update",
+        "content": "Go to Settings > Update & Security > Windows Update > Check for updates. Install the HD Graphics 520 driver update (v20.19.15.4308) if available."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Driver Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download the driver manually",
+            "content": "Visit the Microsoft Surface support page and download the latest HD Graphics 520 driver."
+          },
+          {
+            "title": "Install the driver",
+            "content": "Run the downloaded file and follow the on-screen instructions to install the driver."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T13:36:17.464Z",
+      "updated": "2026-01-06T13:36:17.464Z",
+      "sourceUrl": "https://www.techradar.com/news/mobile-computing/laptops/microsoft-patches-flickering-display-problem-on-surface-book-and-surface-pro-4-1308178",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767706578766-294",
+    "title": "Fix Google Pixel 6 Screen Flickering",
+    "problemDescription": "Google Pixel 6 screen flickers when pressing the power button while the phone is off.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel 6",
+      "screen flickering",
+      "power button"
+    ],
+    "steps": [
+      {
+        "title": "Press the Power Button Firmly",
+        "content": "Ensure you are pressing the power button hard enough to turn the phone on. Google has acknowledged that the issue occurs if the button is not pressed firmly."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-06T13:36:18.766Z",
+      "updated": "2026-01-06T13:36:18.766Z",
+      "sourceUrl": "https://www.techradar.com/news/google-pixel-6-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767706594516-254",
+    "title": "Avoid Wi-Fi Extenders and Powerline Adapters",
+    "problemDescription": "Wi-Fi extenders and Powerline adapters may not solve slow Wi-Fi issues and can cause interference.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "speed",
+      "extender",
+      "powerline",
+      "interference"
+    ],
+    "steps": [
+      {
+        "title": "Remove Wi-Fi Extenders and Powerline Adapters",
+        "content": "Unplug and remove any Wi-Fi extenders or Powerline adapters from your network setup."
+      },
+      {
+        "title": "Test Wi-Fi Speed",
+        "content": "Check your Wi-Fi speed using a speed test tool to see if there is an improvement."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Optimize Router Placement",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Place Router Centrally",
+            "content": "Position your router in a central location to ensure even coverage throughout your home."
+          },
+          {
+            "title": "Elevate Router",
+            "content": "Place the router on a higher shelf or mount it on a wall to improve signal distribution."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T13:36:34.516Z",
+      "updated": "2026-01-06T13:36:34.516Z",
+      "sourceUrl": "https://www.makeuseof.com/things-slowing-down-home-wifi-network/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767706619526-66",
+    "title": "Fix AirPods Disconnecting",
+    "problemDescription": "AirPods frequently disconnect from your device.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods",
+      "disconnecting",
+      "connection",
+      "battery"
+    ],
+    "steps": [
+      {
+        "title": "Check and Charge Battery",
+        "content": "Put your AirPods in the charging case and check the battery level. If the battery is low, charge them fully and try reconnecting."
+      },
+      {
+        "title": "Reset AirPods",
+        "content": "Place the AirPods in the case with the lid open, press and hold the button on the case for 15 seconds until the white light flashes amber."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reconnect AirPods",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove and Reinsert AirPods",
+            "content": "Take the AirPods out of your ears and put them back in the case. Then, put them back in your ears and try reconnecting."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T13:36:59.526Z",
+      "updated": "2026-01-06T13:36:59.526Z",
+      "sourceUrl": "https://www.howtogeek.com/846724/airpods-keep-disconnecting-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767706622727-544",
+    "title": "AirPods Not Switching Between Devices",
+    "problemDescription": "AirPods are not automatically switching between paired devices.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods",
+      "switching",
+      "devices",
+      "automatic"
+    ],
+    "steps": [
+      {
+        "title": "Check AirPods Model and Serial",
+        "content": "Connect your AirPods to your iPhone or iPad, then go to Settings > Bluetooth. Tap the 'i' button next to your AirPods to view the model and serial number."
+      },
+      {
+        "title": "Enable Automatic Switching",
+        "content": "Under 'Connect to this iPhone/iPad', ensure 'Automatic' is enabled. On a Mac, go to System Preferences (or System Settings) > Bluetooth and click the 'Options' button next to your AirPods."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restore AirPods to Factory Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unpair AirPods",
+            "content": "Go to Settings > Bluetooth on your iPhone or iPad, tap the 'i' button next to your AirPods, and select 'Forget This Device'. On a Mac, go to System Preferences (System Settings) > Bluetooth, click the 'Options' button next to your AirPods, and choose 'Forget This Device'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T13:37:02.727Z",
+      "updated": "2026-01-06T13:37:02.727Z",
+      "sourceUrl": "https://www.howtogeek.com/811339/airpods-not-switching-between-devices/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
