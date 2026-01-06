@@ -47167,5 +47167,881 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767694786158-952",
+    "title": "Discord Grey Box Fix",
+    "problemDescription": "Discord not loading, displaying only a grey box.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "grey box",
+      "vpn",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Close Discord Completely",
+        "content": "Close Discord completely using the task manager."
+      },
+      {
+        "title": "Use a VPN",
+        "content": "Connect to a VPN and select a North American server."
+      },
+      {
+        "title": "Reopen Discord",
+        "content": "Open Discord again. It should now load properly."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-06T10:19:46.158Z",
+      "updated": "2026-01-06T10:19:46.158Z",
+      "sourceUrl": "https://www.reddit.com/r/discordapp/comments/1hwmyk5/help_my_discord_wont_load_it_is_just_a_grey_box/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767694793392-110",
+    "title": "Fix Discord Audio Cutting Out",
+    "problemDescription": "Discord audio cuts out every other word while others can hear you fine.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "audio",
+      "cutting out",
+      "voice chat"
+    ],
+    "steps": [
+      {
+        "title": "Check Discord Voice Settings",
+        "content": "Go to User Settings > Voice & Video. Adjust the 'Automatic Input Sensitivity' and 'Input Sensitivity' sliders to find a balance that works for your microphone."
+      },
+      {
+        "title": "Disable Hardware Acceleration",
+        "content": "In User Settings > Advanced, disable 'Hardware Acceleration' and restart Discord."
+      },
+      {
+        "title": "Update Discord",
+        "content": "Ensure you are using the latest version of Discord. Go to User Settings > Advanced and click 'Check for Updates'."
+      },
+      {
+        "title": "Check for Conflicting Software",
+        "content": "Temporarily disable any antivirus or firewall software that might be interfering with Discord's audio."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change Audio Subsystem",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Discord Settings",
+            "content": "Go to User Settings > Voice & Video."
+          },
+          {
+            "title": "Change Audio Subsystem",
+            "content": "Under 'Advanced', change the 'Audio Subsystem' from the default to 'Legacy' and restart Discord."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Discord",
+            "content": "Completely uninstall Discord from your computer."
+          },
+          {
+            "title": "Reinstall Discord",
+            "content": "Download the latest version of Discord from the official website and reinstall it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T10:19:53.392Z",
+      "updated": "2026-01-06T10:19:53.392Z",
+      "sourceUrl": "https://www.reddit.com/r/discordapp/comments/paf3bl/discord_problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767694798598-714",
+    "title": "Fix Discord Disconnecting and Reconnecting",
+    "problemDescription": "Discord disconnects and reconnects from voice channels intermittently.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "disconnect",
+      "reconnect",
+      "voice channel"
+    ],
+    "steps": [
+      {
+        "title": "Check Discord Server Status",
+        "content": "Visit the Discord Status page (https://discordstatus.com/) to ensure there are no ongoing issues with Discord's servers."
+      },
+      {
+        "title": "Update Discord",
+        "content": "Ensure you are using the latest version of Discord. Go to User Settings > Advanced > Enable 'Enable Experimental Hardware Acceleration' and restart Discord."
+      },
+      {
+        "title": "Check Network Settings",
+        "content": "Go to User Settings > Voice & Video > Advanced and disable 'Enable Quality of Service High Packet Priority'."
+      },
+      {
+        "title": "Reset Discord Voice Settings",
+        "content": "In User Settings > Voice & Video, reset all settings to default and restart Discord."
+      },
+      {
+        "title": "Reinstall Discord",
+        "content": "Uninstall Discord completely and then reinstall the latest version from the official website."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Hardware Acceleration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Hardware Acceleration",
+            "content": "Go to User Settings > Advanced and disable 'Enable Hardware Acceleration'. Restart Discord."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Change DNS Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change DNS Settings",
+            "content": "Change your DNS settings to use a public DNS like Google DNS (8.8.8.8 and 8.8.4.4) or Cloudflare DNS (1.1.1.1)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T10:19:58.598Z",
+      "updated": "2026-01-06T10:19:58.598Z",
+      "sourceUrl": "https://www.reddit.com/r/discordapp/comments/1cg7zk5/discord_keep_disconnect_and_reconnect_by_itself/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767694804169-418",
+    "title": "Fix Discord Loading Chunk Error",
+    "problemDescription": "Discord application fails to load with 'Loading chunk 4071 failed' error.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "loading error",
+      "chunk error"
+    ],
+    "steps": [
+      {
+        "title": "Clear Discord Cache",
+        "content": "Close Discord completely. Navigate to the Discord installation directory, typically 'C:\\Users\\[YourUsername]\\AppData\\Roaming\\Discord' on Windows or '~/Library/Application Support/discord' on macOS. Delete the 'Cache' and 'Code Cache' folders."
+      },
+      {
+        "title": "Reinstall Discord",
+        "content": "Uninstall Discord from your system. Download the latest version from the official Discord website and install it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Discord Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Settings",
+            "content": "Open Discord, go to User Settings (gear icon), scroll down to 'Advanced', and click 'Reset Voice Settings'."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Discord",
+            "content": "Ensure Discord is updated to the latest version. Check for updates in the Discord settings under 'Advanced'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T10:20:04.169Z",
+      "updated": "2026-01-06T10:20:04.169Z",
+      "sourceUrl": "https://www.reddit.com/r/discordapp/comments/1gy3mz8/anyone_knows_what_the_issue_with_my_discord/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767694809279-772",
+    "title": "Fix Discord Grey Screen Issue",
+    "problemDescription": "Discord application turns to a grey screen and becomes unresponsive.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "grey screen",
+      "app error",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Application",
+        "content": "Close Discord completely and reopen it to see if the issue persists."
+      },
+      {
+        "title": "Update Discord",
+        "content": "Ensure you are using the latest version of Discord. Go to User Settings > Advanced > Enable 'Update Discord' if not already enabled."
+      },
+      {
+        "title": "Check for System Updates",
+        "content": "Make sure your operating system is up to date, as outdated systems can cause compatibility issues."
+      },
+      {
+        "title": "Reinstall Discord",
+        "content": "Uninstall Discord and then reinstall it from the official website to ensure a clean installation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Run Discord as Administrator",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Right-Click Discord Shortcut",
+            "content": "Right-click on the Discord shortcut and select 'Run as administrator'."
+          },
+          {
+            "title": "Check for Changes",
+            "content": "See if the grey screen issue is resolved after running Discord with administrative privileges."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Hardware Acceleration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open User Settings",
+            "content": "Go to User Settings in Discord."
+          },
+          {
+            "title": "Disable Hardware Acceleration",
+            "content": "Under the 'Appearance' tab, disable 'Hardware Acceleration' and restart Discord."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T10:20:09.279Z",
+      "updated": "2026-01-06T10:20:09.279Z",
+      "sourceUrl": "https://www.reddit.com/r/discordapp/comments/1ce4sul/does_anyone_elses_discord_turn_to_a_grey_screen/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767694815472-323",
+    "title": "Fix iMessage Notifications Not Working",
+    "problemDescription": "iMessage notifications are not being received or heard.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iMessage",
+      "notifications",
+      "iOS"
+    ],
+    "steps": [
+      {
+        "title": "Force Quit the Messaging App",
+        "content": "Close the iMessage app completely and reopen it to see if the issue is resolved."
+      },
+      {
+        "title": "Restart Your Phone",
+        "content": "Restart your iPhone to clear any temporary glitches that might be causing the notification issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check iMessage Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to the Settings app on your iPhone."
+          },
+          {
+            "title": "Navigate to Notifications",
+            "content": "Scroll down and tap on Notifications."
+          },
+          {
+            "title": "Select iMessage",
+            "content": "Find and select iMessage from the list of apps."
+          },
+          {
+            "title": "Enable Notifications",
+            "content": "Ensure that Allow Notifications is turned on and customize the notification settings as needed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T10:20:15.472Z",
+      "updated": "2026-01-06T10:20:15.472Z",
+      "sourceUrl": "https://www.quora.com/Why-dont-I-hear-anything-or-get-notified-when-I-receive-a-text-message",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767694821413-684",
+    "title": "Fix Android Notifications Not Working on Wi-Fi",
+    "problemDescription": "Android notifications not working when connected to Wi-Fi.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "notifications",
+      "wifi"
+    ],
+    "steps": [
+      {
+        "title": "Check Do Not Disturb Settings",
+        "content": "Go to System → Sound & vibration → Do Not Disturb and ensure it is turned off."
+      },
+      {
+        "title": "Enable App Notifications",
+        "content": "Go to Settings → Apps → [app] → Notifications and ensure all notification channels are enabled and not set to silent."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Fix App-Specific Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force Sync and Sign Out/In",
+            "content": "Open the app to force sync, sign out, and then sign back in."
+          },
+          {
+            "title": "Clear App Cache/Data",
+            "content": "Go to Settings → Apps → [app] → Storage → Clear cache. If the issue persists, clear data or reinstall the app."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Change DNS Servers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change DNS Settings",
+            "content": "Go to Settings → Network & internet → Wi-Fi → [your Wi-Fi network] → Advanced → IP settings → DHCP → DNS → Private DNS → Select 'Private DNS provider hostname' and enter a custom DNS like 'dns.google' or '1.1.1.1'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T10:20:21.413Z",
+      "updated": "2026-01-06T10:20:21.413Z",
+      "sourceUrl": "https://www.quora.com/Why-am-I-not-getting-notifications-on-my-Android-when-Im-connected-to-Wi-Fi",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767694831578-886",
+    "title": "Fix Android Notifications Not Showing",
+    "problemDescription": "Android phone suddenly stopped showing notifications.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "notifications",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Check Notification Settings",
+        "content": "Go to Settings > Apps & notifications > Notifications. Ensure notifications are enabled for the apps you're not receiving alerts from."
+      },
+      {
+        "title": "Check App-Specific Permissions",
+        "content": "Go to Settings > Apps & notifications > [App Name] > Notifications. Ensure notifications are enabled for the specific app."
+      },
+      {
+        "title": "Restart Your Phone",
+        "content": "Restart your phone to clear any temporary software glitches that might be causing the issue."
+      },
+      {
+        "title": "Check Battery Optimization",
+        "content": "Go to Settings > Battery > Battery optimization. Ensure that battery optimization is not restricting notifications for your apps."
+      },
+      {
+        "title": "Update Your Phone",
+        "content": "Go to Settings > System > System update. Check for and install any available system updates."
+      },
+      {
+        "title": "Check for Do Not Disturb Mode",
+        "content": "Ensure that Do Not Disturb mode is not enabled. Swipe down from the top of the screen and check the quick settings panel."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear App Cache and Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear App Cache",
+            "content": "Go to Settings > Apps & notifications > [App Name] > Storage & cache > Clear Cache."
+          },
+          {
+            "title": "Clear App Data",
+            "content": "Go to Settings > Apps & notifications > [App Name] > Storage & cache > Clear Data. Note that this will reset the app to its default settings."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure you have backed up all important data as a factory reset will erase everything on your phone."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset). Follow the on-screen instructions to complete the reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T10:20:31.578Z",
+      "updated": "2026-01-06T10:20:31.578Z",
+      "sourceUrl": "https://www.quora.com/My-phone-suddenly-stopped-showing-notification-how-can-I-correct-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767694837719-897",
+    "title": "Enable App Notifications on Android",
+    "problemDescription": "Android device not allowing to turn on notifications for specific apps.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "notifications",
+      "app settings"
+    ],
+    "steps": [
+      {
+        "title": "Open App Notifications Settings",
+        "content": "Go to your device's Settings, search for 'app notifications', and tap on 'App Notifications'."
+      },
+      {
+        "title": "Select the App",
+        "content": "Scroll down to find the app (e.g., Google News) and tap on it."
+      },
+      {
+        "title": "Enable Notifications",
+        "content": "Turn on the 'Allow Notifications' toggle. You can also customize the notification style below."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Battery Saver Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Battery Saver",
+            "content": "Go to Settings > Battery > Battery Saver and turn it off, as it might be restricting notifications."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Clear App Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache",
+            "content": "Go to Settings > Apps > [App Name] > Storage > Clear Cache."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T10:20:37.719Z",
+      "updated": "2026-01-06T10:20:37.719Z",
+      "sourceUrl": "https://www.quora.com/Why-wont-Android-allow-me-to-turn-on-notifications-at-some-of-my-apps",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767694856362-157",
+    "title": "Enable 2FA for AWS EC2 SSH",
+    "problemDescription": "Two-factor authentication (2FA) is not working for SSH access to AWS EC2 instance.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "2FA",
+      "AWS",
+      "EC2",
+      "SSH",
+      "authentication"
+    ],
+    "steps": [
+      {
+        "title": "Install PAM",
+        "content": "Install the PAM module for Google Authenticator: `$ sudo apt install libpam-google-authenticator`."
+      },
+      {
+        "title": "Generate 2FA Code",
+        "content": "Run `$ google-authenticator` and follow the prompts to generate a QR code. Use a 2FA app (e.g., Google Authenticator, Authy) to scan the QR code."
+      },
+      {
+        "title": "Configure PAM",
+        "content": "Edit the PAM configuration file for SSH: `$ sudo nano /etc/pam.d/sshd`. Add the line `auth required pam_google_authenticator.so` to the top of the file and comment out the line `@include common-auth` by adding a `#` at the beginning."
+      },
+      {
+        "title": "Configure SSH Daemon",
+        "content": "Edit the SSH daemon configuration file: `$ sudo nano /etc/ssh/sshd_config`. Ensure the following options are set: `ChallengeResponseAuthentication yes`, `PasswordAuthentication no`, `PubkeyAuthentication yes`, and `AuthenticationMethods publickey,keyboard-interactive`."
+      },
+      {
+        "title": "Restart SSH Service",
+        "content": "Restart the SSH service to apply the changes: `$ sudo systemctl restart sshd && sudo systemctl restart ssh`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Revert Changes if Needed",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Keep SSH Session Open",
+            "content": "Try to log in from another SSH session while keeping the current session open in case you need to revert changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T10:20:56.362Z",
+      "updated": "2026-01-06T10:20:56.363Z",
+      "sourceUrl": "https://askubuntu.com/questions/1318318/help-cant-seem-to-get-2fa-to-work-for-my-aws-ec2-ssh",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767694860347-567",
+    "title": "Generate TOTP for 2FA on Computer",
+    "problemDescription": "Generate Time-based One-Time Passwords (TOTP) for Two-Factor Authentication (2FA) directly from a computer without using a mobile device.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "2FA",
+      "TOTP",
+      "oathtool",
+      "authentication",
+      "security"
+    ],
+    "steps": [
+      {
+        "title": "Install oathtool",
+        "content": "Ensure you have oathtool installed on your system. On Ubuntu, you can install it using the command: `sudo apt-get install oathtool`."
+      },
+      {
+        "title": "Store 2FA Secrets Securely",
+        "content": "Store your 2FA secrets in a secure password manager. For example, you can use `pass` (the standard Unix password manager) to store them."
+      },
+      {
+        "title": "Create a Script to Generate TOTP Codes",
+        "content": "Create a script that retrieves the 2FA secret from your password manager and generates the TOTP code using oathtool. For example: `2fa gitlab | xargs -d '\\n' oathtool -b --totp`."
+      },
+      {
+        "title": "Use the Script to Generate Codes",
+        "content": "Run the script to generate the 6-digit TOTP code. For example: `2fa gitlab` will generate the code for GitLab."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Password Manager with TOTP Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Choose a Password Manager",
+            "content": "Select a password manager that supports TOTP generation, such as Bitwarden or KeePassXC."
+          },
+          {
+            "title": "Import 2FA Secrets",
+            "content": "Import your 2FA secrets into the password manager. This may involve scanning QR codes or manually entering the secrets."
+          },
+          {
+            "title": "Generate TOTP Codes",
+            "content": "Use the password manager's built-in TOTP generator to produce the 6-digit codes when needed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T10:21:00.347Z",
+      "updated": "2026-01-06T10:21:00.347Z",
+      "sourceUrl": "https://askubuntu.com/questions/1460640/generating-totp-for-2fa-directly-from-the-computer-no-mobile-device",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767694866375-229",
+    "title": "Configure Postfix to Send Emails via Gmail with 2FA",
+    "problemDescription": "Postfix cannot send emails via Gmail when 2FA is enabled.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "postfix",
+      "gmail",
+      "2FA",
+      "email",
+      "configuration"
+    ],
+    "steps": [
+      {
+        "title": "Install Required Packages",
+        "content": "Run the following command to install the necessary packages: `sudo apt-get install postfix mailutils libsasl2-2 ca-certificates libsasl2-modules`."
+      },
+      {
+        "title": "Configure Postfix",
+        "content": "During the installation, select 'Internet host' and enter your hostname (e.g., `trillian.at.home`)."
+      },
+      {
+        "title": "Generate an App Password",
+        "content": "Go to your Google account settings, navigate to 'Security', then 'App passwords'. Select 'Mail' and 'Other' as the app type, and enter a name for your mail relay (e.g., `mail relay from <hostname>`). Generate the app password."
+      },
+      {
+        "title": "Store the App Password",
+        "content": "Store the generated app password securely, as you will need it for the Postfix configuration."
+      },
+      {
+        "title": "Configure Postfix to Use the App Password",
+        "content": "Edit the Postfix configuration file (usually `/etc/postfix/main.cf`) and add the following lines: `relayhost = [smtp.gmail.com]:587`, `smtp_sasl_auth_enable = yes`, `smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd`, `smtp_sasl_security_options = noanonymous`, `smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt`."
+      },
+      {
+        "title": "Create the SASL Password File",
+        "content": "Create the file `/etc/postfix/sasl_passwd` and add the following line: `[smtp.gmail.com]:587    your-email@gmail.com:your-app-password`. Replace `your-email@gmail.com` with your Gmail address and `your-app-password` with the app password you generated."
+      },
+      {
+        "title": "Secure the SASL Password File",
+        "content": "Run the following commands to secure the SASL password file: `sudo chmod 600 /etc/postfix/sasl_passwd`, `sudo postmap /etc/postfix/sasl_passwd`, `sudo systemctl restart postfix`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Less Secure Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Less Secure Apps",
+            "content": "Go to your Google account settings, navigate to 'Security', and enable 'Less secure app access'. Note that this method is less secure and may not be recommended for all users."
+          },
+          {
+            "title": "Configure Postfix",
+            "content": "Follow the same steps as in the main method, but use your regular Gmail password instead of an app password."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T10:21:06.375Z",
+      "updated": "2026-01-06T10:21:06.375Z",
+      "sourceUrl": "https://askubuntu.com/questions/1067444/how-can-i-configure-postfix-to-send-emails-via-gmail-2fa-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767694870449-134",
+    "title": "Fix Two-Factor SSH Login Failure",
+    "problemDescription": "Unable to login via SSH with two-factor authentication enabled on Ubuntu 18.04.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "ssh",
+      "two-factor",
+      "authentication",
+      "ubuntu"
+    ],
+    "steps": [
+      {
+        "title": "Verify PAM Configuration",
+        "content": "Ensure the PAM configuration for SSH is correct by editing the file `/etc/pam.d/sshd` and verifying the line `auth required pam_google_authenticator.so` is present and uncommented."
+      },
+      {
+        "title": "Check Google Authenticator Setup",
+        "content": "Ensure that the Google Authenticator is properly set up for your user. Run `google-authenticator` in the terminal and follow the prompts to set it up if not already done."
+      },
+      {
+        "title": "Restart SSH Service",
+        "content": "After making changes, restart the SSH service to apply the new configuration. Use the command `sudo systemctl restart ssh`."
+      },
+      {
+        "title": "Verify SSH Configuration",
+        "content": "Check the SSH configuration file `/etc/ssh/sshd_config` to ensure it includes the line `ChallengeResponseAuthentication yes`. If not, add it and restart the SSH service again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Debugging SSH Login",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Verbose Logging",
+            "content": "Enable verbose logging for SSH by running `ssh -v user@host` to get detailed information about the login process. This can help identify where the authentication is failing."
+          },
+          {
+            "title": "Check Authenticator Logs",
+            "content": "Check the system logs for any errors related to the Google Authenticator. Use the command `sudo tail -f /var/log/auth.log` to monitor the logs in real-time."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T10:21:10.449Z",
+      "updated": "2026-01-06T10:21:10.449Z",
+      "sourceUrl": "https://askubuntu.com/questions/1121571/cannot-login-with-two-factor-ssh",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767694905165-617",
+    "title": "Fix Ubuntu Battery Drain on Power Off",
+    "problemDescription": "Battery drains quickly when the system is powered off in Ubuntu, unlike in Windows 10.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "battery",
+      "drain",
+      "power off",
+      "wake on lan"
+    ],
+    "steps": [
+      {
+        "title": "Create a systemd service to disable Wake On Lan",
+        "content": "Create a new systemd service file to disable Wake On Lan (WOL) feature which is causing the battery drain. This method is recommended for Ubuntu 16.04 or newer."
+      },
+      {
+        "title": "Edit the systemd service file",
+        "content": "Open a terminal and create a new file named `/etc/systemd/system/ethtool.service` with the following content:\n\n```ini\n[Unit]\nDescription=Disable Wake On Lan\nAfter=network.target\n\n[Service]\nType=oneshot\nExecStart=/sbin/ethtool -s eth0 wol d\n\n[Install]\nWantedBy=multi-user.target\n```"
+      },
+      {
+        "title": "Enable the new service",
+        "content": "Run the following commands to enable the new service:\n\n```bash\nsudo systemctl daemon-reload\nsudo systemctl enable ethtool.service\n```"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Wake On Lan via rc.local",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit the rc.local file",
+            "content": "Open a terminal and edit the `/etc/rc.local` file with the following content (add the ethtool line before the `exit 0` line):\n\n```bash\n#!/bin/sh -e\n\n# Disable Wake On Lan\n/sbin/ethtool -s eth0 wol d\nexit 0\n```"
+          },
+          {
+            "title": "Make rc.local executable",
+            "content": "Run the following command to make the `rc.local` file executable:\n\n```bash\nsudo chmod +x /etc/rc.local\n```"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T10:21:45.165Z",
+      "updated": "2026-01-06T10:21:45.165Z",
+      "sourceUrl": "https://askubuntu.com/questions/869494/battery-drains-to-0-when-power-off-for-2-days",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767694922213-415",
+    "title": "Extend Laptop Battery Life on Ubuntu",
+    "problemDescription": "Ubuntu running slower, lagging more, and causing faster battery drains.",
+    "category": "linux",
+    "difficulty": "Easy",
+    "keywords": [
+      "battery",
+      "ubuntu",
+      "laptop",
+      "power",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Avoid Wubi",
+        "content": "Do not run Ubuntu through Wubi as it can cause slower performance and faster battery drain."
+      },
+      {
+        "title": "Dim Screen",
+        "content": "Keep your screen dimmest as possible and allow it to dim to save power."
+      },
+      {
+        "title": "Disable Wi-Fi",
+        "content": "Switch off Wi-Fi when not in use to conserve battery."
+      },
+      {
+        "title": "Close Background Programs",
+        "content": "Close any unnecessary background programs to reduce battery consumption."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Enable Laptop Mode Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Laptop Mode Tools",
+            "content": "Install laptop mode tools to optimize power management settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T10:22:02.213Z",
+      "updated": "2026-01-06T10:22:02.213Z",
+      "sourceUrl": "https://askubuntu.com/questions/400/tips-to-extend-battery-life-for-laptops-and-notebooks",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
