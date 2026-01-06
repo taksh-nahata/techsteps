@@ -45914,5 +45914,699 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767687916998-12",
+    "title": "Fix Missing Password Reset Email",
+    "problemDescription": "You are not receiving the password reset email after requesting it.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "password reset",
+      "email",
+      "account access"
+    ],
+    "steps": [
+      {
+        "title": "Check Spam/Junk Folder",
+        "content": "Look in your spam or junk folder for the password reset email."
+      },
+      {
+        "title": "Verify Email Address",
+        "content": "Double-check the email address used for the password reset request to ensure it matches the one linked to your account."
+      },
+      {
+        "title": "Search All Folders",
+        "content": "Use the search bar in your email client to look for 'password reset' in all folders, including trash."
+      },
+      {
+        "title": "Adjust Spam Filter Settings",
+        "content": "For Yahoo Mail users, adjust the spam filter sensitivity in the settings under security and privacy."
+      },
+      {
+        "title": "Enable Notifications",
+        "content": "If using a mobile app, ensure that notifications are enabled."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Customer Support",
+            "content": "If none of the above steps work, contact the customer support of the service you are trying to access for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T08:25:16.998Z",
+      "updated": "2026-01-06T08:25:16.998Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=y2H1cJYN9nc",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767687960078-254",
+    "title": "Stop Instagram Repeating Stories",
+    "problemDescription": "Instagram on iPhone keeps replaying old stories when new ones are uploaded.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "stories",
+      "iphone",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Update Instagram",
+        "content": "Go to the App Store, search for Instagram, and update the app to the latest version."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-06T08:26:00.078Z",
+      "updated": "2026-01-06T08:26:00.078Z",
+      "sourceUrl": "https://lifehacker.com/how-to-stop-instagram-from-repeating-stories-1849064452",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767687962989-953",
+    "title": "Reset Instagram Algorithm",
+    "problemDescription": "How to reset your Instagram algorithm to start fresh with content recommendations.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "algorithm",
+      "reset",
+      "content",
+      "recommendations"
+    ],
+    "steps": [
+      {
+        "title": "Access Instagram Settings",
+        "content": "Open the Instagram app, tap your profile, then tap the hamburger menu in the top right."
+      },
+      {
+        "title": "Navigate to Content Preferences",
+        "content": "Scroll down and tap 'What you see' and then tap 'Content preferences'."
+      },
+      {
+        "title": "Reset Suggested Content",
+        "content": "On the next menu, tap the 'Reset suggested content' option."
+      },
+      {
+        "title": "Confirm Reset",
+        "content": "Confirm the reset by following the prompts, understanding that this action cannot be undone and you may see different types of content."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Unfollow Accounts Instead of Resetting",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Review Your Following List",
+            "content": "Go to your profile and review the list of accounts you are following."
+          },
+          {
+            "title": "Unfollow Unwanted Accounts",
+            "content": "Unfollow accounts that you no longer want to see content from."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T08:26:02.989Z",
+      "updated": "2026-01-06T08:26:02.989Z",
+      "sourceUrl": "https://lifehacker.com/tech/how-to-reset-your-instagram-algorithm",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767687977163-83",
+    "title": "Prevent Instagram from Randomly Refreshing",
+    "problemDescription": "Instagram randomly refreshes, causing users to lose their place and miss content.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Instagram",
+      "refresh",
+      "app error",
+      "user experience"
+    ],
+    "steps": [
+      {
+        "title": "Update Instagram App",
+        "content": "Ensure you have the latest version of the Instagram app installed from the App Store or Google Play Store."
+      },
+      {
+        "title": "Check for In-App Notifications",
+        "content": "Look for any in-app notifications or announcements regarding the fix for the random refresh issue."
+      },
+      {
+        "title": "Restart the App",
+        "content": "Close the Instagram app completely and reopen it to see if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear App Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache on Android",
+            "content": "Go to Settings > Apps > Instagram > Storage > Clear Cache."
+          },
+          {
+            "title": "Clear Cache on iOS",
+            "content": "Go to Settings > General > iPhone Storage > Instagram > Offload App, then reinstall the app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T08:26:17.163Z",
+      "updated": "2026-01-06T08:26:17.163Z",
+      "sourceUrl": "https://lifehacker.com/tech/instagram-isnt-going-to-randomly-refresh-anymore",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767687980021-123",
+    "title": "Troubleshoot Using Basic Settings",
+    "problemDescription": "You're experiencing issues with a device or software and need to find a solution.",
+    "category": "general",
+    "difficulty": "Easy",
+    "keywords": [
+      "troubleshooting",
+      "settings",
+      "fix",
+      "problem"
+    ],
+    "steps": [
+      {
+        "title": "Access Settings",
+        "content": "Open the settings menu of the device or software you're having trouble with."
+      },
+      {
+        "title": "Explore Settings",
+        "content": "Dig around in the basic settings to find potential solutions. Familiarize yourself with the settings to make future troubleshooting easier."
+      },
+      {
+        "title": "Modify One Setting at a Time",
+        "content": "Change one setting at a time to identify which change resolves the issue. This helps you understand what works and what doesn't."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Forums for Troubleshooting",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Find a Relevant Forum",
+            "content": "Search for a forum that matches the problem you're trying to fix."
+          },
+          {
+            "title": "Search the Forum",
+            "content": "Use the forum's search feature to find existing solutions."
+          },
+          {
+            "title": "Ask for Help",
+            "content": "If you can't find a solution, ask a question in the forum to see if someone can help."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T08:26:20.021Z",
+      "updated": "2026-01-06T08:26:20.021Z",
+      "sourceUrl": "https://lifehacker.com/the-fiddle-factor-how-to-learn-enough-to-fix-anything-1644172273",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767687993440-971",
+    "title": "Fix Outlook Freezing or Not Responding",
+    "problemDescription": "Outlook is freezing, hanging, or not responding.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "freeze",
+      "hang",
+      "not responding",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Install Latest Updates",
+        "content": "Ensure your Outlook and Windows are updated to the latest versions. This can resolve compatibility issues and bugs."
+      },
+      {
+        "title": "Check Add-Ins",
+        "content": "Disable all add-ins and restart Outlook. If the issue resolves, enable add-ins one by one to identify the problematic one."
+      },
+      {
+        "title": "Check Mailbox Size",
+        "content": "Large mailboxes can cause performance issues. Archive old emails or reduce the size of your mailbox."
+      },
+      {
+        "title": "Antivirus Software",
+        "content": "Temporarily disable your antivirus software to see if it's interfering with Outlook."
+      },
+      {
+        "title": "Repair Outlook Data Files",
+        "content": "Use the Inbox Repair Tool (scanpst.exe) to repair your Outlook data files."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: User Profile Corruption",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a New Outlook Profile",
+            "content": "Go to Control Panel > Mail > Show Profiles > Add. Create a new profile and set it as default."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: External Content",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable External Content",
+            "content": "Go to File > Options > Trust Center > Trust Center Settings > Automatic Download. Disable automatic download of external content."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: AppData Folder Redirection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Redirect AppData Folder",
+            "content": "If you have redirected your AppData folder, try moving it back to the default location."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T08:26:33.440Z",
+      "updated": "2026-01-06T08:26:33.440Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlook-freeze-or-hang-or-not-responding/0bc065a1-a9ed-4d9a-a356-8601bf392729?CorrelationId=bbd1a2a6-f4da-4c01-a1c0-bfbc4bc03539",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767688000626-441",
+    "title": "Fix Outlook Not Opening",
+    "problemDescription": "Outlook application fails to open or launch.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "app-error",
+      "open",
+      "launch"
+    ],
+    "steps": [
+      {
+        "title": "Run Outlook in Safe Mode",
+        "content": "Hold the Windows key and press R. Type 'outlook /safe' and press Enter. If Outlook opens in Safe Mode, the issue is likely caused by an add-in."
+      },
+      {
+        "title": "Scan Outlook with Microsoft Support and Recovery Assistant",
+        "content": "Download and run the Microsoft Support and Recovery Assistant for Outlook to scan and repair any issues."
+      },
+      {
+        "title": "Repair Outlook Data Files",
+        "content": "Use the Inbox Repair Tool (scanpst.exe) to repair your Outlook data files (.pst and .ost)."
+      },
+      {
+        "title": "Create a New Outlook Profile",
+        "content": "Go to Control Panel > Mail > Show Profiles > Add. Create a new profile and set it as the default."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check OWA",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Login via OWA",
+            "content": "Try logging into your account using the Outlook Web App (OWA) to see if the issue persists."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Microsoft Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a Service Ticket",
+            "content": "If the problem persists, create a service ticket in the Microsoft 365 admin center for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T08:26:40.626Z",
+      "updated": "2026-01-06T08:26:40.626Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum/all/cant-open-outlook/2a7838e3-b067-4269-8626-db3da3783607",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767688004231-988",
+    "title": "Fix Outlook Email Sending Issues",
+    "problemDescription": "Outlook is not sending emails, but receiving them works fine.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "outlook",
+      "email",
+      "sending",
+      "microsoft"
+    ],
+    "steps": [
+      {
+        "title": "Check Inbox and Outbox Storage",
+        "content": "Ensure you have enough space in your inboxes and outboxes. Full storage can cause issues with sending and receiving emails."
+      },
+      {
+        "title": "Use the Guided Support Tool",
+        "content": "Visit the Microsoft Guided Support Tool and press the blue START button to identify and solve any issues with your account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Internet Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Internet Connection",
+            "content": "Ensure your internet connection is stable and working properly."
+          },
+          {
+            "title": "Restart Outlook",
+            "content": "Close and reopen Outlook to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T08:26:44.231Z",
+      "updated": "2026-01-06T08:26:44.231Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/all/my-outlook-email-isnt-working-and-my-isp-advises/4bdee387-1b27-426d-9bce-a9c31a0427eb",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767688022495-147",
+    "title": "Fix Printer Access Error",
+    "problemDescription": "Windows cannot access the specified device, path, or file when trying to print.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "windows",
+      "access error"
+    ],
+    "steps": [
+      {
+        "title": "Check Cable Connections",
+        "content": "Ensure the printer's cable connections are secure."
+      },
+      {
+        "title": "Restart Devices",
+        "content": "Turn off the printer and computer, then restart both."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Printer Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Printer Model",
+            "content": "Identify your printer model."
+          },
+          {
+            "title": "Download Latest Driver",
+            "content": "Visit the manufacturer's website and download the latest driver."
+          },
+          {
+            "title": "Install Driver",
+            "content": "Install the downloaded driver and restart your computer."
+          }
+        ]
+      },
+      {
+        "title": "Clear Print Queue and Restart",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Command Prompt",
+            "content": "Click Start, type 'Command Prompt', right-click and select 'Run as administrator'."
+          },
+          {
+            "title": "Clear Print Queue",
+            "content": "Type 'net stop spooler' and press Enter. Then type 'del %systemroot%\\System32\\spool\\printers\\*' and press Enter. Finally, type 'net start spooler' and press Enter."
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Restart your computer to apply changes."
+          }
+        ]
+      },
+      {
+        "title": "Check File Permissions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Locate File Path",
+            "content": "Find the path of the file you are trying to print."
+          },
+          {
+            "title": "Edit Permissions",
+            "content": "Right-click the file, select 'Properties', go to the 'Security' tab, and ensure your user account has full control."
+          },
+          {
+            "title": "Verify File Location",
+            "content": "Ensure the file is present on your PC and no antivirus tool is blocking access."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T08:27:02.495Z",
+      "updated": "2026-01-06T08:27:02.495Z",
+      "sourceUrl": "https://superuser.com/questions/1482501/printer-error-when-i-try-to-access-print-queue-windows-cannot-access-the-speci",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767688028601-133",
+    "title": "Reset Windows 10 to Fix Printer Issues",
+    "problemDescription": "Windows 10 printer issues that persist after several weeks, requiring a reset or reinstallation of printing components.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 10",
+      "printer",
+      "reset",
+      "driver",
+      "firmware"
+    ],
+    "steps": [
+      {
+        "title": "Clear the Print Spooler",
+        "content": "Right-click 'Command Prompt' and select 'Run as administrator'. Type 'net stop spooler' and press 'Enter'. Type 'del %systemroot%\\System32\\spool\\printers\\ /Q' and press 'Enter'. Type 'net start spooler' and press 'Enter'."
+      },
+      {
+        "title": "Uninstall the Printer Driver",
+        "content": "Go to 'Devices and Printers', select the printer, go to the 'Driver' tab, and remove the driver. Restart the computer."
+      },
+      {
+        "title": "Reinstall the Printer Driver",
+        "content": "Download and install the latest driver from the HP website. Update the printer firmware if necessary."
+      },
+      {
+        "title": "Test the Printer",
+        "content": "After reinstalling the driver and updating the firmware, test the printer to see if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Windows Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Windows Updates",
+            "content": "Go to 'Settings' > 'Update & Security' > 'Windows Update' and check for any available updates. Install the latest Windows update (e.g., version 20H2)."
+          },
+          {
+            "title": "Restart the Computer",
+            "content": "After installing the update, restart your computer and test the printer again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T08:27:08.601Z",
+      "updated": "2026-01-06T08:27:08.601Z",
+      "sourceUrl": "https://superuser.com/questions/1633354/how-to-reset-windows-10-to-fix-windows-print",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767688032687-61",
+    "title": "Fix Printer Job Stuck in Queue",
+    "problemDescription": "Print job leaves the queue but the document isn't printed.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "queue",
+      "print job",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Delete the Local Port",
+        "content": "Change the printer's default port to LPT1-3, click Apply, then select USB00\\ Local Port (click once), and press DELETE to remove the secondary unneeded port."
+      },
+      {
+        "title": "Apply Changes and Reboot",
+        "content": "Press Apply again, reboot the PC, and check if the problem persists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset the Printer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Perform a Full Reset",
+            "content": "Perform a full reset on the printer. For an F380, this is done by following the specific reset procedure for that model."
+          }
+        ]
+      },
+      {
+        "title": "Change Printer Properties",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Printer Properties",
+            "content": "Right-click the device and select `Printer properties`."
+          },
+          {
+            "title": "Select Advanced Tab",
+            "content": "Select the `Advanced` tab."
+          },
+          {
+            "title": "Change Printing Setting",
+            "content": "Select the radio button to `Start printing after last page is spooled` (instead of Start printing immediately)."
+          },
+          {
+            "title": "Apply Changes",
+            "content": "Click the `Apply` button."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T08:27:12.687Z",
+      "updated": "2026-01-06T08:27:12.687Z",
+      "sourceUrl": "https://superuser.com/questions/491168/print-job-leaves-queue-but-document-isnt-printed",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767688042660-792",
+    "title": "Fix Slow Network Printing",
+    "problemDescription": "Network printing is extremely slow or unresponsive.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "network",
+      "printing",
+      "slow",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Reset Network Printers",
+        "content": "Delete all network printers from the Control Panel and restart your PC."
+      },
+      {
+        "title": "Add Printer Manually",
+        "content": "Go to the printer browser in the Control Panel, click 'Add a Printer', select 'Add a local printer', create a new port (choose TCP/IP), and enter the IP address of the printer."
+      },
+      {
+        "title": "Upgrade Printer RAM",
+        "content": "Upgrade your printer's RAM if possible (e.g., using a DDR2 256MB SODIMM slot)."
+      },
+      {
+        "title": "Disable Unnecessary Features",
+        "content": "Turn off all unnecessary features on the admin page, leaving only IPP/IPPS, network scanning, and AirPrint (for Mac users) enabled."
+      },
+      {
+        "title": "Disable IPv6",
+        "content": "Turn off IPv6 on the admin page if you aren't using it."
+      },
+      {
+        "title": "Adjust Printer Driver Settings",
+        "content": "In the printer driver settings, try lower resolution settings and uncheck Color Enhancement (True2Life®) in the ADVANCED tab."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use IPP for Windows",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Add Printer Using IPP",
+            "content": "If the printer is not listed, select 'The printer that I want isn't listed' and type in the printer's IP address. Choose 'brscript.inf' as the driver."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-06T08:27:22.660Z",
+      "updated": "2026-01-06T08:27:22.660Z",
+      "sourceUrl": "https://superuser.com/questions/1318900/how-to-seriously-troubleshoot-extremely-slow-network-printing",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
