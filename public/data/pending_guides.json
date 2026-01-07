@@ -64029,5 +64029,364 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767803133866-229",
+    "title": "Fix Screen Flickering in Windows",
+    "problemDescription": "Screen flickering or flashing issue on Windows PC or laptop.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "screen flickering",
+      "windows",
+      "display issue"
+    ],
+    "steps": [
+      {
+        "title": "Refresh Graphics Card",
+        "content": "Press and hold the Windows key, Shift key, Control key, and B key all together on your keyboard. Your screen will momentarily flash, indicating that your graphics card has been refreshed."
+      },
+      {
+        "title": "Check in Safe Mode",
+        "content": "If the screen is still flickering, boot your computer into Safe Mode. If the flickering stops in Safe Mode, it indicates a software issue such as a corrupted driver, application, or update."
+      },
+      {
+        "title": "Update Display Drivers",
+        "content": "Open the Windows search and type 'refresh', then select 'View Advanced display info'. Click on 'Display adapter properties' and update your display drivers to the latest version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Hardware Check",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Consult a Technician",
+            "content": "If the screen continues to flicker even after refreshing the graphics card and checking in Safe Mode, the issue may be hardware-related. Consult a technician for repair."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T16:25:33.866Z",
+      "updated": "2026-01-07T16:25:33.866Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=z2SXV0jb5Sc",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767803139609-872",
+    "title": "Fix Screen Flickering on Windows 11/10",
+    "problemDescription": "Screen flickering or flashing on Windows 11/10 systems.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen flickering",
+      "Windows 11",
+      "Windows 10",
+      "display settings",
+      "hardware acceleration"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Computer",
+        "content": "Restart your computer to see if the issue resolves."
+      },
+      {
+        "title": "Adjust Display Settings",
+        "content": "Right-click on your desktop, select 'Display settings', and adjust the refresh rate, resolution, or other settings."
+      },
+      {
+        "title": "Disable Hardware Acceleration",
+        "content": "Go to Settings > System > Display > Graphics settings, and toggle off 'Hardware accelerated GPU scheduling'."
+      },
+      {
+        "title": "Uninstall and Reinstall Graphics Drivers",
+        "content": "Log into safe mode and uninstall/reinstall the required graphics drivers."
+      },
+      {
+        "title": "Disable Incompatible Applications",
+        "content": "Disable any recently installed applications that might be causing the issue, especially graphics-intensive ones."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Graphics Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Graphics Drivers",
+            "content": "Go to the manufacturer's website, download the latest graphics drivers, and install them."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Windows Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Windows Updates",
+            "content": "Go to Settings > Update & Security > Windows Update, and check for any available updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T16:25:39.609Z",
+      "updated": "2026-01-07T16:25:39.610Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=OLlMeOiEBfs",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767803156588-401",
+    "title": "Fix PC Monitor Flickering",
+    "problemDescription": "Your PC monitor is flickering, causing visual disturbances.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "monitor",
+      "flickering",
+      "display"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Display Settings",
+        "content": "Right-click on your desktop and select 'Display settings'."
+      },
+      {
+        "title": "Change Refresh Rate",
+        "content": "In the display settings, find the 'Advanced display settings' and change the refresh rate to a higher value (e.g., 60Hz or 75Hz)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Graphics Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Press Win + X and select 'Device Manager'."
+          },
+          {
+            "title": "Update Drivers",
+            "content": "Expand 'Display adapters', right-click on your graphics card, and select 'Update driver'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T16:25:56.588Z",
+      "updated": "2026-01-07T16:25:56.588Z",
+      "sourceUrl": "https://www.youtube.com/shorts/-URhI_17_NY",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767803174419-95",
+    "title": "Set Up Android Phone as Security Key",
+    "problemDescription": "How to use your Android phone as a security key for two-factor authentication.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "security key",
+      "two-factor authentication",
+      "2FA"
+    ],
+    "steps": [
+      {
+        "title": "Access Google Settings",
+        "content": "Go to your Google account settings on your Android device."
+      },
+      {
+        "title": "Enable 2-Step Verification",
+        "content": "Select '2-Step Verification' from the settings menu."
+      },
+      {
+        "title": "Add Security Key",
+        "content": "Click on 'Add a Security Key' and choose your phone as the device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Third-Party Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a 2FA App",
+            "content": "Download and install a third-party two-factor authentication app from the Google Play Store."
+          },
+          {
+            "title": "Set Up the App",
+            "content": "Follow the app's instructions to set up two-factor authentication for your accounts."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T16:26:14.419Z",
+      "updated": "2026-01-07T16:26:14.419Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/android-phones-can-be-security-keys-now/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767803177583-691",
+    "title": "Freeze Your Credit with Major Bureaus",
+    "problemDescription": "Need to freeze your credit with all three major credit bureaus for enhanced security.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "credit",
+      "freeze",
+      "security",
+      "bureaus"
+    ],
+    "steps": [
+      {
+        "title": "Gather Required Information",
+        "content": "Prepare your name, birthday, and the last four digits of your Social Security number."
+      },
+      {
+        "title": "Visit Each Credit Bureau's Website",
+        "content": "Go to the websites of Experian, Equifax, and TransUnion to set up accounts."
+      },
+      {
+        "title": "Complete the Freeze Request",
+        "content": "Follow the online instructions to request a credit freeze. This process typically takes about 30 minutes per bureau."
+      },
+      {
+        "title": "Verify Your Identity",
+        "content": "Complete two-factor authentication via text or email as required."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Credit Monitoring Service",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Sign Up for a Credit Monitoring Service",
+            "content": "Choose a reputable credit monitoring service that offers credit freezing features."
+          },
+          {
+            "title": "Follow Service-Specific Instructions",
+            "content": "Complete the process as guided by the service, which may include additional verification steps."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T16:26:17.583Z",
+      "updated": "2026-01-07T16:26:17.583Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/freezing-your-credit-is-free-join-me-in-taking-this-important-cybersecurity-step/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767803202949-29",
+    "title": "Fix Mac Grey Screen on Startup",
+    "problemDescription": "Mac hangs on a grey screen during startup, indicating a peripheral or software issue.",
+    "category": "macOS",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "grey screen",
+      "startup",
+      "peripheral",
+      "software update"
+    ],
+    "steps": [
+      {
+        "title": "Disconnect Peripherals",
+        "content": "Disconnect all peripherals (except keyboard and mouse) and restart your Mac. Reconnect them one by one, restarting each time, to identify the problematic device."
+      },
+      {
+        "title": "Update Software",
+        "content": "Click the Apple icon in the top left corner, select 'Software Update,' and install any available updates to fix potential software issues."
+      },
+      {
+        "title": "Check for Firmware Updates",
+        "content": "If a peripheral is causing the issue, visit the manufacturer's website to check for software or firmware updates for that device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Perform a Safe Boot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart in Safe Mode",
+            "content": "Restart your Mac and immediately hold down the Shift key until the login screen appears. This can help identify if third-party software is causing the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T16:26:42.949Z",
+      "updated": "2026-01-07T16:26:42.949Z",
+      "sourceUrl": "https://lifehacker.com/how-to-troubleshoot-the-four-most-common-oh-sh-t-mac-487080511",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767803205957-550",
+    "title": "Fix Slow Charging on Devices",
+    "problemDescription": "Your tablet or laptop is charging very slowly or not at all.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "charging",
+      "slow",
+      "device",
+      "battery"
+    ],
+    "steps": [
+      {
+        "title": "Check the Charger",
+        "content": "Ensure you are using the correct charger for your device. Using a less powerful charger than the one that came with your device can cause slow charging."
+      },
+      {
+        "title": "Use a More Powerful Charger",
+        "content": "If possible, use a charger that is more powerful than the one your device came with to speed up charging."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Physical Damage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect the Charging Port",
+            "content": "Check for any physical damage to the charging port on your device that might be preventing proper charging."
+          },
+          {
+            "title": "Try a Different Charging Cable",
+            "content": "If the charging port is fine, try using a different charging cable to see if the issue is with the cable itself."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T16:26:45.958Z",
+      "updated": "2026-01-07T16:26:45.958Z",
+      "sourceUrl": "https://lifehacker.com/19-exceedingly-simple-solutions-to-your-dads-latest-tec-1847945718",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
