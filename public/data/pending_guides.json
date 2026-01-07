@@ -60517,5 +60517,816 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767781257643-586",
+    "title": "Fix Missing System Tray Notification Icons",
+    "problemDescription": "System tray notification icons are not showing in Windows.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "system tray",
+      "notification icons",
+      "registry"
+    ],
+    "steps": [
+      {
+        "title": "Use CCleaner to Clean Registry and Cache",
+        "content": "Download and install CCleaner software. Go to the registry section and fix all registry issues. Then, go to the cleaner section, navigate to Windows > Advanced, mark 'tray notifications cache', and run the cleaner."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Registry Edit",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a Registry File",
+            "content": "Create a text file named 'NotificationsFix.reg' and add the following content:"
+          },
+          {
+            "title": "Registry Content",
+            "content": "Windows Registry Editor Version 5.00\n\n[HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\TrayNotify]\n\"PastIconsStream\"=-\n\"IconStreams\"=-\n\n[HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer]\n\"HideSCANetwork\"=dword:00000000"
+          },
+          {
+            "title": "Run the Registry File",
+            "content": "Double-click the 'NotificationsFix.reg' file to merge it with the registry. Restart your computer for the changes to take effect."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T10:20:57.643Z",
+      "updated": "2026-01-07T10:20:57.643Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/system-tray-notification-icons-not-showing.1201514/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767781269134-630",
+    "title": "Fix Windows 10 Random Notifications",
+    "problemDescription": "Windows 10 notifications keep popping up randomly and interrupting other applications.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "notifications",
+      "interruptions"
+    ],
+    "steps": [
+      {
+        "title": "Disable Notifications in Settings",
+        "content": "Go to Settings > System > Notifications & actions. Turn off all notifications by toggling the switch at the top."
+      },
+      {
+        "title": "Check for Malware",
+        "content": "Run a full system scan using your antivirus software to check for any malware that might be causing the notifications."
+      },
+      {
+        "title": "Update Windows",
+        "content": "Ensure your Windows 10 is up to date by going to Settings > Update & Security > Windows Update and checking for updates."
+      },
+      {
+        "title": "Reset Notification Settings",
+        "content": "Go to Settings > System > Notifications & actions > Reset notification settings to default."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Task Manager",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Task Manager",
+            "content": "Press Ctrl+Shift+Esc to open Task Manager."
+          },
+          {
+            "title": "Check for Suspicious Processes",
+            "content": "Look for any suspicious processes that might be causing the notifications and end them."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T10:21:09.134Z",
+      "updated": "2026-01-07T10:21:09.134Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/windows-notification-keeps-popping-up.3716210/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767781282053-724",
+    "title": "Fix Windows Push Notifications User Service Error",
+    "problemDescription": "Windows Push Notifications User Service error causing APPCRASH in svchost.exe.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "notifications",
+      "service error",
+      "svchost.exe"
+    ],
+    "steps": [
+      {
+        "title": "Step 1: Open Services",
+        "content": "Press Win + R, type 'services.msc', and press Enter."
+      },
+      {
+        "title": "Step 2: Locate the Service",
+        "content": "Scroll down and find 'Windows Push Notifications User Service'."
+      },
+      {
+        "title": "Step 3: Restart the Service",
+        "content": "Right-click on the service and select 'Restart'. If it's not running, select 'Start'."
+      },
+      {
+        "title": "Step 4: Check Dependencies",
+        "content": "If the service fails to start, check its dependencies and ensure they are running."
+      },
+      {
+        "title": "Step 5: Run System File Checker",
+        "content": "Open Command Prompt as Administrator and run 'sfc /scannow' to check for system file corruption."
+      },
+      {
+        "title": "Step 6: Update Windows",
+        "content": "Ensure your Windows is up to date by going to Settings > Update & Security > Windows Update."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Windows Update Components",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Step 1: Open Command Prompt as Administrator",
+            "content": "Press Win + X and select 'Command Prompt (Admin)' or 'Windows PowerShell (Admin)'."
+          },
+          {
+            "title": "Step 2: Stop Windows Update Services",
+            "content": "Run the following commands one by one:\nnet stop wuauserv\nnet stop cryptSvc\nnet stop bits\nnet stop msiserver"
+          },
+          {
+            "title": "Step 3: Rename Software Distribution Folder",
+            "content": "Run the following commands:\nren C:\\Windows\\SoftwareDistribution SoftwareDistribution.old\nren C:\\Windows\\System32\\catroot2 catroot2.old"
+          },
+          {
+            "title": "Step 4: Restart Windows Update Services",
+            "content": "Run the following commands:\nnet start wuauserv\nnet start cryptSvc\nnet start bits\nnet start msiserver"
+          },
+          {
+            "title": "Step 5: Restart Your Computer",
+            "content": "Restart your computer to apply the changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T10:21:22.053Z",
+      "updated": "2026-01-07T10:21:22.053Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/windows-push-notifications-user-service-error.3363490/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767781286731-11",
+    "title": "Fix Teardrop on Notification Area",
+    "problemDescription": "A teardrop icon appears in the notification area, often related to Facebook Messenger.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "teardrop",
+      "notification",
+      "messenger",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Force Stop Messenger",
+        "content": "Go to Settings > Apps > Messenger and select Force Stop."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset App Preferences",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset App Preferences",
+            "content": "Go to Settings > Apps, select the menu option, and choose 'Reset App Preferences'."
+          }
+        ]
+      },
+      {
+        "title": "Force Close and Reboot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force Close Messenger",
+            "content": "Open Facebook Messenger, force close it, and then reboot your device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T10:21:26.731Z",
+      "updated": "2026-01-07T10:21:26.731Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/teardrop-on-notification-area.3572477/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767781289912-102",
+    "title": "Fix Windows 11 Notifications Not Showing",
+    "problemDescription": "Windows 11 notifications are not appearing automatically, even with Do Not Disturb turned off.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "notifications",
+      "taskbar"
+    ],
+    "steps": [
+      {
+        "title": "Check Taskbar Settings",
+        "content": "Go to Taskbar Settings > Notifications and ensure the 'Show Notifications' option is checked."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Focus Assist",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Focus Assist Settings",
+            "content": "Go to Settings > System > Focus Assist."
+          },
+          {
+            "title": "Turn Off Focus Assist",
+            "content": "Ensure Focus Assist is turned off and all options are unchecked."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T10:21:29.912Z",
+      "updated": "2026-01-07T10:21:29.912Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/windows-11-notifications-not-showing-up.3867447/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767781300195-11",
+    "title": "Remove Malicious Browser Extensions",
+    "problemDescription": "Malicious extensions installed in your browser can track your online activity and compromise your security.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "browser",
+      "extensions",
+      "security",
+      "malware"
+    ],
+    "steps": [
+      {
+        "title": "Remove Suspicious Extensions",
+        "content": "Go to your browser's extension manager (chrome://extensions/ for Chrome, edge://extensions/ for Edge) and remove any suspicious or unfamiliar extensions."
+      },
+      {
+        "title": "Clear Browsing Data",
+        "content": "Clear your browsing data, including cache, cookies, and site data, to remove any traces left by the malicious extensions."
+      },
+      {
+        "title": "Run a Full System Scan",
+        "content": "Use an updated antivirus solution to run a full system scan and ensure no additional malware is present on your device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Browser Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Browser to Default Settings",
+            "content": "Reset your browser to its default settings to ensure all extensions and settings are reverted to a clean state."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T10:21:40.195Z",
+      "updated": "2026-01-07T10:21:40.195Z",
+      "sourceUrl": "https://www.techradar.com/pro/security/malicious-google-chrome-and-edge-extensions-downloaded-more-than-2-million-times-heres-how-to-stay-safe-from-being-tracked-online",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767781316700-363",
+    "title": "Troubleshoot Roku 3 Issues",
+    "problemDescription": "Troubleshoot common issues with your Roku 3 device.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Roku",
+      "troubleshoot",
+      "device",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Roku 3",
+        "content": "Unplug the power cable from the back of your Roku 3 device. Wait for about 1 minute, then plug it back in. This can resolve many common issues."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your Roku 3 is connected to the internet. Go to Settings > Network > Check Connection to verify your connection."
+      },
+      {
+        "title": "Update Roku Software",
+        "content": "Go to Settings > System > System Update > Check Now. Ensure your Roku 3 is running the latest software version."
+      },
+      {
+        "title": "Remove and Re-add Channels",
+        "content": "If a specific channel is causing issues, remove it and then re-add it from the Roku Channel Store."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "If all else fails, perform a factory reset. Go to Settings > System > Advanced System Settings > Factory Reset. Note that this will erase all your settings and data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Overheating",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ensure Proper Ventilation",
+            "content": "Make sure your Roku 3 has adequate ventilation. Avoid placing it in enclosed spaces or near heat sources."
+          },
+          {
+            "title": "Restart the Device",
+            "content": "If the device is overheating, unplug it and let it cool down for a few minutes before plugging it back in."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check HDMI Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect HDMI Cable",
+            "content": "Ensure the HDMI cable is securely connected to both the Roku 3 and your TV. Try using a different HDMI cable if necessary."
+          },
+          {
+            "title": "Try Different HDMI Port",
+            "content": "If possible, try connecting the Roku 3 to a different HDMI port on your TV."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T10:21:56.700Z",
+      "updated": "2026-01-07T10:21:56.700Z",
+      "sourceUrl": "https://activationrokucodecom.quora.com/How-To-Troubleshoot-Roku-3-Issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767781320789-887",
+    "title": "Fix Roku No Signal Issue",
+    "problemDescription": "Roku device not receiving any signal on TV.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Roku",
+      "signal",
+      "antenna",
+      "TV"
+    ],
+    "steps": [
+      {
+        "title": "Improve Antenna Arrangement",
+        "content": "Ensure your antenna is properly positioned and oriented for optimal signal reception."
+      },
+      {
+        "title": "Upgrade Antenna",
+        "content": "Consider using a larger or more focused antenna to improve the signal-to-noise ratio."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Connections",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify HDMI Connection",
+            "content": "Ensure the HDMI cable is securely connected to both the Roku device and the TV."
+          },
+          {
+            "title": "Try Different HDMI Port",
+            "content": "Switch to a different HDMI port on your TV to rule out port issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T10:22:00.789Z",
+      "updated": "2026-01-07T10:22:00.789Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-Roku-on-my-TV-when-it-doesnt-get-any-signal",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767781325150-959",
+    "title": "Roku TV No Picture or Audio",
+    "problemDescription": "Roku TV suddenly stops streaming picture or audio, but closed captions (CC) are visible.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Roku",
+      "TV",
+      "streaming",
+      "no picture",
+      "no audio"
+    ],
+    "steps": [
+      {
+        "title": "Reset the Roku TV",
+        "content": "Unplug the TV, wait for about a minute, and then plug it back in."
+      },
+      {
+        "title": "Reset via Remote",
+        "content": "Press the 'Home' button on the remote five times, then press the 'Up' button."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update and Reset Router",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Router Firmware",
+            "content": "Check for and install any available firmware updates for your router."
+          },
+          {
+            "title": "Reset Router",
+            "content": "Reset the router to its factory settings and reconfigure it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T10:22:05.150Z",
+      "updated": "2026-01-07T10:22:05.150Z",
+      "sourceUrl": "https://www.quora.com/My-Roku-TV-suddenly-will-not-stream-picture-or-audio-I-can-read-the-CC-but-nothing-else-Has-anyone-else-had-this-happen-I-did-update-reset-the-router-and-remote-nothing",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767781328468-521",
+    "title": "Fix Roku TV Overheating and Glitches",
+    "problemDescription": "Roku TVs may become unresponsive, glitchy, or turn off randomly due to overheating and Wi-Fi issues.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "Roku",
+      "overheating",
+      "Wi-Fi",
+      "glitchy"
+    ],
+    "steps": [
+      {
+        "title": "Ensure Proper Ventilation",
+        "content": "Make sure your Roku TV has adequate space around it for airflow to prevent overheating."
+      },
+      {
+        "title": "Check Wi-Fi Connection",
+        "content": "Ensure your Roku TV is connected to a stable Wi-Fi network. Restart your router if necessary."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Roku TV",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Factory Reset",
+            "content": "Go to Settings > System > Advanced system settings > Factory reset to restore your Roku TV to its default settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T10:22:08.469Z",
+      "updated": "2026-01-07T10:22:08.469Z",
+      "sourceUrl": "https://www.quora.com/Why-are-Roku-TVs-so-bad-unresponsive-and-glitchy-Ive-had-multiple-of-these-TVs-and-Ive-switched-between-different-internet-companies-as-well-Mine-turns-off-randomly-and-takes-forever-to-respond-and-the-remote-barely",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767781339907-351",
+    "title": "Fix Mac Bluetooth Not Recognized",
+    "problemDescription": "Bluetooth not recognized on Mac, missing Bluetooth icon in System Preferences.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "mac",
+      "pram",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Reset PRAM",
+        "content": "1. Shut down your Mac. 2. Press the power button to turn it on, and immediately press and hold the Command (⌘) + Option + P + R keys simultaneously. 3. Hold the keys down for about 20 seconds. 4. Release the keys and allow your Mac to start up normally."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-07T10:22:19.907Z",
+      "updated": "2026-01-07T10:22:19.907Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/bluetooth-issues-may-be-solved-by-resetting-pram/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767781368562-990",
+    "title": "Fix Microsoft Teams Access Rights Error on Windows Server 2019",
+    "problemDescription": "Microsoft Teams cannot be started due to insufficient access rights error on Windows Server 2019.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "server",
+      "teams",
+      "permissions",
+      "access rights"
+    ],
+    "steps": [
+      {
+        "title": "Take Ownership of WindowsApps Folder",
+        "content": "Take ownership of the WindowsApps folder away from TrustedInstaller."
+      },
+      {
+        "title": "Add Read&Execute Rights",
+        "content": "Manually add Read&Execute rights to Authenticated Users for the Teams folder."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check dism.log for Provisioning Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Review dism.log",
+            "content": "Check the dism.log file for any provisioning issues that might be causing the error."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Apply November Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install November Update",
+            "content": "Apply the November update that fixed an installation issue for Microsoft Teams."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T10:22:48.562Z",
+      "updated": "2026-01-07T10:22:48.562Z",
+      "sourceUrl": "https://superuser.com/questions/1827368/windows-server-2019-new-microsoft-teams-windowsapps-permissions",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767781379293-64",
+    "title": "Fix Microsoft Teams Constant Update Loop",
+    "problemDescription": "Microsoft Teams repeatedly prompts for an update and does not start.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "teams",
+      "update",
+      "loop",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall Teams",
+        "content": "Go to Settings > Apps > Apps & features. Find Microsoft Teams, click on it, and select 'Uninstall'."
+      },
+      {
+        "title": "Reinstall Teams",
+        "content": "Download the latest version of Microsoft Teams from the official website and install it."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "After reinstalling, restart your computer to ensure all changes take effect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Teams Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Teams Settings",
+            "content": "Open Teams, go to Settings > General > Reset Teams."
+          },
+          {
+            "title": "Restart Teams",
+            "content": "After resetting, restart Teams and check if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T10:22:59.293Z",
+      "updated": "2026-01-07T10:22:59.293Z",
+      "sourceUrl": "https://superuser.com/questions/1929520/teams-application-is-constantly-trying-to-update-an-does-not-start",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767781384285-463",
+    "title": "Fix Microsoft Teams Not Starting on Windows 10",
+    "problemDescription": "Microsoft Teams fails to start on Windows 10 without any error messages or processes visible in Task Manager.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "teams",
+      "application",
+      "startup"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall and Reinstall Teams",
+        "content": "Use Revo Uninstaller Free to completely remove all installed versions of Teams, ensuring all related files are cleaned out. Then, download and install the latest version of Teams."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Teams to Default",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Old Teams from Start Menu",
+            "content": "Ensure the old version of Teams is not present in the Start menu. This can sometimes resolve startup issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T10:23:04.285Z",
+      "updated": "2026-01-07T10:23:04.285Z",
+      "sourceUrl": "https://superuser.com/questions/1811491/how-to-fix-newteams-not-starting-on-windows-10",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767781388270-596",
+    "title": "Fix MS Teams: The request is not properly formatted",
+    "problemDescription": "Microsoft Teams displays 'The request is not properly formatted' error.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "ms teams",
+      "error",
+      "request",
+      "formatted"
+    ],
+    "steps": [
+      {
+        "title": "Exit Teams",
+        "content": "Fully exit the Microsoft Teams desktop client. Right-click Teams from the Icon Tray and select 'Quit', or use Task Manager to kill the process."
+      },
+      {
+        "title": "Delete Teams Data",
+        "content": "Go to File Explorer, type '%appdata%\\Microsoft\\teams', and delete all files in the directory."
+      },
+      {
+        "title": "Reopen Teams",
+        "content": "Re-open Microsoft Teams and sign in again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Sign Out and Sign In",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Sign Out",
+            "content": "Sign out of Microsoft Teams."
+          },
+          {
+            "title": "Sign In",
+            "content": "Sign back into Microsoft Teams."
+          }
+        ]
+      },
+      {
+        "title": "Set System Time to Automatic",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Adjust System Time",
+            "content": "Set your operating system time to automatic."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T10:23:08.270Z",
+      "updated": "2026-01-07T10:23:08.270Z",
+      "sourceUrl": "https://superuser.com/questions/1470765/ms-teams-the-request-is-not-properly-formatted-the-parameter-login-hint-is-d",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767781393615-662",
+    "title": "Enable Teams Meeting Add-in in Outlook",
+    "problemDescription": "The Microsoft Teams Meeting option is not appearing in the New Items tab in Outlook.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "teams",
+      "add-in",
+      "meeting"
+    ],
+    "steps": [
+      {
+        "title": "Enable the Teams Meeting Add-in",
+        "content": "Go to File > Options > Add-ins. Under Manage, select COM Add-ins, and then select Go. Select the Microsoft Teams Meeting Add-in for Microsoft Office checkbox. Choose OK on all dialog boxes, and then close Outlook. Restart Outlook."
+      },
+      {
+        "title": "Check Disabled Add-ins",
+        "content": "Go to File > Options > Add-ins. Under Manage, select Disabled Items, and then select Go. If the Teams Meeting Add-in is listed, enable it and restart Outlook."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Microsoft Support Recovery Assistant",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Run Recovery Assistant",
+            "content": "Download and run the Microsoft Support Recovery Assistant to perform automated troubleshooting steps and fixes."
+          }
+        ]
+      },
+      {
+        "title": "Check for Different Add-in Versions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Add-in Version",
+            "content": "Check the version of the Teams Meeting Add-in in the AppData location and ensure it matches the version in Outlook."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T10:23:13.615Z",
+      "updated": "2026-01-07T10:23:13.615Z",
+      "sourceUrl": "https://superuser.com/questions/1718580/teams-meeting-option-doesnt-appear-in-new-items-tab-in-outlook",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
