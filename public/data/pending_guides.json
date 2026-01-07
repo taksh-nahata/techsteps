@@ -58743,5 +58743,632 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767770615480-979",
+    "title": "Fix MacBook Pro M1 Issues",
+    "problemDescription": "Troubleshoot and resolve multiple problems with a MacBook Pro M1, including login items, system files, and hard drive issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "MacBook Pro",
+      "M1",
+      "Safe Mode",
+      "Disk Utility",
+      "Recovery Mode"
+    ],
+    "steps": [
+      {
+        "title": "Boot into Safe Mode",
+        "content": "Hold down the Shift key upon boot to enter Safe Mode. Log in as the same user and wait for 30 seconds. Restart your Mac and log in again."
+      },
+      {
+        "title": "Verify and Repair Disk",
+        "content": "Boot into Recovery Mode by following the instructions on the Apple Support page. Open Disk Utility, select your drive, and click the First Aid button to repair any disk issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Remove Login Items",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check and Remove Login Items",
+            "content": "Remove any problematic login items that might be causing issues. This can be done through System Preferences under the Users & Groups section."
+          }
+        ]
+      },
+      {
+        "title": "Reinstall or Upgrade macOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall or Upgrade macOS",
+            "content": "If disk corruption is discovered, consider formatting the drive, reinstalling or upgrading the OS, and migrating data from a Time Machine backup."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T07:23:35.480Z",
+      "updated": "2026-01-07T07:23:35.480Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254576373",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767770631743-940",
+    "title": "Restore MacBook Air to Latest macOS",
+    "problemDescription": "Your MacBook Air is experiencing persistent issues that are not resolved by basic troubleshooting.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "restore",
+      "macos",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Backup Your Data",
+        "content": "Before proceeding, ensure all important data is backed up using Time Machine or another backup method."
+      },
+      {
+        "title": "Restart in Recovery Mode",
+        "content": "Turn off your MacBook Air. Press and hold the power button until you see the startup options window."
+      },
+      {
+        "title": "Erase Mac Disk",
+        "content": "Go to Utilities > Terminal. Type 'diskutil eraseDisk APFS MacBook_Air_HD ******' (replace ****** with a password). Confirm the action."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "From the Utilities window, select 'Reinstall macOS' and follow the on-screen instructions to complete the installation."
+      },
+      {
+        "title": "Restore Your Data",
+        "content": "Once the installation is complete, restore your data from the backup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Basic Troubleshooting",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your MacBook",
+            "content": "Sometimes a simple restart can resolve many issues."
+          },
+          {
+            "title": "Check for Updates",
+            "content": "Go to System Preferences > Software Update and install any available updates."
+          },
+          {
+            "title": "Run Malware Scan",
+            "content": "Use a reputable antivirus software to scan for and remove any malware."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T07:23:51.743Z",
+      "updated": "2026-01-07T07:23:51.743Z",
+      "sourceUrl": "https://discussions.apple.com/thread/253754148",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767770646773-57",
+    "title": "Fix Bluetooth Cutting Out on ASRock B650E PG RIPTIDE WIFI",
+    "problemDescription": "Bluetooth devices keep cutting out on ASRock B650E PG RIPTIDE WIFI ATX AM5 Motherboard.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "cutting out",
+      "ASRock",
+      "B650E",
+      "RIPTIDE"
+    ],
+    "steps": [
+      {
+        "title": "Update Bluetooth Drivers",
+        "content": "Download and install the latest Bluetooth drivers from the ASRock official website or the manufacturer's website."
+      },
+      {
+        "title": "Check for Interference",
+        "content": "Ensure there are no other devices causing interference, such as other wireless devices or physical obstructions."
+      },
+      {
+        "title": "Disable Power Saving Features",
+        "content": "Go to Device Manager, find your Bluetooth adapter, go to Properties, then Power Management, and turn off 'Allow this device to turn off to save power'."
+      },
+      {
+        "title": "Reset Bluetooth Adapter",
+        "content": "In Device Manager, right-click on the Bluetooth adapter and select 'Disable device', then enable it again."
+      },
+      {
+        "title": "Check BIOS Settings",
+        "content": "Enter BIOS and ensure that Bluetooth is enabled and set to the correct settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Bluetooth Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Drivers",
+            "content": "In Device Manager, right-click on the Bluetooth adapter and select 'Uninstall device'."
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Restart your computer to allow Windows to reinstall the drivers automatically."
+          },
+          {
+            "title": "Manually Install Drivers",
+            "content": "If the issue persists, manually install the latest drivers from the manufacturer's website."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Windows Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Press Win + I to open Settings."
+          },
+          {
+            "title": "Go to Update & Security",
+            "content": "Navigate to Update & Security."
+          },
+          {
+            "title": "Check for Updates",
+            "content": "Click on 'Check for updates' and install any available updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T07:24:06.773Z",
+      "updated": "2026-01-07T07:24:06.773Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/new-build-project-planned-help-please.3844532/page-2",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767770648885-448",
+    "title": "Enable Multipoint Wireless Headphones",
+    "problemDescription": "Enable automatic switching between devices for multipoint wireless headphones.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "multipoint",
+      "wireless",
+      "headphones",
+      "switching"
+    ],
+    "steps": [
+      {
+        "title": "Check Headphone Specifications",
+        "content": "Verify that your wireless headphones support multipoint connectivity by checking the product specifications."
+      },
+      {
+        "title": "Enable Multipoint Feature",
+        "content": "Follow the manufacturer's instructions to enable the multipoint feature on your headphones."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-07T07:24:08.885Z",
+      "updated": "2026-01-07T07:24:08.886Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/multipoint-wireless-headphones.3857196/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767770655608-893",
+    "title": "Bluetooth Disappeared on ASUS Z390-E Gaming",
+    "problemDescription": "Bluetooth functionality has disappeared and cannot be toggled on/off in Windows 10 settings.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "windows 10",
+      "ASUS Z390-E Gaming",
+      "driver"
+    ],
+    "steps": [
+      {
+        "title": "Disable Bluetooth in BIOS",
+        "content": "Restart your computer and enter the BIOS settings. Disable the Bluetooth functionality and save the changes."
+      },
+      {
+        "title": "Update Windows",
+        "content": "Wait for the next Windows update to be released and installed on your system."
+      },
+      {
+        "title": "Re-enable Bluetooth in BIOS",
+        "content": "After the Windows update, restart your computer and re-enter the BIOS settings. Re-enable the Bluetooth functionality and save the changes."
+      },
+      {
+        "title": "Reinstall Bluetooth Driver",
+        "content": "Download the latest Bluetooth driver from the ASUS support downloads section. Install the driver on your system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Uninstall and Reinstall Bluetooth Driver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Bluetooth Driver",
+            "content": "Go to Device Manager, find the Bluetooth adapter, right-click on it, and select 'Uninstall device'."
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Restart your computer to allow Windows to reinstall the Bluetooth driver automatically."
+          },
+          {
+            "title": "Check for Updates",
+            "content": "Go to Windows Update and check for any available updates. Install them if necessary."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T07:24:15.608Z",
+      "updated": "2026-01-07T07:24:15.608Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/fans-recommendation-problems-with-bluetooth.3725704/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767770659061-552",
+    "title": "Optimize Charging Setup for Multiple Devices",
+    "problemDescription": "Need to charge multiple devices simultaneously without overheating.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "charging",
+      "adapter",
+      "MacBook",
+      "iPhone",
+      "Apple Watch",
+      "AirPods"
+    ],
+    "steps": [
+      {
+        "title": "Use a High-Quality Adapter",
+        "content": "Utilize a Ugreen adapter with Gallium Nitride (GaN) power transistors for efficient charging."
+      },
+      {
+        "title": "Connect Devices via USB-C",
+        "content": "Use a retractable USB-C cable to connect your 3-in-1 travel MagSafe charger to the adapter."
+      },
+      {
+        "title": "Monitor Heat Output",
+        "content": "Ensure the adapter remains cool to the touch, indicating efficient power distribution."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Individual Chargers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Charge Devices Separately",
+            "content": "Use individual chargers for each device to avoid overloading a single adapter."
+          },
+          {
+            "title": "Rotate Charging",
+            "content": "Charge devices in shifts to prevent overheating."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T07:24:19.061Z",
+      "updated": "2026-01-07T07:24:19.061Z",
+      "sourceUrl": "https://www.tomshardware.com/peripherals/cables-connectors/these-must-have-accessories-helped-me-power-through-my-overseas-trip-to-ifa-2025",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767770669814-226",
+    "title": "Fix Instagram Sensitive Content Issue",
+    "problemDescription": "Instagram users are seeing sensitive or inappropriate content in their Reels feed due to an error.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "sensitive content",
+      "reels",
+      "privacy"
+    ],
+    "steps": [
+      {
+        "title": "Report Inappropriate Content",
+        "content": "If you see inappropriate content, report it to Instagram by tapping the three dots on the post and selecting 'Report'."
+      },
+      {
+        "title": "Adjust Account Settings",
+        "content": "Go to your Instagram settings and adjust your content preferences to limit the types of content you see."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Wait for Instagram to Fix the Issue",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Monitor Instagram Updates",
+            "content": "Keep an eye on Instagram's official communications for updates on the issue and any further actions you can take."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T07:24:29.814Z",
+      "updated": "2026-01-07T07:24:29.814Z",
+      "sourceUrl": "https://www.howtogeek.com/did-your-instagram-feed-get-flooded-with-sensitive-content-youre-not-alone/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767770672455-238",
+    "title": "Fix Android Camera Not Working",
+    "problemDescription": "The camera app on your Android device is not working or crashing.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "camera",
+      "app",
+      "not working"
+    ],
+    "steps": [
+      {
+        "title": "Check Camera Permissions",
+        "content": "Ensure that the 'Camera' permission is allowed for the Camera app in your device settings."
+      },
+      {
+        "title": "Close All Apps Using The Camera",
+        "content": "Go to the Recent Apps on your phone and swipe away all the apps that are making use of the camera."
+      },
+      {
+        "title": "Clear Camera App Data",
+        "content": "Go to the Settings app, tap on 'Apps,' find the Camera app, and clear its data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 4: Take Your Device For Repair",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit an Authorized Repair Center",
+            "content": "If all fixes fail, it is likely a hardware problem. Take your device to an authorized repair center."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T07:24:32.455Z",
+      "updated": "2026-01-07T07:24:32.455Z",
+      "sourceUrl": "https://www.howtogeek.com/android-camera-not-working/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767770676555-991",
+    "title": "Clear App Data and Cache on Android",
+    "problemDescription": "An app is malfunctioning or not working properly on your Android device.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "app",
+      "data",
+      "cache",
+      "clear"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Go to your Android device's Settings."
+      },
+      {
+        "title": "Navigate to Apps",
+        "content": "Tap on 'Apps' or 'Application Manager' to see a list of installed apps."
+      },
+      {
+        "title": "Select the Problematic App",
+        "content": "Find and tap on the app that is causing issues."
+      },
+      {
+        "title": "Force Stop the App",
+        "content": "Tap 'Force Stop' to kill all running instances of the app and confirm the action."
+      },
+      {
+        "title": "Clear Cache",
+        "content": "Tap on 'Storage' and then 'Clear Cache' to remove temporary files."
+      },
+      {
+        "title": "Clear Data",
+        "content": "Tap on 'Clear Data' to remove all app data. Note that this will reset the app to its initial state."
+      },
+      {
+        "title": "Restart the App",
+        "content": "Launch the app again and set it up as if it were just installed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Submit a Bug Report",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact the Developer",
+            "content": "If the issue persists, submit a bug report to the app developer through the app store or the app's support channel."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T07:24:36.555Z",
+      "updated": "2026-01-07T07:24:36.555Z",
+      "sourceUrl": "https://www.howtogeek.com/355154/how-to-clear-app-data-and-cache-on-android-to-solve-common-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767770691314-377",
+    "title": "Install the Honeywell Lyric Thermostat",
+    "problemDescription": "Learn how to install the Honeywell Lyric Thermostat like a pro.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "Honeywell",
+      "Lyric",
+      "Thermostat",
+      "Installation"
+    ],
+    "steps": [
+      {
+        "title": "Gather Tools and Materials",
+        "content": "Ensure you have the Honeywell Lyric Thermostat, a screwdriver, wire strippers, and wire nuts."
+      },
+      {
+        "title": "Turn Off Power",
+        "content": "Turn off the power to your HVAC system at the circuit breaker to ensure safety."
+      },
+      {
+        "title": "Remove Old Thermostat",
+        "content": "Carefully remove the old thermostat by unscrewing it from the wall and disconnecting the wires."
+      },
+      {
+        "title": "Label Wires",
+        "content": "Label each wire with tape or a marker to keep track of their connections."
+      },
+      {
+        "title": "Connect Wires to New Thermostat",
+        "content": "Connect the labeled wires to the corresponding terminals on the Honeywell Lyric Thermostat."
+      },
+      {
+        "title": "Mount the New Thermostat",
+        "content": "Attach the new thermostat to the wall using the provided screws and brackets."
+      },
+      {
+        "title": "Restore Power",
+        "content": "Turn the power back on at the circuit breaker."
+      },
+      {
+        "title": "Configure the Thermostat",
+        "content": "Follow the on-screen instructions to configure the thermostat settings and connect it to your Wi-Fi network."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Professional Installation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact a Professional",
+            "content": "If you are not comfortable with electrical work, contact a professional HVAC technician to install the thermostat for you."
+          },
+          {
+            "title": "Schedule an Appointment",
+            "content": "Schedule an appointment with the technician and ensure they have all the necessary tools and information about your HVAC system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T07:24:51.314Z",
+      "updated": "2026-01-07T07:24:51.314Z",
+      "sourceUrl": "https://www.cnet.com/how-to/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767770696401-276",
+    "title": "Fix TurboTool for Android Installation Issues",
+    "problemDescription": "Troubleshooting steps for installing or using TurboTool for Android.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "troubleshooting",
+      "installation",
+      "TurboTool"
+    ],
+    "steps": [
+      {
+        "title": "Check Compatibility",
+        "content": "Ensure your Android device meets the minimum requirements for TurboTool."
+      },
+      {
+        "title": "Enable Unknown Sources",
+        "content": "Go to Settings > Security > Enable 'Unknown Sources' to allow installation from third-party sources."
+      },
+      {
+        "title": "Download from Official Source",
+        "content": "Download TurboTool from a trusted source like CNET to avoid corrupted files."
+      },
+      {
+        "title": "Clear Cache and Data",
+        "content": "If the app crashes, go to Settings > Apps > TurboTool > Clear Cache and Data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall TurboTool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall the App",
+            "content": "Go to Settings > Apps > TurboTool > Uninstall."
+          },
+          {
+            "title": "Restart Your Device",
+            "content": "Reboot your Android device to clear any temporary issues."
+          },
+          {
+            "title": "Reinstall TurboTool",
+            "content": "Download and install TurboTool again from a trusted source."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T07:24:56.401Z",
+      "updated": "2026-01-07T07:24:56.401Z",
+      "sourceUrl": "https://download.cnet.com/turbotool/3000-2094_4-76430752.html",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
