@@ -67404,5 +67404,611 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767827894614-928",
+    "title": "Set Up 2-Factor Authenticator App",
+    "problemDescription": "Guide to setting up a 2-factor authentication app on your phone.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "2-factor",
+      "authentication",
+      "app",
+      "setup"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install the App",
+        "content": "Download a 2-factor authentication app from the Play Store or App Store and install it on your phone."
+      },
+      {
+        "title": "Enroll Your Account",
+        "content": "Enroll your account in the 2-Step verification process using your phone number. Choose the type of device you have (e.g., Android or iPhone)."
+      },
+      {
+        "title": "Open the App and Begin Setup",
+        "content": "Open the app on your phone and tap 'Begin Setup.'"
+      },
+      {
+        "title": "Link Your Account",
+        "content": "Link your account to the app either by scanning the QR code provided on your computer or adding the account manually."
+      },
+      {
+        "title": "Verify the Code",
+        "content": "Enter the six-digit code from your phone into the box labeled 'Code' on your computer and click 'Verify.' If the code is correct, you will see a confirmation message. Click 'Save' to finish the setup process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Entry",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Manual Account Entry",
+            "content": "If you choose to add the account manually, enter the account details provided on your computer into the app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T23:18:14.614Z",
+      "updated": "2026-01-07T23:18:14.614Z",
+      "sourceUrl": "https://forums.tomshardware.com/faq/how-to-use-a-2-factor-authenticator-app.2012541/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767827901812-473",
+    "title": "Resolve 2FA Key Issue Using NFC",
+    "problemDescription": "User is unable to resolve a 2FA key issue and needs a solution.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "2FA",
+      "NFC",
+      "authentication",
+      "key issue"
+    ],
+    "steps": [
+      {
+        "title": "Use NFC on a Cell Phone",
+        "content": "Remove the 2FA key card from the account using NFC on a cell phone."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Tech Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "Attempt to contact the tech support of the service provider for assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T23:18:21.812Z",
+      "updated": "2026-01-07T23:18:21.812Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/need-some-help-with-a-2fa-key-issue.3824649/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767827909766-871",
+    "title": "Set Up 2-Factor Authentication for Dropbox",
+    "problemDescription": "Enable two-step verification for enhanced security on your Dropbox account.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "dropbox",
+      "2-factor authentication",
+      "security"
+    ],
+    "steps": [
+      {
+        "title": "Log In and Access Settings",
+        "content": "Log in to your Dropbox account. Click your name in the top right corner, then select 'Settings' from the dropdown menu."
+      },
+      {
+        "title": "Navigate to Security Settings",
+        "content": "On the 'Settings' screen, click the 'Security' tab. Find the two-step verification section and click 'Enabled' beside the status."
+      },
+      {
+        "title": "Verify Your Password",
+        "content": "A pop-up box will appear asking for your password. Enter your password and click 'Next.'"
+      },
+      {
+        "title": "Choose Verification Method",
+        "content": "Select how you want to receive your security codes: text message or mobile app. For this guide, we'll use text message. Click 'Next.'"
+      },
+      {
+        "title": "Enter Phone Number",
+        "content": "Enter your phone number, including your country code, and click 'Next.'"
+      },
+      {
+        "title": "Verify Your Phone Number",
+        "content": "Wait for the verification code to arrive via text message. Enter the code in the provided field and click 'Next.' If you don't receive a code, click 'Didn't receive a code' to have it resent."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using a Mobile App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Select Mobile App",
+            "content": "In the verification method step, choose 'Mobile App' instead of 'Text Message.'"
+          },
+          {
+            "title": "Scan QR Code",
+            "content": "Follow the instructions to scan the QR code using your preferred authentication app (e.g., Google Authenticator, Authy)."
+          },
+          {
+            "title": "Enter Verification Code",
+            "content": "Enter the code generated by your mobile app and click 'Next.'"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T23:18:29.766Z",
+      "updated": "2026-01-07T23:18:29.766Z",
+      "sourceUrl": "https://forums.tomshardware.com/faq/how-to-set-up-2-factor-authentication-for-dropbox.2011352/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767827913506-369",
+    "title": "Set Up Windows Fingerprint Reader",
+    "problemDescription": "Configure a Microsoft Fingerprint Reader for secure account access.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "fingerprint",
+      "windows",
+      "security",
+      "login"
+    ],
+    "steps": [
+      {
+        "title": "Install the Fingerprint Reader",
+        "content": "Connect the Microsoft Fingerprint Reader to your computer and install the necessary drivers from the included CD or manufacturer's website."
+      },
+      {
+        "title": "Register Fingerprints",
+        "content": "Open the fingerprint enrollment software and follow the prompts to scan and register your fingerprints for each user account."
+      },
+      {
+        "title": "Configure Account Settings",
+        "content": "In the fingerprint software settings, enable the option to use the fingerprint reader for accessing password-protected accounts, websites, and resources."
+      },
+      {
+        "title": "Test the Fingerprint Login",
+        "content": "Log out of your account and use the fingerprint reader to log back in, ensuring it works correctly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Fast User Switching",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Fast User Switching",
+            "content": "Go to Control Panel > User Accounts > Change User Account Control settings and enable Fast User Switching."
+          },
+          {
+            "title": "Register Fingerprints for All Users",
+            "content": "Ensure all user accounts have registered fingerprints in the fingerprint software."
+          },
+          {
+            "title": "Switch Users with Fingerprint",
+            "content": "Use the fingerprint reader to switch between user accounts without entering passwords."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T23:18:33.506Z",
+      "updated": "2026-01-07T23:18:33.506Z",
+      "sourceUrl": "https://www.tomshardware.com/reviews/holiday-buyers-guide-2006,1372-7.html",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767827920751-365",
+    "title": "Diagnose and Repair Vehicle Battery Drain",
+    "problemDescription": "Diagnosing and repairing a battery drain issue in a vehicle.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery",
+      "drain",
+      "vehicle",
+      "diagnose",
+      "repair"
+    ],
+    "steps": [
+      {
+        "title": "Remove Fuses",
+        "content": "Start by removing fuses one by one to identify the problem circuit."
+      },
+      {
+        "title": "Identify Circuit Components",
+        "content": "Determine what components or systems are powered by the identified circuit."
+      },
+      {
+        "title": "Inspect Components",
+        "content": "Check each component in the circuit for any signs of malfunction or excessive power consumption."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use a Multimeter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect Multimeter",
+            "content": "Connect a multimeter to the battery to measure the current draw."
+          },
+          {
+            "title": "Monitor Current Draw",
+            "content": "Monitor the current draw with all accessories off to identify any unusual power consumption."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T23:18:40.751Z",
+      "updated": "2026-01-07T23:18:40.751Z",
+      "sourceUrl": "https://www.quora.com/How-does-one-diagnose-and-repair-a-battery-drain-on-a-vehicle",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767827928080-299",
+    "title": "Fix Fast Battery Drain on Phone",
+    "problemDescription": "Phone battery is draining quickly.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "battery",
+      "drain",
+      "phone",
+      "charger"
+    ],
+    "steps": [
+      {
+        "title": "Charge the Battery Fully",
+        "content": "Ensure your phone battery is fully charged."
+      },
+      {
+        "title": "Replace the Charger",
+        "content": "Dispose of any convenience store chargers and use a branded Adaptive Fast Charger instead."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Screen Brightness",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reduce Screen Brightness",
+            "content": "Lower the screen brightness to a comfortable level."
+          },
+          {
+            "title": "Enable Adaptive Brightness",
+            "content": "Go to Settings > Display > Adaptive Brightness and enable it."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check Background Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Close Unnecessary Apps",
+            "content": "Close all background apps that are not in use."
+          },
+          {
+            "title": "Disable Auto-Sync",
+            "content": "Go to Settings > Accounts > Auto-sync data and disable it for non-essential apps."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T23:18:48.080Z",
+      "updated": "2026-01-07T23:18:48.080Z",
+      "sourceUrl": "https://www.quora.com/I-have-noticed-my-phone-battery-draining-fast-What-do-I-do",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767827951962-262",
+    "title": "Fix Android Push Notifications Not Working",
+    "problemDescription": "Some push notifications are not working on Android devices, specifically on the Phone 3a.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "push notifications",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check App Settings",
+        "content": "Ensure that notifications are enabled within the app itself. Some apps have their own notification settings that can override system settings."
+      },
+      {
+        "title": "Disable Do Not Disturb, Focus Mode, or Sleep Mode",
+        "content": "Make sure these modes are disabled as they can block notifications."
+      },
+      {
+        "title": "Clear Data/Cache",
+        "content": "Clear the data and cache of the apps in question."
+      },
+      {
+        "title": "Reinstall the Apps",
+        "content": "Uninstall and reinstall the apps that are experiencing notification issues."
+      },
+      {
+        "title": "Restart the Device",
+        "content": "Restart your device to refresh the system."
+      },
+      {
+        "title": "Check Notification Permissions",
+        "content": "Ensure that notification permissions are allowed for the apps in question."
+      },
+      {
+        "title": "Switch Networks",
+        "content": "Try switching between Wi-Fi and mobile data to see if the issue is network-related."
+      },
+      {
+        "title": "Disable Developer Options",
+        "content": "If Developer Options are enabled, disable them as they can sometimes interfere with notifications."
+      },
+      {
+        "title": "Update System Version",
+        "content": "Ensure your device is updated to the latest system version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Advanced Notification Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Manage Notification Categories",
+            "content": "Go to Advanced settings and manage notification categories for each app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T23:19:11.962Z",
+      "updated": "2026-01-07T23:19:11.962Z",
+      "sourceUrl": "https://www.reddit.com/r/NothingTech/comments/1lon8y9/some_push_notifications_are_not_working/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767827956742-352",
+    "title": "Fix Honor Phone Notification Issues",
+    "problemDescription": "Notifications not working on Honor phone running MagicOS.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "honor",
+      "notifications",
+      "magicOS",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Adjust App Launch Settings",
+        "content": "Go to Settings > Battery > App Launch, find the app, disable 'Manage automatically,' select 'Manage manually,' and enable 'Auto-launch,' 'Secondary launch,' and 'Run in background.'"
+      },
+      {
+        "title": "Disable Battery Optimization",
+        "content": "Go to Settings > Apps > Apps/App Management > three-dot menu > Special access > Battery optimization. Change the filter to 'All apps,' find the app, and set it to 'Don't optimize.'"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Notification Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify App Notifications",
+            "content": "Go to Settings > Apps > [App Name] > Notifications and ensure notifications are enabled."
+          },
+          {
+            "title": "Check Do Not Disturb",
+            "content": "Ensure Do Not Disturb is not enabled in Settings > Sound & Vibration."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T23:19:16.742Z",
+      "updated": "2026-01-07T23:19:16.742Z",
+      "sourceUrl": "https://www.reddit.com/r/Honor/comments/1k66wmn/a_fix_for_notification_issue/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767827978565-330",
+    "title": "Add Line Breaks to Instagram Captions",
+    "problemDescription": "Instagram does not allow line breaks in captions, making posts harder to read.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "caption",
+      "line breaks",
+      "formatting"
+    ],
+    "steps": [
+      {
+        "title": "Use Instagram's Progressive Web App (PWA)",
+        "content": "Access Instagram's PWA by visiting instagram.com on your desktop browser. This version allows you to add line breaks to your captions by pressing 'Enter' or 'Shift + Enter'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Dots or Dashes as Separators",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Manual Separation",
+            "content": "Type dots (.) or dashes (-) to create visual separation between paragraphs in your caption."
+          }
+        ]
+      },
+      {
+        "title": "Use a Link Service for Multiple Links",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a Link Service Account",
+            "content": "Sign up for a service like Lnk.bio to create a single link that directs users to multiple destinations."
+          },
+          {
+            "title": "Add the Link to Your Bio",
+            "content": "Copy the generated link from Lnk.bio and paste it into your Instagram bio."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T23:19:38.565Z",
+      "updated": "2026-01-07T23:19:38.565Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/annoying-instagram-issues-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767827985729-393",
+    "title": "Fix Disabled Accounts Can't Be Contacted on Instagram",
+    "problemDescription": "You receive the 'Disabled accounts can't be contacted' error when trying to message someone on Instagram.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "disabled account",
+      "message error"
+    ],
+    "steps": [
+      {
+        "title": "Block the Account",
+        "content": "Search for the account you want to message, go to their profile, tap the three dots in the top right corner, and select 'Block'."
+      },
+      {
+        "title": "Unblock the Account",
+        "content": "Go back to the profile, tap the three dots again, and select 'Unblock'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Delete and Recreate the Chat",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete the Chat",
+            "content": "Tap the messages icon on Instagram, find the conversation with the disabled account, and slide right to delete the chat."
+          },
+          {
+            "title": "Create a New Chat",
+            "content": "Search for the account again and start a new conversation."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T23:19:45.729Z",
+      "updated": "2026-01-07T23:19:45.729Z",
+      "sourceUrl": "https://www.makeuseof.com/instagram-fix-disabled-accounts-cant-be-contacted/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767827990543-418",
+    "title": "Fix Instagram Lagging on Android and iOS",
+    "problemDescription": "Instagram is lagging or not responding on your device.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "lagging",
+      "app-error",
+      "android",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Close and Reopen Instagram",
+        "content": "Close the Instagram app by swiping up from the bottom of the screen and sliding the app off the top of the screen. Reopen Instagram to see if the issue is resolved."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Test your internet connection by loading another data-heavy app like YouTube. If the connection is slow, switch to a reliable Wi-Fi network or try to speed up your mobile data."
+      },
+      {
+        "title": "Update Instagram App",
+        "content": "Go to the app store (Google Play Store for Android or App Store for iOS), search for Instagram, and update the app if a new version is available."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Force Stop Instagram (Android Only)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force Stop Instagram",
+            "content": "Go to Settings > Apps > Instagram > Force Stop. This will shut down all Instagram processes."
+          }
+        ]
+      },
+      {
+        "title": "Clear Instagram Storage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Instagram Storage",
+            "content": "Go to Settings > Apps > Instagram > Storage > Clear Storage."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T23:19:50.543Z",
+      "updated": "2026-01-07T23:19:50.543Z",
+      "sourceUrl": "https://www.makeuseof.com/instagram-lagging-fix-android-ios/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
