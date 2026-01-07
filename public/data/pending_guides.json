@@ -62070,5 +62070,408 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767789358274-30",
+    "title": "Enable Original Audio in Zoom Android App",
+    "problemDescription": "The Zoom Android app does not have a visible 'original audio' setting to disable noise filtering, which is available on other platforms.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "android",
+      "audio",
+      "original audio",
+      "noise filtering"
+    ],
+    "steps": [
+      {
+        "title": "Check for App Updates",
+        "content": "Ensure your Zoom app is updated to the latest version from the Google Play Store."
+      },
+      {
+        "title": "Enable Original Audio",
+        "content": "Open the Zoom app, go to Settings > Audio, and look for the 'Show in-meeting option to enable original sound' toggle. Enable this option."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: USB Audio Source",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect USB Audio Device",
+            "content": "Connect a USB audio device to your Android device and enable the 'USB Audio Source' option in the Zoom app settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T12:35:58.274Z",
+      "updated": "2026-01-07T12:35:58.274Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/257619/how-to-enable-original-audio-in-zoom-app",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767789398441-232",
+    "title": "Fix iPhone 13 Pro Camera Declared as Unknown Part",
+    "problemDescription": "The iPhone 13 Pro camera is spontaneously declared as an unknown part, causing the camera to malfunction.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "camera",
+      "unknown part",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Visit Apple Store",
+        "content": "Schedule an appointment with your local Apple Store. Explain the issue and the steps you've taken to try to resolve it."
+      },
+      {
+        "title": "Hardware Diagnostic",
+        "content": "The Apple Store will perform a hardware diagnostic to determine if the camera is defective or non-OEM."
+      },
+      {
+        "title": "Camera Replacement",
+        "content": "If necessary, the Apple Store will replace the camera module with an OEM part. This process may take about 90 minutes and does not require wiping the phone."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Software Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart the Phone",
+            "content": "Perform a simple restart of the iPhone."
+          },
+          {
+            "title": "Soft Reset",
+            "content": "Reset all settings on the phone. This clears settings but keeps all media and apps."
+          },
+          {
+            "title": "Hard Reset",
+            "content": "Reset the phone from scratch. This requires restoring all media and apps from a backup."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T12:36:38.441Z",
+      "updated": "2026-01-07T12:36:38.441Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/473716/what-can-i-do-after-my-iphone-13-pro-s-camera-spontaneously-been-declared-an-un",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767789402972-671",
+    "title": "Troubleshoot iOS App Misbehavior",
+    "problemDescription": "An iOS app is not behaving as expected.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "app",
+      "troubleshoot",
+      "behavior"
+    ],
+    "steps": [
+      {
+        "title": "Update iOS",
+        "content": "Update your device to the latest public version of iOS."
+      },
+      {
+        "title": "Restart Device",
+        "content": "Restart your iPhone or iPad and try using the app again."
+      },
+      {
+        "title": "Reinstall App",
+        "content": "Uninstall and then reinstall the problematic app."
+      },
+      {
+        "title": "Toggle Internet Connectivity",
+        "content": "Turn off and then turn on your internet connection to see if the issue is related to connectivity."
+      },
+      {
+        "title": "Check Game Center",
+        "content": "If the app is a game, log out and then log back into Game Center."
+      },
+      {
+        "title": "Test on Another Device",
+        "content": "If possible, install the app on a different iPhone to determine if the issue is device-specific."
+      },
+      {
+        "title": "Contact Developer",
+        "content": "Go to the App Store, find the app, and look for 'App Support' or 'Developer Website' to contact the developer. Provide details about the issue, your iOS version, and device model."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset to Default",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Settings",
+            "content": "Go to Settings > General > Reset > Reset All Settings. This will reset your device settings to default without deleting your data."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T12:36:42.972Z",
+      "updated": "2026-01-07T12:36:42.972Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/356010/how-do-you-troubleshoot-an-ios-app-that-is-not-behaving-as-expected",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767789409236-535",
+    "title": "Fix iPhone Location Sharing Not Working",
+    "problemDescription": "Two iPhones are not sharing location with each other on iOS 18.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "location",
+      "sharing",
+      "ios 18"
+    ],
+    "steps": [
+      {
+        "title": "Reboot Both iPhones",
+        "content": "Restart both iPhones to refresh their systems."
+      },
+      {
+        "title": "Stop Sharing Location",
+        "content": "On both devices, go to Messages, select the other person, and choose 'Stop sharing my location'."
+      },
+      {
+        "title": "Wait and Reshare",
+        "content": "Wait a few minutes, then start sharing location with each other again using the same setting in Messages."
+      },
+      {
+        "title": "Wait for Updates",
+        "content": "Wait about 5-10 minutes to see if the locations start appearing again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "Call or visit Apple Support for further assistance, as they have access to server logs and backend data."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T12:36:49.236Z",
+      "updated": "2026-01-07T12:36:49.236Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/479602/how-can-i-troubleshoot-when-two-iphones-stop-sharing-location-on-ios-18",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767789411805-428",
+    "title": "Fix iPhone GPS Issues",
+    "problemDescription": "iPhone GPS not providing accurate location data.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "gps",
+      "location",
+      "accuracy"
+    ],
+    "steps": [
+      {
+        "title": "Run Diagnostics at Apple Store",
+        "content": "Visit an Apple Store or authorized repairer to have them run diagnostics on your iPhone. This will identify any hardware-related issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Enable WiFi & Bluetooth",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn on WiFi & Bluetooth",
+            "content": "Enable WiFi and Bluetooth on your iPhone to improve GPS accuracy."
+          }
+        ]
+      },
+      {
+        "title": "Reboot Your iPhone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your Device",
+            "content": "Reboot your iPhone to potentially resolve GPS issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T12:36:51.805Z",
+      "updated": "2026-01-07T12:36:51.805Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/370968/identifying-iphone-gps-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767789419379-157",
+    "title": "Fix iOS App Not Registering Location Services",
+    "problemDescription": "An app on iOS is not registering or using location services correctly.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "ios",
+      "location",
+      "app",
+      "geolocation"
+    ],
+    "steps": [
+      {
+        "title": "Backup Your Device",
+        "content": "Connect to iTunes or make an iCloud backup to ensure your data is safe before proceeding."
+      },
+      {
+        "title": "Delete the App",
+        "content": "Delete the problematic app from your device."
+      },
+      {
+        "title": "Power Off the Device",
+        "content": "Turn off your iOS device completely."
+      },
+      {
+        "title": "Reinstall the App",
+        "content": "Reinstall the app over the air to ensure a clean install with no settings."
+      },
+      {
+        "title": "Test the App",
+        "content": "Test the app to see if the location services issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset to Default",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Location Services",
+            "content": "Go to Settings > Privacy > Location Services and reset the location services to default."
+          }
+        ]
+      },
+      {
+        "title": "Restore Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restore Device",
+            "content": "Restore the device and set it up as new if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T12:36:59.379Z",
+      "updated": "2026-01-07T12:36:59.379Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/44673/help-with-troubleshooting-location-services-where-one-app-isnt-registering",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767789443191-872",
+    "title": "Fix Google Chrome's ERR_CACHE_MISS Error",
+    "problemDescription": "Google Chrome displays ERR_CACHE_MISS error when loading a webpage.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "error",
+      "cache"
+    ],
+    "steps": [
+      {
+        "title": "Reload the Page",
+        "content": "Click the Reload icon in the address bar or use the keyboard shortcut Shift + F5 (Windows) or Cmd + R (Mac)."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-07T12:37:23.191Z",
+      "updated": "2026-01-07T12:37:23.191Z",
+      "sourceUrl": "https://www.makeuseof.com/how-to-fix-google-chromes-err-cache-miss-error/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767789464923-520",
+    "title": "Fix Google Chrome Stuck Issue",
+    "problemDescription": "Google Chrome is unresponsive or stuck, especially when hovering over elements that use JavaScript or Ajax.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "stuck",
+      "browser",
+      "unresponsive"
+    ],
+    "steps": [
+      {
+        "title": "Reset Chrome Flags to Default",
+        "content": "Go to the address `chrome://flags/` in the Chrome address bar and click the 'Reset all to default' button on the right side. Restart the browser after the reset."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Try a Portable Version of Chrome",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Run Portable Chrome",
+            "content": "Download Google Chrome Portable from portableapps.com and run it. This version runs standalone and can help determine if the issue is with other software on your machine."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Create a New User Profile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a New Windows User",
+            "content": "Create a new user profile in Windows and check if the issue persists in the new profile."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T12:37:44.923Z",
+      "updated": "2026-01-07T12:37:44.923Z",
+      "sourceUrl": "https://superuser.com/questions/708969/google-chrome-is-stuck-how-to-fix-that",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
