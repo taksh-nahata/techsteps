@@ -63429,5 +63429,605 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767799259429-30",
+    "title": "Fix Windows 10 Wi-Fi Connection Issue",
+    "problemDescription": "Windows 10 cannot connect to a specific Wi-Fi network.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "windows 10",
+      "connection issue"
+    ],
+    "steps": [
+      {
+        "title": "Disable and Re-enable Wi-Fi Adapter",
+        "content": "Open Device Manager (devmgmt.msc), locate the wireless network adapter, disable it, and then re-enable it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Adjust 802.11n Channel Width",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Network Adapter Properties",
+            "content": "Go to `devmgmt.msc` > `Network Adapters` > locate your Wi-Fi adapter > right-click `Properties` > `Advanced`."
+          },
+          {
+            "title": "Change Channel Width",
+            "content": "Find `802.11n Channel Width for band 2` and set it to `Auto` from the drop-down menu."
+          }
+        ]
+      },
+      {
+        "title": "Change Wireless Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Network Adapter Properties",
+            "content": "Go to `devmgmt.msc` > `Network Adapters` > locate your Wi-Fi adapter > right-click `Properties` > `Advanced`."
+          },
+          {
+            "title": "Change Wireless Mode",
+            "content": "Change the `Wireless Mode` from `802.11b/g/n` to `802.11b`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T15:20:59.429Z",
+      "updated": "2026-01-07T15:20:59.429Z",
+      "sourceUrl": "https://superuser.com/questions/1003835/windows-10-wi-fi-issue-cant-connect-to-this-network",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767799264187-570",
+    "title": "Fix Wi-Fi Dead Zone Near Router",
+    "problemDescription": "Wi-Fi dead zone right next to the router, causing connection issues.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "dead zone",
+      "router",
+      "interference"
+    ],
+    "steps": [
+      {
+        "title": "Check for Neighbor Interference",
+        "content": "Ask your neighbor to power off their Wi-Fi equipment. If your Wi-Fi signal improves immediately, their equipment is causing interference."
+      },
+      {
+        "title": "Use a Spectrum Analyzer",
+        "content": "Power off your Wi-Fi equipment and use a spectrum analyzer to check for interference on Wi-Fi frequencies. Move around your home to identify the source of interference."
+      },
+      {
+        "title": "Switch Wi-Fi Channels",
+        "content": "If the 2.4GHz channel is causing issues, switch to the 5GHz channel or vice versa to see if the problem persists."
+      },
+      {
+        "title": "Replace the Router",
+        "content": "If the problem continues, consider replacing your router with a new one to rule out hardware issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change Router Position",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Relocate the Router",
+            "content": "Move the router to a different location to avoid physical obstructions and interference sources."
+          },
+          {
+            "title": "Use Wi-Fi Extenders",
+            "content": "Install Wi-Fi extenders or mesh network systems to improve coverage in dead zones."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T15:21:04.187Z",
+      "updated": "2026-01-07T15:21:04.187Z",
+      "sourceUrl": "https://superuser.com/questions/1513165/wifi-dead-zone-right-next-to-router",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767799274146-563",
+    "title": "Test Wi-Fi Connection Stability",
+    "problemDescription": "Determine if your Wi-Fi connection is stable or experiencing issues.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "connection",
+      "stability",
+      "test"
+    ],
+    "steps": [
+      {
+        "title": "Open Command Prompt",
+        "content": "Press `Win + R`, type `cmd`, and press OK."
+      },
+      {
+        "title": "Start a Ping Test",
+        "content": "Enter the command `ping -t 8.8.8.8` to ping Google's DNS server continuously."
+      },
+      {
+        "title": "Monitor for Errors",
+        "content": "Observe the output for any error messages, which indicate connection loss."
+      },
+      {
+        "title": "Cancel the Ping Test",
+        "content": "Press `Ctrl + C` to stop the ping test when you are done."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Ping Default Gateway",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Default Gateway",
+            "content": "Find your default gateway IP address (usually 192.168.0.1 or 192.168.1.1)."
+          },
+          {
+            "title": "Ping Default Gateway",
+            "content": "Enter the command `ping -t <your_default_gateway>` to ping your default gateway continuously."
+          },
+          {
+            "title": "Monitor for Errors",
+            "content": "Observe the output for any error messages, which indicate connection loss."
+          },
+          {
+            "title": "Cancel the Ping Test",
+            "content": "Press `Ctrl + C` to stop the ping test when you are done."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T15:21:14.146Z",
+      "updated": "2026-01-07T15:21:14.146Z",
+      "sourceUrl": "https://superuser.com/questions/1212335/how-to-test-wi-fi-connections-stability",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767799286229-147",
+    "title": "Fix Slow Laptop Performance",
+    "problemDescription": "Laptop becomes slow due to memory issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "laptop",
+      "slow",
+      "ram",
+      "swap"
+    ],
+    "steps": [
+      {
+        "title": "Close Memory-Intensive Applications",
+        "content": "Close Chromium and Teams or any other memory-intensive applications."
+      },
+      {
+        "title": "Open Terminal",
+        "content": "Open a Terminal window."
+      },
+      {
+        "title": "Move Memory from Swap to RAM",
+        "content": "Execute the command `sudo swapoff -a && sudo swapon -a` to temporarily move memory from swap to RAM."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Close Browser Tabs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Close Unnecessary Tabs",
+            "content": "Close some tabs in your web browser to free up RAM."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T15:21:26.229Z",
+      "updated": "2026-01-07T15:21:26.229Z",
+      "sourceUrl": "https://askubuntu.com/questions/1358364/laptop-becomes-slow",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767799294722-5",
+    "title": "Diagnose Slow Ubuntu System",
+    "problemDescription": "Your Ubuntu system is running slow and you need to diagnose the issue.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "slow",
+      "diagnose",
+      "system"
+    ],
+    "steps": [
+      {
+        "title": "Check CPU Usage",
+        "content": "Run the command `top -o %CPU | head -n12` to see the top CPU-consuming processes."
+      },
+      {
+        "title": "Check System Logs",
+        "content": "Run the command `grep -i error /var/log/syslog` to check for system errors."
+      },
+      {
+        "title": "Check Kernel Messages",
+        "content": "Run the command `dmesg` to view kernel messages that might indicate hardware issues."
+      },
+      {
+        "title": "Check Hard Drive Health",
+        "content": "Check the SMART status of your storage devices using `smartctl -a /dev/sdX` (replace X with your drive letter)."
+      },
+      {
+        "title": "Analyze Boot Time",
+        "content": "If the problem is slow booting, run `systemd-analyze blame` to identify slow booting services."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use htop for Process Management",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install htop",
+            "content": "Run `sudo apt-get install htop` to install htop."
+          },
+          {
+            "title": "Run htop",
+            "content": "Execute `htop` in the terminal to monitor processes interactively."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T15:21:34.722Z",
+      "updated": "2026-01-07T15:21:34.722Z",
+      "sourceUrl": "https://askubuntu.com/questions/1068290/my-system-is-slow-what-commands-can-i-use-to-help-determine-what-the-problem-is",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767799314171-716",
+    "title": "Replace Samsung Freestyle Speaker",
+    "problemDescription": "The speaker on your Samsung Freestyle projector has stopped working.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "freestyle",
+      "speaker",
+      "replacement"
+    ],
+    "steps": [
+      {
+        "title": "Obtain Replacement Speaker",
+        "content": "Purchase a replacement speaker from Samsung's self-repair program or a certified retailer."
+      },
+      {
+        "title": "Power Down the Device",
+        "content": "Turn off and unplug your Samsung Freestyle projector to ensure safety during the replacement process."
+      },
+      {
+        "title": "Access the Speaker",
+        "content": "Carefully open the device casing to locate the faulty speaker. Refer to the user manual for specific instructions on accessing internal components."
+      },
+      {
+        "title": "Remove Old Speaker",
+        "content": "Disconnect the old speaker by unplugging the wires and unscrewing it from its mounting."
+      },
+      {
+        "title": "Install New Speaker",
+        "content": "Attach the new speaker by screwing it into place and connecting the wires securely."
+      },
+      {
+        "title": "Reassemble the Device",
+        "content": "Close the casing and ensure all screws and components are securely in place."
+      },
+      {
+        "title": "Test the Speaker",
+        "content": "Power on the device and test the speaker to confirm it is working properly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Professional Repair",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Samsung Support",
+            "content": "Reach out to Samsung's customer support for assistance or to schedule a professional repair."
+          },
+          {
+            "title": "Schedule Repair Appointment",
+            "content": "Arrange a convenient time for a technician to visit and repair the device."
+          },
+          {
+            "title": "Provide Device Details",
+            "content": "Offer any insight into what you’re getting, such as error messages or specific issues, to help the technician prepare."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T15:21:54.171Z",
+      "updated": "2026-01-07T15:21:54.171Z",
+      "sourceUrl": "https://www.techradar.com/computing/samsungs-self-repair-program-will-let-you-fix-tvs-projectors-and-soundbars",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767799317147-463",
+    "title": "Fix Vizio TV That Won't Turn On",
+    "problemDescription": "Vizio TV is unresponsive and won't turn on.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "Vizio TV",
+      "power issue",
+      "turn on"
+    ],
+    "steps": [
+      {
+        "title": "Check Power Supply",
+        "content": "Unplug the TV and reseat the power cable. Wait for a few minutes and then plug it back in."
+      },
+      {
+        "title": "Test the Outlet",
+        "content": "Use a phone charger to test if the outlet is working properly."
+      },
+      {
+        "title": "Wait for Update",
+        "content": "If the TV is updating, wait for the process to complete before turning it on."
+      },
+      {
+        "title": "Perform a Reset",
+        "content": "If the TV still won't turn on, perform a full reset by holding the power button on the TV (not the remote) for 30 seconds."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Professional Repair",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact a TV Repair Person",
+            "content": "Call a local TV repair person who may have the necessary parts in stock and can fix the TV for a reasonable cost."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T15:21:57.147Z",
+      "updated": "2026-01-07T15:21:57.147Z",
+      "sourceUrl": "https://www.techradar.com/how-to/how-to-fix-a-vizio-tv-that-wont-turn-on",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767799328317-14",
+    "title": "Update TV Software for Security and Features",
+    "problemDescription": "Your TV may have outdated software, which can lead to security risks and missing features.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "tv",
+      "software",
+      "update",
+      "security",
+      "features"
+    ],
+    "steps": [
+      {
+        "title": "Navigate to System Settings",
+        "content": "Go to your TV's System Settings."
+      },
+      {
+        "title": "Check for Updates",
+        "content": "Look for the 'Check for Update' or 'Software Update' option. This might be under the 'About TV' section, depending on your TV model."
+      },
+      {
+        "title": "Install Updates",
+        "content": "Follow the on-screen instructions to download and install any available updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Enable HDMI 2.1 Features",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Navigate to the Settings menu on your TV."
+          },
+          {
+            "title": "Find HDMI Control",
+            "content": "Look for the HDMI Control option."
+          },
+          {
+            "title": "Set to Enhanced",
+            "content": "Click on HDMI Control and set it to Enhanced to activate HDMI 2.1 features, including 4K 120Hz support."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T15:22:08.317Z",
+      "updated": "2026-01-07T15:22:08.317Z",
+      "sourceUrl": "https://www.techradar.com/televisions/got-a-new-tv-here-are-6-mistakes-people-make-when-setting-up-their-tv-and-how-you-can-avoid-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767799336305-641",
+    "title": "Change Bluetooth Pairing PIN on Android",
+    "problemDescription": "How to specify a different PIN than 0000 when pairing a Bluetooth device on Android.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "pairing",
+      "pin",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Clear Bluetooth Cache",
+        "content": "Go to `Settings > Applications > All > Bluetooth Share` and tap 'Force Stop', then 'Clear Cache', and then 'Clear Data'."
+      },
+      {
+        "title": "Unpair and Re-pair Device",
+        "content": "Go to `Settings > Bluetooth`, long press the paired device, and select 'Un-pair'. Then, turn Bluetooth off and on, and search for new devices to pair."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset to Default",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Un-pair Device",
+            "content": "Go to `Settings > Bluetooth`, long press the paired device, and select 'Un-pair'."
+          },
+          {
+            "title": "Re-pair Device",
+            "content": "Turn Bluetooth off and on, then search for new devices to pair with the desired PIN."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T15:22:16.305Z",
+      "updated": "2026-01-07T15:22:16.305Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/115797/how-do-i-specify-a-different-pin-than-0000-when-pairing-a-bluetooth-device-on-an",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767799362771-535",
+    "title": "Fix Samsung Galaxy Tab 4 Wi-Fi and Bluetooth Issues",
+    "problemDescription": "Wi-Fi and Bluetooth won't stay on in Samsung Galaxy Tab 4.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "bluetooth",
+      "samsung",
+      "galaxy tab 4"
+    ],
+    "steps": [
+      {
+        "title": "Contact Samsung Support",
+        "content": "Since the issue persists after multiple troubleshooting steps, contact Samsung support. They may require you to visit a repair center to flash new firmware, especially if the device is under warranty."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup important data to a cloud service or external storage."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > Backup & reset > Factory data reset. Follow the on-screen instructions to complete the reset."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Safe Mode Troubleshooting",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Press and hold the Power button until the Power off option appears. Tap and hold the Power off option until the Reboot to safe mode prompt appears. Tap OK."
+          },
+          {
+            "title": "Check Wi-Fi and Bluetooth",
+            "content": "Test if Wi-Fi and Bluetooth work in Safe Mode. If they do, a third-party app may be causing the issue. Uninstall recently installed apps."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T15:22:42.771Z",
+      "updated": "2026-01-07T15:22:42.771Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/98215/cannot-turn-on-wifi-or-bluetooth",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767799371509-311",
+    "title": "Fix Alexa Skill Issues",
+    "problemDescription": "Alexa skills not working properly or responding incorrectly.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Alexa",
+      "skills",
+      "app",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Disable and Re-enable the Skill",
+        "content": "Open the Alexa app, go to Skills & Games, select Your Skills, choose the problematic skill, disable it, and then re-enable it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Group Devices for Multi-Room Audio",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Group Devices",
+            "content": "Use the Alexa app to group your Echo devices together to ensure Alexa plays music from the correct speaker."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T15:22:51.509Z",
+      "updated": "2026-01-07T15:22:51.509Z",
+      "sourceUrl": "https://www.makeuseof.com/common-amazon-alexa-issues-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
