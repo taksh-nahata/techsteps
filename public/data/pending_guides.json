@@ -59893,5 +59893,629 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767777939427-515",
+    "title": "Sync Outlook Desktop with Outlook.com for Teams",
+    "problemDescription": "Outlook desktop app and Outlook.com not syncing for Teams setup without Office 365.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "sync",
+      "teams",
+      "imap",
+      "office"
+    ],
+    "steps": [
+      {
+        "title": "Create Separate Outlook.com Account",
+        "content": "Create a new Outlook.com account using a different email address than your work email to avoid conflicts."
+      },
+      {
+        "title": "Configure IMAP in Outlook Desktop",
+        "content": "Ensure IMAP is properly configured in your Outlook desktop app. Go to File > Account Settings > Account Settings > select your account > Change > More Settings > Advanced tab. Verify that IMAP is selected and the correct server settings are entered."
+      },
+      {
+        "title": "Sync Teams with Outlook.com",
+        "content": "Use the newly created Outlook.com account to set up Teams. This will ensure that Teams and Outlook.com are synced without affecting your Outlook desktop app."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use POP Instead of IMAP",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Configure POP in Outlook Desktop",
+            "content": "Try configuring POP instead of IMAP in your Outlook desktop app. Go to File > Account Settings > Account Settings > select your account > Change > More Settings > Advanced tab. Select POP and enter the correct server settings."
+          },
+          {
+            "title": "Test Sync",
+            "content": "After configuring POP, test the sync between Outlook desktop and Outlook.com to see if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T09:25:39.427Z",
+      "updated": "2026-01-07T09:25:39.427Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlook-desktop-app-outlookcom-not-syncing-not-365/c52cf110-a487-40cf-8ecf-41a14fc13921",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767777950492-897",
+    "title": "Cancel Teams Premium Subscription",
+    "problemDescription": "User cannot access Teams Premium account and needs to cancel the subscription.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Teams Premium",
+      "subscription",
+      "cancel",
+      "business license"
+    ],
+    "steps": [
+      {
+        "title": "Contact Business Cancellation Team",
+        "content": "Since the subscription is identified as a business license, you need to contact the business cancellation team. Go to the Microsoft Support page and navigate to the 'Contact Us' section. Select 'Business' as the account type and follow the prompts to reach the cancellation team."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Microsoft Partner Center",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Partner Center",
+            "content": "Log in to the Microsoft Partner Center using your MCP ID. Navigate to the 'Billing' section and look for your Teams Premium subscription. Follow the instructions to cancel the subscription."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T09:25:50.492Z",
+      "updated": "2026-01-07T09:25:50.492Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/msoffice_onenote-mso_win10-mso_o365b/%E5%A6%82%E6%9E%9C%E5%9C%A8%E4%B8%8D%E5%8D%B8/d7fa11ac-4bcc-410a-a787-076ea5975351?messageId=e142a951-cf07-43ce-a2a7-dc36d47c5ae6",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767777954711-624",
+    "title": "Fix Slow SharePoint Syncing",
+    "problemDescription": "SharePoint syncing is slow or not working properly.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "SharePoint",
+      "syncing",
+      "slow",
+      "OneDrive",
+      "cache"
+    ],
+    "steps": [
+      {
+        "title": "Backup Files",
+        "content": "Backup all local documents and files to another location to prevent data loss."
+      },
+      {
+        "title": "Clear OneDrive Cache",
+        "content": "Use the 'Fix it' tool from the provided article to clear the OneDrive for Business cache."
+      },
+      {
+        "title": "Restart OneDrive",
+        "content": "Restart the OneDrive for Business client."
+      },
+      {
+        "title": "Resync Files",
+        "content": "Resync the files to see if the syncing issue is resolved."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-07T09:25:54.711Z",
+      "updated": "2026-01-07T09:25:54.711Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/all/sharepoint-syncing-slow/d95982be-1a2e-4845-ad5f-58d1fc4eaea2",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767777965508-355",
+    "title": "Fix LCD Monitor Flickering",
+    "problemDescription": "LCD monitor flickering and lagging issues.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "monitor",
+      "flickering",
+      "lagging",
+      "HDMI",
+      "DisplayPort"
+    ],
+    "steps": [
+      {
+        "title": "Check and Replace the Cable",
+        "content": "Inspect the HDMI, DisplayPort, VGA, or DVI cable connected to your monitor. If the cable is damaged or old, replace it with a new one."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Adjust Display Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Refresh Rate",
+            "content": "Go to your computer's display settings and try changing the refresh rate to a higher value, such as 60Hz or 75Hz, to see if it resolves the flickering."
+          }
+        ]
+      },
+      {
+        "title": "Update Graphics Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Drivers",
+            "content": "Ensure your graphics drivers are up to date. You can usually do this through the manufacturer's website or using a driver update tool."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T09:26:05.508Z",
+      "updated": "2026-01-07T09:26:05.508Z",
+      "sourceUrl": "https://www.quora.com/How-can-you-fix-an-LCD-monitor-that-keeps-flickering-and-lagging",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767777977314-699",
+    "title": "Fix LCD Monitor Flicker",
+    "problemDescription": "LCD monitor flickering due to cable issues.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "monitor",
+      "flicker",
+      "cable"
+    ],
+    "steps": [
+      {
+        "title": "Check and Replace Cable",
+        "content": "Inspect the HDMI, DisplayPort, VGA, or DVI cable connected to your LCD monitor. If the cable is damaged or old, replace it with a new one."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Adjust Refresh Rate",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Display Settings",
+            "content": "Right-click on your desktop and select 'Display settings'."
+          },
+          {
+            "title": "Advanced Display Settings",
+            "content": "Scroll down and click on 'Advanced display settings'."
+          },
+          {
+            "title": "Change Refresh Rate",
+            "content": "Under the 'Display adapter properties for Display' section, click on 'All settings' and change the refresh rate to a higher value if available."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T09:26:17.314Z",
+      "updated": "2026-01-07T09:26:17.314Z",
+      "sourceUrl": "https://www.quora.com/What-causes-a-flicker-in-an-LCD-monitor-How-can-this-be-fixed",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767777981097-518",
+    "title": "Fix Laptop Screen Flickering",
+    "problemDescription": "Laptop screen flickers randomly or glitches out without a specific pattern.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "laptop",
+      "screen",
+      "flickering",
+      "glitching"
+    ],
+    "steps": [
+      {
+        "title": "Update Display Drivers",
+        "content": "Go to Device Manager, expand Display adapters, right-click on your graphics card, and select Update driver."
+      },
+      {
+        "title": "Roll Back Display Drivers",
+        "content": "In Device Manager, right-click on your graphics card, select Properties, go to the Driver tab, and click Roll Back Driver."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to Settings > Update & Security > Windows Update and check for updates."
+      },
+      {
+        "title": "Adjust Display Settings",
+        "content": "Go to Settings > System > Display and adjust the display settings, such as refresh rate and resolution."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Hardware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect Cable Connections",
+            "content": "Ensure all cables connecting the laptop to external monitors are secure."
+          },
+          {
+            "title": "Test with External Monitor",
+            "content": "Connect the laptop to an external monitor to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T09:26:21.097Z",
+      "updated": "2026-01-07T09:26:21.097Z",
+      "sourceUrl": "https://www.quora.com/My-laptop-has-been-acting-weird-The-screen-will-randomly-flickering-or-like-glitching-out-It-does-not-happen-frequently-and-does-not-have-a-specific-pattern-but-it-happened-enough-to-where-I-notice-it-Does-anyone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767778004017-937",
+    "title": "Fix Visio Drag/Move Issue",
+    "problemDescription": "Unable to drag or move objects in Microsoft Visio.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "visio",
+      "drag",
+      "move",
+      "objects",
+      "issue"
+    ],
+    "steps": [
+      {
+        "title": "Check Screen Compatibility",
+        "content": "Ensure your screen resolution and display settings are compatible with Visio."
+      },
+      {
+        "title": "Run in Safe Mode",
+        "content": "Start Visio in Safe Mode to check for add-in conflicts."
+      },
+      {
+        "title": "Perform Online Repair",
+        "content": "Use the online repair option in the Microsoft Office repair tool."
+      },
+      {
+        "title": "Contact Microsoft Support",
+        "content": "Reach out to Microsoft Support for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Mobile Device Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Mobile Device Settings",
+            "content": "Ensure there are no mobile device settings interfering with Visio."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T09:26:44.017Z",
+      "updated": "2026-01-07T09:26:44.017Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/office_2010-customize/changing-the-default-view-zoom-size-when-i-open/1bf29a71-fceb-4edd-b6d3-57b20fb2c2ae?msgId=85c69256-82ea-4173-8b8d-7705e4c9b548&page=1",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767778017840-259",
+    "title": "Fix Instagram Login Issues",
+    "problemDescription": "Unable to log in to Instagram on mobile device despite correct password.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "login",
+      "password",
+      "app"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall the App",
+        "content": "Delete the Instagram app from your device, wait for 24 hours, then reinstall it. This often resolves login issues without needing to re-enter your password."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clear Cache and Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache and Data",
+            "content": "Go to your device settings, find the Instagram app, and clear its cache and data. Then, try logging in again."
+          }
+        ]
+      },
+      {
+        "title": "Wait and Retry",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Wait and Retry",
+            "content": "Wait for 24 hours before attempting to log in again. This has resolved login issues for some users."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T09:26:57.840Z",
+      "updated": "2026-01-07T09:26:57.840Z",
+      "sourceUrl": "https://www.reddit.com/r/Instagram/comments/1g59cfl/is_anyone_else_having_a_problem_logging_back_in/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767778025050-987",
+    "title": "Fix Instagram Crashes After Update",
+    "problemDescription": "Instagram app crashes immediately after opening following a recent update.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Instagram",
+      "crash",
+      "update",
+      "app error"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Device",
+        "content": "Close the Instagram app completely and restart your device to clear temporary glitches."
+      },
+      {
+        "title": "Update Instagram",
+        "content": "Ensure you have the latest version of Instagram installed from the App Store or Google Play Store."
+      },
+      {
+        "title": "Clear App Cache",
+        "content": "Go to your device settings, find the Instagram app, and clear its cache and data."
+      },
+      {
+        "title": "Reinstall Instagram",
+        "content": "Uninstall the app and then reinstall it from the respective app store."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Device Compatibility",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Compatibility",
+            "content": "Ensure your device meets the minimum requirements for the updated version of Instagram."
+          },
+          {
+            "title": "Update Device Software",
+            "content": "Update your device's operating system to the latest version available."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T09:27:05.050Z",
+      "updated": "2026-01-07T09:27:05.050Z",
+      "sourceUrl": "https://www.reddit.com/r/Instagram/comments/1q4zn93/instagram_causes_crashes_in_the_new_update/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767778030183-664",
+    "title": "Contact Instagram Support for Account Recovery",
+    "problemDescription": "User needs to contact Instagram support to recover an old account associated with an inaccessible email.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "instagram",
+      "support",
+      "account recovery",
+      "email"
+    ],
+    "steps": [
+      {
+        "title": "Use Instagram's Help Center",
+        "content": "Go to Instagram's Help Center and search for 'account recovery' or 'contact support'. Follow the prompts to request help with your specific issue."
+      },
+      {
+        "title": "Submit a Support Request",
+        "content": "If you can't find a direct contact option, navigate to the 'Privacy and Safety Center' and look for the 'Report Something' section. Submit a detailed request explaining your situation."
+      },
+      {
+        "title": "Use the Instagram App",
+        "content": "Open the Instagram app, go to your profile, tap the three lines in the top right, and select 'Settings'. Scroll down to 'Help' and then 'Report a Problem'. Describe your issue in detail."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Community Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Post in Instagram Forums",
+            "content": "Visit unofficial Instagram forums or subreddits like r/Instagram and ask for advice from the community. Sometimes other users can provide helpful tips or workarounds."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T09:27:10.183Z",
+      "updated": "2026-01-07T09:27:10.183Z",
+      "sourceUrl": "https://www.reddit.com/r/Instagram/comments/1nl1003/how_do_i_reach_instagram_support/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767778039531-443",
+    "title": "Fix Instagram Posts Not Showing",
+    "problemDescription": "Instagram app shows 'No posts yet' even though posts exist, possibly related to app crashes.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Instagram",
+      "posts",
+      "not showing",
+      "app crash"
+    ],
+    "steps": [
+      {
+        "title": "Restart the App",
+        "content": "Close the Instagram app completely and reopen it to see if the posts appear."
+      },
+      {
+        "title": "Update the App",
+        "content": "Check the app store for updates and install the latest version of Instagram."
+      },
+      {
+        "title": "Clear App Cache",
+        "content": "Go to your device settings, find the Instagram app, and clear its cache."
+      },
+      {
+        "title": "Reinstall the App",
+        "content": "Uninstall the Instagram app and then reinstall it from the app store."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Internet Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ensure Stable Connection",
+            "content": "Make sure your internet connection is stable and try again."
+          },
+          {
+            "title": "Switch Networks",
+            "content": "Try switching between Wi-Fi and mobile data to see if the issue persists."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Log Out and Log Back In",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Log Out",
+            "content": "Log out of your Instagram account from the app."
+          },
+          {
+            "title": "Log Back In",
+            "content": "Log back into your account and check if the posts are visible."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T09:27:19.531Z",
+      "updated": "2026-01-07T09:27:19.531Z",
+      "sourceUrl": "https://www.reddit.com/r/Instagram/comments/1nxeb0i/posts_not_showing/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767778062064-707",
+    "title": "Fix Android Phantom Notifications",
+    "problemDescription": "Android phone beeps like there is a new notification, but there are none.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "notifications",
+      "beeping",
+      "sound"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Phone",
+        "content": "Restart your Android device to resolve temporary software glitches that may be causing the phantom notification sounds."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clear App Cache and Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to your phone's Settings."
+          },
+          {
+            "title": "Navigate to Apps",
+            "content": "Tap on 'Apps' or 'Application Manager'."
+          },
+          {
+            "title": "Select Problematic App",
+            "content": "Find and select the app that might be causing the issue, especially messaging or social media apps."
+          },
+          {
+            "title": "Clear Cache and Data",
+            "content": "Tap on 'Storage' and then 'Clear Cache' and 'Clear Data'."
+          }
+        ]
+      },
+      {
+        "title": "Check for App Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Google Play Store",
+            "content": "Launch the Google Play Store app."
+          },
+          {
+            "title": "Go to My Apps & Games",
+            "content": "Tap on the three horizontal lines in the top-left corner and select 'My apps & games'."
+          },
+          {
+            "title": "Update Apps",
+            "content": "Tap on the 'Updates' tab and update all the apps that have available updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T09:27:42.064Z",
+      "updated": "2026-01-07T09:27:42.064Z",
+      "sourceUrl": "https://www.quora.com/My-Android-phone-keeps-beeping-like-there-is-a-new-notification-but-there-are-no-new-notifications-Why",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
