@@ -61328,5 +61328,747 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767784672517-518",
+    "title": "Add Trusted Phone Number to Bypass 2FA on Apple TV",
+    "problemDescription": "Apple TV prompts for two-factor authentication (2FA) when trying to sign in with an Apple ID.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "2FA",
+      "Apple TV",
+      "Apple ID",
+      "two-factor authentication"
+    ],
+    "steps": [
+      {
+        "title": "Add a Trusted Phone Number",
+        "content": "Go to account.apple.com, then click Sign-In and Security > Account Security. In the Trusted Phone Number section, add your phone number as a trusted number."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset to Default (Within 2 Weeks)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Two-Factor Authentication",
+            "content": "If two-factor authentication was enabled within the last two weeks, you can disable it by following the instructions on Apple's support page."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T11:17:52.517Z",
+      "updated": "2026-01-07T11:17:52.517Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/479514/how-to-solve-this-2fa-problem-with-apple-tv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767784703922-871",
+    "title": "Test Battery Drain with Poor Wi-Fi Signal",
+    "problemDescription": "Determine if poor Wi-Fi signals cause faster battery drain on iPhone.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "battery",
+      "drain",
+      "wifi",
+      "signal",
+      "iphone"
+    ],
+    "steps": [
+      {
+        "title": "Day 1 - All Connections On",
+        "content": "Fully charge your iPhone and unplug it. Leave it as you normally do for 8 hours. Note the remaining charge."
+      },
+      {
+        "title": "Day 2 - Wi-Fi Only",
+        "content": "Fully charge your iPhone and unplug it. Enable Airplane mode, then turn on Wi-Fi. Leave it for 8 hours and note the remaining charge."
+      },
+      {
+        "title": "Compare Results",
+        "content": "Compare the battery levels from both days to determine if Wi-Fi affects battery drain."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Airplane Mode with Wi-Fi",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Airplane Mode",
+            "content": "Turn on Airplane mode to disable cellular signal."
+          },
+          {
+            "title": "Enable Wi-Fi",
+            "content": "With Airplane mode still on, turn Wi-Fi back on."
+          },
+          {
+            "title": "Monitor Battery",
+            "content": "Observe battery drain over a period of time to see if it improves."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T11:18:23.922Z",
+      "updated": "2026-01-07T11:18:23.922Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/278940/myth-need-to-be-solved-will-the-battery-drain-faster-in-places-with-poor-wifi-s",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767784715468-948",
+    "title": "Fix Missing Text Message Notifications on Android 4.4.2",
+    "problemDescription": "Text message notifications are not working on Android 4.4.2.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "text message",
+      "notifications"
+    ],
+    "steps": [
+      {
+        "title": "Check Notification Volume",
+        "content": "Go to Settings > Sounds > Volume and ensure the Notifications slider is not set to the left (off). Slide it to the right to enable notifications."
+      },
+      {
+        "title": "Verify Messaging App Notifications",
+        "content": "Navigate to Settings > Apps > All, find the Messaging app, and ensure 'Show Notifications' is enabled."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Shortcut to Prevent Ringing",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Shortcut",
+            "content": "Go to the relevant settings and turn off the 'Shortcut to Prevent Ringing' option."
+          }
+        ]
+      },
+      {
+        "title": "Unblock Messages",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unblock Messages",
+            "content": "Navigate to Sounds and Notifications > Application Notifications > Messages and ensure messages are not blocked."
+          }
+        ]
+      },
+      {
+        "title": "Check Application Manager",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Application Manager",
+            "content": "Go to Settings > More > Application Manager > Turned off and ensure all relevant services for emails and voice messages are turned on."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T11:18:35.468Z",
+      "updated": "2026-01-07T11:18:35.468Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/77917/no-text-message-notifications-on-android-4-4-2",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767784718956-205",
+    "title": "View Notifications Without Pull-Down Bar",
+    "problemDescription": "The notification status pull-down bar is not working due to screen damage.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "notifications",
+      "android",
+      "screen damage"
+    ],
+    "steps": [
+      {
+        "title": "Use a Third-Party Launcher",
+        "content": "Install a third-party launcher like Nova Launcher Prime. Configure it to use gestures for notifications, such as swiping down anywhere on the home screen to view notifications."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Screen Replacement",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Replace the Screen",
+            "content": "Replace the damaged screen to restore the functionality of the notification pull-down bar."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T11:18:38.956Z",
+      "updated": "2026-01-07T11:18:38.956Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/146554/ways-to-see-notifications-besides-pull-down-bar",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767784730285-865",
+    "title": "Fix Delayed Notifications on Android 8",
+    "problemDescription": "Notifications are delayed or not received on Android 8 devices.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "notifications",
+      "delayed"
+    ],
+    "steps": [
+      {
+        "title": "Reset Google App",
+        "content": "Go to Settings > Apps > Google > Uninstall updates."
+      },
+      {
+        "title": "Adjust Heartbeat Rate",
+        "content": "Install an app to set your heartbeat rate to 5 minutes."
+      },
+      {
+        "title": "Check App Settings",
+        "content": "Ensure the app is not force quit, power saving mode is off, background data is enabled, and battery optimization is turned off for the app."
+      },
+      {
+        "title": "Clear App Cache",
+        "content": "Go to Settings > Apps > [App Name] > Storage > Clear Cache."
+      },
+      {
+        "title": "Check for Third-Party Overlays",
+        "content": "Ensure no third-party launchers or add-ons are interfering with app sync permissions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Manufacturer for Patch",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Submit a Ticket",
+            "content": "Contact the device manufacturer to report the issue and request a patch for the network driver."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T11:18:50.285Z",
+      "updated": "2026-01-07T11:18:50.285Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/215641/android-8-delayed-notifications",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767784746734-70",
+    "title": "Fix Microsoft Teams Freezing or Shutting Down",
+    "problemDescription": "Microsoft Teams app freezes or shuts down randomly.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "freezing",
+      "shutting down",
+      "app error"
+    ],
+    "steps": [
+      {
+        "title": "Update Microsoft Teams",
+        "content": "Ensure you are using the latest version of Microsoft Teams. Go to the Microsoft Teams download page and install any available updates."
+      },
+      {
+        "title": "Clear Cache and Restart",
+        "content": "Close Microsoft Teams completely. Then, restart your computer and reopen Teams to see if the issue persists."
+      },
+      {
+        "title": "Reinstall Microsoft Teams",
+        "content": "Uninstall Microsoft Teams from your computer. Download the latest version from the official website and reinstall it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Report the Issue",
+            "content": "If the problem persists, report the issue to Microsoft Support. They may provide further assistance or wait for a patch from Microsoft."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T11:19:06.734Z",
+      "updated": "2026-01-07T11:19:06.734Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/microsoft-teams-problems-how-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767784753771-185",
+    "title": "Join a Microsoft Teams Meeting",
+    "problemDescription": "How to join a Microsoft Teams meeting using an invitation link.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Teams",
+      "meeting",
+      "join",
+      "invitation",
+      "link"
+    ],
+    "steps": [
+      {
+        "title": "Open the Invitation Email",
+        "content": "Click on the link provided in the email invitation to start the process of joining the Teams meeting."
+      },
+      {
+        "title": "Choose Your Joining Method",
+        "content": "Select how you want to join the meeting. Options include downloading the desktop application for macOS or Windows, using the Teams app, or continuing in your browser."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Join via Desktop Application",
+        "type": "Alternative Method",
+        "steps": [
+          {
+            "title": "Download the Application",
+            "content": "Download and install the Microsoft Teams desktop application for your operating system."
+          },
+          {
+            "title": "Open the Application",
+            "content": "Launch the Teams application and sign in with your Microsoft account if required."
+          },
+          {
+            "title": "Join the Meeting",
+            "content": "Click on the meeting link provided in the email to join the meeting through the desktop application."
+          }
+        ]
+      },
+      {
+        "title": "Join via Browser",
+        "type": "Alternative Method",
+        "steps": [
+          {
+            "title": "Open the Browser",
+            "content": "Open your preferred web browser."
+          },
+          {
+            "title": "Click the Link",
+            "content": "Click on the meeting link provided in the email."
+          },
+          {
+            "title": "Join the Meeting",
+            "content": "Follow the prompts to join the meeting directly through your browser."
+          }
+        ]
+      },
+      {
+        "title": "Join via Mobile App",
+        "type": "Alternative Method",
+        "steps": [
+          {
+            "title": "Download the App",
+            "content": "Download and install the Microsoft Teams mobile app from the App Store or Google Play Store."
+          },
+          {
+            "title": "Open the App",
+            "content": "Launch the Teams app and sign in with your Microsoft account if required."
+          },
+          {
+            "title": "Join the Meeting",
+            "content": "Click on the meeting link provided in the email to join the meeting through the mobile app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T11:19:13.771Z",
+      "updated": "2026-01-07T11:19:13.771Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/how-to-join-microsoft-teams-meeting/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767784763674-20",
+    "title": "Outlook Desktop App Not Working",
+    "problemDescription": "Outlook Desktop app is not functioning due to a faulty software patch.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Outlook",
+      "Microsoft 365",
+      "software patch",
+      "app error"
+    ],
+    "steps": [
+      {
+        "title": "Restart Outlook Desktop App",
+        "content": "Close and reopen the Outlook Desktop app to apply the fix deployed by Microsoft."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Outlook on the Web or Mobile Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Outlook on the Web",
+            "content": "Go to the Outlook web version at outlook.office.com and log in with your credentials."
+          },
+          {
+            "title": "Use Outlook Mobile App",
+            "content": "Download and use the Outlook mobile app on iOS or Android as an alternative."
+          }
+        ]
+      },
+      {
+        "title": "Roll Back Recent Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Windows Settings",
+            "content": "Press Win + I to open Windows Settings."
+          },
+          {
+            "title": "Navigate to Update & Security",
+            "content": "Go to Update & Security > Windows Update > Update history."
+          },
+          {
+            "title": "Uninstall Recent Updates",
+            "content": "Find the recent Microsoft 365 updates and uninstall them."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T11:19:23.674Z",
+      "updated": "2026-01-07T11:19:23.674Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/microsoft-is-working-right-now-to-fix-an-issue-with-outlook/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767784767193-549",
+    "title": "Fix Google Meet Screen Sharing Issue",
+    "problemDescription": "Drop-down menus not showing when sharing a window in Google Meet.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "google meet",
+      "screen sharing",
+      "drop-down menus"
+    ],
+    "steps": [
+      {
+        "title": "Share Whole Screen Instead of a Window",
+        "content": "Instead of sharing a specific window, share your entire screen to ensure drop-down menus are visible."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Enable Screen Recording for Browser on MacOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Preferences",
+            "content": "Go to the Apple menu and select 'System Preferences'."
+          },
+          {
+            "title": "Select Security & Privacy",
+            "content": "Click on 'Security & Privacy' and then go to the 'Privacy' tab."
+          },
+          {
+            "title": "Enable Screen Recording",
+            "content": "Scroll down to 'Screen Recording' and check the box next to your browser to allow it to record your screen."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T11:19:27.193Z",
+      "updated": "2026-01-07T11:19:27.193Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-google-meet-problems-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767784776636-518",
+    "title": "Fix Samsung Galaxy S8 Freezing or Lagging",
+    "problemDescription": "Samsung Galaxy S8 freezing or lagging issues.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "galaxy s8",
+      "freezing",
+      "lagging",
+      "cache"
+    ],
+    "steps": [
+      {
+        "title": "Wipe Cache Partition",
+        "content": "Turn off your Galaxy S8 or S8 Plus. Hold down the Volume Up and Bixby keys, then press and hold the Power button until the Android logo appears. Release all buttons. Use the Volume keys to navigate to 'Wipe cache partition' and press the Power button to select it. Confirm by selecting 'Yes' and wait for the process to complete. Reboot your device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Press and hold the Power button until the Power menu appears. Tap and hold the 'Power off' option until the 'Reboot to safe mode' prompt appears. Tap 'OK' to confirm. Your device will restart in Safe Mode. If the issue resolves, a third-party app may be causing the problem. Uninstall recently installed apps one by one to identify the culprit."
+          }
+        ]
+      },
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Perform a Factory Reset",
+            "content": "Go to 'Settings' > 'Backup and reset' > 'Factory data reset'. Tap 'Reset device' and follow the on-screen instructions. Note that this will erase all data on your device, so back up important information before proceeding."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T11:19:36.636Z",
+      "updated": "2026-01-07T11:19:36.636Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-galaxy-s8-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767784778878-709",
+    "title": "Fix Galaxy S6 Overheating",
+    "problemDescription": "Your Galaxy S6 is warm or hot to the touch, often due to processor overwork.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "galaxy s6",
+      "overheating",
+      "processor"
+    ],
+    "steps": [
+      {
+        "title": "Rest the Device",
+        "content": "Let your phone rest for a few minutes to allow it to cool down."
+      },
+      {
+        "title": "Disable Bloatware",
+        "content": "Go to Settings > Apps, find the pre-installed apps, and disable them."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup your data to avoid losing important information."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > Backup and reset > Factory data reset > Reset device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T11:19:38.878Z",
+      "updated": "2026-01-07T11:19:38.878Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/galaxy-s6-problems-and-fixes/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767784785097-973",
+    "title": "Fix Galaxy S5 Wi-Fi Issues",
+    "problemDescription": "Galaxy S5 is unable to connect to Wi-Fi networks.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "Galaxy S5",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check Wi-Fi with Another Device",
+        "content": "Ensure that your Wi-Fi network is working with another device before troubleshooting the Galaxy S5."
+      },
+      {
+        "title": "Restart the Galaxy S5",
+        "content": "Restart your Galaxy S5 to refresh the system and potentially resolve the Wi-Fi issue."
+      },
+      {
+        "title": "Forget and Reconnect to Wi-Fi",
+        "content": "Go to Settings > Wi-Fi, forget the network, and then reconnect to it."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > Backup and reset > Reset network settings to reset all network-related settings to their defaults."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Galaxy S5 Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > About device > Software update > Check for updates."
+          },
+          {
+            "title": "Install Updates",
+            "content": "If an update is available, follow the on-screen instructions to install it."
+          }
+        ]
+      },
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup all important data as a factory reset will erase everything."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > Backup and reset > Factory data reset > Reset device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T11:19:45.097Z",
+      "updated": "2026-01-07T11:19:45.097Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-samsung-galaxy-s5-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767784789697-859",
+    "title": "Fix Galaxy S20 Random Reboot Loop",
+    "problemDescription": "Your Samsung Galaxy S20 is stuck in a random reboot loop, causing it to restart unexpectedly.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "galaxy s20",
+      "reboot",
+      "loop",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Force Restart",
+        "content": "Press and hold the Power button and Volume Down button simultaneously for about 10 seconds until the device restarts."
+      },
+      {
+        "title": "Boot into Safe Mode",
+        "content": "Press and hold the Power button until the Samsung logo appears, then release and immediately hold the Volume Down button until the device boots into Safe Mode."
+      },
+      {
+        "title": "Check for Updates",
+        "content": "Go to Settings > Software update > Download and install any available updates."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "Go to Settings > General management > Reset > Factory data reset. Follow the prompts to reset your device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Cache Partition",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Power Off",
+            "content": "Turn off your Galaxy S20 completely."
+          },
+          {
+            "title": "Enter Recovery Mode",
+            "content": "Press and hold the Power button and Volume Up button simultaneously until the Samsung logo appears, then release and hold the Volume Up button until Recovery Mode appears."
+          },
+          {
+            "title": "Clear Cache Partition",
+            "content": "Use the Volume buttons to navigate to 'Wipe cache partition' and press the Power button to select it. Wait for the process to complete, then reboot your device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T11:19:49.697Z",
+      "updated": "2026-01-07T11:19:49.697Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-samsung-galaxy-s20-problems-how-to-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767784791480-393",
+    "title": "Improve Battery Life on Samsung Galaxy S21",
+    "problemDescription": "Samsung Galaxy S21 users experiencing poor battery life.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "battery",
+      "samsung",
+      "galaxy s21"
+    ],
+    "steps": [
+      {
+        "title": "Clear Cache",
+        "content": "Go to Settings > Apps > Select the app > Storage > Clear Cache."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-07T11:19:51.480Z",
+      "updated": "2026-01-07T11:19:51.480Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-samsung-galaxy-s21-problems-how-to-solve/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
