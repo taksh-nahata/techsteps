@@ -66408,5 +66408,419 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767820644961-859",
+    "title": "Fix USB Device Descriptor Read Error -110",
+    "problemDescription": "Ubuntu reports 'device descriptor read/64, error -110' when trying to read a USB device.",
+    "category": "linux",
+    "difficulty": "Easy",
+    "keywords": [
+      "usb",
+      "ubuntu",
+      "error",
+      "device descriptor"
+    ],
+    "steps": [
+      {
+        "title": "Power Cycle the System",
+        "content": "Shut down the system completely. Unplug the charger and all USB devices. Wait for 5 minutes. Replug the charger and USB devices, then restart the system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Switch USB Ports",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unplug All USB Devices",
+            "content": "Disconnect all USB devices from the computer."
+          },
+          {
+            "title": "Wait for a Minute",
+            "content": "Wait for about a minute before reconnecting the devices."
+          },
+          {
+            "title": "Reconnect to USB 2.0 Ports",
+            "content": "Plug the USB devices into USB 2.0 ports first. If the issue persists, try USB 3.0 ports."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T21:17:24.961Z",
+      "updated": "2026-01-07T21:17:24.961Z",
+      "sourceUrl": "https://askubuntu.com/questions/644010/ubuntu-cant-read-my-usb-device-descriptor-read-64-error-110",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767820680330-365",
+    "title": "Fix Gmail Not Working on MacBook Pro",
+    "problemDescription": "Gmail is not working on your MacBook Pro after changing the password.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "macbook",
+      "password",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Update Gmail Password in Mail App",
+        "content": "Open the Mail app on your MacBook Pro. Go to Mail > Preferences > Accounts. Select your Gmail account and update the password in the Account Information section."
+      },
+      {
+        "title": "Sign Out and Sign Back In",
+        "content": "Sign out of your Gmail account in the Mail app and then sign back in with your new password."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your MacBook Pro is connected to the internet. Try opening other websites or apps to confirm your connection is stable."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Re-add Gmail Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Gmail Account",
+            "content": "Go to Mail > Preferences > Accounts. Select your Gmail account and click the minus (-) button to remove it."
+          },
+          {
+            "title": "Add Gmail Account Again",
+            "content": "Click the plus (+) button and select 'New Account.' Follow the prompts to add your Gmail account again with the updated password."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T21:18:00.330Z",
+      "updated": "2026-01-07T21:18:00.330Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254761083",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767820685413-806",
+    "title": "Fix Gmail Account Info Errors in Mail App",
+    "problemDescription": "The Mail app on iOS displays 'account info wrong' error, slow email retrieval, and notification issues.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "mail app",
+      "account info",
+      "ios",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Mail App",
+        "content": "Close the Mail app completely and reopen it to see if the error persists."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your device has a stable internet connection, as connectivity issues can cause similar errors."
+      },
+      {
+        "title": "Update iOS",
+        "content": "Go to Settings > General > Software Update and install any available updates."
+      },
+      {
+        "title": "Remove and Re-add Gmail Account",
+        "content": "Go to Settings > Mail > Accounts > Select your Gmail account > Delete Account. Then, re-add the account by going to Settings > Mail > Accounts > Add Account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > General > Reset > Reset Network Settings. This will reset all network-related settings, including Wi-Fi passwords."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T21:18:05.413Z",
+      "updated": "2026-01-07T21:18:05.413Z",
+      "sourceUrl": "https://discussions.apple.com/thread/256124857",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767820691002-330",
+    "title": "Fix Gmail Connection Issues on iOS",
+    "problemDescription": "Gmail account not connecting on iPhone, iPad, or iPod touch.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "connection",
+      "ios",
+      "email"
+    ],
+    "steps": [
+      {
+        "title": "Remove and Re-add Gmail Account",
+        "content": "Go to Settings > Mail > Accounts > Select your Gmail account > Delete Account. Then, re-add the account by going to Settings > Mail > Accounts > Add Account > Google."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Gmail Website Access",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Gmail Access",
+            "content": "Ensure you can sign in to your Gmail account on the Gmail website. If you can't, the issue might be with your Gmail account itself."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T21:18:11.002Z",
+      "updated": "2026-01-07T21:18:11.002Z",
+      "sourceUrl": "https://discussions.apple.com/thread/252714194",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767820699141-464",
+    "title": "Fix Android Device Not Recognized by ADB on Windows 11",
+    "problemDescription": "Android device is not being recognized by ADB on Windows 11, with 'Android Composite ADB Interface' missing in Device Manager.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "adb",
+      "android",
+      "windows 11",
+      "usb",
+      "device manager"
+    ],
+    "steps": [
+      {
+        "title": "Check USB Ports",
+        "content": "Ensure other USB devices are working. If not, perform a full shutdown and restart of Windows."
+      },
+      {
+        "title": "Redock the Device",
+        "content": "If using a 2-in-1 laptop, undock and redock the screen/tablet from the keyboard base."
+      },
+      {
+        "title": "Verify ADB Interface in Device Manager",
+        "content": "Open Device Manager and check if 'Android Composite ADB Interface' is listed under 'Other devices' or elsewhere."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall ADB Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Existing Drivers",
+            "content": "In Device Manager, right-click on the problematic device and select 'Uninstall device'."
+          },
+          {
+            "title": "Reinstall Drivers",
+            "content": "Disconnect and reconnect the USB cable. Windows should automatically reinstall the drivers."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Different USB Cable or Port",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try Another USB Cable",
+            "content": "Ensure you are using a high-quality USB-C cable."
+          },
+          {
+            "title": "Switch USB Ports",
+            "content": "Connect the device to a different USB port on your computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T21:18:19.141Z",
+      "updated": "2026-01-07T21:18:19.141Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/258990/why-is-my-android-device-not-being-recognized-by-adb-on-windows-11",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767820709128-331",
+    "title": "Fix Android 11 Bluetooth File Transfer Issues",
+    "problemDescription": "Android 11 devices fail to receive Bluetooth file transfers from Windows 11, stopping mid-transfer.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "android 11",
+      "file transfer",
+      "windows 11"
+    ],
+    "steps": [
+      {
+        "title": "Enable Classic Bluetooth",
+        "content": "Go to Settings > Connected Devices > Connection preferences > Bluetooth. Tap on the three-dot menu and select 'Advanced'. Ensure 'Classic Bluetooth' is enabled and given priority over BLE (Bluetooth Low Energy)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Bluetooth Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Bluetooth",
+            "content": "Go to Settings > System > Reset options > Reset Wi-Fi, mobile & Bluetooth. This will reset all Bluetooth settings to default."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update Bluetooth Drivers on Windows 11",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Drivers",
+            "content": "On the Windows 11 device, go to Device Manager > Bluetooth > Right-click on the Bluetooth adapter and select 'Update driver'. Follow the prompts to update the driver."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T21:18:29.128Z",
+      "updated": "2026-01-07T21:18:29.128Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/259866/android-11-fails-to-receive-bluetooth-file-transfers",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767820736744-885",
+    "title": "Fix Zoom App Errors on Windows",
+    "problemDescription": "Zoom app not working properly on Windows 10.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "windows",
+      "app-error",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Update Zoom App",
+        "content": "Open Zoom, click on the profile icon, and select 'Check for Updates'. Install the latest version if available."
+      },
+      {
+        "title": "Verify Microphone and Camera Settings",
+        "content": "Go to Zoom settings, ensure the correct microphone and camera are selected."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Zoom",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Zoom",
+            "content": "Go to Control Panel > Programs > Uninstall a Program, select Zoom, and uninstall it."
+          },
+          {
+            "title": "Reinstall Zoom",
+            "content": "Download the latest version of Zoom from the official website and install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T21:18:56.744Z",
+      "updated": "2026-01-07T21:18:56.744Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=MEbEQe5qqtA",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767820753379-174",
+    "title": "Fix Zoom Camera Not Working",
+    "problemDescription": "Zoom camera is not working during online conferences.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "camera",
+      "video",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Close Other Apps Using the Camera",
+        "content": "Ensure no other applications are using the web camera. Close all apps that might be accessing the camera, such as Microsoft Teams or other video conferencing tools."
+      },
+      {
+        "title": "Check Privacy Access Settings",
+        "content": "Verify that Zoom has permission to access the camera in your device's privacy settings. This can usually be found in the system settings under 'Privacy' or 'Permissions'."
+      },
+      {
+        "title": "Configure Zoom Camera Settings",
+        "content": "Open Zoom and go to the settings menu. Ensure the correct camera is selected and that the camera is enabled."
+      },
+      {
+        "title": "Reduce Outgoing Traffic",
+        "content": "If your internet connection is slow, reduce the amount of outgoing traffic by closing unnecessary applications or tabs that might be using bandwidth."
+      },
+      {
+        "title": "Update Your Zoom App",
+        "content": "Sign in to the Zoom desktop client, click your profile picture, and select 'Check for Updates'. Install any available updates."
+      },
+      {
+        "title": "Reinstall Your Zoom App",
+        "content": "If all else fails, uninstall the Zoom app and then reinstall it to ensure a clean installation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Camera Hardware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test the Camera with Another App",
+            "content": "Open another application that uses the camera, such as a photo booth or another video conferencing tool, to ensure the camera is functioning properly."
+          },
+          {
+            "title": "Restart Your Device",
+            "content": "Restart your computer or device to refresh the system and potentially resolve any temporary glitches."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T21:19:13.379Z",
+      "updated": "2026-01-07T21:19:13.379Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=4RaYAfvA4N4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
