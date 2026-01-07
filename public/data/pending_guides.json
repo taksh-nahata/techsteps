@@ -56645,5 +56645,706 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767760699165-487",
+    "title": "Fix iPhone Software Glitches",
+    "problemDescription": "Your iPhone is experiencing temporary software glitches.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "software",
+      "glitches",
+      "restart"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your iPhone",
+        "content": "Turn off your iPhone, wait for a few seconds, and then turn it back on."
+      },
+      {
+        "title": "Force Restart",
+        "content": "If the issue persists, perform a force restart by following Apple's guidelines."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset All Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Settings",
+            "content": "Back up your iPhone settings before proceeding."
+          },
+          {
+            "title": "Reset Settings",
+            "content": "Go to Settings > General > Transfer & Reset > Reset > Reset All Settings and confirm the action."
+          },
+          {
+            "title": "Reconfigure Settings",
+            "content": "Reconfigure your settings after the reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T04:38:19.165Z",
+      "updated": "2026-01-07T04:38:19.165Z",
+      "sourceUrl": "https://discussions.apple.com/docs/DOC-250008306",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767760705082-466",
+    "title": "Fix iPhone Issues After iOS 17.4.1 Update",
+    "problemDescription": "Troubleshoot and resolve common issues after updating to iOS 17.4.1 on your iPhone.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iPhone",
+      "iOS 17.4.1",
+      "update issues",
+      "battery life",
+      "display settings"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Open a web browser on your iPhone. Tap on any link to confirm the device is connected to the internet."
+      },
+      {
+        "title": "Maintain Battery Health",
+        "content": "Avoid draining the battery to zero. Charge it when the battery level is below 20%. Use a suitable adapter (5W to 140W USB-C Power Adapter)."
+      },
+      {
+        "title": "Optimize Display Settings",
+        "content": "Lower screen brightness, enable auto-brightness, and set shorter screen timeout durations. Adjust display and text size as needed."
+      },
+      {
+        "title": "Disable Push Email",
+        "content": "Go to Settings > Mail > Accounts > Fetch New Data. Set your email accounts to fetch data manually or at longer intervals."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings. This can resolve connectivity issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T04:38:25.082Z",
+      "updated": "2026-01-07T04:38:25.082Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255554896",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767760709662-668",
+    "title": "Fix iPhone Stuck on Apple Logo",
+    "problemDescription": "iPhone is stuck on the Apple logo and won't turn on.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "apple logo",
+      "stuck",
+      "restart",
+      "recovery mode"
+    ],
+    "steps": [
+      {
+        "title": "Force Restart",
+        "content": "Press and hold the power button and the volume down button (or the home button for older iPhone models) simultaneously until the Apple logo disappears and reappears. Release the buttons and wait for your iPhone to start up normally."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restore from iTunes/Finder",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect to Computer",
+            "content": "Connect your iPhone to a computer with iTunes (or Finder on macOS Catalina or later) installed."
+          },
+          {
+            "title": "Enter Recovery Mode",
+            "content": "Put your device into recovery mode by following the instructions provided by iTunes/Finder."
+          },
+          {
+            "title": "Restore iPhone",
+            "content": "Once in recovery mode, restore your iPhone to factory settings. Be aware that this erases all data on your device, so ensure you have a backup beforehand."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T04:38:29.662Z",
+      "updated": "2026-01-07T04:38:29.662Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254956547",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767760711193-270",
+    "title": "Fix iPhone Screen Not Turning On",
+    "problemDescription": "iPhone screen is not turning on and the device is not functioning properly.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "screen",
+      "restart",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Perform a Forced Restart",
+        "content": "Follow the instructions carefully to perform a forced restart on your iPhone. You may need to repeat this several times."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-07T04:38:31.193Z",
+      "updated": "2026-01-07T04:38:31.193Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255093637",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767760714826-5",
+    "title": "Persistent iOS Software Issue",
+    "problemDescription": "Experiencing recurring software issues on iOS that Apple Support and in-store technicians cannot resolve.",
+    "category": "ios",
+    "difficulty": "Hard",
+    "keywords": [
+      "ios",
+      "software",
+      "apple support",
+      "diagnostics",
+      "restore"
+    ],
+    "steps": [
+      {
+        "title": "Contact Apple Support",
+        "content": "Reach out to Apple Support again, providing detailed information about the issue and previous steps taken."
+      },
+      {
+        "title": "Request Senior Technician",
+        "content": "Ask to speak with a senior technician or manager who may have more experience with complex issues."
+      },
+      {
+        "title": "Document the Issue",
+        "content": "Keep a detailed log of the problem, including when it occurs, error messages, and any troubleshooting steps already attempted."
+      },
+      {
+        "title": "Escalate the Case",
+        "content": "If the issue persists, request to escalate the case to Apple's higher-level support or engineering team."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Community Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Software Updates",
+            "content": "Ensure your iOS is updated to the latest version, as updates often include bug fixes."
+          },
+          {
+            "title": "Reset All Settings",
+            "content": "Go to Settings > General > Reset > Reset All Settings. This can resolve issues without erasing your data."
+          },
+          {
+            "title": "Backup and Restore",
+            "content": "Backup your device using iTunes or iCloud, then perform a factory reset and restore from the backup."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T04:38:34.826Z",
+      "updated": "2026-01-07T04:38:34.826Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255503885",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767760724720-471",
+    "title": "Fix Excel Zoom In and Out Issue",
+    "problemDescription": "Selected cells may change or disappear when zooming in and out in Excel.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "excel",
+      "zoom",
+      "cells",
+      "disappear"
+    ],
+    "steps": [
+      {
+        "title": "Check Excel Version",
+        "content": "Open Excel and select the '?' icon to find and note the version number of Excel you are using."
+      },
+      {
+        "title": "Test with a New File",
+        "content": "Create a new Excel file and enter a small amount of text to see if the zooming issue persists."
+      },
+      {
+        "title": "Uninstall and Reinstall Excel",
+        "content": "If the issue is recent, try uninstalling and reinstalling Excel to resolve the problem."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Specific File Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test Different Files",
+            "content": "Determine if the issue occurs with all files or just specific ones. This can help identify if the problem is file-specific."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T04:38:44.720Z",
+      "updated": "2026-01-07T04:38:44.720Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/all/zoom-in-and-zoom-out-issue/ea8158dd-76cc-43bf-b914-0b1f4c62b4b5",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767760728361-647",
+    "title": "Fix Unexpected Shutdown in Windows",
+    "problemDescription": "Your Windows PC is experiencing unexpected shutdowns.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "shutdown",
+      "crash",
+      "blue screen"
+    ],
+    "steps": [
+      {
+        "title": "Update Nvidia Drivers",
+        "content": "Install and use GeForce Experience to update Nvidia drivers."
+      },
+      {
+        "title": "Check System Files",
+        "content": "Open PowerShell or Command Prompt as administrator and run the following commands in order:\n1. `DISM.exe /Online /Cleanup-image /Restorehealth`\n2. `sfc /scannow`\n3. `chkdsk /f /r /b` (confirm with 'Y' and restart your computer)."
+      },
+      {
+        "title": "Perform a Clean Boot",
+        "content": "Disable all third-party services and programs, then use the PC for a long time to see if the problem recurs."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Overheating",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clean Your PC",
+            "content": "Ensure your PC is clean and well-ventilated to prevent overheating."
+          },
+          {
+            "title": "Monitor Temperatures",
+            "content": "Use tools like HWMonitor or Core Temp to check your CPU and GPU temperatures."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T04:38:48.361Z",
+      "updated": "2026-01-07T04:38:48.361Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/unexpected-shutdown/f8510df1-cc6f-4394-b543-82b88bbbbc99",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767760734390-855",
+    "title": "Fix Excel Calculation Errors",
+    "problemDescription": "Excel is not performing mathematical calculations correctly, leading to errors.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "excel",
+      "calculations",
+      "errors",
+      "mathematical",
+      "formulas"
+    ],
+    "steps": [
+      {
+        "title": "Check Calculation Options",
+        "content": "Go to 'File' > 'Options' > 'Formulas'. Ensure that 'Automatic' is selected under 'Workbook Calculation'."
+      },
+      {
+        "title": "Verify Cell Formatting",
+        "content": "Check if the cells are formatted correctly as numbers or formulas. Right-click the cell, select 'Format Cells', and choose the appropriate format."
+      },
+      {
+        "title": "Check for Circular References",
+        "content": "Go to 'Formulas' > 'Formula Auditing' > 'Error Checking' > 'Circular References'. Resolve any circular references that may be causing the errors."
+      },
+      {
+        "title": "Update Excel",
+        "content": "Ensure that your Excel application is up-to-date. Go to 'File' > 'Account' > 'Update Options' > 'Update Now'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Excel",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Excel",
+            "content": "Go to 'Control Panel' > 'Programs and Features' > 'Microsoft Office' > 'Uninstall'."
+          },
+          {
+            "title": "Reinstall Excel",
+            "content": "Download the latest version of Microsoft Office from the official website and reinstall Excel."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T04:38:54.390Z",
+      "updated": "2026-01-07T04:38:54.390Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/office_2010-customize/changing-the-default-view-zoom-size-when-i-open/1bf29a71-fceb-4edd-b6d3-57b20fb2c2ae?msgId=85c69256-82ea-4173-8b8d-7705e4c9b548&page=1",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767760753171-849",
+    "title": "Fix MacOS Notifications Not Popping Up",
+    "problemDescription": "Notifications are not popping up on MacOS, but they appear in the Notification Center and dings are heard.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "macos",
+      "notifications",
+      "popup",
+      "notification center"
+    ],
+    "steps": [
+      {
+        "title": "Check Do Not Disturb Mode",
+        "content": "Go to System Settings > Focus and ensure that 'Do Not Disturb' mode is turned off."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Enable Notifications While Sharing Screen",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Notifications While Sharing Screen",
+            "content": "Go to System Settings > Notifications and enable the setting that allows notifications while sharing the screen. This setting might be labeled differently depending on your macOS language."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T04:39:13.171Z",
+      "updated": "2026-01-07T04:39:13.171Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/469098/notifications-are-only-shown-when-opening-notifications-center",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767760769172-543",
+    "title": "Fix Amazon Alexa Incompatible Devices",
+    "problemDescription": "Amazon Alexa shows an incompatible devices error during setup.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "alexa",
+      "incompatible",
+      "setup",
+      "echo",
+      "app"
+    ],
+    "steps": [
+      {
+        "title": "Check Phone Connection",
+        "content": "Ensure your phone is connected to the Alexa device."
+      },
+      {
+        "title": "Verify Internet Connection",
+        "content": "Make sure your phone has a stable Wi-Fi or cellular data connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Retry Device Pairing",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Alexa Device",
+            "content": "Unplug the Alexa device, wait for 30 seconds, and plug it back in."
+          },
+          {
+            "title": "Re-pair Device",
+            "content": "Open the Alexa app and retry the device pairing process."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Troubleshoot Alexa App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Alexa App",
+            "content": "Ensure the Alexa app is updated to the latest version."
+          },
+          {
+            "title": "Clear App Cache",
+            "content": "Clear the cache of the Alexa app on your phone."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T04:39:29.172Z",
+      "updated": "2026-01-07T04:39:29.172Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=yLRO2rxut1A",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767760775697-952",
+    "title": "Fix Alexa Red Light or Mute Issue",
+    "problemDescription": "Your Amazon Alexa device shows a red light or ring, indicating the microphone is off or there's a glitch.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Alexa",
+      "red light",
+      "mute",
+      "Echo Dot",
+      "Amazon Echo"
+    ],
+    "steps": [
+      {
+        "title": "Check the Mute Button",
+        "content": "Look for the microphone icon button on the top of your Echo Dot. Press the button once. If the red light turns off, the microphone is now enabled and Alexa should be able to hear you."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restart the Alexa Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unplug the Device",
+            "content": "Unplug your Alexa device from the power source."
+          },
+          {
+            "title": "Wait for a Few Seconds",
+            "content": "Wait for about 10-15 seconds."
+          },
+          {
+            "title": "Plug the Device Back In",
+            "content": "Plug the device back into the power source and wait for it to restart."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T04:39:35.697Z",
+      "updated": "2026-01-07T04:39:35.697Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=wM5L7YUdIw8",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767760783770-136",
+    "title": "Fix Pixel 6a Wi-Fi and Cellular Connectivity Issues",
+    "problemDescription": "Pixel 6a users experiencing issues with cellular connectivity and faulty Wi-Fi network switching.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel 6a",
+      "wifi",
+      "cellular",
+      "connectivity"
+    ],
+    "steps": [
+      {
+        "title": "Reset Wireless Connectivity Settings",
+        "content": "Go to Settings > System > Apps > See all apps > Google Play Services > App details. Update Google Play Services if an update is available."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Join Android Beta Program",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Register for Android Beta",
+            "content": "Head over to the Android beta registration page on the phone’s web browser."
+          },
+          {
+            "title": "Opt in to Beta Program",
+            "content": "On the Android Beta for Pixel page, tap on the Devices section, find your Pixel 6a, and tap on the blue Opt in button."
+          },
+          {
+            "title": "Check for System Update",
+            "content": "Go to Settings > System > System update > Check for update."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T04:39:43.770Z",
+      "updated": "2026-01-07T04:39:43.770Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/google-pixel-6a-common-problems-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767760786771-200",
+    "title": "Fix Pixel Watch 2 Battery Issues",
+    "problemDescription": "Pixel Watch 2 experiencing battery drain or charging problems.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Pixel Watch 2",
+      "battery",
+      "charging",
+      "software"
+    ],
+    "steps": [
+      {
+        "title": "Disable Battery Defender",
+        "content": "Go to the watch settings and turn off the Battery Defender feature to improve battery performance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reboot the Pixel Watch 2",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot the Watch",
+            "content": "Perform a reboot of the Pixel Watch 2 to resolve battery issues."
+          }
+        ]
+      },
+      {
+        "title": "Toggle Autolaunch Media Controls",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Media Controls Settings",
+            "content": "Go to the watch settings and select Apps and Notifications > App Info > System apps > Media Controls."
+          },
+          {
+            "title": "Toggle Autolaunch Feature",
+            "content": "Turn off the Autolaunch Media Controls feature and enable it again from the same screen."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T04:39:46.771Z",
+      "updated": "2026-01-07T04:39:46.771Z",
+      "sourceUrl": "https://www.digitaltrends.com/wearables/google-pixel-watch-2-problems-how-to-fix-common-issues/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767760795377-221",
+    "title": "Fix Google Pixel 9 Camera Lag",
+    "problemDescription": "Google Pixel 9 camera is slow and unreliable, causing lagging and stuttering.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "camera",
+      "lag",
+      "Pixel 9",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Camera App",
+        "content": "Close the camera app completely and reopen it to see if the issue persists."
+      },
+      {
+        "title": "Clear Camera App Cache",
+        "content": "Go to Settings > Apps > Camera > Storage & cache > Clear Cache."
+      },
+      {
+        "title": "Update Camera App",
+        "content": "Check for updates in the Google Play Store to ensure you have the latest version of the camera app."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "Restart your Pixel 9 to clear any temporary software glitches."
+      },
+      {
+        "title": "Check for System Updates",
+        "content": "Go to Settings > System > System update to ensure your device has the latest software updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure all important data is backed up as a factory reset will erase all data."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T04:39:55.377Z",
+      "updated": "2026-01-07T04:39:55.377Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/google-pixel-9-problems-common-issues-how-to-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
