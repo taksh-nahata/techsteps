@@ -59370,5 +59370,528 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767774291533-254",
+    "title": "Fix Ubuntu 24.04 LTS Slow Performance",
+    "problemDescription": "Ubuntu 24.04 LTS is running slow even without any applications open.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "slow",
+      "performance",
+      "24.04 LTS"
+    ],
+    "steps": [
+      {
+        "title": "Check System Resources",
+        "content": "Open the System Monitor to check CPU, memory, and disk usage. Press Ctrl+Alt+T to open a terminal and type 'gnome-system-monitor'."
+      },
+      {
+        "title": "Update System",
+        "content": "Ensure your system is up to date. Open a terminal and run 'sudo apt update && sudo apt upgrade'."
+      },
+      {
+        "title": "Check for Background Processes",
+        "content": "Identify any unnecessary background processes consuming resources. Use 'top' or 'htop' in the terminal to monitor processes."
+      },
+      {
+        "title": "Clean Up Disk Space",
+        "content": "Remove unnecessary files and clear cache. Use 'sudo apt autoremove' and 'sudo apt clean' to free up space."
+      },
+      {
+        "title": "Check for Hardware Issues",
+        "content": "Test your hardware components, such as RAM and disk, for any potential failures. Use tools like 'memtest86+' for RAM and 'smartctl' for disk health."
+      },
+      {
+        "title": "Reinstall Ubuntu",
+        "content": "If the issue persists, consider reinstalling Ubuntu to ensure a clean system setup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Startup Applications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Startup Applications",
+            "content": "Go to 'Startup Applications' in the system settings."
+          },
+          {
+            "title": "Disable Unnecessary Applications",
+            "content": "Disable any applications that are not essential for startup."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Switch to a Lighter Desktop Environment",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Lighter Desktop Environment",
+            "content": "Install a lighter desktop environment like XFCE or LXDE. Use 'sudo apt install xubuntu-desktop' for XFCE."
+          },
+          {
+            "title": "Log Out and Select New Environment",
+            "content": "Log out and select the new desktop environment from the login screen."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T08:24:51.533Z",
+      "updated": "2026-01-07T08:24:51.533Z",
+      "sourceUrl": "https://askubuntu.com/questions/1531604/ubuntu-24-04-lts-is-very-slow-even-without-running-any-app",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767774347785-929",
+    "title": "Fix Zoom Lag and Crashing",
+    "problemDescription": "Zoom is experiencing significant lag and crashing issues.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "lag",
+      "crashing",
+      "compatibility mode"
+    ],
+    "steps": [
+      {
+        "title": "Enable Windows 8 Compatibility Mode",
+        "content": "Find the zoom.exe application in the folder: c:\\users\\\"username\"\\appdata\\roaming\\Zoom\\bin. Right-click on it, go to the compatibility tab, check the option to 'Run this program in compatibility mode for:' and select 'Windows 8' in the drop-down."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Force Zoom on GPU",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Select Zoom App to Use Dedicated GPU",
+            "content": "Go to the settings of your GPU and select the Zoom app to use the dedicated GPU."
+          },
+          {
+            "title": "Disable iGPU in Hardware Manager",
+            "content": "Disable the integrated GPU in the hardware manager."
+          },
+          {
+            "title": "Disable iGPU in BIOS",
+            "content": "Disable the integrated GPU in the BIOS settings."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Force Zoom on iGPU",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable GPU in Hardware Manager",
+            "content": "Disable the dedicated GPU in the hardware manager."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T08:25:47.785Z",
+      "updated": "2026-01-07T08:25:47.785Z",
+      "sourceUrl": "https://www.reddit.com/r/Zoom/comments/xxatbk/sharing_my_fix_for_significant_zoom_lag_and/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767774381708-206",
+    "title": "Fix Smart TV Black Screen with Sound",
+    "problemDescription": "Smart TV screen is black but still has sound.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "smart tv",
+      "black screen",
+      "no display",
+      "sound issue"
+    ],
+    "steps": [
+      {
+        "title": "Power-cycle the TV",
+        "content": "Unplug the TV from the mains for 60 seconds, press and hold the TV power button (not the remote) for 10-15 seconds, then plug it back in and power it on."
+      },
+      {
+        "title": "Confirm Input Source",
+        "content": "Cycle through the inputs (HDMI1/2/TV/AV) using the TV remote’s input/source button and try the TV’s built-in apps (Netflix/YouTube) to check if the issue is with the internal tuner or an external device."
+      },
+      {
+        "title": "Test with Another Source",
+        "content": "Connect a different device to the TV to see if the issue persists."
+      },
+      {
+        "title": "Check for Backlight or Screen Driver Board Issue",
+        "content": "Make sure the TV is getting a signal and not just radio interference. Use a torch to point at the screen. If you see movement, the backlight may have failed. If there's no movement, it could be a screen driver board issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Professional Repair",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Find a Local Repairer",
+            "content": "If the TV needs to be taken apart for repair, consider finding a local professional to handle the task."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T08:26:21.708Z",
+      "updated": "2026-01-07T08:26:21.708Z",
+      "sourceUrl": "https://www.quora.com/I-have-a-55-inch-smart-TV-While-I-was-watching-it-suddenly-became-dark-but-still-have-sounds-The-problem-is-there-are-only-black-images-How-can-I-fix-this-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767774392403-343",
+    "title": "Fix Smart TV Not Working",
+    "problemDescription": "Smart TV not responding, apps freezing, or stuck in boot loop.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "smart tv",
+      "app error",
+      "boot loop",
+      "factory reset"
+    ],
+    "steps": [
+      {
+        "title": "Reboot the TV",
+        "content": "Power off the TV, unplug it for 30–60 seconds, then plug it back in and power it on."
+      },
+      {
+        "title": "Update Firmware",
+        "content": "If the TV boots, check for firmware updates and install them."
+      },
+      {
+        "title": "Clear App Cache or Reinstall App",
+        "content": "If an app freezes, clear the app cache or reinstall the app."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "If the TV won’t boot or gets stuck in a logo/boot loop, perform a factory reset via physical buttons or service menu (consult the manual for the exact button combination). Note: This will erase settings and accounts."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Connections",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect Cables",
+            "content": "Ensure all cables are securely connected and not damaged."
+          },
+          {
+            "title": "Try Different Port",
+            "content": "If using HDMI, try a different port on the TV."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T08:26:32.403Z",
+      "updated": "2026-01-07T08:26:32.403Z",
+      "sourceUrl": "https://www.quora.com/Why-is-my-TV-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767774401417-93",
+    "title": "Reset Lock Screen Password/PIN on CyanogenMod",
+    "problemDescription": "Unable to reset or clear the lock screen password or PIN on a CyanogenMod device.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "lock screen",
+      "password",
+      "PIN",
+      "CyanogenMod"
+    ],
+    "steps": [
+      {
+        "title": "Use ADB and SU Commands",
+        "content": "1. Connect your device to a computer via USB and enable USB debugging.\n2. Open a command prompt or terminal and type 'adb shell'.\n3. Enter 'su' to gain superuser access.\n4. Enter the following commands one at a time to clear the password:\n   - `rm /data/system/gesture.key`\n   - `rm /data/system/locksettings.db`\n   - `rm /data/system/locksettings.db-wal`\n   - `rm /data/system/locksettings.db-shm`\n5. Reboot your device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Android Lock Screen Removal Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install the Tool",
+            "content": "Download Wondershare's Android Lock Screen Removal tool from their official website and install it on your computer."
+          },
+          {
+            "title": "Follow the On-Screen Instructions",
+            "content": "Connect your device to the computer, follow the on-screen instructions to download the recovery image, and use the tool to remove the lock screen password."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T08:26:41.417Z",
+      "updated": "2026-01-07T08:26:41.417Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/55091/clear-or-reset-my-lock-screen-password-pin",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767774407215-277",
+    "title": "Fix Credential Storage Issue on KitKat",
+    "problemDescription": "Unable to add a VPN due to credential storage password prompt on Samsung Galaxy Note 10.1 SMP600 running KitKat 4.4.2.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "kitkat",
+      "vpn",
+      "credential storage",
+      "samsung"
+    ],
+    "steps": [
+      {
+        "title": "Set Up Pattern Lock",
+        "content": "Add a pattern lock and other necessary information during the setup process."
+      },
+      {
+        "title": "Trigger Lockout",
+        "content": "Reboot the phone and enter 5 failed attempts to trigger the lockout."
+      },
+      {
+        "title": "Access Recovery",
+        "content": "Press OK when prompted to wait 30 seconds and find the recovery button to enter Google account information."
+      },
+      {
+        "title": "Sign In and Update VPN",
+        "content": "After signing in, go straight to VPN settings and enter a new pattern-lock/pin."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup all important data as a factory reset will erase everything."
+          },
+          {
+            "title": "Initiate Reset",
+            "content": "Go to Settings > Backup & reset > Factory data reset."
+          },
+          {
+            "title": "Confirm Reset",
+            "content": "Follow the on-screen instructions to confirm the reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T08:26:47.215Z",
+      "updated": "2026-01-07T08:26:47.215Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/123623/resolving-credential-storage-issue",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767774417574-897",
+    "title": "Remove Family Link and Reset Android",
+    "problemDescription": "Unable to reset phone due to Family Link restrictions.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "reset",
+      "family link",
+      "google account"
+    ],
+    "steps": [
+      {
+        "title": "Remove Google Account from Device",
+        "content": "Navigate to 'Settings' > 'Accounts and backup' > 'Accounts', then remove the Google account associated with Family Link."
+      },
+      {
+        "title": "Perform Factory Reset",
+        "content": "After removing the account, proceed with a factory data reset through the device settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset via Recovery Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot to Recovery Mode",
+            "content": "Turn off the device. Hold the Power button and the Volume Up button simultaneously for 10-15 seconds until the device boots into Recovery Mode."
+          },
+          {
+            "title": "Navigate to Factory Reset",
+            "content": "If you see a 'No command' screen, hold the Power button for 3 seconds and then press the Volume Up button. Use the Volume buttons to navigate to 'Factory Reset' and press the Power button to confirm."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall Family Link",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall Family Link App",
+            "content": "Reinstall and configure the Family Link app on a parent device to regain control over the settings."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Remove Supervision via Family Link",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Account from Supervision",
+            "content": "Remove the child's account from the Family Link supervision directly on the parent's device."
+          }
+        ]
+      },
+      {
+        "title": "Method 5: Check for Additional Google Accounts",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ensure No Other Administrative Accounts",
+            "content": "Check and remove any other Google accounts on the device that might have administrative control linked to Family Link."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T08:26:57.574Z",
+      "updated": "2026-01-07T08:26:57.575Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/256321/trouble-resetting-phone-and-removing-family-link",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767774421967-200",
+    "title": "Factory Reset Samsung Galaxy S20 with Samsung Account Issue",
+    "problemDescription": "Samsung Galaxy S20 cannot complete factory reset due to Samsung Account verification failure.",
+    "category": "android",
+    "difficulty": "Hard",
+    "keywords": [
+      "samsung",
+      "galaxy s20",
+      "factory reset",
+      "samsung account"
+    ],
+    "steps": [
+      {
+        "title": "Download Firmware and Odin",
+        "content": "Download the appropriate Galaxy S20 firmware and Odin software on your PC."
+      },
+      {
+        "title": "Shut Down Your Phone",
+        "content": "Turn off your Samsung Galaxy S20 completely."
+      },
+      {
+        "title": "Enter Download Mode",
+        "content": "Press and hold the Volume Down button until the phone enters download mode and connects to your PC."
+      },
+      {
+        "title": "Use Odin to Flash Firmware",
+        "content": "Open Odin on your PC, connect your phone, and flash the downloaded firmware to bypass the Samsung Account verification issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use EDL Utility",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download EDL Utility",
+            "content": "If your phone is not recognized by Odin, download and use an EDL Utility to enter Emergency Download Mode."
+          },
+          {
+            "title": "Flash Firmware via EDL",
+            "content": "Use the EDL Utility to flash the firmware, which should bypass the Samsung Account verification issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T08:27:01.967Z",
+      "updated": "2026-01-07T08:27:01.967Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/236547/cant-factory-reset-samsung-galaxy-s20",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767774447959-787",
+    "title": "Fix Windows 11 File Explorer Sluggishness",
+    "problemDescription": "Windows 11 File Explorer is slow when opening folders or drives for the first time.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "file explorer",
+      "sluggishness",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Update to the Latest Preview Build",
+        "content": "Ensure your Windows 11 is updated to the latest preview build that includes the fix for File Explorer sluggishness."
+      },
+      {
+        "title": "Enable Preloading of File Explorer",
+        "content": "The fix involves preloading File Explorer when the PC boots up. This should be enabled by default in the latest preview build."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Performance Tweaks",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Unnecessary Startup Programs",
+            "content": "Go to Task Manager > Startup tab and disable programs that are not essential."
+          },
+          {
+            "title": "Adjust File Explorer Settings",
+            "content": "Right-click on the Start button and select 'File Explorer Options'. Adjust settings like 'Always show icons, never thumbnails' to improve performance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T08:27:27.959Z",
+      "updated": "2026-01-07T08:27:27.959Z",
+      "sourceUrl": "https://www.techradar.com/computing/windows/complaints-about-windows-11s-fix-for-file-explorer-sluggishness-are-overblown-but-they-underline-a-fundamental-problem-with-the-os",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
