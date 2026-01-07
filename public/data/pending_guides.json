@@ -55628,5 +55628,564 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767748599753-381",
+    "title": "Desktop Doesn't Connect to 4K Smart TV",
+    "problemDescription": "Desktop computer fails to connect to a 4K Smart TV via HDMI.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "desktop",
+      "4k",
+      "smart tv",
+      "hdmi",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Enable Enhanced HDMI Option on TV",
+        "content": "Go to the HDMI configuration settings on your Smart TV and select the 'enhanced' option."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Try a Different HDMI Cable",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Replace HDMI Cable",
+            "content": "Try using a different HDMI cable, preferably a shorter one, to see if the connection issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T01:16:39.753Z",
+      "updated": "2026-01-07T01:16:39.753Z",
+      "sourceUrl": "https://askubuntu.com/questions/1184698/desktop-doesnt-connect-to-4k-smart-tv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767748602703-296",
+    "title": "Fix Sound Quality on Samsung Smart Monitor After Ubuntu 24.04 Update",
+    "problemDescription": "Sound quality is broken when using a Samsung smart monitor with a Kubuntu laptop after updating to Ubuntu 24.04.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "sound",
+      "samsung",
+      "monitor",
+      "kernel"
+    ],
+    "steps": [
+      {
+        "title": "Downgrade Kernel Version",
+        "content": "Downgrade the kernel version to a stable version (e.g., `6.5.0-28`) to resolve the sound quality issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check HDMI Cable and Monitor Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify HDMI Cable",
+            "content": "Ensure the HDMI cable is functioning properly by testing with a different cable."
+          },
+          {
+            "title": "Check Monitor Settings",
+            "content": "Verify the settings on the Samsung smart monitor to ensure they are configured correctly for sound output."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T01:16:42.703Z",
+      "updated": "2026-01-07T01:16:42.703Z",
+      "sourceUrl": "https://askubuntu.com/questions/1511720/after-update-to-ubuntu-24-04-sound-quality-is-broken-when-samsung-smart-monitor",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767748605423-345",
+    "title": "Fix Ubuntu 24.04 Screen Flickering on Samsung Smart TVs",
+    "problemDescription": "Ubuntu 24.04 screen flickers when connected to Samsung Smart TVs via HDMI.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "screen flickering",
+      "samsung tv",
+      "hdmi",
+      "xorg"
+    ],
+    "steps": [
+      {
+        "title": "Edit Xorg Configuration",
+        "content": "Create or edit a configuration file in /usr/share/X11/xorg.conf.d/ with the following content:"
+      },
+      {
+        "title": "Add Configuration",
+        "content": "Section \"Device\" Identifier \"Intel Graphics\" Driver \"intel\" Option \"TripleBuffer\" \"true\" Option \"TearFree\" \"true\" EndSection"
+      },
+      {
+        "title": "Save and Apply",
+        "content": "Save the file and restart your Xorg session or reboot your system to apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change Display Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Adjust Resolution and Refresh Rate",
+            "content": "Try changing the display resolution and refresh rate in the display settings to see if it resolves the flickering issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T01:16:45.423Z",
+      "updated": "2026-01-07T01:16:45.423Z",
+      "sourceUrl": "https://askubuntu.com/questions/1549155/ubuntu-24-04-screen-flickering-on-samsung-smart-tvs",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767748607738-653",
+    "title": "Fix Samsung TV Connection Error on Ubuntu",
+    "problemDescription": "Error connecting to Samsung TV using gnome-network-displays on Ubuntu.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung tv",
+      "ubuntu",
+      "connection error",
+      "gnome-network-displays"
+    ],
+    "steps": [
+      {
+        "title": "Test with Ubuntu 22.04 Live USB",
+        "content": "Create a Live USB with Ubuntu 22.04 and test if the connection to your Samsung TV works. This will help determine if the issue is with your current system configuration."
+      },
+      {
+        "title": "Debug Your Current System",
+        "content": "If the Live USB works, compare the configurations between the Live USB and your current system. Look for differences in XDG Portals, mutter, or other relevant settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Install PipeWire for Audio",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install PipeWire",
+            "content": "Install PipeWire and reboot your system. Note that this might not be the definitive solution, but it worked for some users."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T01:16:47.738Z",
+      "updated": "2026-01-07T01:16:47.738Z",
+      "sourceUrl": "https://askubuntu.com/questions/1412807/error-while-trying-to-connect-to-my-samsung-tv-with-org-gnome-networkdisplays-on",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767748618682-418",
+    "title": "Fix Wi-Fi Drops on RTL8821ae Ubuntu 16.04",
+    "problemDescription": "Wi-Fi drops and fails to reconnect on Ubuntu 16.04 with RTL8821ae wireless card.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "ubuntu",
+      "rtl8821ae",
+      "connection drops"
+    ],
+    "steps": [
+      {
+        "title": "Bounce Network-Manager Connection",
+        "content": "Run the following commands to disconnect and reconnect your Wi-Fi connection:\n\n`sudo nmcli con down <Wireless_Con_Name_NOT_ID>`\n`sudo nmcli con up <Wireless_Con_Name_NOT_ID>`\n\nReplace `<Wireless_Con_Name_NOT_ID>` with your actual connection name, which you can find by running `nmcli con`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Driver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Driver from GitHub",
+            "content": "Ensure you are using the latest driver for the RTL8821ae wireless card from the GitHub repository."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: VPN Delayed Launch Script",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Add VPN Delayed Launch Script",
+            "content": "Add the following script to `/home/.apps/VPN-Delayed-Launch.sh` and make it executable:\n\n```sh\n#!/bin/sh -e\n#Script to automatically connect to VPN\nsleep 10; nmcli con up <VPN_Name_NOT_ID>\n```\n\nThen add the following line to `/etc/rc.local` before the `exit` command:\n\n```sh\nsh -e /home/.apps/VPN-Delayed-Launch.sh\n```"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T01:16:58.682Z",
+      "updated": "2026-01-07T01:16:58.682Z",
+      "sourceUrl": "https://askubuntu.com/questions/926285/wifi-drops-and-unable-to-reconnect-rtl8821ae-ubuntu-16-04",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767748644463-466",
+    "title": "Fix Mac Wrong Time and Date",
+    "problemDescription": "Your Mac is displaying the wrong time and date.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "mac",
+      "time",
+      "date",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Mac",
+        "content": "Restart your Mac to see if the issue is resolved."
+      },
+      {
+        "title": "Reset PRAM or NVRAM",
+        "content": "If your Mac uses Intel processors, reset the PRAM or NVRAM by turning off your Mac, turning it on, and immediately pressing and holding the Option + Command + P + R keys for about 20 seconds."
+      },
+      {
+        "title": "Update macOS",
+        "content": "Update your macOS to the latest version. Go to System Settings > General > Software Update."
+      },
+      {
+        "title": "Change Time Server",
+        "content": "Go to System Settings > General > Date & Time. Under Time Zone, click the dropdown menu and select Edit Location. Choose a different time server."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manually Set Date and Time",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Manually Set Date and Time",
+            "content": "Go to System Settings > General > Date & Time. Turn off 'Set date and time automatically' and manually set the correct date and time."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T01:17:24.463Z",
+      "updated": "2026-01-07T01:17:24.463Z",
+      "sourceUrl": "https://www.howtogeek.com/how-to-fix-your-mac-displaying-the-wrong-time-and-date/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767748671789-139",
+    "title": "Fix USB Drive Not Showing Up on Windows",
+    "problemDescription": "USB drive is not detected or showing up on Windows.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "usb",
+      "drive",
+      "windows",
+      "not showing up",
+      "disk management"
+    ],
+    "steps": [
+      {
+        "title": "Check Disk Management",
+        "content": "Open Disk Management by pressing Win + X and selecting 'Disk Management'. Look for your USB drive in the list. If it appears but isn't accessible, it might need formatting."
+      },
+      {
+        "title": "Update or Reinstall Drivers",
+        "content": "Open Device Manager, expand 'Disk Drives' and 'USB Serial Bus controllers'. Look for devices with a yellow exclamation mark. Right-click and select 'Properties' to find the error message. Search the web for this error message to find more information and update or reinstall the drivers if necessary."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Format the Partition",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Format the Drive",
+            "content": "If Windows asks you to format the partition when you insert the USB drive, follow the prompts to format it. Note that this will erase all data on the drive."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T01:17:51.789Z",
+      "updated": "2026-01-07T01:17:51.789Z",
+      "sourceUrl": "https://www.howtogeek.com/22251/find-your-missing-usb-drive-in-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767748672799-537",
+    "title": "Fix Second Monitor Not Detected on Windows",
+    "problemDescription": "Windows is not detecting a second monitor.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "monitor",
+      "detection",
+      "display"
+    ],
+    "steps": [
+      {
+        "title": "Check Connections",
+        "content": "Unplug and re-plug the monitor cable into the same port to trigger detection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use a USB Adapter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect via USB-C to HDMI Adapter",
+            "content": "Use a USB-C to HDMI adapter to connect the second monitor."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T01:17:52.799Z",
+      "updated": "2026-01-07T01:17:52.799Z",
+      "sourceUrl": "https://www.howtogeek.com/855670/fixes-for-a-second-monitor-not-detected-on-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767748675477-839",
+    "title": "Fix Windows Unexpected Error",
+    "problemDescription": "An unexpected error has occurred on Windows, preventing normal operation.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "error",
+      "troubleshoot"
+    ],
+    "steps": [
+      {
+        "title": "Update Network Drivers",
+        "content": "Open Device Manager by right-clicking the Start menu icon and selecting Device Manager. Expand Network Adapters, right-click your adapter, and choose Update Driver. Select Search Automatically for Drivers."
+      },
+      {
+        "title": "Run Network Adapter Troubleshooter",
+        "content": "Navigate to Settings > System > Troubleshoot > Other Troubleshooters. Click Run next to Network Adapter and allow the troubleshooter to find and fix issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows 10 Troubleshooter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Troubleshooter",
+            "content": "Go to Settings > Update & Security > Troubleshoot > Additional Troubleshooters."
+          },
+          {
+            "title": "Run Network Adapter Troubleshooter",
+            "content": "Select Network Adapter and choose Run the Troubleshooter."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T01:17:55.477Z",
+      "updated": "2026-01-07T01:17:55.477Z",
+      "sourceUrl": "https://www.howtogeek.com/898714/5-ways-to-fix-an-an-unexpected-error-has-occurred-issue-on-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767748677971-375",
+    "title": "Stop Windows from Scanning and Fixing USB Drives",
+    "problemDescription": "Windows repeatedly prompts to scan and fix USB drives or SD cards, even when files are accessible.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "usb",
+      "sd card",
+      "scan",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Safely Eject the USB Drive",
+        "content": "Right-click on the USB device icon in the Windows system tray, select the removable device, and choose 'Eject' to safely remove the USB drive or SD card."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Automatic Scanning",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Command Prompt",
+            "content": "Open Command Prompt as Administrator and type 'chkntfs /x X:' (replace X with the drive letter of your USB or SD card) to exclude the drive from automatic checking."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T01:17:57.971Z",
+      "updated": "2026-01-07T01:17:57.971Z",
+      "sourceUrl": "https://www.howtogeek.com/184640/ask-htg-windows-always-wants-to-scan-and-fix-my-usb-drive-should-i-let-it/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767748685181-270",
+    "title": "Fix: Can't Reset Your Own Password in Azure AD",
+    "problemDescription": "Users are unable to reset their passwords due to misconfigured settings in Azure Active Directory.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "Azure AD",
+      "password reset",
+      "SSPR",
+      "self-service password reset"
+    ],
+    "steps": [
+      {
+        "title": "Check Password Reset Settings",
+        "content": "Go to the Azure portal and navigate to Azure Active Directory. Select 'Password reset' and review the settings under the 'Properties' tab. Ensure that the scope is set to 'All' or that the user is part of the selected group."
+      },
+      {
+        "title": "Verify User Group Membership",
+        "content": "If the scope is set to 'Selected', go back to the Azure Active Directory blade, select 'Groups', search for the group, and add the user to it."
+      },
+      {
+        "title": "Enable Password Writeback",
+        "content": "Ensure that password writeback is enabled for your organization. This can be done in the Azure AD Connect settings."
+      },
+      {
+        "title": "Require Registration on Sign-In",
+        "content": "In the password reset registration blade, set 'Require users to register when signing in' to 'Yes'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Community Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check User Account Synchronization",
+            "content": "Ensure that the user account is synchronized and that self-service password reset is enabled for synchronized accounts."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T01:18:05.181Z",
+      "updated": "2026-01-07T01:18:05.181Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=9RPrNVLzT8I",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767748695184-849",
+    "title": "Fix Outlook Password Reset Email Issues",
+    "problemDescription": "You're not receiving password reset emails from Outlook.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "outlook",
+      "password reset",
+      "email"
+    ],
+    "steps": [
+      {
+        "title": "Check Email and Number",
+        "content": "Ensure the email address or phone number is entered correctly and not blocked."
+      },
+      {
+        "title": "Check Spam Folder",
+        "content": "Look for the password reset email in your spam folder. If found, mark it as 'Not Spam' and add the sender's email address or domain to your safe sender list."
+      },
+      {
+        "title": "Verify Email Address",
+        "content": "Double-check that you're entering the correct email address and any additional domain endings when requesting a password reset."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Microsoft's Sign-In Helper Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access the Tool",
+            "content": "Visit Microsoft's Sign-In Helper tool to troubleshoot sign-in issues."
+          },
+          {
+            "title": "Follow Instructions",
+            "content": "Follow the on-screen instructions to identify and resolve password reset problems."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Microsoft Account Recovery Form",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access the Form",
+            "content": "Go to the Microsoft Account Recovery form."
+          },
+          {
+            "title": "Fill Out the Form",
+            "content": "Complete the form to request assistance from Microsoft."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T01:18:15.184Z",
+      "updated": "2026-01-07T01:18:15.184Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=dDeP21Q9b5k",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
