@@ -57346,5 +57346,640 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767763387241-821",
+    "title": "Fix JavaScript Error in Discord",
+    "problemDescription": "Discord displays a JavaScript error and fails to function properly.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "javascript",
+      "error",
+      "admin",
+      "permissions"
+    ],
+    "steps": [
+      {
+        "title": "Run Discord as Administrator",
+        "content": "Find Discord on your desktop or in the Start Menu. Right-click the app and select 'Run as Administrator'. In the User Account Control prompt, select 'Yes'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Discord",
+            "content": "Completely remove the Discord app from your computer."
+          },
+          {
+            "title": "Reinstall Discord",
+            "content": "Download and install the latest version of Discord from the official website."
+          },
+          {
+            "title": "Set Discord to Always Run as Administrator",
+            "content": "Right-click Discord's desktop shortcut, choose 'Properties', open the 'Shortcut' tab, select 'Advanced', enable 'Run as Administrator', and click 'OK'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T05:23:07.241Z",
+      "updated": "2026-01-07T05:23:07.241Z",
+      "sourceUrl": "https://www.howtogeek.com/how-to-fix-a-javascript-error-in-discord/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767763390189-16",
+    "title": "Fix Streaming Problems on Discord",
+    "problemDescription": "Discord streaming issues, such as black screens or incorrect screen sharing, often due to hardware acceleration or incorrect audio settings.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "streaming",
+      "hardware acceleration",
+      "audio settings"
+    ],
+    "steps": [
+      {
+        "title": "Disable Hardware Acceleration",
+        "content": "Go to Discord settings, then navigate to 'Voice & Video' settings. Disable the 'Hardware Acceleration' option."
+      },
+      {
+        "title": "Check Screen Sharing Settings",
+        "content": "Ensure Discord is capturing the correct screen or application. Adjust the screen sharing settings accordingly."
+      },
+      {
+        "title": "Verify Audio Settings",
+        "content": "In the 'Voice & Video' settings, check and correct the audio input and output devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Audio Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Audio Devices",
+            "content": "Manually reset the audio input and output devices in Discord's settings if they have been reset or swapped without warning."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T05:23:10.189Z",
+      "updated": "2026-01-07T05:23:10.189Z",
+      "sourceUrl": "https://www.howtogeek.com/how-to-fix-streaming-problems-on-discord/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767763395782-630",
+    "title": "Fix 'Messages Failed to Load' on Discord",
+    "problemDescription": "Discord messages are not loading or displaying.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "messages",
+      "failed to load",
+      "app error"
+    ],
+    "steps": [
+      {
+        "title": "Clear Discord Cache",
+        "content": "Close Discord. On Windows, press Windows+R, type %appdata%\\discord, and press Enter. Delete the 'Cache', 'Code Cache', and 'GPUCache' folders. On Mac, open Finder, select Go > Go to Folder, enter ~/Library/Application Support/discord/, and delete the same folders. Relaunch Discord."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Discord",
+        "type": "Quick Fix",
+        "steps": [
+          {
+            "title": "Update Discord",
+            "content": "Open Discord, press Ctrl+R (Windows) or Command+R (Mac), then close and reopen the app."
+          }
+        ]
+      },
+      {
+        "title": "Reboot Discord",
+        "type": "Quick Fix",
+        "steps": [
+          {
+            "title": "Reboot Discord",
+            "content": "Close Discord by clicking 'X' in the top-right corner. Right-click Discord in the system tray and choose 'Quit Discord'. Reopen the app from your desktop or 'Start' menu."
+          }
+        ]
+      },
+      {
+        "title": "Wait It Out",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Wait It Out",
+            "content": "If Discord has banned your account or there is a minor app glitch, wait for the ban to expire or the glitch to be resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T05:23:15.782Z",
+      "updated": "2026-01-07T05:23:15.782Z",
+      "sourceUrl": "https://www.howtogeek.com/fix-messages-failed-to-load-on-discord/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767763409784-392",
+    "title": "Fix Microsoft Teams Audio Issues",
+    "problemDescription": "Audio problems in Microsoft Teams, such as muffled microphones or poor sound quality.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "microsoft",
+      "teams",
+      "audio",
+      "sound",
+      "troubleshoot"
+    ],
+    "steps": [
+      {
+        "title": "Check Your Hardware",
+        "content": "Test your microphone and speakers with another device or application to isolate whether the issue is with Teams or your hardware."
+      },
+      {
+        "title": "Update Audio Drivers",
+        "content": "Visit your computer or device manufacturer's website to download and install the latest audio drivers."
+      },
+      {
+        "title": "Contact IT Support",
+        "content": "If the problem persists and you are on a deadline, contact IT support for immediate assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Network or Server Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Network Connection",
+            "content": "Ensure your internet connection is stable and check if other users are experiencing the same problem, which might indicate a network or server issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T05:23:29.784Z",
+      "updated": "2026-01-07T05:23:29.784Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=VMdv0-e3xdM",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767763416123-418",
+    "title": "Troubleshoot Microsoft Teams Issues with Automated Diagnostics",
+    "problemDescription": "Users experiencing issues with Microsoft Teams can use automated diagnostics to troubleshoot and resolve problems.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "troubleshooting",
+      "automated diagnostics",
+      "support"
+    ],
+    "steps": [
+      {
+        "title": "Access Automated Diagnostics",
+        "content": "Go to the Microsoft Teams admin center and navigate to the diagnostics section."
+      },
+      {
+        "title": "Run the Test",
+        "content": "Select the appropriate test for the issue you are experiencing and run it."
+      },
+      {
+        "title": "Review Insights",
+        "content": "After running the test, review the insights provided to understand the root cause of the issue."
+      },
+      {
+        "title": "Follow Guidance",
+        "content": "Follow the guidance provided to fix the issue based on the insights from the test."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Raise a Support Case",
+            "content": "If the automated diagnostics do not resolve the issue, raise a support case with Microsoft."
+          },
+          {
+            "title": "Provide Details",
+            "content": "Provide detailed information about the issue and the steps you have already taken."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T05:23:36.123Z",
+      "updated": "2026-01-07T05:23:36.123Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=sYk1gpqPeWs",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767763420331-918",
+    "title": "Fix Microsoft Teams Meeting Performance Issues",
+    "problemDescription": "Microsoft Teams meeting rooms are experiencing unreliable performance, affecting call quality and user experience.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "meeting performance",
+      "call quality",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check Network Connectivity",
+        "content": "Ensure that the network connection is stable and meets the minimum requirements for Microsoft Teams. Use native Microsoft tools to diagnose network issues."
+      },
+      {
+        "title": "Update Teams and Devices",
+        "content": "Make sure that Microsoft Teams and all related devices (e.g., cameras, microphones, speakers) are updated to the latest versions."
+      },
+      {
+        "title": "Review Meeting Settings",
+        "content": "Check the meeting settings in Microsoft Teams to ensure that they are optimized for performance. This includes adjusting video quality, disabling unnecessary features, and setting appropriate bandwidth limits."
+      },
+      {
+        "title": "Monitor Performance Metrics",
+        "content": "Use native Microsoft tools to monitor performance metrics during meetings. Look for any anomalies or patterns that could indicate underlying issues."
+      },
+      {
+        "title": "Consult Microsoft Support",
+        "content": "If the issue persists, consult Microsoft Support or refer to the Microsoft Teams documentation for additional troubleshooting steps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Vantage DX",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Vantage DX",
+            "content": "Install Vantage DX, a third-party tool designed to streamline the resolution process for Microsoft Teams issues."
+          },
+          {
+            "title": "Run Diagnostic Tests",
+            "content": "Use Vantage DX to run comprehensive diagnostic tests on the meeting rooms and devices. This tool can provide detailed insights and recommendations for improving performance."
+          },
+          {
+            "title": "Implement Recommendations",
+            "content": "Follow the recommendations provided by Vantage DX to optimize the performance of Microsoft Teams meeting rooms."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T05:23:40.331Z",
+      "updated": "2026-01-07T05:23:40.331Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=GtUQ-9Q5m9g",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767763444061-577",
+    "title": "Fix Windows 10 Printer Configuration Error 0x800705b4",
+    "problemDescription": "Windows 10 users may encounter a printer configuration error (0x800705b4) when trying to print, with the message 'Your printer has experienced an unexpected configuration problem'.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 10",
+      "printer",
+      "configuration error",
+      "0x800705b4"
+    ],
+    "steps": [
+      {
+        "title": "Run System File Checker (SFC)",
+        "content": "Press the Start key, type 'CMD', right-click on the Command Prompt, and select 'Run as administrator'. Enter the following commands one by one, pressing Enter after each: `sfc /scannow`."
+      },
+      {
+        "title": "Run DISM Tool",
+        "content": "In the same Command Prompt window, enter the following command and press Enter: `DISM.exe /Online /Cleanup-image /Scanhealth`. Wait for the process to complete and then restart your computer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Printer Driver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download the Latest Driver",
+            "content": "Visit the manufacturer's website and download the most recent printer driver for your model."
+          },
+          {
+            "title": "Install the Driver",
+            "content": "Follow the installation instructions provided by the manufacturer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T05:24:04.061Z",
+      "updated": "2026-01-07T05:24:04.061Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/printing-problem-with-windows-10/80c730d8-1f5c-4318-8ac7-7fc1f611d341",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767763484045-952",
+    "title": "Fix Stuck Pixel on LCD Screen",
+    "problemDescription": "A stuck pixel on an LCD screen appears as a single dot of color that doesn't change with the rest of the screen.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "stuck pixel",
+      "LCD screen",
+      "pixel fix"
+    ],
+    "steps": [
+      {
+        "title": "Prepare the Screen",
+        "content": "Turn off your computer's monitor."
+      },
+      {
+        "title": "Gather Tools",
+        "content": "Get a damp washcloth and a tool with a focused but dull point, such as a PDA stylus or the rounded end of a pen."
+      },
+      {
+        "title": "Protect the Screen",
+        "content": "Fold the washcloth to protect the screen from scratches."
+      },
+      {
+        "title": "Locate the Stuck Pixel",
+        "content": "Turn on the computer and ensure it is plugged into wall power. Set the computer not to go to sleep or standby mode."
+      },
+      {
+        "title": "Tap the Stuck Pixel",
+        "content": "Use the rounded end of the pen to gently tap the stuck pixel. Start with light taps and gradually increase the pressure until you see a white glow. Continue tapping for 5-10 times until the pixel rights itself."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Heat and Pressure",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Apply Heat",
+            "content": "Turn on the computer and let the screen warm up for a few minutes."
+          },
+          {
+            "title": "Apply Gentle Pressure",
+            "content": "Use a soft cloth to apply gentle pressure around the stuck pixel area."
+          },
+          {
+            "title": "Repeat",
+            "content": "Repeat the process a few times to see if the pixel becomes unstuck."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T05:24:44.045Z",
+      "updated": "2026-01-07T05:24:44.045Z",
+      "sourceUrl": "https://superuser.com/questions/38231/what-is-the-best-way-to-fix-a-stuck-pixel-on-an-lcd-screen",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767763488280-727",
+    "title": "Fix Stuck Pixels on Screen",
+    "problemDescription": "A stuck pixel on your screen is often caused by manufacturing defects and can be fixed using software tools or manual manipulation.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "stuck pixel",
+      "screen",
+      "manufacturing defect",
+      "software tools",
+      "manual manipulation"
+    ],
+    "steps": [
+      {
+        "title": "Use Software Tools",
+        "content": "Use software tools that flash a series of images varying in color and intensity onto the screen to unstick the pixel."
+      },
+      {
+        "title": "Manual Manipulation",
+        "content": "Gently press on the affected area with something like a pencil eraser to compress the layers of the panel and force the oil within the panel to move."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check External Light Source",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Lights or Create Shadow",
+            "content": "If the pixel is only visible under specific lighting conditions, turn off the lights or create a shadow with your hand to see if the pixel disappears."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T05:24:48.280Z",
+      "updated": "2026-01-07T05:24:48.280Z",
+      "sourceUrl": "https://superuser.com/questions/425567/stuck-or-dead-pixel",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767763493082-358",
+    "title": "Chrome Browser Missing Home and Settings on Pixel 9",
+    "problemDescription": "After a software update, the Chrome browser on a Google Pixel 9 no longer displays the Home button or Settings menu.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "browser",
+      "settings",
+      "pixel 9",
+      "home button"
+    ],
+    "steps": [
+      {
+        "title": "Check for Chrome Updates",
+        "content": "Ensure you are using the latest version of Chrome. Go to the Google Play Store, search for Chrome, and update if necessary."
+      },
+      {
+        "title": "Clear Chrome Cache and Data",
+        "content": "Go to Settings > Apps > Chrome > Storage > Clear Cache and Clear Data."
+      },
+      {
+        "title": "Reinstall Chrome",
+        "content": "Uninstall Chrome from your device and then reinstall it from the Google Play Store."
+      },
+      {
+        "title": "Check for System Updates",
+        "content": "Ensure your Pixel 9 has the latest system updates installed. Go to Settings > System > System update."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "If the issue persists, perform a factory reset on your device. Note that this will erase all data, so back up important information first."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Chrome Flags",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Chrome Flags",
+            "content": "Type `chrome://flags` in the Chrome address bar and press Enter."
+          },
+          {
+            "title": "Reset Flags",
+            "content": "Click the 'Reset all to default' button at the top of the page."
+          },
+          {
+            "title": "Restart Chrome",
+            "content": "Restart the Chrome browser to see if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T05:24:53.082Z",
+      "updated": "2026-01-07T05:24:53.082Z",
+      "sourceUrl": "https://superuser.com/questions/1866116/crazy-pixel-9-chrome-browser-issue-not-showing-settings",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767763499060-604",
+    "title": "Fix Pixel 3 Stuck in Fastboot Loop",
+    "problemDescription": "Pixel 3 is stuck in a fastboot loop after flashing a factory image.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel 3",
+      "fastboot loop",
+      "factory image",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Update Platform Tools",
+        "content": "Update your platform-tools package using the following commands:"
+      },
+      {
+        "title": "Run Fastboot Flashall",
+        "content": "After updating, run the `fastboot flashall` command to resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manual Flashing of Components",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot Bootloader",
+            "content": "Run `fastboot reboot-bootloader` to reboot into bootloader."
+          },
+          {
+            "title": "Flash Radio",
+            "content": "Flash the radio component using `fastboot flash radio radio-blueline-g845-00194-210812-b-7635520.img`."
+          },
+          {
+            "title": "Flash Bootloader",
+            "content": "Flash the bootloader using `fastboot flash bootloader bootloader-blueline-b1c1-0.4-7617406.img`."
+          },
+          {
+            "title": "Flash Boot Image",
+            "content": "Flash the boot image using `fastboot flash boot boot.img`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T05:24:59.060Z",
+      "updated": "2026-01-07T05:24:59.060Z",
+      "sourceUrl": "https://superuser.com/questions/1727983/pixel-3-stuck-in-fastboot-loop-after-flashing-factory-image",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767763503738-543",
+    "title": "Fix Google Pixel 6 Screenshot Shortcut",
+    "problemDescription": "Google Pixel 6 users may struggle with the screenshot shortcut not working due to Google Assistant interference.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "google",
+      "pixel",
+      "screenshot",
+      "assistant"
+    ],
+    "steps": [
+      {
+        "title": "Press Buttons Simultaneously",
+        "content": "Press and hold the `power` and `volume down` buttons at the same time, not one after the other."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Install Screenshot Assistant",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install",
+            "content": "Download and install the Screenshot Assistant app from F-Droid."
+          },
+          {
+            "title": "Use the App",
+            "content": "Use the app to take screenshots as a workaround for the native functionality."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T05:25:03.738Z",
+      "updated": "2026-01-07T05:25:03.738Z",
+      "sourceUrl": "https://superuser.com/questions/1810514/google-pixel-6-sceenshot-function-has-been-replaced-by-google-assistant",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
