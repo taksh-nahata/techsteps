@@ -63016,5 +63016,418 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767795709057-767",
+    "title": "Fix iPhone Issues Using DFU Mode",
+    "problemDescription": "Your iPhone is experiencing software or firmware issues that cannot be resolved with standard troubleshooting methods.",
+    "category": "ios",
+    "difficulty": "Hard",
+    "keywords": [
+      "iPhone",
+      "DFU mode",
+      "software",
+      "firmware",
+      "restore"
+    ],
+    "steps": [
+      {
+        "title": "Enter DFU Mode",
+        "content": "1. Connect your iPhone to your computer and open iTunes (or Finder on macOS Catalina and later). 2. Quickly press and release the Volume Up button, then the Volume Down button. 3. Press and hold the Side button (or Top button on older models) until the screen goes black. 4. Continue holding the Side/Top button while pressing and holding the Volume Down button for 5 seconds. 5. Release the Side/Top button but continue holding the Volume Down button for another 5 seconds. If the screen remains black, you are in DFU mode."
+      },
+      {
+        "title": "Restore iPhone Using iTunes/Finder",
+        "content": "1. In iTunes or Finder, you should see a message saying that your iPhone is in recovery mode. 2. Click 'Restore iPhone' to reinstall the latest iOS software and firmware. 3. Wait for the process to complete, which may take several minutes. 4. Once done, your iPhone will restart, and you can set it up as new."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Recovery Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter Recovery Mode",
+            "content": "1. Connect your iPhone to your computer and open iTunes (or Finder on macOS Catalina and later). 2. Quickly press and release the Volume Up button, then the Volume Down button. 3. Press and hold the Side button (or Top button on older models) until you see the recovery mode screen."
+          },
+          {
+            "title": "Restore iPhone Using iTunes/Finder",
+            "content": "1. In iTunes or Finder, you should see a message saying that your iPhone is in recovery mode. 2. Click 'Restore iPhone' to reinstall the latest iOS software. 3. Wait for the process to complete, which may take several minutes. 4. Once done, your iPhone will restart, and you can set it up as new."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T14:21:49.057Z",
+      "updated": "2026-01-07T14:21:49.057Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/dfu-mode-iphone-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767795737577-982",
+    "title": "Fix Outlook Crashing While Opening or Creating an Email",
+    "problemDescription": "Outlook crashes when opening or creating an email.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "crash",
+      "email",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Update Outlook",
+        "content": "Open Outlook, click File > Office Account > Update Options > Update Now. Install any available updates."
+      },
+      {
+        "title": "Disable COM Add-ins",
+        "content": "Go to File > Options > Add-ins. Choose 'COM Add-ins' from the Manage drop-down menu and click 'Go.' Uncheck all installed add-ins, click 'OK,' and restart Outlook."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Create a New FORMS2 Folder",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "End Outlook Tasks",
+            "content": "Open Task Manager, right-click Outlook and any other Office applications running in the background, and select 'End Task.'"
+          },
+          {
+            "title": "Create New Folder",
+            "content": "Create a new FORMS2 folder as suggested by Microsoft."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T14:22:17.577Z",
+      "updated": "2026-01-07T14:22:17.577Z",
+      "sourceUrl": "https://www.howtogeek.com/outlook-crashing-while-opening-or-creating-an-email-heres-a-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767795768076-123",
+    "title": "Fix Screen Flickering on Dual Boot Ubuntu",
+    "problemDescription": "Screen flickering issue on Ubuntu after dual boot with Windows.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen flickering",
+      "Ubuntu",
+      "dual boot",
+      "NVIDIA driver"
+    ],
+    "steps": [
+      {
+        "title": "Set Graphics Mode to Default in BIOS",
+        "content": "Restart your computer and enter the BIOS configuration. Set the graphics mode back to default 'Discrete Graphics'. Save and exit."
+      },
+      {
+        "title": "Install Proprietary NVIDIA Driver",
+        "content": "Open a terminal and run the following commands:\n1. `sudo apt-get update`\n2. `sudo add-apt-repository ppa:graphics-drivers/ppa`\n3. `sudo apt-get update`\n4. `sudo apt-get install nvidia-driver-430` (or the latest recommended driver)"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Set nomodeset in GRUB Configuration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit GRUB Configuration",
+            "content": "Open a terminal and run `sudo nano /etc/default/grub`. Find the line starting with `GRUB_CMDLINE_LINUX_DEFAULT` and add `nomodeset` to the end of the quotes. Save and exit."
+          },
+          {
+            "title": "Update GRUB",
+            "content": "Run `sudo update-grub` in the terminal to update the GRUB configuration."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Perform a Full Shutdown",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Shutdown Instead of Reboot",
+            "content": "After making any changes, perform a full shutdown instead of a reboot. This might help apply new configurations effectively."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T14:22:48.076Z",
+      "updated": "2026-01-07T14:22:48.076Z",
+      "sourceUrl": "https://askubuntu.com/questions/1179229/screen-flickering-on-dual-boot-ubuntu",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767795774936-432",
+    "title": "Fix Intel Graphics Screen Tearing/Flickering",
+    "problemDescription": "Intel graphics cards cause severe screen tearing/flickering on Ubuntu >= 16.10.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "intel",
+      "graphics",
+      "screen",
+      "tearing",
+      "flickering",
+      "ubuntu"
+    ],
+    "steps": [
+      {
+        "title": "Create Configuration File",
+        "content": "Create a new file named `/etc/X11/xorg.conf.d/20-intel-graphics.conf` using a text editor with root privileges."
+      },
+      {
+        "title": "Add Configuration Content",
+        "content": "Add the following content to the file: `Section \"Device\" Identifier \"Intel Graphics\" Driver \"intel\" Option \"TearFree\" \"true\" EndSection`."
+      },
+      {
+        "title": "Save and Apply Changes",
+        "content": "Save the file and reboot your system to apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Boot Parameter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit Boot Parameters",
+            "content": "Add the boot parameter `i915.enable_rc6=0` to your GRUB configuration."
+          },
+          {
+            "title": "Update GRUB",
+            "content": "Run `sudo update-grub` to update the GRUB configuration."
+          },
+          {
+            "title": "Reboot System",
+            "content": "Reboot your system to apply the changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T14:22:54.936Z",
+      "updated": "2026-01-07T14:22:54.936Z",
+      "sourceUrl": "https://askubuntu.com/questions/945895/solution-to-intel-graphics-screen-tearing-flickering-causes-excessive-fan-use",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767795781667-616",
+    "title": "Fix Nvidia Graphics Screen Flicker",
+    "problemDescription": "Screen flickering issue with Nvidia graphics on Linux.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "nvidia",
+      "graphics",
+      "flicker",
+      "linux"
+    ],
+    "steps": [
+      {
+        "title": "Disable Flipping",
+        "content": "Open `nvidia-settings`, go to X Screen 0 -> OpenGL Settings, and uncheck 'Allow Flipping'. This will write '0/AllowFlipping=0' into your `~/.nvidia-settings-rc` file."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Nvidia Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Search for Nvidia Drivers",
+            "content": "Open the Linux software manager, search for 'nvidia', and select 'Nvidia-Current-Updates'."
+          },
+          {
+            "title": "Install the Driver",
+            "content": "Install the driver. The program manager will analyze and download the specific driver needed."
+          }
+        ]
+      },
+      {
+        "title": "Disable Dithering",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Nvidia Settings",
+            "content": "Open `nvidia-settings` and turn off dithering (disabled)."
+          },
+          {
+            "title": "Update xorg.conf",
+            "content": "Update `/etc/X11/xorg.conf` to add `(Option \"FlatPanelProperties\" \"Dithering=Disabled\")` to the Screen section."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T14:23:01.667Z",
+      "updated": "2026-01-07T14:23:01.667Z",
+      "sourceUrl": "https://askubuntu.com/questions/263996/fixing-the-nvidia-graphics-screen-flicker-issue",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767795814442-888",
+    "title": "Fix IMAP Connection to Gmail on OS X",
+    "problemDescription": "The server 'imap.gmail.com' cannot be contacted on port 993.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "imap",
+      "gmail",
+      "connection",
+      "os x",
+      "mail"
+    ],
+    "steps": [
+      {
+        "title": "Run Connection Doctor",
+        "content": "Open the Mail app, go to Window > Connection Doctor to check for network or account-specific errors."
+      },
+      {
+        "title": "Verify Server Settings",
+        "content": "Ensure the IMAP server settings are correct: imap.gmail.com on port 993 with the correct username and password."
+      },
+      {
+        "title": "Reset to Default",
+        "content": "Reset the server settings to default if necessary."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Change DNS Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Add Google's Primary DNS",
+            "content": "Go to Network Settings and add Google's primary DNS (8.8.8.8) to the list."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T14:23:34.442Z",
+      "updated": "2026-01-07T14:23:34.442Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/68702/the-server-returned-the-error-the-server-imap-gmail-com-cannot-be-contacted-o",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767795817603-8",
+    "title": "Fix Apple Mail IMAP Moving Emails to Folders",
+    "problemDescription": "Apple Mail with Gmail IMAP account fails to move emails from inbox to other folders.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "apple mail",
+      "gmail",
+      "imap",
+      "folders",
+      "email"
+    ],
+    "steps": [
+      {
+        "title": "Check Gmail Settings",
+        "content": "Ensure that the Gmail account settings on the Gmail website match the settings in Apple Mail. Verify IMAP is enabled and the correct folders are set up."
+      },
+      {
+        "title": "Remove and Re-add Gmail Account",
+        "content": "In Apple Mail, remove the Gmail account and then re-add it to ensure all settings are correctly synchronized."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset to Default",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Gmail Settings",
+            "content": "Reset the Gmail account settings to default and reconfigure them in Apple Mail."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T14:23:37.603Z",
+      "updated": "2026-01-07T14:23:37.603Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/105625/apple-mail-with-gmail-account-imap-moving-mails-from-inbox-to-folders-fails",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767795827022-29",
+    "title": "Fix Gmail Connection Error in Mavericks",
+    "problemDescription": "Gmail account setup in Apple Mail on Mavericks fails with a connection error.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "connection",
+      "mavericks",
+      "apple mail"
+    ],
+    "steps": [
+      {
+        "title": "Upgrade to Yosemite",
+        "content": "Upgrade your macOS to the latest Yosemite version to resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Other Account Option",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up New Email Account",
+            "content": "In Apple Mail, choose the 'Other' account option instead of the Google option when setting up your Gmail account."
+          },
+          {
+            "title": "Enable IMAP Settings",
+            "content": "Ensure that IMAP settings are enabled in your Gmail account."
+          },
+          {
+            "title": "Create App/Device Password",
+            "content": "If you have 2-step verification enabled, create an App/Device password to use for the connection."
+          },
+          {
+            "title": "Guide Google",
+            "content": "Visit the Google Account settings from the machine you are trying to connect, log in to your account, and follow the steps/instructions provided."
+          },
+          {
+            "title": "Configure Manually",
+            "content": "If auto-discovery fails, manually configure the Gmail account in the Mail app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T14:23:47.022Z",
+      "updated": "2026-01-07T14:23:47.022Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/189685/setting-up-gmail-in-mavericks-a-connection-error-occurred",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
