@@ -56187,5 +56187,463 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767756439481-979",
+    "title": "Update to Windows 11",
+    "problemDescription": "How to update your operating system to Windows 11.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "update",
+      "windows 11"
+    ],
+    "steps": [
+      {
+        "title": "Run Windows Update",
+        "content": "Go to Settings > Windows Update > Check for updates."
+      },
+      {
+        "title": "Install Updates",
+        "content": "Select the updates and click 'Download and install'."
+      },
+      {
+        "title": "Restart Your PC",
+        "content": "Restart your computer to complete the installation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Windows 11 Installation Assistant",
+            "content": "Visit the official Microsoft website and download the Windows 11 Installation Assistant."
+          },
+          {
+            "title": "Run the Installation Assistant",
+            "content": "Open the downloaded file and follow the on-screen instructions to upgrade to Windows 11."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T03:27:19.481Z",
+      "updated": "2026-01-07T03:27:19.481Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/windows-11-vs-windows-10/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767756444186-47",
+    "title": "Fix Windows 11 Recall Snapshot Issues",
+    "problemDescription": "Windows 11 Recall feature not saving or displaying snapshots.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "recall",
+      "snapshots",
+      "reboot"
+    ],
+    "steps": [
+      {
+        "title": "Reboot Your Device",
+        "content": "If snapshots are not appearing or being saved, restart your computer."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-07T03:27:24.186Z",
+      "updated": "2026-01-07T03:27:24.186Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/windows-11-recall-glitch-has-the-most-interesting-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767756471682-58",
+    "title": "Fix Android File Transfer on Ventura",
+    "problemDescription": "Android File Transfer not working on macOS Ventura due to app conflicts or USB debugging settings.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "file transfer",
+      "ventura",
+      "macOS",
+      "conflict"
+    ],
+    "steps": [
+      {
+        "title": "Close Conflicting Apps",
+        "content": "Use the Task Manager to close all running apps one by one to identify which app is causing the conflict with Android File Transfer."
+      },
+      {
+        "title": "Quit Android File Transfer",
+        "content": "In Activity Monitor, quit the 'Android File Transfer' process and then restart it."
+      },
+      {
+        "title": "Disable USB Debugging",
+        "content": "Go to Developer Options on your Android device and turn off USB Debugging while using Android File Transfer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Quit Google Drive and Dropbox",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Quit Google Drive and Dropbox",
+            "content": "Close Google Drive and Dropbox applications before running Android File Transfer."
+          },
+          {
+            "title": "Restart Android File Transfer",
+            "content": "After quitting the conflicting apps, restart Android File Transfer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T03:27:51.682Z",
+      "updated": "2026-01-07T03:27:51.682Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254428061",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767756474209-505",
+    "title": "Fix iMessage on Android",
+    "problemDescription": "iMessage not working after switching from iPhone to Android.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "imessage",
+      "android",
+      "iphone",
+      "switch"
+    ],
+    "steps": [
+      {
+        "title": "Update iMessage Settings",
+        "content": "On your iPhone, go to Settings > Messages and turn off iMessage. This ensures messages are sent as SMS."
+      },
+      {
+        "title": "Use a Third-Party App",
+        "content": "Download a third-party app like 'iMessage for Android' or 'WeMessage' to receive iMessages on your Android device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Apple Support",
+            "content": "Go to the Apple Support website and navigate to the iMessage support section."
+          },
+          {
+            "title": "Follow Instructions",
+            "content": "Follow the instructions provided by Apple Support to deregister your iPhone from iMessage."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T03:27:54.209Z",
+      "updated": "2026-01-07T03:27:54.209Z",
+      "sourceUrl": "https://discussions.apple.com/thread/5079636",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767756479942-949",
+    "title": "Fix iPhone to Android Text/Call Issues",
+    "problemDescription": "iPhone users cannot send text messages to an Android device, but calls go through.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iPhone",
+      "Android",
+      "text",
+      "call",
+      "issue"
+    ],
+    "steps": [
+      {
+        "title": "Remove +1 from Contact Number",
+        "content": "On the iPhone, open the Contacts app, find the Android user's contact, and remove the +1 prefix from the phone number. Save the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings on iPhone",
+            "content": "Go to Settings > General > Reset > Reset Network Settings. This will reset Wi-Fi networks and passwords, cellular settings, VPN and APN settings, and any saved Bluetooth connections."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Service Provider",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Your Service Provider",
+            "content": "Reach out to your service provider (e.g., AT&T, FirstNet) to check if there are any known issues or settings that need to be adjusted on their end."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T03:27:59.942Z",
+      "updated": "2026-01-07T03:27:59.942Z",
+      "sourceUrl": "https://discussions.apple.com/thread/252713181",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767756484074-300",
+    "title": "Send Photos from iPhone to Android",
+    "problemDescription": "iPhone users are unable to send photos to Android users due to format incompatibility or network issues.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "android",
+      "photos",
+      "sending",
+      "incompatibility"
+    ],
+    "steps": [
+      {
+        "title": "Convert Photos to Compatible Format",
+        "content": "Take a screenshot of the photo you want to send, which will save it as a PNG or JPEG file. This format is compatible with Android devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Airplane Mode with Wi-Fi",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Airplane Mode",
+            "content": "Turn on Airplane Mode on your iPhone."
+          },
+          {
+            "title": "Enable Wi-Fi",
+            "content": "While in Airplane Mode, enable Wi-Fi and connect to a network."
+          },
+          {
+            "title": "Send Photos",
+            "content": "Send the photos via messaging apps that support Wi-Fi, such as iMessage or WhatsApp."
+          }
+        ]
+      },
+      {
+        "title": "Install a Cell Booster",
+        "type": "Hardware Solution",
+        "steps": [
+          {
+            "title": "Purchase a Cell Booster",
+            "content": "Buy a cell booster compatible with your carrier, such as the AT&T Cell Booster."
+          },
+          {
+            "title": "Install the Cell Booster",
+            "content": "Follow the installation instructions provided with the cell booster."
+          },
+          {
+            "title": "Test the Connection",
+            "content": "After installation, test sending photos to an Android device to ensure the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T03:28:04.074Z",
+      "updated": "2026-01-07T03:28:04.074Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254987578",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767756501784-178",
+    "title": "Clear Notification Bar on Android",
+    "problemDescription": "Persistent notifications cluttering the notification bar on Android devices.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "notifications",
+      "notification bar",
+      "bluetooth",
+      "WhatsApp Web"
+    ],
+    "steps": [
+      {
+        "title": "Swipe Away Notifications",
+        "content": "Swipe away individual notifications to remove them from the notification bar."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Persistent Notifications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open the Settings app on your Android device."
+          },
+          {
+            "title": "Navigate to Apps & Notifications",
+            "content": "Tap on 'Apps & notifications' or 'Apps' depending on your device."
+          },
+          {
+            "title": "Select the App",
+            "content": "Find and tap on the app that is causing the persistent notifications."
+          },
+          {
+            "title": "Disable Notifications",
+            "content": "Tap on 'Notifications' and toggle off the switch to disable notifications for that app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T03:28:21.784Z",
+      "updated": "2026-01-07T03:28:21.784Z",
+      "sourceUrl": "https://www.techradar.com/news/android-11-might-fix-the-most-annoying-notification-problem-on-your-phone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767756503102-995",
+    "title": "Fix Windows 11 Start Menu and Taskbar Crashes",
+    "problemDescription": "Windows 11 Start menu and taskbar crash when certain notifications appear.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "start menu",
+      "taskbar",
+      "crash",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Install the Latest Windows 11 Update",
+        "content": "Go to Settings > Windows Update > Check for updates and install the latest optional update."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Windows Explorer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Task Manager",
+            "content": "Press Ctrl + Shift + Esc to open Task Manager."
+          },
+          {
+            "title": "Restart Windows Explorer",
+            "content": "Find Windows Explorer in the list, right-click, and select Restart."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T03:28:23.102Z",
+      "updated": "2026-01-07T03:28:23.102Z",
+      "sourceUrl": "https://www.techradar.com/computing/windows/latest-windows-11-update-fixes-some-nasty-bugs-but-dont-grab-it-yet-especially-if-you-use-dark-mode",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767756524146-258",
+    "title": "Fix Zoom Error Code 1132",
+    "problemDescription": "Zoom error code 1132 occurs due to conflicts with third-party antivirus software or firewall settings.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "error",
+      "antivirus",
+      "firewall"
+    ],
+    "steps": [
+      {
+        "title": "Disable Third-Party Antivirus and Firewall",
+        "content": "Right-click the antivirus system tray icon and select options to disable the shield and firewall."
+      },
+      {
+        "title": "Test Zoom",
+        "content": "After disabling the antivirus, try using the Zoom app to see if the error is resolved."
+      },
+      {
+        "title": "Set Up Antivirus Exclusion for Zoom",
+        "content": "If the error is resolved, set up an exclusion for Zoom in your antivirus settings and allow Zoom through the firewall."
+      },
+      {
+        "title": "Re-enable Antivirus Protection",
+        "content": "Once the exclusion is set, re-enable the antivirus shield and firewall."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Windows to Factory Settings",
+        "type": "Drastic Solution",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup all important data before proceeding."
+          },
+          {
+            "title": "Reset Windows",
+            "content": "Go to Settings > Update & Security > Recovery > Reset this PC > Get started."
+          },
+          {
+            "title": "Follow On-Screen Instructions",
+            "content": "Follow the prompts to reset your PC to factory settings."
+          }
+        ]
+      },
+      {
+        "title": "Contact Zoom Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Submit a Help Request",
+            "content": "Visit the Zoom support page and submit a help request for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T03:28:44.146Z",
+      "updated": "2026-01-07T03:28:44.146Z",
+      "sourceUrl": "https://www.makeuseof.com/fix-zoom-error-code-1132-windows-10-11/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
