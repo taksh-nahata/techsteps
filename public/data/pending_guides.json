@@ -65448,5 +65448,704 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767813570338-354",
+    "title": "Fix Windows 11 Installation Blocked by BIOS",
+    "problemDescription": "Windows 11 installer fails due to incorrect BIOS settings.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "bios",
+      "installation",
+      "tpm",
+      "uefi"
+    ],
+    "steps": [
+      {
+        "title": "Access UEFI/BIOS Settings",
+        "content": "Restart your PC and press the appropriate key (commonly Del, F2, or Esc) during startup to enter BIOS/UEFI."
+      },
+      {
+        "title": "Enable TPM 2.0",
+        "content": "Navigate to the security settings in BIOS and enable TPM 2.0."
+      },
+      {
+        "title": "Enable UEFI and Secure Boot",
+        "content": "Ensure UEFI and Secure Boot are enabled in the BIOS settings."
+      },
+      {
+        "title": "Save and Exit",
+        "content": "Save the changes and exit the BIOS/UEFI settings."
+      },
+      {
+        "title": "Run Windows 11 Installer",
+        "content": "Restart your PC and run the Windows 11 installer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Community Workaround: Check Hardware Compatibility",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Hardware Requirements",
+            "content": "Ensure your PC meets the minimum hardware requirements for Windows 11."
+          },
+          {
+            "title": "Update Drivers",
+            "content": "Update all necessary drivers, especially for storage controllers and chipset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T19:19:30.338Z",
+      "updated": "2026-01-07T19:19:30.338Z",
+      "sourceUrl": "https://www.reddit.com/r/WindowsHelp/comments/1mjv7b2/fixed_bios_wouldnt_let_me_install_windows_11/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767813576635-981",
+    "title": "Fix Windows 11 Browser and Website Issues",
+    "problemDescription": "Windows 11 browsers and websites not working properly, with persistent issues across multiple browsers and SSDs.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "browser",
+      "website",
+      "crash",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Update Windows and Drivers",
+        "content": "Ensure your Windows 11 is fully updated. Go to Settings > Windows Update > Check for updates. Also, update all your drivers, especially graphics and chipset drivers, from the manufacturer's website."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > Network & Internet > Advanced network settings > Network reset. This will reset network adapters and settings to default."
+      },
+      {
+        "title": "Check for Malware",
+        "content": "Run a full system scan using Windows Defender or a trusted third-party antivirus software to check for malware or viruses."
+      },
+      {
+        "title": "Disable VPN or Proxy",
+        "content": "If you are using a VPN or proxy, disable it temporarily to see if it resolves the issue. Go to Settings > Network & Internet > VPN or Proxy."
+      },
+      {
+        "title": "Reset Browsers",
+        "content": "Reset all browsers to their default settings. For example, in Chrome: Settings > Reset settings > Restore settings to their original defaults."
+      },
+      {
+        "title": "Check Power Supply Unit (PSU)",
+        "content": "Ensure your PSU is functioning properly. Consider testing with a known good PSU if possible."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Windows 11",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup all important data to an external drive or cloud storage."
+          },
+          {
+            "title": "Create Installation Media",
+            "content": "Download the Windows 11 Media Creation Tool from Microsoft's website and create a bootable USB drive."
+          },
+          {
+            "title": "Reinstall Windows 11",
+            "content": "Boot from the USB drive and follow the on-screen instructions to perform a clean installation of Windows 11."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Hardware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test with Different Hardware",
+            "content": "If possible, test with different hardware components, such as RAM or graphics card, to rule out hardware issues."
+          },
+          {
+            "title": "Check Event Viewer",
+            "content": "Open Event Viewer (eventvwr.msc) and look for any critical errors or warnings that might indicate hardware or driver issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T19:19:36.635Z",
+      "updated": "2026-01-07T19:19:36.635Z",
+      "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pv3crf/windows_11_will_not_work_with_my_system_is_it/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767813586371-114",
+    "title": "Windows 11 Troubleshooting Guide",
+    "problemDescription": "Users seeking a step-by-step guide with screenshots for common Windows 11 issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "troubleshooting",
+      "guide",
+      "software issues"
+    ],
+    "steps": [
+      {
+        "title": "Check for Updates",
+        "content": "Go to Settings > Windows Update > Check for updates. Install any available updates."
+      },
+      {
+        "title": "Run the Windows Update Troubleshooter",
+        "content": "Go to Settings > Update & Security > Troubleshoot > Additional troubleshooters > Windows Update > Run the troubleshooter."
+      },
+      {
+        "title": "Use System File Checker",
+        "content": "Open Command Prompt as Administrator and type 'sfc /scannow' then press Enter."
+      },
+      {
+        "title": "Run DISM Tool",
+        "content": "Open Command Prompt as Administrator and type 'DISM /Online /Cleanup-Image /RestoreHealth' then press Enter."
+      },
+      {
+        "title": "Check for Driver Issues",
+        "content": "Go to Device Manager and look for any devices with a yellow exclamation mark. Right-click and select 'Update driver'."
+      },
+      {
+        "title": "Perform a System Restore",
+        "content": "Go to Settings > Update & Security > Recovery > Advanced startup > Restart now. Then select Troubleshoot > Advanced options > System Restore."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows Recovery Environment",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Windows RE",
+            "content": "Restart your computer and press F8 repeatedly to enter the Windows Recovery Environment."
+          },
+          {
+            "title": "Select Troubleshoot",
+            "content": "In the Windows RE, select Troubleshoot > Advanced options > Startup Repair."
+          },
+          {
+            "title": "Follow On-Screen Instructions",
+            "content": "Follow the on-screen instructions to complete the startup repair process."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T19:19:46.371Z",
+      "updated": "2026-01-07T19:19:46.371Z",
+      "sourceUrl": "https://www.reddit.com/r/it/comments/1o9zim6/im_here_to_see_if_anyone_has_a_stepbystep/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767813593901-182",
+    "title": "Windows 11 Performance Issues",
+    "problemDescription": "Users experiencing performance issues or bugs after upgrading to Windows 11.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "performance",
+      "bugs",
+      "upgrade"
+    ],
+    "steps": [
+      {
+        "title": "Check System Requirements",
+        "content": "Ensure your computer meets the minimum system requirements for Windows 11. This includes having a compatible 64-bit processor, 4GB of RAM, and 64GB of storage."
+      },
+      {
+        "title": "Update Drivers",
+        "content": "Update all your drivers, especially the graphics card driver, to ensure compatibility with Windows 11. You can do this through the Device Manager or by downloading the latest drivers from the manufacturer's website."
+      },
+      {
+        "title": "Run Windows Update",
+        "content": "Go to Settings > Windows Update and check for updates. Install any available updates, as they may contain bug fixes and performance improvements."
+      },
+      {
+        "title": "Disable Startup Programs",
+        "content": "Disable unnecessary startup programs to improve boot time and overall performance. You can do this through Task Manager."
+      },
+      {
+        "title": "Perform a Clean Boot",
+        "content": "Perform a clean boot to identify if any third-party applications are causing the performance issues. This can be done through the System Configuration tool."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Windows 11",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Backup all important data before proceeding with a reset."
+          },
+          {
+            "title": "Go to Settings",
+            "content": "Open Settings and navigate to System > Recovery."
+          },
+          {
+            "title": "Reset This PC",
+            "content": "Click on 'Reset this PC' and choose between 'Keep my files' or 'Remove everything'. Follow the on-screen instructions to complete the reset."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall Windows 11",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a Bootable USB Drive",
+            "content": "Download the Windows 11 Media Creation Tool and create a bootable USB drive."
+          },
+          {
+            "title": "Boot from USB",
+            "content": "Insert the USB drive and boot from it. Follow the on-screen instructions to reinstall Windows 11."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T19:19:53.901Z",
+      "updated": "2026-01-07T19:19:53.901Z",
+      "sourceUrl": "https://www.reddit.com/r/Windows11/comments/zaa98s/genuine_question_what_are_the_issues_with_windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767813598936-798",
+    "title": "Windows 11: Fix Common Issues",
+    "problemDescription": "Windows 11 users are experiencing various issues with the operating system.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "issues",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Update Windows 11",
+        "content": "Ensure your system is up to date by going to Settings > Windows Update > Check for updates."
+      },
+      {
+        "title": "Run the Windows Update Troubleshooter",
+        "content": "Go to Settings > Update & Security > Troubleshoot > Additional troubleshooters > Windows Update > Run the troubleshooter."
+      },
+      {
+        "title": "Check for Driver Updates",
+        "content": "Update your drivers by going to Settings > Windows Update > Advanced options > Optional updates."
+      },
+      {
+        "title": "Perform a System File Check",
+        "content": "Open Command Prompt as an administrator and type 'sfc /scannow' to scan and repair system files."
+      },
+      {
+        "title": "Use the DISM Tool",
+        "content": "In Command Prompt as an administrator, type 'DISM /Online /Cleanup-Image /RestoreHealth' to repair the Windows image."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Windows 11",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open Settings > System > Recovery."
+          },
+          {
+            "title": "Reset This PC",
+            "content": "Under Recovery options, click 'Reset this PC' and follow the on-screen instructions to reset your computer."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Clean Install Windows 11",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a Bootable USB Drive",
+            "content": "Use the Media Creation Tool to create a bootable USB drive with the Windows 11 installation files."
+          },
+          {
+            "title": "Boot from USB",
+            "content": "Boot your computer from the USB drive and follow the on-screen instructions to perform a clean install of Windows 11."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T19:19:58.936Z",
+      "updated": "2026-01-07T19:19:58.936Z",
+      "sourceUrl": "https://www.reddit.com/r/Windows11/comments/1haut1q/windows_11_lets_be_honest_there_are_big_issues/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767813649403-677",
+    "title": "Change Sent Items Sorting in Outlook for Mac",
+    "problemDescription": "Sent items are listed by sender's name instead of recipient's name in Outlook for Mac.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "outlook",
+      "sent items",
+      "sorting",
+      "mac"
+    ],
+    "steps": [
+      {
+        "title": "Change Arrange By to Conversations",
+        "content": "Go to the View menu and select 'Arrange By', then choose 'Conversations'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Reading Pane View",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Reading Pane Position",
+            "content": "Change the reading pane view from right to below, then switch it back to its original position."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reorder Columns in View Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Viewing Pane to Bottom",
+            "content": "Change the viewing pane to 'bottom' to see all the different boxes at the top of the email pane."
+          },
+          {
+            "title": "Drag the 'To' Box",
+            "content": "Drag the 'To' box left of the 'From' box."
+          },
+          {
+            "title": "Restore Original View",
+            "content": "Change your view back to whatever you had it as before."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Add 'To' Column in Outlook 2013",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Highlight Sent Folder",
+            "content": "While the sent folder is highlighted, click the view tab."
+          },
+          {
+            "title": "Open View Settings",
+            "content": "Click the view settings tab, then click columns."
+          },
+          {
+            "title": "Add and Move 'To' Column",
+            "content": "Add 'To' and move it to the very top, then click OK."
+          }
+        ]
+      },
+      {
+        "title": "Method 5: Reset Views in Outlook 2010",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Outlook with Clean Views",
+            "content": "With Outlook not running, from the run menu enter: outlook.exe /cleanviews."
+          }
+        ]
+      },
+      {
+        "title": "Method 6: Change Current View to Sent To",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Scroll Over View",
+            "content": "Scroll over View → Current View and click Sent To."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T19:20:49.403Z",
+      "updated": "2026-01-07T19:20:49.403Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/66229/sent-items-listed-by-senders-name-my-name-not-recipient-in-outlook-for-mac-2",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767813652770-683",
+    "title": "Fix Faded Images in Outlook 2011 for Mac",
+    "problemDescription": "Images sent via Outlook 2011 for Mac appear faded or washed out to recipients.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "outlook",
+      "mac",
+      "images",
+      "faded",
+      "email"
+    ],
+    "steps": [
+      {
+        "title": "Copy Directly from Screen Capture to Outlook",
+        "content": "Instead of copying images from other applications, use screen capture tools to directly copy the image to Outlook and send it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Signature Images",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete and Re-add Images in Signature",
+            "content": "If the issue occurs with images in your email signature, delete the existing image and drag a new one from the Finder into the signature edit window."
+          }
+        ]
+      },
+      {
+        "title": "Avoid Copying Copies",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Send Original Images Only",
+            "content": "Avoid forwarding or copying images that have already been sent once. Always send the original image directly from the source application."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T19:20:52.770Z",
+      "updated": "2026-01-07T19:20:52.770Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/186972/images-are-faded-emailed-from-outlook-2011-for-mac",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767813660185-952",
+    "title": "Fix Ubuntu Not Recognizing USB Device",
+    "problemDescription": "Ubuntu does not recognize a USB device, even though it works on other systems.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "usb",
+      "ubuntu",
+      "driver",
+      "device recognition"
+    ],
+    "steps": [
+      {
+        "title": "Check System Logs",
+        "content": "Open a terminal and run `tail -f /var/log/syslog`. Insert the USB device and observe if Ubuntu attempts to read it."
+      },
+      {
+        "title": "List USB Devices",
+        "content": "Run `lsusb` in the terminal to list all connected USB devices. This will help verify if the device is being detected at all."
+      },
+      {
+        "title": "Check Kernel Messages",
+        "content": "Use the command `dmesg` to check kernel messages for any errors or notifications related to the USB device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Install or Update Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Available Drivers",
+            "content": "Search for drivers specific to your USB device. If the manufacturer provides a Linux driver, install it."
+          },
+          {
+            "title": "Community Drivers",
+            "content": "If the manufacturer does not provide a driver, check community forums or repositories for a compatible driver."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T19:21:00.185Z",
+      "updated": "2026-01-07T19:21:00.185Z",
+      "sourceUrl": "https://askubuntu.com/questions/1133905/ubuntu-doesnt-recognize-usb-device",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767813667201-206",
+    "title": "Fix USB Not Mounting on Ubuntu",
+    "problemDescription": "USB devices not being detected or mounted on Ubuntu.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "usb",
+      "mount",
+      "ubuntu",
+      "storage"
+    ],
+    "steps": [
+      {
+        "title": "Check for usbmount Package",
+        "content": "Verify if the usbmount package is installed on your system."
+      },
+      {
+        "title": "Remove usbmount Package",
+        "content": "If the usbmount package is installed, remove it using the command: sudo apt-get remove usbmount."
+      },
+      {
+        "title": "Restart the System",
+        "content": "Restart your computer to ensure the changes take effect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Hardware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test USB Ports",
+            "content": "Try plugging the USB device into different USB ports to rule out hardware issues."
+          },
+          {
+            "title": "Check Device Manager",
+            "content": "Use the Device Manager to see if the USB device is recognized but not mounted."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T19:21:07.201Z",
+      "updated": "2026-01-07T19:21:07.201Z",
+      "sourceUrl": "https://askubuntu.com/questions/285539/detect-and-mount-devices",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767813671495-526",
+    "title": "Fix Unrecognized External USB Drive",
+    "problemDescription": "External USB drive is not recognized by any operating system (Windows, Mac, Ubuntu).",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "usb",
+      "external drive",
+      "not recognized",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check USB Controller Chip",
+        "content": "The issue might be with the USB controller chip in the hard-drive box. This is a hardware issue and not related to the operating system."
+      },
+      {
+        "title": "Extract the Hard Drive",
+        "content": "If you need to rescue any data, you can try opening the external drive enclosure and connecting the hard drive directly to a computer using a SATA-to-USB adapter."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Device Manager",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "On Windows, open Device Manager and check if the USB device is listed under 'Other devices' or 'Universal Serial Bus controllers'."
+          },
+          {
+            "title": "Update Drivers",
+            "content": "If the device is listed with a yellow exclamation mark, right-click on it and select 'Update driver'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T19:21:11.495Z",
+      "updated": "2026-01-07T19:21:11.495Z",
+      "sourceUrl": "https://askubuntu.com/questions/162868/usb-external-drive-is-not-recognized-by-any-os-how-to-troubleshoot-in-ubuntu",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767813675633-448",
+    "title": "Fix USB Ports Not Working on Ubuntu",
+    "problemDescription": "USB ports have stopped working on Ubuntu, preventing data backup and driver checks.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "usb",
+      "ubuntu",
+      "drivers",
+      "diagnose"
+    ],
+    "steps": [
+      {
+        "title": "Check USB Device Detection",
+        "content": "Insert a USB device and run the command `lsusb` in the terminal to see if the device is detected."
+      },
+      {
+        "title": "Check Kernel Messages",
+        "content": "Run the command `dmesg | grep -i usb` to check for any USB-related errors in the kernel logs."
+      },
+      {
+        "title": "Check UDEV Rules",
+        "content": "Run the command `udevadm monitor` as you insert or remove the USB drive to see if UDEV is able to mount it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall USB Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall USB Drivers",
+            "content": "Reinstall the USB drivers by running the command `sudo apt-get install --reinstall linux-image-$(uname -r)` in the terminal."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T19:21:15.633Z",
+      "updated": "2026-01-07T19:21:15.633Z",
+      "sourceUrl": "https://askubuntu.com/questions/111553/usb-ports-not-working-how-do-i-check-for-drivers-and-diagnose-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
