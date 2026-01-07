@@ -66147,5 +66147,266 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767817253381-508",
+    "title": "Fix Instagram App Not Working on iPhone",
+    "problemDescription": "Instagram app loads but does not function properly on iPhone.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "iphone",
+      "app",
+      "not working"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall Facebook App",
+        "content": "Completely remove the Facebook app from your iPhone."
+      },
+      {
+        "title": "Reopen Instagram",
+        "content": "After uninstalling Facebook, reopen the Instagram app to see if it works properly."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-07T20:20:53.381Z",
+      "updated": "2026-01-07T20:20:53.381Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255282607",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767817287145-248",
+    "title": "Fix Windows Touchscreen Driver Not Working",
+    "problemDescription": "The touchscreen driver on Windows is not working and appears as disconnected in Device Manager.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "touchscreen",
+      "driver",
+      "windows",
+      "device manager"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall the Touchscreen Driver",
+        "content": "Open Device Manager, search for the Touchscreen device, right-click on it, and select 'Uninstall'. If prompted, choose 'Delete the driver software for this device' to remove corrupted drivers."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "After uninstalling the driver, restart your computer to allow Windows to reinstall the driver automatically."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Press 'Windows Logo + W', type 'Updates', and open 'Windows Update'. Click 'Check for updates' to install any available driver updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Enable Hidden Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Show Hidden Devices",
+            "content": "In Device Manager, click 'View' and select 'Show hidden devices'. Look for the touchscreen device and try to enable it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T20:21:27.145Z",
+      "updated": "2026-01-07T20:21:27.145Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/touch-screen-driver-used-to-work-randomly-now/73b71dab-bb08-4d58-88b6-88e109547b7c",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767817301423-921",
+    "title": "Fix Amazon Echo Offline Issue",
+    "problemDescription": "All Amazon Echo devices suddenly stop working and show as offline.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "Amazon Echo",
+      "Alexa",
+      "offline",
+      "internet connection"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your router is working properly and your Echo devices are connected to the internet."
+      },
+      {
+        "title": "Restart Your Router",
+        "content": "Unplug your router, wait for 30 seconds, and plug it back in to restart it."
+      },
+      {
+        "title": "Restart Your Echo Device",
+        "content": "Unplug your Echo device, wait for 10 seconds, and plug it back in to restart it."
+      },
+      {
+        "title": "Update the Alexa App",
+        "content": "Open the Alexa app on your smartphone, go to the settings, and check for any available updates."
+      },
+      {
+        "title": "Check for Outages",
+        "content": "Visit the Amazon Alexa service page to see if there are any ongoing outages or maintenance work."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Locate the Reset Button",
+            "content": "Find the small reset button on your Echo device."
+          },
+          {
+            "title": "Hold the Reset Button",
+            "content": "Press and hold the reset button for about 10 seconds until the light ring turns orange."
+          },
+          {
+            "title": "Wait for Reset",
+            "content": "Wait for the device to reset completely, which may take a few minutes."
+          },
+          {
+            "title": "Reconnect to Wi-Fi",
+            "content": "Follow the setup instructions in the Alexa app to reconnect your Echo device to your Wi-Fi network."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T20:21:41.423Z",
+      "updated": "2026-01-07T20:21:41.423Z",
+      "sourceUrl": "https://www.quora.com/Why-did-all-my-Amazon-Echo-devices-suddenly-stop-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767817359016-176",
+    "title": "Fix WSL Installation Error on Windows 11",
+    "problemDescription": "Error when installing WSL and Ubuntu on Windows 11.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "wsl",
+      "ubuntu",
+      "windows 11",
+      "installation error"
+    ],
+    "steps": [
+      {
+        "title": "Enable WSL and Virtual Machine Platform",
+        "content": "Double-check that WSL and the Virtual Machine Platform are enabled in Windows Features."
+      },
+      {
+        "title": "Check Windows Exploit Protection Settings",
+        "content": "Go to Windows Security -> App & Browser Control -> Exploit Protection Settings. Ensure that Control Flow Guard (CFG) is set to 'On' or 'Use default (On)' in System Settings. Verify that there are entries for WSL-related executables in Program Settings."
+      },
+      {
+        "title": "Update WSL",
+        "content": "Open PowerShell or CMD as an administrator and run: `wsl --update`."
+      },
+      {
+        "title": "Update Ubuntu Distribution",
+        "content": "Open your Ubuntu distribution as an administrator and run: `sudo apt update && sudo apt upgrade`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Ubuntu from Microsoft Store",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Ubuntu",
+            "content": "Uninstall the current Ubuntu distribution from your system."
+          },
+          {
+            "title": "Reinstall Ubuntu",
+            "content": "Download and install Ubuntu from the Microsoft Store."
+          },
+          {
+            "title": "Follow Installation Prompts",
+            "content": "Open Ubuntu from the Start menu to start the installation process and follow the prompts to create a default UNIX user account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T20:22:39.016Z",
+      "updated": "2026-01-07T20:22:39.016Z",
+      "sourceUrl": "https://askubuntu.com/questions/1447753/error-when-installing-wsl-and-ubuntu-on-windows-11",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767817376776-926",
+    "title": "Ubuntu 22.04 Not Booting After Dual Boot with Windows 11",
+    "problemDescription": "Ubuntu 22.04 does not appear as an option in the boot menu after a dual boot installation with Windows 11.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "windows 11",
+      "dual boot",
+      "boot manager",
+      "secure boot"
+    ],
+    "steps": [
+      {
+        "title": "Check Ubuntu Partition",
+        "content": "Boot into a live Ubuntu USB and open the partition manager to verify the Ubuntu partition exists and has data."
+      },
+      {
+        "title": "Disable Secure Boot",
+        "content": "Enter your BIOS/UEFI settings and disable Secure Boot. This allows the system to boot with shimx64.efi instead of grubx64.efi."
+      },
+      {
+        "title": "Disable Windows Fast Startup and Hibernation",
+        "content": "In Windows, go to Control Panel > Power Options > Choose what the power buttons do > Change settings that are currently unavailable. Uncheck 'Turn on fast startup' and save changes."
+      },
+      {
+        "title": "Disable BitLocker",
+        "content": "If BitLocker is enabled on your Windows partition, disable it to ensure compatibility with the dual boot setup."
+      },
+      {
+        "title": "Update Boot Manager",
+        "content": "Use the command `bcdedit /set {bootmgr} path \\EFI\\ubuntu\\grubx64.efi` in an elevated command prompt to update the boot manager."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manual Installation Option",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Select Boot Partition",
+            "content": "During Ubuntu installation, choose the 'manual' installation option and select the partition you want to boot from."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T20:22:56.776Z",
+      "updated": "2026-01-07T20:22:56.776Z",
+      "sourceUrl": "https://askubuntu.com/questions/1428990/ubuntu-22-04-not-booting-after-install-dual-boot-windows-11",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
