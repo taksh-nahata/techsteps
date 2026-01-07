@@ -66822,5 +66822,587 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767824247545-672",
+    "title": "Fix Samsung S9 Freezing While Charging",
+    "problemDescription": "Samsung Galaxy S9 freezes when charging and using the device simultaneously.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "samsung",
+      "s9",
+      "freezing",
+      "charging",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Device",
+        "content": "Perform a force reboot by holding down the Power button for about 10 seconds until the device restarts."
+      },
+      {
+        "title": "Update Software",
+        "content": "Go to Settings > Software update > Download and install any available updates."
+      },
+      {
+        "title": "Check for App Issues",
+        "content": "Uninstall any recently installed apps that might be causing the issue."
+      },
+      {
+        "title": "Safe Mode",
+        "content": "Restart the phone in Safe Mode to check if a third-party app is causing the problem. To do this, press and hold the Power button until the Power menu appears, then long-press the 'Power off' option and tap 'Safe mode'."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "If the issue persists, perform a factory reset. Go to Settings > General management > Reset > Factory data reset. Note: This will erase all data, so back up important information first."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Charging Accessories",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect Charging Cable and Adapter",
+            "content": "Try using a different charging cable and adapter to rule out any issues with the accessories."
+          },
+          {
+            "title": "Clean Charging Port",
+            "content": "Clean the charging port gently with a soft brush or compressed air to remove any debris that might be causing connectivity issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T22:17:27.545Z",
+      "updated": "2026-01-07T22:17:27.545Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/samsung-s9-completely-freezes-when-charging.3533426/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767824251378-59",
+    "title": "Revive Dead Samsung Galaxy S4",
+    "problemDescription": "Samsung Galaxy S4 suddenly died and won't turn on, important data recovery needed.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "galaxy s4",
+      "dead phone",
+      "charging board",
+      "battery"
+    ],
+    "steps": [
+      {
+        "title": "Replace the Charging Board",
+        "content": "Purchase a replacement charging board online (approximately $3). Open the phone and replace the faulty charging board. This is a common issue and often resolves the problem."
+      },
+      {
+        "title": "Test Without the Battery",
+        "content": "If replacing the charging board doesn't work, remove the battery and plug the phone into a power source using the charging cable. Some phones can operate with a constant power source even without the battery."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Replace the Battery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a New Battery",
+            "content": "If the phone still doesn't turn on after testing without the battery, the battery itself might be faulty. Purchase a replacement battery and install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T22:17:31.378Z",
+      "updated": "2026-01-07T22:17:31.378Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/trying-to-revive-a-dead-samsung-galaxy-s4.3534711/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767824256620-435",
+    "title": "Fix Samsung Galaxy Note 4 Stuck in Odin Mode",
+    "problemDescription": "Samsung Galaxy Note 4 is stuck in Odin mode and won't restart normally.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "odin mode",
+      "galaxy note 4",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Remove and Reinsert the Battery",
+        "content": "Take out the battery from your device for about 100 seconds and then put it back in."
+      },
+      {
+        "title": "Restart the Device",
+        "content": "After reinserting the battery, restart your Samsung device and check if the Odin mode error is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Odin Flash Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Official Firmware",
+            "content": "Download the official firmware for your Samsung Galaxy Note 4."
+          },
+          {
+            "title": "Flash Firmware with Odin",
+            "content": "Use the Odin Flash Tool to flash the downloaded firmware to exit Download Mode."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T22:17:36.620Z",
+      "updated": "2026-01-07T22:17:36.620Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/samsung-galaxy-note-4-odin-mode-problem.3367837/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767824262624-655",
+    "title": "Samsung Galaxy S6 Random Shutdown",
+    "problemDescription": "Samsung Galaxy S6 turns off randomly, even when fully charged, and experiences slow charging.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "galaxy s6",
+      "random shutdown",
+      "battery",
+      "charging"
+    ],
+    "steps": [
+      {
+        "title": "Check Battery Health",
+        "content": "Monitor battery usage and health through the device's settings. Look for any unusual battery drain or health issues."
+      },
+      {
+        "title": "Reset Battery Statistics",
+        "content": "Dial *#32489# to enter service mode and reset battery statistics."
+      },
+      {
+        "title": "Replace Battery",
+        "content": "If the battery is old or damaged, consider replacing it with a new one."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Data Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup all important data as a factory reset will erase everything."
+          },
+          {
+            "title": "Dial Reset Code",
+            "content": "Dial *#7780# to perform a factory data reset."
+          },
+          {
+            "title": "Confirm Reset",
+            "content": "Follow the on-screen instructions to confirm and complete the reset."
+          }
+        ]
+      },
+      {
+        "title": "Full Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup all important data as a full factory reset will erase everything."
+          },
+          {
+            "title": "Dial Reset Code",
+            "content": "Dial *2767*3855# to perform a full factory reset."
+          },
+          {
+            "title": "Confirm Reset",
+            "content": "Follow the on-screen instructions to confirm and complete the reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T22:17:42.624Z",
+      "updated": "2026-01-07T22:17:42.624Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/samsung-galaxy-s6-turns-off-randomly-and-other-issues.3249382/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767824272400-604",
+    "title": "Unbrick Samsung Galaxy Note 5",
+    "problemDescription": "Samsung Galaxy Note 5 is hard bricked due to a failed kernel flash, with no access to recovery mode.",
+    "category": "android",
+    "difficulty": "Hard",
+    "keywords": [
+      "android",
+      "bricked",
+      "kernel",
+      "odin",
+      "samsung"
+    ],
+    "steps": [
+      {
+        "title": "Download the Correct ROM",
+        "content": "Download the most current ROM for your specific model (SM-N920P) from a reliable source like sammobile.com."
+      },
+      {
+        "title": "Prepare Odin",
+        "content": "Download and install Odin3 v3.12.3 on your computer."
+      },
+      {
+        "title": "Flash the ROM",
+        "content": "Connect your phone to the computer, open Odin, load the downloaded ROM, and flash it to your device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Kernel",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Find a Compatible Kernel",
+            "content": "Search for a kernel that is compatible with your device model and known to work."
+          },
+          {
+            "title": "Flash the Kernel",
+            "content": "Use Odin to flash the compatible kernel to your device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T22:17:52.400Z",
+      "updated": "2026-01-07T22:17:52.400Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/hard-bricked-samsung-galaxy-note-5-solved.2874213/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767824314227-911",
+    "title": "Fix MacBook Clicking Issue",
+    "problemDescription": "MacBook is unresponsive to clicks.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "clicking",
+      "unresponsive"
+    ],
+    "steps": [
+      {
+        "title": "Restart in Safe Mode",
+        "content": "Hold the shift key down during startup until you see the Apple logo and progress bar. This will temporarily disable third-party LaunchDaemons and LaunchAgents."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Log Out and Log Back In",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Save Your Work",
+            "content": "Ensure all your work is saved before proceeding."
+          },
+          {
+            "title": "Log Out",
+            "content": "Go to the Apple menu and select 'Log Out'."
+          },
+          {
+            "title": "Log Back In",
+            "content": "Log back into your account to see if the issue is resolved."
+          }
+        ]
+      },
+      {
+        "title": "Shut Down Daily",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Shut Down",
+            "content": "Shut down your MacBook completely instead of just putting it to sleep."
+          },
+          {
+            "title": "Restart",
+            "content": "Restart your MacBook to see if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T22:18:34.227Z",
+      "updated": "2026-01-07T22:18:34.227Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-my-MacBook-with-the-problem-that-I-couldnt-click-on-anything",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767824316884-504",
+    "title": "Fix Common MacBook Issues",
+    "problemDescription": "Common issues with Apple laptops, specifically MacBooks, and how to resolve them.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "MacBook",
+      "issues",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Visit Apple Support",
+        "content": "Go to the official Apple Support website or contact Apple Support for assistance with your MacBook issue."
+      },
+      {
+        "title": "Search Online",
+        "content": "Use search engines like Google to find solutions for your specific MacBook problem."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Community Forums",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Community Forums",
+            "content": "Visit forums like Quora or Apple Support Communities to see if others have encountered and resolved similar issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T22:18:36.884Z",
+      "updated": "2026-01-07T22:18:36.884Z",
+      "sourceUrl": "https://www.quora.com/What-are-some-common-issues-with-Apple-laptops-specifically-MacBooks-What-factors-should-be-considered-before-buying-one",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767824324064-583",
+    "title": "Fix MacBook Air Freezing During Startup",
+    "problemDescription": "MacBook Air freezes at the end of the loading bar during startup.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "freezing",
+      "startup",
+      "diagnostics",
+      "ram"
+    ],
+    "steps": [
+      {
+        "title": "Run Apple Diagnostics",
+        "content": "Restart your MacBook Air while holding down the 'D' key to enter diagnostics mode. Run the First Aid repair and repeat until the drive appears OK or after 3-4 runs if errors persist."
+      },
+      {
+        "title": "Reset SMC",
+        "content": "Shut down your MacBook Air. Plug in the power cable, then hold down the left Shift key + Ctrl + Alt + Power button together for about 10 seconds. Release and turn on your MacBook."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Free Up RAM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Terminal",
+            "content": "Open Terminal and run commands to free up RAM."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T22:18:44.064Z",
+      "updated": "2026-01-07T22:18:44.064Z",
+      "sourceUrl": "https://www.quora.com/How-can-I-fix-my-MacBook-Air-when-it-keeps-freezing-at-the-end-of-the-loading-bar-I-keep-restarting-it-and-it-does-the-same-thing",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767824331332-654",
+    "title": "Fix Quickly Draining Android Battery",
+    "problemDescription": "Your Android phone's battery is draining quickly.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "battery",
+      "draining"
+    ],
+    "steps": [
+      {
+        "title": "Identify Battery Hogs",
+        "content": "Go to 'Battery' in Settings to see which apps are consuming the most battery."
+      },
+      {
+        "title": "Uninstall Unnecessary Apps",
+        "content": "Remove any apps you don't need to reduce battery consumption."
+      },
+      {
+        "title": "Disable Unused Features",
+        "content": "Turn off Wi-Fi and Bluetooth when they're not needed."
+      },
+      {
+        "title": "Adjust Display Settings",
+        "content": "Reduce the display brightness and screen timeout duration."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Perform a Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure all important data is backed up."
+          },
+          {
+            "title": "Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset)."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Hard Reboot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force Restart",
+            "content": "Hold down the power button and the volume down button at the same time to perform a hard reboot."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T22:18:51.332Z",
+      "updated": "2026-01-07T22:18:51.332Z",
+      "sourceUrl": "https://www.techradar.com/how-to/phone-and-communications/mobile-phones/how-to-fix-any-android-problem-1321927",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767824342811-833",
+    "title": "Optimize Phone Battery Health",
+    "problemDescription": "Your phone battery is draining quickly or degrading faster than expected.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "battery",
+      "optimize",
+      "health",
+      "phone"
+    ],
+    "steps": [
+      {
+        "title": "Enable Low-Power Mode",
+        "content": "Activate the low-power mode on your phone to reduce battery consumption."
+      },
+      {
+        "title": "Close Background Apps",
+        "content": "Close unnecessary background apps to save battery life."
+      },
+      {
+        "title": "Avoid Overheating",
+        "content": "Keep your phone cool to prevent battery degradation."
+      },
+      {
+        "title": "Follow the 20-80 Rule",
+        "content": "Charge your phone between 20% and 80% to preserve battery health."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use a Power Bank",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Carry a Power Bank",
+            "content": "Use a power bank to top up your phone's battery on the go."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T22:19:02.811Z",
+      "updated": "2026-01-07T22:19:02.811Z",
+      "sourceUrl": "https://www.techradar.com/phones/5-ways-to-preserve-your-phone-batterys-health",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767824359906-233",
+    "title": "Recover Google Authenticator Codes After Phone Break",
+    "problemDescription": "You need to access Google Authenticator codes after your phone is broken.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "google",
+      "authenticator",
+      "two-step",
+      "verification",
+      "recovery"
+    ],
+    "steps": [
+      {
+        "title": "Use Backup Options",
+        "content": "Sign in with your account’s alternate second-factor methods: backup codes, SMS/phone call, hardware key, or a secondary authenticator app/device if previously set up. Many services let you use a recovery email, account recovery form, or identity verification to remove 2FA."
+      },
+      {
+        "title": "Restore from a Backup",
+        "content": "If you have your backup codes, you can disable 2FA by going to User Settings and clicking Remove 2FA. Enter your backup codes without any spaces or dashes. Once 2FA is disabled, you can enable it again with your new device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Recovery Email or Form",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "If you don’t have backup codes, contact the service provider’s support team for assistance in recovering your account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T22:19:19.906Z",
+      "updated": "2026-01-07T22:19:19.906Z",
+      "sourceUrl": "https://www.quora.com/I-use-Google-Authenticator-for-two-step-verification-but-now-my-phone-is-broken-Is-there-any-way-to-get-the-code-from-Google-Authenticators",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
