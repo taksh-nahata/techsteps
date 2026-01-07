@@ -64388,5 +64388,512 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767806649949-397",
+    "title": "Samsung Self-Repair Program",
+    "problemDescription": "Samsung offers a self-repair program for Galaxy S21 and other devices, allowing users to fix their devices with official parts and guides.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "self-repair",
+      "galaxy s21",
+      "ifixit",
+      "right to repair"
+    ],
+    "steps": [
+      {
+        "title": "Purchase Parts and Tools",
+        "content": "Buy official repair parts and tools from Samsung retail locations, the Samsung 837 store in Manhattan, or through iFixit."
+      },
+      {
+        "title": "Follow Repair Guides",
+        "content": "Use iFixit's repair guides and community forum for step-by-step instructions on fixing your device."
+      },
+      {
+        "title": "Utilize Authorized Repair Shops",
+        "content": "If you prefer professional help, visit authorized repair shops or use Samsung's same-day repair service, including mobile repair vans."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Professional Repair Service",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Samsung Support",
+            "content": "Call Samsung customer support to schedule a repair appointment at an authorized service center."
+          },
+          {
+            "title": "Mobile Repair Service",
+            "content": "Request Samsung's mobile repair service, where technicians come to your location for same-day repairs."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T17:24:09.949Z",
+      "updated": "2026-01-07T17:24:09.949Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/youll-soon-be-able-to-repair-your-samsung-galaxy-s21-yourself/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767806652992-157",
+    "title": "Speed Up Samsung Galaxy S with Voodoo Lag Fix",
+    "problemDescription": "Your Samsung Galaxy S is running slowly and you want to improve its performance.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "galaxy s",
+      "speed up",
+      "voodoo lag fix",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Enter Recovery Mode",
+        "content": "Switch off your phone, then hold down the volume up and home keys while turning the phone on. This will load into a screen with text."
+      },
+      {
+        "title": "Apply the Voodoo Lag Fix",
+        "content": "Press 'Apply update.zip'. If you have the correct firmware, the Voodoo fix will run and reboot the phone. Follow the instructions provided by the cool robot voice."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using ODIN for 2.2 or 2.2.1 Firmware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter Download Mode",
+            "content": "Turn off the phone, then while holding down the volume down and home keys, press the power button."
+          },
+          {
+            "title": "Connect to PC and Use ODIN",
+            "content": "Connect your phone to your PC, open ODIN, and ensure the device is recognized in the ID:COM box. If not, install Kies to get the necessary drivers."
+          },
+          {
+            "title": "Apply the Fix Using ODIN",
+            "content": "Follow the ODIN instructions to apply the Voodoo lag fix."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T17:24:12.992Z",
+      "updated": "2026-01-07T17:24:12.992Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/how-to-speed-up-your-samsung-galaxy-s-with-the-voodoo-lag-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767806666869-577",
+    "title": "Fix Weak Phone Signal",
+    "problemDescription": "Your phone is experiencing weak or spotty signal.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "phone",
+      "signal",
+      "connection",
+      "carrier"
+    ],
+    "steps": [
+      {
+        "title": "Contact Your Carrier",
+        "content": "Reach out to your mobile carrier to begin troubleshooting the signal issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use a Signal Booster",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Signal Booster",
+            "content": "Buy a signal booster device designed to improve cell reception."
+          },
+          {
+            "title": "Install the Booster",
+            "content": "Follow the manufacturer's instructions to set up the signal booster in your home or office."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T17:24:26.869Z",
+      "updated": "2026-01-07T17:24:26.869Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/how-to-get-better-phone-signal/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767806673429-30",
+    "title": "Fix Roku 3 Connectivity Issues",
+    "problemDescription": "Roku 3 device experiencing connectivity problems or remote not responding.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "roku",
+      "wifi",
+      "connectivity",
+      "remote"
+    ],
+    "steps": [
+      {
+        "title": "Check Wi-Fi Signal",
+        "content": "Ensure the Roku 3 is within the router's range and away from obstructions or enclosed areas."
+      },
+      {
+        "title": "Use Ethernet Cable",
+        "content": "Connect the Roku 3 directly to the router using an ethernet cable for a stable connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reboot Roku 3 and Remote",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot Devices",
+            "content": "Restart both the Roku 3 and the remote by removing the power and batteries respectively for 5 seconds."
+          },
+          {
+            "title": "Re-pair Remote",
+            "content": "After the Roku loading screen appears, reinstall the batteries in the remote and check if it is working."
+          }
+        ]
+      },
+      {
+        "title": "Clear and Re-pair Remote",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot and Clear Remote",
+            "content": "Follow the reboot steps above, then clear and re-pair the remote with the Roku 3."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T17:24:33.429Z",
+      "updated": "2026-01-07T17:24:33.429Z",
+      "sourceUrl": "https://activationrokucodecom.quora.com/How-To-Troubleshoot-Roku-3-Issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767806679139-921",
+    "title": "Fix Roku TV Unresponsiveness and Glitches",
+    "problemDescription": "Roku TVs may become unresponsive, glitchy, or shut down randomly due to hardware or software issues.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Roku TV",
+      "unresponsive",
+      "glitches",
+      "shutdown"
+    ],
+    "steps": [
+      {
+        "title": "Update Roku Software",
+        "content": "Go to Settings > System > System update > Check now. Install any available updates."
+      },
+      {
+        "title": "Reset Roku TV",
+        "content": "Go to Settings > System > Advanced system settings > Factory reset. Follow the on-screen instructions."
+      },
+      {
+        "title": "Improve Power and Network Environment",
+        "content": "Ensure the TV is connected to a stable power source and a reliable network. Use an Ethernet connection if possible."
+      },
+      {
+        "title": "Replace the Remote",
+        "content": "If the remote is unresponsive, replace the batteries or pair a new remote to the TV."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Better-Built TV and Separate Streaming Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a High-Quality TV",
+            "content": "Invest in a TV with better hardware components to avoid performance issues."
+          },
+          {
+            "title": "Use a Separate Streaming Device",
+            "content": "Connect a dedicated streaming device like a Roku streaming stick or other media player to the TV."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T17:24:39.139Z",
+      "updated": "2026-01-07T17:24:39.139Z",
+      "sourceUrl": "https://www.quora.com/Why-are-Roku-TVs-so-bad-unresponsive-and-glitchy-Ive-had-multiple-of-these-TVs-and-Ive-switched-between-different-internet-companies-as-well-Mine-turns-off-randomly-and-takes-forever-to-respond-and-the-remote-barely",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767806689052-446",
+    "title": "Fix Roku Blinking Issue",
+    "problemDescription": "Roku device is blinking and not functioning properly.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Roku",
+      "blinking",
+      "router",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Reset the Router",
+        "content": "Unplug the Roku device from HDMI and Ethernet. Reset your router. Once the router is reset, plug the cords back into the Roku device. Wait for about 10 minutes for the device to boot up and go to the setup screen."
+      },
+      {
+        "title": "Position the Router and Roku Device",
+        "content": "Place the router and Roku device near each other to ensure a strong signal strength for streaming."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Roku Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Gather Information",
+            "content": "Prepare the model and serial number of your Roku device, as well as a description of the steps you have already attempted."
+          },
+          {
+            "title": "Contact Support",
+            "content": "Contact Roku Support with the gathered information. If posting in forums, include the exact blink pattern, model, and behaviors observed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T17:24:49.052Z",
+      "updated": "2026-01-07T17:24:49.052Z",
+      "sourceUrl": "https://www.quora.com/What-are-the-steps-to-solve-the-Roku-blinking-issue",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767806742779-276",
+    "title": "Fix AirPods Pro 3 Connection Issues",
+    "problemDescription": "AirPods Pro 3 not connecting to your device.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods Pro 3",
+      "connection",
+      "pairing"
+    ],
+    "steps": [
+      {
+        "title": "Reset AirPods Pro 3",
+        "content": "Press and hold the setup button on the back of the case for about 15 seconds until the status light flashes amber and then white."
+      },
+      {
+        "title": "Re-pair AirPods Pro 3",
+        "content": "Open the lid of the AirPods case and hold it near your iPhone. Follow the on-screen instructions to re-pair your AirPods."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update AirPods Firmware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ensure AirPods are in the case and connected to power.",
+            "content": "Place your AirPods in the case and connect the case to a power source."
+          },
+          {
+            "title": "Connect AirPods to your iPhone.",
+            "content": "Open the lid of the case and hold it near your iPhone. Make sure the AirPods are connected."
+          },
+          {
+            "title": "Check for updates.",
+            "content": "Go to Settings > General > About. If an update is available, it will be installed automatically."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T17:25:42.779Z",
+      "updated": "2026-01-07T17:25:42.779Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=af79fkF7dls",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767806772824-280",
+    "title": "Manage Home Assistant Notifications",
+    "problemDescription": "Home Assistant notifications are overwhelming or missed due to Do Not Disturb settings.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "home assistant",
+      "notifications",
+      "ios",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Use Tags for Notifications",
+        "content": "Give notifications a tag to replace previous notifications with the same tag, preventing multiple notifications on your phone."
+      },
+      {
+        "title": "Set Up Critical Notifications on iOS",
+        "content": "Add a few lines to your notification action to turn any notification into a critical alert. Choose which sounds play when the notification arrives."
+      },
+      {
+        "title": "Set Up Critical Notifications on Android",
+        "content": "Add a notification channel to the data of your notification. Long-press the notification, open settings, select the notification channel, and turn on the 'Override Do Not Disturb' option."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Customize Notification Sounds",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Choose Specific Sounds",
+            "content": "On iOS, you can choose which sounds play when the notification arrives to ensure you get the right alert."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T17:26:12.824Z",
+      "updated": "2026-01-07T17:26:12.824Z",
+      "sourceUrl": "https://www.howtogeek.com/home-assistant-notification-tricks/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767806785754-932",
+    "title": "Fix WhatsApp Not Initializing on Android",
+    "problemDescription": "WhatsApp fails to initialize and connect on Android devices.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "android",
+      "initializing",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Unlink Google Account",
+        "content": "Go to your phone's settings and unlink the Google account associated with your contacts."
+      },
+      {
+        "title": "Uninstall WhatsApp",
+        "content": "Uninstall WhatsApp from your device."
+      },
+      {
+        "title": "Reinstall WhatsApp",
+        "content": "Reinstall WhatsApp from the Google Play Store."
+      },
+      {
+        "title": "Relink Google Account",
+        "content": "Relink your Google account to your phone's contacts."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Internet Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ensure Fast Internet",
+            "content": "Verify that you have a fast and reliable internet connection."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T17:26:25.754Z",
+      "updated": "2026-01-07T17:26:25.754Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/150161/whatsapp-is-not-initializing-and-not-connecting",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767806801433-834",
+    "title": "Fix WhatsApp Stuck on Initializing",
+    "problemDescription": "WhatsApp is stuck on the 'Initializing' page during registration or setup.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "initializing",
+      "registration",
+      "stuck"
+    ],
+    "steps": [
+      {
+        "title": "Update WhatsApp to Version 2.11.169",
+        "content": "Download the specific version (2.11.169) from the official WhatsApp website and install it manually. Allow the installation to replace the existing version to avoid data loss."
+      },
+      {
+        "title": "Clear App Cache and Data",
+        "content": "Go to your device's settings, find WhatsApp in the apps list, and clear the cache and data. Restart the device and try the registration process again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Voice Activation for OTP",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Request a Call for OTP",
+            "content": "Use the voice activation feature to receive a one-time password (OTP) via a call, which can help you log in and recover your account."
+          }
+        ]
+      },
+      {
+        "title": "Restart the Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot the Device",
+            "content": "Restart your device and wait for a few minutes before opening WhatsApp again. Ensure you have a stable internet connection and press continue to load the initialization page."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T17:26:41.433Z",
+      "updated": "2026-01-07T17:26:41.433Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/64235/whats-app-registration-issue-stuck-on-the-initializing-page",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
