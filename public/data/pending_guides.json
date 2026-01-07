@@ -57981,5 +57981,767 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767767295428-32",
+    "title": "Fix WhatsApp Blank Chats on Android",
+    "problemDescription": "WhatsApp chats appear blank on the phone but show correctly on WhatsApp Web initially, with messages disappearing after sending from the phone.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "blank chats",
+      "android",
+      "app error"
+    ],
+    "steps": [
+      {
+        "title": "Backup and Restore from a Different Device",
+        "content": "Backup your WhatsApp data from the affected phone. Install WhatsApp on a different Android device, restore the backup, and check if the issue persists. This helps determine if the problem is device-specific or account-related."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact WhatsApp Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Report the Issue",
+            "content": "Go to WhatsApp Settings > Help > Contact Us. Describe the issue in detail, including the steps you've already taken. WhatsApp support may provide further assistance or escalate the issue to their technical team."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T06:28:15.428Z",
+      "updated": "2026-01-07T06:28:15.428Z",
+      "sourceUrl": "https://www.reddit.com/r/whatsapp/comments/1nuyds3/whatsapp_bug_chats_are_blank_on_my_phone_w/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767767301107-80",
+    "title": "Fix WhatsApp Stuck at Loading Black Screen",
+    "problemDescription": "WhatsApp is stuck on a black screen and won't load.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "black screen",
+      "loading",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Download and Run Standalone Installer as Administrator",
+        "content": "Download the Evergreen Standalone Installer for Microsoft Edge WebView2 from the official Microsoft page. Choose the version appropriate for your system (x64 for most modern PCs). Right-click the downloaded installer file and select 'Run as administrator'. Follow the prompts and restart your computer after installation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Repair WebView2 Runtime",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Repair WebView2 Runtime",
+            "content": "Open Control Panel > Uninstall a program (or Settings > Apps > Apps & features in Windows 10/11). Find Microsoft Edge WebView2 Runtime in the list. Right-click on it (or click the three dots/select the entry and click Modify) and select Change > Repair. Restart your computer and try launching WhatsApp again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Full Reinstallation with Registry Cleanup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall WebView2 Runtime",
+            "content": "Uninstall the WebView2 Runtime from Control Panel > Uninstall a program if it appears there."
+          },
+          {
+            "title": "Clean Registry",
+            "content": "Open the Registry Editor: Press `Windows Key + R`, type `regedit`, and press Enter. Navigate to the following paths and delete the `{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}` key if it exists in either location."
+          },
+          {
+            "title": "Reinstall WebView2 Runtime",
+            "content": "Download and run the standalone installer for WebView2 Runtime as administrator, then restart your computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T06:28:21.107Z",
+      "updated": "2026-01-07T06:28:21.107Z",
+      "sourceUrl": "https://www.reddit.com/r/whatsapp/comments/1pputer/solution_for_whatsapp_stuck_at_loading_black/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767767309516-676",
+    "title": "Fix WhatsApp Not Sending Messages",
+    "problemDescription": "WhatsApp messages are not sending, and the issue started recently.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "messages",
+      "not sending"
+    ],
+    "steps": [
+      {
+        "title": "Restart the App",
+        "content": "Close the WhatsApp app completely and reopen it to see if the issue is resolved."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure you have a stable internet connection, as poor connectivity can prevent messages from sending."
+      },
+      {
+        "title": "Update WhatsApp",
+        "content": "Go to your app store and check for any available updates for WhatsApp. Install the update if available."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "Restart your phone to clear any temporary glitches that might be causing the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clear App Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open your phone's settings."
+          },
+          {
+            "title": "Navigate to Apps",
+            "content": "Find and select WhatsApp from the list of installed apps."
+          },
+          {
+            "title": "Clear Cache",
+            "content": "Tap on 'Storage' and then 'Clear Cache'."
+          }
+        ]
+      },
+      {
+        "title": "Reinstall WhatsApp",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall WhatsApp",
+            "content": "Uninstall the WhatsApp app from your device."
+          },
+          {
+            "title": "Reinstall WhatsApp",
+            "content": "Download and install WhatsApp again from your app store."
+          },
+          {
+            "title": "Log In",
+            "content": "Log in to your account and check if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T06:28:29.516Z",
+      "updated": "2026-01-07T06:28:29.516Z",
+      "sourceUrl": "https://www.reddit.com/r/whatsapp/comments/1oivef3/how_many_of_us_are_having_the_same_issue_while/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767767330668-23",
+    "title": "Fix AirPods Pro 3 Static Issues",
+    "problemDescription": "AirPods Pro 3 users are experiencing persistent static issues affecting audio playback.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "AirPods Pro 3",
+      "static",
+      "audio",
+      "Apple",
+      "issue"
+    ],
+    "steps": [
+      {
+        "title": "Contact Apple Support",
+        "content": "Reach out to Apple Support to report the static issue and request a replacement or repair."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Ensure your AirPods Pro 3 and connected device are running the latest software versions."
+      },
+      {
+        "title": "Reset AirPods",
+        "content": "Go to Settings > Bluetooth, tap the 'i' icon next to your AirPods, and select 'Forget This Device'. Then, reset your AirPods by holding the setup button on the back of the case for 15 seconds."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Community Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Automatic Ear Detection",
+            "content": "Go to Settings > Bluetooth, tap the 'i' icon next to your AirPods, and turn off 'Automatic Ear Detection'."
+          },
+          {
+            "title": "Adjust EQ Settings",
+            "content": "In the Music app settings, try adjusting the EQ settings to see if it reduces the static."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T06:28:50.668Z",
+      "updated": "2026-01-07T06:28:50.668Z",
+      "sourceUrl": "https://www.techradar.com/audio/earbuds-airpods/its-a-major-flaw-airpods-3-pro-owners-are-still-waiting-for-apple-to-fix-its-annoying-static-problems-and-users-are-getting-impatient",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767767335997-513",
+    "title": "Fix AirPods Pro 2 Fit and Noise Cancellation Issues",
+    "problemDescription": "AirPods Pro 2 may experience fit and noise cancellation issues due to worn-out ear tips.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "airpods",
+      "fit",
+      "noise cancellation",
+      "ear tips"
+    ],
+    "steps": [
+      {
+        "title": "Replace Ear Tips",
+        "content": "Purchase new in-ear tips compatible with AirPods Pro 2. Ensure they are the correct size for a comfortable fit."
+      },
+      {
+        "title": "Install New Ear Tips",
+        "content": "Remove the old ear tips by gently pulling them off. Attach the new ear tips by pressing them firmly onto the earbuds."
+      },
+      {
+        "title": "Test the Fit and Noise Cancellation",
+        "content": "Wear the AirPods Pro 2 and check if the fit is secure and the noise cancellation is improved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clean Existing Ear Tips",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Ear Tips",
+            "content": "Gently pull off the ear tips from the AirPods Pro 2."
+          },
+          {
+            "title": "Clean Ear Tips",
+            "content": "Use a soft, damp cloth to clean the ear tips. Ensure they are completely dry before reattaching."
+          },
+          {
+            "title": "Reattach Ear Tips",
+            "content": "Press the cleaned ear tips firmly back onto the earbuds."
+          },
+          {
+            "title": "Test the Fit and Noise Cancellation",
+            "content": "Wear the AirPods Pro 2 and check if the fit is secure and the noise cancellation is improved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T06:28:55.997Z",
+      "updated": "2026-01-07T06:28:55.997Z",
+      "sourceUrl": "https://www.techradar.com/audio/earbuds-airpods/a-cheap-buy-solved-my-airpods-pro-2-issues-and-gave-them-fresh-life",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767767343489-836",
+    "title": "Prevent CarPlay Audio Handover in iOS 26",
+    "problemDescription": "Audio automatically switches from AirPods to CarPlay, causing embarrassment.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "carplay",
+      "airpods",
+      "audio",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Enable Keep Audio with Headphones",
+        "content": "Open the Settings app on your iPhone, go to General > AirPlay & Continuity, and toggle on 'Keep Audio with Headphones'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Automatic CarPlay Audio",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Bluetooth Auto-Connect",
+            "content": "Go to Settings > Bluetooth, tap the 'i' icon next to your CarPlay device, and disable 'Connect to This iPhone'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T06:29:03.489Z",
+      "updated": "2026-01-07T06:29:03.489Z",
+      "sourceUrl": "https://www.techradar.com/vehicle-tech/hybrid-electric-vehicles/this-ios-26-upgrade-fixes-one-of-the-most-irritating-things-about-wireless-carplay-for-airpods-owners",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767767351379-18",
+    "title": "Fix notify-send Not Working on Ubuntu 14.04",
+    "problemDescription": "The notify-send command does not display notifications intermittently on Ubuntu 14.04.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "notify-send",
+      "Ubuntu",
+      "notifications",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Purge notification-daemon",
+        "content": "Run the following command to remove the notification-daemon package: `sudo apt-get purge notification-daemon`."
+      },
+      {
+        "title": "Autoremove Unnecessary Packages",
+        "content": "Execute the autoremove command to clean up any unnecessary packages: `sudo apt-get autoremove`."
+      },
+      {
+        "title": "Reinstall notify-osd",
+        "content": "Reinstall the notify-osd package with the following command: `sudo apt-get install --reinstall notify-osd`."
+      },
+      {
+        "title": "Restart the System",
+        "content": "Restart your system to apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check DISPLAY Environment Variable",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set DISPLAY Environment Variable",
+            "content": "Ensure the DISPLAY environment variable is set correctly by running: `export DISPLAY=:0`."
+          },
+          {
+            "title": "Test notify-send",
+            "content": "Try using the notify-send command again to see if notifications appear."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T06:29:11.379Z",
+      "updated": "2026-01-07T06:29:11.379Z",
+      "sourceUrl": "https://askubuntu.com/questions/470958/notify-send-not-working-on-14-04-but-volume-and-brightness-notifications-do",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767767357474-534",
+    "title": "Fix Telegram Notifications on Ubuntu Touch",
+    "problemDescription": "Telegram notifications have stopped working on Ubuntu Touch.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "telegram",
+      "notifications",
+      "ubuntu touch"
+    ],
+    "steps": [
+      {
+        "title": "Re-authenticate Telegram",
+        "content": "Delete your Telegram account from the app and set it up again to re-authenticate."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reboot the Phone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot",
+            "content": "Restart your Ubuntu Touch device to see if notifications resume."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Uninstall and Delete Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Telegram",
+            "content": "Uninstall the Telegram app from your device."
+          },
+          {
+            "title": "Delete Data",
+            "content": "Delete any remaining Telegram data files as per the linked post."
+          },
+          {
+            "title": "Reinstall Telegram",
+            "content": "Reinstall Telegram and set up your account again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T06:29:17.474Z",
+      "updated": "2026-01-07T06:29:17.474Z",
+      "sourceUrl": "https://askubuntu.com/questions/653652/telegram-notifications-stopped-working-ubuntu-touch-15-04-r4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767767363154-356",
+    "title": "Fix Persistent Notifications in Ubuntu",
+    "problemDescription": "Notifications in Ubuntu 18.04 or 22.04 do not disappear and obstruct the screen.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "ubuntu",
+      "notifications",
+      "persistent"
+    ],
+    "steps": [
+      {
+        "title": "Remove Incompatible Extension",
+        "content": "Uninstall the extension that is causing the issue. In the case of Ubuntu 18.04, the extension 'Using:' was identified as the culprit."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Lock Screen and Re-login",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Lock Screen",
+            "content": "Press `Super` (Windows key) and type 'Lock' then press Enter or find the lock option in the system menu."
+          },
+          {
+            "title": "Re-login",
+            "content": "After locking the screen, log back in to see if the notifications have cleared."
+          }
+        ]
+      },
+      {
+        "title": "Restart the System",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart the System",
+            "content": "Press `Alt+F2`, type 'restart', and press Enter to restart the system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T06:29:23.154Z",
+      "updated": "2026-01-07T06:29:23.154Z",
+      "sourceUrl": "https://askubuntu.com/questions/1293283/notifications-never-go-away",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767767367739-884",
+    "title": "Fix Notification Alert Sounds in Ubuntu",
+    "problemDescription": "Notification alert sounds are not working in Ubuntu.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "notification",
+      "sound",
+      "alert"
+    ],
+    "steps": [
+      {
+        "title": "Check Alert Volume",
+        "content": "Go to System Settings => Sound => Sound Effects tab. Ensure the 'Alert volume' slider is not set to minimum."
+      },
+      {
+        "title": "Reset to Default",
+        "content": "Use Ubuntu Tweak to reset system sounds to default."
+      },
+      {
+        "title": "Switch to Metacity",
+        "content": "Run `metacity --replace` in the terminal to switch from Compiz to Metacity. This may temporarily restore sound functionality."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Enable System Sounds",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable System Sounds",
+            "content": "Use Ubuntu Tweak to enable system sounds."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T06:29:27.739Z",
+      "updated": "2026-01-07T06:29:27.739Z",
+      "sourceUrl": "https://askubuntu.com/questions/96012/notification-alert-sounds-do-not-work",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767767381211-908",
+    "title": "Reduce TV Glare with Smart Lighting",
+    "problemDescription": "TV glare is causing eye strain and reducing visibility.",
+    "category": "home-entertainment",
+    "difficulty": "Easy",
+    "keywords": [
+      "TV",
+      "glare",
+      "smart lighting",
+      "home automation"
+    ],
+    "steps": [
+      {
+        "title": "Install Smart Lamps and Outlets",
+        "content": "Purchase smart lamps, outlets, or switches compatible with your home automation system (e.g., Alexa, Google Assistant, or Siri)."
+      },
+      {
+        "title": "Connect to Home Automation",
+        "content": "Set up the smart devices and connect them to your preferred home automation system."
+      },
+      {
+        "title": "Control Lighting with Voice Commands",
+        "content": "Use voice commands to adjust the lighting in your room, such as 'Ceiling lights off' to minimize glare."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Motorized Sun Shades",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase Motorized Sun Shades",
+            "content": "Buy motorized sun shades that can be integrated with your home automation system."
+          },
+          {
+            "title": "Install and Connect Shades",
+            "content": "Install the shades and connect them to your home automation system for remote control."
+          },
+          {
+            "title": "Control Shades with Voice Commands",
+            "content": "Use voice commands to adjust the shades, reducing glare from sunlight."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Adjust TV Brightness",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Dim the TV",
+            "content": "Lower the brightness of your TV to minimize eye fatigue in a dark room."
+          },
+          {
+            "title": "Turn Off Lights",
+            "content": "Turn off the lights in the room to eliminate reflections and reduce glare."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T06:29:41.211Z",
+      "updated": "2026-01-07T06:29:41.211Z",
+      "sourceUrl": "https://www.cnet.com/tech/home-entertainment/5-easy-ways-to-get-rid-of-annoying-tv-glare/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767767385725-75",
+    "title": "Fix Roku Lagging Issues",
+    "problemDescription": "Your Roku device is experiencing lagging or freezing issues.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "roku",
+      "lagging",
+      "freezing",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Reset Roku TV in the Settings",
+        "content": "Go to Settings > System > Advanced system settings > Factory reset. This will turn off your TV, clear the cache, and restart it in about 30 seconds."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Uninstall and Reinstall the Problematic App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall the App",
+            "content": "Go to the Home screen, highlight the app causing issues, press the asterisk (*) button on your remote, and select 'Remove channel'."
+          },
+          {
+            "title": "Reinstall the App",
+            "content": "Go to the Streaming Channels store, search for the app, and install it again."
+          }
+        ]
+      },
+      {
+        "title": "Factory Reset Roku TV",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Factory Reset",
+            "content": "Go to Settings > System > Advanced system settings > Factory reset. This will remove all users, sign-ins, and apps, restoring the device to its original state."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T06:29:45.725Z",
+      "updated": "2026-01-07T06:29:45.726Z",
+      "sourceUrl": "https://www.cnet.com/tech/home-entertainment/how-to-fix-freezing-roku/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767767394121-155",
+    "title": "Reduce Edge Enhancement on TV",
+    "problemDescription": "Edge enhancement on your TV can make images look unnatural and hide fine details.",
+    "category": "tv",
+    "difficulty": "Easy",
+    "keywords": [
+      "tv",
+      "picture quality",
+      "edge enhancement"
+    ],
+    "steps": [
+      {
+        "title": "Access TV Settings",
+        "content": "Navigate to your TV's picture settings menu."
+      },
+      {
+        "title": "Locate Edge Enhancement",
+        "content": "Find the edge enhancement or sharpness setting."
+      },
+      {
+        "title": "Adjust the Setting",
+        "content": "Turn the edge enhancement down from its starting point while watching various content, especially 4K if available."
+      },
+      {
+        "title": "Find the Optimal Setting",
+        "content": "Adjust until you find the setting that offers the most detail with the least noise. It might be 0."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Multiple Sources",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test Different Sources",
+            "content": "Try different sources or programs to see if the edge enhancement is coming from the source itself."
+          },
+          {
+            "title": "Adjust Accordingly",
+            "content": "If the issue is consistent across all sources, adjust the TV settings as described above."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T06:29:54.121Z",
+      "updated": "2026-01-07T06:29:54.121Z",
+      "sourceUrl": "https://www.cnet.com/tech/home-entertainment/change-this-one-setting-to-improve-your-tvs-picture/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767767415650-348",
+    "title": "Fix Google Apps Not Working",
+    "problemDescription": "All Google apps are not working properly on your Android device.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "google",
+      "apps",
+      "android",
+      "not working"
+    ],
+    "steps": [
+      {
+        "title": "Wipe Dalvik Cache",
+        "content": "1. Turn off your device. 2. Press and hold the on/off button and volume down button simultaneously (varies by device). 3. Enter the bootloader menu and select 'recovery'. 4. In recovery mode, go to the 'wipe' tab and select 'wipe dalvik cache'. 5. Reboot your device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "1. Backup your data manually by copying pictures to your SD card or computer. 2. Use the `adb backup` command if you care about your app data. 3. Export text messages via SMS Backup & Restore if your Messaging app doesn't have a built-in backup function."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "1. Go to Settings. 2. Scroll down and click on 'Backup and Reset'. 3. Uncheck 'Back up my data' and 'Automatic restore'. 4. Press 'Factory data reset' and confirm. 5. Wait for the device to reboot."
+          }
+        ]
+      },
+      {
+        "title": "Reinstall Google Play Services",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove and Reinstall",
+            "content": "1. Fully remove Google Play Services. 2. Delete any Google accounts activated on your phone. 3. Reinstall Google Play Services."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T06:30:15.650Z",
+      "updated": "2026-01-07T06:30:15.650Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/102185/what-to-do-if-my-all-google-apps-are-not-working-properly",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
