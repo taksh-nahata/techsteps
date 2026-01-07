@@ -62473,5 +62473,548 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767793091974-909",
+    "title": "Fix Xbox Game Bar System Audio Not Recording",
+    "problemDescription": "Xbox Game Bar is not recording system audio when clipping, but the mic audio is working fine.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "xbox",
+      "game bar",
+      "system audio",
+      "recording",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Enable System Audio Recording",
+        "content": "Open the Xbox Game Bar by pressing the Windows key + G. Go to the settings (gear icon) and select 'Captures'. Ensure that 'Record game audio' is turned on."
+      },
+      {
+        "title": "Check Audio Settings in Windows",
+        "content": "Right-click the volume icon in the taskbar and select 'Open Sound settings'. Under 'Input', ensure that your microphone is set as the default device. Under 'Output', ensure that your speakers or headphones are set as the default device."
+      },
+      {
+        "title": "Update Audio Drivers",
+        "content": "Press the Windows key + X and select 'Device Manager'. Expand the 'Sound, video, and game controllers' section. Right-click your audio device and select 'Update driver'. Follow the on-screen instructions to update the driver."
+      },
+      {
+        "title": "Disable Exclusive Mode",
+        "content": "Right-click the volume icon in the taskbar and select 'Sounds'. Go to the 'Playback' tab, right-click your default playback device, and select 'Properties'. Go to the 'Advanced' tab and uncheck 'Allow applications to take exclusive control of this device'. Click 'OK' to save changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Audio Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Audio Drivers",
+            "content": "Press the Windows key + X and select 'Device Manager'. Expand the 'Sound, video, and game controllers' section. Right-click your audio device and select 'Uninstall device'. Follow the on-screen instructions to uninstall the driver."
+          },
+          {
+            "title": "Restart Your Computer",
+            "content": "Restart your computer to allow Windows to reinstall the audio drivers automatically."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Windows Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Windows Update",
+            "content": "Press the Windows key + I to open Settings. Go to 'Update & Security' and select 'Windows Update'. Click 'Check for updates' and install any available updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T13:38:11.974Z",
+      "updated": "2026-01-07T13:38:11.974Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/xbox/forum/all/my-xbox-game-bar-system-audio-is-not-recording/383bce13-2f17-4b34-aa13-d42de8e73148",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767793098434-275",
+    "title": "Fix Registry Errors",
+    "problemDescription": "Registry errors can cause system instability and performance issues.",
+    "category": "windows",
+    "difficulty": "Hard",
+    "keywords": [
+      "registry",
+      "errors",
+      "windows",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Avoid Manual Registry Editing",
+        "content": "Do not manually edit the registry unless you are experienced and know exactly what you are doing. Modern operating systems like Windows Vista do not typically require registry modifications during normal operations."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Avoid Online Registry Scanners",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ignore Online Registry Scanners",
+            "content": "Online registry scanners are often scams and a waste of time. Avoid using them."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T13:38:18.434Z",
+      "updated": "2026-01-07T13:38:18.434Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/how-to-fix-registry-errors/2ac7d57b-929b-47bb-a85a-14d6a27103f1",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767793109284-166",
+    "title": "Remove Phone Number from Microsoft 365 Developer Program",
+    "problemDescription": "User requests manual removal of their phone number from an old Microsoft 365 Developer Program record.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft 365",
+      "Developer Program",
+      "phone number",
+      "account management"
+    ],
+    "steps": [
+      {
+        "title": "Contact Microsoft Support",
+        "content": "Reach out to Microsoft Support through the official support channels, such as the Microsoft Support website or the Microsoft 365 Admin Center."
+      },
+      {
+        "title": "Provide Necessary Information",
+        "content": "Provide your account details and the specific request to remove the phone number from the old developer program record."
+      },
+      {
+        "title": "Follow Verification Process",
+        "content": "Complete any verification steps required by Microsoft to confirm your identity and ownership of the account."
+      },
+      {
+        "title": "Request Manual Removal",
+        "content": "Explicitly request that the phone number be manually removed from the old developer program record."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Microsoft 365 Admin Center",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Log in to Admin Center",
+            "content": "Log in to the Microsoft 365 Admin Center using your admin credentials."
+          },
+          {
+            "title": "Navigate to User Settings",
+            "content": "Go to the 'Users' section and find the user account associated with the old developer program record."
+          },
+          {
+            "title": "Edit User Information",
+            "content": "Edit the user information and remove the phone number from the profile."
+          },
+          {
+            "title": "Save Changes",
+            "content": "Save the changes to ensure the phone number is removed from the record."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T13:38:29.284Z",
+      "updated": "2026-01-07T13:38:29.284Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/office_xp-access/message-bar-disabled-gone-through-steps-to-enable/9dded3df-b77c-4db7-acb4-59e51bf53651?msgId=5596c7dd-b85c-4234-986b-d904fd51ab28&tab=question&status=AllReplies",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767793162458-448",
+    "title": "Fix MacBook Screen Flickering Lines",
+    "problemDescription": "MacBook screen displaying flickering lines, potentially due to software or hardware issues.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "MacBook",
+      "screen flickering",
+      "SMC reset"
+    ],
+    "steps": [
+      {
+        "title": "Reset the SMC",
+        "content": "Connect your MacBook to its charger. Then, hold the Shift + Option + Control keys on the left side of the keyboard, along with the Power button, for 10 seconds. Release all keys and then press the Power button to turn on your MacBook."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update macOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to the Apple menu and select 'About This Mac'. Click on 'Software Update' and install any available updates."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use an External Monitor",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect an External Monitor",
+            "content": "Use an HDMI cable or an adapter (Mini DisplayPort to HDMI or Type C to HDMI) to connect your MacBook to an external monitor. This can help determine if the issue is with the screen or the graphics hardware."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T13:39:22.458Z",
+      "updated": "2026-01-07T13:39:22.458Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=-Q-JVxR2owo",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767793168374-520",
+    "title": "Fix Mac Computer Issues",
+    "problemDescription": "Troubleshooting common problems on Mac computers.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "mac",
+      "troubleshooting",
+      "reinstall",
+      "operating system"
+    ],
+    "steps": [
+      {
+        "title": "Isolate the Problem",
+        "content": "Exit the program or app you are currently using, as it might be causing the issue."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "Go to the macOS Utilities window and select 'Reinstall macOS'. Follow the on-screen instructions to complete the reinstallation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Power Cycle",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Power Down and Unplug",
+            "content": "Power down your Mac and unplug the power cord. Wait for 15 seconds."
+          },
+          {
+            "title": "Reconnect and Power On",
+            "content": "Plug the power cord back in, wait for 5 seconds, and then turn on your computer."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Apple Support",
+            "content": "Go to support.apple.com for additional help and resources."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T13:39:28.374Z",
+      "updated": "2026-01-07T13:39:28.374Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=RBZo9unEe1s",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767793186208-834",
+    "title": "Fix macOS Startup Errors",
+    "problemDescription": "MacBook Pro displays error messages during startup, likely due to a corrupted or missing system file.",
+    "category": "macOS",
+    "difficulty": "Medium",
+    "keywords": [
+      "macOS",
+      "startup",
+      "error",
+      "recovery",
+      "partition"
+    ],
+    "steps": [
+      {
+        "title": "Boot into Recovery Mode",
+        "content": "Restart your Mac and immediately hold down Command (⌘) + R to boot into Recovery Mode."
+      },
+      {
+        "title": "Open Terminal",
+        "content": "From the Utilities menu, select Terminal."
+      },
+      {
+        "title": "Run First Aid",
+        "content": "Type 'diskutil list' to identify your startup disk, then run 'diskutil repairVolume /dev/diskXsY' (replace X and Y with your disk identifier)."
+      },
+      {
+        "title": "Repair Permissions",
+        "content": "After repairing the disk, run 'repairPermissions /Volumes/Macintosh HD' to repair permissions."
+      },
+      {
+        "title": "Restart Your Mac",
+        "content": "Once the process is complete, restart your Mac normally."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall macOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Recovery Mode",
+            "content": "Restart your Mac and hold down Command (⌘) + R to boot into Recovery Mode."
+          },
+          {
+            "title": "Reinstall macOS",
+            "content": "Go to the Utilities menu and select 'Reinstall macOS'. Follow the on-screen instructions to reinstall the operating system."
+          },
+          {
+            "title": "Restore from Backup",
+            "content": "If you have a Time Machine backup, you can restore your data after the reinstallation."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use iBoysoft Data Recovery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install iBoysoft Data Recovery",
+            "content": "Download and install iBoysoft Data Recovery for Mac."
+          },
+          {
+            "title": "Recover Files",
+            "content": "Use the software to recover any important files before attempting other fixes."
+          },
+          {
+            "title": "Proceed with Other Fixes",
+            "content": "After recovering your files, proceed with other methods to fix the startup errors."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T13:39:46.208Z",
+      "updated": "2026-01-07T13:39:46.208Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=lM3JTPYiEMU",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767793196805-58",
+    "title": "General Tech Troubleshooting",
+    "problemDescription": "Common issues with gadgets and devices.",
+    "category": "general",
+    "difficulty": "Easy",
+    "keywords": [
+      "tech",
+      "troubleshooting",
+      "gadgets"
+    ],
+    "steps": [
+      {
+        "title": "Check Connections",
+        "content": "Ensure all cables and connections are secure and properly plugged in."
+      },
+      {
+        "title": "Restart Device",
+        "content": "Turn off the device, wait a few seconds, and then turn it back on."
+      },
+      {
+        "title": "Update Software",
+        "content": "Check for and install any available software or firmware updates."
+      },
+      {
+        "title": "Clear Cache",
+        "content": "Clear the cache and temporary files on your device."
+      },
+      {
+        "title": "Check Settings",
+        "content": "Review the device settings to ensure they are configured correctly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup any important data before proceeding."
+          },
+          {
+            "title": "Reset Device",
+            "content": "Navigate to the settings menu and perform a factory reset."
+          },
+          {
+            "title": "Restore Data",
+            "content": "After the reset, restore your data from the backup."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T13:39:56.805Z",
+      "updated": "2026-01-07T13:39:56.805Z",
+      "sourceUrl": "https://www.cnet.com/how-to/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767793202341-241",
+    "title": "Troubleshoot iOS Device Issues",
+    "problemDescription": "Pocket Geek helps users troubleshoot and optimize their iOS devices.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "troubleshooting",
+      "device health"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install Pocket Geek",
+        "content": "Download Pocket Geek from the App Store and install it on your iOS device."
+      },
+      {
+        "title": "Run Device Health Monitoring",
+        "content": "Use the Device Health monitoring feature to check the status of your device."
+      },
+      {
+        "title": "Follow Geek Tips",
+        "content": "Get daily Geek Tips to optimize and troubleshoot your device."
+      },
+      {
+        "title": "Use Troubleshooting Guides",
+        "content": "Access step-by-step troubleshooting guides for common issues."
+      },
+      {
+        "title": "Run Speed Tests",
+        "content": "Run tests to check your download, upload, and ping speeds."
+      },
+      {
+        "title": "Contact Support",
+        "content": "Tap-to-Talk to a human Geek for additional help if needed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Carrier Features",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Carrier Features",
+            "content": "Check if your carrier offers additional features like locating your device, backing up contacts, or accessing coverage documents."
+          },
+          {
+            "title": "Use Carrier Support",
+            "content": "Contact your carrier's support for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T13:40:02.341Z",
+      "updated": "2026-01-07T13:40:02.341Z",
+      "sourceUrl": "https://download.cnet.com/pocket-geek/3000-2094_4-76572702.html",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767793207977-432",
+    "title": "Troubleshoot SMTP Server Issues with SMTP Diag Tool",
+    "problemDescription": "Identify and resolve SMTP email server problems using a detailed log analysis.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "SMTP",
+      "email",
+      "troubleshooting",
+      "server",
+      "log"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install SMTP Diag Tool",
+        "content": "Download the SMTP Diag Tool from a trusted source and install it on your Windows system."
+      },
+      {
+        "title": "Select SMTP Port and Authentication Method",
+        "content": "Open the tool and select the appropriate SMTP port and authentication method for your email server."
+      },
+      {
+        "title": "Test the Server Connection",
+        "content": "Click the 'Test server' button to initiate the connection test. The tool will display a detailed log window with all connection steps."
+      },
+      {
+        "title": "Analyze the Log Window",
+        "content": "Review the detailed log to identify any error messages or connection issues. The log will also display the final status (success or failed)."
+      },
+      {
+        "title": "Resolve Identified Issues",
+        "content": "Based on the log analysis, take appropriate actions to resolve any identified SMTP server problems."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual SMTP Troubleshooting",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check SMTP Server Settings",
+            "content": "Verify that your SMTP server settings (port, authentication method, etc.) are correctly configured."
+          },
+          {
+            "title": "Test Connection Manually",
+            "content": "Use command-line tools like Telnet to manually test the SMTP server connection and identify any issues."
+          },
+          {
+            "title": "Review Server Logs",
+            "content": "Check the server logs for any error messages or connection issues that might indicate the problem."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T13:40:07.977Z",
+      "updated": "2026-01-07T13:40:07.977Z",
+      "sourceUrl": "https://download.cnet.com/smtp-diag-tool/3000-2086_4-75701770.html",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
