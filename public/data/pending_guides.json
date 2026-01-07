@@ -64895,5 +64895,558 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767810391660-783",
+    "title": "Fix MacBook Pro Not Turning On",
+    "problemDescription": "MacBook Pro won't turn on and shows no signs of life.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "MacBook",
+      "not turning on",
+      "Recovery Mode"
+    ],
+    "steps": [
+      {
+        "title": "Enter Recovery Mode",
+        "content": "Restart your Mac and immediately press and hold the Command (⌘) + R keys until you see the Apple logo or a spinning globe."
+      },
+      {
+        "title": "Use Disk Utility",
+        "content": "In Recovery Mode, go to Utilities > Disk Utility. Select your startup disk and click 'First Aid' to repair it."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "If the issue persists, go back to the Recovery Mode menu and select 'Reinstall macOS'. Follow the on-screen instructions to reinstall the operating system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Boot into Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart and Hold Shift",
+            "content": "Restart your Mac and hold the Shift key until you reach the login screen with the Apple logo."
+          },
+          {
+            "title": "Check for Issues",
+            "content": "If the Mac works in Safe Mode, it indicates a cache or directory issue. Restart normally to see if the issue is resolved."
+          }
+        ]
+      },
+      {
+        "title": "Restore from Time Machine",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect Time Machine Drive",
+            "content": "Connect your Time Machine backup drive to your Mac."
+          },
+          {
+            "title": "Restore from Backup",
+            "content": "In Recovery Mode, go to Utilities > Restore from Time Machine Backup and follow the instructions to restore your Mac from the backup."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T18:26:31.660Z",
+      "updated": "2026-01-07T18:26:31.660Z",
+      "sourceUrl": "https://www.quora.com/My-MacBook-Pro-won-t-turn-on-and-doesn-t-even-show-any-sign-of-life-What-can-I-do",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767810396949-60",
+    "title": "Fix Unresponsive MacBook Trackpad",
+    "problemDescription": "MacBook trackpad is unresponsive and cannot be clicked.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "trackpad",
+      "unresponsive",
+      "click",
+      "button"
+    ],
+    "steps": [
+      {
+        "title": "Disconnect the Trackpad Button",
+        "content": "If your MacBook has a physical trackpad button (separate from the touch-sensitive area), you can disconnect the button itself. This involves opening the MacBook and carefully disconnecting the button from the trackpad assembly."
+      },
+      {
+        "title": "Enable Tap to Click",
+        "content": "After disconnecting the button, enable 'Tap to Click' in System Preferences. Go to System Preferences > Trackpad > Point & Click and check the box for 'Tap to click'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Replace the Trackpad",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Apple Support",
+            "content": "For newer MacBook models without a physical button, it is recommended to contact Apple Support or an authorized service provider to replace the defective trackpad."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T18:26:36.949Z",
+      "updated": "2026-01-07T18:26:36.949Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-my-MacBook-with-the-problem-that-I-couldnt-click-on-anything",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767810400716-81",
+    "title": "Fix MacBook Pro Screen Issues",
+    "problemDescription": "Troubleshooting display problems on a MacBook Pro, including black, blue, white screens, or frozen displays.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "MacBook Pro",
+      "screen issues",
+      "display problems",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Repair Startup Disk",
+        "content": "Boot your MacBook Pro into macOS Recovery mode. Use Disk Utility to repair your startup disk. If errors are found and repaired, restart your Mac. If the issue persists, proceed to the next step."
+      },
+      {
+        "title": "Reinstall macOS or Restore from Backup",
+        "content": "In macOS Recovery, choose to either reinstall macOS or restore from a Time Machine backup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Professional Repair",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Professional Repair Service",
+            "content": "If the screen is physically broken, do not attempt to repair it yourself. Contact a professional repair service like Experimax in Winchester, VA, for expert assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T18:26:40.716Z",
+      "updated": "2026-01-07T18:26:40.716Z",
+      "sourceUrl": "https://www.quora.com/How-can-I-troubleshoot-my-MacBook-Pro-laptop-with-screen-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767810426769-430",
+    "title": "Fix AirPods Audio Stuttering on Windows 10 PC",
+    "problemDescription": "AirPods connected to a Windows 10 desktop PC via a Bluetooth dongle experience audio stuttering and poor sound quality.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "airpods",
+      "windows 10",
+      "bluetooth",
+      "audio stuttering",
+      "desktop pc"
+    ],
+    "steps": [
+      {
+        "title": "Use a USB Extension Cable",
+        "content": "Connect the Bluetooth dongle to the PC using a USB extension cable to move it away from the case, which can help reduce interference."
+      },
+      {
+        "title": "Check for Driver Updates",
+        "content": "Ensure that the Bluetooth dongle drivers are up to date. Visit the manufacturer's website to download the latest drivers."
+      },
+      {
+        "title": "Adjust Bluetooth Settings",
+        "content": "Go to Settings > Devices > Bluetooth & other devices. Click on the AirPods and select 'Remove device', then re-pair them to see if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Replace the Bluetooth Dongle",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a PCIe Bluetooth Card",
+            "content": "Consider buying a PCIe Bluetooth card for better compatibility and performance with AirPods."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T18:27:06.769Z",
+      "updated": "2026-01-07T18:27:06.769Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/airpods-not-working-correctly-in-desktop-pc-windows-10.3797965/latest",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767810441769-690",
+    "title": "Bluetooth Transmitter Not Showing Up for Pairing",
+    "problemDescription": "Bluetooth transmitter BTI-029 is not showing up in Windows 10 Bluetooth settings for pairing.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "transmitter",
+      "pairing",
+      "windows 10"
+    ],
+    "steps": [
+      {
+        "title": "Enable Bluetooth Discovery Mode",
+        "content": "Ensure your Bluetooth transmitter is in pairing mode. Typically, this involves holding down the pair button until an indicator light starts flashing."
+      },
+      {
+        "title": "Reset Bluetooth Stack",
+        "content": "Go to Device Manager, expand Bluetooth, right-click on your Bluetooth adapter, and select 'Uninstall device'. Restart your PC to reset the Bluetooth stack."
+      },
+      {
+        "title": "Update Bluetooth Drivers",
+        "content": "Download and install the latest drivers for your Bluetooth adapter from the manufacturer's website."
+      },
+      {
+        "title": "Check Bluetooth Settings",
+        "content": "Go to Settings > Devices > Bluetooth & other devices. Make sure Bluetooth is turned on and click 'Add Bluetooth or other device' to search for your transmitter."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Pairing Method",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Bluetooth Pairing App",
+            "content": "Download a third-party Bluetooth pairing app that might offer more compatibility options."
+          },
+          {
+            "title": "Check for Firmware Updates",
+            "content": "Visit the manufacturer's website to see if there are any firmware updates for your Bluetooth transmitter."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T18:27:21.769Z",
+      "updated": "2026-01-07T18:27:21.769Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/pairing-bluetooth-transmitter.3769096/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767810447062-117",
+    "title": "Apple A19 and A19 Pro Processor Troubleshooting",
+    "problemDescription": "Issues with Apple A19 and A19 Pro processors in iPhone 17, iPhone Air, and iPhone 17 Pro.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "Apple",
+      "A19",
+      "A19 Pro",
+      "iPhone 17",
+      "iPhone Air",
+      "iPhone 17 Pro",
+      "processor"
+    ],
+    "steps": [
+      {
+        "title": "Check for Software Updates",
+        "content": "Ensure your iPhone is running the latest iOS version to address any software-related issues with the A19 or A19 Pro processor."
+      },
+      {
+        "title": "Restart Your iPhone",
+        "content": "Perform a standard restart to clear any temporary glitches that might be affecting the processor."
+      },
+      {
+        "title": "Reset All Settings",
+        "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset All Settings. This can resolve issues caused by incorrect settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Before proceeding, back up your data to iCloud or a computer."
+          },
+          {
+            "title": "Perform a Factory Reset",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Erase All Content and Settings. This will restore your iPhone to factory settings."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Schedule an Appointment",
+            "content": "If the issue persists, contact Apple Support or visit an Apple Store for professional assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T18:27:27.062Z",
+      "updated": "2026-01-07T18:27:27.062Z",
+      "sourceUrl": "https://www.tomshardware.com/tech-industry/semiconductors/apple-debuts-a19-and-a19-pro-processors-for-iphone-17-iphone-air-and-iphone-17-pro",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767810467968-345",
+    "title": "Speed Up Your Mac",
+    "problemDescription": "Your Mac is running slow and taking a long time to boot and open applications.",
+    "category": "mac",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "slow",
+      "speed up",
+      "ssd",
+      "ram"
+    ],
+    "steps": [
+      {
+        "title": "Upgrade to an SSD",
+        "content": "Replace your traditional hard drive with a solid-state drive (SSD) for faster data access and boot times."
+      },
+      {
+        "title": "Increase RAM",
+        "content": "Add more RAM to your Mac to improve multitasking and overall performance."
+      },
+      {
+        "title": "Perform a Clean Install",
+        "content": "Back up your data, perform a clean install of macOS, and restore only the necessary files from your backup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Optimize Storage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Disk Utility",
+            "content": "Use the Disk Utility tool to repair and optimize your hard drive."
+          },
+          {
+            "title": "Manage Startup Items",
+            "content": "Disable unnecessary startup items to reduce boot time and improve performance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T18:27:47.968Z",
+      "updated": "2026-01-07T18:27:47.968Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/229372/my-mac-is-getting-really-slow-what-should-i-do",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767810479976-305",
+    "title": "Fix Slow Computer Due to Aging Hard Drive",
+    "problemDescription": "Your computer is slowing down due to an aging or failing hard drive.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "slow computer",
+      "hard drive",
+      "aging",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Check Hard Drive Health",
+        "content": "Use a tool like CrystalDiskInfo to check the health status of your hard drive."
+      },
+      {
+        "title": "Backup Important Data",
+        "content": "Ensure all important data is backed up to an external drive or cloud storage."
+      },
+      {
+        "title": "Replace the Hard Drive",
+        "content": "If the hard drive is failing, replace it with a new one. Consider upgrading to an SSD for better performance."
+      },
+      {
+        "title": "Reinstall Operating System",
+        "content": "After replacing the hard drive, reinstall the operating system and restore your data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Optimize System Performance",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clean Up Disk",
+            "content": "Use built-in tools like Disk Cleanup to remove temporary files and free up space."
+          },
+          {
+            "title": "Defragment Hard Drive",
+            "content": "If using an HDD, defragment the drive to improve performance."
+          },
+          {
+            "title": "Update Drivers and Software",
+            "content": "Ensure all drivers and software are up to date."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T18:27:59.976Z",
+      "updated": "2026-01-07T18:27:59.976Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/46324/do-computers-slow-down-as-they-age",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767810493082-992",
+    "title": "Unjam a Printer",
+    "problemDescription": "Printer is jammed and not functioning properly.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "jam",
+      "unjam"
+    ],
+    "steps": [
+      {
+        "title": "Turn Off the Printer",
+        "content": "Turn off the printer to safely access the internal components."
+      },
+      {
+        "title": "Open Paper Trays or Doors",
+        "content": "Open any paper trays or doors that are easily accessible."
+      },
+      {
+        "title": "Check Inside",
+        "content": "Inspect the inside of the printer to locate the jammed paper."
+      },
+      {
+        "title": "Remove the Jammed Paper",
+        "content": "Gently pull out the jammed paper, ensuring not to tear it."
+      },
+      {
+        "title": "Close the Trays or Doors",
+        "content": "Close any open trays or doors and turn the printer back on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use the Printer's Built-in Jam Clearance Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Consult the Manual",
+            "content": "Refer to the printer's manual for specific instructions on using the built-in jam clearance tool."
+          },
+          {
+            "title": "Follow the Instructions",
+            "content": "Follow the manual's instructions to use the tool and clear the jam."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T18:28:13.082Z",
+      "updated": "2026-01-07T18:28:13.082Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/how-to-unjam-a-printer/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767810537513-669",
+    "title": "Fix Fastboot and ADB Permission Issues",
+    "problemDescription": "Fastboot and ADB commands are not working due to permission issues.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "fastboot",
+      "adb",
+      "permissions",
+      "android",
+      "udev"
+    ],
+    "steps": [
+      {
+        "title": "Identify the USB Device",
+        "content": "Run the command `lsusb` to identify your Android device's vendor ID."
+      },
+      {
+        "title": "Create or Edit Udev Rules",
+        "content": "Open a terminal and run the following command to create or edit the udev rules file:\n\n`sudo sh -c \"echo 'SUBSYSTEM==\\\"usb\\\", ATTR{idVendor}==\\\"18d1\\\", MODE=\\\"0666\\\", GROUP=\\\"plugdev\\\"' >> /etc/udev/rules.d/51-android.rules\"`"
+      },
+      {
+        "title": "Restart Udev Service",
+        "content": "Restart the udev service to apply the new rules:\n\n`sudo service udev restart`"
+      },
+      {
+        "title": "Re-plug Your Device",
+        "content": "Unplug and replug your Android device to allow udev to apply the new permissions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Proper USB Cable",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try Different USB Cables",
+            "content": "Ensure you are using a proper USB cable. Some cables may not provide the necessary permissions."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Install Fastboot and Run with Sudo",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Fastboot",
+            "content": "Install fastboot from apt:\n\n`sudo apt install android-tools-fastboot`"
+          },
+          {
+            "title": "Run Fastboot with Sudo",
+            "content": "Execute fastboot with sudo:\n\n`sudo fastboot`"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-07T18:28:57.513Z",
+      "updated": "2026-01-07T18:28:57.513Z",
+      "sourceUrl": "https://askubuntu.com/questions/705537/no-permissions-fastboot-fastboot-and-adb-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
