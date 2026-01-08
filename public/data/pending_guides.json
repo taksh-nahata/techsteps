@@ -68010,5 +68010,445 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767835043648-332",
+    "title": "Fix Freezing and Buffering on Roku",
+    "problemDescription": "Roku device is experiencing freezing and buffering issues during streaming.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "roku",
+      "freezing",
+      "buffering",
+      "streaming"
+    ],
+    "steps": [
+      {
+        "title": "Restart Equipment",
+        "content": "Unplug the Roku device and router, wait 30 seconds, and plug them back in."
+      },
+      {
+        "title": "Verify Network Quality",
+        "content": "Check your internet speed and signal strength. Ensure you have a stable connection."
+      },
+      {
+        "title": "Update and Restart Roku/App",
+        "content": "Go to Settings → System → System update → Check now. Restart the Roku device and the problematic app."
+      },
+      {
+        "title": "Adjust Streaming Quality",
+        "content": "Lower the streaming quality in the app settings to reduce buffering."
+      },
+      {
+        "title": "Use Wired Connection",
+        "content": "Connect your Roku device directly to the router using an Ethernet cable for a more stable connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Network Pings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Network Pings",
+            "content": "Use the Roku remote to disable the pinging option in the settings."
+          }
+        ]
+      },
+      {
+        "title": "Check Roku Server Status",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Roku Server Status",
+            "content": "Verify if there are any issues with Roku servers that might be causing the problem."
+          }
+        ]
+      },
+      {
+        "title": "Close Background Channels",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Close Background Channels",
+            "content": "Close any unused channels to free up resources on your Roku device."
+          }
+        ]
+      },
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Factory Reset",
+            "content": "Go to Settings → System → Advanced system settings → Factory reset. Perform this only as a last resort."
+          }
+        ]
+      },
+      {
+        "title": "Ensure Proper Ventilation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ensure Proper Ventilation",
+            "content": "Make sure your Roku device is not overheating by providing adequate ventilation and avoiding enclosed cabinets."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T01:17:23.648Z",
+      "updated": "2026-01-08T01:17:23.648Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-the-freezing-and-buffering-issues-on-Roku",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767835050029-421",
+    "title": "Fix Roku Player Not Working",
+    "problemDescription": "Roku player is not working, experiencing buffering, connectivity issues, or no signal.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "roku",
+      "not working",
+      "buffering",
+      "connectivity",
+      "no signal"
+    ],
+    "steps": [
+      {
+        "title": "Restart Roku and Router",
+        "content": "Unplug both the Roku player and the router from power. Wait about 10 seconds, then reconnect the power cables. Test streaming to see if the issue is resolved."
+      },
+      {
+        "title": "Check Network Connection",
+        "content": "Go to settings on your Roku and verify that your network is connected. Ensure you have a good Wi-Fi signal."
+      },
+      {
+        "title": "Replace HDMI Cable and Try Different TV Port",
+        "content": "If you're experiencing a blank screen or 'no signal' issue, try replacing the HDMI cable and connecting to a different TV port."
+      },
+      {
+        "title": "Remove and Reinstall Problematic Channel",
+        "content": "If a specific channel is causing issues, remove and reinstall it. Alternatively, update the Roku OS to fix app crashes and playback errors."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clean Ports and Cords",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clean the Ports",
+            "content": "Clean the ports on the Roku, the TV, and the cords to ensure a proper connection."
+          }
+        ]
+      },
+      {
+        "title": "Reset Roku",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Roku",
+            "content": "As a last resort, reset your Roku. Note that this will delete saved information. The method to reset depends on the kind of Roku you have."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T01:17:30.029Z",
+      "updated": "2026-01-08T01:17:30.029Z",
+      "sourceUrl": "https://www.quora.com/What-should-I-do-if-my-Roku-player-is-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767835069294-2",
+    "title": "Recover Account with Two-Factor Authentication",
+    "problemDescription": "You've lost access to your two-factor authentication device and can't log in to your account.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "two-factor authentication",
+      "account recovery",
+      "lost device"
+    ],
+    "steps": [
+      {
+        "title": "Contact the Service Provider",
+        "content": "Reach out to the company running the service you’re trying to access. They may have an account recovery process, though it can take several business days."
+      },
+      {
+        "title": "Use Backup Codes",
+        "content": "If you have backup codes, use them to regain access to your account. These are usually provided when you first set up two-factor authentication."
+      },
+      {
+        "title": "Set Up a New Authenticator",
+        "content": "Once you’ve regained access, set up a new authenticator on your new device. This typically involves installing an app, scanning a barcode, or entering a code from the website."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Start a New Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a New Account",
+            "content": "If the service provider cannot help you recover your account (e.g., Discord), you may need to start a brand-new account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T01:17:49.294Z",
+      "updated": "2026-01-08T01:17:49.294Z",
+      "sourceUrl": "https://lifehacker.com/what-do-i-do-if-i-use-two-factor-authentication-and-los-1668727532",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767835073609-287",
+    "title": "Fix Borked SSD Drive",
+    "problemDescription": "SSD drive is not functioning properly, but files are visible through command prompt.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "SSD",
+      "Windows",
+      "command prompt",
+      "file recovery"
+    ],
+    "steps": [
+      {
+        "title": "Use CHKDSK to Check for Errors",
+        "content": "Open Command Prompt as an administrator and type 'chkdsk /f /r X:' (replace X with your SSD drive letter) to check for and fix errors on the SSD."
+      },
+      {
+        "title": "Run SFC Scan",
+        "content": "In the Command Prompt, type 'sfc /scannow' to scan and repair system files that might be causing the issue."
+      },
+      {
+        "title": "Use Disk Management to Reassign Drive Letter",
+        "content": "Open Disk Management (press Win + X and select Disk Management), right-click on the SSD, and choose 'Change Drive Letter and Paths' to reassign a drive letter."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Third-Party Recovery Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install Recovery Software",
+            "content": "Download a reputable third-party recovery software like EaseUS Data Recovery Wizard or Recuva."
+          },
+          {
+            "title": "Scan the SSD",
+            "content": "Use the software to scan the SSD for recoverable files and follow the on-screen instructions to recover them."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Hardware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect Physical Connections",
+            "content": "Ensure that the SSD is properly connected to the motherboard and that all cables are secure."
+          },
+          {
+            "title": "Test in Another Computer",
+            "content": "If possible, test the SSD in another computer to rule out hardware issues with your original PC."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T01:17:53.609Z",
+      "updated": "2026-01-08T01:17:53.609Z",
+      "sourceUrl": "https://au.lifehacker.com/computing/111626/feature/i-used-chatgpt-to-fix-my-pc-heres-how-it-went",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767835087682-10",
+    "title": "Restore Dismissed Notifications on Android",
+    "problemDescription": "You accidentally dismissed important notifications on your Android device and want to restore them.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "notifications",
+      "restore",
+      "dismissed"
+    ],
+    "steps": [
+      {
+        "title": "Download Notification History Log",
+        "content": "Go to the Google Play Store and download the 'Notification History Log' app."
+      },
+      {
+        "title": "Open the App",
+        "content": "Open the app and wait a few seconds as it configures to your phone."
+      },
+      {
+        "title": "Access Advanced History",
+        "content": "From the Advanced History tab, look through all your recent notifications."
+      },
+      {
+        "title": "Search for Specific Notifications",
+        "content": "Use the search feature to scan through individual apps or look for a message from a specific person."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Adjust Notification Storage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Notification Storage Limit",
+            "content": "Specify how many notifications the app should store at a time (from 15 up to 250)."
+          },
+          {
+            "title": "Clear Notification History",
+            "content": "Clear your notification history if needed."
+          },
+          {
+            "title": "Set Default Landing Page",
+            "content": "Set Advanced History as the app’s default landing page."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T01:18:07.682Z",
+      "updated": "2026-01-08T01:18:07.682Z",
+      "sourceUrl": "https://lifehacker.com/restore-notifications-you-accidentally-dismissed-with-t-1819979372",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767835096532-339",
+    "title": "Fix Broken Chromecast Notification in Facebook App",
+    "problemDescription": "A bug in the Facebook app causes a broken Chromecast notification with non-functional buttons when playing videos.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "facebook",
+      "chromecast",
+      "notification",
+      "bug",
+      "app"
+    ],
+    "steps": [
+      {
+        "title": "Force Close the Facebook App",
+        "content": "To remove the broken Chromecast notification, force close the Facebook app. This can be done by swiping the app away from the recent apps menu or using the app manager to force stop it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update the Facebook App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to the Google Play Store, search for the Facebook app, and check if there is an available update. Install the update if available."
+          },
+          {
+            "title": "Restart the App",
+            "content": "After updating, restart the Facebook app to see if the notification issue is resolved."
+          }
+        ]
+      },
+      {
+        "title": "Clear App Cache and Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open your device's Settings app."
+          },
+          {
+            "title": "Navigate to Apps",
+            "content": "Go to Apps or Application Manager."
+          },
+          {
+            "title": "Select Facebook",
+            "content": "Find and select the Facebook app from the list."
+          },
+          {
+            "title": "Clear Cache and Data",
+            "content": "Tap on 'Storage' and then 'Clear Cache' and 'Clear Data'. This will reset the app and may fix the notification issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T01:18:16.532Z",
+      "updated": "2026-01-08T01:18:16.532Z",
+      "sourceUrl": "https://lifehacker.com/how-to-fix-that-broken-chromecast-notification-facebook-1788382720",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767835111875-394",
+    "title": "Fix iPhone Not Reconnecting to Amazon Alexa",
+    "problemDescription": "iPhone fails to reconnect to Amazon Alexa via Bluetooth.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "alexa",
+      "bluetooth",
+      "reconnect"
+    ],
+    "steps": [
+      {
+        "title": "Forget the Alexa Device",
+        "content": "Go to the Bluetooth settings on your iPhone, find the Alexa device in the list, and tap 'Forget This Device'."
+      },
+      {
+        "title": "Restart Pairing Process",
+        "content": "After forgetting the device, restart the pairing process by putting the Alexa device in pairing mode and reconnecting it to your iPhone."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart iPhone",
+            "content": "Restart your iPhone by holding the power button and sliding to power off. Wait a few seconds, then turn it back on."
+          },
+          {
+            "title": "Restart Alexa Device",
+            "content": "Restart your Alexa device by unplugging it from the power source, waiting a few seconds, and then plugging it back in."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T01:18:31.875Z",
+      "updated": "2026-01-08T01:18:31.875Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255942755",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
