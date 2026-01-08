@@ -69187,5 +69187,866 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767846998905-2",
+    "title": "Fix Slow or Unresponsive Smart TV",
+    "problemDescription": "Smart TVs often become slow or unresponsive due to outdated software or limited hardware.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "smart tv",
+      "slow",
+      "unresponsive",
+      "streaming stick"
+    ],
+    "steps": [
+      {
+        "title": "Disconnect from the Internet",
+        "content": "Unplug your smart TV from the internet to stop automatic updates and background processes that may be causing the slowdown."
+      },
+      {
+        "title": "Use a Streaming Stick",
+        "content": "Connect a streaming stick (e.g., Roku, Amazon Fire Stick) to your TV for a more reliable and faster streaming experience."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Upgrade TV Components",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for User-Upgradeable Components",
+            "content": "Look for TVs with user-replaceable components, such as upgradeable storage or processors, to extend the TV's lifespan and performance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T04:36:38.905Z",
+      "updated": "2026-01-08T04:36:38.905Z",
+      "sourceUrl": "https://www.howtogeek.com/109169/why-are-smart-tvs-so-dumb-when-the-problem-is-so-easy-to-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767847000712-804",
+    "title": "Improve Smart TV Performance",
+    "problemDescription": "Smart TV is slow and laggy, with delayed responses to remote inputs.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "smart tv",
+      "performance",
+      "reboot",
+      "laggy"
+    ],
+    "steps": [
+      {
+        "title": "Reboot the TV",
+        "content": "Go to the settings menu and manually force a full restart of your smart TV."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Power-Cycle the TV",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unplug the Power Cable",
+            "content": "Unplug the power cable from the TV for 10 seconds, then plug it back in."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T04:36:40.712Z",
+      "updated": "2026-01-08T04:36:40.712Z",
+      "sourceUrl": "https://www.howtogeek.com/try-this-tip-if-your-smart-tv-is-slow-and-laggy/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767847011216-560",
+    "title": "Disable ACR and Data Collection on Smart TV",
+    "problemDescription": "Your Smart TV is collecting data through ACR and other tools, and you want to disable these features.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "smart tv",
+      "ACR",
+      "data collection",
+      "privacy"
+    ],
+    "steps": [
+      {
+        "title": "Access TV Settings",
+        "content": "Navigate to the settings menu on your Smart TV."
+      },
+      {
+        "title": "Find ACR and Data Collection Settings",
+        "content": "Look for options related to Automatic Content Recognition (ACR) and data collection. This may be under 'Privacy', 'Advertising', or 'Data Collection' settings."
+      },
+      {
+        "title": "Disable ACR and Data Collection",
+        "content": "Turn off ACR and any other data collection features. The exact steps vary by manufacturer, so refer to your TV's user manual or a specific guide for your TV model."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disconnect TV from Internet",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unplug Ethernet Cable",
+            "content": "If your TV is connected via Ethernet, unplug the cable from the TV."
+          },
+          {
+            "title": "Disable Wi-Fi",
+            "content": "Go to the network settings and disable Wi-Fi."
+          },
+          {
+            "title": "Confirm Disconnection",
+            "content": "Ensure that your TV is no longer connected to the internet by checking the network status."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T04:36:51.216Z",
+      "updated": "2026-01-08T04:36:51.216Z",
+      "sourceUrl": "https://www.howtogeek.com/most-smart-tvs-are-now-ai-enhanced-heres-why-you-should-care/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767847023128-411",
+    "title": "Fix AMD Radeon Display Flickering",
+    "problemDescription": "Intermittent flickering on multiple displays connected to an AMD Radeon GPU.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "AMD",
+      "Radeon",
+      "flickering",
+      "display",
+      "refresh rate"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Custom Resolution Settings",
+        "content": "Open Radeon Adrenaline display settings and navigate to the custom resolution section. Clear the 'G.Refresh Rate (HZ)' and 'G.Pixel Clock' values, then re-enter your desired refresh rate to auto-populate the correct values for both settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Swap DisplayPorts",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Swap DisplayPorts",
+            "content": "Try swapping the DisplayPort connections on your GPU to different ports."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable MPO",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable MPO",
+            "content": "Disable Multi-View Port Operation (MPO) in Windows settings, though this may not resolve the issue for all users."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Underclock Monitors",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Underclock Monitors",
+            "content": "Attempt to underclock your monitors to see if it resolves the flickering issue."
+          }
+        ]
+      },
+      {
+        "title": "Method 5: Change to HDMI",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change to HDMI",
+            "content": "Swap one of the displays to use an HDMI connection instead of DisplayPort."
+          }
+        ]
+      },
+      {
+        "title": "Method 6: Reseat GPU",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reseat GPU",
+            "content": "Reseat the GPU in its slot to ensure a proper connection."
+          }
+        ]
+      },
+      {
+        "title": "Method 7: Modify FriendlyNames in Regedit",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Modify FriendlyNames in Regedit",
+            "content": "Change the FriendlyNames of the displays in the Windows Registry Editor."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T04:37:03.128Z",
+      "updated": "2026-01-08T04:37:03.128Z",
+      "sourceUrl": "https://www.reddit.com/r/radeon/comments/1q1ft99/a_proper_solution_to_intermittent_multiple/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767847025695-279",
+    "title": "Fix Flickering/Glitching on Windows 10/11",
+    "problemDescription": "Flickering, glitching, and graphical artefacts on Windows 10/11, especially in hardware-accelerated applications.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "flickering",
+      "glitching",
+      "artefacts",
+      "windows 10",
+      "windows 11",
+      "MPO"
+    ],
+    "steps": [
+      {
+        "title": "Disable Multi-Plane Overlays (MPO)",
+        "content": "Download the registry files to disable MPO from Nvidia's official source. Use the provided .reg file to disable MPO, which has been known to cause high DPC spikes and graphical issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Overlays and Game DVR",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Overlays",
+            "content": "Disable all overlays and game DVR features in Windows settings and registry."
+          },
+          {
+            "title": "Reinstall Graphics Drivers",
+            "content": "Uninstall graphics drivers using Display Driver Uninstaller (DDU) and reinstall the latest drivers."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T04:37:05.695Z",
+      "updated": "2026-01-08T04:37:05.695Z",
+      "sourceUrl": "https://www.reddit.com/r/Windows11/comments/qy02gw/solved_flickeringglitching_artefacts_on_windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767847034361-853",
+    "title": "Fix Screen Flickering in Chrome on Windows 10",
+    "problemDescription": "Screen flickering frequently while using Chrome on Windows 10.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "windows 10",
+      "screen flickering",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Disable Automatic Color Selection",
+        "content": "Right-click on your desktop wallpaper, select 'Personalize', click 'Colors' in the left sidebar, and uncheck the box 'Automatically pick an accent color from my background' under 'Choose your color'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Windows Slideshow",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Slideshow",
+            "content": "Right-click on your desktop wallpaper, select 'Personalize', open the dropdown box under 'Background', and select either 'Picture' or 'Solid color'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T04:37:14.361Z",
+      "updated": "2026-01-08T04:37:14.361Z",
+      "sourceUrl": "https://www.reddit.com/r/chrome/comments/b6x8jw/solved_screen_flashingflickering_frequently_on/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767847042540-956",
+    "title": "Secure Your Accounts with Proton Authenticator",
+    "problemDescription": "Lack of secure, encrypted backups in 2FA apps like Google Authenticator.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "two-factor authentication",
+      "2FA",
+      "account security",
+      "Proton Authenticator"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install Proton Authenticator",
+        "content": "Visit the official Proton website or your device's app store to download and install Proton Authenticator."
+      },
+      {
+        "title": "Set Up Your Account",
+        "content": "Follow the in-app instructions to create a new account and set up your initial security preferences."
+      },
+      {
+        "title": "Enable Two-Factor Authentication",
+        "content": "Go to the security settings of the service you want to secure and enable two-factor authentication."
+      },
+      {
+        "title": "Scan QR Codes or Enter Setup Keys",
+        "content": "Use Proton Authenticator to scan the QR codes or manually enter the setup keys provided by the service."
+      },
+      {
+        "title": "Enable Encrypted Backups",
+        "content": "In Proton Authenticator, enable the encrypted backup feature to ensure your 2FA codes are securely backed up and synced across your devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use 1Password for 2FA",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install 1Password",
+            "content": "Visit the official 1Password website or your device's app store to download and install 1Password."
+          },
+          {
+            "title": "Set Up Your Account",
+            "content": "Follow the in-app instructions to create a new account and set up your initial security preferences."
+          },
+          {
+            "title": "Enable Two-Factor Authentication",
+            "content": "Go to the security settings of the service you want to secure and enable two-factor authentication."
+          },
+          {
+            "title": "Scan QR Codes or Enter Setup Keys",
+            "content": "Use 1Password to scan the QR codes or manually enter the setup keys provided by the service."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T04:37:22.540Z",
+      "updated": "2026-01-08T04:37:22.540Z",
+      "sourceUrl": "https://www.makeuseof.com/proton-authenticator-free-two-factor-authenticator-beats-all-others/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767847045632-18",
+    "title": "Enable 2FA on Microsoft Account",
+    "problemDescription": "How to enable two-factor authentication (2FA) on your Microsoft account for enhanced security.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "security",
+      "2FA",
+      "Microsoft account",
+      "Outlook"
+    ],
+    "steps": [
+      {
+        "title": "Access Security Settings",
+        "content": "Visit your Microsoft account page and select the Security tab."
+      },
+      {
+        "title": "Start Advanced Security Options",
+        "content": "On the Security basics screen, click 'Get started' in the Advanced security options box."
+      },
+      {
+        "title": "Enable Two-Step Verification",
+        "content": "Scroll down to the Additional security section and click 'Turn on' under Two-step verification."
+      },
+      {
+        "title": "Complete the Setup",
+        "content": "Follow the prompts to set up 2FA using text messages, an authenticator app, or other methods."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Remove Existing App Passwords",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Security Settings",
+            "content": "On your account page, go to Security and choose 'Get started' under Advanced security options."
+          },
+          {
+            "title": "Remove App Passwords",
+            "content": "Under App passwords, click 'Remove existing app passwords' and then 'Remove'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T04:37:25.632Z",
+      "updated": "2026-01-08T04:37:25.632Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/tricks-outlook-microsoft-account-secure/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767847051852-313",
+    "title": "Disable Facebook Two-Factor Authentication Without Phone",
+    "problemDescription": "You need to turn off Facebook's two-factor authentication but have lost your phone.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "facebook",
+      "two-factor authentication",
+      "phone lost"
+    ],
+    "steps": [
+      {
+        "title": "Access Two-Factor Authentication Settings",
+        "content": "Click anywhere in the 'Use two-factor authentication' field to open the settings."
+      },
+      {
+        "title": "Turn Off Two-Factor Authentication",
+        "content": "Click the 'Turn off' button and confirm your choice to disable the feature."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Recognized Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Log In from a Recognized Device",
+            "content": "Go to any of your other recognized devices where Facebook will log you in automatically."
+          },
+          {
+            "title": "Disable Two-Factor Authentication",
+            "content": "Follow the steps above to disable your two-factor authentication or change its settings."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Provide Email and ID",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Security and Login Settings",
+            "content": "Navigate to Settings and Privacy > Settings > Security and Login > Two-factor authentication on your browser-based Facebook account."
+          },
+          {
+            "title": "Provide Email and ID",
+            "content": "Provide an email address and a form of ID to verify your identity and disable two-factor authentication."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T04:37:31.852Z",
+      "updated": "2026-01-08T04:37:31.852Z",
+      "sourceUrl": "https://www.makeuseof.com/how-to-turn-off-two-factor-authentication-facebook-without-phone/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767847057631-275",
+    "title": "Fix Roku App Freezing",
+    "problemDescription": "Roku apps frequently freeze and become unresponsive.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "roku",
+      "app",
+      "freezing",
+      "cache"
+    ],
+    "steps": [
+      {
+        "title": "Clear Roku Cache",
+        "content": "Press the following buttons in order on your Roku remote: Home (5 times), Up, Rewind (2 times), Fast-Forward (2 times). Your Roku will freeze for a minute, then restart."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Roku Mobile App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download the Roku App",
+            "content": "Download the Roku application on your phone to access more options and potentially reduce freezing issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T04:37:37.631Z",
+      "updated": "2026-01-08T04:37:37.631Z",
+      "sourceUrl": "https://www.makeuseof.com/roku-tips-i-wish-i-knew-sooner/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767847061967-279",
+    "title": "Fix Roku No Sound",
+    "problemDescription": "Roku device has no sound during playback or menus.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "roku",
+      "no sound",
+      "audio",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Power Cycle Your Roku",
+        "content": "Turn off your Roku and paired device. Unplug the Roku from its power source and wait 10 to 30 seconds before plugging it back in and powering it on."
+      },
+      {
+        "title": "Check Audio Settings",
+        "content": "Go to your Roku settings and select 'Audio settings'. Ensure the audio mode is set to 'Auto' for optimal playback. If there's no sound in menus, check the 'Menu volume' setting and adjust it to low, medium, or high."
+      },
+      {
+        "title": "Verify Hardware Connections",
+        "content": "If you're not using a Roku streaming stick, double-check all connections to ensure they are properly set up. Try changing component cables to rule out cable issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Roku Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to 'Settings' > 'System' > 'System update' and select 'Check now' to ensure your Roku software is up to date."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T04:37:41.967Z",
+      "updated": "2026-01-08T04:37:41.967Z",
+      "sourceUrl": "https://www.makeuseof.com/roku-no-sound-fixes/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767847068216-295",
+    "title": "Roku Not Working",
+    "problemDescription": "Roku device not responding or having connectivity issues.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "roku",
+      "troubleshooting",
+      "restart",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Roku Device",
+        "content": "Unplug the power cord from the Roku device for 60 seconds, then plug it back in."
+      },
+      {
+        "title": "Restart via Settings",
+        "content": "Press the Home button on the remote, go to Settings > System > System Restart."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check USB Drive Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use External Power Adapter",
+            "content": "Ensure the USB drive uses an external power adapter if provided."
+          },
+          {
+            "title": "Use Powered USB Hub",
+            "content": "If no adapter is available, use a powered USB hub."
+          }
+        ]
+      },
+      {
+        "title": "Factory Reset",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Navigate to Settings",
+            "content": "Press the Home button on the remote, go to Settings > System > Advanced System Settings > Factory Reset."
+          },
+          {
+            "title": "Confirm Reset",
+            "content": "Follow the on-screen instructions to complete the factory reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T04:37:48.216Z",
+      "updated": "2026-01-08T04:37:48.216Z",
+      "sourceUrl": "https://www.makeuseof.com/roku-not-working-troubleshooting-steps/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767847071541-732",
+    "title": "Update Roku Device",
+    "problemDescription": "Ensure your Roku device is running the latest software to resolve bugs and performance issues.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "roku",
+      "update",
+      "software",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check for Updates",
+        "content": "Go to the Home screen on your Roku device."
+      },
+      {
+        "title": "Open Settings",
+        "content": "Select 'Settings' from the menu."
+      },
+      {
+        "title": "Navigate to System",
+        "content": "Choose 'System' from the Settings menu."
+      },
+      {
+        "title": "Select System Update",
+        "content": "Select 'System update' and then 'Check now'."
+      },
+      {
+        "title": "Install Update",
+        "content": "If an update is available, follow the on-screen instructions to install it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update via Roku Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Roku Account",
+            "content": "Visit the Roku website and log in to your account."
+          },
+          {
+            "title": "Check for Updates",
+            "content": "Navigate to the 'My Account' section and check for any available updates for your device."
+          },
+          {
+            "title": "Follow Instructions",
+            "content": "Follow the on-screen instructions to initiate the update process."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T04:37:51.541Z",
+      "updated": "2026-01-08T04:37:51.541Z",
+      "sourceUrl": "https://www.makeuseof.com/how-to-update-roku-steaming-player-roku-tv/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767847164550-183",
+    "title": "Fix Outlook App Not Loading Emails with 2FA",
+    "problemDescription": "Outlook app for Windows 11 not loading emails and not requesting a 2FA code.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "2FA",
+      "emails",
+      "not loading",
+      "authentication"
+    ],
+    "steps": [
+      {
+        "title": "Remove and Re-add Your Email Account",
+        "content": "Go to File > Account Settings > Account Settings. Select your email account and click Remove. Then, add the account again by going to File > Add Account and follow the prompts."
+      },
+      {
+        "title": "Enable Advanced Security Settings",
+        "content": "Go to File > Options > Trust Center > Trust Center Settings > Email Security. Check the box for 'Enable advanced security settings for Outlook' and apply the changes."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Ensure your Windows 11 system is up to date by going to Settings > Windows Update and checking for updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Outlook App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Outlook App",
+            "content": "Close Outlook and then open the Run dialog by pressing Win + R. Type 'outlook.exe /resetnavpane' and press Enter. This will reset the Outlook navigation pane."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall Outlook App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall Outlook App",
+            "content": "Uninstall Outlook from your system and then reinstall it from the Microsoft Store or the official Microsoft website."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T04:39:24.550Z",
+      "updated": "2026-01-08T04:39:24.550Z",
+      "sourceUrl": "https://www.reddit.com/r/Outlook/comments/1brjyzs/help_with_outlook_email_troubleshooting/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767847177074-206",
+    "title": "Fix Outlook Unresponsive After Shared Inbox Removal",
+    "problemDescription": "Outlook becomes unresponsive after removing a user from a shared inbox via O365 Admin.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Outlook",
+      "shared inbox",
+      "unresponsive",
+      "O365 Admin"
+    ],
+    "steps": [
+      {
+        "title": "Re-add and Remove User from Shared Inbox",
+        "content": "Re-add the affected user to the shared inbox via O365 Admin, wait a few minutes, and then remove them again. This can sometimes reset the connection and resolve the issue."
+      },
+      {
+        "title": "Create a New Outlook Profile",
+        "content": "Go to Control Panel > Mail > Show Profiles > Add. Create a new profile and set it as the default. This can resolve profile corruption issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Repair Office Installation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Office Repair",
+            "content": "Go to Control Panel > Programs > Programs and Features. Select Microsoft Office, click Change, and choose Quick Repair or Online Repair."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Clear Outlook Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reduce Cache Size",
+            "content": "In Outlook, go to File > Account Settings > Account Settings. Select the account, click Change, and reduce the cache size to 3 months or less."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T04:39:37.074Z",
+      "updated": "2026-01-08T04:39:37.074Z",
+      "sourceUrl": "https://www.reddit.com/r/it/comments/1b5nmom/troubleshooting_ms_outlook/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767847198579-314",
+    "title": "Outlook App Login Issue",
+    "problemDescription": "Outlook app on a new phone requires a passkey for login, but the user hasn't set one up.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "login",
+      "passkey",
+      "app"
+    ],
+    "steps": [
+      {
+        "title": "Check for Passkey Settings",
+        "content": "Go to your Outlook app settings and look for the passkey feature. Ensure it is turned off."
+      },
+      {
+        "title": "Use Alternative Login Method",
+        "content": "If the passkey issue persists, try using the QR code scan method on your iPad to log in."
+      },
+      {
+        "title": "Contact Support",
+        "content": "If you continue to experience issues, contact Outlook support for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset App Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset App Settings",
+            "content": "Uninstall and reinstall the Outlook app to reset all settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T04:39:58.579Z",
+      "updated": "2026-01-08T04:39:58.579Z",
+      "sourceUrl": "https://www.reddit.com/r/Outlook/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
