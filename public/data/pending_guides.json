@@ -68450,5 +68450,742 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1767842870024-198",
+    "title": "Fix Microsoft Edge Redirecting to https://guce.advertising.com",
+    "problemDescription": "Microsoft Edge is redirecting to https://guce.advertising.com, and basic troubleshooting steps like resyncing and clearing cache haven't resolved the issue.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Edge",
+      "redirect",
+      "advertising",
+      "browser issue"
+    ],
+    "steps": [
+      {
+        "title": "Reset Edge Settings",
+        "content": "Go to Edge settings by clicking the three dots in the top right corner, then navigate to 'Reset settings'. Click on 'Restore settings to their default values' and confirm the action."
+      },
+      {
+        "title": "Disable Extensions",
+        "content": "Open Edge and go to the extensions page by typing 'edge://extensions' in the address bar. Disable all extensions and check if the issue persists. If not, enable them one by one to identify the culprit."
+      },
+      {
+        "title": "Check Hosts File",
+        "content": "Open Notepad as an administrator and go to File > Open. Navigate to 'C:\\Windows\\System32\\drivers\\etc' and open the 'hosts' file. Ensure there are no suspicious entries related to the redirect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Microsoft Edge",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Edge",
+            "content": "Go to 'Apps & features' in Windows settings, find Microsoft Edge, and click 'Uninstall'."
+          },
+          {
+            "title": "Reinstall Edge",
+            "content": "Download the latest version of Microsoft Edge from the official website and install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T03:27:50.024Z",
+      "updated": "2026-01-08T03:27:50.024Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/edge/forum/edge_issue-edge_win10/edge-directs-to-httpsguceadvertisingcom-for-aol/abbf9e6b-585c-4fe6-ab96-c6c958b56ae3?messageId=d242f89d-eb18-4f9d-9f9c-62577acaa372",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767842874178-472",
+    "title": "Fix 0xE000006E Sync Error in OneNote",
+    "problemDescription": "Unable to sync OneNote notebooks across devices (MacBook, iPad, iPhone, web).",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "onenote",
+      "sync",
+      "error",
+      "0xE000006E"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your MacBook, iPad, and iPhone are connected to a stable internet connection."
+      },
+      {
+        "title": "Restart OneNote",
+        "content": "Close and reopen OneNote on all devices."
+      },
+      {
+        "title": "Sign Out and Sign In",
+        "content": "Sign out of your Microsoft account in OneNote on all devices, then sign back in."
+      },
+      {
+        "title": "Update OneNote",
+        "content": "Ensure you have the latest version of OneNote installed on all devices."
+      },
+      {
+        "title": "Check for Corrupted Notebooks",
+        "content": "Try creating a new notebook and see if the issue persists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset OneNote Sync Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Sync Settings on MacBook",
+            "content": "Go to OneNote preferences and reset sync settings."
+          },
+          {
+            "title": "Reset Sync Settings on iPad/iPhone",
+            "content": "Go to OneNote settings and reset sync settings."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Microsoft Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Microsoft Support",
+            "content": "If the issue persists, contact Microsoft Support for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T03:27:54.178Z",
+      "updated": "2026-01-08T03:27:54.178Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/office_2010-excel/pivot-chart-legend-manipulation/b1cdfd90-7758-e011-8dfc-68b599b31bf5?msgId=d548b854-7d58-e011-8dfc-68b599b31bf5&tab=AllReplies",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767842887308-988",
+    "title": "Fix WhatsApp Connecting Problems",
+    "problemDescription": "WhatsApp is having trouble connecting to the internet or other devices.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "connecting",
+      "network",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Reboot Your Device",
+        "content": "Press and hold the power button to restart your device."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > Search for 'Network' > Reset Network Settings."
+      },
+      {
+        "title": "Turn Off Battery Saver",
+        "content": "Disable Battery Saver in Settings to ensure WhatsApp runs smoothly."
+      },
+      {
+        "title": "Disable Bluetooth",
+        "content": "Turn off Bluetooth as it might interfere with WhatsApp connectivity."
+      },
+      {
+        "title": "Grant Necessary Permissions",
+        "content": "Go to Settings > App Management > Search for WhatsApp > Grant all necessary permissions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Internet Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ensure Stable Internet",
+            "content": "Make sure you have a stable internet connection."
+          },
+          {
+            "title": "Switch Networks",
+            "content": "Try switching between Wi-Fi and mobile data to see if the issue resolves."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T03:28:07.308Z",
+      "updated": "2026-01-08T03:28:07.308Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=V9XNDW-nfBo",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767842901605-484",
+    "title": "Fix Monitor Flickering During Game Launch",
+    "problemDescription": "Monitor flickers when launching a game, despite the refresh rate being set correctly.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "monitor",
+      "flickering",
+      "refresh rate",
+      "gaming"
+    ],
+    "steps": [
+      {
+        "title": "Change Refresh Rate Temporarily",
+        "content": "Lower the refresh rate to a lower value, then change it back to the original (e.g., 144Hz)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use DisplayPort 1.4 Cables",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Replace HDMI or other cables",
+            "content": "Use DisplayPort 1.4 cables to connect your monitor, as this has been reported to resolve flickering issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T03:28:21.605Z",
+      "updated": "2026-01-08T03:28:21.606Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/monitor-flickering-when-loading-up-a-game.3696869/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767842904518-320",
+    "title": "Fix Screen Flickering Due to GPU Issues",
+    "problemDescription": "Screen flickering and GPU performance issues when running 3D applications alongside video playback.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen flickering",
+      "GPU",
+      "video playback",
+      "3D performance"
+    ],
+    "steps": [
+      {
+        "title": "Disable Hardware-Accelerated Video Decoding",
+        "content": "Disable hardware-accelerated video decoding in your video player settings to reduce memory bandwidth usage."
+      },
+      {
+        "title": "Test with a Different GPU",
+        "content": "Use an HDMI to DisplayPort cable to test the GPU in a different slot or with another GPU to isolate the issue."
+      },
+      {
+        "title": "Check for Faulty Hardware",
+        "content": "Inspect the HDMI cable, GPU slot, and monitor for any physical damage or faults."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Replace GPU",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Upgrade GPU",
+            "content": "Consider upgrading to a more powerful GPU, such as a GTX1050, to handle memory bandwidth demands better."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T03:28:24.518Z",
+      "updated": "2026-01-08T03:28:24.518Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/screen-flickering-gpu-issue.3623536/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767842912930-159",
+    "title": "Fix Display Flickering",
+    "problemDescription": "Display flickering issue when using HDMI output from either the GPU or motherboard.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "display",
+      "flickering",
+      "HDMI",
+      "graphics card"
+    ],
+    "steps": [
+      {
+        "title": "Check and Update Graphics Drivers",
+        "content": "Ensure your graphics drivers are up to date. Visit the manufacturer's website to download the latest drivers for your GPU."
+      },
+      {
+        "title": "Test with Different Cables and Ports",
+        "content": "Try using a different HDMI cable and connect to different ports on both the GPU and motherboard to rule out cable or port issues."
+      },
+      {
+        "title": "Adjust Display Settings",
+        "content": "Go to Display Settings and adjust the refresh rate to a higher value if available. Also, check for any color calibration issues."
+      },
+      {
+        "title": "Test with Another Monitor",
+        "content": "Connect your PC to a different monitor to determine if the issue is with the display or the PC's output."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: BIOS Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update BIOS",
+            "content": "Check your motherboard manufacturer's website for BIOS updates. Follow the instructions to update the BIOS, which may resolve compatibility issues with the display."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Hardware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect Hardware Connections",
+            "content": "Ensure all connections are secure and there are no loose cables. Check for any physical damage to the GPU or motherboard."
+          },
+          {
+            "title": "Test with Integrated Graphics",
+            "content": "If your CPU has integrated graphics, try using them to see if the flickering persists. This can help determine if the issue is with the dedicated GPU."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T03:28:32.930Z",
+      "updated": "2026-01-08T03:28:32.930Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/what-could-be-causing-my-display-to-flicker.3555683/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767842920716-655",
+    "title": "Fix Nexus 7 Screen Flickering",
+    "problemDescription": "Nexus 7 screen flickers, possibly due to automatic brightness or specific conditions.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "nexus 7",
+      "screen flickering",
+      "android",
+      "brightness"
+    ],
+    "steps": [
+      {
+        "title": "Disable Automatic Brightness",
+        "content": "Go to your screen brightness settings and turn off the 'Automatic brightness' feature. Set the brightness to a static level."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check for Specific Conditions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Backlight and WiFi",
+            "content": "Ensure the backlight is not dimmed below 30%, the WiFi signal is strong, and the device is not accessing the internet simultaneously."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T03:28:40.716Z",
+      "updated": "2026-01-08T03:28:40.716Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/26209/nexus-7-screen-is-flickering",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767842924995-839",
+    "title": "Fix Galaxy S3 Screen Flickering",
+    "problemDescription": "Galaxy S3 screen flickers, especially when closing apps or under load.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "screen flickering",
+      "battery",
+      "Galaxy S3"
+    ],
+    "steps": [
+      {
+        "title": "Replace the Battery",
+        "content": "The screen flickering is often caused by an old or faulty battery that does not provide consistent power output. Replace the battery with a new one."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Hardware Overlays",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Hardware Overlays",
+            "content": "Go to Settings > Developer Options and disable 'Hardware Overlays'. Note that this may not resolve the issue if the battery is the root cause."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T03:28:44.995Z",
+      "updated": "2026-01-08T03:28:44.995Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/93042/screen-flickering-galaxy-s3",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767842927412-650",
+    "title": "Fix Screen Flicker on Gray Backgrounds",
+    "problemDescription": "Screen flickers on gray backgrounds but works fine on white colors.",
+    "category": "android",
+    "difficulty": "Hard",
+    "keywords": [
+      "screen",
+      "flicker",
+      "gray",
+      "background",
+      "hardware"
+    ],
+    "steps": [
+      {
+        "title": "Check Hardware Components",
+        "content": "Inspect the LCD belt or the LCD for any faults or damages."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset to Default Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Settings",
+            "content": "Reset the device to default settings to rule out software issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T03:28:47.412Z",
+      "updated": "2026-01-08T03:28:47.412Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/195654/screen-flicker-only-on-gray-backgrounds",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767842931524-205",
+    "title": "Fix Samsung Galaxy S21 Ultra Flickering Screen",
+    "problemDescription": "Samsung Galaxy S21 Ultra screen flickering after a small drop.",
+    "category": "android",
+    "difficulty": "Hard",
+    "keywords": [
+      "samsung",
+      "screen",
+      "flickering",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Assess the Damage",
+        "content": "Check if the flickering is consistent or intermittent. Note the areas of the screen affected."
+      },
+      {
+        "title": "Consult a Professional",
+        "content": "Take the phone to a professional technician for a detailed diagnosis. They can confirm if the issue is due to a loose cable or a damaged circuit board."
+      },
+      {
+        "title": "Replace the Screen",
+        "content": "If the circuit board is damaged, the screen will need to be replaced. This is a complex repair and should be done by a professional."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Temporary Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use an External Display",
+            "content": "If the flickering is tolerable, use an external display via HDMI or wireless casting to avoid using the phone's screen."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T03:28:51.524Z",
+      "updated": "2026-01-08T03:28:51.524Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/252720/samsung-galaxy-s21-ultra-flickering-screen-caused-by-small-drop",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767842938519-329",
+    "title": "Fix Gmail Not Receiving Emails",
+    "problemDescription": "Gmail is not receiving or displaying new emails.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "emails",
+      "sync",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Sign Out and Back In",
+        "content": "Sign out of your Gmail account by clicking your profile icon in the top-right corner and selecting 'Sign Out.' Then, sign back in to force a sync with Google's servers."
+      },
+      {
+        "title": "Update the Gmail App",
+        "content": "Ensure your Gmail app is up-to-date by updating it through the App Store or Google Play Store to avoid syncing errors."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use a Different Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch Browsers",
+            "content": "Try accessing Gmail using a different browser. Gmail officially supports Chrome, Firefox, Safari, and Edge."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T03:28:58.519Z",
+      "updated": "2026-01-08T03:28:58.519Z",
+      "sourceUrl": "https://www.howtogeek.com/739387/how-to-fix-gmail-when-its-not-receiving-emails/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767842944427-635",
+    "title": "Fix Google Service Outages",
+    "problemDescription": "Troubleshoot issues when Google services like Gmail, Google Drive, or Google Maps are not working.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "google",
+      "gmail",
+      "outage",
+      "troubleshoot"
+    ],
+    "steps": [
+      {
+        "title": "Check Google Workspace Status Dashboard",
+        "content": "Visit the Google Workspace Status Dashboard to see if there are any ongoing outages or issues with Google services."
+      },
+      {
+        "title": "Try a Different Browser or App",
+        "content": "Switch to a different browser or use a first-party app (like Apple Mail for Gmail) to see if the issue is specific to the web version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use IMAP for Gmail",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up IMAP",
+            "content": "Configure an email client that supports IMAP (like Apple Mail) to access your Gmail account and see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T03:29:04.427Z",
+      "updated": "2026-01-08T03:29:04.427Z",
+      "sourceUrl": "https://www.howtogeek.com/782626/how-to-troubleshoot-when-google-is-down/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767842948043-354",
+    "title": "Fix Emails Stuck in Gmail Outbox",
+    "problemDescription": "Emails are stuck in the Outbox folder and won't send in Gmail.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "outbox",
+      "emails",
+      "stuck"
+    ],
+    "steps": [
+      {
+        "title": "Disable Offline Mode",
+        "content": "Open a web browser on your desktop and launch Gmail.com. Sign in to your account, select the gear icon in the top-right corner, and choose 'See All Settings'. Then, navigate to the 'Offline' tab and uncheck the box next to 'Enable offline mode'."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your internet connection is stable and working properly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clear App Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache on Mobile",
+            "content": "Go to your device's settings, find the Apps or Application Manager section, locate the Gmail app, and tap on 'Clear Cache'."
+          },
+          {
+            "title": "Clear Cache on Desktop",
+            "content": "Close the Gmail app completely and reopen it to refresh the cache."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T03:29:08.043Z",
+      "updated": "2026-01-08T03:29:08.043Z",
+      "sourceUrl": "https://www.howtogeek.com/how-to-fix-emails-stuck-in-outbox-of-gmail/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767842951938-594",
+    "title": "Fix Gmail Search Issues",
+    "problemDescription": "Gmail search is not effectively finding specific emails or files within emails.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "search",
+      "emails",
+      "files"
+    ],
+    "steps": [
+      {
+        "title": "Use Advanced Search Operators",
+        "content": "Use specific search operators like 'from:', 'to:', 'subject:', 'has:attachment', and 'larger:' or 'smaller:' to refine your search."
+      },
+      {
+        "title": "Search Within a Specific Time Frame",
+        "content": "Use the 'after:' and 'before:' operators to narrow down the time frame of your search."
+      },
+      {
+        "title": "Use the Search Bar Effectively",
+        "content": "Type your search query directly into the Gmail search bar and press Enter. Gmail will automatically suggest relevant searches as you type."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Google Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Google Support",
+            "content": "Go to the Google Support website and navigate to the Gmail help section."
+          },
+          {
+            "title": "Submit a Request",
+            "content": "Submit a detailed request explaining your issue, including any error messages or specific problems you're encountering."
+          },
+          {
+            "title": "Wait for a Response",
+            "content": "Wait for a response from Google Support, which may include troubleshooting steps or further instructions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T03:29:11.938Z",
+      "updated": "2026-01-08T03:29:11.938Z",
+      "sourceUrl": "https://www.howtogeek.com/gmail-search-getting-better/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767842955723-275",
+    "title": "Access Gmail Support",
+    "problemDescription": "Need to find solutions for common Gmail issues.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "support",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Visit Gmail Help Page",
+        "content": "Go to the Gmail Help page at https://support.google.com/mail."
+      },
+      {
+        "title": "Browse Common Topics",
+        "content": "Scroll through the list of frequent help topics to find one that matches your issue."
+      },
+      {
+        "title": "Select a Topic",
+        "content": "Click on a topic to see a list of articles with step-by-step solutions."
+      },
+      {
+        "title": "Follow Instructions",
+        "content": "Follow the instructions provided in the article to resolve your issue."
+      },
+      {
+        "title": "Use Search Function",
+        "content": "If you don't find a relevant topic, use the search box at the top of the page to describe your issue and find specific solutions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Gmail Support via G Suite",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Subscribe to G Suite",
+            "content": "If you have a G Suite account, you can contact Gmail support directly through your admin console."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T03:29:15.723Z",
+      "updated": "2026-01-08T03:29:15.723Z",
+      "sourceUrl": "https://www.howtogeek.com/361956/how-to-contact-gmail-support/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
