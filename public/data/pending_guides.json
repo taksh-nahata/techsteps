@@ -70631,5 +70631,307 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767853692119-237",
+    "title": "Fix Alexa Not Responding",
+    "problemDescription": "Alexa is not responding to voice commands.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "Alexa",
+      "muted",
+      "volume",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check Volume Settings",
+        "content": "Ensure Alexa is not muted and turn up the volume."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Alexa",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unplug and Replug",
+            "content": "Unplug the Alexa device from the power source, wait for a few seconds, and then plug it back in."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T06:28:12.119Z",
+      "updated": "2026-01-08T06:28:12.119Z",
+      "sourceUrl": "https://lifehacker.com/19-exceedingly-simple-solutions-to-your-dads-latest-tec-1847945718",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767853695079-408",
+    "title": "Switch to VoiceMonkey for Alexa IFTTT Automation",
+    "problemDescription": "Amazon is discontinuing Alexa's IFTTT integration, affecting automation setups.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Alexa",
+      "IFTTT",
+      "VoiceMonkey",
+      "automation",
+      "integration"
+    ],
+    "steps": [
+      {
+        "title": "Subscribe to VoiceMonkey",
+        "content": "Sign up for a VoiceMonkey subscription at $2.99 a month or more."
+      },
+      {
+        "title": "Add VoiceMonkey to IFTTT",
+        "content": "In the IFTTT app, add VoiceMonkey as a connected service."
+      },
+      {
+        "title": "Change Triggers in IFTTT",
+        "content": "Update your IFTTT applets to use VoiceMonkey as the trigger instead of Alexa."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use IFTTT Button Widget",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install IFTTT App",
+            "content": "Ensure the IFTTT app is installed on your phone."
+          },
+          {
+            "title": "Add Widget to Homepage",
+            "content": "Add an IFTTT button widget to your phone's homepage."
+          },
+          {
+            "title": "Link Widget to Automation",
+            "content": "Use IFTTT to link the button widget to your desired automation."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T06:28:15.079Z",
+      "updated": "2026-01-08T06:28:15.079Z",
+      "sourceUrl": "https://lifehacker.com/what-to-do-now-that-amazon-is-killing-alexa-s-ifttt-int-1850967474",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767853697427-451",
+    "title": "Prevent Smart Speaker Activation During Commercials",
+    "problemDescription": "Smart speaker accidentally activates during commercials.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "smart speaker",
+      "commercials",
+      "activation",
+      "Alexa",
+      "Echo"
+    ],
+    "steps": [
+      {
+        "title": "Change the Wake Word",
+        "content": "Say 'Alexa, change the wake word' or open the Alexa app, tap the Devices icon, select your device, and choose a different wake word."
+      },
+      {
+        "title": "Mute the Microphone",
+        "content": "Press the Microphone Off button on your Echo device to disable voice commands until you turn the microphone back on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Device Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "For Echo Devices with Screens",
+            "content": "Go to Settings > Device Options > Wake Word and change the wake word directly on the device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T06:28:17.427Z",
+      "updated": "2026-01-08T06:28:17.427Z",
+      "sourceUrl": "https://lifehacker.com/how-to-keep-commercials-from-activating-your-smart-spea-1831437974",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767853742255-593",
+    "title": "Fix Zoom Crashing Due to Graphics Issues",
+    "problemDescription": "Zoom application crashes randomly, possibly due to graphics acceleration issues.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "crashing",
+      "graphics",
+      "hardware acceleration"
+    ],
+    "steps": [
+      {
+        "title": "Disable Hardware Acceleration in Zoom",
+        "content": "Open Zoom, go to Settings > General, and disable 'Enable hardware acceleration'."
+      },
+      {
+        "title": "Run System File Checker",
+        "content": "Open Command Prompt as Administrator and run 'sfc /scannow' to check for and repair system file corruption."
+      },
+      {
+        "title": "Run DISM",
+        "content": "Open Command Prompt as Administrator and run 'dism /online /cleanup-image /restorehealth' to repair the Windows image."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Test with Another GPU",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Swap GPU",
+            "content": "If possible, swap your current GPU with a known working one to see if the issue persists."
+          },
+          {
+            "title": "Test on Another Computer",
+            "content": "Install your GPU into another known working computer to determine if the problem follows the GPU or the computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T06:29:02.255Z",
+      "updated": "2026-01-08T06:29:02.255Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/zoom-keeps-crashing-possibly-a-graphics-issues.3701287/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767853749245-990",
+    "title": "Fix Random Ping Spikes",
+    "problemDescription": "Experiencing random ping spikes up to 1000ms despite having good internet speed.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "ping",
+      "spikes",
+      "internet",
+      "speed",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check for Bandwidth Usage",
+        "content": "Monitor your internet usage to see if any applications or devices are consuming a significant amount of bandwidth, especially upload bandwidth."
+      },
+      {
+        "title": "Limit Bandwidth-Intensive Activities",
+        "content": "Temporarily stop or limit activities that use a lot of bandwidth, such as cloud backups, video conferencing, or large downloads."
+      },
+      {
+        "title": "Upgrade Your Internet Plan",
+        "content": "If your current plan has low upload speeds, consider upgrading to a plan with higher upload bandwidth to accommodate multiple activities simultaneously."
+      },
+      {
+        "title": "Contact Your ISP",
+        "content": "If the issue persists, contact your Internet Service Provider (ISP) to check for any network issues or to upgrade your connection if necessary."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Wired Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect Directly to Router",
+            "content": "Use an Ethernet cable to connect your device directly to the router to reduce latency and improve stability."
+          },
+          {
+            "title": "Check for Interference",
+            "content": "Ensure that your wireless connection is not suffering from interference by other devices or networks."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T06:29:09.245Z",
+      "updated": "2026-01-08T06:29:09.245Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/good-internet-speed-random-ping-spikes-which-go-upto-1000ms.3700579/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767853760061-620",
+    "title": "Fix Zoom Active Speaker Border Visibility on Linux",
+    "problemDescription": "User cannot see the active speaker border around their own video in Zoom meetings on Linux Mint.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "linux",
+      "active speaker",
+      "border",
+      "video"
+    ],
+    "steps": [
+      {
+        "title": "Check Zoom Settings",
+        "content": "Open Zoom and go to Settings > Video. Ensure that 'Touch up my appearance' and 'Adjust for low light' are disabled, as these features might interfere with the border visibility."
+      },
+      {
+        "title": "Update Zoom",
+        "content": "Ensure you are using the latest version of Zoom. Go to Zoom > Check for Updates and install any available updates."
+      },
+      {
+        "title": "Check Linux Display Settings",
+        "content": "Go to your Linux Mint display settings and ensure that the resolution and refresh rate are set correctly. Incorrect settings might affect the visibility of the border."
+      },
+      {
+        "title": "Test on Another Device",
+        "content": "If possible, test Zoom on another device to see if the issue persists. This can help determine if the problem is specific to your Linux Mint setup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Video Conferencing App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install an Alternative App",
+            "content": "Install an alternative video conferencing app like Teams, Skype, or Webex."
+          },
+          {
+            "title": "Test the Alternative App",
+            "content": "Join a meeting using the alternative app to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T06:29:20.061Z",
+      "updated": "2026-01-08T06:29:20.061Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/independent-zoom-support-forum.3604668/latest",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
