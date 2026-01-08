@@ -70048,5 +70048,588 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767849766086-893",
+    "title": "Fix Windows 10 Password Issue After Update",
+    "problemDescription": "Windows 10 update causes password issues with certain applications due to Task Scheduler tasks.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "password",
+      "update",
+      "task scheduler"
+    ],
+    "steps": [
+      {
+        "title": "Open PowerShell as Administrator",
+        "content": "Right-click the Start Menu and select Windows PowerShell (Admin)."
+      },
+      {
+        "title": "Run the Command to Identify Problematic Tasks",
+        "content": "Enter the following command: `Get-ScheduledTask | foreach { If ((xml).GetElementsByTagName(\"LogonType\").'#text' -eq \"S4U\") { $_TaskName } }`"
+      },
+      {
+        "title": "Note Down the Task Names",
+        "content": "If any tasks are listed in the PowerShell window, note them down."
+      },
+      {
+        "title": "Disable the Tasks",
+        "content": "Open the Task Scheduler app, locate the relevant tasks, and disable them via the right-click drop-down menu."
+      },
+      {
+        "title": "Restart the Device",
+        "content": "Restart the affected device to resolve the issue."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-01-08T05:22:46.086Z",
+      "updated": "2026-01-08T05:22:46.086Z",
+      "sourceUrl": "https://www.techradar.com/news/windows-10-update-made-a-right-mess-of-this-basic-password-feature",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767849770651-715",
+    "title": "Enable System Restore in Windows 10",
+    "problemDescription": "System Restore is disabled by default in Windows 10, preventing users from creating restore points.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "system restore",
+      "control panel"
+    ],
+    "steps": [
+      {
+        "title": "Access System Protection Settings",
+        "content": "Click 'System Protection' in the System Control Panel or type 'recovery' into the Search box and click the 'Recovery' entry followed by 'Configure System Restore'."
+      },
+      {
+        "title": "Configure System Restore",
+        "content": "Select your system drive, click 'Configure', switch it on, allocate 5-10% of drive space, and click OK."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Search",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Search for Recovery",
+            "content": "Type 'recovery' into the Search box and click the 'Recovery' entry."
+          },
+          {
+            "title": "Configure System Restore",
+            "content": "Click 'Configure System Restore', select your system drive, switch it on, allocate 5-10% of drive space, and click OK."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T05:22:50.651Z",
+      "updated": "2026-01-08T05:22:50.651Z",
+      "sourceUrl": "https://www.techradar.com/how-to/computing/how-to-use-windows-10-s-control-panel-1311502",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767849773547-11",
+    "title": "Secure Password Management",
+    "problemDescription": "Users struggle to create, remember, and manage strong, unique passwords.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "password",
+      "security",
+      "management"
+    ],
+    "steps": [
+      {
+        "title": "Use a Password Manager",
+        "content": "Install and set up a reputable password manager application on your device. These tools generate, store, and auto-fill strong, unique passwords for all your online accounts."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manual Password Creation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create Strong Passwords",
+            "content": "Manually create passwords that are at least 12 characters long, using a mix of uppercase and lowercase letters, numbers, and special characters."
+          },
+          {
+            "title": "Use a Unique Password for Each Account",
+            "content": "Ensure each online account has a unique password to minimize the risk if one account is compromised."
+          },
+          {
+            "title": "Store Passwords Securely",
+            "content": "Write down passwords in a secure location or use a secure notes application to keep track of them."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T05:22:53.547Z",
+      "updated": "2026-01-08T05:22:53.547Z",
+      "sourceUrl": "https://www.techradar.com/news/world-of-tech/the-humble-password-might-be-old-but-it-s-not-dead-or-even-on-life-support-1285949",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767849784388-621",
+    "title": "Print from Android via Google Chrome",
+    "problemDescription": "How to print from an Android phone using Google Chrome to a printer connected to a laptop.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "print",
+      "chrome",
+      "google cloud print"
+    ],
+    "steps": [
+      {
+        "title": "Enable Google Cloud Print on Laptop",
+        "content": "Log in to your user account on the Windows, Mac, or Linux computer. Open Google Chrome. Click the wrench icon on the browser toolbar. Select Settings. Click the Show advanced settings link. Scroll down to the 'Google Cloud Print' section. Click Sign in to Google Cloud Print. In the window that appears, sign in with your Google Account to enable the Google Cloud Print connector."
+      },
+      {
+        "title": "Register Printer",
+        "content": "A printer confirmation message appears and click Finish printer registration. You'll see a confirmation that Google Cloud Print has been enabled. Click Manage your printers to learn more."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use CUPS Compatible App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Printer as Shared",
+            "content": "Set the printer as 'shared' on your laptop."
+          },
+          {
+            "title": "Install CUPS Compatible App",
+            "content": "Install an app such as Lets Print Droid that is CUPS compatible."
+          },
+          {
+            "title": "Enable Print Service",
+            "content": "After you install the app, swipe down and click on the notification to enable the print service. Your printer should automatically be discovered. If not, you may have to 'add printer'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T05:23:04.388Z",
+      "updated": "2026-01-08T05:23:04.388Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/30512/how-can-i-print-from-android-phone-through-google-chrome-connected-printer-in-la",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767849789954-993",
+    "title": "Print Plain Text on Android Without Driver",
+    "problemDescription": "Unable to print plain text files from Android to HP printer due to missing driver.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "printing",
+      "hp",
+      "driver",
+      "text files"
+    ],
+    "steps": [
+      {
+        "title": "Use Google Cloud Print",
+        "content": "Enable Google Cloud Print on your HP printer and use the Google Cloud Print app on your Android device to print plain text files."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Third-Party App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install PrinterShare",
+            "content": "Download and install PrinterShare from the Google Play Store."
+          },
+          {
+            "title": "Configure Printer",
+            "content": "Open PrinterShare and manually configure your HP printer using the IP address and other network details."
+          },
+          {
+            "title": "Print Text Files",
+            "content": "Use PrinterShare to print plain text files directly from your Android device."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use HP Smart App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install HP Smart App",
+            "content": "Download and install the HP Smart app from the Google Play Store."
+          },
+          {
+            "title": "Connect to Printer",
+            "content": "Open the HP Smart app and follow the instructions to connect your Android device to the HP printer."
+          },
+          {
+            "title": "Print Text Files",
+            "content": "Use the HP Smart app to print plain text files directly from your Android device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T05:23:09.954Z",
+      "updated": "2026-01-08T05:23:09.954Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/218994/driver-not-in-list-and-official-plugin-unhelpful-how-to-print-plain-text-to-hp",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767849802389-352",
+    "title": "Reset Forgotten Vision Pro Passcode",
+    "problemDescription": "Users who forget their Vision Pro passcode must bring the device to an Apple Store or mail it to AppleCare for a reset.",
+    "category": "ios",
+    "difficulty": "Hard",
+    "keywords": [
+      "Vision Pro",
+      "passcode",
+      "reset",
+      "Apple",
+      "support"
+    ],
+    "steps": [
+      {
+        "title": "Contact Apple Support",
+        "content": "If you forget your Vision Pro passcode, you will need to bring the device to an Apple Store or mail it to AppleCare customer support for a reset."
+      },
+      {
+        "title": "Device Reset",
+        "content": "Apple will erase and reset the Vision Pro, allowing you to set it up again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Developer Strap Method",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase Developer Strap",
+            "content": "Obtain the special developer strap that allows the Vision Pro to be linked to a Mac."
+          },
+          {
+            "title": "Connect to Mac",
+            "content": "Use the developer strap to connect the Vision Pro to a Mac for troubleshooting and reset the passcode."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T05:23:22.389Z",
+      "updated": "2026-01-08T05:23:22.389Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/do-not-forget-vision-pro-passcode/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1767849806410-775",
+    "title": "Migrate to Google Passkeys",
+    "problemDescription": "Users need to transition from traditional passwords to Google Passkeys for enhanced security.",
+    "category": "security",
+    "difficulty": "Easy",
+    "keywords": [
+      "passwords",
+      "security",
+      "passkeys",
+      "Google"
+    ],
+    "steps": [
+      {
+        "title": "Enable Passkeys in Google Account",
+        "content": "Go to your Google Account settings and navigate to the 'Security' section. Look for the 'Passkeys' option and follow the prompts to set up your passkeys."
+      },
+      {
+        "title": "Choose Authentication Method",
+        "content": "Select your preferred authentication method, such as fingerprint, face scan, or a PIN, to secure your passkeys."
+      },
+      {
+        "title": "Store Passkeys Locally",
+        "content": "Ensure your passkeys are stored locally on your device for added security."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Third-Party Authentication Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download an Authenticator App",
+            "content": "Download a reputable authenticator app like Google Authenticator or Authy."
+          },
+          {
+            "title": "Link Authenticator to Google Account",
+            "content": "Follow the app's instructions to link it to your Google Account and set up two-factor authentication."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T05:23:26.410Z",
+      "updated": "2026-01-08T05:23:26.410Z",
+      "sourceUrl": "https://www.digitaltrends.com/mobile/google-killing-passwords-passkeys-security-expert-happy-why/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767849814662-226",
+    "title": "Fix Windows 10 Slow Performance",
+    "problemDescription": "Windows 10 is running slower than usual, with long freeze-ups, random crashes, or slow file explorer.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 10",
+      "slow performance",
+      "startup apps",
+      "background updaters"
+    ],
+    "steps": [
+      {
+        "title": "Disable Unnecessary Startup Apps",
+        "content": "Go to Settings → Apps → Startup. Disable any apps marked 'High impact' that you don't need at startup."
+      },
+      {
+        "title": "Check for Background Updaters",
+        "content": "Press Ctrl + Shift + Esc to open Task Manager. Go to the Services tab and set unnecessary auto-updaters to 'Manual' instead of 'Automatic'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Drive Health",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use CrystalDiskInfo",
+            "content": "Download and run CrystalDiskInfo (free) to check the health of your storage drive."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T05:23:34.662Z",
+      "updated": "2026-01-08T05:23:34.662Z",
+      "sourceUrl": "https://www.reddit.com/r/Windows10/comments/1oy4x9v/windows_10_feeling_slow_lately_here_are_5_fixes/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767849839703-820",
+    "title": "Fix Unresponsive iPhone Home Button",
+    "problemDescription": "The iPhone home button is sometimes unresponsive.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "home button",
+      "unresponsive"
+    ],
+    "steps": [
+      {
+        "title": "Disable Triple-click Home",
+        "content": "Go to Settings > General > Accessibility > Triple-click Home and turn it off."
+      },
+      {
+        "title": "Reset Your Device",
+        "content": "Press and hold the Sleep/Wake button and the Home button at the same time for at least 10 seconds until you see the Apple logo."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clean the Home Button",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Shut Down the iPhone",
+            "content": "Turn off your iPhone."
+          },
+          {
+            "title": "Apply Cleaning Solution",
+            "content": "Apply a small amount of isopropyl alcohol or a similar cleaning solution to a soft cloth and gently clean the home button area."
+          },
+          {
+            "title": "Press the Home Button",
+            "content": "Press the home button multiple times to help distribute the cleaning solution."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Visit Apple Store",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Schedule an Appointment",
+            "content": "Make an appointment at the nearest Apple Store."
+          },
+          {
+            "title": "Explain the Issue",
+            "content": "Tell the Apple Store staff about the unresponsive home button and how it affects your usage."
+          },
+          {
+            "title": "Get Device Replaced",
+            "content": "Even if they can't replicate the issue, they may replace your device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T05:23:59.703Z",
+      "updated": "2026-01-08T05:23:59.703Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/8620/the-iphone-home-button-is-sometimes-unresponsive-how-can-i-fix-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767849842803-727",
+    "title": "Fix Messages Not Working on iPhone 5",
+    "problemDescription": "Messages app is not working on iPhone 5.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "messages",
+      "not working",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Force Close Messages App",
+        "content": "Press the Home button twice to bring up recently used apps. Find the Messages app and swipe up to force close it."
+      },
+      {
+        "title": "Restart iPhone",
+        "content": "Hold down the Power button until the power-slider appears. Do not turn off the device. Instead, while the power-slider is showing, hold down the Home button until the home screen reappears."
+      },
+      {
+        "title": "Hard Reset",
+        "content": "Hold down the Home and Power buttons until the Apple Logo shows, then release."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restore iPhone from Backup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup iPhone",
+            "content": "Back up your iPhone to iTunes."
+          },
+          {
+            "title": "Restore from Backup",
+            "content": "Restore your iPhone from the backup."
+          }
+        ]
+      },
+      {
+        "title": "Restore as New iPhone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Back up any important data."
+          },
+          {
+            "title": "Restore as New",
+            "content": "Restore your iPhone as a new device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T05:24:02.803Z",
+      "updated": "2026-01-08T05:24:02.803Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/241702/messages-not-working-on-iphone-5",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767849845728-585",
+    "title": "Fix iTunes Error 2001 During iPhone Restore",
+    "problemDescription": "iTunes returns error 2001 when trying to restore an iPhone.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iTunes",
+      "iPhone",
+      "restore",
+      "error 2001"
+    ],
+    "steps": [
+      {
+        "title": "Use ReiBoot to Exit Recovery Mode",
+        "content": "Download and install ReiBoot on your Mac (or Windows if compatible). Connect your iPhone to the computer, open ReiBoot, and follow the instructions to exit recovery mode."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Hardware Connections",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try Different USB Ports",
+            "content": "Plug your cable into a different USB port on your computer."
+          },
+          {
+            "title": "Use a Different Dock Connector",
+            "content": "Try a different dock connector or no dock at all."
+          },
+          {
+            "title": "Adjust USB Hub",
+            "content": "Add or remove a USB hub between your device and computer."
+          },
+          {
+            "title": "Direct Internet Connection",
+            "content": "Connect your computer directly to your Internet source, bypassing routers, hubs, or switches."
+          },
+          {
+            "title": "Check for Hardware Issues",
+            "content": "If the error persists, check for hardware issues, such as a faulty battery."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T05:24:05.728Z",
+      "updated": "2026-01-08T05:24:05.728Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/125883/how-to-restore-my-iphone-when-itunes-keeps-returning-an-error-2001",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
