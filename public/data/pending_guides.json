@@ -70933,5 +70933,421 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1767856975109-676",
+    "title": "Fix HomePod Mini No Internet Connection",
+    "problemDescription": "Siri on HomePod Mini reports no internet connection.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "HomePod Mini",
+      "Siri",
+      "no internet",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Restart HomePod Mini",
+        "content": "Unplug the HomePod Mini from the power source, wait for about 10 seconds, and then plug it back in."
+      },
+      {
+        "title": "Check Router and Internet Connection",
+        "content": "Ensure your router is properly connected to the internet and functioning correctly. Restart your router if necessary."
+      },
+      {
+        "title": "Update HomePod Mini Software",
+        "content": "Make sure your HomePod Mini is running the latest software. Go to the Home app on your iPhone or iPad, select the HomePod Mini, and check for updates."
+      },
+      {
+        "title": "Forget and Reconnect to Wi-Fi",
+        "content": "In the Home app, select your HomePod Mini, tap on the settings icon, and choose 'Forget This Network'. Then, reconnect to your Wi-Fi network."
+      },
+      {
+        "title": "Reset HomePod Mini",
+        "content": "If the issue persists, reset your HomePod Mini by pressing and holding the top of the device until you see a spinning orange circle. Follow the on-screen instructions to set it up again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Interference",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Move HomePod Mini",
+            "content": "Move the HomePod Mini closer to your router to minimize interference from other devices or obstacles."
+          },
+          {
+            "title": "Change Wi-Fi Channel",
+            "content": "Change the Wi-Fi channel on your router to a less crowded one to improve connectivity."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T07:22:55.109Z",
+      "updated": "2026-01-08T07:22:55.109Z",
+      "sourceUrl": "https://www.digitaltrends.com/home/common-homepod-mini-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1767856979133-482",
+    "title": "Fix HomePod Wi-Fi Connection Issues",
+    "problemDescription": "HomePod isn't connecting to Wi-Fi during setup or operation.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "HomePod",
+      "Wi-Fi",
+      "connection",
+      "setup"
+    ],
+    "steps": [
+      {
+        "title": "Check Wi-Fi Network",
+        "content": "Ensure your Wi-Fi network is working properly and the password is correct."
+      },
+      {
+        "title": "Restart HomePod",
+        "content": "Unplug the HomePod, wait for 10 seconds, and plug it back in."
+      },
+      {
+        "title": "Restart Router",
+        "content": "Restart your router to refresh the network connection."
+      },
+      {
+        "title": "Move HomePod Closer",
+        "content": "Move the HomePod closer to the router to improve signal strength."
+      },
+      {
+        "title": "Forget and Reconnect",
+        "content": "Go to your iOS device, forget the Wi-Fi network, and reconnect to it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Press and Hold",
+            "content": "Press and hold the top of the HomePod until you see the setup screen."
+          },
+          {
+            "title": "Reset HomePod",
+            "content": "Follow the on-screen instructions to reset the HomePod to factory settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T07:22:59.133Z",
+      "updated": "2026-01-08T07:22:59.133Z",
+      "sourceUrl": "https://www.digitaltrends.com/home/common-homepod-problems-and-how-to-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767856982161-535",
+    "title": "Fix iOS 12 Cellular Data Issues",
+    "problemDescription": "iOS 12 users may experience cellular data connectivity problems.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "cellular",
+      "data",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check Cellular Data Settings",
+        "content": "Go to Settings > Cellular Data and ensure that Cellular Data is turned on."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > General > Reset > Reset Network Settings. This will reset all network-related settings, including Wi-Fi, Bluetooth, and VPN."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Carrier Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Carrier Updates",
+            "content": "Go to Settings > General > About. If an update is available, a prompt will appear to install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T07:23:02.161Z",
+      "updated": "2026-01-08T07:23:02.161Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-ios-12-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767856986180-533",
+    "title": "Fix Apple TV Problems",
+    "problemDescription": "Common issues with Apple TV and their solutions.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "apple tv",
+      "troubleshooting",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Apple TV",
+        "content": "Go to Settings > System > Restart to restart your Apple TV."
+      },
+      {
+        "title": "Check Your Internet Connection",
+        "content": "Ensure your Apple TV is connected to the internet. Go to Settings > Network to check your connection."
+      },
+      {
+        "title": "Update Your Apple TV",
+        "content": "Go to Settings > System > Software Updates to check for and install any available updates."
+      },
+      {
+        "title": "Reset Your Apple TV",
+        "content": "If problems persist, reset your Apple TV by going to Settings > System > Reset."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check HDMI Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ensure HDMI Cable is Secure",
+            "content": "Make sure the HDMI cable is properly connected to both the Apple TV and the TV."
+          },
+          {
+            "title": "Try a Different HDMI Port",
+            "content": "If possible, try connecting the Apple TV to a different HDMI port on your TV."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Rebuild Database",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Rebuild Database",
+            "content": "Go to Settings > System > Reset and select 'Rebuild Database' to rebuild the database."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T07:23:06.180Z",
+      "updated": "2026-01-08T07:23:06.180Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/common-apple-tv-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767857004735-712",
+    "title": "Fix Samsung TV Blinking/Blanking via HDMI",
+    "problemDescription": "Samsung TV blinks or goes blank when connected via HDMI cable.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "samsung tv",
+      "hdmi",
+      "blinking",
+      "blanking",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Turn Off Auto Motion Plus",
+        "content": "Access your TV's settings menu and turn off the 'Auto Motion Plus' feature."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Change HDMI Port",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try Different HDMI Port",
+            "content": "Move the HDMI cable to a different port on the TV, such as HDMI 1, to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T07:23:24.735Z",
+      "updated": "2026-01-08T07:23:24.735Z",
+      "sourceUrl": "https://askubuntu.com/questions/1311584/samsung-tv-blinking-blanking-when-connected-via-a-hdmi-cable-how-do-i-get-it-s",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767857011001-841",
+    "title": "Fix Ubuntu Black Screen on Boot",
+    "problemDescription": "Ubuntu boots to a black screen, preventing access to the system.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "ubuntu",
+      "black screen",
+      "boot",
+      "brightness"
+    ],
+    "steps": [
+      {
+        "title": "Increase Screen Brightness",
+        "content": "Press 'Fn + F8' to increase the screen brightness. This should resolve the black screen issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Hardware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Connections",
+            "content": "Ensure all hardware connections are secure, especially the display cable."
+          },
+          {
+            "title": "Test with External Monitor",
+            "content": "Connect an external monitor to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T07:23:31.001Z",
+      "updated": "2026-01-08T07:23:31.001Z",
+      "sourceUrl": "https://askubuntu.com/questions/162075/my-computer-boots-to-a-black-screen-what-options-do-i-have-to-fix-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767857019182-97",
+    "title": "Fix Download Failed Network Error in Chrome",
+    "problemDescription": "Chrome displays a 'Download Failed Network Error' when trying to download files.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "download",
+      "network error",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Computer",
+        "content": "Restart your PC to resolve minor technical glitches that may be causing the download issue."
+      },
+      {
+        "title": "Disable or Remove Chrome Extensions",
+        "content": "Open Chrome, click the three-dot menu, go to 'More Tools' > 'Extensions'. Turn off each extension one by one to identify the problematic one. Remove the problematic extension by clicking 'Remove'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Chrome Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Chrome to Default Settings",
+            "content": "Click the three-dot menu in the top-right corner, select 'Settings', then 'Reset Settings' in the left sidebar. Choose 'Reset Settings to Their Original Defaults' to restore Chrome to its default state."
+          }
+        ]
+      },
+      {
+        "title": "Use Another Web Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to Another Browser",
+            "content": "Try using a different web browser like Firefox or Edge to download the file."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T07:23:39.182Z",
+      "updated": "2026-01-08T07:23:39.182Z",
+      "sourceUrl": "https://www.howtogeek.com/896336/how-to-fix-the-download-failed-network-error-issue-in-google-chrome/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1767857022961-214",
+    "title": "Fix Chrome Automatically Refreshing Tabs",
+    "problemDescription": "Chrome browser tabs are automatically refreshing, causing disruption.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "browser",
+      "refresh",
+      "tabs"
+    ],
+    "steps": [
+      {
+        "title": "Restart Browser and Device",
+        "content": "Close and reopen Chrome, then restart your device to rule out temporary bugs."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your internet connection is stable and not intermittently connecting or disconnecting."
+      },
+      {
+        "title": "Clear Browser Cache and Cookies",
+        "content": "Go to Chrome settings, navigate to Privacy and Security, and clear browsing data, including cache and cookies."
+      },
+      {
+        "title": "Test on Another Browser",
+        "content": "Open the website on a different browser to confirm if the issue is specific to Chrome."
+      },
+      {
+        "title": "Reset Chrome Settings",
+        "content": "As a last resort, reset Chrome settings to default by going to Settings > Reset settings > Restore settings to their original defaults."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Report to Website Administrator",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "If the issue persists across browsers, report the problem to the website administrator or support team."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-01-08T07:23:42.961Z",
+      "updated": "2026-01-08T07:23:42.961Z",
+      "sourceUrl": "https://www.howtogeek.com/how-to-fix-chrome-automatically-refreshing-tabs/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
