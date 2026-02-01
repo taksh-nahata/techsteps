@@ -71629,5 +71629,551 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1769920046846-142",
+    "title": "Fix 'Too Many Requests' Hotmail Login Error",
+    "problemDescription": "Encountering 'Too Many Requests' error when trying to log into Hotmail.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "hotmail",
+      "login",
+      "too many requests",
+      "microsoft account"
+    ],
+    "steps": [
+      {
+        "title": "Wait and Retry",
+        "content": "Wait for 15-30 minutes before attempting to log in again, as the server may have temporarily blocked your IP due to too many requests."
+      },
+      {
+        "title": "Clear Browser Cache and Cookies",
+        "content": "Go to your browser settings, clear the cache and cookies, then restart your browser and try logging in again."
+      },
+      {
+        "title": "Try a Different Browser or Device",
+        "content": "If the issue persists, try logging in using a different browser or device to see if the problem is specific to your current browser or device."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure that your internet connection is stable and try logging in again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Different Sign-In Options",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Request a Code",
+            "content": "Request different sign-in options, such as having a code sent to another email, and use that to log in."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T04:27:26.846Z",
+      "updated": "2026-02-01T04:27:26.846Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum/all/how-to-fix-too-many-requests-when-sign-into/c650f3c3-d17f-43d0-a670-f9fcf659a73c",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769920047970-122",
+    "title": "Fix MS Edge Third-Party Session Cookies Blocked Issue",
+    "problemDescription": "Microsoft Edge intermittently blocks third-party session cookies required for Kaltura on Canvas, despite cookies being enabled.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "browser",
+      "cookies",
+      "Microsoft Edge",
+      "Kaltura",
+      "Canvas"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Tracking Prevention Settings",
+        "content": "Go to `edge://settings/privacy` and change the tracking prevention level to 'Basic'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Report the Issue to Microsoft",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Feedback Hub",
+            "content": "Report the bug to Microsoft using the Feedback Hub application, as this issue might not be widely recognized yet."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T04:27:27.970Z",
+      "updated": "2026-02-01T04:27:27.970Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/microsoftedge/forum/all/how-to-fix-ms-edge-third-party-session-cookies/f57973f4-2771-4036-8297-e31b6470bc75",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769920050013-650",
+    "title": "Fix Surface Laptop Battery Driver Issue",
+    "problemDescription": "Surface Laptop not detecting battery after removing battery drivers.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery",
+      "drivers",
+      "surface",
+      "laptop",
+      "charging"
+    ],
+    "steps": [
+      {
+        "title": "Force Shutdown and Restart",
+        "content": "Hold down the power button for 20 seconds to force a shutdown and restart your Surface. This can clear the hardware cache and wake up pending features."
+      },
+      {
+        "title": "Use Keyboard Shortcut",
+        "content": "If the force shutdown does not work, try using a keyboard shortcut to restart the device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Surface Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "If the above methods are ineffective, contact Surface technical support for inspection or repair. Note that support may not be available for discontinued models."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T04:27:30.013Z",
+      "updated": "2026-02-01T04:27:30.013Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/surface/forum/all/how-to-fix-the-battery-drivers-issue/1de6ce33-201f-4cbe-818d-8b9538b0d5a5",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769920052633-305",
+    "title": "Fix Red Circle with White X in OneDrive",
+    "problemDescription": "A red circle with a white X in OneDrive indicates that a file or folder cannot be synced.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "OneDrive",
+      "sync error",
+      "red circle",
+      "white X"
+    ],
+    "steps": [
+      {
+        "title": "Check Sync Status",
+        "content": "Click the blue or white OneDrive icon in the notification area to learn more about the problem."
+      },
+      {
+        "title": "Use Microsoft Guided Support",
+        "content": "Click the link to use Microsoft's guided support troubleshooting tool."
+      },
+      {
+        "title": "Follow Troubleshooting Steps",
+        "content": "Follow the steps in the provided link to troubleshoot the error."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Troubleshooting",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Internet Connection",
+            "content": "Ensure you have a stable internet connection."
+          },
+          {
+            "title": "Restart OneDrive",
+            "content": "Right-click the OneDrive icon in the notification area and select 'Close OneDrive'. Then reopen OneDrive."
+          },
+          {
+            "title": "Check for Updates",
+            "content": "Make sure your OneDrive app is up to date."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T04:27:32.633Z",
+      "updated": "2026-02-01T04:27:32.633Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/all/how-to-fix-red-circle-with-white-x-in-one-drive/3f71d018-1273-4e68-b574-e75dc01fcb31",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769920063557-865",
+    "title": "Fix Wi-Fi Dead Zones",
+    "problemDescription": "Wi-Fi dead zones occur when certain areas of your home or office have weak or no Wi-Fi signal.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "dead zones",
+      "router",
+      "coverage"
+    ],
+    "steps": [
+      {
+        "title": "Optimal Router Placement",
+        "content": "Place your Wi-Fi router in the center of the area you want to cover. This ensures that the Wi-Fi signals travel equally in all directions, providing the best coverage possible."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use an Old Router as an Extender",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up Old Router",
+            "content": "Connect an old router to your main router using an Ethernet cable. Configure the old router to act as a Wi-Fi extender or access point."
+          },
+          {
+            "title": "Position the Old Router",
+            "content": "Place the old router in an area where the Wi-Fi signal is weak but still reachable from the main router. This will extend the Wi-Fi coverage to the dead zone."
+          }
+        ]
+      },
+      {
+        "title": "Use Powerline Adapters",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect Powerline Adapters",
+            "content": "Plug one Powerline adapter into a power outlet near your main router and connect it to the router using an Ethernet cable."
+          },
+          {
+            "title": "Connect to Device",
+            "content": "Plug the second Powerline adapter into a power outlet near the device with a weak Wi-Fi signal and connect the device to the adapter using an Ethernet cable."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T04:27:43.557Z",
+      "updated": "2026-02-01T04:27:43.557Z",
+      "sourceUrl": "https://www.makeuseof.com/mapped-wi-fi-dead-zones-fixed-without-new-router/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769920067635-466",
+    "title": "Fix Wi-Fi Doesn't Have a Valid IP Configuration",
+    "problemDescription": "Windows 11 shows 'Wi-Fi Doesn't Have a Valid IP Configuration' error.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "ip configuration",
+      "windows 11"
+    ],
+    "steps": [
+      {
+        "title": "Run Networking Commands",
+        "content": "Open Command Prompt as administrator and run the following commands one by one: `ipconfig /release`, `ipconfig /renew`, `ipconfig /flushdns`, and `netsh winsock reset`."
+      },
+      {
+        "title": "Change Network Name and Password",
+        "content": "Go to your router settings and change the network name (SSID) and password. Reconnect your Windows 11 device to the network with the new credentials."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Turn On Firewall",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Firewall",
+            "content": "Open Command Prompt as administrator and type `netsh advfirewall set allprofiles state on` to turn on the firewall."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Antivirus",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Installed Antivirus",
+            "content": "Go to Windows Defender Security Center and check which antivirus apps are installed."
+          },
+          {
+            "title": "Disable Antivirus",
+            "content": "Temporarily disable the antivirus to see if it resolves the issue."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Reinstall Network Adapter Driver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Network Adapter Driver",
+            "content": "Go to Device Manager, find your network adapter under 'Network adapters', right-click on it, and select 'Uninstall device'."
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Restart your computer to allow Windows to reinstall the network adapter driver automatically."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T04:27:47.635Z",
+      "updated": "2026-02-01T04:27:47.635Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/fix-windows-10-wi-fi-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769920086958-680",
+    "title": "Fix iPhone 15 Pro Max Wi-Fi Disconnection",
+    "problemDescription": "iPhone 15 Pro Max disconnects from Wi-Fi after a few minutes, requiring a manual Wi-Fi toggle to reconnect.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "wifi",
+      "disconnection",
+      "iphone 15 pro max"
+    ],
+    "steps": [
+      {
+        "title": "Disable 160MHz Band and DFS",
+        "content": "Go to Settings > Wi-Fi > tap the (i) icon next to your Wi-Fi network. Disable '160MHz Band' and 'DFS' if enabled."
+      },
+      {
+        "title": "Split or Disable 2.4GHz Wi-Fi Band",
+        "content": "Separate the 2.4GHz and 5GHz bands in your router settings. Alternatively, disable the 2.4GHz band if not in use."
+      },
+      {
+        "title": "Move Devices Away from Router",
+        "content": "Ensure no 2.4GHz devices are within 2 meters of the router. Relocate devices or the router to a clear spot."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update iOS or Disable Private Wi-Fi Network",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update iOS",
+            "content": "Go to Settings > General > Software Update. Install the latest iOS update if available."
+          },
+          {
+            "title": "Disable Private Wi-Fi Network",
+            "content": "Go to Settings > Wi-Fi > tap the (i) icon next to your Wi-Fi network. Disable 'Private Wi-Fi Network'."
+          }
+        ]
+      },
+      {
+        "title": "Roll Back Router Firmware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Router Firmware",
+            "content": "If using ASUSWRT-Merlin 388.4.0 firmware, roll back to the previous version to avoid router reboot loops."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T04:28:06.958Z",
+      "updated": "2026-02-01T04:28:06.958Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255148144",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769920096466-594",
+    "title": "Fix Instagram Screen Cropping on iPad After iOS Update",
+    "problemDescription": "Instagram screen is cropped on iPad after iOS update, hiding 'Your Stories' and 'Close Friends' options.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "instagram",
+      "ios",
+      "screen",
+      "crop",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Update Instagram App",
+        "content": "Ensure you have the latest version of Instagram installed from the App Store."
+      },
+      {
+        "title": "Restart Your iPad",
+        "content": "Restart your iPad to clear any temporary glitches that might be causing the issue."
+      },
+      {
+        "title": "Check for iOS Updates",
+        "content": "Go to Settings > General > Software Update to ensure your iPad is running the latest iOS version."
+      },
+      {
+        "title": "Reinstall Instagram",
+        "content": "Uninstall Instagram and then reinstall it from the App Store."
+      },
+      {
+        "title": "Contact Instagram Support",
+        "content": "If the issue persists, contact Instagram support through the app or their website for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Safari Developer Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Developer Mode",
+            "content": "Go to Settings > Safari > Advanced and enable the Developer menu."
+          },
+          {
+            "title": "Change User Agent",
+            "content": "Open Safari, go to the Developer menu, and change the user agent to a different device to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T04:28:16.466Z",
+      "updated": "2026-02-01T04:28:16.466Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255750002",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769920110494-643",
+    "title": "Fix Phone Not Showing Notifications",
+    "problemDescription": "Phone notifications are not appearing as expected.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "phone",
+      "notifications",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Reboot Your Phone",
+        "content": "Restart your phone to refresh the system and resolve temporary glitches."
+      },
+      {
+        "title": "Review App Notification Settings",
+        "content": "Go to Settings > Apps > [App Name] > Notifications and ensure notifications are enabled."
+      },
+      {
+        "title": "Disable Software Battery Optimizations",
+        "content": "Navigate to Settings > Battery > Battery Optimization and disable it for the problematic app."
+      },
+      {
+        "title": "Check for Proprietary Power",
+        "content": "Ensure that no third-party power-saving apps are interfering with notifications."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Your Phone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > System > System Update and install any available updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T04:28:30.494Z",
+      "updated": "2026-02-01T04:28:30.494Z",
+      "sourceUrl": "https://www.quora.com/My-phone-suddenly-stopped-showing-notification-how-can-I-correct-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769920114397-117",
+    "title": "Enable App Notifications on Lenovo K3 Note",
+    "problemDescription": "No app notifications appearing in the status bar or notification panel, only sounds and vibrations.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "notifications",
+      "Lenovo K3 Note"
+    ],
+    "steps": [
+      {
+        "title": "Access Notification Settings",
+        "content": "Go to your device's Settings."
+      },
+      {
+        "title": "Navigate to Notification Panel & Status Bar",
+        "content": "Tap on 'Notification panel & status bar'."
+      },
+      {
+        "title": "Open Notification Center",
+        "content": "Select 'Notification center'."
+      },
+      {
+        "title": "Enable Notifications for the App",
+        "content": "Find the app in the list, then activate 'allow notifications'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check App-Specific Notification Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open the App",
+            "content": "Launch the app for which you want to enable notifications."
+          },
+          {
+            "title": "Go to App Settings",
+            "content": "Tap on the menu icon (usually three dots or lines) and select 'Settings'."
+          },
+          {
+            "title": "Enable Notifications",
+            "content": "Look for 'Notifications' or 'Notification Settings' and ensure it is turned on."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T04:28:34.397Z",
+      "updated": "2026-02-01T04:28:34.397Z",
+      "sourceUrl": "https://www.quora.com/Why-am-I-not-getting-notifications-from-any-app-on-my-status-bar-or-on-the-notification-panel-of-my-Lenovo-K3-note-Im-just-getting-them-as-sounds-and-vibration",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
