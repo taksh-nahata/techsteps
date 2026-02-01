@@ -80592,5 +80592,738 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1769984415417-124",
+    "title": "Fix Microsoft Teams Screen Sharing on Mac Catalina",
+    "problemDescription": "Microsoft Teams screen sharing not working on Mac Catalina due to permission issues.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "mac",
+      "catalina",
+      "teams",
+      "screen sharing",
+      "permissions"
+    ],
+    "steps": [
+      {
+        "title": "Reset Screen Capture Permissions",
+        "content": "Open Terminal and enter the command: `tccutil reset ScreenCapture com.microsoft.teams`. This will reset the screen capture permissions for the Teams app."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Full Screen Mode Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Full Screen Mode",
+            "content": "Ensure you are in full screen mode when attempting to share your screen. This workaround addresses issues that arise in windowed mode or with an external monitor connected."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Grant Permissions to Other Microsoft Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check and Grant Permissions",
+            "content": "Go to System Preferences > Security & Privacy > Privacy > Screen Recording. Ensure that Microsoft Teams and any other relevant Microsoft applications (like PowerPoint) have permission to record the screen."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Schedule Meetings Properly",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Schedule Meetings Correctly",
+            "content": "Attempt to share your screen during the scheduled time of the meeting. Issues may arise if you try to share before or after the scheduled time."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T22:20:15.417Z",
+      "updated": "2026-02-01T22:20:15.417Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/376605/mac-catalina-and-microsoft-teams-screen-sharing-permissions",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769984420669-281",
+    "title": "Fix Office 365 Repeated Login Prompts on Mac",
+    "problemDescription": "Office 365 applications keep prompting for login credentials on MacOS.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "office 365",
+      "mac",
+      "login",
+      "credentials",
+      "keychain"
+    ],
+    "steps": [
+      {
+        "title": "Quit Office Applications",
+        "content": "Close all Office applications (Word, Teams, Outlook, etc.)."
+      },
+      {
+        "title": "Open Keychain Access",
+        "content": "Go to Keychain Access on your Mac."
+      },
+      {
+        "title": "Delete Exchange Entries",
+        "content": "Search for 'Exchange' under Login --> All Items and delete all entries."
+      },
+      {
+        "title": "Delete Office Entries",
+        "content": "Search for 'Office' and delete all entries."
+      },
+      {
+        "title": "Delete ADAL Entries",
+        "content": "Search for 'ADAL' and delete all entries."
+      },
+      {
+        "title": "Restart Outlook",
+        "content": "Launch Outlook and complete the activation and login process, including 2-Factor Authentication if prompted."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Remove and Re-add Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Preferences",
+            "content": "Open Outlook and go to Preferences > Accounts."
+          },
+          {
+            "title": "Remove Account",
+            "content": "Remove your Office 365 account."
+          },
+          {
+            "title": "Re-add Account",
+            "content": "Add the account back and follow the login prompts."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Uninstall mitmproxy",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall mitmproxy",
+            "content": "If you have mitmproxy installed, uninstall it as it may interfere with the login process."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T22:20:20.669Z",
+      "updated": "2026-02-01T22:20:20.669Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/266873/office-365-keeps-prompting-for-login-credentials-on-mac-osx",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769984421802-603",
+    "title": "Fix DNS Not Resolving on macOS",
+    "problemDescription": "DNS not resolving in browsers and Terminal on macOS.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "DNS",
+      "macOS",
+      "Terminal",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Restart mDNSResponder and discoveryd",
+        "content": "Open Terminal and run the following commands to restart the DNS services: `sudo killall -HUP mDNSResponder` and `sudo killall -HUP discoveryd`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use launchctl bootstrap",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run launchctl bootstrap",
+            "content": "If the previous method fails, try running `sudo launchctl bootstrap system /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist` and `sudo launchctl bootstrap system /System/Library/LaunchDaemons/com.apple.discoveryd.plist`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T22:20:21.802Z",
+      "updated": "2026-02-01T22:20:21.802Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/477372/how-to-fix-dns-not-resolving-in-browsers-and-terminal",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769984430638-936",
+    "title": "Fix Bluetooth Not Recognized on Mac",
+    "problemDescription": "Mac computer no longer recognizes Bluetooth hardware after firmware update.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "mac",
+      "firmware",
+      "pmu",
+      "smu"
+    ],
+    "steps": [
+      {
+        "title": "Reset the PMU/SMU",
+        "content": "Locate the PMU (Power Management Unit) or SMU (System Management Unit) reset button on your Mac's logic board. For older PowerBook G4 and iBook models, refer to the specific reset instructions. For newer Power Mac G5 models, consult your computer's manual or Apple's support documents. Press the reset button once and then restart your Mac."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Apple Support",
+            "content": "If you are unsure about resetting the PMU/SMU yourself, contact Apple phone support for assistance. They can guide you through the process and ensure it is done correctly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T22:20:30.638Z",
+      "updated": "2026-02-01T22:20:30.638Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/bluetooth-firmware-updater-1-2-pmu-solution-10-3-6-requirement-ibooks/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769984443691-309",
+    "title": "MacOS Troubleshooting Guide",
+    "problemDescription": "Common troubleshooting steps for MacOS systems.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macos",
+      "troubleshooting",
+      "repair"
+    ],
+    "steps": [
+      {
+        "title": "Run Malware Scans in Safe Mode",
+        "content": "Boot your Mac into Safe Mode by restarting and holding down the Shift key. Once in Safe Mode, run malware scans using tools like Malwarebytes or other reputable antivirus software to remove any viruses."
+      },
+      {
+        "title": "Check System Preferences for Hardware Issues",
+        "content": "Go to System Preferences and check the settings for display, sound, and other hardware components to ensure they are functioning correctly."
+      },
+      {
+        "title": "Backup Data Before Reinstallation",
+        "content": "If necessary, boot into a Linux live USB to backup important data from your Mac before performing a system reinstallation."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "If you are experiencing network issues, reset your network settings by going to System Preferences > Network and selecting the appropriate options to release and renew your IP address."
+      },
+      {
+        "title": "Reinstall MacOS",
+        "content": "Create a bootable USB drive using tools like Rufus and use it to install a fresh copy of MacOS. Ensure you have the necessary activation details if required."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Startup Programs and Services",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Preferences",
+            "content": "Go to System Preferences and navigate to Users & Groups."
+          },
+          {
+            "title": "Manage Login Items",
+            "content": "Select your user account and click on the Login Items tab to manage and disable any unnecessary startup programs."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T22:20:43.691Z",
+      "updated": "2026-02-01T22:20:43.691Z",
+      "sourceUrl": "https://www.reddit.com/r/computertechs/comments/5obbv9/macos_typical_troubleshooting_steps/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769984446506-47",
+    "title": "Troubleshooting Mac OS Environment",
+    "problemDescription": "Guide for troubleshooting basic Mac OS issues including booting, hardware diagnostics, and disk repair.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macos",
+      "troubleshooting",
+      "boot",
+      "hardware",
+      "disk"
+    ],
+    "steps": [
+      {
+        "title": "Access Extended Firmware",
+        "content": "To access the Extended Firmware (similar to BIOS), restart your Mac and hold down Command + Option + O + F during the boot process."
+      },
+      {
+        "title": "Boot in Safe Mode",
+        "content": "To boot in Safe Mode (similar to Windows Safe Mode), restart your Mac and hold down the Shift key during the boot process."
+      },
+      {
+        "title": "Run Apple Diagnostics",
+        "content": "To run hardware diagnostics, restart your Mac and hold down the D key during the boot process. Follow the on-screen instructions."
+      },
+      {
+        "title": "Use Disk Utility",
+        "content": "To scan and repair corrupt files, open Disk Utility from the Utilities folder. Select your disk and use the First Aid feature to repair any issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Terminal Commands",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Terminal",
+            "content": "Open Terminal from the Utilities folder or by searching for it using Spotlight."
+          },
+          {
+            "title": "Run Disk Repair Command",
+            "content": "Type 'diskutil repairDisk disk0' and press Enter to repair the disk. Replace 'disk0' with the appropriate disk identifier if needed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T22:20:46.506Z",
+      "updated": "2026-02-01T22:20:46.506Z",
+      "sourceUrl": "https://www.reddit.com/r/ITCareerQuestions/comments/sjseky/tips_on_troubleshooting_a_mac_os_environment/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769984448855-259",
+    "title": "Troubleshooting Common macOS Issues",
+    "problemDescription": "Identify and resolve common issues encountered on macOS devices.",
+    "category": "macOS",
+    "difficulty": "Medium",
+    "keywords": [
+      "macOS",
+      "troubleshooting",
+      "slowness",
+      "print issues",
+      "MS Office issues"
+    ],
+    "steps": [
+      {
+        "title": "Check for Software Updates",
+        "content": "Ensure your macOS is up to date by going to System Preferences > Software Update and installing any available updates."
+      },
+      {
+        "title": "Free Up Storage Space",
+        "content": "Use the built-in Storage Management tool to free up space by deleting unnecessary files, emptying the trash, and managing system storage."
+      },
+      {
+        "title": "Troubleshoot Print Issues",
+        "content": "Go to System Preferences > Printers & Scanners, remove the problematic printer, and add it again. Ensure the printer is compatible with macOS."
+      },
+      {
+        "title": "Resolve MS Office Issues",
+        "content": "Repair Office for Mac by going to Finder > Applications > Microsoft Office > Office Uninstaller, and then reinstall the application."
+      },
+      {
+        "title": "Check for System Performance Issues",
+        "content": "Use Activity Monitor to identify and close any resource-heavy applications or processes that may be causing slowness."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset SMC and NVRAM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset SMC",
+            "content": "Shut down your Mac, then press and hold the power button for 10 seconds. Release the button and turn on your Mac."
+          },
+          {
+            "title": "Reset NVRAM",
+            "content": "Shut down your Mac, then press and hold the power button until the startup options window appears. Click the gear icon and select Reset NVRAM."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T22:20:48.855Z",
+      "updated": "2026-02-01T22:20:48.855Z",
+      "sourceUrl": "https://www.reddit.com/r/MacOS/comments/15zqbvg/what_are_your_top_macos_issues/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769984455361-151",
+    "title": "Fix Screen Flickering on Windows 10",
+    "problemDescription": "Screen flickering on a Dell laptop running Windows 10, especially when using the touchpad.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen flickering",
+      "windows 10",
+      "dell laptop",
+      "touchpad"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Display Settings",
+        "content": "Reduce the refresh rate or resolution in the display settings to lower the demands on the CPU."
+      },
+      {
+        "title": "Update Drivers",
+        "content": "Ensure all drivers, especially the graphics and touchpad drivers, are up to date."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Install any pending Windows updates that might include fixes for display issues."
+      },
+      {
+        "title": "Disable Hardware Acceleration",
+        "content": "Go to Settings > System > Display > Graphics settings and disable hardware acceleration."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Test with Another Operating System",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot from USB",
+            "content": "Create a bootable USB with a different operating system like Ubuntu Live and test if the flickering persists."
+          },
+          {
+            "title": "Evaluate Performance",
+            "content": "If the flickering stops, consider switching to the alternative OS or investigate further hardware issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T22:20:55.361Z",
+      "updated": "2026-02-01T22:20:55.361Z",
+      "sourceUrl": "https://superuser.com/questions/1861297/how-to-fix-screen-flickering",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769984461451-229",
+    "title": "Fix Screen Flickering in Games",
+    "problemDescription": "Screen flickering and blinking when playing games like Microsoft Flight Simulator and X-Plane 12.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen flickering",
+      "gaming",
+      "VRR",
+      "G-SYNC",
+      "Nvidia"
+    ],
+    "steps": [
+      {
+        "title": "Clean Uninstall and Reinstall Graphics Drivers",
+        "content": "Use Display Driver Uninstaller (DDU) and the official Nvidia CleanupTool to completely remove existing graphics drivers. Then, perform a clean installation of the latest Nvidia graphics drivers."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable VRR and Adjust Refresh Rate",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable VRR (G-SYNC)",
+            "content": "Open the Nvidia Control Panel and disable VRR (G-SYNC) to prevent flickering."
+          },
+          {
+            "title": "Set Maximum Refresh Rate",
+            "content": "Set the refresh rate to the maximum available in the Nvidia Control Panel."
+          }
+        ]
+      },
+      {
+        "title": "Update Display Firmware and Adjust VRR Range",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Display Firmware Updates",
+            "content": "Visit the manufacturer's website to check for and install any available display firmware updates."
+          },
+          {
+            "title": "Use Custom Resolution Utility (CRU)",
+            "content": "Use CRU to adjust the VRR range of your display. Note that this involves some risk and should only be done if you understand the process."
+          }
+        ]
+      },
+      {
+        "title": "Invest in a VRR-Compatible Display",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Research VRR-Compatible Displays",
+            "content": "Look for displays with a wider VRR range, specifically those that support a lower bottom range. Avoid VA panels if possible."
+          },
+          {
+            "title": "Check Compatibility Lists",
+            "content": "Refer to Nvidia's list of G-SYNC Compatible displays and Display Ninja's list for compatible displays and their VRR ranges."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T22:21:01.451Z",
+      "updated": "2026-02-01T22:21:01.451Z",
+      "sourceUrl": "https://superuser.com/questions/1872812/why-am-i-experiencing-computer-wide-screen-flickering-and-blinking-when-playing",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769984467371-821",
+    "title": "Fix Monitor Flickering Issue",
+    "problemDescription": "Desktop monitor display flickers and sometimes crashes, persists across different operating systems and hardware configurations.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "monitor",
+      "flickering",
+      "motherboard",
+      "graphics"
+    ],
+    "steps": [
+      {
+        "title": "Check and Replace Graphics Hardware",
+        "content": "If using integrated graphics, consider getting an external graphics card or replacing the motherboard. If you have an external graphics card, try switching to the onboard graphics unit to see if the issue persists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check and Replace Hardware Components",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check VGA Cable and Monitor",
+            "content": "Ensure the VGA cable is properly connected and try replacing it. Also, test with another monitor to rule out monitor issues."
+          },
+          {
+            "title": "Check HDD and RAM",
+            "content": "Test with another HDD and different RAM sticks to ensure they are not causing the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T22:21:07.371Z",
+      "updated": "2026-02-01T22:21:07.371Z",
+      "sourceUrl": "https://superuser.com/questions/1228701/desktop-monitor-display-flickering-issue",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769984478038-952",
+    "title": "Recover Deleted Files on Mac",
+    "problemDescription": "Need to recover deleted files from a Mac computer or other devices.",
+    "category": "macOS",
+    "difficulty": "Easy",
+    "keywords": [
+      "macOS",
+      "data recovery",
+      "deleted files"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install Free Mac Data Recovery",
+        "content": "Go to the CNET Download page and search for 'Free Mac Data Recovery'. Download and install the software on your Mac."
+      },
+      {
+        "title": "Launch the Software",
+        "content": "Open the Free Mac Data Recovery application."
+      },
+      {
+        "title": "Scan for Deleted Files",
+        "content": "Use the software to scan your Mac for deleted files. Follow the on-screen instructions to select the drive or device you want to scan."
+      },
+      {
+        "title": "Recover Files",
+        "content": "Once the scan is complete, preview the recoverable files and select the ones you want to restore. Click on the 'Recover' button to save them to a desired location."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Free Mac SD Card Data Recovery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install Free Mac SD Card Data Recovery",
+            "content": "Go to the CNET Download page and search for 'Free Mac SD Card Data Recovery'. Download and install the software."
+          },
+          {
+            "title": "Connect Your SD Card",
+            "content": "Insert the SD card into your Mac using a card reader."
+          },
+          {
+            "title": "Scan and Recover",
+            "content": "Launch the software, scan the SD card for deleted files, and recover them following the on-screen instructions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T22:21:18.038Z",
+      "updated": "2026-02-01T22:21:18.038Z",
+      "sourceUrl": "https://download.cnet.com/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769984481402-75",
+    "title": "Claim Verizon Settlement Payout",
+    "problemDescription": "Verizon customers may be eligible for a settlement payout of up to $100.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Verizon",
+      "settlement",
+      "payout",
+      "claim"
+    ],
+    "steps": [
+      {
+        "title": "Check Eligibility",
+        "content": "Verify if you are eligible for the Verizon settlement payout by checking the official Verizon website or the settlement notification you received."
+      },
+      {
+        "title": "Gather Required Information",
+        "content": "Collect any necessary documents or information, such as your Verizon account details and any relevant billing statements."
+      },
+      {
+        "title": "Submit Your Claim",
+        "content": "Follow the instructions provided in the settlement notification or on the Verizon website to submit your claim. This may involve filling out an online form or mailing a claim form."
+      },
+      {
+        "title": "Wait for Processing",
+        "content": "After submitting your claim, wait for Verizon to process it. This may take several weeks, so be patient."
+      },
+      {
+        "title": "Receive Your Payout",
+        "content": "Once your claim is approved, you will receive your settlement payout, which could be up to $100, depending on your eligibility."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Customer Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Verizon Customer Support",
+            "content": "If you have any issues or questions about the settlement payout, contact Verizon customer support for assistance."
+          },
+          {
+            "title": "Follow Up on Your Claim",
+            "content": "If you do not receive your payout within the expected timeframe, follow up with Verizon to ensure your claim was processed correctly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T22:21:21.402Z",
+      "updated": "2026-02-01T22:21:21.402Z",
+      "sourceUrl": "https://www.cnet.com/how-to/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769984483086-950",
+    "title": "Enable WhatsApp Multidevice Feature",
+    "problemDescription": "WhatsApp users want to access messages on multiple devices even when the phone is off.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "WhatsApp",
+      "multidevice",
+      "messages",
+      "access"
+    ],
+    "steps": [
+      {
+        "title": "Enable Multidevice on Your Phone",
+        "content": "Open WhatsApp on your primary phone, go to Settings > Linked Devices > Link a Device."
+      },
+      {
+        "title": "Scan QR Code on New Device",
+        "content": "On the new device, open WhatsApp and scan the QR code displayed on your primary phone."
+      },
+      {
+        "title": "Confirm Linking",
+        "content": "Confirm the linking process on your primary phone to enable multidevice access."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Troubleshooting Linking Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ensure Both Devices Have the Latest WhatsApp Version",
+            "content": "Update WhatsApp on both your primary and secondary devices."
+          },
+          {
+            "title": "Check Internet Connection",
+            "content": "Ensure both devices are connected to a stable internet connection."
+          },
+          {
+            "title": "Restart Devices",
+            "content": "Restart both devices and try the linking process again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T22:21:23.086Z",
+      "updated": "2026-02-01T22:21:23.086Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/whatsapps-multidevice-feature-could-teach-apples-imessage-some-new-tricks/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
