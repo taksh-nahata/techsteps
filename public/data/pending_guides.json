@@ -76909,5 +76909,213 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1769955779855-11",
+    "title": "Fix Chrome Not Saving Passwords",
+    "problemDescription": "Google Chrome is not saving passwords when prompted.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "passwords",
+      "browser",
+      "saving"
+    ],
+    "steps": [
+      {
+        "title": "Enable Password Saving",
+        "content": "Click the three-dot icon in the top-right corner of Chrome, select 'Passwords and Autofill', then choose 'Google Password Manager' to ensure the feature is enabled."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Add Password Manually",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Google Password Manager",
+            "content": "Open Google Password Manager and click 'Add' next to the Passwords heading."
+          },
+          {
+            "title": "Enter Password Details",
+            "content": "Enter the URL of the site, username, and password, then click 'Save'."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset Google Chrome",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Chrome Settings",
+            "content": "Click the three-dot icon in the top-right corner and select 'Settings'."
+          },
+          {
+            "title": "Reset Settings",
+            "content": "Click 'Reset Settings' on the left-side menu, then click 'Restore Settings to Their Original Default' on the right."
+          },
+          {
+            "title": "Confirm Reset",
+            "content": "In the popup, confirm your decision by clicking 'Reset Settings'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T14:22:59.855Z",
+      "updated": "2026-02-01T14:22:59.855Z",
+      "sourceUrl": "https://www.howtogeek.com/google-chrome-not-saving-password-how-to-fix-it/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769955785003-628",
+    "title": "Fix Dead Pixels on Android Screen",
+    "problemDescription": "Your Android phone screen has dead pixels covering the entire display, making it unusable.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "dead pixel",
+      "screen repair"
+    ],
+    "steps": [
+      {
+        "title": "Download and Launch Dead Pixel Detect and Fix",
+        "content": "Head to the Google Play Store on your Android device. Search for, download, and open the Dead Pixel Detect and Fix app (DPDF)."
+      },
+      {
+        "title": "Detect the Dead Pixel",
+        "content": "Tap the DETECT button in the app menu. Then, tap the Colors button in the top-left corner and cycle through the six preset colors (red, green, blue, white, black, and gray). Alternatively, choose the Custom option to pick a color from the palette. A dead or stuck pixel will stand out against every backdrop except for the color it’s stuck in. Note the location of the pixel."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Pixel Fixing",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Pixel Fixing Video",
+            "content": "Search for and download a dead pixel fixing video from the internet. Play the video on your phone and let it run for a few hours. The rapid color changes can sometimes unstick dead pixels."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T14:23:05.003Z",
+      "updated": "2026-02-01T14:23:05.003Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-a-dead-pixel-which-has-covered-the-entire-phone-screen-due-to-the-dropping-of-the-phone-Now-I-cant-see-anything-on-the-phone-please-do-u-have-any-suggestions",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769955788371-487",
+    "title": "Fix Blurry Photos on Google Pixel 7/7 Pro",
+    "problemDescription": "Photos taken with Google Pixel 7 or 7 Pro are blurry.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "camera",
+      "blurry",
+      "photos",
+      "pixel"
+    ],
+    "steps": [
+      {
+        "title": "Use the Photo Unblurr Feature",
+        "content": "Open the Google Photos app, select the blurry photo, and tap the 'Unblur' button to enhance the image."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Adjust Camera Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Grid Lines",
+            "content": "Go to the Camera app settings and enable grid lines to help compose photos better."
+          },
+          {
+            "title": "Use Night Sight",
+            "content": "For low-light conditions, use Night Sight mode to improve photo quality."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T14:23:08.371Z",
+      "updated": "2026-02-01T14:23:08.371Z",
+      "sourceUrl": "https://mjaysmartphonetecharticles.quora.com/https-khanjunaid23-blogspot-com-2022-10-google-pixel-7-7-pro-software-solutions-html-Google-Pixel-7-7-Pro-Softwa",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769955814695-796",
+    "title": "Siri Not Finding Local Songs on iOS 18.5",
+    "problemDescription": "Siri cannot find and play specific songs stored locally on an iOS device.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "siri",
+      "ios",
+      "music",
+      "local songs"
+    ],
+    "steps": [
+      {
+        "title": "Clear Siri & Dictation History",
+        "content": "Go to Settings > Apple Intelligence & Siri > Siri & Dictation History > Delete. This may restore Siri's ability to find and play local songs."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Backup and Wipe Phone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Device",
+            "content": "Backup your iPhone using iTunes or iCloud."
+          },
+          {
+            "title": "Wipe Your Device",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Erase All Content and Settings."
+          },
+          {
+            "title": "Restore from Backup",
+            "content": "After wiping, restore your device from the backup."
+          },
+          {
+            "title": "Test with a Small Set of Songs",
+            "content": "Add a small set of songs to your device and test if Siri can find them. If it works, gradually add more songs to identify any problematic metadata."
+          }
+        ]
+      },
+      {
+        "title": "Toggle Apple Music Setting",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Toggle Show Apple Music",
+            "content": "Go to Settings > Apps > Music > Toggle Show Apple Music on and off."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T14:23:34.695Z",
+      "updated": "2026-02-01T14:23:34.695Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/480330/siri-no-longer-finds-songs-by-name-ios-18-5",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
