@@ -79510,5 +79510,606 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1769977291780-211",
+    "title": "Fix Sound Lag on Roku",
+    "problemDescription": "Sound lag or audio-video sync issues on Roku devices.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Roku",
+      "sound lag",
+      "audio-video sync",
+      "OS 10.5"
+    ],
+    "steps": [
+      {
+        "title": "Update Roku OS",
+        "content": "Ensure your Roku device is running the latest OS version (10.5 or later). Go to Settings > System > System update > Check now."
+      },
+      {
+        "title": "Check Audio Settings",
+        "content": "Navigate to Settings > Audio > Audio mode and select 'Auto detect' or 'Stereo' to optimize audio settings."
+      },
+      {
+        "title": "Restart Roku Device",
+        "content": "Restart your Roku device by going to Settings > System > System restart > Restart."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust HDMI Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check HDMI Connection",
+            "content": "Ensure the HDMI cable is securely connected to both the Roku device and the TV."
+          },
+          {
+            "title": "Enable HDMI CEC",
+            "content": "Go to Settings > System > Control other devices with TV remote and enable HDMI CEC."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T20:21:31.780Z",
+      "updated": "2026-02-01T20:21:31.780Z",
+      "sourceUrl": "https://www.cnet.com/tech/home-entertainment/rokus-free-os-10-5-lets-you-dictate-passwords-fixes-pesky-sound-lags-on-headphones/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769977298557-388",
+    "title": "Fix BSOD SrtSrtTrail.txt After Password Reset",
+    "problemDescription": "BSOD error with SrtSrtTrail.txt after resetting Windows password.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "BSOD",
+      "Windows",
+      "password reset",
+      "clean install"
+    ],
+    "steps": [
+      {
+        "title": "Backup Important Files",
+        "content": "On another PC, download the Windows 10 media creation tool and create a Windows 10 installer on a USB drive. Boot the affected PC from the USB drive. On the language selection screen, choose 'Repair this PC' instead of 'Install'. Navigate to Troubleshoot > Advanced Options > Command Prompt. Type 'notepad' and press Enter. In Notepad, select File > Open to access File Explorer. Copy any important files from the C drive to a USB or another hard drive."
+      },
+      {
+        "title": "Perform a Clean Install",
+        "content": "After backing up your files, follow the on-screen instructions to perform a clean install of Windows 10. This will resolve the BSOD error associated with SrtSrtTrail.txt."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-01T20:21:38.557Z",
+      "updated": "2026-02-01T20:21:38.557Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/bsod-srtsrttrail-txt-after-resetting-password.3725095/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769977306315-428",
+    "title": "Recover Laptop Password from Another PC",
+    "problemDescription": "Forgot your laptop password and need to recover it using another computer.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "password",
+      "recovery",
+      "windows",
+      "laptop"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install Windows Password Recovery",
+        "content": "Download the Windows Password Recovery program on another computer."
+      },
+      {
+        "title": "Create a Bootable CD",
+        "content": "Burn the downloaded program onto a CD using the other computer."
+      },
+      {
+        "title": "Boot from the CD",
+        "content": "Insert the CD into your laptop and boot from it. This may require changing the boot order in the BIOS settings."
+      },
+      {
+        "title": "Follow the On-Screen Instructions",
+        "content": "Use the program to reset or recover your laptop password."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Password Reset Disk",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a Password Reset Disk",
+            "content": "If you previously created a password reset disk, insert it into your laptop."
+          },
+          {
+            "title": "Follow the Reset Instructions",
+            "content": "Use the reset disk to create a new password for your laptop."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T20:21:46.315Z",
+      "updated": "2026-02-01T20:21:46.315Z",
+      "sourceUrl": "http://www.tomshardware.com/forum/54221-35-forgot-laptop-password-recover",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769977309363-811",
+    "title": "Recover Local Admin Account on Windows 10",
+    "problemDescription": "User is logged out of a local admin account on Windows 10 Home OS and needs to regain access.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "admin",
+      "account",
+      "recovery"
+    ],
+    "steps": [
+      {
+        "title": "Boot into Safe Mode",
+        "content": "Restart your computer and press F8 repeatedly to enter the Advanced Boot Options menu. Select 'Safe Mode with Networking' and press Enter."
+      },
+      {
+        "title": "Use Command Prompt",
+        "content": "Once in Safe Mode, open Command Prompt as Administrator. Type 'net user' to list all user accounts."
+      },
+      {
+        "title": "Reset Password",
+        "content": "Type 'net user [username] [newpassword]' replacing [username] with the admin account name and [newpassword] with your desired password. Press Enter."
+      },
+      {
+        "title": "Restart Computer",
+        "content": "Restart your computer normally and log in with the admin account using the new password."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows Installation Media",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create Bootable USB",
+            "content": "Download the Windows 10 Media Creation Tool and create a bootable USB drive."
+          },
+          {
+            "title": "Boot from USB",
+            "content": "Insert the USB drive and boot from it. Select 'Repair your computer' and then 'Troubleshoot'."
+          },
+          {
+            "title": "Access Command Prompt",
+            "content": "Go to 'Advanced options' and select 'Command Prompt'. Type 'wpeutil reboot' to reboot into the Windows PE environment."
+          },
+          {
+            "title": "Reset Password",
+            "content": "Use the same 'net user' command as in the main method to reset the password."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T20:21:49.363Z",
+      "updated": "2026-02-01T20:21:49.363Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/logged-out-of-local-admin-account-pin-to-password-without-apparent-reason.2746309/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769977317096-673",
+    "title": "Fix Samsung Galaxy Tab 4 IR Blaster",
+    "problemDescription": "The IR Blaster on your Samsung Galaxy Tab 4 is not being detected by the Peel Remote app after an Android 5 (Lollipop) upgrade.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "IR Blaster",
+      "Samsung Galaxy Tab 4",
+      "Peel Remote",
+      "Android 5",
+      "Hardware Test"
+    ],
+    "steps": [
+      {
+        "title": "Access Hardware Test Module",
+        "content": "Dial *#0*# on your phone to open the Hardware Test module."
+      },
+      {
+        "title": "Test IR Module",
+        "content": "In the Hardware Test module, click on the IR module to test it."
+      },
+      {
+        "title": "Check for IR Blaster Detection",
+        "content": "If the IR module test is successful, the IR Blaster should be detected by the Peel Remote app."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Downgrade to Android 4 (Kit-Kat)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Backup all important data on your device."
+          },
+          {
+            "title": "Find Downgrade Firmware",
+            "content": "Search for the appropriate Android 4 (Kit-Kat) firmware for your Samsung Galaxy Tab 4."
+          },
+          {
+            "title": "Flash the Firmware",
+            "content": "Use a tool like Odin to flash the downgraded firmware onto your device."
+          },
+          {
+            "title": "Restore Data",
+            "content": "Restore your data after the downgrade process is complete."
+          }
+        ]
+      },
+      {
+        "title": "Use a Standalone IR Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Standalone IR Device",
+            "content": "Buy a standalone IR device that can connect to your phone wirelessly."
+          },
+          {
+            "title": "Connect the Device",
+            "content": "Follow the manufacturer's instructions to connect the standalone IR device to your phone."
+          },
+          {
+            "title": "Configure the App",
+            "content": "Use the accompanying app to configure and control your devices via the standalone IR device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T20:21:57.096Z",
+      "updated": "2026-02-01T20:21:57.096Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/165919/how-do-i-troubleshoot-my-ir-blaster-samsung-galaxy-tab-4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769977320642-715",
+    "title": "Chromebox vs Android TV for Media Streaming",
+    "problemDescription": "Deciding between a Chromebox and Android TV for media streaming and TV connectivity.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "chromebox",
+      "android tv",
+      "media streaming",
+      "tv connectivity"
+    ],
+    "steps": [
+      {
+        "title": "Understand the Differences",
+        "content": "Chromebox runs Chrome OS, designed for a desktop experience with mouse and keyboard. Android TV runs Android, optimized for a 10-foot TV experience with remote or gamepad."
+      },
+      {
+        "title": "Evaluate Your Needs",
+        "content": "If you need a simple, remote-controlled media streaming device, Android TV is better. If you prefer a more PC-like experience with a keyboard and mouse, consider a Chromebox."
+      },
+      {
+        "title": "Check App Compatibility",
+        "content": "Android TV has apps tailored for TV use. Chromebox may not have all the streaming apps, but you can access streaming websites via a browser."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Using Chromebox as a Media Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect to TV",
+            "content": "Connect your Chromebox to your TV using HDMI."
+          },
+          {
+            "title": "Use Browser for Streaming",
+            "content": "Access streaming services through the Chrome browser."
+          },
+          {
+            "title": "Install Android Apps",
+            "content": "Install Android apps that are compatible with Chromebox for additional functionality."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T20:22:00.642Z",
+      "updated": "2026-02-01T20:22:00.642Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/93501/what-is-the-difference-between-chromebox-and-android-tv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769977333603-196",
+    "title": "Fix iPhone to PC Transfer Issues",
+    "problemDescription": "Difficulty transferring photos and videos from iPhone to PC due to file explorer issues.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "transfer",
+      "photos",
+      "videos",
+      "pc"
+    ],
+    "steps": [
+      {
+        "title": "Change View to Details",
+        "content": "When the file explorer opens, change the view from 'icons' to 'details'. This prevents Explorer from trying to read every file and presents a directory listing."
+      },
+      {
+        "title": "Copy Files in Small Batches",
+        "content": "Grab a few files at a time and copy them to your hard drive. Repeat this process until all files are copied or you encounter a problematic file."
+      },
+      {
+        "title": "Avoid Copying Entire DCIM Folder",
+        "content": "Instead of copying the entire DCIM folder, go at least one level into the DCIM folder and begin copying files from there."
+      },
+      {
+        "title": "Delete Copied Files from iPhone",
+        "content": "Once all pictures are copied to your PC, delete them from the iPhone."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Documents App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Documents App",
+            "content": "Download and install 'Documents: File Manager & Docs' by Readdle Technologies from the App Store."
+          },
+          {
+            "title": "Transfer Files Wirelessly",
+            "content": "Use the Documents app to transfer files wirelessly between your iPhone and PC or Mac."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T20:22:13.603Z",
+      "updated": "2026-02-01T20:22:13.603Z",
+      "sourceUrl": "https://superuser.com/questions/1806506/problems-transferring-photos-and-videos-from-iphone-to-pc",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769977343425-216",
+    "title": "Fix Samsung Galaxy Book Stuck on Restart",
+    "problemDescription": "Samsung Galaxy Book is stuck on restart and not responding to normal reset methods.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "galaxy book",
+      "restart",
+      "stuck",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Force Shutdown",
+        "content": "Press and hold the Power button for about 10-15 seconds to force the device to turn off. Wait a few moments, then press the Power button again to restart it."
+      },
+      {
+        "title": "Enter Safe Mode",
+        "content": "If the device starts but is still problematic, enter Safe Mode to diagnose the issue. Press and hold the Power button until the power off menu appears. Then, press and hold the Power Off option until you see the Safe Mode prompt."
+      },
+      {
+        "title": "Drain the Battery",
+        "content": "If the device still doesn’t respond, allow the battery to fully drain. Once it’s completely out of power, plug it in and try turning it on again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Recovery Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Recovery Mode",
+            "content": "Some devices have a recovery mode that you can access by holding specific button combinations while powering on. Check your device’s manual or Samsung’s support site for the exact button combination for your model."
+          }
+        ]
+      },
+      {
+        "title": "Contact Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Samsung Support",
+            "content": "If none of the above steps work, contact Samsung Support or visit a service center for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T20:22:23.425Z",
+      "updated": "2026-02-01T20:22:23.425Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/my-samsung-galaxy-book-is-getting-stuck-on-restart/2dfe6f6c-e4a4-474d-9867-d49e91be05e0",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769977345020-406",
+    "title": "Fix Windows Hello Unavailable on Samsung Galaxy Book3 Pro",
+    "problemDescription": "Windows Hello fingerprint recognition is unavailable on Samsung Galaxy Book3 Pro.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "hello",
+      "fingerprint",
+      "samsung",
+      "galaxy book3 pro"
+    ],
+    "steps": [
+      {
+        "title": "Create a New Local Account",
+        "content": "Search for CMD in the search bar, right-click and select 'Run as administrator'. Enter the following commands in order: `net user USERNAME PASSWORD /add` and `net localgroup administrators USERNAME /add`. Replace USERNAME and PASSWORD with your desired account name and password. If you do not need a password, you can leave the PASSWORD field blank."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Samsung Community Forums",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Samsung Community Forums",
+            "content": "Search for similar issues on the Samsung Community forums. Look for threads like 'Fingerprint scan login no longer working' or 'Galaxy Book Pro 3 - no fingerprint login option'."
+          },
+          {
+            "title": "Post Your Question",
+            "content": "If no solution is found, post your question directly on the Samsung forum for specialized support."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T20:22:25.020Z",
+      "updated": "2026-02-01T20:22:25.020Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/windows_11-hardware/samsung-galaxy-book3-pro-windows-hello-unavailable/2ebefb8f-e835-4d68-8cea-bab4ce818c1e",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769977346355-459",
+    "title": "Fix Unable to Connect to Server on Samsung Galaxy S3",
+    "problemDescription": "Samsung Galaxy S3 unable to connect to server for email.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "email",
+      "connection",
+      "server"
+    ],
+    "steps": [
+      {
+        "title": "Remove and Re-add Email Account",
+        "content": "Go to your device's email settings, remove the problematic email account, and then re-add it. Follow the steps provided in the link from the Microsoft Support Community."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Outlook.com App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Account on PC Browser",
+            "content": "Verify if you can access your email account on a PC browser."
+          },
+          {
+            "title": "Configure Account on Outlook.com App",
+            "content": "Download and configure the same email account on the Outlook.com app for Android. Refer to the article 'Add Outlook.com to your Android phone' for instructions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T20:22:26.355Z",
+      "updated": "2026-02-01T20:22:26.355Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/i-keep-getting-unable-to-connect-to-server-fron/d7bbd2b7-1576-4434-b3f6-5c842a037ff4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769977354513-941",
+    "title": "Fix Outlook Authentication Error on Samsung S25",
+    "problemDescription": "Outlook app on Samsung S25 fails to authenticate Microsoft 365 account.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "authentication",
+      "samsung",
+      "s25",
+      "microsoft 365"
+    ],
+    "steps": [
+      {
+        "title": "Use Samsung Email for Exchange Setup",
+        "content": "Open the Samsung Email app on your S25. Add your Microsoft 365 account using the Exchange setup option."
+      },
+      {
+        "title": "Verify Account Settings",
+        "content": "Ensure that the email address and password are correct. Check if any two-factor authentication is enabled and update the settings accordingly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Server Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Server Status",
+            "content": "Check if there are any ongoing issues with Outlook servers or potential DDOS attacks affecting outlook.live.com."
+          },
+          {
+            "title": "Wait and Retry",
+            "content": "If server issues are identified, wait for the problem to be resolved by the service provider and retry setting up the account."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall Outlook App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Outlook App",
+            "content": "Go to Settings > Apps > Outlook > Uninstall."
+          },
+          {
+            "title": "Reinstall Outlook App",
+            "content": "Download and install the Outlook app from the Google Play Store."
+          },
+          {
+            "title": "Set Up Account Again",
+            "content": "Open the Outlook app and set up your Microsoft 365 account again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T20:22:34.513Z",
+      "updated": "2026-02-01T20:22:34.513Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum/all/problem-with-android-new-samsung-s25-and-outlook/3e95cedc-d158-46c1-a079-d8adaec0fddb",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
