@@ -78352,5 +78352,639 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1769970547105-347",
+    "title": "Fix WhatsApp Desktop Disconnecting on Windows 11",
+    "problemDescription": "WhatsApp Desktop keeps disconnecting and requiring re-pairing after upgrading to Windows 11.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "windows 11",
+      "disconnecting",
+      "account"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall WhatsApp Desktop",
+        "content": "Uninstall WhatsApp Desktop from your computer. Download the latest version from the official WhatsApp website and install it."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Ensure your Windows 11 system is up to date. Go to Settings > Windows Update and check for updates."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Reset your network settings to default. Go to Settings > Network & Internet > Advanced network settings > Network reset."
+      },
+      {
+        "title": "Disable VPN or Proxy",
+        "content": "If you are using a VPN or proxy, disable it temporarily to see if it resolves the issue."
+      },
+      {
+        "title": "Re-pair WhatsApp",
+        "content": "After completing the above steps, re-pair your WhatsApp account by scanning the QR code again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Run WhatsApp as Administrator",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Right-click on WhatsApp Desktop shortcut",
+            "content": "Right-click on the WhatsApp Desktop shortcut and select 'Run as administrator'."
+          },
+          {
+            "title": "Check for improvements",
+            "content": "Check if the issue persists after running WhatsApp as an administrator."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall Network Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Press Win + X and select 'Device Manager'."
+          },
+          {
+            "title": "Update Network Drivers",
+            "content": "Expand the 'Network adapters' section, right-click on your network adapter, and select 'Update driver'."
+          },
+          {
+            "title": "Restart your computer",
+            "content": "Restart your computer and check if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T18:29:07.105Z",
+      "updated": "2026-02-01T18:29:07.105Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/whatsapp-desktop-keep-disconnecting-my-account-after-upgrading-to-windows-11.3877533/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769970551356-673",
+    "title": "Fix GPU Running at x16",
+    "problemDescription": "Your GPU is not running at its full x16 PCIe lane width, affecting performance.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "gpu",
+      "performance",
+      "x16",
+      "pci",
+      "lanes"
+    ],
+    "steps": [
+      {
+        "title": "Check BIOS Settings",
+        "content": "Restart your computer and enter the BIOS/UEFI settings (usually by pressing F2, DEL, or ESC during boot). Look for settings related to PCIe configuration and ensure that the PCIe slot is set to 'Auto' or 'Gen3 x16'."
+      },
+      {
+        "title": "Update GPU Drivers",
+        "content": "Download and install the latest drivers for your GPU from the manufacturer's website. This can often resolve compatibility issues that may be limiting your GPU's performance."
+      },
+      {
+        "title": "Check Physical Connections",
+        "content": "Ensure that your GPU is properly seated in the PCIe slot. Remove and reinsert the GPU, making sure it is fully seated. Also, check that all power connectors are properly connected to the GPU."
+      },
+      {
+        "title": "Update BIOS/UEFI",
+        "content": "Visit your motherboard manufacturer's website and download the latest BIOS/UEFI update. Follow the instructions to update your BIOS, as this can resolve compatibility issues with newer GPUs."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for BIOS Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Manufacturer's Website",
+            "content": "Go to your motherboard manufacturer's website and navigate to the support section for your specific motherboard model."
+          },
+          {
+            "title": "Download Latest BIOS",
+            "content": "Download the latest BIOS update and follow the instructions provided by the manufacturer to update your BIOS."
+          },
+          {
+            "title": "Reboot and Check",
+            "content": "After updating the BIOS, reboot your computer and check if the GPU is now running at x16."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T18:29:11.356Z",
+      "updated": "2026-02-01T18:29:11.356Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/common-pc-troubleshooting-steps.2223646/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769970555536-723",
+    "title": "Gateway PC Fails to Boot",
+    "problemDescription": "Gateway PC fails to boot after attempting all basic troubleshooting steps.",
+    "category": "windows",
+    "difficulty": "Hard",
+    "keywords": [
+      "gateway",
+      "boot",
+      "windows",
+      "hardware"
+    ],
+    "steps": [
+      {
+        "title": "Check Power Supply",
+        "content": "Ensure the power supply is functioning correctly. Test with a known good power supply if possible."
+      },
+      {
+        "title": "Inspect RAM",
+        "content": "Remove and reseat the RAM modules. Try booting with one module at a time to check for faulty RAM."
+      },
+      {
+        "title": "Test Hardware Components",
+        "content": "Disconnect all non-essential hardware components (e.g., USB devices, secondary storage) and attempt to boot."
+      },
+      {
+        "title": "Check for BIOS Updates",
+        "content": "Visit the Gateway support website and check for any available BIOS updates for your specific model."
+      },
+      {
+        "title": "Reset BIOS Settings",
+        "content": "Enter the BIOS setup (usually by pressing a key like F2, Del, or Esc during boot) and reset to default settings."
+      },
+      {
+        "title": "Test with Another GPU",
+        "content": "If applicable, try booting with a different graphics card to rule out GPU issues."
+      },
+      {
+        "title": "Check for Hardware Failures",
+        "content": "If all else fails, consider testing individual components (e.g., motherboard, CPU) for potential hardware failures."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Operating System",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "If possible, backup important data before proceeding."
+          },
+          {
+            "title": "Create Bootable USB",
+            "content": "Download the Windows installation media and create a bootable USB drive."
+          },
+          {
+            "title": "Boot from USB",
+            "content": "Insert the bootable USB and boot from it. Follow the on-screen instructions to reinstall the operating system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T18:29:15.536Z",
+      "updated": "2026-02-01T18:29:15.536Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/gateway-fails-to-boot-all-troubleshooting-steps-attempted.3615483/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1769970566276-686",
+    "title": "Fix Notification Center Not Working in Safari",
+    "problemDescription": "Notification Center not displaying or retaining alerts as per preference settings in Safari on Mountain Lion.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "notification",
+      "safari",
+      "mountain lion",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Reset Safari Notification Settings",
+        "content": "Go to System Preferences > Notifications and set Safari notifications to 'None'. Then, re-enable them and set the desired alert style."
+      },
+      {
+        "title": "Check Safari's Notification Preferences",
+        "content": "Open Safari, go to Safari > Preferences > Notifications, and ensure the settings match your desired alert style and behavior."
+      },
+      {
+        "title": "Restart Notification Center",
+        "content": "Open Terminal and type 'killall NotificationCenter' to restart the Notification Center process."
+      },
+      {
+        "title": "Update macOS",
+        "content": "Ensure your macOS is up to date, as software updates often include bug fixes for Notification Center issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset SMC and NVRAM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset SMC",
+            "content": "Shut down your Mac, then press and hold the power button for 10 seconds. Release the button and wait a few seconds before turning your Mac back on."
+          },
+          {
+            "title": "Reset NVRAM",
+            "content": "Shut down your Mac, then press the power button to turn it on. Immediately press and hold Command (⌘) + Option + P + R for about 20 seconds, then release the keys."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T18:29:26.276Z",
+      "updated": "2026-02-01T18:29:26.276Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/57611/disappearing-alerts-notification-center-not-working-as-per-preference-setting",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769970570062-728",
+    "title": "Enable Notification Content in iPhone Banners",
+    "problemDescription": "iPhone notifications are not showing content in the banner.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "notifications",
+      "banners",
+      "content"
+    ],
+    "steps": [
+      {
+        "title": "Navigate to Notification Settings",
+        "content": "Go to 'Settings > Notifications > Messages'."
+      },
+      {
+        "title": "Scroll Down",
+        "content": "Scroll down below the 'Messages Options' section."
+      },
+      {
+        "title": "Enable Show Previews",
+        "content": "Toggle on 'Show Previews' to display notification content in banners."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restore iPhone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup your iPhone data using iTunes or iCloud."
+          },
+          {
+            "title": "Restore iPhone",
+            "content": "Perform a full restore of your iPhone to factory settings."
+          },
+          {
+            "title": "Restore Backup",
+            "content": "Restore your data from the backup after the restore process."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T18:29:30.062Z",
+      "updated": "2026-02-01T18:29:30.062Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/269712/iphone-not-showing-notification-content-in-banner",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769970581834-49",
+    "title": "Fix AirPods 2019 Bluetooth Pairing on Ubuntu",
+    "problemDescription": "AirPods 2019 not pairing with Ubuntu via Bluetooth.",
+    "category": "bluetooth",
+    "difficulty": "Medium",
+    "keywords": [
+      "airpods",
+      "bluetooth",
+      "pairing",
+      "ubuntu"
+    ],
+    "steps": [
+      {
+        "title": "Edit Bluetooth Configuration",
+        "content": "Open the terminal and edit the Bluetooth configuration file with the following command: `sudo nano /etc/bluetooth/main.conf`. Add the line `ControllerMode = bredr` under the `[General]` section."
+      },
+      {
+        "title": "Restart Bluetooth Service",
+        "content": "Save the changes and exit the editor. Restart the Bluetooth service using the command: `sudo systemctl restart bluetooth`."
+      },
+      {
+        "title": "Pair AirPods",
+        "content": "Put your AirPods in pairing mode and try to pair them with your Ubuntu system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use bluetoothctl",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Start bluetoothctl",
+            "content": "Open the terminal and start the Bluetooth controller with the command: `bluetoothctl`."
+          },
+          {
+            "title": "List Devices",
+            "content": "Inside bluetoothctl, list the devices that it detects with the command: `devices`."
+          },
+          {
+            "title": "Trust and Connect",
+            "content": "Find your AirPods by their MAC address (XX:XX:XX:XX:XX:XX), trust the device with `trust XX:XX:XX:XX:XX:XX`, and connect with `connect XX:XX:XX:XX:XX:XX`."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Restart Bluetooth Service",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reload Bluetooth Service",
+            "content": "If the Bluetooth GUI freezes, reload the Bluetooth service with the command: `sudo service bluetooth restart`."
+          },
+          {
+            "title": "Connect AirPods",
+            "content": "After reloading the service, try to connect your AirPods again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T18:29:41.834Z",
+      "updated": "2026-02-01T18:29:41.834Z",
+      "sourceUrl": "https://askubuntu.com/questions/1188144/airpods-2019-bluettooth-pairing-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769970611647-60",
+    "title": "Enable Zoom App Developer Tools",
+    "problemDescription": "Zoom App Developer Tools are disabled by default, preventing access to debugging features.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "developer tools",
+      "javascript",
+      "SDK"
+    ],
+    "steps": [
+      {
+        "title": "Enable Developer Tools",
+        "content": "Run the appropriate command or update the configuration file to enable developer tools in the Zoom client."
+      },
+      {
+        "title": "Access Developer Tools",
+        "content": "Right-click within the Zoom client and select 'Inspect Element' to open the developer tools."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Configure Zoom App Features",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable APIs and Events",
+            "content": "Ensure that the required APIs and events are enabled both in the Zoom Marketplace and within your Zoom App JavaScript file."
+          },
+          {
+            "title": "Check for Errors",
+            "content": "Use the developer tools to check for any errors related to API access or SDK loading."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T18:30:11.647Z",
+      "updated": "2026-02-01T18:30:11.647Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=yYOMKpgXOYU",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769970615347-607",
+    "title": "Zoom Recordings Not Showing Up",
+    "problemDescription": "Zoom recordings are not appearing in the expected location.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "recordings",
+      "meeting",
+      "cloud",
+      "local"
+    ],
+    "steps": [
+      {
+        "title": "Check Processing Status",
+        "content": "If the meeting was longer than an hour, the recording may still be processing. Wait for the process to complete."
+      },
+      {
+        "title": "Convert the Recording",
+        "content": "Open the Zoom desktop client, go to 'Meetings' > 'Recorded', and click 'Convert' if the recording hasn't been converted yet."
+      },
+      {
+        "title": "Start Meetings from Desktop",
+        "content": "Ensure automatic recording is enabled and start the meeting from the desktop client, as automatic recordings do not initiate from mobile devices."
+      },
+      {
+        "title": "Check Admin Settings",
+        "content": "If you are the host but not the account admin, the admin may have disabled access to cloud recordings. Contact your administrator."
+      },
+      {
+        "title": "Enable Local Recording",
+        "content": "Log into the Zoom web portal, go to 'My Account' > 'Account Settings' > 'Recording', and enable local recording."
+      },
+      {
+        "title": "Enable Cloud Recording (Paid Accounts)",
+        "content": "For paid accounts, enable cloud recording in the 'Recording' tab of the account settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Recording Notifications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Recording Notifications",
+            "content": "Turn on the recording notifications option to receive voice prompts alerting participants that the meeting is being recorded."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T18:30:15.347Z",
+      "updated": "2026-02-01T18:30:15.347Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=yEnW1J1dJuE",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769970622769-730",
+    "title": "Unfreeze Chrome Browser from Scam Tab",
+    "problemDescription": "Chrome browser is frozen due to a scam tab that won't close, preventing normal usage.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "browser",
+      "frozen",
+      "scam",
+      "tab"
+    ],
+    "steps": [
+      {
+        "title": "Wipe Browser Data",
+        "content": "Go to Settings => Apps => Chrome => Storage => Clear Data and Clear Cache. This will reset the browser without uninstalling it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Chrome",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Chrome",
+            "content": "Uninstall the Chrome browser from your device."
+          },
+          {
+            "title": "Reinstall Chrome",
+            "content": "Download and reinstall Chrome from the Google Play Store."
+          }
+        ]
+      },
+      {
+        "title": "Root and Uninstall Preinstalled Apps",
+        "type": "Advanced Workaround",
+        "steps": [
+          {
+            "title": "Root Your Device",
+            "content": "Root your phone to gain administrative access."
+          },
+          {
+            "title": "Uninstall Preinstalled Apps",
+            "content": "Uninstall the preinstalled apps that might be causing the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T18:30:22.769Z",
+      "updated": "2026-02-01T18:30:22.769Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/206838/chrome-browser-frozen-from-scam-tab-how-to-fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769970625370-639",
+    "title": "Fix Chrome Blank Pages on Android",
+    "problemDescription": "Chrome pages turn blank after fully loading on Android devices.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "android",
+      "blank pages",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Clear Chrome from Recent Apps",
+        "content": "Close Chrome and clear it from your recent apps. Reopen Chrome to see if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable 16-bit Transparency",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Developer Options",
+            "content": "Go to Settings > About phone > Tap Build number seven times to enable Developer Options."
+          },
+          {
+            "title": "Disable 16-bit Transparency",
+            "content": "Go to Settings > Developer Options > Disable 'Disable HW overlays' or '16-bit Transparency'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T18:30:25.370Z",
+      "updated": "2026-02-01T18:30:25.370Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/78763/chrome-pages-turns-blank-after-loading",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769970627403-44",
+    "title": "Fix Chrome Not Loading Videos on Android",
+    "problemDescription": "Chrome browser fails to load and play videos, showing a non-functional play button.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "videos",
+      "android",
+      "loading"
+    ],
+    "steps": [
+      {
+        "title": "Clear Browser Cache",
+        "content": "Go to Chrome settings, tap 'Privacy and security', then 'Clear browsing data'. Select 'Cached images and files' and tap 'Clear data'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Switch to Chrome Canary",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Chrome Canary",
+            "content": "Download and install Chrome Canary from the Google Play Store. This is an unstable version but may resolve the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T18:30:27.403Z",
+      "updated": "2026-02-01T18:30:27.403Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/166596/chrome-does-not-load-videos",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
