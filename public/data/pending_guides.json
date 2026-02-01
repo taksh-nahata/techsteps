@@ -74827,5 +74827,676 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1769941312377-320",
+    "title": "Fix Google Drive Refused to Connect",
+    "problemDescription": "Google Drive displays 'Google Drive refused to connect' error when trying to access it.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "Google Drive",
+      "connection error",
+      "browser issue"
+    ],
+    "steps": [
+      {
+        "title": "Open Incognito Mode",
+        "content": "Open Chrome and then open an incognito mode window. It is usually located in the Three-dot menu in the top-right corner."
+      },
+      {
+        "title": "Access Google Drive",
+        "content": "Next, open Google Drive by entering drive.google.com in the address bar."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Sign Out and Sign In",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Sign Out of Google Account",
+            "content": "Go to the Google Drive website, select Go to Drive, and then sign out of your Google account."
+          },
+          {
+            "title": "Sign In Again",
+            "content": "Sign in to your Drive account using your Google account's username and password."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T10:21:52.377Z",
+      "updated": "2026-02-01T10:21:52.377Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/drive-google-refused-to-connect/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769941314153-892",
+    "title": "Fix Zoom Email Not Received",
+    "problemDescription": "Not receiving email messages from Zoom, including notifications and activation emails.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "email",
+      "notifications",
+      "activation"
+    ],
+    "steps": [
+      {
+        "title": "Wait for Delivery",
+        "content": "Zoom emails can take up to 30 minutes or longer to arrive. Wait a bit before taking further action."
+      },
+      {
+        "title": "Check Spam Folder",
+        "content": "Verify your spam folder for emails from no-reply@zoom.us, especially if using Gmail or a personal email service."
+      },
+      {
+        "title": "Whitelist Zoom's Email IP Addresses",
+        "content": "If the issue persists, contact your IT department to whitelist Zoom’s email IP addresses."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-01T10:21:54.153Z",
+      "updated": "2026-02-01T10:21:54.153Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-problems-with-zoom-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769941316917-961",
+    "title": "Extract Key Actions from Long Email Threads",
+    "problemDescription": "You've returned from a holiday and need to quickly understand the key actions from a long email thread.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "email",
+      "productivity",
+      "ai",
+      "gemini"
+    ],
+    "steps": [
+      {
+        "title": "Use the AI Prompt",
+        "content": "Use the following prompt in Google Gemini: 'I have a long email thread. Please extract and summarize the key actions I need to take.'"
+      },
+      {
+        "title": "Paste the Email Thread",
+        "content": "Copy and paste the entire email thread into the chat."
+      },
+      {
+        "title": "Review the Summary",
+        "content": "Review the summary provided by the AI to identify the key actions you need to take."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manual Review",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Skimming",
+            "content": "Quickly skim through the email thread to identify any action items or important points."
+          },
+          {
+            "title": "Highlight Key Points",
+            "content": "Highlight or note down the key points and actions that require your attention."
+          },
+          {
+            "title": "Prioritize Actions",
+            "content": "Prioritize the actions based on urgency and importance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T10:21:56.917Z",
+      "updated": "2026-02-01T10:21:56.917Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/these-are-my-favorite-google-gemini-prompts-after-100-hours-using-the-ai-chatbot/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769941322445-324",
+    "title": "Get Siri to Read Web Results Aloud",
+    "problemDescription": "Siri finds web results but won't read them aloud when asked.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "siri",
+      "read aloud",
+      "web results",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Enable 'Hey Siri'",
+        "content": "Go to Settings > Siri & Search > Turn on 'Listen for Hey Siri'. This can help Siri recognize follow-up commands better."
+      },
+      {
+        "title": "Ask Siri to Read the Results",
+        "content": "After Siri finds the web results, say 'Hey Siri, read the page' or 'Hey Siri, read it to me'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Alexa as a Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Alexa",
+            "content": "Download and install the Alexa app from the Apple App Store."
+          },
+          {
+            "title": "Launch Alexa with Siri",
+            "content": "Use Siri to launch Alexa by saying 'Hey Siri, launch Alexa.'"
+          },
+          {
+            "title": "Ask Alexa Your Question",
+            "content": "Use the Alexa trigger word 'Alexa' followed by your question to have it read aloud."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T10:22:02.445Z",
+      "updated": "2026-02-01T10:22:02.445Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/377766/how-to-get-siri-to-read-result-from-the-web",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769941323668-319",
+    "title": "Reset HomeKit Configuration",
+    "problemDescription": "HomeKit stops working and shows 'no response' warnings for all connected devices.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "HomeKit",
+      "reset",
+      "configuration",
+      "iOS",
+      "Apple TV"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Go to the Settings app on your iPhone."
+      },
+      {
+        "title": "Navigate to Privacy",
+        "content": "Tap on 'Privacy' in the Settings menu."
+      },
+      {
+        "title": "Access HomeKit Settings",
+        "content": "Tap on 'HomeKit' under Privacy."
+      },
+      {
+        "title": "Reset HomeKit Configuration",
+        "content": "Tap on 'Reset HomeKit Configuration' and confirm the action."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restart Apple TV",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Apple TV",
+            "content": "Restart your Apple TV to see if the issue resolves without resetting HomeKit."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T10:22:03.668Z",
+      "updated": "2026-02-01T10:22:03.668Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/315732/how-to-reset-homekit",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769941326547-562",
+    "title": "Configure Siri for Morning Updates",
+    "problemDescription": "Set up Siri to provide a daily schedule and weather update with a single command.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "siri",
+      "ios",
+      "schedule",
+      "weather",
+      "shortcuts"
+    ],
+    "steps": [
+      {
+        "title": "Update to iOS 12 or Later",
+        "content": "Ensure your iPhone is running iOS 12 or a later version to access Siri Shortcuts."
+      },
+      {
+        "title": "Open the Shortcuts App",
+        "content": "Launch the Shortcuts app on your iPhone."
+      },
+      {
+        "title": "Create a New Shortcut",
+        "content": "Tap the '+' icon to create a new shortcut."
+      },
+      {
+        "title": "Add Actions",
+        "content": "Add actions for your schedule and weather information. For example, use the 'Get Events' action for your calendar and the 'Get Weather' action for weather updates."
+      },
+      {
+        "title": "Set Up Siri Phrase",
+        "content": "Tap on 'Add to Siri' and record a phrase like 'Tell me the plan for the day'."
+      },
+      {
+        "title": "Save the Shortcut",
+        "content": "Save the shortcut and ensure it is enabled."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Third-Party Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Third-Party App",
+            "content": "Download an app like 'Good Morning' or 'Routine Hub' from the App Store."
+          },
+          {
+            "title": "Configure the App",
+            "content": "Set up the app to provide your desired information, such as schedule and weather updates."
+          },
+          {
+            "title": "Set Up Siri Integration",
+            "content": "Use the app's settings to integrate with Siri and set a custom phrase for triggering the updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T10:22:06.547Z",
+      "updated": "2026-02-01T10:22:06.547Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/334634/configuring-siri-to-tell-me-the-things-i-want-to-know-in-the-morning",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769941329800-732",
+    "title": "Disable Voice Assistant on Sony WF-1000XM3",
+    "problemDescription": "The Sony WF-1000XM3 headset's voice assistant is activating unintentionally, causing unwanted actions like calling contacts.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "sony",
+      "wf-1000xm3",
+      "voice assistant",
+      "disable",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Update the Sony Headphones App",
+        "content": "Ensure you have the latest version of the Sony Headphones app installed on your iOS device."
+      },
+      {
+        "title": "Access the Settings",
+        "content": "Open the Sony Headphones app and navigate to the settings menu."
+      },
+      {
+        "title": "Disable Voice Assistant",
+        "content": "Look for the voice assistant or voice control settings and turn them off."
+      },
+      {
+        "title": "Check iOS Settings",
+        "content": "Go to your iPhone's settings, find the Sony Headphones app, and ensure that any permissions related to Siri or voice control are disabled."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset the Headphones",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset the Headphones",
+            "content": "Perform a factory reset on the Sony WF-1000XM3 headphones to ensure all settings are reverted to default."
+          },
+          {
+            "title": "Reconnect to Your Device",
+            "content": "Reconnect the headphones to your iOS device and check if the voice assistant is disabled."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T10:22:09.800Z",
+      "updated": "2026-02-01T10:22:09.800Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/437575/sony-wf-1000xm3-turn-off-the-voice-assistant",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769941334970-402",
+    "title": "Tidio Chatbot Not Responding",
+    "problemDescription": "The Tidio chatbot is not responding to customer inquiries as expected.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "tidio",
+      "chatbot",
+      "response",
+      "automation",
+      "customer support"
+    ],
+    "steps": [
+      {
+        "title": "Check Chatbot Configuration",
+        "content": "Ensure the chatbot is properly configured in the Tidio dashboard. Verify that the correct templates and scenarios are selected under the Flows section."
+      },
+      {
+        "title": "Review FAQs for Lyro AI",
+        "content": "Make sure the Lyro AI agent has been trained with relevant FAQs. The AI learns from these FAQs to address customer issues."
+      },
+      {
+        "title": "Test Chatbot Interaction",
+        "content": "Simulate a live chat conversation to test if the chatbot responds appropriately. Check the speed and accuracy of the responses."
+      },
+      {
+        "title": "Check Integration Settings",
+        "content": "Verify that the multichannel integration settings are correctly configured. Ensure that the chatbot is enabled for the desired platforms (e.g., website chat, Facebook Messenger, Instagram, WhatsApp)."
+      },
+      {
+        "title": "Monitor Visitor Tracking",
+        "content": "Use the visitor tracking feature to monitor real-time visitor activity. Start chats based on user behavior to proactively engage with customers."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reconfigure Chatbot Templates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Flows Section",
+            "content": "Go to the Flows section in the Tidio dashboard."
+          },
+          {
+            "title": "Select and Personalize Templates",
+            "content": "Choose and personalize templates according to specific scenarios, such as a cart booster, post-purchase discount, or Instagram autoresponder."
+          },
+          {
+            "title": "Save and Test",
+            "content": "Save the changes and test the chatbot again to see if it responds correctly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T10:22:14.970Z",
+      "updated": "2026-02-01T10:22:14.970Z",
+      "sourceUrl": "https://www.techradar.com/reviews/tidio-review",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769941338589-851",
+    "title": "Set Up Tidio Helpdesk Software",
+    "problemDescription": "Setting up Tidio helpdesk software for managing customer interactions.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "helpdesk",
+      "tidio",
+      "customer support",
+      "setup"
+    ],
+    "steps": [
+      {
+        "title": "Install Tidio",
+        "content": "Copy the installation code from the Tidio dashboard and paste it into your website's HTML code."
+      },
+      {
+        "title": "Customize the Chat Widget",
+        "content": "Use the Tidio dashboard to customize the chat widget to match your website's style."
+      },
+      {
+        "title": "Set Up Chatbots",
+        "content": "Create automated workflows using the chatbot feature in Tidio without needing coding skills."
+      },
+      {
+        "title": "Review Documentation and Tutorials",
+        "content": "Utilize the detailed documentation, video tutorials, and guided setups provided by Tidio to learn and optimize the platform."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use SolarWinds Service Desk",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact SolarWinds Support",
+            "content": "Reach out to SolarWinds support via email, live chat, or an online ticket submission system for assistance."
+          },
+          {
+            "title": "Utilize SolarWinds Resources",
+            "content": "Access the knowledge base, video tutorials, and community forums provided by SolarWinds to resolve issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use LiveChat Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact LiveChat Support",
+            "content": "Reach out to LiveChat support via live chat, email, or phone for assistance."
+          },
+          {
+            "title": "Utilize LiveChat Resources",
+            "content": "Access the knowledge base, video tutorials, and community forums provided by LiveChat to resolve issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T10:22:18.589Z",
+      "updated": "2026-02-01T10:22:18.589Z",
+      "sourceUrl": "https://www.techradar.com/best/best-helpdesk-software",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769941340768-342",
+    "title": "Enhance Ecommerce Platform Functionality",
+    "problemDescription": "Improve the functionality and reach of your ecommerce platform.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "ecommerce",
+      "platform",
+      "functionality",
+      "marketing",
+      "integration"
+    ],
+    "steps": [
+      {
+        "title": "Integrate Multiple Sales Channels",
+        "content": "Utilize platforms that support multiple selling channels such as Facebook Messenger, Amazon, and Instagram to expand your market reach and revenue streams."
+      },
+      {
+        "title": "Leverage Built-in Analytics",
+        "content": "Choose platforms with built-in analytics features to track store performance and identify emerging trends."
+      },
+      {
+        "title": "Utilize Marketing Features",
+        "content": "Take advantage of marketing features like Facebook and Instagram Shop integration, email marketing, and customer engagement tools to enhance your marketing efforts."
+      },
+      {
+        "title": "Implement Inventory Sync",
+        "content": "Use inventory sync features to automatically synchronize inventory levels across all sales channels, preventing over-selling and providing real-time inventory visibility."
+      },
+      {
+        "title": "Customize Storefronts",
+        "content": "Create customizable storefronts on social media platforms like Facebook and Instagram to reach a wider audience."
+      },
+      {
+        "title": "Explore AI Features",
+        "content": "Utilize artificial intelligence features for personalized shopping experiences, product suggestions, and simplified reordering."
+      },
+      {
+        "title": "Consider Specialized Functionality",
+        "content": "For foodservice businesses, look into specialized functionality like online ordering, QR code menus, and delivery management capabilities."
+      },
+      {
+        "title": "Ensure Security",
+        "content": "Prioritize platforms with robust security features to protect your business and customer data."
+      },
+      {
+        "title": "Leverage Community Support",
+        "content": "Opt for platforms with active community support to benefit from ongoing improvements and swift issue resolution."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Utilize Extensive Integrations and Plugins",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Explore Integrations",
+            "content": "Look for platforms that offer extensive integrations and plugins to customize and enhance your store's functionality as your business evolves."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T10:22:20.768Z",
+      "updated": "2026-02-01T10:22:20.768Z",
+      "sourceUrl": "https://www.techradar.com/news/the-best-ecommerce-platform",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769941342335-566",
+    "title": "Fix VPN Data Limit Issues",
+    "problemDescription": "Quickly hitting monthly data limits on free VPN services.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "vpn",
+      "data limit",
+      "free vpn"
+    ],
+    "steps": [
+      {
+        "title": "Monitor Data Usage",
+        "content": "Keep track of your data consumption to avoid hitting monthly limits."
+      },
+      {
+        "title": "Limit Streaming",
+        "content": "Avoid streaming in HD as it consumes significant data. Opt for lower quality when possible."
+      },
+      {
+        "title": "Use Paid VPN for Streaming",
+        "content": "Consider upgrading to a paid VPN service if streaming is a priority, as free VPNs often have limited data and server locations."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Proton VPN for Better Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Proton VPN Status",
+            "content": "Visit Proton VPN's status page to check for any known system issues."
+          },
+          {
+            "title": "Use In-App Help",
+            "content": "Utilize the comprehensive in-app help menus for troubleshooting."
+          },
+          {
+            "title": "Contact Support",
+            "content": "If issues persist, use Proton VPN's 24/7 live chat customer service or email ticket support."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T10:22:22.335Z",
+      "updated": "2026-02-01T10:22:22.335Z",
+      "sourceUrl": "https://www.techradar.com/vpn/best-free-vpn",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769941348263-277",
+    "title": "Fix Windows 10 ESU Enrollment Wizard Crash",
+    "problemDescription": "Windows 10 users are unable to enroll in Extended Security Updates (ESU) due to a crash in the enrollment wizard.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 10",
+      "ESU",
+      "enrollment wizard",
+      "crash",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Wait for Microsoft's Official Fix",
+        "content": "Microsoft has acknowledged the issue and released a fix. Ensure your system is updated to the latest version."
+      },
+      {
+        "title": "Manually Check for Updates",
+        "content": "Go to Settings > Update & Security > Windows Update > Check for updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use System Restore",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Restore",
+            "content": "Go to Control Panel > Recovery > Open System Restore."
+          },
+          {
+            "title": "Select a Restore Point",
+            "content": "Choose a restore point before the issue started and follow the prompts to restore your system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T10:22:28.263Z",
+      "updated": "2026-02-01T10:22:28.263Z",
+      "sourceUrl": "https://lifehacker.com/tech/microsoft-broke-and-fixed-extended-security-updates-for-windows-10",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
