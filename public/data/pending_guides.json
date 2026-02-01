@@ -80111,5 +80111,486 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1769980821353-71",
+    "title": "Fix Slow Shutdown on Windows 11",
+    "problemDescription": "Windows 11 takes a long time to shut down even after closing all apps.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "slow shutdown",
+      "repair"
+    ],
+    "steps": [
+      {
+        "title": "Test Hardware",
+        "content": "Use the computer manufacturer's Hardware Diagnostic App to check for hardware issues, focusing on memory and the main disk."
+      },
+      {
+        "title": "Run DISM and SFC",
+        "content": "Open Command Prompt as Administrator and run the following commands in order:\n\n(i) DISM.exe /Online /Cleanup-image /StartComponentCleanup\n(ii) DISM.exe /Online /Cleanup-Image /Restorehealth\n(iii) SFC /SCANNOW\n\nRestart the computer after all commands are complete."
+      },
+      {
+        "title": "Perform a Windows 11 Repair Install",
+        "content": "Download the Windows 11 Media Creation Tool, create a USB key, and run Setup from the USB key. Choose the 'Keep Everything' option during the repair process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Windows 11",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Back up all important data before proceeding."
+          },
+          {
+            "title": "Reinstall Windows 11",
+            "content": "Perform a clean installation of Windows 11."
+          },
+          {
+            "title": "Check for Problematic Drivers",
+            "content": "After reinstalling, check for any problematic drivers, such as Boom3D, and disable or uninstall them if necessary."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T21:20:21.353Z",
+      "updated": "2026-02-01T21:20:21.353Z",
+      "sourceUrl": "https://superuser.com/questions/1787914/very-slow-shutdown-on-windows-11",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769980824183-807",
+    "title": "Windows 11 Update Stuck at 0%",
+    "problemDescription": "Windows 11 update is stuck at 'downloading 0%' but can be installed using PowerShell.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "update",
+      "stuck",
+      "0%",
+      "powershell"
+    ],
+    "steps": [
+      {
+        "title": "Use Advanced Startup to Reset PC",
+        "content": "Go to Windows Update, then Advanced options, Recovery, and then Advanced startup. Click 'Restart now'. Then go to Troubleshoot, Reset this PC, then 'Keep my files', and use the cloud download to reset. Make sure to update all drivers and use all updates in settings and the Play Store right after download."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Windows 11 Repair Install",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Windows 11 Media Creation Tool",
+            "content": "Go to the Windows Media Creation Link, click on the Download button (not Upgrade Button) and select Download. Run the downloaded file (double click on it). You will need a USB key as running the download creates a USB Key."
+          },
+          {
+            "title": "Run Setup on the USB Key",
+            "content": "Run Setup on the USB Key. This will launch the Repair. Proceed normally answering the prompts. The default Keep prompt is to Keep Everything."
+          }
+        ]
+      },
+      {
+        "title": "Fresh Install of Windows 11",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Back Up Data",
+            "content": "Back everything up (documents, data, email)."
+          },
+          {
+            "title": "Install Windows 11 Fresh",
+            "content": "Install Windows 11 fresh, let it establish its 3 partitions, and then install Apps and recover data."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T21:20:24.183Z",
+      "updated": "2026-02-01T21:20:24.183Z",
+      "sourceUrl": "https://superuser.com/questions/1786236/windows-11-update-stuck-at-downloading-0-but-able-to-install-using-powershe",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769980859566-74",
+    "title": "Fix Outlook Email to Text Not Working for Verizon",
+    "problemDescription": "Outlook email to text feature is not working or experiencing delays when sending to Verizon numbers.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Outlook",
+      "email",
+      "text",
+      "Verizon",
+      "delay"
+    ],
+    "steps": [
+      {
+        "title": "Check Email Address Format",
+        "content": "Ensure you are using the correct email address format for Verizon. Use the format `phonenumber@vtext.com` for standard SMS and `phonenumber@vzwpix.com` for MMS."
+      },
+      {
+        "title": "Verify Recipient's Number",
+        "content": "Double-check that the recipient's phone number is correct and that they are indeed a Verizon customer."
+      },
+      {
+        "title": "Check for Error Messages",
+        "content": "Look for any error messages or codes in the failure notice. These can provide clues about what might be going wrong."
+      },
+      {
+        "title": "Test with Different Carriers",
+        "content": "Send a test email to a different carrier to see if the issue is specific to Verizon or a more general problem."
+      },
+      {
+        "title": "Contact Verizon Support",
+        "content": "If the issue persists, contact Verizon customer support to see if there are any known issues or restrictions on their end."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Email Service",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to Gmail or Another Service",
+            "content": "If the delay is consistent and unresolved, consider using a different email service like Gmail to send text messages."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T21:20:59.566Z",
+      "updated": "2026-02-01T21:20:59.566Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlook-email-to-text-not-working-for-verizon-how/e633c65a-85c2-452e-8dfc-a1bac36fae26",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769980862849-609",
+    "title": "Fix Lost Access to OneDrive Files",
+    "problemDescription": "User has lost access to their OneDrive files and needs to regain control.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "OneDrive",
+      "access",
+      "account",
+      "recovery"
+    ],
+    "steps": [
+      {
+        "title": "Contact Microsoft Support",
+        "content": "Reach out to Microsoft Support through their official website or phone number. Provide proof of ownership and explain the situation."
+      },
+      {
+        "title": "Verify Account Recovery Options",
+        "content": "Check if there are any account recovery options available, such as security questions or two-factor authentication."
+      },
+      {
+        "title": "Use Microsoft Account Recovery Form",
+        "content": "Fill out the Microsoft Account Recovery Form with all necessary details to verify your identity and regain access."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Community Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Unauthorized Access",
+            "content": "Review your account activity for any unauthorized access and report it immediately."
+          },
+          {
+            "title": "Use a Different Device or Browser",
+            "content": "Try accessing your OneDrive from a different device or browser to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T21:21:02.849Z",
+      "updated": "2026-02-01T21:21:02.849Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/officeversion_other-word/mail-merge-labels-in-word-2010/6a20770e-2b21-457e-adfa-4a8c6a3464a0?msgId=0a108673-51cf-4564-8a69-756307b2c041&page=1",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769980864393-300",
+    "title": "Fix Laptop Keyboard Keys Not Working",
+    "problemDescription": "Certain keys on your laptop keyboard are not functioning properly.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "keyboard",
+      "laptop",
+      "keys",
+      "not working",
+      "hardware issue"
+    ],
+    "steps": [
+      {
+        "title": "Test with an External Keyboard",
+        "content": "Connect an external keyboard to your laptop and check if it works properly. This will help determine if the issue is with the hardware or software."
+      },
+      {
+        "title": "Run Keyboard Troubleshooter",
+        "content": "Press the Windows key + I to open Settings. Click on 'System,' choose 'Troubleshoot,' select 'Keyboard' under 'Other troubleshooters,' and click 'Run.'"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Hardware Repair",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit a Hardware Repair Shop",
+            "content": "If the external keyboard works and the troubleshooter indicates a hardware problem, take your laptop to a hardware repair shop or contact the manufacturer's service center for inspection and potential keyboard replacement."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T21:21:04.393Z",
+      "updated": "2026-02-01T21:21:04.393Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/how-to-fix-keyboard-keys-on-a-laptop-not-working/5cecf1a7-aa94-48af-bb65-0bbcc999b72b",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769980866174-734",
+    "title": "Fix Authenticator Infinite Loop",
+    "problemDescription": "Stuck in an infinite loop of successful registration in the Microsoft Authenticator app.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "authenticator",
+      "infinite loop",
+      "registration",
+      "microsoft"
+    ],
+    "steps": [
+      {
+        "title": "Contact Microsoft Support",
+        "content": "Reach out to Microsoft Support for professional assistance, as this issue may require specialized help."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Seek Expert Advice on Microsoft Learn",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Microsoft Learn",
+            "content": "Go to the Microsoft Learn platform."
+          },
+          {
+            "title": "Ask a Question",
+            "content": "Click on 'Ask a question' and provide details about your issue."
+          },
+          {
+            "title": "Engage with Experts",
+            "content": "Engage with experts who can provide more professional solutions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T21:21:06.174Z",
+      "updated": "2026-02-01T21:21:06.174Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/stuck-at-authenticator-infinite-loop-of-successful/cb40dde4-0810-4fab-b415-9755ddbfc389",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769980893305-468",
+    "title": "Fix USB Stick Not Recognized in VirtualBox (Windows XP Guest)",
+    "problemDescription": "USB devices are not recognized in Windows XP guest on VirtualBox with Ubuntu 14.04 as host.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "virtualbox",
+      "usb",
+      "windows xp",
+      "ubuntu"
+    ],
+    "steps": [
+      {
+        "title": "Disable EHCI in VirtualBox Settings",
+        "content": "Open VirtualBox, go to the settings of your Windows XP virtual machine, navigate to the USB section, and uncheck the EHCI (USB 2.0) Controller option. Then start the guest OS."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Downgrade VirtualBox Extensions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Downgrade Extensions",
+            "content": "Downgrade the VirtualBox extensions to match the version of VirtualBox you are using. For example, if you are using VirtualBox 4.3.10, download and install the extensions for version 4.3.10."
+          }
+        ]
+      },
+      {
+        "title": "Disable All USB Options",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable USB in VirtualBox Settings",
+            "content": "Open VirtualBox, go to the settings of your Windows XP virtual machine, navigate to the USB section, and uncheck both USB 1.1 (OHCI) and USB 2.0 (EHCI) Controller options. Then start the guest OS."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T21:21:33.305Z",
+      "updated": "2026-02-01T21:21:33.305Z",
+      "sourceUrl": "https://askubuntu.com/questions/500697/virtualbox-usb-sticks-not-recognized-windows-xp-as-guest-ubuntu-14-04-as-host",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769980898199-322",
+    "title": "Fix Windows USB Not Recognized in Ubuntu",
+    "problemDescription": "Windows USB is not recognized when trying to create a bootable USB in Ubuntu.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "usb",
+      "ubuntu",
+      "bootable",
+      "woeusb"
+    ],
+    "steps": [
+      {
+        "title": "Install WoeUSB",
+        "content": "Open a terminal and run the following commands to install WoeUSB:\n\n```bash\nsudo add-apt-repository ppa:nilarimogard/webupd8\nsudo apt update\nsudo apt install woeusb\n```"
+      },
+      {
+        "title": "Run WoeUSB",
+        "content": "Launch WoeUSB and select your source Windows ISO file and the target USB drive."
+      },
+      {
+        "title": "Use FAT32 File System",
+        "content": "Ensure the USB drive is formatted with the FAT32 file system, as WoeUSB may not support NTFS for the latest Windows versions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use mkusb",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install mkusb",
+            "content": "Run the following commands to install mkusb:\n\n```bash\nsudo add-apt-repository ppa:mkusb/ppa\nsudo apt update\nsudo apt install mkusb mkusb-dus mkusb-plug\n```"
+          },
+          {
+            "title": "Create Bootable USB",
+            "content": "Use mkusb to create a bootable USB drive with the Windows ISO."
+          }
+        ]
+      },
+      {
+        "title": "Use dd Command",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify USB Drive",
+            "content": "Run `lsblk` to identify your USB drive (e.g., /dev/sdb)."
+          },
+          {
+            "title": "Write ISO to USB",
+            "content": "Use the `dd` command to write the ISO to the USB drive:\n\n```bash\nsudo dd if=path/to/windows.iso of=/dev/sdX bs=4M status=progress oflag=sync\n```\n\nReplace `/dev/sdX` with your USB drive identifier and `path/to/windows.iso` with the path to your Windows ISO file."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T21:21:38.199Z",
+      "updated": "2026-02-01T21:21:38.199Z",
+      "sourceUrl": "https://askubuntu.com/questions/1170126/windows-usb-is-not-recognized",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769980900431-912",
+    "title": "Fix USB Stick Not Detected in Ubuntu",
+    "problemDescription": "USB stick is not detected or mounted in Ubuntu, and it's not visible in the media folder.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "usb",
+      "ubuntu",
+      "detected",
+      "mounted",
+      "filesystem"
+    ],
+    "steps": [
+      {
+        "title": "Check for USB Detection",
+        "content": "Use the `dmesg` command to see if the USB stick is detected by the system. Look for lines containing the word 'usb'."
+      },
+      {
+        "title": "Identify the USB Device",
+        "content": "Run `fdisk -l` to list all disks and identify your USB stick (e.g., `/dev/sdd`)."
+      },
+      {
+        "title": "Run Filesystem Check",
+        "content": "Execute `sudo e2fsck -y /dev/sdd` (replace `/dev/sdd` with your USB device) to automatically fix any filesystem errors."
+      },
+      {
+        "title": "Check Physical Connections",
+        "content": "Ensure all physical connections are secure, including the USB cable and any other parts in the chain."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Unmount and Reboot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unmount Other USB Drives",
+            "content": "Unmount and unplug any other connected USB drives."
+          },
+          {
+            "title": "Reboot the System",
+            "content": "Reboot your system and plug the USB stick into a known working USB port."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T21:21:40.431Z",
+      "updated": "2026-02-01T21:21:40.431Z",
+      "sourceUrl": "https://askubuntu.com/questions/1032315/usb-stick-not-mounted-detected",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
