@@ -72175,5 +72175,555 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1769925529069-964",
+    "title": "Disable App Refresh to Save Battery",
+    "problemDescription": "Your smartphone battery drains quickly due to background app refresh.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "battery",
+      "android",
+      "app refresh",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Go to your smartphone's Settings app."
+      },
+      {
+        "title": "Navigate to Apps",
+        "content": "Tap on 'Apps' or 'Applications' to see the list of installed apps."
+      },
+      {
+        "title": "Select App Refresh",
+        "content": "Find and tap on 'Background App Refresh' or 'App Refresh'."
+      },
+      {
+        "title": "Disable App Refresh",
+        "content": "Toggle off the switch to disable background app refresh for all apps or select individual apps to disable."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Sync Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to your smartphone's Settings app."
+          },
+          {
+            "title": "Navigate to Accounts",
+            "content": "Tap on 'Accounts' or 'Accounts and Sync'."
+          },
+          {
+            "title": "Select Account",
+            "content": "Choose the account you want to adjust sync settings for."
+          },
+          {
+            "title": "Adjust Sync Frequency",
+            "content": "Tap on 'Sync Account' and adjust the sync frequency to a less frequent interval."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T05:58:49.069Z",
+      "updated": "2026-02-01T05:58:49.069Z",
+      "sourceUrl": "https://www.digitaltrends.com/wearables/how-to-save-battery-life-on-your-smartphone/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769925539567-247",
+    "title": "Fix Frozen iOS Device",
+    "problemDescription": "Your iOS device is frozen and unresponsive.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "frozen",
+      "restart",
+      "unresponsive"
+    ],
+    "steps": [
+      {
+        "title": "Force Restart",
+        "content": "Press and hold the power button and the Home key simultaneously for at least 10 seconds until the Apple logo appears."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update iOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > General > Software Update and install any available updates."
+          }
+        ]
+      },
+      {
+        "title": "Restore via iTunes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect to iTunes",
+            "content": "Connect your device to a computer with iTunes, then put your device in recovery mode and restore it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T05:58:59.567Z",
+      "updated": "2026-02-01T05:58:59.567Z",
+      "sourceUrl": "https://www.cnet.com/pictures/seven-common-ios-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769925545579-760",
+    "title": "Fix iPhone Not Charging",
+    "problemDescription": "iPhone not charging or charging slowly.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "charging",
+      "battery"
+    ],
+    "steps": [
+      {
+        "title": "Clean the Charging Port",
+        "content": "Use a soft-bristled brush or a can of compressed air to clean the charging port of any debris or lint."
+      },
+      {
+        "title": "Check the Charging Cable and Adapter",
+        "content": "Try using a different charging cable and adapter to rule out any issues with the accessories."
+      },
+      {
+        "title": "Restart Your iPhone",
+        "content": "Press and hold the power button and either volume button, then drag the slider to turn off your iPhone. Wait a few seconds, then turn it back on."
+      },
+      {
+        "title": "Update iOS",
+        "content": "Go to Settings > General > Software Update and install any available updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset All Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset All Settings",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset All Settings. This will not delete your data but will reset settings like network settings, keyboard settings, and more."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Physical Damage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect the Charging Port",
+            "content": "Look for any signs of physical damage or bent pins in the charging port. If damage is found, you may need to get it repaired."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T05:59:05.579Z",
+      "updated": "2026-02-01T05:59:05.579Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/iphone-troubleshooting-roundup/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769925556611-288",
+    "title": "Troubleshoot Mac with Startup Options",
+    "problemDescription": "Your Mac is experiencing issues that require troubleshooting or reinstallation of macOS.",
+    "category": "macOS",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "troubleshoot",
+      "startup",
+      "macOS"
+    ],
+    "steps": [
+      {
+        "title": "Access Startup Options",
+        "content": "1. Turn off your Mac. 2. Press the power button and immediately hold the power button until you see 'Loading startup options.' 3. Select 'Options' and click 'Continue.'"
+      },
+      {
+        "title": "Use Safe Mode",
+        "content": "1. From the startup options, select your startup disk. 2. Press and hold the Shift key, then click 'Continue in Safe Mode.' 3. Your Mac will restart in Safe Mode, which can help identify and fix issues."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "1. From the startup options, select 'Options' and click 'Continue.' 2. In the Recovery app, go to the top menu bar and select 'Reinstall macOS.' 3. Follow the on-screen instructions to reinstall macOS."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Internet Recovery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Internet Recovery",
+            "content": "1. Turn off your Mac. 2. Press the power button and immediately hold Command (⌘) + Option (⌥) + R until you see a spinning globe."
+          },
+          {
+            "title": "Reinstall macOS",
+            "content": "1. In the Recovery app, select your language and go to the top menu bar. 2. Select 'Reinstall macOS' and follow the on-screen instructions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T05:59:16.611Z",
+      "updated": "2026-02-01T05:59:16.611Z",
+      "sourceUrl": "https://www.howtogeek.com/189104/troubleshoot-your-mac-with-these-hidden-startup-options/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769925570802-566",
+    "title": "Fix WhatsApp Freezing on iOS 16.5",
+    "problemDescription": "WhatsApp freezes 3 seconds after opening on iOS 16.5.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "freezing",
+      "ios",
+      "app issue"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Device",
+        "content": "Turn your iPhone off and then back on to see if that helps."
+      },
+      {
+        "title": "Check for Updates",
+        "content": "Make sure your iOS and WhatsApp are up-to-date. Sometimes app issues can be related to needing a software or app update."
+      },
+      {
+        "title": "Offload the App",
+        "content": "Go to Settings > General > iPhone Storage > WhatsApp > Offload App. This will uninstall the app but keep your data. Then reinstall it from the App Store."
+      },
+      {
+        "title": "Check App Permissions",
+        "content": "Make sure that WhatsApp has the necessary permissions enabled, such as access to your camera, microphone, and photos."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Background Refresh",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Background Refresh",
+            "content": "Go to Settings > General > Background App Refresh and turn it off for WhatsApp."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Migrate to WhatsApp Business",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download WhatsApp Business",
+            "content": "Download and install WhatsApp Business from the App Store."
+          },
+          {
+            "title": "Migrate Your Data",
+            "content": "Follow the in-app instructions to migrate your data from WhatsApp to WhatsApp Business."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Factory Reset",
+        "type": "Last Resort",
+        "steps": [
+          {
+            "title": "Backup Your iPhone",
+            "content": "Make sure you have all your important data backed up."
+          },
+          {
+            "title": "Perform a Factory Reset",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Erase All Content and Settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T05:59:30.802Z",
+      "updated": "2026-02-01T05:59:30.802Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254898851",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769925574021-635",
+    "title": "Fix WhatsApp Freezing on iPhone",
+    "problemDescription": "WhatsApp app freezes or becomes unresponsive when opened on iPhone.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "freezing",
+      "iphone",
+      "app crash"
+    ],
+    "steps": [
+      {
+        "title": "Update iOS",
+        "content": "Check for and install any pending iOS updates on your iPhone. Go to Settings > General > Software Update."
+      },
+      {
+        "title": "Uninstall Third-Party WhatsApp",
+        "content": "If you have any third-party versions of WhatsApp installed, uninstall them and use the official WhatsApp app from the App Store."
+      },
+      {
+        "title": "Restart iPhone",
+        "content": "Restart your iPhone to clear any temporary issues. Press and hold the power button until the 'slide to power off' option appears, then slide to power off. Wait for a few seconds and turn it back on."
+      },
+      {
+        "title": "Reinstall WhatsApp",
+        "content": "Delete WhatsApp from your iPhone, then download and reinstall it from the App Store."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Remove VPN Client",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall VPN",
+            "content": "If you have a VPN client app installed, remove it and restart your iPhone."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact WhatsApp Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "If the issue persists, contact WhatsApp support directly for personalized assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T05:59:34.021Z",
+      "updated": "2026-02-01T05:59:34.021Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254896386",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769925575238-622",
+    "title": "Fix WhatsApp Crashes After iOS 18.3.1 Update",
+    "problemDescription": "WhatsApp crashes or shuts down after updating to iOS 18.3.1.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "ios",
+      "crash",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall WhatsApp",
+        "content": "Back up your WhatsApp data, delete the app, and reinstall it from the App Store to ensure you have the latest version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update to iOS 18.4.1",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update iOS",
+            "content": "Check for and install the latest iOS update (18.4.1 or later) to resolve the issue."
+          }
+        ]
+      },
+      {
+        "title": "Contact WhatsApp Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "If the problem persists, contact WhatsApp support for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T05:59:35.238Z",
+      "updated": "2026-02-01T05:59:35.239Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255997731",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769925586625-338",
+    "title": "Fix Microsoft Teams Error: 'We ran into a problem getting your team'",
+    "problemDescription": "Microsoft Teams displays an error message 'We ran into a problem getting your team' when accessing various Team channels.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Teams",
+      "error",
+      "team channel",
+      "restart"
+    ],
+    "steps": [
+      {
+        "title": "Restart Microsoft Teams",
+        "content": "Close Microsoft Teams completely and then reopen it to resolve the issue."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-01T05:59:46.625Z",
+      "updated": "2026-02-01T05:59:46.625Z",
+      "sourceUrl": "https://www.reddit.com/r/MicrosoftTeams/comments/159brq6/fyi_new_teams_error_message_we_ran_into_a_problem/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769925588674-847",
+    "title": "Fix Microsoft Teams Connectivity Issues",
+    "problemDescription": "Microsoft Teams audio and video calls are unreliable, freezing, or dropping.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "connectivity",
+      "audio",
+      "video",
+      "freezing",
+      "dropping"
+    ],
+    "steps": [
+      {
+        "title": "Check Network Stability",
+        "content": "Ensure a stable network connection. Use wired connections if possible, as they are more reliable than Wi-Fi."
+      },
+      {
+        "title": "Analyze Network Traffic",
+        "content": "Use tools like Wireshark to analyze network traffic and identify issues such as malformed packets or retransmissions."
+      },
+      {
+        "title": "Optimize UDP and TCP Settings",
+        "content": "Ensure that UDP sessions are prioritized for better performance. Investigate and resolve any issues with STUN/TURN sessions that may cause hiccups."
+      },
+      {
+        "title": "Update Teams and Network Drivers",
+        "content": "Ensure that Microsoft Teams and network drivers are up to date to resolve any known bugs or compatibility issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Mouse Jigglers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Mouse Jiggler",
+            "content": "Use a mouse jiggler to keep your computer active and prevent disconnections during long periods of inactivity."
+          }
+        ]
+      },
+      {
+        "title": "Create Solo Meetings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a Solo Meeting",
+            "content": "Create a solo meeting and share your screen to appear active and prevent disconnections."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T05:59:48.674Z",
+      "updated": "2026-02-01T05:59:48.674Z",
+      "sourceUrl": "https://www.reddit.com/r/MicrosoftTeams/comments/lrhxs8/diagnosing_teams_connectivity_issues/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769925590142-630",
+    "title": "Fix Microsoft Teams Activity Feed Clutter",
+    "problemDescription": "Microsoft Teams Activity feed shows old, empty, indented chats, making navigation difficult.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Teams",
+      "Activity Feed",
+      "Clutter",
+      "Bug"
+    ],
+    "steps": [
+      {
+        "title": "Clear Teams Cache",
+        "content": "Close Microsoft Teams. Press Win + R, type %appdata%\\Microsoft\\Teams, and press Enter. Delete all files and folders in the directory. Restart Teams."
+      },
+      {
+        "title": "Update Teams",
+        "content": "Go to the Microsoft Teams download page and download the latest version. Install it to ensure you have the most recent updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Teams",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Teams",
+            "content": "Go to Control Panel > Programs > Uninstall a program. Select Microsoft Teams and click Uninstall."
+          },
+          {
+            "title": "Reinstall Teams",
+            "content": "Download the latest version of Microsoft Teams from the official website and install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T05:59:50.142Z",
+      "updated": "2026-02-01T05:59:50.142Z",
+      "sourceUrl": "https://www.reddit.com/r/MicrosoftTeams/comments/1ptsbwh/microsoft_teams_is_getting_worse_with_persistent/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
