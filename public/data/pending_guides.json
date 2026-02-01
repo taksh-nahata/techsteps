@@ -81325,5 +81325,463 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1769988075303-239",
+    "title": "Make Two-Step Verification Less Irritating",
+    "problemDescription": "Two-step verification improves security but can be inconvenient. Here are ways to make it less frustrating.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "two-step verification",
+      "2FA",
+      "security",
+      "Authy",
+      "Google Authenticator"
+    ],
+    "steps": [
+      {
+        "title": "Use Authy",
+        "content": "Download and install the Authy app. The setup wizard will guide you through the process. Authy syncs your accounts across all devices using your cellular number."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Install Google Authenticator on Multiple Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install",
+            "content": "Download and install the Google Authenticator app on multiple devices. This is useful if you don't have a cellphone or prefer not to use Authy."
+          }
+        ]
+      },
+      {
+        "title": "Store Backup Keys Securely",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Print and Encrypt",
+            "content": "Print out your backup keys and store them in an encrypted Dropbox volume for added security."
+          }
+        ]
+      },
+      {
+        "title": "Enable Two-Step Verification on All Webapps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable 2FA",
+            "content": "Go to Google's configuration screen, click 'get started', and log in to enable Two-Step Verification."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T23:21:15.303Z",
+      "updated": "2026-02-01T23:21:15.303Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/can-two-step-verification-less-irritating-four-secret-hacks-guaranteed-improve-security/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769988076919-841",
+    "title": "Fix Google Authenticator Codes Not Working",
+    "problemDescription": "Google Authenticator codes are not working when trying to log into accounts.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "google authenticator",
+      "two-factor authentication",
+      "backup codes"
+    ],
+    "steps": [
+      {
+        "title": "Sync the App's Time",
+        "content": "Ensure the time on your device is accurate. Go to your device's settings and enable automatic time synchronization."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Backup Codes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Generate Backup Codes",
+            "content": "If you are on an Android device, generate backup codes through the two-factor authentication settings."
+          },
+          {
+            "title": "Use a Backup Code",
+            "content": "When the Google Authenticator app is not working, use one of the backup codes to recover your account. Remember, each code can only be used once."
+          }
+        ]
+      },
+      {
+        "title": "Install Google Authenticator on Multiple Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install the App",
+            "content": "Install Google Authenticator on multiple devices, such as an old phone, tablet, or laptop."
+          },
+          {
+            "title": "Set Up Two-Factor Authentication",
+            "content": "Navigate to the page for setting up two-factor authentication and follow the instructions to set up the app on each device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T23:21:16.919Z",
+      "updated": "2026-02-01T23:21:16.919Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/google-authenticator-codes-stopped-working/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769988088794-424",
+    "title": "Fix Windows 11 Taskbar Hiding Behind Fullscreen Apps",
+    "problemDescription": "The taskbar in Windows 11 sometimes hides behind fullscreen apps and requires a restart of explorer.exe to fix.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "taskbar",
+      "fullscreen",
+      "explorer.exe"
+    ],
+    "steps": [
+      {
+        "title": "Restart Explorer.exe",
+        "content": "Press Ctrl + Shift + Esc to open Task Manager. Find 'Windows Explorer' under the 'Processes' tab, right-click it, and select 'Restart'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Command Prompt",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Command Prompt",
+            "content": "Press Win + R, type 'cmd', and press Enter."
+          },
+          {
+            "title": "Restart Explorer.exe",
+            "content": "In the Command Prompt, type 'taskkill /f /im explorer.exe' and press Enter. Then type 'start explorer.exe' and press Enter."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T23:21:28.794Z",
+      "updated": "2026-02-01T23:21:28.794Z",
+      "sourceUrl": "https://www.reddit.com/r/Windows11/comments/1db0on6/as_of_today_windows_11_is_still_full_of_too_many/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769988100820-946",
+    "title": "Fix Pixel Display Sleep Timer",
+    "problemDescription": "The Pixel's display sleep timer is too short and lacks a quick settings toggle.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel",
+      "display",
+      "sleep timer",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Install Caffeinate App",
+        "content": "Download and install the Caffeinate app from the Google Play Store."
+      },
+      {
+        "title": "Add Sleep Timer Toggle",
+        "content": "Open the Caffeinate app and follow the instructions to add a sleep timer toggle to your quick settings menu."
+      },
+      {
+        "title": "Adjust Sleep Timer",
+        "content": "Use the toggle in the quick settings menu to extend the display sleep timer to your desired duration."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Tasker for Auto-Rotation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Tasker",
+            "content": "Download and install the Tasker app from the Google Play Store."
+          },
+          {
+            "title": "Set Up Auto-Rotation Profiles",
+            "content": "Create specific auto-rotation settings for different apps using Tasker's automation features."
+          },
+          {
+            "title": "Apply Settings",
+            "content": "Apply the settings so that apps like YouTube launch in landscape mode while others remain in portrait mode."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T23:21:40.820Z",
+      "updated": "2026-02-01T23:21:40.820Z",
+      "sourceUrl": "https://lifehacker.com/how-to-fix-the-google-pixels-most-annoying-quirks-acco-1823366439",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769988101642-839",
+    "title": "Fix Pixel Dark Mode Not Working",
+    "problemDescription": "Dark mode not working on Pixel devices.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "dark mode",
+      "pixel"
+    ],
+    "steps": [
+      {
+        "title": "Update Your Pixel",
+        "content": "Open the Settings app, go to System > Software update, and follow the on-screen instructions to download and install the August 2025 update."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-01T23:21:41.642Z",
+      "updated": "2026-02-01T23:21:41.642Z",
+      "sourceUrl": "https://lifehacker.com/tech/the-august-update-for-android-16-fixes-these-issues-with-your-pixel",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769988106859-499",
+    "title": "Fix Corrupted Android Apps",
+    "problemDescription": "Apps are not working properly due to corrupted files.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "apps",
+      "corrupted",
+      "reinstall"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall the App",
+        "content": "Uninstall and reinstall the problematic app via the Play Store to ensure the issue is not caused by a corrupted file."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Fix Permissions via Recovery",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Access Recovery Mode",
+            "content": "Boot your device into recovery mode."
+          },
+          {
+            "title": "Fix Permissions",
+            "content": "In the advanced settings of your recovery, select 'fix permissions' to ensure all applications have the necessary permissions to work properly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T23:21:46.859Z",
+      "updated": "2026-02-01T23:21:46.859Z",
+      "sourceUrl": "https://www.reddit.com/r/Android/comments/12awnh/a_complete_maintenance_guide_to_android/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769988111604-779",
+    "title": "Report and Resolve Android Bugs",
+    "problemDescription": "How to get an Android bug resolved without being part of a development team.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "bug",
+      "resolution",
+      "open-source",
+      "notification icons"
+    ],
+    "steps": [
+      {
+        "title": "File a Bug Report",
+        "content": "Go to the Android Issue Tracker and file a detailed bug report. Include steps to reproduce, expected behavior, and actual behavior."
+      },
+      {
+        "title": "Provide Detailed Information",
+        "content": "Ensure your report includes all necessary information such as device model, Android version, logs, and any relevant code snippets."
+      },
+      {
+        "title": "Engage with the Community",
+        "content": "Participate in forums like r/androiddev to seek advice and support from other developers and enthusiasts."
+      },
+      {
+        "title": "Contribute to Open-Source",
+        "content": "If you have the skills, review the Android open-source codebase and try to identify and fix the issue yourself."
+      },
+      {
+        "title": "Follow Up",
+        "content": "Regularly check the status of your bug report and engage with the Android development team for updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Community Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Seek Community Help",
+            "content": "Post your issue on platforms like Stack Overflow or GitHub, where developers might offer solutions or workarounds."
+          },
+          {
+            "title": "Collaborate with Other Developers",
+            "content": "Work with other developers to find a temporary fix or workaround until the official bug is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T23:21:51.604Z",
+      "updated": "2026-02-01T23:21:51.604Z",
+      "sourceUrl": "https://www.reddit.com/r/androiddev/comments/192ywrt/is_it_possible_to_get_an_android_bug_resolved/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769988117367-402",
+    "title": "Fix Android Display Lines on Boot",
+    "problemDescription": "Android phone displays lines on boot that worsen with screen changes, not caused by physical damage.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "display",
+      "lines",
+      "boot"
+    ],
+    "steps": [
+      {
+        "title": "Check for Software Updates",
+        "content": "Go to Settings > System > System Update and install any available updates."
+      },
+      {
+        "title": "Safe Mode Boot",
+        "content": "Restart the phone in Safe Mode to check if a third-party app is causing the issue. Press and hold the Power button, then tap and hold 'Power Off' until 'Reboot to Safe Mode' appears."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "If the issue persists, back up your data and perform a factory reset. Go to Settings > System > Reset Options > Erase All Data (Factory Reset)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Hardware Check",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect for Physical Damage",
+            "content": "Even if no fall or water damage is suspected, carefully inspect the phone for any signs of physical damage."
+          },
+          {
+            "title": "Professional Repair",
+            "content": "If the issue persists, consult a professional technician to check for hardware issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T23:21:57.367Z",
+      "updated": "2026-02-01T23:21:57.367Z",
+      "sourceUrl": "https://www.reddit.com/r/LinusTechTips/comments/16ax5f2/android_troubleshooting/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769988128604-253",
+    "title": "Fix Discord Update Failed",
+    "problemDescription": "Discord fails to update on your computer.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "update",
+      "failed",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Clear Discord Cache",
+        "content": "Navigate to ~/Library/Application Support/discord/ on Mac or %AppData%\\Discord on Windows. Delete the 'Cache', 'Code Cache', and 'GPUCache' folders. Relaunch Discord to update."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Run Discord as Administrator",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run as Admin on Windows",
+            "content": "Right-click the Discord shortcut, select 'Run as Administrator', and confirm with 'Yes'."
+          },
+          {
+            "title": "Quit and Relaunch on Mac",
+            "content": "Quit Discord from the menu bar, then relaunch it."
+          }
+        ]
+      },
+      {
+        "title": "Manually Install the Latest Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install",
+            "content": "Manually download the latest version of Discord from the official website and install it."
+          }
+        ]
+      },
+      {
+        "title": "Check Discord Server Status",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Discord Status Site",
+            "content": "Check if Discord servers are down by visiting Discord's Status site."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T23:22:08.604Z",
+      "updated": "2026-02-01T23:22:08.604Z",
+      "sourceUrl": "https://www.howtogeek.com/894490/fix-discord-update-failed/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
