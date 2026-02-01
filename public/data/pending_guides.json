@@ -73209,5 +73209,534 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1769931323278-865",
+    "title": "Fix MacBook HP Printer Connection Issues",
+    "problemDescription": "Troubleshooting steps to resolve printing problems between a MacBook and HP printers.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "hp printer",
+      "printing",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Restart All Devices",
+        "content": "Restart your MacBook, HP printers, and the wireless router to refresh network connections and resolve temporary glitches."
+      },
+      {
+        "title": "Update macOS",
+        "content": "Ensure your MacBook is running the latest version of macOS to resolve compatibility issues with printers."
+      },
+      {
+        "title": "Reset Printing System",
+        "content": "Go to System Preferences > Printers & Scanners, right-click on the printer list, and select 'Reset printing system.' Note that this will remove all printers, so you'll need to re-add them afterward."
+      },
+      {
+        "title": "Check Connectivity",
+        "content": "Ensure that your MacBook and HP printers are connected to the same network and have a stable network connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Try a Different User Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a New User Account",
+            "content": "Create a new user account on your MacBook and see if you can print from that account. If printing works, the issue may be specific to your user account settings."
+          }
+        ]
+      },
+      {
+        "title": "Contact HP Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reach Out to HP Support",
+            "content": "If none of the above solutions work, contact HP Support for further assistance and specific troubleshooting steps based on your printer model and macOS version."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T07:35:23.278Z",
+      "updated": "2026-02-01T07:35:23.278Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254961079",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769931328395-735",
+    "title": "Fix MacBook Air Printer Issues",
+    "problemDescription": "Printer not responding or failing to print from MacBook Air.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "macbook air",
+      "printing",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check Printer Power and Supplies",
+        "content": "Ensure the printer has enough paper, ink, or toner, and that there are no paper jams or other physical issues."
+      },
+      {
+        "title": "Clear Printer Queue",
+        "content": "Go to 'System Preferences' > 'Printers & Scanners,' select your printer, and delete any stuck documents in the queue. Re-print the document."
+      },
+      {
+        "title": "Update Printer Driver",
+        "content": "Download and install the latest printer driver from the printer manufacturer's website."
+      },
+      {
+        "title": "Restart Devices",
+        "content": "Restart both your MacBook Air and the printer to resolve temporary communication issues."
+      },
+      {
+        "title": "Set Default Printer",
+        "content": "Confirm that your printer is set as the default printer in 'System Preferences' > 'Printers & Scanners'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Printing System",
+        "type": "Last Resort",
+        "steps": [
+          {
+            "title": "Reset Printing System",
+            "content": "Right-click or control-click in the 'Printers & Scanners' preferences pane, then select 'Reset printing system.' Note that this will remove all printers from your system, so you'll need to re-add them."
+          }
+        ]
+      },
+      {
+        "title": "Check Firewall and Security Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Firewall/Security Software",
+            "content": "Temporarily disable any firewall or security software that might be blocking the printing process."
+          }
+        ]
+      },
+      {
+        "title": "Test with Another Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test Printing from Another Device",
+            "content": "Try printing from another device to see if the issue is specific to your MacBook Air."
+          }
+        ]
+      },
+      {
+        "title": "Update Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Software Updates",
+            "content": "Ensure your MacBook Air's operating system and printer driver are up to date by checking for software updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T07:35:28.395Z",
+      "updated": "2026-02-01T07:35:28.395Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254806333",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769931329776-307",
+    "title": "Fix iPhone Printing Issues",
+    "problemDescription": "Troubleshooting steps to resolve printing problems from an iPhone.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iPhone",
+      "printing",
+      "AirPrint",
+      "Wi-Fi",
+      "VPN"
+    ],
+    "steps": [
+      {
+        "title": "Remove VPN Profile and App",
+        "content": "If you have a VPN installed, delete the VPN profile and app from your iPhone."
+      },
+      {
+        "title": "Power Off Devices",
+        "content": "Power off your printer and iPhone."
+      },
+      {
+        "title": "Restart Router",
+        "content": "Unplug your router for 15 seconds to restart it."
+      },
+      {
+        "title": "Power On iPhone",
+        "content": "Turn on your iPhone and connect it to the Wi-Fi network if it doesn’t automatically connect."
+      },
+      {
+        "title": "Power On Printer",
+        "content": "Power on the printer and wait for it to connect to Wi-Fi."
+      },
+      {
+        "title": "Check for Printer Updates",
+        "content": "Check with the printer manufacturer for any available software updates for the printer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Re-enter Wi-Fi Password on Printer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reconnect Printer to Wi-Fi",
+            "content": "Re-enter your Wi-Fi password on the printer to reconnect it to the Wi-Fi network."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T07:35:29.776Z",
+      "updated": "2026-02-01T07:35:29.776Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255212103",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769931349068-245",
+    "title": "Fix Android File Transfer on El Capitan",
+    "problemDescription": "Android File Transfer not working between El Capitan and Android 6.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "file transfer",
+      "el capitan",
+      "sip"
+    ],
+    "steps": [
+      {
+        "title": "Disable SIP",
+        "content": "Open Terminal and type `csrutil disable` then restart your Mac."
+      },
+      {
+        "title": "Enable SIP with Debug Mode Disabled",
+        "content": "After restarting, open Terminal again and type `csrutil enable --without debug` then restart your Mac once more."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Try Different USB Cables",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test with Another Cable",
+            "content": "Try using a different USB cable to connect your Android device to your Mac."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T07:35:49.068Z",
+      "updated": "2026-02-01T07:35:49.068Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/199632/android-file-transfer-not-working-between-el-capitan-and-android-6",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769931352548-328",
+    "title": "Alt-C App Not Syncing Between Android and Mac",
+    "problemDescription": "The Alt-C app fails to copy text from an Android phone to a Mac, with error messages indicating no text in the clipboard.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "mac",
+      "alt-c",
+      "clipboard",
+      "sync"
+    ],
+    "steps": [
+      {
+        "title": "Open Alt-C App After Copying Text",
+        "content": "After copying text on your Android device, open the Alt-C app on your phone. This ensures the app is in the foreground and can access the clipboard."
+      },
+      {
+        "title": "Paste on Mac",
+        "content": "With the Alt-C app open on your phone, attempt to paste the text on your Mac. The text should now sync and paste correctly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check App Permissions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify App Permissions",
+            "content": "Ensure that the Alt-C app has the necessary permissions to access the clipboard on both your Android device and Mac."
+          },
+          {
+            "title": "Update Apps",
+            "content": "Make sure both the Alt-C app on your Android device and Mac are updated to the latest versions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T07:35:52.548Z",
+      "updated": "2026-02-01T07:35:52.548Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/225999/cannot-use-the-alt-c-app-on-android-phone-and-mac-laptop",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769931357537-468",
+    "title": "Fix Microsoft Account Verification Issues",
+    "problemDescription": "Unable to sign in to Microsoft account using phone number verification.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "microsoft account",
+      "verification",
+      "phone number",
+      "sign in"
+    ],
+    "steps": [
+      {
+        "title": "Use an Alternative Verification Method",
+        "content": "If you're unable to verify your account with your phone number, try using an alternative verification method such as email or an authenticator app."
+      },
+      {
+        "title": "Check Your Internet Connection",
+        "content": "Ensure that your internet connection is stable and working properly, as this can sometimes cause verification issues."
+      },
+      {
+        "title": "Reset Your Password",
+        "content": "If you're still having trouble, try resetting your Microsoft account password. This can sometimes resolve verification issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Microsoft Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit the Microsoft Support Website",
+            "content": "Go to the Microsoft Support website and navigate to the contact page."
+          },
+          {
+            "title": "Select Your Issue",
+            "content": "Choose the option that best describes your issue, such as 'Sign-in and security' or 'Account management'."
+          },
+          {
+            "title": "Contact Support",
+            "content": "Follow the prompts to contact Microsoft Support via chat, phone, or email. Explain your issue and follow their instructions to resolve it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T07:35:57.537Z",
+      "updated": "2026-02-01T07:35:57.537Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/office_2007-word/how-do-i-get-rid-of-the-box-lines-in-a-text-box-or/7dedf280-3bf4-460c-95d1-d863608e7d61?msgId=121267d3-a900-4463-97b7-293455e697bd",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769931361331-92",
+    "title": "Fix Microsoft Account Verification Error 399287",
+    "problemDescription": "Users are unable to log in to Microsoft apps due to account verification error 399287.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft",
+      "account",
+      "verification",
+      "error",
+      "login"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure you have a stable internet connection, as poor connectivity can cause verification issues."
+      },
+      {
+        "title": "Clear Browser Cache",
+        "content": "Clear your browser cache and cookies, then try signing in again."
+      },
+      {
+        "title": "Use Different Browser or Device",
+        "content": "Try accessing your account from a different browser or device to rule out browser-specific issues."
+      },
+      {
+        "title": "Reset Password",
+        "content": "Reset your Microsoft account password and try verifying your account again."
+      },
+      {
+        "title": "Contact Microsoft Support",
+        "content": "If the issue persists, contact Microsoft Support for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Authentication App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up Authentication App",
+            "content": "If you have an authentication app, set it up for your Microsoft account and use it for verification."
+          },
+          {
+            "title": "Use Backup Code",
+            "content": "If you have backup codes, use one of them to verify your account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T07:36:01.331Z",
+      "updated": "2026-02-01T07:36:01.331Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/office_2010-excel/excel-recurrent-error-message-spreadsheet-aborts/1ee56f7a-193a-4e42-8c01-1d0e0bf96617?msgId=56ca1a8d-d9fa-4e94-a29f-fd829d3603d3&page=1&tab=MoreHelp",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769931367077-466",
+    "title": "Link Gmail to Outlook 365",
+    "problemDescription": "Outlook 365 is unable to link to a Gmail account due to configuration issues.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Outlook",
+      "Gmail",
+      "IMAP",
+      "POP3",
+      "configuration"
+    ],
+    "steps": [
+      {
+        "title": "Open Mail Settings",
+        "content": "Press Windows + R, type 'control.exe', and find 'Mail (Microsoft Outlook)'."
+      },
+      {
+        "title": "Add a New Profile",
+        "content": "Select 'Show Profile', then 'Add', and type a profile name."
+      },
+      {
+        "title": "Select Manual Setup",
+        "content": "Choose 'Manual setup or additional server types' and click 'Next', then select 'POP or IMAP'."
+      },
+      {
+        "title": "Enter Account Information",
+        "content": "Enter your name, email address, login username, and password. If using 2FA, generate an app-specific password."
+      },
+      {
+        "title": "Configure Server Settings",
+        "content": "Change the account type to IMAP. For 'Incoming mail server', enter 'imap.gmail.com'. For 'Outgoing mail server', enter 'smtp.gmail.com'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use POP3 Forwarding",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Configure POP3",
+            "content": "If IMAP is not permitted, configure your email address with the domain name in the form of POP3 forwarding."
+          },
+          {
+            "title": "Contact Gmail Support",
+            "content": "Contact Gmail support to resolve domain management issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T07:36:07.077Z",
+      "updated": "2026-02-01T07:36:07.077Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/all/outlook-365-wont-link-to-my-gmail-account/29d66148-7a86-4917-898d-618c10b972c4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769931369018-254",
+    "title": "Send Tab to Devices Not Working in Microsoft Edge",
+    "problemDescription": "Unable to see or send tabs to devices in Microsoft Edge's Send Tab to Devices feature.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "browser",
+      "Microsoft Edge",
+      "Send Tab to Devices",
+      "sync"
+    ],
+    "steps": [
+      {
+        "title": "Check Device Sync Status",
+        "content": "Ensure that both devices are signed in with the same Microsoft account and that sync is enabled. Go to Edge settings and verify that 'Sync' is turned on."
+      },
+      {
+        "title": "Resync or Reset Sync Data",
+        "content": "Try resyncing your data by going to Edge settings, then 'Profiles', and selecting 'Sync'. If the issue persists, reset your sync data by choosing 'Reset sync data' in the same menu."
+      },
+      {
+        "title": "Sign Out and Sign In",
+        "content": "Sign out of your Microsoft account in Edge and then sign back in. This can help refresh the sync connection between devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Device Compatibility",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Device Compatibility",
+            "content": "Ensure that both devices are compatible with the Send Tab to Devices feature. Check Microsoft's official documentation for a list of supported devices and operating systems."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update Microsoft Edge",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Edge",
+            "content": "Make sure you are using the latest version of Microsoft Edge. Go to Edge settings, then 'About' to check for updates and install any available updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T07:36:09.018Z",
+      "updated": "2026-02-01T07:36:09.018Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/edge/forum/edge_issue-edge_win10/edge-directs-to-httpsguceadvertisingcom-for-aol/abbf9e6b-585c-4fe6-ab96-c6c958b56ae3?messageId=d242f89d-eb18-4f9d-9f9c-62577acaa372",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
