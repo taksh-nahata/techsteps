@@ -77992,5 +77992,365 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1769966525310-828",
+    "title": "Fix MacBook Pro M1 Lagging Issues",
+    "problemDescription": "MacBook Pro M1 experiencing lagging, sleep issues, and Bluetooth connectivity problems.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "lagging",
+      "bluetooth",
+      "sleep",
+      "m1"
+    ],
+    "steps": [
+      {
+        "title": "Boot into Safe Mode",
+        "content": "Hold down the Shift key upon boot to enter Safe Mode. This disables login items and resets corrupt system files."
+      },
+      {
+        "title": "Check and Repair Disk",
+        "content": "Boot into Recovery Mode, open Disk Utility, select your drive, and click the First Aid button to repair any disk issues."
+      },
+      {
+        "title": "Remove Login Items",
+        "content": "Go to System Preferences > Users & Groups > Login Items and remove any unnecessary items that might be causing lag."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "If disk corruption is found, format the drive, reinstall macOS, and migrate your data from a Time Machine backup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Hardware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Hardware",
+            "content": "Run hardware diagnostics using tools like Micromat’s Tech Tool Pro to identify and fix any hardware-related issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T17:22:05.310Z",
+      "updated": "2026-02-01T17:22:05.310Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254576373",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769966530067-674",
+    "title": "Fix MacBook Pro Lagging Issues",
+    "problemDescription": "2020 Intel MacBook Pro experiencing lag, delays in response, and occasional restarts.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "lag",
+      "performance",
+      "macos"
+    ],
+    "steps": [
+      {
+        "title": "Check for Software Updates",
+        "content": "Ensure your macOS is up to date. Go to System Preferences > Software Update and install any available updates."
+      },
+      {
+        "title": "Reset SMC",
+        "content": "Reset the System Management Controller (SMC) to resolve potential hardware-related issues. Shut down your Mac, then press and hold the power button for 10 seconds."
+      },
+      {
+        "title": "Reset NVRAM",
+        "content": "Reset the NVRAM to clear any corrupted settings. Shut down your Mac, then turn it on and immediately press and hold Option + Command + P + R for about 20 seconds."
+      },
+      {
+        "title": "Check for Malware",
+        "content": "Run a malware scan using a reputable antivirus software to ensure your Mac is not infected."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "Reinstall macOS to fix any system file corruption. Use macOS Recovery to reinstall the operating system without losing your data."
+      },
+      {
+        "title": "Check Hardware Diagnostics",
+        "content": "Use Apple Diagnostics to check for any hardware issues. Restart your Mac and hold the D key during startup to run the diagnostics."
+      },
+      {
+        "title": "Contact Apple Support",
+        "content": "If the issue persists, contact Apple Support for further assistance, as the problem might be hardware-related."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clean Up System Files",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use CleanMyMac X",
+            "content": "Download and run CleanMyMac X to clean up system junk, unnecessary files, and optimize your Mac's performance."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reduce Startup Items",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Startup Apps",
+            "content": "Go to System Preferences > Users & Groups > Login Items and remove any unnecessary startup applications."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T17:22:10.067Z",
+      "updated": "2026-02-01T17:22:10.067Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254818026",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769966565434-523",
+    "title": "Clear Persistent Notification in Microsoft Teams",
+    "problemDescription": "A persistent '1' notification appears in Microsoft Teams on Windows 11, even when there are no new notifications.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "microsoft teams",
+      "windows 11",
+      "notification",
+      "persistent notification"
+    ],
+    "steps": [
+      {
+        "title": "Check for 'What's New' Notifications",
+        "content": "Go to Windows Settings > Personalisation > Taskbar. Under Taskbar items, set Chat to On. Click the Chat icon on the Taskbar. If the ... (What's new and more) button at the top right of the Chat window shows a red or colored dot, click the ... button and select What's new from the popup menu. The badge number on the Teams icon should now disappear."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Microsoft Teams",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Teams Data",
+            "content": "Remove all content in %appdata%\\Microsoft\\Teams (copy and paste to Start) to reset the desktop app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T17:22:45.434Z",
+      "updated": "2026-02-01T17:22:45.434Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/always-1-notification-teams-windows-11.3806729/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769966578723-246",
+    "title": "Reduce Background Noise in Microsoft Teams",
+    "problemDescription": "Background noise is being picked up by the microphone during Microsoft Teams calls.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "background noise",
+      "microphone",
+      "Microsoft Teams"
+    ],
+    "steps": [
+      {
+        "title": "Check Microphone Settings",
+        "content": "Go to Microsoft Teams settings and ensure your microphone is set to the correct input device."
+      },
+      {
+        "title": "Use Noise Suppression",
+        "content": "Enable noise suppression in Microsoft Teams by going to Settings > Devices > Microphone and turning on 'Noise suppression'."
+      },
+      {
+        "title": "Use a Quality Microphone",
+        "content": "Invest in a high-quality microphone with built-in noise cancellation features."
+      },
+      {
+        "title": "Position Your Microphone",
+        "content": "Position your microphone close to your mouth and away from sources of background noise."
+      },
+      {
+        "title": "Use a Physical Barrier",
+        "content": "Use a pop filter or foam windscreen to reduce background noise."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Third-Party Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Noise Reduction Software",
+            "content": "Install third-party noise reduction software like Krisp or Nvidia Broadcast."
+          },
+          {
+            "title": "Configure Software Settings",
+            "content": "Configure the software settings to reduce background noise effectively."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T17:22:58.723Z",
+      "updated": "2026-02-01T17:22:58.723Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/big-problem-with-background-noise-when-using-microsoft-teams.3825041/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769966593428-641",
+    "title": "Fix Prints Sticking to FEP Film",
+    "problemDescription": "Prints are sticking to the FEP film causing print failures.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "3D printing",
+      "FEP film",
+      "print adhesion",
+      "AnyCubic Photon Mono X"
+    ],
+    "steps": [
+      {
+        "title": "Upgrade to PFA Release Liner Film",
+        "content": "Replace the standard FEP film with ELEGOO's PFA release liner film. This film has a finer surface texture that allows prints to release more easily from the vat."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Sand the Build Plate",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Start with Coarse Grit",
+            "content": "Begin with 120 grit wet 'n' dry paper to remove the worst of the warp and gauge the flatness."
+          },
+          {
+            "title": "Progress to Finer Grits",
+            "content": "Work your way through finer grits until you reach around 800 grit for a flat, mirror-like finish."
+          },
+          {
+            "title": "Final Sanding",
+            "content": "Use figure of 8 motions with 200 grit paper to create tracks and channels on the surface for better adhesion."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T17:23:13.428Z",
+      "updated": "2026-02-01T17:23:13.428Z",
+      "sourceUrl": "https://www.reddit.com/r/AnyCubicPhotonMonoX/comments/18pdocm/my_little_guide_for_optimising_printer_hardware/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769966596264-576",
+    "title": "3D Printer Extruder Not Working",
+    "problemDescription": "The extruder motor on a 3D printer is not functioning properly, despite replacing various parts.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "3d printing",
+      "extruder",
+      "motor",
+      "wiring",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check and Secure Wiring",
+        "content": "Double-check all wiring connections to ensure they are secure and properly connected. Loose wiring can often cause extruder issues."
+      },
+      {
+        "title": "Reassemble the Printer",
+        "content": "Disassemble the printer completely and reassemble it carefully, ensuring all parts are correctly aligned and secured."
+      },
+      {
+        "title": "Adjust V Ref Voltage",
+        "content": "Set the V Ref voltage to 0.72V using the small potentiometer on the driver. Use a multimeter to measure and adjust the voltage accurately."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Upgrade Extruder Components",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Quality Extruder and Gear",
+            "content": "Consider upgrading to a higher-quality extruder and gear to reduce filament play and improve performance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T17:23:16.264Z",
+      "updated": "2026-02-01T17:23:16.264Z",
+      "sourceUrl": "https://www.reddit.com/r/FixMyPrint/comments/10npcqa/3d_printing_beginners_troubleshooting_guide_101/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769966602694-783",
+    "title": "Fix WhatsApp Crashing on Apple Watch",
+    "problemDescription": "WhatsApp app crashes immediately after opening on certain Apple Watch models.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "apple watch",
+      "crash",
+      "app error"
+    ],
+    "steps": [
+      {
+        "title": "Wait for Official Fix",
+        "content": "The WhatsApp team is aware of the issue and is working on a solution. Wait for the official update from WhatsApp or Apple."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update watchOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Ensure your Apple Watch is running the latest watchOS version (watchOS 11 or watchOS 26)."
+          },
+          {
+            "title": "Update if Available",
+            "content": "If an update is available, install it to see if it resolves the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T17:23:22.694Z",
+      "updated": "2026-02-01T17:23:22.694Z",
+      "sourceUrl": "https://www.techradar.com/health-fitness/smartwatches/the-whatsapp-team-is-aware-that-the-new-apple-watch-app-is-crashing-on-certain-models-and-is-working-quickly-to-fix-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
