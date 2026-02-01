@@ -71349,5 +71349,285 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1769910718389-217",
+    "title": "Fix Chrome Harmful Software Scan Error",
+    "problemDescription": "Chrome displays an error when searching for harmful software.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "error",
+      "harmful software",
+      "scan"
+    ],
+    "steps": [
+      {
+        "title": "Update Chrome",
+        "content": "Ensure Chrome is updated to the latest stable release."
+      },
+      {
+        "title": "Disable Extensions",
+        "content": "Go to chrome://extensions and disable all extensions."
+      },
+      {
+        "title": "Reset Chrome Settings",
+        "content": "Go to chrome://settings/reset and reset Chrome settings."
+      },
+      {
+        "title": "Run Chrome as Administrator",
+        "content": "Right-click the Chrome shortcut and select 'Run as administrator'."
+      },
+      {
+        "title": "Check Network and Proxy",
+        "content": "Ensure your network connection is stable and proxy settings are correct."
+      },
+      {
+        "title": "Disable Third-Party AV/Firewall",
+        "content": "Temporarily disable any third-party antivirus or firewall software."
+      },
+      {
+        "title": "Reinstall Chrome",
+        "content": "Uninstall Chrome and reinstall it cleanly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Modify Chrome Shortcut",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit Shortcut",
+            "content": "Right-click the Chrome shortcut, select 'Properties', and ensure the 'Target' field points directly to chrome.exe without any additional parameters."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Chrome Flags",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Chrome Flags",
+            "content": "Type chrome://flags in the Chrome address bar and press Enter."
+          },
+          {
+            "title": "Disable Extensions on chrome:// URLs",
+            "content": "Search for 'Extensions on chrome:// URLs' and disable it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T01:51:58.389Z",
+      "updated": "2026-02-01T01:51:58.389Z",
+      "sourceUrl": "https://www.quora.com/Why-does-Chrome-always-say-this-An-error-occurred-while-Chrome-was-searching-for-harmful-software",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769910732082-564",
+    "title": "Fix AirPods Not Charging",
+    "problemDescription": "AirPods not charging despite being placed in the charging case.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "airpods",
+      "charging",
+      "battery",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Reset Your AirPods",
+        "content": "Open the Settings app on your iPhone, tap 'Bluetooth', then tap the 'i' icon next to your AirPods. Select 'Forget This Device' and confirm. Re-pair your AirPods by placing them in the case, opening the lid, and holding the Setup button on the back of the case near your iPhone."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check for Physical Damage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect AirPods and Case",
+            "content": "Check your AirPods and the charging case for any visible signs of physical damage, such as cracks or dents, which might be preventing proper charging."
+          }
+        ]
+      },
+      {
+        "title": "Update AirPods Firmware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Firmware",
+            "content": "Place your AirPods in the charging case, connect the case to a power source, and bring it near your paired iPhone or iPad. Ensure your phone is connected to the internet to automatically find and install the latest firmware updates for your AirPods."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T01:52:12.082Z",
+      "updated": "2026-02-01T01:52:12.082Z",
+      "sourceUrl": "https://www.howtogeek.com/826185/airpods-not-charging/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769910740712-91",
+    "title": "Report Bugs to Tech Companies",
+    "problemDescription": "How to submit bug reports to major tech companies like Apple, Google, and Instagram.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "bug report",
+      "tech companies",
+      "app error"
+    ],
+    "steps": [
+      {
+        "title": "Reporting Bugs to Google",
+        "content": "Visit Google’s page for reporting security vulnerabilities. Select the option that best fits your issue, and follow the instructions to submit your report."
+      },
+      {
+        "title": "Reporting Bugs to Instagram",
+        "content": "In the Instagram app, go to your profile. Tap the three stacked lines icon in the upper-right corner. Tap the gear-shaped Settings icon. Scroll down and tap 'Report a Problem' in the 'Support' section of your Options screen. Follow the instructions and fill out all required information."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reporting Bugs to Apple",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Apple's Feedback Page",
+            "content": "Go to Apple's Feedback page and follow the instructions to submit your bug report."
+          }
+        ]
+      },
+      {
+        "title": "Reporting Bugs to Microsoft",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Microsoft's Feedback Hub",
+            "content": "Go to Microsoft's Feedback Hub and follow the instructions to submit your bug report."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T01:52:20.712Z",
+      "updated": "2026-02-01T01:52:20.712Z",
+      "sourceUrl": "https://lifehacker.com/how-to-submit-a-bug-report-to-apple-google-facebook-1832277266",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769910745098-646",
+    "title": "Get Better Customer Service via Social Media",
+    "problemDescription": "Struggling to get a response from customer service on social media platforms.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "customer service",
+      "social media",
+      "Twitter",
+      "Facebook"
+    ],
+    "steps": [
+      {
+        "title": "Try Multiple Platforms",
+        "content": "If you're not getting answers on one social media platform, try another. Post your issue on Twitter, Facebook, Google+, or Instagram where the company has a presence."
+      },
+      {
+        "title": "Be Direct and Clear",
+        "content": "Post a clear and direct message asking for help. For example, 'Hey, I have a problem with X. Can anyone help me?'"
+      },
+      {
+        "title": "Follow Up",
+        "content": "If you don't get a quick response, follow up on the same platform or try a different one. Sometimes it takes time for the company to address your issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Direct Communication",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Customer Service Directly",
+            "content": "If social media isn't working, try contacting the company's customer service directly through their official website or phone number."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T01:52:25.098Z",
+      "updated": "2026-02-01T01:52:25.098Z",
+      "sourceUrl": "https://lifehacker.com/how-to-get-better-customer-service-over-facebook-or-twi-1589204317",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769910762541-335",
+    "title": "Fix Printer Spooling Errors",
+    "problemDescription": "Printer spooling errors prevent documents from printing correctly.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "spooling",
+      "windows",
+      "mac"
+    ],
+    "steps": [
+      {
+        "title": "Open Task Manager",
+        "content": "Use the Windows + S keyboard shortcut or select the search box in the taskbar to open the search window, then begin typing 'task manager' and select the app when it appears in the search results."
+      },
+      {
+        "title": "Navigate to Services",
+        "content": "In the Task Manager, select the three horizontal lines at the top left to open the sidebar, then choose the Services tab."
+      },
+      {
+        "title": "Restart the Spooler Service",
+        "content": "Narrow the list down by beginning to type 'spooler.' Right-click the Spooler service and choose Restart to stop and restart it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Printing System on Mac",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Settings",
+            "content": "Open the Apple menu at the top left of the screen and select System Settings, then type 'printer' in the search box or find Printers & Scanners in the left sidebar."
+          },
+          {
+            "title": "Reset Printing System",
+            "content": "Right-click the printers list, then choose Reset Printing System from the pop-up menu, and confirm by selecting Reset from the pop-up window."
+          },
+          {
+            "title": "Add Printer",
+            "content": "Select the Add Printer, Scanner, or Fax button at the bottom, then choose your device from the printer list, and select the Add button."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T01:52:42.541Z",
+      "updated": "2026-02-01T01:52:42.541Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/what-is-printer-spooling-and-how-to-fix-it-on-windows-and-mac/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
