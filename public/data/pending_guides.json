@@ -75498,5 +75498,575 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1769944763620-920",
+    "title": "Reset a Roku",
+    "problemDescription": "Your Roku device is not working properly and needs to be reset.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "roku",
+      "reset",
+      "factory reset",
+      "hard reset"
+    ],
+    "steps": [
+      {
+        "title": "Factory Reset via Settings",
+        "content": "From the home screen, go to 'Settings' > 'System' > 'Advanced system settings' > 'Factory reset'. Enter the code provided and confirm to reset your Roku to factory settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "System Restart via Menu",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Roku via Settings",
+            "content": "From the home screen, go to 'Settings' > 'System' > 'System Restart' to refresh the system."
+          }
+        ]
+      },
+      {
+        "title": "Hard Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Perform a Hard Reset",
+            "content": "Locate the 'Reset' button on the back or bottom of your Roku device. Use a paperclip if necessary to press and hold the button to perform a hard reset."
+          }
+        ]
+      },
+      {
+        "title": "Power Cycle",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unplug and Replug",
+            "content": "Unplug the Roku from its power source, wait for at least 20 seconds, and then plug it back in."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T11:19:23.620Z",
+      "updated": "2026-02-01T11:19:23.620Z",
+      "sourceUrl": "https://www.cnet.com/tech/home-entertainment/how-to-reset-a-roku-in-four-steps/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769944767217-978",
+    "title": "Fix AV Sync Issues on Roku",
+    "problemDescription": "Audio and video are out of sync when using wireless headphones with Roku.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Roku",
+      "AV sync",
+      "sound lag",
+      "headphones"
+    ],
+    "steps": [
+      {
+        "title": "Update Roku OS",
+        "content": "Ensure your Roku device is updated to OS 10.5 or later, which includes enhanced troubleshooting for AV sync issues."
+      },
+      {
+        "title": "Check Wireless Headphone Settings",
+        "content": "Go to Settings > Audio > Headphone settings and verify the settings are optimized for your headphones."
+      },
+      {
+        "title": "Restart Roku Device",
+        "content": "Restart your Roku device to apply any updates and refresh the system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Audio Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Audio Format",
+            "content": "Go to Settings > Audio > Audio mode and try different audio formats to see if it resolves the sync issue."
+          },
+          {
+            "title": "Disable Dolby Digital Plus",
+            "content": "If the issue persists, try disabling Dolby Digital Plus in the audio settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T11:19:27.217Z",
+      "updated": "2026-02-01T11:19:27.217Z",
+      "sourceUrl": "https://www.cnet.com/tech/home-entertainment/rokus-free-os-10-5-lets-you-dictate-passwords-fixes-pesky-sound-lags-on-headphones/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769944777027-901",
+    "title": "Speed Up Computer and Clean Junk",
+    "problemDescription": "Your computer is running slow and needs optimization.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "computer",
+      "speed",
+      "optimization",
+      "clean"
+    ],
+    "steps": [
+      {
+        "title": "Check Resource Usage",
+        "content": "Start resmon.exe to see if any specific program is slowing down your computer. Stop or remove the program if necessary."
+      },
+      {
+        "title": "Uninstall Unnecessary Programs",
+        "content": "Uninstall old programs you no longer need."
+      },
+      {
+        "title": "Disable Startup Programs",
+        "content": "Use msconfig.exe to disable any startup programs or non-Microsoft services you do not need to start automatically."
+      },
+      {
+        "title": "Defragment Your Disk",
+        "content": "Run disk defragmenter to optimize your hard drive."
+      },
+      {
+        "title": "Consider Better Antivirus",
+        "content": "If you suspect malware, consider finding a better antivirus program."
+      },
+      {
+        "title": "Reinstall Windows",
+        "content": "If your computer is still slow, consider reinstalling Windows."
+      },
+      {
+        "title": "Upgrade Hardware",
+        "content": "If all else fails, consider buying a new and more powerful machine."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use All-In-One PC Optimization Suites",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Advanced System Care",
+            "content": "Download and use Advanced System Care to remove malware, clean your history, remove junk files, and repair errors."
+          },
+          {
+            "title": "Glary Utilities",
+            "content": "Use Glary Utilities for a comprehensive suite of tools to optimize your computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T11:19:37.027Z",
+      "updated": "2026-02-01T11:19:37.027Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/good-free-programs-that-speed-up-computer-clean-junk.1196316/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769944782944-854",
+    "title": "Fix Slow Windows Boot Times",
+    "problemDescription": "Windows suddenly takes a long time to boot and runs slowly after startup.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "slow boot",
+      "startup",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Check for Malware",
+        "content": "Run a full system scan using your antivirus software to check for any malware or viruses that might be slowing down your computer."
+      },
+      {
+        "title": "Disable Startup Programs",
+        "content": "Press Ctrl+Shift+Esc to open Task Manager, go to the Startup tab, and disable any unnecessary programs that start automatically with Windows."
+      },
+      {
+        "title": "Update Windows",
+        "content": "Go to Settings > Update & Security > Windows Update and check for any pending updates. Install all available updates."
+      },
+      {
+        "title": "Check Disk for Errors",
+        "content": "Open Command Prompt as an administrator and run the command 'chkdsk /f /r' to check and repair any disk errors."
+      },
+      {
+        "title": "Adjust Power Settings",
+        "content": "Go to Control Panel > Power Options and select 'High Performance' to ensure your computer is using the most power-efficient settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clean Boot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Perform a Clean Boot",
+            "content": "Press Win+R, type 'msconfig', and press Enter. Go to the Services tab, check 'Hide all Microsoft services', and click 'Disable all'. Then go to the Startup tab and click 'Open Task Manager'. Disable all startup items and restart your computer."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall Windows",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall Windows",
+            "content": "As a last resort, you can reinstall Windows to fix any underlying issues. Make sure to back up your data before proceeding."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T11:19:42.944Z",
+      "updated": "2026-02-01T11:19:42.944Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/windows-suddenly-very-slow-long-computer-boot-times.3396406/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769944791747-821",
+    "title": "Fix Android Battery Drain Due to Network Activity",
+    "problemDescription": "Android phone experiencing significant battery drain while idle, primarily due to network (cell and Wi-Fi) activity.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "battery drain",
+      "network activity",
+      "cell standby",
+      "wifi"
+    ],
+    "steps": [
+      {
+        "title": "Check Battery Usage Stats",
+        "content": "Go to 'Settings > Battery > Battery usage' to identify the apps or services consuming the most battery. Look for high usage by 'Cell standby' or 'Wi-Fi'."
+      },
+      {
+        "title": "Disable Wi-Fi and Cell Networks Temporarily",
+        "content": "Enable 'Airplane mode' to disable all network connections and observe if the battery drain stops. If it does, the issue is likely related to network activity."
+      },
+      {
+        "title": "Disable Unnecessary Permissions",
+        "content": "Go to 'Settings > Apps > Permissions > Autostart' and disable autostart permissions for non-essential apps."
+      },
+      {
+        "title": "Investigate Network Settings",
+        "content": "Check for any advanced network settings that might be causing excessive battery usage, such as frequent syncing or background data usage."
+      },
+      {
+        "title": "Update or Reset Network Settings",
+        "content": "Go to 'Settings > System > Reset options > Reset Wi-Fi, mobile & Bluetooth' to reset network settings to default."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Developer Logging",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Developer Logging",
+            "content": "Go to 'Developer options' and disable logging to see if it affects battery usage."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset",
+        "type": "Advanced Fix",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup all important data as a factory reset will erase all data on the device."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to 'Settings > System > Reset options > Erase all data (factory reset)' to reset the device to its original state."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T11:19:51.747Z",
+      "updated": "2026-02-01T11:19:51.747Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/220252/battery-drain-issue-on-idle-phone-how-to-find-out-the-culprit",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769944809708-927",
+    "title": "Fix Microsoft Teams on Linux",
+    "problemDescription": "Microsoft Teams is not working on Linux after the official app was retired.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "microsoft",
+      "teams",
+      "linux",
+      "pwa",
+      "wayland",
+      "x11"
+    ],
+    "steps": [
+      {
+        "title": "Use the Progressive Web App (PWA)",
+        "content": "Navigate to your organization's official Office365 login page using a browser. Click the Teams icon on the left sidebar. If Outlook works but Teams fails, try restarting the PWA. It should redirect you to your organization's login and work again."
+      },
+      {
+        "title": "Switch from Wayland to X11",
+        "content": "If you are using Wayland and experiencing issues with screen sharing, switch back to X11. This can be done by logging out, selecting the gear icon next to the sign-in option, and choosing 'Ubuntu on Xorg' before logging back in."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall the Original .deb Package",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall the Current Version",
+            "content": "Uninstall the current version of Microsoft Teams from your system."
+          },
+          {
+            "title": "Download the Original .deb Package",
+            "content": "Find and download the original .deb package for Microsoft Teams."
+          },
+          {
+            "title": "Install the .deb Package",
+            "content": "Install the downloaded .deb package using the appropriate package manager for your Linux distribution."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T11:20:09.708Z",
+      "updated": "2026-02-01T11:20:09.708Z",
+      "sourceUrl": "https://askubuntu.com/questions/1475198/did-microsoft-remove-teams-from-linux-desktop",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769944814679-361",
+    "title": "Fix Held Broken Packages in Ubuntu",
+    "problemDescription": "Unable to correct problems due to held broken packages in Ubuntu.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "packages",
+      "broken",
+      "apt-get"
+    ],
+    "steps": [
+      {
+        "title": "Update Package Lists",
+        "content": "Run the command `sudo apt-get update` to update the package lists. This often resolves the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Debug Package Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Add Debug Flags",
+            "content": "Run the command `sudo apt-get install -o Debug::pkgProblemResolver=true -o Debug::Acquire::http=true` to get more detailed information about the problem."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Remove Problematic Packages",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify and Remove Problematic Packages",
+            "content": "Identify the problematic packages from the error message and remove them using `sudo apt-get remove <package-name>` and `sudo apt-get purge <package-name>`."
+          },
+          {
+            "title": "Reinstall Packages",
+            "content": "Reinstall the necessary packages using `sudo apt-get install <package-name>`."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Use Synaptic Package Manager",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Synaptic Package Manager",
+            "content": "Run the command `sudo apt-get install synaptic` to install the Synaptic package manager."
+          },
+          {
+            "title": "Fix Broken Packages",
+            "content": "Open Synaptic package manager and select the 'Fix Broken Packages' option."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T11:20:14.679Z",
+      "updated": "2026-02-01T11:20:14.679Z",
+      "sourceUrl": "https://askubuntu.com/questions/223237/unable-to-correct-problems-you-have-held-broken-packages",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769944816718-822",
+    "title": "Fix WSL 2 Error 0x80370102",
+    "problemDescription": "WSL 2 fails to run Ubuntu with error code 0x80370102.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "WSL 2",
+      "Ubuntu",
+      "Error 0x80370102",
+      "Virtual Machine Platform"
+    ],
+    "steps": [
+      {
+        "title": "Disable and Re-enable Virtual Machine Platform",
+        "content": "1. Open 'Turn Windows features on or off'. 2. Uncheck 'Virtual Machine Platform'. 3. Restart your computer. 4. Re-enable 'Virtual Machine Platform'. 5. Restart your computer again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Enable Windows Hypervisor Platform",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Windows Hypervisor Platform",
+            "content": "1. Open 'Turn Windows features on or off'. 2. Check 'Windows Hypervisor Platform'. 3. Restart your computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T11:20:16.718Z",
+      "updated": "2026-02-01T11:20:16.718Z",
+      "sourceUrl": "https://askubuntu.com/questions/1264102/wsl-2-wont-run-ubuntu-error-0x80370102",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769944826680-555",
+    "title": "Fix Mac Won't Boot Issue",
+    "problemDescription": "Your Mac won't boot all the way, indicating a potential problem with the startup disk.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macos",
+      "boot",
+      "startup disk",
+      "recovery"
+    ],
+    "steps": [
+      {
+        "title": "Access macOS Recovery",
+        "content": "For Apple silicon Macs, hold the power button until the startup options appear. For Intel-based Macs, press and hold Cmd + R while booting."
+      },
+      {
+        "title": "Run Disk Utility",
+        "content": "Click on Options and choose Continue. Then, use Disk Utility to repair or erase the startup disk."
+      },
+      {
+        "title": "Erase and Reinstall macOS",
+        "content": "Follow the instructions to wipe the startup disk clean. This will clear all data and settings and reinstall macOS."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Force Restart Unresponsive Mac",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force Restart",
+            "content": "If your Mac is unresponsive, press and hold the power button for a few seconds to force a restart or shut down."
+          },
+          {
+            "title": "Regular Restart",
+            "content": "Make a habit of restarting your Mac about once per week to keep it running smoothly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T11:20:26.680Z",
+      "updated": "2026-02-01T11:20:26.680Z",
+      "sourceUrl": "https://www.makeuseof.com/basic-troubleshooting-tips-fix-common-macos-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769944828901-331",
+    "title": "Fix Mac Won't Boot",
+    "problemDescription": "Your MacBook, Mac Mini, or iMac won't turn on or boot up.",
+    "category": "macOS",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "boot",
+      "start",
+      "power",
+      "safe mode"
+    ],
+    "steps": [
+      {
+        "title": "Check Power Source",
+        "content": "Ensure your Mac is connected to a power source. If it's a MacBook, plug it in. Check the power adapter and cable for any damage, and try a different cable if possible. Also, clean the charging port to remove any dust buildup."
+      },
+      {
+        "title": "Boot Into Safe Mode",
+        "content": "If your Mac shows signs of life but won't go past the Apple logo or login screen, boot into Safe Mode. This runs diagnostic tests and loads a stripped-down version of macOS, which can help identify and fix the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall macOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect to Internet",
+            "content": "Ensure your Mac is connected to the internet, as you'll need to download the operating system."
+          },
+          {
+            "title": "Follow Onscreen Instructions",
+            "content": "Follow the onscreen guide to complete the installation. Do not format your disk unless necessary, as you can reinstall macOS on top of itself."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T11:20:28.901Z",
+      "updated": "2026-02-01T11:20:28.901Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/mac-wont-boot-step-step-guide-waking/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
