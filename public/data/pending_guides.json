@@ -74339,5 +74339,493 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1769938028735-604",
+    "title": "Fix Gmail Inbox Flooded with Promos and Spam",
+    "problemDescription": "Gmail inbox is flooded with promotional emails and spam warnings due to a sorting system malfunction.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "inbox",
+      "promos",
+      "spam",
+      "sorting"
+    ],
+    "steps": [
+      {
+        "title": "Wait for Google to Fix the Issue",
+        "content": "Google has acknowledged the issue and is working on a fix. Check the Google Workspace status dashboard for updates."
+      },
+      {
+        "title": "Manually Sort Emails",
+        "content": "While waiting for the fix, manually sort emails into the appropriate tabs (Primary, Promotions, Social, etc.) to organize your inbox."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Filters to Manage Emails",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create Filters",
+            "content": "Go to Gmail settings and create filters to automatically sort incoming emails into the appropriate tabs."
+          },
+          {
+            "title": "Apply Filters",
+            "content": "Apply the filters to ensure emails are correctly categorized and moved to the right tabs."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T09:27:08.735Z",
+      "updated": "2026-02-01T09:27:08.735Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/heres-what-happened-to-your-gmail-inbox-over-the-weekend/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769938030132-196",
+    "title": "Upgrade Google One Storage",
+    "problemDescription": "Google One storage is nearly full, affecting email and backup functionalities.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "google",
+      "storage",
+      "gmail",
+      "backup"
+    ],
+    "steps": [
+      {
+        "title": "Upgrade Google One Plan",
+        "content": "Purchase additional storage to upgrade your Google One plan. This will resolve the storage limit issue immediately."
+      },
+      {
+        "title": "Check Renewal Date",
+        "content": "Verify the renewal date of your Google One subscription to avoid unexpected charges."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Delete Emails and Files",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete Emails",
+            "content": "Delete old or unnecessary emails from your Gmail inbox to free up some storage space."
+          },
+          {
+            "title": "Delete Files",
+            "content": "Remove large files from Google Drive, Google Photos, or other connected services to free up storage."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T09:27:10.132Z",
+      "updated": "2026-02-01T09:27:10.132Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/i-finally-splurged-upgrading-my-google-storage/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769938031360-913",
+    "title": "Fix Google Drive Refused to Connect",
+    "problemDescription": "Google Drive displays 'Google Drive refused to connect' error message.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "google drive",
+      "connection",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Open Incognito Mode",
+        "content": "Open Chrome and then open an incognito mode window. It is usually located in the Three-dot menu in the top-right corner."
+      },
+      {
+        "title": "Access Google Drive",
+        "content": "Next, open Google Drive by entering drive.google.com in the address bar."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Sign Out and Sign In",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Sign Out of Google Account",
+            "content": "Go to the Google Drive website, select Go to Drive, and then sign out of your Google account."
+          },
+          {
+            "title": "Sign In Again",
+            "content": "Sign in to your Drive account using your Google account's username and password."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T09:27:11.360Z",
+      "updated": "2026-02-01T09:27:11.360Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/drive-google-refused-to-connect/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769938045170-43",
+    "title": "Fix Evolution Mail Notifications in Ubuntu",
+    "problemDescription": "Evolution mail notifications suddenly stopped working after a system update.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "evolution",
+      "notifications",
+      "ubuntu",
+      "mail"
+    ],
+    "steps": [
+      {
+        "title": "Create a Symbolic Link for Evolution Plugins",
+        "content": "Open a terminal and run the following command to create a symbolic link for the Evolution plugins: `ln -s /usr/lib/evolution/3.2/plugins/ /usr/lib/evolution/3.4/plugins/`"
+      },
+      {
+        "title": "Restart Evolution",
+        "content": "After creating the symbolic link, restart the Evolution application to see if the notifications start working again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check System Logs for Errors",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "View System Logs",
+            "content": "Check the system logs for any errors related to Evolution or notifications by running: `cat /var/log/syslog | grep evolution`"
+          },
+          {
+            "title": "Analyze Logs",
+            "content": "Look for any relevant error messages that might indicate what went wrong with the notifications."
+          }
+        ]
+      },
+      {
+        "title": "Reinstall Evolution",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Evolution",
+            "content": "Run the following command to uninstall Evolution: `sudo apt-get remove evolution`"
+          },
+          {
+            "title": "Reinstall Evolution",
+            "content": "Reinstall Evolution using the command: `sudo apt-get install evolution`"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T09:27:25.170Z",
+      "updated": "2026-02-01T09:27:25.170Z",
+      "sourceUrl": "https://askubuntu.com/questions/703544/new-mail-notifications-by-evolution-suddenly-stopped-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769938056749-251",
+    "title": "Fix Discord Search Not Working on Windows",
+    "problemDescription": "Discord search feature is not working on Windows.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "search",
+      "windows",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Check Your Internet Connection",
+        "content": "Ensure your internet connection is stable. You can check your connection speed and reset the Winsock catalog using the Command Prompt."
+      },
+      {
+        "title": "Disable VPN or Proxy",
+        "content": "If you are using a VPN or proxy, disable it temporarily to see if it resolves the issue. Go to Windows settings and disable the VPN."
+      },
+      {
+        "title": "Clear Discord's AppData Cache Folder",
+        "content": "Clear Discord's cache by deleting the contents of the AppData folder. Navigate to the Discord folder in AppData and delete the cache files."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Discord Streamer Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Streamer Mode",
+            "content": "Go to Discord settings and disable Streamer Mode to see if it resolves the search issue."
+          }
+        ]
+      },
+      {
+        "title": "Reinstall the Discord Windows Client",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall Discord",
+            "content": "Uninstall Discord and then reinstall it to see if it fixes the search feature."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T09:27:36.749Z",
+      "updated": "2026-02-01T09:27:36.749Z",
+      "sourceUrl": "https://www.makeuseof.com/fix-discord-search-not-working-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769938064043-619",
+    "title": "Fix Discord Screen Sharing Issues",
+    "problemDescription": "Discord screen sharing not working or malfunctioning.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "screen sharing",
+      "app error"
+    ],
+    "steps": [
+      {
+        "title": "Delete Discord Cache Data",
+        "content": "Close all Discord processes, then navigate to Discord's cache folder and delete all cache files."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Discord",
+            "content": "Go to Control Panel > Programs > Uninstall a program, select Discord, and uninstall it."
+          },
+          {
+            "title": "Reinstall Discord",
+            "content": "Download the latest version of Discord from the official website and install it."
+          }
+        ]
+      },
+      {
+        "title": "Run Discord With Administrative Rights",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Discord Properties",
+            "content": "Right-click the Discord executable file, select Properties, and go to the Compatibility tab."
+          },
+          {
+            "title": "Enable Admin Rights",
+            "content": "Check the box that says 'Run this program as an administrator', save the settings, and launch Discord."
+          }
+        ]
+      },
+      {
+        "title": "Update Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Manually Update Discord",
+            "content": "Open Discord, maximize the window, and press Ctrl + R on Windows or Cmd + R on Mac to reload and search for updates."
+          }
+        ]
+      },
+      {
+        "title": "Add Your Game to Discord Activity",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Discord Settings",
+            "content": "Click the gear icon next to your username to open Discord settings."
+          },
+          {
+            "title": "Add Game Manually",
+            "content": "Go to 'Game Activity', click 'Add it yourself', and follow the prompts to add your game or app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T09:27:44.043Z",
+      "updated": "2026-02-01T09:27:44.043Z",
+      "sourceUrl": "https://www.makeuseof.com/discord-fix-screen-sharing-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769938068477-676",
+    "title": "Reinstall Discord to Fix Laggy or Poor-Quality Streams",
+    "problemDescription": "Discord streams are laggy, stuttery, or of poor quality.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "laggy",
+      "stuttery",
+      "poor-quality",
+      "reinstall"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall Discord",
+        "content": "Uninstall Discord from your Windows PC. You can do this by going to Settings > Apps > Apps & features, finding Discord, and clicking Uninstall."
+      },
+      {
+        "title": "Download Discord",
+        "content": "Go to the Discord website and click Download for Windows."
+      },
+      {
+        "title": "Install Discord",
+        "content": "Once the download is complete, run the installer and follow the on-screen instructions to reinstall Discord."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-01T09:27:48.477Z",
+      "updated": "2026-02-01T09:27:48.477Z",
+      "sourceUrl": "https://www.makeuseof.com/fix-poor-quality-stream-discord-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769938080434-467",
+    "title": "Fix Mac Battery Draining Fast",
+    "problemDescription": "Mac battery is draining quickly, even with normal usage.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "mac",
+      "battery",
+      "drain",
+      "power",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Reboot Your Mac",
+        "content": "Restart your Mac by clicking on the Apple menu and selecting 'Restart'. This can resolve temporary issues causing battery drain."
+      },
+      {
+        "title": "Kill Thirsty Apps",
+        "content": "Close any power-hungry applications that are running in the background. Check Activity Monitor to identify and quit apps using excessive energy."
+      },
+      {
+        "title": "Turn Down Screen Brightness",
+        "content": "Reduce your screen brightness using the F1 and F2 keys. Lower brightness levels can significantly extend battery life."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Power Nap (Intel Only)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Battery Settings",
+            "content": "Go to System Settings > Battery > Options."
+          },
+          {
+            "title": "Turn Off Power Nap",
+            "content": "Disable the Power Nap feature to prevent your Mac from waking up to receive updates while in sleep mode."
+          }
+        ]
+      },
+      {
+        "title": "Reset System Management Controller (Intel Chips Only)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Shut Down Your Mac",
+            "content": "Turn off your Mac completely."
+          },
+          {
+            "title": "Reset SMC",
+            "content": "Press and hold the Shift + Control + Option keys on the left side of the built-in keyboard, then press the power button. Hold all keys for 10 seconds, then release and turn on your Mac."
+          }
+        ]
+      },
+      {
+        "title": "Avoid Power-Hungry Activities",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Power-Hungry Tasks",
+            "content": "Avoid activities like rendering video, playing demanding 3D games, or using web apps that consume a lot of power."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T09:28:00.434Z",
+      "updated": "2026-02-01T09:28:00.434Z",
+      "sourceUrl": "https://www.howtogeek.com/870008/why-is-my-mac-battery-draining-so-fast-10-fixes/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769938089416-844",
+    "title": "Run the Windows Power Troubleshooter",
+    "problemDescription": "Your Windows laptop's battery life is shorter than expected.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "battery",
+      "power",
+      "troubleshooter",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings (Windows 10)",
+        "content": "Go to Settings > System & Security > Troubleshoot > Power."
+      },
+      {
+        "title": "Open Control Panel (Windows 7)",
+        "content": "Open the Control Panel, type 'troubleshooting' into the search box at the top right corner, and click Troubleshooting > View All > Power."
+      },
+      {
+        "title": "Run the Troubleshooter",
+        "content": "Follow the on-screen instructions to run the power troubleshooter and apply the recommended fixes."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-01T09:28:09.416Z",
+      "updated": "2026-02-01T09:28:09.416Z",
+      "sourceUrl": "https://www.howtogeek.com/169720/how-to-increase-your-windows-laptops-battery-life/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
