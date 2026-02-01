@@ -77766,5 +77766,231 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1769963021350-109",
+    "title": "Build Alexa Speaker with Raspberry Pi",
+    "problemDescription": "Guide to setting up Alexa Voice Service on a Raspberry Pi to create a custom Alexa speaker.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "Raspberry Pi",
+      "Alexa Voice Service",
+      "DIY Speaker",
+      "AVS",
+      "AlexaPi"
+    ],
+    "steps": [
+      {
+        "title": "Update Raspberry Pi",
+        "content": "Open a Terminal on your Raspberry Pi desktop and run the following commands to update your system: `sudo apt-get update && sudo apt-get upgrade`."
+      },
+      {
+        "title": "Download Required Files",
+        "content": "Run the following command to download the necessary files: `wget \\ wget \\ wget`."
+      },
+      {
+        "title": "Run Install Script",
+        "content": "Execute the install script with the following command: `sudo bash setup.sh config.json [-s 1234]`."
+      },
+      {
+        "title": "Agree to Terms and Conditions",
+        "content": "Type `AGREE` and hit Enter to agree to the AVS Terms and Conditions. This step may take 30 minutes to over an hour."
+      },
+      {
+        "title": "Launch AVS on Raspberry Pi",
+        "content": "In the terminal, enter `sudo bash startsample.sh` to start the Alexa app."
+      },
+      {
+        "title": "Authorize Alexa",
+        "content": "In your Chromium browser, navigate to the provided URL, enter the unique 6-digit code displayed in the terminal, and click Continue. Then, click Allow to authorize Alexa."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Alternative Method: Using Different Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Different Browser",
+            "content": "If Chromium is not available, you can use another browser like Firefox or Chrome to complete the authorization process."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T16:23:41.350Z",
+      "updated": "2026-02-01T16:23:41.350Z",
+      "sourceUrl": "https://www.tomshardware.com/how-to/raspberry-pi-alexa-voice-service",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769963025365-159",
+    "title": "Netgear R6800 Access Control Issue",
+    "problemDescription": "Devices connected to a Netgear R6800 router via powerline or wirelessly lose internet access after enabling and disabling Access Control.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "netgear",
+      "access control",
+      "powerline",
+      "internet connection",
+      "router"
+    ],
+    "steps": [
+      {
+        "title": "Reset the Router",
+        "content": "Perform a full reset of the Netgear R6800 router to restore default settings. This can often resolve unexpected behavior caused by configuration changes."
+      },
+      {
+        "title": "Reconnect Devices",
+        "content": "After the router reset, reconnect all devices to the network. Ensure that each device is properly reconfigured to connect to the router."
+      },
+      {
+        "title": "Check IP Address Assignments",
+        "content": "Verify that each device is receiving a valid IP address from the router's DHCP server. If a device is not receiving an IP address, manually assign one or troubleshoot the DHCP settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Wireshark for Network Analysis",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Wireshark",
+            "content": "Download and install Wireshark on a computer connected to the network."
+          },
+          {
+            "title": "Capture Network Traffic",
+            "content": "Use Wireshark to capture network traffic and analyze the communication between the router and devices. Look for any anomalies or errors that might indicate the cause of the issue."
+          },
+          {
+            "title": "Analyze Results",
+            "content": "Based on the captured data, identify any patterns or issues that might be causing the connectivity problems. Adjust router settings or device configurations as needed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T16:23:45.365Z",
+      "updated": "2026-02-01T16:23:45.365Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/netgear-r6800-access-control-and-peripheral-devices-no-longer-able-to-connect-to-the-internet-for-info.3634019/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769963028310-389",
+    "title": "Improve New Router Performance",
+    "problemDescription": "New router performs poorly compared to old router despite similar signal strength.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "router",
+      "performance",
+      "speed"
+    ],
+    "steps": [
+      {
+        "title": "Check Router Placement",
+        "content": "Ensure the new router is placed in an optimal location, away from interference sources like microwaves and cordless phones."
+      },
+      {
+        "title": "Update Firmware",
+        "content": "Check for and install any available firmware updates for the new router."
+      },
+      {
+        "title": "Adjust Settings",
+        "content": "Optimize router settings, such as channel selection and bandwidth management, to improve performance."
+      },
+      {
+        "title": "Test with Different Devices",
+        "content": "Verify if the issue is consistent across multiple devices to rule out device-specific problems."
+      },
+      {
+        "title": "Consider Router Compatibility",
+        "content": "Ensure that the new router is compatible with your devices and network requirements."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Wait for Wi-Fi 6e",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delay Purchase",
+            "content": "Consider waiting until Wi-Fi 6e becomes more common and its efficiency is proven before investing in a new router."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T16:23:48.310Z",
+      "updated": "2026-02-01T16:23:48.310Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/are-new-routers-poor-performers.3672826/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769963069296-970",
+    "title": "Fix WhatsApp Waiting for This Message Error",
+    "problemDescription": "WhatsApp displays 'Waiting for this message. This may take a while' error.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "message",
+      "error",
+      "synchronization"
+    ],
+    "steps": [
+      {
+        "title": "Update WhatsApp",
+        "content": "Ensure both you and the person you're chatting with are using the latest version of WhatsApp. Update via the App Store (iOS) or Google Play Store (Android)."
+      },
+      {
+        "title": "Trigger Synchronization",
+        "content": "Ask the person you're chatting with to open WhatsApp on their phone to trigger synchronization between devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall WhatsApp",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Chats",
+            "content": "Create a backup of your WhatsApp chats."
+          },
+          {
+            "title": "Uninstall WhatsApp",
+            "content": "Uninstall WhatsApp from your device."
+          },
+          {
+            "title": "Reinstall WhatsApp",
+            "content": "Reinstall WhatsApp from the App Store (iOS) or Google Play Store (Android)."
+          },
+          {
+            "title": "Restore Chats",
+            "content": "Restore your chats from the backup."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T16:24:29.296Z",
+      "updated": "2026-02-01T16:24:29.296Z",
+      "sourceUrl": "https://www.makeuseof.com/resolve-waiting-for-this-message-error-whatsapp/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
