@@ -77117,5 +77117,654 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1769959255347-675",
+    "title": "Fix Pixel 8 Pro Camera Rainbow Artifact",
+    "problemDescription": "The Pixel 8 Pro camera may produce rainbow artifacts in high-contrast scenes due to aliasing.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel 8 pro",
+      "camera",
+      "rainbow artifact",
+      "aliasing"
+    ],
+    "steps": [
+      {
+        "title": "Update Software",
+        "content": "Ensure your Pixel 8 Pro is running the latest software version, as Google has released updates to address this issue."
+      },
+      {
+        "title": "Adjust Camera Settings",
+        "content": "Experiment with different camera settings, such as reducing the resolution or using different shooting modes, to minimize the rainbow artifact."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Dual Exposure Feature",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Dual Exposure",
+            "content": "Activate the Dual Exposure feature in the camera settings to potentially reduce the rainbow artifact by improving shadow detail."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T15:20:55.347Z",
+      "updated": "2026-02-01T15:20:55.347Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/the-pixel-8-pro-camera-has-some-issues-heres-how-to-sidestep-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769959257948-213",
+    "title": "Clean Phone Charging Port",
+    "problemDescription": "Phone not charging due to a clogged charging port.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "phone",
+      "charging",
+      "port",
+      "clean",
+      "dirt"
+    ],
+    "steps": [
+      {
+        "title": "Gather Tools",
+        "content": "You'll need a toothpick, a can of compressed air, and a soft-bristled brush (like an old toothbrush)."
+      },
+      {
+        "title": "Power Off Your Phone",
+        "content": "Turn off your phone to avoid any potential damage while cleaning."
+      },
+      {
+        "title": "Use Compressed Air",
+        "content": "Hold your phone at an angle and use the can of compressed air to blow out any loose debris from the charging port."
+      },
+      {
+        "title": "Use a Toothpick",
+        "content": "Gently insert a toothpick into the charging port to scrape out any stubborn debris. Be careful not to damage the port."
+      },
+      {
+        "title": "Brush the Port",
+        "content": "Use the soft-bristled brush to gently brush out any remaining debris from the charging port."
+      },
+      {
+        "title": "Test the Charger",
+        "content": "After cleaning, plug in your charger and see if your phone starts charging."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Small Vacuum",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Power Off Your Phone",
+            "content": "Turn off your phone to avoid any potential damage while cleaning."
+          },
+          {
+            "title": "Use a Small Vacuum",
+            "content": "Use a small, handheld vacuum with a fine nozzle to gently suck out any debris from the charging port."
+          },
+          {
+            "title": "Test the Charger",
+            "content": "After cleaning, plug in your charger and see if your phone starts charging."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Cotton Swab",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Power Off Your Phone",
+            "content": "Turn off your phone to avoid any potential damage while cleaning."
+          },
+          {
+            "title": "Use a Cotton Swab",
+            "content": "Dampen a cotton swab with a small amount of isopropyl alcohol and gently clean the charging port."
+          },
+          {
+            "title": "Test the Charger",
+            "content": "After cleaning, plug in your charger and see if your phone starts charging."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T15:20:57.948Z",
+      "updated": "2026-02-01T15:20:57.948Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/phone-doesnt-charge-try-this-simple-diy-fix-at-home-first/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769959259969-481",
+    "title": "Fix Electronics with Zolve App",
+    "problemDescription": "Troubleshoot and fix broken electronics using the Zolve app.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "electronics",
+      "troubleshooting",
+      "app",
+      "fix",
+      "manual"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install Zolve App",
+        "content": "Download the Zolve app from your device's app store and install it."
+      },
+      {
+        "title": "Scan Product Barcode",
+        "content": "Open the Zolve app and use your device's camera to scan the barcode of the product you need to troubleshoot."
+      },
+      {
+        "title": "Access Manufacturer's Guide and Troubleshooting Information",
+        "content": "After scanning, the app will display the manufacturer's guide and troubleshooting information specific to your product model."
+      },
+      {
+        "title": "Follow the Instructions",
+        "content": "Follow the provided instructions, manuals, or how-to videos to troubleshoot and fix your electronic device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Search Online",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Search for Product Model",
+            "content": "Go to a search engine and type in the model number of your product along with the issue you're experiencing."
+          },
+          {
+            "title": "Look for Forums and Videos",
+            "content": "Look for forums, videos, or articles that provide troubleshooting steps for your specific issue."
+          },
+          {
+            "title": "Follow the Instructions",
+            "content": "Follow the instructions provided in the forums, videos, or articles to troubleshoot and fix your electronic device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T15:20:59.969Z",
+      "updated": "2026-02-01T15:20:59.969Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/new-app-to-help-fix-your-broken-electronics-is-ready-to-scan-over-450000-devices/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769959269319-441",
+    "title": "Fix Bash Alias Errors in Terminal",
+    "problemDescription": "Terminal displays 'bash: alias: source: not found' and 'bash: alias: /home/usrname/.bashrc: not found' errors.",
+    "category": "linux",
+    "difficulty": "Easy",
+    "keywords": [
+      "bash",
+      "terminal",
+      "alias",
+      "ubuntu",
+      ".bashrc"
+    ],
+    "steps": [
+      {
+        "title": "Restore Default .bashrc File",
+        "content": "Open your terminal and run the following command to copy the default .bashrc file from /etc/skel to your home directory: `cp /etc/skel/.bashrc ~`."
+      },
+      {
+        "title": "Verify the Changes",
+        "content": "After running the command, close and reopen your terminal to ensure the errors are resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manually Edit .bashrc File",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open .bashrc File",
+            "content": "Open the .bashrc file in a text editor: `nano ~/.bashrc`."
+          },
+          {
+            "title": "Remove Incorrect Alias",
+            "content": "Locate and remove the line that contains the incorrect alias: `alias betty=\"~/betty/main.rb\"`."
+          },
+          {
+            "title": "Save and Exit",
+            "content": "Save the changes and exit the text editor. Then, reload the .bashrc file: `source ~/.bashrc`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T15:21:09.319Z",
+      "updated": "2026-02-01T15:21:09.320Z",
+      "sourceUrl": "https://askubuntu.com/questions/519940/question-about-something-appearing-in-my-terminal",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769959270767-50",
+    "title": "Voice Recognition Login on Ubuntu",
+    "problemDescription": "How to implement voice recognition for login on Ubuntu.",
+    "category": "linux",
+    "difficulty": "Hard",
+    "keywords": [
+      "voice",
+      "recognition",
+      "login",
+      "ubuntu",
+      "authentication"
+    ],
+    "steps": [
+      {
+        "title": "Discuss the Idea",
+        "content": "Start a discussion on the Ubuntu forums to gauge interest and gather feedback from the community and developers."
+      },
+      {
+        "title": "Research PAM Modules",
+        "content": "Look for or develop a Pluggable Authentication Module (PAM) that supports voice recognition, similar to fingerprint authentication modules."
+      },
+      {
+        "title": "Implement the PAM Module",
+        "content": "If no ready-to-use module is available, implement one that can integrate with Ubuntu's authentication system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Community Feedback and Development",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Gather Community Support",
+            "content": "Engage with the Ubuntu community to gather support and potential collaborators for the project."
+          },
+          {
+            "title": "Develop a Prototype",
+            "content": "Create a prototype of the voice recognition login system and test it within the community for feedback."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T15:21:10.767Z",
+      "updated": "2026-02-01T15:21:10.767Z",
+      "sourceUrl": "https://askubuntu.com/questions/117505/is-it-possible-to-login-by-voice-recognition",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1769959271425-563",
+    "title": "Fix Not Enough Free Disk Space When Upgrading Ubuntu",
+    "problemDescription": "Insufficient disk space error when attempting to upgrade Ubuntu.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "ubuntu",
+      "upgrade",
+      "disk space",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Remove Unnecessary Packages",
+        "content": "Open a terminal and run the command `sudo apt autoremove` to remove unnecessary packages and free up disk space."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-01T15:21:11.425Z",
+      "updated": "2026-02-01T15:21:11.425Z",
+      "sourceUrl": "https://askubuntu.com/questions/298487/not-enough-free-disk-space-when-upgrading",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769959273245-508",
+    "title": "Fix Ubuntu 24.04 Sandboxing Issue",
+    "problemDescription": "Ubuntu 24.04 broke sandboxing functionality, causing issues with user namespaces.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "sandboxing",
+      "user namespaces",
+      "sysctl"
+    ],
+    "steps": [
+      {
+        "title": "Temporarily Enable Unprivileged User Namespaces",
+        "content": "Run the following command to temporarily enable unprivileged user namespaces: `sudo sysctl kernel.unprivileged_userns_clone=1`."
+      },
+      {
+        "title": "Disable AppArmor Restriction",
+        "content": "Run the following command to disable the AppArmor restriction on unprivileged user namespaces: `sudo sysctl kernel.apparmor_restrict_unprivileged_userns=0`."
+      },
+      {
+        "title": "Make Changes Permanent",
+        "content": "To make these changes permanent, create a new file in `/etc/sysctl.d/` (e.g., `/etc/sysctl.d/99-userns.conf`) and add the following lines: `kernel.unprivileged_userns_clone=1` and `kernel.apparmor_restrict_unprivileged_userns=0`. Then, apply the changes with `sudo sysctl --system`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Alternative: Revert to Previous Ubuntu Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Important Data",
+            "content": "Backup all important data before proceeding."
+          },
+          {
+            "title": "Reinstall Previous Ubuntu Version",
+            "content": "Reinstall the previous version of Ubuntu that had working sandboxing functionality."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T15:21:13.245Z",
+      "updated": "2026-02-01T15:21:13.245Z",
+      "sourceUrl": "https://askubuntu.com/questions/1545324/solved-ubuntu-24-04-broke-sandboxing-how2-fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769959278744-316",
+    "title": "Fix Windows 11 Start Menu Not Working",
+    "problemDescription": "The Start menu in Windows 11 is unresponsive or not working after an upgrade.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "start menu",
+      "unresponsive",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Restart File Explorer",
+        "content": "Open Task Manager (Ctrl+Shift+Esc), find Windows Explorer in the list of processes, right-click on it, and select 'Restart'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reboot Your PC",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your Computer",
+            "content": "If restarting File Explorer doesn't work, try rebooting your PC to see if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T15:21:18.744Z",
+      "updated": "2026-02-01T15:21:18.744Z",
+      "sourceUrl": "https://www.techradar.com/how-to/windows-11-problems-how-to-fix-the-most-common-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769959283581-669",
+    "title": "Fix Windows 11 2026 App Crashes",
+    "problemDescription": "Apps crashing due to the Windows 11 2026 update.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "app crash",
+      "update",
+      "microsoft store"
+    ],
+    "steps": [
+      {
+        "title": "Reset Microsoft Store Cache",
+        "content": "To reset the Microsoft Store cache, press the Windows key + R, type 'wsreset.exe', and press Enter. This will clear any corruption in the cache that might be causing the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Sign Out and Back In to Microsoft Store",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Sign Out",
+            "content": "Open the Microsoft Store, click on your profile picture, and select 'Sign out'."
+          },
+          {
+            "title": "Sign Back In",
+            "content": "Sign back into the Microsoft Store with your Microsoft account."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Uninstall and Reinstall Affected Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall the App",
+            "content": "Go to Settings > Apps > Installed apps, find the affected app, and click 'Uninstall'."
+          },
+          {
+            "title": "Reinstall the App",
+            "content": "Reinstall the app from the Microsoft Store."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Wait for Microsoft to Release a Fix",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Wait for Update",
+            "content": "Microsoft is working on a resolution. Wait for the official patch to be released."
+          }
+        ]
+      },
+      {
+        "title": "Method 5: Remove the January Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open Settings > Windows Update > Update history."
+          },
+          {
+            "title": "Uninstall Updates",
+            "content": "Click on 'Uninstall updates' and remove the January update."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T15:21:23.581Z",
+      "updated": "2026-02-01T15:21:23.581Z",
+      "sourceUrl": "https://www.techradar.com/computing/windows/windows-11s-2026-goes-from-bad-to-worse-as-two-new-bugs-cause-havoc-crashing-apps-but-there-are-possible-fixes",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769959285158-103",
+    "title": "Fix Windows 11 Gaming Bugs",
+    "problemDescription": "Windows 11 gamers experiencing bugs and screen flashing issues.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "gaming",
+      "bugs",
+      "screen flashing"
+    ],
+    "steps": [
+      {
+        "title": "Update Windows 11",
+        "content": "Ensure your system is updated to the latest Windows 11 version, as Microsoft has released fixes for known gaming bugs."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Adjust Graphics Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Graphics Settings",
+            "content": "Modify graphics settings in the affected game or app to reduce screen flashing."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T15:21:25.158Z",
+      "updated": "2026-02-01T15:21:25.158Z",
+      "sourceUrl": "https://www.techradar.com/computing/windows/i-dont-generally-recommend-downloading-windows-11s-preview-updates-but-some-gamers-may-want-to-chance-microsofts-latest-effort",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769959296279-224",
+    "title": "Disable iPhone Lock Screen Widgets to Save Battery",
+    "problemDescription": "iPhone battery drains quickly due to widgets on the lock screen.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "battery",
+      "widgets",
+      "lock screen"
+    ],
+    "steps": [
+      {
+        "title": "Access Lock Screen",
+        "content": "Press and hold on your existing lock screen."
+      },
+      {
+        "title": "Choose a Widget-Free Lock Screen",
+        "content": "Swipe around to select a lock screen profile that doesn't have any widgets."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Widgets Individually",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to the Settings app on your iPhone."
+          },
+          {
+            "title": "Navigate to Widgets",
+            "content": "Tap on 'Face ID & Passcode' or 'Touch ID & Passcode', then enter your passcode."
+          },
+          {
+            "title": "Disable Widgets",
+            "content": "Scroll down and turn off the toggle for 'Widgets'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T15:21:36.279Z",
+      "updated": "2026-02-01T15:21:36.279Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/you-probably-dont-need-these-3-ios-features-turn-them-off-to-save-battery/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769959315039-649",
+    "title": "Disable Always-On Display on iPhone",
+    "problemDescription": "The always-on display on iPhone can be distracting and may consume more battery.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iPhone",
+      "always-on display",
+      "distraction",
+      "battery"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Open the Settings app on your iPhone."
+      },
+      {
+        "title": "Navigate to Display & Brightness",
+        "content": "Tap on 'Display & Brightness'."
+      },
+      {
+        "title": "Access Always On Display",
+        "content": "Scroll down and tap on 'Always On Display'."
+      },
+      {
+        "title": "Turn Off Always On Display",
+        "content": "Toggle off the 'Always On Display' option."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Customize Always-On Display",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Open the Settings app on your iPhone."
+          },
+          {
+            "title": "Navigate to Display & Brightness",
+            "content": "Tap on 'Display & Brightness'."
+          },
+          {
+            "title": "Access Always On Display",
+            "content": "Scroll down and tap on 'Always On Display'."
+          },
+          {
+            "title": "Turn On Always On Display",
+            "content": "Toggle on the 'Always On Display' option if it’s currently off."
+          },
+          {
+            "title": "Customize Settings",
+            "content": "Enable or disable the toggles in the 'Customize' section to your liking."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T15:21:55.039Z",
+      "updated": "2026-02-01T15:21:55.039Z",
+      "sourceUrl": "https://www.techradar.com/phones/iphone/ive-been-using-iphones-for-years-and-i-always-turn-off-this-major-ios-feature",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
