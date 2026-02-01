@@ -73738,5 +73738,606 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1769934462689-994",
+    "title": "Fix iOS 17.1.1 Texting Issues with Android Phones",
+    "problemDescription": "After updating to iOS 17.1.1, users are unable to send texts to Android phones.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "ios",
+      "texting",
+      "android",
+      "update",
+      "verizon",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Contact Your Carrier",
+        "content": "Reach out to your phone carrier's customer support and request to be connected with level two support. They will synchronize your provisioning settings."
+      },
+      {
+        "title": "Reset All Settings",
+        "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset All Settings. This will reset network settings and other configurations without deleting your data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Network Reset and Restart",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings."
+          },
+          {
+            "title": "Restart Your iPhone",
+            "content": "Restart your iPhone by pressing and holding the power button and then sliding to power off. Wait a few seconds and then turn it back on."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Carrier-Specific Fix",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Verizon Support",
+            "content": "If you are a Verizon customer, contact Verizon support. They may need to turn off iMessage, SMS, and your phone, then ask you to turn your phone back on, reset all settings, and then the issue should be resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T08:27:42.689Z",
+      "updated": "2026-02-01T08:27:42.689Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255289279",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769934480988-830",
+    "title": "Microsoft 365 and Office Apps Outage",
+    "problemDescription": "Microsoft 365, Office apps, and Microsoft Teams are experiencing an outage due to a third-party ISP routing issue.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft 365",
+      "Office apps",
+      "Microsoft Teams",
+      "outage",
+      "ISP issue"
+    ],
+    "steps": [
+      {
+        "title": "Check Microsoft Health Status Page",
+        "content": "Visit the Microsoft 365 Health Status page to confirm the outage and monitor the progress of the resolution."
+      },
+      {
+        "title": "Wait for Resolution",
+        "content": "As the issue is with a third-party ISP, there is no immediate action to take. Wait for Microsoft to resolve the issue."
+      },
+      {
+        "title": "Use Local Backups",
+        "content": "If you need to access or edit documents, use local backups of your files in the native apps (e.g., Word, Excel) which should still work."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Partial Service Restoration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Monitor Service Restoration",
+            "content": "Check if services are slowly coming back online by trying to access Microsoft Teams, Outlook, or other Microsoft apps periodically."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T08:28:00.988Z",
+      "updated": "2026-02-01T08:28:00.988Z",
+      "sourceUrl": "https://www.howtogeek.com/microsoft-365-office-apps-and-microsoft-teams-are-down-right-now/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769934495701-740",
+    "title": "Fix WSL 2 Error 0x80370102",
+    "problemDescription": "WSL 2 fails to run Ubuntu with error code 0x80370102.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "WSL 2",
+      "Ubuntu",
+      "error",
+      "0x80370102",
+      "Windows 11"
+    ],
+    "steps": [
+      {
+        "title": "Disable and Re-enable Virtual Machine Platform",
+        "content": "1. Open 'Turn Windows features on or off'.\n2. Uncheck 'Virtual Machine Platform'.\n3. Restart your computer.\n4. Re-enable 'Virtual Machine Platform'.\n5. Restart your computer again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update WSL",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run WSL Update Command",
+            "content": "Open PowerShell as Administrator and run: `wsl --update`."
+          }
+        ]
+      },
+      {
+        "title": "Configure VM Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Configure VM Settings",
+            "content": "Run the following PowerShell commands:\n```\n$VM = \"Windows 11 dev environment\"\nGet-VM $VM | Stop-VM\nSet-VMMemory -VMName $VM -DynamicMemoryEnabled $false\nSet-VMProcessor -VMName $VM -ExposeVirtualizationExtensions $true\nGet-VMNetworkAdapter -VMName $VM | Set-VMNetworkAdapter -MacAddressSpoofing on\nGet-VM $VM | Start-VM\n```"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T08:28:15.701Z",
+      "updated": "2026-02-01T08:28:15.701Z",
+      "sourceUrl": "https://askubuntu.com/questions/1264102/wsl-2-wont-run-ubuntu-error-0x80370102",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769934501533-302",
+    "title": "Fix DNS Not Working on WSL",
+    "problemDescription": "DNS resolution is not working on Windows Subsystem for Linux (WSL).",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "wsl",
+      "dns",
+      "windows",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Create Configuration Files",
+        "content": "Create the following configuration files in your WSL environment:"
+      },
+      {
+        "title": "Edit /etc/wsl.conf",
+        "content": "Add the following line to the file:\n\n[network]\ngenerateResolvConf = false"
+      },
+      {
+        "title": "Edit /etc/resolv.conf",
+        "content": "Add the following line to the file:\n\nnameserver 8.8.8.8"
+      },
+      {
+        "title": "Restart WSL",
+        "content": "Run the following command in PowerShell to restart WSL:\n\nwsl --shutdown"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change Network Profile to Private",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Network Profile",
+            "content": "Temporarily change your Windows network profile to 'Private' if you are on a safe network."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Fix DNS Server on Windows",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Fix Windows DHCP",
+            "content": "Ensure that the DNS server settings are correctly configured on your Windows machine."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T08:28:21.533Z",
+      "updated": "2026-02-01T08:28:21.533Z",
+      "sourceUrl": "https://askubuntu.com/questions/1364984/dns-not-working-on-wsl",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769934508098-562",
+    "title": "Fix Apple TV+ App Crashing on Samsung TV",
+    "problemDescription": "The Apple TV+ app on Samsung TV constantly freezes and shows a 'Video Unavailable' screen.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "apple tv",
+      "samsung tv",
+      "app crash",
+      "video unavailable"
+    ],
+    "steps": [
+      {
+        "title": "Change Video Quality Settings",
+        "content": "Go into the Apple TV App settings on your Samsung TV and select the 'only SD' option."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart the TV",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unplug the TV",
+            "content": "Unplug the TV for a minute and then plug it back in."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset Network Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to your TV's network settings and reset the network connection."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T08:28:28.098Z",
+      "updated": "2026-02-01T08:28:28.098Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254805698",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769934510695-709",
+    "title": "Fix Apple TV App Not Working on Smart TV",
+    "problemDescription": "Apple TV app is not working on a Samsung smart TV, while other apps function normally.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Apple TV",
+      "Samsung TV",
+      "app error",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Reset Smart TV Functions",
+        "content": "Go to Settings --> Support --> Request Support on your Samsung smart TV. Follow the prompts to reset all smart functions. This will require you to reconfigure all apps, so ensure you have all login details handy."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Internet Service Provider",
+            "content": "Reach out to your internet service provider (e.g., Allente) to check if there are any known issues or updates that might affect the Apple TV app."
+          },
+          {
+            "title": "Contact Samsung Support",
+            "content": "Contact Samsung support for further assistance, as they might have specific solutions or updates related to the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T08:28:30.695Z",
+      "updated": "2026-02-01T08:28:30.695Z",
+      "sourceUrl": "https://discussions.apple.com/thread/256211201",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769934514762-137",
+    "title": "Fix Apple App on Smart TV",
+    "problemDescription": "Apple App not accessible on smart TV despite active subscription.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "apple",
+      "app",
+      "smart tv",
+      "subscription"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your smart TV is connected to the internet."
+      },
+      {
+        "title": "Restart the TV",
+        "content": "Turn off your smart TV, wait for a few seconds, and then turn it back on."
+      },
+      {
+        "title": "Update the App",
+        "content": "Go to the app store on your smart TV and check for any available updates for the Apple App."
+      },
+      {
+        "title": "Reinstall the App",
+        "content": "Uninstall the Apple App and then reinstall it from the app store."
+      },
+      {
+        "title": "Check Subscription Status",
+        "content": "Verify that your subscription is still active and correctly linked to your Apple ID."
+      },
+      {
+        "title": "Sign Out and Sign In",
+        "content": "Sign out of your Apple ID on the app and then sign back in."
+      },
+      {
+        "title": "Check for TV Software Updates",
+        "content": "Ensure your smart TV's software is up to date."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "If none of the above steps work, contact Apple Support for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T08:28:34.762Z",
+      "updated": "2026-02-01T08:28:34.762Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255387655",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769934521996-78",
+    "title": "Fix NewTeams Not Starting on Windows 10",
+    "problemDescription": "NewTeams application fails to start on Windows 10, with no error messages or processes visible in Task Manager.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "NewTeams",
+      "Windows 10",
+      "application",
+      "startup",
+      "debug"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall All Versions of Teams",
+        "content": "Use Revo Uninstaller Free to completely remove all installed versions of Teams from your system."
+      },
+      {
+        "title": "Reinstall the Latest Version of Teams",
+        "content": "Download and install the latest version of NewTeams from the official Microsoft website."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Conflicting Processes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Task Manager",
+            "content": "Press Ctrl+Shift+Esc to open Task Manager."
+          },
+          {
+            "title": "End Any Teams-Related Processes",
+            "content": "Look for any processes related to Teams and end them."
+          },
+          {
+            "title": "Restart Teams",
+            "content": "Try opening NewTeams again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T08:28:41.996Z",
+      "updated": "2026-02-01T08:28:41.996Z",
+      "sourceUrl": "https://superuser.com/questions/1811491/how-to-fix-newteams-not-starting-on-windows-10",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769934523525-798",
+    "title": "Fix Microsoft Teams Incorrect Status",
+    "problemDescription": "Microsoft Teams displays the wrong status, showing as `Offline` when it should be `Available`.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Teams",
+      "status",
+      "offline",
+      "available",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Restart Microsoft Teams",
+        "content": "Quit Microsoft Teams using `Control`+`Q` or `Command`+`Q` and then start it again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manually Change Status",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Click on the User Icon",
+            "content": "Click on the user icon with the status in the upper-right corner."
+          },
+          {
+            "title": "Select Status",
+            "content": "Click on `Offline` and in the drop-down menu, select `Available`."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset Status",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Click on the User Icon",
+            "content": "Click on the user icon with the status in the upper-right corner."
+          },
+          {
+            "title": "Reset Status",
+            "content": "Select `Reset status` from the drop-down menu."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T08:28:43.525Z",
+      "updated": "2026-02-01T08:28:43.525Z",
+      "sourceUrl": "https://superuser.com/questions/1787670/fix-microsoft-teams-showing-incorrect-status-change-offline-to-available",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769934525606-636",
+    "title": "Fix MS Teams 'The request is not properly formatted' Error",
+    "problemDescription": "Users encounter an error when trying to sign in to MS Teams, stating 'The request is not properly formatted. The parameter login_hint is required.'",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "ms teams",
+      "login error",
+      "app-error",
+      "parameter login_hint"
+    ],
+    "steps": [
+      {
+        "title": "Sign Out and Sign Back In",
+        "content": "Close Microsoft Teams completely. Then, reopen the application and sign out of your account. Sign back in to see if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clear Teams Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Navigate to Teams Cache Directory",
+            "content": "Go to File Explorer and type in '%appdata%\\Microsoft\\Teams'."
+          },
+          {
+            "title": "Delete Cache Files",
+            "content": "Once in the directory, delete all the files and re-open Teams."
+          }
+        ]
+      },
+      {
+        "title": "Enable Advanced Diagnostics",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Advanced Diagnostics",
+            "content": "Enable the 'Advanced diagnostics' option in Teams settings and then quit the application."
+          }
+        ]
+      },
+      {
+        "title": "Check System Time",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Time Automatically",
+            "content": "Ensure your operating system's time is set to automatic, as incorrect time settings can cause this issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T08:28:45.606Z",
+      "updated": "2026-02-01T08:28:45.606Z",
+      "sourceUrl": "https://superuser.com/questions/1470765/ms-teams-the-request-is-not-properly-formatted-the-parameter-login-hint-is-d",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769934528818-218",
+    "title": "Fix Microsoft Teams Stuck Notification Tiles",
+    "problemDescription": "Microsoft Teams leaves blank tiles after notifications when switching monitors, requiring a restart to resolve.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Teams",
+      "notification",
+      "bug",
+      "stuck tile"
+    ],
+    "steps": [
+      {
+        "title": "Access Teams Settings",
+        "content": "Click on the three dots next to your profile picture in the top left corner of Microsoft Teams, then select 'Settings'."
+      },
+      {
+        "title": "Navigate to Notifications",
+        "content": "In the Settings menu, click on 'Notifications'."
+      },
+      {
+        "title": "Customize Notification Settings",
+        "content": "Click on 'Custom' and then click the 'Edit' buttons below the notification options."
+      },
+      {
+        "title": "Disable Banners",
+        "content": "Turn off the 'banners' option to prevent notification tiles from appearing."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Teams",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Close Microsoft Teams",
+            "content": "Exit the Microsoft Teams application completely."
+          },
+          {
+            "title": "Reopen Microsoft Teams",
+            "content": "Launch Microsoft Teams again to see if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T08:28:48.818Z",
+      "updated": "2026-02-01T08:28:48.818Z",
+      "sourceUrl": "https://superuser.com/questions/1686486/any-way-to-resolve-this-microsoft-teams-bug",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
