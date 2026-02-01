@@ -76377,5 +76377,537 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1769953261849-842",
+    "title": "Fix Samsung Galaxy S9/S8 Won't Turn Off",
+    "problemDescription": "The Samsung Galaxy S9 or S8 won't turn off using the standard method.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "samsung",
+      "galaxy",
+      "turn off",
+      "restart"
+    ],
+    "steps": [
+      {
+        "title": "Perform a Forced Restart",
+        "content": "Simultaneously hold down the power button and the volume down button for 10 seconds. This should force the phone to restart."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Open Settings, go to Software update, and select Download updates manually. Install any available updates."
+          }
+        ]
+      },
+      {
+        "title": "Restart in Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter Safe Mode",
+            "content": "Press and hold the Power button until the Power off icon appears. Tap and hold the Power off icon until the Safe Mode prompt appears. Tap Safe Mode to restart in this mode."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T13:41:01.849Z",
+      "updated": "2026-02-01T13:41:01.849Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/common-samsung-galaxy-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769953263710-849",
+    "title": "Run Diagnostics on Samsung Galaxy",
+    "problemDescription": "Your Samsung Galaxy phone or tablet isn't working properly and you need to check its overall condition.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "samsung",
+      "diagnostic",
+      "phone",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Device",
+        "content": "Restart your Samsung device to clean the memory and clear any temporary cache files that might be interfering with normal functions."
+      },
+      {
+        "title": "Open the Samsung Members App",
+        "content": "Launch the Samsung Members app on your device."
+      },
+      {
+        "title": "Navigate to Diagnostics",
+        "content": "Go to the 'Get help' section and tap on 'Run diagnostics'."
+      },
+      {
+        "title": "Run the Diagnostic Test",
+        "content": "Follow the on-screen instructions to run a full diagnostic check on your Samsung device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure all important data is backed up as a factory reset will erase all data."
+          },
+          {
+            "title": "Go to Settings",
+            "content": "Open the Settings app on your Samsung device."
+          },
+          {
+            "title": "Navigate to General Management",
+            "content": "Tap on 'General management' and then 'Reset'."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Select 'Factory data reset' and follow the on-screen instructions to complete the reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T13:41:03.710Z",
+      "updated": "2026-02-01T13:41:03.710Z",
+      "sourceUrl": "https://www.makeuseof.com/how-to-run-diagnostics-on-your-samsung-phone/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769953265633-428",
+    "title": "Remove Bloatware on Samsung Devices",
+    "problemDescription": "Samsung devices come with numerous pre-installed apps (bloatware) that cannot be easily removed.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "bloatware",
+      "samsung",
+      "android",
+      "pre-installed apps"
+    ],
+    "steps": [
+      {
+        "title": "Disable Unwanted Apps",
+        "content": "Go to Settings > Apps > Select the app you want to disable > Tap 'Disable'. This will hide the app and prevent it from running in the background."
+      },
+      {
+        "title": "Use ADB to Uninstall Bloatware",
+        "content": "Enable Developer Options by going to Settings > About phone > Tap 'Build number' seven times. Then, go to Settings > Developer options > Enable 'USB debugging'. Connect your device to a computer, open a command prompt or terminal, and use the command 'adb devices' to ensure your device is detected. Use the command 'adb shell pm uninstall -k --user 0 <package.name>' to uninstall the app, replacing <package.name> with the actual package name of the app."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Third-Party Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Debloater App",
+            "content": "Install a third-party app like 'Package Disabler Pro' or 'System App Remover' from the Google Play Store. These apps can help you disable or remove bloatware more easily."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T13:41:05.633Z",
+      "updated": "2026-02-01T13:41:05.633Z",
+      "sourceUrl": "https://www.makeuseof.com/samsung-phones-annoying-issues/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769953267949-828",
+    "title": "Fix Android Phone Not Receiving Text Messages",
+    "problemDescription": "Your Android phone is not receiving text messages.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "text messages",
+      "not receiving"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Phone",
+        "content": "Restart your Android phone to refresh the system and resolve temporary glitches."
+      },
+      {
+        "title": "Check Airplane Mode",
+        "content": "Ensure Airplane Mode is turned off, as it can block text messages."
+      },
+      {
+        "title": "Verify SIM Card",
+        "content": "Make sure your SIM card is properly inserted and not damaged."
+      },
+      {
+        "title": "Update Messaging App",
+        "content": "Update your messaging app to the latest version to fix any bugs."
+      },
+      {
+        "title": "Check Message Settings",
+        "content": "Go to your messaging app settings and ensure that message delivery is enabled."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > System > Reset options > Reset Wi-Fi, mobile & Bluetooth. This will reset all network settings to default."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Carrier Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Carrier Settings",
+            "content": "Go to Settings > System > Advanced > Update carrier settings. This will update your phone's carrier settings to the latest version."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Backup your important data as a factory reset will erase all data from your phone."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset). Follow the on-screen instructions to complete the reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T13:41:07.949Z",
+      "updated": "2026-02-01T13:41:07.949Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/android-troubleshooting/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769953285126-688",
+    "title": "Fix MacBook Pro Slow Performance and Fan Noise After Battery Replacement",
+    "problemDescription": "MacBook Pro running slow and fan constantly loud after battery replacement.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "battery",
+      "fan",
+      "slow performance"
+    ],
+    "steps": [
+      {
+        "title": "Contact the Repair Shop",
+        "content": "Return to the local shop that replaced the battery and request they redo the service or further diagnose the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Ship to Apple for Service",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Order a Shipping Box",
+            "content": "Order a shipping box from Apple online to send your MacBook Pro to an Apple depot for service."
+          },
+          {
+            "title": "Schedule Drop-off",
+            "content": "Schedule a convenient time to drop off your MacBook Pro and have it shipped to the Apple depot."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T13:41:25.126Z",
+      "updated": "2026-02-01T13:41:25.126Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/444734/computer-and-internet-extremely-slow-and-fan-constantly-running-audibly-2016-15",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769953292965-31",
+    "title": "Fix External Drive Not Detected",
+    "problemDescription": "External drive is not showing up or detected on Windows.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "external drive",
+      "not detected",
+      "USB",
+      "Windows"
+    ],
+    "steps": [
+      {
+        "title": "Try Another USB Port and Computer",
+        "content": "Unplug the drive from its current slot and try plugging it into another USB port on your computer. If it works in one port but not another, you may have a dead USB port."
+      },
+      {
+        "title": "Check Device Manager for Errors",
+        "content": "Open Device Manager, expand the Disk drives category and check for any devices with a yellow exclamation point next to them. Also, check the Universal Serial Bus controllers section."
+      },
+      {
+        "title": "Fix Driver Issues",
+        "content": "Right-click the device with the issue, select Properties, and look at the error message under Device status. Use the information to fix the problem."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update or Reinstall Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Drivers",
+            "content": "Go to the manufacturer's website and download the latest drivers for your external drive."
+          },
+          {
+            "title": "Reinstall Drivers",
+            "content": "In Device Manager, right-click the device and select Uninstall device. Restart your computer to reinstall the drivers automatically."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T13:41:32.965Z",
+      "updated": "2026-02-01T13:41:32.965Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/external-drive-not-recognized-this-is-how-to-fix-it-in-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769953296030-339",
+    "title": "Fix USB Device Not Detected in Linux",
+    "problemDescription": "USB device is not detected or working properly in Linux.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "linux",
+      "usb",
+      "device",
+      "detection",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check USB Device Detection",
+        "content": "Disconnect the USB device, open a terminal, and run `lsusb`. Note the results, then reconnect the USB device and run `lsusb` again to see if the device is listed."
+      },
+      {
+        "title": "Inspect USB Hardware",
+        "content": "Check the USB cable for any splits or damage. Ensure the plugs are solid and the metal section is firmly attached. Inspect the USB ports on your computer for any signs of wear or looseness."
+      },
+      {
+        "title": "Check for Autosuspend Issues",
+        "content": "Reboot your computer to see if the USB device works. If it does, the issue might be related to power management. To prevent autosuspend, run `udisksctl power-off -b /dev/sdX` in the terminal (replace `sdX` with your device identifier)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check USB Device Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Driver Installation",
+            "content": "Ensure that the necessary drivers for your USB device are installed. Check your Linux distribution's documentation for specific instructions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T13:41:36.031Z",
+      "updated": "2026-02-01T13:41:36.031Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/fix-usb-device-port-linux/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769953301474-535",
+    "title": "Fix Microsoft Teams Defaulting to Alternative Account",
+    "problemDescription": "Microsoft Teams keeps defaulting to an alternative account instead of the primary one.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "account",
+      "default",
+      "alternative account"
+    ],
+    "steps": [
+      {
+        "title": "Sign Out and Sign In",
+        "content": "Sign out of your Microsoft Teams account and then sign back in with your primary account."
+      },
+      {
+        "title": "Check Account Settings",
+        "content": "Go to your Microsoft Teams settings and ensure that your primary account is set as the default."
+      },
+      {
+        "title": "Clear Teams Cache",
+        "content": "Clear the cache of Microsoft Teams by going to the Teams settings and selecting 'Clear cache'."
+      },
+      {
+        "title": "Reinstall Microsoft Teams",
+        "content": "Uninstall Microsoft Teams and then reinstall it to ensure a clean installation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Windows Permissions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Permissions",
+            "content": "Check all Teams permissions on Windows and the Teams 'app' to ensure they are correctly set."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update Teams and Windows",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Software",
+            "content": "Ensure that both Microsoft Teams and Windows are updated to the latest versions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T13:41:41.474Z",
+      "updated": "2026-02-01T13:41:41.474Z",
+      "sourceUrl": "https://www.reddit.com/r/MicrosoftTeams/comments/1dqjsli/the_new_teams_creates_so_many_issues/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769953311105-419",
+    "title": "Fix Microsoft Teams Chat and Activity Feed Issues",
+    "problemDescription": "Microsoft Teams users are experiencing issues with chat search and activity feed clutter.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "chat",
+      "activity feed",
+      "bugs"
+    ],
+    "steps": [
+      {
+        "title": "Clear Teams Cache",
+        "content": "Close Microsoft Teams and delete the cache files. On Windows, navigate to %appdata%\\Microsoft\\Teams and delete all files and folders. On Mac, go to ~/Library/Application Support/Microsoft/Teams and do the same. Restart Teams."
+      },
+      {
+        "title": "Reinstall Microsoft Teams",
+        "content": "Uninstall Microsoft Teams completely. Download the latest version from the official website and install it. Sign in again and check if the issues are resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Web Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to Web Version",
+            "content": "If the desktop app continues to have issues, use the web version of Microsoft Teams. Go to https://www.microsoft.com/microsoft-teams/group-chat-software and sign in with your account."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Microsoft Teams",
+            "content": "Ensure you are using the latest version of Microsoft Teams. Go to the Microsoft Teams download page and download the latest version if an update is available."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T13:41:51.105Z",
+      "updated": "2026-02-01T13:41:51.105Z",
+      "sourceUrl": "https://www.reddit.com/r/MicrosoftTeams/comments/1ptsbwh/microsoft_teams_is_getting_worse_with_persistent/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769953327630-399",
+    "title": "Fix Ricoh Printer Scan to Email Issue",
+    "problemDescription": "Ricoh printer no longer scans to email due to Outlook's phase-out of basic authentication.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "ricoh",
+      "printer",
+      "scan",
+      "email",
+      "outlook",
+      "authentication"
+    ],
+    "steps": [
+      {
+        "title": "Check Printer Compatibility",
+        "content": "Confirm with Ricoh if your printer model supports modern authentication (OAuth)."
+      },
+      {
+        "title": "Update Printer Settings",
+        "content": "If your printer supports modern authentication, update the printer's email settings to use OAuth."
+      },
+      {
+        "title": "Use Alternative Email",
+        "content": "If your printer does not support modern authentication, configure the printer to use a different email account that supports basic authentication."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Ricoh Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Ricoh Support",
+            "content": "Reach out to Ricoh customer support for assistance with updating your printer's firmware or settings to support modern authentication."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T13:42:07.630Z",
+      "updated": "2026-02-01T13:42:07.630Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum/all/how-to-fix-scan-to-email-issue-from-ricoh-printer/92e54351-e19a-4dd9-a211-d80960a667fe",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
