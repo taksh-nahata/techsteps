@@ -76068,5 +76068,314 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1769949468262-752",
+    "title": "Pixel C Tablet Unlock Pattern Not Responding",
+    "problemDescription": "The Pixel C tablet does not respond to the unlock pattern, and the recommended factory reset option is not accessible.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel c",
+      "unlock pattern",
+      "factory reset",
+      "recovery mode"
+    ],
+    "steps": [
+      {
+        "title": "Enter Recovery Mode",
+        "content": "Press and hold the Volume Down and Power buttons simultaneously to start the device and bring up the bootloader menu."
+      },
+      {
+        "title": "Reboot into Android Recovery",
+        "content": "Select the 'Reboot in Android recovery' option from the bootloader menu."
+      },
+      {
+        "title": "Access Recovery Menu",
+        "content": "Once you see the dead Android logo, hold the Power button and press and release the Volume Up button, then release the Power button to bring up the recovery menu."
+      },
+      {
+        "title": "Perform Factory Reset",
+        "content": "Use the Volume buttons to navigate to the 'Wipe data/factory reset' option and press the Power button to select it. Confirm the action to reset the tablet."
+      },
+      {
+        "title": "Restore Tablet",
+        "content": "After the factory reset is complete, reboot the tablet and restore your data if necessary."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Alternative Solution: XDA Forums",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Seek Help from XDA Forums",
+            "content": "Visit the XDA forums for additional solutions and support specific to your Pixel C tablet model."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T12:37:48.262Z",
+      "updated": "2026-02-01T12:37:48.262Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/231416/my-pixel-c-tablet-doesnt-respond-to-the-unlock-pattern-and-the-recommend-action",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769949512689-353",
+    "title": "Fix Bluetooth Headset Connection Problems",
+    "problemDescription": "Bluetooth headset connection issues due to obstacles and range limitations.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "headset",
+      "connection",
+      "range",
+      "dongle"
+    ],
+    "steps": [
+      {
+        "title": "Ensure Line of Sight",
+        "content": "Position your Bluetooth headset and the connected device (e.g., phone, computer) to have a clear line of sight. Avoid obstacles like walls, monitors, or other objects that can interfere with the signal."
+      },
+      {
+        "title": "Use a Bluetooth Dongle",
+        "content": "If connecting to a computer, use a Bluetooth dongle to improve range and connectivity. This helps bypass potential interference from other devices and obstacles."
+      },
+      {
+        "title": "Position the Phone Correctly",
+        "content": "If carrying your phone, place it on the side of the device where the Bluetooth antenna is located to enhance signal strength."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Blue Beacon Range Extender",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Blue Beacon",
+            "content": "Buy a Blue Beacon range extender designed for Bluetooth devices."
+          },
+          {
+            "title": "Connect the Blue Beacon",
+            "content": "Connect the Blue Beacon to your computer or main device to extend the Bluetooth range and reduce interference."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T12:38:32.689Z",
+      "updated": "2026-02-01T12:38:32.689Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=25cZuxAv5Lw",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769949521742-973",
+    "title": "Disable iOS 16 Keyboard Clicks",
+    "problemDescription": "Audible keyboard feedback is active on iOS 16.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "keyboard",
+      "sound",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Open the Settings app on your iPhone."
+      },
+      {
+        "title": "Navigate to Sounds & Haptics",
+        "content": "Scroll down and tap on 'Sounds & Haptics'."
+      },
+      {
+        "title": "Adjust Keyboard Feedback",
+        "content": "Scroll to 'Keyboard Feedback' and toggle off 'Sound'. You can also toggle 'Haptic' on or off as desired."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-01T12:38:41.742Z",
+      "updated": "2026-02-01T12:38:41.742Z",
+      "sourceUrl": "https://www.techradar.com/how-to/ios-16-problems-how-to-solve-the-biggest-issues-on-your-iphone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769949523719-820",
+    "title": "Fix iOS 26 Battery Life Issues",
+    "problemDescription": "Your iPhone is experiencing poor battery life after updating to iOS 26.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "battery",
+      "iphone",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Update Apps and Reboot",
+        "content": "Update all your apps and restart your iPhone to see if this resolves the issue."
+      },
+      {
+        "title": "Check Battery Usage",
+        "content": "Go to Settings > Battery to identify any apps consuming excessive battery. Uninstall or reinstall problematic apps."
+      },
+      {
+        "title": "Enable Optimized Battery Charging",
+        "content": "Navigate to Settings > Battery > Charging and turn on Optimized Battery Charging to reduce battery wear."
+      },
+      {
+        "title": "Enable Adaptive Power Mode",
+        "content": "Go to Settings > Battery > Power Mode and enable Adaptive Power mode to optimize battery usage."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Enable Low Power Mode or Disable 5G",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Low Power Mode",
+            "content": "Go to Settings > Battery and turn on Low Power Mode to conserve battery life."
+          },
+          {
+            "title": "Disable 5G",
+            "content": "Go to Settings > Cellular > Cellular Data Options and disable 5G to reduce battery consumption."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Turn Off Always-On Display",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Always-On Display",
+            "content": "Go to Settings > Display & Brightness and turn off the Always-On Display feature."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T12:38:43.719Z",
+      "updated": "2026-02-01T12:38:43.719Z",
+      "sourceUrl": "https://www.techradar.com/phones/iphone/still-having-ios-26-battery-life-problems-try-these-5-fixes-to-improve-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769949525732-3",
+    "title": "Fix iPhone 17 Pro and iPhone Air Camera Glitch",
+    "problemDescription": "Blacked out sections and white squiggles appear in photos taken with iPhone 17 Pro and iPhone Air under bright LED lights.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iPhone",
+      "camera",
+      "glitch",
+      "software update"
+    ],
+    "steps": [
+      {
+        "title": "Wait for Apple's Software Update",
+        "content": "Apple has identified a fix for the camera glitch and it will be released in an upcoming software update. Ensure your iPhone is set to automatically update or manually check for updates in Settings > General > Software Update."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Avoid Bright LED Lights",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Avoid Direct Exposure to Bright LED Lights",
+            "content": "Until the software update is released, try to avoid taking photos directly into extremely bright LED light displays to prevent the glitch from occurring."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T12:38:45.732Z",
+      "updated": "2026-02-01T12:38:45.732Z",
+      "sourceUrl": "https://www.techradar.com/phones/iphone/apple-promises-fix-for-very-rare-camera-glitch-on-the-iphone-17-pro-and-iphone-air",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769949528241-625",
+    "title": "Fix iOS 26 Not Downloading",
+    "problemDescription": "iOS 26 update is not downloading or stuck in the 'preparing update' stage.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "update",
+      "download",
+      "storage",
+      "wifi"
+    ],
+    "steps": [
+      {
+        "title": "Free Up Storage Space",
+        "content": "Go to Settings > General > iPhone Storage to check and free up at least 10GB of space."
+      },
+      {
+        "title": "Reboot Your iPhone",
+        "content": "After freeing up space, reboot your iPhone to restart the download process."
+      },
+      {
+        "title": "Connect to Wi-Fi",
+        "content": "Ensure your iPhone is connected to a Wi-Fi network, as cellular connections may not support large downloads."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Wait for Background Download",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Download Status",
+            "content": "If the update is stuck in the 'preparing update' stage, wait up to an hour for the download to complete in the background."
+          },
+          {
+            "title": "Charge Your iPhone",
+            "content": "Plug your iPhone into a charger to ensure it doesn't run out of battery during the download."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Schedule Update for Later",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Select 'Update Tonight'",
+            "content": "Choose 'Update Tonight' and ensure your iPhone is connected to Wi-Fi and a charger before going to sleep."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T12:38:48.241Z",
+      "updated": "2026-02-01T12:38:48.241Z",
+      "sourceUrl": "https://www.techradar.com/phones/ios/how-to-download-ios-26-plus-troubleshooting-guide",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
