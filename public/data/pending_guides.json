@@ -72725,5 +72725,489 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1769928457473-251",
+    "title": "Fix ChromeOS Bugs via Update",
+    "problemDescription": "ChromeOS bugs causing login issues or system malfunctions.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "ChromeOS",
+      "bugs",
+      "update",
+      "guest mode",
+      "factory reset"
+    ],
+    "steps": [
+      {
+        "title": "Install ChromeOS Updates in Guest Mode",
+        "content": "At the Chromebook login screen, click 'Browse as guest.' Go to Settings > About Chrome OS > Check for updates. The update will begin automatically if available."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset Chromebook",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Perform Factory Reset",
+            "content": "At the login screen, press Ctrl + Alt + Shift + r. Click 'Restart,' then 'Powerwash,' and 'Continue.' Wait for the reset to complete and sign in to your Google account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T06:47:37.473Z",
+      "updated": "2026-02-01T06:47:37.473Z",
+      "sourceUrl": "https://lifehacker.com/how-to-fix-and-prevent-the-latest-chromeos-bugs-1847330697",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769928462676-615",
+    "title": "Speed Up a Laggy Internet Browser",
+    "problemDescription": "Your internet browser is slow and laggy, affecting your browsing experience.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "browser",
+      "speed",
+      "laggy",
+      "internet"
+    ],
+    "steps": [
+      {
+        "title": "Update Your Browser",
+        "content": "To update Firefox in Windows, click the three lines button in the top-right corner and select Help > About Firefox. On Mac, hit the Firefox button in the menu bar and select About Firefox. To update Chrome (or its derivatives), select the three dots button, then click Help > About Chrome. To update Safari on your Mac, update macOS itself by going to System Settings > General > Software Update."
+      },
+      {
+        "title": "Reduce Ads and Tracking",
+        "content": "In Chrome, click the three-dots button in the top-right corner and go to Settings > Privacy and security > Delete browsing data. Go to the Advanced tab, check all the options you want to clear, and select Delete data. In Safari on your Mac, go to the Safari menu from the menu bar and select Clear History… to remove browsing history. Then, go to Safari menu > Settings > Privacy > Manage Website Data…. Here, you can either select and remove individual websites' data, or select all and remove everything."
+      },
+      {
+        "title": "Check the Ambient Temperature",
+        "content": "In Chrome (and derivatives such as Edge and Brave), press the three dots button in the top-right corner, then go to More Tools > Task Manager. In Safari, open the Activity Monitor app on your Mac and type Safari in the search bar to view the process linked to each open tab and determine which one is causing a slowdown."
+      },
+      {
+        "title": "Close Unused Tabs",
+        "content": "Opening the browser's task manager shows you each tab's CPU and RAM usage. If a tab's taking up too much of either, close the tab to see if it makes a difference."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try a Different Browser",
+            "content": "If your current browser is consistently slow, try using a different browser like Firefox, Chrome, or Edge to see if the performance improves."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T06:47:42.676Z",
+      "updated": "2026-02-01T06:47:42.676Z",
+      "sourceUrl": "https://lifehacker.com/tech/ten-ways-to-speed-up-a-laggy-internet-browser",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769928472385-514",
+    "title": "Fix Microsoft Teams Not Showing New Messages",
+    "problemDescription": "Microsoft Teams is not displaying the latest messages and chats.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Teams",
+      "messages",
+      "chats",
+      "not showing"
+    ],
+    "steps": [
+      {
+        "title": "Quit and Restart Teams",
+        "content": "For Windows users, right-click the Teams icon in the system tray and select 'Quit.' For Mac users, right-click the Teams icon in the dock and select 'Quit.' Then, reload Teams to see if the latest messages appear."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Force Quit Teams via Task Manager",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Task Manager",
+            "content": "Press 'Ctrl + Alt + Delete' and select 'Task Manager.'"
+          },
+          {
+            "title": "End Task",
+            "content": "Find Teams in the list of running applications, select it, and click 'End Task.'"
+          },
+          {
+            "title": "Relaunch Teams",
+            "content": "After force quitting, relaunch Teams to see if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T06:47:52.385Z",
+      "updated": "2026-02-01T06:47:52.385Z",
+      "sourceUrl": "https://www.techradar.com/how-to/the-most-common-microsoft-teams-problems-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769928474314-196",
+    "title": "Switch Between Microsoft Teams Accounts",
+    "problemDescription": "Users need to switch between personal and work accounts in Microsoft Teams.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Teams",
+      "accounts",
+      "switch",
+      "unified app"
+    ],
+    "steps": [
+      {
+        "title": "Access Profile Picture",
+        "content": "Click on your profile picture located in the top right corner of the Microsoft Teams app."
+      },
+      {
+        "title": "Select Account",
+        "content": "Choose the account you want to switch to from the dropdown menu."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Join Meeting Without Signing In",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Join Meeting Directly",
+            "content": "If you are running late, you can join a Teams meeting without signing in by clicking on the meeting link and selecting 'Join as a Guest'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T06:47:54.314Z",
+      "updated": "2026-02-01T06:47:54.314Z",
+      "sourceUrl": "https://www.techradar.com/pro/microsoft-teams-is-solving-one-of-its-biggest-problems-at-last-but-you-probably-still-wont-like-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769928478035-62",
+    "title": "Simplify Microsoft Teams Meeting Join on Mobile",
+    "problemDescription": "Users face difficulties joining meetings on Microsoft Teams mobile app due to complex steps.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Teams",
+      "mobile",
+      "meeting join",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Update Microsoft Teams",
+        "content": "Ensure you have the latest version of Microsoft Teams installed on your mobile device."
+      },
+      {
+        "title": "Check for In-Development Update",
+        "content": "Look for the 'Simplifying Meeting Join Experiences on Mobile' update in the Microsoft 365 roadmap."
+      },
+      {
+        "title": "Join Meeting",
+        "content": "Follow the streamlined steps to join a meeting once the update is available."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Web Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Browser",
+            "content": "Open your mobile browser and go to the Microsoft Teams web version."
+          },
+          {
+            "title": "Join Meeting",
+            "content": "Enter the meeting link or code to join the meeting directly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T06:47:58.035Z",
+      "updated": "2026-02-01T06:47:58.035Z",
+      "sourceUrl": "https://www.techradar.com/pro/microsoft-teams-is-fixing-one-of-its-worst-mobile-flaws",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769928490055-454",
+    "title": "Refresh Your Mac",
+    "problemDescription": "Your Mac is slow, cluttered, or has hardware issues.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "refresh",
+      "clean",
+      "battery",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Clean Your Mac",
+        "content": "Clean your MacBook screen, keyboard, mouse, and trackpad. Remove dust and disinfect them."
+      },
+      {
+        "title": "Check Battery Health",
+        "content": "Go to System Settings > Battery > Battery Health. If it says 'Service recommended', consider replacing the battery."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "For modern Macs with Apple Silicon, go to System Settings > General > Transfer or Reset and select 'Erase All Content and Settings'. For older Macs, follow a guide on how to reinstall macOS."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Upgrade Your Mac",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Upgrade Hardware",
+            "content": "Consider upgrading your Mac's RAM or storage if possible."
+          },
+          {
+            "title": "Update macOS",
+            "content": "Ensure your macOS is up to date by going to System Settings > General > Software Update."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T06:48:10.055Z",
+      "updated": "2026-02-01T06:48:10.055Z",
+      "sourceUrl": "https://www.howtogeek.com/how-to-make-your-mac-feel-new-again/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769928504832-62",
+    "title": "Fix Red Exclamation Mark on Samsung Boot",
+    "problemDescription": "A red exclamation mark appears at the top-left corner when booting a Samsung phone.",
+    "category": "android",
+    "difficulty": "Hard",
+    "keywords": [
+      "samsung",
+      "boot",
+      "exclamation mark",
+      "odin",
+      "firmware"
+    ],
+    "steps": [
+      {
+        "title": "Prepare Necessary Tools",
+        "content": "Download and install Odin (v3.07) on a Windows PC. Also, obtain the original stock firmware for your specific Samsung device model and region."
+      },
+      {
+        "title": "Enter Download Mode",
+        "content": "Hold the Power, Home, and Volume Down buttons simultaneously for about 5 seconds until the Download mode appears."
+      },
+      {
+        "title": "Connect to PC and Run Odin",
+        "content": "Connect your Samsung phone to the PC using a USB cable. Open Odin on the PC."
+      },
+      {
+        "title": "Load Firmware in Odin",
+        "content": "In Odin, click on the PDA button and navigate to the extracted stock Samsung firmware file (MD5 type). Select the file and wait for Odin to process it."
+      },
+      {
+        "title": "Flash the Firmware",
+        "content": "Once Odin has processed the file, it will start flashing the firmware. Do not disconnect the phone during this process."
+      },
+      {
+        "title": "Reboot the Device",
+        "content": "After the flashing process is complete, your phone will automatically reboot. The red exclamation mark should no longer appear."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-01T06:48:24.832Z",
+      "updated": "2026-02-01T06:48:24.832Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/197428/red-exclamation-mark-at-top-left-when-booting-phone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1769928514229-890",
+    "title": "Fix Partially Unresponsive Touchscreen on Android",
+    "problemDescription": "Part of the touchscreen is not responding to touch inputs on an Android device.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "touchscreen",
+      "android",
+      "malfunction",
+      "calibration",
+      "hard reset"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Device",
+        "content": "Turn the device off, wait a few seconds, and then turn it back on again to clear any software errors."
+      },
+      {
+        "title": "Remove SIM and SD Cards",
+        "content": "If your device accepts SIM and memory cards, remove them, then turn the device off and back on again."
+      },
+      {
+        "title": "Recalibrate the Touchscreen",
+        "content": "Go to Settings > System > Calibration (or similar) and follow the on-screen instructions to recalibrate the touchscreen."
+      },
+      {
+        "title": "Clean the Device's Contacts and Screen",
+        "content": "Turn the device off and clean the contacts and screen using isopropyl alcohol and a small brush."
+      },
+      {
+        "title": "Perform a Hard Reset",
+        "content": "As a last resort, perform a hard reset to erase all data and return the device to factory settings. Consult your device documentation for the exact process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update or Flash Firmware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Firmware Updates",
+            "content": "Visit the manufacturer's support page to check for firmware updates specific to your device."
+          },
+          {
+            "title": "Flash Correct Firmware",
+            "content": "If the issue is due to incorrect firmware (e.g., wrong screen size), flash the correct firmware for your device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T06:48:34.229Z",
+      "updated": "2026-02-01T06:48:34.229Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/15197/part-of-touch-screen-is-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769928524805-645",
+    "title": "Gmail 2FA SMS Code Not Working",
+    "problemDescription": "Users are unable to receive SMS codes for 2FA on Gmail, with a message indicating safer options are available.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Gmail",
+      "2FA",
+      "SMS",
+      "login",
+      "verification"
+    ],
+    "steps": [
+      {
+        "title": "Check SMS Functionality",
+        "content": "Send the text 'HELP' to BoA (692632) and Facebook (32665) to verify if you receive generic text messages back. This confirms SMS functionality with third-party services."
+      },
+      {
+        "title": "Test with Google",
+        "content": "Send the text 'HELP' to Google (224444) and check if you receive an SMS back. This will help determine if the issue is specific to Google's SMS service."
+      },
+      {
+        "title": "Toggle Network Settings",
+        "content": "Try using only Wi-Fi and then only cellular network to see if the issue is network-related. Enable airplane mode, turn on Wi-Fi, disable airplane mode, and disable Wi-Fi, testing verification in each scenario."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Change Mobile Carrier (Google Fi Users)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Current Carrier",
+            "content": "Dial ##344636## to get information about your current carrier."
+          },
+          {
+            "title": "Switch Carriers",
+            "content": "Use dial codes to switch between carriers like T-Mobile or Sprint. Work with Google Fi support to ensure the codes are still valid."
+          },
+          {
+            "title": "Test SMS on Different Carriers",
+            "content": "After switching carriers, test if SMS verification works. Repeat the process with different carriers if necessary."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T06:48:44.805Z",
+      "updated": "2026-02-01T06:48:44.805Z",
+      "sourceUrl": "https://www.quora.com/Why-can-t-I-login-to-Gmail-with-2FA-using-SMS-code-I-have-a-message-that-this-option-is-disabled-because-I-have-safer-options-available-What-if-I-will-lose-my-phone-and-not-receive-Google-prompt",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769928530024-867",
+    "title": "Disable 2-Step Verification on Google Account",
+    "problemDescription": "Trouble logging into Google account due to 2-step verification.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "google",
+      "login",
+      "2-step verification"
+    ],
+    "steps": [
+      {
+        "title": "Access Google Account Settings",
+        "content": "Go into Chrome settings and click on 'Manage Your Google Account'."
+      },
+      {
+        "title": "Navigate to Security Settings",
+        "content": "Click on 'Security' in the left-hand menu."
+      },
+      {
+        "title": "Disable 2-Step Verification",
+        "content": "Turn off 2-Step verification."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-01T06:48:50.024Z",
+      "updated": "2026-02-01T06:48:50.024Z",
+      "sourceUrl": "https://www.quora.com/What-can-I-do-if-I-m-having-trouble-logging-into-my-Google-account-because-of-2-step-verification",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
