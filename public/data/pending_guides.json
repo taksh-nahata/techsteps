@@ -78986,5 +78986,529 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1769973740133-838",
+    "title": "Fix Android OS Bugs",
+    "problemDescription": "How to get Android OS bugs fixed and prevent them from recurring.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "bugs",
+      "fix",
+      "os"
+    ],
+    "steps": [
+      {
+        "title": "Reproduce the Bug",
+        "content": "Try to consistently reproduce the bug to understand its triggers and conditions."
+      },
+      {
+        "title": "Gather Information",
+        "content": "Collect detailed information about the bug, including logs, error messages, and steps to reproduce."
+      },
+      {
+        "title": "Contact Manufacturer Support",
+        "content": "Reach out to your phone manufacturer's support team with the gathered information. They may provide a patch or further assistance."
+      },
+      {
+        "title": "Report to Google",
+        "content": "If the bug is related to the Android OS, report it to Google through their Android issue tracker or forum."
+      },
+      {
+        "title": "Community Support",
+        "content": "Seek help from Android enthusiast communities and forums for potential workarounds or solutions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset the Phone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup all important data before performing a reset."
+          },
+          {
+            "title": "Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset)."
+          },
+          {
+            "title": "Restore Data",
+            "content": "After the reset, restore your data and check if the bug persists."
+          }
+        ]
+      },
+      {
+        "title": "Return the Phone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Retailer",
+            "content": "Contact the retailer or manufacturer to discuss returning the phone if it has a persistent internal error."
+          },
+          {
+            "title": "Demand Refund",
+            "content": "If applicable, demand a refund or replacement phone."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T19:22:20.133Z",
+      "updated": "2026-02-01T19:22:20.133Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/8795/how-do-you-get-android-os-bugs-fixed",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769973741926-122",
+    "title": "Protect Android from Viruses",
+    "problemDescription": "Android phone frequently getting affected by viruses due to outdated OS.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "virus",
+      "security",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Update Android Version",
+        "content": "Switch to a device that uses the latest Android version and is supported for a while."
+      },
+      {
+        "title": "Install Custom ROM",
+        "content": "If your device is no longer supported, consider installing a custom ROM built using secure and new OS code."
+      },
+      {
+        "title": "Limit Internet Connectivity",
+        "content": "If updating or installing a custom ROM is not an option, limit your device's internet connectivity to reduce exposure to potential threats."
+      },
+      {
+        "title": "Avoid New Apps/Updates",
+        "content": "Refrain from installing new apps or updates that might exploit existing vulnerabilities."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use SELinux or Security Framework",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable SELinux",
+            "content": "Enable SELinux or other security frameworks to prevent exploitation of some vulnerabilities in older Android versions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T19:22:21.926Z",
+      "updated": "2026-02-01T19:22:21.926Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/215928/my-android-phone-is-often-getting-affected-with-virus",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769973748331-357",
+    "title": "Troubleshoot Android OS or Hardware Issues",
+    "problemDescription": "Your Android device is freezing, taking screenshots unexpectedly, and other erratic behavior persists even after a factory reset.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "troubleshoot",
+      "os",
+      "hardware",
+      "freezing"
+    ],
+    "steps": [
+      {
+        "title": "Check for Software Updates",
+        "content": "Go to Settings > System > System Update and check for any available software updates. Install them if available."
+      },
+      {
+        "title": "Safe Mode Boot",
+        "content": "Restart your device in Safe Mode to check if a third-party app is causing the issue. To do this, press and hold the Power button, then long-press the 'Power Off' option until you see the 'Reboot to Safe Mode' prompt."
+      },
+      {
+        "title": "Check for Hardware Issues",
+        "content": "Inspect your device for any physical damage or signs of hardware failure. Look for issues like overheating, unusual noises, or physical damage."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "If the issue persists, perform another factory reset. Ensure you back up important data before doing so."
+      },
+      {
+        "title": "Contact Support",
+        "content": "If none of the above steps resolve the issue, contact the manufacturer's support or visit a service center for further diagnosis."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use ADB Logcat",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Developer Options",
+            "content": "Go to Settings > About Phone > Build Number and tap it seven times to enable Developer Options."
+          },
+          {
+            "title": "Connect to Computer",
+            "content": "Connect your device to a computer via USB and enable USB debugging in Developer Options."
+          },
+          {
+            "title": "Use ADB Logcat",
+            "content": "Use the ADB command-line tool to capture logs and analyze them for errors. This can help identify specific software issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T19:22:28.331Z",
+      "updated": "2026-02-01T19:22:28.331Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/166387/how-can-i-troubleshoot-if-i-have-an-android-os-or-hardware-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769973774301-329",
+    "title": "Stream Video to LG Smart TV",
+    "problemDescription": "User wants to stream video content from a Mac to an LG Smart TV.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "streaming",
+      "video",
+      "LG Smart TV",
+      "Mac"
+    ],
+    "steps": [
+      {
+        "title": "Check Built-in Casting Functionality",
+        "content": "Verify if your LG Smart TV has built-in casting functionality. This feature may allow you to cast content directly from your Mac."
+      },
+      {
+        "title": "Purchase a Chromecast",
+        "content": "Buy a Chromecast device ($35 for non-4K, $69 for 4K). Connect it to your TV's HDMI port and use Google Chrome to cast webpages or use apps that support native casting."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use an Apple TV",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase an Apple TV",
+            "content": "Buy an Apple TV (32 GB for $150 or 64 GB for $200). Connect it to your TV and use AirPlay to cast content from your Mac."
+          },
+          {
+            "title": "Ensure Compatibility",
+            "content": "Make sure your Mac is running at least OS X Mountain Lion v10.8 or later and falls within the compatible hardware generations."
+          }
+        ]
+      },
+      {
+        "title": "Use an Amazon Fire TV Stick",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase an Amazon Fire TV Stick",
+            "content": "Buy an Amazon Fire TV Stick ($40) or Amazon Fire TV ($90). Connect it to your TV and use apps to stream content."
+          },
+          {
+            "title": "Use Alexa Remote",
+            "content": "Utilize the Alexa remote for navigation, similar to the Siri remote."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T19:22:54.301Z",
+      "updated": "2026-02-01T19:22:54.301Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/275314/show-streaming-video-to-a-lg-smart-tv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769973779233-905",
+    "title": "Fix Flickering Static on MacBook Pro to LED TV",
+    "problemDescription": "Flickering static appears when connecting a MacBook Pro to an LED TV via HDMI.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "MacBook Pro",
+      "LED TV",
+      "HDMI",
+      "flickering",
+      "static"
+    ],
+    "steps": [
+      {
+        "title": "Try a Different HDMI Cable",
+        "content": "Use an HDMI cable without shielding to avoid interference."
+      },
+      {
+        "title": "Adjust Display Settings",
+        "content": "Cycle through every resolution setting and each refresh rate available at each resolution. Disable mirroring mode for easier control."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Parameter RAM and SMC",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Parameter RAM",
+            "content": "Shut down your MacBook Pro, then press and hold the power button + Command + Option + P + R for 20 seconds."
+          },
+          {
+            "title": "Reset SMC",
+            "content": "Shut down your MacBook Pro, then press and hold the power button for 10 seconds."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T19:22:59.233Z",
+      "updated": "2026-02-01T19:22:59.233Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/119848/flickering-static-when-connecting-macbook-pro-to-led-tv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769973781287-665",
+    "title": "Wirelessly Connect MacBook Pro to Smart TV",
+    "problemDescription": "User wants to wirelessly transmit the screen of their MacBook Pro to a Smart TV without using Apple TV.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "MacBook Pro",
+      "Smart TV",
+      "wireless",
+      "screen mirroring",
+      "AirPlay"
+    ],
+    "steps": [
+      {
+        "title": "Use Google Chrome for Casting",
+        "content": "Open Google Chrome on your MacBook Pro. Click the three lines in the top right corner, then select 'Cast'. Choose 'Sources' and then 'Desktop'. Select the name of your Chromecast-enabled TV from the list."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use an AirPlay Compatible Dongle",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase an AirPlay Compatible Dongle",
+            "content": "Buy a simple AirPlay compatible dongle that can be plugged into the HDMI port of your Smart TV."
+          },
+          {
+            "title": "Connect the Dongle to Your TV",
+            "content": "Plug the AirPlay dongle into the HDMI port of your Smart TV."
+          },
+          {
+            "title": "Enable AirPlay on Your MacBook Pro",
+            "content": "On your MacBook Pro, go to the AirPlay menu in the menu bar, select your TV from the list, and choose 'Mirror Built-in Display'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T19:23:01.287Z",
+      "updated": "2026-02-01T19:23:01.287Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/407197/connect-macbook-pro-to-smart-tv-wirelessly",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769973785662-735",
+    "title": "Connect iPad Air to Panasonic TV",
+    "problemDescription": "How to stream content from an iPad Air to a Panasonic TV.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iPad",
+      "Panasonic TV",
+      "AirPlay",
+      "streaming"
+    ],
+    "steps": [
+      {
+        "title": "Ensure Network Connectivity",
+        "content": "Make sure both your iPad Air and Panasonic TV are connected to the same wireless network."
+      },
+      {
+        "title": "Check TV Compatibility",
+        "content": "Ensure your Panasonic TV has an AirPlay-compatible device connected via HDMI, such as an Apple TV (2nd generation or newer)."
+      },
+      {
+        "title": "Enable AirPlay on iPad",
+        "content": "On your iPad, open the Control Center and tap the AirPlay icon. Select your Apple TV or AirPlay-compatible device from the list."
+      },
+      {
+        "title": "Start Streaming",
+        "content": "Open the content you want to stream on your iPad. Tap the AirPlay icon in the video player and select your TV to start streaming."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using an HDMI Adapter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase an HDMI Adapter",
+            "content": "Get a Lightning to HDMI adapter compatible with your iPad Air."
+          },
+          {
+            "title": "Connect the Adapter",
+            "content": "Plug the Lightning to HDMI adapter into your iPad's charging port."
+          },
+          {
+            "title": "Connect to TV",
+            "content": "Use an HDMI cable to connect the adapter to your Panasonic TV."
+          },
+          {
+            "title": "Switch TV Input",
+            "content": "Change your TV's input source to the HDMI port you connected the adapter to."
+          },
+          {
+            "title": "Start Mirroring",
+            "content": "On your iPad, go to Control Center and tap the Screen Mirroring icon. Select your TV to start mirroring."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T19:23:05.662Z",
+      "updated": "2026-02-01T19:23:05.662Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/223559/how-to-connect-an-ipad-air-to-a-panasonic-tv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769973801441-389",
+    "title": "Fix AirPods Max Flex Cable Issue",
+    "problemDescription": "AirPods Max showing three amber flashes and no response when pressing the noise cancelling button, indicating a flex cable issue.",
+    "category": "app-error",
+    "difficulty": "Hard",
+    "keywords": [
+      "AirPods Max",
+      "flex cable",
+      "repair",
+      "hardware issue"
+    ],
+    "steps": [
+      {
+        "title": "Check Warranty or AppleCare",
+        "content": "If your AirPods Max are under warranty or you have AppleCare, contact Apple Support for a repair."
+      },
+      {
+        "title": "DIY Repair (If Out of Warranty)",
+        "content": "If Apple refuses to repair or your AirPods Max are not covered, consider a DIY repair. Note that this is complex and risky."
+      },
+      {
+        "title": "Follow Community Guides",
+        "content": "Refer to community guides like those from u/MuesliCrunch on Reddit for detailed steps on replacing the flex cable."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Battery Replacement",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Community Images",
+            "content": "Use images provided in community posts to guide the battery replacement process."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T19:23:21.441Z",
+      "updated": "2026-02-01T19:23:21.441Z",
+      "sourceUrl": "https://www.reddit.com/r/Airpodsmax/comments/14yqa15/a_complete_guide_to_your_airpods_max/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1769973813778-317",
+    "title": "Fix iPhone Back Tap Sensitivity",
+    "problemDescription": "iPhone Back Tap feature is too sensitive and triggers accidentally.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iPhone",
+      "Back Tap",
+      "sensitivity",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Access Back Tap Settings",
+        "content": "Go to Settings > Accessibility > Touch > Back Tap."
+      },
+      {
+        "title": "Change Tap Assignment",
+        "content": "Instead of using Double Tap, assign your shortcut to Triple Tap to reduce accidental triggers."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust App Movement Sensitivity",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Folder with Another Finger",
+            "content": "When moving apps, use one finger to tap and open the folder, then drop the app into it."
+          },
+          {
+            "title": "Swipe to Next Page Manually",
+            "content": "Instead of hovering, use another finger to swipe to the next page manually for better control."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Live Photos Properly",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ensure Photo Mode",
+            "content": "Make sure you are in Photo mode in the Camera app."
+          },
+          {
+            "title": "Disable Live Photos",
+            "content": "Tap the menu button in the top right corner and ensure Live is set to off."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-01T19:23:33.778Z",
+      "updated": "2026-02-01T19:23:33.778Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=1J73aPWC2NI",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
