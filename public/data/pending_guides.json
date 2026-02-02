@@ -82909,5 +82909,271 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770012132425-377",
+    "title": "Fix Mac Web Access Blocked but Ping and DNS Fine",
+    "problemDescription": "Mac can connect to network but cannot access the web or specific applications.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macos",
+      "network",
+      "web access",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Disable Firewall and Security Software",
+        "content": "Temporarily disable any firewall or security software you have installed and check if that resolves the issue. Remember to re-enable them afterward for security purposes."
+      },
+      {
+        "title": "Verify Date and Time Settings",
+        "content": "Ensure that the date and time settings on your MacBook are accurate. Incorrect date and time settings can sometimes cause issues with secure connections."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to System Settings > Network, select the network service you are using, and click the minus (-) button to remove it. Then add the network service back and try connecting again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check DNS Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change DNS Settings",
+            "content": "Go to System Settings > Network, select your network service, click 'Details', then 'DNS', and change the DNS server to a public one like Google DNS (8.8.8.8) or Cloudflare DNS (1.1.1.1)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T06:02:12.425Z",
+      "updated": "2026-02-02T06:02:12.425Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/461306/web-access-blocked-but-ping-and-dns-is-fine-on-all-interfaces",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770012167560-262",
+    "title": "Fix Mac Disk Issues with Disk Utility",
+    "problemDescription": "Your Mac is experiencing disk-related problems, such as failing to boot or erratic behavior due to filesystem errors.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "disk",
+      "utility",
+      "repair",
+      "filesystem"
+    ],
+    "steps": [
+      {
+        "title": "Open Disk Utility",
+        "content": "During startup, your Mac performs a consistency check. If problems arise, open Disk Utility by going to Applications > Utilities > Disk Utility."
+      },
+      {
+        "title": "Select the Volume or Disk",
+        "content": "In Disk Utility, select the volume or disk you want to repair from the sidebar."
+      },
+      {
+        "title": "Run First Aid",
+        "content": "Click on the 'First Aid' button to start the repair process. Follow the on-screen instructions to complete the repair."
+      },
+      {
+        "title": "Access Recovery Mode if Needed",
+        "content": "If your Mac won’t boot, open Disk Utility through Recovery Mode. For M1 Macs, press and hold the Power button. For older Macs, press and hold Cmd + R while booting until you see the Options window or macOS Recovery screen."
+      },
+      {
+        "title": "Create an Image File (if necessary)",
+        "content": "If required, connect an external disk, open Disk Utility, and choose File > New Image > Image from Folder. Select Macintosh HD and proceed with the instructions."
+      },
+      {
+        "title": "Use fsck in Single-User Mode",
+        "content": "If Disk Utility repair options don’t work, boot into single-user mode and use the 'fsck' command to fix your drive."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Apple Diagnostic Test",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Apple Diagnostic Test",
+            "content": "Apple Diagnostic is a tool that checks your hardware components for any issues. To run it, shut down your Mac, turn it on, and immediately press and hold the Power button until you see the diagnostic mode screen. Follow the on-screen instructions to perform the diagnostic tests."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T06:02:47.560Z",
+      "updated": "2026-02-02T06:02:47.560Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/free-mac-tools-fix-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770012195353-266",
+    "title": "Fix Instagram Crashing on Reels/Explore",
+    "problemDescription": "Instagram crashes when opening Reels or Explore after the latest update.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "crash",
+      "reels",
+      "explore",
+      "beta"
+    ],
+    "steps": [
+      {
+        "title": "Leave Beta Testing",
+        "content": "Go to the main Instagram page on the Google Play Store and leave the beta testing program."
+      },
+      {
+        "title": "Clear Data and Cache",
+        "content": "Clear the data and cache of the Instagram app from your device settings."
+      },
+      {
+        "title": "Reinstall Instagram",
+        "content": "Uninstall the Instagram app and then reinstall it from the Google Play Store without the beta tester option active."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-02T06:03:15.353Z",
+      "updated": "2026-02-02T06:03:15.353Z",
+      "sourceUrl": "https://www.reddit.com/r/Instagram/comments/1nv9lhi/fix_instagram_keep_crashing_once_opening_reel/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770012202632-662",
+    "title": "Fix Instagram SMS Error in a Loop",
+    "problemDescription": "Users are experiencing an Instagram SMS error in a loop, which is extremely irritating.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Instagram",
+      "SMS error",
+      "loop",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Check Instagram Server Status",
+        "content": "Visit DownDetector or similar websites to check if Instagram is experiencing server issues."
+      },
+      {
+        "title": "Reinstall the Instagram App",
+        "content": "Uninstall the Instagram app from your device and then reinstall it from the App Store or Google Play Store."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Instagram Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Report the Issue",
+            "content": "Go to your Instagram profile, tap on the three horizontal lines in the top right corner, select 'Settings', then 'Help', and finally 'Report a Problem'. Describe the SMS error in detail."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T06:03:22.632Z",
+      "updated": "2026-02-02T06:03:22.632Z",
+      "sourceUrl": "https://www.reddit.com/r/Instagram/comments/1o076t3/does_anyone_having_the_same_problem_like_me_and/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770012206188-887",
+    "title": "Fix Instagram Post Submission Issue",
+    "problemDescription": "User is unable to submit posts on Instagram and is frustrated.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Instagram",
+      "post",
+      "submission",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your device is connected to a stable internet network."
+      },
+      {
+        "title": "Restart the App",
+        "content": "Close the Instagram app completely and reopen it to see if the issue persists."
+      },
+      {
+        "title": "Update the App",
+        "content": "Go to the app store and update Instagram to the latest version."
+      },
+      {
+        "title": "Clear Cache",
+        "content": "Clear the app cache from your device settings to resolve any temporary glitches."
+      },
+      {
+        "title": "Reinstall the App",
+        "content": "Uninstall and reinstall the Instagram app to ensure a clean installation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Instagram Outages",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Downdetector",
+            "content": "Check if Instagram is experiencing any outages or issues on Downdetector or similar websites."
+          },
+          {
+            "title": "Wait and Retry",
+            "content": "If there is an outage, wait for Instagram to resolve the issue and try submitting your post again later."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Different Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch Devices",
+            "content": "Try submitting the post from a different device to see if the issue is device-specific."
+          },
+          {
+            "title": "Check Device Settings",
+            "content": "Ensure that the device settings are not interfering with the app's functionality."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T06:03:26.188Z",
+      "updated": "2026-02-02T06:03:26.188Z",
+      "sourceUrl": "https://www.reddit.com/r/Instagram/comments/1f0qwpa/i_am_not_able_to_submit_this_how_to_solve_this/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
