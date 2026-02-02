@@ -83570,5 +83570,516 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770025347608-845",
+    "title": "Fix Microsoft Rewards Gift Card Claim Error",
+    "problemDescription": "Error occurs when trying to claim a gift card with enough Microsoft Rewards points.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "microsoft rewards",
+      "gift card",
+      "error",
+      "claim"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure you have a stable internet connection, as connectivity issues can sometimes cause errors during the redemption process."
+      },
+      {
+        "title": "Clear Browser Cache",
+        "content": "Clear your browser's cache and cookies, then try claiming the gift card again."
+      },
+      {
+        "title": "Try a Different Browser",
+        "content": "If the issue persists, try using a different web browser to access Microsoft Rewards and claim your gift card."
+      },
+      {
+        "title": "Contact Microsoft Support",
+        "content": "If none of the above steps work, contact Microsoft Support for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Microsoft Rewards App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download the Microsoft Rewards App",
+            "content": "Download and install the Microsoft Rewards app from the respective app store."
+          },
+          {
+            "title": "Log In and Claim Gift Card",
+            "content": "Log in to your account using the app and try claiming the gift card again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T09:42:27.608Z",
+      "updated": "2026-02-02T09:42:27.608Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/office_2007-excel/compile-error-in-hidden-module-distmon/35685af1-79a0-4907-87da-fd5fac8c3b50?msgId=45f051fa-cd3e-4ac5-a5f9-ec8d6cefd9f4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770025361278-553",
+    "title": "Fix Amazon Prime Video Not Working",
+    "problemDescription": "Amazon Prime Video app not functioning properly on smart TVs, streaming devices, or mobile devices.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "amazon",
+      "prime",
+      "video",
+      "app",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Update Software",
+        "content": "Ensure your smart TV, streaming device, and Prime Video app are running the latest software versions."
+      },
+      {
+        "title": "Check Input Source",
+        "content": "Verify that your TV, AV receiver, or soundbar is set to the correct input source."
+      },
+      {
+        "title": "Inspect Cables",
+        "content": "Check all cable connections, especially HDMI for streaming devices, game consoles, or web-connected Blu-ray/DVD players."
+      },
+      {
+        "title": "Perform a Hard Reset",
+        "content": "Unplug your smart TV or streaming device for about 15 seconds, then reconnect it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clear App Data on Android",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Data",
+            "content": "Go to Settings > Apps/Application Manager > Amazon Video. Select Clear Data, then OK. You may also need to sign out and sign back into the app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T09:42:41.278Z",
+      "updated": "2026-02-02T09:42:41.279Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/common-amazon-prime-video-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770025363987-732",
+    "title": "Fix Fire TV Stick No Sound",
+    "problemDescription": "No sound on Fire TV Stick during streaming.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "fire tv",
+      "no sound",
+      "audio",
+      "streaming"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Stream",
+        "content": "Exit the stream and restart it. If the issue persists, close the app completely and reopen it."
+      },
+      {
+        "title": "Reset Fire TV Stick",
+        "content": "If there is still no sound, perform a physical reset of the Fire TV Stick."
+      },
+      {
+        "title": "Disable Dolby Digital Plus",
+        "content": "Go to Settings > Display and Sounds > Dolby Digital Output > Turn off Dolby Digital Plus."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Wi-Fi Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Fire TV Device",
+            "content": "Unplug the Fire TV Stick, wait for 1 minute, and then plug it back in."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T09:42:43.987Z",
+      "updated": "2026-02-02T09:42:43.987Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/amazon-fire-tv-stick-problems-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770025366136-693",
+    "title": "Fix Apple TV Power Supply Clicking Issue",
+    "problemDescription": "Apple TV power supply clicks on and off when using it for media.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Apple TV",
+      "power supply",
+      "clicking",
+      "remote",
+      "CEC"
+    ],
+    "steps": [
+      {
+        "title": "Unpair Remote Functions",
+        "content": "Go to Settings > Remote & Devices on your Apple TV. Delete any paired remote functions."
+      },
+      {
+        "title": "Adjust Volume Control Settings",
+        "content": "Set Control Your TV to 'On' and select 'Auto' under Volume Control with CEC enabled (Bravia Sync)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change TV's Digital Audio Output",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access TV's Audio Settings",
+            "content": "Go to your TV's digital audio output settings."
+          },
+          {
+            "title": "Force PCM Output",
+            "content": "Force the TV to output PCM audio."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T09:42:46.136Z",
+      "updated": "2026-02-02T09:42:46.136Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/you-asked-mysterious-lines-and-sounds-plus-phantom-clicking-solved/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770025368268-1",
+    "title": "Fix Chromecast Random Power Cycling",
+    "problemDescription": "Chromecast randomly turns on and off, often due to power supply issues.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "chromecast",
+      "power",
+      "cycling",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Use the Original Power Adapter",
+        "content": "Disconnect the Chromecast from the TV's USB port and use the original USB power adapter that came with your Chromecast. This ensures a stable power supply."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use an HDMI Extender",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase an HDMI Extender",
+            "content": "Buy an HDMI extender that supports HDMI 2.0 or higher, especially if you have a 4K Chromecast."
+          },
+          {
+            "title": "Extend the Chromecast",
+            "content": "Use the HDMI extender to push the Chromecast outside the back of your TV. This can improve the Wi-Fi range and connection stability."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T09:42:48.268Z",
+      "updated": "2026-02-02T09:42:48.268Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/common-google-chromecast-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770025376860-248",
+    "title": "Remove iPhone Activation Lock",
+    "problemDescription": "iPhone X is locked with Activation Lock due to previous owner's Apple ID.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "activation lock",
+      "apple id",
+      "previous owner"
+    ],
+    "steps": [
+      {
+        "title": "Contact the Previous Owner",
+        "content": "Reach out to the previous owner and ask them to remove the device from their Apple ID account."
+      },
+      {
+        "title": "Ask for Device Removal",
+        "content": "Request the previous owner to erase the device remotely using the Find My iPhone feature."
+      },
+      {
+        "title": "Verify Removal",
+        "content": "Once the previous owner has removed the device, try setting up the iPhone again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Gather Proof of Purchase",
+            "content": "Collect any documentation that proves you are the new owner of the device."
+          },
+          {
+            "title": "Contact Apple Support",
+            "content": "Reach out to Apple Support and explain your situation. Provide them with the proof of purchase and any other relevant information."
+          },
+          {
+            "title": "Follow Apple's Instructions",
+            "content": "Follow the instructions provided by Apple Support to remove the Activation Lock."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T09:42:56.860Z",
+      "updated": "2026-02-02T09:42:56.860Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/iphone-x-activate-lock-help.3575416/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770025380585-140",
+    "title": "iPhone 11 Unresponsive to Touch",
+    "problemDescription": "iPhone 11 is not responding to touch inputs, preventing the user from interacting with the device.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iPhone",
+      "touch",
+      "unresponsive",
+      "iOS"
+    ],
+    "steps": [
+      {
+        "title": "Force Restart the iPhone",
+        "content": "Press and quickly release the Volume Up button, then press and quickly release the Volume Down button. Finally, press and hold the Side button until the Apple logo appears."
+      },
+      {
+        "title": "Check for Physical Damage",
+        "content": "Inspect the device for any physical damage that might be causing the touchscreen to malfunction."
+      },
+      {
+        "title": "Update iOS",
+        "content": "If the device is responsive enough to update, go to Settings > General > Software Update and install any available updates."
+      },
+      {
+        "title": "Restore iPhone",
+        "content": "If the issue persists, connect the iPhone to a computer with iTunes, put the device in recovery mode, and restore it using iTunes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Schedule an Appointment",
+            "content": "Contact Apple Support or visit an Apple Store to schedule an appointment for a hardware check."
+          },
+          {
+            "title": "Provide Details",
+            "content": "Explain the issue in detail to the Apple Support representative and follow their instructions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T09:43:00.585Z",
+      "updated": "2026-02-02T09:43:00.585Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/issues-with-iphone-11.3648364/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770025384418-285",
+    "title": "Apple Pencil Not Connecting",
+    "problemDescription": "Apple Pencil connects briefly but then disconnects, and charging issues persist.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "apple",
+      "pencil",
+      "connection",
+      "ios",
+      "ipad"
+    ],
+    "steps": [
+      {
+        "title": "Check Charging Cable",
+        "content": "Try using a different charging cable to ensure the issue is not with the cable."
+      },
+      {
+        "title": "Reset iPad",
+        "content": "Back up your iPad, then erase it and set it up as new (do not restore from iCloud for troubleshooting)."
+      },
+      {
+        "title": "Check Touch Settings",
+        "content": "Verify that the touch settings on your iPad are correctly configured."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Forget Devices and Re-pair",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Forget Devices",
+            "content": "Go to Settings > Bluetooth and forget all devices."
+          },
+          {
+            "title": "Restart iPad",
+            "content": "Restart your iPad."
+          },
+          {
+            "title": "Re-pair Pencil",
+            "content": "Ensure both the iPad and Apple Pencil are fully charged, then try re-pairing them."
+          },
+          {
+            "title": "Clean Connections",
+            "content": "Clean any user-serviceable connections with alcohol."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Store",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Store",
+            "content": "Take the Apple Pencil to the store where you purchased it for potential replacement or repair."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T09:43:04.418Z",
+      "updated": "2026-02-02T09:43:04.418Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/apple-pencil-not-working.3735002/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770025386924-445",
+    "title": "iPad 2 Disabled Recovery",
+    "problemDescription": "iPad 2 is disabled and needs to be recovered.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "ipad",
+      "disabled",
+      "recovery",
+      "itunes"
+    ],
+    "steps": [
+      {
+        "title": "Connect to iTunes",
+        "content": "Plug your iPad 2 into a computer with iTunes installed."
+      },
+      {
+        "title": "Restore iPad",
+        "content": "Once connected, iTunes should prompt you to restore or update your iPad. Choose 'Restore' to erase the iPad and install the latest iOS software."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Battery Depletion",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Deplete Battery",
+            "content": "Let the iPad's battery deplete completely."
+          },
+          {
+            "title": "Recharge and Restart",
+            "content": "After the battery is fully drained, recharge the iPad and attempt to restart it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T09:43:06.924Z",
+      "updated": "2026-02-02T09:43:06.924Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/ipad-2-problem.3738205/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770025416652-87",
+    "title": "Fix Apple TV+ Video Unavailable Error",
+    "problemDescription": "Apple TV+ app shows 'Video Unavailable' error on LG or Samsung Smart TVs.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "apple tv",
+      "video unavailable",
+      "smart tv",
+      "streaming"
+    ],
+    "steps": [
+      {
+        "title": "Enable Lower Resolution",
+        "content": "Go to the Apple TV app settings and enable the option that forces lower resolution."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use HDMI Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect Laptop to TV",
+            "content": "Use an HDMI cable to connect your laptop to the TV and stream Apple TV+ through your laptop."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T09:43:36.652Z",
+      "updated": "2026-02-02T09:43:36.652Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254808997",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
