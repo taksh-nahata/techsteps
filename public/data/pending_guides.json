@@ -82333,5 +82333,581 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770006027344-922",
+    "title": "Fix Windows 11 2FA Console Prompt",
+    "problemDescription": "Windows 11 2FA prompt opens a console instead of a GUI window.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "2fa",
+      "gui",
+      "console"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall Windows In-Place",
+        "content": "Go to Settings > System > Recovery. Under 'Recovery options', click 'Reset this PC'. Choose 'Keep my files' and follow the prompts to reinstall Windows 11 in-place."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-02T04:20:27.344Z",
+      "updated": "2026-02-02T04:20:27.344Z",
+      "sourceUrl": "https://superuser.com/questions/1830530/windows-11-2fa-prompt-opens-a-console-instead-of-a-gui-window",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770006030365-751",
+    "title": "Fix Two-Factor SMS Messages Not Received",
+    "problemDescription": "Two-factor SMS messages are not received from certain websites, while phone calls work fine.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "two-factor",
+      "SMS",
+      "authentication",
+      "short code blacklist"
+    ],
+    "steps": [
+      {
+        "title": "Contact Cellular Provider",
+        "content": "Contact your cellular provider immediately after requesting a code from the problematic website. Ask them to check for any blocked messages or short code blacklists on your number."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Phone Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Blocked Numbers",
+            "content": "Ensure that you have not blocked any phone numbers, either on your phone's local settings or within your account with your cellular carrier."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Website Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reach Out to Website Support",
+            "content": "Contact the customer service or technical support departments of the websites experiencing issues. Although this may not always yield results, it is worth trying."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T04:20:30.365Z",
+      "updated": "2026-02-02T04:20:30.365Z",
+      "sourceUrl": "https://superuser.com/questions/1583329/how-to-identify-why-two-factor-sms-messages-are-never-received-from-certain-webs",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770006032142-489",
+    "title": "Fix Chrome 2FA Authentication Issue",
+    "problemDescription": "Chrome fails to complete 2-factor authentication, getting stuck on the loading spinner.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "2fa",
+      "authentication",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Remove and Re-add Account",
+        "content": "Go to Chrome's settings, navigate to the 'People' section, and remove your account. Then, reconnect your account by signing in again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Browser Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache",
+            "content": "Go to Chrome settings, navigate to 'Privacy and security', select 'Clear browsing data', and clear the cache."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T04:20:32.142Z",
+      "updated": "2026-02-02T04:20:32.142Z",
+      "sourceUrl": "https://superuser.com/questions/877865/chrome-wont-complete-2-factor-authentication",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770006034050-707",
+    "title": "Secure GRUB to Prevent 2FA Deactivation in Linux",
+    "problemDescription": "Prevent unauthorized deactivation of Two-Factor Authentication (2FA) via Rescue Mode in Linux.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "2FA",
+      "Linux",
+      "Rescue Mode",
+      "GRUB",
+      "Security"
+    ],
+    "steps": [
+      {
+        "title": "Edit GRUB Configuration",
+        "content": "Open the GRUB configuration file for editing. This is typically located at /etc/default/grub."
+      },
+      {
+        "title": "Set a GRUB Password",
+        "content": "Add or modify the following line to set a password for GRUB: GRUB_CMDLINE_LINUX=\"\" and add GRUB_PASSWORD=\"yourpassword\" to the file."
+      },
+      {
+        "title": "Update GRUB",
+        "content": "Run the command 'sudo update-grub' to apply the changes to the GRUB configuration."
+      },
+      {
+        "title": "Secure Boot Settings",
+        "content": "Ensure that the boot settings are configured to require a password before entering Rescue Mode."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Rescue Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit GRUB Configuration",
+            "content": "Open the GRUB configuration file for editing. This is typically located at /etc/default/grub."
+          },
+          {
+            "title": "Disable Rescue Mode",
+            "content": "Add or modify the following line to disable Rescue Mode: GRUB_CMDLINE_LINUX=\"\" and remove any entries related to Rescue Mode."
+          },
+          {
+            "title": "Update GRUB",
+            "content": "Run the command 'sudo update-grub' to apply the changes to the GRUB configuration."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T04:20:34.050Z",
+      "updated": "2026-02-02T04:20:34.050Z",
+      "sourceUrl": "https://superuser.com/questions/1771857/prevent-deactivation-of-2fa-via-rescue-mode-in-linux",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770006044262-277",
+    "title": "Fix Slow Mac Due to Full Hard Drive",
+    "problemDescription": "Mac is slow after upgrading OS X on a nearly full hard drive.",
+    "category": "mac",
+    "difficulty": "Hard",
+    "keywords": [
+      "mac",
+      "slow",
+      "hard drive",
+      "defrag",
+      "OS X"
+    ],
+    "steps": [
+      {
+        "title": "Backup Data",
+        "content": "Backup all user data to an external storage drive, not just TimeMachine."
+      },
+      {
+        "title": "Zero Erase and Reinstall OS X",
+        "content": "Use Disk Utility to perform a zero erase and reinstall OS X from fresh sources."
+      },
+      {
+        "title": "Reinstall Programs and Restore Files",
+        "content": "Reinstall all programs from original sources and restore files from backup."
+      },
+      {
+        "title": "Consider Hard Drive Replacement",
+        "content": "If the issue persists, consider replacing the hard drive as it may be failing."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Defrag Hard Drive",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Safe Defrag Method",
+            "content": "Follow a safe defragmentation method to improve hard drive performance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T04:20:44.262Z",
+      "updated": "2026-02-02T04:20:44.262Z",
+      "sourceUrl": "https://discussions.apple.com/docs/DOC-3521",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1770006055127-696",
+    "title": "Fix Slow and Laggy MacBook Pro",
+    "problemDescription": "MacBook Pro is extremely slow and laggy, even after reinstalling macOS.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "slow",
+      "laggy",
+      "macos",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Backup Your Files",
+        "content": "Ensure all important files are backed up before proceeding with troubleshooting steps."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Go to System Preferences > Software Update and install any available updates."
+      },
+      {
+        "title": "Run Disk Utility",
+        "content": "Open Disk Utility from the Utilities folder, select your Mac's hard drive, and click 'First Aid' to check and repair disk errors."
+      },
+      {
+        "title": "Manage Startup Items",
+        "content": "Go to System Preferences > Users & Groups > Login Items, and remove any unnecessary startup applications."
+      },
+      {
+        "title": "Check Activity Monitor",
+        "content": "Open Activity Monitor from the Utilities folder to identify and quit any resource-heavy processes."
+      },
+      {
+        "title": "Reset SMC and NVRAM",
+        "content": "Follow Apple's instructions to reset the System Management Controller (SMC) and Non-Volatile Random-Access Memory (NVRAM)."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "If the issue persists, reinstall macOS using the appropriate installation media."
+      },
+      {
+        "title": "Visit Apple Genius Bar",
+        "content": "If none of the above steps resolve the issue, make an appointment at the Apple Genius Bar for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Safe Mode Boot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Restart your Mac and hold down the Shift key to boot into Safe Mode. This can help identify if a login item or startup process is causing the issue."
+          },
+          {
+            "title": "Check for Issues",
+            "content": "While in Safe Mode, check for any error messages or issues that may indicate the cause of the lag."
+          },
+          {
+            "title": "Restart Normally",
+            "content": "Restart your Mac normally and see if the performance has improved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T04:20:55.127Z",
+      "updated": "2026-02-02T04:20:55.127Z",
+      "sourceUrl": "https://discussions.apple.com/thread/8331612",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770006056958-558",
+    "title": "Fix Mac Slowdown Over Time",
+    "problemDescription": "Mac slowdown due to excessive apps and background processes.",
+    "category": "macOS",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "slowdown",
+      "performance",
+      "apps",
+      "background processes"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall Unnecessary Apps",
+        "content": "Remove apps that are not frequently used, especially 'optimizing' and 'cleaner' apps, as they often consume significant resources."
+      },
+      {
+        "title": "Check Disk Space",
+        "content": "Ensure you have at least 10-20% of your disk space free to prevent excessive RAM to disk swapping."
+      },
+      {
+        "title": "Manage Running Applications",
+        "content": "Close applications that are not in use, particularly resource-heavy ones like Final Cut Studio, Motion, or Logic Pro Studio."
+      },
+      {
+        "title": "Disable Unnecessary Background Processes",
+        "content": "Go to System Preferences > Users & Groups > Login Items and remove any unnecessary startup applications."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Optimize System Preferences",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Adjust Visual Effects",
+            "content": "Go to System Preferences > Accessibility > Display and reduce transparency and motion effects."
+          },
+          {
+            "title": "Disable Unnecessary Services",
+            "content": "Go to System Preferences > Sharing and disable any services that are not needed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T04:20:56.958Z",
+      "updated": "2026-02-02T04:20:56.958Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254148774",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770006063954-241",
+    "title": "Connect iPhone to Ubuntu",
+    "problemDescription": "Troubleshooting guide to connect an iPhone to Ubuntu for file access and backup.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "ubuntu",
+      "connection",
+      "backup",
+      "libimobiledevice"
+    ],
+    "steps": [
+      {
+        "title": "Install libimobiledevice",
+        "content": "Open a terminal and run the following commands one at a time, letting each complete before running the next:"
+      },
+      {
+        "title": "Clone the repository",
+        "content": "`git clone`"
+      },
+      {
+        "title": "Navigate to the directory",
+        "content": "`cd libimobiledevice`"
+      },
+      {
+        "title": "Configure and make the installation",
+        "content": "`sudo ./configure` followed by `sudo make` and `sudo make install`"
+      },
+      {
+        "title": "Restart your computer",
+        "content": "After the installation completes, restart your computer."
+      },
+      {
+        "title": "Pair your iPhone",
+        "content": "Unlock your iPhone and run the command `idevicepair pair` in the terminal. Your device should now be accessible."
+      },
+      {
+        "title": "Access your iPhone",
+        "content": "Open Shotwell or Nautilus file browser to access your iPhone's files. Trust the device on your iPhone if prompted."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Backup your iPhone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run the backup command",
+            "content": "`idevicebackup2 backup --full <path/to/where/you/want/to/backup>`"
+          }
+        ]
+      },
+      {
+        "title": "Copy photos and videos",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Shotwell",
+            "content": "Import your photos using Shotwell (CTRL+A, right click, import)."
+          }
+        ]
+      },
+      {
+        "title": "Copy music and videos",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Rhythmbox",
+            "content": "Select your iPhone, view all music, and drag the selected files to a folder on your computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T04:21:03.954Z",
+      "updated": "2026-02-02T04:21:03.954Z",
+      "sourceUrl": "https://askubuntu.com/questions/83484/what-is-the-current-state-of-apple-device-iphone-ipod-etc-support",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770006071142-730",
+    "title": "Mount iPhone After Restore on Ubuntu 14.04",
+    "problemDescription": "iPhone does not mount on Ubuntu 14.04 after restore, with error 'Unable to connect'.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "ubuntu",
+      "mount",
+      "restore",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Unpair and Restart Services",
+        "content": "Run the following commands in sequence to unpair the device and restart necessary services:"
+      },
+      {
+        "title": "Unpair the Device",
+        "content": "Execute `sudo idevicepair unpair` to unpair the device."
+      },
+      {
+        "title": "Start usbmuxd Service",
+        "content": "Run `sudo usbmuxd` to start the usbmuxd service."
+      },
+      {
+        "title": "Mount iPhone",
+        "content": "Use `sudo ifuse /media/iPhone/ --root` to mount the iPhone."
+      },
+      {
+        "title": "Access Files",
+        "content": "Open Dolphin with `kdesudo dolphin` and navigate to `/media/iPhone/` to access the root files."
+      },
+      {
+        "title": "Unmount iPhone",
+        "content": "Before unplugging, unmount the device using `sudo fusermount -u /media/iPhone/`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Alternative Method: Reinstall and Pair",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall libimobiledevice-utils",
+            "content": "Run `sudo apt-get install libimobiledevice-utils` to reinstall the necessary utilities."
+          },
+          {
+            "title": "Pair and Validate",
+            "content": "Execute `idevicepair unpair && idevicepair pair && idevicepair validate` to pair and validate the device."
+          },
+          {
+            "title": "Unplug and Replug",
+            "content": "Unplug the iPhone and replug it to see if it mounts."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T04:21:11.142Z",
+      "updated": "2026-02-02T04:21:11.142Z",
+      "sourceUrl": "https://askubuntu.com/questions/516202/could-not-mount-iphone-after-restore-14-04",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770006084688-589",
+    "title": "Enable Display Zoom on iPhone",
+    "problemDescription": "The text and UI elements on your iPhone are too small and hard to read.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "display",
+      "zoom",
+      "text",
+      "ui"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Open the 'Settings' app on your iPhone."
+      },
+      {
+        "title": "Go to Display & Brightness",
+        "content": "Navigate to the 'Display & Brightness' section."
+      },
+      {
+        "title": "Select View in Display Zoom",
+        "content": "From the 'Display Zoom' section, tap the 'View' button."
+      },
+      {
+        "title": "Choose Zoomed",
+        "content": "Select the 'Zoomed' option."
+      },
+      {
+        "title": "Set Zoomed Mode",
+        "content": "Tap the 'Set' button from the top and then select 'Use Zoomed' from the pop-up."
+      },
+      {
+        "title": "Restart Your iPhone",
+        "content": "Your iPhone will restart in a couple of seconds, and the interface and text will now be bigger."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Switch to Standard Mode",
+        "type": "Alternative",
+        "steps": [
+          {
+            "title": "Go to Display Zoom Settings",
+            "content": "Go back to the 'Display Zoom' settings menu."
+          },
+          {
+            "title": "Select Standard Mode",
+            "content": "Switch to the 'Standard' mode to return to the default display settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T04:21:24.688Z",
+      "updated": "2026-02-02T04:21:24.688Z",
+      "sourceUrl": "https://www.howtogeek.com/706775/how-to-magnify-your-iphone-screen-using-display-zoom/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
