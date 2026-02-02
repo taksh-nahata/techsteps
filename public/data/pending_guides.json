@@ -84535,5 +84535,549 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770032030648-971",
+    "title": "Fix Amazon Echo as Bluetooth Speaker on Ubuntu",
+    "problemDescription": "Amazon Echo connects as an input device instead of a speaker after restarting Ubuntu.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "bluetooth",
+      "amazon echo",
+      "speaker"
+    ],
+    "steps": [
+      {
+        "title": "Remove Echo from Bluetooth Devices",
+        "content": "Remove the Echo device from your Bluetooth devices list if it hasn't been already."
+      },
+      {
+        "title": "Forget Device on Alexa Web Interface",
+        "content": "Go to the Alexa web interface, navigate to settings, select your Echo device, and click Bluetooth. If your computer is listed, forget the device."
+      },
+      {
+        "title": "Pair New Device",
+        "content": "Click Pair New Device on the Alexa web interface. Do not click on your computer from the web interface to avoid pairing as an input device."
+      },
+      {
+        "title": "Scan for Echo Device",
+        "content": "Run the command `bluetoothctl scan on | grep Echo -m 1 | head -1;espeak \"Found the echo device\"` to be alerted when the Echo is available to pair with."
+      },
+      {
+        "title": "Connect Echo as Speaker",
+        "content": "Click on the Echo device in your Bluetooth device list and connect it. It may take multiple attempts before it connects as a speaker. Playing audio on your machine may increase the success rate."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Install Bluetooth Packages and Restart PulseAudio",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Required Packages",
+            "content": "Run the command `apt install bluez bluez-tools pulseaudio-module-bluetooth` to install the necessary Bluetooth packages."
+          },
+          {
+            "title": "Restart PulseAudio",
+            "content": "Restart PulseAudio by running the command `killall pulseaudio`. The device should then be recognized as both input and output."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Pair While Playing Audio",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Play Audio on Your Machine",
+            "content": "Ensure that some audio is playing on your machine while attempting to pair or connect to the Echo device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T11:33:50.648Z",
+      "updated": "2026-02-02T11:33:50.648Z",
+      "sourceUrl": "https://askubuntu.com/questions/1205930/ubuntu-connects-with-amazon-echo-as-bluetooth-speaker-not-treating-that-as-speak",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770032036459-808",
+    "title": "Amazon Echo Dot Not Showing as Output Device in Ubuntu",
+    "problemDescription": "Amazon Echo Dot is paired via Bluetooth but not listed as an output device in Ubuntu sound settings.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "ubuntu",
+      "sound",
+      "echo dot"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall Bluetooth Modules",
+        "content": "Open a terminal and run the following commands to reinstall Bluetooth modules and reboot your system."
+      },
+      {
+        "title": "Install Bluetooth and PulseAudio Modules",
+        "content": "Run the command: `sudo apt install bluetooth pulseaudio-module-bluetooth`."
+      },
+      {
+        "title": "Download and Copy Firmware",
+        "content": "Run the commands: `wget https://github.com/bluetooth/bluez-firmware/raw/master/brcm/BCM43142A0-0a5c-21d7.hcd` and `sudo cp BCM43142A0-0a5c-21d7.hcd /lib/firmware/brcm/BCM43142A0-0a5c-21d7.hcd`."
+      },
+      {
+        "title": "Reload Bluetooth USB Module",
+        "content": "Run the commands: `sudo modprobe -r btusb` and `sudo modprobe btusb`."
+      },
+      {
+        "title": "Reboot Your System",
+        "content": "Reboot your system to apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Bluetooth Logs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Bluetooth Logs",
+            "content": "Run the command `dmesg | grep -i bluetooth` to check for any Bluetooth-related errors in the system logs."
+          },
+          {
+            "title": "Check PulseAudio Logs",
+            "content": "Run the command `pulseaudio -k` to restart PulseAudio and check for any errors."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T11:33:56.459Z",
+      "updated": "2026-02-02T11:33:56.459Z",
+      "sourceUrl": "https://askubuntu.com/questions/1285327/not-showing-amazon-echo-dot-as-output-or-input-device-in-ubuntu-sound-setting-af",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770032039158-739",
+    "title": "Fix No Sound on Ubuntu 18.04",
+    "problemDescription": "No sound on Ubuntu 18.04 after a system restart, despite trying various troubleshooting steps.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "sound",
+      "alsa",
+      "pulseaudio"
+    ],
+    "steps": [
+      {
+        "title": "Check and Set the Correct Audio Profile",
+        "content": "Open `pavucontrol` and navigate to the 'Configuration' tab. Ensure that the correct audio profile is selected for your sound card. If 'Digital Stereo (IEC958) Output' is selected, switch to 'Analog Stereo Duplex' or another appropriate profile."
+      },
+      {
+        "title": "Reset ALSA and PulseAudio",
+        "content": "Run the following commands to reset ALSA and PulseAudio:\n1. `sudo alsa force-reload`\n2. `pulseaudio -k`\n3. `pulseaudio --start`"
+      },
+      {
+        "title": "Check for Muted Channels",
+        "content": "Run `alsamixer` in the terminal and check if any channels are muted. Use the arrow keys to navigate and 'M' to unmute channels."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall ALSA and PulseAudio",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall ALSA and PulseAudio",
+            "content": "Run the following commands to reinstall ALSA and PulseAudio:\n1. `sudo apt-get remove --purge alsa-base pulseaudio`\n2. `sudo apt-get install alsa-base pulseaudio`\n3. Reboot your system."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Conflicting Modules",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Blacklist Conflicting Modules",
+            "content": "Create a new blacklist file for the conflicting module (if any) with the following command:\n1. `sudo nano /etc/modprobe.d/blacklist.conf`\n2. Add the line `blacklist snd_hda_intel` and save the file.\n3. Reboot your system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T11:33:59.158Z",
+      "updated": "2026-02-02T11:33:59.158Z",
+      "sourceUrl": "https://askubuntu.com/questions/1277911/no-sound-18-04-and-tried-all-the-answers-i-can-find",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770032040762-276",
+    "title": "Fix Ubuntu RAM Exhaustion During Compilation",
+    "problemDescription": "Ubuntu is quickly running out of RAM during software compilation, causing the system to freeze.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "ram",
+      "compilation",
+      "freeze"
+    ],
+    "steps": [
+      {
+        "title": "Stop the Compilation Process",
+        "content": "Open a terminal and run the command `killall -9 make` to stop the compilation process. This will terminate all compiler processes and free up RAM."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Kill Resource-Intensive Applications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Kill Browser Processes",
+            "content": "Run the command `killall -9 firefox google-chrome google-chrome-stable chromium-browser` to terminate browser processes. This will free up RAM quickly."
+          },
+          {
+            "title": "Switch to a TTY",
+            "content": "Press `Control` + `Alt` + `F2` to switch to TTY2. Log in and use `htop` to debug and manage processes."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Increase Swap Space",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create Additional Swap",
+            "content": "Create more swap space to provide additional virtual memory. This can be done using commands like `sudo fallocate -l 1G /swapfile` and `sudo mkswap /swapfile`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T11:34:00.762Z",
+      "updated": "2026-02-02T11:34:00.762Z",
+      "sourceUrl": "https://askubuntu.com/questions/931507/ubuntu-is-quickly-running-out-of-ram-and-my-computer-is-starting-to-freeze-wha",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770032052088-187",
+    "title": "Enable Two-Factor Authentication on Popular Sites",
+    "problemDescription": "Guide to setting up two-factor authentication on popular platforms like Facebook, PayPal, and more.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "two-factor authentication",
+      "security",
+      "Facebook",
+      "PayPal"
+    ],
+    "steps": [
+      {
+        "title": "Facebook: Enable Login Approvals",
+        "content": "Sign in to your Facebook account. Click the drop-down arrow in the top-right corner and choose Settings. Select Security in the left pane, then click Edit to the right of Login Approvals. Check 'Require a security code to access my account from unknown browsers.' Follow the prompts to add a phone number and enter a confirmation code sent to that number."
+      },
+      {
+        "title": "Facebook: Enable Two-Step Verification",
+        "content": "At the bottom of the list, find the switch to enable two-step verification. Slide it to the On position. Enter your phone number and choose either Send SMS or Call Me to receive a confirmation code. Enter the code when you receive it. You can skip creating an app password if not prompted."
+      },
+      {
+        "title": "PayPal: Set Up Two-Step Verification",
+        "content": "Log in to your PayPal account. Click on your profile icon followed by Profile and settings. Navigate to the security settings and follow the prompts to set up two-step verification."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Enable Two-Factor Authentication on Other Sites",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "General Steps for Other Sites",
+            "content": "Log in to your account on the respective site. Navigate to the security settings. Look for options like 'Two-Factor Authentication' or 'Login Approvals' and follow the prompts to enable it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T11:34:12.088Z",
+      "updated": "2026-02-02T11:34:12.088Z",
+      "sourceUrl": "https://www.cnet.com/news/privacy/how-to-enable-two-factor-authentication-on-popular-sites/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770032054718-52",
+    "title": "Secure Your Banking App",
+    "problemDescription": "Ensure your banking app is secure and protected from potential threats.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "banking",
+      "app",
+      "security",
+      "two-factor authentication"
+    ],
+    "steps": [
+      {
+        "title": "Enable Two-Factor Authentication",
+        "content": "Log into your banking app and navigate to the security settings. Enable two-factor authentication, which will require a one-time code sent to your phone or email after you enter your login credentials."
+      },
+      {
+        "title": "Keep Your App Updated",
+        "content": "Regularly check for updates to your banking app. Enable automatic updates if available to ensure you have the latest security patches and features."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Monitor for Suspicious Activity",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Your Transaction History",
+            "content": "Regularly review your transaction history for any unauthorized or suspicious activity. Report any issues to your bank immediately."
+          },
+          {
+            "title": "Use Secure Networks",
+            "content": "Avoid using public Wi-Fi networks when accessing your banking app. Use a secure, private network to minimize the risk of data interception."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T11:34:14.718Z",
+      "updated": "2026-02-02T11:34:14.718Z",
+      "sourceUrl": "https://www.cnet.com/personal-finance/banking/yes-banking-apps-are-safe-but-you-still-need-to-be-careful/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770032057050-59",
+    "title": "Protect Against Zelle Scams",
+    "problemDescription": "How to avoid falling victim to Zelle scams and what to do if you've been scammed.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Zelle",
+      "scam",
+      "security",
+      "2FA",
+      "fraud"
+    ],
+    "steps": [
+      {
+        "title": "Enable Two-Factor Authentication (2FA)",
+        "content": "Set up 2FA for your banking accounts to add an extra layer of security. This will require a one-time password each time you sign in, usually sent via email or text message."
+      },
+      {
+        "title": "Never Share Your One-Time Passcode",
+        "content": "Do not give out your one-time passcodes to anyone, even if they claim to be from your bank or a utility company. Legitimate institutions will never ask for this information."
+      },
+      {
+        "title": "Use Zelle Only with Trusted Contacts",
+        "content": "Only use Zelle to transfer money to people or businesses you know and trust."
+      },
+      {
+        "title": "Verify Suspicious Requests",
+        "content": "If you receive any requests for immediate payment or new Zelle payments from organizations you've never paid via Zelle before, contact the organization directly through their official website or phone number to verify the request."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Report Suspicious Activity",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Your Bank",
+            "content": "If you notice any suspicious behavior or believe you've been scammed, contact your bank immediately to report the incident and seek assistance."
+          },
+          {
+            "title": "File a Police Report",
+            "content": "In cases of significant financial loss, consider filing a police report to document the incident and potentially aid in recovering your funds."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T11:34:17.050Z",
+      "updated": "2026-02-02T11:34:17.050Z",
+      "sourceUrl": "https://www.cnet.com/personal-finance/banking/how-to-avoid-zelle-scams-and-what-to-do-if-you-get-burned/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770032079884-305",
+    "title": "Fix Roku Device Crashing Due to Pokémon Sword and Shield",
+    "problemDescription": "Roku devices are crashing when playing Pokémon Sword and Shield.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "roku",
+      "crashing",
+      "pokemon",
+      "sword",
+      "shield"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Roku Device",
+        "content": "Unplug your Roku device from the power source, wait for about 15 seconds, and then plug it back in. This can help resolve temporary software glitches."
+      },
+      {
+        "title": "Update Your Roku Device",
+        "content": "Go to Settings > System > System update > Check now to ensure your Roku device is running the latest software version."
+      },
+      {
+        "title": "Remove and Re-add the Pokémon Sword and Shield Channel",
+        "content": "Go to the Home screen, navigate to the Pokémon Sword and Shield channel, press the star (*) button on your remote, and select 'Remove channel'. Then, re-add the channel from the Roku Channel Store."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Factory Reset Your Roku Device",
+            "content": "Go to Settings > System > Advanced system settings > Factory reset. Follow the on-screen instructions to reset your Roku device to its factory settings. Note that this will delete all your settings and installed channels."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T11:34:39.884Z",
+      "updated": "2026-02-02T11:34:39.884Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/roku/page/9/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770032091643-337",
+    "title": "Fix iPhone Boot Issues After iOS 17.4.1 Update",
+    "problemDescription": "iPhone won't boot up properly after iOS 17.4.1 update.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iPhone",
+      "iOS update",
+      "boot issue",
+      "iTunes"
+    ],
+    "steps": [
+      {
+        "title": "Reset via iTunes",
+        "content": "Connect your iPhone to a PC with iTunes installed. Put your iPhone into recovery mode and then use iTunes to restore your iPhone to factory settings. This should resolve the boot issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Minimize Background App Refresh",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Background App Refresh",
+            "content": "Go to Settings > General > Background App Refresh and disable it for apps that don't require real-time updates."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Push Email",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Fetch New Data Settings",
+            "content": "Go to Settings > Mail > Accounts > Fetch New Data and set your email accounts to fetch data manually or at longer intervals."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T11:34:51.643Z",
+      "updated": "2026-02-02T11:34:51.643Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255554896",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770032114803-643",
+    "title": "Fix System UI Not Responding on Android",
+    "problemDescription": "System UI is not responding and asking to wait or close the app.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "system ui",
+      "android",
+      "app crash",
+      "system update"
+    ],
+    "steps": [
+      {
+        "title": "Identify the Problematic App",
+        "content": "Determine which app is causing the System UI to crash. Check for recent updates or conflicts with the app."
+      },
+      {
+        "title": "Uninstall App Updates",
+        "content": "Go to Settings > Apps > YouTube (or the problematic app) > Uninstall Updates. This may temporarily fix the issue until the app self-updates."
+      },
+      {
+        "title": "Backup Data",
+        "content": "Before proceeding, ensure all important data is backed up to avoid loss."
+      },
+      {
+        "title": "Perform a Factory Reset",
+        "content": "Go to Settings > System > Reset options > Erase all data (factory reset). This will restore the phone to factory settings."
+      },
+      {
+        "title": "Update System Apps",
+        "content": "After the reset, connect to WiFi and update all system apps from the Google Play Store. Check for updates in the Play Store settings under the 'About' section."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: System Restore",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Ensure all important data is backed up."
+          },
+          {
+            "title": "Restore System",
+            "content": "Go to Settings > System > Reset options > System restore. Follow the prompts to restore the system to a previous stable state."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T11:35:14.803Z",
+      "updated": "2026-02-02T11:35:14.803Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-the-problem-on-my-phone-I-keep-getting-a-system-UI-not-responding-asking-me-to-wait-or-close-the-app-Why-is-it-popping-up",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
