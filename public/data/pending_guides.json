@@ -86395,5 +86395,252 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770043495637-792",
+    "title": "Reboot Devices to Fix Connection Issues",
+    "problemDescription": "Devices not connecting or responding properly.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "reboot",
+      "connection",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Reboot the Primary Router",
+        "content": "Wait for the primary router to restart and come back online."
+      },
+      {
+        "title": "Power Up Mesh Access Point",
+        "content": "After the primary router is back online, power up the mesh access point."
+      },
+      {
+        "title": "Restart Your PC",
+        "content": "Power up your PC and check if the issue is resolved."
+      },
+      {
+        "title": "Restart Cable Modem",
+        "content": "If the issue persists, go into your cable modem’s settings and restart it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reboot Smart Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot Smart Speaker",
+            "content": "Reboot your smart speaker if it is not responding or showing as missing in the app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T14:44:55.637Z",
+      "updated": "2026-02-02T14:44:55.637Z",
+      "sourceUrl": "https://lifehacker.com/the-first-and-best-way-to-troubleshoot-a-fussy-device-1846019121",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770043504545-949",
+    "title": "Fix Error Code 0x000007b",
+    "problemDescription": "Error code 0x000007b prevents Windows applications from running properly.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "error",
+      "0x000007b",
+      "dll",
+      "vcruntime"
+    ],
+    "steps": [
+      {
+        "title": "Delete and Reinstall DLL Files",
+        "content": "Delete the vcruntime_140.dll and vcruntime_140_1.dll files from your system."
+      },
+      {
+        "title": "Reinstall Visual C++ Redistributables",
+        "content": "Reinstall the Visual C++ Redistributable 2017 and 2019 versions to restore the deleted DLL files."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Run SFC/DISM Process",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Command Prompt as Administrator",
+            "content": "Search for 'cmd', right-click on 'Command Prompt', and select 'Run as administrator'."
+          },
+          {
+            "title": "Run SFC Scan",
+            "content": "Type 'sfc /scannow' and press Enter. Wait for the scan to complete."
+          },
+          {
+            "title": "Run DISM Command",
+            "content": "Type 'DISM /Online /Cleanup-Image /RestoreHealth' and press Enter. Wait for the process to finish."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T14:45:04.545Z",
+      "updated": "2026-02-02T14:45:04.545Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/solvedhow-fix-error-code-0x000007b/a8fed07e-30ea-4717-b961-b781053eff82",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770043506385-79",
+    "title": "Fix Over Bright Issue Caused by AMD Software Update",
+    "problemDescription": "Screen becomes overly bright and washed out after an AMD software update on Windows 11.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "AMD",
+      "brightness",
+      "Windows 11",
+      "driver update"
+    ],
+    "steps": [
+      {
+        "title": "Download and Reinstall AMD Drivers",
+        "content": "Go to the ASUS support page for your laptop model, download the specific version of AMD chipset drivers and AMD graphics drivers provided for your laptop, and reinstall them."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Revert to Old Driver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Current Driver",
+            "content": "Open Device Manager, find the AMD display adapter, right-click on it, and select 'Uninstall device'."
+          },
+          {
+            "title": "Install Old Driver",
+            "content": "In Device Manager, click on 'Action' > 'Add legacy hardware'. Follow the prompts to install the old driver that was previously working."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T14:45:06.385Z",
+      "updated": "2026-02-02T14:45:06.385Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/how-to-fix-over-bright-issue-caused-by-amd/934bd547-2e13-44c7-8a84-ffd7c4b1f9c0",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770043508934-604",
+    "title": "Fix Critical Structure Corruption in Windows",
+    "problemDescription": "Your Windows system is experiencing a critical structure corruption issue.",
+    "category": "windows",
+    "difficulty": "Hard",
+    "keywords": [
+      "windows",
+      "critical structure corruption",
+      "system error"
+    ],
+    "steps": [
+      {
+        "title": "Run System File Checker (SFC)",
+        "content": "Open Command Prompt as an administrator and type 'sfc /scannow' to scan and repair corrupted system files."
+      },
+      {
+        "title": "Use Deployment Image Servicing and Management (DISM)",
+        "content": "In the Command Prompt, type 'DISM /Online /Cleanup-Image /RestoreHealth' to repair the Windows image."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to Settings > Update & Security > Windows Update and install any available updates."
+      },
+      {
+        "title": "Perform a Clean Install of Windows",
+        "content": "If all else fails, back up your data and perform a clean install of Windows using a bootable USB drive."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use System Restore",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Restore",
+            "content": "Go to Control Panel > Recovery > Open System Restore."
+          },
+          {
+            "title": "Choose a Restore Point",
+            "content": "Select a restore point from before the issue began and follow the prompts to restore your system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T14:45:08.934Z",
+      "updated": "2026-02-02T14:45:08.934Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/how-do-i-fix-a-critical-structure-corruption-issue/8b48d7c3-3176-45f5-af90-f85f97600235",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1770043531613-789",
+    "title": "Fix Microsoft Teams 911 Call Bug on Android",
+    "problemDescription": "Microsoft Teams app on Android 10 or newer may prevent 911 calls when not signed in.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "microsoft teams",
+      "911",
+      "bug",
+      "emergency call"
+    ],
+    "steps": [
+      {
+        "title": "Check if you are signed in to Microsoft Teams",
+        "content": "Open the Microsoft Teams app and verify if you are signed in. If you are signed in, you are not impacted by this issue."
+      },
+      {
+        "title": "Uninstall and reinstall the app if not signed in",
+        "content": "If you have the Microsoft Teams app downloaded but are not signed in, uninstall and reinstall the app to address the problem temporarily."
+      },
+      {
+        "title": "Wait for the Microsoft Teams app update",
+        "content": "A Microsoft Teams app update is expected to fully resolve the issue. Keep an eye out for app updates to ensure you are running the latest version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Wait for the Android platform update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Wait for the Android platform update",
+            "content": "Google will provide an Android platform update to the Android ecosystem on January 4, which will also address the issue on the OS level."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T14:45:31.613Z",
+      "updated": "2026-02-02T14:45:31.613Z",
+      "sourceUrl": "https://www.howtogeek.com/773367/weird-android-bug-prevents-911-calls-when-teams-is-installed/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
