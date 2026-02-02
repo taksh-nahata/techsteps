@@ -83473,5 +83473,102 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770021553857-566",
+    "title": "Fix Windows 11 Gaming Display Issues",
+    "problemDescription": "Windows 11 users experience screen blackouts and unexpected green displays during gaming and everyday use.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "gaming",
+      "display issues",
+      "screen blackout",
+      "green screen"
+    ],
+    "steps": [
+      {
+        "title": "Install the Latest Windows 11 Update",
+        "content": "Ensure your system is updated to the latest Windows 11 version to apply the fixes for display issues."
+      },
+      {
+        "title": "Check for Optional Updates",
+        "content": "Go to Settings > Windows Update > Advanced options > Optional updates to install any available fixes related to graphics and display."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Graphics Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Graphics Drivers",
+            "content": "Manually update your graphics drivers from the manufacturer's website to ensure compatibility with the latest Windows 11 updates."
+          },
+          {
+            "title": "Disable Hardware Acceleration",
+            "content": "In some applications, disable hardware acceleration to reduce screen flashing and other display issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T08:39:13.857Z",
+      "updated": "2026-02-02T08:39:13.857Z",
+      "sourceUrl": "https://www.techradar.com/computing/windows/i-dont-generally-recommend-downloading-windows-11s-preview-updates-but-some-gamers-may-want-to-chance-microsofts-latest-effort",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770021567040-804",
+    "title": "Fix Siri Mispronouncing a Word",
+    "problemDescription": "Siri mispronounces or misinterprets a specific word, causing issues with app functionality or other features.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "siri",
+      "pronunciation",
+      "misinterpretation",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Teach Siri the Correct Pronunciation",
+        "content": "Say to Siri: 'Learn how to pronounce [word].' If Siri has already mispronounced it, say: 'That's not how you say that.' Siri will then ask for the correct pronunciation and offer choices to select from."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Spell the Word",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Spell the Word",
+            "content": "Instead of pronouncing the whole word, spell it out letter by letter. For example, instead of saying 'Coles,' spell C-O-L-E-S."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Change Siri Language",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Siri Language",
+            "content": "Go to Settings > Siri & Search > Siri Voice and change the language to UK English, as it may improve recognition."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T08:39:27.040Z",
+      "updated": "2026-02-02T08:39:27.040Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/394914/siri-will-not-understand-one-particular-word-i-say-and-its-driving-me-nuts",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
