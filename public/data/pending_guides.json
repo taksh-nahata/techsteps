@@ -87808,5 +87808,459 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770074699550-914",
+    "title": "Fix AirPods Silent on Ubuntu",
+    "problemDescription": "AirPods paired with Ubuntu laptop become garbled and then silent, but work fine on other devices.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "airpods",
+      "ubuntu",
+      "audio",
+      "silent",
+      "garbled"
+    ],
+    "steps": [
+      {
+        "title": "Check Audio Settings",
+        "content": "Go to 'Settings' > 'Sound' and ensure AirPods are selected as the output device."
+      },
+      {
+        "title": "Restart Bluetooth Service",
+        "content": "Open a terminal and run 'sudo systemctl restart bluetooth' to restart the Bluetooth service."
+      },
+      {
+        "title": "Reset AirPods",
+        "content": "Press and hold the setup button on the back of the AirPods case for about 15 seconds until the LED flashes amber, then reconnect them."
+      },
+      {
+        "title": "Update Bluetooth Drivers",
+        "content": "Ensure your Bluetooth drivers are up to date. You can check for updates in 'Software & Updates' > 'Additional Drivers'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use PulseAudio Volume Control",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install PulseAudio Volume Control",
+            "content": "Run 'sudo apt-get install pavucontrol' in the terminal."
+          },
+          {
+            "title": "Open PulseAudio Volume Control",
+            "content": "Launch 'pavucontrol' from the terminal or application menu."
+          },
+          {
+            "title": "Check AirPods Configuration",
+            "content": "Go to the 'Configuration' tab and ensure AirPods are set to the correct profile (e.g., 'High Fidelity Playback (A2DP Sink)')."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T23:24:59.550Z",
+      "updated": "2026-02-02T23:24:59.550Z",
+      "sourceUrl": "https://askubuntu.com/questions/1556625/airpods-started-our-working-went-garbled-and-now-silent",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770074708016-279",
+    "title": "Fix USB Not Recognized Error for Valve Index",
+    "problemDescription": "Valve Index headset is not recognized by USB, tried multiple fixes without success.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "Valve Index",
+      "USB not recognized",
+      "VR headset",
+      "SteamVR"
+    ],
+    "steps": [
+      {
+        "title": "Check USB Ports and Cables",
+        "content": "Ensure you are using a USB 3.0 port. Try different USB ports on your PC. If possible, test with another PC to rule out PC-specific issues."
+      },
+      {
+        "title": "Update or Reinstall USB Drivers",
+        "content": "Uninstall and reinstall the USB drivers from Device Manager. Ensure you have the latest drivers installed."
+      },
+      {
+        "title": "Clean USB Connectors",
+        "content": "Unplug the cable at the headset near the eye lenses. Blow air into the connectors to remove any dust, then plug them back in."
+      },
+      {
+        "title": "Reset Headset Firmware",
+        "content": "Unplug the power, hold the button on the headset, plug the power back in, and hold the button for 10 seconds until two red LEDs start flashing to reset the factory firmware."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Remove USB Devices in SteamVR",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open SteamVR Developer Settings",
+            "content": "Open SteamVR, go to developer settings, and remove all USB devices listed."
+          },
+          {
+            "title": "Restart PC",
+            "content": "Restart your PC and try connecting the headset again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall Windows",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup all important data as reinstalling Windows will erase everything."
+          },
+          {
+            "title": "Reinstall Windows",
+            "content": "Reinstall Windows on your PC and then try connecting the headset again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T23:25:08.016Z",
+      "updated": "2026-02-02T23:25:08.016Z",
+      "sourceUrl": "https://www.reddit.com/r/ValveIndex/comments/mcyh6a/error_usb_not_recognized_help_tried_alot_of_fixes/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770074719823-788",
+    "title": "Fix Windows 11 File Explorer Not Opening",
+    "problemDescription": "Windows 11 File Explorer is not opening and the computer keeps refreshing when clicked.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "file explorer",
+      "corrupted system",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Reset This PC",
+        "content": "Go to Settings / System / Recovery and select 'Reset This PC.' Follow the steps and choose 'Reset and Keep All My Files.' This will reinstall Windows 11 while saving your personal files."
+      },
+      {
+        "title": "Reinstall Non-Windows Programs",
+        "content": "After the reset, you may need to reinstall any non-Windows programs you had previously installed."
+      },
+      {
+        "title": "Backup Personal Data",
+        "content": "Regularly back up your personal data to an external USB thumb drive or external drive to prevent data loss in case of future system corruption."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Alternative Fix: Replace Corrupted Files",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Command Prompt",
+            "content": "Open Command Prompt as an administrator and run the command 'sfc /scannow' to scan and repair corrupted system files."
+          },
+          {
+            "title": "Run DISM Tool",
+            "content": "In Command Prompt, run 'DISM /Online /Cleanup-Image /RestoreHealth' to repair the Windows image."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T23:25:19.823Z",
+      "updated": "2026-02-02T23:25:19.823Z",
+      "sourceUrl": "https://www.quora.com/My-Windows-11-File-Explorer-is-not-opening-My-computer-keeps-refreshing-when-I-click-on-File-Explorer-How-can-I-fix-this",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770074726396-421",
+    "title": "Fix Microsoft Software Issues",
+    "problemDescription": "Troubleshoot common issues with Microsoft software.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "microsoft",
+      "software",
+      "troubleshoot",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Restart Windows",
+        "content": "Restart your computer to see if the issue resolves itself."
+      },
+      {
+        "title": "Contact Support",
+        "content": "If you have access to software support, contact them for assistance."
+      },
+      {
+        "title": "Undo Changes or Rollback",
+        "content": "If the issue started after an update or setting change, undo those changes or roll back to a restore point."
+      },
+      {
+        "title": "Disable Firewall/Antivirus",
+        "content": "Temporarily disable the software firewall or antivirus to check if they are causing the issue."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "If the software accesses internet resources, try connecting to a different network."
+      },
+      {
+        "title": "Reinstall Software",
+        "content": "If the software works on other computers, reinstall it. If the issue persists, reinstall the operating system."
+      },
+      {
+        "title": "Contact Support",
+        "content": "If all else fails, contact Microsoft support for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Review Settings",
+            "content": "Check for sudden changes in settings that might be caused by Windows Update or other Microsoft software."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T23:25:26.396Z",
+      "updated": "2026-02-02T23:25:26.396Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-troubleshoot-common-issues-with-Microsoft-software",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770074730881-446",
+    "title": "Fix Windows 11 Hardware Compatibility Issues",
+    "problemDescription": "Windows 11 is not compatible with older hardware, preventing installation or causing performance issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "hardware compatibility",
+      "upgrade issues"
+    ],
+    "steps": [
+      {
+        "title": "Check System Requirements",
+        "content": "Ensure your PC meets the minimum system requirements for Windows 11, including a compatible 64-bit processor, TPM 2.0, and Secure Boot capability."
+      },
+      {
+        "title": "Use PC Health Check Tool",
+        "content": "Download and run the PC Health Check tool from Microsoft to verify if your PC is compatible with Windows 11."
+      },
+      {
+        "title": "Update BIOS/UEFI",
+        "content": "Update your motherboard's BIOS/UEFI to the latest version, as this may enable TPM 2.0 and Secure Boot features."
+      },
+      {
+        "title": "Enable TPM 2.0 and Secure Boot",
+        "content": "Enter your BIOS/UEFI settings and enable TPM 2.0 and Secure Boot if they are not already enabled."
+      },
+      {
+        "title": "Upgrade Hardware if Necessary",
+        "content": "If your PC does not meet the requirements, consider upgrading your hardware, such as the processor or motherboard, to meet Windows 11 compatibility."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Registry Editor to Bypass Compatibility Check",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Registry Editor",
+            "content": "Press Win + R, type 'regedit', and press Enter."
+          },
+          {
+            "title": "Navigate to Compatibility Key",
+            "content": "Go to HKEY_LOCAL_MACHINE\\SYSTEM\\Setup\\MoSetup."
+          },
+          {
+            "title": "Create New DWORD",
+            "content": "Right-click on MoSetup, select New > DWORD (32-bit) Value, and name it 'AllowUpgradesWithUnsupportedTPMOrCPU'."
+          },
+          {
+            "title": "Set Value to 1",
+            "content": "Double-click the new DWORD, set its value to 1, and click OK."
+          },
+          {
+            "title": "Restart and Upgrade",
+            "content": "Restart your PC and attempt to upgrade to Windows 11 again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T23:25:30.881Z",
+      "updated": "2026-02-02T23:25:30.881Z",
+      "sourceUrl": "https://www.quora.com/What-are-the-most-frustrating-changes-in-Windows-11-that-make-users-feel-like-Microsoft-is-ignoring-their-needs",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770074732548-976",
+    "title": "Windows Tech Support Guides",
+    "problemDescription": "Finding helpful Windows tech support guides for troubleshooting and learning.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "tech support",
+      "guides"
+    ],
+    "steps": [
+      {
+        "title": "Identify Your Needs",
+        "content": "Determine what specific areas of Windows you need support with, such as networking, system updates, or application errors."
+      },
+      {
+        "title": "Search Online Resources",
+        "content": "Use search engines to find reputable tech support guides. Look for websites like Microsoft Support, TechNet, or other trusted tech forums."
+      },
+      {
+        "title": "Check User Reviews",
+        "content": "Read reviews and ratings of the guides to ensure they are helpful and relevant to your needs."
+      },
+      {
+        "title": "Consult Community Forums",
+        "content": "Visit forums like Quora, Reddit, or Stack Exchange to see what guides other users recommend."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Official Microsoft Documentation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Microsoft Support",
+            "content": "Go to the official Microsoft Support website and use their search function to find guides specific to your issue."
+          },
+          {
+            "title": "Explore TechNet",
+            "content": "Check out TechNet for in-depth technical documentation and support articles."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T23:25:32.548Z",
+      "updated": "2026-02-02T23:25:32.548Z",
+      "sourceUrl": "https://www.quora.com/What-are-some-Windows-tech-support-guides-youd-suggest",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770074745785-978",
+    "title": "Fix Zoom Webcam Not Working in Browser",
+    "problemDescription": "Zoom webcam feed is not visible when joining a meeting through a web browser.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "webcam",
+      "browser",
+      "permission"
+    ],
+    "steps": [
+      {
+        "title": "Check Browser Permissions",
+        "content": "Ensure you've allowed the Zoom site to use your webcam. Look for a prompt to grant this permission when your meeting launches."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Webcam Selection in Zoom Desktop App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Zoom Settings",
+            "content": "If the issue occurs in the Zoom desktop app, open Zoom's settings menu."
+          },
+          {
+            "title": "Select Correct Webcam",
+            "content": "Ensure the correct webcam is selected in Zoom's settings menu."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T23:25:45.785Z",
+      "updated": "2026-02-02T23:25:45.785Z",
+      "sourceUrl": "https://www.howtogeek.com/785072/how-to-join-a-test-zoom-meeting/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770074753794-959",
+    "title": "Test Your Webcam on Windows 10 or 11",
+    "problemDescription": "You need to verify if your webcam is working correctly on Windows 10 or 11.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "webcam",
+      "test",
+      "windows",
+      "zoom",
+      "google meet"
+    ],
+    "steps": [
+      {
+        "title": "Test Webcam in Zoom",
+        "content": "Open Zoom, click the gear icon in the top-right corner, then select 'Video' on the left. If your webcam is working, you should see yourself."
+      },
+      {
+        "title": "Test Webcam in Google Meet",
+        "content": "Go to the Google Meet home page, click the gear icon in the top-right corner, then select 'Video' on the left. A small video should appear if your webcam is working."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Test Webcam in Other Applications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Another Video Chat Application",
+            "content": "Use other video chat services like Skype or Microsoft Teams to test your webcam by starting a video call."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T23:25:53.794Z",
+      "updated": "2026-02-02T23:25:53.794Z",
+      "sourceUrl": "https://www.howtogeek.com/787215/how-to-test-your-webcam-on-windows-10-or-11/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
