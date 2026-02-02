@@ -86642,5 +86642,320 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770046502409-217",
+    "title": "Fix Low-Resolution Images on Retina Displays in Browsers",
+    "problemDescription": "Images appear less sharp and dense in browsers compared to native applications on Retina displays.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "retina",
+      "display",
+      "browser",
+      "image",
+      "resolution"
+    ],
+    "steps": [
+      {
+        "title": "Check for Retina Support",
+        "content": "Ensure the website you are visiting supports HiDPI/Retina displays. Most websites do not yet support this feature."
+      },
+      {
+        "title": "Use Retina-Ready Websites",
+        "content": "Visit websites that are known to support Retina displays. You can find examples in Macrumors Forum threads or other related resources."
+      },
+      {
+        "title": "Adjust Browser Settings",
+        "content": "Some browsers allow you to adjust the zoom level or enable HiDPI modes. Check your browser's settings for display options."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Retina-Friendly Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to Safari",
+            "content": "Safari is known to handle Retina displays better than other browsers. Try switching to Safari and see if the issue persists."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Browser Extensions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Retina Display Extension",
+            "content": "Some browser extensions can force HiDPI rendering. Search for and install a reputable extension that supports Retina displays."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T15:35:02.409Z",
+      "updated": "2026-02-02T15:35:02.409Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/99445/why-do-browsers-not-render-pictures-in-native-pixel-density-on-retina-display",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770046510950-600",
+    "title": "Fix Google Chrome Fullscreen Space Issue on Mac",
+    "problemDescription": "Google Chrome displays a large empty space below the Apple menu bar when in fullscreen mode on Mac.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "mac",
+      "fullscreen",
+      "space issue"
+    ],
+    "steps": [
+      {
+        "title": "Enable Automatic Hide and Show Menu Bar",
+        "content": "Go to System Preferences > Dock & Menu Bar and ensure 'Automatically hide and show the menu bar in full screen' is checked."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Three-Finger Swipe Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Perform Three-Finger Swipe Up and Down",
+            "content": "While in fullscreen mode, perform a three-finger swipe up followed by a three-finger swipe down to make the empty space disappear."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T15:35:10.950Z",
+      "updated": "2026-02-02T15:35:10.950Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/434411/google-chrome-toolbar-space-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770046569804-548",
+    "title": "Fix WhatsApp Web Paste Issue in Firefox",
+    "problemDescription": "Firefox users cannot paste text into WhatsApp Web due to a bug in the DataTransfer wrapper.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "firefox",
+      "whatsapp",
+      "paste",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Update WhatsApp Web",
+        "content": "Ensure you are using the latest version of WhatsApp Web (2.23.35.6 or later), as the issue has been fixed in this version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Firefox ESR",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Firefox ESR",
+            "content": "Download and install the Firefox Extended Support Release (ESR) version (102.14.0 or later)."
+          },
+          {
+            "title": "Use Firefox ESR",
+            "content": "Use Firefox ESR for WhatsApp Web until the issue is resolved in the regular version."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Clipboard Events",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open about:config",
+            "content": "Type 'about:config' in the Firefox address bar and press Enter."
+          },
+          {
+            "title": "Search for Clipboard Events",
+            "content": "Search for 'dom.event.clipboardevents.enabled' in the about:config page."
+          },
+          {
+            "title": "Disable Clipboard Events",
+            "content": "Set 'dom.event.clipboardevents.enabled' to 'false'."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Use a UserScript",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a UserScript Manager",
+            "content": "Install a UserScript manager extension like Greasemonkey or Tampermonkey."
+          },
+          {
+            "title": "Create a New Script",
+            "content": "Create a new script and paste the following code:"
+          },
+          {
+            "title": "Add the Script Code",
+            "content": "```javascript\n// ==UserScript==\n// @name Fix whatsapp firefox paste\n// @version 1.0\n// @namespace PlaceboZA\n// @author PlaceboZA\n// @description Fixes paste function on whatsapp for Firefox\n// @include https://web.whatsapp.com/*\n// ==/UserScript==\nfunction handlePaste(e) {\nvar data = (e.originalEvent || e).clipboardData.getData('text/plain');\nif ((data || '') !== '') {\ne.stopPropagation();\n}\n}\naddEventListener('paste', handlePaste, true);\n```"
+          },
+          {
+            "title": "Save and Use the Script",
+            "content": "Save the script and use it while accessing WhatsApp Web."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T15:36:09.804Z",
+      "updated": "2026-02-02T15:36:09.804Z",
+      "sourceUrl": "https://superuser.com/questions/1804661/firefox-doesnt-allow-to-paste-into-whatsapp-web-anymore",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770046572572-102",
+    "title": "Launch WhatsApp Web from URL",
+    "problemDescription": "Clicking on WhatsApp URL links opens the desktop app or closes the popup instead of launching WhatsApp Web.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "web",
+      "url",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Modify the URL",
+        "content": "Replace 'api.whatsapp.com' with 'web.whatsapp.com' in the URL. For example, change 'https://api.whatsapp.com/send?phone=1234567890' to 'https://web.whatsapp.com/send?phone=1234567890'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use wa.me with Web WhatsApp",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use wa.me URL",
+            "content": "Try using the 'wa.me' URL format, e.g., 'https://wa.me/1234567890', and ensure you are logged into WhatsApp Web in your browser."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T15:36:12.572Z",
+      "updated": "2026-02-02T15:36:12.572Z",
+      "sourceUrl": "https://superuser.com/questions/1570644/launch-whatsapp-web-from-url",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770046575278-577",
+    "title": "Fix WhatsApp QR Code Display Issue",
+    "problemDescription": "WhatsApp Web and Desktop apps display broken QR codes that cannot be scanned.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "qr code",
+      "desktop app",
+      "web app",
+      "graphics driver"
+    ],
+    "steps": [
+      {
+        "title": "Update Graphics Driver",
+        "content": "Download and install the latest graphics driver directly from the manufacturer's website (e.g., Intel, NVIDIA, AMD)."
+      },
+      {
+        "title": "Disable Windows Driver Updates",
+        "content": "Prevent Windows from automatically updating the driver by enabling the 'Do not include drivers with Windows Update' policy using the Group Policy Editor (available on Windows Pro versions)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Hardware Acceleration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open WhatsApp Settings",
+            "content": "Go to WhatsApp Desktop app settings."
+          },
+          {
+            "title": "Disable Hardware Acceleration",
+            "content": "Uncheck the 'Enable hardware acceleration' option in the settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T15:36:15.278Z",
+      "updated": "2026-02-02T15:36:15.278Z",
+      "sourceUrl": "https://superuser.com/questions/1606458/whatsapp-web-and-desktop-app-displaying-broken-qr-codes",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770046578339-805",
+    "title": "Reduce WhatsApp Desktop RAM Usage",
+    "problemDescription": "WhatsApp Desktop App consumes excessive RAM, impacting system performance.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "desktop",
+      "ram",
+      "usage",
+      "memory"
+    ],
+    "steps": [
+      {
+        "title": "Use WhatsApp Web in Edge Browser",
+        "content": "Open WhatsApp Web in the Edge browser and create an app. Go to `...(three dots) -> App -> Install this site as an app`. Edge browser optimizes memory usage and puts the app in economy mode when minimized."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Configure Nvidia GPU for WhatsApp",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Nvidia Control Panel",
+            "content": "Search for 'Nvidia Control Panel' in the Windows start menu and open it."
+          },
+          {
+            "title": "Navigate to 3D Settings",
+            "content": "Go to `Panel navigation tree pane -> under 3D Settings -> select Manage 3D settings -> Program Settings tab`."
+          },
+          {
+            "title": "Configure WhatsApp to Use GPU",
+            "content": "Configure WhatsApp to use the GPU. This will allow WhatsApp to utilize some of the memory on your graphics card, freeing up system RAM."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T15:36:18.339Z",
+      "updated": "2026-02-02T15:36:18.339Z",
+      "sourceUrl": "https://superuser.com/questions/1758615/how-to-reduce-whatsapp-desktop-app-ram-usage",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
