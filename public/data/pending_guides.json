@@ -87364,5 +87364,449 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770057458475-8",
+    "title": "Auslogics Registry Cleaner Malware Removal",
+    "problemDescription": "Auslogics Registry Cleaner may install malware during installation.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "registry",
+      "cleaner",
+      "malware",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall Auslogics Registry Cleaner",
+        "content": "Go to Control Panel > Programs > Programs and Features. Find Auslogics Registry Cleaner in the list, right-click on it, and select 'Uninstall'. Follow the prompts to complete the uninstallation."
+      },
+      {
+        "title": "Run a Malware Scan",
+        "content": "Use a reputable antivirus or anti-malware software to scan your system. Remove any detected malware or potentially unwanted programs (PUPs)."
+      },
+      {
+        "title": "Check for Malware in Installed Programs",
+        "content": "Look for any unfamiliar or suspicious programs in the list of installed programs. If you find any, uninstall them."
+      },
+      {
+        "title": "Clean Up Your Registry",
+        "content": "Use a trusted registry cleaner to clean up any remaining issues. Alternatively, you can manually edit the registry, but this is not recommended for beginners."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use System Restore",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Restore",
+            "content": "Go to Control Panel > System and Security > System > System Protection. Click on 'System Restore' and follow the prompts to restore your system to a point before the malware was installed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T18:37:38.475Z",
+      "updated": "2026-02-02T18:37:38.475Z",
+      "sourceUrl": "https://download.cnet.com/auslogics-registry-cleaner/3000-18512_4-10909814.html",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770057462406-829",
+    "title": "Discord Over Jobs Biography",
+    "problemDescription": "Discord over the biography of Steve Jobs.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Discord",
+      "Jobs",
+      "biography",
+      "Apple",
+      "security"
+    ],
+    "steps": [
+      {
+        "title": "Understand the Context",
+        "content": "Research the background of the biography and the reasons for the discord."
+      },
+      {
+        "title": "Engage in Constructive Dialogue",
+        "content": "Encourage open and respectful discussions about the biography on relevant platforms."
+      },
+      {
+        "title": "Seek Official Statements",
+        "content": "Look for official statements from Apple or the biography's publisher to clarify any misunderstandings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Community Moderation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Key Community Members",
+            "content": "Identify influential community members who can help moderate discussions."
+          },
+          {
+            "title": "Create Guidelines",
+            "content": "Establish guidelines for respectful and constructive discussions about the biography."
+          },
+          {
+            "title": "Monitor Discussions",
+            "content": "Monitor discussions to ensure they remain respectful and on-topic."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T18:37:42.406Z",
+      "updated": "2026-02-02T18:37:42.406Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/new-and-noteworthy-discord-over-jobs-biography-techworld-apple-in-denial-over-security/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770057464905-258",
+    "title": "Fix Erroneous Uptime Robot Alerts",
+    "problemDescription": "Uptime Robot is sending incorrect alerts about website status.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "uptime",
+      "robot",
+      "alerts",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Inspect Page Source",
+        "content": "Open the webpage that is triggering false alerts in your browser. Right-click on the page and select 'Inspect' or 'Inspect Element' to view the source code."
+      },
+      {
+        "title": "Identify the Issue",
+        "content": "Look for any unusual or unexpected elements in the source code that might be causing the false alerts. Pay attention to any scripts, tags, or elements that might be triggering the alerts."
+      },
+      {
+        "title": "Adjust Monitor Settings",
+        "content": "Go to your Uptime Robot dashboard and navigate to the monitor settings for the problematic website. Adjust the settings to ignore specific elements or scripts that are causing the false alerts."
+      },
+      {
+        "title": "Test the Changes",
+        "content": "After making the necessary adjustments, test the monitor to ensure that it is no longer sending false alerts. Monitor the website for a period of time to confirm that the issue has been resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Uptime Robot Support",
+            "content": "If you are unable to resolve the issue on your own, contact Uptime Robot support for assistance. Provide them with details about the problem and any steps you have already taken to troubleshoot the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T18:37:44.905Z",
+      "updated": "2026-02-02T18:37:44.905Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/make-your-own-bot-for-tracking-holiday-gift-restocks-this-year/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770057473036-504",
+    "title": "Fix HDMI Audio Not Passing to TV",
+    "problemDescription": "Audio from PC not passing through to TV via HDMI connection.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "hdmi",
+      "audio",
+      "tv",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Set HDMI as Default Playback Device",
+        "content": "Right-click the sound icon on the taskbar and select 'Open Sound settings'. In the 'Output' section, choose 'HDMI' from the dropdown menu. If HDMI is not listed, go to 'Sound Control Panel' and switch to the 'Playback' tab. Right-click on the HDMI device and select 'Set as Default Device'."
+      },
+      {
+        "title": "Restart Your PC",
+        "content": "After setting HDMI as the default device, restart your PC to ensure the changes take effect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Audio Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Press 'Win + X' and select 'Device Manager'."
+          },
+          {
+            "title": "Update Audio Drivers",
+            "content": "Expand the 'Sound, video and game controllers' section. Right-click on your audio device (e.g., Realtek High Definition Audio) and select 'Update driver'. Follow the on-screen instructions to update the driver."
+          }
+        ]
+      },
+      {
+        "title": "Check HDMI Cable and Ports",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect HDMI Cable",
+            "content": "Ensure the HDMI cable is not damaged and is properly connected to both the PC and TV."
+          },
+          {
+            "title": "Try Different Ports",
+            "content": "If available, try using a different HDMI port on your TV or a different HDMI cable."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T18:37:53.036Z",
+      "updated": "2026-02-02T18:37:53.036Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/issue-audio-not-passing-through-to-hdmi-on-to-tv/699507d2-a884-41b3-bd6a-9799938ecfc8",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770057501539-195",
+    "title": "Secure WhatsApp Against SIM Swap Interception",
+    "problemDescription": "WhatsApp messages can be intercepted when changing SIM cards before restarting the phone.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "WhatsApp",
+      "SIM card",
+      "security",
+      "encryption",
+      "interception"
+    ],
+    "steps": [
+      {
+        "title": "Enable Security Notifications",
+        "content": "Go to WhatsApp settings, navigate to Account > Security > Show Security Notifications. Enable this feature to receive alerts when a sender's security key changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Avoid SIM Swaps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Minimize SIM Changes",
+            "content": "Avoid changing SIM cards frequently to reduce the window of vulnerability."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T18:38:21.539Z",
+      "updated": "2026-02-02T18:38:21.539Z",
+      "sourceUrl": "https://www.tomshardware.com/news/whatsapp-won-t-fix-interception-vulnerability,33418.html",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770057504257-598",
+    "title": "Use WhatsApp on Windows with Broken Phone Screen",
+    "problemDescription": "Access WhatsApp on a Windows PC when your phone screen is broken and you can't scan the QR code.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "windows",
+      "broken screen",
+      "qr code"
+    ],
+    "steps": [
+      {
+        "title": "Borrow a Phone",
+        "content": "Borrow a phone from a friend who does not have WhatsApp installed."
+      },
+      {
+        "title": "Insert Your SIM Card",
+        "content": "Insert your SIM card into the borrowed phone."
+      },
+      {
+        "title": "Install WhatsApp",
+        "content": "Install WhatsApp on the borrowed phone and authorize your PC using the QR code."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use WhatsApp Web with Another Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open WhatsApp Web",
+            "content": "Open WhatsApp Web on your Windows PC."
+          },
+          {
+            "title": "Scan QR Code",
+            "content": "Ask a friend to scan the QR code using their phone and WhatsApp app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T18:38:24.257Z",
+      "updated": "2026-02-02T18:38:24.257Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/how-to-run-whatsapp-in-windows.3644773/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770057510356-518",
+    "title": "Use WhatsApp Without a Phone or SIM Card",
+    "problemDescription": "How to use WhatsApp without a phone or SIM card.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "no phone",
+      "no sim",
+      "bluestacks",
+      "google hangouts"
+    ],
+    "steps": [
+      {
+        "title": "Use Google Hangouts",
+        "content": "Create two Gmail accounts. Use Google Hangouts to make calls without needing a SIM card or phone number."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Bluestacks",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Bluestacks",
+            "content": "Download and install Bluestacks on your computer. Ensure your system meets the requirements."
+          },
+          {
+            "title": "Check Sound",
+            "content": "Verify that your computer's sound is working properly."
+          },
+          {
+            "title": "Enable Google Play",
+            "content": "Log in to Google Play within Bluestacks."
+          },
+          {
+            "title": "Download WhatsApp",
+            "content": "Search for and download WhatsApp from the Google Play Store."
+          },
+          {
+            "title": "Use TextNow for Activation",
+            "content": "Download TextNow on another device to receive the activation code for WhatsApp."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Kindle Fire",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Kindle Fire",
+            "content": "Buy a Kindle Fire 7, which only requires Wi-Fi and can be purchased for around $49."
+          },
+          {
+            "title": "Install WhatsApp",
+            "content": "Download and install WhatsApp on the Kindle Fire."
+          },
+          {
+            "title": "Use TextNow for Activation",
+            "content": "Use TextNow to receive the activation code for WhatsApp."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T18:38:30.356Z",
+      "updated": "2026-02-02T18:38:30.356Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/whatsapp-app-without-phone-and-sim-card-is-it-possible.3578590/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770057513052-946",
+    "title": "Fix VoIP Calls After Router Setup",
+    "problemDescription": "Unable to make VoIP, WhatsApp, or Snapchat calls after new router setup.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "voip",
+      "router",
+      "snapchat",
+      "whatsapp",
+      "calls"
+    ],
+    "steps": [
+      {
+        "title": "Check SIP Settings",
+        "content": "Ensure that SIP (Session Initiation Protocol) is enabled in your router settings. This protocol is crucial for VoIP calls."
+      },
+      {
+        "title": "Update Router Firmware",
+        "content": "Update your router's firmware to the latest version. This can resolve compatibility issues with VoIP services."
+      },
+      {
+        "title": "Check Firewall Settings",
+        "content": "Verify that your firewall is not blocking VoIP traffic. You may need to add exceptions for the ports used by VoIP services."
+      },
+      {
+        "title": "Test with Different Devices",
+        "content": "Try making calls from different devices to isolate whether the issue is with the router or a specific device."
+      },
+      {
+        "title": "Contact ISP",
+        "content": "If the problem persists, contact your Internet Service Provider (ISP) to ensure there are no restrictions on VoIP traffic."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Router",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Router to Factory Settings",
+            "content": "Perform a factory reset on your router to ensure all settings are default. This can resolve configuration issues."
+          },
+          {
+            "title": "Reconfigure Router",
+            "content": "Set up your router again, ensuring that all necessary settings for VoIP are correctly configured."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T18:38:33.052Z",
+      "updated": "2026-02-02T18:38:33.052Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/cant-do-any-voip-whatsapp-or-snapchat-calls-after-new-router-setup.3668564/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
