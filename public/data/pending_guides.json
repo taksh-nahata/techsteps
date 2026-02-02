@@ -84081,5 +84081,459 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770028846308-57",
+    "title": "Fix Samsung Phone Lagging",
+    "problemDescription": "Your Samsung phone is slowing down or lagging over time.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "samsung",
+      "lagging",
+      "slow",
+      "optimize"
+    ],
+    "steps": [
+      {
+        "title": "Enable Auto Optimize",
+        "content": "Go to your phone settings, then navigate to Battery and Device Care. Enable Auto Optimize, which is off by default. This feature will automatically restart your phone when you're not using it, typically at night, to clear out stuck applications or processes and keep your phone running smoothly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Install One-Handed Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install One-Handed Mode App",
+            "content": "Go to the Galaxy Store and search for 'One Hand Operation Plus'. Install this application to make using your phone one-handed easier."
+          },
+          {
+            "title": "Configure Actions",
+            "content": "Open the app and configure up to 12 actions (6 for each side) by mapping short and long swipes to specific actions. This can help streamline your usage and reduce lag."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T10:40:46.308Z",
+      "updated": "2026-02-02T10:40:46.308Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=dQkRw7twxKE",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770028852211-838",
+    "title": "Samsung Galaxy S21 5G Screen Replacement",
+    "problemDescription": "Guide to replacing the screen on a Samsung Galaxy S21 5G.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "galaxy s21",
+      "screen replacement",
+      "repair"
+    ],
+    "steps": [
+      {
+        "title": "Remove Back Plate",
+        "content": "Pry the back plate off the phone carefully."
+      },
+      {
+        "title": "Remove Wireless Charging Coil",
+        "content": "Peel off the wireless charging coil from the bottom speaker assembly."
+      },
+      {
+        "title": "Remove Speaker Assembly",
+        "content": "Remove the speaker assembly from the bottom of the phone."
+      },
+      {
+        "title": "Disconnect Screen Cable",
+        "content": "Disconnect the cable connected to the screen."
+      },
+      {
+        "title": "Heat and Pry Screen",
+        "content": "Heat the screen from the front to loosen the adhesive, then pry the screen off the midframe."
+      },
+      {
+        "title": "Install New Screen",
+        "content": "Apply the new screen to the midframe and reassemble the phone."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Battery Replacement",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Heat the Front of the Phone",
+            "content": "Apply heat from the front of the phone to loosen the adhesive underneath the battery."
+          },
+          {
+            "title": "Pry the Battery Off",
+            "content": "Use plastic pry tools to carefully pry the battery off."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T10:40:52.211Z",
+      "updated": "2026-02-02T10:40:52.211Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=voYbbwkg-yo",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770028859710-55",
+    "title": "Fix Apps Not Running on Mac",
+    "problemDescription": "Some apps on Mac are not running without any error message.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "apps",
+      "error",
+      "permissions"
+    ],
+    "steps": [
+      {
+        "title": "Open Disk Utility",
+        "content": "From the Applications folder, open Utilities, and then double-click the Disk Utility icon."
+      },
+      {
+        "title": "Select Startup Disk",
+        "content": "In the column on the left, click your startup disk."
+      },
+      {
+        "title": "Repair Disk Permissions",
+        "content": "Click the First Aid tab, and then click Repair Disk Permissions. Disk Utility will reset any files and folders with incorrect settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Problematic Applications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove the Application",
+            "content": "Uninstall the problematic application using the appropriate method for Mac OS X."
+          },
+          {
+            "title": "Reinstall the Application",
+            "content": "Download and reinstall the application from the official source."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T10:40:59.710Z",
+      "updated": "2026-02-02T10:40:59.710Z",
+      "sourceUrl": "https://superuser.com/questions/116127/problems-running-some-apps-on-mac-no-error-message",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770028861972-763",
+    "title": "Fix 'The application can't be opened' on Mac",
+    "problemDescription": "The application cannot be opened due to permission issues on Mac.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macos",
+      "application",
+      "permission",
+      "executable"
+    ],
+    "steps": [
+      {
+        "title": "Navigate to the Application Directory",
+        "content": "Open Terminal and navigate to the directory containing the application using the `cd` command."
+      },
+      {
+        "title": "Change Permissions",
+        "content": "Run the command `chmod +x <application_file>` to make the application executable. Replace `<application_file>` with the actual name of the application file."
+      },
+      {
+        "title": "Use sudo if Necessary",
+        "content": "If the above command doesn't work, use `sudo chmod +x <application>` to change permissions with administrative rights."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use The Unarchiver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open the Application Zip File",
+            "content": "Right-click on the application zip file and select 'Open With'."
+          },
+          {
+            "title": "Choose The Unarchiver",
+            "content": "Select 'The Unarchiver' from the list of options to unzip the application."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T10:41:01.972Z",
+      "updated": "2026-02-02T10:41:01.972Z",
+      "sourceUrl": "https://superuser.com/questions/1345755/how-to-fix-the-application-cant-be-opened-on-mac",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770028883570-579",
+    "title": "Fix Intermittent Wi-Fi Dropouts on Windows 11",
+    "problemDescription": "Wi-Fi connection drops intermittently on a Windows 11 PC while Ethernet works fine.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "dropouts",
+      "windows 11",
+      "intermittent"
+    ],
+    "steps": [
+      {
+        "title": "Update or Roll Back Wi-Fi Driver",
+        "content": "Go to Device Manager, expand Network adapters, right-click on your Wi-Fi adapter (Intel Wireless-AC 9462), and select 'Update driver'. If the issue persists, try rolling back to a previous driver version."
+      },
+      {
+        "title": "Change Wi-Fi Band and Settings",
+        "content": "Open Device Manager, go to your Wi-Fi adapter properties, and try changing the preferred band (2.4GHz or 5GHz) and adjust roaming aggressiveness settings."
+      },
+      {
+        "title": "Check for Interference",
+        "content": "Ensure there are no sources of interference like other electronic devices or radar stations nearby. Consider changing the Wi-Fi channel on your router."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Router to Default Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Router",
+            "content": "Press and hold the reset button on your Vodafone VOX 3 Broadband Router for about 10 seconds to reset it to factory settings. Reconfigure the router and test the connection."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Different DNS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change DNS Settings",
+            "content": "Go to Network & Internet settings, select your Wi-Fi network, and change the DNS server to a public DNS like Google's (8.8.8.8 and 8.8.4.4)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T10:41:23.570Z",
+      "updated": "2026-02-02T10:41:23.570Z",
+      "sourceUrl": "https://superuser.com/questions/1811458/advice-on-troubleshooting-intermittent-wi-fi-drop-outs",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770028904326-181",
+    "title": "Fix Sudden Battery Drops",
+    "problemDescription": "Battery charge suddenly drops from a certain percentage to a very low percentage.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery",
+      "charge",
+      "drop",
+      "calibration"
+    ],
+    "steps": [
+      {
+        "title": "Set Battery Threshold to 100%",
+        "content": "Set your battery threshold to 100% and charge your laptop for about a day. This helps recalibrate the battery."
+      },
+      {
+        "title": "Full Charge and Leave Plugged In",
+        "content": "Charge the battery to 100%, then leave it plugged in for about 2-3 days. This can help resolve the sudden drop issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Uninstall Lenovo Power Manager",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Lenovo Power Manager",
+            "content": "Uninstall Lenovo's Power Manager software, as it may be causing the issue. Use Windows battery management instead."
+          }
+        ]
+      },
+      {
+        "title": "Avoid Draining Battery Below 20%",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Avoid Deep Discharges",
+            "content": "Avoid letting the battery drain below 20% to prevent faster wear and tear."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T10:41:44.326Z",
+      "updated": "2026-02-02T10:41:44.326Z",
+      "sourceUrl": "https://superuser.com/questions/155395/battery-charge-suddenly-drops-from-about-25-to-6",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770028908717-884",
+    "title": "Fix Windows Scheduled Tasks Waking Laptop from Sleep",
+    "problemDescription": "Laptop wakes up from sleep and drains battery due to Windows Scheduled Tasks.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "sleep",
+      "battery",
+      "scheduled tasks"
+    ],
+    "steps": [
+      {
+        "title": "Open Event Viewer",
+        "content": "Press the Windows key, type 'Event Viewer', and open the application."
+      },
+      {
+        "title": "Check for Scheduled Tasks",
+        "content": "In Event Viewer, navigate to Windows Logs > System. Look for events that indicate the system waking up at specific times, such as midnight."
+      },
+      {
+        "title": "Open Task Scheduler",
+        "content": "Press the Windows key, type 'Task Scheduler', and open the application."
+      },
+      {
+        "title": "Disable or Delete Scheduled Tasks",
+        "content": "In Task Scheduler, navigate to Task Scheduler Library > Microsoft > Windows > UpdateOrchestrator. Disable or delete the tasks that are causing the system to wake up."
+      },
+      {
+        "title": "Verify the Changes",
+        "content": "Monitor the system to ensure that the battery is no longer draining due to unwanted wake-ups."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Lid Switch Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Power Options",
+            "content": "Press the Windows key, type 'Power Options', and open the application."
+          },
+          {
+            "title": "Change Advanced Power Settings",
+            "content": "Click on 'Change plan settings' next to your selected power plan, then click on 'Change advanced power settings'."
+          },
+          {
+            "title": "Adjust Lid Close Action",
+            "content": "In the Advanced settings window, expand 'Sleep' and then 'Lid close action'. Set the 'Lid close action' to 'Do nothing' for both 'On battery' and 'Plugged in'."
+          },
+          {
+            "title": "Save Changes",
+            "content": "Click 'Apply' and then 'OK' to save the changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T10:41:48.717Z",
+      "updated": "2026-02-02T10:41:48.717Z",
+      "sourceUrl": "https://superuser.com/questions/1814856/computer-wakes-up-from-sleep-and-drains-battery-lid-malfunction",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770028923175-683",
+    "title": "Prevent Auto-Sign-In to Gmail",
+    "problemDescription": "Gmail automatically signs you in when you open the browser, and you want to prevent this.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "auto-sign-in",
+      "cookies",
+      "browser settings"
+    ],
+    "steps": [
+      {
+        "title": "Access Chrome Settings",
+        "content": "Open Google Chrome, click the Menu in the top right, and select 'Settings'."
+      },
+      {
+        "title": "Show Advanced Settings",
+        "content": "Click 'Show advanced settings' to reveal more options."
+      },
+      {
+        "title": "Manage Cookie Exceptions",
+        "content": "In the 'Privacy' section, click 'Content settings', then under 'Cookies,' click 'Manage exceptions'."
+      },
+      {
+        "title": "Add Gmail Domain Exception",
+        "content": "Enter `[.]google.com` to create an exception for the entire domain. Choose 'Clear on exit' from the menu to delete cookies every time you close the browser."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Browser Auto Logoff on Exit",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Internet Properties",
+            "content": "Search for `inetcpl.cpl` in the Run menu (`WINKEY` + `R`)."
+          },
+          {
+            "title": "Delete Browsing History on Exit",
+            "content": "In the Internet Properties window, select 'Delete browsing history on exit' and click OK."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Auto Logout Extension",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Add Auto Logout Extension",
+            "content": "Install the Auto Logout extension from the Chrome Web Store."
+          },
+          {
+            "title": "Enable Auto Logout",
+            "content": "The extension will automatically log you out of all accounts when you close all browser windows."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T10:42:03.175Z",
+      "updated": "2026-02-02T10:42:03.175Z",
+      "sourceUrl": "https://superuser.com/questions/1357172/how-do-i-not-stay-signed-in-in-gmail",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
