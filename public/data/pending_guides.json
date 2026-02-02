@@ -83175,5 +83175,303 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770016437934-303",
+    "title": "Update Android Apps for Security",
+    "problemDescription": "Ensure your Android apps are updated to patch security vulnerabilities.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "security",
+      "app updates"
+    ],
+    "steps": [
+      {
+        "title": "Check for App Updates",
+        "content": "Go to Google Play, select My Apps & Games, and then the Updates tab."
+      },
+      {
+        "title": "Enable Auto-Updates",
+        "content": "Turn on Auto updates by going to Settings > Auto-update Apps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use a Password Manager",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Password Manager",
+            "content": "Download and install a password manager like Lastpass."
+          },
+          {
+            "title": "Set Up Master Password",
+            "content": "Create a strong master password to secure all your other passwords."
+          },
+          {
+            "title": "Generate Strong Passwords",
+            "content": "Use the password manager to generate and manage strong passwords for all your accounts."
+          }
+        ]
+      },
+      {
+        "title": "Enable 2-Step Verification",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Google Account Settings",
+            "content": "Open your Google account settings."
+          },
+          {
+            "title": "Enable 2-Step Verification",
+            "content": "Turn on two-step verification to receive a code on your phone whenever you try to log in to your Google account on another device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T07:13:57.934Z",
+      "updated": "2026-02-02T07:13:57.934Z",
+      "sourceUrl": "https://www.techradar.com/news/10-android-phone-security-tips-you-need-to-know",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770016440283-743",
+    "title": "Fix Google Pixel 6 Auto-Rotate Not Working",
+    "problemDescription": "The auto-rotate feature on Google Pixel 6 stops working despite being enabled.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "auto-rotate",
+      "Google Pixel 6",
+      "screen orientation"
+    ],
+    "steps": [
+      {
+        "title": "Clean the Screen",
+        "content": "Wipe the screen with a soft, lint-free cloth to remove any dirt or smudges."
+      },
+      {
+        "title": "Check Finger Placement",
+        "content": "Ensure you are using the same finger and part of the finger used during calibration. Avoid placing your finger at an angle."
+      },
+      {
+        "title": "Remove Screen Protector",
+        "content": "If you have a screen protector, remove it temporarily to check if it is causing the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Your Phone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > System > System update to check for and install any available updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T07:14:00.283Z",
+      "updated": "2026-02-02T07:14:00.283Z",
+      "sourceUrl": "https://www.techradar.com/news/google-pixel-6-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770016451808-833",
+    "title": "Fix Bluetooth Audio Issues on MacBook",
+    "problemDescription": "Bluetooth audio on MacBook has stuttering, interference, or no sound.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "audio",
+      "macbook",
+      "interference"
+    ],
+    "steps": [
+      {
+        "title": "Disconnect Bluetooth Devices",
+        "content": "Disconnect all Bluetooth devices (keyboard, mouse, trackpad) one by one while listening to the Bluetooth speakers to identify the interfering device."
+      },
+      {
+        "title": "Reconnect Devices",
+        "content": "Reconnect the Bluetooth devices one by one to see if the issue persists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Wi-Fi",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Wi-Fi",
+            "content": "Disable Wi-Fi devices while using Bluetooth speakers to check for interference."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use USB Bluetooth Dongle",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase USB Bluetooth Dongle",
+            "content": "Buy a USB Bluetooth dongle and plug it into the MacBook."
+          },
+          {
+            "title": "MacBook Automatically Switches",
+            "content": "The MacBook will automatically shut down the onboard Bluetooth and use the new USB Bluetooth dongle."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Change Input Device Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to System Preferences",
+            "content": "Open System Preferences > Sound > Input."
+          },
+          {
+            "title": "Change Input Device",
+            "content": "Ensure the Bluetooth speakers are set as the output device, not the input device."
+          }
+        ]
+      },
+      {
+        "title": "Method 5: Disable Handoff",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to System Preferences",
+            "content": "Go to  → System Preferences → General."
+          },
+          {
+            "title": "Disable Handoff",
+            "content": "Uncheck the option 'Allow Handoff between this Mac and your iCloud devices.'"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T07:14:11.808Z",
+      "updated": "2026-02-02T07:14:11.808Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/40259/bluetooth-audio-problems-on-a-macbook",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770016470824-330",
+    "title": "Fix SteelSeries Arctis Nova 7 Auto Shutoff",
+    "problemDescription": "SteelSeries Arctis Nova 7 headset turns off unexpectedly, even mid-sentence.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "headset",
+      "auto shutoff",
+      "battery",
+      "SteelSeries",
+      "Arctis Nova 7"
+    ],
+    "steps": [
+      {
+        "title": "Disable Battery-Saving Setting",
+        "content": "Go to the SteelSeries Arctis Nova 7 settings and disable the battery-saving feature to prevent the headset from turning off unexpectedly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use ModMic Wireless",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Attach ModMic to Headphones",
+            "content": "If the issue persists, consider using a separate pair of headphones combined with the Antlion ModMic Wireless for better audio quality and microphone performance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T07:14:30.824Z",
+      "updated": "2026-02-02T07:14:30.824Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/ive-tried-many-pc-gaming-headsets-and-im-not-a-fan-but-i-still-recommend-this-one-to-gamers/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770016484125-989",
+    "title": "Fix Ubuntu 22.04.2 Screen Flickering",
+    "problemDescription": "Screen flickering or glitches on Ubuntu 22.04.2, especially when moving the laptop.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "screen flickering",
+      "display glitches",
+      "dell laptop"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Compositor Settings",
+        "content": "Open 'System Settings - Display and Monitor - Compositor' and untick both 'Enable on startup' and 'Allow applications to block compositing'."
+      },
+      {
+        "title": "Reset Touchpad Settings",
+        "content": "Open a terminal and run the following commands: `sudo modprobe -r psmouse` followed by `sudo modprobe psmouse`."
+      },
+      {
+        "title": "Add Battery and Power Widget",
+        "content": "Install the 'Battery and power' widget on your desktop or side panel and always enable 'Manually block display and screen locking' after each login or restart."
+      },
+      {
+        "title": "Adjust Display Settings",
+        "content": "Set 'Scale Method' to 'Accurate', 'Latency' to 'Prefer smooth animations', and 'Tearing prevention (vsync)' to 'Full screen re-paints'."
+      },
+      {
+        "title": "Configure Power Management",
+        "content": "Open 'Power Management' system settings and ensure only 'Button Events handling' is enabled. Set 'When laptop lid closed' to 'Do nothing' for all power states."
+      },
+      {
+        "title": "Restart Laptop",
+        "content": "Restart your laptop to apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Graphics Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Open 'Software & Updates' and navigate to the 'Additional Drivers' tab to check for and install any available graphics driver updates."
+          },
+          {
+            "title": "Restart Laptop",
+            "content": "Restart your laptop to apply the driver updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T07:14:44.125Z",
+      "updated": "2026-02-02T07:14:44.125Z",
+      "sourceUrl": "https://askubuntu.com/questions/1455799/ubuntu-22-04-2-screen-flickering-glitches",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
