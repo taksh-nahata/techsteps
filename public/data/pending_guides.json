@@ -85079,5 +85079,828 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770036337700-180",
+    "title": "Fix Microsoft Authenticator Login Issues",
+    "problemDescription": "Unable to log in to your account due to Microsoft Authenticator issues.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "authenticator",
+      "login",
+      "microsoft",
+      "2FA",
+      "backup codes"
+    ],
+    "steps": [
+      {
+        "title": "Use Backup Codes",
+        "content": "If you have backup codes from when you initially set up 2FA, use one of these codes to regain access to your account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Re-Add Authenticator",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Re-Add Authenticator",
+            "content": "If you are still logged in on another device, go to your Microsoft account security settings, remove the old Authenticator entry, and then add it again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Alternative MFA Methods",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Alternative MFA Methods",
+            "content": "Always have multiple MFA methods set up, such as SMS codes or backup codes, in case your primary method fails."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Contact Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "If the issue persists, contact Microsoft support or your organization's IT department for assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T12:45:37.700Z",
+      "updated": "2026-02-02T12:45:37.700Z",
+      "sourceUrl": "https://www.reddit.com/r/Office365/comments/1bn2d83/help_cant_login_to_my_account_authenticator/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770036349313-338",
+    "title": "Fix Chrome Not Opening Gmail",
+    "problemDescription": "Chrome browser refuses to open Gmail, showing a 'Not secure' warning.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "gmail",
+      "not secure",
+      "browser issue"
+    ],
+    "steps": [
+      {
+        "title": "Update Chrome",
+        "content": "Ensure your Chrome browser is up to date."
+      },
+      {
+        "title": "Clear Browser Data",
+        "content": "Clear Chrome's temp files, history, and cache."
+      },
+      {
+        "title": "Check System Time",
+        "content": "Verify that your system time and timezone are correct."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Firefox",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to Firefox",
+            "content": "Use Firefox as an alternative browser to access Gmail."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check G Suite Status",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit G Suite Status Dashboard",
+            "content": "Check the G Suite Status Dashboard for any known issues with Gmail."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T12:45:49.313Z",
+      "updated": "2026-02-02T12:45:49.313Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/chrome-refuses-to-open-gmail.3318997/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770036353964-111",
+    "title": "Fix Thunderbird Gmail Sync Issue",
+    "problemDescription": "Thunderbird is not downloading emails from a Gmail account due to a password or 2-Step Verification issue.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "thunderbird",
+      "gmail",
+      "email",
+      "sync",
+      "2-step verification"
+    ],
+    "steps": [
+      {
+        "title": "Check 2-Step Verification",
+        "content": "Log into your Gmail account on a web browser and check if 2-Step Verification is enabled. If it is, you'll need to generate an App Password for Thunderbird."
+      },
+      {
+        "title": "Generate an App Password",
+        "content": "Go to your Google Account settings, navigate to Security, then App Passwords. Generate a new app password for Thunderbird and use this password in Thunderbird instead of your regular Gmail password."
+      },
+      {
+        "title": "Update Thunderbird Password",
+        "content": "In Thunderbird, go to Account Settings, select your Gmail account, and update the password with the newly generated App Password."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Email Client",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Choose an Alternative Email Client",
+            "content": "Consider using a different email client that might have better compatibility with Gmail, such as Microsoft Outlook or Mozilla's own webmail service."
+          },
+          {
+            "title": "Set Up the New Email Client",
+            "content": "Follow the setup instructions for the new email client, ensuring you enable any necessary settings for Gmail integration."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T12:45:53.964Z",
+      "updated": "2026-02-02T12:45:53.964Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/fix-thunderbird-or-find-different-email-client.3758567/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770036356591-447",
+    "title": "Fix Out of Memory Errors in Browsers",
+    "problemDescription": "Computer displays 'out of memory' errors in browsers and refreshes applications unexpectedly.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "browser",
+      "memory",
+      "error",
+      "troubleshoot"
+    ],
+    "steps": [
+      {
+        "title": "Check for Malware",
+        "content": "Run a full system scan using Malwarebytes, Windows Defender, and other trusted antivirus software to ensure no malware is present."
+      },
+      {
+        "title": "Review Installed Extensions",
+        "content": "Check your browser for any unknown or suspicious extensions and remove them."
+      },
+      {
+        "title": "Update Windows and Browsers",
+        "content": "Ensure your operating system and all browsers are up to date with the latest patches and updates."
+      },
+      {
+        "title": "Increase Virtual Memory",
+        "content": "Adjust the virtual memory settings in Windows to allocate more space. Go to Control Panel > System > Advanced system settings > Performance > Settings > Advanced > Virtual memory > Change."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Windows",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup all important data before proceeding."
+          },
+          {
+            "title": "Create Bootable USB",
+            "content": "Download the Windows installation media from the official Microsoft website and create a bootable USB drive."
+          },
+          {
+            "title": "Reinstall Windows",
+            "content": "Boot from the USB drive and follow the on-screen instructions to reinstall Windows."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T12:45:56.591Z",
+      "updated": "2026-02-02T12:45:56.591Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/computer-gives-out-of-memory-errors-in-browsers-and-refreshes-applications.3814831/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770036373047-220",
+    "title": "Change Alexa Wake Word",
+    "problemDescription": "Alexa responds to unintended wake words, causing interruptions.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "alexa",
+      "wake word",
+      "echo",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Open Alexa App",
+        "content": "Open the Alexa app and tap 'More' in the lower right corner, then tap 'Settings'."
+      },
+      {
+        "title": "Access Device Settings",
+        "content": "Tap 'Device Settings', then find and tap the device whose wake word you want to change."
+      },
+      {
+        "title": "Change Wake Word",
+        "content": "Scroll down to 'Wake Word', then tap the desired wake word (Amazon, Echo, or Computer)."
+      },
+      {
+        "title": "Repeat for Other Devices",
+        "content": "Tap the back button (<) in the upper left corner twice to return to the list of devices; repeat as needed for other Echo speakers or displays."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Voice Training",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Alexa App",
+            "content": "Open the Alexa app, tap 'More' in the lower right corner, tap 'Settings', then tap 'Your Profile' at the top."
+          },
+          {
+            "title": "Create Voice Profile",
+            "content": "Next to 'Voice', tap 'Create' (or 'Manage' if you've already done this before) and follow the prompts to train Alexa to better understand your voice."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T12:46:13.047Z",
+      "updated": "2026-02-02T12:46:13.047Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/alexa-can-you-chill-quick-and-easy-workarounds-for-5-minor-issues/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770036378467-495",
+    "title": "Stop Alexa from Asking to Rate Purchases",
+    "problemDescription": "Alexa repeatedly asks you to rate Amazon purchases, causing annoyance.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Alexa",
+      "Amazon",
+      "Echo",
+      "notifications",
+      "rating"
+    ],
+    "steps": [
+      {
+        "title": "Disable Rating Requests",
+        "content": "Open the Alexa app, go to Settings > Notifications > Amazon Shopping, scroll down to 'requests to rate products you've purchased', and toggle the switch off."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Brief Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Brief Mode",
+            "content": "Open the Alexa app, tap the hamburger menu, select Settings, go to Alexa Preferences > Voice Responses, and toggle the switch on for Brief Mode."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T12:46:18.467Z",
+      "updated": "2026-02-02T12:46:18.467Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/4-annoying-things-alexa-does-on-your-amazon-echo-and-how-to-fix-it/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770036380494-499",
+    "title": "Reduce Alexa's Verbosity",
+    "problemDescription": "Alexa repeats questions and commands loudly, which can be annoying or time-consuming.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "Alexa",
+      "voice",
+      "settings",
+      "noise",
+      "privacy"
+    ],
+    "steps": [
+      {
+        "title": "Enable Brief Mode",
+        "content": "Open the Alexa app, tap More > Settings > Voice Responses. Enable Brief Mode to limit most verbal Alexa responses."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Adjust Volume Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn on Whisper Mode",
+            "content": "In the Alexa app, go to More > Settings > Voice Responses. Enable Whisper Mode so Alexa speaks softly."
+          },
+          {
+            "title": "Use Adaptive Volume",
+            "content": "In the Alexa app, go to More > Settings > Voice Responses. Enable Adaptive Volume to automatically adjust volume based on nearby noise levels."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T12:46:20.494Z",
+      "updated": "2026-02-02T12:46:20.494Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/alexa-settings-everyone-should-disable-on-a-new-amazon-echo/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770036386784-408",
+    "title": "Fix Printer Printing Random Characters",
+    "problemDescription": "Printer is printing random characters due to driver mismatch or corrupted print job.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "random characters",
+      "driver",
+      "print job"
+    ],
+    "steps": [
+      {
+        "title": "Check and Update Printer Driver",
+        "content": "Go to your print server and search for print management. Open the print management window, right-click on the printer, select properties, go to the advanced tab, and select the correct driver from the drop-down menu."
+      },
+      {
+        "title": "Clear Print Queue",
+        "content": "Right-click on the printer, select 'See what's printing', and a window will open. Right-click on the documents and select 'Cancel' to cancel all the jobs."
+      },
+      {
+        "title": "Test Printing",
+        "content": "Try printing a different document to ensure the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart the Printer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart the Printer",
+            "content": "Turn off the printer, wait for a few seconds, and then turn it back on."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Print as PDF",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Print as PDF",
+            "content": "Try printing the document as a PDF to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T12:46:26.784Z",
+      "updated": "2026-02-02T12:46:26.784Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=B02YvWsKHAE",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770036389950-69",
+    "title": "Fix Printer Not Working",
+    "problemDescription": "Printer is not responding or working properly.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "not responding",
+      "windows 10"
+    ],
+    "steps": [
+      {
+        "title": "Restart Printer and Computer",
+        "content": "Turn off your printer and computer, wait for a few seconds, and then turn them back on."
+      },
+      {
+        "title": "Check Connections",
+        "content": "Ensure the printer is properly connected to your computer, either via Wi-Fi or a physical cable."
+      },
+      {
+        "title": "Test on Another PC",
+        "content": "Connect the printer to another computer to determine if the issue is with the printer or your computer."
+      },
+      {
+        "title": "Update Printer Drivers",
+        "content": "Search for your printer's make and model on Google to find automated tools for the latest software and drivers. Alternatively, use Windows Update to search for updated drivers."
+      },
+      {
+        "title": "Manually Update Drivers",
+        "content": "Right-click on the printer device, select 'Update driver', choose 'Browse my computer for drivers', and select 'Let me pick from a list of available drivers on my computer'. Choose the appropriate driver and restart your computer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Printer Troubleshooter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to Settings > Update & Security > Troubleshoot."
+          },
+          {
+            "title": "Run Printer Troubleshooter",
+            "content": "Select 'Printer' and then 'Run the troubleshooter'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T12:46:29.950Z",
+      "updated": "2026-02-02T12:46:29.950Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=y0sDKejeDiY",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770036395565-293",
+    "title": "Fix Printer Not Printing",
+    "problemDescription": "The printer is not responding or printing documents.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "not printing",
+      "windows",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check Connections and Restart Printer",
+        "content": "Ensure the printer is properly connected and powered on. Turn it off and then turn it back on to reset it."
+      },
+      {
+        "title": "Uninstall and Reinstall the Printer",
+        "content": "Go to Windows search, type 'printers and devices' or 'printers and scanners', select your printer, and click 'Remove'. Confirm the removal. Then, click 'Add device' to reinstall the printer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset the Printer Spooler",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Services",
+            "content": "Go to Windows search, type 'Services', and open the Services app."
+          },
+          {
+            "title": "Find Printer Spooler",
+            "content": "Scroll down to find 'Print Spooler' in the list of services."
+          },
+          {
+            "title": "Restart the Service",
+            "content": "Right-click on 'Print Spooler' and select 'Restart' to reset the printing process."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T12:46:35.565Z",
+      "updated": "2026-02-02T12:46:35.565Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=0dFx0xRz9bI",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770036408193-522",
+    "title": "Fix MacBook Connectivity Issues with Teams",
+    "problemDescription": "Connectivity issues when using Teams and other apps on MacBook Air.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "connectivity",
+      "teams",
+      "wifi"
+    ],
+    "steps": [
+      {
+        "title": "Update Software and Apps",
+        "content": "Check for and install any available software updates and app updates."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to System Preferences > Network, remove your Wi-Fi network, and then re-add it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Applications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Teams and Hangouts",
+            "content": "Delete both Teams and Hangouts from your MacBook."
+          },
+          {
+            "title": "Restart Your MacBook",
+            "content": "Restart your MacBook to ensure all changes take effect."
+          },
+          {
+            "title": "Reinstall Applications",
+            "content": "Reinstall Teams and Hangouts one at a time to test connectivity."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Start in Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart in Safe Mode",
+            "content": "Restart your MacBook and hold down the Shift key to boot into Safe Mode."
+          },
+          {
+            "title": "Test Connectivity",
+            "content": "Check if the connectivity issues persist in Safe Mode."
+          },
+          {
+            "title": "Restart Normally",
+            "content": "Restart your MacBook normally to exit Safe Mode."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Check for VPN Interference",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable VPN",
+            "content": "If you are using a VPN, disable it temporarily."
+          },
+          {
+            "title": "Test Connectivity",
+            "content": "Check if the connectivity issues are resolved without the VPN."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T12:46:48.193Z",
+      "updated": "2026-02-02T12:46:48.193Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255709343",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770036411550-68",
+    "title": "Fix Microsoft Teams Screen Sharing on macOS Catalina",
+    "problemDescription": "Microsoft Teams screen sharing stops working after a while on macOS Catalina, requiring repeated changes to Screen Recording permissions.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "screen sharing",
+      "macOS Catalina",
+      "VPN",
+      "privacy settings"
+    ],
+    "steps": [
+      {
+        "title": "Quit VPN or Third-Party Applications",
+        "content": "Close any VPN software (e.g., Cisco AnyConnect, Tunnelblick) or other third-party applications that might be interfering with screen sharing."
+      },
+      {
+        "title": "Verify Screen Recording Permissions",
+        "content": "Go to System Preferences > Security & Privacy > Privacy > Screen Recording. Ensure Microsoft Teams is checked as an allowed app."
+      },
+      {
+        "title": "Restart Your Mac",
+        "content": "After making changes, restart your Mac to ensure the settings take effect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Temporary Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Untick and Re-tick Microsoft Teams",
+            "content": "In System Preferences > Security & Privacy > Privacy > Screen Recording, untick Microsoft Teams, then re-tick it and restart your Mac."
+          },
+          {
+            "title": "Repeat as Necessary",
+            "content": "This process may need to be repeated periodically until a permanent fix is found."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T12:46:51.550Z",
+      "updated": "2026-02-02T12:46:51.550Z",
+      "sourceUrl": "https://discussions.apple.com/thread/250759268",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770036415790-44",
+    "title": "Fix FaceTime Microphone Issue on Mac",
+    "problemDescription": "FaceTime microphone is set to Microsoft Teams Audio, causing participants to not hear you.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "microphone",
+      "FaceTime",
+      "Microsoft Teams",
+      "Mac"
+    ],
+    "steps": [
+      {
+        "title": "Change Microphone Settings in FaceTime",
+        "content": "Go to FaceTime --> 'Video' tab --> Select 'Use System Setting' from the microphone section. This should default to your MacBook microphone."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Remove Microsoft Teams Audio Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Navigate to System Files",
+            "content": "Go to Macintosh HD > Library > Audio > Plug-Ins > HAL."
+          },
+          {
+            "title": "Delete Teams Device",
+            "content": "Delete the Teams device from the HAL folder. If the issue persists, restart your system."
+          }
+        ]
+      },
+      {
+        "title": "Check Audio MIDI Setup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Audio MIDI Setup",
+            "content": "Open the Audio MIDI Setup application on your Mac."
+          },
+          {
+            "title": "Verify Microphone Settings",
+            "content": "Check if the Microsoft Teams Audio device is listed and remove it if found."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T12:46:55.790Z",
+      "updated": "2026-02-02T12:46:55.790Z",
+      "sourceUrl": "https://discussions.apple.com/thread/256044430",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770036418149-829",
+    "title": "Fix Microsoft Teams Login Issue on Mac",
+    "problemDescription": "Microsoft Teams fails to log in on a Mac, repeatedly returning to the login page.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "teams",
+      "mac",
+      "login",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall Microsoft Teams",
+        "content": "Delete the Teams app from your Mac, then download and reinstall it from the official website or the Mac App Store."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact IT Department",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Single Sign-On and VPN",
+            "content": "If your employer uses Single Sign-On (SSO) and requires a VPN, contact your IT department for assistance."
+          }
+        ]
+      },
+      {
+        "title": "Contact Microsoft Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reach Out to Microsoft",
+            "content": "If reinstalling Teams does not work, contact Microsoft Support for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T12:46:58.149Z",
+      "updated": "2026-02-02T12:46:58.149Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254678805",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770036421903-830",
+    "title": "Fix Teams App Not Working on MacBook Pro",
+    "problemDescription": "Microsoft Teams app is not working on a specific user profile in macOS.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "teams",
+      "macos",
+      "app-error",
+      "profile"
+    ],
+    "steps": [
+      {
+        "title": "Delete Teams .plist Preference Files",
+        "content": "1. Ensure Teams is not running. 2. Navigate to the hidden Library folder in your home user folder by opening Finder, clicking 'Go' in the menu bar, and selecting 'Go to Folder...'. 3. Type '~/Library' and press Enter. 4. Search for .plist files related to Teams, particularly in the 'Preferences' and 'Application Support' folders. 5. Delete the identified .plist files. 6. Log out and log back into your macOS user account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Delete Teams Folders and Files",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete Teams Folders and Files",
+            "content": "1. Ensure Teams is not running. 2. Navigate to the hidden Library folder in your home user folder by opening Finder, clicking 'Go' in the menu bar, and selecting 'Go to Folder...'. 3. Type '~/Library' and press Enter. 4. Search for and delete all folders and files related to Teams. 5. Log out and log back into your macOS user account. 6. Reinstall the Teams app if necessary."
+          }
+        ]
+      },
+      {
+        "title": "Contact IT Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact IT Support",
+            "content": "If Teams is required by your employer, contact your employer's IT support staff for assistance. They may be able to open a case with Microsoft for higher-level support."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T12:47:01.903Z",
+      "updated": "2026-02-02T12:47:01.903Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255813776",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
