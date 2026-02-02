@@ -81783,5 +81783,555 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1769995904959-142",
+    "title": "Fix Pixel 6a Fingerprint Recognition Issues",
+    "problemDescription": "Slow or failed fingerprint recognition on Google Pixel 6a.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel 6a",
+      "fingerprint",
+      "recognition",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Re-register Fingerprint",
+        "content": "Open the Settings app on your Pixel 6a, tap on Security, then select Fingerprint unlock. Delete the existing fingerprint and register it again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Google Play Services",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Open the Settings app, go to Apps, tap on See all apps, select Google Play Services, and tap on App details. Install any available updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T01:31:44.960Z",
+      "updated": "2026-02-02T01:31:44.960Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/google-pixel-6a-common-problems-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769995907081-555",
+    "title": "Fix Google Pixel 9 Poor Battery Life",
+    "problemDescription": "The Google Pixel 9 is experiencing poor battery life despite improvements in the series.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "battery",
+      "android",
+      "pixel 9",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Battery Settings",
+        "content": "Go to Settings > Battery > Battery Saver and turn it on to extend battery life."
+      },
+      {
+        "title": "Optimize App Usage",
+        "content": "Review and close unnecessary apps running in the background by going to Settings > Apps & notifications > See all apps."
+      },
+      {
+        "title": "Adjust Screen Brightness",
+        "content": "Lower the screen brightness or enable adaptive brightness in Settings > Display."
+      },
+      {
+        "title": "Update Software",
+        "content": "Ensure your phone is running the latest software version by going to Settings > System > System update."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset All Settings",
+            "content": "Go to Settings > System > Reset options > Reset Wi-Fi, mobile & Bluetooth > Reset settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T01:31:47.081Z",
+      "updated": "2026-02-02T01:31:47.081Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/google-pixel-9-problems-common-issues-how-to-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1769995916942-80",
+    "title": "Fix Google Account Connection Error 0x8007042b on Windows 10",
+    "problemDescription": "Error 0x8007042b occurs when trying to connect a Google account on Windows 10.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "google account",
+      "error 0x8007042b",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Create a New IMAP Account",
+        "content": "Go to Settings (Cog icon) -> Accounts -> Add Account -> Advanced Setup -> Internet Email. Fill in the details using the settings that work for Google Apps accounts. Google provides a guide for the settings here: [Google IMAP Settings](https://support.google.com/mail/answer/7126229)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Credential Manager Service",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Stop the Credential Manager Service",
+            "content": "Open PowerShell as Administrator and run: `Stop-Service -Name \"Credential\" -Force -Confirm`."
+          },
+          {
+            "title": "Access Services",
+            "content": "Click on Start, type `Services`, right-click on `Services`, and select `Run as Administrator`."
+          },
+          {
+            "title": "Stop and Restart the Service",
+            "content": "In the Services window, find `Credential Manager Service`, stop it, restart the computer, and set it to Automatic."
+          },
+          {
+            "title": "Set Service Startup Type",
+            "content": "Run the following command in PowerShell: `Set-Service -Name CredentialEnrollmentManagerUserSvc_1c445e -StartupType Automatic`."
+          }
+        ]
+      },
+      {
+        "title": "Reset Mail App Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Mail App",
+            "content": "Follow the steps to reset the Mail app settings or uninstall and reinstall the Mail app on Windows 10."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T01:31:56.943Z",
+      "updated": "2026-02-02T01:31:56.943Z",
+      "sourceUrl": "https://superuser.com/questions/951270/how-to-solve-error-0x8007042b-while-connecting-a-google-account-on-windows-10",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769995918494-672",
+    "title": "Fix Email Delivery Loop in Google Workspace",
+    "problemDescription": "An email delivery loop is causing issues, preventing emails from being sent or received.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "email",
+      "delivery",
+      "loop",
+      "google",
+      "workspace"
+    ],
+    "steps": [
+      {
+        "title": "Access Admin Console",
+        "content": "Log in to your Admin account at admin.google.com."
+      },
+      {
+        "title": "Navigate to User Information",
+        "content": "Go to Users / Problem User / User Information / Email Routing."
+      },
+      {
+        "title": "Clear End-User Routing",
+        "content": "Look for the red notice about end-user routing being discontinued. Click the button to clear end-user routing."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Remove Google Workspace DNS Rules",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove DNS Rules",
+            "content": "Go to the Domains/Email page and remove any DNS rules added by Google Workspace."
+          },
+          {
+            "title": "Re-Insert Forwarding Records",
+            "content": "Re-insert the Google Domains email forwarding records."
+          },
+          {
+            "title": "Wait for Propagation",
+            "content": "Wait for the changes to propagate, which can take minutes to 24-48 hours."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T01:31:58.494Z",
+      "updated": "2026-02-02T01:31:58.494Z",
+      "sourceUrl": "https://superuser.com/q/1452016",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769995920946-638",
+    "title": "Fix Disappearing Emails to Google Mail Server",
+    "problemDescription": "Emails directed to a Google-based mail server are disappearing without any trace.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "email",
+      "Gmail",
+      "DMARC",
+      "DNS",
+      "server"
+    ],
+    "steps": [
+      {
+        "title": "Check DMARC Implementation",
+        "content": "Ensure that the mail servers of the problematic domains have implemented DMARC (Domain-based Message Authentication, Reporting and Conformance)."
+      },
+      {
+        "title": "Verify DNS Records",
+        "content": "Double-check the DNS records to ensure they are correctly configured, especially if you recently switched DNS providers."
+      },
+      {
+        "title": "Modify DMARC Policy",
+        "content": "Change the DMARC policy to either mark the message as spam or reject the message outright, so that there is a trace of the email's existence."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable DMARC Test",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Gmail Settings",
+            "content": "Go to the Gmail settings and navigate to the 'Approved senders without authentication' section."
+          },
+          {
+            "title": "Disable DMARC Test",
+            "content": "Follow the instructions to disable the DMARC test on your servers."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T01:32:00.946Z",
+      "updated": "2026-02-02T01:32:00.946Z",
+      "sourceUrl": "https://superuser.com/questions/1483196/emails-directed-to-google-based-mail-server-are-disappearing-into-cyberspace",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769995942106-178",
+    "title": "Fix Microsoft Outlook Not Syncing",
+    "problemDescription": "Microsoft Outlook is not syncing emails, causing delays in receiving new messages.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Outlook",
+      "sync",
+      "email",
+      "Microsoft Office",
+      "repair"
+    ],
+    "steps": [
+      {
+        "title": "Repair Microsoft Office",
+        "content": "Open Control Panel, select 'Uninstall a Program,' choose your Microsoft Office installation, and click 'Change.' In the User Account Control prompt, choose 'Yes.' Select 'Quick Repair' and click 'Repair' to begin the repair process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Unblock Email Sender",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Review Block List",
+            "content": "In Outlook, go to the 'Home' tab, select 'Junk > Junk E-Mail Options,' and open the 'Blocked Senders' tab."
+          },
+          {
+            "title": "Remove Blocked Sender",
+            "content": "If the sender is on the list, select their email address and choose 'Remove.' Click 'Apply' followed by 'OK.'"
+          }
+        ]
+      },
+      {
+        "title": "Clear Outlook App Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache",
+            "content": "Clear the Outlook app cache files to resolve sync issues. This does not delete your emails or personal files."
+          }
+        ]
+      },
+      {
+        "title": "Disable Outlook's Offline Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Offline Mode",
+            "content": "In Outlook, go to the 'Send/Receive' tab and click 'Work Offline' to disable it."
+          }
+        ]
+      },
+      {
+        "title": "Manually Update Email Folders",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force Sync",
+            "content": "In Outlook, go to the 'Send/Receive' tab and click 'Send/Receive All Folders' to manually sync your email folders."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T01:32:22.106Z",
+      "updated": "2026-02-02T01:32:22.106Z",
+      "sourceUrl": "https://www.howtogeek.com/887298/how-to-fix-microsoft-outlook-not-syncing/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769995951208-914",
+    "title": "Fix MacBook Air M1 Black Screen",
+    "problemDescription": "MacBook Air M1 becomes unresponsive with a black screen.",
+    "category": "mac",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "black screen",
+      "unresponsive",
+      "m1"
+    ],
+    "steps": [
+      {
+        "title": "Force Shutdown and Restart",
+        "content": "Hold the power button for 10 seconds to force a shutdown. Wait a few minutes, then press the power button to restart your MacBook."
+      },
+      {
+        "title": "Check Brightness Settings",
+        "content": "Ensure the screen brightness is turned up using the F2 key or the brightness slider in the menu bar."
+      },
+      {
+        "title": "Connect to an External Monitor",
+        "content": "Use an external monitor to check if the issue is with the internal display. If the external monitor works, the internal screen might be faulty."
+      },
+      {
+        "title": "Reset NVRAM/PRAM and SMC",
+        "content": "For M1 MacBooks, simply restart normally. For Intel-based Macs, restart and hold Option + Command + P + R until the startup chime sounds twice."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "Shut down your MacBook, then turn it on while holding Command + Option + R to enter Internet Recovery. Follow the on-screen instructions to reinstall macOS."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Boot into Recovery Mode or Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Recovery Mode",
+            "content": "Hold the power button for 12-17 seconds on Apple Silicon Macs to boot into Recovery Mode. From there, you can run diagnostics or reinstall macOS."
+          },
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Restart your Mac and immediately hold the Shift key to boot into Safe Mode. This can help identify if third-party software is causing the issue."
+          }
+        ]
+      },
+      {
+        "title": "Leave the MacBook Overnight",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force Shutdown and Close the Lid",
+            "content": "Force a shutdown by holding the power button, close the lid, and leave it overnight. This can sometimes resolve minor software glitches."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T01:32:31.208Z",
+      "updated": "2026-02-02T01:32:31.208Z",
+      "sourceUrl": "https://www.reddit.com/r/mac/comments/11qrnx4/macbook_air_m1_became_unresponsive_just_a_black/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769995954919-258",
+    "title": "MacBook System Configurator After Display Repair",
+    "problemDescription": "MacBook requires a 'system configurator' step after display repair to associate the part with the system.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "MacBook",
+      "display repair",
+      "system configurator",
+      "M1 chip"
+    ],
+    "steps": [
+      {
+        "title": "Contact Apple or Service Provider",
+        "content": "After replacing the display, contact Apple or the authorized service provider to perform the 'system configurator' step."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Authorized Parts",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase Authorized Parts",
+            "content": "Ensure you use authorized parts to avoid potential issues with the 'system configurator' step."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T01:32:34.919Z",
+      "updated": "2026-02-02T01:32:34.919Z",
+      "sourceUrl": "https://www.reddit.com/r/macbook/comments/wvt8yp/with_macbook_repair_manual_out_there_is_a_system/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769995958223-160",
+    "title": "Fix MacBook Keyboard and Trackpad Not Working",
+    "problemDescription": "MacBook keyboard and trackpad suddenly stopped working, with no apparent cause.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "keyboard",
+      "trackpad",
+      "not working"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your MacBook",
+        "content": "Hold down the power button until your MacBook turns off, then press it again to turn it back on. This can sometimes resolve temporary software glitches."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Ensure your macOS is up to date by going to System Preferences > Software Update and installing any available updates."
+      },
+      {
+        "title": "Reset the SMC",
+        "content": "Shut down your MacBook. Press and hold the Shift + Control + Option keys on the left side of the built-in keyboard, then press and hold the power button for 10 seconds. Release all keys and turn on your MacBook."
+      },
+      {
+        "title": "Reset the NVRAM/PRAM",
+        "content": "Shut down your MacBook. Turn it on and immediately press and hold the Option + Command + P + R keys for about 20 seconds. Release the keys and allow your MacBook to start normally."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Safe Mode Boot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Shut down your MacBook. Turn it on and immediately press and hold the Shift key. Release the key when you see the login screen. If the keyboard and trackpad work in Safe Mode, the issue might be caused by a third-party application."
+          },
+          {
+            "title": "Identify Problematic Applications",
+            "content": "Check for recently installed applications that might be causing the issue. Uninstall them and restart your MacBook normally."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Hardware Check",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect for Physical Damage",
+            "content": "Check for any visible signs of damage to the keyboard or trackpad. Look for debris or liquid spills that might be causing the issue."
+          },
+          {
+            "title": "Contact Apple Support",
+            "content": "If hardware damage is suspected, contact Apple Support or visit an Apple Store for a professional diagnosis and repair."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T01:32:38.223Z",
+      "updated": "2026-02-02T01:32:38.223Z",
+      "sourceUrl": "https://www.reddit.com/r/macbook/comments/1dz8nju/please_help_my_keyboard_and_trackpad_stopped/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1769995974581-217",
+    "title": "Fix MacBook Pro Battery Drain",
+    "problemDescription": "MacBook Pro battery life is significantly reduced even after battery replacement.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery",
+      "drain",
+      "macbook pro",
+      "cpu",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Update and Reinstall macOS",
+        "content": "Download and install the latest macOS update. If the issue persists, consider reinstalling macOS to resolve potential software issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Identify and Address CPU Usage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Terminal Commands",
+            "content": "Open Terminal and run `top -o cpu` to identify processes using high CPU. Once identified, use `opensnoop` to monitor file access and further investigate the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T01:32:54.581Z",
+      "updated": "2026-02-02T01:32:54.581Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/119795/macbook-pro-battery-life-tanking-even-after-battery-replacement",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
