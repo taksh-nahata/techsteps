@@ -85902,5 +85902,498 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770040836962-933",
+    "title": "Ubuntu 14.04 Not Booting on Mid-2009 MacBook Pro",
+    "problemDescription": "Ubuntu 14.04 fails to boot on a mid-2009 MacBook Pro, with issues such as slow performance, hangs, and ATA errors.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "Ubuntu",
+      "MacBook Pro",
+      "booting",
+      "ATA errors",
+      "HDD cable"
+    ],
+    "steps": [
+      {
+        "title": "Check the HDD Cable",
+        "content": "Replace or check the HDD cable for any issues. This is a common failure in MacBooks from around 2009. Clean and reconnect the cable to ensure a proper connection."
+      },
+      {
+        "title": "Test the HDD in an USB Enclosure",
+        "content": "Put your internal HDD in an USB enclosure and boot from it. If the computer performs better through USB than through ATA, the internal ATA cable is likely the issue."
+      },
+      {
+        "title": "Replace the ATA Cable",
+        "content": "If the HDD performs better through USB, replace the internal ATA cable. You can find replacement cables on eBay or other online retailers."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Install Refit on Mac OS X Partition",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Refit",
+            "content": "Install Refit on the Mac OS X partition to manage boot loaders."
+          },
+          {
+            "title": "Boot from Ubuntu Disk Using Refit",
+            "content": "Use Refit to boot from the Ubuntu disk. You may need to refresh Refit to see the DVD."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Boot with nomodeset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot with nomodeset",
+            "content": "Try booting Ubuntu with the nomodeset option. This may resolve video driver issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Use the BIOS Version of Ubuntu",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download the BIOS Version",
+            "content": "Download the BIOS version of Ubuntu 14.04 from the official website."
+          },
+          {
+            "title": "Install the BIOS Version",
+            "content": "Install the BIOS version of Ubuntu and attempt to boot from it."
+          }
+        ]
+      },
+      {
+        "title": "Method 5: Use the USB Repair Tool from OS X",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use the USB Repair Tool",
+            "content": "Use the USB repair tool from OS X to erase the disk and install Mavericks from the App Store."
+          },
+          {
+            "title": "Create Partitions for Ubuntu",
+            "content": "Use the repair tool to create new partitions and install Ubuntu."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T14:00:36.962Z",
+      "updated": "2026-02-02T14:00:36.962Z",
+      "sourceUrl": "https://askubuntu.com/questions/450037/ubuntu-14-04-on-mid-2009-macbook-pro-not-booting",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770040838957-783",
+    "title": "Fix MacBook Pro 11,4/11,5 Standby/Shutdown Hang",
+    "problemDescription": "MacBook Pro 11,4 and 11,5 models experience standby and shutdown hangs when running Linux, requiring a hard shutdown.",
+    "category": "linux",
+    "difficulty": "Hard",
+    "keywords": [
+      "macbook",
+      "standby",
+      "shutdown",
+      "hang",
+      "linux"
+    ],
+    "steps": [
+      {
+        "title": "Patch and Compile Custom Kernel",
+        "content": "Follow the workaround in Comment #172 of the linked page to patch and compile a custom kernel to resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Kernel Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Kernel",
+            "content": "Check if the issue is resolved in newer kernel versions beyond 4.6, as some issues have been fixed in recent kernels."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T14:00:38.957Z",
+      "updated": "2026-02-02T14:00:38.957Z",
+      "sourceUrl": "https://askubuntu.com/questions/672750/standby-and-shutdown-hang-on-macbook-pro-11-4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1770040863922-810",
+    "title": "Fix High Packet Loss with Strong Wi-Fi Signal",
+    "problemDescription": "Experiencing high packet loss despite a strong Wi-Fi signal.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "packet loss",
+      "signal strength",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Upgrade to Enterprise-Grade Hardware",
+        "content": "Replace consumer-grade networking hardware with enterprise-quality equipment capable of handling multiple users simultaneously."
+      },
+      {
+        "title": "Utilize MIMO Technology",
+        "content": "Ensure your router supports MIMO technology to improve sending/receiving capabilities and reduce dead spots."
+      },
+      {
+        "title": "Use Both 2.4 GHz and 5 GHz Bands",
+        "content": "Take advantage of both frequency bands to minimize wireless technology clashes and signal issues."
+      },
+      {
+        "title": "Reorient Devices and Try Different Frequencies",
+        "content": "Experiment with different device orientations and frequencies to optimize signal quality."
+      },
+      {
+        "title": "Drop Support for Older Standards",
+        "content": "Disable support for older Wi-Fi standards (802.11b and g) to maximize available frequency."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Coordinate Frequency Use",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Coordinate with Other Parties",
+            "content": "Work with other users or networks to optimize frequency usage and reduce interference."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Faraday Cage or Relocate",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Move to a Different Location",
+            "content": "Consider moving to a different building or using a Faraday cage to block interfering signals."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Replace the Router",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Replace the Router",
+            "content": "If the issue persists, replace the router with a newer model to resolve potential hardware or configuration problems."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T14:01:03.922Z",
+      "updated": "2026-02-02T14:01:03.922Z",
+      "sourceUrl": "https://superuser.com/questions/719242/how-to-fix-a-strong-signal-strength-yet-high-packet-loss-situation",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770040932441-610",
+    "title": "Hide Neighbor's AirPlay Device",
+    "problemDescription": "Neighbor's AirPlay device occasionally appears in AirPlay menu on MacBook Pro.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "airplay",
+      "neighbor",
+      "macbook",
+      "wifi",
+      "bluetooth"
+    ],
+    "steps": [
+      {
+        "title": "Turn Off Wi-Fi and Bluetooth",
+        "content": "Go to System Preferences > Network and turn off Wi-Fi. Then, go to System Preferences > Bluetooth and turn off Bluetooth."
+      },
+      {
+        "title": "Restart AirPlay",
+        "content": "Click the AirPlay icon in the menu bar and select your Mac to stop looking for AirPlay devices."
+      },
+      {
+        "title": "Re-enable Wi-Fi and Bluetooth",
+        "content": "Go back to System Preferences > Network and turn Wi-Fi back on. Then, go to System Preferences > Bluetooth and turn Bluetooth back on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Forget Neighbor's Wi-Fi Network",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Wi-Fi Preferences",
+            "content": "Go to System Preferences > Network > Wi-Fi."
+          },
+          {
+            "title": "Find Neighbor's Network",
+            "content": "Click on the Advanced button and find your neighbor's Wi-Fi network in the list."
+          },
+          {
+            "title": "Remove the Network",
+            "content": "Select the network and click the minus (-) button to remove it."
+          },
+          {
+            "title": "Save Changes",
+            "content": "Click OK to save your changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T14:02:12.441Z",
+      "updated": "2026-02-02T14:02:12.441Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/405706/neighbors-airplay-device-is-sometimes-visible-in-airplay-menu",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770040942235-871",
+    "title": "Repair Windows 11 Without Losing Data",
+    "problemDescription": "Windows 11 is misbehaving and not working as expected.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "repair",
+      "system files",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Perform a Windows 11 Repair Install",
+        "content": "Go to Settings > System > Recovery. Under Recovery options, click on 'Advanced startup' and then 'Restart now'. After restarting, go to Troubleshoot > Advanced options > Startup Repair. Follow the on-screen instructions to complete the repair install."
+      },
+      {
+        "title": "Update Drivers",
+        "content": "After the repair install, update your chipset drivers for your motherboard and the latest drivers for your graphics card. This ensures optimal performance and compatibility."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Your PC",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset PC Keeping Personal Files",
+            "content": "Go to Settings > System > Recovery. Under Recovery options, click on 'Reset this PC' and select 'Keep my files'. Follow the on-screen instructions to reset your PC while keeping your personal files intact."
+          }
+        ]
+      },
+      {
+        "title": "Remove Latest Windows Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Recent Update",
+            "content": "Go to Settings > Windows Update > Update history. Click on 'Uninstall updates' and remove the latest Windows update that might be causing the issue."
+          }
+        ]
+      },
+      {
+        "title": "Enable Quick Machine Recovery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn On Quick Machine Recovery",
+            "content": "Go to Settings > System > Recovery. Under Recovery options, enable 'Quick machine recovery' to allow Windows to try and fix startup problems automatically."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T14:02:22.235Z",
+      "updated": "2026-02-02T14:02:22.235Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=xGDbdBJcr4k",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770040945534-985",
+    "title": "Access Windows 11 God Mode for Troubleshooting",
+    "problemDescription": "Need to troubleshoot common issues in Windows 11 using built-in tools.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "troubleshooting",
+      "god mode",
+      "tools"
+    ],
+    "steps": [
+      {
+        "title": "Access God Mode",
+        "content": "Create a new folder on your desktop and rename it to: GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}. This will transform the folder into a special control panel with all the troubleshooting tools."
+      },
+      {
+        "title": "Navigate to the Relevant Tool",
+        "content": "Inside the God Mode folder, you will find various categories such as System, Security, Network, and more. Click on the category related to your issue."
+      },
+      {
+        "title": "Use the Appropriate Tool",
+        "content": "For example, if you are having issues with disk errors, go to 'Tools' under the relevant drive, and run 'Error checking' or 'Optimize and defragment drive'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Troubleshoot Compatibility",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Right-Click the Application",
+            "content": "Right-click on the application that is not running correctly and select 'Troubleshoot compatibility'."
+          },
+          {
+            "title": "Follow the On-Screen Instructions",
+            "content": "Follow the prompts to troubleshoot and resolve compatibility issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Restart Your Computer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your Device",
+            "content": "Sometimes, simply restarting your computer can resolve many issues. Go to the Start menu, click on the power icon, and select 'Restart'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T14:02:25.534Z",
+      "updated": "2026-02-02T14:02:25.534Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=49zpK3iBYYU",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770040956951-388",
+    "title": "Fix Windows 11 Errors with Built-in Troubleshooters",
+    "problemDescription": "Common PC issues in Windows 11 such as printer, audio, internet, or Windows Update problems.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "troubleshooting",
+      "errors",
+      "fix",
+      "system maintenance"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Click on the Start button and select Settings."
+      },
+      {
+        "title": "Navigate to Troubleshoot",
+        "content": "Scroll down and click on 'Troubleshoot'."
+      },
+      {
+        "title": "Access Other Troubleshooters",
+        "content": "Click on 'Other troubleshooters' to see all available troubleshooters."
+      },
+      {
+        "title": "Run the Appropriate Troubleshooter",
+        "content": "Select the troubleshooter that corresponds to your issue and run it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Troubleshooting",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Search for Specific Issues",
+            "content": "Search online for specific issues and follow detailed guides."
+          },
+          {
+            "title": "Check System Documentation",
+            "content": "Refer to Windows 11 documentation for advanced troubleshooting steps."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T14:02:36.951Z",
+      "updated": "2026-02-02T14:02:36.951Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=kKDEuwcM1dU",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770040959851-942",
+    "title": "Fix Windows 11 25H2 Update Issues",
+    "problemDescription": "Applications become unresponsive or encounter errors when opening/saving files to cloud storage after the Windows 11 25H2 update.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "update",
+      "cloud storage",
+      "applications",
+      "errors"
+    ],
+    "steps": [
+      {
+        "title": "Install the Emergency Update",
+        "content": "Open the Settings app, go to Windows Update, and click on 'Check for updates'. Install the emergency update KB5078127 (build 26200.7628) if available."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "After installing the update, restart your computer to apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Installation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download the Update",
+            "content": "If the update is not available through Windows Update, download it manually from the Microsoft Update Catalog."
+          },
+          {
+            "title": "Install the Update",
+            "content": "Run the downloaded update file and follow the on-screen instructions to install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T14:02:39.851Z",
+      "updated": "2026-02-02T14:02:39.851Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=4N2Lz4okM_E",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
