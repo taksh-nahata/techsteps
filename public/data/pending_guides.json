@@ -87182,5 +87182,187 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770053747536-77",
+    "title": "Fix Phone Wi-Fi Connectivity Issues",
+    "problemDescription": "Wi-Fi works on other devices but not on your phone, with slow speeds on 4G and frequent disconnections on 5G.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "phone",
+      "connection",
+      "slow",
+      "disconnect"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Phone and Router",
+        "content": "Turn off your phone and router. Wait for about 30 seconds, then turn them back on. This can often resolve temporary connectivity issues."
+      },
+      {
+        "title": "Forget and Reconnect to Wi-Fi",
+        "content": "Go to your phone's Wi-Fi settings, forget the network, and then reconnect to it. This can help reset the connection."
+      },
+      {
+        "title": "Update Router Firmware",
+        "content": "Check your router's manufacturer website for firmware updates. Updating the firmware can resolve compatibility issues with your phone."
+      },
+      {
+        "title": "Change Wi-Fi Frequency Band",
+        "content": "If your router supports both 2.4GHz and 5GHz bands, try switching your phone to the 2.4GHz band. This can sometimes improve stability."
+      },
+      {
+        "title": "Check for Interference",
+        "content": "Ensure there are no physical obstructions or electronic devices causing interference with your Wi-Fi signal."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to your phone's settings and reset network settings. This will erase all saved Wi-Fi networks and settings, so you'll need to reconnect to your network."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset Your Router",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Router Settings",
+            "content": "Backup your router's current settings before performing a factory reset."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Locate the reset button on your router, usually a small hole that requires a pin to press. Hold it down for about 10 seconds until the router reboots."
+          },
+          {
+            "title": "Reconfigure Router",
+            "content": "After the router reboots, reconfigure it with your network settings and reconnect your phone."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Manufacturer Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Gather Information",
+            "content": "Note down the make and model of your phone and router, as well as the steps you've already taken to troubleshoot."
+          },
+          {
+            "title": "Contact Support",
+            "content": "Reach out to your phone's manufacturer support or your internet service provider for further assistance. They may have specific solutions for your device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T17:35:47.536Z",
+      "updated": "2026-02-02T17:35:47.536Z",
+      "sourceUrl": "https://www.reddit.com/r/wifi/comments/1ehocwd/wifi_working_on_other_devices_but_not_my_phone/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770053769577-314",
+    "title": "Restore Bluetooth After Windows 11 Update",
+    "problemDescription": "Bluetooth becomes unavailable after a Windows 11 update.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "windows 11",
+      "update",
+      "driver"
+    ],
+    "steps": [
+      {
+        "title": "Power Cycle Your Laptop",
+        "content": "Turn off your laptop, unplug it, and wait for 10 minutes before plugging it back in and turning it on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Driver Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Bluetooth Driver",
+            "content": "Go to Device Manager, expand Bluetooth, right-click on your Bluetooth adapter, and select 'Update driver'."
+          },
+          {
+            "title": "Reinstall Bluetooth Driver",
+            "content": "In Device Manager, right-click on your Bluetooth adapter and select 'Uninstall device'. Restart your laptop to reinstall the driver."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Run System File Checker",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Command Prompt as Administrator",
+            "content": "Search for 'cmd', right-click on 'Command Prompt', and select 'Run as administrator'."
+          },
+          {
+            "title": "Run SFC Scan",
+            "content": "Type 'sfc /scannow' and press Enter. Wait for the scan to complete and restart your laptop."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T17:36:09.577Z",
+      "updated": "2026-02-02T17:36:09.577Z",
+      "sourceUrl": "https://www.techradar.com/news/i-spent-hours-trying-to-restore-bluetooth-on-my-laptop-after-a-windows-11-update",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770053779993-827",
+    "title": "Fix Slow Computer Performance Outside of Games",
+    "problemDescription": "Computer runs slow during normal use but performs well in games.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "slow",
+      "performance",
+      "cpu",
+      "power options"
+    ],
+    "steps": [
+      {
+        "title": "Change Power Plan to Performance",
+        "content": "Go to Power Options in your system settings and select the 'Performance' plan instead of 'Balanced'. This will keep your CPU at full clock speed at all times, which can help improve performance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check RAM and CPU Speed",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Prime95 to Test CPU Speed",
+            "content": "Download and run Prime95 to check if your CPU speed stays at the expected level during the test. This can help identify if there are any issues with your CPU performance."
+          },
+          {
+            "title": "Verify RAM with Motherboard and Windows Tools",
+            "content": "Use your motherboard's memory check tool and Windows' built-in memory diagnostic tools to ensure your RAM is functioning correctly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T17:36:19.993Z",
+      "updated": "2026-02-02T17:36:19.993Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/computer-only-running-slow-outside-of-games.3465637/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
