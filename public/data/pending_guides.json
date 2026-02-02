@@ -86957,5 +86957,230 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770050037210-921",
+    "title": "Fix Left AirPod Not Working",
+    "problemDescription": "Left AirPod is charged but not working.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods",
+      "not working",
+      "charged"
+    ],
+    "steps": [
+      {
+        "title": "Charge and Clean",
+        "content": "Charge both AirPods in their case for a while. Clean the metal contacts on the earbud and the case with a dry cloth or cotton swab."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-02T16:33:57.210Z",
+      "updated": "2026-02-02T16:33:57.210Z",
+      "sourceUrl": "https://www.quora.com/For-some-reason-my-left-AirPod-which-is-charged-isnt-working-Why-is-that",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770050048686-419",
+    "title": "Fix Discord Video Chat Issues",
+    "problemDescription": "Discord video chat not working or experiencing issues during calls.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "video chat",
+      "connection",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure you have a stable internet connection. A weak or unstable connection can cause video chat issues."
+      },
+      {
+        "title": "Update Discord",
+        "content": "Make sure you are using the latest version of Discord. Go to User Settings > Advanced > Enable 'Enable Experimental Video' if available."
+      },
+      {
+        "title": "Check Permissions",
+        "content": "Verify that Discord has permission to access your camera and microphone. Go to your device's settings and enable these permissions for Discord."
+      },
+      {
+        "title": "Restart Discord",
+        "content": "Close and reopen Discord to refresh the application and resolve any temporary glitches."
+      },
+      {
+        "title": "Clear Cache",
+        "content": "Clear Discord's cache by going to User Settings > Appearance > Advanced > Clear Cache."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Discord",
+            "content": "Uninstall Discord from your device completely."
+          },
+          {
+            "title": "Reinstall Discord",
+            "content": "Download and install the latest version of Discord from the official website."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check Firewall and Antivirus",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Firewall/Antivirus",
+            "content": "Temporarily disable your firewall or antivirus software to see if they are blocking Discord's video chat functionality."
+          },
+          {
+            "title": "Add Exception",
+            "content": "If disabling works, add Discord as an exception in your firewall or antivirus settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T16:34:08.686Z",
+      "updated": "2026-02-02T16:34:08.686Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/discords-video-chat-feature-better-than-we-hoped/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770050050317-874",
+    "title": "Fix Game Mode Microphone Issues",
+    "problemDescription": "Game Mode in Windows 10 cuts off microphone access for third-party apps like Discord.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "game mode",
+      "microphone",
+      "discord"
+    ],
+    "steps": [
+      {
+        "title": "Disable Game Mode",
+        "content": "Go to Settings > Gaming > Game Mode and toggle it off."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Switch to Borderless Windowed Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Game Display Mode",
+            "content": "Open your game's video settings and switch from fullscreen to borderless windowed mode."
+          }
+        ]
+      },
+      {
+        "title": "Use Windows PowerShell Fixes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Explore PowerShell Commands",
+            "content": "Check the Windows Insider subreddit for potential fixes involving Windows PowerShell."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T16:34:10.317Z",
+      "updated": "2026-02-02T16:34:10.317Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/windows-creators-update-problems-fixes/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770050075611-483",
+    "title": "Fix Outlook Search Issues on MacBook Air",
+    "problemDescription": "Outlook search not functioning properly on MacBook Air with macOS Sonoma.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "search",
+      "mac",
+      "macOS",
+      "Sonoma"
+    ],
+    "steps": [
+      {
+        "title": "Reindex Mac Spotlight",
+        "content": "Open Terminal and run the following commands to reindex your Mac:"
+      },
+      {
+        "title": "Disable Spotlight Indexing",
+        "content": "sudo mdutil -a -i off"
+      },
+      {
+        "title": "Unload Spotlight Daemon",
+        "content": "sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist"
+      },
+      {
+        "title": "Reload Spotlight Daemon",
+        "content": "sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist"
+      },
+      {
+        "title": "Enable Spotlight Indexing",
+        "content": "sudo mdutil -a -i on"
+      },
+      {
+        "title": "Wait for Reindexing",
+        "content": "Allow the process to complete, which may take a few minutes to a few hours depending on your system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Spotlight Privacy Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Spotlight Privacy Settings",
+            "content": "Go to System Settings > Siri & Spotlight > Spotlight Privacy."
+          },
+          {
+            "title": "Add Hard Drive to Privacy List",
+            "content": "Click the + button and add your entire Macintosh HD. Confirm the action."
+          },
+          {
+            "title": "Reboot Your Mac",
+            "content": "Restart your Mac to initiate the reindexing process."
+          },
+          {
+            "title": "Remove Hard Drive from Privacy List",
+            "content": "After rebooting, go back to Spotlight Privacy and remove the hard drive from the list."
+          },
+          {
+            "title": "Wait for Reindexing",
+            "content": "Allow the process to complete, which may take about an hour."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-02T16:34:35.611Z",
+      "updated": "2026-02-02T16:34:35.611Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254842632",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
