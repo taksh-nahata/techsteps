@@ -95375,5 +95375,455 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770150683851-674",
+    "title": "Fix Windows 11 Crashing",
+    "problemDescription": "Windows 11 keeps crashing and needs to be fixed.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "crashing",
+      "repair"
+    ],
+    "steps": [
+      {
+        "title": "Use Windows Installer CD",
+        "content": "Boot up your Windows installer CD and click on the repair option. This should fix the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clean Install",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Perform a Clean Install",
+            "content": "If the repair option does not work, consider performing a clean install of Windows 11."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T20:31:23.851Z",
+      "updated": "2026-02-03T20:31:23.851Z",
+      "sourceUrl": "https://www.quora.com/How-do-you-fix-Windows-11-that-keeps-crashing",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770150685777-516",
+    "title": "Fix Windows 11 Update Issues with Third-Party Apps",
+    "problemDescription": "Windows 11 updates may cause compatibility issues with third-party applications.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "update",
+      "third-party apps",
+      "compatibility"
+    ],
+    "steps": [
+      {
+        "title": "Run Windows Update Troubleshooter",
+        "content": "Go to Settings > System > Troubleshoot > Other troubleshooters. Run the Windows Update troubleshooter to identify and fix any issues."
+      },
+      {
+        "title": "Update Third-Party Apps",
+        "content": "Ensure all third-party applications are updated to their latest versions. Check the developers' websites or use the apps' built-in update features."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to Settings > Windows Update and check for the latest updates. Install any available updates to ensure system compatibility."
+      },
+      {
+        "title": "Reinstall Problematic Apps",
+        "content": "If an app continues to malfunction, uninstall it and then reinstall the latest version from the official source."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Compatibility Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run App in Compatibility Mode",
+            "content": "Right-click the app's executable file, go to Properties > Compatibility, and select an earlier version of Windows. Apply the changes and try running the app again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T20:31:25.777Z",
+      "updated": "2026-02-03T20:31:25.777Z",
+      "sourceUrl": "https://www.quora.com/Have-you-already-noticed-problems-with-Windows-11-If-yes-which-ones",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770150690356-286",
+    "title": "Windows 11 Upgrade Incompatibility",
+    "problemDescription": "Users with relatively recent PCs cannot upgrade to Windows 11 due to new hardware requirements.",
+    "category": "windows",
+    "difficulty": "Hard",
+    "keywords": [
+      "windows 11",
+      "upgrade",
+      "hardware requirements",
+      "incompatibility"
+    ],
+    "steps": [
+      {
+        "title": "Check System Requirements",
+        "content": "Verify if your PC meets the minimum hardware requirements for Windows 11, including a compatible 64-bit processor, 4GB of RAM, and 64GB of storage."
+      },
+      {
+        "title": "Use the PC Health Check Tool",
+        "content": "Download and run the PC Health Check Tool from Microsoft to determine if your PC is compatible with Windows 11."
+      },
+      {
+        "title": "Consider Hardware Upgrades",
+        "content": "If your PC does not meet the requirements, consider upgrading components such as the processor, RAM, or storage to meet the minimum specifications."
+      },
+      {
+        "title": "Check for BIOS/UEFI Updates",
+        "content": "Some PCs may require a BIOS/UEFI update to meet the TPM 2.0 requirement. Check your motherboard manufacturer's website for available updates."
+      },
+      {
+        "title": "Contact Microsoft Support",
+        "content": "If you believe your PC should be compatible but the tool indicates otherwise, contact Microsoft Support for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Registry Editor to Bypass Requirements",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Registry Editor",
+            "content": "Press Win + R, type 'regedit', and press Enter."
+          },
+          {
+            "title": "Navigate to the Windows Setup Key",
+            "content": "Go to HKEY_LOCAL_MACHINE\\SYSTEM\\Setup\\MoSetup."
+          },
+          {
+            "title": "Create a New DWORD",
+            "content": "Right-click on the right pane, select New > DWORD (32-bit) Value, and name it 'AllowUpgradesWithUnsupportedTPMOrCPU'."
+          },
+          {
+            "title": "Modify the DWORD Value",
+            "content": "Double-click the new DWORD, set its value to 1, and click OK."
+          },
+          {
+            "title": "Proceed with Upgrade",
+            "content": "Run the Windows 11 installation again. Note that this method may void your warranty and is not officially supported by Microsoft."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T20:31:30.356Z",
+      "updated": "2026-02-03T20:31:30.356Z",
+      "sourceUrl": "https://www.quora.com/What-are-the-most-common-complaints-about-Windows-11-and-how-could-Microsoft-address-them-in-the-next-version",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1770150717392-186",
+    "title": "Fix 'Username and Password Don't Match' on Android",
+    "problemDescription": "After a factory reset, you can't log in to your Google account on your Android device, receiving the error 'Your username and password don't match'.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "google account",
+      "login error",
+      "factory reset"
+    ],
+    "steps": [
+      {
+        "title": "Add Email Account First",
+        "content": "After factory resetting your phone, skip adding a Google account initially. Instead, go through the setup process and add an email account using the same Google account details."
+      },
+      {
+        "title": "Open Play Store",
+        "content": "After successfully adding the email account, open the Play Store. It should prompt you to add a Google Account. Now, you should be able to add the same Google Account without the error."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Generate an App Password",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Google Account Settings",
+            "content": "From a browser, go to your Google account settings."
+          },
+          {
+            "title": "Set Up an App Password",
+            "content": "Set up an App Password for the device. Choose the option 'Other...' from the app drop-down list to easily identify the device later."
+          },
+          {
+            "title": "Use the App Password",
+            "content": "Use the generated App Password to log in to your Google account on your Android device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T20:31:57.392Z",
+      "updated": "2026-02-03T20:31:57.392Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/96347/your-username-and-password-dont-match",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770150740937-571",
+    "title": "Reclaim Ownership of Your PC",
+    "problemDescription": "You need to regain administrative control over your Windows PC.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "administrator",
+      "group policy",
+      "ownership"
+    ],
+    "steps": [
+      {
+        "title": "Use Group Policy Editor",
+        "content": "Press [Win]+[R], type 'gpedit.msc', and hit [Enter]. Navigate through the settings to apply the desired restrictions. Take a drive image before making changes to avoid locking yourself out."
+      },
+      {
+        "title": "Create a Custom Group Policy",
+        "content": "Press [Win]+[R], type 'mmc', and hit [Enter]. Choose 'File > Add/Remove Snap-in', select 'Group Policy Object Editor', and hit 'Add'. Click 'Browse', select the 'Users' tab, choose your target user or group, and click 'OK > Finish > OK'. Save the file for future edits."
+      },
+      {
+        "title": "Change Account Type",
+        "content": "Sign out of your account and log in as Admin. Go to 'Family & other users', select your account, click 'Change account type', and reduce it to Standard user. Repeat for all other users."
+      },
+      {
+        "title": "Set Up a PIN",
+        "content": "Go to the 'Sign-in options' screen, click 'Add' under 'PIN', and set a memorable PIN for easier administrative access."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Registry Edits",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Find Equivalent Registry Entries",
+            "content": "Download the 'Windows 10 ADMX spreadsheet.xlsx' from Microsoft's reference guide. Use the spreadsheet to find the equivalent Registry entries for the Group Policy settings you want to apply."
+          },
+          {
+            "title": "Edit the Registry",
+            "content": "Press [Win]+[R], type 'regedit', and hit [Enter]. Navigate to the appropriate Registry key and make the necessary changes based on the spreadsheet."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T20:32:20.937Z",
+      "updated": "2026-02-03T20:32:20.937Z",
+      "sourceUrl": "https://www.techradar.com/how-to/how-to-reclaim-ownership-of-your-pc",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770150753048-888",
+    "title": "Outlook Express Not Responding with Hyper-Threading Enabled",
+    "problemDescription": "Outlook Express/ MSN mail program does not respond when Hyper-Threading is enabled in BIOS.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "hyper-threading",
+      "outlook express",
+      "windows xp",
+      "not responding"
+    ],
+    "steps": [
+      {
+        "title": "Disable Hyper-Threading in BIOS",
+        "content": "Restart your computer and enter the BIOS setup (usually by pressing a key like F2, Del, or Esc during startup). Navigate to the CPU settings and disable Hyper-Threading. Save changes and exit. Reboot your computer and try opening Outlook Express/ MSN mail program again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Anti-Virus Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Current Anti-Virus",
+            "content": "Go to Control Panel > Add or Remove Programs and uninstall your current anti-virus software."
+          },
+          {
+            "title": "Reinstall Anti-Virus",
+            "content": "Download the latest version of your anti-virus software and install it. Restart your computer and check if Outlook Express/ MSN mail program works properly."
+          }
+        ]
+      },
+      {
+        "title": "Reinstall Windows and Test Hardware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup all important data before proceeding."
+          },
+          {
+            "title": "Reinstall Windows",
+            "content": "Reinstall Windows XP and test Outlook Express/ MSN mail program. If the issue is resolved, add hardware components one by one to identify the culprit."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T20:32:33.048Z",
+      "updated": "2026-02-03T20:32:33.048Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/hyper-thread-is-broken.308606/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770150755530-863",
+    "title": "Completely Remove Outlook Express",
+    "problemDescription": "This guide will help you remove all traces of Outlook Express from your system.",
+    "category": "windows",
+    "difficulty": "Hard",
+    "keywords": [
+      "outlook express",
+      "uninstall",
+      "windows",
+      "registry"
+    ],
+    "steps": [
+      {
+        "title": "Rename Outlook Express Folders",
+        "content": "Click Start, point to Programs, point to Accessories, and then click Windows Explorer. Locate and rename the following folders: The Stationery folder (C:\\Program Files\\Common Files\\Microsoft Shared\\Stationery), the Identities folder (C:\\Documents and Settings\\username\\Application Data\\Identities or C:\\Documents and Settings\\username\\Local Settings\\Application Data\\Identities), and the Address Book folder (C:\\Documents and Settings\\username\\Application Data\\Address Book or C:\\Documents and Settings\\username\\Local Settings\\Application Data\\Address Book). Rename them to old_stationery, old_identities, and old_address respectively."
+      },
+      {
+        "title": "Delete Registry Key for Outlook Express",
+        "content": "WARNING: Using Registry Editor incorrectly can cause serious problems. Back up the registry before you edit it. Open Registry Editor (Regedit.exe) and delete the registry key for Outlook Express."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Outlook Express",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall Outlook Express Files",
+            "content": "Right-click the Msoe50.inf file and then click Install. Insert your Windows 2000 CD-ROM when prompted, locate the I386 folder on the CD-ROM, click Open, and then click OK. The Outlook Express files are installed."
+          },
+          {
+            "title": "Reinstall Outlook Express Address Book",
+            "content": "In the Search for Files and Folders Named box, type wab50.inf, and then click Search. The default location for this file is in the C:\\Winnt\\Inf folder. Right-click the Wab50.inf file, and then click Install. Locate the I386 folder on your Windows 2000 CD-ROM, click Open, and then click OK. This installs the Outlook Express address book."
+          },
+          {
+            "title": "Test Outlook Express",
+            "content": "Outlook Express is now reinstalled. Start Outlook Express to test its functionality. To restore your e-mail messages, address book, and other data, you may need to import them from a backup."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T20:32:35.530Z",
+      "updated": "2026-02-03T20:32:35.530Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/remove-every-last-trace-of-outlook-express.1054404/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1770150763405-915",
+    "title": "Fix Office 365 Text Disappearing or Corruption",
+    "problemDescription": "Text in Word, Excel, or Outlook is disappearing or getting corrupted.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "office",
+      "text",
+      "disappearing",
+      "corruption",
+      "365"
+    ],
+    "steps": [
+      {
+        "title": "Open Task Manager",
+        "content": "Press Ctrl+Shift+Esc to open Task Manager."
+      },
+      {
+        "title": "Disable Startup Apps",
+        "content": "Go to the 'Startup' tab and disable all non-essential startup applications."
+      },
+      {
+        "title": "Open Task Scheduler",
+        "content": "Press Win+R, type 'taskschd.msc', and press Enter to open Task Scheduler."
+      },
+      {
+        "title": "Disable Scheduled Tasks",
+        "content": "Disable all non-essential scheduled tasks."
+      },
+      {
+        "title": "Monitor Office Performance",
+        "content": "Check if the text issues are resolved. If they are, proceed to the next step."
+      },
+      {
+        "title": "Re-enable Apps and Tasks",
+        "content": "Re-enable one app or task at a time, allowing time between each to identify if the issue returns."
+      },
+      {
+        "title": "Identify the Culprit",
+        "content": "If the text problem returns after enabling a specific app or task, it is likely the cause."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Repair Office Installation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Control Panel",
+            "content": "Press Win+R, type 'control', and press Enter."
+          },
+          {
+            "title": "Go to Programs and Features",
+            "content": "Navigate to 'Programs' > 'Programs and Features'."
+          },
+          {
+            "title": "Repair Office",
+            "content": "Select Microsoft Office 365, click 'Change', and choose 'Quick Repair'."
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Restart your computer after the repair process completes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T20:32:43.405Z",
+      "updated": "2026-02-03T20:32:43.405Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/word-excel-outlook-text-disappearing-or-corrupted.3805289/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
