@@ -97134,5 +97134,652 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770161134119-728",
+    "title": "Pixel 6 Factory Reset Bricking Issue",
+    "problemDescription": "Pixel 6-series devices may become bricked after a factory reset, leaving them stuck on the Android Recovery screen.",
+    "category": "android",
+    "difficulty": "Hard",
+    "keywords": [
+      "pixel 6",
+      "factory reset",
+      "bricked",
+      "android recovery"
+    ],
+    "steps": [
+      {
+        "title": "Contact Google Support",
+        "content": "Reach out to Google Support for assistance, as this is a known issue they are currently investigating."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Avoid Factory Reset Until Issue is Resolved",
+        "type": "Preventative Measure",
+        "steps": [
+          {
+            "title": "Do Not Perform Factory Reset",
+            "content": "Avoid performing a factory reset on your Pixel 6-series device until Google provides a solution."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T23:25:34.119Z",
+      "updated": "2026-02-03T23:25:34.119Z",
+      "sourceUrl": "https://www.howtogeek.com/pixel-6-factory-reset-error/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1770161137595-60",
+    "title": "Enable Charging Sound on Pixel Buds Pro 2",
+    "problemDescription": "Pixel Buds Pro 2 users may not be sure if their earbuds are properly charging due to misalignment or dirty contact pads.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Pixel Buds Pro 2",
+      "charging",
+      "sound",
+      "earbuds",
+      "Google"
+    ],
+    "steps": [
+      {
+        "title": "Update Your Pixel Buds Pro 2",
+        "content": "Ensure your Pixel Buds Pro 2 have the latest update installed."
+      },
+      {
+        "title": "Enable Charging Sound",
+        "content": "Go to your earbuds' settings, navigate to 'Case Sounds,' and toggle 'Bud return' on."
+      },
+      {
+        "title": "Check for the Sound",
+        "content": "Place your earbuds in the case and listen for the chime. If you hear it, your earbuds are charging properly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clean the Contact Pads",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Earbuds",
+            "content": "Take the earbuds out of the case."
+          },
+          {
+            "title": "Clean the Contact Pads",
+            "content": "Use a soft, dry cloth to gently clean the contact pads on the earbuds and the charging pins in the case."
+          },
+          {
+            "title": "Reinsert Earbuds",
+            "content": "Place the earbuds back into the case and ensure they are properly aligned."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T23:25:37.595Z",
+      "updated": "2026-02-03T23:25:37.595Z",
+      "sourceUrl": "https://www.howtogeek.com/googles-pixel-buds-charging-sound-solved-issue/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770161148728-856",
+    "title": "Siri Redirects to Web Search Instead of Providing Answers",
+    "problemDescription": "Siri frequently redirects users to web search results or suggests using ChatGPT instead of providing direct answers.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "Siri",
+      "web search",
+      "ChatGPT",
+      "answers"
+    ],
+    "steps": [
+      {
+        "title": "Update iOS",
+        "content": "Ensure your iPhone is running the latest version of iOS, as updates often include improvements and bug fixes for Siri."
+      },
+      {
+        "title": "Check Siri Settings",
+        "content": "Go to Settings > Siri & Search and make sure Siri is enabled and properly configured."
+      },
+      {
+        "title": "Rephrase Your Questions",
+        "content": "Try asking your question in a different way to see if Siri can provide a direct answer."
+      },
+      {
+        "title": "Use Specific Commands",
+        "content": "Ask Siri to perform specific tasks directly, such as 'What is the most common type of tree in North America?' instead of general queries."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Third-Party Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Third-Party Assistant App",
+            "content": "Consider using third-party assistant apps that may provide more direct answers to your queries."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T23:25:48.728Z",
+      "updated": "2026-02-03T23:25:48.728Z",
+      "sourceUrl": "https://www.techradar.com/ai-platforms-assistants/apple-intelligence/apples-rumored-chatgpt-rival-could-fix-the-thing-i-hate-most-about-siri-and-it-cant-come-soon-enough",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770161160051-955",
+    "title": "Set Up 2-Factor Authenticator App",
+    "problemDescription": "Guide to setting up a 2-factor authenticator app on your phone.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "2-factor authentication",
+      "authenticator app",
+      "security"
+    ],
+    "steps": [
+      {
+        "title": "Download the App",
+        "content": "Download a 2-factor authentication app from the Play Store or App Store and install it on your phone."
+      },
+      {
+        "title": "Enroll Your Account",
+        "content": "Enroll your account in the 2-Step verification process using your phone number on the 2-step authentication page."
+      },
+      {
+        "title": "Open the App",
+        "content": "Open the authenticator app on your phone and tap 'Begin Setup.'"
+      },
+      {
+        "title": "Link Your Account",
+        "content": "Choose either 'Scan Account Bar Code' or 'Add Account Manually' to link your account to the app."
+      },
+      {
+        "title": "Scan QR Code",
+        "content": "If you choose to scan the QR code, install a barcode scanner if prompted, then scan the QR code provided on your computer."
+      },
+      {
+        "title": "Add Account Manually",
+        "content": "If you cannot scan the QR code, tap 'Add Account,' enter your account name and the key provided on your computer."
+      },
+      {
+        "title": "Verify the Code",
+        "content": "Enter the six-digit code from your phone into the 'Code' box on your computer and click 'Verify.' If correct, click 'Save' to finish the setup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Entry",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Manual Entry",
+            "content": "If you cannot scan the QR code, manually enter the account name and key provided on your computer into the authenticator app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T23:26:00.051Z",
+      "updated": "2026-02-03T23:26:00.051Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/how-to-use-a-2-factor-authenticator-app.2012541/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770161161842-221",
+    "title": "Remove Two-Step Authentication on iPhone",
+    "problemDescription": "Unable to log in to another device due to two-step authentication issues on iPhone.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "two-step authentication",
+      "iPhone",
+      "login issue",
+      "Apple support"
+    ],
+    "steps": [
+      {
+        "title": "Contact Apple Support",
+        "content": "Go to the Apple Support website and navigate to the contact options. Explain your situation, provide proof of identity, and request the removal of two-step authentication."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Visit an Apple Store",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Schedule an Appointment",
+            "content": "Make an appointment at your nearest Apple Store. Bring your iPhone and any other necessary identification."
+          },
+          {
+            "title": "Explain the Issue",
+            "content": "Explain the problem to the Apple Store representative. They may be able to assist you in removing the two-step authentication."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T23:26:01.842Z",
+      "updated": "2026-02-03T23:26:01.842Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/two-step-authentication-change.3542838/latest",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770161164117-655",
+    "title": "Fix Microsoft Account Locked in Authentication Loop",
+    "problemDescription": "User is stuck in a loop where Microsoft account requires re-enabling authenticator, but re-enabling sends them back to the same prompt.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "microsoft",
+      "account",
+      "authentication",
+      "locked",
+      "loop"
+    ],
+    "steps": [
+      {
+        "title": "Contact Microsoft Support",
+        "content": "Reach out to Microsoft support for assistance with account recovery and authentication issues."
+      },
+      {
+        "title": "Contact Domain Administrator",
+        "content": "If the account is tied to a business domain, contact the domain administrator for help."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Microsoft Login Troubleshooter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Microsoft Login Troubleshooter",
+            "content": "Go to the Microsoft login troubleshooter page."
+          },
+          {
+            "title": "Follow Instructions",
+            "content": "Follow the on-screen instructions to troubleshoot and resolve login issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T23:26:04.117Z",
+      "updated": "2026-02-03T23:26:04.117Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/microsoft-got-me-locked.3880604/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770161166247-118",
+    "title": "Tom's Hardware Archive Access",
+    "problemDescription": "Accessing archived content from Tom's Hardware for September 2024.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "archive",
+      "Tom's Hardware",
+      "September 2024"
+    ],
+    "steps": [
+      {
+        "title": "Visit the Archive Page",
+        "content": "Go to the Tom's Hardware archive page at https://www.tomshardware.com/archive/2024/09."
+      },
+      {
+        "title": "Filter Content",
+        "content": "Use the filter options to narrow down the content to the specific articles or topics you are interested in."
+      },
+      {
+        "title": "Select Region",
+        "content": "Choose the appropriate regional edition (US, UK, AU, CA) if needed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Search Directly",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Search Function",
+            "content": "Use the search bar on the Tom's Hardware website to search for specific topics or articles from September 2024."
+          },
+          {
+            "title": "Filter Results",
+            "content": "Filter the search results by date to find content from September 2024."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T23:26:06.247Z",
+      "updated": "2026-02-03T23:26:06.247Z",
+      "sourceUrl": "https://www.tomshardware.com/archive/2024/09",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770161179612-468",
+    "title": "Fix Wi-Fi Disconnection on Ubuntu",
+    "problemDescription": "Wi-Fi connection keeps disconnecting on Ubuntu.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "ubuntu",
+      "disconnection",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Check Network Configuration",
+        "content": "Run the following commands to gather information about your network configuration and hardware: `uname -a`, `sudo lshw -class network`, `lspci -knn | grep Net -A2`, `ls -al /etc/pm/config.d/`, `ls -al /etc/modprobe.d/`, `sudo iwlist freq`, `iwlist scan | egrep -i 'ssid|quality'`, `sudo iwconfig`, `inxi -Fxz`, `nmcli device wifi list`, `lsusb`, `systemctl status bluetooth`, `hcitool dev`, `hciconfig -a`, `modinfo iwlwifi`, `sudo lsmod | grep iwlwifi`, `cat /etc/modprobe.d/iwlwifi.conf`, `grep /sys/module/iwlwifi/parameters/`"
+      },
+      {
+        "title": "Modify iwlwifi Configuration",
+        "content": "Assuming you have the `iwlwifi` driver, create a new configuration file with the following command: `sudo tee /etc/modprobe.d/iwlwifi-opt.conf <<< \"options iwlwifi bt_coex_active=N power_save=0 power_level=5 11n_disable=1 disable_11ac=1 disable_11ax=1 power_level=1\"`"
+      },
+      {
+        "title": "Stop Bluetooth Service",
+        "content": "Run the command `systemctl stop bluetooth` to stop the Bluetooth service, which might be interfering with your Wi-Fi connection."
+      },
+      {
+        "title": "Set Wi-Fi Channel",
+        "content": "Use the command `iw wlp2s0 set channel <no.>` to set a specific channel for your Wi-Fi interface, replacing `<no.>` with the desired channel number."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Move Wi-Fi Extender",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Wi-Fi Extender Placement",
+            "content": "Ensure that your Wi-Fi extender is not too close to your laptop, as this can cause interference. Move the extender a few feet away from your laptop."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Change Router SSID",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Router SSID",
+            "content": "If you live in an apartment building, your neighbor's router might be confusing your laptop. Go to `Advanced Settings -> Wireless` and change the SSID of your router. Reboot your router and laptop after making the change."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T23:26:19.612Z",
+      "updated": "2026-02-03T23:26:19.612Z",
+      "sourceUrl": "https://askubuntu.com/questions/1397239/wi-fi-connection-keeps-disconnecting",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770161185370-293",
+    "title": "Fix Wireless Network Connection on Ubuntu 24.04",
+    "problemDescription": "Wireless network connection issues on Ubuntu 24.04 due to kernel upgrade breaking the rtl8821au driver.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "ubuntu",
+      "driver",
+      "kernel",
+      "rtl8821au"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install the Correct Driver",
+        "content": "Download the correct driver from GitHub into /usr/src directory."
+      },
+      {
+        "title": "Navigate to the Driver Directory",
+        "content": "Change directory to /usr/src/8821au-20210708."
+      },
+      {
+        "title": "Run the Installation Script",
+        "content": "Execute the installation script with sudo ./install-driver.sh."
+      },
+      {
+        "title": "Upgrade the Kernel",
+        "content": "Download and install the latest kernel packages from the specified URLs."
+      },
+      {
+        "title": "Disable Secure Boot",
+        "content": "Disable Secure Boot in BIOS settings to resolve the 'bad shim signature' error."
+      },
+      {
+        "title": "Reboot the System",
+        "content": "Reboot the system to apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Community Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Driver Updates",
+            "content": "Regularly check for driver updates and reinstall them as needed."
+          },
+          {
+            "title": "Use a Different Wi-Fi Dongle",
+            "content": "Consider using a different Wi-Fi dongle that is compatible with the current kernel."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T23:26:25.370Z",
+      "updated": "2026-02-03T23:26:25.370Z",
+      "sourceUrl": "https://askubuntu.com/questions/1513315/issue-with-wireless-network-connection-on-ubuntu-24-04-lts",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770161192477-144",
+    "title": "Fix Amazon Echo Wi-Fi Disconnection",
+    "problemDescription": "Amazon Echo frequently disconnects from Wi-Fi.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "Amazon Echo",
+      "Wi-Fi",
+      "disconnection",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Power-cycle devices",
+        "content": "Power-cycle the router, modem, and Amazon Echo speaker."
+      },
+      {
+        "title": "Move Echo closer to router",
+        "content": "Move the Echo speaker closer to the router to improve signal strength."
+      },
+      {
+        "title": "Switch to 5GHz channel",
+        "content": "Switch the Echo speaker to a 5GHz Wi-Fi channel to decrease interference."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reboot and re-add device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot the Echo speaker",
+            "content": "Reboot the Echo speaker by unplugging it and plugging it back in."
+          },
+          {
+            "title": "Remove and re-add device",
+            "content": "Remove the problematic device from the Alexa app and add it back."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T23:26:32.478Z",
+      "updated": "2026-02-03T23:26:32.478Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/these-8-problems-plague-the-amazon-echo-heres-how-you-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770161195510-887",
+    "title": "Adjust Alexa Volume for Nighttime Use",
+    "problemDescription": "Alexa's volume is too loud at night, disturbing sleep.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "alexa",
+      "volume",
+      "nighttime",
+      "echo"
+    ],
+    "steps": [
+      {
+        "title": "Lower the Volume",
+        "content": "Before going to bed, manually lower the volume on your Alexa device using the physical buttons or voice command: 'Alexa, set volume to 2'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Whisper Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Whisper Command",
+            "content": "Whisper your command to Alexa, and she will respond in a whisper, reducing the volume automatically."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T23:26:35.510Z",
+      "updated": "2026-02-03T23:26:35.510Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/alexa-can-you-chill-quick-and-easy-workarounds-for-5-minor-issues/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770161197232-417",
+    "title": "Fix Amazon Echo Cutting Out Mid-Sentence",
+    "problemDescription": "Amazon Echo cuts out mid-sentence and skips words or entire responses.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "echo",
+      "connectivity",
+      "cutting out",
+      "alexa"
+    ],
+    "steps": [
+      {
+        "title": "Reboot the Echo",
+        "content": "Unplug the Echo from the power source, wait for about 30 seconds, and then plug it back in. This can often resolve connectivity issues."
+      },
+      {
+        "title": "Check Wi-Fi Connection",
+        "content": "Ensure that your Echo is connected to a stable Wi-Fi network. You can check this in the Alexa app under the Device Settings."
+      },
+      {
+        "title": "Update the Echo",
+        "content": "Make sure your Echo has the latest software updates. This can be done through the Alexa app under Device Software."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset the Echo to Factory Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Factory Reset",
+            "content": "If the issue persists, you may need to reset your Echo to factory settings. This can be done by holding down the action button on top of the Echo for about 25 seconds until the light ring turns orange."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T23:26:37.232Z",
+      "updated": "2026-02-03T23:26:37.232Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/how-to-fix-connectivity-issues-with-the-amazon-echo/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770161198544-572",
+    "title": "Reset Smart Home Device in App",
+    "problemDescription": "Smart home device not connecting or dropping connection.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "smart home",
+      "device",
+      "connection",
+      "app"
+    ],
+    "steps": [
+      {
+        "title": "Remove the Device",
+        "content": "Open your smart home app and locate the device causing issues."
+      },
+      {
+        "title": "Forget the Device",
+        "content": "Select the device and choose the option to 'forget' or remove it from the app."
+      },
+      {
+        "title": "Re-add the Device",
+        "content": "Use the app's add device feature (usually a plus sign button) to set up the device again as if it were new."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-03T23:26:38.544Z",
+      "updated": "2026-02-03T23:26:38.544Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/quick-fixes-to-troubleshoot-your-smart-home-and-home-security-devices/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
