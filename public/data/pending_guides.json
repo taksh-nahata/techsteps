@@ -90693,5 +90693,412 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770111431676-27",
+    "title": "Fix Outlook Startup Error",
+    "problemDescription": "Outlook fails to start after an update, displaying an error message.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Outlook",
+      "startup error",
+      "Microsoft 365",
+      "update issue"
+    ],
+    "steps": [
+      {
+        "title": "Delete Specific Folders",
+        "content": "Navigate to the path %LOCALAPPDATA%\\Microsoft\\ and delete the folders named 'Olk' and 'OneAuth'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Wait for Microsoft Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Monitor Microsoft's official channels for any updates or patches that address this issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T09:37:11.676Z",
+      "updated": "2026-02-03T09:37:11.676Z",
+      "sourceUrl": "https://www.reddit.com/r/Office365/comments/1mufr4c/there_are_problems_starting_outlook_how_about_we/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770111439005-227",
+    "title": "Fix Outlook 'Out of Memory' Error on Cloud Server",
+    "problemDescription": "Outlook displays 'Out of memory or system resources' error and freezes on a cloud server, despite sufficient system resources.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "memory",
+      "cloud",
+      "freeze",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Repair Office Installation",
+        "content": "Go to Control Panel > Programs > Programs and Features. Select Microsoft Office, click 'Change', and choose 'Quick Repair'. Follow the prompts to complete the repair process."
+      },
+      {
+        "title": "Create a New Outlook Profile",
+        "content": "Open Control Panel > Mail > Show Profiles. Click 'Add' to create a new profile. Configure the new profile with your email account and set it as the default."
+      },
+      {
+        "title": "Disable Add-ins",
+        "content": "Open Outlook > File > Options > Add-ins. Disable all add-ins and restart Outlook. If the issue resolves, enable add-ins one by one to identify the problematic one."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Navigation Pane",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Navigation Pane",
+            "content": "Close Outlook. Open Run dialog (Win + R), type 'outlook /resetnavpane' and press Enter. This will reset the navigation pane and may resolve the issue."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Rebuild Outlook Data File",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Rebuild Outlook Data File",
+            "content": "Use the Inbox Repair Tool (scanpst.exe) to scan and repair your Outlook data file. This tool can be found in the Microsoft Office installation directory."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T09:37:19.005Z",
+      "updated": "2026-02-03T09:37:19.005Z",
+      "sourceUrl": "https://www.reddit.com/r/sysadmin/comments/1n2qk9b/outlook_issue/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770111464473-107",
+    "title": "Fix Nvidia Shield HDMI Flickering",
+    "problemDescription": "Nvidia Shield TV screen flickers between home screen and black/snow screen.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "nvidia",
+      "shield",
+      "flickering",
+      "hdmi",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Check HDMI Cable and Ports",
+        "content": "Ensure the HDMI cable is securely connected and try a different HDMI port on your TV."
+      },
+      {
+        "title": "Test with Different TV",
+        "content": "Connect the Nvidia Shield to a different TV to rule out TV-specific issues."
+      },
+      {
+        "title": "Boot into Safe Mode",
+        "content": "Boot the Nvidia Shield into safe mode to check if the issue persists. If the flickering stops, it might be related to a third-party app."
+      },
+      {
+        "title": "Adjust Refresh Rate",
+        "content": "Change the refresh rate settings in safe mode and see if the issue resolves after restarting."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "Perform a full factory reset if the issue persists after trying the above steps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Firmware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > About > System updates to check for and install any available firmware updates."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Nvidia Support",
+            "content": "If all else fails, contact Nvidia Shield support for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T09:37:44.473Z",
+      "updated": "2026-02-03T09:37:44.473Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/253746/nvidia-shield-flickering-issue",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770111481679-419",
+    "title": "Fix Hey Siri Not Working",
+    "problemDescription": "Hey Siri is not responding or working on your iOS device.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "Hey Siri",
+      "iOS",
+      "Siri not working"
+    ],
+    "steps": [
+      {
+        "title": "Turn Off and On Hey Siri",
+        "content": "Go to the Settings app, then navigate to 'Siri & Search'. Under the 'Listen for' submenu, select 'Off'. Wait a few seconds, then turn it back on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Siri Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Siri is Enabled",
+            "content": "Ensure that Siri is enabled in your device settings. Go to Settings > Siri & Search and make sure the toggle is on."
+          }
+        ]
+      },
+      {
+        "title": "Restart Your Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your iPhone",
+            "content": "Restart your iPhone to refresh the system. This can often resolve temporary glitches that might be affecting Siri."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T09:38:01.679Z",
+      "updated": "2026-02-03T09:38:01.679Z",
+      "sourceUrl": "https://www.quora.com/Why-is-Hey-Siri-not-working-and-how-can-you-fix-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770111484451-25",
+    "title": "Disable Hey Siri on iOS",
+    "problemDescription": "Siri activates unintentionally when 'Hey Siri' is triggered.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "siri",
+      "hey siri",
+      "ios settings"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Open the Settings app on your iOS device."
+      },
+      {
+        "title": "Navigate to Siri & Search",
+        "content": "Scroll down and tap on 'Siri & Search'."
+      },
+      {
+        "title": "Disable Hey Siri",
+        "content": "Toggle off the 'Hey Siri' option."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-03T09:38:04.451Z",
+      "updated": "2026-02-03T09:38:04.451Z",
+      "sourceUrl": "https://www.quora.com/What-are-some-frequent-requests-that-Siri-gets-completely-wrong",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770111496333-239",
+    "title": "Fix Blurry Instagram Videos",
+    "problemDescription": "Instagram videos appear blurry or pixelated due to automatic quality throttling.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "video",
+      "quality",
+      "blurry",
+      "upload"
+    ],
+    "steps": [
+      {
+        "title": "Access Instagram Settings",
+        "content": "Open the Instagram app, go to your profile, and tap the hamburger menu in the top-right corner."
+      },
+      {
+        "title": "Navigate to Data Usage",
+        "content": "Go to Settings and privacy, then scroll down to Your app and media. Tap on Data usage and media quality."
+      },
+      {
+        "title": "Enable High-Quality Uploads",
+        "content": "Toggle on the 'Upload at highest quality' setting."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Strong Wi-Fi Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect to Wi-Fi",
+            "content": "Ensure you are connected to a strong Wi-Fi network before uploading videos to Instagram."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T09:38:16.333Z",
+      "updated": "2026-02-03T09:38:16.333Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/change-this-hidden-instagram-setting-to-fix-blurry-videos/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770111500325-857",
+    "title": "Fix Instagram Reels Showing Violent Content",
+    "problemDescription": "Instagram Reels is displaying violent or inappropriate content despite content filters being enabled.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Instagram",
+      "Reels",
+      "violent content",
+      "filter",
+      "bug"
+    ],
+    "steps": [
+      {
+        "title": "Wait for Meta to Fix the Issue",
+        "content": "Meta has acknowledged and fixed the bug causing violent content to appear in Instagram Reels. Ensure your app is updated to the latest version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Content Preferences",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Instagram Settings",
+            "content": "Go to your profile and tap on the three horizontal lines in the top right corner, then select 'Settings'."
+          },
+          {
+            "title": "Navigate to Content Preferences",
+            "content": "Tap on 'Account' and then 'Content Preferences'."
+          },
+          {
+            "title": "Adjust Sensitive Content Control",
+            "content": "Tap on 'Sensitive Content Control' and set it to 'Less' to reduce the likelihood of seeing inappropriate content."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Report Inappropriate Content",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Report the Content",
+            "content": "Tap on the three dots (...) on the top right of the Reel and select 'Report'. Follow the prompts to report the content as inappropriate."
+          },
+          {
+            "title": "Provide Feedback",
+            "content": "Use the 'Give Feedback' option in the settings to inform Instagram about the issue and suggest improvements."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T09:38:20.325Z",
+      "updated": "2026-02-03T09:38:20.325Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/bug-that-showed-violent-content-in-instagram-feeds-is-fixed-says-meta/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770111505215-988",
+    "title": "Use Focus Friend to Reduce Doomscrolling",
+    "problemDescription": "Struggling with excessive phone use and doomscrolling.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "doomscrolling",
+      "phone addiction",
+      "Focus Friend",
+      "productivity"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install Focus Friend",
+        "content": "Go to the App Store and search for 'Focus Friend'. Download and install the app on your iOS device."
+      },
+      {
+        "title": "Set Up a Focus Session",
+        "content": "Open the app and set a focus session duration. Start with 15 minutes and adjust as needed."
+      },
+      {
+        "title": "Start Your Focus Session",
+        "content": "Begin your focus session. The app will help you stay concentrated by discouraging phone use."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Built-in Phone Features",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Do Not Disturb",
+            "content": "Go to your phone's settings and enable Do Not Disturb mode to reduce distractions."
+          },
+          {
+            "title": "Set App Limits",
+            "content": "Use your phone's screen time settings to set limits on apps like Instagram and TikTok."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T09:38:25.215Z",
+      "updated": "2026-02-03T09:38:25.215Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/focus-friend-might-have-finally-solved-my-doomscrolling-problem/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
