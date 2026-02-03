@@ -90370,5 +90370,328 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770107532068-352",
+    "title": "Fix Discord Stuck at Starting",
+    "problemDescription": "Discord app gets stuck on the 'Starting...' screen and requires a reinstall or manual folder deletion to fix.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "starting",
+      "app-error",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Delete Discord Data Folders",
+        "content": "Close Discord completely. Navigate to %appdata% and delete the 'Discord' and 'DiscordCanary' folders. Restart Discord."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Discord",
+            "content": "Go to Control Panel > Programs > Uninstall a program. Select Discord and click Uninstall."
+          },
+          {
+            "title": "Download and Install Discord",
+            "content": "Download the latest version of Discord from the official website and install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T08:32:12.068Z",
+      "updated": "2026-02-03T08:32:12.068Z",
+      "sourceUrl": "https://www.reddit.com/r/discordapp/comments/11g8wry/discord_stuck_at_starting/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770107535721-320",
+    "title": "Discord Stuck on Loading Screen",
+    "problemDescription": "Discord hangs on the loading screen across multiple platforms and browsers.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "loading",
+      "browser",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check System Date and Time",
+        "content": "Ensure your system's date and time settings are accurate, as Discord relies on these settings for proper functionality."
+      },
+      {
+        "title": "Test with a Different Account",
+        "content": "Log out of your main account and try logging in with a different Discord account to determine if the issue is account-specific."
+      },
+      {
+        "title": "Disable VPN",
+        "content": "If you have a VPN enabled, disable it temporarily as VPNs can sometimes cause connection problems."
+      },
+      {
+        "title": "Check Network Connectivity",
+        "content": "Try connecting to a different network (e.g., a mobile hotspot) to see if the issue persists."
+      },
+      {
+        "title": "Disable Firewall/Antivirus",
+        "content": "Temporarily disable any firewall or antivirus software to see if they are causing the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clear Cache and Cookies",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Discord Cache",
+            "content": "Remove the Discord folder in Application Support on macOS or the equivalent in AppData Roaming on Windows to clear cache and cookies."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T08:32:15.721Z",
+      "updated": "2026-02-03T08:32:15.721Z",
+      "sourceUrl": "https://www.reddit.com/r/discordapp/comments/18d3cnx/discord_isnt_working_even_in_my_browser_and/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770107585751-443",
+    "title": "Troubleshoot Mac with Safe Mode",
+    "problemDescription": "Your Mac is experiencing performance issues or crashes.",
+    "category": "mac",
+    "difficulty": "Easy",
+    "keywords": [
+      "mac",
+      "troubleshoot",
+      "safe mode",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Restart in Safe Mode",
+        "content": "Turn off your Mac. Then, turn it on and immediately press and hold the Shift key until the login screen appears."
+      },
+      {
+        "title": "Check Performance",
+        "content": "Observe if the performance issues persist in Safe Mode. If not, a recently installed app or login item may be causing the problem."
+      },
+      {
+        "title": "Exit Safe Mode",
+        "content": "Restart your Mac normally to exit Safe Mode."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Login Items",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Preferences",
+            "content": "Go to the Apple menu and select 'System Preferences'."
+          },
+          {
+            "title": "Navigate to Users & Groups",
+            "content": "Click on 'Users & Groups', then select your user account."
+          },
+          {
+            "title": "Manage Login Items",
+            "content": "Click the 'Login Items' tab. Remove any suspicious or unnecessary items by selecting them and clicking the '-' button."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T08:33:05.751Z",
+      "updated": "2026-02-03T08:33:05.752Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=RBZo9unEe1s",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770107596697-858",
+    "title": "Fix Inconsistent Text Size in Word 365",
+    "problemDescription": "Text size in Word 365 becomes smaller when hitting spacebar or backspace, despite consistent formatting.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Word 365",
+      "text size",
+      "formatting issue"
+    ],
+    "steps": [
+      {
+        "title": "Check for Hidden Formatting",
+        "content": "Highlight the affected text and press Ctrl + A to select all text. Then, press Ctrl + Space to remove any manual formatting."
+      },
+      {
+        "title": "Use the Clear All Formatting Option",
+        "content": "Select the affected text and click the 'Clear All' button in the Font group on the Home tab."
+      },
+      {
+        "title": "Check for Style Conflicts",
+        "content": "Go to the Home tab, click the Styles group, and ensure that the correct style is applied consistently."
+      },
+      {
+        "title": "Update Word 365",
+        "content": "Ensure your Word 365 is up to date by going to File > Account > Update Options > Update Now."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Recreate the Document",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Copy and Paste Content",
+            "content": "Copy all content from the affected document and paste it into a new Word document."
+          },
+          {
+            "title": "Reapply Formatting",
+            "content": "Reapply the desired formatting to the new document to ensure consistency."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T08:33:16.697Z",
+      "updated": "2026-02-03T08:33:16.697Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/office_2007-access/what-is-the-benefit-in-creating-relationships-in/cba95e34-c04c-e011-8dfc-68b599b31bf5?msgId=09961cc3-e64c-e011-8dfc-68b599b31bf5",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770107619486-130",
+    "title": "Fix Microsoft Teams Issues by Clearing Cache",
+    "problemDescription": "Microsoft Teams is not working properly or crashing frequently.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Teams",
+      "cache",
+      "app error",
+      "crash"
+    ],
+    "steps": [
+      {
+        "title": "Close Microsoft Teams",
+        "content": "Right-click the Teams icon in the system tray or taskbar and select 'Quit'."
+      },
+      {
+        "title": "Delete Cache Files",
+        "content": "Press Win + R, type %appdata%\\Microsoft\\Teams, and press Enter. Delete all files in this folder."
+      },
+      {
+        "title": "Delete Local Cache Files",
+        "content": "Press Win + R, type %userprofile%\\AppData\\Local\\Packages\\MSTeams_8wekyb3d8bbwe\\LocalCache\\Microsoft\\MSTeams, and press Enter. Delete all files in this folder."
+      },
+      {
+        "title": "Restart Microsoft Teams",
+        "content": "Open Microsoft Teams again to see if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Microsoft Teams",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Teams",
+            "content": "Go to Control Panel > Programs > Uninstall a program, find Microsoft Teams, and uninstall it."
+          },
+          {
+            "title": "Reinstall Teams",
+            "content": "Download the latest version of Microsoft Teams from the official website and install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T08:33:39.486Z",
+      "updated": "2026-02-03T08:33:39.486Z",
+      "sourceUrl": "https://www.reddit.com/r/MicrosoftTeams/comments/1hd9o5c/solutions_for_teams_problems_try_this_before/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770107707916-561",
+    "title": "MacBook Pro Battery Dying at 75%",
+    "problemDescription": "MacBook Pro battery dies at 75% charge, indicating potential battery degradation or issues with the battery controller.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "battery",
+      "charge",
+      "degradation"
+    ],
+    "steps": [
+      {
+        "title": "Check Battery Health",
+        "content": "Go to Apple Menu > About This Mac > System Report > Power. Check the 'Cycle Count' and 'Condition' of your battery. If the condition is 'Service Recommended' or 'Replace Soon', it's time to replace the battery."
+      },
+      {
+        "title": "Check for Battery Recall",
+        "content": "Visit Apple's Battery Recall Program page to see if your MacBook Pro 15\" Mid 2015 is eligible for a free battery replacement."
+      },
+      {
+        "title": "Monitor Battery Temperature",
+        "content": "Feel the battery, especially just before and after charging, and perhaps 15-30 minutes in. If it's hot, treat this as a potential safety or equipment damage issue."
+      },
+      {
+        "title": "Reset SMC",
+        "content": "If the battery percentage is inaccurate, reset the System Management Controller (SMC). Shut down your Mac, then press and hold Control + Option + Shift + Power button for 10 seconds. Release and turn on your Mac."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update macOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update macOS",
+            "content": "Ensure your Mac is running the latest version of macOS. Go to Apple Menu > System Preferences > Software Update."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Calibrate Battery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Calibrate Battery",
+            "content": "Fully discharge your battery until the Mac shuts down, then charge it to 100% without interruption. This can help recalibrate the battery gauge."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T08:35:07.916Z",
+      "updated": "2026-02-03T08:35:07.916Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/428217/how-to-resolve-my-mac-dying-at-75-battery",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
