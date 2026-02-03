@@ -88818,5 +88818,336 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770097617183-186",
+    "title": "Reset Network Settings on Samsung Galaxy",
+    "problemDescription": "Connection issues on your Samsung Galaxy phone.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "samsung",
+      "network",
+      "connection",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Go to the Settings app on your Samsung Galaxy phone."
+      },
+      {
+        "title": "Navigate to General Management",
+        "content": "Tap on 'General management'."
+      },
+      {
+        "title": "Access Reset Options",
+        "content": "Tap on 'Reset'."
+      },
+      {
+        "title": "Select Network Settings Reset",
+        "content": "Tap on 'Reset network settings'."
+      },
+      {
+        "title": "Confirm Reset",
+        "content": "Enter your PIN, Password, or Pattern if prompted, then tap 'Reset'."
+      },
+      {
+        "title": "Complete the Process",
+        "content": "Your Wi-Fi, Bluetooth, and other network settings will be reset to default."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-03T05:46:57.183Z",
+      "updated": "2026-02-03T05:46:57.183Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=0HFfbhzKQv0",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770097619221-624",
+    "title": "Fix Samsung App Issues After Update",
+    "problemDescription": "Apps or battery issues after updating your Samsung phone.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "samsung",
+      "update",
+      "app issues",
+      "battery drain"
+    ],
+    "steps": [
+      {
+        "title": "Force Stop and Clear App Data",
+        "content": "Press and hold the problematic app, go to App Info, then Force Stop. Clear Cache and Data in Storage."
+      },
+      {
+        "title": "Wipe Cache Partition",
+        "content": "Turn off your phone, then press and hold Volume Up + Power during restart. Release Power when the Samsung logo appears, but keep holding Volume Up until the Recovery Menu appears. Use Volume keys to navigate and Power to select 'Wipe Cache Partition'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Data Reset",
+        "type": "Last Resort",
+        "steps": [
+          {
+            "title": "Backup and Reset",
+            "content": "Ensure your phone is backed up, then go to Settings > General Management > Reset > Factory Data Reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T05:46:59.221Z",
+      "updated": "2026-02-03T05:46:59.221Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=30on78zEuB4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770097624264-107",
+    "title": "Samsung Galaxy S21 5G Screen and Battery Replacement",
+    "problemDescription": "Guide to disassembling and replacing the screen and battery on a Samsung Galaxy S21 5G.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "Samsung Galaxy S21 5G",
+      "screen replacement",
+      "battery replacement",
+      "disassembly",
+      "repair"
+    ],
+    "steps": [
+      {
+        "title": "Remove the Back Plate",
+        "content": "Pry the back plate off the phone carefully."
+      },
+      {
+        "title": "Remove the Wireless Charging Coil",
+        "content": "Peel off the wireless charging coil from the bottom speaker assembly."
+      },
+      {
+        "title": "Remove the Speaker Assembly",
+        "content": "Disconnect the speaker assembly from the bottom of the phone."
+      },
+      {
+        "title": "Disconnect the Screen Cable",
+        "content": "Disconnect the cable connected to the screen."
+      },
+      {
+        "title": "Heat and Pry the Screen",
+        "content": "Heat the screen from the front to loosen the adhesive, then pry the screen off the midframe."
+      },
+      {
+        "title": "Replace the Screen",
+        "content": "Apply the new screen to the midframe and reassemble the phone."
+      },
+      {
+        "title": "Remove the Battery",
+        "content": "Apply heat from the front of the phone to loosen the adhesive, then pry the battery off."
+      },
+      {
+        "title": "Disconnect the Flex Cable",
+        "content": "Pop off the flex cable in the corner."
+      },
+      {
+        "title": "Remove the Main Board",
+        "content": "Lift up and remove the main board."
+      },
+      {
+        "title": "Reassemble the Phone",
+        "content": "Put all the screws back in place, apply new adhesive, reapply the back plate, flip over the phone, power it on, and you're done."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Specialized Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Heat Gun",
+            "content": "Use a heat gun to evenly distribute heat across the screen or battery for easier removal."
+          },
+          {
+            "title": "Use a Suction Cup",
+            "content": "Use a suction cup to help lift the screen or battery after heating."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T05:47:04.264Z",
+      "updated": "2026-02-03T05:47:04.264Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=voYbbwkg-yo",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770097662410-513",
+    "title": "Fix Gmail Hiding Emails in Categories",
+    "problemDescription": "Gmail is hiding emails in separate categories, making them appear missing from the main inbox.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "emails",
+      "categories",
+      "inbox"
+    ],
+    "steps": [
+      {
+        "title": "Access Gmail Settings",
+        "content": "Click the 'Settings' icon (gear icon) in the top-right corner of Gmail and select 'See All Settings'."
+      },
+      {
+        "title": "Navigate to Inbox Tab",
+        "content": "In the Settings menu, click on the 'Inbox' tab."
+      },
+      {
+        "title": "Disable Categories",
+        "content": "Under the 'Categories' section, un-check all the category boxes to disable the feature."
+      },
+      {
+        "title": "Save Changes",
+        "content": "Scroll down and click 'Save Changes' to apply the new settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Categories Folder",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Locate Categories Folder",
+            "content": "On the left sidebar, look for the 'Categories' folder and click on it."
+          },
+          {
+            "title": "View Hidden Emails",
+            "content": "Browse through the sub-folders (e.g., Social, Promotions) to find and move any important emails back to the main inbox."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T05:47:42.410Z",
+      "updated": "2026-02-03T05:47:42.410Z",
+      "sourceUrl": "https://www.howtogeek.com/gmail-started-hiding-my-emails-heres-how-i-fixed-it/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770097669936-430",
+    "title": "Fix Gmail Loading Error in Chrome",
+    "problemDescription": "Gmail fails to load in Chrome on Windows 7, showing a 'Loading error, please try Standard HTML view' message.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "chrome",
+      "loading error",
+      "windows 7"
+    ],
+    "steps": [
+      {
+        "title": "Disable Problematic Extensions",
+        "content": "Identify and disable any recently installed or problematic browser extensions, especially those related to Gmail or email tracking."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Browser Cache and Cookies",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache and Cookies",
+            "content": "Go to Chrome settings, navigate to 'Privacy and security', and clear browsing data including cache and cookies."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Different Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch Browsers",
+            "content": "Try accessing Gmail using a different browser to see if the issue is specific to Chrome."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T05:47:49.936Z",
+      "updated": "2026-02-03T05:47:49.936Z",
+      "sourceUrl": "https://superuser.com/questions/879657/gmail-loading-error",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770097672800-589",
+    "title": "Fix Gmail DSN Service Unavailable Error",
+    "problemDescription": "Gmail is rejecting emails with a DSN: Service unavailable error due to IPv6 PTR record issues.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "dsn",
+      "service unavailable",
+      "ipv6",
+      "ptr record"
+    ],
+    "steps": [
+      {
+        "title": "Verify and Correct SPF Records",
+        "content": "Ensure your SPF record is correctly set up. For Gmail, it should include Google's SPF record. Example: `v=spf1 include:_spf.google.com ~all`."
+      },
+      {
+        "title": "Check and Update PTR Records",
+        "content": "Ensure your sending IP has a PTR record that matches the forward DNS resolution of the hostname specified in the PTR record. This is crucial for IPv6 compliance."
+      },
+      {
+        "title": "Align Domain and Subdomain",
+        "content": "Ensure the domain in the From field of your email messages matches the domain where the SPF records are set up. If using a subdomain, ensure SPF records are correctly configured for that subdomain."
+      },
+      {
+        "title": "Consult with Hosting Provider",
+        "content": "If you are using a hosting provider like Mythic Beasts, consult with them to ensure they allow the use of their subdomains for email and that all DNS records are correctly configured."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Google's SMTP Server",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Configure Sendmail to Use Google's SMTP",
+            "content": "Configure your Sendmail to relay emails through Google's SMTP server. This can bypass some DNS and PTR record issues."
+          },
+          {
+            "title": "Update Email Headers",
+            "content": "Ensure all email headers reflect the correct domain and SMTP server information to avoid any discrepancies."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T05:47:52.800Z",
+      "updated": "2026-02-03T05:47:52.800Z",
+      "sourceUrl": "https://superuser.com/questions/1447937/gmail-responding-with-dsn-service-unavailable",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
