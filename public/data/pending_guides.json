@@ -93927,5 +93927,191 @@
       "priorityScore": 0.8,
       "difficulty": "Hard"
     }
+  },
+  {
+    "id": "draft-1770141025232-29",
+    "title": "Fix Screen Flickering on Windows Laptop",
+    "problemDescription": "Screen flickering or flashing issue on a Windows laptop.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen flickering",
+      "windows",
+      "display",
+      "graphics card"
+    ],
+    "steps": [
+      {
+        "title": "Refresh Graphics Card",
+        "content": "Press and hold the Windows + Shift + Control + B keys simultaneously to refresh the graphics card."
+      },
+      {
+        "title": "Check Display Settings",
+        "content": "Click on the Windows search bar, type 'refresh', and select 'View Advanced display info'. Click on 'Display adapter properties for Display 1', then click on 'Monitor' and ensure the screen refresh rate is correctly selected. Click 'OK'."
+      },
+      {
+        "title": "Uninstall Monitor and Graphics Card Drivers",
+        "content": "Right-click on the Windows icon, select 'Device Manager'. In Device Manager, find 'Monitors', right-click on it, and select 'Uninstall device'. Confirm the uninstallation. Next, find 'Display adapters', double-click to display your graphics card, right-click on it, and choose 'Uninstall'. Confirm the uninstallation."
+      },
+      {
+        "title": "Uninstall Problematic Applications",
+        "content": "Open the Control Panel, go to 'Programs and Features', and look for recently installed applications that might be causing the issue. Uninstall any suspicious or recently installed applications."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Boot in Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot in Safe Mode",
+            "content": "Restart your computer and boot into Safe Mode. If the screen flickering stops in Safe Mode, it indicates that the problem is with a corrupted driver or application."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T17:50:25.232Z",
+      "updated": "2026-02-03T17:50:25.232Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=qm5hYltVWFo",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770141029085-740",
+    "title": "Fix Monitor Flickering",
+    "problemDescription": "Your monitor screen is flickering, which can be distracting and may indicate a connection or hardware issue.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "monitor",
+      "flickering",
+      "connection",
+      "cables",
+      "drivers"
+    ],
+    "steps": [
+      {
+        "title": "Check Cable Connections",
+        "content": "Ensure that all cables are properly plugged in at both the monitor and the output device (e.g., computer)."
+      },
+      {
+        "title": "Switch Cables and Ports",
+        "content": "Try switching the cables to different ports on both the monitor and the output device to rule out port issues."
+      },
+      {
+        "title": "Update Graphics Drivers",
+        "content": "Visit the official website of your graphics card manufacturer (e.g., NVIDIA), search for the latest drivers, download, and install them."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Replace Cables or Adapters",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try Different Cables",
+            "content": "If the issue persists, try using different cables to rule out a faulty cable."
+          },
+          {
+            "title": "Replace Adapters",
+            "content": "If you are using adapters (e.g., DisplayPort to VGA), try replacing the adapter as it might be malfunctioning."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T17:50:29.085Z",
+      "updated": "2026-02-03T17:50:29.085Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=W8jv9QAOQk0",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770141078724-29",
+    "title": "Fix Pixel Brightness Glitch",
+    "problemDescription": "Pixel phones experience brightness flickering and dimming during video playback after the latest update.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel",
+      "brightness",
+      "glitch",
+      "video",
+      "refresh rate"
+    ],
+    "steps": [
+      {
+        "title": "Change Refresh Rate",
+        "content": "Go to Settings > Display, then disable the toggle next to Smooth Display to set the refresh rate to 60Hz."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Wait for Google Patch",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Monitor official Google channels for patches and updates that may fix the brightness glitch."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T17:51:18.724Z",
+      "updated": "2026-02-03T17:51:18.724Z",
+      "sourceUrl": "https://lifehacker.com/tech/theres-a-fix-for-at-least-one-of-the-glitches-in-the-latest-pixel-update",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770141103068-987",
+    "title": "Fix iPhone Two-Factor Authentication Not Working",
+    "problemDescription": "Two-factor authentication is not working on iPhone 6 and MacBook Air, stuck on 'waiting for device'.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "two-factor authentication",
+      "iPhone",
+      "MacBook",
+      "iCloud"
+    ],
+    "steps": [
+      {
+        "title": "Manually Obtain a Verification Code",
+        "content": "Go to your Apple ID account page on a web browser. Sign in with your Apple ID and password. Under the Security section, click 'Get Verification Code'. You will receive a code that you can use to complete the authentication process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Keychain",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Keychain",
+            "content": "Go to System Preferences on your MacBook Air. Navigate to Security & Privacy, then to the Keychain tab. Turn off Keychain."
+          },
+          {
+            "title": "Turn On Keychain",
+            "content": "After turning off Keychain, turn it back on and enter the security code when prompted."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T17:51:43.068Z",
+      "updated": "2026-02-03T17:51:43.068Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/301053/two-factor-authentication-not-working-not-even-asking-me-for-security-code",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
