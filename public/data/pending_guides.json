@@ -88403,5 +88403,420 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770091928383-743",
+    "title": "Fix Zoom Application Error",
+    "problemDescription": "Zoom application is not working properly or displaying errors.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "application",
+      "error",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Zoom Application",
+        "content": "Close the Zoom application completely and reopen it to see if the issue is resolved."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "Restart your PC or phone to clear any temporary issues that might be causing the error."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Antivirus and VPN",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Antivirus",
+            "content": "Temporarily disable your antivirus software to check if it is interfering with Zoom."
+          },
+          {
+            "title": "Disable VPN",
+            "content": "Turn off your VPN to see if it is causing the issue."
+          }
+        ]
+      },
+      {
+        "title": "Disable Firewall (For PC)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Firewall Settings",
+            "content": "Go to your PC's firewall settings."
+          },
+          {
+            "title": "Disable Firewall",
+            "content": "Temporarily disable the firewall to check if it is blocking Zoom."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T04:12:08.383Z",
+      "updated": "2026-02-03T04:12:08.383Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-solve-an-issue-error-in-Zoom",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770091936269-381",
+    "title": "Fix Choppy Zoom Video",
+    "problemDescription": "Zoom video conferencing is choppy despite having sufficient bandwidth.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "video",
+      "choppy",
+      "bandwidth"
+    ],
+    "steps": [
+      {
+        "title": "Check Network Path",
+        "content": "Use network diagnostic tools to check for congestion or issues along the data path between you and the Zoom servers."
+      },
+      {
+        "title": "Optimize Zoom Settings",
+        "content": "Adjust Zoom's video settings to lower resolution or frame rate to reduce bandwidth usage."
+      },
+      {
+        "title": "Restart Router",
+        "content": "Restart your router to clear any temporary network issues."
+      },
+      {
+        "title": "Update Zoom",
+        "content": "Ensure you are using the latest version of Zoom to benefit from performance improvements and bug fixes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change DNS Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change DNS",
+            "content": "Switch to a public DNS service like Google DNS (8.8.8.8) or Cloudflare (1.1.1.1) to potentially improve connection stability."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T04:12:16.269Z",
+      "updated": "2026-02-03T04:12:16.269Z",
+      "sourceUrl": "https://www.quora.com/If-you-have-enough-bandwidth-why-would-zoom-video-conferencing-be-so-choppy",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770091941637-734",
+    "title": "Regain Access to Locked Netflix Account",
+    "problemDescription": "You are locked out of your Netflix account due to suspicious activity or unauthorized access.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "netflix",
+      "account",
+      "locked",
+      "password",
+      "access"
+    ],
+    "steps": [
+      {
+        "title": "Reset Your Password",
+        "content": "Visit the Netflix password reset page and follow the instructions to reset your password."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Sign Out of All Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Sign Out of All Devices",
+            "content": "Visit the Netflix account settings page and select the 'Sign out of all devices' option to remove all active sessions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T04:12:21.637Z",
+      "updated": "2026-02-03T04:12:21.637Z",
+      "sourceUrl": "https://lifehacker.com/why-am-i-locked-out-of-my-netflix-account-1844560818",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770091979333-942",
+    "title": "Set Default Teams Meeting Settings on Android",
+    "problemDescription": "How to set Microsoft Teams default meeting settings to have video and microphone turned off by default on Android.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Teams",
+      "Android",
+      "meeting settings",
+      "video",
+      "microphone"
+    ],
+    "steps": [
+      {
+        "title": "Manually Turn Off Video and Microphone",
+        "content": "Before joining a meeting, ensure you select the option to turn off video and microphone on the screen that appears before you join the meeting. This setting should persist for subsequent meetings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Community Workaround: No Default Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Understand Current Limitations",
+            "content": "Currently, Microsoft Teams does not offer default settings to automatically turn off video and microphone for meetings on Android. Users have to manually turn them off before joining each meeting."
+          },
+          {
+            "title": "Automatic Mute for Large Meetings",
+            "content": "Teams will automatically mute you if there are 5 or more users already in the meeting."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T04:12:59.333Z",
+      "updated": "2026-02-03T04:12:59.333Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/240877/how-can-i-set-the-teams-default-meeting-settings-so-that-the-video-microphone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770091981190-795",
+    "title": "Bypass Emergency Number Block in Microsoft Teams Android",
+    "problemDescription": "Microsoft Teams on Android blocks chatting with a coworker whose internal phone number is an emergency number (e.g., 988).",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "Android",
+      "emergency number",
+      "chat block"
+    ],
+    "steps": [
+      {
+        "title": "Contact Microsoft Support",
+        "content": "Reach out to Microsoft Support and explain the issue. Provide details about the blocked internal phone number and request a solution or workaround."
+      },
+      {
+        "title": "Check for App Updates",
+        "content": "Ensure that your Microsoft Teams app is updated to the latest version, as updates may include fixes for such issues."
+      },
+      {
+        "title": "Use Alternative Communication",
+        "content": "If the issue persists, use alternative communication methods within Teams, such as calling or using a different chat platform temporarily."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change Internal Phone Number",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Request a New Internal Number",
+            "content": "Ask your IT department to assign a different internal phone number to the coworker, avoiding emergency numbers like 988 or 911."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T04:13:01.190Z",
+      "updated": "2026-02-03T04:13:01.190Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/257504/cant-chat-in-microsoft-teams-on-android-with-coworker-with-internal-phone-numbe",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770091982943-290",
+    "title": "Fix Soft-Bricked Android Device",
+    "problemDescription": "Your Android device is soft-bricked and cannot boot properly due to system errors.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "soft-bricked",
+      "recovery",
+      "firmware",
+      "ADB"
+    ],
+    "steps": [
+      {
+        "title": "Download Stock Firmware",
+        "content": "Visit the manufacturer's support page and download the stock firmware for your device model (Prestigio Multiphone 5451 DUO)."
+      },
+      {
+        "title": "Root Your Device",
+        "content": "Root your device to gain the necessary permissions to install a custom recovery."
+      },
+      {
+        "title": "Install Custom Recovery",
+        "content": "Use a tool like TWRP or CWM to install a custom recovery on your device."
+      },
+      {
+        "title": "Flash Stock Firmware",
+        "content": "Boot into recovery mode and flash the downloaded stock firmware."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: ADB Sideload",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable ADB Sideload",
+            "content": "Boot into recovery mode and select 'Apply update via ADB'."
+          },
+          {
+            "title": "Connect Device to PC",
+            "content": "Connect your device to a PC with ADB installed."
+          },
+          {
+            "title": "Sideload Firmware",
+            "content": "Use the command 'adb sideload <firmware.zip>' to sideload the firmware."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T04:13:02.943Z",
+      "updated": "2026-02-03T04:13:02.943Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/164069/my-device-is-soft-bricked-after-some-system-errors",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770091984582-487",
+    "title": "Fix Microsoft Authenticator Time Sync Issue",
+    "problemDescription": "The Microsoft Authenticator app cannot sync time, causing authentication failures.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "authenticator",
+      "time sync",
+      "android",
+      "authentication"
+    ],
+    "steps": [
+      {
+        "title": "Enable Automatic Date & Time",
+        "content": "Go to your Android device's Settings, then navigate to System > Date & Time. Ensure that 'Automatic date & time' and 'Automatic time zone' are turned on."
+      },
+      {
+        "title": "Check Time Zone Settings",
+        "content": "Verify that your time zone is set correctly in the Date & Time settings."
+      },
+      {
+        "title": "Restart the Device",
+        "content": "Restart your Android device to ensure all settings are applied correctly."
+      },
+      {
+        "title": "Reinstall the App",
+        "content": "If the issue persists, uninstall the Microsoft Authenticator app and reinstall it from the Google Play Store."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Time Adjustment",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Time Manually",
+            "content": "If automatic time sync is not working, manually set the correct date and time in your device's settings."
+          },
+          {
+            "title": "Verify Time Sync",
+            "content": "After setting the time manually, check if the Microsoft Authenticator app can now sync time correctly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T04:13:04.582Z",
+      "updated": "2026-02-03T04:13:04.582Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/251582/i-cannot-sync-time-with-microsoft-authentication-app",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770091986612-191",
+    "title": "Fix ADB Constantly Disconnecting",
+    "problemDescription": "ADB constantly disconnects and shows device offline.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "adb",
+      "disconnect",
+      "offline",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Free Internal Storage Space",
+        "content": "Ensure your Android device has sufficient internal storage space."
+      },
+      {
+        "title": "Restart ADB Server",
+        "content": "Open Command Prompt and navigate to the platform-tools directory. Run the following commands: `adb.exe kill-server` and then `adb.exe start-server`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable USB Selective Suspend",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Power Settings",
+            "content": "Go to Control Panel > Power Options > Change plan settings > Change advanced power settings."
+          },
+          {
+            "title": "Disable USB Selective Suspend",
+            "content": "Expand 'USB Settings' and then 'USB selective suspend setting'. Set it to 'Disabled' for both 'On battery' and 'Plugged In'."
+          }
+        ]
+      },
+      {
+        "title": "Replug USB Cable",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unplug and Replug USB",
+            "content": "Unplug the USB cable from your device and then replug it back in."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T04:13:06.612Z",
+      "updated": "2026-02-03T04:13:06.612Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/12491/adb-constantly-disconnects-shows-device-offline",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
