@@ -91811,5 +91811,432 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770122767221-350",
+    "title": "Fix Raspberry Pi Alexa Setup Script",
+    "problemDescription": "The setup script for Raspberry Pi Alexa isn't running correctly.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "raspberry pi",
+      "alexa",
+      "setup script",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Check File Permissions",
+        "content": "Ensure the setup.sh file has execute permissions. Run 'chmod +x setup.sh' in the terminal."
+      },
+      {
+        "title": "Verify JSON Configuration",
+        "content": "Double-check the config.json file for any syntax errors or missing parameters."
+      },
+      {
+        "title": "Run Script with Debugging",
+        "content": "Execute the script with debugging enabled by running 'sudo bash -x setup.sh config.json [-s 1234]'. This will provide more detailed output to help identify the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Dependencies",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update and Upgrade",
+            "content": "Run 'sudo apt-get update && sudo apt-get upgrade' to ensure all packages are up to date."
+          },
+          {
+            "title": "Reinstall Dependencies",
+            "content": "Reinstall any required dependencies by following the official installation guide for Raspberry Pi Alexa."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T12:46:07.221Z",
+      "updated": "2026-02-03T12:46:07.221Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/help-with-pi3b-alexa.3703068/latest",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770122770073-6",
+    "title": "Alexa Remote Not Working",
+    "problemDescription": "Alexa remote is not functioning properly with the device.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Alexa",
+      "remote",
+      "device",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check Batteries",
+        "content": "Ensure the batteries in the Alexa remote are not depleted. Replace them if necessary."
+      },
+      {
+        "title": "Reboot the Device",
+        "content": "Restart the Alexa device by unplugging it from the power source, waiting for 30 seconds, and then plugging it back in."
+      },
+      {
+        "title": "Re-pair the Remote",
+        "content": "Follow the instructions in the Alexa app to re-pair the remote with the device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Factory Reset the Device",
+            "content": "Perform a factory reset on the Alexa device through the Alexa app settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T12:46:10.073Z",
+      "updated": "2026-02-03T12:46:10.073Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/are-you-okay-with-these-issues.3656423/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770122799054-92",
+    "title": "Fix WhatsApp Web RAM/Swap Error",
+    "problemDescription": "WhatsApp Web shows an error about insufficient space, which is actually related to RAM or swap space on Linux systems.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "web",
+      "ram",
+      "swap",
+      "linux"
+    ],
+    "steps": [
+      {
+        "title": "Check RAM and Swap Usage",
+        "content": "Open a terminal and run the command `free -h` to check your RAM and swap usage."
+      },
+      {
+        "title": "Disable and Re-enable Swap",
+        "content": "If swap is full, run the commands `sudo swapoff -a` followed by `sudo swapon -a` to move swap contents to main memory."
+      },
+      {
+        "title": "Increase Swap Space",
+        "content": "If you frequently run out of swap space, consider increasing your swap space or adding more RAM."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reload the Page",
+            "content": "If the error appears, simply reload the WhatsApp Web page to temporarily resolve the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T12:46:39.054Z",
+      "updated": "2026-02-03T12:46:39.054Z",
+      "sourceUrl": "https://superuser.com/questions/1856709/whatsapp-web-your-computer-does-not-have-enough-space-for-whatsapp-to-run-ple",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770122806495-72",
+    "title": "Fix WhatsApp Web Portrait JPG Issue",
+    "problemDescription": "WhatsApp Web rejects portrait-oriented JPG files with an error message, while landscape-oriented files are accepted but distorted.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "web",
+      "jpg",
+      "portrait",
+      "orientation"
+    ],
+    "steps": [
+      {
+        "title": "Edit and Resave the Image",
+        "content": "Open the portrait-oriented JPG file in an image editor (e.g., Picasa, Photoshop, or any other editor), and save a copy of the file. This often resolves the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restart the Application",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Close and Reopen WhatsApp Web",
+            "content": "If the issue persists, try closing the WhatsApp Web application and reopening it. This has been known to resolve the problem in some cases."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T12:46:46.495Z",
+      "updated": "2026-02-03T12:46:46.495Z",
+      "sourceUrl": "https://superuser.com/questions/1188709/whatsapp-web-does-not-accept-jpg-file-in-portrait-orientation",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770122833533-462",
+    "title": "Fix Chrome Installation Conflict on Ubuntu",
+    "problemDescription": "Error occurs when trying to install Google Chrome due to conflicting Signed-By values in sources.list.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "ubuntu",
+      "install",
+      "conflict",
+      "signed-by"
+    ],
+    "steps": [
+      {
+        "title": "Remove Conflicting Opera Repository",
+        "content": "Open a terminal and navigate to the sources.list.d directory: `cd /etc/apt/sources.list.d/`"
+      },
+      {
+        "title": "Delete Opera Archive List",
+        "content": "Remove the conflicting opera-archive.list file: `sudo rm opera-archive.list`"
+      },
+      {
+        "title": "Download Google Chrome",
+        "content": "Download the Google Chrome .deb package using wget: `wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb`"
+      },
+      {
+        "title": "Install Google Chrome",
+        "content": "Install the downloaded package using dpkg: `sudo dpkg -i google-chrome-stable_current_amd64.deb`"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Alternative: Use APT with Correct Signed-By",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit Sources List",
+            "content": "Edit the sources.list file to correct the Signed-By value: `sudo nano /etc/apt/sources.list`"
+          },
+          {
+            "title": "Update APT",
+            "content": "Update the package list: `sudo apt update`"
+          },
+          {
+            "title": "Install Chrome",
+            "content": "Install Google Chrome using APT: `sudo apt install google-chrome-stable`"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T12:47:13.533Z",
+      "updated": "2026-02-03T12:47:13.533Z",
+      "sourceUrl": "https://askubuntu.com/questions/1527806/please-tell-me-how-to-solve-this-problem-cant-install-chrome-solved",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770122839637-752",
+    "title": "Fix Google Chrome Installation on Ubuntu",
+    "problemDescription": "Unable to install Google Chrome on Ubuntu due to missing dependencies or broken packages.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "ubuntu",
+      "google chrome",
+      "installation",
+      "apt",
+      "dpkg"
+    ],
+    "steps": [
+      {
+        "title": "Run Fix Broken Install Command",
+        "content": "Open a terminal and run the following command to fix broken packages and install missing dependencies: `sudo apt --fix-broken install`."
+      },
+      {
+        "title": "Install Google Chrome",
+        "content": "After running the fix command, try installing Google Chrome again using: `sudo dpkg -i google-chrome-stable_current_amd64.deb`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Install Missing Dependencies",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Package Lists",
+            "content": "Run `sudo apt-get update` to update the package lists."
+          },
+          {
+            "title": "Install Required Libraries",
+            "content": "Install the required libraries by running: `sudo apt-get install libgconf2-4 libnss3-1d libxss1`."
+          },
+          {
+            "title": "Retry Installation",
+            "content": "After installing the dependencies, retry the Chrome installation: `sudo dpkg -i google-chrome-stable_current_amd64.deb`."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Install libcurl3",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install libcurl3",
+            "content": "Run `sudo apt-get install libcurl3` to install the missing library."
+          },
+          {
+            "title": "Retry Installation",
+            "content": "After installing libcurl3, retry the Chrome installation: `sudo dpkg -i google-chrome-stable_current_amd64.deb`."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Upgrade System",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update and Upgrade System",
+            "content": "Run `sudo apt-get update` followed by `sudo apt-get upgrade` to update and upgrade your system."
+          },
+          {
+            "title": "Fix Broken Install",
+            "content": "Run `sudo apt --fix-broken install` to fix any broken packages."
+          },
+          {
+            "title": "Retry Installation",
+            "content": "After upgrading and fixing broken packages, retry the Chrome installation: `sudo dpkg -i google-chrome-stable_current_amd64.deb`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T12:47:19.637Z",
+      "updated": "2026-02-03T12:47:19.637Z",
+      "sourceUrl": "https://askubuntu.com/questions/220960/cannot-install-google-chrome-how-do-i-fix-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770122842282-724",
+    "title": "Fix Chrome Display Issues on Ubuntu",
+    "problemDescription": "Google Chrome is not displaying websites correctly on Ubuntu, while Firefox works fine.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "ubuntu",
+      "display",
+      "graphics",
+      "driver"
+    ],
+    "steps": [
+      {
+        "title": "Disable Hardware Acceleration",
+        "content": "Open Chrome, go to Settings > System, and toggle off 'Use hardware acceleration when available'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable GPU",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Launch Chrome with GPU Disabled",
+            "content": "Open a terminal and launch Chrome with the flag: `google-chrome --disable-gpu`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T12:47:22.282Z",
+      "updated": "2026-02-03T12:47:22.282Z",
+      "sourceUrl": "https://askubuntu.com/questions/1477735/google-chrome-not-displaying-websites-correctly",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770122855563-280",
+    "title": "Fix OnePlus 5 Battery Drain After 911 Bug Update",
+    "problemDescription": "OnePlus 5 users experiencing significant battery drain after installing the 911 emergency call bug fix update.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "OnePlus 5",
+      "battery drain",
+      "software update",
+      "emergency call"
+    ],
+    "steps": [
+      {
+        "title": "Wait for Official Fix",
+        "content": "Since the issue is acknowledged by OnePlus, wait for an official software update that addresses the battery drain problem."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Background Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Review Background Apps",
+            "content": "Check for any apps running in the background that might be causing excessive battery usage."
+          },
+          {
+            "title": "Force Stop Unnecessary Apps",
+            "content": "Force stop or uninstall any apps that are not essential and might be contributing to the battery drain."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open the Settings app on your OnePlus 5."
+          },
+          {
+            "title": "Reset Network Settings",
+            "content": "Navigate to System > Reset options > Reset Wi-Fi, mobile & Bluetooth. This can sometimes resolve underlying issues causing battery drain."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T12:47:35.563Z",
+      "updated": "2026-02-03T12:47:35.563Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/oneplus-5-emergency-call-bug-news/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
