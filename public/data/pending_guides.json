@@ -95825,5 +95825,326 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770154248198-236",
+    "title": "Fix iOS Messages Notifications for One Contact",
+    "problemDescription": "Notifications for messages from a specific contact are not working on iOS.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "messages",
+      "notifications",
+      "contact"
+    ],
+    "steps": [
+      {
+        "title": "Check for Hidden Alerts",
+        "content": "Open the Messages app, find the sender in the list that you are not getting notifications from, and look for a small moon crescent icon to the left of their name. Touch and hold the sender's name and slide it to the left to ensure the 'Hide Alerts' setting is not enabled."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Delete and Recreate Contact",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete the Contact",
+            "content": "Go to the Contacts app, find the problematic contact, and delete it."
+          },
+          {
+            "title": "Recreate the Contact",
+            "content": "Add the contact back to your Contacts app with the same details."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Force Restart",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force Restart Your iPhone",
+            "content": "Perform a force restart on your iPhone. The method varies depending on your iPhone model. For most models, quickly press and release the Volume Up button, then the Volume Down button, and finally press and hold the Side button until the Apple logo appears."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T21:30:48.198Z",
+      "updated": "2026-02-03T21:30:48.198Z",
+      "sourceUrl": "https://discussions.apple.com/thread/251172655",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770154286031-388",
+    "title": "Fix Windows 11 BSOD on Mid-2011 iMac",
+    "problemDescription": "Windows 11 blue-screens due to Intel Graphics driver issues on Mid-2011 iMac.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "bsod",
+      "imac",
+      "intel graphics",
+      "driver"
+    ],
+    "steps": [
+      {
+        "title": "Boot into Safe Mode",
+        "content": "Restart your iMac and hold down the Shift key to boot into Safe Mode."
+      },
+      {
+        "title": "Disable Intel Graphics Driver",
+        "content": "Go to Device Manager, expand 'Display adapters', right-click on the Intel Graphics driver, and select 'Disable device'."
+      },
+      {
+        "title": "Prevent Automatic Driver Updates",
+        "content": "Go to Settings > Windows Update > Advanced options > Pause updates for 7 days to prevent Windows from automatically installing the problematic driver."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use OpenCore Legacy Patcher",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download OpenCore Legacy Patcher",
+            "content": "Download the OpenCore Legacy Patcher from the official GitHub repository."
+          },
+          {
+            "title": "Follow Installation Guide",
+            "content": "Follow the installation guide provided in the OpenCore Legacy Patcher documentation to patch your system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T21:31:26.031Z",
+      "updated": "2026-02-03T21:31:26.031Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/448340/installing-windows-11-on-mid-2011-imac-full-install-not-boot-camp-but-it-bso",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770154291236-518",
+    "title": "Reset iCloud Drive in Windows 11 Without Losing Files",
+    "problemDescription": "iCloud Drive on Windows 11 is malfunctioning and needs to be reset without losing files.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "icloud",
+      "windows 11",
+      "reset",
+      "files"
+    ],
+    "steps": [
+      {
+        "title": "Backup Files",
+        "content": "Ensure all important files in your iCloud Drive are backed up to an external drive or another cloud service."
+      },
+      {
+        "title": "Uninstall iCloud for Windows",
+        "content": "Go to 'Settings' > 'Apps' > 'Installed Apps', find 'iCloud', and click 'Uninstall'."
+      },
+      {
+        "title": "Delete iCloud Folders",
+        "content": "Manually delete the iCloud Drive folders from your system, typically located in the 'File Explorer' under 'iCloud Drive'."
+      },
+      {
+        "title": "Reinstall iCloud for Windows",
+        "content": "Download the latest version of iCloud for Windows from the Apple website and install it."
+      },
+      {
+        "title": "Sign In and Restore Files",
+        "content": "Sign in with your Apple ID and allow iCloud Drive to sync. Your files should reappear once the sync is complete."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use iCloud.com",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access iCloud.com",
+            "content": "Go to iCloud.com and sign in with your Apple ID."
+          },
+          {
+            "title": "Download Files",
+            "content": "Download all important files from iCloud Drive to your computer."
+          },
+          {
+            "title": "Reset iCloud Settings",
+            "content": "Follow the steps to uninstall and reinstall iCloud for Windows as described in the main method."
+          },
+          {
+            "title": "Upload Files",
+            "content": "After reinstalling, upload the downloaded files back to iCloud Drive."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T21:31:31.236Z",
+      "updated": "2026-02-03T21:31:31.236Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/478554/how-to-reset-icloud-drive-in-windows-11-without-losing-files",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770154304698-920",
+    "title": "Fix USB Device Not Recognized",
+    "problemDescription": "USB device is not recognized by the computer, specifically an iPhone.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "usb",
+      "device",
+      "iphone",
+      "driver",
+      "itunes"
+    ],
+    "steps": [
+      {
+        "title": "Update iTunes",
+        "content": "Ensure iTunes is updated to the latest version."
+      },
+      {
+        "title": "Check the USB Cable",
+        "content": "Try a different USB cable to rule out cable issues."
+      },
+      {
+        "title": "Verify Apple Mobile Device Support",
+        "content": "Ensure Apple Mobile Device Support is installed."
+      },
+      {
+        "title": "Restart Apple Mobile Device Service",
+        "content": "Restart the Apple Mobile Device Service."
+      },
+      {
+        "title": "Verify Apple Mobile Device USB Driver",
+        "content": "Ensure the Apple Mobile Device USB Driver is installed."
+      },
+      {
+        "title": "Check for Third-Party Software Conflicts",
+        "content": "Disable any third-party software that might interfere with USB recognition."
+      },
+      {
+        "title": "Reboot Devices",
+        "content": "Reboot both the iPhone and the computer."
+      },
+      {
+        "title": "Connect iPhone While Off",
+        "content": "Turn off the iPhone, connect it to the computer, and see if it activates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Driver",
+            "content": "Click the icon indicating USB is not recognized, then uninstall the driver."
+          },
+          {
+            "title": "Remove Device",
+            "content": "Remove the device from the computer."
+          },
+          {
+            "title": "Reconnect Device",
+            "content": "Reconnect the device; the driver will automatically install."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall OS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall OS",
+            "content": "Reinstall the operating system on the PC with the latest version of Windows (at least Windows 7)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T21:31:44.698Z",
+      "updated": "2026-02-03T21:31:44.698Z",
+      "sourceUrl": "https://discussions.apple.com/thread/5586501",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770154307833-509",
+    "title": "Fix External USB Accessories Not Working on Mac",
+    "problemDescription": "External USB accessories are not working on a Mac running macOS 14.8.2.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "usb",
+      "macos",
+      "accessories",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Rotate the USB-C Connector",
+        "content": "Try rotating the USB-C connector 180º upside down to see if it makes any difference with your accessories."
+      },
+      {
+        "title": "Disconnect All Devices",
+        "content": "Disconnect all external devices from the laptop."
+      },
+      {
+        "title": "Connect One Device",
+        "content": "Connect one single device directly to the laptop to see if it works."
+      },
+      {
+        "title": "Check System Profiler",
+        "content": "If the device does not work, check the System Profiler to see if the physical device is even seen by the system. Check the USB and Thunderbolt sections. The System Profiler can be accessed by Option-clicking the Apple menu and selecting the top item."
+      },
+      {
+        "title": "Try Another USB-C Port",
+        "content": "Try connecting that device to the other USB-C port."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Perform a Clean Install of macOS (Intel Macs Only)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Erase the SSD",
+            "content": "Erase the whole physical SSD."
+          },
+          {
+            "title": "Install macOS",
+            "content": "Perform a clean install of macOS."
+          },
+          {
+            "title": "Test the Clean Install",
+            "content": "Test the clean install before installing any third-party software and before restoring from a backup."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T21:31:47.833Z",
+      "updated": "2026-02-03T21:31:47.833Z",
+      "sourceUrl": "https://discussions.apple.com/thread/256206820",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
