@@ -89149,5 +89149,586 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770101051081-1",
+    "title": "Fix Windows 11 Notifications Not Showing Up",
+    "problemDescription": "Windows 11 notifications are not appearing, even with Do Not Disturb turned off.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "notifications",
+      "taskbar"
+    ],
+    "steps": [
+      {
+        "title": "Check Notification Settings",
+        "content": "Go to Taskbar Settings > Notifications and ensure the 'Show Notifications' option is checked."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Focus Assist",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Focus Assist Settings",
+            "content": "Go to Settings > System > Focus Assist."
+          },
+          {
+            "title": "Turn Off Focus Assist",
+            "content": "Ensure Focus Assist is turned off and all options are unchecked."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T06:44:11.081Z",
+      "updated": "2026-02-03T06:44:11.081Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/windows-11-notifications-not-showing-up.3867447/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770101056742-348",
+    "title": "Fix Gmail Not Receiving Emails from Certain Domains",
+    "problemDescription": "Gmail is not receiving emails from specific domains, and the issue is not due to spam filters or storage limits.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "email",
+      "domains",
+      "notifications"
+    ],
+    "steps": [
+      {
+        "title": "Check Notification Settings",
+        "content": "Go to System > Notifications and verify the configuration settings."
+      },
+      {
+        "title": "Review Focus Settings",
+        "content": "Look at the Focus settings to ensure they are not filtering out emails from certain domains."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Email Client",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try Outlook or ProtonMail",
+            "content": "Use a different email client like Outlook or ProtonMail to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T06:44:16.742Z",
+      "updated": "2026-02-03T06:44:16.742Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/gmail-is-not-getting-messages-from-certain-domains.3856082/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770101065356-60",
+    "title": "Fix Repeating Toast Notifications in Windows",
+    "problemDescription": "Windows 10 is showing past toast notifications again, one after another.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "notifications",
+      "toast",
+      "repeating"
+    ],
+    "steps": [
+      {
+        "title": "Reset Windows Update Components",
+        "content": "Open Command Prompt as Administrator and run the following commands one by one: net stop wuauserv, net stop cryptSvc, net stop bits, net stop msiserver, ren C:\\Windows\\SoftwareDistribution SoftwareDistribution.old, ren C:\\Windows\\System32\\catroot2 catroot2.old, net start wuauserv, net start cryptSvc, net start bits, net start msiserver. Then restart your computer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable and Re-enable Notifications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Notifications",
+            "content": "Go to Settings -> Notifications and actions. Turn off all notifications for all applications or selected categories."
+          },
+          {
+            "title": "Re-enable Notifications",
+            "content": "After a few minutes, go back to Settings -> Notifications and actions and turn the notifications back on."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Group Policy",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Group Policy Editor",
+            "content": "Press Win + R, type gpedit.msc, and press Enter."
+          },
+          {
+            "title": "Navigate to Notification Settings",
+            "content": "Go to Computer Configuration -> Administrative Templates -> Windows Components -> Notifications."
+          },
+          {
+            "title": "Disable Notifications",
+            "content": "Double-click on 'Turn off notifications' and set it to Enabled. Click Apply and then OK."
+          },
+          {
+            "title": "Restart Your Computer",
+            "content": "Restart your computer for the changes to take effect."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T06:44:25.356Z",
+      "updated": "2026-02-03T06:44:25.356Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/windows-showing-past-toast-notifications-again.3585186/post-21642609",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770101085898-755",
+    "title": "Fix Microphone Playing Back All Sound",
+    "problemDescription": "Microphone or headset is playing back all sound, causing an echo or feedback.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "microphone",
+      "sound",
+      "echo",
+      "feedback",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Access Sound Settings",
+        "content": "Open the Control Panel and select 'Sound'."
+      },
+      {
+        "title": "Select Recording Tab",
+        "content": "Go to the 'Recording' tab and click on the active microphone."
+      },
+      {
+        "title": "Open Microphone Properties",
+        "content": "Click on the 'Properties' button to open the microphone properties."
+      },
+      {
+        "title": "Disable Listen to This Device",
+        "content": "In the 'Listen' tab, uncheck the box for 'Listen to this device' and click 'OK'."
+      },
+      {
+        "title": "Test the Microphone",
+        "content": "Retest the microphone to see if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Realtek Audio Driver Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Realtek Audio Driver",
+            "content": "Download and install the latest Realtek Audio Driver from the manufacturer's website."
+          },
+          {
+            "title": "Access Realtek Audio Console",
+            "content": "Open the Realtek Audio Console and navigate to the microphone settings."
+          },
+          {
+            "title": "Disable Feedback",
+            "content": "Look for any settings related to microphone feedback and disable them."
+          },
+          {
+            "title": "Test the Microphone",
+            "content": "Retest the microphone to see if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T06:44:45.898Z",
+      "updated": "2026-02-03T06:44:45.898Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/microphone-playing-back-all-sound.3797645/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770101088775-514",
+    "title": "Enable PWM Mode for Fan Control",
+    "problemDescription": "Fans not responding to speed adjustments due to incorrect mode settings.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "fan",
+      "PWM",
+      "speed control",
+      "robotics"
+    ],
+    "steps": [
+      {
+        "title": "Access Fan Settings",
+        "content": "Open the control software or BIOS settings for your fan system."
+      },
+      {
+        "title": "Select PWM Mode",
+        "content": "Locate the fan control settings and select PWM mode instead of DC mode."
+      },
+      {
+        "title": "Configure Fan Curves",
+        "content": "Set custom fan curves to define when the fan should spin up based on temperature or other triggers."
+      },
+      {
+        "title": "Save and Apply Settings",
+        "content": "Save the new settings and exit the control software or BIOS."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Connections",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect Connections",
+            "content": "Ensure all fan cables are properly connected to the correct headers on the motherboard."
+          },
+          {
+            "title": "Verify Power Supply",
+            "content": "Check that the power supply is providing adequate power to the fan system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T06:44:48.775Z",
+      "updated": "2026-02-03T06:44:48.775Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/fans-recommendation-problems-with-bluetooth.3725704/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770101105166-328",
+    "title": "Fix Windows 11 Lag and Stutter",
+    "problemDescription": "Windows 11 system experiencing lag and stuttering, especially during gaming.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "lag",
+      "stutter",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Power Profile Settings",
+        "content": "Go to Control Panel > Power Options > Change plan settings > Change advanced power settings. Under the 'Processor power management' section, set the 'Minimum processor state' to 10% for the 'Plugged in' setting."
+      },
+      {
+        "title": "Disable Link State Power Management",
+        "content": "In the same advanced power settings, navigate to 'PCI Express' > 'Link State Power Management' and set it to 'Off'."
+      },
+      {
+        "title": "Disable USB Selective Suspend",
+        "content": "Still in advanced power settings, go to 'USB settings' > 'USB selective suspend setting' and set it to 'Disabled'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Bluetooth Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Bluetooth Drivers",
+            "content": "Go to Device Manager, find your Bluetooth adapter, right-click and select 'Update driver'. Follow the prompts to update the driver to the latest version."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a USB Bluetooth Dongle",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Built-in Bluetooth",
+            "content": "Go to Device Manager, find your built-in Bluetooth adapter, right-click and select 'Disable device'."
+          },
+          {
+            "title": "Connect USB Bluetooth Dongle",
+            "content": "Plug in a USB Bluetooth dongle with the latest drivers installed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T06:45:05.166Z",
+      "updated": "2026-02-03T06:45:05.166Z",
+      "sourceUrl": "https://www.howtogeek.com/this-one-free-app-solved-all-my-windows-11-lag-and-stutter/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770101109118-367",
+    "title": "Fix Windows 11 Crashes",
+    "problemDescription": "Windows 11 PC keeps crashing frequently.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "crash",
+      "diagnose",
+      "drivers",
+      "memory"
+    ],
+    "steps": [
+      {
+        "title": "Update Device Drivers",
+        "content": "Visit the manufacturer's website and download the latest drivers for your device."
+      },
+      {
+        "title": "Reinstall Device Drivers",
+        "content": "Open the Start Menu, search for and launch Device Manager. Find the problematic device, right-click and select 'Uninstall Device'."
+      },
+      {
+        "title": "Run Memory Diagnostic",
+        "content": "Open the Start Menu, search for 'Windows Memory Diagnostic', and run the tool. Choose to run the test on the next restart."
+      },
+      {
+        "title": "Boot into Safe Mode",
+        "content": "Open the Start Menu, shift-click the Restart button to access the Windows Recovery Environment. Navigate to Troubleshoot > Advanced Options > Startup Settings, then select 'Restart'. Press the number corresponding to 'Safe Mode'."
+      },
+      {
+        "title": "Use DDU to Remove Drivers",
+        "content": "In Safe Mode, open DDU, select the driver you want to remove, and click 'Clean and restart'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows Memory Diagnostic Immediately",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Memory Diagnostic Immediately",
+            "content": "Open the Start Menu, search for 'Windows Memory Diagnostic', and choose to run the test immediately. Note that your PC will be unusable during the test."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T06:45:09.118Z",
+      "updated": "2026-02-03T06:45:09.118Z",
+      "sourceUrl": "https://www.howtogeek.com/first-things-do-when-windows-crashes/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770101115593-971",
+    "title": "Customize Windows 11 Taskbar Alignment",
+    "problemDescription": "Windows 11 defaults to center-aligned taskbar, differing from previous Windows versions.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "taskbar",
+      "alignment",
+      "customization"
+    ],
+    "steps": [
+      {
+        "title": "Change Taskbar Alignment",
+        "content": "Right-click on the taskbar and select 'Taskbar settings'. Change the alignment from 'Center' to 'Left'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Third-Party Tools for More Customization",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install ExplorerPatcher, Open-Shell, or RetroBar",
+            "content": "These tools provide additional customization options for the Start menu and taskbar, making Windows 11 more usable."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T06:45:15.593Z",
+      "updated": "2026-02-03T06:45:15.593Z",
+      "sourceUrl": "https://www.howtogeek.com/switched-to-windows-11-and-miss-windows-10-features/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770101134911-54",
+    "title": "Fix Pixel App Management Issue",
+    "problemDescription": "Pixel phones may close apps unexpectedly, limiting multitasking.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel",
+      "android",
+      "app management",
+      "multitasking"
+    ],
+    "steps": [
+      {
+        "title": "Check for Software Updates",
+        "content": "Ensure your Pixel phone is running the latest software version. Go to Settings > System > System update."
+      },
+      {
+        "title": "Clear App Cache",
+        "content": "Go to Settings > Apps & notifications > See all apps. Select the problematic app, then tap Storage & cache > Clear Cache."
+      },
+      {
+        "title": "Adjust Developer Options",
+        "content": "Enable Developer Options by going to Settings > About phone > Build number (tap seven times). Then, go to Developer Options and disable 'Don't keep activities'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Third-Party Launchers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Third-Party Launcher",
+            "content": "Download a launcher like Nova Launcher or Lawnchair from the Google Play Store."
+          },
+          {
+            "title": "Set as Default Launcher",
+            "content": "After installation, set the launcher as default when prompted or go to Settings > Apps & notifications > Default apps > Home app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T06:45:34.911Z",
+      "updated": "2026-02-03T06:45:34.911Z",
+      "sourceUrl": "https://www.makeuseof.com/why-i-keep-coming-back-to-pixel/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770101139522-90",
+    "title": "Enable Flip to Shhh on Google Pixel",
+    "problemDescription": "Enable Do Not Disturb mode by flipping your Google Pixel phone face-down.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "google pixel",
+      "do not disturb",
+      "flip to shhh"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Open the Settings app on your Google Pixel phone."
+      },
+      {
+        "title": "Navigate to Gestures",
+        "content": "Scroll down and tap on 'System' then 'Gestures'."
+      },
+      {
+        "title": "Enable Flip to Shhh",
+        "content": "Toggle on the 'Flip to Shhh' feature."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Quick Tap for Shortcuts",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Open the Settings app on your Google Pixel phone."
+          },
+          {
+            "title": "Navigate to Gestures",
+            "content": "Scroll down and tap on 'System' then 'Gestures'."
+          },
+          {
+            "title": "Enable Quick Tap",
+            "content": "Toggle on the 'Quick Tap' feature and set your preferred shortcut."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T06:45:39.522Z",
+      "updated": "2026-02-03T06:45:39.522Z",
+      "sourceUrl": "https://www.makeuseof.com/4-google-pixel-tricks-that-change-how-i-use-my-phone/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770101155849-395",
+    "title": "Fix Blurry Fonts on External Monitor (M1 Mac Mini)",
+    "problemDescription": "Fonts appear blurry on an external monitor connected to an M1 Mac Mini.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "blurry fonts",
+      "external monitor",
+      "M1 Mac Mini",
+      "display settings"
+    ],
+    "steps": [
+      {
+        "title": "Switch to DisplayPort",
+        "content": "Connect your external monitor using a DisplayPort connection instead of HDMI. This can significantly improve font clarity."
+      },
+      {
+        "title": "Use BetterDisplay",
+        "content": "Download and install BetterDisplay, a third-party tool that can help optimize display settings for external monitors."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Display Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Hi-DPI Resolutions",
+            "content": "Hold the Alt key while clicking on 'Scaled' in the Display System Preferences to access hi-dpi resolutions."
+          },
+          {
+            "title": "Logout and Login",
+            "content": "After making changes to the display settings, log out and log back in to apply the changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T06:45:55.849Z",
+      "updated": "2026-02-03T06:45:55.849Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/442167/how-to-fix-blurry-fonts-on-external-monitor-m1-mac-mini",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
