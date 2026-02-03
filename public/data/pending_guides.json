@@ -91402,5 +91402,414 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770118326094-697",
+    "title": "Fix iCloud Mail Not Working with Outlook 365",
+    "problemDescription": "iCloud mail account fails to sync or send/receive emails in Outlook 365.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "iCloud",
+      "Outlook 365",
+      "email",
+      "sync",
+      "two-factor authentication"
+    ],
+    "steps": [
+      {
+        "title": "Check Two-Factor Authentication",
+        "content": "Ensure that two-factor authentication is enabled for your iCloud account. If it is, generate an App-Specific Password from your Apple ID settings."
+      },
+      {
+        "title": "Configure Outlook with App-Specific Password",
+        "content": "Use the generated App-Specific Password to sign into your iCloud account in Outlook 365."
+      },
+      {
+        "title": "Verify Server Settings",
+        "content": "Ensure that the incoming and outgoing server settings for your iCloud account in Outlook 365 are correct. Refer to the official iCloud email settings for Outlook."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Office 365 and iCloud",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Office 365",
+            "content": "Uninstall Office 365 from your computer."
+          },
+          {
+            "title": "Uninstall iCloud",
+            "content": "Uninstall iCloud from your computer."
+          },
+          {
+            "title": "Reinstall Office 365",
+            "content": "Reinstall Office 365 from the official Microsoft website."
+          },
+          {
+            "title": "Reinstall iCloud",
+            "content": "Reinstall iCloud from the official Apple website."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T11:32:06.094Z",
+      "updated": "2026-02-03T11:32:06.094Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/all/icloud-mail-not-working-with-outlook-365/5a145e93-1287-4202-a603-844feabc0830",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770118331011-328",
+    "title": "Fix Unsupported Browser Error in Office 365 Outlook",
+    "problemDescription": "Office 365 Outlook not opening due to an unsupported browser error.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "browser",
+      "outlook",
+      "office 365",
+      "unsupported"
+    ],
+    "steps": [
+      {
+        "title": "Upgrade to Microsoft Edge",
+        "content": "Download and install the latest version of Microsoft Edge from the official Microsoft website."
+      },
+      {
+        "title": "Clear Browser Cache",
+        "content": "Clear your browser cache and cookies to ensure a clean start."
+      },
+      {
+        "title": "Update Browser",
+        "content": "If you prefer to use a different browser, ensure it is updated to the latest version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Outlook Desktop App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Outlook Desktop App",
+            "content": "Download and install the Outlook desktop application from the Microsoft Office website."
+          },
+          {
+            "title": "Sign In",
+            "content": "Sign in with your Office 365 credentials to access your emails and calendar."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T11:32:11.011Z",
+      "updated": "2026-02-03T11:32:11.011Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/all/please-help-with-this-error-message-in-office-365/0893e5ee-4368-4a8a-b524-07831e1c5e91",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770118340783-188",
+    "title": "Fix Frozen Roku Remote",
+    "problemDescription": "Your Roku remote is frozen and unresponsive.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "roku",
+      "remote",
+      "frozen",
+      "unresponsive"
+    ],
+    "steps": [
+      {
+        "title": "Turn off the Roku device",
+        "content": "Turn off your Roku device."
+      },
+      {
+        "title": "Unplug the power cord",
+        "content": "Unplug the power cord from the back of the Roku device and the wall outlet."
+      },
+      {
+        "title": "Reconnect the power cord",
+        "content": "Plug the power cord back into the wall outlet, then wait a few seconds before plugging it into the back of your Roku device."
+      },
+      {
+        "title": "Reset the remote",
+        "content": "Press and hold the Power button on your Roku remote for about 15 seconds, until the LED light on the front of the remote starts blinking rapidly."
+      },
+      {
+        "title": "Verify the reset",
+        "content": "The LED light on your remote will blink twice to let you know that it's been reset."
+      },
+      {
+        "title": "Test the remote",
+        "content": "Test your remote by pressing any button to see if it's working."
+      },
+      {
+        "title": "Turn on the Roku device",
+        "content": "Turn on your Roku device and try using the remote again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use an Ethernet to HDMI adaptor",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase an adaptor",
+            "content": "Buy an Ethernet to HDMI adaptor from a reliable source like Amazon."
+          },
+          {
+            "title": "Connect the adaptor",
+            "content": "Connect the adaptor to your Roku device and your internet router."
+          },
+          {
+            "title": "Reboot occasionally",
+            "content": "Reboot your Roku device occasionally to maintain performance."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for updates and network issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update your device",
+            "content": "Make sure all updates for your Roku device are current."
+          },
+          {
+            "title": "Check device support",
+            "content": "Ensure your device is still supported (most are, but some older models are not)."
+          },
+          {
+            "title": "Verify internet network",
+            "content": "Make sure your internet network is working properly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T11:32:20.783Z",
+      "updated": "2026-02-03T11:32:20.783Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-restart-my-Roku-device-when-its-freezing-or-running-slowly",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770118347550-981",
+    "title": "Roku Keeps Turning Off and On",
+    "problemDescription": "Roku device repeatedly turns off and on unexpectedly.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Roku",
+      "power",
+      "turning off",
+      "USB"
+    ],
+    "steps": [
+      {
+        "title": "Check Power Source",
+        "content": "Ensure your Roku is not plugged into a USB port on your TV, as this can cause power issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use a Dedicated Power Adapter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect to a Wall Outlet",
+            "content": "Plug your Roku into a dedicated power adapter connected to a wall outlet for stable power supply."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T11:32:27.550Z",
+      "updated": "2026-02-03T11:32:27.550Z",
+      "sourceUrl": "https://www.quora.com/What-are-some-common-problems-people-sometimes-have-in-attempting-to-turn-on-their-Roku",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770118360347-593",
+    "title": "Fix Google Play Store Issues",
+    "problemDescription": "Common problems with the Google Play Store, such as error codes, update issues, or installation problems.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "google play store",
+      "android",
+      "error codes",
+      "app installation"
+    ],
+    "steps": [
+      {
+        "title": "Use Error Codes & Fixes App",
+        "content": "Download and use the Error Codes & Fixes app to diagnose and resolve specific error codes. Input the error code you see, and the app will display potential fixes."
+      },
+      {
+        "title": "Uninstall and Reinstall the Play Store App",
+        "content": "Go to Settings > Apps > Google Play Store. Tap on 'Uninstall updates' to revert to the factory version. If the issue persists, consider sideloading the latest Play Store APK from a trusted source like APKMirror."
+      },
+      {
+        "title": "Refresh Your Google Account",
+        "content": "Go to Settings > Accounts. Select the problematic Google account and tap 'Remove account'. Re-add the account to refresh it. Note that this will remove synced data from your device."
+      },
+      {
+        "title": "Switch Between Wi-Fi and Mobile Data",
+        "content": "If you're having trouble installing apps over Wi-Fi, switch to mobile data and vice versa. This can help diagnose network-specific issues."
+      },
+      {
+        "title": "Disable VPN",
+        "content": "If you use a VPN, disable it temporarily as it can cause issues with Play Store downloads."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Play Store Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Open the Play Store app, go to Settings > About > Play Store version. If an update is available, install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T11:32:40.347Z",
+      "updated": "2026-02-03T11:32:40.347Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/4-simple-fixes-google-play-store-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770118363573-445",
+    "title": "Fix Screen Not Turning Off During Calls",
+    "problemDescription": "The phone screen doesn't turn off during calls due to a faulty or covered proximity sensor.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "screen",
+      "proximity sensor",
+      "calls"
+    ],
+    "steps": [
+      {
+        "title": "Clean the Proximity Sensor",
+        "content": "Wipe the proximity sensor with a clean, dry cloth. The sensor is typically located at the top of the smartphone near the front camera."
+      },
+      {
+        "title": "Adjust Protective Glass or Case",
+        "content": "Check if your protective glass or phone case is covering the proximity sensor. Adjust or remove them to ensure the sensor is not obstructed."
+      },
+      {
+        "title": "Restart Your Phone",
+        "content": "Restart your phone to see if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable All Sensors",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open the Settings app on your Android device."
+          },
+          {
+            "title": "Navigate to Accessibility",
+            "content": "Go to Accessibility settings."
+          },
+          {
+            "title": "Turn Off Proximity Sensor",
+            "content": "Look for an option to turn off the proximity sensor or all sensors. This is a temporary fix and may require a technician for a permanent solution."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T11:32:43.573Z",
+      "updated": "2026-02-03T11:32:43.573Z",
+      "sourceUrl": "https://www.makeuseof.com/annoying-android-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770118416240-489",
+    "title": "Fix Mail.app Not Responding with Gmail Sync",
+    "problemDescription": "Mail.app becomes unresponsive when syncing with a Gmail account in OS X Yosemite.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "mail.app",
+      "gmail",
+      "sync",
+      "unresponsive",
+      "macos"
+    ],
+    "steps": [
+      {
+        "title": "Reset IMAP Labels in Gmail",
+        "content": "Go to the Gmail web console and turn off all 'Show in IMAP' label settings."
+      },
+      {
+        "title": "Enable Only 'All Mail' Label",
+        "content": "Add back only the 'All Mail' label in the 'Show in IMAP' settings."
+      },
+      {
+        "title": "Restart Mail.app",
+        "content": "Close and reopen Mail.app."
+      },
+      {
+        "title": "Re-enable the Gmail Account",
+        "content": "Go to Mail.app preferences and re-enable the Gmail account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable All but Inbox IMAP Folders",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable IMAP Folders",
+            "content": "In the Gmail web console, disable all IMAP folders except the Inbox."
+          },
+          {
+            "title": "Restart Mail.app",
+            "content": "Close and reopen Mail.app."
+          },
+          {
+            "title": "Re-enable the Gmail Account",
+            "content": "Go to Mail.app preferences and re-enable the Gmail account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T11:33:36.240Z",
+      "updated": "2026-02-03T11:33:36.240Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/166804/mail-not-responding-when-syncing-with-google-apps-gmail-account-in-os-x-yosemite",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
