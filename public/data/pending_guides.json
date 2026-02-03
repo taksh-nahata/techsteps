@@ -92462,5 +92462,767 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770130503086-710",
+    "title": "Fix Android Emergency Calls Only",
+    "problemDescription": "Your Android phone displays 'Emergency Calls Only' and cannot make regular calls.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "emergency calls",
+      "SIM",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Phone",
+        "content": "Long-press the power button and select 'Reboot' from the menu. If this doesn't work, check for alternative restart methods."
+      },
+      {
+        "title": "Check Airplane Mode",
+        "content": "Go to Settings > Network & Internet and ensure Airplane Mode is turned off."
+      },
+      {
+        "title": "Verify SIM Card",
+        "content": "Go to Settings > Connections > Mobile Networks or Settings > Network & Internet > SIMs. Select your SIM and ensure it's toggled on."
+      },
+      {
+        "title": "Clear SIM Toolkit Cache",
+        "content": "Go to Settings > Apps > SIM Toolkit. Tap 'Storage' and then 'Clear Cache'. Restart your phone."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Network Coverage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Move to a Different Location",
+            "content": "Try moving to an area with better network coverage to see if the issue resolves."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T14:55:03.086Z",
+      "updated": "2026-02-03T14:55:03.086Z",
+      "sourceUrl": "https://www.howtogeek.com/how-to-fix-an-android-phone-that-says-emergency-calls-only/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770130508730-818",
+    "title": "Fix System UI Isn't Responding on Android",
+    "problemDescription": "The System UI on your Android device is not responding, causing issues with launching or using apps.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "system ui",
+      "error",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Android Phone",
+        "content": "Press and hold the Power button, then choose 'Restart' to reboot your phone. This can fix minor glitches causing the System UI to freeze."
+      },
+      {
+        "title": "Uninstall Suspicious Apps",
+        "content": "Open your app drawer, find the suspicious app, tap and hold on it, then choose 'Uninstall'. Confirm the action and restart your phone."
+      },
+      {
+        "title": "Reset Your Android Device",
+        "content": "As a last resort, back up your important files and reset your phone to factory settings. This will wipe all settings and stored data, allowing you to start fresh."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Problematic Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall and Reinstall the App",
+            "content": "Go to Settings > Apps, find the problematic app, tap on it, and select 'Uninstall'. Then, reinstall the app from the Google Play Store."
+          }
+        ]
+      },
+      {
+        "title": "Roll Back Google App Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Updates",
+            "content": "Go to Settings > Apps, find the Google app, tap on it, and select 'Uninstall updates'. This can resolve issues caused by recent updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T14:55:08.730Z",
+      "updated": "2026-02-03T14:55:08.730Z",
+      "sourceUrl": "https://www.howtogeek.com/894909/how-to-fix-a-system-ui-isnt-responding-error-on-android/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770130511295-530",
+    "title": "Android Phone Not Charging",
+    "problemDescription": "Android phone not responding to charging attempts.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "phone",
+      "charging",
+      "not charging"
+    ],
+    "steps": [
+      {
+        "title": "Reboot Your Phone",
+        "content": "Press the power button until the Android power menu appears. Tap 'Restart' and wait for the device to power off and on. Plug in the phone and check if it begins charging."
+      },
+      {
+        "title": "Check Your Power Adapter and Cable",
+        "content": "Ensure the power adapter and cable are functioning properly. Try using a different adapter or cable to see if the issue persists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Alternative Reboot Method",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force Restart",
+            "content": "If the power menu does not appear, try holding the power button for a longer duration or use a combination of buttons (e.g., power + volume down) to force a restart."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T14:55:11.295Z",
+      "updated": "2026-02-03T14:55:11.295Z",
+      "sourceUrl": "https://www.howtogeek.com/android-phone-not-charging/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770130531082-710",
+    "title": "Fix Microsoft Teams Crashing on Windows",
+    "problemDescription": "Microsoft Teams keeps crashing on Windows 10 or 11.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "microsoft teams",
+      "crashing",
+      "windows",
+      "app error"
+    ],
+    "steps": [
+      {
+        "title": "Reset Microsoft Teams",
+        "content": "Go to Settings > Apps > Installed Apps. Find Microsoft Teams, click on the three dots, and select 'Advanced options'. Scroll down and click 'Reset'. This will restore the app to its factory default, deleting all data including cache and login credentials."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Display Adapter Driver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Driver",
+            "content": "Open Device Manager, expand 'Display adapters', right-click on your display adapter, and select 'Update driver'. Follow the prompts to update the driver."
+          }
+        ]
+      },
+      {
+        "title": "Repair Microsoft Teams",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Repair via Settings",
+            "content": "Go to Settings > Apps > Installed Apps. Find Microsoft Teams, click on the three dots, and select 'Advanced options'. Scroll down and click 'Repair'."
+          }
+        ]
+      },
+      {
+        "title": "Clear Microsoft Teams Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete Cache Files",
+            "content": "Press Win + R, type `%appdata%MicrosoftTeams`, and press Enter. Delete all files and folders in this directory."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T14:55:31.082Z",
+      "updated": "2026-02-03T14:55:31.082Z",
+      "sourceUrl": "https://www.makeuseof.com/microsoft-teams-keeps-crashing-windows/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770130547823-783",
+    "title": "Remove Magnetic Phone Case for Better Wi-Fi",
+    "problemDescription": "Poor Wi-Fi and cellular connection on Google Pixel 10 Pro XL.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "connection",
+      "google pixel",
+      "magnet",
+      "case"
+    ],
+    "steps": [
+      {
+        "title": "Remove the Phone Case",
+        "content": "Take off the magnetic phone case that might be interfering with the Wi-Fi and cellular signals."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open the Settings app on your Google Pixel 10 Pro XL."
+          },
+          {
+            "title": "Navigate to System",
+            "content": "Scroll down and tap on 'System'."
+          },
+          {
+            "title": "Reset Options",
+            "content": "Tap on 'Reset options'."
+          },
+          {
+            "title": "Reset Wi-Fi, Mobile & Bluetooth",
+            "content": "Select 'Reset Wi-Fi, mobile & Bluetooth' and confirm the action."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Restart the Phone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart the Device",
+            "content": "Press and hold the power button, then tap on 'Restart' to reboot your Google Pixel 10 Pro XL."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Reprovision the eSIM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open the Settings app on your Google Pixel 10 Pro XL."
+          },
+          {
+            "title": "Navigate to Mobile Network",
+            "content": "Scroll down and tap on 'Mobile network'."
+          },
+          {
+            "title": "eSIM Settings",
+            "content": "Tap on 'eSIM' and follow the prompts to reprovision the eSIM."
+          }
+        ]
+      },
+      {
+        "title": "Method 5: Force 5G Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Dial Android Number",
+            "content": "Dial *#*#4636#*#* to open the Android test menu."
+          },
+          {
+            "title": "Set Preferred Network Type",
+            "content": "Tap on 'Phone information' and then 'Set preferred network type'. Select 'LTE/WCDMA/GSM (auto connect)' or 'LTE only' to force 5G if available."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T14:55:47.823Z",
+      "updated": "2026-02-03T14:55:47.823Z",
+      "sourceUrl": "https://www.reddit.com/r/GooglePixel/comments/1o0k1uy/poor_wifi_and_connection_issue_solved_for_google/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770130549234-693",
+    "title": "Fix Google Pixel 8 Pro Wi-Fi Won't Turn On",
+    "problemDescription": "Wi-Fi on Google Pixel 8 Pro cannot be turned on.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "google pixel 8 pro",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Access Device Connectivity Service",
+        "content": "Go to Settings > Apps > See all apps > Press the 3 dots on the top right > Press Show system > Find and select Device Connectivity Service."
+      },
+      {
+        "title": "Clear Storage and Cache",
+        "content": "Clear the storage and cache of the Device Connectivity Service."
+      },
+      {
+        "title": "Uninstall Updates",
+        "content": "Uninstall any updates for the Device Connectivity Service."
+      },
+      {
+        "title": "Reset Device",
+        "content": "Reset your device to restore Wi-Fi functionality."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-03T14:55:49.234Z",
+      "updated": "2026-02-03T14:55:49.234Z",
+      "sourceUrl": "https://www.reddit.com/r/GooglePixel/comments/1q7eaah/google_pixel_8_pro_wifi_cant_turn_on_issue_solved/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770130562042-559",
+    "title": "Google Pixel Screen Flickering and Brick Issue",
+    "problemDescription": "Google Pixel devices experiencing screen flickering followed by the screen not turning on, leading to a bricked device.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "Google Pixel",
+      "screen flickering",
+      "bricked phone",
+      "system update"
+    ],
+    "steps": [
+      {
+        "title": "Perform a Hard Reset",
+        "content": "Hold down the power button and volume down button simultaneously for about 10-15 seconds until the device vibrates and restarts."
+      },
+      {
+        "title": "Check for System Updates",
+        "content": "Ensure your device is up to date by going to Settings > System > System update. Install any available updates."
+      },
+      {
+        "title": "Contact Google Support",
+        "content": "If the issue persists, contact Google Support for further assistance and potential hardware replacement."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Safe Mode Boot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Press and hold the power button until the power menu appears, then long-press the 'Power off' option and select 'OK' to reboot into Safe Mode."
+          },
+          {
+            "title": "Observe Behavior",
+            "content": "Check if the screen flickering persists in Safe Mode. If it doesn't, a third-party app may be causing the issue."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup all important data as a factory reset will erase everything."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset). Follow the on-screen instructions to complete the reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T14:56:02.042Z",
+      "updated": "2026-02-03T14:56:02.042Z",
+      "sourceUrl": "https://www.reddit.com/r/GooglePixel/comments/1dp001e/ive_had_three_google_pixels_completely_crap_out/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770130566436-793",
+    "title": "Fix WhatsApp Audio Issues on Pixel 10 Pro",
+    "problemDescription": "WhatsApp audio quality is poor on Pixel 10 Pro, affecting calls and media playback.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "WhatsApp",
+      "audio",
+      "Pixel 10 Pro",
+      "Google",
+      "Android"
+    ],
+    "steps": [
+      {
+        "title": "Update WhatsApp and System Software",
+        "content": "Ensure both WhatsApp and your Pixel 10 Pro's system software are up to date. Go to the Google Play Store to update WhatsApp and check for system updates in Settings > System > System update."
+      },
+      {
+        "title": "Clear WhatsApp Cache and Data",
+        "content": "Go to Settings > Apps > WhatsApp > Storage & cache. Clear both cache and data. Note that clearing data will log you out of WhatsApp."
+      },
+      {
+        "title": "Check Audio Settings in WhatsApp",
+        "content": "Open WhatsApp, go to Settings > Chats > Media auto-download. Ensure that media is set to download over Wi-Fi or mobile data, and that audio messages are not set to low quality."
+      },
+      {
+        "title": "Test with Different Headphones or Speakers",
+        "content": "Connect different headphones or speakers to your Pixel 10 Pro to rule out hardware issues. If the audio quality improves, the problem might be with your original audio device."
+      },
+      {
+        "title": "Reinstall WhatsApp",
+        "content": "Uninstall WhatsApp from your Pixel 10 Pro and then reinstall it from the Google Play Store. This can resolve any corrupted app files."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Before performing a factory reset, back up all important data to Google Drive or another cloud service."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset). Follow the on-screen instructions to complete the reset."
+          },
+          {
+            "title": "Restore Data",
+            "content": "After the reset, restore your data from the backup. Test WhatsApp to see if the audio issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T14:56:06.436Z",
+      "updated": "2026-02-03T14:56:06.436Z",
+      "sourceUrl": "https://www.reddit.com/r/GooglePixel/comments/1n4b9bb/my_experience_so_far_a_list_of_issues_on_the/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770130577009-412",
+    "title": "Fix iOS Mail Gmail Account Error",
+    "problemDescription": "iOS Mail app fails to fetch/receive emails from Gmail accounts, showing a generic 'Account Error' message.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "ios",
+      "mail",
+      "gmail",
+      "account error",
+      "fetch"
+    ],
+    "steps": [
+      {
+        "title": "Verify Email Address and Password",
+        "content": "Ensure the email address and password are correct by signing in to the email provider's website."
+      },
+      {
+        "title": "Check Mail Fetch and Notification Settings",
+        "content": "Adjust the Fetch New Data settings in the Mail app. Go to Settings > Mail > Accounts > Fetch New Data and ensure the settings are configured correctly for your email service."
+      },
+      {
+        "title": "Toggle Mail Sync Settings",
+        "content": "In the Mail app settings for the Gmail account, ensure that Mail is enabled for syncing. Go to Settings > Mail > Accounts > Select the Gmail account > Enable Mail."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change Child Account Age",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Adjust Child Account Age",
+            "content": "If the issue is with a child account managed by Google Family Link, try changing the age of the child to appear slightly older and see if that resolves the sync issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T14:56:17.009Z",
+      "updated": "2026-02-03T14:56:17.009Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254940283",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770130586939-555",
+    "title": "Fix Auto Complete in GMAIL App on MAC",
+    "problemDescription": "Auto complete not working in GMAIL app on MAC.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "autocomplete",
+      "mac",
+      "easy mail"
+    ],
+    "steps": [
+      {
+        "title": "Use Chrome Browser",
+        "content": "Open GMAIL in Chrome browser instead of the Easy Mail app."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Apple Mail for GMAIL",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Apple Mail",
+            "content": "Configure Apple Mail to use your GMAIL account."
+          }
+        ]
+      },
+      {
+        "title": "Check Easy Mail Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Easy Mail",
+            "content": "Go to the settings or preferences of Easy Mail."
+          },
+          {
+            "title": "Link Contacts",
+            "content": "Look for an option to link your contacts for auto-complete functionality."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T14:56:26.939Z",
+      "updated": "2026-02-03T14:56:26.939Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255961710",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770130594777-967",
+    "title": "Disable Call Mode Sound Channel on Android",
+    "problemDescription": "Poor sound quality during calls in Discord due to the call mode sound channel.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "sound",
+      "discord",
+      "call",
+      "audio"
+    ],
+    "steps": [
+      {
+        "title": "Use a Third-Party App",
+        "content": "Install a third-party app like 'SoundAbout' from the Google Play Store."
+      },
+      {
+        "title": "Configure SoundAbout",
+        "content": "Open SoundAbout and navigate to the 'Call Audio' section. Set the 'Call Audio Mode' to 'Communication' to force all apps to use the communication mode channel."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Modify System Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Developer Options",
+            "content": "Go to 'Settings' > 'About phone' > 'Build number' and tap it seven times to enable Developer Options."
+          },
+          {
+            "title": "Disable Call Mode",
+            "content": "Navigate to 'Developer Options' and look for 'Disable call mode' or similar settings. Enable this option to disable the call mode sound channel."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T14:56:34.777Z",
+      "updated": "2026-02-03T14:56:34.777Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/245175/completely-disable-the-call-mode-sound-channel",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770130596146-154",
+    "title": "Prevent Discord Calls from Disconnecting on Android",
+    "problemDescription": "Discord calls are frequently disconnecting on an Android device, even with a stable WiFi connection.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "android",
+      "disconnect",
+      "battery optimization"
+    ],
+    "steps": [
+      {
+        "title": "Disable Battery Optimization for Discord",
+        "content": "Go to your phone's Settings, navigate to Battery or Battery Optimization, find Discord in the list of apps, and disable battery optimization for it."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-03T14:56:36.146Z",
+      "updated": "2026-02-03T14:56:36.146Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/233931/stop-the-phone-from-disconnecting-discord-calls",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770130598804-842",
+    "title": "Fix Links Not Opening in Apps on Android 12",
+    "problemDescription": "Links from sources like Chrome and Discord open in the default browser instead of the configured apps on Android 12.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "links",
+      "apps",
+      "android 12"
+    ],
+    "steps": [
+      {
+        "title": "Use 'Open Link With' or 'Better Open With'",
+        "content": "Install and use third-party apps like 'Open Link With' or 'Better Open With' to manage link opening preferences, as these apps provide the functionality to override the default behavior."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset to Default",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Understand the Limitation",
+            "content": "Recognize that Google has enforced verified app links in Android 12, which may prevent links from opening in non-official apps."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T14:56:38.804Z",
+      "updated": "2026-02-03T14:56:38.804Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/247507/links-dont-open-in-apps-in-android-12",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770130602708-625",
+    "title": "Fix Slow App Launch on Motorola G7",
+    "problemDescription": "Some apps, like Discord, take an unusually long time to open on a Motorola G7.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "app",
+      "performance",
+      "discord",
+      "motorola g7"
+    ],
+    "steps": [
+      {
+        "title": "Clear App Cache and Data",
+        "content": "Go to Settings > Apps > Discord > Storage > Clear Cache and Clear Data. This can resolve performance issues caused by corrupted app data."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "Restart your Motorola G7 to clear temporary system files and processes that might be causing the slowdown."
+      },
+      {
+        "title": "Update Discord and System Software",
+        "content": "Ensure both Discord and your Android OS are up to date. Go to the Google Play Store to update Discord and check for system updates in Settings > System > System Update."
+      },
+      {
+        "title": "Check for Background Apps",
+        "content": "Close all background apps and processes. Go to Settings > Developer Options > Running Services and stop unnecessary services."
+      },
+      {
+        "title": "Reset App Preferences",
+        "content": "Go to Settings > Apps > Menu (three dots) > Reset App Preferences. This can resolve issues caused by misconfigured app settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Discord",
+            "content": "Go to Settings > Apps > Discord > Uninstall."
+          },
+          {
+            "title": "Reinstall Discord",
+            "content": "Download and install Discord again from the Google Play Store."
+          }
+        ]
+      },
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Backup important data to Google Drive or an external storage device."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset Options > Erase All Data (Factory Reset). Follow the on-screen instructions to complete the reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T14:56:42.708Z",
+      "updated": "2026-02-03T14:56:42.708Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/244741/motorola-g7-takes-80-seconds-to-open-discord-and-some-other-apps",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
