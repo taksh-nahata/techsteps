@@ -94113,5 +94113,823 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770144602875-529",
+    "title": "Fix Malfunctioning Push Notifications on Android",
+    "problemDescription": "Some push notifications are not working properly on specific apps like TikTok and Instagram.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "push notifications",
+      "TikTok",
+      "Instagram"
+    ],
+    "steps": [
+      {
+        "title": "Check Notification Settings",
+        "content": "Ensure that notification settings for the problematic apps (TikTok and Instagram) are enabled in both the app settings and device settings."
+      },
+      {
+        "title": "Clear App Data and Cache",
+        "content": "Go to Settings > Apps > [App Name] > Storage > Clear Data and Clear Cache."
+      },
+      {
+        "title": "Reinstall the Apps",
+        "content": "Uninstall and reinstall the problematic apps to reset their settings and data."
+      },
+      {
+        "title": "Update System and Apps",
+        "content": "Ensure your device and all apps are updated to the latest versions."
+      },
+      {
+        "title": "Check Network Settings",
+        "content": "Switch between Wi-Fi and mobile data to see if the issue is network-related."
+      },
+      {
+        "title": "Disable Developer Options",
+        "content": "If Developer Options are enabled, disable them as they might interfere with notifications."
+      },
+      {
+        "title": "Check for Background Data Restrictions",
+        "content": "Ensure that the apps are not restricted from using background data in Settings > Apps > [App Name] > Data usage."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset App Preferences",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset App Preferences",
+            "content": "Go to Settings > Apps > Menu (three dots) > Reset app preferences. This will reset all app settings to default."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup all important data as a factory reset will erase all data from the device."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T18:50:02.875Z",
+      "updated": "2026-02-03T18:50:02.875Z",
+      "sourceUrl": "https://www.reddit.com/r/NOTHING/comments/1lon7z0/some_push_notifications_are_not_working/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770144604503-902",
+    "title": "Awesome Notifications Not Working in Release Mode",
+    "problemDescription": "Awesome Notifications not working in release mode in a Flutter app.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "flutter",
+      "awesome notifications",
+      "release mode",
+      "build.gradle"
+    ],
+    "steps": [
+      {
+        "title": "Disable Minification and Resource Shrinking",
+        "content": "Add `minifyEnabled = false` and `shrinkResources = false` in your `build.gradle` file to prevent the issue in release mode."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "ProGuard Rules",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Add ProGuard Rules",
+            "content": "Add specific ProGuard rules to keep the necessary classes and resources for Awesome Notifications. This can help maintain a smaller APK size while fixing the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T18:50:04.503Z",
+      "updated": "2026-02-03T18:50:04.503Z",
+      "sourceUrl": "https://www.reddit.com/r/flutterhelp/comments/1m0y6if/awesome_notifications_not_working_in_release_mode/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770144608424-806",
+    "title": "Fix Notifications Not Working on Galaxy S25+",
+    "problemDescription": "Notifications are not working on several apps after upgrading to Galaxy S25+.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "notifications",
+      "Galaxy S25+"
+    ],
+    "steps": [
+      {
+        "title": "Check Notification Settings for Each App",
+        "content": "Go to Settings > Apps > Select the app > Notifications and ensure notifications are enabled and set to 'Unrestricted'."
+      },
+      {
+        "title": "Verify Do Not Disturb Mode",
+        "content": "Ensure Do Not Disturb mode is turned off by going to Settings > Sounds and vibration > Do Not Disturb."
+      },
+      {
+        "title": "Check Notification Permissions",
+        "content": "Go to Settings > Apps > Select the app > Permissions and ensure notification permissions are enabled."
+      },
+      {
+        "title": "Reinstall Problematic Apps",
+        "content": "Uninstall and reinstall the apps that are not receiving notifications."
+      },
+      {
+        "title": "Update Apps and OS",
+        "content": "Ensure all apps and the operating system are up to date by going to the Google Play Store and checking for updates."
+      },
+      {
+        "title": "Reset App Preferences",
+        "content": "Go to Settings > Apps > Menu (three dots) > Reset app preferences. This will reset all app settings to default."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for App-Specific Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check App-Specific Settings",
+            "content": "Some apps have their own notification settings. Open the app and check its settings for notification options."
+          },
+          {
+            "title": "Clear App Cache and Data",
+            "content": "Go to Settings > Apps > Select the app > Storage > Clear Cache and Clear Data."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T18:50:08.424Z",
+      "updated": "2026-02-03T18:50:08.424Z",
+      "sourceUrl": "https://www.reddit.com/r/GalaxyS25/comments/1luwkip/notifications_arent_working_on_my_phone_after/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770144615954-672",
+    "title": "Fix MacBook Screen Flickering in CLion",
+    "problemDescription": "Screen flickers on MacBook while using CLion, caused by duplicate color profiles.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "screen flickering",
+      "color profile",
+      "CLion"
+    ],
+    "steps": [
+      {
+        "title": "Open Display Settings",
+        "content": "Go to System Settings > Displays."
+      },
+      {
+        "title": "Check for Duplicate Color Profiles",
+        "content": "Look for duplicate color profiles, such as 'Color LCD'."
+      },
+      {
+        "title": "Delete Duplicate Profiles",
+        "content": "Delete one of the duplicate color profiles to resolve the flickering issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Delete Duplicate Profiles via Finder",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Finder",
+            "content": "Navigate to ~/Library/ColorSync/Profiles/."
+          },
+          {
+            "title": "Delete Duplicate Profiles",
+            "content": "Delete the duplicate color profile files from this directory."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T18:50:15.954Z",
+      "updated": "2026-02-03T18:50:15.954Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254863490",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770144620550-164",
+    "title": "Fix Screen Flickering on macOS",
+    "problemDescription": "Screen flickering issue when in full screen mode on macOS.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen",
+      "flickering",
+      "macOS",
+      "full screen"
+    ],
+    "steps": [
+      {
+        "title": "Change Refresh Rate to Fixed Value",
+        "content": "Go to System Preferences > Displays. Uncheck 'Try to use display sleep mode' and set the refresh rate to a fixed value (e.g., 144Hz or 59.88Hz)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Adjust Cursor Size in Accessibility Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Cursor Size",
+            "content": "Go to System Preferences > Accessibility > Display > Cursor. Change the cursor size to large and then back to normal."
+          }
+        ]
+      },
+      {
+        "title": "Update macOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to System Preferences > Software Update and install any available updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T18:50:20.550Z",
+      "updated": "2026-02-03T18:50:20.550Z",
+      "sourceUrl": "https://discussions.apple.com/thread/253296087",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770144624888-509",
+    "title": "Fix 2015 Retina MacBook Screen Flicker",
+    "problemDescription": "Screen flickering issue on a 2015 Retina MacBook.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "screen flicker",
+      "retina",
+      "os x"
+    ],
+    "steps": [
+      {
+        "title": "Create a Bootable USB",
+        "content": "Download the OS X file from the Mac App Store and create a bootable USB installer (8 GB or more)."
+      },
+      {
+        "title": "Backup Your Mac",
+        "content": "Create a full backup of your Mac using Time Machine."
+      },
+      {
+        "title": "Reinstall OS X",
+        "content": "Boot from the USB installer and reinstall OS X."
+      },
+      {
+        "title": "Restore Your Mac",
+        "content": "Restore your Mac from the Time Machine backup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Change Screen Resolution",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Lower Screen Resolution",
+            "content": "Change the screen resolution from a higher resolution to a lower 'default' or non-scaled resolution."
+          },
+          {
+            "title": "Monitor Performance",
+            "content": "Monitor the screen to see if the flickering stops. If it does, you may need to find a way to permanently disable graphics switching."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T18:50:24.888Z",
+      "updated": "2026-02-03T18:50:24.888Z",
+      "sourceUrl": "https://discussions.apple.com/thread/7087341",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770144626668-919",
+    "title": "Fix iPhone 15 Pro Screen Lagging and Flickering",
+    "problemDescription": "iPhone 15 Pro screen experiencing lagging and flickering issues.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "screen",
+      "lagging",
+      "flickering",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Enable Battery Saving Mode",
+        "content": "Go to Settings > Battery > Battery Saving Mode and enable it."
+      },
+      {
+        "title": "Reduce Screen Refresh Rate",
+        "content": "Go to Settings > Accessibility > Motion > Limit Frame Rate and set it to 60Hz."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset iPhone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup iPhone",
+            "content": "Connect your iPhone to a computer and use iTunes to create a backup."
+          },
+          {
+            "title": "Erase iPhone",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Erase All Content and Settings."
+          },
+          {
+            "title": "Set Up as New",
+            "content": "Set up your iPhone as a new device."
+          },
+          {
+            "title": "Restore Backup",
+            "content": "Use iTunes to restore the latest backup to your iPhone."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T18:50:26.668Z",
+      "updated": "2026-02-03T18:50:26.668Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255372115",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770144634186-202",
+    "title": "Reset a Roku",
+    "problemDescription": "Your Roku device is not working properly and needs a reset.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "roku",
+      "reset",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Unplug the Roku",
+        "content": "Unplug the Roku device from its power source and wait for at least 20 seconds before plugging it back in."
+      },
+      {
+        "title": "System Restart from Menu",
+        "content": "From the home screen, go to Settings > System > System Restart. Follow the on-screen instructions to complete the restart."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Navigate to Factory Reset",
+            "content": "From the home screen, go to Settings > System > Advanced system settings > Factory reset."
+          },
+          {
+            "title": "Enter the Code",
+            "content": "Enter the code provided by the system to initiate the factory reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T18:50:34.186Z",
+      "updated": "2026-02-03T18:50:34.186Z",
+      "sourceUrl": "https://www.cnet.com/tech/home-entertainment/how-to-reset-a-roku-in-four-steps/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770144642518-656",
+    "title": "Set Up Roku and Connect to TV",
+    "problemDescription": "Guide to setting up a Roku device and connecting it to a TV.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "roku",
+      "setup",
+      "tv",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Autodetect TV Settings",
+        "content": "Let your Roku autodetect your TV type. If the screen looks good, click OK. If there are issues, retry the test or choose 'Cancel' to proceed."
+      },
+      {
+        "title": "TV Control Setup",
+        "content": "If your Roku remote can control your TV, follow the prompts to sync volume and power controls. If not, select 'No' and enter your TV brand to repeat the process until synced."
+      },
+      {
+        "title": "Link Roku Account",
+        "content": "Link your Roku account and activate your device by following the on-screen instructions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manual TV Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Manual Configuration",
+            "content": "If autodetect fails, manually select your TV type from the settings menu and adjust the display settings accordingly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T18:50:42.518Z",
+      "updated": "2026-02-03T18:50:42.518Z",
+      "sourceUrl": "https://www.cnet.com/tech/home-entertainment/roku-setup-how-to-connect-roku-to-tv/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770144649636-763",
+    "title": "Fix Zoom Error Code 5",
+    "problemDescription": "Zoom displays error code 5, preventing users from connecting.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "error",
+      "connection",
+      "app"
+    ],
+    "steps": [
+      {
+        "title": "Update Zoom",
+        "content": "Go to the Play Store (or App Store for iOS) and update Zoom to the latest version. On a PC, update Zoom through the Microsoft Store or the official Zoom website."
+      },
+      {
+        "title": "Force Stop Zoom",
+        "content": "Go to your device's settings, navigate to the Apps section, find Zoom, and select 'Force Stop'."
+      },
+      {
+        "title": "Run Zoom as Administrator (PC)",
+        "content": "Right-click on the Zoom application and select 'Run as administrator'."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your internet connection is stable and try reconnecting to the internet."
+      },
+      {
+        "title": "Restart Device",
+        "content": "Restart your phone or PC and check if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Zoom",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Zoom",
+            "content": "Uninstall the Zoom application from your device."
+          },
+          {
+            "title": "Reinstall Zoom",
+            "content": "Download and install the latest version of Zoom from the official website or app store."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T18:50:49.636Z",
+      "updated": "2026-02-03T18:50:49.636Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=4bi011bR9-U",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770144655221-440",
+    "title": "Fix Zoom Not Responding on Windows 10",
+    "problemDescription": "Zoom application is not responding or stuck on Windows 10.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "windows 10",
+      "not responding",
+      "app error"
+    ],
+    "steps": [
+      {
+        "title": "Force Quit Zoom",
+        "content": "Right-click on the taskbar and open Task Manager. In the 'Processes' tab, find Zoom, right-click on it, and select 'End Task'."
+      },
+      {
+        "title": "Close Background Apps",
+        "content": "Close any unnecessary applications running in the background to free up RAM and CPU usage."
+      },
+      {
+        "title": "Clean Temporary Files",
+        "content": "Press 'Windows + R', type 'cleanmgr', and hit OK. In the Disk Cleanup utility, check all boxes and click OK to remove temporary files."
+      },
+      {
+        "title": "Check Permissions",
+        "content": "Go to Settings > Privacy > Microphone and ensure 'Allow apps to access your microphone' is turned on. Also, ensure Zoom has permission to access the microphone."
+      },
+      {
+        "title": "Restart Computer",
+        "content": "Restart your computer to apply changes and check if Zoom is working."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Zoom",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Zoom",
+            "content": "Press 'Windows + R', type 'appwiz.cpl', and hit OK. In the 'Programs and Features' window, find Zoom, right-click on it, and select 'Uninstall'."
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Restart your computer after uninstalling Zoom."
+          },
+          {
+            "title": "Reinstall Zoom",
+            "content": "Download the latest version of Zoom from the official website and install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T18:50:55.221Z",
+      "updated": "2026-02-03T18:50:55.221Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=Uefn0Ba0gAU",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770144662324-402",
+    "title": "Fix Zoom Meeting Keeps Disconnecting",
+    "problemDescription": "Zoom meetings keep disconnecting on Windows 11, 10, 8, or 7.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "disconnecting",
+      "windows",
+      "meeting"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your internet connection is stable. Restart your router and check for any network issues."
+      },
+      {
+        "title": "Update Zoom",
+        "content": "Open Zoom, go to your profile picture, and select 'Check for Updates'. Install any available updates."
+      },
+      {
+        "title": "Adjust Zoom Settings",
+        "content": "In Zoom, go to Settings > General. Disable 'Turn off my video when joining a meeting' and 'Mute my audio when joining a meeting'."
+      },
+      {
+        "title": "Close Background Applications",
+        "content": "Close any unnecessary applications running in the background that might be consuming bandwidth."
+      },
+      {
+        "title": "Reinstall Zoom",
+        "content": "Uninstall Zoom from your computer and then download and install the latest version from the official Zoom website."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Power Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Power Plan",
+            "content": "Go to Control Panel > Power Options. Select 'High Performance' or create a custom power plan to prevent your computer from going to sleep."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable VPN",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off VPN",
+            "content": "If you are using a VPN, disable it temporarily to see if it resolves the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T18:51:02.324Z",
+      "updated": "2026-02-03T18:51:02.324Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=IJAN2n1bFMA",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770144670625-488",
+    "title": "Fix Apple TV Remote Not Responding",
+    "problemDescription": "The Apple TV remote is not responding to inputs.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "apple tv",
+      "remote",
+      "siri remote",
+      "battery",
+      "restart"
+    ],
+    "steps": [
+      {
+        "title": "Check Battery Life",
+        "content": "Go to Settings > Remotes and devices > Remote to check the battery level. If it's low, recharge the remote using the provided cable."
+      },
+      {
+        "title": "Restart the Apple TV",
+        "content": "Press and hold the Menu and Home buttons on the Siri remote simultaneously until the indicator light blinks, then restart your Apple TV."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Apple TV Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > System > Software updates and select Update software. You can also enable Automatic updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T18:51:10.625Z",
+      "updated": "2026-02-03T18:51:10.625Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/common-apple-tv-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770144672083-462",
+    "title": "Fix Fire TV Stick App Issues",
+    "problemDescription": "Apps on your Fire TV Stick are not working properly or crashing.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "fire tv",
+      "app error",
+      "clear cache",
+      "reinstall"
+    ],
+    "steps": [
+      {
+        "title": "Clear App Cache and Data",
+        "content": "Go to the Fire TV Home screen, open the Settings app, select Applications, choose Manage installed applications, select the problematic app, and choose Clear cache and Clear data."
+      },
+      {
+        "title": "Reinstall the App",
+        "content": "If clearing cache and data doesn't work, uninstall the app by selecting the Uninstall option and then reinstall it from the App & games section."
+      },
+      {
+        "title": "Restart Your Fire TV Device",
+        "content": "Restart your Fire TV device to ensure all changes take effect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check HDMI and Audio Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check HDMI Connection",
+            "content": "If your Fire TV Stick is connected to an AV receiver or soundbar with HDMI switching, ensure the switching device is set to the correct input and audio passthrough settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T18:51:12.083Z",
+      "updated": "2026-02-03T18:51:12.083Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/amazon-fire-tv-stick-problems-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770144677915-806",
+    "title": "Improve Chromecast Wi-Fi Connection",
+    "problemDescription": "Chromecast has network issues due to poor Wi-Fi signal.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "chromecast",
+      "wifi",
+      "connection",
+      "hdmi",
+      "extender"
+    ],
+    "steps": [
+      {
+        "title": "Use an HDMI Extender",
+        "content": "Purchase an HDMI extender that supports your Chromecast model (e.g., HDMI 2.0 for 4K Chromecast). Connect the extender to your TV and position the Chromecast outside the TV to improve Wi-Fi range."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Casting Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update on iPhone/iPad",
+            "content": "Tap the App Store icon, then tap your Profile image. Scroll down to the Update section and update the app you’re attempting to cast from."
+          },
+          {
+            "title": "Update on Android",
+            "content": "Tap the Play Store icon. Go to Your profile image > Manage apps and device > Manage > Updates available. Select the app with issues and tap the Check mark to update."
+          }
+        ]
+      },
+      {
+        "title": "Factory Reset Chromecast",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Locate Reset Button",
+            "content": "Find the physical reset button on your Chromecast, which varies by generation."
+          },
+          {
+            "title": "Perform Reset",
+            "content": "Press and hold the reset button for about 15 seconds until the LED light flashes. Release the button and wait for the Chromecast to reset. Re-add the Chromecast to the Google Home app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T18:51:17.915Z",
+      "updated": "2026-02-03T18:51:17.915Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/common-google-chromecast-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
