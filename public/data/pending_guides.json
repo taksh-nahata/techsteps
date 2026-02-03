@@ -93517,5 +93517,415 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770137193262-567",
+    "title": "Reset Forgotten Android Password",
+    "problemDescription": "Unable to reset the password on an Android device due to forgotten credentials.",
+    "category": "android",
+    "difficulty": "Hard",
+    "keywords": [
+      "android",
+      "password",
+      "reset",
+      "forgot",
+      "device"
+    ],
+    "steps": [
+      {
+        "title": "Find the Firmware Flash Tool",
+        "content": "Search for the firmware flash tool specific to your device. For example, use 'SP Flash Tool' for Mediatek devices or similar tools for Qualcomm devices."
+      },
+      {
+        "title": "Download the Firmware",
+        "content": "Download the stock firmware for your device. This can usually be found on the manufacturer's website or through a trusted source."
+      },
+      {
+        "title": "Flash the Firmware",
+        "content": "Use the firmware flash tool to flash the downloaded firmware onto your device. This process will reset the device without formatting the IMEI partition."
+      },
+      {
+        "title": "Reboot the Device",
+        "content": "After flashing the firmware, reboot your device. The device should now be reset, and you can set a new password."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset via Recovery Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter Recovery Mode",
+            "content": "Power off your device. Press and hold the Power button and Volume Up button simultaneously to enter Recovery Mode."
+          },
+          {
+            "title": "Select Factory Reset",
+            "content": "Use the Volume buttons to navigate to 'Wipe & Reset' or 'Factory Reset' and press the Power button to select it."
+          },
+          {
+            "title": "Confirm Reset",
+            "content": "Confirm the factory reset. This will erase all data on the device, including the password."
+          },
+          {
+            "title": "Reboot the Device",
+            "content": "After the reset is complete, reboot your device. You can now set a new password."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T16:46:33.262Z",
+      "updated": "2026-02-03T16:46:33.262Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/246891/forgot-password-for-android-device-not-able-to-reset-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1770137194727-851",
+    "title": "Fix Play Store Login Issue After Password Reset",
+    "problemDescription": "Unable to login to Play Store app after password reset, despite being able to login to Gmail and desktop Play Store.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "play store",
+      "login",
+      "password",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Remove and Re-add Google Account",
+        "content": "Go to Settings > Accounts > Google. Select your account and remove it. Then, add the account back using the new password."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset and Account Recovery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Perform Factory Reset",
+            "content": "Backup your data and perform a factory reset on your device."
+          },
+          {
+            "title": "Recover Account",
+            "content": "After the reset, recover your Google account using the new password."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T16:46:34.727Z",
+      "updated": "2026-02-03T16:46:34.727Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/113137/why-am-i-unable-to-login-to-play-store-app-after-password-reset-when-i-can-login",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770137197620-166",
+    "title": "Bypass FRP on OnePlus 2 After Factory Reset",
+    "problemDescription": "After a factory reset, the OnePlus 2 is stuck on the FRP (Factory Reset Protection) screen and does not accept the correct Gmail account password.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "frp",
+      "oneplus",
+      "factory reset",
+      "gmail"
+    ],
+    "steps": [
+      {
+        "title": "Wait for 72 Hours",
+        "content": "Google and OnePlus protocol requires a 72-hour waiting period after multiple incorrect password attempts. Do not enter any password during this time to avoid resetting the waiting period."
+      },
+      {
+        "title": "Use Volume Down + Power Button",
+        "content": "After the waiting period, press and hold the Volume Down and Power buttons for 15-20 seconds to restart the phone. This might bypass the FRP screen."
+      },
+      {
+        "title": "Enter Gmail Credentials",
+        "content": "On the FRP screen, enter the Gmail account and password that was previously synced with the device. Ensure the password is correct and verified on a desktop."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Flash the Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Downgrade to Android 3.1.0",
+            "content": "Download the 3.1.0 firmware for OnePlus 2 and flash it using a computer. This might bypass the FRP issue but will wipe all data."
+          },
+          {
+            "title": "Follow Flashing Guide",
+            "content": "Follow the flashing guide for OnePlus 2 to downgrade from the current OS version to 3.1.0."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Remote Session with OnePlus Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Schedule a Remote Session",
+            "content": "Contact OnePlus support to schedule a remote session. They might be able to flash the device and bypass the FRP issue."
+          },
+          {
+            "title": "Wipe All Data",
+            "content": "Be aware that a remote session will wipe all data on the device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T16:46:37.620Z",
+      "updated": "2026-02-03T16:46:37.620Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/167425/how-to-login-to-resetted-phone-when-verified-password-not-accepted",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770137221152-669",
+    "title": "Improve Smart TV Wi-Fi Performance",
+    "problemDescription": "Your smart TV is buffering due to poor Wi-Fi performance.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "smart tv",
+      "wifi",
+      "buffering",
+      "5ghz",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Use a Wired Ethernet Connection",
+        "content": "Connect your smart TV to your router using an Ethernet cable for a stable and faster connection. This may involve running the cable through walls or using a powerline Ethernet adapter."
+      },
+      {
+        "title": "Lock TV to the 5GHz Band",
+        "content": "Ensure your TV is connected to the 5GHz Wi-Fi band for better performance. This can be done by setting different SSIDs for each band on your router or manually selecting the band in your TV's settings."
+      },
+      {
+        "title": "Check Signal Strength",
+        "content": "Verify that the 5GHz signal is strong enough at your TV's location. If the signal is weak, consider moving your router closer or using a mesh network to improve coverage."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use a Powerline Ethernet Adapter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Powerline Adapter",
+            "content": "Plug one powerline adapter into a power outlet near your router and connect it to the router via Ethernet. Plug another adapter into a power outlet near your TV and connect it to the TV via Ethernet."
+          },
+          {
+            "title": "Configure Network Settings",
+            "content": "Follow the manufacturer's instructions to set up the powerline network and ensure it is properly connected to your home network."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T16:47:01.152Z",
+      "updated": "2026-02-03T16:47:01.152Z",
+      "sourceUrl": "https://www.howtogeek.com/your-smart-tv-might-be-on-the-wrong-wi-fi-network/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770137223343-137",
+    "title": "Fix Slow or Outdated Smart TV Software",
+    "problemDescription": "Smart TVs become slow or outdated due to non-upgradeable software.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "smart tv",
+      "software",
+      "upgrade",
+      "streaming"
+    ],
+    "steps": [
+      {
+        "title": "Disconnect from the Internet",
+        "content": "Disconnect your smart TV from the internet to prevent slowdowns caused by outdated software."
+      },
+      {
+        "title": "Use a Streaming Stick",
+        "content": "Connect a streaming stick (e.g., Roku, Amazon Fire Stick) to your TV for updated and faster streaming services."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Demand User-Upgradeable Components",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Manufacturer",
+            "content": "Contact the manufacturer and demand user-upgradeable components for your smart TV."
+          },
+          {
+            "title": "Support Regulatory Changes",
+            "content": "Support regulatory changes that mandate user-upgradeable components in smart products."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T16:47:03.343Z",
+      "updated": "2026-02-03T16:47:03.343Z",
+      "sourceUrl": "https://www.howtogeek.com/109169/why-are-smart-tvs-so-dumb-when-the-problem-is-so-easy-to-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770137227881-639",
+    "title": "Speed Up Old Smart TV",
+    "problemDescription": "Your old smart TV is running slow and lagging.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "smart tv",
+      "speed",
+      "performance",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Disable Power-Saving Mode",
+        "content": "Go to your TV's settings and turn off Power-Saving Mode or Eco Mode. This will allow your TV's processor to run at full speed, improving performance."
+      },
+      {
+        "title": "Disable Animations",
+        "content": "Disable any smooth transitions or animations in the TV's settings. These animations consume extra processing power and can slow down your TV."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use an External Streaming Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect an External Device",
+            "content": "If software tweaks don't help, consider using a dedicated external streaming device instead of relying on the TV's built-in smart operating system. This can provide better performance and a smoother experience."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T16:47:07.881Z",
+      "updated": "2026-02-03T16:47:07.881Z",
+      "sourceUrl": "https://www.howtogeek.com/the-easiest-way-to-speed-up-your-old-smart-tv/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770137236866-113",
+    "title": "Mac Not Recognizing USB Flash Drives",
+    "problemDescription": "USB flash drives are not being recognized by a Mac, even though other USB devices work fine.",
+    "category": "macos",
+    "difficulty": "Hard",
+    "keywords": [
+      "usb",
+      "mac",
+      "flash drive",
+      "hardware",
+      "disk utility"
+    ],
+    "steps": [
+      {
+        "title": "Check System Profiler",
+        "content": "Run `system_profiler SPUSBDataType` in Terminal to see if the USB devices are listed. If they are not, it indicates a hardware issue."
+      },
+      {
+        "title": "Test with a Powered USB Hub",
+        "content": "Connect the USB flash drive through a powered USB hub to ensure it receives adequate power."
+      },
+      {
+        "title": "Inspect Internal Hardware",
+        "content": "Check for loose internal cables or a faulty south bridge, as these can cause USB devices to not be recognized."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset NVRAM/PRAM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset NVRAM/PRAM",
+            "content": "Restart your Mac and immediately hold down Command + Option + P + R for about 20 seconds to reset NVRAM/PRAM."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T16:47:16.866Z",
+      "updated": "2026-02-03T16:47:16.866Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/85192/usb-flash-drive-not-shown",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1770137238871-1",
+    "title": "Fix MacBook Pro USB Port Not Working",
+    "problemDescription": "USB port on MacBook Pro is not functioning, possibly due to hardware issues or NVRAM reset.",
+    "category": "macos",
+    "difficulty": "Hard",
+    "keywords": [
+      "macbook",
+      "usb",
+      "hardware",
+      "nvram"
+    ],
+    "steps": [
+      {
+        "title": "Consult a Professional Repair Service",
+        "content": "Since the issue is likely hardware-related, consult a professional repair service specializing in MacBook logic board repairs. Search for 'MacBook Logic board repair' services in your area."
+      },
+      {
+        "title": "Use a Powered USB Hub",
+        "content": "As an immediate fix, purchase a powered USB hub to regain connectivity until the hardware issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Software or Firmware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset NVRAM",
+            "content": "Reset the NVRAM to see if it resolves the issue. Note that this might not be the solution, but it's worth trying."
+          },
+          {
+            "title": "Check for Software Updates",
+            "content": "Ensure your MacBook Pro is running the latest software and firmware updates, as these might include fixes for USB port issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T16:47:18.871Z",
+      "updated": "2026-02-03T16:47:18.871Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/296975/macbook-pro-usb-port-wont-work",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
   }
 ]
