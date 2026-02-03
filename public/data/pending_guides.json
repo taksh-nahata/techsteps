@@ -92238,5 +92238,229 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770127346673-469",
+    "title": "Fix Windows 11 Upgrade Issues",
+    "problemDescription": "Experiencing weird issues after upgrading to Windows 11.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "upgrade",
+      "issues",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Check for Additional Updates",
+        "content": "Go to Settings > Windows Update > Advanced options and check for additional updates. Install any available updates."
+      },
+      {
+        "title": "Reinstall Windows 11 Fresh",
+        "content": "Back up all your documents and perform a fresh installation of Windows 11. This often resolves persistent issues."
+      },
+      {
+        "title": "Upgrade 32-bit Apps",
+        "content": "Upgrade old 32-bit applications to their 64-bit counterparts, especially those with shell context extensions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Roll Back to Windows 10",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Roll Back to Windows 10",
+            "content": "If issues persist, roll back to Windows 10 and then perform a manual in-place upgrade using the Windows Update Assistant."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Clean Install of Latest Windows 11",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clean Install",
+            "content": "Roll back to Windows 10 and then perform a clean install of the latest version of Windows 11."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T14:02:26.673Z",
+      "updated": "2026-02-03T14:02:26.673Z",
+      "sourceUrl": "https://superuser.com/questions/1822980/weird-issues-after-upgrading-to-windows-11",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770127420909-867",
+    "title": "Fix Windows 11 App Crashes",
+    "problemDescription": "Apps are crashing due to issues with the Microsoft Store or January update in Windows 11.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "app crash",
+      "microsoft store",
+      "january update"
+    ],
+    "steps": [
+      {
+        "title": "Reset Microsoft Store Cache",
+        "content": "Open the Command Prompt as an administrator and run the command 'wsreset.exe'. This will reset the Microsoft Store cache and may resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Sign Out and Back In to Microsoft Store",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Sign Out",
+            "content": "Open the Microsoft Store, go to your profile, and sign out."
+          },
+          {
+            "title": "Sign Back In",
+            "content": "Sign back into the Microsoft Store with your Microsoft account."
+          }
+        ]
+      },
+      {
+        "title": "Reinstall Affected App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall App",
+            "content": "Go to Settings > Apps > Installed Apps, find the affected app, and uninstall it."
+          },
+          {
+            "title": "Reinstall App",
+            "content": "Reinstall the app from the Microsoft Store."
+          }
+        ]
+      },
+      {
+        "title": "Wait for Automatic Fix",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Wait",
+            "content": "Some users have reported that the issue resolves itself after some time. Wait and check if the problem is fixed later."
+          }
+        ]
+      },
+      {
+        "title": "Contact App Developer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Developer",
+            "content": "Contact the app developer for support or wait for Microsoft to release a fix."
+          }
+        ]
+      },
+      {
+        "title": "Remove January Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Update",
+            "content": "Go to Settings > Windows Update > Update history > Uninstall updates, and remove the January update."
+          },
+          {
+            "title": "Acknowledge Risks",
+            "content": "Be aware that this will leave your system without the latest security fixes."
+          }
+        ]
+      },
+      {
+        "title": "Install January Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Update",
+            "content": "Go to Settings > Windows Update and install the January update."
+          },
+          {
+            "title": "Check for Fix",
+            "content": "Check if the issue is resolved after installing the update."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T14:03:40.909Z",
+      "updated": "2026-02-03T14:03:40.909Z",
+      "sourceUrl": "https://www.techradar.com/computing/windows/windows-11s-2026-goes-from-bad-to-worse-as-two-new-bugs-cause-havoc-crashing-apps-but-there-are-possible-fixes",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770127424757-464",
+    "title": "Fix Windows 11 Desktop Disappearing Bug",
+    "problemDescription": "Windows 11 users experience a bug causing the desktop, taskbar, and Start menu to disappear due to Explorer.exe crashes.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "desktop",
+      "bug",
+      "explorer.exe",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Install the Optional Update",
+        "content": "Go to Settings > Windows Update > Check for updates. Install the optional update KB5074105."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restart Windows Explorer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Task Manager",
+            "content": "Press Ctrl+Shift+Esc to open Task Manager."
+          },
+          {
+            "title": "Find Windows Explorer",
+            "content": "Locate Windows Explorer in the list of processes."
+          },
+          {
+            "title": "Restart Windows Explorer",
+            "content": "Right-click on Windows Explorer and select 'Restart'."
+          }
+        ]
+      },
+      {
+        "title": "Reset the PC",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open Settings > System > Recovery."
+          },
+          {
+            "title": "Reset This PC",
+            "content": "Under 'Recovery options', click 'Reset this PC'. Follow the on-screen instructions to reset your PC."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T14:03:44.757Z",
+      "updated": "2026-02-03T14:03:44.757Z",
+      "sourceUrl": "https://www.techradar.com/computing/windows/windows-11-bug-breaks-the-entire-desktop-but-luckily-theres-a-fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
