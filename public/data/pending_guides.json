@@ -94931,5 +94931,449 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770148569861-638",
+    "title": "Fix Apple ID Server Connection Error on Recovery Assistant",
+    "problemDescription": "Error connecting to Apple ID server when using Recovery Assistant on Mac.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "apple id",
+      "recovery assistant",
+      "mac",
+      "server error"
+    ],
+    "steps": [
+      {
+        "title": "Reset Date and Time",
+        "content": "Ensure your Mac's date and time match your current time zone. This can be done through System Preferences."
+      },
+      {
+        "title": "Reset NVRAM",
+        "content": "Reset the NVRAM on your Mac by following Apple's official guide. Note that this might turn off 'Find My' feature."
+      },
+      {
+        "title": "Start up MacOS Recovery",
+        "content": "Restart your Mac and hold down Command (⌘) + R to start up in macOS Recovery."
+      },
+      {
+        "title": "Open Terminal and Reset Password",
+        "content": "From the MacOS Utilities screen, go to Utilities > Terminal, type 'resetpassword', and hit enter."
+      },
+      {
+        "title": "Reset Password Assistant",
+        "content": "Follow the prompts in the Reset Password Assistant to reset your Apple ID password."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Apple Support",
+            "content": "If the above steps do not work, contact Apple Support for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T19:56:09.861Z",
+      "updated": "2026-02-03T19:56:09.861Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254711990",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770148589443-948",
+    "title": "Fix Unresponsive Alexa",
+    "problemDescription": "Alexa device is not responding to commands or requests.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "Alexa",
+      "not responding",
+      "Wi-Fi",
+      "power"
+    ],
+    "steps": [
+      {
+        "title": "Check Wi-Fi Connection",
+        "content": "Ensure your Alexa device is connected to a stable Wi-Fi network. Restart your router if necessary."
+      },
+      {
+        "title": "Verify Power Supply",
+        "content": "Make sure the Alexa device is properly plugged in and receiving power. Try a different power outlet if needed."
+      },
+      {
+        "title": "Restart the Alexa Device",
+        "content": "Unplug the Alexa device, wait for 30 seconds, and then plug it back in."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Alexa Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Open the Alexa app, go to Settings, and check for any available software updates."
+          },
+          {
+            "title": "Install Updates",
+            "content": "Follow the on-screen instructions to install any available updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T19:56:29.443Z",
+      "updated": "2026-02-03T19:56:29.443Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=0mG0jSS9bJA",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770148592540-938",
+    "title": "Fix Alexa Not Responding",
+    "problemDescription": "Alexa is not responding to voice commands or has connectivity issues.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Alexa",
+      "connectivity",
+      "voice commands"
+    ],
+    "steps": [
+      {
+        "title": "Check Power and Connections",
+        "content": "Ensure the Alexa device is properly plugged in and powered on. Check all cable connections."
+      },
+      {
+        "title": "Restart the Device",
+        "content": "Unplug the Alexa device, wait for 30 seconds, and then plug it back in."
+      },
+      {
+        "title": "Check Wi-Fi Connection",
+        "content": "Make sure the Alexa device is connected to a stable Wi-Fi network. Restart your router if necessary."
+      },
+      {
+        "title": "Update the Alexa App",
+        "content": "Open the Alexa app on your smartphone, go to Settings, and check for any available updates."
+      },
+      {
+        "title": "Reset to Factory Settings",
+        "content": "If all else fails, reset the Alexa device to factory settings through the Alexa app."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Interference",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Move the Device",
+            "content": "Move the Alexa device away from other electronic devices that might cause interference."
+          },
+          {
+            "title": "Reduce Obstacles",
+            "content": "Ensure there are no physical obstacles blocking the device's microphone or speakers."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T19:56:32.540Z",
+      "updated": "2026-02-03T19:56:32.540Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=Q78Cdt_jFok",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770148602421-564",
+    "title": "Fix Alexa Blue Spinning Light Ring",
+    "problemDescription": "The blue light ring on your Alexa device is spinning continuously and not responding properly.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Alexa",
+      "blue light",
+      "spinning ring",
+      "Echo"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Alexa Device",
+        "content": "Unplug the power adapter from the back of your Echo device, wait for 30 seconds, and then plug it back in."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Open the Alexa app, go to Settings > Device Settings, select your Echo device, and check for any available software updates."
+      },
+      {
+        "title": "Reset Your Alexa Device",
+        "content": "Press and hold the Action button (the button with a dot inside a circle) on your Echo device for about 20 seconds until the light ring turns orange, then release the button."
+      },
+      {
+        "title": "Check Your Wi-Fi Connection",
+        "content": "Ensure your Echo device is connected to a stable Wi-Fi network. Go to the Alexa app, navigate to Settings > Device Settings, select your Echo device, and check the Wi-Fi connection."
+      },
+      {
+        "title": "Disable and Re-enable the Device",
+        "content": "In the Alexa app, go to Settings > Device Settings, select your Echo device, and choose Disable Device. Wait for a few seconds, then re-enable the device."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "If the issue persists, perform a factory reset by pressing and holding the Action button and the Volume Down button simultaneously for about 20 seconds until the light ring turns orange."
+      },
+      {
+        "title": "Check for Physical Obstructions",
+        "content": "Ensure there are no physical obstructions or objects blocking the light ring on your Echo device."
+      },
+      {
+        "title": "Contact Amazon Support",
+        "content": "If none of the above steps work, contact Amazon Support for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall the Alexa App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall the Alexa App",
+            "content": "Uninstall the Alexa app from your smartphone or tablet."
+          },
+          {
+            "title": "Restart Your Device",
+            "content": "Restart your smartphone or tablet."
+          },
+          {
+            "title": "Reinstall the Alexa App",
+            "content": "Download and install the Alexa app again from the app store."
+          },
+          {
+            "title": "Log In and Reconnect",
+            "content": "Log in to your Amazon account and reconnect your Echo device to the Alexa app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T19:56:42.421Z",
+      "updated": "2026-02-03T19:56:42.421Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=aOc8w9RmXdw",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770148608573-856",
+    "title": "Fix No Sound on Browser",
+    "problemDescription": "No audio from speakers when playing sound on any browser, but sound works on other apps like Spotify or Teams.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "browser",
+      "sound",
+      "audio",
+      "no sound",
+      "microsoft edge",
+      "chrome"
+    ],
+    "steps": [
+      {
+        "title": "Check Volume Mixer",
+        "content": "Open the Volume Mixer by right-clicking the speaker icon in the taskbar and selecting 'Open Volume mixer'. Ensure that the volume for your browser (Edge or Chrome) is not muted or set to zero."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Browser Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Browser to Default Settings",
+            "content": "Go to browser settings and reset to default. For Edge, go to Settings > Reset settings > Restore settings to their default values. For Chrome, go to Settings > Advanced > Reset and clean up > Restore settings to their original defaults."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Clear Browser Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Browser Cache",
+            "content": "Clear the cache and cookies for your browser. For Edge, go to Settings > Privacy, search, and services > Choose what to clear. For Chrome, go to Settings > Privacy and security > Clear browsing data."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T19:56:48.573Z",
+      "updated": "2026-02-03T19:56:48.573Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/microsoftedge/forum/all/how-to-fix-no-sound-on-browser-issue/492147f8-cdbc-46e2-baf9-358f7bd7a236",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770148610146-491",
+    "title": "Fix Office Upload Failed Error",
+    "problemDescription": "Error message 'Upload Failed. You are required to sign in' when trying to upload files in Microsoft Office.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "office",
+      "upload",
+      "error",
+      "sign in"
+    ],
+    "steps": [
+      {
+        "title": "Clear Cached Files",
+        "content": "Right-click the Microsoft Office Upload Center icon in the system tray, then click Settings > Delete cached files."
+      },
+      {
+        "title": "Update Office",
+        "content": "Go to File > Account > Update Options > Update Now to ensure your Office application is up to date."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Sign Out and Sign In Again",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Sign Out",
+            "content": "Go to File > Account > Sign out."
+          },
+          {
+            "title": "Sign In",
+            "content": "Sign back in with your Microsoft account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T19:56:50.146Z",
+      "updated": "2026-02-03T19:56:50.146Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/msoffice%5C_word-mso%5C_win10/upload-failed-you-are-required-to-sign-in-to/b9b9b4a0-4d68-4d9e-b393-82ae3192c805",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770148616063-485",
+    "title": "Upgrade to Windows 10 1803",
+    "problemDescription": "Users are experiencing issues with the Windows 10 1803 update and need guidance on how to upgrade safely.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "upgrade",
+      "update",
+      "1803"
+    ],
+    "steps": [
+      {
+        "title": "Backup Your Data",
+        "content": "Before attempting to upgrade, ensure you backup all important data to an external drive or cloud storage."
+      },
+      {
+        "title": "Check Compatibility",
+        "content": "Verify that your computer is compatible with the Windows 10 Fall Creators Update 1803 by checking the manufacturer's website or the official compatibility list."
+      },
+      {
+        "title": "Download the ISO File",
+        "content": "Download the Windows 10 1803 ISO file from the official Microsoft website for a reliable offline upgrade."
+      },
+      {
+        "title": "Perform the Upgrade",
+        "content": "Use the ISO file to perform the upgrade offline. Follow the on-screen instructions to complete the installation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Block the Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Windows Update Settings",
+            "content": "Go to Settings > Update & Security > Windows Update > Advanced options > Defer feature updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T19:56:56.063Z",
+      "updated": "2026-02-03T19:56:56.063Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/widnows-10/a5887e3f-378a-42d4-85da-eaf0bd2aa48f",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770148631679-407",
+    "title": "Fix Subaru Outback Repeated Dead Battery",
+    "problemDescription": "Subaru Outback repeatedly experiences dead battery due to parasitic drain.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "Subaru Outback",
+      "dead battery",
+      "parasitic drain",
+      "DCM",
+      "alternator"
+    ],
+    "steps": [
+      {
+        "title": "Remove DCM Fuse",
+        "content": "Remove the DCM fuse to stop the parasitic drain from the faulty DCM. This will disable Starlink but won't affect other functions."
+      },
+      {
+        "title": "Software Update and Parasitic Drain Test",
+        "content": "Take the car to a Subaru dealer to confirm the DCM is causing the drain and perform a software update for the alternator."
+      },
+      {
+        "title": "Replace the Battery",
+        "content": "Install a new battery, preferably a higher capacity one, to ensure a fresh start and prevent lingering issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check for Keyless Entry and Trunk Latch Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect Keyless Entry System",
+            "content": "Ensure the keyless entry system is not causing a parasitic drain."
+          },
+          {
+            "title": "Check Trunk Latch Sensor",
+            "content": "Verify that the trunk latch sensor is not being triggered by the cargo mat or other objects."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T19:57:11.679Z",
+      "updated": "2026-02-03T19:57:11.679Z",
+      "sourceUrl": "https://www.reddit.com/r/Subaru_Outback/comments/y3b4hk/repeatedly_dead_battery_issue_finally_solved/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
