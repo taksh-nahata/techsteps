@@ -93224,5 +93224,298 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770133517723-991",
+    "title": "Fix Password Manager Auto-Lock Issues",
+    "problemDescription": "Password manager logs out or locks too frequently.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "password manager",
+      "auto-lock",
+      "logout"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Auto-Lock Duration",
+        "content": "Go to your password manager's security settings and increase the auto-lock or auto-logout duration."
+      },
+      {
+        "title": "Check for Conflicts",
+        "content": "Ensure your browser's built-in password manager is not conflicting with any third-party tools."
+      },
+      {
+        "title": "Clear Browser Cache and Cookies",
+        "content": "Clear your browser's cache and cookies to resolve logout problems."
+      },
+      {
+        "title": "Update Password Manager",
+        "content": "Ensure your password manager is updated to the latest version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Browser Permissions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Grant Permissions",
+            "content": "Check if your browser requires explicit authorization for the password manager to access form fields and grant the necessary permissions."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Conflicting Extensions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Extensions",
+            "content": "Disable browser extensions that might be causing conflicts with your password manager."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T15:45:17.723Z",
+      "updated": "2026-02-03T15:45:17.723Z",
+      "sourceUrl": "https://www.makeuseof.com/common-password-manager-issues-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770133526912-838",
+    "title": "Fix Google Pixel Buds Pro 2 Audio Distortion on Ubuntu",
+    "problemDescription": "Google Pixel Buds Pro 2 experience audio distortion when Wi-Fi is enabled on Ubuntu.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "google pixel buds",
+      "audio distortion",
+      "ubuntu",
+      "wifi interference"
+    ],
+    "steps": [
+      {
+        "title": "Switch to 2.4GHz Wi-Fi Band",
+        "content": "Change your Wi-Fi network from 5GHz to 2.4GHz to reduce interference with Bluetooth."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Wi-Fi Power Management",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Wi-Fi Power Management",
+            "content": "Disable Wi-Fi power management to potentially reduce audio distortion, though this may worsen the issue in some cases."
+          }
+        ]
+      },
+      {
+        "title": "Disable Bluetooth LE Audio",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Bluetooth LE Audio",
+            "content": "Disable Bluetooth LE Audio to see if it resolves the audio distortion issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T15:45:26.912Z",
+      "updated": "2026-02-03T15:45:26.912Z",
+      "sourceUrl": "https://askubuntu.com/questions/1563321/google-pixel-buds-pro-2-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770133557228-345",
+    "title": "Enable 2FA for Local Ubuntu Login",
+    "problemDescription": "How to require two-factor authentication (2FA) for local Ubuntu login.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "2FA",
+      "Ubuntu",
+      "local login",
+      "Google Authenticator"
+    ],
+    "steps": [
+      {
+        "title": "Install Google Authenticator PAM Package",
+        "content": "Open a terminal and run the following command to install the Google Authenticator PAM package and its dependencies:"
+      },
+      {
+        "title": "Configure PAM for Google Authenticator",
+        "content": "Edit the PAM configuration file for authentication by running: `sudo vim /etc/pam.d/common-auth`. Append the following line to the file: `auth required pam_google_authenticator.so`."
+      },
+      {
+        "title": "Set Up Google Authenticator",
+        "content": "Run the command `google-authenticator` in the terminal to set up the Google Authenticator. Follow the prompts to configure it."
+      },
+      {
+        "title": "Install Google Authenticator App",
+        "content": "Install the Google Authenticator app on your tablet or smartphone. It will generate a 2FA code that refreshes every 30 seconds."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Adjust Time Skew Window",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Increase Time Skew Window",
+            "content": "If you experience time synchronization issues, you can increase the time skew window by modifying the Google Authenticator configuration to allow more codes before and after the current time."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T15:45:57.228Z",
+      "updated": "2026-02-03T15:45:57.228Z",
+      "sourceUrl": "https://askubuntu.com/questions/1508022/how-to-require-2fa-for-local-ubuntu-login",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770133587921-731",
+    "title": "Fix Laggy Internet",
+    "problemDescription": "Experiencing slow or laggy internet speeds despite having a fast connection.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "internet",
+      "wifi",
+      "speed",
+      "lag"
+    ],
+    "steps": [
+      {
+        "title": "Conduct a Speed Test",
+        "content": "Use a reliable speed test tool like Ookla to check your current internet speeds. This will help you determine if the issue is with your connection or your devices."
+      },
+      {
+        "title": "Move Your Workspace or Router",
+        "content": "Relocate your workspace or router to a more central location in your home. This can help reduce interference and improve signal strength."
+      },
+      {
+        "title": "Get a Wi-Fi Extender or Upgrade Your Router",
+        "content": "Consider purchasing a Wi-Fi extender or upgrading to a mesh system to optimize your connection. This can help eliminate dead zones and improve overall performance."
+      },
+      {
+        "title": "Prioritize Your Work Traffic",
+        "content": "Use Quality of Service (QoS) settings on your router to prioritize your work traffic. This can help ensure that your most important tasks get the bandwidth they need."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Experiment with Different Wi-Fi Bands",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Router Settings",
+            "content": "Log in to your router's settings page. This is usually done by entering the router's IP address into a web browser."
+          },
+          {
+            "title": "Change Wi-Fi Band",
+            "content": "Look for the option to change the Wi-Fi band. Most routers offer both 2.4GHz and 5GHz bands. Try switching to the 5GHz band for faster speeds, but be aware that it has a shorter range."
+          }
+        ]
+      },
+      {
+        "title": "Invest in a Good-Quality Network Switch",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Network Switch",
+            "content": "Buy a reliable network switch that supports gigabit speeds."
+          },
+          {
+            "title": "Connect Devices to the Switch",
+            "content": "Connect your devices directly to the network switch using Ethernet cables. This can help reduce network congestion and improve performance."
+          }
+        ]
+      },
+      {
+        "title": "Contact Your Provider",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Call Your Internet Provider",
+            "content": "Contact your internet service provider (ISP) to discuss your options. They may be able to offer solutions or upgrades to improve your internet speeds."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T15:46:27.921Z",
+      "updated": "2026-02-03T15:46:27.921Z",
+      "sourceUrl": "https://www.cnet.com/home/internet/4-easy-ways-to-fix-your-laggy-internet/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770133596371-642",
+    "title": "Fix Google Drive Sync Issues",
+    "problemDescription": "Google Drive is not syncing files properly or showing 'You are offline' error.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "google drive",
+      "sync",
+      "offline",
+      "antivirus",
+      "firewall"
+    ],
+    "steps": [
+      {
+        "title": "Disable Antivirus and Firewall",
+        "content": "Temporarily disable your antivirus and firewall software to check if they are causing the sync issue. Remember to re-enable them after testing."
+      },
+      {
+        "title": "Restart Google Drive",
+        "content": "If using the web version, log out, close the browser, clear cookies, and log back in. If using the desktop app, quit and restart it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Google Drive Status",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Google Workspace Status Dashboard",
+            "content": "Check if there is a known issue with Google Drive by visiting the Google Workspace Status Dashboard. If there is an outage, wait for the service to be restored."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Manage Connected Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disconnect Problematic Apps",
+            "content": "Go to Google Drive settings, manage connected apps, and disconnect any apps that might be causing issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T15:46:36.371Z",
+      "updated": "2026-02-03T15:46:36.371Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/solve-common-google-drive-problems-simple-solutions/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
