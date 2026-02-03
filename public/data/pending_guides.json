@@ -89730,5 +89730,645 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770104423622-780",
+    "title": "Fix Word Asking to Save Unedited Documents",
+    "problemDescription": "Word prompts to save changes in documents that haven't been edited.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "word",
+      "save",
+      "unedited",
+      "mac"
+    ],
+    "steps": [
+      {
+        "title": "Check for Hidden Edits",
+        "content": "Open the document and press 'Command + F' to search for any hidden edits or formatting changes."
+      },
+      {
+        "title": "Disable Add-ins",
+        "content": "Go to 'Word > Preferences > Security > Trust Center > Trust Center Settings > Add-ins' and disable all add-ins to check if they are causing the issue."
+      },
+      {
+        "title": "Repair Office Installation",
+        "content": "Open 'Microsoft AutoUpdate', click on the gear icon, and select 'Repair Office'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Word",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Word",
+            "content": "Go to 'Applications', find 'Microsoft Word', and drag it to the Trash."
+          },
+          {
+            "title": "Reinstall Word",
+            "content": "Download the latest version of Word from the Microsoft website and install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T07:40:23.622Z",
+      "updated": "2026-02-03T07:40:23.622Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/office_2013_release-powerpoint/pen-lagsfails-in-slide-show-view-in-powerpoint/a8e214d2-a0fe-4237-960e-2b0234a0f983?msgId=ecf1dda6-b03f-4440-abd4-86e85525036f",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770104427003-842",
+    "title": "Fix Over Bright Issue Caused by AMD Software Update",
+    "problemDescription": "The screen brightness is excessively high due to an AMD software update.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "brightness",
+      "AMD",
+      "drivers",
+      "Windows Update"
+    ],
+    "steps": [
+      {
+        "title": "Download and Reinstall AMD Drivers from ASUS Support",
+        "content": "Go to the ASUS support page for your laptop model, download the specific version of AMD chipset drivers and AMD graphics drivers provided for your laptop, and reinstall them. This will replace the drivers installed by Windows Update."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Old Driver from Device Manager",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Press the Windows key + X and select 'Device Manager' from the menu."
+          },
+          {
+            "title": "Locate Display Adapters",
+            "content": "Expand the 'Display adapters' section."
+          },
+          {
+            "title": "Uninstall Current Driver",
+            "content": "Right-click on your AMD graphics card and select 'Uninstall device'."
+          },
+          {
+            "title": "Reinstall Old Driver",
+            "content": "After uninstalling, Windows will prompt you to restart your computer. Upon restart, Windows will attempt to reinstall the old driver that was previously working."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T07:40:27.003Z",
+      "updated": "2026-02-03T07:40:27.003Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/how-to-fix-over-bright-issue-caused-by-amd/934bd547-2e13-44c7-8a84-ffd7c4b1f9c0",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770104437087-494",
+    "title": "Fix Bluetooth Issues on Linux",
+    "problemDescription": "Bluetooth stops working after every reboot with the error 'Bluez daemon is not running'.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "linux",
+      "kernel",
+      "module"
+    ],
+    "steps": [
+      {
+        "title": "Check Bluetooth Service Status",
+        "content": "Run the command `sudo systemctl status bluetooth` to check if the Bluetooth service is active and running."
+      },
+      {
+        "title": "Verify Bluetooth Functionality",
+        "content": "Run the command `dmesg | grep -i bluetooth` to check for any Bluetooth-related messages in the kernel logs."
+      },
+      {
+        "title": "Automate Loading Bluetooth Module at Boot",
+        "content": "Edit the file `/etc/modules` by running `sudo nano /etc/modules` and add the line `btusb` to ensure the Bluetooth module loads at boot."
+      },
+      {
+        "title": "Update Initial RAM Filesystem",
+        "content": "Run the command `sudo update-initramfs -u` to update the initial RAM filesystem and ensure the Bluetooth module is included."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Bluetooth Service",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Bluetooth Service",
+            "content": "Run the command `sudo systemctl restart bluetooth` to restart the Bluetooth service."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T07:40:37.087Z",
+      "updated": "2026-02-03T07:40:37.087Z",
+      "sourceUrl": "https://www.reddit.com/r/linuxmint/comments/1e32j6t/fixing_bluetooth_issues_on_linux_a_stepbystep/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770104439113-267",
+    "title": "Fix Persistent Bluetooth Issues on Dell Machine",
+    "problemDescription": "Bluetooth pairs initially but fails to reconnect, troubleshooter doesn't work, and system crashes in a restart loop.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "dell",
+      "connection",
+      "troubleshooter",
+      "restart loop"
+    ],
+    "steps": [
+      {
+        "title": "Update Bluetooth Drivers",
+        "content": "Go to Device Manager, expand Bluetooth, right-click on your Bluetooth adapter, and select 'Update driver'. Choose 'Search automatically for updated driver software'."
+      },
+      {
+        "title": "Run System File Checker",
+        "content": "Open Command Prompt as administrator and type 'sfc /scannow'. This will scan and repair corrupted system files."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to Settings > Update & Security > Windows Update and check for updates. Install any available updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Bluetooth Stack",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Bluetooth Stack",
+            "content": "Go to Device Manager, expand Bluetooth, right-click on your Bluetooth adapter, and select 'Uninstall device'. Restart your computer to reinstall the driver."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Bluetooth Power Saving",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Power Saving",
+            "content": "Go to Device Manager, expand Bluetooth, right-click on your Bluetooth adapter, and select 'Properties'. Go to the 'Power Management' tab and uncheck 'Allow the computer to turn off this device to save power'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T07:40:39.113Z",
+      "updated": "2026-02-03T07:40:39.113Z",
+      "sourceUrl": "https://www.reddit.com/r/DellXPS/comments/15gc7t7/persistent_bluetooth_issues_on_dell_machine/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770104446244-572",
+    "title": "Fix Beelink Bluetooth Connection Issues",
+    "problemDescription": "Bluetooth devices frequently disconnect or fail to connect on Beelink Mini PC.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "connection",
+      "beelink",
+      "windows 10"
+    ],
+    "steps": [
+      {
+        "title": "Update Bluetooth Drivers",
+        "content": "Go to 'Device Manager', expand 'Bluetooth', right-click on your Bluetooth adapter, and select 'Update driver'. Choose 'Search automatically for updated driver software'."
+      },
+      {
+        "title": "Reinstall Bluetooth Drivers",
+        "content": "In 'Device Manager', right-click on your Bluetooth adapter and select 'Uninstall device'. Restart your PC to automatically reinstall the driver."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to 'Settings' > 'Update & Security' > 'Windows Update' and check for updates. Install any available updates."
+      },
+      {
+        "title": "Disable Bluetooth Power Saving",
+        "content": "Go to 'Device Manager', expand 'Bluetooth', right-click on your Bluetooth adapter, select 'Properties', go to the 'Power Management' tab, and uncheck 'Allow the computer to turn off this device to save power'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Bluetooth Dongle",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Compatible Bluetooth Dongle",
+            "content": "Buy a USB Bluetooth dongle that is compatible with your Beelink Mini PC."
+          },
+          {
+            "title": "Install the Dongle",
+            "content": "Plug the dongle into a USB port on your PC and follow the manufacturer's instructions to install any necessary drivers or software."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Beelink Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Beelink Official Website",
+            "content": "Go to the Beelink official website and navigate to the 'Support' or 'Contact Us' section."
+          },
+          {
+            "title": "Submit a Support Request",
+            "content": "Provide details about your issue, including your device model and the steps you have already taken to troubleshoot."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T07:40:46.244Z",
+      "updated": "2026-02-03T07:40:46.244Z",
+      "sourceUrl": "https://www.reddit.com/r/BeelinkOfficial/comments/1hq0fyc/constant_bluetooth_issues_any_solution/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770104448653-946",
+    "title": "Fix Bluetooth Device Remove Failed Error",
+    "problemDescription": "Bluetooth devices cannot be removed from the 'Bluetooth & other devices' menu in Windows 10 or 11.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "windows",
+      "device manager",
+      "remove failed"
+    ],
+    "steps": [
+      {
+        "title": "Open Device Manager",
+        "content": "Press the Windows key + X and select 'Device Manager' from the menu."
+      },
+      {
+        "title": "Show Hidden Devices",
+        "content": "Click on 'View' in the top menu and select 'Show hidden devices'."
+      },
+      {
+        "title": "Locate Bluetooth Devices",
+        "content": "Expand the 'Bluetooth' section to see all Bluetooth devices, including hidden ones."
+      },
+      {
+        "title": "Uninstall the Problematic Device",
+        "content": "Right-click on the problematic Bluetooth device and select 'Uninstall device'. Confirm the action if prompted."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "Restart your computer to complete the removal process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Bluetooth & Other Devices Menu",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Bluetooth & Other Devices",
+            "content": "Go to 'Settings' > 'Devices' > 'Bluetooth & other devices'."
+          },
+          {
+            "title": "Remove the Device",
+            "content": "Click on the three dots next to the problematic device and select 'Remove device'."
+          },
+          {
+            "title": "Restart Your Computer",
+            "content": "Restart your computer to see if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T07:40:48.653Z",
+      "updated": "2026-02-03T07:40:48.653Z",
+      "sourceUrl": "https://www.reddit.com/r/Windows10HowTo/comments/14azwph/sharing_tip_steps_for_how_to_fix_bluetooth_device/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770104457297-633",
+    "title": "Fix Ubuntu Firewall Blocking Internet",
+    "problemDescription": "Connected to WiFi/ethernet but can't access the internet due to firewall issues.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "firewall",
+      "internet",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check Connection to Router",
+        "content": "Connect directly to your router using an ethernet cable. Try pinging the router's IP address (e.g., 192.168.1.1) using the command `ping 192.168.1.1`."
+      },
+      {
+        "title": "Access Router's Web UI",
+        "content": "Open a web browser and enter the router's IP address to access its web interface. This can be done using either the WiFi gateway IP or the ethernet gateway IP."
+      },
+      {
+        "title": "Check Firewall Settings",
+        "content": "If you can access the router's web UI, the issue might be related to firewall settings such as iptables, AppArmor, or ufw. Check and adjust these settings as needed."
+      },
+      {
+        "title": "Force DHCP Re-sync",
+        "content": "Run the following commands to force a DHCP re-sync:\n\n```bash\nifconfig | grep inet\nsudo dhclient wlan0  # for wireless interface\nsudo dhclient eth0  # for wired interface\nifconfig | grep inet\n```\n\nCheck if your network address has changed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manually Configure Ethernet Interface",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set a Static IP",
+            "content": "If you can't reach your router's web UI, manually configure the ethernet interface with an unused IP in your subnet (e.g., 192.168.1.111). Ensure this IP is not given out by your router."
+          },
+          {
+            "title": "Verify Connection",
+            "content": "Check if you can now access the internet. If so, make sure the static IP is not assigned by the router to avoid conflicts."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T07:40:57.297Z",
+      "updated": "2026-02-03T07:40:57.297Z",
+      "sourceUrl": "https://askubuntu.com/questions/921704/connected-to-wifi-ethernet-but-cant-connect-to-internet",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770104468437-265",
+    "title": "Fix Mac OS X 10.4.4 Memory Recognition Issue",
+    "problemDescription": "Mac OS X 10.4.4 fails to recognize installed memory or experiences kernel panics caused by USB devices.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "Mac OS X",
+      "memory",
+      "kernel panic",
+      "USB devices"
+    ],
+    "steps": [
+      {
+        "title": "Reset NVRAM",
+        "content": "Hold down the Command, Option, O, and F keys at startup. When the prompt appears, type 'reset-nvram' and press Enter. Your Mac will restart."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disconnect USB Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disconnect USB Devices",
+            "content": "Disconnect any USB devices that may be causing conflicts, especially those known to cause issues."
+          }
+        ]
+      },
+      {
+        "title": "Clean System Caches",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Cleaning Tool",
+            "content": "Use a tool like Cocktail or Tiger Cache Cleaner to perform a deep clean of system caches."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T07:41:08.437Z",
+      "updated": "2026-02-03T07:41:08.437Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/mac-os-x-10-4-4-4-fix-for-memory-not-being-recognized-kernel-panics-caused-by-usb-devices-third-party-apps-more/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770104472332-148",
+    "title": "Fix External Hard Drive Not Mounting",
+    "problemDescription": "External hard drive is not being recognized or mounted by your computer.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "external hard drive",
+      "mount",
+      "USB",
+      "FireWire",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Relaunch the Finder",
+        "content": "Press the Option key and right-click the Finder icon in the Dock, then choose 'Relaunch'."
+      },
+      {
+        "title": "Change the Port",
+        "content": "Try each USB or FireWire port available on your system. Use FireWire 400/800 adaptors or conversion cables if necessary."
+      },
+      {
+        "title": "Plug in Power Adaptor",
+        "content": "If your external drive comes with an optional power adaptor, plug it in to ensure the drive is not reliant upon bus power."
+      },
+      {
+        "title": "Avoid Daisy-Chaining",
+        "content": "Unplug all devices except for the problematic one (and your keyboard and mouse) and plug it directly into your system."
+      },
+      {
+        "title": "Try a Different Connection Type",
+        "content": "If your device has both USB and FireWire ports, try using each of them to see if the device works."
+      },
+      {
+        "title": "Run General Maintenance",
+        "content": "Reset the PRAM and SMC, then boot into Safe Mode and clear caches and perform a permissions fix using maintenance utilities like Cocktail, Yasu, or OnyX."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Drive Problems",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Drive Health",
+            "content": "Use disk utility tools to check the health of the external drive. Look for any errors or bad sectors that might be causing the issue."
+          },
+          {
+            "title": "Reformat the Drive",
+            "content": "If the drive is not recognized at all, you may need to reformat it. Be aware that this will erase all data on the drive."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T07:41:12.332Z",
+      "updated": "2026-02-03T07:41:12.332Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/troubleshooting-external-hard-drives-that-will-not-mount/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770104481051-250",
+    "title": "Fix Discord Gray Screen",
+    "problemDescription": "Discord is stuck on a gray screen when opened.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "gray screen",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Open Run Dialog",
+        "content": "Press the Windows Key + R to open the Run dialog."
+      },
+      {
+        "title": "Navigate to AppData",
+        "content": "Type '%appdata%' and press Enter."
+      },
+      {
+        "title": "Clear Discord Cache",
+        "content": "Find the Discord folder, delete its contents, and restart Discord."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-03T07:41:21.051Z",
+      "updated": "2026-02-03T07:41:21.051Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=hwhCuzMfxtw",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770104482670-508",
+    "title": "Fix Discord Not Opening on PC",
+    "problemDescription": "Discord app fails to open or start on a Windows PC.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "app",
+      "not opening",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Delete Cache Data",
+        "content": "1. Press Win + R to open the Run dialog, type '%appdata%', and hit Enter. 2. Navigate to the Discord folder. 3. Delete the 'cache', 'code cache', and 'GPU cache' folders. 4. If you encounter an error, open Task Manager (Ctrl + Alt + Del), end the Discord task, and retry deleting the folders."
+      },
+      {
+        "title": "Reinstall Discord",
+        "content": "1. Go to 'Add or Remove Programs', find Discord, and uninstall it. 2. Download the latest version from discord.com and reinstall it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Run Discord as Administrator",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run as Administrator",
+            "content": "1. Right-click the Discord shortcut. 2. Select 'Run as administrator'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T07:41:22.670Z",
+      "updated": "2026-02-03T07:41:22.670Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=cGUwW-CLcH4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770104484201-466",
+    "title": "Fix Discord Grey Screen & Infinite Loading",
+    "problemDescription": "Discord is stuck on a grey screen or infinite loading.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "grey screen",
+      "infinite loading",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Close All Discord Processes",
+        "content": "Open Task Manager (Ctrl+Shift+Esc), go to the 'Processes' tab, and end all Discord-related processes."
+      },
+      {
+        "title": "Completely Uninstall Discord",
+        "content": "Uninstall Discord from your system, then reinstall the latest version from the official website."
+      },
+      {
+        "title": "Flush DNS",
+        "content": "Open Command Prompt as administrator and type 'ipconfig /flushdns' to flush your DNS cache."
+      },
+      {
+        "title": "Check & Update",
+        "content": "Ensure your system and graphics drivers are up to date. Restart your computer after performing these steps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Discord Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Discord Settings",
+            "content": "Go to Discord settings, navigate to 'Reset Discord', and confirm to reset all settings to default."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T07:41:24.201Z",
+      "updated": "2026-02-03T07:41:24.201Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=MFI_CG4pSLk",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
