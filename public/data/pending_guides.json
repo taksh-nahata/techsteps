@@ -96146,5 +96146,993 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770157605789-995",
+    "title": "Fix Missed Calls Not Displaying Notification on Samsung Galaxy",
+    "problemDescription": "Missed calls are not showing notifications on your Samsung Galaxy S9 or S8.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "samsung",
+      "galaxy",
+      "missed calls",
+      "notification"
+    ],
+    "steps": [
+      {
+        "title": "Check Notification Settings",
+        "content": "Go to Settings > Apps > Phone > Notifications and ensure notifications are enabled."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > General Management > Reset > Reset network settings > Reset settings. This will reset mobile data, Wi-Fi, and Bluetooth settings."
+      },
+      {
+        "title": "Check SIM Card",
+        "content": "Power off your phone, remove the SIM card, wait five minutes, then reinsert it and boot the phone. If possible, try a different SIM card on the same network."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset",
+        "type": "Last Resort",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Go to Settings > Cloud and accounts > Backup and restore to back up your data."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > General management > Reset > Factory data reset > Reset. This will wipe all data and reset the phone to factory settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T22:26:45.789Z",
+      "updated": "2026-02-03T22:26:45.789Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/common-samsung-galaxy-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770157615480-622",
+    "title": "Fix Phone Lag Without Factory Reset",
+    "problemDescription": "Phone is lagging and needs optimization without performing a factory reset.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "phone",
+      "lag",
+      "optimization",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Disable Unnecessary Settings",
+        "content": "Turn off any unnecessary settings and features that might be consuming resources."
+      },
+      {
+        "title": "Update Essential Apps",
+        "content": "Update apps you use daily, such as weather, calendar, social media, games, communication, and work tools."
+      },
+      {
+        "title": "Update Phone Software",
+        "content": "Ensure your phone is running the most recent stable version of the software. Avoid beta versions and unnecessary background services."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear App Cache and Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open the Settings app on your phone."
+          },
+          {
+            "title": "Navigate to Apps",
+            "content": "Go to Apps or Application Manager."
+          },
+          {
+            "title": "Select Problematic App",
+            "content": "Choose the app that is causing issues."
+          },
+          {
+            "title": "Clear Cache and Data",
+            "content": "Clear the cache and data for the app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T22:26:55.480Z",
+      "updated": "2026-02-03T22:26:55.480Z",
+      "sourceUrl": "https://www.makeuseof.com/i-fixed-lag-on-my-phone-without-a-factory-reset/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770157623412-749",
+    "title": "Fix Outlook.com Not Loading in Linux",
+    "problemDescription": "Outlook.com fails to load in Linux across all browsers, showing a 'Failed secure connection' error.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook.com",
+      "linux",
+      "browser",
+      "connection",
+      "firefox"
+    ],
+    "steps": [
+      {
+        "title": "Check and Update System Packages",
+        "content": "Ensure your Linux system is up-to-date by running `sudo apt-get update` and `sudo apt-get upgrade`."
+      },
+      {
+        "title": "Test with a New Browser Profile",
+        "content": "Create a new browser profile using Firefox Profile Manager to rule out profile-specific issues."
+      },
+      {
+        "title": "Verify DNS Settings",
+        "content": "Ensure your DNS settings are correct and consistent with those used in Windows. Check `/etc/resolv.conf` for the correct DNS servers."
+      },
+      {
+        "title": "Check Network Configuration",
+        "content": "Verify that your network configuration is not blocking the connection. Use tools like `ping` and `traceroute` to diagnose network issues."
+      },
+      {
+        "title": "Inspect Browser Developer Tools",
+        "content": "Use Firefox Developer Tools to monitor network activity and identify any failing requests. Look for specific URLs that are not loading."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Mozilla Thunderbird as a Temporary Solution",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Configure Thunderbird",
+            "content": "Set up your Outlook.com account in Mozilla Thunderbird using IMAP or POP3. This allows you to access your emails while the web client issue is unresolved."
+          }
+        ]
+      },
+      {
+        "title": "Test with a Different Router",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Router Settings",
+            "content": "If possible, test with a different router to rule out router-specific issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T22:27:03.412Z",
+      "updated": "2026-02-03T22:27:03.412Z",
+      "sourceUrl": "https://askubuntu.com/questions/655199/how-to-fix-diagnose-this-problem-outlook-com-does-not-load-in-linux-all-browse",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770157625783-775",
+    "title": "Fix Outlook Mail Timeout on Ubuntu",
+    "problemDescription": "Outlook mail times out when accessed via Firefox or Chrome on Ubuntu, but works fine on Thunderbird and mobile devices.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "timeout",
+      "ubuntu",
+      "browser"
+    ],
+    "steps": [
+      {
+        "title": "Check Proxy Settings",
+        "content": "Ensure that your browser is not configured to use a proxy server. Go to Settings > Network Settings and disable any proxy settings."
+      },
+      {
+        "title": "Disable Browser Extensions",
+        "content": "Disable all browser extensions in Firefox and Chrome to check if any of them are causing the issue."
+      },
+      {
+        "title": "Clear Browser Data",
+        "content": "Clear all browsing data including cache, cookies, and site data. This can often resolve connectivity issues."
+      },
+      {
+        "title": "Check Firewall Settings",
+        "content": "Ensure that your firewall is not blocking access to outlook.live.com. You may need to add an exception for this URL."
+      },
+      {
+        "title": "Test with a Different Browser",
+        "content": "Try accessing outlook.live.com using a different browser to see if the issue is specific to Firefox or Chrome."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Thunderbird or Mobile Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Thunderbird",
+            "content": "If the issue persists, use Thunderbird as your primary email client for accessing Outlook mail."
+          },
+          {
+            "title": "Use Mobile Device",
+            "content": "Access your Outlook mail using your mobile device with a Wi-Fi connection."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T22:27:05.783Z",
+      "updated": "2026-02-03T22:27:05.783Z",
+      "sourceUrl": "https://askubuntu.com/questions/1402227/outlook-mail-times-out",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770157629776-16",
+    "title": "Fix DNS Resolution for Outlook SMTP on Ubuntu",
+    "problemDescription": "Unable to ping or send emails using smtp-mail.outlook.com after upgrading to Ubuntu 17.10 due to DNS resolution issues.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "dns",
+      "outlook",
+      "smtp",
+      "ubuntu",
+      "email"
+    ],
+    "steps": [
+      {
+        "title": "Check DNS Resolution",
+        "content": "Use `nslookup smtp-mail.outlook.com` to verify DNS resolution. If it resolves to multiple addresses, note the final IP address."
+      },
+      {
+        "title": "Update DNS Configuration",
+        "content": "Edit your DNS configuration file (usually `/etc/resolv.conf`) and add a nameserver like Google's DNS (8.8.8.8) or Cloudflare's DNS (1.1.1.1)."
+      },
+      {
+        "title": "Restart Networking Service",
+        "content": "Restart the networking service to apply changes: `sudo systemctl restart systemd-resolved`."
+      },
+      {
+        "title": "Test Connectivity",
+        "content": "Try pinging the resolved IP address directly to see if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Specific Server Addresses",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Manually Set Server Addresses",
+            "content": "In your email client, manually set the incoming mail server to `outlook-emeacenter5.office365.com` and the outgoing mail server to `outlook-emeacenter3.office365.com`."
+          },
+          {
+            "title": "Test Email Functionality",
+            "content": "Send a test email to verify if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T22:27:09.776Z",
+      "updated": "2026-02-03T22:27:09.776Z",
+      "sourceUrl": "https://askubuntu.com/questions/969689/dns-problem-trying-to-ping-or-send-email-using-smtp-mail-outlook-com-after-upgra",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770157633133-722",
+    "title": "Install MS Office 2016 on PlayOnLinux",
+    "problemDescription": "Installing Microsoft Office 2016 on Ubuntu using PlayOnLinux.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "office",
+      "playonlinux",
+      "wine",
+      "ubuntu"
+    ],
+    "steps": [
+      {
+        "title": "Install PlayOnLinux and Wine",
+        "content": "Ensure PlayOnLinux and Wine are installed on your Ubuntu system."
+      },
+      {
+        "title": "Create a New Virtual Drive",
+        "content": "Open PlayOnLinux and create a new virtual drive for Office 2016."
+      },
+      {
+        "title": "Install Office 2016",
+        "content": "Run the Office 2016 installer within the new virtual drive."
+      },
+      {
+        "title": "Configure Shortcuts",
+        "content": "Manually create shortcuts for Office applications using POL_Shortcut commands."
+      },
+      {
+        "title": "Add Extensions",
+        "content": "Add file extensions to PlayOnLinux's extension file using POL_Extension_Write commands."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use VirtualBox",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install VirtualBox",
+            "content": "Install VirtualBox on your Ubuntu system."
+          },
+          {
+            "title": "Create a Windows Virtual Machine",
+            "content": "Set up a Windows virtual machine within VirtualBox."
+          },
+          {
+            "title": "Install Office 2016",
+            "content": "Install Microsoft Office 2016 on the Windows virtual machine."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T22:27:13.133Z",
+      "updated": "2026-02-03T22:27:13.133Z",
+      "sourceUrl": "https://askubuntu.com/questions/975104/how-do-i-install-ms-office-2016-on-playonlinux",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770157636487-430",
+    "title": "Connect Evolution to Office 365",
+    "problemDescription": "Setting up Evolution email client to work with Office 365.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "evolution",
+      "office365",
+      "email",
+      "setup"
+    ],
+    "steps": [
+      {
+        "title": "Install Evolution and Evolution-EWS",
+        "content": "Run the command `sudo apt install evolution evolution-ews -y` to install the necessary packages."
+      },
+      {
+        "title": "Open Evolution",
+        "content": "Launch the Evolution application via the GUI."
+      },
+      {
+        "title": "Create a New Mail Account",
+        "content": "If it's your first time opening the app, the form to create a new account will open automatically. Otherwise, navigate to `File` > `New` > `Mail Account`."
+      },
+      {
+        "title": "Enter Account Details",
+        "content": "Enter your full email address as the username and `outlook.office365.com` as the host URL. Click `Fetch URL` to auto-populate the required fields."
+      },
+      {
+        "title": "Enter Password",
+        "content": "When prompted, enter your password to complete the setup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using GNOME Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open GNOME Settings",
+            "content": "After installing Evolution, open GNOME settings."
+          },
+          {
+            "title": "Select Exchange",
+            "content": "Click on Exchange and input your login details."
+          },
+          {
+            "title": "Enter Custom Settings",
+            "content": "In the custom settings, enter your email again next to the username and `outlook.office365.com` next to the server."
+          },
+          {
+            "title": "Verify Setup",
+            "content": "Open Evolution to check if the account has been registered and if the calendar syncs with GNOME."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Manual Configuration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter Host URL",
+            "content": "For Outlook.com, use the host URL `outlook.office365.com`."
+          },
+          {
+            "title": "No Fetch URL Needed",
+            "content": "No need to click `Fetch URL`; the fields should auto-populate."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T22:27:16.487Z",
+      "updated": "2026-02-03T22:27:16.487Z",
+      "sourceUrl": "https://askubuntu.com/questions/109548/evolution-and-office-365",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770157643338-163",
+    "title": "Access Full-Size Instagram Images on Browser",
+    "problemDescription": "Instagram does not display the original full-size images on the browser, but you can access them with a URL modification.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "Instagram",
+      "full-size images",
+      "browser",
+      "URL modification"
+    ],
+    "steps": [
+      {
+        "title": "Open the Image in Browser",
+        "content": "On the browser, open the picture you wish to download."
+      },
+      {
+        "title": "Modify the URL",
+        "content": "Modify the URL in the address bar by appending `media/?size=l` (lowercase L for large-size)."
+      },
+      {
+        "title": "Execute the URL",
+        "content": "Press Enter to execute the URL."
+      },
+      {
+        "title": "Save the Image",
+        "content": "Save the image."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Edit URL for Single Image",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit the URL",
+            "content": "Edit the URL to exclude the name, like: `https://instagram.com/p/<post-id>/media/?size=l`."
+          },
+          {
+            "title": "Execute the URL",
+            "content": "Press Enter to execute the URL."
+          },
+          {
+            "title": "Save the Image",
+            "content": "Save the image."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T22:27:23.338Z",
+      "updated": "2026-02-03T22:27:23.338Z",
+      "sourceUrl": "https://superuser.com/questions/1835312/are-the-full-size-images-from-instagram-on-a-browser-actually-full-size",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770157648749-116",
+    "title": "Fix 'The application can't be opened' on Mac",
+    "problemDescription": "The application cannot be opened due to missing execution permissions.",
+    "category": "macOS",
+    "difficulty": "Easy",
+    "keywords": [
+      "macOS",
+      "application",
+      "permissions",
+      "execute"
+    ],
+    "steps": [
+      {
+        "title": "Grant Execution Permissions",
+        "content": "Open Terminal and run the following command to grant execution permissions to the application: `chmod +x /Applications/ApplicationName.app/Contents/MacOS/ApplicationName`. Replace 'ApplicationName' with the actual name of your application."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reboot Your Mac",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot Your Mac",
+            "content": "Sometimes, a simple reboot can resolve the issue. Restart your Mac and try opening the application again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall the Application",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall the Application",
+            "content": "If the issue persists, delete the application and reinstall it from the original source."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T22:27:28.749Z",
+      "updated": "2026-02-03T22:27:28.749Z",
+      "sourceUrl": "https://superuser.com/questions/1345755/how-to-fix-the-application-cant-be-opened-on-mac",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770157650874-362",
+    "title": "Adjust UI Scaling for Chrome",
+    "problemDescription": "How to change the user interface scaling in Google Chrome.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "ui",
+      "scaling",
+      "display"
+    ],
+    "steps": [
+      {
+        "title": "Open Chrome Settings",
+        "content": "Click on the three vertical dots in the top-right corner of the Chrome window and select 'Settings'."
+      },
+      {
+        "title": "Access Advanced Settings",
+        "content": "Scroll down to the bottom of the Settings page and click on 'Advanced' to expand additional options."
+      },
+      {
+        "title": "Adjust UI Scaling",
+        "content": "Under the 'System' section, find the 'Page zoom' option and adjust the slider to your preferred scaling level."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Chrome Flags",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Chrome Flags",
+            "content": "Type 'chrome://flags' in the address bar and press Enter."
+          },
+          {
+            "title": "Search for UI Scaling",
+            "content": "In the search bar at the top, type 'UI Scaling' and look for the relevant flag."
+          },
+          {
+            "title": "Adjust Scaling",
+            "content": "Change the value of the flag to your desired scaling level and restart Chrome."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T22:27:30.874Z",
+      "updated": "2026-02-03T22:27:30.874Z",
+      "sourceUrl": "https://superuser.com/questions/1139259/how-to-adjust-ui-scaling-for-chrome",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770157654231-724",
+    "title": "Fix Unknown Icons on Taskbar in Windows 11",
+    "problemDescription": "Unknown or generic icons appearing on the Windows 11 taskbar.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "taskbar",
+      "icons",
+      "generic icons"
+    ],
+    "steps": [
+      {
+        "title": "Repin the Application",
+        "content": "Right-click on the unknown icon and select 'Unpin from taskbar'. Then, open the application and right-click its icon in the taskbar to select 'Pin to taskbar'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Delete ImplicitAppShortcuts Entry",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Navigate to the ImplicitAppShortcuts Folder",
+            "content": "Open File Explorer and navigate to `%APPDATA%\\Microsoft\\Internet Explorer\\Quick Launch\\User Pinned\\ImplicitAppShortcuts\\`."
+          },
+          {
+            "title": "Delete the Corresponding Entry",
+            "content": "Find and delete the entry corresponding to the application with the unknown icon."
+          },
+          {
+            "title": "Relaunch the Application",
+            "content": "Open the application again to see if the icon has been restored."
+          }
+        ]
+      },
+      {
+        "title": "Downgrade to Windows 10",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure all important data is backed up before proceeding."
+          },
+          {
+            "title": "Use the Media Creation Tool",
+            "content": "Download and run the Windows 10 Media Creation Tool to downgrade your system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T22:27:34.231Z",
+      "updated": "2026-02-03T22:27:34.231Z",
+      "sourceUrl": "https://superuser.com/questions/1690384/how-to-fix-unknown-icons-on-taskbar-on-windows-11",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770157659940-42",
+    "title": "Fix Gmail Sync Issues",
+    "problemDescription": "Gmail is not syncing contacts or data properly.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "sync",
+      "contacts",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Clear Cache and Data",
+        "content": "Go to Settings > Apps Manager, then swipe to All and choose Contact Sync. Select Clear cache and clear data."
+      },
+      {
+        "title": "Remove and Re-add Google Account",
+        "content": "Remove your Google Account and set it up again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Sync Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Sync Settings",
+            "content": "Go to Settings > Accounts > Google. Select your account and ensure that the sync options for Contacts and other data are enabled."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T22:27:39.940Z",
+      "updated": "2026-02-03T22:27:39.940Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-Gmail-sync-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770157661148-618",
+    "title": "Fix Gmail Error: The system encountered a problem",
+    "problemDescription": "Gmail displays an error message stating 'The system encountered a problem'.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "error",
+      "chrome",
+      "extensions"
+    ],
+    "steps": [
+      {
+        "title": "Disable Extensions",
+        "content": "Go to the top right of the Chrome window, click on the three dots, select 'Extensions', then 'Manage Extensions'. Disable each extension one by one to identify the problematic one."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-03T22:27:41.148Z",
+      "updated": "2026-02-03T22:27:41.148Z",
+      "sourceUrl": "https://www.quora.com/Who-can-help-me-resolve-the-following-problem-with-Gmail-The-system-encountered-a-problem-2014",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770157663147-852",
+    "title": "Fix Gmail Not Sending Emails",
+    "problemDescription": "Emails are not being sent from your Gmail account.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "email",
+      "sending",
+      "not working"
+    ],
+    "steps": [
+      {
+        "title": "Check Browser Compatibility",
+        "content": "Access your Gmail account using a different web browser to see if the issue persists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Browser Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache",
+            "content": "Clear the cache and cookies of your current browser and try sending the email again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check Gmail Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Settings",
+            "content": "Ensure that your Gmail settings, such as SMTP settings, are correctly configured."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T22:27:43.147Z",
+      "updated": "2026-02-03T22:27:43.147Z",
+      "sourceUrl": "https://www.quora.com/Mail-is-not-going-from-my-Gmail-What-to-do-How-to-send",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770157664928-657",
+    "title": "Recover Missing Gmail Messages",
+    "problemDescription": "Gmail account not displaying all emails, missing messages.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "missing messages",
+      "recovery"
+    ],
+    "steps": [
+      {
+        "title": "Check Spam and Trash Folders",
+        "content": "Navigate to the Spam, HTML0, and Trash folders to locate any missing messages."
+      },
+      {
+        "title": "Access All Mail",
+        "content": "Go to the All Mail section to view all emails, including those not in your primary inbox."
+      },
+      {
+        "title": "Review Settings",
+        "content": "Open Settings > View all settings to ensure no filters or labels are hiding messages."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Search Function",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Search for Missing Emails",
+            "content": "Use the search bar in Gmail to look for specific keywords or sender names related to the missing messages."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T22:27:44.928Z",
+      "updated": "2026-02-03T22:27:44.928Z",
+      "sourceUrl": "https://www.quora.com/What-can-I-do-if-my-Gmail-account-is-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770157673764-382",
+    "title": "Fix Microphone Randomly Adjusting Levels",
+    "problemDescription": "Microphone levels are randomly adjusting, causing inconsistent audio output.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "microphone",
+      "audio",
+      "adjustment",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Check Audio Control Panel and Windows Sound Settings",
+        "content": "Open the audio control panel software and Windows Sound settings. Look for any checkboxes related to automatic sound level adjustment and uncheck them."
+      },
+      {
+        "title": "Check Discord Settings",
+        "content": "Open Discord and navigate to the Voice & Video settings. Ensure that any automatic volume adjustment options are disabled."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Install VB-CABLE as a Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install VB-CABLE",
+            "content": "Download VB-CABLE from the official website and follow the installation instructions."
+          },
+          {
+            "title": "Configure Audio Settings",
+            "content": "Set VB-CABLE as your default audio device in your system and application settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T22:27:53.764Z",
+      "updated": "2026-02-03T22:27:53.764Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/microphone-randomly-adjusting-levels.3686505/latest",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770157678106-454",
+    "title": "Diagnose and Fix Erratic Reboots and Fan Behavior",
+    "problemDescription": "System experiences erratic fan behavior, frequent reboots, and potential Windows corruption, possibly due to a faulty motherboard.",
+    "category": "windows",
+    "difficulty": "Hard",
+    "keywords": [
+      "reboot",
+      "fan",
+      "motherboard",
+      "windows",
+      "corruption"
+    ],
+    "steps": [
+      {
+        "title": "Isolate Components",
+        "content": "Use a read-only disc or USB stick containing your OS of choice to boot the system. This helps to rule out issues with the installed Windows installation."
+      },
+      {
+        "title": "Stress Test Components",
+        "content": "Run stress tests on individual components to identify the faulty part. Start with one stick of RAM at a time to reduce variables."
+      },
+      {
+        "title": "Check for Errors",
+        "content": "Monitor for errors in the memory and SSD. If errors are found, it may indicate a faulty motherboard, particularly the north or south bridge chip."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Replace Motherboard",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Replace the Motherboard",
+            "content": "If stress tests and error monitoring consistently point to the motherboard as the culprit, consider replacing it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T22:27:58.106Z",
+      "updated": "2026-02-03T22:27:58.106Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/support-team-stumped.3664572/latest",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1770157682841-654",
+    "title": "Fix Discord/Teams Ping Jitter",
+    "problemDescription": "Discord and Microsoft Teams cause high ping spikes/jitter on a specific computer, affecting browsing, gaming, and remote support.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "teams",
+      "ping",
+      "jitter",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Check Network Drivers",
+        "content": "Ensure that the network drivers for both Wi-Fi and Ethernet are up to date. Visit the manufacturer's website to download the latest drivers."
+      },
+      {
+        "title": "Disable Background Applications",
+        "content": "Close all unnecessary background applications that might be using bandwidth, especially those related to updates or cloud services."
+      },
+      {
+        "title": "Adjust Quality of Service (QoS) Settings",
+        "content": "Prioritize Discord and Teams traffic in your router's QoS settings to ensure they get sufficient bandwidth."
+      },
+      {
+        "title": "Use Wired Connection",
+        "content": "If possible, use a wired Ethernet connection instead of Wi-Fi to reduce potential interference and improve stability."
+      },
+      {
+        "title": "Check for Interference",
+        "content": "Ensure that the computer is not placed near other electronic devices that might cause interference, such as microwaves or cordless phones."
+      },
+      {
+        "title": "Test with Different Network Devices",
+        "content": "Try using a different router or network device to see if the issue persists. This can help identify if the problem is with the specific router."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Discord/Teams in Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Browser",
+            "content": "Open your preferred web browser."
+          },
+          {
+            "title": "Access Discord/Teams",
+            "content": "Go to the Discord or Teams website and log in."
+          },
+          {
+            "title": "Use Web Version",
+            "content": "Use the web version of Discord or Teams instead of the desktop application to see if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T22:28:02.841Z",
+      "updated": "2026-02-03T22:28:02.841Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/discord-teams-causing-ping-jitter.3696975/latest",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
