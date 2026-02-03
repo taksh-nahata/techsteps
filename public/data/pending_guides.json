@@ -91100,5 +91100,307 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770114998330-49",
+    "title": "Fix USB Not Recognized by Computer",
+    "problemDescription": "USB flash drive is not being recognized by a specific computer, but works on other devices.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "usb",
+      "not recognized",
+      "computer",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check the USB Port",
+        "content": "Inspect the USB port on the computer for any visible damage or debris. Try connecting the USB to a different port on the same computer."
+      },
+      {
+        "title": "Restart the Computer",
+        "content": "Restart the computer and then reconnect the USB drive to see if it is recognized."
+      },
+      {
+        "title": "Update USB Drivers",
+        "content": "Go to Device Manager, expand Universal Serial Bus controllers, right-click on the USB host controller, and select Update driver."
+      },
+      {
+        "title": "Check Disk Management",
+        "content": "Open Disk Management (press Win + X and select Disk Management), and see if the USB drive appears there. If it does, initialize and format the drive."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Computer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect to Another Computer",
+            "content": "Try connecting the USB drive to a different computer to see if it is recognized. This can help determine if the issue is with the USB drive or the original computer."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a USB Hub",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect via USB Hub",
+            "content": "Connect the USB drive to the computer using a USB hub. Sometimes, a hub can provide better power delivery and recognition."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T10:36:38.330Z",
+      "updated": "2026-02-03T10:36:38.330Z",
+      "sourceUrl": "https://www.quora.com/How-can-I-fix-my-USB-if-it-is-not-being-recognized-by-any-computer-even-though-it-has-worked-before-Is-there-a-solution-that-does-not-involve-getting-a-new-one-or-returning-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770115014545-6",
+    "title": "Unhide Teams in Microsoft Teams",
+    "problemDescription": "Teams are hidden and require an extra click to access.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Teams",
+      "Teams",
+      "unhide",
+      "access"
+    ],
+    "steps": [
+      {
+        "title": "Open Microsoft Teams",
+        "content": "Launch the Microsoft Teams application on your device."
+      },
+      {
+        "title": "Access Settings",
+        "content": "Click on your profile picture in the top right corner and select 'Settings' from the dropdown menu."
+      },
+      {
+        "title": "Navigate to General Settings",
+        "content": "In the Settings menu, click on 'General'."
+      },
+      {
+        "title": "Enable Teams in the Sidebar",
+        "content": "Under the 'General' settings, find the option 'Teams and channels' and toggle it on."
+      },
+      {
+        "title": "Restart Microsoft Teams",
+        "content": "Close and reopen Microsoft Teams to see the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use the Command Line",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Command Prompt",
+            "content": "Press 'Win + R', type 'cmd', and press Enter."
+          },
+          {
+            "title": "Run the Command",
+            "content": "Type 'teams://teams.microsoft.com/l/meetup-join/19:meeting_<MEETING_ID>@thread.skype/0?context=%7B%22Tid%22:%22<TENANT_ID>%22,%22Oid%22:%22<USER_ID>%22%7D' and press Enter."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T10:36:54.545Z",
+      "updated": "2026-02-03T10:36:54.545Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/microsoft-fixes-biggest-teams-complaint/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770115021619-211",
+    "title": "Fix Windows 11 24H2 BSOD with Certain SSDs",
+    "problemDescription": "Windows 11 24H2 update causes BSOD on PCs with certain SSDs.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "bsod",
+      "update",
+      "ssd"
+    ],
+    "steps": [
+      {
+        "title": "Roll Back the Update",
+        "content": "Go to Settings > Windows Update > Update history > Uninstall updates. Select the latest update and follow the prompts to remove it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Modify Registry to Disable HMB",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Registry Editor",
+            "content": "Press Win + R, type 'regedit', and press Enter."
+          },
+          {
+            "title": "Navigate to the Key",
+            "content": "Go to HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\WMI\\HostedMemoryBlock."
+          },
+          {
+            "title": "Modify the Value",
+            "content": "Change the 'Enabled' value to 0."
+          },
+          {
+            "title": "Restart Your PC",
+            "content": "Reboot your computer for the changes to take effect."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T10:37:01.619Z",
+      "updated": "2026-02-03T10:37:01.619Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/windows-11-24h2-bsod-reports/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770115028015-961",
+    "title": "Fix Outlook 2007 Exchange Server Connection",
+    "problemDescription": "Outlook 2007 fails to connect to Exchange Server 2003, displaying errors like 'The action cannot be completed' or 'Your Microsoft Exchange Server is unavailable'.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Outlook 2007",
+      "Exchange Server 2003",
+      "connection error",
+      "registry edit"
+    ],
+    "steps": [
+      {
+        "title": "Edit the Registry",
+        "content": "Add a DWORD value named DefConnectOps to the Registry key: HKEY_CURRENT_USER\\Software\\Microsoft\\Office\\12.0\\Outlook\\RPC."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Lower Vista's Security Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run netsh at a command prompt",
+            "content": "Lower Vista's security settings to resolve the TCP port 1723 conflict."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Increase .pst and .ost File Size",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Follow Microsoft's instructions",
+            "content": "Increase the maximum size of the .pst and .ost files in Outlook 2003 and 2007."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T10:37:08.015Z",
+      "updated": "2026-02-03T10:37:08.015Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/a-fix-for-outlook-2007s-failure-to-link-to-exchange-server-2003/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770115034060-594",
+    "title": "Fix Outlook Express Large Email Sending Issues",
+    "problemDescription": "Outlook Express fails to send large emails or emails with attachments due to MTU settings.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Outlook Express",
+      "email",
+      "MTU",
+      "attachments"
+    ],
+    "steps": [
+      {
+        "title": "Adjust MTU Settings",
+        "content": "Download and install IPNetTuner to modify the MTU settings on your Mac OS 9 system. Set the MTU to 1452 to resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Network Configuration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Network Settings",
+            "content": "Ensure that your network settings are correctly configured. Use tools like tcpdump to diagnose network issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T10:37:14.060Z",
+      "updated": "2026-02-03T10:37:14.060Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/troubleshooting-outlook-express-workarounds-for-large-e-mail-sending-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770115036669-871",
+    "title": "Fix Windows Phone App Problems",
+    "problemDescription": "Windows Phone users are unable to access full features of third-party apps like Gmail due to Microsoft's stock apps.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows phone",
+      "apps",
+      "Gmail",
+      "Microsoft"
+    ],
+    "steps": [
+      {
+        "title": "Encourage Third-Party App Development",
+        "content": "Microsoft should actively encourage companies like Google and Yahoo to develop their own apps for Windows Phone, such as Gmail, Google Maps, Yahoo Mail, and Yahoo Weather."
+      },
+      {
+        "title": "Improve Microsoft's Own Apps",
+        "content": "Microsoft should focus on improving its own apps, including Outlook, Bing News, Office, and Xbox Music, to provide a better user experience."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Web Versions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Web Versions",
+            "content": "Users can access web versions of apps like Gmail and Google Maps through the browser on their Windows Phone devices."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T10:37:16.669Z",
+      "updated": "2026-02-03T10:37:16.669Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/windows-phone-apps-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
