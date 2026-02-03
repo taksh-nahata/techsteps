@@ -88262,5 +88262,146 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770082365380-78",
+    "title": "Opt Out of Discord AI Data Usage",
+    "problemDescription": "Discord's AI features may collect and use your data in ways that violate your privacy.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "privacy",
+      "ai",
+      "data",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Access Privacy Settings",
+        "content": "Go to your Discord app and click on 'User Settings' at the bottom left, next to your avatar."
+      },
+      {
+        "title": "Navigate to Privacy & Safety",
+        "content": "In the User Settings menu, select 'Privacy & Safety' on the left side."
+      },
+      {
+        "title": "Opt Out of Data Usage",
+        "content": "Under 'How We Use Your Data', opt out of all settings to minimize data collection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Review Discord's Privacy Policy",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Privacy Policy Updates",
+            "content": "Review Discord's privacy policy updates to understand any changes in data collection practices."
+          },
+          {
+            "title": "Contact Discord Support",
+            "content": "If you have concerns, contact Discord support for clarification on their data usage policies."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T01:32:45.380Z",
+      "updated": "2026-02-03T01:32:45.380Z",
+      "sourceUrl": "https://www.techradar.com/opinion/discords-ai-features-violate-our-privacy-and-its-time-we-pushed-back",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770082366997-403",
+    "title": "Discord Free Upload Limit Reduced to 10MB",
+    "problemDescription": "Discord has lowered the free upload limit from 25MB to 10MB, affecting users who do not have a paid subscription.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Discord",
+      "upload limit",
+      "file size",
+      "free users"
+    ],
+    "steps": [
+      {
+        "title": "Check Your Discord Subscription",
+        "content": "Verify if you have an active Discord Nitro Basic or Nitro subscription, as these tiers allow for larger file uploads."
+      },
+      {
+        "title": "Compress Files Before Uploading",
+        "content": "Use file compression tools to reduce the size of files you wish to upload to under 10MB."
+      },
+      {
+        "title": "Use Alternative File Sharing Services",
+        "content": "For files larger than 10MB, consider using alternative file-sharing services like Google Drive, Dropbox, or WeTransfer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Upgrade to Discord Nitro",
+        "type": "Paid Solution",
+        "steps": [
+          {
+            "title": "Subscribe to Discord Nitro Basic or Nitro",
+            "content": "Upgrade to a paid subscription to regain the ability to upload files up to 100MB (Nitro Basic) or 500MB (Nitro)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T01:32:46.997Z",
+      "updated": "2026-02-03T01:32:46.997Z",
+      "sourceUrl": "https://www.techradar.com/computing/social-media/discord-changes-course-and-lowers-free-upload-limit-to-10gb-how-will-that-affect-you",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770082375355-224",
+    "title": "Fix LCD Monitor Flickering",
+    "problemDescription": "LCD monitor flickering and lagging issues.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "monitor",
+      "flickering",
+      "cable"
+    ],
+    "steps": [
+      {
+        "title": "Check and Replace Cable",
+        "content": "Inspect the HDMI, DisplayPort, VGA, or DVI cable connected to your monitor. If the cable is damaged or old, replace it with a new one."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Adjust Display Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Refresh Rate",
+            "content": "Change the refresh rate in your display settings to a higher value, such as 60Hz or 75Hz."
+          },
+          {
+            "title": "Resolution",
+            "content": "Ensure the resolution is set to the native resolution of your monitor."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-03T01:32:55.355Z",
+      "updated": "2026-02-03T01:32:55.355Z",
+      "sourceUrl": "https://www.quora.com/How-can-you-fix-an-LCD-monitor-that-keeps-flickering-and-lagging",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
