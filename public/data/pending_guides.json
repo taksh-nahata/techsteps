@@ -98748,5 +98748,490 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770187476377-554",
+    "title": "Fix Slow Samsung S6 After Factory Reset",
+    "problemDescription": "Samsung S6 is slow, laggy, and unresponsive even after a factory reset.",
+    "category": "android",
+    "difficulty": "Hard",
+    "keywords": [
+      "android",
+      "samsung",
+      "slow",
+      "factory reset",
+      "firmware"
+    ],
+    "steps": [
+      {
+        "title": "Flash Firmware Using Odin",
+        "content": "Download the appropriate firmware for your Samsung S6 model. Extract the firmware file and open Odin on your computer. Put your phone in download mode (Power + Volume Down + Home). Connect the phone to the computer using a USB cable. In Odin, load the firmware files in the appropriate slots (BL, AP, CP, CSC). Ensure only 'Auto Reboot' and 'FRP Reset' are checked. Click 'Start' to begin flashing."
+      },
+      {
+        "title": "Perform a Factory Reset",
+        "content": "After flashing the firmware, perform a factory reset to ensure all old data is cleared. This can be done through the phone's settings or recovery mode."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Wipe Cache Partition",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter Recovery Mode",
+            "content": "Power off your device. Hold down the Power, Volume Up, and Home buttons simultaneously until the Samsung logo appears. Release the buttons when the recovery menu appears."
+          },
+          {
+            "title": "Wipe Cache Partition",
+            "content": "Use the volume buttons to navigate to 'Wipe Cache Partition' and press the Power button to select it. Confirm the action and wait for the process to complete. Restart your device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T06:44:36.377Z",
+      "updated": "2026-02-04T06:44:36.377Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/236770/smartphone-laggy-and-slow-when-a-factory-reset-is-ineffective",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1770187483091-769",
+    "title": "Fix Slow Loading of Internal Storage Folder on PC",
+    "problemDescription": "Slow loading of internal storage folder when connecting Android phone to PC via USB.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "internal storage",
+      "slow loading",
+      "USB connection"
+    ],
+    "steps": [
+      {
+        "title": "Use FTP for File Transfer",
+        "content": "1. Connect your phone and computer to the same WiFi or hotspot. 2. Download MixPlorer or another file manager with FTP support on your Android device. 3. Follow the guide to set up FTP transfer for faster file access."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use ADB for File Transfer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Developer Options and ADB",
+            "content": "1. Enable Developer Options on your Android device. 2. Enable ADB. 3. Install a minimal ADB setup on your PC."
+          },
+          {
+            "title": "Transfer Files via ADB",
+            "content": "Use ADB shell to upload/download files to/from your PC. This method avoids performance issues with MTP."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Clear Android Media Store",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Media Store Data",
+            "content": "Clear the Android Media Store data to potentially resolve the slow loading issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T06:44:43.091Z",
+      "updated": "2026-02-04T06:44:43.091Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/244594/slow-loading-of-the-internal-storage-folder-in-pc",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770187485329-368",
+    "title": "Android Slow Internet on Device but Fast via Hotspot",
+    "problemDescription": "Internet is slow on the Android device itself but fast when shared via hotspot or tethering.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "internet",
+      "slow",
+      "hotspot",
+      "tethering"
+    ],
+    "steps": [
+      {
+        "title": "Test Internet Speed on PC via Tethering",
+        "content": "Connect your Android device to a PC via tethering (USB, Wi-Fi, or Bluetooth) and download a file to measure the expected speed."
+      },
+      {
+        "title": "Compare Download Speeds",
+        "content": "On your Android device, turn off tethering and any other apps using the internet. Use a download manager to download the same file and compare the speeds."
+      },
+      {
+        "title": "Analyze Results",
+        "content": "If the download speed on the Android device is significantly slower, the issue is likely with the device's network settings or software."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Network-Related Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify and Disable Suspicious Apps",
+            "content": "Check for any ad blocker apps or other network-related software that might be interfering with the internet speed."
+          },
+          {
+            "title": "Restart Device",
+            "content": "Restart your device to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T06:44:45.329Z",
+      "updated": "2026-02-04T06:44:45.329Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/193850/internet-fast-when-sharing-via-hotspot-or-tethering-but-slow-on-the-device-itsel",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770187494346-908",
+    "title": "Fix AirPods 'Left Behind' Notifications",
+    "problemDescription": "AirPods frequently send false 'left behind' notifications due to a firmware issue.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods",
+      "iOS",
+      "notifications",
+      "Find My"
+    ],
+    "steps": [
+      {
+        "title": "Disable 'Notify When Left Behind'",
+        "content": "Open the Find My app on your iPhone, tap 'Notify When Left Behind', then toggle off the feature."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Unpair and Reset AirPods",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unpair AirPods",
+            "content": "Go to Settings > Bluetooth, tap the 'i' icon next to your AirPods, and select 'Forget This Device'."
+          },
+          {
+            "title": "Reset AirPods",
+            "content": "Place your AirPods in their case, open the lid, press and hold the setup button on the back for about 15 seconds until the status light flashes amber, then white."
+          },
+          {
+            "title": "Re-pair AirPods",
+            "content": "Open the lid of your AirPods case, press and hold the setup button until the status light flashes white, then follow the on-screen instructions to re-pair your AirPods with your iPhone."
+          }
+        ]
+      },
+      {
+        "title": "Exclude Certain Locations",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Find My App",
+            "content": "Open the Find My app on your iPhone."
+          },
+          {
+            "title": "Select AirPods",
+            "content": "Tap on your AirPods."
+          },
+          {
+            "title": "Add Location",
+            "content": "Tap 'Notify When Left Behind', then tap 'Add Location' and specify locations where you don't want to be notified."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T06:44:54.346Z",
+      "updated": "2026-02-04T06:44:54.346Z",
+      "sourceUrl": "https://lifehacker.com/how-to-disable-the-malfunctioning-airpods-left-behind-1848641066",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770187502724-934",
+    "title": "Fix Slow iMac with Green Memory Pressure",
+    "problemDescription": "iMac is slow and experiencing green memory pressure.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "imac",
+      "slow",
+      "memory pressure",
+      "green"
+    ],
+    "steps": [
+      {
+        "title": "Create a New User Account",
+        "content": "Go to Apple Menu > System Preferences > Users and Groups. Click the + sign at the bottom left to add a new user. Set your user options and ensure automatic login is off. Restart your computer and log in to the new user account. Use the computer for a while to determine if it is still slow."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Boot from an External Drive",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install macOS Sierra on an External Drive",
+            "content": "Do a full installation of macOS Sierra on the external hard drive without installing any 3rd party software. Restart your Mac, hold the Option key, and select the external drive to boot from it. Use the iMac from the external drive for a while to check performance."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Boot in Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot in Safe Mode",
+            "content": "Restart your iMac and immediately hold down the Shift key until the login screen appears. Log in and use the iMac in Safe Mode for a while to check performance. Restart normally to exit Safe Mode."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T06:45:02.724Z",
+      "updated": "2026-02-04T06:45:02.724Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/255907/imac-is-slow-memory-pressure-green",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770187514407-765",
+    "title": "Fix Slow MacBook",
+    "problemDescription": "MacBook is running slow recently.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "slow",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Check Battery Health",
+        "content": "Ensure your battery is not at the end of its life or not holding charge. A failing battery can cause the CPU to throttle, significantly impacting performance."
+      },
+      {
+        "title": "Monitor CPU Usage",
+        "content": "Use the Activity Monitor to identify processes consuming high CPU resources. Open Activity Monitor, select 'All Processes', sort by CPU usage, and check the top processes."
+      },
+      {
+        "title": "Check Disk Health",
+        "content": "Boot into recovery mode and run Disk Utility. Select your MacHD, click on First Aid, and check for any errors."
+      },
+      {
+        "title": "Clean Up Storage",
+        "content": "Use a cleaning utility like Onyx to clean up system files and caches. Ensure you have at least 2 GB of free space if you have an SSD."
+      },
+      {
+        "title": "Test in Safe Mode",
+        "content": "Boot your Mac in Safe Mode to check if the performance improves. This can help identify if a third-party application is causing the issue."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "As a last resort, back up your files and apps to Time Machine, erase the storage, and install a clean OS. This ensures the storage and speed are optimal before adding your files back."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check CPU Clock Speed",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Intel Power Gadget",
+            "content": "Install Intel Power Gadget to verify your CPU clock speed. Compare it with normal speed values to ensure it's not throttled."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T06:45:14.407Z",
+      "updated": "2026-02-04T06:45:14.407Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/333928/my-macbook-is-slow-recently-how-do-i-fix-this",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770187528158-488",
+    "title": "Eliminate Wi-Fi Weak Spots with Intelligent Extenders",
+    "problemDescription": "Weak Wi-Fi signal in certain areas of the house, leading to poor connectivity and buffering.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "connectivity",
+      "signal",
+      "extenders",
+      "home network"
+    ],
+    "steps": [
+      {
+        "title": "Purchase and Set Up Wi-Fi Extenders",
+        "content": "Buy a set of Wi-Fi extenders compatible with your router. Place them strategically around your house to boost the signal."
+      },
+      {
+        "title": "Use the Companion App",
+        "content": "Download and use the companion app to determine the optimal locations for the extenders to ensure full coverage."
+      },
+      {
+        "title": "Enable Self-Configuring Network",
+        "content": "Activate the self-configuring network feature to automatically switch to the best Wi-Fi signal as you move around the house."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Placement and Testing",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Place Extenders Manually",
+            "content": "Manually place the extenders in areas where the Wi-Fi signal is weak and test the signal strength in different rooms."
+          },
+          {
+            "title": "Adjust Placement as Needed",
+            "content": "Adjust the placement of the extenders based on the signal strength tests until you achieve optimal coverage."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T06:45:28.158Z",
+      "updated": "2026-02-04T06:45:28.158Z",
+      "sourceUrl": "https://www.techradar.com/news/bt-promises-to-solve-wi-fi-connectivity-problems-with-intelligent-extenders",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770187532908-492",
+    "title": "Upgrade Infrastructure for Wi-Fi 7 in Industrial Settings",
+    "problemDescription": "Legacy infrastructure causing performance issues with Wi-Fi 7 in industrial environments.",
+    "category": "wifi",
+    "difficulty": "Hard",
+    "keywords": [
+      "wifi",
+      "industrial",
+      "infrastructure",
+      "upgrade"
+    ],
+    "steps": [
+      {
+        "title": "Upgrade Physical Layer",
+        "content": "Install rugged, multi-gigabit switches and shielded Cat6A cabling to support Wi-Fi 7's high-throughput demands."
+      },
+      {
+        "title": "Address Power Challenges",
+        "content": "Conduct site-wide power audits and deploy PoE++ switchgear or industrial-grade injectors to ensure adequate power supply."
+      },
+      {
+        "title": "Deploy Industrial-Grade Access Points",
+        "content": "Use IP67-rated Wi-Fi 7 access points and strategically place them based on comprehensive RF site surveys to minimize interference."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Gradual Upgrade Approach",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Phase 1: Upgrade Critical Areas",
+            "content": "Prioritize upgrading infrastructure in critical areas to see immediate improvements and demonstrate the value of the upgrade."
+          },
+          {
+            "title": "Phase 2: Expand Upgrades",
+            "content": "Gradually expand the upgrades to other areas of the facility based on the results and feedback from the initial phase."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T06:45:32.908Z",
+      "updated": "2026-02-04T06:45:32.908Z",
+      "sourceUrl": "https://www.techradar.com/pro/wi-fi-7-in-industrial-environments-mistakes-impact-and-fixes",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1770187541773-985",
+    "title": "Fix AirPods Pro Flashing Orange/Red Light",
+    "problemDescription": "AirPods Pro stuck on flashing orange/red light with no connection.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "airpods",
+      "flashing light",
+      "connection issue",
+      "firmware"
+    ],
+    "steps": [
+      {
+        "title": "Update Firmware Individually",
+        "content": "Place one AirPod in the case and connect it to your Apple device. Once connected, remove it and place the other AirPod in the case, connecting it individually. This ensures both AirPods have the same firmware."
+      },
+      {
+        "title": "Charge the AirPods",
+        "content": "Listen to music on one earbud, then repeat for the second one. After that, plug the Lightning cable into your case and leave it for about 1 hour."
+      },
+      {
+        "title": "Reset the AirPods",
+        "content": "Close the case for a few hours or overnight to allow the AirPods to reset and sync the firmware."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reach Out to Apple Support",
+            "content": "If the issue persists, contact Apple Support or visit an Apple Store for further assistance."
+          }
+        ]
+      },
+      {
+        "title": "Check for Software Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update AirPods and iPhone",
+            "content": "Ensure your AirPods and iPhone are running the latest software to resolve any firmware-related issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T06:45:41.773Z",
+      "updated": "2026-02-04T06:45:41.773Z",
+      "sourceUrl": "https://www.reddit.com/r/airpods/comments/ecyrlc/airpods_pro_stuck_on_flashing_orange_red_light_no/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
