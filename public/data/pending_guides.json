@@ -104584,5 +104584,279 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770230552381-705",
+    "title": "Reclaim Gmail Storage Space",
+    "problemDescription": "Your Gmail account is full and you need to free up space.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "storage",
+      "delete emails",
+      "google one"
+    ],
+    "steps": [
+      {
+        "title": "Upgrade to Google One",
+        "content": "Consider upgrading to a Google One account for more storage. The cheapest plan is 100GB for $20 a year."
+      },
+      {
+        "title": "Delete Old Emails",
+        "content": "Identify and delete large files and old emails to free up space. Gmail allows you to sort emails by size."
+      },
+      {
+        "title": "Create an App Password",
+        "content": "If your regular Google password doesn't work for syncing Gmail accounts, create an app password. Go to your Google account settings, navigate to the 'Security' section, and create an app password. Name it (e.g., 'Transfer Bulk Email') and generate a 16-digit passcode."
+      },
+      {
+        "title": "Use the App Password",
+        "content": "Use the newly created app password instead of your usual password when syncing accounts. Note that Google will only display the app password once, so make sure to write it down."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Transfer Gmail Messages",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up Email Transfer",
+            "content": "Follow the instructions to set up email transfer between accounts. When prompted for a password, use the app password you created."
+          },
+          {
+            "title": "Configure Transfer Settings",
+            "content": "Select port 995, check the boxes for secure connection, label incoming messages, and archive incoming messages (skip the inbox)."
+          },
+          {
+            "title": "Add Account",
+            "content": "Select 'Add Account' to complete the transfer process."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T18:42:32.381Z",
+      "updated": "2026-02-04T18:42:32.381Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/gmail-inbox-zero-15gb-free-storage-space/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770230554429-455",
+    "title": "Increase Gmail Undo Send Time",
+    "problemDescription": "Gmail's default 5-second undo send time is too short to recall sent emails.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "undo",
+      "send",
+      "email",
+      "time"
+    ],
+    "steps": [
+      {
+        "title": "Access Gmail Settings",
+        "content": "Click the gear icon in the upper right-hand corner of Gmail and select 'See all settings'."
+      },
+      {
+        "title": "Navigate to General Settings",
+        "content": "In the settings menu, click on the 'General' tab."
+      },
+      {
+        "title": "Adjust Undo Send Time",
+        "content": "Scroll down to the 'Undo Send' section and use the drop-down menu to select a longer time, up to 30 seconds."
+      },
+      {
+        "title": "Save Changes",
+        "content": "Scroll to the bottom of the page and click 'Save Changes' to apply the new setting."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-04T18:42:34.429Z",
+      "updated": "2026-02-04T18:42:34.429Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/6-clever-gmail-tricks-to-minimize-regret-frustration-and-spam/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770230562459-649",
+    "title": "Fix Discord Unresponsive but Not Crashing",
+    "problemDescription": "Discord desktop app becomes unresponsive but does not crash, requiring a force quit.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "unresponsive",
+      "app-error",
+      "audio",
+      "headphones"
+    ],
+    "steps": [
+      {
+        "title": "Update Audio Drivers",
+        "content": "Ensure your audio drivers are up to date, especially if using external audio devices like headphones."
+      },
+      {
+        "title": "Disable Hardware Acceleration",
+        "content": "Go to Discord settings, navigate to 'Appearance', and toggle off 'Hardware Acceleration'."
+      },
+      {
+        "title": "Check for Conflicting Software",
+        "content": "If using Razer Kraken V3 Pros or similar audio devices, ensure that any associated software (e.g., Razer Synapse) is not causing conflicts."
+      },
+      {
+        "title": "Reinstall Discord",
+        "content": "Uninstall Discord, delete the %appdata% cache, and then reinstall the application."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Discord Web Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Discord Web",
+            "content": "Use the Discord web version (https://discord.com) as an alternative to the desktop app."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Overlay Features",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Overlays",
+            "content": "Go to Discord settings, navigate to 'Game Overlay', and disable any overlay features that might be causing the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T18:42:42.459Z",
+      "updated": "2026-02-04T18:42:42.459Z",
+      "sourceUrl": "https://www.reddit.com/r/discordapp/comments/1p1j5f4/discord_doesnt_crash_but_becomes_unresponsive/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770230573482-967",
+    "title": "AOKZOE Device Known Issues and Fixes",
+    "problemDescription": "Common issues and their solutions for AOKZOE devices as discussed in the community.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "AOKZOE",
+      "issues",
+      "fixes",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check Community Resources",
+        "content": "Visit the AOKZOE subreddit and Discord for known issues and fixes."
+      },
+      {
+        "title": "Review Images",
+        "content": "Look at the images provided in the community posts for visual guides."
+      },
+      {
+        "title": "Follow Community Advice",
+        "content": "Implement the solutions suggested by other users in the community."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Support",
+        "type": "Official Support",
+        "steps": [
+          {
+            "title": "Contact AOKZOE Support",
+            "content": "Reach out to AOKZOE's official support for assistance with specific issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T18:42:53.482Z",
+      "updated": "2026-02-04T18:42:53.482Z",
+      "sourceUrl": "https://www.reddit.com/r/AOKZOE/comments/yvu7b3/known_issues_and_fixes_from_discord_see_images/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770230601041-956",
+    "title": "Fix iPhone 13 Activation Bug",
+    "problemDescription": "iPhone 13 fails to activate or shows activation errors.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "activation",
+      "bug",
+      "setup"
+    ],
+    "steps": [
+      {
+        "title": "Check Activation Notifications",
+        "content": "Ensure 'Set Up as New' or 'Restore from Backup' notifications appear on your computer. If you see 'SIM card invalid' or 'No SIM Detected', contact your carrier."
+      },
+      {
+        "title": "Enter Recovery Mode",
+        "content": "If you see 'activation information was invalid', enter recovery mode and restore your iPhone 13 using the latest version of macOS or iTunes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup your iPhone data using iCloud or iTunes."
+          },
+          {
+            "title": "Erase iPhone",
+            "content": "Go to Settings > General > Reset > Erase All Content and Settings."
+          },
+          {
+            "title": "Restore from Backup",
+            "content": "After erasing, restore your iPhone from the backup."
+          }
+        ]
+      },
+      {
+        "title": "Apple Self Service Repair",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Eligibility",
+            "content": "Verify if your iPhone 13 is eligible for Apple's Self Service Repair program."
+          },
+          {
+            "title": "Follow Repair Guides",
+            "content": "Follow the detailed repair guides provided by Apple if you have the necessary hardware expertise."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T18:43:21.041Z",
+      "updated": "2026-02-04T18:43:21.041Z",
+      "sourceUrl": "https://www.makeuseof.com/iphone-13-issues/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
