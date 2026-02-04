@@ -106733,5 +106733,376 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770247422871-326",
+    "title": "Enable Siri to Read Web Results",
+    "problemDescription": "Siri does not read web results aloud by default.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "siri",
+      "read",
+      "web",
+      "results",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Open Safari and Navigate to the Web Page",
+        "content": "Open the Safari browser on your iOS device and navigate to the web page you want Siri to read."
+      },
+      {
+        "title": "Use Siri to Speak Screen",
+        "content": "Once the web page is open, activate Siri by saying 'Hey Siri' or holding the side button. Then say 'Speak Screen' to have Siri read the content aloud."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Alexa with Siri",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Alexa App",
+            "content": "Download and install the Alexa app from the Apple App Store."
+          },
+          {
+            "title": "Launch Alexa with Siri",
+            "content": "Use Siri to launch Alexa by saying 'Hey Siri, launch Alexa.'"
+          },
+          {
+            "title": "Ask Alexa Your Question",
+            "content": "Use the Alexa trigger word 'Alexa' followed by your question to have it read the results aloud."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T23:23:42.871Z",
+      "updated": "2026-02-04T23:23:42.871Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/377766/how-to-get-siri-to-read-result-from-the-web",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770247440651-65",
+    "title": "Use HomePod Mini as AirPlay Output",
+    "problemDescription": "HomePod Mini cannot directly output to AirPlay, but there are workarounds to achieve similar functionality.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "HomePod Mini",
+      "AirPlay",
+      "audio output",
+      "workaround"
+    ],
+    "steps": [
+      {
+        "title": "Use a Multi-Zone Controller",
+        "content": "Connect your HomePod Mini to a multi-zone controller like the HTD MC-66. This allows you to route audio from various sources, including AirPlay, to different zones."
+      },
+      {
+        "title": "Set Up Input Sources",
+        "content": "Configure your multi-zone controller to accept input sources such as AirPlay from your iPhone or iPad, Roku, or other devices."
+      },
+      {
+        "title": "Route Audio to Desired Zones",
+        "content": "Use the controller to route the audio from your desired input source to the output zone where your HomePod Mini is connected."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use an Echo Device as an Intermediate",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect Echo to Multi-Zone Controller",
+            "content": "Connect an Echo device with a 3.5mm audio output to your multi-zone controller."
+          },
+          {
+            "title": "Set Up Routines",
+            "content": "Create routines on the Echo device to trigger audio playback from services like Spotify."
+          },
+          {
+            "title": "Route Audio Through Controller",
+            "content": "Route the audio from the Echo device through the multi-zone controller to your HomePod Mini."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T23:24:00.651Z",
+      "updated": "2026-02-04T23:24:00.651Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/474055/can-homepod-mini-output-to-airplay",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770247463163-830",
+    "title": "Fix Windows 10 April 2018 Update Boot Issues",
+    "problemDescription": "Windows 10 fails to boot after the April 2018 Update, showing a black screen.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "update",
+      "boot",
+      "black screen"
+    ],
+    "steps": [
+      {
+        "title": "Create Bootable USB Drive",
+        "content": "Download the Windows 10 April 2018 Update ISO image from Microsoft and create a bootable USB drive using the Windows USB/DVD Download Tool on another PC."
+      },
+      {
+        "title": "Boot from USB",
+        "content": "Insert the USB drive into the unresponsive PC and boot from it by accessing the BIOS (usually by pressing the 'Del' key during startup)."
+      },
+      {
+        "title": "Enter Safe Mode",
+        "content": "In the Windows 10 setup wizard, click 'Next', then select 'Repair your computer'. Navigate to Troubleshoot > Advanced options > Command Prompt. Type 'bcdedit /set {default} safeboot minimal' and press Enter. Close the Command Prompt and click 'Continue' to boot into Safe Mode."
+      },
+      {
+        "title": "Run System File Checker and Disk Check",
+        "content": "In Safe Mode, open Command Prompt and type 'sfc /scannow' followed by 'chkdsk /f /r' to repair system files and check the disk for errors."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Alternative Method: Use Different Commands",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Different Disk Check Command",
+            "content": "In Safe Mode, open Command Prompt and type 'chkdsk /r' instead of 'chkdsk /f /r'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T23:24:23.163Z",
+      "updated": "2026-02-04T23:24:23.163Z",
+      "sourceUrl": "https://www.techradar.com/how-to/windows-10-april-2018-update-problems-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770247488650-867",
+    "title": "Fix Ubuntu Desktop Connection to 4K Smart TV",
+    "problemDescription": "Ubuntu 18.04 LTS desktop does not connect to a 4K Smart TV via HDMI, showing no signal.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "Ubuntu",
+      "4K TV",
+      "HDMI",
+      "connection",
+      "display"
+    ],
+    "steps": [
+      {
+        "title": "Check HDMI Configuration on TV",
+        "content": "Go to the HDMI configuration settings on your 4K Smart TV and select the 'enhanced' option."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change Display Manager",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install LightDM",
+            "content": "Open a terminal and run the command: `sudo apt-get install lightdm`."
+          },
+          {
+            "title": "Switch Display Manager",
+            "content": "Run the command: `sudo dpkg-reconfigure lightdm` to switch to LightDM."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T23:24:48.650Z",
+      "updated": "2026-02-04T23:24:48.650Z",
+      "sourceUrl": "https://askubuntu.com/questions/1184698/desktop-doesnt-connect-to-4k-smart-tv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770247490705-41",
+    "title": "Wireless Screen Mirroring to Samsung Smart TV",
+    "problemDescription": "Unable to use Samsung Smart TV as a wireless monitor for screen mirroring.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "screen mirroring",
+      "wireless display",
+      "smart tv"
+    ],
+    "steps": [
+      {
+        "title": "Install gnome-network-displays via Flatpak",
+        "content": "Download the .flatpakref file from Flathub."
+      },
+      {
+        "title": "Install the Flatpak",
+        "content": "Run the command: `flatpak install org.gnome.NetworkDisplays.flatpakref`."
+      },
+      {
+        "title": "Run the Application",
+        "content": "Execute the command: `flatpak run org.gnome.NetworkDisplays`."
+      },
+      {
+        "title": "Select TV to Display",
+        "content": "Choose your Samsung Smart TV from the list of available devices."
+      },
+      {
+        "title": "Start Streaming",
+        "content": "The screen should now start streaming to your TV."
+      },
+      {
+        "title": "Check Audio Settings",
+        "content": "Ensure audio is working on the TV. Use PulseAudio Volume Manager if necessary."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Miracast",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Miracast Option",
+            "content": "Check if the 'Mirror Screen' option on your Samsung Smart TV is actually for Miracast."
+          },
+          {
+            "title": "Clarify the Option",
+            "content": "If it is Miracast, follow the instructions for setting up Miracast on your TV."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T23:24:50.705Z",
+      "updated": "2026-02-04T23:24:50.705Z",
+      "sourceUrl": "https://askubuntu.com/questions/1017249/samsung-tv-mirror-screen",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770247512643-253",
+    "title": "Fix WhatsApp Not Starting After Windows 10 Upgrade",
+    "problemDescription": "WhatsApp fails to start after upgrading to Windows 10, requiring a reset each time.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "windows 10",
+      "upgrade",
+      "app error"
+    ],
+    "steps": [
+      {
+        "title": "Take Ownership of WhatsApp Files",
+        "content": "Open Command Prompt as Administrator and run the following command to take ownership of the WhatsApp files: `takeown /f \"C:\\Program Files\\WindowsApps\\5319275A.WhatsAppDesktop_*\\*\" /r`. Replace the asterisks (*) with the correct version number of WhatsApp installed on your system."
+      },
+      {
+        "title": "Reset Permissions",
+        "content": "After taking ownership, reset the permissions by running: `icacls \"C:\\Program Files\\WindowsApps\\5319275A.WhatsAppDesktop_*\\*\" /reset`. Again, replace the asterisks (*) with the correct version number."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "Restart your computer to apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall WhatsApp",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall WhatsApp",
+            "content": "Go to Settings > Apps > Apps & features, find WhatsApp, and click Uninstall."
+          },
+          {
+            "title": "Reinstall WhatsApp",
+            "content": "Download and install WhatsApp from the Microsoft Store."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T23:25:12.643Z",
+      "updated": "2026-02-04T23:25:12.643Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/whatsapp-not-starting-since-upgrade-windows-10.3890241/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770247520993-843",
+    "title": "WhatsApp Sync Across Devices",
+    "problemDescription": "WhatsApp apps on Android and computer not syncing properly.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "sync",
+      "android",
+      "computer"
+    ],
+    "steps": [
+      {
+        "title": "Ensure Both Devices Are Logged In",
+        "content": "Make sure both your Android device and computer are logged into the same WhatsApp account."
+      },
+      {
+        "title": "Connect to the Internet",
+        "content": "Ensure both devices are connected to the internet. WhatsApp syncs data through a central server, not via Bluetooth or Wi-Fi direct connection."
+      },
+      {
+        "title": "Check Server Connection",
+        "content": "Verify that both devices can connect to WhatsApp's central server. This is necessary for syncing messages and data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall WhatsApp",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall WhatsApp",
+            "content": "Uninstall WhatsApp from both your Android device and computer."
+          },
+          {
+            "title": "Reinstall WhatsApp",
+            "content": "Reinstall WhatsApp on both devices and log in with the same account."
+          },
+          {
+            "title": "Verify Sync",
+            "content": "Check if the devices are now syncing properly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T23:25:20.993Z",
+      "updated": "2026-02-04T23:25:20.993Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/how-do-whatsapp-apps-in-android-and-a-computer-work-together.3693080/latest",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
