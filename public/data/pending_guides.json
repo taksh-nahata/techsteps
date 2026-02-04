@@ -98473,5 +98473,280 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770183948774-311",
+    "title": "Fix 5GHz WiFi Not Showing Up in Windows 10",
+    "problemDescription": "5GHz WiFi network is not visible or not working on Windows 10.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "5GHz WiFi",
+      "Windows 10",
+      "WiFi not showing",
+      "network adapter"
+    ],
+    "steps": [
+      {
+        "title": "Update Network Adapter Drivers",
+        "content": "Go to the PC manufacturer's Support Downloads web page using the full model number, HP Serial Number, or Dell Service Tag. Download and install the latest network adapter drivers. Compare these with the ones currently installed in Device Manager (right-click the Start Menu and select Device Manager)."
+      },
+      {
+        "title": "Roll Back or Uninstall Network Driver",
+        "content": "In Device Manager, right-click on your WiFi adapter, go to the Driver tab, and select 'Roll Back Driver' or 'Uninstall Device'. Restart your PC to reinstall the driver."
+      },
+      {
+        "title": "Disable Power Management Settings",
+        "content": "In Device Manager, go to Network Adapters, select your WiFi adapter, then go to the Power Management tab. Clear the check box for 'Allow the computer to turn off the device to save energy'."
+      },
+      {
+        "title": "Disable Energy-Saving Options",
+        "content": "On the Advanced tab of your WiFi adapter properties, disable any energy-saving options."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Uninstall Problematic Windows Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Installed Updates",
+            "content": "Go to Settings > Update & Security > Windows Update > View Update History > Installed Updates. Identify and uninstall any recent updates that might be causing the issue."
+          },
+          {
+            "title": "Hide Updates",
+            "content": "Use the Hide Updates tool from Microsoft to prevent the problematic updates from being reinstalled."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T05:45:48.774Z",
+      "updated": "2026-02-04T05:45:48.774Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/how-to-fix-5ghz-wifi-not-showing-up-in-windows-10/6816f4d1-9886-472a-9568-4ff6be7f6d66",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770183956553-999",
+    "title": "Wi-Fi Adapter Missing from Device Manager",
+    "problemDescription": "Wi-Fi adapter is missing from Device Manager on Windows 10, causing connectivity issues.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "device manager",
+      "windows 10",
+      "network adapter"
+    ],
+    "steps": [
+      {
+        "title": "Connect via LAN and Download Drivers",
+        "content": "Connect your computer to the internet using a LAN cable. Download the appropriate Wi-Fi drivers for your HP Pavilion 15-au084tx from the official HP website. Install the drivers and restart your computer."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > Network & Internet > Status. Click on 'Network reset' and then 'Reset now'. Confirm the action by clicking 'Yes'."
+      },
+      {
+        "title": "Run Network Commands",
+        "content": "Open Command Prompt as an administrator and run the following commands one by one:\n\nnetsh int ip reset\nnetsh advfirewall reset\nnetsh winsock reset\nipconfig / flushdns\nipconfig / release\nipconfig / renew\n\nRestart your computer after executing all commands."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Driver Installation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Driver on Another Computer",
+            "content": "Use another computer to download the Wi-Fi driver for your Intel Dual Band Wireless AC-1365 adapter. Save the driver to a USB flash drive."
+          },
+          {
+            "title": "Install Driver on Affected Computer",
+            "content": "Transfer the driver to your affected computer via the USB flash drive. Install the driver and restart your computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T05:45:56.553Z",
+      "updated": "2026-02-04T05:45:56.553Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/wifi-adapter-missing-from-device-manager/6ad19546-b392-4881-81d5-b72feae53b3d",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770183960268-954",
+    "title": "Fix WiFi-Bluetooth Interference",
+    "problemDescription": "WiFi connection slows down or audio stutters when using Bluetooth devices.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "bluetooth",
+      "interference",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Update Drivers",
+        "content": "Ensure you have the latest drivers for both your WiFi and Bluetooth adapters. You can do this by going to Device Manager, expanding the Network adapters and Bluetooth sections, right-clicking on your devices, and selecting 'Update driver'."
+      },
+      {
+        "title": "Disable WiFi Power Saving",
+        "content": "Go to Control Panel > Network and Sharing Center > Change adapter settings. Right-click on your WiFi adapter and select 'Properties'. Click on the 'Configure' button, go to the 'Power Management' tab, and uncheck 'Allow the computer to turn off this device to save power'."
+      },
+      {
+        "title": "Change WiFi Channel",
+        "content": "Use a WiFi analyzer tool to find a less crowded channel. Then, log in to your router's admin page and change the WiFi channel to the one you found."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Bluetooth When Not in Use",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Bluetooth",
+            "content": "When you're not using Bluetooth devices, turn off Bluetooth to prevent any potential interference with your WiFi connection."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a USB Bluetooth Adapter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Replace Internal Bluetooth",
+            "content": "If the interference persists, consider using a USB Bluetooth adapter instead of the built-in Bluetooth. This can sometimes reduce interference with the WiFi signal."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T05:46:00.268Z",
+      "updated": "2026-02-04T05:46:00.268Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/how-to-fix-wifi-bluetooth-interference/4e2f5519-1f66-4a87-af52-d53eb56b0223",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770183968619-824",
+    "title": "Fix Google Nest Mini Bluetooth Disconnection",
+    "problemDescription": "Google Nest Mini randomly disconnects from Bluetooth devices.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "Google Nest Mini",
+      "Bluetooth",
+      "disconnection",
+      "reconnect"
+    ],
+    "steps": [
+      {
+        "title": "Check Distance and Obstacles",
+        "content": "Ensure your Nest Mini and Bluetooth device are within range and not separated by walls."
+      },
+      {
+        "title": "Toggle Bluetooth",
+        "content": "Turn Bluetooth off and on again on your device to attempt reconnection."
+      },
+      {
+        "title": "Reconnect via Settings",
+        "content": "Go to your device's Bluetooth settings, find your Nest Mini, and tap to reconnect."
+      },
+      {
+        "title": "Forget and Re-pair",
+        "content": "In your device's Bluetooth settings, select your Nest Mini, choose 'Forget Device', then put the Mini back into pairing mode and reconnect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reboot Nest Mini",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot Device",
+            "content": "Unplug your Nest Mini from power, wait a few seconds, and plug it back in."
+          },
+          {
+            "title": "Reconnect Devices",
+            "content": "After rebooting, reconnect your Bluetooth device to the Nest Mini."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T05:46:08.619Z",
+      "updated": "2026-02-04T05:46:08.619Z",
+      "sourceUrl": "https://www.digitaltrends.com/home/common-google-nest-mini-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770183980014-441",
+    "title": "Fix AirPods Connection Issues After iOS 18 Update",
+    "problemDescription": "AirPods experiencing connection issues after updating to iOS 18.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods",
+      "iOS 18",
+      "connection issues",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Turn Off Vocal Shortcuts",
+        "content": "Go to Settings > Accessibility > Vocal Shortcuts and turn off the feature."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset iPhone Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset All Settings",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset All Settings. Note that this will reset all settings to default, requiring you to reconfigure your preferences."
+          }
+        ]
+      },
+      {
+        "title": "Forget and Re-pair AirPods",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Forget AirPods",
+            "content": "Go to Settings > Bluetooth, tap the (i) icon next to your AirPods, and select Forget This Device."
+          },
+          {
+            "title": "Reset AirPods",
+            "content": "Press and hold the setup button on the back of the AirPods case until the LED light flashes amber, then white."
+          },
+          {
+            "title": "Re-pair AirPods",
+            "content": "Open the AirPods case lid, press and hold the setup button until the LED light flashes white, then follow the on-screen instructions to re-pair your AirPods."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T05:46:20.014Z",
+      "updated": "2026-02-04T05:46:20.014Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255758915",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
