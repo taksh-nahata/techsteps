@@ -103038,5 +103038,479 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770219574601-129",
+    "title": "Fix Smart TV App Launch Issues After 4K Streaming",
+    "problemDescription": "Apps on a Hisense GoogleTV fail to launch after prolonged 4K streaming, requiring force closing and relaunching.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "smart tv",
+      "app error",
+      "4k streaming",
+      "Hisense",
+      "GoogleTV"
+    ],
+    "steps": [
+      {
+        "title": "Force Close the App",
+        "content": "Go to the settings menu, navigate to 'Apps,' find the problematic app, and select 'Force Close.'"
+      },
+      {
+        "title": "Relaunch the App",
+        "content": "After force closing, relaunch the app to see if it resolves the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Cast the App from Your Phone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Casting Feature",
+            "content": "If the app still doesn't launch, use the casting feature from your phone to stream the content to your TV."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T15:39:34.601Z",
+      "updated": "2026-02-04T15:39:34.601Z",
+      "sourceUrl": "https://www.howtogeek.com/smart-tv-makers-need-to-kill-their-proprietary-oses/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770219601238-118",
+    "title": "Diagnose and Fix Slow PC Performance",
+    "problemDescription": "Your PC is running slow and you need to diagnose the cause.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "slow pc",
+      "diagnose",
+      "performance",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Start Command Prompt as Administrator",
+        "content": "Click 'Start', type 'cmd', right-click 'cmd.exe' and select 'Run as administrator'."
+      },
+      {
+        "title": "Initiate a Trace",
+        "content": "Type 'xperf -on DiagEasy' and press [Enter]. This will start monitoring your PC's activities."
+      },
+      {
+        "title": "Perform Resource-Intensive Tasks",
+        "content": "Do something that needs a lot of resources, such as load a game, then close it again."
+      },
+      {
+        "title": "Stop the Trace",
+        "content": "Switch back to the command window, type 'xperf -d trace.etl' and press [Enter]. This will save the trace file to disk."
+      },
+      {
+        "title": "Analyze the Results",
+        "content": "Type 'xperf trace.etl' and press [Enter], or double-click the 'trace.etl' file in Explorer to view the detailed graphs."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Boot Performance Analysis",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open an Elevated Command Line",
+            "content": "Open an elevated command line and type 'xbootmgr.exe -trace boot' and press [Enter]."
+          },
+          {
+            "title": "Reboot Your PC",
+            "content": "Your PC will shut down and reboot twice. Wait for any bulky background programs to launch, then click 'Finish' when you're happy."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T15:40:01.238Z",
+      "updated": "2026-02-04T15:40:01.238Z",
+      "sourceUrl": "https://www.techradar.com/news/software/operating-systems/slow-pc-how-to-find-out-why-and-fix-it-914562",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770219605830-118",
+    "title": "Speed Up Windows 10",
+    "problemDescription": "Windows 10 is running slowly and needs optimization.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 10",
+      "speed up",
+      "performance",
+      "optimization"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your PC",
+        "content": "Shut down your PC daily to clear accumulated processes. Click the Windows button, select the Power button, and choose Shut down. Save your work and close running programs before shutting down."
+      },
+      {
+        "title": "Update Windows",
+        "content": "Open the Windows menu, type 'Update' in the search bar, and click 'Check for Updates'. Install any available updates to fix bugs and improve system performance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Upgrade Your RAM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Current RAM",
+            "content": "Open Task Manager (Ctrl + Alt + Del), click 'Performance', and note the type of RAM (e.g., DDR4) and available slots."
+          },
+          {
+            "title": "Install More RAM",
+            "content": "Purchase compatible RAM chips and install them into the available slots to increase virtual memory and improve performance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T15:40:05.830Z",
+      "updated": "2026-02-04T15:40:05.830Z",
+      "sourceUrl": "https://www.techradar.com/how-to/how-to-speed-up-windows-10",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770219609791-34",
+    "title": "Speed Up Your PC with CCleaner",
+    "problemDescription": "Your PC is running slow and you want to optimize its performance.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "speed up pc",
+      "optimize performance",
+      "ccleaner",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install CCleaner",
+        "content": "Visit the official CCleaner website and download the latest version. Install the software following the on-screen instructions."
+      },
+      {
+        "title": "Run Disk Clean-up",
+        "content": "Open CCleaner and navigate to the 'Cleaner' section. Select the types of files you want to clean and click 'Analyze'. Review the files and click 'Run Cleaner' to remove them."
+      },
+      {
+        "title": "Use the Registry Scanner",
+        "content": "Go to the 'Registry' section in CCleaner. Click 'Scan for Issues'. Review the issues found and select the ones you want to fix. Click 'Fix Selected Issues' and then 'Yes' to back up the registry before making changes."
+      },
+      {
+        "title": "Defragment Your Hard Drive",
+        "content": "Navigate to the 'Tools' section and select 'Drive Wiper' or 'Defrag' if available. Follow the prompts to defragment your hard drive."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Fortect for Advanced Optimization",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install Fortect",
+            "content": "Visit the official Fortect website and download the latest version. Install the software following the on-screen instructions."
+          },
+          {
+            "title": "Run System Scan",
+            "content": "Open Fortect and click on 'Scan' to perform a system scan. The software will identify issues and provide a report."
+          },
+          {
+            "title": "Repair Issues",
+            "content": "Review the scan results and select the issues you want to repair. Click 'Repair' to fix the identified problems."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T15:40:09.791Z",
+      "updated": "2026-02-04T15:40:09.791Z",
+      "sourceUrl": "https://www.techradar.com/best/the-best-programs-to-speed-up-your-pc",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770219625365-488",
+    "title": "Fix Microsoft Teams Video Breakage on iPhone with Unifi APs",
+    "problemDescription": "Random video breakage issues in Microsoft Teams on iPhone devices connected to Unifi Access Points.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "microsoft teams",
+      "unifi",
+      "video breakage",
+      "wifi"
+    ],
+    "steps": [
+      {
+        "title": "Update iOS and Microsoft Teams",
+        "content": "Ensure your iPhone is running the latest iOS version and Microsoft Teams app is updated to the latest version from the App Store."
+      },
+      {
+        "title": "Disable Band Steering and Airtime Fairness",
+        "content": "Log in to your Unifi controller, navigate to Settings > Wireless Networks, and disable both Band Steering and Airtime Fairness for the affected SSID."
+      },
+      {
+        "title": "Change Wi-Fi Frequency Band",
+        "content": "Manually connect your iPhone to the 2.4GHz band instead of 5GHz to see if the issue persists."
+      },
+      {
+        "title": "Reset Network Settings on iPhone",
+        "content": "Go to Settings > General > Reset > Reset Network Settings to clear any potential network configuration issues."
+      },
+      {
+        "title": "Check for Interference",
+        "content": "Use a Wi-Fi analyzer app to check for interference from other devices or networks on the same channel and change the channel if necessary."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Ethernet Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect iPhone to Ethernet",
+            "content": "Use a Lightning to Ethernet adapter to connect your iPhone directly to the router via Ethernet cable to bypass Wi-Fi issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reboot Unifi Access Points",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot Access Points",
+            "content": "Reboot all Unifi Access Points to clear any potential firmware or hardware issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T15:40:25.365Z",
+      "updated": "2026-02-04T15:40:25.365Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/microsoft-team-video-breakage-issue.3682716/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770219636017-802",
+    "title": "Fix Microsoft Word Printing Issues",
+    "problemDescription": "Troubleshoot and resolve printing problems in Microsoft Word.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "printing",
+      "Microsoft Word",
+      "troubleshooting",
+      "drivers"
+    ],
+    "steps": [
+      {
+        "title": "Update Printer Drivers",
+        "content": "Check for the latest driver updates on your printer manufacturer's website or through Windows Update."
+      },
+      {
+        "title": "Run Microsoft's Printing Troubleshooter",
+        "content": "Download and run Microsoft's printing troubleshooter from the Microsoft support page. Follow the on-screen instructions to diagnose and fix printing issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Convert to PDF and Print",
+        "type": "Quick Solution",
+        "steps": [
+          {
+            "title": "Convert Document to PDF",
+            "content": "Open the Word document, click 'File', then 'Save As'. Choose 'PDF' from the drop-down menu and click 'Save'."
+          },
+          {
+            "title": "Print the PDF",
+            "content": "Open the PDF in another program like Acrobat and print it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T15:40:36.017Z",
+      "updated": "2026-02-04T15:40:36.017Z",
+      "sourceUrl": "https://www.howtogeek.com/444168/how-to-troubleshoot-printing-issues-in-microsoft-word/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770219639466-151",
+    "title": "Add a Printer on Windows 11",
+    "problemDescription": "Printer not detected or not working correctly on Windows 11.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "windows 11",
+      "add printer",
+      "troubleshoot"
+    ],
+    "steps": [
+      {
+        "title": "Restart Windows 11",
+        "content": "Reboot your PC to fix potential issues that may be causing the printer not to be detected or work correctly."
+      },
+      {
+        "title": "Double Check the Instructions",
+        "content": "Ensure that any setup instructions included with the printer were followed closely and that any connections to your computer are secure."
+      },
+      {
+        "title": "Add Printer Manually",
+        "content": "If your printer doesn't appear, click 'Add device.' If it still doesn't appear, click 'Add manually.' Select the appropriate option for your printer type and follow the on-screen instructions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Install Manufacturer Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Drivers",
+            "content": "If your printer has advanced functions or Windows 11 didn't correctly install the drivers, download the drivers from the manufacturer's website. Use the disk included with your printer if available, or visit the manufacturer's support page for downloads."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T15:40:39.466Z",
+      "updated": "2026-02-04T15:40:39.466Z",
+      "sourceUrl": "https://www.howtogeek.com/785340/how-to-add-a-printer-on-windows-11/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770219645003-623",
+    "title": "Print a Test Page in Windows 10",
+    "problemDescription": "You want to print a test page to check if your printer is working properly in Windows 10.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "print",
+      "test page",
+      "printer"
+    ],
+    "steps": [
+      {
+        "title": "Open Printer Properties",
+        "content": "Right-click the printer and select 'Printer properties'."
+      },
+      {
+        "title": "Navigate to the General Tab",
+        "content": "At the top of the window, click the 'General' tab."
+      },
+      {
+        "title": "Print Test Page",
+        "content": "Click 'Print Test Page' at the bottom of the window to start printing a sample page."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Printer Troubleshooting Guide",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Printer Troubleshooting Guide",
+            "content": "If you experience issues with your printer, consider checking out our printer troubleshooting guide. It helps fix many common issues with most types of printers."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T15:40:45.003Z",
+      "updated": "2026-02-04T15:40:45.003Z",
+      "sourceUrl": "https://www.howtogeek.com/736310/how-to-print-a-test-page-in-windows-10/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770219648532-522",
+    "title": "Fix Unusual Word Document Printing",
+    "problemDescription": "Word documents are not printing correctly, with issues like missing text, incorrect margins, or unexpected formatting.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "word",
+      "printing",
+      "document",
+      "margins",
+      "formatting"
+    ],
+    "steps": [
+      {
+        "title": "Check Printer Properties",
+        "content": "Press Ctrl+P, select the correct printer, and click 'Printer Properties'. Review the options and tabs to adjust settings as needed."
+      },
+      {
+        "title": "Verify Paper Size",
+        "content": "Go to the Settings menu in the Print dialog (Ctrl+P), ensure the correct printer is selected, and check the paper size."
+      },
+      {
+        "title": "Adjust Margins",
+        "content": "If text is cut off, go to Layout > Margins and choose 'Normal' or 'Custom Margins' to ensure the margins are compatible with your printer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Show or Hide Markup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Review Markup Settings",
+            "content": "Check if comments or markups are set to display or hide when printing, as these can affect the printed output."
+          }
+        ]
+      },
+      {
+        "title": "Check for Hidden White Spaces",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Review Page Layout",
+            "content": "Ensure that the margins, headers, footers, and physical gaps between pages are correctly set to avoid unexpected white spaces."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T15:40:48.533Z",
+      "updated": "2026-02-04T15:40:48.533Z",
+      "sourceUrl": "https://www.howtogeek.com/tips-for-fixing-unusual-word-document-printing/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
