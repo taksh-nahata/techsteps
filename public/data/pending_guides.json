@@ -103512,5 +103512,610 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770223296781-85",
+    "title": "Speed Up a Slow Computer",
+    "problemDescription": "Your computer is running slow due to various factors such as low disk space, too many startup items, or an outdated system.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "slow computer",
+      "windows",
+      "performance",
+      "speed up"
+    ],
+    "steps": [
+      {
+        "title": "Clean Up Disk Space",
+        "content": "Use tools like WinDat to clear up disk space. This helps Windows run more efficiently by freeing up space."
+      },
+      {
+        "title": "Disable Unnecessary Startup Items",
+        "content": "Go to Task Manager (Ctrl+Shift+Esc), navigate to the 'Startup' tab, and disable programs that you don't need to run at startup."
+      },
+      {
+        "title": "Reset Your Computer",
+        "content": "Go to Settings > Update & Security > Recovery > Reset this PC. Choose to keep your personal files but be aware that installed programs will be removed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Wipe and Reinstall Windows",
+        "type": "Nuclear Option",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure all important files are backed up as this process will delete everything."
+          },
+          {
+            "title": "Wipe Your Computer",
+            "content": "Follow a detailed guide on how to wipe your computer and reinstall Windows from scratch."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use System Restore",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Restore",
+            "content": "Go to Control Panel > System and Security > System > System Protection > System Restore."
+          },
+          {
+            "title": "Choose a Restore Point",
+            "content": "Select a restore point from a time when your computer was running smoothly and follow the prompts to restore your system."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Run Check Disk",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Command Prompt as Administrator",
+            "content": "Search for 'cmd' in the Start menu, right-click on 'Command Prompt', and select 'Run as administrator'."
+          },
+          {
+            "title": "Run Check Disk",
+            "content": "Type 'chkdsk /f /r' and press Enter. This will scan and repair any errors on your hard drive."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T16:41:36.781Z",
+      "updated": "2026-02-04T16:41:36.781Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=E8384jrr-uI",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770223298671-63",
+    "title": "Speed Up Slow Windows PC",
+    "problemDescription": "Your Windows computer is running slower than usual.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "slow",
+      "speed up",
+      "computer"
+    ],
+    "steps": [
+      {
+        "title": "Disable Startup Programs",
+        "content": "Go to the Task Manager (Ctrl+Shift+Esc), navigate to the 'Startup' tab, and disable all non-essential programs. Avoid disabling system-related programs like audio or video cards."
+      },
+      {
+        "title": "Disable Non-Microsoft Services",
+        "content": "In the Task Manager, go to the 'Services' tab. Check 'Hide all Microsoft services', then disable any non-essential services."
+      },
+      {
+        "title": "Clean Up Disk Space",
+        "content": "Open 'Disk Cleanup' from the search bar, select your Windows drive, and choose 'Clean up system files'. Check all boxes and select 'OK' to delete unnecessary files."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "After completing the above steps, restart your computer to apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Disk Defragmentation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Disk Defragmenter",
+            "content": "Search for 'Defragment and Optimize Drives' in the start menu and open it."
+          },
+          {
+            "title": "Analyze and Optimize",
+            "content": "Select your primary drive and click 'Analyze' to check the fragmentation level. If necessary, click 'Optimize' to defragment the drive."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T16:41:38.671Z",
+      "updated": "2026-02-04T16:41:38.671Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=sZl6rNUBbAY",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770223305002-605",
+    "title": "Fix Printer Issues in OS X",
+    "problemDescription": "Printer not working or failing to print in OS X.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "OS X",
+      "drivers",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Remove Non-Required Drivers",
+        "content": "Remove extraneous drivers from /Library/Printers/(name of manufacturer). Keep only the drivers for your specific printer model."
+      },
+      {
+        "title": "Re-install Drivers",
+        "content": "Re-install printer drivers from the original media or download them from the manufacturer's website or VersionTracker."
+      },
+      {
+        "title": "Disconnect and Reconnect from Network",
+        "content": "If the printer is LAN-connected, disconnect it from the network and then reconnect it."
+      },
+      {
+        "title": "Reset Printing System",
+        "content": "Open Printer Setup Utility, delete all printer entries, and then re-add your printer(s). Alternatively, use the 'Reset Printing System' option in the Printer Setup Utility menu."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Epsonconnect",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up Epsonconnect",
+            "content": "Go to Epsonconnect and set up your printer to receive documents as an email or attachment."
+          }
+        ]
+      },
+      {
+        "title": "Install Gutenprint and usbtb",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Gutenprint",
+            "content": "Install the open-source Epson printer drivers available as part of the Gutenprint package."
+          },
+          {
+            "title": "Install usbtb",
+            "content": "Install usbtb, a CUPS back-end for USB printing."
+          }
+        ]
+      },
+      {
+        "title": "Archive and Install",
+        "type": "Last Resort",
+        "steps": [
+          {
+            "title": "Perform Archive and Install",
+            "content": "As a last resort, perform the Archive and Install process, then re-upgrade to the current version of Mac OS X."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T16:41:45.002Z",
+      "updated": "2026-02-04T16:41:45.002Z",
+      "sourceUrl": "https://discussions.apple.com/thread/5246844",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770223307637-914",
+    "title": "Fix macOS Sequoia 15.1 Printer Issues",
+    "problemDescription": "Printer not working after updating to macOS Sequoia 15.1.",
+    "category": "macOS",
+    "difficulty": "Medium",
+    "keywords": [
+      "macOS",
+      "printer",
+      "update",
+      "Sequoia 15.1"
+    ],
+    "steps": [
+      {
+        "title": "Disable Firewall",
+        "content": "Turn off any third-party firewall software, such as ESET or Little Snitch, as it might be blocking printer communication."
+      },
+      {
+        "title": "Enable Printer in Local Network",
+        "content": "Go to System Settings > Privacy and Security > Local Network and ensure that the printer options are enabled."
+      },
+      {
+        "title": "Update Epson Software",
+        "content": "Run the Epson Software Updater, remove unnecessary software like Epson ScanSmart, and install the recommended updates."
+      },
+      {
+        "title": "Allow Epson Commands",
+        "content": "When printing a file, allow Epson (Commandtoescp) or (rastertoescpii) in the printer utility."
+      },
+      {
+        "title": "Reset Printer Settings",
+        "content": "Open System Preferences or System Settings > Print & Scan, select your printer, and set the Location to your Computer Name. Try printing again."
+      },
+      {
+        "title": "Reinstall Printer",
+        "content": "If printing still fails, turn off the printer, remove it from the printer list, and then reinstall it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Remove Epson ScanSmart",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Epson ScanSmart",
+            "content": "Delete Epson ScanSmart from your Applications folder."
+          },
+          {
+            "title": "Run Epson Software Updater",
+            "content": "Use the Epson Software Updater to install necessary updates and remove any unwanted software."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T16:41:47.637Z",
+      "updated": "2026-02-04T16:41:47.637Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255820983",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770223309823-471",
+    "title": "Fix MacBook HP Printer Connection Issues",
+    "problemDescription": "Troubleshooting steps to resolve printing problems between a MacBook and HP printers.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "macbook",
+      "hp",
+      "connection",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Restart Devices",
+        "content": "Restart your MacBook, HP printer, and wireless router to refresh network connections and resolve temporary glitches."
+      },
+      {
+        "title": "Update macOS",
+        "content": "Ensure your MacBook is running the latest version of macOS to resolve compatibility issues with printers."
+      },
+      {
+        "title": "Reset Printing System",
+        "content": "Go to System Preferences > Printers & Scanners, right-click on the printer list, and select 'Reset printing system.' Note that this will remove all printers, so you'll need to re-add them afterward."
+      },
+      {
+        "title": "Check Connectivity",
+        "content": "Ensure your MacBook and HP printer are connected to the same network and have a stable network connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Try a Different User Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a New User Account",
+            "content": "Create a new user account on your MacBook and attempt to print from that account. If printing works, the issue may be specific to your user account settings."
+          }
+        ]
+      },
+      {
+        "title": "Contact HP Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reach Out to HP Support",
+            "content": "If none of the above solutions work, contact HP Support for specific troubleshooting steps and guidance based on your printer model and macOS version."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T16:41:49.823Z",
+      "updated": "2026-02-04T16:41:49.823Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254961079",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770223323577-682",
+    "title": "Fix Laptop Screen Not Displaying",
+    "problemDescription": "Laptop screen is dark and not displaying anything.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "laptop",
+      "screen",
+      "brightness"
+    ],
+    "steps": [
+      {
+        "title": "Increase Screen Brightness",
+        "content": "Press the brightness up key (usually F1 or F2) to increase the screen brightness."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-04T16:42:03.577Z",
+      "updated": "2026-02-04T16:42:03.577Z",
+      "sourceUrl": "https://lifehacker.com/19-exceedingly-simple-solutions-to-your-dads-latest-tec-1847945718",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770223327760-231",
+    "title": "Laptop Shuts Down Instead of Sleeping",
+    "problemDescription": "Laptop shuts down completely instead of going to sleep when the power button is pressed or the lid is closed.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "laptop",
+      "sleep",
+      "shutdown",
+      "power settings",
+      "Intel Management Engine Interface"
+    ],
+    "steps": [
+      {
+        "title": "Check Power Settings",
+        "content": "Ensure that the power button and lid close actions are set to 'Sleep' for both plugged-in and battery modes. Go to Settings > System > Power & Sleep > Additional power settings > Choose what the power buttons do."
+      },
+      {
+        "title": "Adjust Intel Management Engine Interface Settings",
+        "content": "Open Device Manager, expand System Devices, find 'Intel Management Engine Interface', right-click, select Properties, go to the Power Management tab, and uncheck 'Allow the computer to turn off this device to save power'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update or Roll Back Driver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Driver",
+            "content": "In the Properties window of the Intel Management Engine Interface, go to the Driver tab and click 'Update Driver' to check for updates."
+          },
+          {
+            "title": "Roll Back or Disable Driver",
+            "content": "If updating doesn't work, roll back to a previous driver version or disable the Intel Management Engine Interface entirely from the Driver tab."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T16:42:07.760Z",
+      "updated": "2026-02-04T16:42:07.760Z",
+      "sourceUrl": "https://lifehacker.com/legacy-article-route-prefix/why-does-my-laptop-shut-down-instead-of-going-to-sleep-1840067515",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770223343483-446",
+    "title": "Fix Touch Issues on Pixel Phones",
+    "problemDescription": "Touch input failures on certain Pixel devices.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "touch",
+      "pixel",
+      "android",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Check for Updates",
+        "content": "Go to Settings > System > System update > Check for update. Install any available updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restart Your Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart",
+            "content": "Restart your Pixel phone to see if the touch issues resolve."
+          }
+        ]
+      },
+      {
+        "title": "Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Press and hold the Power button until the Power off option appears. Tap and hold Power off until you see the Safe Mode prompt. Tap OK to reboot into Safe Mode."
+          },
+          {
+            "title": "Test Touch",
+            "content": "Test if the touch issues persist in Safe Mode. If the issue is resolved, a third-party app may be causing the problem."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T16:42:23.483Z",
+      "updated": "2026-02-04T16:42:23.483Z",
+      "sourceUrl": "https://technopediax.quora.com/Did-Google-Release-an-Emergency-Update-to-Fix-Touch-Issues-on-Pixel-Phones-Yes-Google-pushed-an-emergency-software-up",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770223345446-550",
+    "title": "Fix Google Pixel 4 Charging Issues",
+    "problemDescription": "Google Pixel 4 not charging or turning on.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel 4",
+      "charging",
+      "power",
+      "dongle"
+    ],
+    "steps": [
+      {
+        "title": "Check the Power Dongle",
+        "content": "Ensure the charging cable and adapter are functioning properly by testing them on another phone or power source."
+      },
+      {
+        "title": "Try a Different Power Source",
+        "content": "Connect your Pixel 4 to a different power outlet or USB port to rule out issues with the power source."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Consider Refurbished Unit",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Refurbished Pixel 4",
+            "content": "If the issue persists, consider buying a refurbished Google Pixel 4 online for around $60-$80, which is likely cheaper than professional repair."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T16:42:25.446Z",
+      "updated": "2026-02-04T16:42:25.446Z",
+      "sourceUrl": "https://www.quora.com/What-is-wrong-with-my-Google-Pixel-4-Can-I-fix-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770223346249-918",
+    "title": "Fix Dead Pixel on Phone Screen",
+    "problemDescription": "Entire phone screen has dead pixels due to a drop, making it unviewable.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "dead pixel",
+      "phone screen",
+      "force restart"
+    ],
+    "steps": [
+      {
+        "title": "Force Restart the Phone",
+        "content": "Press and hold both the Power and Volume Up buttons for at least eight seconds until you see your phone's company logo."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-04T16:42:26.249Z",
+      "updated": "2026-02-04T16:42:26.249Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-a-dead-pixel-which-has-covered-the-entire-phone-screen-due-to-the-dropping-of-the-phone-Now-I-cant-see-anything-on-the-phone-please-do-u-have-any-suggestions",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770223355281-260",
+    "title": "Pixel 2 Not Charging",
+    "problemDescription": "Pixel 2 phone is not charging at all.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel 2",
+      "not charging",
+      "battery",
+      "usb port"
+    ],
+    "steps": [
+      {
+        "title": "Check the Charger and Cable",
+        "content": "Ensure you are using a compatible charger and cable. Try a different charger and cable to rule out any issues with the accessories."
+      },
+      {
+        "title": "Inspect the USB Port",
+        "content": "Look for any debris or damage in the USB port. Use a soft brush or compressed air to clean it gently."
+      },
+      {
+        "title": "Test with a Different Power Source",
+        "content": "Plug the phone into a different power outlet or USB port on a computer to ensure the issue is not with the power source."
+      },
+      {
+        "title": "Check for Physical Damage",
+        "content": "Insure there is no physical damage to the phone that could be causing the charging issue."
+      },
+      {
+        "title": "Perform a Soft Reset",
+        "content": "Press and hold the Power button for about 30 seconds to perform a soft reset. This can sometimes resolve minor software issues."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "If the phone can be turned on, go to Settings > System > System update to check for any available updates."
+      },
+      {
+        "title": "Contact Support",
+        "content": "If none of the above steps work, contact Google Support or visit a authorized service center for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Battery Replacement",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Replace the Battery",
+            "content": "If the battery is faulty, it may need to be replaced. This should be done by a professional to avoid further damage."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check Charging Circuitry",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect Charging Circuitry",
+            "content": "If the charging circuitry is damaged, it may need to be repaired. This is a complex issue and should be handled by a professional."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T16:42:35.281Z",
+      "updated": "2026-02-04T16:42:35.281Z",
+      "sourceUrl": "https://www.quora.com/My-Pixel-2-phone-suddenly-stopped-working-and-is-not-charging-at-all-How-do-I-fix-my-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
