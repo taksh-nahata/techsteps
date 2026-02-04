@@ -101336,5 +101336,340 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770204672439-902",
+    "title": "Fix Printer Not Responding",
+    "problemDescription": "Printer is not responding to print commands or is offline.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "not responding",
+      "default device",
+      "print spooler",
+      "Wi-Fi",
+      "Ethernet"
+    ],
+    "steps": [
+      {
+        "title": "Set Printer as Default Device",
+        "content": "Ensure your printer is set as the default device in your operating system settings."
+      },
+      {
+        "title": "Restart Print Spooler",
+        "content": "On Windows, restart the print spooler service to resolve common issues."
+      },
+      {
+        "title": "Check Wi-Fi/Ethernet Connection",
+        "content": "Verify that your printer is properly connected to the network via Wi-Fi or Ethernet."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Printer Status",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Printer Status",
+            "content": "Ensure the printer is powered on and not in an error state."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T11:31:12.439Z",
+      "updated": "2026-02-04T11:31:12.439Z",
+      "sourceUrl": "https://www.reddit.com/r/printers/comments/1n1ckn0/printer_not_responding_3_things_to_try_before/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770204697555-158",
+    "title": "iPhone Not Showing in My Computer After iOS 10 Update",
+    "problemDescription": "iPhone does not appear in Windows Explorer or Device Manager after updating to iOS 10.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iPhone",
+      "iOS 10",
+      "Windows",
+      "Device Manager",
+      "USB Driver"
+    ],
+    "steps": [
+      {
+        "title": "Disable and Re-enable Apple Mobile Device USB Driver",
+        "content": "1. Plug your iPhone into a USB port on your computer. 2. Open Control Panel and navigate to Device Manager. 3. Expand Universal Serial Bus controllers. 4. Right-click on Apple Mobile Device USB Driver and choose Disable. 5. After the driver is disabled, unplug the iPhone. 6. Plug the iPhone back in. 7. Right-click on Apple Mobile Device USB Driver again and choose Enable."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Uninstall and Reinstall Apple Mobile Device USB Driver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall the Driver",
+            "content": "1. Open Device Manager and navigate to Universal Serial Bus controllers. 2. Right-click on the Apple device and select Uninstall driver. 3. Choose Delete Driver and click OK."
+          },
+          {
+            "title": "Reinstall the Driver",
+            "content": "1. Unplug the iPhone and plug it back in. 2. The Apple iPhone driver should now appear under Portable Devices in Device Manager. 3. The iPhone should now be visible in File Explorer under This PC."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T11:31:37.555Z",
+      "updated": "2026-02-04T11:31:37.555Z",
+      "sourceUrl": "https://superuser.com/questions/1132832/after-ios-10-0-update-iphone-does-not-show-in-my-computer",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770204701144-538",
+    "title": "Transfer iPhone Apps to iTunes",
+    "problemDescription": "iPhone 3G refuses to transfer purchased apps to iTunes.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iPhone",
+      "iTunes",
+      "apps",
+      "transfer"
+    ],
+    "steps": [
+      {
+        "title": "Reset Warnings and Authorize Computer",
+        "content": "Open iTunes, plug in the iPhone. Right-click on the iPhone in the left-hand menu and select 'Reset Warnings'. Click 'Store' > 'Authorize this computer' using the same Apple ID as your App Store. Right-click the iPhone again and select 'Transfer Purchases'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use CopyTrans",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Transfer Apps with CopyTrans",
+            "content": "Use CopyTrans to transfer your iPhone apps to your iTunes library. After the transfer, sync your iPhone with iTunes to see if the issue is resolved."
+          }
+        ]
+      },
+      {
+        "title": "Hard Reset and Reinstall iOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Perform a Hard Reset",
+            "content": "Consider a hard reset of the iPhone, reinstall iOS 3.1, and let it sync from your iTunes backup."
+          }
+        ]
+      },
+      {
+        "title": "Restore as New Phone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restore and Set Up as New",
+            "content": "Restore your iPhone and set it up as a new phone, then sync everything across to it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T11:31:41.144Z",
+      "updated": "2026-02-04T11:31:41.144Z",
+      "sourceUrl": "https://superuser.com/questions/46352/iphone-3g-refuses-to-transfer-purchased-apps-to-itunes",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770204727610-99",
+    "title": "Samsung Galaxy A40 Backup and Factory Reset",
+    "problemDescription": "Cannot make a backup or perform a factory reset on a Samsung Galaxy A40 due to login issues and a broken volume down button.",
+    "category": "android",
+    "difficulty": "Hard",
+    "keywords": [
+      "samsung",
+      "galaxy a40",
+      "backup",
+      "factory reset",
+      "login issue"
+    ],
+    "steps": [
+      {
+        "title": "Use Smart Switch to Backup",
+        "content": "Connect your Samsung Galaxy A40 to a computer using a USB cable. Open Samsung Smart Switch on your computer and follow the on-screen instructions to back up your data."
+      },
+      {
+        "title": "Factory Reset via Recovery Mode",
+        "content": "Power off your device. Hold the Power and Volume Up buttons simultaneously until the Samsung logo appears. Release the Power button but continue holding the Volume Up button. Use the Volume buttons to navigate to 'Wipe data/factory reset' and select it with the Power button."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use ADB Commands",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable USB Debugging",
+            "content": "If possible, enable USB debugging in the developer options on your device."
+          },
+          {
+            "title": "Connect to Computer",
+            "content": "Connect your device to a computer and open a command prompt or terminal."
+          },
+          {
+            "title": "Execute ADB Commands",
+            "content": "Type 'adb devices' to ensure your device is recognized. Then, type 'adb backup -all -f backup.ab' to create a backup. For a factory reset, type 'adb shell reboot recovery' and follow the steps to reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T11:32:07.610Z",
+      "updated": "2026-02-04T11:32:07.610Z",
+      "sourceUrl": "https://superuser.com/questions/1683345/android-samsung-galaxy-a40-cant-make-backup-factory-restart",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1770204730127-459",
+    "title": "Mount Android as a Drive in Windows",
+    "problemDescription": "Mount an Android smartphone as a drive in Windows for file access.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "windows",
+      "drive",
+      "webdav",
+      "mtp"
+    ],
+    "steps": [
+      {
+        "title": "Map Network Drive via WebDAV",
+        "content": "1. Open 'This PC' in Windows. 2. Click 'Map network drive' from the top menu. 3. Enter the WebDAV server URL with 'http:\\\\' prefix, e.g., 'http:\\\\192.168.1.2:8080' or 'http:\\\\192.168.1.2:8484' if using Ultimate Server."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use FAR Manager with PortaDev Plugin",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install FAR Manager and PortaDev Plugin",
+            "content": "1. Download and install FAR Manager. 2. Install the PortaDev plugin for FAR Manager. 3. Open FAR Manager to see phone storages as drives."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T11:32:10.127Z",
+      "updated": "2026-02-04T11:32:10.127Z",
+      "sourceUrl": "https://superuser.com/questions/1157661/how-to-mount-an-android-smartphone-as-a-drive-in-windows",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770204761813-362",
+    "title": "Delete Gmail Account",
+    "problemDescription": "How to permanently delete your Gmail account and what to consider before doing so.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Gmail",
+      "delete",
+      "account",
+      "privacy"
+    ],
+    "steps": [
+      {
+        "title": "Access Data and Personalization",
+        "content": "Go to your Google account settings and select 'Data and personalization' from the left-hand menu."
+      },
+      {
+        "title": "Download Your Data",
+        "content": "Before deleting, download your data by selecting 'Download your data' under the 'Data and personalization' section."
+      },
+      {
+        "title": "Delete a Service",
+        "content": "Scroll down to 'Download, delete, or make a plan for your data' and click on 'Delete a service or your account'."
+      },
+      {
+        "title": "Delete Gmail",
+        "content": "Select 'Delete a service' and follow the prompts to delete your Gmail account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Delete via Google Account Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Account Settings",
+            "content": "Go to your Google account settings and navigate to the 'Account preferences' section."
+          },
+          {
+            "title": "Delete Account",
+            "content": "Follow the instructions to delete your Gmail account through the account preferences."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T11:32:41.813Z",
+      "updated": "2026-02-04T11:32:41.813Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/how-to-delete-gmail-account/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770204766022-941",
+    "title": "Change Google Gemini Settings",
+    "problemDescription": "How to access and modify Google Gemini settings on different devices.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Google Gemini",
+      "settings",
+      "app",
+      "Android"
+    ],
+    "steps": [
+      {
+        "title": "Access Settings via Gemini App",
+        "content": "Tap your profile picture or initial in the Gemini app, then select Settings."
+      },
+      {
+        "title": "Access Settings via Google App",
+        "content": "Tap your profile picture or initial in the Google App, then select Settings. Press the Gemini option for specific settings."
+      },
+      {
+        "title": "Adjust Settings on Android",
+        "content": "Open your device’s settings, search for Gemini or Google Assistant features, then select the app or related setting you want to adjust."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-04T11:32:46.022Z",
+      "updated": "2026-02-04T11:32:46.022Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/google-gemini-everything-you-need-to-know/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
