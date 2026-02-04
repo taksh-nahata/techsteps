@@ -99233,5 +99233,472 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770190950407-634",
+    "title": "OpenSSH Two Factor Authentication Setup",
+    "problemDescription": "Setting up two-factor authentication in OpenSSH to require both a password and a public key.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "openssh",
+      "two-factor authentication",
+      "ssh",
+      "ubuntu"
+    ],
+    "steps": [
+      {
+        "title": "Update OpenSSH Configuration",
+        "content": "Edit the `/etc/sshd_config` file and add the line `AuthenticationMethods publickey,password` to enable two-factor authentication."
+      },
+      {
+        "title": "Restart SSH Service",
+        "content": "After updating the configuration file, restart the SSH service to apply the changes. Use the command `sudo service ssh restart` or `sudo systemctl restart ssh` depending on your system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Compile OpenSSH Manually",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Compile OpenSSH",
+            "content": "Download the source code for OpenSSH version 6.2 or later and compile it manually. This can be done using tools like `auto-apt` to simplify the process."
+          },
+          {
+            "title": "Configure and Install",
+            "content": "After compiling, configure the new OpenSSH version with the `AuthenticationMethods` parameter and install it on your system."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Key-Based Authentication",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Password Login",
+            "content": "Disable password login support in the SSH configuration and only allow login with keys. Users can protect the keys with a passphrase when creating them."
+          },
+          {
+            "title": "Manage Security",
+            "content": "Manage the security of SSH yourself or wait until the right version of OpenSSH is packaged for your system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T07:42:30.408Z",
+      "updated": "2026-02-04T07:42:30.408Z",
+      "sourceUrl": "https://askubuntu.com/questions/300732/openssh-two-factor-authentication",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770190952971-88",
+    "title": "Enable 2FA for Local Ubuntu Login",
+    "problemDescription": "Enable two-factor authentication for local Ubuntu login to enhance security.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "2FA",
+      "Ubuntu",
+      "security",
+      "login"
+    ],
+    "steps": [
+      {
+        "title": "Install Google PAM Package",
+        "content": "Open the terminal and install the Google PAM package using the command: `sudo apt install libpam-google-authenticator`. When prompted, hit 'Y' and press `ENTER` to continue with the installation."
+      },
+      {
+        "title": "Configure Google PAM",
+        "content": "Modify the `/etc/pam.d/common-auth` file by running `sudo vim /etc/pam.d/common-auth`. Append the line `auth required pam_google_authenticator.so` to the file."
+      },
+      {
+        "title": "Reboot the System",
+        "content": "Reboot your system. At the login screen, you will be prompted for your 2FA code."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-04T07:42:32.971Z",
+      "updated": "2026-02-04T07:42:32.971Z",
+      "sourceUrl": "https://askubuntu.com/questions/1508022/how-to-require-2fa-for-local-ubuntu-login",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770190971008-26",
+    "title": "Samsung Galaxy S6 Keeps Turning Off",
+    "problemDescription": "Samsung Galaxy S6 randomly turns off and requires a reboot.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "galaxy s6",
+      "turning off",
+      "reboot"
+    ],
+    "steps": [
+      {
+        "title": "Backup Your Data",
+        "content": "Ensure all important data is backed up to avoid loss during the process."
+      },
+      {
+        "title": "Flash Last Firmware with Odin",
+        "content": "Download the latest firmware for your Galaxy S6 and use Odin to flash it. This can resolve software-related issues causing the device to turn off."
+      },
+      {
+        "title": "Avoid Installing Apps",
+        "content": "After flashing the firmware, refrain from installing any new apps to check if the issue persists."
+      },
+      {
+        "title": "Check for Hardware Issues",
+        "content": "If the problem continues, it may be hardware-related. Consider sending the device for repair."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure all important data is backed up."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > Backup and reset > Factory data reset. This can resolve software issues causing the device to turn off."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T07:42:51.008Z",
+      "updated": "2026-02-04T07:42:51.008Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/162884/s6-keeps-turning-off",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770190974836-486",
+    "title": "Fix 'Unfortunately, Launcher has stopped' on Galaxy Note 4",
+    "problemDescription": "The launcher app on your Galaxy Note 4 keeps crashing and displaying the error message 'Unfortunately, Launcher has stopped.'",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "launcher",
+      "crash",
+      "galaxy note 4"
+    ],
+    "steps": [
+      {
+        "title": "Enter Safe Mode",
+        "content": "1. Turn off your device. 2. Press and hold the Power and Volume down key. 3. Release the Power key when the Samsung logo appears but continue to hold the Volume down key until the device finishes restarting. 4. Safe mode will display in the bottom left corner of the screen."
+      },
+      {
+        "title": "Disable Ultra Power Saving Mode",
+        "content": "When in safe mode, disable ultra power saving mode."
+      },
+      {
+        "title": "Clear Launcher Data",
+        "content": "Go to settings > apps, in the menu, select 'show system apps' > TouchWiz > storage > clear data."
+      },
+      {
+        "title": "Uninstall Suspicious Third-Party Apps",
+        "content": "If you suspect any third-party apps of misbehaving, uninstall them while in safe mode."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Remove SD Card",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove SD Card",
+            "content": "Try removing your SD card to see if it fixes the issue."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset",
+        "type": "Last Resort",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure you have backed up all important data."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to settings > backup and reset > factory data reset > reset device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T07:42:54.836Z",
+      "updated": "2026-02-04T07:42:54.836Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/187352/how-to-solve-unfortunately-launcher-has-stopped-galaxy-note-4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770190977927-567",
+    "title": "Fix Samsung Galaxy S2 Touchscreen Issue",
+    "problemDescription": "Part of the touchscreen on a Samsung Galaxy S2 is not responding.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "touchscreen",
+      "samsung",
+      "galaxy s2",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Device",
+        "content": "Turn the device off, wait a few seconds, and then turn it back on again. This process will clear out any software errors that are causing the touchscreen to malfunction."
+      },
+      {
+        "title": "Remove the Battery",
+        "content": "If the touchscreen still doesn't work, remove the device's battery, wait ten seconds, and then put it back in."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Remove SIM and SD Cards",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Cards",
+            "content": "Remove both the SIM and memory cards from the device, if the device accepts such cards, and then turn the device off and back on again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Recalibrate the Touchscreen",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Recalibrate",
+            "content": "Recalibrate the touchscreen using the device's settings or a dedicated app."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Clean the Contacts",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clean the Device",
+            "content": "Clean the device's contacts and screen using isopropyl alcohol and a small brush. Turn the device off before you clean it."
+          }
+        ]
+      },
+      {
+        "title": "Method 5: Charge the Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Charge via USB",
+            "content": "Charge the phone via USB overnight without using it. This has been known to resolve touchscreen issues in some cases."
+          }
+        ]
+      },
+      {
+        "title": "Method 6: Disable Block Status Bar in Cerberus",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Feature",
+            "content": "Disable the 'Block Status bar' feature in Cerberus if you are using the app."
+          }
+        ]
+      },
+      {
+        "title": "Method 7: Perform a Hard Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Hard Reset",
+            "content": "Perform a hard reset as a last resort. This reset will erase everything you have added to the device and return its software and settings to their factory defaults. Consult your device documentation to determine the exact process for performing a hard reset on your device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T07:42:57.927Z",
+      "updated": "2026-02-04T07:42:57.927Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/15197/part-of-touch-screen-is-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770190989837-175",
+    "title": "Fix Screen Flickering & GPU Issue",
+    "problemDescription": "Screen flickering or shaking, especially when using Google Chrome, with a dual-monitor setup and an RX 580 GPU.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen flickering",
+      "GPU issue",
+      "dual monitors",
+      "RX 580"
+    ],
+    "steps": [
+      {
+        "title": "Check GPU Clocking",
+        "content": "Ensure your GPU is not stuck at idle memory clocks, which can cause monitor refresh glitches. This can happen when running 3D applications or games simultaneously with video playback."
+      },
+      {
+        "title": "Disable Hardware-Accelerated Video Decoding",
+        "content": "Temporarily disable hardware-accelerated video decoding in your browser or media player settings to see if this resolves the issue."
+      },
+      {
+        "title": "Test Different Cables and Ports",
+        "content": "Try using a different HDMI cable or a DisplayPort cable to connect your monitor. This can help determine if the issue is with the cable or the GPU's HDMI port."
+      },
+      {
+        "title": "Test the Monitor on Another Device",
+        "content": "Connect the monitor to another device to rule out a hardware issue with the monitor itself."
+      },
+      {
+        "title": "Update or Reinstall GPU Drivers",
+        "content": "Ensure your GPU drivers are up to date. If the issue persists, try reinstalling the drivers."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Replace the GPU",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test with Another GPU",
+            "content": "If possible, test your monitors with another GPU to rule out a hardware issue with your current GPU."
+          },
+          {
+            "title": "Consider Replacement",
+            "content": "If the issue persists with another GPU, consider replacing your current GPU."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T07:43:09.837Z",
+      "updated": "2026-02-04T07:43:09.837Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/screen-flickering-gpu-issue.3623536/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770190992173-572",
+    "title": "Fix Screen Flickering When Scrolling",
+    "problemDescription": "Screen flickers when scrolling on Windows.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen",
+      "flicker",
+      "scrolling",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Refresh Rate",
+        "content": "Go to your screen resolution settings in Windows, click on 'Advanced settings', then check the 'Monitor' tab to ensure your refresh rate is set to the maximum possible."
+      },
+      {
+        "title": "Check Connections",
+        "content": "Inspect and secure all monitor and graphics card connections. Turn off your PC, remove the graphics card, clean the contacts and the PCI-E slot, then reinsert the card. Check for any damage to the plugs and ensure the power is properly connected both inside the PC and to the monitor."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Test with Another Monitor",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Borrow a Monitor",
+            "content": "Plug your PC into a different monitor to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T07:43:12.174Z",
+      "updated": "2026-02-04T07:43:12.174Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/screen-flickers-when-scrolling.1842730/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770190994733-680",
+    "title": "Fix Screen Flickering on AMD GPU",
+    "problemDescription": "Screen flickering or moving down and up randomly, especially during video playback or browsing.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen flickering",
+      "AMD GPU",
+      "video playback",
+      "browsing"
+    ],
+    "steps": [
+      {
+        "title": "Update or Roll Back GPU Drivers",
+        "content": "Update your AMD GPU drivers to the latest stable version or roll back to a previous stable version if you're using beta drivers."
+      },
+      {
+        "title": "Check and Secure Connections",
+        "content": "Ensure all cables are securely connected. Wiggle the cables near the GPU and monitor to recreate the flickering. Test with spare cables if available."
+      },
+      {
+        "title": "Reseat the GPU",
+        "content": "Power off your PC, unplug it, and reseat the GPU in its PCIe slot. Ensure it's properly seated."
+      },
+      {
+        "title": "Test with Integrated GPU",
+        "content": "If your system has integrated graphics, connect to it and test to see if the issue persists."
+      },
+      {
+        "title": "Test with Spare Monitor or GPU",
+        "content": "If possible, test with a spare monitor or GPU to rule out hardware issues with the current monitor or GPU."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Flash New BIOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Flash New BIOS",
+            "content": "If the issue is related to the GPU's BIOS, consider flashing a new BIOS for the GPU."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T07:43:14.733Z",
+      "updated": "2026-02-04T07:43:14.733Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/screen-flickering-randomly-video-included.1583814/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
