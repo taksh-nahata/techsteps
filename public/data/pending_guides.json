@@ -100609,5 +100609,732 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770201337335-226",
+    "title": "Fix Printer Connectivity Issues",
+    "problemDescription": "Printer is not responding or connecting to the computer.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "connectivity",
+      "ink",
+      "cartridge"
+    ],
+    "steps": [
+      {
+        "title": "Check Ink Levels",
+        "content": "Examine the ink levels in the cartridges area."
+      },
+      {
+        "title": "Refill Ink if Necessary",
+        "content": "If the ink level is low, try to refill the cartridges."
+      },
+      {
+        "title": "Remove and Reinsert Cartridges",
+        "content": "After refilling, remove and reinsert the cartridges to ensure proper seating."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Printer",
+            "content": "Turn off the printer, wait for a few seconds, and then turn it back on."
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Restart your computer to refresh the connection."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check Connections",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify USB or Network Connection",
+            "content": "Ensure that the USB cable is properly connected or that the printer is connected to the network."
+          },
+          {
+            "title": "Reinstall Printer Drivers",
+            "content": "Uninstall and reinstall the printer drivers on your computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T10:35:37.335Z",
+      "updated": "2026-02-04T10:35:37.335Z",
+      "sourceUrl": "https://www.quora.com/How-can-I-troubleshoot-my-printer-connectivity-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770201339617-135",
+    "title": "Fix Printer Ink Issues",
+    "problemDescription": "Printer not printing due to low or empty ink cartridges.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "ink",
+      "cartridges"
+    ],
+    "steps": [
+      {
+        "title": "Check Ink Levels",
+        "content": "Examine the ink levels in the cartridges area."
+      },
+      {
+        "title": "Refill Ink",
+        "content": "If the ink level is low, refill the cartridges."
+      },
+      {
+        "title": "Reinstall Cartridges",
+        "content": "Remove and reinstall the cartridges after refilling."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clean Print Heads",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Print Head Cleaning",
+            "content": "Go to your printer's settings and find the print head cleaning option."
+          },
+          {
+            "title": "Run Cleaning Cycle",
+            "content": "Run the cleaning cycle to remove any clogs."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T10:35:39.617Z",
+      "updated": "2026-02-04T10:35:39.617Z",
+      "sourceUrl": "https://www.quora.com/What-is-a-quick-solution-and-troubleshooting-for-printer-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770201342358-258",
+    "title": "Fix Printer Offline Error",
+    "problemDescription": "Printer shows as offline and won't print.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "offline",
+      "printing"
+    ],
+    "steps": [
+      {
+        "title": "Check Printer Status",
+        "content": "Ensure the printer is turned on and connected to the same network as your computer."
+      },
+      {
+        "title": "Restart Printer",
+        "content": "Turn the printer off, wait for 30 seconds, and then turn it back on."
+      },
+      {
+        "title": "Restart Computer",
+        "content": "Restart your computer to refresh the connection."
+      },
+      {
+        "title": "Update Printer Drivers",
+        "content": "Go to 'Devices and Printers', right-click on your printer, select 'Printer properties', and update the driver if necessary."
+      },
+      {
+        "title": "Set as Default Printer",
+        "content": "In 'Devices and Printers', right-click on your printer and select 'Set as default printer'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Printer Queue",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Printer Queue",
+            "content": "Go to 'Control Panel' > 'Devices and Printers' > Right-click on your printer > 'See what's printing'."
+          },
+          {
+            "title": "Cancel All Documents",
+            "content": "Cancel all documents in the queue."
+          },
+          {
+            "title": "Restart Print Spooler",
+            "content": "Open 'Services' (press Win + R, type 'services.msc'), find 'Print Spooler', right-click and select 'Restart'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T10:35:42.358Z",
+      "updated": "2026-02-04T10:35:42.358Z",
+      "sourceUrl": "https://www.quora.com/What-is-the-common-printer-problem-and-how-do-you-fix-them-yourself",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770201345830-375",
+    "title": "Fix Printer Not Printing from Computer",
+    "problemDescription": "Printer is not printing from a computer even after restarting both devices.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "printing",
+      "connection",
+      "drivers"
+    ],
+    "steps": [
+      {
+        "title": "Check Connection",
+        "content": "Ensure the printer is properly connected via cable or WiFi."
+      },
+      {
+        "title": "Set Default Printer",
+        "content": "Go to Settings > Devices > Printers & scanners and set the correct printer as default."
+      },
+      {
+        "title": "Clear Print Queue",
+        "content": "Open the print queue by double-clicking the printer icon in the system tray and cancel all pending print jobs."
+      },
+      {
+        "title": "Update Drivers",
+        "content": "Download and install the latest printer drivers from the manufacturer's website."
+      },
+      {
+        "title": "Reinstall Printer",
+        "content": "Uninstall the printer from Devices and Printers, then reinstall it by following the manufacturer's setup instructions."
+      },
+      {
+        "title": "Run Troubleshooter",
+        "content": "Go to Settings > Update & Security > Troubleshoot > Printer and run the troubleshooter."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Printer Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Settings",
+            "content": "Ensure the printer settings match the document settings (e.g., paper size, orientation)."
+          },
+          {
+            "title": "Test Print",
+            "content": "Print a test page from the printer's control panel to verify it's working."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T10:35:45.830Z",
+      "updated": "2026-02-04T10:35:45.830Z",
+      "sourceUrl": "https://www.quora.com/What-steps-can-be-taken-to-troubleshoot-a-printer-that-is-not-printing-from-a-computer-even-after-restarting-both-devices",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770201352594-754",
+    "title": "Fix MacBook Pro Flickering Green Monitor",
+    "problemDescription": "MacBook Pro monitor flickers green, especially with black colors, indicating a potential hardware or graphics issue.",
+    "category": "wifi",
+    "difficulty": "Hard",
+    "keywords": [
+      "macbook",
+      "monitor",
+      "flickering",
+      "green",
+      "hardware"
+    ],
+    "steps": [
+      {
+        "title": "Check and Adjust Display Cable",
+        "content": "Open the back of your MacBook Pro, unplug the power cable and remove the battery. Locate the display cable connector and carefully wiggle and push it to ensure a proper connection. Reassemble and reboot your MacBook Pro."
+      },
+      {
+        "title": "Clean the Interior",
+        "content": "Use a vacuum cleaner to remove dust from the interior of your MacBook Pro, especially around the display cable connector."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Automatic Graphics Switching",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Automatic Graphics Switching",
+            "content": "Go to System Preferences > Energy Saver and uncheck the box for 'Automatic graphics switching'."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Run Apple Hardware Test",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Apple Hardware Test",
+            "content": "Restart your MacBook Pro and immediately press and hold the D key to run the Apple Hardware Test."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Reinstall OS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall OS",
+            "content": "Backup your data and reinstall the macOS to rule out software issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T10:35:52.594Z",
+      "updated": "2026-02-04T10:35:52.594Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/132236/problem-with-monitor-flickering-green",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1770201363012-392",
+    "title": "Fix MacBook Pro External Monitor Flicker",
+    "problemDescription": "MacBook Pro connected to an external monitor experiences flickering or signal loss.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "monitor",
+      "flicker",
+      "signal loss",
+      "external display"
+    ],
+    "steps": [
+      {
+        "title": "Switch Monitor to HBR1",
+        "content": "Access the monitor's menu and navigate to System -> DisplayPort Ver. Change the setting to HBR1."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset the SMC",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Shut down your MacBook Pro.",
+            "content": "Disconnect the power cable."
+          },
+          {
+            "title": "Press and hold the power button for 10 seconds.",
+            "content": "Release the power button and reconnect the power cable."
+          },
+          {
+            "title": "Turn on your MacBook Pro.",
+            "content": "Check if the flickering issue is resolved."
+          }
+        ]
+      },
+      {
+        "title": "Upgrade to HBR2 Compatible Cable",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a HBR2 compatible cable.",
+            "content": "Ensure it is compatible with your MacBook Pro and monitor."
+          },
+          {
+            "title": "Connect the new cable.",
+            "content": "Check if the flickering issue is resolved."
+          }
+        ]
+      },
+      {
+        "title": "Use USB-C to DisplayPort Adapter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a USB-C to DisplayPort adapter.",
+            "content": "Ensure it is compatible with your MacBook Pro and monitor."
+          },
+          {
+            "title": "Connect the adapter.",
+            "content": "Check if the flickering issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T10:36:03.012Z",
+      "updated": "2026-02-04T10:36:03.012Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/269616/external-monitor-flicker-signal-loss",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770201369402-519",
+    "title": "Fix Dual Monitor Flickering on MacBook Pro",
+    "problemDescription": "Secondary monitor flickers when connected to a MacBook Pro.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "dual monitor",
+      "flickering",
+      "MacBook Pro",
+      "High Sierra",
+      "SMC"
+    ],
+    "steps": [
+      {
+        "title": "Reboot with Monitors Connected",
+        "content": "Ensure both monitors are connected to your MacBook Pro, then reboot the system. This can resolve flickering issues."
+      },
+      {
+        "title": "Reset the SMC",
+        "content": "Reset the System Management Controller (SMC) by shutting down the MacBook, unplugging the power cable, waiting 15 seconds, and then plugging it back in and powering on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Uniform Refresh Rate",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Uniform Refresh Rate",
+            "content": "Go to Display Settings -> Advanced Display Settings and ensure all monitors are set to the same refresh rate. Turn off the laptop's monitor in the display settings if necessary."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T10:36:09.402Z",
+      "updated": "2026-02-04T10:36:09.402Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/324109/dual-monitor-flickering-the-secondary-monitor-does-the-flicker",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770201378322-837",
+    "title": "Fix Stuck or Dead Pixel",
+    "problemDescription": "A pixel on the screen is either stuck or dead, displaying incorrectly under different conditions.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "stuck pixel",
+      "dead pixel",
+      "screen repair"
+    ],
+    "steps": [
+      {
+        "title": "Use Software Tools",
+        "content": "Try using software tools like UDPixel or JScreenFix. These programs flash a series of images that vary in color and intensity to attempt to unstick the pixel."
+      },
+      {
+        "title": "Manual Manipulation",
+        "content": "If the software solution does not work, gently press on the affected area with something like a pencil eraser. This compresses the layers of the panel, forcing the oil within the panel to move."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Professional Repair",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Consult a Professional",
+            "content": "If the pixel issue persists, consult a professional repair service. They may be able to diagnose and fix the issue more effectively."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T10:36:18.322Z",
+      "updated": "2026-02-04T10:36:18.322Z",
+      "sourceUrl": "https://superuser.com/questions/425567/stuck-or-dead-pixel",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770201380019-292",
+    "title": "Pixel 4a Mic Not Working with Earphones",
+    "problemDescription": "The built-in microphone on a Google Pixel 4a stops working when earphones are inserted into the headphone jack.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "microphone",
+      "earphones",
+      "Pixel 4a"
+    ],
+    "steps": [
+      {
+        "title": "Try Different Earphones",
+        "content": "Use a different pair of earphones or headphones to see if the issue persists. The problem may be due to compatibility issues with the current earphones."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check for External Microphone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Microphone Connection",
+            "content": "Ensure that the earphones do not have a built-in microphone that the phone might be trying to use instead of the built-in microphone."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T10:36:20.019Z",
+      "updated": "2026-02-04T10:36:20.019Z",
+      "sourceUrl": "https://superuser.com/questions/1684833/google-pixel-4a-mic-issue-mic-wont-work-when-earphones-are-inserted-into-head",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770201391179-477",
+    "title": "Fix Weird Pixel Behavior on LCD Screen",
+    "problemDescription": "A pixel on your LCD screen displays unusual behavior, showing blue when it should be black, and only appears when there is a white pixel on the same column.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel",
+      "LCD",
+      "screen",
+      "hardware",
+      "Lenovo"
+    ],
+    "steps": [
+      {
+        "title": "Identify the Problem",
+        "content": "Confirm that the issue is not a dead or stuck pixel by observing the behavior described. The pixel should only appear when there is a white pixel on the same column."
+      },
+      {
+        "title": "Check Manufacturer's Policy",
+        "content": "Review Lenovo's defect pixel policy. Lenovo may decline repair or replacement requests if the number of defective pixels is below their threshold (e.g., 3 defective pixels)."
+      },
+      {
+        "title": "Contact Support",
+        "content": "Contact Lenovo support or the retailer where you purchased the notebook. Explain the issue and inquire about possible solutions or repairs under warranty."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Software Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Software Tools",
+            "content": "Try using software tools designed to fix stuck pixels. These tools often involve displaying different colors and patterns on the screen to potentially reset the problematic pixel."
+          },
+          {
+            "title": "Monitor the Pixel",
+            "content": "Observe the pixel's behavior over time. If the issue persists, it may be a hardware problem that requires professional intervention."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T10:36:31.179Z",
+      "updated": "2026-02-04T10:36:31.179Z",
+      "sourceUrl": "https://superuser.com/questions/1140325/dead-or-stuck-pixel-weird-pixel-behavior",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770201398272-974",
+    "title": "Fix Slow Computer with No High CPU/Memory Usage",
+    "problemDescription": "Computer is running slow but Task Manager doesn't show excessive CPU or memory usage.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "slow computer",
+      "task manager",
+      "cpu usage",
+      "memory usage"
+    ],
+    "steps": [
+      {
+        "title": "Check Power Settings",
+        "content": "Go to Control Panel, then Power Options, and select the 'High Performance' power plan."
+      },
+      {
+        "title": "Disable Non-Critical Startup Programs",
+        "content": "Open Task Manager, go to the Startup tab, and disable all non-critical programs."
+      },
+      {
+        "title": "Update Antivirus Software",
+        "content": "Update your antivirus program and its definitions."
+      },
+      {
+        "title": "Scan for Malware",
+        "content": "Download and install Malwarebytes, then run a full scan to detect and remove any malware or adware."
+      },
+      {
+        "title": "Check for Background Processes",
+        "content": "Use Task Manager to identify and end any unnecessary background processes that might be consuming resources."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Advanced Malware Scan",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Restart your computer and boot into Safe Mode."
+          },
+          {
+            "title": "Run Antivirus Scan",
+            "content": "Run a full antivirus scan in Safe Mode to detect and remove any hidden malware."
+          },
+          {
+            "title": "Use HijackThis",
+            "content": "Download and run HijackThis to analyze and repair any suspicious entries."
+          },
+          {
+            "title": "Clean Temporary Files",
+            "content": "Download CCleaner and use it to clean temporary files and the registry."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T10:36:38.272Z",
+      "updated": "2026-02-04T10:36:38.272Z",
+      "sourceUrl": "https://superuser.com/questions/1133822/my-computer-is-running-slow-but-task-manager-doesnt-show-excessive-cpu-or-memo",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770201404306-602",
+    "title": "Fix Windows Freeze or Slowness",
+    "problemDescription": "Windows operating system is freezing or running slowly.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "freeze",
+      "slowness",
+      "troubleshoot"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Machine",
+        "content": "Perform a system restart to resolve temporary issues."
+      },
+      {
+        "title": "Check for Viruses and Malware",
+        "content": "Use antivirus software to scan and remove any malicious programs."
+      },
+      {
+        "title": "Open Task Manager",
+        "content": "Press Ctrl+Shift+Esc to open Task Manager. Identify processes using high CPU or disk resources. Close or kill problematic applications."
+      },
+      {
+        "title": "Investigate Suspicious Processes",
+        "content": "Google any unrecognized processes to determine if they are necessary or malicious."
+      },
+      {
+        "title": "Adjust Startup Programs",
+        "content": "Open msconfig (type msconfig in the Run dialog), go to the Startup tab, and disable unnecessary startup programs."
+      },
+      {
+        "title": "Uninstall Unnecessary Software",
+        "content": "Go to Control Panel, navigate to Programs and Features, and uninstall any software that is not needed."
+      },
+      {
+        "title": "Clean Up Disk and Registry",
+        "content": "Use Disk Cleanup and perform a registry tweak as per the How-To Geek guide to ensure thorough cleanup."
+      },
+      {
+        "title": "Check Event Viewer",
+        "content": "Open Event Viewer to look for any system errors and investigate them."
+      },
+      {
+        "title": "Consider Hardware Upgrades",
+        "content": "If software solutions do not work, consider upgrading RAM or other hardware components."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Malwarebytes Anti-Malware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install Malwarebytes",
+            "content": "Download Malwarebytes Anti-Malware from the official website and install it."
+          },
+          {
+            "title": "Run a Full Scan",
+            "content": "Perform a full system scan to detect and remove any malware."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Increase Virtual Memory",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Properties",
+            "content": "Right-click on 'This PC' or 'Computer' and select 'Properties'. Click on 'Advanced system settings'."
+          },
+          {
+            "title": "Adjust Virtual Memory",
+            "content": "Go to the 'Advanced' tab, click on 'Settings' under Performance, then go to the 'Advanced' tab again, and click on 'Change' under Virtual memory. Adjust the paging file size as needed."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Use CCleaner",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install CCleaner",
+            "content": "Download CCleaner from the official website and install it."
+          },
+          {
+            "title": "Run CCleaner",
+            "content": "Open CCleaner and run a cleanup to remove temporary files, cookies, and other unnecessary data."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T10:36:44.306Z",
+      "updated": "2026-02-04T10:36:44.306Z",
+      "sourceUrl": "https://superuser.com/questions/26862/how-do-i-troubleshoot-a-windows-freeze-or-slowness",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
