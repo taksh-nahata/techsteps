@@ -98232,5 +98232,246 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770178143805-349",
+    "title": "Fix Google Pixel Connection to Windows 11",
+    "problemDescription": "Google Pixel not connecting to Windows 11 for file transfer or debugging.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "google pixel",
+      "connection",
+      "usb debugging"
+    ],
+    "steps": [
+      {
+        "title": "Enable File Transfer Mode",
+        "content": "Ensure that file transfer mode is turned on in your Google Pixel settings."
+      },
+      {
+        "title": "Enable Developer Options",
+        "content": "Go to Settings > About phone > Tap 'Build number' 7 times to enable Developer Options."
+      },
+      {
+        "title": "Enable USB Debugging",
+        "content": "In Developer Options, enable USB Debugging. Now try reconnecting your Google Pixel to Windows 11."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check USB Cable and Ports",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect USB Cable",
+            "content": "Ensure the USB cable is not damaged and is compatible with data transfer."
+          },
+          {
+            "title": "Try Different USB Ports",
+            "content": "Connect your Google Pixel to different USB ports on your Windows 11 PC."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T04:09:03.805Z",
+      "updated": "2026-02-04T04:09:03.805Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/help-with-windows-11-compatibility-on-google-pixel/d039ff5b-3f00-44a9-9b7c-0f0c22730816",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770178148058-19",
+    "title": "Fix Critical Structure Corruption in Windows 10",
+    "problemDescription": "Critical structure corruption error in Windows 10.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "critical structure corruption",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Check Minidump Files",
+        "content": "Navigate to C:\\Windows\\minidump on your system and locate the latest .dmp file."
+      },
+      {
+        "title": "Upload the Dump File",
+        "content": "Upload the latest .dmp file to an online file sharing site like OneDrive, Google Drive, or Dropbox."
+      },
+      {
+        "title": "Share the Link",
+        "content": "Share the link to the uploaded .dmp file with a support forum or technician for further analysis."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-04T04:09:08.058Z",
+      "updated": "2026-02-04T04:09:08.058Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/how-do-i-fix-a-critical-structure-corruption-issue/8b48d7c3-3176-45f5-af90-f85f97600235",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770178180850-853",
+    "title": "MacOS Storage Issues",
+    "problemDescription": "MacOS users experiencing storage problems, including difficulty managing or freeing up space.",
+    "category": "macOS",
+    "difficulty": "Medium",
+    "keywords": [
+      "macOS",
+      "storage",
+      "issues",
+      "management"
+    ],
+    "steps": [
+      {
+        "title": "Check Storage Usage",
+        "content": "Go to Apple Menu > About This Mac > Storage to see a breakdown of your storage usage."
+      },
+      {
+        "title": "Manage Storage",
+        "content": "Click 'Manage' in the Storage section to access built-in tools for optimizing storage, such as emptying trash, reviewing large files, and managing iCloud storage."
+      },
+      {
+        "title": "Delete Unnecessary Files",
+        "content": "Manually delete files you no longer need, especially large files and duplicates."
+      },
+      {
+        "title": "Use Third-Party Tools",
+        "content": "Consider using third-party tools like CleanMyMac or DaisyDisk for more advanced storage management and cleanup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall macOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure all important data is backed up to an external drive or iCloud."
+          },
+          {
+            "title": "Reinstall macOS",
+            "content": "Go to Apple Menu > Restart, then press and hold Command (⌘) + R immediately after your Mac begins to restart. Follow the on-screen instructions to reinstall macOS."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T04:09:40.850Z",
+      "updated": "2026-02-04T04:09:40.850Z",
+      "sourceUrl": "https://www.reddit.com/r/MacOS/comments/15zqbvg/what_are_your_top_macos_issues/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770178204812-574",
+    "title": "Safely Change Two-Factor Authentication",
+    "problemDescription": "Changing two-factor authentication apps can lock you out if done incorrectly. This guide provides a safe step-by-step approach.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "two-factor authentication",
+      "account security",
+      "app change"
+    ],
+    "steps": [
+      {
+        "title": "Prepare for the Change",
+        "content": "Ensure you are at a trusted location on a familiar device. Make sure you have access to all account recovery methods, including phone numbers, email addresses, and any recovery codes associated with the existing two-factor authentication technique."
+      },
+      {
+        "title": "Turn Off Two-Factor Authentication",
+        "content": "Sign in to your account and turn off the specific two-factor authentication technique you are trying to move."
+      },
+      {
+        "title": "Turn On Two-Factor Authentication with New App",
+        "content": "Turn two-factor authentication back on using the new app or device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Recovery Codes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Prepare Recovery Codes",
+            "content": "Ensure you have all recovery codes for the existing two-factor authentication method."
+          },
+          {
+            "title": "Disable Old Two-Factor Authentication",
+            "content": "Disable the old two-factor authentication method."
+          },
+          {
+            "title": "Enable New Two-Factor Authentication",
+            "content": "Enable the new two-factor authentication method using the recovery codes if necessary."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T04:10:04.812Z",
+      "updated": "2026-02-04T04:10:04.812Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=aVb036AjU-Y",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770178207126-782",
+    "title": "Fix Chrome 2-Step Verification Loop",
+    "problemDescription": "Chrome repeatedly asks for 2-step verification during sign-in.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "2-step verification",
+      "sign-in issue"
+    ],
+    "steps": [
+      {
+        "title": "Clear Browsing Data",
+        "content": "Open Chrome, go to Settings > Privacy and Security > Delete Browsing Data. Select 'All time' and check 'Browsing history', 'Cookies and other site data', and 'Cached images and files'. Click 'Delete data'."
+      },
+      {
+        "title": "Reset Site Permissions",
+        "content": "Go to Settings > Privacy and Security > Site Settings > Cookies and site data > See all site data and permissions. Click 'Remove all' to delete all site data."
+      },
+      {
+        "title": "Reset Chrome Browser",
+        "content": "Go to Settings > Apps > Manage apps > Chrome > Uninstall. Reinstall Chrome from the official website."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Downgrade Chrome Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Older Chrome Version",
+            "content": "Search for 'chrome older version' on Google. Click on the first link and choose an older version suitable for your PC. Download and install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T04:10:07.126Z",
+      "updated": "2026-02-04T04:10:07.126Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=yKfS_qiN9K8",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
