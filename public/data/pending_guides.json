@@ -104117,5 +104117,472 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770226965022-428",
+    "title": "Fix Microsoft Teams Hidden Channels Issue",
+    "problemDescription": "Microsoft Teams channels are hidden, requiring an extra click to access, causing communication disruptions.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Teams",
+      "channels",
+      "communication",
+      "UI"
+    ],
+    "steps": [
+      {
+        "title": "Wait for the Official Update",
+        "content": "Microsoft is testing a new design that merges chats and channels into one UI. Wait for the official release of this update."
+      },
+      {
+        "title": "Join the Teams Public Preview Program",
+        "content": "If available, join the Teams Public Preview program to test the new design before it's released to the general public."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Workarounds for Current Design",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Pin Important Channels",
+            "content": "Pin frequently used channels to the top of the list for quicker access."
+          },
+          {
+            "title": "Use Keyboard Shortcuts",
+            "content": "Use keyboard shortcuts to navigate between chats and channels more efficiently."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T17:42:45.022Z",
+      "updated": "2026-02-04T17:42:45.022Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/microsoft-fixes-biggest-teams-complaint/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770226970490-345",
+    "title": "Set Out of Office in Microsoft Teams",
+    "problemDescription": "How to set an 'Out of Office' status in Microsoft Teams to inform colleagues of your availability.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Teams",
+      "Out of Office",
+      "status message",
+      "availability"
+    ],
+    "steps": [
+      {
+        "title": "Access Profile Settings",
+        "content": "Click on your profile icon in Microsoft Teams to open the dropdown menu."
+      },
+      {
+        "title": "Navigate to Out of Office Settings",
+        "content": "Select 'Schedule an out of office' from the dropdown menu, or click the three-dot icon next to your profile icon, then go to Settings > General. Scroll down to the bottom of the page to find the out-of-office settings."
+      },
+      {
+        "title": "Schedule Your Out of Office",
+        "content": "Click 'Schedule' and enter your out-of-office details, including the start and end dates, and your custom message."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Set a Status Message",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Profile Settings",
+            "content": "Click on your profile icon in Microsoft Teams to open the dropdown menu."
+          },
+          {
+            "title": "Set Status Message",
+            "content": "Select 'Set Status Message' and type your message. This will appear in the chat when someone attempts to message you."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T17:42:50.490Z",
+      "updated": "2026-02-04T17:42:50.490Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/how-set-an-out-of-office-in-microsoft-teams/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770226989312-888",
+    "title": "Protect Wi-Fi Password from Display on Android",
+    "problemDescription": "Prevent Android devices from displaying saved Wi-Fi passwords when shared.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "password",
+      "android",
+      "security"
+    ],
+    "steps": [
+      {
+        "title": "Use a Custom ROM",
+        "content": "Install a custom ROM that does not have the feature to display Wi-Fi passwords."
+      },
+      {
+        "title": "Disable Password Sharing",
+        "content": "Go to your Android device's settings, navigate to the Wi-Fi section, and disable the option to share Wi-Fi passwords."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a VPN",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a VPN App",
+            "content": "Download and install a reliable VPN app from the Google Play Store."
+          },
+          {
+            "title": "Connect to VPN",
+            "content": "Connect to the VPN before accessing Wi-Fi settings to encrypt your network traffic."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T17:43:09.312Z",
+      "updated": "2026-02-04T17:43:09.312Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/217312/how-to-protect-my-wi-fi-password-from-being-displayed-by-android-phones-when-sha",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770226992469-431",
+    "title": "Fix Android Print Job Stuck",
+    "problemDescription": "Print jobs are stuck and cannot be canceled on a Huawei Mate 10 Pro with a Canon MG 3200 printer.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "print",
+      "stuck",
+      "cancel"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Smartphone",
+        "content": "Restart your Huawei Mate 10 Pro to clear the stuck print job."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Print Queue",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Print Settings",
+            "content": "Go to Settings > Connected devices > Connection preferences > Printing."
+          },
+          {
+            "title": "Cancel All Jobs",
+            "content": "Select your printer and cancel all pending print jobs."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset Printer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Printer",
+            "content": "Turn off your Canon MG 3200 printer."
+          },
+          {
+            "title": "Wait and Restart",
+            "content": "Wait for a few minutes and then turn it back on."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T17:43:12.469Z",
+      "updated": "2026-02-04T17:43:12.469Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/217843/cant-print-or-stop-print-job",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770226996084-799",
+    "title": "Fix Android Storage Space Running Out",
+    "problemDescription": "Android device shows storage space running out, affecting system functions.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "storage",
+      "root",
+      "SD Maid",
+      "APP2SD"
+    ],
+    "steps": [
+      {
+        "title": "Edit settings.db File",
+        "content": "Boot into recovery mode, pull the settings.db file, edit it on your PC using an SQLite3 editor, and push it back. Ensure to update the 'global', 'secure', and 'system' tables."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use SD Maid",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install SD Maid",
+            "content": "Download 'SD Maid' from the Play Store."
+          },
+          {
+            "title": "Clear Uninstalled App Data",
+            "content": "Search for application data that exists on your device despite being uninstalled and clear it."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use APP2SD",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install AIO Toolbox",
+            "content": "Download and install 'AIO Toolbox' from the Play Store."
+          },
+          {
+            "title": "Set Default App Location to USB or Ext Card",
+            "content": "Use the APP2SD feature in AIO Toolbox to set the default app location to USB or external card."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T17:43:16.084Z",
+      "updated": "2026-02-04T17:43:16.084Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/60897/storage-space-running-out-some-system-functions-may-not-work",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770226999790-213",
+    "title": "Run Termux via ADB Without Device Interaction",
+    "problemDescription": "Run Termux commands via ADB without any direct interaction with the device.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "termux",
+      "adb",
+      "android",
+      "command line"
+    ],
+    "steps": [
+      {
+        "title": "Use a Debuggable Build of Termux",
+        "content": "Ensure you are using a debuggable build of Termux downloaded from the GitHub releases page."
+      },
+      {
+        "title": "Access Termux Shell via ADB",
+        "content": "Run `adb shell` and then execute the following command to get a Termux shell:\n\n```\nrun-as com.termux files/usr/bin/bash -lic 'export PATH=/data/data/com.termux/files/usr/bin:$PATH; export LD_PRELOAD=/data/data/com.termux/files/usr/lib/libtermux-exec.so; bash -i'\n```"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using SSH",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install SSH Package",
+            "content": "Ensure the `openssh` package is installed in Termux."
+          },
+          {
+            "title": "Start SSH Service",
+            "content": "Add `sshd` to `.bashrc` or `.profile` to start the SSH service whenever Termux is launched."
+          },
+          {
+            "title": "Launch Termux via ADB",
+            "content": "Use the following command to launch Termux:\n\n```\nadb shell am start -n com.termux/.HomeActivity\n```"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T17:43:19.790Z",
+      "updated": "2026-02-04T17:43:19.790Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/225260/termux-running-termux-via-adb-without-any-direct-interaction-with-the-device",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770227006112-216",
+    "title": "USB-C Device Not Detected Directly on MacBook",
+    "problemDescription": "A USB-C device is only recognized when connected through a hub, not directly to the MacBook.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "USB-C",
+      "MacBook",
+      "device recognition",
+      "hub"
+    ],
+    "steps": [
+      {
+        "title": "Check the USB-C Cable and Adapter",
+        "content": "Ensure the USB-C cable and adapter are of good quality. Poor quality adapters can cause recognition issues."
+      },
+      {
+        "title": "Try a Different USB-C Adapter",
+        "content": "Use a different USB-C adapter, preferably one from a reputable brand like Anker or Apple, to see if the device is recognized."
+      },
+      {
+        "title": "Verify USB Hub Compatibility",
+        "content": "Ensure the USB hub is compatible with your MacBook and supports the necessary USB standards (USB 2.0, USB 3.0, or USB 4.0)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset USB Controller Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run System Profiler Command",
+            "content": "Open Terminal and run the command `system_profiler SPUSBDataType | grep -i hub` to check the USB hubs and controllers."
+          },
+          {
+            "title": "Reset to Default Settings",
+            "content": "Reset the USB controller settings to default if necessary, as sometimes the built-in USB controller can cause compatibility issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T17:43:26.112Z",
+      "updated": "2026-02-04T17:43:26.112Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/471417/usb-c-device-detected-only-through-a-hub",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770227016241-175",
+    "title": "Fix Intermittent USB Issues on MacBook Pro",
+    "problemDescription": "USB ports on MacBook Pro stop working after a while, requiring a restart to fix the issue.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "usb",
+      "macbook pro",
+      "intermittent",
+      "connection",
+      "restart"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall the OS",
+        "content": "Run the macOS installer again to see if that fixes the issue. Make sure to back up your data first."
+      },
+      {
+        "title": "Perform a Clean Install",
+        "content": "If reinstalling doesn't work, perform a clean install of the OS."
+      },
+      {
+        "title": "Check for Hardware Issues",
+        "content": "If the problem persists, there may be a hardware failure. Contact an Apple Certified Mac Technician (ACMT) for repair."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Log IOUSBFamily Behavior",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Logging Package",
+            "content": "Download the IOUSBFamily logging package from developer.apple.com/downloads/index.action. A free developer account is required."
+          },
+          {
+            "title": "Search for USB",
+            "content": "Use the search field to find USB-related logs."
+          },
+          {
+            "title": "Analyze Logs",
+            "content": "Look for any closely related events such as 'wake' or 'kext' that might be causing the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T17:43:36.241Z",
+      "updated": "2026-02-04T17:43:36.241Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/79456/usb-intermittently-not-working-requires-restart-what-to-try-next",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770227019261-870",
+    "title": "USB Drive Not Mounting in macOS",
+    "problemDescription": "USB drive is not mounting or listed in Disk Utilities but is detected in System Profiler.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "usb",
+      "macos",
+      "mount",
+      "disk utilities"
+    ],
+    "steps": [
+      {
+        "title": "Check VirtualBox USB Filter",
+        "content": "Open VirtualBox and navigate to the settings of the virtual machine that might be using the USB drive. In the USB section, uncheck the device that corresponds to your USB drive to release it from the VM."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Create a New User Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a New User Account",
+            "content": "Go to System Preferences > Users & Groups. Click the lock icon to unlock and then click the '+' button to add a new user. Log out of your current account and log into the new account. Check if the USB drive mounts in this new account."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Boot from Recovery Console",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot from Recovery Console",
+            "content": "Restart your Mac and hold down Command (⌘) + R to boot into Recovery Mode. Once in Recovery Mode, check if the USB drive is detected in Disk Utilities."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T17:43:39.261Z",
+      "updated": "2026-02-04T17:43:39.261Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/183003/usb-drive-will-not-mount-not-listed-in-disk-utilities-but-found-in-system-prof",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
