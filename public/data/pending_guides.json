@@ -99700,5 +99700,370 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770194148636-909",
+    "title": "Fix Screen Flickering on Windows 10",
+    "problemDescription": "Screen flickering issue on a Dell Inspiron 15-3521 laptop after upgrading to Windows 10.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen flickering",
+      "Windows 10",
+      "Dell Inspiron"
+    ],
+    "steps": [
+      {
+        "title": "Update Display Drivers",
+        "content": "Go to Device Manager, expand 'Display adapters', right-click on your display driver, and select 'Update driver'. Choose 'Search automatically for updated driver software'."
+      },
+      {
+        "title": "Adjust Refresh Rate",
+        "content": "Right-click on the desktop, select 'Display settings', then 'Advanced display settings'. Under 'Display adapter properties', go to the 'Monitor' tab and adjust the refresh rate to a lower value like 40Hz."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to Settings > Update & Security > Windows Update. Click 'Check for updates' and install any available updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Hardware Acceleration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Hardware Acceleration in Browser",
+            "content": "Open your browser settings, go to 'Advanced' or 'System', and disable hardware acceleration."
+          },
+          {
+            "title": "Disable Hardware Acceleration in Windows",
+            "content": "Go to Settings > System > Display > Graphics settings. Disable hardware-accelerated GPU scheduling."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Malware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run a Malware Scan",
+            "content": "Use a trusted antivirus software to scan your system for malware that might be causing the flickering."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T08:35:48.636Z",
+      "updated": "2026-02-04T08:35:48.636Z",
+      "sourceUrl": "https://superuser.com/questions/1861297/how-to-fix-screen-flickering",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770194158974-743",
+    "title": "Fix Screen Flickering on Battery",
+    "problemDescription": "Screen flickering when using battery power, potentially due to power saving settings.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "screen flickering",
+      "battery",
+      "power settings",
+      "Windows"
+    ],
+    "steps": [
+      {
+        "title": "Change Power Plan",
+        "content": "Right-click on the desktop and select 'Personalize'. Click on 'Screen Saver' at the bottom right, then click on 'Change Power Settings'. Set the power plan to 'High Performance'."
+      },
+      {
+        "title": "Adjust Screen Brightness",
+        "content": "Click on 'Change plan settings' next to your selected power plan. Adjust the screen brightness sliders for 'On battery' and see if the flickering stops."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check GPU Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Power Saving Technology",
+            "content": "Open your Intel Graphics control panel and disable any power saving technology. Ensure all graphics drivers are up-to-date."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T08:35:58.974Z",
+      "updated": "2026-02-04T08:35:58.974Z",
+      "sourceUrl": "https://superuser.com/questions/1053545/could-my-screen-flickering-be-because-of-a-loose-battery",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770194164773-185",
+    "title": "Fix Laptop Display Flickering on TV Connection",
+    "problemDescription": "Laptop display flickers when connected to a TV in extended mode.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "laptop",
+      "display",
+      "flickering",
+      "TV",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Change Display Configuration",
+        "content": "Right-click on the desktop, select 'Intel Graphic Options', then choose 'Output to -> Extended Desktop -> Digital Display + Built-In Display'. This sets the extended display as primary, which can resolve the flickering issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Refresh Rates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Refresh Rates",
+            "content": "Ensure the refresh rates are supported by both your monitor and TV for the given resolution. TVs often have limited supported refresh rates, and using the wrong one can cause flickering."
+          },
+          {
+            "title": "Manually Configure TV",
+            "content": "Disable Extended Display Identification Data (EDID) through the display properties for your video driver and manually configure the TV settings."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update BIOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for BIOS Update",
+            "content": "Visit your laptop manufacturer's website and check if there is a BIOS update available. Install the update if necessary."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T08:36:04.773Z",
+      "updated": "2026-02-04T08:36:04.773Z",
+      "sourceUrl": "https://superuser.com/questions/83784/how-can-i-stop-my-laptop-display-from-flickering-when-i-connect-my-tv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770194177091-914",
+    "title": "Fix Galaxy Phone Repair Options",
+    "problemDescription": "Finding authorized repair options for Samsung Galaxy phones has become more challenging due to changes in Samsung's partnerships.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Samsung",
+      "Galaxy",
+      "repair",
+      "Best Buy",
+      "iFixit"
+    ],
+    "steps": [
+      {
+        "title": "Check uBreakiFix Locations",
+        "content": "Visit the uBreakiFix website or app to find a nearby location that offers Samsung Galaxy phone repairs."
+      },
+      {
+        "title": "Visit Batteries Plus",
+        "content": "Look for Batteries Plus stores in your area, as they are another authorized repair center for Samsung devices."
+      },
+      {
+        "title": "Contact Samsung Support",
+        "content": "Reach out to Samsung customer support for guidance on authorized repair options and potential support programs."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Best Buy Repairs with Geek Squad",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Eligibility",
+            "content": "Ensure your Galaxy phone was purchased at Best Buy and you have Geek Squad Cell Phone Complete Protection insurance."
+          },
+          {
+            "title": "Schedule Repair",
+            "content": "Contact Best Buy to schedule a repair appointment, noting that a deductible may be required."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T08:36:17.091Z",
+      "updated": "2026-02-04T08:36:17.091Z",
+      "sourceUrl": "https://www.howtogeek.com/your-galaxy-phone-is-now-harder-to-get-fixed/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770194196210-68",
+    "title": "Fix Partially Rendered Images in PowerPoint on macOS",
+    "problemDescription": "Images are partially rendered, showing only the top-left corner, in PowerPoint on macOS Tahoe 26.2 with Office 16.105.2.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "powerpoint",
+      "macos",
+      "images",
+      "rendering"
+    ],
+    "steps": [
+      {
+        "title": "Update PowerPoint",
+        "content": "Ensure you have the latest version of PowerPoint installed. Go to the Microsoft Store or use the built-in update feature in Office to check for updates."
+      },
+      {
+        "title": "Check Image File Formats",
+        "content": "Verify that the images are in a supported format (e.g., JPEG, PNG). If they are in an unsupported format, convert them to a supported format."
+      },
+      {
+        "title": "Repair Office Installation",
+        "content": "Use the built-in repair tool in Office to fix any potential corruption. Go to System Preferences > Office > Repair."
+      },
+      {
+        "title": "Recreate the Slides",
+        "content": "If the issue persists, recreate the problematic slides. Sometimes, recreating the slides can resolve rendering issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Compatibility Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open in Compatibility Mode",
+            "content": "Open PowerPoint in compatibility mode to see if the issue is resolved. This can sometimes bypass rendering issues specific to the latest macOS/Office combination."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Different Mac",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test on Another Mac",
+            "content": "If possible, test the presentation on another Mac to see if the issue is specific to the current machine."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T08:36:36.210Z",
+      "updated": "2026-02-04T08:36:36.210Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/office_xp-powerpoint/insert-many-pictures-into-individual-slides/e636b27c-a14a-e011-8dfc-68b599b31bf5?msgId=883b1b40-e94a-e011-8dfc-68b599b31bf5&tab=AllReplies",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770194210616-400",
+    "title": "Fix Bold Heading Numbers in Table of Contents",
+    "problemDescription": "Some heading numbers in the Table of Contents (TOC) are bold while others are not.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "word",
+      "table of contents",
+      "bold",
+      "headings"
+    ],
+    "steps": [
+      {
+        "title": "Update the Table of Contents",
+        "content": "1. Click on the Table of Contents to select it. 2. Click on the 'Update Table' button in the 'Table of Contents' group on the 'References' tab. 3. Choose 'Update entire table' and click 'OK'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manually Edit the TOC",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit the TOC Field Codes",
+            "content": "1. Right-click on the Table of Contents and select 'Edit Field'. 2. In the 'Field Codes' dialog box, add the switch \\z to the field code. 3. Click 'OK' to update the TOC."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T08:36:50.616Z",
+      "updated": "2026-02-04T08:36:50.616Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/office_2010-word/in-my-toc-some-of-the-heading-numbers-are-bold/e55429a3-048a-4a90-818a-0a0c48f134ae?msgId=c3d34a49-a8fd-4ba0-a729-c44039261809&page=2",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770194233019-667",
+    "title": "Find Lost AirPods with Find My App",
+    "problemDescription": "You've lost one or both of your AirPods and need to locate them.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods",
+      "Find My",
+      "lost",
+      "iPhone",
+      "location"
+    ],
+    "steps": [
+      {
+        "title": "Open Find My App",
+        "content": "On your iPhone, open the Find My app."
+      },
+      {
+        "title": "Select Your AirPods",
+        "content": "Tap the Devices tab, then find and select your AirPods on the list."
+      },
+      {
+        "title": "Play Sound",
+        "content": "If your AirPods are within Bluetooth range, tap Play Sound and listen for a chirping sound from each earbud."
+      },
+      {
+        "title": "Locate Your AirPods",
+        "content": "Follow the sound to locate your AirPods. The sound will get louder for two minutes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use iCloud to Find AirPods",
+        "type": "Alternative Method",
+        "steps": [
+          {
+            "title": "Visit iCloud.com/find",
+            "content": "On your computer, visit iCloud.com/find to help locate your lost devices."
+          },
+          {
+            "title": "Select Your AirPods",
+            "content": "Follow the same steps as in the Find My app to play a sound and locate your AirPods."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T08:37:13.019Z",
+      "updated": "2026-02-04T08:37:13.019Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/losing-an-airpod-sucks-but-this-trick-takes-the-stress-out-of-finding-it/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
