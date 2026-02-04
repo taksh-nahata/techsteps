@@ -97781,5 +97781,456 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770168472088-598",
+    "title": "Fix PDF Printing Issues",
+    "problemDescription": "PDF documents not printing correctly or printer not responding when printing from PDF.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "pdf",
+      "printing",
+      "printer",
+      "document"
+    ],
+    "steps": [
+      {
+        "title": "Update Printer Drivers",
+        "content": "Ensure your printer’s drivers are up-to-date. Visit the manufacturer’s website to download the latest version of the driver if needed."
+      },
+      {
+        "title": "Adjust PDF Print Settings",
+        "content": "If your document doesn’t print correctly, try adjusting the PDF’s print settings. For instance, select 'Print as Image' in the Adobe print dialogue box to avoid issues related to PDF rendering."
+      },
+      {
+        "title": "Check Printer Connection",
+        "content": "If your printer isn’t responding, verify that it’s properly connected to your computer or Wi-Fi network. Restart both the printer and the device from which you are printing."
+      },
+      {
+        "title": "Test with Another Document",
+        "content": "Sometimes the problem lies with a specific PDF. Try printing another document to see if the issue is isolated. If the problem persists, consider converting the PDF to another format (like DOCX) and printing from that file."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Print from a Different Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Another Device",
+            "content": "If all else fails, try printing from a different computer, smartphone, or tablet. This can help you determine whether the issue is with your device or the printer itself."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T01:27:52.088Z",
+      "updated": "2026-02-04T01:27:52.088Z",
+      "sourceUrl": "https://www.techradar.com/computing/printers-scanners/how-to-print-from-pdf",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770168473749-22",
+    "title": "Fix Windows 11 Printer Metadata Issue",
+    "problemDescription": "Printers are incorrectly identified and renamed due to metadata issues in Windows 11.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "printer",
+      "metadata",
+      "troubleshooter"
+    ],
+    "steps": [
+      {
+        "title": "Download the Troubleshooter",
+        "content": "Download the 'Microsoft Printer Metadata Troubleshooter' from Microsoft's official support page."
+      },
+      {
+        "title": "Run the Troubleshooter",
+        "content": "Execute the downloaded troubleshooter tool. It will reverse any incorrect printer renaming, reinstate correct icons, and uninstall the HP Smart app if it was incorrectly installed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Wait for Windows Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Wait for Microsoft to release a Windows Update that includes the fix for the printer metadata issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T01:27:53.749Z",
+      "updated": "2026-02-04T01:27:53.749Z",
+      "sourceUrl": "https://www.techradar.com/computing/windows/microsoft-has-cured-this-windows-11-printer-nightmare-but-the-fix-might-surprise-you",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770168476543-431",
+    "title": "Update Peripheral Drivers in Windows 10",
+    "problemDescription": "Peripheral devices not functioning properly due to outdated drivers.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "drivers",
+      "peripherals",
+      "device manager"
+    ],
+    "steps": [
+      {
+        "title": "Open Device Manager",
+        "content": "Search for 'Device Manager' in the Start menu and open it."
+      },
+      {
+        "title": "Update Driver Software",
+        "content": "Right-click on the device in question and select 'Update Driver Software'."
+      },
+      {
+        "title": "Search for Updates",
+        "content": "Click 'Search automatically for updated driver software' and follow the prompts."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-04T01:27:56.543Z",
+      "updated": "2026-02-04T01:27:56.543Z",
+      "sourceUrl": "https://www.techradar.com/how-to/100-common-windows-10-problems/5",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770168487898-126",
+    "title": "Fix Application-Specific Password Issues",
+    "problemDescription": "Application-specific passwords not working with two-step verification.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "application-specific",
+      "password",
+      "two-step",
+      "verification"
+    ],
+    "steps": [
+      {
+        "title": "Generate a New Application-Specific Password",
+        "content": "Go to your account settings on the provider's website (Google, Microsoft, Apple, etc.), navigate to the security section, and generate a new application-specific password."
+      },
+      {
+        "title": "Enter the New Password",
+        "content": "Copy the generated password and enter it into the application that requires access to your account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Application Compatibility",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Application Support",
+            "content": "Ensure that the application you are using supports two-step verification and application-specific passwords."
+          },
+          {
+            "title": "Update Application",
+            "content": "Update the application to the latest version to ensure compatibility with the latest security features."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T01:28:07.898Z",
+      "updated": "2026-02-04T01:28:07.898Z",
+      "sourceUrl": "https://www.howtogeek.com/199804/warning-your-application-specific-passwords-arent-application-specific/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770168497032-372",
+    "title": "Fix Discord Not Opening",
+    "problemDescription": "Discord is not opening or launching on your desktop.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "not opening",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Check for Updates",
+        "content": "Look in the top right-hand corner of the Discord window for a green button indicating an update is available. Click it to update Discord."
+      },
+      {
+        "title": "Reinstall Discord",
+        "content": "Uninstall Discord from your computer, then download and install the latest version from the official Discord website. Log back into your account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Verify & Submit Steps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Complete Verification Steps",
+            "content": "If you encounter the message 'You must complete a few more steps before you can start talking to the server,' follow the on-screen instructions to verify your account and submit the required information."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T01:28:17.032Z",
+      "updated": "2026-02-04T01:28:17.032Z",
+      "sourceUrl": "https://www.quora.com/How-can-I-fix-my-discord-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770168501970-560",
+    "title": "Fix Discord New Location Detected Error",
+    "problemDescription": "Discord is showing a 'new location detected' error and preventing login.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "login",
+      "location",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Enable Two-Factor Authentication (2FA)",
+        "content": "Go to Discord's website, log in, and navigate to User Settings > Two-Factor Authentication. Enable 2FA and follow the prompts to set it up."
+      },
+      {
+        "title": "Verify Your Account",
+        "content": "Discord may require you to verify your account. Check your email for a verification link and follow the instructions."
+      },
+      {
+        "title": "Contact Discord Support",
+        "content": "If the issue persists, contact Discord support through their help center and explain the situation. Provide any necessary details to verify your identity."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a VPN",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a VPN",
+            "content": "Download and install a reputable VPN service on your device."
+          },
+          {
+            "title": "Connect to Your Home Country's Server",
+            "content": "Open the VPN and connect to a server in your home country. This can help bypass the location detection error."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T01:28:21.970Z",
+      "updated": "2026-02-04T01:28:21.970Z",
+      "sourceUrl": "https://www.quora.com/My-Discord-login-is-saying-new-location-detected-and-it-cant-be-fixed-I-tried-creating-a-new-password-and-it-still-doesnt-work-I-am-in-another-country-What-should-I-do",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770168502894-504",
+    "title": "Fix Discord Connection Issues While Screen Sharing",
+    "problemDescription": "Discord connection becomes bad while sharing screen despite good internet speed.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "connection",
+      "screen sharing",
+      "firewall"
+    ],
+    "steps": [
+      {
+        "title": "Check Router Firewall Settings",
+        "content": "Access your router's firewall settings and ensure that Discord's servers are not being blocked. You may need to add an exception for Discord in your firewall settings."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-04T01:28:22.894Z",
+      "updated": "2026-02-04T01:28:22.894Z",
+      "sourceUrl": "https://www.quora.com/Why-is-my-Discord-connection-so-bad-while-I-m-sharing-my-screen-My-internet-is-normally-250mbps-download-and-90mbps-upload-and-the-connection-is-excellent-until-I-start-streaming",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770168505135-79",
+    "title": "Discord Registration Issues",
+    "problemDescription": "Unable to register or log in to Discord due to various errors.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "registration",
+      "login",
+      "password"
+    ],
+    "steps": [
+      {
+        "title": "Check Caps Lock",
+        "content": "Ensure that the Caps Lock key is not enabled, as it can cause login issues."
+      },
+      {
+        "title": "Update Password",
+        "content": "If your password has expired, update it to a new one. Follow the password reset instructions provided by Discord."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Browser Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache",
+            "content": "Clear your browser's cache and cookies, then try logging in again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T01:28:25.135Z",
+      "updated": "2026-02-04T01:28:25.136Z",
+      "sourceUrl": "https://www.quora.com/I-registered-into-Discord-I-tried-everything-and-it-says-I-can-t-do-this-or-that-and-it-doesnt-load-or-save-anything-or-rersets-the-password-What-do-I-do",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770168517375-927",
+    "title": "Improve Siri Responsiveness",
+    "problemDescription": "Siri is not responding as expected to voice commands.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "siri",
+      "ios",
+      "voice commands",
+      "responsiveness"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Siri Settings",
+        "content": "Go to Settings > Siri & Search > Listen for 'Hey Siri' and enable 'Always Listen for 'Hey Siri'."
+      },
+      {
+        "title": "Speak Clearly",
+        "content": "Say 'Hey Siri' clearly, fairly loud, and with a pause between the two words."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Dictation Commands",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Special Commands",
+            "content": "Use commands like 'cap' for capitalization when dictating text."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Utilize Siri Suggestions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Shortcuts",
+            "content": "Assign a shortcut/suggestion to a Siri phrase and trigger it via Spotlight search."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T01:28:37.375Z",
+      "updated": "2026-02-04T01:28:37.375Z",
+      "sourceUrl": "https://www.reddit.com/r/Siri/comments/1m6vl06/siri_is_a_complete_disappointment/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770168518889-647",
+    "title": "Fix Siri Not Responding on Mac",
+    "problemDescription": "Siri is not responding to simple commands on a Mac.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "siri",
+      "mac",
+      "not responding",
+      "apple"
+    ],
+    "steps": [
+      {
+        "title": "Restart Siri",
+        "content": "Go to System Preferences > Siri & Spotlight, then turn Siri off and on again."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your Mac is connected to the internet, as Siri requires an active connection to function."
+      },
+      {
+        "title": "Update macOS",
+        "content": "Go to System Preferences > Software Update and install any available updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Siri Preferences",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Siri",
+            "content": "Go to System Preferences > Siri & Spotlight, click on the Siri tab, and then click on the 'Reset Siri' button."
+          }
+        ]
+      },
+      {
+        "title": "Reinstall macOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall macOS",
+            "content": "Go to System Preferences > Software Update > Command (⌘) + R to reinstall macOS."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T01:28:38.889Z",
+      "updated": "2026-02-04T01:28:38.889Z",
+      "sourceUrl": "https://www.reddit.com/r/applehelp/comments/ejizhq/something_is_wrong_with_my_siri_if_i_ask_any/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
