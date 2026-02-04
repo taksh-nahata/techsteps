@@ -105263,5 +105263,356 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770236980620-759",
+    "title": "Fix iPhone Not Receiving Push Notifications",
+    "problemDescription": "iPhone is not receiving push notifications, especially after iOS 18 update.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "push notifications",
+      "ios 18"
+    ],
+    "steps": [
+      {
+        "title": "Check Notification Settings",
+        "content": "Go to Settings > Notifications. Ensure that notifications are turned on for the desired apps. For each app, select the type of notification alert, sound, and preview you want."
+      },
+      {
+        "title": "Toggle Notification Settings",
+        "content": "If notifications are already on, turn them off and then turn them back on to reinitialize the settings."
+      },
+      {
+        "title": "Reinstall Problematic Apps",
+        "content": "If a specific app is not sending notifications, delete and reinstall the app. This will not delete your account; you just need to sign back in."
+      },
+      {
+        "title": "Check Low Power Mode",
+        "content": "Go to Settings > Battery and ensure that Low Power Mode is turned off, as it can reduce functionality like fetching mail or sending notifications."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Allow Notifications for Newly Installed Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Allow Notifications",
+            "content": "When you download a new app, ensure you allow it to send notifications when prompted."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T20:29:40.620Z",
+      "updated": "2026-02-04T20:29:40.620Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=GTVN7ajJVXY",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770237031230-720",
+    "title": "Samsung Galaxy Camera Won't Focus",
+    "problemDescription": "The camera on your Samsung Galaxy S8 or S9 fails to focus properly.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "galaxy",
+      "camera",
+      "focus"
+    ],
+    "steps": [
+      {
+        "title": "Clean the Camera Lens",
+        "content": "Gently clean the camera lens with a soft, lint-free cloth to remove any dirt or smudges that might be obstructing the camera's view."
+      },
+      {
+        "title": "Restart the Device",
+        "content": "Restart your phone to clear any temporary software glitches that might be affecting the camera."
+      },
+      {
+        "title": "Update Software",
+        "content": "Ensure your phone's software is up-to-date by going to Settings > Software update > Download updates manually."
+      },
+      {
+        "title": "Reset Camera Settings",
+        "content": "Open the Camera app, tap the settings icon, and select Reset settings to revert to default camera settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter Safe Mode",
+            "content": "Press and hold the Power button until the Power menu appears, then press and hold the Power off option until the Safe Mode prompt appears. Tap OK to reboot into Safe Mode."
+          },
+          {
+            "title": "Test the Camera",
+            "content": "Check if the camera works properly in Safe Mode. If it does, a third-party app might be causing the issue."
+          },
+          {
+            "title": "Uninstall Problematic Apps",
+            "content": "Uninstall recently installed or updated apps one by one to identify and remove the app causing the problem."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset",
+        "type": "Last Resort",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Ensure all important data is backed up as a factory reset will erase everything."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > General management > Reset > Factory data reset > Reset to restore the phone to its original settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T20:30:31.230Z",
+      "updated": "2026-02-04T20:30:31.230Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/common-samsung-galaxy-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770237038558-607",
+    "title": "Clean and Maintain Samsung Phone",
+    "problemDescription": "Maintain your Samsung phone's performance and prevent issues with regular cleaning and maintenance.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "samsung",
+      "phone",
+      "clean",
+      "maintenance",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Clean the Device",
+        "content": "Use a soft microfiber cloth to wipe down the screen and body of your Samsung phone weekly. For tougher spots, slightly dampen the cloth with water."
+      },
+      {
+        "title": "Clear App Caches",
+        "content": "Go to Settings > Device Care > Storage > Clean Now. This will clear all app caches at once, improving app performance and preventing crashes."
+      },
+      {
+        "title": "Run Phone Diagnostics",
+        "content": "Open the Samsung Members app and use the Phone diagnostics menu to test hardware components like the touchscreen, microphones, buttons, and sensors."
+      },
+      {
+        "title": "Update Apps and OS",
+        "content": "Regularly check for and install updates for your apps and the operating system to ensure optimal performance and security."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manual Cache Clearing for Individual Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache for Specific Apps",
+            "content": "Go to Settings > Apps > Select the app > Storage > Clear Cache. Repeat for each app that needs maintenance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T20:30:38.558Z",
+      "updated": "2026-02-04T20:30:38.558Z",
+      "sourceUrl": "https://www.makeuseof.com/tips-to-keep-samsung-phone-running-strong/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770237045480-134",
+    "title": "Fix AirPods Pro Noise Cancellation Issues",
+    "problemDescription": "AirPods Pro users experiencing degraded noise cancellation after a firmware update.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods",
+      "noise cancellation",
+      "firmware update",
+      "iOS"
+    ],
+    "steps": [
+      {
+        "title": "Play Music Loudly",
+        "content": "Play your favorite bass-forward tracks at a high volume to mask the reduced noise cancellation performance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Wait for Apple Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Wait for Apple to release a new firmware update that addresses the noise cancellation issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T20:30:45.480Z",
+      "updated": "2026-02-04T20:30:45.480Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/apple-airpods-pro-noise-cancellation-problems-what-to-do/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770237055619-252",
+    "title": "Replace AirPods Pro Eartips",
+    "problemDescription": "AirPods Pro eartips are lost, damaged, or no longer fit properly.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods Pro",
+      "eartips",
+      "replacement",
+      "fit",
+      "comfort"
+    ],
+    "steps": [
+      {
+        "title": "Purchase Replacement Eartips",
+        "content": "Go to Apple's online store and purchase replacement eartip packs for $8. Choose from the three standard sizes (Small, Medium, Large) and select two replacement sets."
+      },
+      {
+        "title": "Wait for Delivery",
+        "content": "Replacement eartips will be delivered as quickly as four days after ordering."
+      },
+      {
+        "title": "Install New Eartips",
+        "content": "Remove the old eartips and attach the new ones to your AirPods Pro. Ensure they are securely attached."
+      },
+      {
+        "title": "Test the Fit",
+        "content": "Use the fit test feature within iOS to ensure the new eartips provide a good seal. This may involve using different sizes for each ear."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "DIY Memory Foam Eartips",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase Memory Foam",
+            "content": "Buy memory foam material from a local store or online."
+          },
+          {
+            "title": "Cut and Shape the Foam",
+            "content": "Cut the memory foam to fit the size of your AirPods Pro eartips. Shape it to ensure a comfortable and secure fit."
+          },
+          {
+            "title": "Attach the Foam to the Eartips",
+            "content": "Use adhesive or other methods to attach the memory foam to the existing eartips. Ensure it is securely attached and comfortable."
+          },
+          {
+            "title": "Test the Fit",
+            "content": "Use the fit test feature within iOS to ensure the new eartips provide a good seal."
+          }
+        ]
+      },
+      {
+        "title": "Buy Pre-Made Memory Foam Eartips",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Search for Pre-Made Eartips",
+            "content": "Look for listings on eBay or other online marketplaces that offer pre-made memory foam eartips for AirPods Pro."
+          },
+          {
+            "title": "Purchase and Wait for Delivery",
+            "content": "Order the pre-made eartips and wait for delivery."
+          },
+          {
+            "title": "Install New Eartips",
+            "content": "Remove the old eartips and attach the new memory foam eartips to your AirPods Pro. Ensure they are securely attached."
+          },
+          {
+            "title": "Test the Fit",
+            "content": "Use the fit test feature within iOS to ensure the new eartips provide a good seal."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T20:30:55.619Z",
+      "updated": "2026-02-04T20:30:55.619Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/airpods-pro-replacement-ear-tips-now-available-direct-from-apple-online-store/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770237057483-890",
+    "title": "AirPods Pro 3 Repairability Issue",
+    "problemDescription": "AirPods Pro 3 are not repairable due to their design, which can lead to significant issues if damaged.",
+    "category": "app-error",
+    "difficulty": "Hard",
+    "keywords": [
+      "AirPods Pro 3",
+      "repairability",
+      "damage",
+      "Apple"
+    ],
+    "steps": [
+      {
+        "title": "Check for Damage",
+        "content": "Inspect your AirPods Pro 3 for any visible damage, such as cracks or breaks, which might indicate the need for repair."
+      },
+      {
+        "title": "Contact Apple Support",
+        "content": "Reach out to Apple Support or visit an Apple Store to inquire about repair options and costs."
+      },
+      {
+        "title": "Consider Replacement",
+        "content": "Given the lack of repairability, consider replacing the AirPods Pro 3 if they are significantly damaged."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Protective Cases",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase Protective Cases",
+            "content": "Buy high-quality protective cases or skins to minimize the risk of damage to your AirPods Pro 3."
+          },
+          {
+            "title": "Handle with Care",
+            "content": "Be extra cautious when handling your AirPods Pro 3 to avoid accidental drops or impacts."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T20:30:57.483Z",
+      "updated": "2026-02-04T20:30:57.483Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/damaging-your-airpods-pro-3-might-spell-doom/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
   }
 ]
