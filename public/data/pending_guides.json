@@ -100065,5 +100065,549 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770198010788-686",
+    "title": "Fix 'Unfortunately, the process com.android.systemui has stopped'",
+    "problemDescription": "The Android device crashes and displays 'Unfortunately, the process com.android.systemui has stopped' when trying to access the task manager.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "systemui",
+      "crash",
+      "google app"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall the Stock Google App",
+        "content": "Go to Settings > Apps > Google > Uninstall updates or Uninstall the app."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update the Google App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update the Google App",
+            "content": "Go to the Google Play Store, search for the Google app, and update it to the latest version."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T09:40:10.788Z",
+      "updated": "2026-02-04T09:40:10.788Z",
+      "sourceUrl": "https://www.reddit.com/r/AndroidQuestions/comments/5pjjqm/solved_issue_unfortunately_the_process/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770198013939-166",
+    "title": "Fix Samsung Note 20 Display Issue",
+    "problemDescription": "Samsung Note 20 display not showing anything after screen replacement.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "note 20",
+      "display",
+      "screen",
+      "repair"
+    ],
+    "steps": [
+      {
+        "title": "Check Display Cable Connection",
+        "content": "Ensure the display cable is securely connected to the motherboard."
+      },
+      {
+        "title": "Inspect for Physical Damage",
+        "content": "Look for any visible damage to the display cable or connectors."
+      },
+      {
+        "title": "Test with a Different Display",
+        "content": "If possible, test the phone with a known working display to isolate the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Software Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Perform a Soft Reset",
+            "content": "Hold the power button and volume down button simultaneously for about 10 seconds to perform a soft reset."
+          },
+          {
+            "title": "Check for Bootloader Issues",
+            "content": "If the bootloader is corrupted, you may need to flash the stock firmware using tools like Odin."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T09:40:13.939Z",
+      "updated": "2026-02-04T09:40:13.939Z",
+      "sourceUrl": "https://www.reddit.com/r/techsupport/comments/1h9i7ra/android_troubleshooting/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770198018730-988",
+    "title": "Factory Reset Q8 Pro Tablet via ADB",
+    "problemDescription": "Unable to factory reset Q8 Pro tablet due to forgotten PIN and ADB driver issues.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "factory reset",
+      "adb",
+      "driver"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install ADB",
+        "content": "Download the ADB (Android Debug Bridge) for Windows and install the ADB environment for the command prompt."
+      },
+      {
+        "title": "Verify ADB Installation",
+        "content": "Open the command prompt and type 'adb devices' to verify that ADB is working correctly."
+      },
+      {
+        "title": "Connect the Tablet",
+        "content": "Connect the Q8 Pro tablet to your computer via USB. Ensure USB debugging is enabled on the tablet."
+      },
+      {
+        "title": "Check Device Manager",
+        "content": "Open Device Manager and check if the tablet is recognized. It may appear as 'sunxi'."
+      },
+      {
+        "title": "Install Drivers",
+        "content": "Download and install the appropriate drivers for the tablet. You may need to disable driver enforcement in Windows to install the drivers."
+      },
+      {
+        "title": "Run ADB Commands",
+        "content": "Once the drivers are installed, run the following commands in the command prompt to force a factory reset: 'adb shell', 'reboot recovery', 'wipe data', and 'reboot system now'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Allwinner Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Allwinner Tools",
+            "content": "Download the 'allwinner-tools-master' from a reliable source."
+          },
+          {
+            "title": "Follow Instructions",
+            "content": "Follow the instructions provided in the allwinner-tools-master repository to reset the tablet."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T09:40:18.730Z",
+      "updated": "2026-02-04T09:40:18.730Z",
+      "sourceUrl": "https://www.reddit.com/r/AndroidQuestions/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770198036748-767",
+    "title": "Fix Slow PC - Windows 10",
+    "problemDescription": "Your Windows 10 PC is running slow and you want to speed it up.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "slow pc",
+      "windows 10",
+      "speed up",
+      "fix slow pc"
+    ],
+    "steps": [
+      {
+        "title": "Disable Startup Programs",
+        "content": "Press Ctrl+Shift+Esc to open Task Manager. Go to the 'Startup' tab and disable unnecessary programs."
+      },
+      {
+        "title": "Clear Cache",
+        "content": "Clear the cache of your browser and any applications that use cache, such as OBS Studio."
+      },
+      {
+        "title": "Disable Unnecessary Background Processes",
+        "content": "Open Task Manager (Ctrl+Shift+Esc), go to the 'Processes' tab, and end any unnecessary background processes."
+      },
+      {
+        "title": "Update Windows",
+        "content": "Go to Settings > Update & Security > Windows Update and check for updates. Install any available updates."
+      },
+      {
+        "title": "Run a Malware Scan",
+        "content": "Use a free antivirus like Avast to scan for and remove any malware or spyware."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Enable God Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create God Mode Folder",
+            "content": "Right-click on your desktop, select 'New' > 'Folder'. Name the folder 'GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}'."
+          },
+          {
+            "title": "Access God Mode",
+            "content": "Open the 'GodMode' folder to access a comprehensive list of system settings and tools."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T09:40:36.748Z",
+      "updated": "2026-02-04T09:40:36.748Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=j2RW8Rt1nP4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770198053616-750",
+    "title": "Fix Instagram Error 504 on Android",
+    "problemDescription": "Instagram Error 504 occurs due to slow internet connection or issues with Google Play Services.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "error 504",
+      "android",
+      "play store"
+    ],
+    "steps": [
+      {
+        "title": "Clear Google Service Framework Cache",
+        "content": "Go to Settings, click on Installed Apps or Apps, search for Google Service Framework, click on it, and select Clear Cache."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clear Google Play Store Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Play Store Data",
+            "content": "Go to Settings, click on Installed Apps or Apps, search for Google Play Store, click on it, and select Clear Data."
+          }
+        ]
+      },
+      {
+        "title": "Contact Instagram Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "Reach out to Instagram support for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T09:40:53.616Z",
+      "updated": "2026-02-04T09:40:53.616Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/159362/instagram-error-504",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770198059269-146",
+    "title": "Fix Instagram Stories Not Loading on Samsung S8",
+    "problemDescription": "Instagram stories not loading on Samsung S8 with Android 8.0.0, showing a reload button that doesn't work.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "stories",
+      "samsung",
+      "s8",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Check Date and Time Settings",
+        "content": "Go to Settings > General Management > Date and Time."
+      },
+      {
+        "title": "Enable Automatic Date and Time",
+        "content": "Ensure that 'Automatic date and time' is turned on."
+      },
+      {
+        "title": "Restart Instagram",
+        "content": "Close and reopen the Instagram app to see if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reboot and Reinstall",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot the Phone",
+            "content": "Restart your Samsung S8."
+          },
+          {
+            "title": "Reinstall Instagram",
+            "content": "Uninstall and then reinstall the Instagram app from the Google Play Store."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T09:40:59.269Z",
+      "updated": "2026-02-04T09:40:59.269Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/194676/instagram-stories-not-loading-on-samsung-s8",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770198061573-100",
+    "title": "Fix Apps Not Detecting Internet Connection on Android",
+    "problemDescription": "Some apps on your Android device do not detect an internet connection.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "apps",
+      "internet",
+      "connection",
+      "battery optimization"
+    ],
+    "steps": [
+      {
+        "title": "Disable Battery Optimization for the App",
+        "content": "Go to your device's settings, find the specific app causing issues, and navigate to the battery optimization settings. Ensure that the app is set to 'Not optimized'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Wi-Fi Signal Strength",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Wi-Fi Checking App",
+            "content": "Download a Wi-Fi checking app and walk around your house to identify and avoid dead spots."
+          }
+        ]
+      },
+      {
+        "title": "Use a VPN",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable VPN",
+            "content": "Enable a VPN app to bypass potential Wi-Fi restrictions that might be blocking certain apps."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T09:41:01.573Z",
+      "updated": "2026-02-04T09:41:01.573Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/187177/some-apps-do-not-detect-an-internet-connection",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770198069087-113",
+    "title": "Fix Google Apps Not Working on Android",
+    "problemDescription": "All Google apps are not working properly on your Android device.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "google apps",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Device",
+        "content": "Turn off your device and then turn it back on to see if the issue is resolved."
+      },
+      {
+        "title": "Wipe Dalvik Cache",
+        "content": "1. Turn off your device. 2. Press and hold the on/off button and volume down button simultaneously (varies by device). 3. Navigate to the recovery menu and select 'wipe dalvik cache'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Google Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download GApps",
+            "content": "Visit the GApps download page on your PC and download the appropriate package for your Android version and device architecture."
+          },
+          {
+            "title": "Sideload GApps",
+            "content": "1. Rename the downloaded file to 'gapps.zip'. 2. Use a file explorer to locate the .zip file. 3. Shift + Right Click and select 'Open command window here'. 4. Type 'adb sideload gapps.zip' and wait for the process to complete. 5. Reboot your device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T09:41:09.087Z",
+      "updated": "2026-02-04T09:41:09.087Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/102185/what-to-do-if-my-all-google-apps-are-not-working-properly",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770198074211-280",
+    "title": "Fix Dead or Stuck Pixels on Android Phone",
+    "problemDescription": "Dead or stuck pixels on an Android phone screen.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "screen",
+      "pixels",
+      "repair"
+    ],
+    "steps": [
+      {
+        "title": "Visit a Phone Repair Shop",
+        "content": "Load up Google Maps on your PC and search for phone repair shops."
+      },
+      {
+        "title": "Find a Nearby Repair Shop",
+        "content": "Find a result that's easy to get to and take your phone there."
+      },
+      {
+        "title": "Explain the Issue",
+        "content": "Tell them your phone screen has dead or stuck pixels and needs replacing."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Return to Place of Purchase",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit the Store",
+            "content": "If this started with a new phone, take it back to where you bought it."
+          },
+          {
+            "title": "Explain the Issue",
+            "content": "Tell them they sold you a faulty phone and ask them to replace it for you."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T09:41:14.211Z",
+      "updated": "2026-02-04T09:41:14.211Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/193491/how-to-fix-dead-or-stuck-pixels-on-my-android-phone-using-pc",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770198081646-58",
+    "title": "Fix Google Pixel 8 Random Reboots",
+    "problemDescription": "Google Pixel 8 randomly reboots when using power-consuming features like videos, camera, or apps.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "google-pixel",
+      "reboot",
+      "android-studio",
+      "debugging"
+    ],
+    "steps": [
+      {
+        "title": "Enable Developer Mode",
+        "content": "Go to Settings > About phone > Tap 'Build number' seven times to enable Developer options."
+      },
+      {
+        "title": "Enable USB Debugging",
+        "content": "Go to Settings > System > Developer options > Enable 'USB debugging'."
+      },
+      {
+        "title": "Connect to Android Studio",
+        "content": "Connect your Pixel 8 to a computer with Android Studio installed and start debugging using logcat."
+      },
+      {
+        "title": "Monitor Logs",
+        "content": "Monitor the logs for any errors or warnings that might indicate the cause of the reboots."
+      },
+      {
+        "title": "Disable Developer Mode",
+        "content": "After debugging, disable Developer mode to prevent further reboots."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check USB Connections",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test USB Connections",
+            "content": "Check if USB connections to a charger or PC have any impact on the reboot issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T09:41:21.646Z",
+      "updated": "2026-02-04T09:41:21.646Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/257893/google-pixel-8-random-reboots-fixed-by-debugging-with-android-studio",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770198083061-97",
+    "title": "Fix Bluetooth Issues on Google Pixel 4a 5G",
+    "problemDescription": "Bluetooth connectivity problems on Google Pixel 4a 5G, possibly due to software bugs.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "google pixel 4a 5g",
+      "connectivity",
+      "android update"
+    ],
+    "steps": [
+      {
+        "title": "Update System and Connectivity Apps",
+        "content": "Download the latest Google connectivity apps and update your system to the latest Android version."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-04T09:41:23.061Z",
+      "updated": "2026-02-04T09:41:23.061Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/236483/hand-shields-bluetooth-antenna-in-google-pixel-4a-5g",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
