@@ -104858,5 +104858,410 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770233834813-402",
+    "title": "Fix e-mailing from iPhoto '11 using Microsoft Outlook 2011",
+    "problemDescription": "iPhoto '11 cannot email photos using Microsoft Outlook 2011 due to script issues.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iPhoto",
+      "Outlook",
+      "email",
+      "script",
+      "permissions"
+    ],
+    "steps": [
+      {
+        "title": "Backup Files",
+        "content": "Right-click the iPhoto application, choose 'Show package contents', and copy the following files to a safe location: /Contents/Resources/ClientAppSignatures.plist, /Contents/Resources/Scripts/Microsoft Entourage.scpt, and /Contents/Resources/Scripts/Microsoft Entourage.tif."
+      },
+      {
+        "title": "Modify Permissions",
+        "content": "Go to the /Resources/Scripts/ folder, get information on it (Command-I), click the lock, add your username, and give read and write permissions. Do the same for the 'Microsoft Entourage.scpt' file."
+      },
+      {
+        "title": "Edit Script",
+        "content": "Open the backed-up 'Microsoft Entourage.scpt' file, locate the line 'tell application \"Microsoft Outlook\"', change it to 'tell application \"Microsoft Entourage\"', and save the file."
+      },
+      {
+        "title": "Update Plist File",
+        "content": "Go up one directory from the 'Scripts' folder, open 'ClientAppSignatures.plist', and duplicate the lines that specify the email application."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Additional Steps for Proper Name Display",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit Plist File Further",
+            "content": "In the 'ClientAppSignatures.plist' file, ensure the duplicated lines correctly reference 'Microsoft Outlook' to make the name appear properly in iPhoto."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T19:37:14.813Z",
+      "updated": "2026-02-04T19:37:14.813Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/fix-for-e-mailing-from-iphoto-11-using-microsoft-outlook-2011",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770233843758-696",
+    "title": "Fix MacBook Startup Issues",
+    "problemDescription": "MacBook gets stuck on a blue screen during startup due to incompatible login items.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "macbook",
+      "startup",
+      "blue screen",
+      "login items"
+    ],
+    "steps": [
+      {
+        "title": "Open System Preferences",
+        "content": "Go to System Preferences > Users & Groups and click your name on the left under Current User."
+      },
+      {
+        "title": "Access Login Items",
+        "content": "Click the Login Items tab above the window to the right."
+      },
+      {
+        "title": "Remove Login Items",
+        "content": "Highlight an app and then click the '-' sign below to remove it from the Login Items list."
+      },
+      {
+        "title": "Restart Your Mac",
+        "content": "Restart your Mac to see if the startup issue has been fixed."
+      },
+      {
+        "title": "Repeat if Necessary",
+        "content": "If the issue persists, go back to the list and remove another app until you find the culprit."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Boot in Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Start in Safe Mode",
+            "content": "Start your Mac and press and hold the Shift key until the login screen appears."
+          },
+          {
+            "title": "Diagnose Issues",
+            "content": "MacOS will run diagnostics on your hard disk. Release the Shift key when the login screen appears."
+          },
+          {
+            "title": "Restart Normally",
+            "content": "Restart your Mac without holding any keys to exit Safe Mode."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T19:37:23.758Z",
+      "updated": "2026-02-04T19:37:23.758Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/common-mac-problems-how-to-fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770233850596-532",
+    "title": "Fix Microsoft Edge Notifications Not Working",
+    "problemDescription": "Microsoft Edge notifications are not coming through for websites like YouTube, Twitch, Gmail, and WhatsApp web version.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "browser",
+      "notifications",
+      "Microsoft Edge"
+    ],
+    "steps": [
+      {
+        "title": "Enable Notifications for Specific Websites",
+        "content": "1. Open Microsoft Edge and go to edge://settings/content/notifications. 2. Disable the option 'Solicitações de notificações silenciosas'. 3. Under 'Allow', click 'Add' and add the websites you want to receive notifications from, such as www.youtube.com. 4. Restart Microsoft Edge and test the notifications."
+      },
+      {
+        "title": "Disable Focus Assistant",
+        "content": "1. Click on the Start Menu > Settings > System > Focus Assistant. 2. Check the option 'Disabled'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Microsoft Edge Registry",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Registry (Recommended)",
+            "content": "Backup your registry before making changes. For more information on 'How to backup and restore the registry in Windows', click here."
+          },
+          {
+            "title": "Modify Registry",
+            "content": "1. On the desktop, press the Windows + R keys, type regedit and click OK. 2. Locate and access the path: HKEY_CURRENT_USER\\Software\\Classes\\Local Settings\\Software\\Microsoft\\Windows\\CurrentVersion\\AppContainer\\Storage\\Microsoft.microsoftedge_8wekyb3d8bbwe\\Microsoft Edge. 3. Rename the Microsoft Edge key to Microsoft Edge.old. 4. Restart the system and test the notifications again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T19:37:30.596Z",
+      "updated": "2026-02-04T19:37:30.596Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/microsoftedge/forum/all/microsoft-edge-notifications-arent-comingworking/3fc1314c-4c44-4818-8fa0-d784ebb542cf",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770233852976-782",
+    "title": "Fix System Speakers Not Working",
+    "problemDescription": "System speakers are not producing any sound, and Device Manager indicates no drivers are required.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "speakers",
+      "sound",
+      "drivers",
+      "hardware"
+    ],
+    "steps": [
+      {
+        "title": "Check Sound Settings",
+        "content": "Ensure the sound is not muted and the volume is turned up. Right-click the volume icon in the taskbar and select 'Open Volume mixer' to check individual app volumes."
+      },
+      {
+        "title": "Test with External Speakers or Headphones",
+        "content": "Connect external speakers or headphones to the audio jack to determine if the issue is with the internal speakers or the audio output."
+      },
+      {
+        "title": "Update or Reinstall Audio Drivers",
+        "content": "Go to Device Manager, expand 'Sound, video and game controllers', right-click your audio device, and select 'Update driver'. If that doesn't work, select 'Uninstall device' and restart your computer to reinstall the driver."
+      },
+      {
+        "title": "Run the Audio Troubleshooter",
+        "content": "Right-click the volume icon in the taskbar, select 'Troubleshoot sound problems', and follow the on-screen instructions."
+      },
+      {
+        "title": "Check for Hardware Issues",
+        "content": "If all software troubleshooting steps fail, the issue might be due to a hardware failure. Contact the system manufacturer for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: System Restore",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Restore",
+            "content": "Type 'System Restore' in the search bar and select 'Create a restore point'."
+          },
+          {
+            "title": "Follow the Prompts",
+            "content": "Click 'System Restore' and follow the on-screen instructions to restore your system to a previous state where the speakers were working."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T19:37:32.976Z",
+      "updated": "2026-02-04T19:37:32.976Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/system-speakers-not-working/0677e536-b1fb-4907-a3b3-c8868263c456",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770233891189-2",
+    "title": "Restore Smart Home Device Functionality After Support Ends",
+    "problemDescription": "Smart home devices lose support, leading to loss of functionality and security risks.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "smart home",
+      "device support",
+      "open-source",
+      "firmware",
+      "Nest Thermostat"
+    ],
+    "steps": [
+      {
+        "title": "Check for Open-Source Support",
+        "content": "Look for open-source communities that may have taken over support for your device. For example, the No Longer Evil project provides open-source software for Nest devices."
+      },
+      {
+        "title": "Download and Install Open-Source Firmware",
+        "content": "Download the open-source firmware from the community's website. Follow the instructions to replace the original firmware with the community-supported version."
+      },
+      {
+        "title": "Restore Functionality",
+        "content": "After installing the new firmware, your device should regain remote control, monitoring features, and other functionalities that were lost when the original support ended."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Replace the Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Discounts",
+            "content": "Look for discounts on similar devices that are still supported. This is often the best long-term solution."
+          },
+          {
+            "title": "Purchase a New Device",
+            "content": "Buy a new device that is currently supported and offers the features you need."
+          },
+          {
+            "title": "Set Up the New Device",
+            "content": "Follow the manufacturer's instructions to set up and configure the new device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T19:38:11.189Z",
+      "updated": "2026-02-04T19:38:11.189Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/dont-panic-when-smart-home-devices-lose-support-we-made-a-6-step-plan/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770233894182-706",
+    "title": "Reduce TV Glare",
+    "problemDescription": "TV screen has annoying glare or reflections.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "tv",
+      "glare",
+      "reflections",
+      "lighting"
+    ],
+    "steps": [
+      {
+        "title": "Adjust TV Brightness",
+        "content": "For LCD TVs, locate the backlight control in the user menu and reduce the brightness. For OLED TVs, adjust the 'OLED Pixel Brightness' setting. This can help reduce glare, especially at night."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Control Room Lighting",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Smart Lamps and Outlets",
+            "content": "Install smart lamps, outlets, or switches to control individual or groups of lights. Connect them to voice assistants like Alexa, Google Assistant, or Siri to easily adjust lighting without leaving your seat."
+          },
+          {
+            "title": "Install Remote-Controlled Sun Shades",
+            "content": "Consider adding remote-controlled sun shades to manage natural light entering the room."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T19:38:14.182Z",
+      "updated": "2026-02-04T19:38:14.182Z",
+      "sourceUrl": "https://www.cnet.com/tech/home-entertainment/5-easy-ways-to-get-rid-of-annoying-tv-glare/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770233901939-246",
+    "title": "Enable 90Hz Refresh Rate on Google Pixel 4",
+    "problemDescription": "Google Pixel 4 and 4 XL devices do not constantly use the 90Hz refresh rate, which can be frustrating for users.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "Google Pixel 4",
+      "refresh rate",
+      "display",
+      "software update"
+    ],
+    "steps": [
+      {
+        "title": "Wait for the Official Update",
+        "content": "Google has announced that an upcoming update will boost the refresh rate for various brightness settings. Ensure your device is updated to the latest software version."
+      },
+      {
+        "title": "Check for Updates",
+        "content": "Go to Settings > System > Advanced > System Update, then tap Check for Update and install any available updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Increase Brightness",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Adjust Brightness",
+            "content": "Manually increase the brightness to at least 75% to activate the 90Hz refresh rate."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T19:38:21.939Z",
+      "updated": "2026-02-04T19:38:21.939Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/google-pixel-4-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770233904104-858",
+    "title": "Fix Pixel 6 Not Charging Despite Indication",
+    "problemDescription": "Pixel 6 shows charging signs but isn't actually charging, often with third-party fast-charging accessories.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel 6",
+      "charging",
+      "battery",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Use Official or PD-Capable Charger",
+        "content": "Switch to an official Google Pixel charger or a PD-capable charger with a USB-C to USB-C cable."
+      },
+      {
+        "title": "Contact Google Support",
+        "content": "Reach out to Google Support for further assistance and potential solutions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Wait for Software Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Ensure your device is updated to the latest software version, as Google may release a fix in a future update."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T19:38:24.104Z",
+      "updated": "2026-02-04T19:38:24.104Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-google-pixel-6-and-6-pro-problems-how-to-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
