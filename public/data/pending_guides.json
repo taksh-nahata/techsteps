@@ -102236,5 +102236,277 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770213731155-400",
+    "title": "Fix Any iOS Issue",
+    "problemDescription": "This guide provides a method to troubleshoot and fix any iOS software issue.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "ios",
+      "software",
+      "hardware",
+      "reset",
+      "backup"
+    ],
+    "steps": [
+      {
+        "title": "Reset All Settings",
+        "content": "Go to Settings > General > Reset > Reset All Settings."
+      },
+      {
+        "title": "Backup to iCloud",
+        "content": "Go to Settings > iCloud > Storage and Backup > Toggle 'iCloud Backup' to On, then press 'Back Up Now' and allow the backup to complete."
+      },
+      {
+        "title": "DFU Restore",
+        "content": "Perform a DFU restore (search online for detailed instructions)."
+      },
+      {
+        "title": "Restore from iCloud Backup",
+        "content": "Restore your device from the iCloud backup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Importation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "DFU Restore and Setup as New Device",
+            "content": "Perform a DFU restore and set up the device as new."
+          },
+          {
+            "title": "Manual Importation",
+            "content": "Manually import apps, photos, and other data from your computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T14:02:11.155Z",
+      "updated": "2026-02-04T14:02:11.155Z",
+      "sourceUrl": "https://www.reddit.com/r/apple/comments/1901th/how_to_fix_any_ios_issuedistinguish_between/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770213734808-876",
+    "title": "Fix iPhone Acting Up",
+    "problemDescription": "Your iPhone is experiencing general performance issues.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "restart",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Perform a Hard Restart",
+        "content": "For iPhones up to 6s, press and hold the power and home buttons until the Apple logo appears. For iPhone 7, press and hold the volume down and lock buttons. For iPhone 8 and later, press and release volume up, then volume down, then hold the side button until the Apple logo appears."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset All Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > General > Reset > Reset All Network Settings. This will remove all saved Wi-Fi networks and settings."
+          }
+        ]
+      },
+      {
+        "title": "Clear Safari Website Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Website Data",
+            "content": "Go to Settings > General > iPhone Storage > Safari > Website Data > Clear All Website Data."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T14:02:14.808Z",
+      "updated": "2026-02-04T14:02:14.808Z",
+      "sourceUrl": "https://www.reddit.com/r/ios/wiki/faq/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770213737370-395",
+    "title": "Fix iOS App Reset on Lock",
+    "problemDescription": "iOS apps reset when the device is locked, requiring users to restart and re-watch ads.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "app reset",
+      "memory management",
+      "auto lock"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Auto-Lock Settings",
+        "content": "Go to Settings > Display & Brightness > Auto-Lock and set the auto-lock time to a longer duration (e.g., 5 minutes or Never)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart the Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your iPhone",
+            "content": "Press and hold the power button and either volume button until the 'slide to power off' slider appears. Drag the slider, then wait for 30 seconds. Press and hold the power button again until the Apple logo appears."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update iOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for iOS Updates",
+            "content": "Go to Settings > General > Software Update and install any available updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T14:02:17.370Z",
+      "updated": "2026-02-04T14:02:17.370Z",
+      "sourceUrl": "https://www.reddit.com/r/iphone/comments/1c4z66j/the_iphone_user_experience_has_gotten_incredibly/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770213741225-306",
+    "title": "Fix iPhone Randomly Shutting Down",
+    "problemDescription": "iPhone 11 randomly shuts down and takes time to restart, preventing data backup.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "shutdown",
+      "backup",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Force Restart Your iPhone",
+        "content": "Press and quickly release the Volume Up button, then press and quickly release the Volume Down button. Finally, press and hold the Side button until the Apple logo appears."
+      },
+      {
+        "title": "Update iOS",
+        "content": "Go to Settings > General > Software Update. If an update is available, tap Download and Install."
+      },
+      {
+        "title": "Check for Hardware Issues",
+        "content": "If the problem persists, there might be a hardware issue. Contact Apple Support or visit an Apple Store for a diagnosis."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restore iPhone via iTunes/Finder",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect to Computer",
+            "content": "Connect your iPhone to a computer with iTunes (Windows or macOS Mojave and earlier) or Finder (macOS Catalina and later)."
+          },
+          {
+            "title": "Enter Recovery Mode",
+            "content": "While connected, force restart your iPhone (as described in Step 1 of the main method). Keep holding the Side button until you see the recovery mode screen."
+          },
+          {
+            "title": "Restore iPhone",
+            "content": "In iTunes/Finder, you should see an option to Restore or Update. Choose Restore. This will erase your iPhone and install the latest iOS software."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T14:02:21.225Z",
+      "updated": "2026-02-04T14:02:21.225Z",
+      "sourceUrl": "https://www.reddit.com/r/iphonehelp/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770213789254-34",
+    "title": "Repair Outlook Inbox with Built-in Tool",
+    "problemDescription": "Your Outlook inbox is not functioning properly and needs repair.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "outlook",
+      "inbox",
+      "repair",
+      "tool",
+      "office"
+    ],
+    "steps": [
+      {
+        "title": "Close Office Programs",
+        "content": "Close any open Office programs to ensure the repair tool can run properly."
+      },
+      {
+        "title": "Open Control Panel",
+        "content": "Press the Windows key, type 'Control Panel', and open it."
+      },
+      {
+        "title": "Navigate to Programs and Features",
+        "content": "Click on 'Programs' and then 'Programs and Features'."
+      },
+      {
+        "title": "Select Microsoft Office",
+        "content": "Find Microsoft Office in the list of installed programs and click on it."
+      },
+      {
+        "title": "Run the Repair Tool",
+        "content": "Click on the 'Change' button and select 'Quick Repair' or 'Online Repair'. Follow the on-screen instructions to complete the repair process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Outlook's Inbox Repair Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Locate the Scanpst.exe File",
+            "content": "Search for 'Scanpst.exe' in your computer's search bar. This file is usually located in the Office installation directory."
+          },
+          {
+            "title": "Run the Inbox Repair Tool",
+            "content": "Open 'Scanpst.exe' and click on 'Browse' to select the Outlook Data File (.pst) you want to repair. Click 'Start' to begin the repair process."
+          },
+          {
+            "title": "Complete the Repair",
+            "content": "Follow the on-screen instructions to complete the repair. Once done, restart Outlook to see if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T14:03:09.254Z",
+      "updated": "2026-02-04T14:03:09.254Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/repair-outlook-inbox-repair-tool/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
