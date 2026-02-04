@@ -101671,5 +101671,570 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770209166400-311",
+    "title": "Fix WhatsApp Not Starting After Windows 10 Upgrade",
+    "problemDescription": "WhatsApp fails to start after upgrading to Windows 10.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "windows 10",
+      "app not starting"
+    ],
+    "steps": [
+      {
+        "title": "Reset WhatsApp",
+        "content": "Go to Windows Settings > Apps > Apps & features. Find WhatsApp, click on it, and select 'Advanced options'. Scroll down and click 'Reset'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Repair WhatsApp",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Attempt Repair",
+            "content": "Go to Windows Settings > Apps > Apps & features. Find WhatsApp, click on it, and select 'Advanced options'. Scroll down and click 'Repair'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T12:46:06.400Z",
+      "updated": "2026-02-04T12:46:06.400Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/whatsapp-not-starting-since-upgrade-windows-10.3890241/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770209176641-81",
+    "title": "Gateway PC Fails to Boot",
+    "problemDescription": "Gateway PC fails to boot after trying various troubleshooting steps.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "gateway",
+      "boot",
+      "windows 98",
+      "bios"
+    ],
+    "steps": [
+      {
+        "title": "Boot into Windows 98",
+        "content": "Allow the PC to fully boot into Windows 98. This step might resolve the issue if the system is stuck in a pre-boot state."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Hardware Connections",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect Hardware",
+            "content": "Ensure all internal components such as RAM, hard drive, and other peripherals are properly connected."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset BIOS Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset BIOS to Default",
+            "content": "Enter the BIOS setup (usually by pressing a key like F2, Del, or Esc during boot) and reset the BIOS settings to their default values."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T12:46:16.641Z",
+      "updated": "2026-02-04T12:46:16.641Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/gateway-fails-to-boot-all-troubleshooting-steps-attempted.3615483/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770209180580-487",
+    "title": "Fix MOBO 5 Short Beep Code",
+    "problemDescription": "Motherboard emits 5 short beeps during boot, indicating a hardware issue.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "motherboard",
+      "beep code",
+      "hardware",
+      "boot"
+    ],
+    "steps": [
+      {
+        "title": "Check RAM Modules",
+        "content": "Power off the computer and unplug it. Remove all RAM modules and clean the contacts with a soft, dry cloth. Reinsert them one at a time, testing each module individually to identify any faulty ones."
+      },
+      {
+        "title": "Inspect CPU and Cooling",
+        "content": "Ensure the CPU is properly seated and the cooling system is functioning correctly. Remove the CPU cooler and check for any debris or damage. Reapply thermal paste if necessary."
+      },
+      {
+        "title": "Test with Minimal Hardware",
+        "content": "Disconnect all non-essential hardware (GPU, storage drives, etc.) and attempt to boot with only the essential components (CPU, RAM, and MOBO). Gradually reconnect components to identify the faulty one."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check BIOS Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter BIOS",
+            "content": "Restart the computer and enter the BIOS settings by pressing the appropriate key (usually Del, F2, or F12) during boot."
+          },
+          {
+            "title": "Reset BIOS Settings",
+            "content": "Look for an option to reset the BIOS settings to default. This can often resolve issues caused by incorrect BIOS configurations."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T12:46:20.580Z",
+      "updated": "2026-02-04T12:46:20.580Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/help-with-troubleshooting-process-error.3702030/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770209199111-441",
+    "title": "Reduce Chrome Processes in Activity Monitor",
+    "problemDescription": "Google Chrome fills up Activity Monitor with multiple processes, causing system slowdowns.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "activity monitor",
+      "processes",
+      "slowdown"
+    ],
+    "steps": [
+      {
+        "title": "Identify Chrome Processes",
+        "content": "Open Activity Monitor and look for multiple 'Google Chrome' processes."
+      },
+      {
+        "title": "Quit Individual Renderers",
+        "content": "Select and quit individual Chrome renderer processes that are using high resources."
+      },
+      {
+        "title": "Avoid Quitting Parent Process",
+        "content": "Do not quit the main 'Google Chrome' process as it will close all active renderers."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Unnecessary Extensions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Chrome Extensions",
+            "content": "Go to Chrome settings and navigate to the Extensions page."
+          },
+          {
+            "title": "Disable Extensions",
+            "content": "Disable extensions that are not essential to reduce the number of processes."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Chrome Task Manager",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Chrome Task Manager",
+            "content": "Press Shift + Esc to open the Chrome Task Manager."
+          },
+          {
+            "title": "End Unnecessary Tasks",
+            "content": "Identify and end tasks that are using high resources."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T12:46:39.111Z",
+      "updated": "2026-02-04T12:46:39.111Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/google-chrome-filling-up-activity-monitor/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770209205172-821",
+    "title": "Fix Apple TV 2FA Issue",
+    "problemDescription": "Apple TV is linked to a spouse's phone number for two-factor authentication, preventing account access.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "apple-tv",
+      "two-factor-authentication",
+      "apple-account",
+      "itunes"
+    ],
+    "steps": [
+      {
+        "title": "Access Apple Account Settings",
+        "content": "Go to account.apple.com and sign in with your Apple ID."
+      },
+      {
+        "title": "Navigate to Account Security",
+        "content": "Click on 'Sign-In and Security' then select 'Account Security'."
+      },
+      {
+        "title": "Manage Trusted Phone Numbers",
+        "content": "In the 'Trusted Phone Number' section, add your own phone number and remove the spouse's number."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Apple Support",
+            "content": "If you cannot access your account, contact Apple Support for assistance in managing your trusted phone numbers."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T12:46:45.172Z",
+      "updated": "2026-02-04T12:46:45.172Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/479514/how-to-solve-this-2fa-problem-with-apple-tv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770209210975-527",
+    "title": "Fix Two-Factor Authentication Setup Issue",
+    "problemDescription": "Unable to enable two-factor authentication due to old devices without passcodes or missed verification emails.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "two-factor",
+      "authentication",
+      "appleid",
+      "setup",
+      "issue"
+    ],
+    "steps": [
+      {
+        "title": "Remove Old Devices",
+        "content": "Ensure all devices associated with your Apple ID have a passcode enabled. Remove any old devices that do not have a passcode from your Apple ID account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Resend Verification Email",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Email",
+            "content": "Search your email for a verification email from Apple. If you cannot find it, contact Apple support to have it resent."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Two-Step Verification",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Two-Step Verification",
+            "content": "Go to the Apple ID website, log in, and navigate to the security section. Disable two-step verification before attempting to enable two-factor authentication."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T12:46:50.975Z",
+      "updated": "2026-02-04T12:46:50.975Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/253233/cannot-setup-two-factor-authentication",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770209225601-862",
+    "title": "Fix Zoom Crashing or Freezing",
+    "problemDescription": "Zoom crashes or freezes during use, often related to Windows or driver issues.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "crashing",
+      "freezing",
+      "windows",
+      "drivers"
+    ],
+    "steps": [
+      {
+        "title": "Plug in External Webcam Before Launching Zoom",
+        "content": "Ensure your external webcam is plugged in before opening Zoom to access settings and change the device if necessary."
+      },
+      {
+        "title": "Update Audio/Video Drivers",
+        "content": "Update your webcam and audio drivers to the latest versions. Check for updates via Windows Update or the device manufacturer's website."
+      },
+      {
+        "title": "Disable PowerToys Video Conference Mute",
+        "content": "If you have PowerToys installed, disable the Video Conference Mute module. Launch PowerToys, go to the Video Conference Mute tab, and toggle the feature Off. Restart Zoom."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Roll Back Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Roll Back to Previous Driver Version",
+            "content": "If issues started after a driver update, roll back to the previous driver version. Follow a guide on how to roll back drivers in Windows."
+          }
+        ]
+      },
+      {
+        "title": "Disable Conflicting Programs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify and Disable Conflicting Software",
+            "content": "Identify any programs that might conflict with Zoom and disable them temporarily to see if the issue resolves."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T12:47:05.601Z",
+      "updated": "2026-02-04T12:47:05.601Z",
+      "sourceUrl": "https://www.makeuseof.com/fix-zoom-crashing-or-freezing/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770209233858-919",
+    "title": "Fix Zoom Issues with Desktop Client",
+    "problemDescription": "Zoom issues such as freezing video or echoing audio can be resolved by using the desktop client instead of the web version.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "video conferencing",
+      "desktop client",
+      "web version"
+    ],
+    "steps": [
+      {
+        "title": "Check Zoom's Service Status",
+        "content": "Visit Zoom's Service Status page to determine if the issue is on your end or Zoom's."
+      },
+      {
+        "title": "Update Zoom",
+        "content": "Click your profile picture in the top-right corner of the Zoom client, then click 'Check for Updates'. Install any available updates."
+      },
+      {
+        "title": "Use the Desktop Client",
+        "content": "Download and install the Zoom desktop client from the Zoom Download Center. Use this client instead of the web version for better features, speed, and reliability."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Windows 10 and Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Windows 10",
+            "content": "Ensure your Windows 10 operating system is up-to-date by going to Settings > Update & Security > Windows Update."
+          },
+          {
+            "title": "Update Drivers",
+            "content": "Update your drivers through Device Manager or using a third-party tool."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T12:47:13.858Z",
+      "updated": "2026-02-04T12:47:13.858Z",
+      "sourceUrl": "https://www.makeuseof.com/common-zoom-issues-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770209246254-154",
+    "title": "Fix Thread Notifications Not Clearing",
+    "problemDescription": "Thread notifications are not clearing even after being read.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "notifications",
+      "threads",
+      "clearing",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Mark All as Read",
+        "content": "Go to the tracked threads page and click the 'Mark all as read' button."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Wait for System Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Wait for System Update",
+            "content": "Wait for the developers to resolve the issue, as they are actively working on it."
+          }
+        ]
+      },
+      {
+        "title": "Clear Browsing Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Browsing Data",
+            "content": "Clear all browsing data, though this may not always resolve the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T12:47:26.254Z",
+      "updated": "2026-02-04T12:47:26.254Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/thread-notifications-has-stopped-clearing.1814987/latest",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770209248327-801",
+    "title": "Fix Forum Notifications Not Clearing",
+    "problemDescription": "Notifications are not clearing after replying to threads on the forum.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "forum",
+      "notifications",
+      "clearing",
+      "tracking"
+    ],
+    "steps": [
+      {
+        "title": "Wait for System Update",
+        "content": "The issue is being addressed by the developers. Wait a few minutes for the system to catch up and apply the fix."
+      },
+      {
+        "title": "Force Refresh",
+        "content": "Manually refresh the page using Ctrl+F5 to ensure you are seeing the latest updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Wait for Further Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Further Updates",
+            "content": "The developers are looking into additional issues related to notifications. Check back later for further updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T12:47:28.327Z",
+      "updated": "2026-02-04T12:47:28.327Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/why-are-the-threads-that-ive-reponded-to-not-flagged-why-are-the-notifications-not-being-updated.1814773/post-12675151",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770209255245-762",
+    "title": "Fix Gmail Notifications on Windows 11",
+    "problemDescription": "Gmail notifications not appearing on Windows 11 desktop while other apps like Facebook and Instagram work normally.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "notifications",
+      "windows 11"
+    ],
+    "steps": [
+      {
+        "title": "Check Gmail Notification Settings",
+        "content": "Open Gmail in your web browser, click on the gear icon in the upper right corner, and select 'See all settings'. Go to the 'Notifications' tab and ensure that 'Mail notifications on' is checked."
+      },
+      {
+        "title": "Verify Windows Notification Settings",
+        "content": "Go to Windows Settings > System > Notifications & actions. Ensure that notifications for Gmail are turned on and that 'Get notifications from these senders' includes Gmail."
+      },
+      {
+        "title": "Update Gmail App",
+        "content": "If you are using the Gmail app, ensure it is updated to the latest version. Open the Microsoft Store, search for Gmail, and click 'Update' if an update is available."
+      },
+      {
+        "title": "Check Browser Permissions",
+        "content": "If you are using a web browser, go to the browser's settings and ensure that notifications for Gmail are allowed. For example, in Chrome, go to Settings > Site Settings > Notifications and ensure Gmail is allowed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Gmail App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Gmail App",
+            "content": "Go to Settings > Apps > Apps & features, find Gmail, and click 'Uninstall'."
+          },
+          {
+            "title": "Reinstall Gmail App",
+            "content": "Open the Microsoft Store, search for Gmail, and click 'Install'."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check Windows Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Windows Updates",
+            "content": "Go to Settings > Windows Update and check for any available updates. Install any pending updates and restart your computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T12:47:35.245Z",
+      "updated": "2026-02-04T12:47:35.245Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/problem-with-gmail-notifications-at-windows-11.3818585/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
