@@ -106097,5 +106097,641 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770243783609-911",
+    "title": "Fix Discord Login Issues on iPad",
+    "problemDescription": "Unable to log into Discord on iPad, with the loading screen stuck on the logo and Safari unable to establish a secure connection to the server.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "login",
+      "ipad",
+      "safari",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Backup Your iPad",
+        "content": "Back up your iPad to iCloud, a computer with iTunes, or another cloud storage service."
+      },
+      {
+        "title": "Uninstall Unused Apps",
+        "content": "Delete any apps you no longer use or use infrequently."
+      },
+      {
+        "title": "Reinstall Discord",
+        "content": "Delete the Discord app from your iPad and reinstall it from the App Store."
+      },
+      {
+        "title": "Relaunch Safari",
+        "content": "Quit Safari using the iOS/iPadOS app switcher and relaunch it."
+      },
+      {
+        "title": "Hard Reset (for newer iPad models)",
+        "content": "Press and release the Volume Up button, then press and release the Volume Down button, and finally press and hold the Power button until the Apple logo appears."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Another Browser",
+            "content": "Download and install a different browser like Chrome or Firefox from the App Store."
+          },
+          {
+            "title": "Access Discord",
+            "content": "Try logging into Discord using the newly installed browser."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T22:23:03.609Z",
+      "updated": "2026-02-04T22:23:03.609Z",
+      "sourceUrl": "https://discussions.apple.com/thread/252892434",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770243790944-337",
+    "title": "Fix Discord Microphone Access on iPad",
+    "problemDescription": "Discord app on iPad loses microphone access after joining a voice channel.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "microphone",
+      "ipad",
+      "access"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall Discord",
+        "content": "Delete the Discord app from your iPad. Restart your iPad, then reinstall Discord from the App Store."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-04T22:23:10.944Z",
+      "updated": "2026-02-04T22:23:10.944Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255934307",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770243793956-4",
+    "title": "Fix Discord Not Loading or Showing Calls on iPhone",
+    "problemDescription": "Discord app fails to load or display calls on iPhone, despite working fine on PC.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "iphone",
+      "app-error",
+      "calls",
+      "loading"
+    ],
+    "steps": [
+      {
+        "title": "Update Discord App",
+        "content": "Ensure you have the latest version of Discord installed from the App Store."
+      },
+      {
+        "title": "Restart Your iPhone",
+        "content": "Perform a standard restart of your iPhone to clear temporary issues."
+      },
+      {
+        "title": "Check iOS Version",
+        "content": "Verify that your iPhone is running the latest iOS version. Go to Settings > General > Software Update."
+      },
+      {
+        "title": "Reinstall Discord",
+        "content": "Uninstall Discord, then reinstall it from the App Store."
+      },
+      {
+        "title": "Check Network Settings",
+        "content": "Reset your network settings by going to Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings."
+      },
+      {
+        "title": "Contact Discord Support",
+        "content": "If the issue persists, contact Discord support for further assistance, as the problem might be app-specific."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Discord on Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Safari",
+            "content": "Open the Safari browser on your iPhone."
+          },
+          {
+            "title": "Navigate to Discord",
+            "content": "Go to the Discord website and log in to your account."
+          },
+          {
+            "title": "Use Discord Web Version",
+            "content": "Use the web version of Discord until the app issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T22:23:13.956Z",
+      "updated": "2026-02-04T22:23:13.956Z",
+      "sourceUrl": "https://discussions.apple.com/thread/256054640",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770243799412-802",
+    "title": "Fix Hard Drive Clicking Noise",
+    "problemDescription": "Your computer is making a clicking noise, indicating a potential hard drive failure.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "hard drive",
+      "clicking noise",
+      "computer",
+      "failure"
+    ],
+    "steps": [
+      {
+        "title": "Identify the Problem",
+        "content": "Confirm that the clicking noise is coming from the hard drive."
+      },
+      {
+        "title": "Backup Data",
+        "content": "Immediately back up any important data from the hard drive."
+      },
+      {
+        "title": "Replace the Hard Drive",
+        "content": "Purchase a new hard drive and replace the faulty one."
+      },
+      {
+        "title": "Install Operating System",
+        "content": "Install the operating system and restore your backed-up data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Professional Help",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact a Professional",
+            "content": "If you are not comfortable replacing the hard drive yourself, contact a professional technician."
+          },
+          {
+            "title": "Data Recovery",
+            "content": "If data recovery is needed, use professional data recovery services."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T22:23:19.412Z",
+      "updated": "2026-02-04T22:23:19.412Z",
+      "sourceUrl": "https://lifehacker.com/a-systematic-approach-to-solving-just-about-any-problem-5795228",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770243809668-717",
+    "title": "Prevent Microsoft Teams from Showing Away Status",
+    "problemDescription": "Microsoft Teams shows you as 'Away' when your PC is idle or locked.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Teams",
+      "status",
+      "away",
+      "PC",
+      "idle"
+    ],
+    "steps": [
+      {
+        "title": "Set a Custom Status Message",
+        "content": "Go to your profile picture in Microsoft Teams, click on your current status, and select 'Set a custom status'. Enter a message that will remain until you change it manually."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Prevent Your PC From Going to Sleep",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Adjust Sleep Settings",
+            "content": "Go to Settings > System > Power & sleep. Set 'Screen' and 'Sleep' to 'Never' to prevent your PC from going idle."
+          }
+        ]
+      },
+      {
+        "title": "Use a USB Mouse Jiggler",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Mouse Jiggler App",
+            "content": "Download and install a mouse jiggler app like 'Mouse Jiggler' or 'MoveMouse' to automatically move your mouse and keep your PC active."
+          }
+        ]
+      },
+      {
+        "title": "Use Split Screen",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Split Screen",
+            "content": "Move the Teams window to one side of your display and open another app or browser on the opposite side to keep Teams active."
+          }
+        ]
+      },
+      {
+        "title": "Start a Meeting With Yourself",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Start a Meeting",
+            "content": "Start a meeting with yourself and change its status to 'Available' to prevent Teams from showing you as 'Away'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T22:23:29.668Z",
+      "updated": "2026-02-04T22:23:29.668Z",
+      "sourceUrl": "https://www.howtogeek.com/how-to-stop-microsoft-teams-from-showing-you-as-away/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770243815106-705",
+    "title": "Disable Microsoft Teams Notifications",
+    "problemDescription": "How to turn off notifications in Microsoft Teams to disconnect during holidays.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "microsoft",
+      "teams",
+      "notifications",
+      "holiday"
+    ],
+    "steps": [
+      {
+        "title": "Disable Chat Notifications",
+        "content": "In Microsoft Teams, scroll down to the Chat section and choose 'Off' in the 'Chat Message Notifications' and 'Likes And Reactions' drop-down menus."
+      },
+      {
+        "title": "Disable Meeting Notifications",
+        "content": "Under Meetings, toggle 'Meeting Start Notifications' to 'Off' and select 'Mute' from the 'Meeting Chat Notifications' options."
+      },
+      {
+        "title": "Set Status to Offline",
+        "content": "Click your profile picture in the top-right corner, set your status to 'Appear Offline,' and optionally set a status message."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Turn Off All Notifications via Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Settings",
+            "content": "Click the three dots next to your profile picture and select 'Settings.'"
+          },
+          {
+            "title": "Disable Notifications",
+            "content": "Go to 'Notifications And Activity' and switch the 'Mute All Notifications (Except For Calls And Meetings)' toggle to 'Off.'"
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Uninstall Microsoft Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Apps",
+            "content": "Long press the app icon, select 'Remove App' or 'Uninstall,' and confirm the action."
+          },
+          {
+            "title": "Reinstall Apps After Holiday",
+            "content": "Reinstall the apps from the App Store or Google Play Store and sign back in if necessary."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T22:23:35.106Z",
+      "updated": "2026-02-04T22:23:35.106Z",
+      "sourceUrl": "https://www.howtogeek.com/ways-to-switch-off-from-your-microsoft-work-this-holiday/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770243825403-37",
+    "title": "Fix Secure Boot Error After Windows 11 Update",
+    "problemDescription": "Secure Boot error appears after the latest Windows 11 update on Razer Blade Pro 17.",
+    "category": "windows",
+    "difficulty": "Hard",
+    "keywords": [
+      "secure boot",
+      "windows 11",
+      "update error",
+      "Razer Blade Pro 17"
+    ],
+    "steps": [
+      {
+        "title": "Access BIOS/UEFI Settings",
+        "content": "Restart your computer and press the appropriate key (usually F2, F12, Del, or Esc) to enter the BIOS/UEFI settings."
+      },
+      {
+        "title": "Disable Secure Boot",
+        "content": "Navigate to the 'Security' or 'Boot' tab, find the 'Secure Boot' option, and disable it."
+      },
+      {
+        "title": "Save and Exit",
+        "content": "Save your changes and exit the BIOS/UEFI settings. Your computer should now boot normally."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset BIOS to Default Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access BIOS/UEFI Settings",
+            "content": "Restart your computer and press the appropriate key (usually F2, F12, Del, or Esc) to enter the BIOS/UEFI settings."
+          },
+          {
+            "title": "Load Default Settings",
+            "content": "Look for an option like 'Load Default Settings' or 'Reset to Default' and select it."
+          },
+          {
+            "title": "Save and Exit",
+            "content": "Save your changes and exit the BIOS/UEFI settings. Your computer should now boot normally."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T22:23:45.403Z",
+      "updated": "2026-02-04T22:23:45.403Z",
+      "sourceUrl": "http://answers.microsoft.com/en-us/windows/forum/desktop?page=1&tab=all&tm=1300700638376",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1770243828760-941",
+    "title": "Fix Microsoft Edge Connectivity Issues",
+    "problemDescription": "Microsoft Edge cannot reach certain websites, while other browsers work fine.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "edge",
+      "connectivity",
+      "browser",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your device is connected to the internet. Try accessing the same website using another browser to confirm the issue is specific to Edge."
+      },
+      {
+        "title": "Clear Browsing Data",
+        "content": "Go to Edge settings, navigate to 'Privacy, search, and services', and click 'Choose what to clear'. Select 'Cached images and files' and 'Cookies and other site data', then click 'Clear now'."
+      },
+      {
+        "title": "Reset Edge Settings",
+        "content": "In Edge settings, go to 'Reset settings' under the 'Reset settings' tab. Click 'Restore settings to their default values' and confirm the action."
+      },
+      {
+        "title": "Disable Extensions",
+        "content": "Go to Edge settings, navigate to 'Extensions', and disable all extensions. Check if the issue persists. If not, enable extensions one by one to identify the problematic one."
+      },
+      {
+        "title": "Update Edge",
+        "content": "Go to Edge settings, navigate to 'About Microsoft Edge', and check for updates. Install any available updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Command Prompt",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Network Troubleshooter",
+            "content": "Open Command Prompt as an administrator and type 'msdt.exe /id NetworkDiagnostics'. Press Enter and follow the on-screen instructions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T22:23:48.760Z",
+      "updated": "2026-02-04T22:23:48.760Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/edge/forum/edge_issue-edge_win10/edge-directs-to-httpsguceadvertisingcom-for-aol/abbf9e6b-585c-4fe6-ab96-c6c958b56ae3?messageId=d242f89d-eb18-4f9d-9f9c-62577acaa372",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770243831179-361",
+    "title": "Clear File Path URL from Run Dialog History",
+    "problemDescription": "File path URLs appear in the Run dialog history in Windows 11.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows",
+      "run dialog",
+      "file path",
+      "history"
+    ],
+    "steps": [
+      {
+        "title": "Run Command to Clear History",
+        "content": "Open Command Prompt and run the following command: `rundll32.exe inetcpl.cpl,ClearMyTracksByProcess 1`. This will clear the file URI auto-suggest entries from the Run dialog."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Modify Registry to Disable Auto-Suggestions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Registry Editor",
+            "content": "Press `Win + R`, type `regedit`, and press Enter."
+          },
+          {
+            "title": "Navigate to the Correct Key",
+            "content": "Go to `HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\AutoComplete`."
+          },
+          {
+            "title": "Modify the AutoSuggest Value",
+            "content": "Find the `AutoSuggest` DWORD value, double-click it, and set its value to `0`."
+          },
+          {
+            "title": "Restart Your Computer",
+            "content": "Restart your computer for the changes to take effect."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T22:23:51.179Z",
+      "updated": "2026-02-04T22:23:51.179Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/windows_11-files/file-path-url-appears-in-run-dialog-history/19fb931f-b714-436d-b7df-be27c406bd17",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770243836201-921",
+    "title": "Fix 0x800705AA Insufficient Resources Error",
+    "problemDescription": "Error 0x800705AA occurs when copying files due to insufficient system resources.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "error",
+      "copy",
+      "insufficient resources"
+    ],
+    "steps": [
+      {
+        "title": "Check System Resources",
+        "content": "Ensure your system has enough free memory and disk space. Close unnecessary applications to free up resources."
+      },
+      {
+        "title": "Update Windows",
+        "content": "Install the latest Windows updates to ensure compatibility and bug fixes."
+      },
+      {
+        "title": "Check Network Configuration",
+        "content": "Verify your network settings and ensure there are no conflicts or limitations affecting file transfers."
+      },
+      {
+        "title": "Disable Antivirus Temporarily",
+        "content": "Temporarily disable your antivirus software to check if it's interfering with the file transfer process."
+      },
+      {
+        "title": "Use Robocopy",
+        "content": "Use the Robocopy command with the /ZB switch to retry failed copies and use restartable mode."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust System Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Increase System Cache",
+            "content": "Adjust the system cache settings to allocate more resources for file operations."
+          },
+          {
+            "title": "Check for Driver Updates",
+            "content": "Update your network and storage drivers to the latest versions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T22:23:56.201Z",
+      "updated": "2026-02-04T22:23:56.201Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/when-copying-a-file-im-getting-0x800705aa/d8451c0a-1cd6-402d-96c8-1ead2dba85e2",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770243859097-151",
+    "title": "Fix High Ping and Lag on Spectrum Wi-Fi",
+    "problemDescription": "Experiencing high ping and lag on Spectrum Wi-Fi, especially during gaming.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "ping",
+      "lag",
+      "spectrum",
+      "gaming"
+    ],
+    "steps": [
+      {
+        "title": "Check for Interference",
+        "content": "Identify potential sources of interference in your room, such as electronic devices or physical obstructions, and remove them."
+      },
+      {
+        "title": "Contact ISP for Router Relocation",
+        "content": "Consider moving your router closer to your room. Contact Spectrum to discuss the $65 installation fee and ensure it's the right solution for your issue."
+      },
+      {
+        "title": "Test Alternative ISPs",
+        "content": "Research and compare other ISPs like Verizon Fiber to see if they offer better performance within your budget."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Wi-Fi Extender",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Wi-Fi Extender",
+            "content": "Buy a reliable Wi-Fi extender to boost the signal in your room."
+          },
+          {
+            "title": "Position the Extender",
+            "content": "Place the extender in a location that maximizes signal strength to your room."
+          },
+          {
+            "title": "Configure the Extender",
+            "content": "Follow the manufacturer's instructions to set up and configure the extender."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Ethernet Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect via Ethernet",
+            "content": "If possible, connect your gaming device directly to the router using an Ethernet cable for a more stable connection."
+          },
+          {
+            "title": "Check Cable Quality",
+            "content": "Ensure the Ethernet cable is of good quality and not damaged."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T22:24:19.097Z",
+      "updated": "2026-02-04T22:24:19.097Z",
+      "sourceUrl": "https://www.reddit.com/r/techsupport/comments/1bomwpd/advice_on_what_to_do_about_wifi_problems_and_what/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
