@@ -105614,5 +105614,488 @@
       "priorityScore": 0.8,
       "difficulty": "Hard"
     }
+  },
+  {
+    "id": "draft-1770240593706-178",
+    "title": "Fix Stuck Pixel on Monitor",
+    "problemDescription": "A stuck pixel on your monitor that doesn't respond to conventional software fixes.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "stuck pixel",
+      "monitor",
+      "dead pixel",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Turn Off the Monitor",
+        "content": "Power off your monitor completely."
+      },
+      {
+        "title": "Apply Pressure to the Pixel",
+        "content": "Locate the stuck pixel and apply gentle pressure directly on it. You can use a towel or your finger for this."
+      },
+      {
+        "title": "Turn On the Monitor",
+        "content": "While maintaining pressure, turn the monitor back on."
+      },
+      {
+        "title": "Release Pressure",
+        "content": "Once the monitor is on, release the pressure and check if the pixel is fixed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Software Fixes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Pixel Fix Software",
+            "content": "Download and run pixel fixing software that cycles through colors to potentially unstick the pixel."
+          },
+          {
+            "title": "Display Color Test",
+            "content": "Use a color test pattern to see if the pixel responds to different colors."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T21:29:53.706Z",
+      "updated": "2026-02-04T21:29:53.706Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/interesting-thing-i-found-on-how-to-fix-a-stuck-pixel.3582308/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770240596948-773",
+    "title": "Google Pixel 6a Battery Replacement Guide",
+    "problemDescription": "Google Pixel 6a users experiencing battery issues need to identify and replace the problematic battery.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "Google Pixel 6a",
+      "battery replacement",
+      "battery issue",
+      "part number"
+    ],
+    "steps": [
+      {
+        "title": "Identify the Problematic Battery",
+        "content": "Check the battery's part number or revision code to determine if it is the problematic version. Google may have released a newer revision that addresses the issue."
+      },
+      {
+        "title": "Contact Google Support",
+        "content": "Reach out to Google Support to inquire about the availability of a replacement battery and any compensation programs that might be applicable in your region."
+      },
+      {
+        "title": "Find a Replacement Battery",
+        "content": "If Google cannot send a replacement battery, search for a reputable seller or service center that can provide a compatible and safe battery replacement."
+      },
+      {
+        "title": "Replace the Battery",
+        "content": "Follow the manufacturer's guidelines or seek professional help to replace the battery safely. Ensure the replacement battery is from a trusted source to avoid future issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Community Workaround: Use a Friend's Address",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Coordinate with a Friend",
+            "content": "If you cannot receive a compensation or replacement battery in your country, coordinate with a friend in a different region to help you obtain the replacement battery."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T21:29:56.948Z",
+      "updated": "2026-02-04T21:29:56.948Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/google-pixel-6a-battery-replacement-pn.3884815/post-23526005",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770240600353-509",
+    "title": "Fix Monitor Dead Pixels",
+    "problemDescription": "Dead pixels appearing and growing on monitor screen.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "monitor",
+      "dead pixels",
+      "screen issue"
+    ],
+    "steps": [
+      {
+        "title": "Check for Dead Pixels",
+        "content": "Turn on your monitor and observe the screen for any dead pixels. Note their location and size."
+      },
+      {
+        "title": "Use Dead Pixel Software",
+        "content": "Download and run dead pixel software like JScreenFix or Udclient. These tools can help fix dead pixels by cycling through colors."
+      },
+      {
+        "title": "Apply Pressure",
+        "content": "Gently apply pressure to the affected area using a soft cloth or your fingers. This can sometimes revive stuck pixels."
+      },
+      {
+        "title": "Contact Manufacturer",
+        "content": "If the dead pixels persist, contact the monitor's manufacturer for warranty or repair options."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Pixel Fixer App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download a Pixel Fixer App",
+            "content": "Download a pixel fixer app from a reputable source."
+          },
+          {
+            "title": "Run the App",
+            "content": "Run the app and follow the on-screen instructions to fix dead pixels."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T21:30:00.353Z",
+      "updated": "2026-02-04T21:30:00.353Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/something-wrong-with-my-monitor.3740491/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770240602228-531",
+    "title": "Factory Reset Google Pixel C Tablet",
+    "problemDescription": "Unable to factory reset Google Pixel C tablet due to different recovery mode options.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "google",
+      "pixel",
+      "tablet",
+      "factory reset",
+      "recovery mode"
+    ],
+    "steps": [
+      {
+        "title": "Access Recovery Mode",
+        "content": "Press and hold the Power button and Volume down button simultaneously until the bootloader menu appears."
+      },
+      {
+        "title": "Select Android Recovery",
+        "content": "Use the Volume buttons to navigate and the Power button to select 'Enter Android recovery'."
+      },
+      {
+        "title": "Wipe Data/Factory Reset",
+        "content": "In the Android recovery menu, use the Volume buttons to navigate to 'Wipe data/factory reset' and select it with the Power button."
+      },
+      {
+        "title": "Confirm Reset",
+        "content": "Confirm the factory reset by selecting 'Yes' and wait for the process to complete."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Fastboot Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter Fastboot Mode",
+            "content": "From the bootloader menu, select 'Enter Fastboot mode'."
+          },
+          {
+            "title": "Connect to Computer",
+            "content": "Connect the tablet to a computer with Fastboot tools installed."
+          },
+          {
+            "title": "Execute Fastboot Command",
+            "content": "Open a command prompt and execute the command 'fastboot erase userdata' to perform a factory reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T21:30:02.228Z",
+      "updated": "2026-02-04T21:30:02.228Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/google-pixel-c-tablet-recovery-mode.3745430/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770240603647-849",
+    "title": "Fix Pixel 3 Battery Drain",
+    "problemDescription": "Pixel 3 experiencing excessive battery drain due to Google Play Services.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "battery",
+      "drain",
+      "pixel 3",
+      "google play services"
+    ],
+    "steps": [
+      {
+        "title": "Clear Google Play Services Cache",
+        "content": "Go to Settings > Apps & notifications > See all apps > Google Play Services > Storage > Clear Cache."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your Device",
+            "content": "Press and hold the Power button, then tap Restart."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T21:30:03.647Z",
+      "updated": "2026-02-04T21:30:03.647Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/pixel-3-battery-life-issues.3525600/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770240614456-200",
+    "title": "Reduce Screen Flicker on Pixel Devices",
+    "problemDescription": "Pixel device screens may cause eye strain, headaches, or nausea due to PWM flicker.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel",
+      "screen flicker",
+      "eye strain",
+      "headache",
+      "PWM"
+    ],
+    "steps": [
+      {
+        "title": "Enable Flicker-Reduction Accessibility Mode",
+        "content": "Go to Settings > Accessibility > Display > Flicker-Reduction and toggle it on. This may reduce screen flicker and improve eye comfort."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Increase PWM Frequency",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Software Updates",
+            "content": "Ensure your Pixel device is updated to the latest software version, as Google may release a software-based fix for PWM frequency."
+          },
+          {
+            "title": "Contact Google Support",
+            "content": "Request information about potential hardware or software updates that could increase the PWM frequency to 1920Hz or higher."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T21:30:14.456Z",
+      "updated": "2026-02-04T21:30:14.456Z",
+      "sourceUrl": "https://www.howtogeek.com/tired-of-pixel-screens-giving-you-a-headache-pixel-10-might-finally-fix-that/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770240629607-938",
+    "title": "Improve Windows Laptop Battery Life",
+    "problemDescription": "Your Windows laptop is experiencing rapid battery drain and overheating.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "battery",
+      "performance",
+      "powercfg"
+    ],
+    "steps": [
+      {
+        "title": "Configure Apps to Use Less Powerful GPU",
+        "content": "Launch the Settings app, navigate to System > Display > Graphics, and manually configure less resource-demanding applications to avoid using the powerful GPU."
+      },
+      {
+        "title": "Reduce Maximum Processor State",
+        "content": "Open Command Prompt as an administrator, type 'powercfg /list' to note the Power Scheme GUID, then type 'powercfg /DUPLICATESCHEME <Power Scheme GUID>' to create a duplicate power scheme. Reduce the Maximum processor state by one percent to start."
+      },
+      {
+        "title": "Setactive Command in CMD",
+        "content": "Use the 'setactive' command in CMD to activate a power-saving scheme, then restart your computer to see improved battery performance and reduced heat."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Replace the Battery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Consult a Technician",
+            "content": "If the battery drain issue persists, take your laptop to a technician to get it checked and have the battery replaced if necessary."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T21:30:29.607Z",
+      "updated": "2026-02-04T21:30:29.607Z",
+      "sourceUrl": "https://www.howtogeek.com/my-windows-laptop-was-a-battery-hog-until-i-made-these-changes/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770240648757-831",
+    "title": "Fix MacBook Keyboard Number Pad Issue",
+    "problemDescription": "MacBook keyboard produces numbers instead of letters due to enabled number pad.",
+    "category": "macbook",
+    "difficulty": "Easy",
+    "keywords": [
+      "keyboard",
+      "macbook",
+      "number pad",
+      "F6"
+    ],
+    "steps": [
+      {
+        "title": "Press F6 Twice",
+        "content": "Press the F6 key twice to disable the number pad function on your MacBook keyboard."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Caps Lock",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Press Caps Lock",
+            "content": "Press the Caps Lock key to see if it toggles the number pad function off."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T21:30:48.757Z",
+      "updated": "2026-02-04T21:30:48.757Z",
+      "sourceUrl": "https://askubuntu.com/questions/514166/macbook-keyboard-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770240674605-277",
+    "title": "Fix Intermittent Wi-Fi Connectivity on Mac",
+    "problemDescription": "Mac experiencing intermittent Wi-Fi connectivity issues when connected directly to the router, but not when near the Access Point.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "mac",
+      "connectivity",
+      "intermittent"
+    ],
+    "steps": [
+      {
+        "title": "Power Cycle Devices",
+        "content": "Power cycle the cable modem, Wi-Fi router, and all Access Points in the following order: modem first, then router, and finally the Access Points."
+      },
+      {
+        "title": "Check Router and Access Point Settings",
+        "content": "Ensure that the router and Access Points are configured correctly and that there are no conflicts in the network settings."
+      },
+      {
+        "title": "Update Firmware",
+        "content": "Update the firmware on the router and Access Points to the latest version to ensure compatibility and fix any known bugs."
+      },
+      {
+        "title": "Factory Reset",
+        "content": "If the issue persists, consider performing a factory reset on the Wi-Fi router and Access Points to start from scratch."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Interference",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Wi-Fi Channel",
+            "content": "Change the Wi-Fi channel on the router to a less crowded one to reduce interference from other devices."
+          },
+          {
+            "title": "Position Router and Access Points",
+            "content": "Ensure that the router and Access Points are positioned optimally to provide the best coverage and minimize interference."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T21:31:14.605Z",
+      "updated": "2026-02-04T21:31:14.605Z",
+      "sourceUrl": "https://www.reddit.com/r/HomeNetworking/comments/xdl6ge/tips_to_troubleshoot_home_internet_issues/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770240676249-7",
+    "title": "Enable Client Isolation for Chromecast",
+    "problemDescription": "Chromecast not working due to network configuration issues.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "chromecast",
+      "client isolation"
+    ],
+    "steps": [
+      {
+        "title": "Access Router Settings",
+        "content": "Log in to your router's admin panel. This is usually done by entering the router's IP address in a web browser."
+      },
+      {
+        "title": "Find Wi-Fi Settings",
+        "content": "Navigate to the Wi-Fi or Wireless settings section."
+      },
+      {
+        "title": "Enable Client Isolation",
+        "content": "Locate the SSID settings for your Chromecast and enable 'Client Isolation'."
+      },
+      {
+        "title": "Save and Apply",
+        "content": "Save the changes and apply them. Your Chromecast should now work properly."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-04T21:31:16.249Z",
+      "updated": "2026-02-04T21:31:16.249Z",
+      "sourceUrl": "https://www.reddit.com/r/networking/comments/17qhrte/what_is_the_most_difficult_wirelesswifi_problem/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
