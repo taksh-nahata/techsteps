@@ -102508,5 +102508,535 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770216521110-188",
+    "title": "Fix 'This PC Can't Run Windows 11' Error",
+    "problemDescription": "Error message stating 'This PC can't run Windows 11' due to missing Secure Boot and TPM 2.0 settings.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "secure boot",
+      "TPM 2.0",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Access UEFI Firmware Settings",
+        "content": "Start your computer normally and open the Start menu. Click on the Settings icon, then go to Update & Security > Recovery. Under Advanced startup, click Restart now. After the restart, click Troubleshoot > Advanced options > UEFI Firmware Settings."
+      },
+      {
+        "title": "Enable Secure Boot",
+        "content": "Once in the UEFI menu, look for the Secure Boot setting under tabs labeled Boot, Security, or Authentication. Toggle the switch to enable Secure Boot."
+      },
+      {
+        "title": "Save and Exit",
+        "content": "Save your changes and exit the UEFI menu. Your computer should reboot and return to the normal Windows desktop."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use PC Health Check App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Run PC Health Check App",
+            "content": "Download the Microsoft PC Health Check app and run it. Click Check Now to scan your system."
+          },
+          {
+            "title": "Review Results",
+            "content": "The app will inform you if your computer supports Windows 11 or what it's missing. Click See All Results for more details."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T14:48:41.110Z",
+      "updated": "2026-02-04T14:48:41.110Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/how-to-fix-this-pc-cant-run-windows-11-error-tpm-and-secure-boot/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770216536413-521",
+    "title": "Fix Google TV Home Screen Loading Error",
+    "problemDescription": "Google TV home screen not loading or displaying errors.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Google TV",
+      "home screen",
+      "loading error",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Log Out and Log Back In",
+        "content": "Log out of your Google account on the TV and then log back in to see if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Factory Reset",
+            "content": "If logging out and back in doesn't work, try performing a factory reset on your TV. Note that this will erase all your settings and data."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T14:48:56.413Z",
+      "updated": "2026-02-04T14:48:56.413Z",
+      "sourceUrl": "https://www.techradar.com/televisions/struggling-with-google-tv-home-screen-errors-youre-not-alone-but-a-fix-is-now-arriving",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770216538297-664",
+    "title": "Optimize LG OLED TV Settings",
+    "problemDescription": "LG OLED TVs may not deliver the best viewing experience with default settings.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "LG OLED TV",
+      "picture settings",
+      "viewing experience"
+    ],
+    "steps": [
+      {
+        "title": "Turn Off Eco Features",
+        "content": "Disable all Eco features to take full control of the image settings."
+      },
+      {
+        "title": "Adjust Picture Mode",
+        "content": "Change the picture mode based on your viewing conditions, especially for HDR content in dark rooms."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Optimize Game Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Game Mode",
+            "content": "Turn on Game Mode to reduce input lag and improve responsiveness."
+          },
+          {
+            "title": "Adjust Motion Settings",
+            "content": "Fine-tune motion settings for smoother gameplay."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T14:48:58.297Z",
+      "updated": "2026-02-04T14:48:58.297Z",
+      "sourceUrl": "https://www.techradar.com/features/5-mistakes-everyone-makes-with-lg-oled-tvs-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770216541218-945",
+    "title": "Accessing CES 2026 Coverage",
+    "problemDescription": "Need to access the latest updates and announcements from CES 2026.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "CES",
+      "TechRadar",
+      "coverage",
+      "announcements"
+    ],
+    "steps": [
+      {
+        "title": "Visit TechRadar's CES 2026 Live News Page",
+        "content": "Go to TechRadar's website and navigate to the CES 2026 live news page for the latest stories and hands-on verdicts."
+      },
+      {
+        "title": "Follow TechRadar on TikTok",
+        "content": "Follow TechRadar on TikTok to get the latest updates and coverage from the CES show floor."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Ask Questions in the CES 2026 Live Q&A",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Submit a Question",
+            "content": "Visit the CES 2026 live Q&A section on TechRadar and submit your question about the show."
+          },
+          {
+            "title": "Wait for a Response",
+            "content": "Wait for TechRadar's team to answer your question and provide the necessary information."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T14:49:01.218Z",
+      "updated": "2026-02-04T14:49:01.218Z",
+      "sourceUrl": "https://www.techradar.com/computing/monitors/gigabyte-may-have-just-solved-my-biggest-issue-with-oled-monitors-at-ces-2026",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770216549314-672",
+    "title": "Fix Mac ESC Key Not Working",
+    "problemDescription": "The ESC key on a Mac stops working randomly.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macos",
+      "esc key",
+      "siri",
+      "keyboard"
+    ],
+    "steps": [
+      {
+        "title": "Kill Siri Process",
+        "content": "Open Activity Monitor, find the Siri process, and click 'Quit Process'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Siri",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Siri",
+            "content": "Go to System Preferences > Siri & Search and turn off 'Enable Ask Siri'."
+          },
+          {
+            "title": "Kill Siri Process",
+            "content": "Open Activity Monitor, find the Siri process, and click 'Quit Process'."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Terminal Command",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Terminal",
+            "content": "Open Terminal on your Mac."
+          },
+          {
+            "title": "Kill Siri Process",
+            "content": "Type `ps -ef | grep siri` to find the Siri process ID, then type `sudo kill -9 [process ID]` to kill the process."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T14:49:09.314Z",
+      "updated": "2026-02-04T14:49:09.314Z",
+      "sourceUrl": "https://superuser.com/questions/479363/osx-esc-key-stops-working-randomly",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770216556118-834",
+    "title": "Adjust Hey Siri Trigger Delay in macOS",
+    "problemDescription": "The default delay for the 'Hey Siri' trigger in macOS is too short, and you want to increase it.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "macos",
+      "siri",
+      "trigger",
+      "delay",
+      "hey siri"
+    ],
+    "steps": [
+      {
+        "title": "Use Terminal Command",
+        "content": "Open Terminal and enter the following command to increase the delay: `defaults write com.apple.Siri.SiriPreferences SiriWakeDelay -float 2.0`. Replace `2.0` with your desired delay in seconds."
+      },
+      {
+        "title": "Restart Siri",
+        "content": "After changing the delay, restart Siri by disabling and re-enabling it in System Preferences."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Third-Party Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Karabiner-Elements",
+            "content": "Download and install Karabiner-Elements, a third-party keyboard customizer for macOS."
+          },
+          {
+            "title": "Configure Delay",
+            "content": "Use Karabiner-Elements to configure a custom delay for the 'Hey Siri' trigger."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T14:49:16.118Z",
+      "updated": "2026-02-04T14:49:16.118Z",
+      "sourceUrl": "https://superuser.com/questions/1656180/is-there-a-way-to-configure-macos-hey-siri-trigger-delay-time",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770216559881-174",
+    "title": "Enable Voice Control on Mac OS Catalina",
+    "problemDescription": "Enhanced Dictation is not found on Mac OS Catalina.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "macos",
+      "catalina",
+      "voice control",
+      "dictation"
+    ],
+    "steps": [
+      {
+        "title": "Open System Preferences",
+        "content": "Go to the Apple menu and select 'System Preferences'."
+      },
+      {
+        "title": "Navigate to Accessibility",
+        "content": "In System Preferences, click on 'Accessibility'."
+      },
+      {
+        "title": "Select Voice Control",
+        "content": "From the left sidebar, choose 'Voice Control'."
+      },
+      {
+        "title": "Enable Voice Control",
+        "content": "Check the box to enable Voice Control. This is the replacement for Enhanced Dictation in macOS Catalina."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-04T14:49:19.881Z",
+      "updated": "2026-02-04T14:49:19.881Z",
+      "sourceUrl": "https://superuser.com/questions/1569260/enhanced-dictation-not-found-on-mac-os-catalina",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770216563019-47",
+    "title": "Enable Bluetooth on Mac",
+    "problemDescription": "How to enable Bluetooth on a Mac using shortcuts or commands.",
+    "category": "macOS",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "mac",
+      "shortcut",
+      "command"
+    ],
+    "steps": [
+      {
+        "title": "Using Spotlight",
+        "content": "Press ⌘-space to open Spotlight, type 'blue', select 'Bluetooth', and hit enter."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Using Siri (Sierra OS and later)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Voice Command",
+            "content": "Say 'Turn on Bluetooth' to Siri."
+          }
+        ]
+      },
+      {
+        "title": "Using Terminal (Homebrew)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Homebrew",
+            "content": "Ensure Homebrew is installed by running `$ brew -v` in Terminal. If not, install it using `/usr/bin/ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\"`."
+          },
+          {
+            "title": "Update Packages",
+            "content": "Update packages by running `$ brew doctor` in Terminal."
+          },
+          {
+            "title": "Install blueutil",
+            "content": "Install the blueutil package by running `$ brew install blueutil` in Terminal."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T14:49:23.019Z",
+      "updated": "2026-02-04T14:49:23.019Z",
+      "sourceUrl": "https://superuser.com/questions/92804/how-to-enable-bluetooth-in-mac-with-shortcut-or-command-line",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770216580686-219",
+    "title": "Fix Samsung Galaxy Note 5 Stuck in Recovery Mode",
+    "problemDescription": "Samsung Galaxy Note 5 is stuck in recovery mode and doesn't load the options.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "galaxy note 5",
+      "recovery mode",
+      "stuck"
+    ],
+    "steps": [
+      {
+        "title": "Force Restart the Device",
+        "content": "Press and hold the Power button for about 10-15 seconds until the device restarts. This may force the device out of recovery mode."
+      },
+      {
+        "title": "Remove the Battery (if possible)",
+        "content": "If your device has a removable battery, turn off the device, remove the battery, wait for a few minutes, and then reinsert the battery and turn the device back on."
+      },
+      {
+        "title": "Use Volume and Power Buttons",
+        "content": "While in recovery mode, try pressing the Volume Up or Volume Down buttons to navigate and the Power button to select options. This might help if the screen is not responding."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Wipe Cache Partition",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter Recovery Mode",
+            "content": "Turn off the device, then press and hold the Power, Volume Up, and Home buttons simultaneously until the Samsung logo appears."
+          },
+          {
+            "title": "Navigate to Wipe Cache Partition",
+            "content": "Use the Volume buttons to navigate to 'Wipe Cache Partition' and press the Power button to select it."
+          },
+          {
+            "title": "Reboot the Device",
+            "content": "After the cache partition is wiped, select 'Reboot System Now' to restart the device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T14:49:40.686Z",
+      "updated": "2026-02-04T14:49:40.686Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/samsung-galaxy-note-5-stuck-in-recovery-mode.3481078/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770216588127-126",
+    "title": "Fix Netflix Crashing on Roku TV",
+    "problemDescription": "Netflix app crashes or freezes on Roku TV.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "netflix",
+      "roku",
+      "crash",
+      "app",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Update the Netflix App",
+        "content": "Highlight the Netflix app from the home menu and press the *\\* button on the remote. Select 'Check for Updates' to ensure the app is up to date."
+      },
+      {
+        "title": "Clear the Cache",
+        "content": "Remove the Netflix app by highlighting it on the home menu, pressing the *\\* button, and selecting 'Remove app'. Then, clear the cache by either restarting your TV or using the Roku system settings to clear the cache. Reinstall Netflix from the 'Add Channels' section."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Report the Issue to Roku",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Report the Issue",
+            "content": "If the above steps do not resolve the issue, report the problem to Roku via the Roku Community Discussions. Provide detailed information about the problem to help Roku track and resolve the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T14:49:48.127Z",
+      "updated": "2026-02-04T14:49:48.127Z",
+      "sourceUrl": "https://www.cnet.com/tech/netflix-keeps-crashing-on-roku-tv/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770216596611-829",
+    "title": "Find Lost Roku Remote",
+    "problemDescription": "You can't find your Roku remote.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Roku",
+      "remote",
+      "lost"
+    ],
+    "steps": [
+      {
+        "title": "Use Voice Command",
+        "content": "Press the home button on your Roku remote and say 'Hey Roku, where's my remote?'"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Mobile App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Roku App",
+            "content": "Open the Roku mobile app on your smartphone."
+          },
+          {
+            "title": "Navigate to Remote",
+            "content": "Tap the 'Remote' icon at the bottom of the screen."
+          },
+          {
+            "title": "Ring Remote",
+            "content": "Tap the 'Ring' button to make your remote beep."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-04T14:49:56.611Z",
+      "updated": "2026-02-04T14:49:56.611Z",
+      "sourceUrl": "https://www.cnet.com/tech/home-entertainment/apple-tv-4k-vs-roku-ultra-which-high-end-streamer-is-best-for-you/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
