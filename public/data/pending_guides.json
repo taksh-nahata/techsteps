@@ -110443,5 +110443,464 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770291197335-935",
+    "title": "Fix 'This site can't ask for your permission' Chrome Error",
+    "problemDescription": "Chrome on LG Velvet displays 'This site can't ask for your permission' error, preventing access to camera, microphone, etc.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "permission",
+      "lg velvet",
+      "camera",
+      "microphone"
+    ],
+    "steps": [
+      {
+        "title": "Clear Chrome Data",
+        "content": "Go to Settings > Installed Apps > Google Chrome > Storage > Manage Storage > Clear all data."
+      },
+      {
+        "title": "Enable Permissions",
+        "content": "Go back to the info page and select the Permissions option. Allow all the permissions required for the site (at least camera and microphone)."
+      },
+      {
+        "title": "Close Background Apps",
+        "content": "If the issue persists, close any screen recording apps or other apps like small bubbles running in the background."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Chrome Data via Privacy Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Data",
+            "content": "From the 3 dots menu on the top right, go to Privacy and clear data. In the range, select 'All time'. Also, in advanced, select the top three items and clear data. Restart the device."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Adjust Notch Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Notch Hiding",
+            "content": "If your device has a notch, go to notch settings and select 'Don't hide notch'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T11:33:17.335Z",
+      "updated": "2026-02-05T11:33:17.335Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/240644/this-site-cant-ask-for-your-permission-chrome-error-on-lg-velvet",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770291199487-544",
+    "title": "Fix 'Aw, Snap!' Error in Google Chrome",
+    "problemDescription": "Google Chrome crashes with 'Aw, Snap!' error when loading certain pages due to prefetching or corrupt profiles.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "aw snap",
+      "browser crash",
+      "prefetching"
+    ],
+    "steps": [
+      {
+        "title": "Disable Prefetching",
+        "content": "Go to Settings >> Privacy >> Use a prediction service to load pages more quickly >> Uncheck the box."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Create a New Chrome Profile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create New Profile",
+            "content": "Create a new profile, but note that custom data like bookmarks and extensions won't be available by default."
+          }
+        ]
+      },
+      {
+        "title": "Clear Background Processes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Background Processes",
+            "content": "Go to Recent apps menu and clear up background processes, then lock the Chrome app."
+          }
+        ]
+      },
+      {
+        "title": "Free Up Device Memory",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Free Up Device Memory",
+            "content": "Clear up some space on the device and reboot it. Close any unused applications in the background to save resources."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T11:33:19.487Z",
+      "updated": "2026-02-05T11:33:19.487Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/175270/aw-snap-google-chrome",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770291200638-392",
+    "title": "Chrome Access Denied Due to Data Compression",
+    "problemDescription": "Access denied to a website using the Chrome app due to data compression settings.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "access denied",
+      "data compression"
+    ],
+    "steps": [
+      {
+        "title": "Disable Data Compression",
+        "content": "Go to Chrome settings, tap on 'Reduce data usage' (or similar), and disable the feature."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch Browsers",
+            "content": "Use the stock browser or another browser to access the site."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T11:33:20.638Z",
+      "updated": "2026-02-05T11:33:20.638Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/95217/access-denied-to-site-using-chrome-app",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770291216861-328",
+    "title": "Fix Fastboot Devices Command on macOS High Sierra",
+    "problemDescription": "The 'fastboot devices' command fails to work after upgrading to macOS High Sierra 10.14.4, returning an error about creating a device interface iterator.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "fastboot",
+      "macos",
+      "high sierra",
+      "android",
+      "command"
+    ],
+    "steps": [
+      {
+        "title": "Upgrade Android Platform Tools",
+        "content": "Open Android Studio, go to SDK Manager, select SDK Platform Tools, check 'Show Details', select Android Platform Tools, and upgrade to version 29.0.1 or newer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Install Android Platform Tools via Homebrew",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Homebrew Command",
+            "content": "Open Terminal and run the command: `brew cask install android-platform-tools`."
+          }
+        ]
+      },
+      {
+        "title": "Follow XDA Developers Guide",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit XDA Developers",
+            "content": "Follow the instructions provided on the XDA Developers website for installing ADB and Fastboot on macOS: [XDA Developers Guide](https://forum.xda-developers.com/install-adb-windows-macos-linux)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T11:33:36.861Z",
+      "updated": "2026-02-05T11:33:36.861Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/209725/fastboot-devices-command-doesnt-work-after-macos-high-sierra-10-14-4-upgrade",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770291232452-261",
+    "title": "Fix Screen Flickering",
+    "problemDescription": "Screen flickering can occur in fixed positions or randomly across the entire screen.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen",
+      "flickering",
+      "troubleshooting",
+      "robotics"
+    ],
+    "steps": [
+      {
+        "title": "Check Output Ports",
+        "content": "Inspect the output ports for any issues or overloading. Ensure the cables are securely connected."
+      },
+      {
+        "title": "Inspect Power Supply",
+        "content": "Verify the power supply unit and cables for any faults. Replace if necessary."
+      },
+      {
+        "title": "Examine Hub Board",
+        "content": "Check the hub board for any issues, including firmware problems. Update the firmware if needed."
+      },
+      {
+        "title": "Test Specific Modules",
+        "content": "If the flickering is specific to a module, check its power supply and connectors."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Nova Star",
+            "content": "If the issue persists after troubleshooting, contact Nova Star for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T11:33:52.452Z",
+      "updated": "2026-02-05T11:33:52.452Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=cj6TwPoAF0E",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770291239657-292",
+    "title": "Fix Screen Flickering in Windows 10 & 11",
+    "problemDescription": "Screen flickering issue on Windows 10 or 11 devices.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen flicker",
+      "windows 10",
+      "windows 11",
+      "driver",
+      "task manager"
+    ],
+    "steps": [
+      {
+        "title": "Check for Application Issues",
+        "content": "Open Task Manager by right-clicking the Start button and selecting Task Manager. Observe if the flickering occurs in Task Manager. If not, an application is likely causing the issue."
+      },
+      {
+        "title": "Update Display Driver",
+        "content": "Right-click the Start button, select 'Device Manager', expand 'Display adapters', right-click your display driver, and choose 'Update driver'. Follow the prompts to update the driver."
+      },
+      {
+        "title": "Roll Back Display Driver",
+        "content": "If the 'Roll Back Driver' option is available in the driver properties, select it to revert to a previous driver version."
+      },
+      {
+        "title": "Uninstall and Reinstall Display Driver",
+        "content": "In Device Manager, right-click your display driver and select 'Uninstall device'. Restart your computer to automatically reinstall the driver."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Application Conflicts",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Problematic Applications",
+            "content": "Close all running applications and reopen them one by one to identify which application is causing the flickering."
+          },
+          {
+            "title": "Update or Reinstall Applications",
+            "content": "Update the problematic application to the latest version or reinstall it to resolve the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T11:33:59.657Z",
+      "updated": "2026-02-05T11:33:59.657Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=WJUOg43bE4M",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770291246489-251",
+    "title": "Fix Outlook Showing Only First Line of Messages",
+    "problemDescription": "Outlook displays only the first line of each email message.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Outlook",
+      "email",
+      "display issue",
+      "Office 365"
+    ],
+    "steps": [
+      {
+        "title": "Repair Office 365 Installation",
+        "content": "Go to Add and Remove Programs, find Office 365, click on advanced options, and select Repair to repair the installation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Rollback to Previous Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Elevated Command Prompt",
+            "content": "Open an elevated command prompt (Administrator)."
+          },
+          {
+            "title": "Navigate to ClickToRun Directory",
+            "content": "Navigate to `C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun`."
+          },
+          {
+            "title": "Run Update Command",
+            "content": "Run the following command: `officec2rclient.exe /update user updatetoversion=16.0.13901.20462`."
+          },
+          {
+            "title": "Wait for Completion",
+            "content": "The process takes about 10 minutes to complete."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Create New User Profile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create New User Profile",
+            "content": "Create a new user profile to see if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T11:34:06.489Z",
+      "updated": "2026-02-05T11:34:06.489Z",
+      "sourceUrl": "https://superuser.com/questions/1648424/how-do-i-fix-outlook-only-showing-the-first-line-of-every-message",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770291252187-189",
+    "title": "Fix Outlook Repeatedly Asking for Password",
+    "problemDescription": "Outlook keeps prompting for a password even when credentials are correct.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "password",
+      "office365",
+      "registry"
+    ],
+    "steps": [
+      {
+        "title": "Modify Registry to Exclude O365 Endpoint",
+        "content": "1. Open Registry Editor (regedit) and navigate to: HKCU\\Software\\Microsoft\\Office\\16.0\\Outlook\\AutoDiscover. 2. Create a new DWORD (32-bit) value named `ExcludeExplicitO365Endpoint` and set its value to `1`. 3. Restart Outlook."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Repair Office Installation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall and Repair Office",
+            "content": "1. Go to Control Panel > Uninstall a Program. 2. Select your Office suite, click 'Change', and choose 'Repair'. 3. Select 'Quick Repair' or 'Online Repair' and follow the prompts. 4. Restart your computer and reopen Outlook."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T11:34:12.187Z",
+      "updated": "2026-02-05T11:34:12.187Z",
+      "sourceUrl": "https://superuser.com/questions/1669243/outlook-needs-password",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770291256363-983",
+    "title": "Fix Outlook (Office 365) Not Opening on Windows 10",
+    "problemDescription": "Outlook (Office 365) fails to open on Windows 10.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "office 365",
+      "windows 10",
+      "not opening"
+    ],
+    "steps": [
+      {
+        "title": "Backup and Reset Outlook Profile",
+        "content": "Backup your PST files and ensure you know how to recreate your email accounts. Go to Control Panel, select Mail, then Profiles, and delete your Outlook Profile(s). Restart your computer and cancel the new account setup. Manually create a new account using the email tool in Control Panel."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Repair Office Installation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Inbox Repair Tool",
+            "content": "Use Outlook's Inbox Repair Tool (ScanPST.exe) to diagnose and repair any corruption within the Outlook data files."
+          },
+          {
+            "title": "Reset Navigation Pane",
+            "content": "Run 'outlook.exe /resetnavpane' to rule out Navigation Pane corruption."
+          },
+          {
+            "title": "Repair Office Installation",
+            "content": "Perform an offline repair, then an online repair of Office. If the problem persists, reinstall Office."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T11:34:16.363Z",
+      "updated": "2026-02-05T11:34:16.363Z",
+      "sourceUrl": "https://superuser.com/questions/1559490/cant-open-outlook-office-365-on-windows-10",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
