@@ -110043,5 +110043,405 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770287835308-26",
+    "title": "Fix Gmail Account Sending Issues on Apple Mail",
+    "problemDescription": "Emails from a specific Gmail account are not sending correctly or are being sent from the wrong account.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "apple mail",
+      "smtp",
+      "email sending"
+    ],
+    "steps": [
+      {
+        "title": "Edit SMTP Server List",
+        "content": "When composing an email, click on the pull-down menu next to the 'from' email address. Select 'Edit SMTP server List' and ensure each Gmail account has a unique SMTP server listing associated with it."
+      },
+      {
+        "title": "Configure Composing Tab",
+        "content": "Go to Mail preferences and in the Composing tab, make sure 'send from Account of Selected Mailbox' is not selected. Instead, select the desired account."
+      },
+      {
+        "title": "Configure Accounts Tab",
+        "content": "In the Accounts tab, select the correct account and check 'use only this account'. Repeat this for each account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Verify SMTP Server Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Outgoing Mail Server (SMTP)",
+            "content": "Go to Mail preferences and manually verify in the Outgoing Mail Server (SMTP) settings that each account is associated with its own Gmail SMTP server."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T10:37:15.308Z",
+      "updated": "2026-02-05T10:37:15.308Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/130505/problem-sending-emails-from-specific-gmail-account",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770287850637-887",
+    "title": "Fix Failed to Authenticate with Google on MacOS",
+    "problemDescription": "MacOS users may encounter a 'Failed to authenticate with Google' error when trying to access Gmail accounts.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "macos",
+      "google",
+      "authentication",
+      "gmail"
+    ],
+    "steps": [
+      {
+        "title": "Clear Keychain Passwords",
+        "content": "Open the 'Keychain Access' application, search for and remove all entries containing 'gmail' or 'google', then reboot your Mac."
+      },
+      {
+        "title": "Re-authenticate Google Account",
+        "content": "After rebooting, re-add or authenticate your Google account in System Preferences."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Change Default Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to Chrome",
+            "content": "Change your default browser to Chrome in System Preferences, authenticate your Google account, then switch back to Safari if desired."
+          }
+        ]
+      },
+      {
+        "title": "Restart in Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Restart your Mac and hold down the Shift key to boot into Safe Mode, then try authenticating your Google account again."
+          }
+        ]
+      },
+      {
+        "title": "Simple Restart",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your Mac",
+            "content": "Sometimes a simple restart can resolve the authentication issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T10:37:30.637Z",
+      "updated": "2026-02-05T10:37:30.637Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/383753/failed-to-authenticate-with-google",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770287865434-16",
+    "title": "Enable Siri Glow in iOS 18",
+    "problemDescription": "Siri does not display the new glowing effect in iOS 18.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "siri",
+      "ios",
+      "apple intelligence",
+      "glow"
+    ],
+    "steps": [
+      {
+        "title": "Check Siri Language Settings",
+        "content": "Ensure the Language setting in Settings > Apple Intelligence & Siri is set to one of the supported languages."
+      },
+      {
+        "title": "Toggle Apple Intelligence",
+        "content": "Turn Apple Intelligence off and back on in Settings > Apple Intelligence & Siri, then restart your iPhone."
+      },
+      {
+        "title": "Verify Apple Intelligence is Enabled",
+        "content": "Go to Settings > Apple Intelligence & Siri and ensure the Apple Intelligence toggle is turned on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update to Latest iOS Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Ensure your iPhone is running the latest iOS version (iOS 26.0.1 or later) to automatically enable Apple Intelligence."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T10:37:45.434Z",
+      "updated": "2026-02-05T10:37:45.434Z",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/why-no-siri-glow/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770287886839-791",
+    "title": "Access iPhone Files on Ubuntu",
+    "problemDescription": "Unable to access iPhone files on Ubuntu due to trust dialog issues.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "ubuntu",
+      "trust",
+      "files",
+      "access"
+    ],
+    "steps": [
+      {
+        "title": "Restart Computer and Unlock iPhone",
+        "content": "Restart your computer. After logging back in, unlock your iPhone and ignore any dialogs that pop up on your computer."
+      },
+      {
+        "title": "Plug in iPhone and Trust Dialog",
+        "content": "Plug the USB end of the cable into the computer and the iPhone end into the iPhone. When the trust dialog appears, tap 'Trust' and immediately unplug the iPhone before it vibrates/reconnects."
+      },
+      {
+        "title": "Lock and Reconnect iPhone",
+        "content": "Lock your iPhone, then plug it back in. Unlock the iPhone, ignoring any dialogs. The trust dialog should not appear again."
+      },
+      {
+        "title": "Install libimobiledevice",
+        "content": "In a Terminal, run the following command to clone the libimobiledevice repository: `git clone https://github.com/libimobiledevice/libimobiledevice.git`. Navigate to the `libimobiledevice` directory and run the following commands one at a time: `./configure`, `make`, and `sudo make install`."
+      },
+      {
+        "title": "Restart Computer",
+        "content": "Once the installation completes, restart your computer."
+      },
+      {
+        "title": "Backup iPhone",
+        "content": "Run the command `idevicebackup2 backup --full` to create a full backup of your iPhone."
+      },
+      {
+        "title": "Access Photos and Music",
+        "content": "To backup photos, open Shotwell and import them. To copy music, open Rhythmbox, select your iPhone, and drag the music files to a folder on your computer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Alternative Method: Using ifuse",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install ifuse",
+            "content": "Run the command `sudo apt-get install ifuse` to install ifuse."
+          },
+          {
+            "title": "Mount iPhone",
+            "content": "Create a mount point and mount your iPhone using the commands `mkdir ~/iphone` and `ifuse ~/iphone`."
+          },
+          {
+            "title": "Access Files",
+            "content": "Access your iPhone files through the mount point. Unmount using `fusermount -u ~/iphone` when done."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T10:38:06.839Z",
+      "updated": "2026-02-05T10:38:06.839Z",
+      "sourceUrl": "https://askubuntu.com/questions/83484/what-is-the-current-state-of-apple-device-iphone-ipod-etc-support",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770287890281-133",
+    "title": "Enable iPhone USB Redirection in Virt-Manager",
+    "problemDescription": "Unable to redirect iPhone USB connection to a KVM virtual machine using Virt-Manager on Ubuntu 20.04.",
+    "category": "robotics",
+    "difficulty": "Hard",
+    "keywords": [
+      "virt-manager",
+      "iphone",
+      "usb",
+      "redirection",
+      "kvm"
+    ],
+    "steps": [
+      {
+        "title": "Prevent gvfs-daemon from managing USB devices",
+        "content": "Run the following commands to mask and stop the gvfs-daemon service:\n\n```bash\nsystemctl --user mask gvfs-daemon.service\nsystemctl --user stop gvfs-daemon.service\n```"
+      },
+      {
+        "title": "Blacklist the apple-mfi-fastcharge module",
+        "content": "Create a blacklist file for the apple-mfi-fastcharge module:\n\n```bash\necho \"blacklist apple-mfi-fastcharge\" | sudo tee /etc/modprobe.d/blacklist-apple-mfi-fastcharge.conf\n```"
+      },
+      {
+        "title": "Update initramfs and reboot",
+        "content": "Update the initial RAM filesystem and reboot your system:\n\n```bash\nsudo update-initramfs -u\nsudo reboot\n```"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Alternative USB redirection tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use usbredir",
+            "content": "Consider using usbredir or other USB redirection tools that might be compatible with your setup."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T10:38:10.281Z",
+      "updated": "2026-02-05T10:38:10.281Z",
+      "sourceUrl": "https://askubuntu.com/questions/1281578/virt-manager-and-iphone-usb-redirection",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1770287903903-291",
+    "title": "Fix Slow PC Due to SSD Issues",
+    "problemDescription": "Your PC is painfully slow due to potential SSD problems.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "slow pc",
+      "ssd",
+      "troubleshooting",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Check SSD Health",
+        "content": "Use CrystalDiskInfo or run a basic check via Command Prompt: Hit 'Start,' type 'Command Prompt,' press Enter, and then type the command: `wmic diskdrive get status`."
+      },
+      {
+        "title": "Boot into Safe Mode",
+        "content": "Reboot your PC into Safe Mode to determine if the problem is software- or hardware-based."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Ensure that Windows Update is not running in the background, as it can slow down your PC."
+      },
+      {
+        "title": "Check Task Manager",
+        "content": "Open Task Manager and check if any app or Windows service is hogging disk resources."
+      },
+      {
+        "title": "Disable SysMain (Superfetch)",
+        "content": "Type 'Services' into Windows Search, scroll down to 'SysMain,' double-click on it, set the Startup type to 'Disabled,' and then 'Stop' the service."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Everything",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Startup Programs",
+            "content": "Go to Task Manager > Startup tab and disable all startup programs to see if performance improves."
+          },
+          {
+            "title": "Perform a Clean Boot",
+            "content": "Use the System Configuration tool to perform a clean boot and disable all non-essential services."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T10:38:23.903Z",
+      "updated": "2026-02-05T10:38:23.903Z",
+      "sourceUrl": "https://www.howtogeek.com/my-pc-was-painfully-slow-until-i-fixed-this-one-ssd-problem/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770287936805-559",
+    "title": "Convert Smart TV to Dumb TV",
+    "problemDescription": "Convert a Google TV to a basic mode to disable smart features and internet connectivity.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "smart TV",
+      "dumb TV",
+      "Google TV",
+      "Basic Mode",
+      "setup"
+    ],
+    "steps": [
+      {
+        "title": "Power on your TV",
+        "content": "Turn on the TV and begin the initial setup process."
+      },
+      {
+        "title": "Select your language",
+        "content": "Choose your preferred language from the on-screen options."
+      },
+      {
+        "title": "Choose your country",
+        "content": "Select your region or country to continue."
+      },
+      {
+        "title": "Pick your setup path",
+        "content": "Choose 'Set Up Basic TV' to disable smart features."
+      },
+      {
+        "title": "Skip the Wi-Fi connection",
+        "content": "Scroll to the bottom and choose 'Skip' to avoid connecting to a Wi-Fi network."
+      },
+      {
+        "title": "Pair your remote",
+        "content": "Follow the prompts to pair your remote. Note that voice search features won’t be available in Basic TV mode."
+      },
+      {
+        "title": "Explore the home screen",
+        "content": "You’ll land on a simplified home screen with just your TV, inputs, and a few pre-installed apps (which won’t function without Wi-Fi)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset for Existing TVs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Perform a factory reset",
+            "content": "If your TV is already set up as a smart TV and you’d like to convert it into a dumb TV instead, perform a factory reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T10:38:56.805Z",
+      "updated": "2026-02-05T10:38:56.805Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/make-your-smart-tv-a-dumb-tv-google-tv-basic-mode/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
