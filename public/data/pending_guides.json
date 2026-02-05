@@ -107104,5 +107104,175 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770254896718-316",
+    "title": "Fix Windows 10 Printer Spooler Not Running at Startup",
+    "problemDescription": "The Print Spooler service in Windows 10 fails to start automatically at system startup.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "printer",
+      "spooler",
+      "startup"
+    ],
+    "steps": [
+      {
+        "title": "Delete Print Spooler Files",
+        "content": "Open Command Prompt as Administrator. Type 'net stop spooler' and press Enter. Type 'del %systemroot%\\System32\\spool\\printers\\ /Q' and press Enter. Type 'net start spooler' and press Enter. This will clear the print queue and restart the Print Spooler service."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Run Printer Troubleshooter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Printer Troubleshooter",
+            "content": "Press the Windows key + X and select Settings. Type 'Troubleshoot' in the search box and click on Troubleshooting Settings. Locate and click on the Printer troubleshooter and follow the prompts."
+          }
+        ]
+      },
+      {
+        "title": "Set Print Spooler Service to Automatic",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Print Spooler Service to Automatic",
+            "content": "Open Services (press Windows key + R, type 'services.msc', and press Enter). Locate the Print Spooler service, right-click on it, and select Properties. Set the Startup type to Automatic and click Apply."
+          }
+        ]
+      },
+      {
+        "title": "Run DISM / SFC",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run DISM / SFC",
+            "content": "Open Command Prompt as Administrator. Type 'DISM.exe /Online /Cleanup-image /StartComponentCleanup' and press Enter. Type 'DISM.exe /Online /Cleanup-Image /Restorehealth' and press Enter. Type 'SFC /SCANNOW' and press Enter. Restart your computer when all the above is complete and test."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T01:28:16.718Z",
+      "updated": "2026-02-05T01:28:16.718Z",
+      "sourceUrl": "https://superuser.com/questions/1738582/windows-10-printer-spooler-not-running-at-startup",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770254906145-279",
+    "title": "Fix Soft Bricked Samsung Galaxy Tab A 10.1",
+    "problemDescription": "Device is soft bricked after /data reformat and needs to be restored.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "samsung",
+      "soft brick",
+      "TWRP",
+      "recovery"
+    ],
+    "steps": [
+      {
+        "title": "Access TWRP Recovery",
+        "content": "Power off your device. Hold down the Power and Volume Up buttons simultaneously to enter TWRP recovery mode."
+      },
+      {
+        "title": "Format Data",
+        "content": "In TWRP, select 'Wipe' and then 'Format Data'. This will erase all data and fix the soft brick issue."
+      },
+      {
+        "title": "Reboot Device",
+        "content": "After formatting, reboot your device. It should now work normally."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Flash Factory Firmware via Odin",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Firmware",
+            "content": "Download the appropriate factory firmware for your device from a reliable source like factory-settings.com."
+          },
+          {
+            "title": "Flash Firmware",
+            "content": "Use Odin to flash the downloaded firmware. Follow the instructions carefully to avoid further issues."
+          },
+          {
+            "title": "Reboot Device",
+            "content": "After flashing, reboot your device. It should now be restored to factory settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T01:28:26.145Z",
+      "updated": "2026-02-05T01:28:26.145Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/167149/how-to-fix-soft-bricked-samsung-galaxy-tab-a-10-1-after-data-reformat",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770254911670-494",
+    "title": "Check AOSP Commit Message Status",
+    "problemDescription": "How to check the commit message status of AOSP and understand its implications.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "AOSP",
+      "commit",
+      "status",
+      "Android"
+    ],
+    "steps": [
+      {
+        "title": "Check the Issue Status",
+        "content": "Navigate to the issue tracking software used by AOSP and locate your specific issue."
+      },
+      {
+        "title": "Understand the Status Indicators",
+        "content": "Look for the status indicators such as 'Status Won't Fix (Obsolete)' and 'In Prod (off)' to determine if the issue has been resolved and is in the current codebase."
+      },
+      {
+        "title": "Interpret the Status",
+        "content": "If the status is 'Won't Fix (Obsolete)' and 'In Prod (off)', it means the issue hasn't been solved and will never be solved, and it's probably not an issue anymore."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Community Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Community Forums",
+            "content": "Visit community forums or Stack Exchange to find discussions and potential workarounds related to the issue."
+          },
+          {
+            "title": "Search for Similar Issues",
+            "content": "Look for similar issues that might have been resolved or have active discussions."
+          },
+          {
+            "title": "Engage with the Community",
+            "content": "Ask questions or share your findings to get more insights from the community."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T01:28:31.670Z",
+      "updated": "2026-02-05T01:28:31.670Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/191585/how-can-i-check-the-commit-message-of-aosp",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
