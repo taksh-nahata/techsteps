@@ -113510,5 +113510,243 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770323351915-66",
+    "title": "Improve Password Security",
+    "problemDescription": "Users often create weak or easily guessable passwords, leading to security vulnerabilities.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "password",
+      "security",
+      "trust score"
+    ],
+    "steps": [
+      {
+        "title": "Use a Strong Password",
+        "content": "Create a password that is at least 12 characters long and includes a mix of uppercase and lowercase letters, numbers, and special characters."
+      },
+      {
+        "title": "Enable Two-Factor Authentication",
+        "content": "Set up two-factor authentication on your accounts to add an extra layer of security."
+      },
+      {
+        "title": "Use a Password Manager",
+        "content": "Utilize a password manager to generate and store complex passwords securely."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Biometric Authentication",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Fingerprint Scanner",
+            "content": "Set up fingerprint authentication on your device for quick and secure access."
+          },
+          {
+            "title": "Use Face Recognition",
+            "content": "Enable face recognition if your device supports it for an additional layer of security."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T20:29:11.915Z",
+      "updated": "2026-02-05T20:29:11.915Z",
+      "sourceUrl": "https://www.cnet.com/news/privacy/google-wants-to-solve-password-problems-by-tracking-more-of-you/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770323354574-838",
+    "title": "Secure OS X Data Against Physical Access",
+    "problemDescription": "Protect your OS X data from unauthorized access when someone has physical access to your Mac.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "os x",
+      "data safety",
+      "password security",
+      "mac",
+      "filevault"
+    ],
+    "steps": [
+      {
+        "title": "Enable FileVault",
+        "content": "Go to System Preferences > Security & Privacy > FileVault. Click Turn On FileVault and follow the prompts to encrypt your disk. This ensures your data is protected even if someone resets your password."
+      },
+      {
+        "title": "Set a Firmware Password",
+        "content": "Use a firmware password to prevent unauthorized changes to your system settings. This can be set using third-party tools or by following Apple's guidelines for your specific Mac model."
+      },
+      {
+        "title": "Use a Chassis Lock",
+        "content": "Physically secure your Mac using a Kensington lock or similar device to prevent unauthorized access to internal components like RAM, which can be used to reset passwords."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Regularly Back Up Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Time Machine",
+            "content": "Set up Time Machine to regularly back up your data to an external drive. This ensures you have access to your data even if your Mac is compromised."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T20:29:14.574Z",
+      "updated": "2026-02-05T20:29:14.574Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/concerns-about-password-and-data-safety-in-os-x/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770323364205-784",
+    "title": "Fix One UI 6.1 Display Issues",
+    "problemDescription": "After updating to One UI 6.1, some Galaxy devices experience unresponsive or broken displays.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "One UI 6.1",
+      "Galaxy display",
+      "touchscreen issues",
+      "Google app"
+    ],
+    "steps": [
+      {
+        "title": "Update Google App",
+        "content": "Open the Google Play Store, search for the Google app, and update it to the latest version."
+      },
+      {
+        "title": "Clear Google App Data",
+        "content": "Go to Settings > Applications > Google > Storage, then tap Delete data."
+      },
+      {
+        "title": "Restart Your Galaxy",
+        "content": "Restart your device to apply the changes and check if the display issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use S Pen for Navigation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Settings with S Pen",
+            "content": "If the touchscreen is unresponsive, use the S Pen to navigate to Settings and follow the steps to update and clear Google app data."
+          }
+        ]
+      },
+      {
+        "title": "Revert to One UI 6",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup your data if possible before proceeding."
+          },
+          {
+            "title": "Revert to One UI 6",
+            "content": "Revert your device to One UI 6, noting that this will result in data loss."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T20:29:24.205Z",
+      "updated": "2026-02-05T20:29:24.205Z",
+      "sourceUrl": "https://lifehacker.com/tech/oneui-6-point-1-breaks-some-galaxy-displays",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770323388827-805",
+    "title": "Fix Chrome Crashing Due to Microsoft Family Safety",
+    "problemDescription": "Chrome browser crashes when Microsoft Family Safety feature is enabled on Windows.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "crash",
+      "family safety",
+      "microsoft",
+      "workaround"
+    ],
+    "steps": [
+      {
+        "title": "Disable Family Safety Filter for Chrome",
+        "content": "Go to the Microsoft Family Safety website, sign in with your Microsoft account, and navigate to the settings for the affected user. Under 'Web browsing,' find the 'Block inappropriate websites' section and disable the filter for Chrome."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Rename Chrome Executable",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Rename Chrome.exe",
+            "content": "Right-click on the Chrome shortcut, select 'Properties,' and then rename the target path from 'chrome.exe' to 'chrome1.exe'. This can help bypass the Family Safety filter."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T20:29:48.827Z",
+      "updated": "2026-02-05T20:29:48.827Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/microsofts-family-safety-feature-is-blocking-chrome-heres-the-workaround/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770323397077-819",
+    "title": "Reset Password with Two-Factor Authentication",
+    "problemDescription": "Unable to reset password due to two-factor authentication (2FA) when the authenticator app is not set up and text verification fails.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "password",
+      "reset",
+      "two-factor authentication",
+      "Microsoft"
+    ],
+    "steps": [
+      {
+        "title": "Contact Microsoft Support via Chat",
+        "content": "Go to the Microsoft Support page and navigate to the 'Contact Us' section. Enter your details and describe the problem as 'account recovery'. Tap 'Contact Support' in the bottom left corner. Choose the category 'Other Products' and then 'Manage Account Security'. Follow the prompts to access the chat support and explain your issue to a support specialist."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Recapture Verification Text the Next Day",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Wait and Retry",
+            "content": "If the text verification fails, wait until the next day and try requesting the verification text again. Sometimes, the issue may resolve itself after a short period."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T20:29:57.077Z",
+      "updated": "2026-02-05T20:29:57.077Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum/all/resetting-password-with-two-factor-authentication/3c52d820-b3b3-4a81-a9b5-7e717db3ac82",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
