@@ -107687,5 +107687,382 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770270819335-788",
+    "title": "Disable Always-On Display to Save Battery",
+    "problemDescription": "Your Android phone's battery drains quickly due to the always-on display feature.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "battery",
+      "always-on display"
+    ],
+    "steps": [
+      {
+        "title": "Disable Always-On Display",
+        "content": "Go to your phone's settings, navigate to the display section, and turn off the always-on display feature."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Bluetooth and NFC",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Bluetooth",
+            "content": "Go to settings, find the Bluetooth option, and turn it off if you're not using it."
+          },
+          {
+            "title": "Turn Off NFC",
+            "content": "Go to settings, find the NFC option, and turn it off when not in use for payments."
+          }
+        ]
+      },
+      {
+        "title": "Disable RAM Boost",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off RAM Boost",
+            "content": "Go to settings, navigate to the performance or battery section, and disable the RAM boost option."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T05:53:39.335Z",
+      "updated": "2026-02-05T05:53:39.335Z",
+      "sourceUrl": "https://www.techradar.com/phones/android/quick-disable-these-android-features-to-boost-your-battery-life",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770270828864-601",
+    "title": "Fix Printer Not Working on Windows 11",
+    "problemDescription": "Printer not working on Windows 11, unable to print documents.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "windows 11",
+      "printing issue"
+    ],
+    "steps": [
+      {
+        "title": "Run the Printer Troubleshooter",
+        "content": "Open Settings > System > Troubleshoot > Other troubleshooters. Find the Printer troubleshooter and click Run. Follow the on-screen instructions to diagnose and fix any software issues."
+      },
+      {
+        "title": "Recheck Your Default Printer",
+        "content": "Ensure your printer is set as the default printing device and is configured to the correct port. Go to Devices and Printers to verify and adjust settings if necessary."
+      },
+      {
+        "title": "Disable the Windows Defender Firewall",
+        "content": "Temporarily disable the Windows Defender Firewall to see if it resolves the issue. Go to Settings > Update & Security > Windows Security > Firewall & network protection and turn off the firewall."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update the Relevant Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Printer Drivers",
+            "content": "Go to Device Manager, find your printer under Printer queues, right-click and select Update driver. Follow the prompts to update the driver to the latest version."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T05:53:48.864Z",
+      "updated": "2026-02-05T05:53:48.864Z",
+      "sourceUrl": "https://www.makeuseof.com/windows-11-printer-not-working/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770270848305-364",
+    "title": "Disable Discord Sponsored Quests",
+    "problemDescription": "Discord is introducing sponsored quests, and you want to turn them off.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "ads",
+      "sponsored quests",
+      "disable"
+    ],
+    "steps": [
+      {
+        "title": "Open Discord Settings",
+        "content": "Launch Discord and click on the gear icon (Settings) located at the bottom left corner of the screen."
+      },
+      {
+        "title": "Navigate to Privacy & Safety",
+        "content": "In the Settings menu, find and click on 'Privacy & Safety'."
+      },
+      {
+        "title": "Disable In-game Rewards",
+        "content": "Look for the 'In-game rewards (aka Quests)' option and toggle it off."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Hide Specific Quests",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Navigate to Gift Inventory",
+            "content": "Go to your gift inventory in Discord."
+          },
+          {
+            "title": "Hide Unwanted Quests",
+            "content": "Find the quest or game you're not interested in and hide the in-app promotion."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T05:54:08.305Z",
+      "updated": "2026-02-05T05:54:08.305Z",
+      "sourceUrl": "https://www.cnet.com/tech/discord-is-adding-ads-but-with-a-gamer-twist-what-we-know-so-far/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770270864254-714",
+    "title": "Fix Android Factory Reset",
+    "problemDescription": "Persistent software issues on Android device.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "factory reset",
+      "software issues"
+    ],
+    "steps": [
+      {
+        "title": "Navigate to Settings",
+        "content": "Go to the Settings menu on your Android device."
+      },
+      {
+        "title": "Access Reset Options",
+        "content": "Tap on 'General Management' and then 'Reset'."
+      },
+      {
+        "title": "Initiate Factory Reset",
+        "content": "Select 'Factory Data Reset' and tap on the 'Reset' button."
+      },
+      {
+        "title": "Confirm Reset",
+        "content": "Confirm the action to perform the factory reset."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Fix 'Download Pending' in Play Store",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force Stop the App",
+            "content": "Go to Settings > Apps > Google Play Store > Force Stop."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T05:54:24.254Z",
+      "updated": "2026-02-05T05:54:24.254Z",
+      "sourceUrl": "https://www.howtogeek.com/android-troubleshooting-tips-to-fix-all-kinds-of-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770270868065-477",
+    "title": "Improve Pixel Performance with Tensor G5",
+    "problemDescription": "Pixel phones have performance and efficiency issues due to the Tensor chip.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel",
+      "performance",
+      "efficiency",
+      "tensor",
+      "chip"
+    ],
+    "steps": [
+      {
+        "title": "Wait for Tensor G5 Release",
+        "content": "Monitor official announcements from Google for the release of the Tensor G5 chip, which is rumored to be built on a 3nm node by TSMC."
+      },
+      {
+        "title": "Upgrade to a Pixel Device with Tensor G5",
+        "content": "Once available, consider upgrading to a Pixel device equipped with the Tensor G5 chip to experience improved performance and efficiency."
+      },
+      {
+        "title": "Optimize Device Settings",
+        "content": "Adjust settings such as battery optimization, performance modes, and background app management to maximize the benefits of the new chip."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Community Workaround for Current Tensor Chips",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Performance Booster Apps",
+            "content": "Install and use performance booster apps from the Google Play Store to temporarily enhance the performance of your current Pixel device."
+          },
+          {
+            "title": "Clear Cache and Free Up Storage",
+            "content": "Regularly clear the cache and free up storage space to ensure optimal performance of your device."
+          },
+          {
+            "title": "Update Software",
+            "content": "Keep your device's software up to date to benefit from the latest performance improvements and bug fixes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T05:54:28.065Z",
+      "updated": "2026-02-05T05:54:28.065Z",
+      "sourceUrl": "https://www.howtogeek.com/google-might-be-about-to-fix-the-pixels-biggest-problem-for-good/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770270885183-765",
+    "title": "Fix iPhone Push Notifications Not Working",
+    "problemDescription": "iPhone is not receiving push notifications after an iOS update.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone",
+      "push notifications",
+      "ios",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Toggle Notifications Off and On",
+        "content": "Go to Settings, select the specified application, go to Notifications, turn it OFF and then back ON."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Switch Notifications to iCloud Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Navigate to the main Settings screen where your name is displayed."
+          },
+          {
+            "title": "Select iCloud",
+            "content": "Tap on 'iCloud'."
+          },
+          {
+            "title": "See All",
+            "content": "Select 'See All' next to the words 'Saved to iCloud'."
+          },
+          {
+            "title": "Enable Notifications for Apps",
+            "content": "Scroll down to the desired app (e.g., Reminders) and switch it ON."
+          },
+          {
+            "title": "Go Back to Main Settings",
+            "content": "Return to the main Settings screen."
+          },
+          {
+            "title": "Select Apps",
+            "content": "Scroll all the way down to 'Apps' and select it."
+          },
+          {
+            "title": "Select the App",
+            "content": "In 'Apps', select the app you want working (e.g., Reminders)."
+          },
+          {
+            "title": "Select App Accounts",
+            "content": "In the app settings, select 'Reminders Accounts'."
+          },
+          {
+            "title": "Switch to iCloud",
+            "content": "Select 'iCloud' to have the app work from your iCloud account."
+          },
+          {
+            "title": "Repeat for Other Apps",
+            "content": "Repeat this process for all the apps you want notifications from."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T05:54:45.183Z",
+      "updated": "2026-02-05T05:54:45.183Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255799013",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770270887554-547",
+    "title": "Fix iPhone Push Notifications Not Working",
+    "problemDescription": "iPhone push notifications stop working after connecting to airplane Wi-Fi or traveling to a new country.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iPhone",
+      "push notifications",
+      "Apple ID",
+      "APNS"
+    ],
+    "steps": [
+      {
+        "title": "Switch Apple IDs",
+        "content": "Logout of your current Apple ID and login with a different Apple ID (e.g., a friend's or spouse's)."
+      },
+      {
+        "title": "Verify Notifications",
+        "content": "Check if notifications are working with the new Apple ID in apps like Messenger or WhatsApp."
+      },
+      {
+        "title": "Revert Apple ID",
+        "content": "Logout of the temporary Apple ID and login again with your original Apple ID."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Technical Investigation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Deep Troubleshooting",
+            "content": "If the issue persists, consider investigating the Apple Push Notification Service (APNS) state, especially after connecting to different Wi-Fi networks or traveling."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T05:54:47.554Z",
+      "updated": "2026-02-05T05:54:47.554Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255375739",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
