@@ -109422,5 +109422,626 @@
       "priorityScore": 0.8,
       "difficulty": "Hard"
     }
+  },
+  {
+    "id": "draft-1770284396721-721",
+    "title": "Fix Outlook Crashing Issues",
+    "problemDescription": "Microsoft Outlook crashes frequently or fails to open.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Outlook",
+      "crash",
+      "diagnostics",
+      "repair"
+    ],
+    "steps": [
+      {
+        "title": "Run Outlook Diagnostics Tool",
+        "content": "Close Outlook and run the diagnostics tool in Administrator mode. Follow the prompts to run diagnostic checks and apply suggested solutions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method A: Use Microsoft Outlook Inbox Repair Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Navigate to Control Panel",
+            "content": "Go to the Control Panel via the Windows 10 Start menu and open File Explorer."
+          },
+          {
+            "title": "Show Hidden Files",
+            "content": "In File Explorer, go to the 'View' tab and select 'Show hidden files, folders, and drives.'"
+          },
+          {
+            "title": "Run Scanpst.exe",
+            "content": "Search for 'Scanpst.exe' from the Start menu and open the Inbox Repair tool. Click 'Start' to repair Outlook."
+          }
+        ]
+      },
+      {
+        "title": "Method B: Open Microsoft Outlook in Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Outlook in Safe Mode",
+            "content": "Open the Start menu and type 'outlook.exe /safe' to start Outlook in Safe mode."
+          },
+          {
+            "title": "Show Progress and Download Preferences",
+            "content": "Select 'Show Progress' and then 'Download Preferences' to fix the Send/Receive error."
+          }
+        ]
+      },
+      {
+        "title": "Method C: Terminate and Restart the Outlook App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Terminate Outlook",
+            "content": "Go to the Start menu, search for 'Apps & Features,' and click on 'Mail and Calendar.'"
+          },
+          {
+            "title": "Restart Outlook",
+            "content": "Hit 'Terminate' and then restart the Outlook app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T09:39:56.721Z",
+      "updated": "2026-02-05T09:39:56.721Z",
+      "sourceUrl": "https://qaozaqlkelqwccda.quora.com/5-Common-Microsoft-Outlook-Issues-and-Their-Solution-Microsoft-Outlook-is-a-useful-tool-with-a-user-friendly-interface",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770284409996-970",
+    "title": "Fix Outlook Mail Not Working",
+    "problemDescription": "Outlook mail is not sending or receiving emails.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Outlook",
+      "mail",
+      "connection",
+      "offline"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your system has a strong and stable internet connection."
+      },
+      {
+        "title": "Disable Work Offline Mode",
+        "content": "Verify that the 'Work Offline' option is not toggled in Outlook."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Outlook",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Close Outlook",
+            "content": "Close the Outlook application completely."
+          },
+          {
+            "title": "Restart Outlook",
+            "content": "Reopen Outlook to see if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T09:40:09.996Z",
+      "updated": "2026-02-05T09:40:09.996Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-solve-the-issues-on-Outlook-mail",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770284412512-192",
+    "title": "Fix Outlook Not Sending or Receiving Emails",
+    "problemDescription": "Outlook is not sending or receiving any emails.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Outlook",
+      "emails",
+      "not sending",
+      "not receiving"
+    ],
+    "steps": [
+      {
+        "title": "Open Outlook in Safe Mode",
+        "content": "Exit Outlook. Open a Run dialog box by pressing Windows + R. Type 'Outlook /safe' and press Enter."
+      },
+      {
+        "title": "Check for Add-ins",
+        "content": "If Outlook works in Safe Mode, disable add-ins one by one to identify the problematic one."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Repair Outlook Profile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Control Panel",
+            "content": "Go to Control Panel > Mail > Show Profiles."
+          },
+          {
+            "title": "Repair Profile",
+            "content": "Select your profile and click 'Repair'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T09:40:12.512Z",
+      "updated": "2026-02-05T09:40:12.512Z",
+      "sourceUrl": "https://www.quora.com/I-have-an-issue-with-Outlook-where-it-s-not-sending-or-receiving-any-emails-What-are-the-solutions",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770284422237-924",
+    "title": "Fix Frozen Google Play Store",
+    "problemDescription": "The Google Play Store app keeps crashing or freezing on your Android device.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "google play store",
+      "crashing",
+      "freezing"
+    ],
+    "steps": [
+      {
+        "title": "Clear Cache",
+        "content": "Go to Settings > Applications > All Apps > Google Play Store > Storage and select Clear Cache."
+      },
+      {
+        "title": "Restart Your Phone",
+        "content": "After clearing the cache, restart your phone to apply the changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear App Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache for Specific Apps",
+            "content": "Go to Settings > Apps, select a specific app, and choose the Clear Cache option."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Cache Cleaner Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Cache Cleaner Apps",
+            "content": "Download and install apps like App Cache Cleaner or Clean Master from the Google Play Store."
+          },
+          {
+            "title": "Run the Cache Cleaner",
+            "content": "Use the app to automate the process of clearing cache."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T09:40:22.237Z",
+      "updated": "2026-02-05T09:40:22.237Z",
+      "sourceUrl": "https://www.cnet.com/pictures/seven-common-android-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770284439641-501",
+    "title": "Fix Loose or Damaged USB Port",
+    "problemDescription": "USB ports not working due to physical damage or looseness.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "usb",
+      "port",
+      "damage",
+      "loose",
+      "fix"
+    ],
+    "steps": [
+      {
+        "title": "Inspect the USB Port",
+        "content": "Shut down your PC or laptop and visually inspect the USB port for any visible damage or debris."
+      },
+      {
+        "title": "Clean the USB Port",
+        "content": "Use a can of compressed air or a vacuum cleaner to remove any dust or debris from the USB port."
+      },
+      {
+        "title": "Check for Looseness",
+        "content": "Gently wiggle a USB cable or flash drive in the port. If it moves or feels loose, the port may be damaged."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Software Fixes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update USB Drivers",
+            "content": "Go to Device Manager, find the USB controllers, right-click, and select 'Update driver'."
+          },
+          {
+            "title": "Run Hardware Troubleshooter",
+            "content": "Go to Settings > Update & Security > Troubleshoot > Hardware and Devices > Run the troubleshooter."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T09:40:39.641Z",
+      "updated": "2026-02-05T09:40:39.641Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/dead-usb-port-heres-how-to-diagnose-and-fix-it/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770284445170-650",
+    "title": "Fix Outlook Webapp Notifications on Chrome",
+    "problemDescription": "Desktop notifications for Outlook Webapp are not working on Google Chrome.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "outlook",
+      "notifications",
+      "chrome",
+      "webapp"
+    ],
+    "steps": [
+      {
+        "title": "Contact Google Support",
+        "content": "Since the issue is related to a built-in feature in Chrome, contact Google Support for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Switch to Microsoft Edge",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Upgrade to Microsoft Edge",
+            "content": "Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T09:40:45.170Z",
+      "updated": "2026-02-05T09:40:45.170Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/all/desktop-notifications-on-outlook-webapp-on-chrome/4fcde58e-fb51-41de-bdaa-f1f6da77de91",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770284452185-506",
+    "title": "Fix Microsoft 365 Payment Link Issues",
+    "problemDescription": "Payment links for Microsoft 365 account are not working, preventing invoice payments.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft 365",
+      "payment",
+      "invoice",
+      "account"
+    ],
+    "steps": [
+      {
+        "title": "Verify Email Address",
+        "content": "Ensure the email address associated with the invoice is correct and up-to-date."
+      },
+      {
+        "title": "Check Browser Compatibility",
+        "content": "Upgrade to a supported browser like Microsoft Edge for better compatibility and security."
+      },
+      {
+        "title": "Contact Support",
+        "content": "Reach out to Microsoft Support for further assistance if the issue persists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Browser Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache",
+            "content": "Clear your browser cache and cookies to resolve any potential issues caused by outdated data."
+          },
+          {
+            "title": "Restart Browser",
+            "content": "Restart your browser and try accessing the payment links again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T09:40:52.185Z",
+      "updated": "2026-02-05T09:40:52.185Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/officeversion_other-word/mail-merge-labels-in-word-2010/6a20770e-2b21-457e-adfa-4a8c6a3464a0?msgId=0a108673-51cf-4564-8a69-756307b2c041&page=1",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770284456569-629",
+    "title": "Fix Microsoft Authenticator Infinite Loop",
+    "problemDescription": "Stuck in an infinite loop of successful registration when using Microsoft Authenticator.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "authenticator",
+      "infinite loop",
+      "windows 10",
+      "security",
+      "azure"
+    ],
+    "steps": [
+      {
+        "title": "Reset Authentication Policy",
+        "content": "Log in to the admin account and reset the security policy in Azure. Ensure the policy for Microsoft Authenticator is correctly configured."
+      },
+      {
+        "title": "Remove and Re-add Account",
+        "content": "Remove the Microsoft account from the Authenticator app and then re-add it. This may resolve the registration issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Authenticator Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache",
+            "content": "Clear the cache of the Authenticator app on your device. This can sometimes resolve registration issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T09:40:56.569Z",
+      "updated": "2026-02-05T09:40:56.569Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/stuck-at-authenticator-infinite-loop-of-successful/cb40dde4-0810-4fab-b415-9755ddbfc389",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770284458511-973",
+    "title": "Fix SharePoint News Not Appearing in Teams Channel",
+    "problemDescription": "SharePoint news posts are not appearing in the connected Microsoft Teams channel.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "SharePoint",
+      "Teams",
+      "News",
+      "Connector",
+      "Microsoft"
+    ],
+    "steps": [
+      {
+        "title": "Remove and Re-add the SharePoint News Connector",
+        "content": "Go to the Teams channel where the SharePoint news should appear. Remove the existing SharePoint News Connector, then re-add it by following the official Microsoft guidelines."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Microsoft Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "If the issue persists, contact Microsoft Support for further assistance, as the problem might be on their end."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T09:40:58.511Z",
+      "updated": "2026-02-05T09:40:58.511Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msteams/forum/all/why-wont-sharepoint-news-come-through-to-teams/c906eec7-aac3-45d6-bca7-c13126e7f40b",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770284470793-224",
+    "title": "Fix MacBook Charging and Bluetooth Issues",
+    "problemDescription": "MacBook shuts down randomly or Bluetooth devices fail to connect.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "charging",
+      "bluetooth",
+      "shutdown"
+    ],
+    "steps": [
+      {
+        "title": "Restart MacBook",
+        "content": "Restart your MacBook with the power button and wait for it to load MacOS. Once loaded, restart again to perform a healthy, full shutdown procedure."
+      },
+      {
+        "title": "Reset System Management Controller (SMC)",
+        "content": "Reset the SMC to fix issues with battery charging, sleep modes, and other hardware processes."
+      },
+      {
+        "title": "Update Mac and Restart Bluetooth Device",
+        "content": "Ensure your Mac is updated, then restart both the MacBook and the Bluetooth device."
+      },
+      {
+        "title": "Move to an Open Area",
+        "content": "Move to a more open area away from appliances to avoid interference with Bluetooth devices."
+      },
+      {
+        "title": "Force Reboot Bluetooth via Terminal",
+        "content": "Open Terminal and type 'sudo rm -R /Library/Preferences/com.apple.Bluetooth.plist', then restart your MacBook and turn on Bluetooth."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset PRAM/NVRAM and SMC",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset PRAM/NVRAM",
+            "content": "Shut down your Mac, turn it on, and immediately press and hold Option + Command + P + R for about 20 seconds."
+          },
+          {
+            "title": "Reset SMC",
+            "content": "Follow the steps to reset the SMC as described in the main steps."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T09:41:10.793Z",
+      "updated": "2026-02-05T09:41:10.793Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-macbook-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770284479355-27",
+    "title": "Fix MacBook Air M2 Overheating",
+    "problemDescription": "The MacBook Air M2 overheats during intensive tasks, leading to performance issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "overheating",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Upgrade GPU",
+        "content": "Upgrade the M2 MacBook Air base model from the eight-core GPU to a 10-core GPU for better performance in GPU-intensive tasks."
+      },
+      {
+        "title": "Apply Thermal Pads",
+        "content": "Implement the thermal-pad modification developed by MaxTech to improve cooling temporarily."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Apps for Notch",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Scale App to Fit",
+            "content": "Go to Finder > Applications, find the app, right-click to access Get Info, and select Scale to fit below the built-in camera box."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use TopNotch App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Enable TopNotch",
+            "content": "Download the TopNotch application, enable it to place a bar across the top of the screen, and black out the top-notch from view."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T09:41:19.355Z",
+      "updated": "2026-02-05T09:41:19.355Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-macbook-air-m2-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770284484389-416",
+    "title": "Restore Mac to Factory Settings",
+    "problemDescription": "Need to reset your Mac to its original factory settings to resolve persistent issues.",
+    "category": "mac",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "factory reset",
+      "restore"
+    ],
+    "steps": [
+      {
+        "title": "Backup Your Data",
+        "content": "Use Time Machine or another backup method to ensure all important data is saved."
+      },
+      {
+        "title": "Sign Out of iCloud",
+        "content": "Go to System Preferences > Apple ID and sign out of iCloud."
+      },
+      {
+        "title": "Erase the Mac",
+        "content": "Restart your Mac and hold down Command + R to enter Recovery Mode. Go to Disk Utility, select your startup disk, and click Erase."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "From the Recovery Mode menu, select Reinstall macOS and follow the on-screen instructions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using macOS Recovery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter Recovery Mode",
+            "content": "Restart your Mac and hold down Command + R until the Apple logo appears."
+          },
+          {
+            "title": "Use Disk Utility",
+            "content": "Select Disk Utility and erase your startup disk."
+          },
+          {
+            "title": "Reinstall macOS",
+            "content": "Exit Disk Utility and select Reinstall macOS from the Recovery Mode menu."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T09:41:24.389Z",
+      "updated": "2026-02-05T09:41:24.389Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/mac-user-guide-tips-tricks-tutorials/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
