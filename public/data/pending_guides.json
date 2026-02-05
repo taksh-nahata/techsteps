@@ -111426,5 +111426,387 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770305911138-242",
+    "title": "Connect Galaxy S4 to MacBook Pro",
+    "problemDescription": "Connecting a Samsung Galaxy S4 to a MacBook Pro for file transfer.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "Galaxy S4",
+      "MacBook Pro",
+      "file transfer",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Use Android File Transfer",
+        "content": "Download and install Android File Transfer from the official Google website. Connect your Galaxy S4 to your MacBook Pro using the original USB cable that came with the phone. Open Android File Transfer and you should be able to access and transfer files between your devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Google Drive",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Upload Files to Google Drive",
+            "content": "Upload the files you want to transfer from your Galaxy S4 to Google Drive."
+          },
+          {
+            "title": "Access Files on MacBook Pro",
+            "content": "On your MacBook Pro, open a web browser, go to Google Drive, and download the files you uploaded from your Galaxy S4."
+          }
+        ]
+      },
+      {
+        "title": "Use Original USB Cable",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ensure Original Cable",
+            "content": "Make sure you are using the original USB cable that came with your Galaxy S4. Non-original cables may not be recognized by your MacBook Pro."
+          },
+          {
+            "title": "Connect and Transfer",
+            "content": "Connect your Galaxy S4 to your MacBook Pro using the original cable and attempt to transfer files."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T15:38:31.138Z",
+      "updated": "2026-02-05T15:38:31.138Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/105593/how-to-connect-galaxy-s4-to-macbook-pro",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770305935661-16",
+    "title": "Fix Android 11 Recent Apps Bug",
+    "problemDescription": "Swiping up to access the recent apps screen does not work on Android 11.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "recent apps",
+      "bug",
+      "multitasking"
+    ],
+    "steps": [
+      {
+        "title": "Lock and Unlock Device",
+        "content": "Lock your device by pressing the power button, then unlock it to see if the recent apps screen works."
+      },
+      {
+        "title": "Reboot Device",
+        "content": "Restart your Android device to see if the issue is resolved temporarily."
+      },
+      {
+        "title": "Switch to Safe Mode",
+        "content": "Restart your device in safe mode and then revert back to normal to check if the issue persists."
+      },
+      {
+        "title": "Change Launcher",
+        "content": "Install and switch to a different launcher like Smart Launcher 5 or Nova Launcher to see if it resolves the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use App Drawer and Three-Button Navigation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Apps from App Drawer",
+            "content": "Launch apps directly from the app drawer instead of using the recent apps screen."
+          },
+          {
+            "title": "Switch to Three-Button Navigation",
+            "content": "Go to settings and switch from gesture-based navigation to three-button navigation for easier app switching."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T15:38:55.661Z",
+      "updated": "2026-02-05T15:38:55.661Z",
+      "sourceUrl": "https://lifehacker.com/try-these-workarounds-for-android-11s-recent-apps-bug-1845179726",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770305939514-139",
+    "title": "Fix Android Flash Usage",
+    "problemDescription": "Android flash can be burdensome and inefficient.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "flash",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Flash Settings",
+        "content": "Go to your camera app settings and adjust the flash settings to suit your needs. You can set it to auto, on, or off depending on the situation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use a Third-Party Launcher",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Launcher",
+            "content": "Download and install a third-party launcher like Nova Launcher or Apex Launcher from the Google Play Store."
+          },
+          {
+            "title": "Set as Default",
+            "content": "Go to your phone's settings, find the default apps section, and set your new launcher as the default."
+          }
+        ]
+      },
+      {
+        "title": "Use Cloud Services for File Transfer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Dropbox or Similar App",
+            "content": "Download and install Dropbox or a similar file transfer app from the Google Play Store."
+          },
+          {
+            "title": "Set Up Account",
+            "content": "Create an account and set up the app to transfer files wirelessly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T15:38:59.514Z",
+      "updated": "2026-02-05T15:38:59.514Z",
+      "sourceUrl": "https://lifehacker.com/whats-your-biggest-annoyance-with-android-and-how-did-5737641",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770305949414-965",
+    "title": "Sync Authy Two-Factor Authentication Across Devices",
+    "problemDescription": "You need to sync your two-factor authentication tokens across multiple devices using Authy.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "two-factor authentication",
+      "Authy",
+      "sync",
+      "devices"
+    ],
+    "steps": [
+      {
+        "title": "Set Up Authy as Primary 2FA App",
+        "content": "If you're using another app like Google Authenticator, switch to Authy for all your accounts by scanning the QR codes provided."
+      },
+      {
+        "title": "Enable Multi-Device on Primary Device",
+        "content": "Open Settings in Authy on your primary device and tap 'Devices', then enable 'Allow Multi-device'."
+      },
+      {
+        "title": "Install Authy on Second Device",
+        "content": "Install Authy on your second device and enter the phone number of your primary device when prompted."
+      },
+      {
+        "title": "Verify New Device",
+        "content": "On your second device, tap 'Use Existing Device' in the popup. On your primary device, accept the notification to verify the new device and type 'OK' to confirm."
+      },
+      {
+        "title": "Disable Multi-Device Option",
+        "content": "Go back to Settings on your primary device, tap 'Devices' again, and disable 'Allow multi-device' to prevent adding more devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable 2FA Temporarily Before Changing Phones",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Two-Factor Authentication",
+            "content": "If you know you’re changing phones, disable two-factor authentication temporarily before getting rid of your old phone."
+          },
+          {
+            "title": "Re-enable 2FA on New Device",
+            "content": "After setting up your new phone, re-enable two-factor authentication using the provided links for common services."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T15:39:09.414Z",
+      "updated": "2026-02-05T15:39:09.414Z",
+      "sourceUrl": "https://lifehacker.com/legacy-article-route-prefix/what-do-i-do-if-i-use-two-factor-authentication-and-los-1668727532",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770305963955-188",
+    "title": "Fix Error 0x8007042b Connecting Google Account on Windows 10",
+    "problemDescription": "Error 0x8007042b occurs when trying to connect a Google account on Windows 10.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "google",
+      "account",
+      "error",
+      "0x8007042b"
+    ],
+    "steps": [
+      {
+        "title": "Create an IMAP Account",
+        "content": "Go to Settings (Cog icon) -> Accounts -> Add Account -> Advanced Setup -> Internet Email."
+      },
+      {
+        "title": "Enter IMAP Details",
+        "content": "Fill in the details with the following values:\n\nAccount Name: {any string like 'My Gmail'}\nYour Name: {your name like 'Fred Bloggs'}\nIncoming Mail Server: imap.gmail.com:993\nAccount Type: IMAP4\nUser name: {your gmail address}\nPassword: {the one time password you just generated, otherwise just your gmail password}\nOutgoing SMTP email server: smtp.gmail.com:465\nAll checkboxes checked"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Google Apps Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Follow Google's Guide",
+            "content": "If you have problems connecting to the Gmail IMAP server, you may need different settings. Google walks you through the settings here: [Google IMAP Settings](https://support.google.com/mail/answer/7126229?hl=en)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T15:39:23.955Z",
+      "updated": "2026-02-05T15:39:23.955Z",
+      "sourceUrl": "https://superuser.com/questions/951270/how-to-solve-error-0x8007042b-while-connecting-a-google-account-on-windows-10",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770305968243-962",
+    "title": "Fix Gmail Alternate Email Addition Issue",
+    "problemDescription": "Unable to add an alternate email to your Gmail account due to a visitor session or account linkage.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "alternate email",
+      "visitor session",
+      "account linkage"
+    ],
+    "steps": [
+      {
+        "title": "Check for Existing Google Account",
+        "content": "Launch an incognito browser window and go to gmail.com. Enter your alternate email in the Google sign-in and choose 'Forgot Password'. If it says 'Couldn’t find your Google account,' then you don't have a Google account linked to that email."
+      },
+      {
+        "title": "Add the Alternate Email",
+        "content": "From your computer's web browser, sign in to Google. On the top right corner of the webpage, select your profile image or initials. Choose 'Add another account' from the menu."
+      },
+      {
+        "title": "Enter Alternate Email",
+        "content": "Enter your 'alternate email address' in the field 'Email or phone' and click 'Next'. Instead of entering a password, select the 'Forgot password?' link."
+      },
+      {
+        "title": "Reset Password",
+        "content": "As part of the password reset process, you will learn what Google account is tied to the 'alternate email address'. Update any affected devices with the newly created Google password."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Visitor Session",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Visitor Session",
+            "content": "After much trial and error, find a path to get rid of this visitor session so you can add your alternate email."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T15:39:28.243Z",
+      "updated": "2026-02-05T15:39:28.243Z",
+      "sourceUrl": "https://superuser.com/questions/1680792/cant-add-alternate-email-in-gmail",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770305976379-150",
+    "title": "Backup Gmail with Mail.app and IMAP",
+    "problemDescription": "Backup Gmail using Mail.app and IMAP without redundant copies.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "backup",
+      "imap",
+      "mail.app",
+      "mac"
+    ],
+    "steps": [
+      {
+        "title": "Set Up IMAP in Mail.app",
+        "content": "Open Mail.app and go to Preferences > Accounts. Click on the '+' button to add a new account. Select 'Other Mail Account' and enter your Gmail credentials. Ensure IMAP is selected as the account type."
+      },
+      {
+        "title": "Configure Gmail IMAP Settings",
+        "content": "Log in to your Gmail account via a web browser. Go to Settings > See all settings > Forwarding and POP/IMAP. Ensure 'Enable IMAP' is selected."
+      },
+      {
+        "title": "Download Emails",
+        "content": "In Mail.app, select the Gmail account and choose the mailbox you want to back up. Use the search function to find all emails and select them. Drag and drop them into a local folder on your Mac to initiate the download."
+      },
+      {
+        "title": "Use Mail Scripts for Hardlinking",
+        "content": "Look for aamann's Mail Scripts or similar tools that can be tweaked to hardlink duplicates instead of deleting them. This will help in optimizing the backup process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Third-Party Backup Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Third-Party Backup Software",
+            "content": "Install a third-party backup tool like MailSteward or EmailChef that supports IMAP and can handle backups without redundancy."
+          },
+          {
+            "title": "Configure the Backup Tool",
+            "content": "Set up the backup tool with your Gmail IMAP settings and configure it to perform a full backup of your emails."
+          },
+          {
+            "title": "Schedule Regular Backups",
+            "content": "Schedule regular backups to ensure your Gmail emails are consistently backed up without redundancy."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T15:39:36.379Z",
+      "updated": "2026-02-05T15:39:36.379Z",
+      "sourceUrl": "https://superuser.com/questions/114253/backup-gmail-using-mail-app-and-imap-without-redundancy",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
