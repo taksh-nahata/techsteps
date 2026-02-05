@@ -114529,5 +114529,446 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770330230364-594",
+    "title": "Speed Up Slow Laptop",
+    "problemDescription": "Your laptop is running slow due to various factors.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "laptop",
+      "slow",
+      "performance",
+      "upgrade"
+    ],
+    "steps": [
+      {
+        "title": "Upgrade to a Solid-State Drive (SSD)",
+        "content": "Replace your traditional spinning hard drive with an SSD. SSDs are faster as they don't need to locate data on a spinning platter."
+      },
+      {
+        "title": "Add More RAM",
+        "content": "Increase your laptop's RAM to allow the CPU to access data more quickly. Check your laptop's specifications to find the right type and amount of RAM."
+      },
+      {
+        "title": "Clean Up Your Hard Drive",
+        "content": "Remove unnecessary files and applications to reduce clutter on your hard drive, making it easier for your laptop to locate data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check for Malware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run a Malware Scan",
+            "content": "Use reputable antivirus software to scan for and remove any malware that might be slowing down your laptop."
+          }
+        ]
+      },
+      {
+        "title": "Optimize Startup Programs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Unnecessary Startup Programs",
+            "content": "Go to your laptop's settings and disable programs that start automatically when you boot up your laptop."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T22:23:50.364Z",
+      "updated": "2026-02-05T22:23:50.364Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/5-reasons-why-your-laptop-is-slow/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770330242012-843",
+    "title": "Fix Microsoft Teams Call Freeze",
+    "problemDescription": "Microsoft Teams calls are freezing or stuttering during use.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "microsoft teams",
+      "call freeze",
+      "app repair",
+      "settings tweak"
+    ],
+    "steps": [
+      {
+        "title": "Close Microsoft Teams Completely",
+        "content": "Open Microsoft Teams, then close it completely. Right-click the Teams icon in the system tray and choose 'Quit' to ensure it's not running in the background."
+      },
+      {
+        "title": "Repair Microsoft Teams",
+        "content": "Open the Start menu, search for Microsoft Teams, right-click it, and choose 'App settings'. Scroll down and click 'Repair'. This will fix any issues with the app's files without deleting your data."
+      },
+      {
+        "title": "Disable Animations in Teams Settings",
+        "content": "Open Microsoft Teams, click the three dots next to your profile picture, and select 'Settings'. Go to 'Appearance and accessibility' and turn off animations to disable extra motion and visual effects."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Microsoft Teams",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Microsoft Teams",
+            "content": "In the App settings for Microsoft Teams, click 'Reset' instead of 'Repair'. Note that this will sign you out and you'll need to set up the app again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T22:24:02.012Z",
+      "updated": "2026-02-05T22:24:02.012Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=BMPNQIcqARc",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770330245905-319",
+    "title": "Fix Epic MyChart Access Issue",
+    "problemDescription": "Unable to access Epic MyChart account.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "MyChart",
+      "access",
+      "Epic",
+      "account"
+    ],
+    "steps": [
+      {
+        "title": "Contact Support",
+        "content": "Contact your provider's MyChart support team directly for technical assistance. They can verify your account status and help restore access."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-05T22:24:05.905Z",
+      "updated": "2026-02-05T22:24:05.905Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=Ib3I60ISZ8Y",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770330253409-939",
+    "title": "Fix Bluetooth File Transfer Between Mac and Android",
+    "problemDescription": "Bluetooth file transfer between Mac and Android devices is not working.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "file transfer",
+      "mac",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Reset Bluetooth Devices",
+        "content": "Turn off Bluetooth on both your Mac and Android device. Wait for a few seconds, then turn it back on."
+      },
+      {
+        "title": "Reboot Devices",
+        "content": "Restart both your Mac and Android device to ensure a clean start."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Telegram for File Transfer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Telegram",
+            "content": "Download and install Telegram on both your Mac and Android device."
+          },
+          {
+            "title": "Send Files via Telegram",
+            "content": "Use Telegram to send files between your Mac and Android device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T22:24:13.409Z",
+      "updated": "2026-02-05T22:24:13.409Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/251686/bluetooth-file-transfer-between-mac-and-android-phone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770330271682-641",
+    "title": "Reset Bluetooth for Reliable Connection",
+    "problemDescription": "Bluetooth connection is unreliable between devices.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "connection",
+      "reliable"
+    ],
+    "steps": [
+      {
+        "title": "Reset Bluetooth",
+        "content": "Turn off Bluetooth on both devices and turn it back on."
+      },
+      {
+        "title": "Re-pair Devices",
+        "content": "Unpair the devices and pair them again."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-05T22:24:31.682Z",
+      "updated": "2026-02-05T22:24:31.682Z",
+      "sourceUrl": "https://www.quora.com/Why-is-bluetooth-sometimes-unreliable-when-connecting-devices",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770330273630-156",
+    "title": "Fix Bluetooth Pairing Issues",
+    "problemDescription": "Bluetooth is turned off and the toggle button is missing in settings.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "pairing",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Turn Off Bluetooth on Both Devices",
+        "content": "Go to the settings of both devices and turn off Bluetooth."
+      },
+      {
+        "title": "Attempt Pairing Again",
+        "content": "Try to pair the devices again after turning Bluetooth off and on."
+      },
+      {
+        "title": "Wait and Retry",
+        "content": "If it doesn't work, wait about a minute and try pairing again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Both Devices",
+            "content": "Restart both devices and then try pairing again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update Bluetooth Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Drivers",
+            "content": "Go to Device Manager, find Bluetooth drivers, and update them."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T22:24:33.630Z",
+      "updated": "2026-02-05T22:24:33.630Z",
+      "sourceUrl": "https://www.quora.com/What-should-I-do-My-bluetooth-stopped-working-this-morning-and-when-I-troubleshooted-it-it-said-that-bluetooth-is-turned-off-so-I-went-back-to-settings-to-turn-it-on-but-the-toggle-button-was-missing",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770330287873-204",
+    "title": "Fix MSI B550 GAMING CARBON WIFI BIOS Flash Button Not Working",
+    "problemDescription": "The BIOS flash button on the MSI B550 GAMING CARBON WIFI motherboard is not working.",
+    "category": "motherboard",
+    "difficulty": "Medium",
+    "keywords": [
+      "motherboard",
+      "BIOS",
+      "flash button",
+      "MSI B550"
+    ],
+    "steps": [
+      {
+        "title": "Check Power Supply",
+        "content": "Ensure that the power supply is connected correctly and providing sufficient power to the motherboard."
+      },
+      {
+        "title": "Inspect BIOS Flash Button",
+        "content": "Visually inspect the BIOS flash button for any physical damage or loose connections."
+      },
+      {
+        "title": "Update BIOS",
+        "content": "Download the latest BIOS update from the MSI website and follow the instructions to update the BIOS using a USB drive."
+      },
+      {
+        "title": "Clear CMOS",
+        "content": "Clear the CMOS by removing the CMOS battery for a few minutes or using the CMOS jumper on the motherboard."
+      },
+      {
+        "title": "Test with Different USB Drive",
+        "content": "If using a USB drive to update the BIOS, try a different USB drive to ensure compatibility."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact MSI Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact MSI Support",
+            "content": "If the above steps do not resolve the issue, contact MSI customer support for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T22:24:47.873Z",
+      "updated": "2026-02-05T22:24:47.873Z",
+      "sourceUrl": "https://forums.tomshardware.com/forums/motherboards.5/page-94?no_date_limit=1&prefix_id=2",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770330292603-864",
+    "title": "Fix Bluetooth Disappearing on ASUS ROG Motherboards",
+    "problemDescription": "Bluetooth functionality disappears on ASUS ROG motherboards, including Z370-E and Z590-E models.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "ASUS ROG",
+      "driver issues",
+      "Windows 10"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall and Reinstall Bluetooth Drivers",
+        "content": "Go to Device Manager, expand 'Bluetooth' section, right-click on your Bluetooth device, and select 'Uninstall device'. Restart your PC to allow Windows to reinstall the driver."
+      },
+      {
+        "title": "Update Bluetooth Drivers",
+        "content": "Download the latest Bluetooth drivers from the ASUS support website for your specific motherboard model and install them."
+      },
+      {
+        "title": "Check BIOS Settings",
+        "content": "Restart your PC and enter BIOS (usually by pressing F2 or DEL during startup). Ensure that Bluetooth is enabled in the BIOS settings."
+      },
+      {
+        "title": "Use a Stable Driver Version",
+        "content": "If the latest driver causes issues, try installing a stable driver version that is known to work well with your system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows Update for Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update via Windows Update",
+            "content": "Go to Settings > Update & Security > Windows Update > Check for updates. Install any available Bluetooth driver updates."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Hardware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect Bluetooth Hardware",
+            "content": "Ensure that the Bluetooth module on your motherboard is properly seated and not damaged."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T22:24:52.603Z",
+      "updated": "2026-02-05T22:24:52.603Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/fans-recommendation-problems-with-bluetooth.3725704/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770330296408-495",
+    "title": "Fixing Overheating on Asus ROG Flow X13",
+    "problemDescription": "The Asus ROG Flow X13 experiences significant overheating during gaming, with high temperatures on the keyboard, touchpad, and bottom of the laptop.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "overheating",
+      "gaming",
+      "laptop",
+      "cooling"
+    ],
+    "steps": [
+      {
+        "title": "Check and Clean Cooling Vents",
+        "content": "Ensure that the cooling vents are not blocked by dust or debris. Use compressed air to clean the vents thoroughly."
+      },
+      {
+        "title": "Adjust Power Settings",
+        "content": "Go to Control Panel > Power Options and select 'Power Saver' mode to reduce the performance and heat output."
+      },
+      {
+        "title": "Update Drivers and BIOS",
+        "content": "Visit the Asus support website to download and install the latest drivers and BIOS updates for your ROG Flow X13."
+      },
+      {
+        "title": "Use a Cooling Pad",
+        "content": "Place the laptop on a cooling pad to improve airflow and reduce heat buildup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reapply Thermal Paste",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disassemble the Laptop",
+            "content": "Carefully disassemble the laptop to access the CPU and GPU heatsinks."
+          },
+          {
+            "title": "Clean and Reapply Thermal Paste",
+            "content": "Clean the old thermal paste from the CPU and GPU, then apply a new layer of high-quality thermal paste."
+          },
+          {
+            "title": "Reassemble the Laptop",
+            "content": "Put the laptop back together and test the temperatures again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T22:24:56.408Z",
+      "updated": "2026-02-05T22:24:56.408Z",
+      "sourceUrl": "https://www.tomshardware.com/reviews/asus-rog-flow-x13-xg-mobile-ryzen-9-5980hs",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
