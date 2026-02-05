@@ -107274,5 +107274,418 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770264714683-392",
+    "title": "Fix Android Memory Management Issue",
+    "problemDescription": "ZTE Blade Zmax with 2GB RAM cannot switch between apps without reloading, battery life decreased, and performance issues.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "memory",
+      "performance",
+      "app switching"
+    ],
+    "steps": [
+      {
+        "title": "Contact Vendor/Manufacturer",
+        "content": "Keep pressing the issue with the vendor or manufacturer. Document all interactions and be polite and factual."
+      },
+      {
+        "title": "Check Lemon Laws",
+        "content": "Research lemon laws in your area to see if you can get a replacement or repair under warranty."
+      },
+      {
+        "title": "Update OS",
+        "content": "Check for and install any available OS updates that might fix the memory management issue."
+      },
+      {
+        "title": "Escalate the Issue",
+        "content": "Post in relevant forums and escalate the issue up the chain of command to reach someone who can acknowledge and identify the problem."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Replace RAM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Consult a Professional",
+            "content": "Consult with a professional or the manufacturer to see if replacing the RAM could resolve the issue."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Restart the phone in safe mode to see if the issue persists. This can help identify if a third-party app is causing the problem."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T04:11:54.683Z",
+      "updated": "2026-02-05T04:11:54.683Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/android-memory-management-issue.3247025/post-19952647",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770264721989-364",
+    "title": "Fix Kodi Not Playing Videos After Android 8 Update",
+    "problemDescription": "Kodi and other video apps stop working after updating to Android 8 on a Sony W800C TV.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "kodi",
+      "video",
+      "update",
+      "sony"
+    ],
+    "steps": [
+      {
+        "title": "Check Hard Drive Connection",
+        "content": "Ensure the hard drive is properly connected to the TV's USB port and try a different USB port if available."
+      },
+      {
+        "title": "Update Kodi",
+        "content": "Open Kodi and manually check for updates by going to Settings > System > Updates."
+      },
+      {
+        "title": "Clear App Cache and Data",
+        "content": "Go to Settings > Apps > Kodi > Storage > Clear Cache and Clear Data."
+      },
+      {
+        "title": "Reinstall Kodi",
+        "content": "Uninstall Kodi and reinstall it from the Google Play Store."
+      },
+      {
+        "title": "Check File Formats",
+        "content": "Ensure the video files on the hard drive are in a format supported by Kodi."
+      },
+      {
+        "title": "Test with Another App",
+        "content": "Try playing videos with another video app like NOVA Video to see if the issue is specific to Kodi."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset TV",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Backup any important data from the TV."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset > Factory data reset."
+          },
+          {
+            "title": "Reinstall Apps",
+            "content": "Reinstall Kodi and other video apps after the reset."
+          }
+        ]
+      },
+      {
+        "title": "Check for Android Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open the TV's settings menu."
+          },
+          {
+            "title": "Check for Updates",
+            "content": "Go to System > Software update > Network update."
+          },
+          {
+            "title": "Install Updates",
+            "content": "If an update is available, follow the prompts to install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T04:12:01.989Z",
+      "updated": "2026-02-05T04:12:01.989Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/android-update-has-broken-all-the-video-apps.3626098/latest",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770264724472-386",
+    "title": "Windows PC Can't Connect to Wi-Fi",
+    "problemDescription": "Windows PC cannot connect to Wi-Fi while other devices like Android can.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "windows",
+      "connection",
+      "laptop"
+    ],
+    "steps": [
+      {
+        "title": "Check Wi-Fi Button",
+        "content": "Ensure the Wi-Fi button on your laptop is not deactivated."
+      },
+      {
+        "title": "Enable Wi-Fi Card",
+        "content": "Go to 'Network Connections' or 'Change Adapter Settings' and make sure your Wi-Fi card is enabled."
+      },
+      {
+        "title": "Reset Router",
+        "content": "As a last resort, reset the router to see if it helps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Device Conflicts",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disconnect Other Devices",
+            "content": "If your laptop loses Wi-Fi when another device connects, try disconnecting the other device to see if the issue resolves."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T04:12:04.472Z",
+      "updated": "2026-02-05T04:12:04.472Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/my-windows-pc-cant-connect-to-wifi-but-android-device-is-working-fine.1944263/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770264735242-899",
+    "title": "Fix Tasker Screen Profile Delays on Android 15",
+    "problemDescription": "Tasker screen-related profiles are delayed or not executing properly on Android 15.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "tasker",
+      "android",
+      "profiles",
+      "screen",
+      "delay"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Phone",
+        "content": "Perform a simple restart to rule out temporary software glitches."
+      },
+      {
+        "title": "Reinstall Tasker and Re-grant Permissions",
+        "content": "Uninstall and reinstall Tasker, then re-grant all necessary permissions."
+      },
+      {
+        "title": "Disable Battery Optimization for Tasker",
+        "content": "Go to Settings > Battery > Battery Optimization and exempt Tasker and Tasker Settings from battery optimization."
+      },
+      {
+        "title": "Disable Power Save Mode",
+        "content": "Ensure that power save mode is turned off, as it can interfere with Tasker's functionality."
+      },
+      {
+        "title": "Enable Reliable Alarms",
+        "content": "In Tasker settings, enable the 'Use Reliable Alarms' option to ensure tasks are triggered promptly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Proximity Sensor Profile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a Proximity Sensor Profile",
+            "content": "Set up a profile that uses the proximity sensor and change the display off preference to keep the Android device awake."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset",
+        "type": "Last Resort",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure all important data is backed up before proceeding."
+          },
+          {
+            "title": "Perform a Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T04:12:15.242Z",
+      "updated": "2026-02-05T04:12:15.242Z",
+      "sourceUrl": "https://www.reddit.com/r/tasker/comments/1krzkt4/desperately_need_some_ideas_on_how_to_solve_an/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770264747353-595",
+    "title": "Fix Apple Device Sync and Parental Control Issues",
+    "problemDescription": "Apple devices experiencing sync issues and difficulties with parental controls.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "apple",
+      "sync",
+      "parental controls",
+      "watch",
+      "notifications"
+    ],
+    "steps": [
+      {
+        "title": "Reset and Reconfigure Devices",
+        "content": "Reset your Apple Watch and iPhone to factory settings. Reconfigure the devices, ensuring they are properly paired and signed in with the same Apple ID."
+      },
+      {
+        "title": "Update Software",
+        "content": "Ensure all devices are running the latest software versions. Go to Settings > General > Software Update on both your iPhone and Apple Watch."
+      },
+      {
+        "title": "Check Parental Controls",
+        "content": "Review and adjust parental controls in Settings > Screen Time. Ensure all desired restrictions are enabled and properly configured."
+      },
+      {
+        "title": "Troubleshoot Notifications",
+        "content": "Verify that notifications are enabled for the Apple Watch in the Watch app on your iPhone. Go to My Watch > Notifications and ensure all desired apps are enabled."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Apple Support",
+            "content": "If issues persist, contact Apple Support for further assistance. They can provide specialized troubleshooting and potential hardware diagnostics."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T04:12:27.353Z",
+      "updated": "2026-02-05T04:12:27.353Z",
+      "sourceUrl": "https://www.reddit.com/r/applesucks/comments/1lzkthj/does_android_currently_also_have_such_problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770264749177-455",
+    "title": "Android Troubleshooting Guide",
+    "problemDescription": "General guide for troubleshooting common issues on Android devices.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "troubleshooting",
+      "help"
+    ],
+    "steps": [
+      {
+        "title": "Check for Updates",
+        "content": "Ensure your device is running the latest software version. Go to Settings > System > System Update."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "A simple restart can often resolve minor software glitches. Hold the power button and select 'Restart'."
+      },
+      {
+        "title": "Clear App Cache",
+        "content": "Go to Settings > Apps > [App Name] > Storage > Clear Cache. This can resolve issues with specific apps."
+      },
+      {
+        "title": "Check Permissions",
+        "content": "Ensure the app has the necessary permissions. Go to Settings > Apps > [App Name] > Permissions."
+      },
+      {
+        "title": "Factory Reset (Last Resort)",
+        "content": "If all else fails, perform a factory reset. Go to Settings > System > Reset options > Erase all data (Factory reset)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Press and hold the power button, then long-press 'Power Off' to enter Safe Mode. This can help identify if a third-party app is causing the issue."
+          },
+          {
+            "title": "Uninstall Problematic Apps",
+            "content": "In Safe Mode, uninstall any recently installed apps that might be causing the problem."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T04:12:29.177Z",
+      "updated": "2026-02-05T04:12:29.177Z",
+      "sourceUrl": "https://www.reddit.com/r/AndroidQuestions/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770264758955-368",
+    "title": "Nexus 7 Charges Slowly",
+    "problemDescription": "Nexus 7 charges very slowly, even with 2 amp chargers.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "nexus 7",
+      "charging",
+      "slow charging",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Display Sleep Settings",
+        "content": "Go to Settings > Display > Sleep and set the display sleep time to a shorter duration, such as 2 minutes, to reduce battery drain and improve charging speed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Charging Port",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try Different USB Ports",
+            "content": "If using a MacBook or other computer, try different USB ports or use a dedicated charger to ensure proper charging current."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T04:12:38.955Z",
+      "updated": "2026-02-05T04:12:38.955Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/43314/nexus-7-charges-very-slowly-even-with-2-amp-chargers",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
