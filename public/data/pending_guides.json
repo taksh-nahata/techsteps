@@ -110902,5 +110902,308 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770295684226-198",
+    "title": "Change Your Gmail Address",
+    "problemDescription": "You want to change your Gmail address but don't know how.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "email",
+      "change",
+      "address",
+      "handle"
+    ],
+    "steps": [
+      {
+        "title": "Access Personal Info",
+        "content": "Go to your Google Account on either mobile or desktop and navigate to 'Personal info'."
+      },
+      {
+        "title": "Select Email Card",
+        "content": "Click on the 'Email' card to manage your email addresses."
+      },
+      {
+        "title": "Change Email Address",
+        "content": "Select 'Change your Google Account email address' under 'Google Account email' and enter your new email address."
+      },
+      {
+        "title": "Confirm Change",
+        "content": "Tap 'Change email address' and confirm the change."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Revert to Old Email Address",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Personal Info",
+            "content": "Go to your Google Account on either mobile or desktop and navigate to 'Personal info'."
+          },
+          {
+            "title": "Select Email Card",
+            "content": "Click on the 'Email' card to manage your email addresses."
+          },
+          {
+            "title": "Revert Email Address",
+            "content": "Select 'Revert to your old email address' and follow the prompts to confirm the change."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T12:48:04.226Z",
+      "updated": "2026-02-05T12:48:04.226Z",
+      "sourceUrl": "https://www.techradar.com/computing/gmail-could-fix-your-biggest-regret-soon-evidence-grows-that-youll-be-able-to-change-your-embarrassing-email-handle",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770295686373-452",
+    "title": "Fix Gmail Proofread Feature Unavailable",
+    "problemDescription": "The Gmail Proofread feature is not available for free users, only for Google AI Pro and Ultra subscribers.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Gmail",
+      "Proofread",
+      "AI",
+      "Google",
+      "Subscription"
+    ],
+    "steps": [
+      {
+        "title": "Check Subscription Status",
+        "content": "Verify if you have a Google AI Pro or Ultra subscription, as the Proofread feature is exclusive to these plans."
+      },
+      {
+        "title": "Upgrade Subscription",
+        "content": "If you need the Proofread feature, consider upgrading to a Google AI Pro or Ultra subscription to access it."
+      },
+      {
+        "title": "Use Free Alternatives",
+        "content": "Utilize the free 'Help Me Write' and Suggested Replies features available to all users for basic writing assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Third-Party Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Grammar Checker Extension",
+            "content": "Install a third-party grammar checker extension like Grammarly or Hemingway Editor for proofreading assistance."
+          },
+          {
+            "title": "Use Online Proofreading Tools",
+            "content": "Use online proofreading tools such as LanguageTool or Scribens to check your emails before sending."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T12:48:06.373Z",
+      "updated": "2026-02-05T12:48:06.373Z",
+      "sourceUrl": "https://www.techradar.com/pro/gmail-is-getting-a-whole-host-of-ai-updates-to-try-and-solve-your-most-irritating-workplace-tasks",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770295709874-208",
+    "title": "Troubleshooting GPU and Motherboard Issues",
+    "problemDescription": "User experiencing various hardware issues with GPU and motherboard, unsure of the cause.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "gpu",
+      "motherboard",
+      "hardware",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check Power Supply Unit (PSU)",
+        "content": "Ensure the PSU is suitable for gaming or heavy tasks. The Cooler Master MWE series may not be adequate for high-performance scenarios."
+      },
+      {
+        "title": "Provide PSU Details",
+        "content": "Include the serial number and/or an image of the label for accurate diagnosis. Specify the make, model, and age of the PSU."
+      },
+      {
+        "title": "Monitor Temperatures",
+        "content": "Record the range of temperatures while the system is idle and under stress. This information is crucial for diagnosing potential overheating issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Test Components with Backup Hardware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Backup Hardware",
+            "content": "If available, test each component with backup hardware to isolate the faulty part."
+          },
+          {
+            "title": "Borrow Hardware",
+            "content": "If you don't have backup hardware, borrow components from a friend or family member for testing."
+          }
+        ]
+      },
+      {
+        "title": "Consult a Professional",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit a Local Shop",
+            "content": "If troubleshooting steps are unsuccessful, consider having a local shop diagnose the entire system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T12:48:29.874Z",
+      "updated": "2026-02-05T12:48:29.874Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/assortment-of-strange-issues-ran-out-of-ideas-for-troubleshooting-gpu-mb.3851633/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770295711524-591",
+    "title": "Fix Windows 10 Extended Security Updates Installation",
+    "problemDescription": "Windows 10 devices enrolled in the Extended Security Updates (ESU) program are unable to install updates properly.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 10",
+      "extended security updates",
+      "update installation",
+      "KB5071959"
+    ],
+    "steps": [
+      {
+        "title": "Install the Latest Out-of-Band Update",
+        "content": "Download and install the latest out-of-band Windows update KB5071959 from the Microsoft Update Catalog or through Windows Update."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Update Installation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download the Update Manually",
+            "content": "Visit the Microsoft Update Catalog website and search for KB5071959. Download the appropriate version for your system."
+          },
+          {
+            "title": "Install the Update",
+            "content": "Run the downloaded update file and follow the on-screen instructions to install it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T12:48:31.524Z",
+      "updated": "2026-02-05T12:48:31.524Z",
+      "sourceUrl": "https://www.tomshardware.com/software/windows/microsoft-patches-windows-10-issue-that-accidentally-blocked-extended-security-updates-from-installing-latest-update-should-finally-fix-all-the-issues-for-esu-eligible-devices",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770295739592-755",
+    "title": "Fix SSPR Error: Password Reset Not Turned On",
+    "problemDescription": "Users cannot reset their passwords due to self-service password reset (SSPR) not being properly configured.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "SSPR",
+      "password reset",
+      "Windows",
+      "Active Directory"
+    ],
+    "steps": [
+      {
+        "title": "Check User Scope",
+        "content": "Ensure the user is part of the scope for self-service password reset. Navigate to Azure AD > Password reset > Registry settings and verify the user's group is included."
+      },
+      {
+        "title": "Verify Service Account Permissions",
+        "content": "Confirm the service account has the necessary permissions to reset passwords. Check the service account's permissions in Active Directory."
+      },
+      {
+        "title": "Review Password Policies",
+        "content": "Navigate to Domain Policy > Computer Configuration > Windows Settings > Security Settings > Account Policies > Password Policy. Review and adjust the password requirements as needed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reconfigure SSPR Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reconfigure SSPR Settings",
+            "content": "Go to Azure AD > Password reset > Registry settings and ensure all settings are correctly configured. Check for any misconfigurations that might be blocking the service account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T12:48:59.592Z",
+      "updated": "2026-02-05T12:48:59.592Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=9RPrNVLzT8I",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770295746230-554",
+    "title": "Fix iOS 14 Default App Reset",
+    "problemDescription": "iOS 14 resets default browser and email client to Safari and Mail after restart.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "default app",
+      "reset",
+      "safari",
+      "mail"
+    ],
+    "steps": [
+      {
+        "title": "Reassign Default Apps",
+        "content": "Go to Settings > Apps > Default App Settings. Select your preferred browser and email client as the default."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update iOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > General > Software Update. Download and install the latest iOS update if available."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T12:49:06.230Z",
+      "updated": "2026-02-05T12:49:06.230Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-ios-14-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
