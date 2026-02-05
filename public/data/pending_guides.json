@@ -112617,5 +112617,240 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770316976597-367",
+    "title": "Recover Facebook Account with Lost 2FA Phone",
+    "problemDescription": "Lost access to your Facebook account due to two-factor authentication on a lost phone.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "facebook",
+      "two-factor authentication",
+      "lost phone",
+      "account recovery"
+    ],
+    "steps": [
+      {
+        "title": "Use the Forgot Password Option",
+        "content": "Go to the Facebook login page and click on 'Forgot Password'. Follow the prompts to reset your password. You will be given the option to receive the reset link via email or phone."
+      },
+      {
+        "title": "Check Comments for Recovery Options",
+        "content": "If the above method doesn't work, check the comments section on the Facebook help page or similar forums for additional recovery options."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Get a Replacement SIM Card",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Your Carrier",
+            "content": "Contact your mobile carrier to get a replacement SIM card for the same phone number."
+          },
+          {
+            "title": "Use the New Phone",
+            "content": "Use the new phone with the replacement SIM card to receive the 2FA code and regain access to your Facebook account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T18:42:56.597Z",
+      "updated": "2026-02-05T18:42:56.597Z",
+      "sourceUrl": "https://www.quora.com/How-can-I-retrieve-my-Facebook-two-factor-authentication-2FA-code-if-I-ve-lost-access-to-my-phone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770317035488-724",
+    "title": "Fix Network Adapters Code 45 Error",
+    "problemDescription": "Network adapters showing code 45 in Windows 10, causing connectivity issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "network adapters",
+      "code 45",
+      "Windows 10",
+      "connectivity"
+    ],
+    "steps": [
+      {
+        "title": "Verify Network Adapter Settings",
+        "content": "Ensure only one network adapter (wired or wireless) is enabled. Disable the other."
+      },
+      {
+        "title": "Reinstall Zoom",
+        "content": "Uninstall and reinstall Zoom to check if the issue is application-specific."
+      },
+      {
+        "title": "Clean and Check Hardware",
+        "content": "Power down, unplug, open the case, clean out dust and debris, and ensure all cables, cards, RAM, and jumpers are firmly in place."
+      },
+      {
+        "title": "Flush DNS",
+        "content": "Open Command Prompt and run 'ipconfig /flushdns'."
+      },
+      {
+        "title": "Run System File Checker",
+        "content": "Open Command Prompt as administrator and run 'sfc /scannow'."
+      },
+      {
+        "title": "Check Network Configuration",
+        "content": "If the issue persists, run 'ipconfig /all' and review the results."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update System Specs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update System Information",
+            "content": "Update your post to include full system hardware specs and Windows 10 edition and version."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T18:43:55.488Z",
+      "updated": "2026-02-05T18:43:55.488Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/network-adapters-showing-code-45.3625908/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770317038792-786",
+    "title": "Fix Zoom BSOD on Outschool",
+    "problemDescription": "Zoom causes a Blue Screen of Death (BSOD) only when connecting to Outschool.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "bsod",
+      "outschool",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Run System File Checker (SFC)",
+        "content": "Open Command Prompt as Administrator and run 'sfc /scannow' to check and repair corrupted system files."
+      },
+      {
+        "title": "Run DISM",
+        "content": "In the same Command Prompt, run 'dism /online /cleanup-image /restorehealth' to repair Windows image corruption."
+      },
+      {
+        "title": "Check Reliability History and Event Viewer",
+        "content": "Look for any error codes, warnings, or informational events that correspond to the crashes in Reliability History and Event Viewer."
+      },
+      {
+        "title": "Update System Specifications",
+        "content": "Ensure your system meets the requirements for Zoom and Outschool. Include PSU, disk drive details, and OS information."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Zoom and System Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Zoom",
+            "content": "Ensure you are using the latest version of Zoom."
+          },
+          {
+            "title": "Update System Drivers",
+            "content": "Update all system drivers, especially graphics and audio drivers, as they can cause compatibility issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Overheating",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Monitor Temperature",
+            "content": "Use tools like HWMonitor or Core Temp to check if your system is overheating during Zoom meetings."
+          },
+          {
+            "title": "Clean Cooling System",
+            "content": "Clean your computer's cooling system to ensure proper airflow and temperature regulation."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T18:43:58.792Z",
+      "updated": "2026-02-05T18:43:58.792Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/zoom-caused-bsod-only-while-connecting-to-outschool.3748843/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770317040872-60",
+    "title": "Fix Zoom Hanging with Video on Windows 10",
+    "problemDescription": "Zoom application hangs or becomes unresponsive when using video on Windows 10.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "hangs",
+      "video",
+      "windows 10",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check System Specs and Recent Changes",
+        "content": "Update your post with full system hardware specs and Windows 10 version information. Note any recent changes to hardware or software."
+      },
+      {
+        "title": "Review Reliability History",
+        "content": "Look in Reliability History for error messages, warnings, and informational events to narrow down when the problem began."
+      },
+      {
+        "title": "Check Update History",
+        "content": "In the search box, type 'View your Update history' and check for any listed update problems."
+      },
+      {
+        "title": "Run Built-in Troubleshooters",
+        "content": "Try running Windows' built-in troubleshooters to find and fix potential issues."
+      },
+      {
+        "title": "Run System File Checker and DISM",
+        "content": "Open Command Prompt as administrator and run 'sfc /scannow' followed by 'dism /online /cleanup-image /restorehealth'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Zoom",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Zoom",
+            "content": "Uninstall the Zoom application completely from your system."
+          },
+          {
+            "title": "Reinstall Zoom",
+            "content": "Download the latest version of Zoom from the official website and reinstall it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T18:44:00.872Z",
+      "updated": "2026-02-05T18:44:00.872Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/zoom-hangs-when-using-video-can-anyone-help.3700867/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
