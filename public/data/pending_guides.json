@@ -112098,5 +112098,524 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770313495801-471",
+    "title": "Fix Gmail Error: Service Does Not Accept Messages Sent Over IPv6",
+    "problemDescription": "Gmail error indicating that messages sent over IPv6 do not pass SPF or DKIM validation.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "error",
+      "ipv6",
+      "spf",
+      "dkim"
+    ],
+    "steps": [
+      {
+        "title": "Check SPF and DKIM Records",
+        "content": "Verify that your domain's SPF and DKIM records are correctly configured. Use online tools like MXToolbox or Google's Admin Toolbox to check your DNS records."
+      },
+      {
+        "title": "Update SPF Record",
+        "content": "Ensure your SPF record includes all authorized sending sources. A typical SPF record might look like: v=spf1 include:_spf.google.com ~all."
+      },
+      {
+        "title": "Update DKIM Record",
+        "content": "Generate a new DKIM key if necessary and update your DNS records with the new key. Follow Google's guide on setting up DKIM for detailed instructions."
+      },
+      {
+        "title": "Test Configuration",
+        "content": "After updating your records, send a test email to verify that the issue is resolved. Use tools like Google's Email Header Analyzer to check the headers of your test email."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Google Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Google's Support Forum",
+            "content": "Post your issue on Google's support forum or community pages. Sometimes, other users or Google representatives can provide specific guidance."
+          },
+          {
+            "title": "Use Google's Help Center",
+            "content": "Navigate to Google's Help Center and look for articles related to SPF and DKIM configuration. There might be step-by-step guides tailored to your specific issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T17:44:55.801Z",
+      "updated": "2026-02-05T17:44:55.801Z",
+      "sourceUrl": "https://www.reddit.com/r/GMail/comments/1jutwed/how_the_hell_do_i_fix_this_error/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770313502038-114",
+    "title": "Gmail Emails Not Loading",
+    "problemDescription": "Emails in Gmail app are not loading after the latest update.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "emails",
+      "loading",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Device",
+        "content": "Turn off your device completely and turn it back on to refresh the system and potentially resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clear App Cache and Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to your device's settings."
+          },
+          {
+            "title": "Navigate to Apps",
+            "content": "Find and select the Gmail app from the list of installed applications."
+          },
+          {
+            "title": "Clear Cache and Data",
+            "content": "Tap on 'Storage' and then select 'Clear Cache' and 'Clear Data' to remove any corrupted files that might be causing the issue."
+          }
+        ]
+      },
+      {
+        "title": "Reinstall Gmail App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Gmail",
+            "content": "Uninstall the Gmail app from your device."
+          },
+          {
+            "title": "Reinstall Gmail",
+            "content": "Download and install the Gmail app again from the Google Play Store or Apple App Store."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T17:45:02.038Z",
+      "updated": "2026-02-05T17:45:02.038Z",
+      "sourceUrl": "https://www.reddit.com/r/GMail/comments/1myep45/emails_not_loading/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770313505537-967",
+    "title": "Fix Gmail Cannot Send Mail Error",
+    "problemDescription": "Gmail shows 'The connection to the outgoing server smtp.gmail.com failed' and prevents sending or receiving emails.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "cannot send mail",
+      "smtp error"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your device is connected to the internet. Restart your router if necessary."
+      },
+      {
+        "title": "Verify SMTP Settings",
+        "content": "Go to Settings > Apps > Mail > Accounts. Ensure the outgoing server is set to smtp.gmail.com with port 465 (SSL) or 587 (TLS)."
+      },
+      {
+        "title": "Update Gmail App",
+        "content": "Check the app store for updates and install the latest version of the Gmail app."
+      },
+      {
+        "title": "Clear App Cache",
+        "content": "Go to Settings > Apps > Gmail > Storage > Clear Cache."
+      },
+      {
+        "title": "Re-add Gmail Account",
+        "content": "Remove and re-add your Gmail account in the Mail settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Two-Factor Authentication",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Two-Factor Authentication",
+            "content": "If you have two-factor authentication enabled, disable it temporarily to see if it resolves the issue."
+          },
+          {
+            "title": "Use App Password",
+            "content": "If two-factor authentication is necessary, generate an app password and use it in your mail settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T17:45:05.537Z",
+      "updated": "2026-02-05T17:45:05.537Z",
+      "sourceUrl": "https://www.reddit.com/r/GMail/comments/1oc4d5x/anyone_know_why_this_cannot_send_mail_message/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770313513263-265",
+    "title": "Fix Google Play Store Crashes",
+    "problemDescription": "Google Play Store crashes or fails to download apps.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "google play",
+      "crash",
+      "download"
+    ],
+    "steps": [
+      {
+        "title": "Wipe Google Play Cache",
+        "content": "Go to Settings > Apps > Google Play Store > Storage > Clear Cache."
+      },
+      {
+        "title": "Clear Google Play History",
+        "content": "Go to Settings > Apps > Google Play Store > Storage > Clear Data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Files by Google",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install Files by Google",
+            "content": "Download Files by Google from the Play Store and install it."
+          },
+          {
+            "title": "Use Files by Google to Clean Up",
+            "content": "Open Files by Google and use it to find and remove large media files."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use DiskUsage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install DiskUsage",
+            "content": "Download DiskUsage from the Play Store and install it."
+          },
+          {
+            "title": "Use DiskUsage to Clean Up",
+            "content": "Open DiskUsage and use it to find and remove unnecessary files."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T17:45:13.263Z",
+      "updated": "2026-02-05T17:45:13.263Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/20-common-android-problems-solved/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770313522631-328",
+    "title": "Fix Android Black Screen and Won't Turn On",
+    "problemDescription": "Your Android device has a black screen and won't turn on, possibly due to a software issue or conflicting app.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "black screen",
+      "won't turn on",
+      "safe mode",
+      "factory reset"
+    ],
+    "steps": [
+      {
+        "title": "Enter Safe Mode",
+        "content": "Press and hold the Power button until the boot process starts. Then, immediately press the Volume Down and Power buttons simultaneously. If successful, your phone will boot into safe mode."
+      },
+      {
+        "title": "Uninstall Suspicious Apps",
+        "content": "While in safe mode, go to Settings > Apps & notifications and uninstall any suspicious third-party apps one by one."
+      },
+      {
+        "title": "Reboot Your Phone",
+        "content": "After uninstalling the apps, reboot your phone to exit safe mode and check if it works normally."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure you back up all important data on your Android device."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > General management > Reset > Factory data reset and tap the Reset button. If your phone isn't booting, perform the reset in Recovery Mode."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Computer to Troubleshoot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect to Computer",
+            "content": "Follow Google's instructions to force your Android phone to turn on using your computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T17:45:22.631Z",
+      "updated": "2026-02-05T17:45:22.631Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/android-phone-tablet-turn/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770313528714-242",
+    "title": "Fix Android Touchscreen Not Working",
+    "problemDescription": "Your Android phone's touchscreen is unresponsive and not working properly.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "touchscreen",
+      "not working",
+      "unresponsive"
+    ],
+    "steps": [
+      {
+        "title": "Reboot Your Phone",
+        "content": "Press and hold the Power button to display the power menu, then tap Restart if you're able."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-05T17:45:28.714Z",
+      "updated": "2026-02-05T17:45:28.714Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/android-touchscreen-fixes/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770313537786-95",
+    "title": "Clean PC Fans and Heatsink for Better Performance",
+    "problemDescription": "Your PC is running slow due to dust accumulation in fans and heatsink.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "slow pc",
+      "dust",
+      "fans",
+      "heatsink",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Power Down and Access Fans",
+        "content": "Power down your PC, remove the case lid, and locate the various fans."
+      },
+      {
+        "title": "Clean Power Supply",
+        "content": "Blow through the internal slits of the power supply from inside the chassis, aiming so dust exits the back."
+      },
+      {
+        "title": "Clean Intake and Exhaust Fans",
+        "content": "Blow into the intake fan to push dust out the back, then clean the blades of the rear exhaust fan. Aim just beneath the center where the motor meets the fan assembly."
+      },
+      {
+        "title": "Repeat for All Fans",
+        "content": "Repeat the cleaning process for each fan, keeping the can of compressed air upright."
+      },
+      {
+        "title": "Restart and Spray Fans",
+        "content": "Restart your PC and, while the fans are spinning, spray them briefly to dislodge any remaining dust."
+      },
+      {
+        "title": "Clean Heatsink",
+        "content": "Ensure the heatsink is properly attached. If it uses thermal glue or tape, move on. Otherwise, separate the heatsink from the processor."
+      },
+      {
+        "title": "Remove Old Thermal Paste",
+        "content": "Clean the old thermal interface material with isopropyl alcohol and a clean cloth."
+      },
+      {
+        "title": "Apply New Thermal Paste",
+        "content": "Apply a thin, consistent layer of new thermal paste to the top of the chip using a scalpel or old credit card, then reapply the heatsink."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Moist Paper Towel and Cotton Buds",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove General Dust",
+            "content": "Use a moist paper towel and cotton buds to clean dust from harder-to-reach areas."
+          },
+          {
+            "title": "Avoid Vacuum Cleaners",
+            "content": "Do not use a vacuum cleaner as it can create static electricity, which is harmful to electronic components."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T17:45:37.786Z",
+      "updated": "2026-02-05T17:45:37.786Z",
+      "sourceUrl": "https://www.cnet.com/pictures/10-ways-to-fix-a-slow-pc/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770313547039-420",
+    "title": "Fix Slow Internet Due to ISP Throttling",
+    "problemDescription": "Your internet connection is slow and you suspect your ISP might be throttling your speeds.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "internet",
+      "slow",
+      "ISP",
+      "throttling",
+      "VPN"
+    ],
+    "steps": [
+      {
+        "title": "Run a Speed Test",
+        "content": "Use a service like Fast.com or Speedtest.net to check your upload and download speeds."
+      },
+      {
+        "title": "Troubleshoot Your Connection",
+        "content": "Restart your router, ensure it's centrally located, reposition antennas, and check network security."
+      },
+      {
+        "title": "Consider Hardware Upgrades",
+        "content": "If your router is weak, consider a Wi-Fi extender or a mesh network for better coverage."
+      },
+      {
+        "title": "Use a VPN",
+        "content": "A VPN can encrypt your traffic and potentially bypass ISP throttling. Test different VPNs to find one that works effectively."
+      },
+      {
+        "title": "Compare Speeds with VPN",
+        "content": "Run another speed test with the VPN active and compare the results."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Invest in a Network Switch",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Quality Network Switch",
+            "content": "Invest in a good quality network switch to increase the bandwidth in your home."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T17:45:47.039Z",
+      "updated": "2026-02-05T17:45:47.039Z",
+      "sourceUrl": "https://www.cnet.com/home/internet/suffering-from-slow-internet-your-internet-provider-could-be-throttling-your-speeds/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770313556466-413",
+    "title": "Fix Zoom Issues on Ubuntu 20.04",
+    "problemDescription": "Zoom not launching or signing in with SSO on Ubuntu 20.04.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "ubuntu",
+      "sso",
+      "meeting"
+    ],
+    "steps": [
+      {
+        "title": "Remove Existing Zoom Installation",
+        "content": "Open a terminal and run the following commands to remove the existing Zoom installation:\n\n`sudo apt remove zoom`\n`sudo apt purge zoom`"
+      },
+      {
+        "title": "Install Zoom via Snap",
+        "content": "Install Zoom using Snap with the following command:\n\n`sudo snap install zoom-client`"
+      },
+      {
+        "title": "Verify Installation",
+        "content": "Open Zoom and check if you can now sign in with SSO and launch meetings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Install Latest Zoom Client",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Latest Zoom Client",
+            "content": "Download the latest Zoom client from the official website."
+          },
+          {
+            "title": "Remove Old Zoom",
+            "content": "Run the following command to remove the old Zoom installation:\n\n`sudo apt remove zoom-client`"
+          },
+          {
+            "title": "Install New Zoom Client",
+            "content": "Open the terminal in the directory of the downloaded `zoom_amd64.deb` file and run:\n\n`sudo dpkg -i zoom_amd64.deb`\n\nIf you encounter an error, fix it by running:\n\n`sudo apt install --fix-broken`"
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Zoom Web Client",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Zoom Web Client",
+            "content": "Use the Zoom web client through a browser like Firefox. This avoids installation and update issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T17:45:56.466Z",
+      "updated": "2026-02-05T17:45:56.466Z",
+      "sourceUrl": "https://askubuntu.com/questions/1294485/troubles-with-zoom-on-ubuntu-20-04",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
