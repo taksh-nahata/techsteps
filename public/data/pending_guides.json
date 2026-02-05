@@ -113748,5 +113748,786 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770326714639-945",
+    "title": "Fix High Memory/RAM Issue in Windows 11",
+    "problemDescription": "Your Windows 11 system is experiencing high memory/ram usage.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "memory",
+      "ram",
+      "high usage"
+    ],
+    "steps": [
+      {
+        "title": "Run System File Checker",
+        "content": "Open Command Prompt as an administrator by right-clicking the Start button and selecting 'Command Prompt (Admin)'. In the Command Prompt window, type 'sfc /scannow' and press Enter. Wait for the scan to complete, then restart your computer."
+      },
+      {
+        "title": "Run DISM Tool",
+        "content": "Open Command Prompt as an administrator again. Type 'DISM /Online /Cleanup-Image /RestoreHealth' and press Enter. Wait for the process to complete, then restart your computer."
+      },
+      {
+        "title": "Adjust Virtual Memory",
+        "content": "Go to the 'Advanced' tab in System Properties and click 'Change' under 'Virtual memory'. Uncheck 'Automatically manage paging file size for all drives'. Select the drive (usually C:), choose 'Custom size', and set the initial size to 1.5 times your RAM and the maximum size to 3 times your RAM. Click 'Set', then 'OK', and restart your computer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Corrupted System Files",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run System File Checker",
+            "content": "Open Command Prompt as an administrator by right-clicking the Start button and selecting 'Command Prompt (Admin)'. In the Command Prompt window, type 'sfc /scannow' and press Enter. Wait for the scan to complete, then restart your computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T21:25:14.639Z",
+      "updated": "2026-02-05T21:25:14.639Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/how-do-i-fix-a-high-memoryram-issue-windows-11/4eb85663-87e0-4b0d-bdf2-1f96378795d6",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770326716905-513",
+    "title": "Fix Windows 11 Automatic Repair Loop",
+    "problemDescription": "Your Windows 11 system is stuck on the Automatic Repair screen and cannot boot normally.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "automatic repair",
+      "boot",
+      "recovery"
+    ],
+    "steps": [
+      {
+        "title": "Access Advanced Options",
+        "content": "In the Automatic Repair screen, select Advanced Options."
+      },
+      {
+        "title": "Select Troubleshoot",
+        "content": "Click on Troubleshoot in the Advanced options window."
+      },
+      {
+        "title": "Run System Restore",
+        "content": "Choose System Restore to revert your PC to an earlier point in time."
+      },
+      {
+        "title": "Run Startup Repair",
+        "content": "Alternatively, select Startup Repair to fix boot-related issues."
+      },
+      {
+        "title": "Boot in Safe Mode",
+        "content": "You can also boot your PC in Safe Mode to troubleshoot further."
+      },
+      {
+        "title": "Use Command Prompt",
+        "content": "Open Command Prompt and run the following commands one at a time:\n\n`sfc /scannow`\n`chkdsk c: /f /r`\n`bootrec /fixmbr`\n`bootrec /fixboot`\n`bootrec /scanos`\n`bootrec /rebuildbcd`"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Create Windows 11 Bootable Installation Media",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create Bootable Media",
+            "content": "If the recovery options do not work, create a Windows 11 bootable installation media."
+          },
+          {
+            "title": "Use Media to Repair or Reinstall",
+            "content": "Use the bootable media to repair or reinstall Windows."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T21:25:16.905Z",
+      "updated": "2026-02-05T21:25:16.905Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/how-to-fix-windows-11-automatic-repair/0f405982-3552-4cc3-ab7d-729d4fb307f7",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770326724488-357",
+    "title": "Fix Touchpad Issue in Windows 11",
+    "problemDescription": "Touchpad randomly stops working after Windows 11 update.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "touchpad",
+      "windows 11",
+      "driver",
+      "BIOS"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install Drivers",
+        "content": "Go to the support website of your computer's manufacturer, download, and install the touchpad along with BIOS drivers."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "Restart your computer to apply the changes and check if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Driver and Disable Power Saving",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall Touchpad Driver",
+            "content": "Uninstall the touchpad driver from Device Manager and then reinstall it."
+          },
+          {
+            "title": "Disable Power Saving",
+            "content": "Turn off the toggle that allows the computer to turn off the device to save power."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T21:25:24.488Z",
+      "updated": "2026-02-05T21:25:24.488Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/how-to-permanently-fix-the-touchpad-issue-in/74d63028-62e7-40e1-9f0c-ba67deb1ad6a",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770326730205-874",
+    "title": "Fix Windows 11 Constant Crashes",
+    "problemDescription": "Windows 11 is experiencing constant crashes, rendering the PC unusable.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "crashes",
+      "driver verifier",
+      "minidump"
+    ],
+    "steps": [
+      {
+        "title": "Create a System Restore Point",
+        "content": "Before proceeding, create a new System Restore Point to ensure you can revert changes if needed."
+      },
+      {
+        "title": "Enable Driver Verifier",
+        "content": "Open Command Prompt as Administrator and run the following command: `verifier /standard /all /bootmode checkifsigned`."
+      },
+      {
+        "title": "Let Windows Crash",
+        "content": "Allow your PC to crash three times with Driver Verifier enabled."
+      },
+      {
+        "title": "Disable Driver Verifier",
+        "content": "After three crashes, open Command Prompt as Administrator and run the following commands: `verifier /reset` and `verifier /bootmode resetonbootfail`."
+      },
+      {
+        "title": "Upload Minidump Files",
+        "content": "Collect any newly created minidump files and upload them for further analysis."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Boot into Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Hard Shut Down",
+            "content": "Start your PC, and as Windows attempts to load (spinning dots), press and hold the Power Button for 5-10 seconds to perform a Hard Shut Down. Do this twice."
+          },
+          {
+            "title": "Access Recovery Environment",
+            "content": "On the third start, Windows will boot into the Recovery Environment. From there, you can access System Repair, Safe Mode, Command Prompt, etc."
+          },
+          {
+            "title": "Enter Safe Mode",
+            "content": "Go to Troubleshoot - Advanced Option - Startup Settings and click Restart. Upon restart, press 4 to enter Safe Mode."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T21:25:30.205Z",
+      "updated": "2026-02-05T21:25:30.205Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/solved-windows-11-keeps-crashing-constantly/9d91f51d-59d0-4fcf-97b7-3b8b1d394e56",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770326737642-298",
+    "title": "Fix Discord Crash on Ubuntu 24.04 During Video Stream",
+    "problemDescription": "Discord crashes when activating video stream on Ubuntu 24.04 with AMD hardware.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "ubuntu",
+      "crash",
+      "video stream",
+      "electron"
+    ],
+    "steps": [
+      {
+        "title": "Disable Hardware Acceleration and VA-API",
+        "content": "Launch Discord with the following command to disable hardware acceleration and VA-API: `LIBVA_DRIVER_NAME=disabled discord --disable-features=VaapiVideoDecoder --disable-gpu`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Anonymize and Share Logs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Anonymize Log File",
+            "content": "Save the Discord log to a file and use text processing tools to anonymize sensitive data."
+          },
+          {
+            "title": "Share Anonymized Log",
+            "content": "Share the anonymized log file with the Discord support team or community for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T21:25:37.642Z",
+      "updated": "2026-02-05T21:25:37.642Z",
+      "sourceUrl": "https://askubuntu.com/questions/1562054/discord-issue-with-electron-crash-when-activation-video-stream-24-04-fixable-b",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770326745324-973",
+    "title": "Fix Snap Applications Not Showing in Launcher",
+    "problemDescription": "Programs installed via snap are not appearing in the application launcher.",
+    "category": "linux",
+    "difficulty": "Easy",
+    "keywords": [
+      "snap",
+      "launcher",
+      "applications",
+      "linux"
+    ],
+    "steps": [
+      {
+        "title": "Symlink the Desktop File",
+        "content": "Create a symbolic link to the desired desktop file in the local applications directory. For example, use the command: `ln -s /var/lib/snapd/desktop/applications/rubymine_rubymine.desktop ~/.local/share/applications`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Copy Desktop File to User Desktop",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Copy the Desktop File",
+            "content": "Copy the desktop file to your user desktop. For example, use the command: `cp /var/lib/snapd/desktop/applications/discord_discord.desktop ~/Desktop`."
+          },
+          {
+            "title": "Execute the Desktop File",
+            "content": "Execute the newly created desktop icon by clicking on it."
+          }
+        ]
+      },
+      {
+        "title": "Copy Desktop File to System Applications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Copy the Desktop File",
+            "content": "Copy the desktop file to the system applications directory. For example, use the command: `sudo cp /snap/blender/current/blender.desktop /usr/share/applications/`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T21:25:45.324Z",
+      "updated": "2026-02-05T21:25:45.324Z",
+      "sourceUrl": "https://askubuntu.com/questions/910821/programs-installed-via-snap-not-showing-up-in-launcher",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770326750181-55",
+    "title": "Fix Read-only File System Error in Ubuntu",
+    "problemDescription": "The file system becomes read-only, preventing writes or modifications.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "read-only",
+      "file system",
+      "ubuntu",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Remount the File System as Read-Write",
+        "content": "Run the following command to remount the file system with read-write permissions: `sudo mount -o remount,rw /`."
+      },
+      {
+        "title": "Check for Disk Errors",
+        "content": "Use the `fsck` command to check and repair file system errors. First, unmount the drive if it's mounted: `sudo umount /dev/sdX`. Then, run `sudo fsck /dev/sdX` to check and repair the file system."
+      },
+      {
+        "title": "Check for Disk Space",
+        "content": "Ensure there is enough free space on the root partition. Use the `df -h` command to check disk space usage."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Hardware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Disk Health",
+            "content": "Use tools like `smartctl` to check the health of your disk. Run `sudo smartctl -a /dev/sdX` to get detailed information about the disk."
+          },
+          {
+            "title": "Replace Faulty Hardware",
+            "content": "If the disk is failing, consider replacing it with a new one."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T21:25:50.181Z",
+      "updated": "2026-02-05T21:25:50.181Z",
+      "sourceUrl": "https://askubuntu.com/questions/287021/how-to-fix-read-only-file-system-error-when-i-run-something-as-sudo-and-try-to",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770326756755-89",
+    "title": "Bulk Mark Emails as Read in Gmail",
+    "problemDescription": "Gmail's bulk operation limit prevents marking all unread emails as read when the number exceeds a certain threshold.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "bulk operation",
+      "mark as read",
+      "google apps script"
+    ],
+    "steps": [
+      {
+        "title": "Access Google Apps Script",
+        "content": "Go to the Google Apps Script website and click on 'New Project'."
+      },
+      {
+        "title": "Paste the Script",
+        "content": "Copy the provided script from a reliable source like ChatGPT or a trusted forum, and paste it into the script editor."
+      },
+      {
+        "title": "Save and Run the Script",
+        "content": "Click the 'Save' icon, then hit the 'Run' button. The script will process your inbox in chunks, marking emails as read until you reach 'inbox zero'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Manual Filtering and Labeling",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create Filters",
+            "content": "Set up filters to categorize and label your emails, making it easier to manage and delete them in smaller batches."
+          },
+          {
+            "title": "Delete in Batches",
+            "content": "Manually select and delete emails in smaller batches to avoid hitting Gmail's bulk operation limit."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T21:25:56.755Z",
+      "updated": "2026-02-05T21:25:56.755Z",
+      "sourceUrl": "https://www.techradar.com/ai-platforms-assistants/chatgpt/chatgpt-just-helped-me-solve-a-big-gmail-problem-and-ive-finally-reached-inbox-zero",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770326764903-55",
+    "title": "Recover Missing Google Drive Files",
+    "problemDescription": "Some Google Drive users have reported missing files due to a syncing issue.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "google drive",
+      "file recovery",
+      "backup",
+      "syncing issue"
+    ],
+    "steps": [
+      {
+        "title": "Check the Backup Folder",
+        "content": "Look for the missing files in a 'backup' folder inside the app's local data folder. On Windows, this folder is located at %USERPROFILE%\\AppData\\Local\\Google\\DriveFS. On Mac, it's in the Library folder at ~/Library/Application Support/Google/DriveFS."
+      },
+      {
+        "title": "Make a Copy of the App Data Folder",
+        "content": "Google recommends making a copy of the app data folder as a precautionary measure."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Roll Back Google Drive",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Roll Back to an Earlier Version",
+            "content": "Roll back Google Drive to an earlier version."
+          },
+          {
+            "title": "Disable Updates",
+            "content": "Disable updates for Google Drive."
+          },
+          {
+            "title": "Move the Backups Folder",
+            "content": "Move the 'backups' folder from the app data folder to the main folder."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Google Takeout",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Google Takeout",
+            "content": "Visit Google Takeout."
+          },
+          {
+            "title": "Select Files to Back Up",
+            "content": "Choose the files you want to back up."
+          },
+          {
+            "title": "Create an Archive",
+            "content": "Create an archive to get a zip folder of your files."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T21:26:04.903Z",
+      "updated": "2026-02-05T21:26:04.903Z",
+      "sourceUrl": "https://www.techradar.com/computing/cloud-computing/google-confirms-drive-issue-that-may-have-lost-files-heres-how-to-back-up",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770326784788-599",
+    "title": "Fix Qualcomm Atheros AR3011 Bluetooth 3.0 Adapter Code 43",
+    "problemDescription": "Qualcomm Atheros AR3011 Bluetooth 3.0 Adapter not working with Code 43 error in Windows 10.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "qualcomm",
+      "atheros",
+      "code 43",
+      "windows 10"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall Current Driver and Restart",
+        "content": "Uninstall the current Bluetooth driver from Device Manager, then restart your computer."
+      },
+      {
+        "title": "Run System File Checker and DISM",
+        "content": "Open Command Prompt as Administrator and run the following commands one by one: `sfc /scannow` and `dism /online /cleanup-image /restorehealth`. Wait for the processes to complete, then restart your computer."
+      },
+      {
+        "title": "Install the Correct Driver",
+        "content": "Download and install the correct driver for your Qualcomm Atheros AR3011 Bluetooth 3.0 Adapter from a trusted source, such as the manufacturer's website."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Windows",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Windows Updates",
+            "content": "Go to Settings > Update & Security > Windows Update and check for updates. Install any available updates, especially those related to drivers."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use System Restore",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restore to a Previous Point",
+            "content": "Use System Restore to revert your system to a point where the Bluetooth adapter was working correctly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T21:26:24.788Z",
+      "updated": "2026-02-05T21:26:24.788Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/how-to-fix-qualcomm-atheros-ar3011-bluetooth-30/deca0411-1bde-44d4-bb09-81d9572164b8",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770326791802-600",
+    "title": "Reset Lost Administrative Password in Ubuntu",
+    "problemDescription": "Forgot the administrative password in Ubuntu and need to reset it.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "password",
+      "administrative",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Access GRUB Menu",
+        "content": "Restart your computer and hold down the Shift key to access the GRUB menu."
+      },
+      {
+        "title": "Select Recovery Mode",
+        "content": "In the GRUB menu, select the option that says 'Advanced options for Ubuntu' and then choose 'Recovery mode'."
+      },
+      {
+        "title": "Update GRUB Boot Loader",
+        "content": "Select 'Update GRUB boot loader' from the recovery menu."
+      },
+      {
+        "title": "Drop to Root Shell Prompt",
+        "content": "After updating the GRUB boot loader, select 'Drop to root shell prompt'."
+      },
+      {
+        "title": "List User Accounts",
+        "content": "Type `ls /home` to list all user accounts on your system."
+      },
+      {
+        "title": "Reset Password",
+        "content": "Type `passwd username` (replace 'username' with the actual username) to reset the password. Follow the prompts to enter a new password."
+      },
+      {
+        "title": "Exit and Reboot",
+        "content": "Type `exit` to return to the recovery menu, then select 'resume' to reboot your system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Live CD",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot from Live CD",
+            "content": "Insert a Ubuntu Live CD and boot from it."
+          },
+          {
+            "title": "Open Terminal",
+            "content": "Open a terminal window from the Live CD environment."
+          },
+          {
+            "title": "Mount Your Ubuntu Partition",
+            "content": "Mount your Ubuntu partition using the `mount` command."
+          },
+          {
+            "title": "Chroot into Your System",
+            "content": "Use the `chroot` command to change the root directory to your mounted Ubuntu partition."
+          },
+          {
+            "title": "Reset Password",
+            "content": "Type `passwd username` (replace 'username' with the actual username) to reset the password. Follow the prompts to enter a new password."
+          },
+          {
+            "title": "Reboot",
+            "content": "Type `exit` to leave the chroot environment, then reboot your system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T21:26:31.802Z",
+      "updated": "2026-02-05T21:26:31.802Z",
+      "sourceUrl": "https://askubuntu.com/questions/24006/how-do-i-reset-a-lost-administrative-password",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770326796880-558",
+    "title": "Fix Authentication Token Manipulation Error",
+    "problemDescription": "Encountering an 'Authentication token manipulation' error when trying to change a user password in Ubuntu.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "password",
+      "authentication",
+      "token",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Check Disk Space",
+        "content": "Ensure there is enough disk space available. Use the command `df` to check disk usage and free up space if necessary."
+      },
+      {
+        "title": "Verify Password Entry",
+        "content": "Make sure you are entering your current password when prompted, not just the new password."
+      },
+      {
+        "title": "Set Correct Permissions",
+        "content": "Set the correct permissions for the `passwd` command by running `sudo chmod 4511 /usr/bin/passwd`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Remount Filesystem",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remount Filesystem",
+            "content": "If the above steps do not work, try remounting the filesystem with read-write permissions using the command `sudo mount -rw -o remount /`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T21:26:36.880Z",
+      "updated": "2026-02-05T21:26:36.880Z",
+      "sourceUrl": "https://askubuntu.com/questions/57620/getting-an-authentication-token-manipulation-error-when-trying-to-change-my-us",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770326799085-170",
+    "title": "Reset Password in Ubuntu Bash on Windows",
+    "problemDescription": "Reset or change the password for your Ubuntu user account in Windows Subsystem for Linux (WSL).",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "ubuntu",
+      "password",
+      "wsl",
+      "bash",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Set Default User to Root",
+        "content": "Open the Windows command prompt and run the following command to set the default user to root: `ubuntu1804 config --default-user root` (for Ubuntu 18.04) or `ubuntu config --default-user root` (for other versions)."
+      },
+      {
+        "title": "Change the Password",
+        "content": "Open Bash on Ubuntu on Windows and use the `passwd` command followed by your username to change the password: `passwd your_username`."
+      },
+      {
+        "title": "Set Default User Back to Normal",
+        "content": "After changing the password, set the default user back to your normal user in the Windows command prompt: `ubuntu1804 config --default-user your_username` (for Ubuntu 18.04) or `ubuntu config --default-user your_username` (for other versions)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Kali Linux Commands",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Default User to Root",
+            "content": "If you are using Kali Linux, set the default user to root using the appropriate command for your version."
+          },
+          {
+            "title": "Change the Password",
+            "content": "Use the `passwd` command to change the password for your user account."
+          },
+          {
+            "title": "Set Default User Back to Normal",
+            "content": "After changing the password, set the default user back to your normal user."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T21:26:39.085Z",
+      "updated": "2026-02-05T21:26:39.085Z",
+      "sourceUrl": "https://askubuntu.com/questions/772050/reset-the-password-in-ubuntu-linux-bash-in-windows",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770326802643-675",
+    "title": "Fix Ubuntu Login Issue After sudo startx",
+    "problemDescription": "Unable to log in to Ubuntu after running sudo startx, with no access to files or folders.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "login",
+      "sudo",
+      "startx",
+      "password reset"
+    ],
+    "steps": [
+      {
+        "title": "Delete Configuration Files",
+        "content": "Open a terminal and run the following commands to delete the problematic configuration files: `rm ~/.Xauthority` and `rm -rf ~/.config/autostart`. Then, reboot your system with `shutdown -r now`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset Password via Recovery Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Recovery Mode",
+            "content": "Restart your computer and hold down the Shift key to access the GRUB menu. Select 'Recovery Mode'."
+          },
+          {
+            "title": "Drop to Root Shell Prompt",
+            "content": "Choose the 'Drop to root shell prompt' option from the recovery menu."
+          },
+          {
+            "title": "Reset Password",
+            "content": "At the command prompt, type `passwd` followed by your username and then your new password twice. After that, type `sync` and then `reboot -f` to reboot your system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T21:26:42.643Z",
+      "updated": "2026-02-05T21:26:42.643Z",
+      "sourceUrl": "https://askubuntu.com/questions/319697/unable-to-log-in-and-unable-to-reset-the-password",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
