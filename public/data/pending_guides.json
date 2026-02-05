@@ -112852,5 +112852,663 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770320174377-363",
+    "title": "Fix Second Monitor Turning Blue",
+    "problemDescription": "Second monitor connected to a Mac turns blue and displays no image.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "monitor",
+      "blue screen",
+      "Mac",
+      "HDMI",
+      "display"
+    ],
+    "steps": [
+      {
+        "title": "Reset SMC and NVRAM",
+        "content": "1. Shut down your Mac. 2. Press and hold the power button for 10 seconds to turn it off completely. 3. Turn on your Mac and immediately press and hold Command (⌘) + Option + P + R for about 20 seconds. 4. Release the keys and allow your Mac to restart."
+      },
+      {
+        "title": "Check Hardware Connections",
+        "content": "1. Ensure that the HDMI or display cable is securely connected to both the monitor and the Mac. 2. Try using a different cable to rule out a faulty cable."
+      },
+      {
+        "title": "Run First Aid on Hard Drive",
+        "content": "1. Open Disk Utility from the Utilities folder. 2. Select your hard drive from the list. 3. Click on 'First Aid' and follow the on-screen instructions to check and repair the hard drive."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Switch Inputs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch Input Sources",
+            "content": "1. If the issue occurs on a TV or monitor with multiple inputs, switch to a different input source (e.g., from HDMI to cable TV) for a few seconds. 2. Switch back to the original input source to see if the issue is resolved."
+          }
+        ]
+      },
+      {
+        "title": "Reinstall macOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall macOS",
+            "content": "1. If the above steps do not resolve the issue, consider reinstalling macOS. 2. Back up your data using Time Machine. 3. Boot into Recovery Mode by restarting your Mac and holding down Command (⌘) + R. 4. Use the macOS Utilities window to reinstall macOS."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T19:36:14.377Z",
+      "updated": "2026-02-05T19:36:14.377Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/314002/second-monitor-turns-blue-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770320176461-205",
+    "title": "Prevent OS X from Resizing and Moving Windows on Sleep",
+    "problemDescription": "OS X resizes and moves windows when sleeping while attached to an external monitor via HDMI.",
+    "category": "macOS",
+    "difficulty": "Medium",
+    "keywords": [
+      "macOS",
+      "windows",
+      "sleep",
+      "HDMI",
+      "DisplayPort"
+    ],
+    "steps": [
+      {
+        "title": "Switch to DisplayPort",
+        "content": "Use a DisplayPort connection instead of HDMI to prevent window resizing and moving issues when the system sleeps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Stay App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install Stay",
+            "content": "Download and install the Stay app by Cordless Dog, which keeps windows in place between display configuration changes."
+          }
+        ]
+      },
+      {
+        "title": "Program a Custom Solution",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Develop a Custom Script",
+            "content": "Program a custom solution to handle window positions, though this requires programming knowledge."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T19:36:16.461Z",
+      "updated": "2026-02-05T19:36:16.461Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/179928/can-i-prevent-os-x-from-resizing-and-moving-windows-when-sleeping-while-attached",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770320178739-95",
+    "title": "Enable IGMP Snooping for HomePod Mini AirPlay Issues",
+    "problemDescription": "HomePod Mini not showing up for AirPlay despite other devices working fine.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "HomePod Mini",
+      "AirPlay",
+      "IGMP snooping",
+      "OpenWRT"
+    ],
+    "steps": [
+      {
+        "title": "Access Router Settings",
+        "content": "Log in to your OpenWRT router's admin interface."
+      },
+      {
+        "title": "Navigate to LAN Settings",
+        "content": "Go to the LAN bridge settings in your router's configuration."
+      },
+      {
+        "title": "Enable IGMP Snooping",
+        "content": "Enable IGMP snooping in the LAN bridge settings."
+      },
+      {
+        "title": "Save and Apply Changes",
+        "content": "Save the changes and apply the new settings."
+      },
+      {
+        "title": "Reboot Devices",
+        "content": "Reboot your HomePod Mini and any other affected devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reboot HomePods & AppleTVs for Thread Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reboot HomePods",
+            "content": "Reboot your HomePods to resolve any Thread-related issues."
+          },
+          {
+            "title": "Reboot AppleTVs",
+            "content": "Reboot your AppleTVs to ensure proper connectivity."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T19:36:18.739Z",
+      "updated": "2026-02-05T19:36:18.739Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/416210/homepod-mini-no-peer-to-peer-warning",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770320183505-89",
+    "title": "Fix iPhone 6 Wireless Working on B/G Mode",
+    "problemDescription": "iPhone 6 is operating on slower b/g wireless mode instead of faster N or AC modes.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "wireless",
+      "b/g mode",
+      "router",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Identify Incompatible Devices",
+        "content": "Examine all devices connected to your network to find any that do not support N or AC modes (e.g., old printers, Roku)."
+      },
+      {
+        "title": "Reconfigure or Upgrade Devices",
+        "content": "Reconfigure, upgrade, or eliminate the incompatible devices to allow the network to operate in N or AC modes."
+      },
+      {
+        "title": "Check for Outside Devices",
+        "content": "Ensure there are no outside devices on your wireless network that might be causing the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Configure Router to N Mode Only",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Airport Utility",
+            "content": "Open the Airport Utility on your computer."
+          },
+          {
+            "title": "Select Wi-Fi Settings",
+            "content": "Go to Wi-Fi Settings and then to Radio Mode."
+          },
+          {
+            "title": "Change Radio Mode",
+            "content": "Change the mode for 2.4GHz to N only. This will help identify incompatible devices."
+          }
+        ]
+      },
+      {
+        "title": "Separate 2.4GHz and 5GHz Network Names",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Wireless Options",
+            "content": "Go to Wireless Options in your Airport Utility."
+          },
+          {
+            "title": "Change 5GHz Network Name",
+            "content": "Change the network name for the 5GHz band to be different from the 2.4GHz band."
+          },
+          {
+            "title": "Update iDevice Settings",
+            "content": "On your iPhone, replace the old Wi-Fi network with the new one to ensure it connects to the correct band."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T19:36:23.505Z",
+      "updated": "2026-02-05T19:36:23.505Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/157380/why-is-my-iphone-6-wireless-working-on-b-g-mode",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770320211898-12",
+    "title": "Reset SMC on MacBook Pro",
+    "problemDescription": "MacBook Pro is excruciatingly slow and unresponsive.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "slow",
+      "reset",
+      "smc"
+    ],
+    "steps": [
+      {
+        "title": "Shut Down Your MacBook Pro",
+        "content": "Fully shut down your MacBook Pro by selecting 'Shut Down' from the Apple menu."
+      },
+      {
+        "title": "Keep the Power Connected",
+        "content": "Ensure the MagSafe adapter (power cable) is plugged in."
+      },
+      {
+        "title": "Reset the SMC",
+        "content": "Press and hold the `shift`, `option`, `control` keys (on the left side of the keyboard) and the `power button` simultaneously."
+      },
+      {
+        "title": "Release the Keys",
+        "content": "Let go of all the keys and the power button."
+      },
+      {
+        "title": "Restart Your MacBook Pro",
+        "content": "Turn your computer back on by pressing the power button."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Start in Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Shut Down Your MacBook Pro",
+            "content": "Fully shut down your MacBook Pro by selecting 'Shut Down' from the Apple menu."
+          },
+          {
+            "title": "Restart Your MacBook Pro",
+            "content": "Restart your MacBook Pro."
+          },
+          {
+            "title": "Enter Safe Mode",
+            "content": "Immediately press and hold the `Shift` key."
+          },
+          {
+            "title": "Release the Shift Key",
+            "content": "Let go of the `Shift` key when you see the login window."
+          },
+          {
+            "title": "Test Performance",
+            "content": "Use the computer as usual and determine if it's working faster now."
+          }
+        ]
+      },
+      {
+        "title": "Run Hardware Diagnostics",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Shut Down Your MacBook Pro",
+            "content": "Fully shut down your MacBook Pro by selecting 'Shut Down' from the Apple menu."
+          },
+          {
+            "title": "Press Power Button and Key Combination",
+            "content": "Press the `power button` and then press the `command`, `option`, `p`, and `r` keys before the gray screen appears."
+          },
+          {
+            "title": "Hold Keys Until Reboot",
+            "content": "Hold those keys down until your Mac reboots again and you hear the startup chime."
+          },
+          {
+            "title": "Release the Keys",
+            "content": "Let go of the keys and let your Mac reboot normally."
+          },
+          {
+            "title": "Readjust System Preferences",
+            "content": "Note that you may need to readjust some of your system preferences (e.g., mouse speed, time and date/timezone, etc.) after the reboot."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T19:36:51.898Z",
+      "updated": "2026-02-05T19:36:51.898Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/260438/macbook-pro-is-excruciatingly-slow",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770320213769-592",
+    "title": "Fix MacBook Air Slow Booting and Shutdown",
+    "problemDescription": "MacBook Air is experiencing slow booting and shutdown times.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "slow",
+      "booting",
+      "shutdown"
+    ],
+    "steps": [
+      {
+        "title": "Reset PRAM and NVRAM",
+        "content": "1. Shut down the computer. 2. Locate the following keys on the keyboard: `⌥`+`⌘`+`P`+`R`. 3. Turn on the computer. 4. Press and hold the `⌥`+`⌘`+`P`+`R` keys before the gray screen appears. 5. Hold the keys down until the computer restarts and you hear the startup sound for the second time. 6. Release the keys. 7. Set the startup disk in system preferences and reboot again to test the timing."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Unbind from Active Directory Domain",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unbind from Active Directory",
+            "content": "Unbind the MacBook Air from the Active Directory domain to resolve the issue."
+          }
+        ]
+      },
+      {
+        "title": "Check Network Configuration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Network Settings",
+            "content": "Check your network configuration to ensure there are no issues affecting the booting and shutdown times."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T19:36:53.769Z",
+      "updated": "2026-02-05T19:36:53.769Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/35846/macbook-air-has-suddenly-become-very-slow-at-booting-and-shutdown",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770320222110-440",
+    "title": "Fix Microsoft Teams Recording on Android",
+    "problemDescription": "Unable to record Microsoft Teams meetings on an Android smartphone.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "teams",
+      "recording",
+      "android",
+      "meeting"
+    ],
+    "steps": [
+      {
+        "title": "Clear Teams App Data",
+        "content": "Go to Settings -> Apps (or Apps & notifications). Look for Teams, select it. Under storage, select clear data. Restart the app and try recording again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Teams in Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Teams in Browser",
+            "content": "Open Microsoft Teams in a web browser and try recording the meeting from there."
+          }
+        ]
+      },
+      {
+        "title": "Use Third-Party Screen Recorder",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Screen Recorder",
+            "content": "Install a third-party screen recorder app like XRecorder on your Android device."
+          },
+          {
+            "title": "Record the Meeting",
+            "content": "Use the screen recorder to capture the Teams meeting."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T19:37:02.110Z",
+      "updated": "2026-02-05T19:37:02.110Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/224783/recording-microsoft-teams-meeting-on-android-smartphone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770320227846-779",
+    "title": "Fix Google Discover 'Something went wrong' Error",
+    "problemDescription": "Google Discover displays an error message 'Something went wrong' on Android devices.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "google",
+      "discover",
+      "error",
+      "location",
+      "vpn"
+    ],
+    "steps": [
+      {
+        "title": "Use a VPN to Change Location",
+        "content": "Download and install a VPN app from the Google Play Store. Connect to a server in a different location and check if Google Discover works."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Location Services",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Settings",
+            "content": "Open the Settings app on your Android device."
+          },
+          {
+            "title": "Navigate to Location",
+            "content": "Tap on 'Location' or 'Location Services'."
+          },
+          {
+            "title": "Turn Off Location",
+            "content": "Toggle the switch to turn off location services and check if Google Discover works."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T19:37:07.846Z",
+      "updated": "2026-02-05T19:37:07.846Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/243174/google-discover-says-something-went-wrong-how-to-fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770320235228-699",
+    "title": "Add Multiple Links to Instagram Bio",
+    "problemDescription": "Instagram only allows one link in the bio, but you want to share multiple links.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "bio",
+      "links",
+      "lnk.bio"
+    ],
+    "steps": [
+      {
+        "title": "Create a Lnk.Bio Account",
+        "content": "Go to the Lnk.Bio website and sign up for an account."
+      },
+      {
+        "title": "Add Links to Your Lnk.Bio Profile",
+        "content": "Once logged in, add all the links you want to share, along with any images or descriptions."
+      },
+      {
+        "title": "Generate a Common URL",
+        "content": "Lnk.Bio will generate a single URL that contains all your links."
+      },
+      {
+        "title": "Update Your Instagram Bio",
+        "content": "Copy the generated URL from Lnk.Bio and paste it into your Instagram bio."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Instagram Lite",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Instagram Lite",
+            "content": "Install Instagram Lite from the Play Store or use the web app."
+          },
+          {
+            "title": "Use Instagram Lite Features",
+            "content": "Instagram Lite offers most features of the main app but with less power consumption and a smaller size."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T19:37:15.228Z",
+      "updated": "2026-02-05T19:37:15.228Z",
+      "sourceUrl": "https://www.makeuseof.com/tag/annoying-instagram-issues-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770320239154-251",
+    "title": "Fix Instagram App Not Working on Windows 11",
+    "problemDescription": "Instagram app is not working properly on Windows 11.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "instagram",
+      "windows 11",
+      "app error"
+    ],
+    "steps": [
+      {
+        "title": "Repair the Instagram App",
+        "content": "Go to Settings > Apps > Installed Apps. Find Instagram, click on the three dots, and select 'Advanced options'. Scroll down and click on 'Repair'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset the Instagram App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset the Instagram App",
+            "content": "Go to Settings > Apps > Installed Apps. Find Instagram, click on the three dots, and select 'Advanced options'. Scroll down and click on 'Reset'. Note that this will restore the app to its original state and settings, and you will lose all app data."
+          }
+        ]
+      },
+      {
+        "title": "Reinstall Instagram",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall the Instagram App",
+            "content": "Go to Settings > Apps > Installed Apps. Find Instagram, click on the three dots, and select 'Uninstall'. Then, reinstall the app from the Microsoft Store."
+          }
+        ]
+      },
+      {
+        "title": "Run the Windows Store Apps Troubleshooter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run the Windows Store Apps Troubleshooter",
+            "content": "Go to Settings > System > Troubleshoot > Other troubleshooters. Find 'Windows Store Apps' and click on 'Run'. Follow the on-screen instructions to troubleshoot and fix any issues."
+          }
+        ]
+      },
+      {
+        "title": "Check Instagram Server Status",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Instagram Server Status",
+            "content": "Visit third-party websites like DownDetector to check if Instagram servers are down. If they are, wait for Instagram to fix the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T19:37:19.154Z",
+      "updated": "2026-02-05T19:37:19.154Z",
+      "sourceUrl": "https://www.makeuseof.com/windows-11-instagram-not-working/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770320240594-164",
+    "title": "Fix Instagram Reels Not Working",
+    "problemDescription": "Instagram Reels are not loading or playing on your device.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "reels",
+      "app-error",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check Your Internet Connection",
+        "content": "Ensure your internet connection is stable. Reconnect to the network and reset your router if necessary."
+      },
+      {
+        "title": "Clear the App's Cached Data",
+        "content": "Go to your device settings, find the Instagram app, and clear its cached data."
+      },
+      {
+        "title": "Report the Issue to Instagram",
+        "content": "If the problem persists, report the issue to Instagram Support through the app's settings menu."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Try The Instagram Beta",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Instagram Beta",
+            "content": "Go to the Instagram Beta's page on the Google Play Store and apply to become a tester. Once approved, update the app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T19:37:20.594Z",
+      "updated": "2026-02-05T19:37:20.594Z",
+      "sourceUrl": "https://www.makeuseof.com/instagram-reels-not-working-fixes/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
