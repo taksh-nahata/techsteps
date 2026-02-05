@@ -111808,5 +111808,295 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770309711672-917",
+    "title": "Fix MacBook Pro 14,2 (2017) Internal Microphone on Ubuntu 24.04",
+    "problemDescription": "Internal microphone not capturing audio on Ubuntu 24.04 despite being detected in audio settings.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "audio",
+      "microphone",
+      "macbook",
+      "input"
+    ],
+    "steps": [
+      {
+        "title": "Install Required Driver",
+        "content": "Clone and install the davidjo/snd_hda_macbookpro driver designed for Cirrus Logic chips."
+      },
+      {
+        "title": "Resolve Kernel Source Dependency",
+        "content": "Manually download and install Linux-source-6.11.0 from a trusted source or backport the driver to your current kernel version (6.8.0)."
+      },
+      {
+        "title": "Compile and Install the Driver",
+        "content": "Follow the driver's installation instructions, ensuring all dependencies are met."
+      },
+      {
+        "title": "Verify Microphone Functionality",
+        "content": "Check if the microphone is now capturing audio using pavucontrol or alsamixer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust GRUB Parameters",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit GRUB Configuration",
+            "content": "Add `snd_hda_intel.dmic_detect=0` to the GRUB kernel parameters."
+          },
+          {
+            "title": "Update GRUB and Reboot",
+            "content": "Run `sudo update-grub` and reboot your system."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use hda-verb",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install hda-verb",
+            "content": "Install hda-verb if not already present on your system."
+          },
+          {
+            "title": "Activate Microphone Pin",
+            "content": "Use hda-verb commands to activate the microphone pin."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T16:41:51.672Z",
+      "updated": "2026-02-05T16:41:51.672Z",
+      "sourceUrl": "https://askubuntu.com/questions/1552591/macbook-pro-14-2-2017-intel-audio-input-mic-camera-issues-on-ubuntu-24-04",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770309736463-703",
+    "title": "Nexus 7 2013 Screen Not Turning On",
+    "problemDescription": "The screen of a Nexus 7 2013 tablet won't come on, indicating a potential hardware issue.",
+    "category": "android",
+    "difficulty": "Hard",
+    "keywords": [
+      "nexus 7",
+      "screen",
+      "hardware",
+      "repair"
+    ],
+    "steps": [
+      {
+        "title": "Check for ADB Device Recognition",
+        "content": "Turn on the tablet and let it sit as if it were starting. Attempt to unlock the screen. Plug the tablet into the computer used for rooting and check if it appears in the ADB device list."
+      },
+      {
+        "title": "Consider Professional Repair",
+        "content": "Contact a local electronics repair shop or the manufacturer to inquire about screen replacement. Be aware that manufacturer repairs can be expensive."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "DIY Screen Replacement",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase Replacement Parts",
+            "content": "Buy a replacement screen or digitizer from a reliable source like Amazon."
+          },
+          {
+            "title": "Follow Detailed Repair Guide",
+            "content": "Watch a detailed YouTube tutorial on replacing the screen and digitizer, then decide if you are comfortable performing the repair yourself."
+          }
+        ]
+      },
+      {
+        "title": "Factory Reset via HDMI",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect to HDMI",
+            "content": "Connect the tablet to an HDMI monitor to see the screen output."
+          },
+          {
+            "title": "Use a Mouse for Navigation",
+            "content": "Connect a regular mouse to the USB port and navigate to the backup/restore section of settings."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Select the option to reset the tablet to factory settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T16:42:16.463Z",
+      "updated": "2026-02-05T16:42:16.463Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/165613/nexus-7-2013-screen-wont-come-on-when-to-give-up",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1770309749750-878",
+    "title": "Stop Microphone or App on Screen Lock",
+    "problemDescription": "Discord or other apps continue to use the microphone or run in the background even when the screen is locked.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "microphone",
+      "screen lock",
+      "discord",
+      "background apps"
+    ],
+    "steps": [
+      {
+        "title": "Use AppOps to Restrict Microphone Access",
+        "content": "Run the following command to restrict microphone access for the app when the screen is locked: `appops set com.discord RECORD_AUDIO foreground`. This ensures the app can only use the microphone when it is in the foreground."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Revoke Permissions Using Automation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Revoke Microphone Permission on Screen Lock",
+            "content": "Use automation apps to revoke the `RECORD_AUDIO` permission when the screen is locked: `pm revoke org.lineageos.recorder android.permission.RECORD_AUDIO` and `appops set com.discord RECORD_AUDIO ignore`."
+          },
+          {
+            "title": "Restore Permissions on Screen Unlock",
+            "content": "Restore the microphone permission when the screen is unlocked by reversing the above commands."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T16:42:29.750Z",
+      "updated": "2026-02-05T16:42:29.750Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/225545/how-to-stop-microphone-or-app-on-screen-lock",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770309752540-371",
+    "title": "Improve Audio Quality on 3rd Party Apps",
+    "problemDescription": "Audio quality is compressed when using 3rd party apps like Messenger, Discord, Zoom, etc. on Android.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "audio",
+      "android",
+      "3rd party apps",
+      "compression"
+    ],
+    "steps": [
+      {
+        "title": "Use 5G Network",
+        "content": "Switch to a 5G network if available, as it provides better bandwidth for calls."
+      },
+      {
+        "title": "Check Wi-Fi Connection",
+        "content": "Ensure you are connected to a stable and high-speed Wi-Fi network."
+      },
+      {
+        "title": "Update Apps",
+        "content": "Make sure all your apps are updated to the latest version for optimal performance."
+      },
+      {
+        "title": "Adjust App Settings",
+        "content": "Check the app settings for any audio quality or bandwidth options and adjust them accordingly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Internet Service Provider",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Research ISPs",
+            "content": "Research internet service providers in your area that offer better bandwidth for VoIP services."
+          },
+          {
+            "title": "Switch ISPs",
+            "content": "If possible, switch to an ISP that provides better support for high-quality audio calls."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T16:42:32.540Z",
+      "updated": "2026-02-05T16:42:32.540Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/233058/how-do-i-improve-audio-quality-when-calling-with-3rd-party-apps-e-g-messenger",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770309760526-710",
+    "title": "Fix Apple TV on Roku 'Video Not Available'",
+    "problemDescription": "Apple TV app on Roku displays 'Video Not Available' error.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "roku",
+      "apple tv",
+      "video not available"
+    ],
+    "steps": [
+      {
+        "title": "Change Audio Settings",
+        "content": "Go to Roku Settings > Audio > HDMI and switch from 'Auto detect' to 'PCM-Stereo'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restart Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unplug Roku and Router",
+            "content": "Unplug the Roku from the TV and unplug the router. Wait for 20 seconds."
+          },
+          {
+            "title": "Plug Devices Back In",
+            "content": "Plug the router back in and wait for it to come back online. Then, plug the Roku back in."
+          },
+          {
+            "title": "Reset Network Connection",
+            "content": "Perform a network connection reset on the Roku and set up the connection again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Roku Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Roku Support",
+            "content": "Go to the Roku Support page for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T16:42:40.526Z",
+      "updated": "2026-02-05T16:42:40.526Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254614720",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
