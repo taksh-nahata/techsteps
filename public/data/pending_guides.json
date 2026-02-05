@@ -108920,5 +108920,507 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770280667701-196",
+    "title": "Fix MacBook External Hard Drive Connection",
+    "problemDescription": "External hard drive not recognized or working properly on MacBook.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "macbook",
+      "external hard drive",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check Device Compatibility",
+        "content": "Verify that the external hard drive is compatible with your MacBook and plugged into the correct port version."
+      },
+      {
+        "title": "Inspect Physical Connections",
+        "content": "Ensure the device is properly plugged into the correct port and that the port and cable are not damaged or blocked."
+      },
+      {
+        "title": "Restart Devices",
+        "content": "Restart your MacBook and, if necessary, the external hard drive."
+      },
+      {
+        "title": "Reset PRAM/NVRAM and SMC",
+        "content": "If the issue persists, reset the PRAM/NVRAM and SMC to clear any settings glitches."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check on Another Computer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test on Another Computer",
+            "content": "Check if the external hard drive works properly on another computer to narrow down the problem."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T08:37:47.701Z",
+      "updated": "2026-02-05T08:37:47.701Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-macbook-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770280678743-872",
+    "title": "Fix MacBook Air M2 Notch Display Issues",
+    "problemDescription": "Apps or content are obstructed by the notch on the MacBook Air M2.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "macbook",
+      "notch",
+      "display",
+      "macos"
+    ],
+    "steps": [
+      {
+        "title": "Use Full-Screen Mode",
+        "content": "Open the app and click the green circle in the upper-left corner to enter full-screen mode. This will cover the notch. To exit, press Esc or use the Control + Command + F shortcut."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Adjust App Scaling",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Scale App to Fit Below Notch",
+            "content": "Go to Finder > Applications, right-click the app, select 'Get Info', and choose 'Scale to fit below the built-in camera box'. Close the window and reopen the app."
+          }
+        ]
+      },
+      {
+        "title": "Use TopNotch Application",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Enable TopNotch",
+            "content": "Download the TopNotch app (requires macOS 11.0 or higher). Once installed, it will place a bar across the top of the screen, blacking out the notch."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T08:37:58.743Z",
+      "updated": "2026-02-05T08:37:58.743Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-macbook-air-m2-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770280692687-671",
+    "title": "Fix Ubuntu Webcam Blank Screen",
+    "problemDescription": "Laptop's webcam shows a blank screen in Ubuntu.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "webcam",
+      "blank screen",
+      "cheese"
+    ],
+    "steps": [
+      {
+        "title": "Check and Adjust Cheese Preferences",
+        "content": "Open Cheese, go to Preferences, and ensure the Brightness, Contrast, Saturation, and Hue sliders are in the middle position."
+      },
+      {
+        "title": "Create Symlink and Set Permissions",
+        "content": "Open a terminal and run the following commands:\n1. `ln -sf /dev/video0 /dev/video`\n2. `chmod a+rw /dev/video`"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Secure Boot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Secure Boot in BIOS",
+            "content": "Restart your laptop, enter BIOS settings (usually by pressing F2, F12, or Esc during startup), and disable Secure Boot."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Add nomodeset to GRUB",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit GRUB Configuration",
+            "content": "Open a terminal and run `sudo gedit /etc/default/grub`. Add `nomodeset` after `quiet splash` in the line starting with `GRUB_CMDLINE_LINUX_DEFAULT`."
+          },
+          {
+            "title": "Update GRUB",
+            "content": "Run `sudo update-grub` to apply the changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T08:38:12.687Z",
+      "updated": "2026-02-05T08:38:12.687Z",
+      "sourceUrl": "https://askubuntu.com/questions/1368305/laptops-webcam-shows-blank-screen",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770280704673-754",
+    "title": "Fix Ubuntu Camera Not Working",
+    "problemDescription": "The built-in camera is not working on Ubuntu, but works with third-party apps like Cheese.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "camera",
+      "not working",
+      "linux"
+    ],
+    "steps": [
+      {
+        "title": "Add User to Video Group",
+        "content": "Open the Terminal (CTRL + Alt + T) and run the command: `sudo adduser $USER video`."
+      },
+      {
+        "title": "Log Out and Check Group",
+        "content": "Log out of your session, then log back in. Verify you are in the video group by running: `groups`. If you are not in the video group, reboot your system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Install v4l-utils",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update and Install v4l-utils",
+            "content": "Run the following commands in the Terminal: `sudo apt-get update` and `sudo apt-get install v4l-utils`."
+          },
+          {
+            "title": "Check Camera Detection",
+            "content": "Verify the camera is detected by running: `v4l2-ctl --list-devices`."
+          },
+          {
+            "title": "Open Ubuntu Camera",
+            "content": "Launch the Ubuntu camera app with: `snapshot`."
+          }
+        ]
+      },
+      {
+        "title": "Restart Pipewire on Startup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Startup Applications",
+            "content": "Open the app menu on Ubuntu, search for 'Startup Applications', and open it."
+          },
+          {
+            "title": "Add New Startup Command",
+            "content": "Click 'add', name it 'Camera workaround', and in the command field, type: `systemctl --user restart pipewire`. Add a comment explaining the workaround."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T08:38:24.673Z",
+      "updated": "2026-02-05T08:38:24.673Z",
+      "sourceUrl": "https://askubuntu.com/questions/1511671/camera-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770280715775-925",
+    "title": "Fix Windows 11 Screen Flickering on Startup",
+    "problemDescription": "Screen flickers during startup on Windows 11.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "screen flickering",
+      "startup",
+      "fast startup",
+      "display driver"
+    ],
+    "steps": [
+      {
+        "title": "Turn Off Fast Startup",
+        "content": "Press Windows key + R, type 'control', and press Enter. Click on Power Options. On the left, click 'Choose what the power buttons do'. Then click 'Change settings that are currently unavailable'. Uncheck 'Turn on fast startup (recommended)'. Click 'Save changes', then restart your laptop to test."
+      },
+      {
+        "title": "Update or Reinstall Your Display Driver",
+        "content": "Right-click the Start button and select Device Manager. Expand Display adapters. Right-click your display driver (it might say Intel, AMD, or NVIDIA), then click 'Update driver'. If that doesn’t help, right-click it again, choose 'Uninstall device', and then restart your laptop. Windows will reinstall the driver automatically."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to Settings > Windows Update and click 'Check for updates'. Install any that are available, including optional driver updates."
+      },
+      {
+        "title": "Run a System Check",
+        "content": "Type 'cmd' in the Start menu, right-click Command Prompt, and choose 'Run as administrator'. In the black window, type: 'sfc /scannow' and press Enter. Once that’s done, also run: 'DISM /Online /Cleanup-Image /RestoreHealth'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Startup Items",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Startup Items",
+            "content": "Switch to the Startup tab, and click 'Open Task Manager'. Disable all startup items there. Restart your PC and see if the flickering is gone. If it is, you can turn things back on one at a time to find the troublemaker."
+          }
+        ]
+      },
+      {
+        "title": "Try a Clean Boot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try a Clean Boot",
+            "content": "Press Windows key + R, type 'msconfig', and press Enter. Go to the Services tab, check 'Hide all Microsoft services', then click 'Disable all'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T08:38:35.775Z",
+      "updated": "2026-02-05T08:38:35.775Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/windows-11-screen-flickering-on-startup/b672f157-dee2-4604-82b1-a8f4375893ab",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770280719373-276",
+    "title": "Fix Windows 10 Blue Screen Flickering on Login",
+    "problemDescription": "The screen flickers with a blue screen on login, requiring a forced shutdown to resolve temporarily.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "blue screen",
+      "flickering",
+      "login",
+      "explorer.exe"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall KB4579311 Update",
+        "content": "Go to Settings > Update & Security > View update history > Uninstall updates. Find KB4579311 and uninstall it."
+      },
+      {
+        "title": "Pause Windows Updates",
+        "content": "After uninstalling the update, go to Settings > Update & Security > Windows Update > Pause updates for 7 days to prevent the update from reinstalling."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Graphics Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Current Drivers",
+            "content": "Go to Device Manager > Display adapters > Right-click your graphics card > Uninstall device."
+          },
+          {
+            "title": "Download Latest Drivers",
+            "content": "Visit the manufacturer's website to download the latest drivers for your graphics card."
+          },
+          {
+            "title": "Install New Drivers",
+            "content": "Run the downloaded installer and follow the on-screen instructions to install the new drivers."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Run System File Checker",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Command Prompt as Administrator",
+            "content": "Press Win + X and select Command Prompt (Admin) or Windows PowerShell (Admin)."
+          },
+          {
+            "title": "Run SFC Scan",
+            "content": "Type 'sfc /scannow' and press Enter. Wait for the scan to complete and restart your computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T08:38:39.373Z",
+      "updated": "2026-02-05T08:38:39.373Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/flashing-blue-screen-on-log-in/9cb4e99d-4544-4d2f-9639-5c0516efb5eb",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770280723731-750",
+    "title": "Fix Screen Flickering in Windows 11",
+    "problemDescription": "Screen flickering issue in Windows 11, especially when using Microsoft Edge and Word.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen flickering",
+      "Windows 11",
+      "hardware issue",
+      "BIOS",
+      "drivers"
+    ],
+    "steps": [
+      {
+        "title": "Check for Hardware Issues",
+        "content": "Connect your laptop to an external monitor or TV. If the flickering persists on the external display, it indicates a hardware problem. If not, the issue may be related to your laptop's built-in display."
+      },
+      {
+        "title": "Enter BIOS Interface",
+        "content": "Restart your computer and enter the BIOS interface. Observe if the screen flickering problem is still present. If it is, it's likely a hardware issue. If not, the problem may be related to the operating system or drivers."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Display Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Press the Windows key + X and select Device Manager."
+          },
+          {
+            "title": "Update Display Drivers",
+            "content": "Expand the Display adapters section, right-click on your display driver, and select Update driver."
+          }
+        ]
+      },
+      {
+        "title": "Disable Hardware Acceleration in Edge",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Edge Settings",
+            "content": "Open Microsoft Edge and go to Settings."
+          },
+          {
+            "title": "Disable Hardware Acceleration",
+            "content": "Under System, toggle off the 'Use hardware acceleration when available' option."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T08:38:43.731Z",
+      "updated": "2026-02-05T08:38:43.731Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/screen-flickering-issue/4e40ec5e-e9ff-49cd-bc90-8ed001cf4460",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770280726005-134",
+    "title": "Fix Screen Flicker on MSI GX740 Laptop",
+    "problemDescription": "Screen flickering on MSI GX740 laptop with ATI HD 5870 graphics card.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "screen flicker",
+      "MSI GX740",
+      "graphics driver",
+      "ATI HD 5870"
+    ],
+    "steps": [
+      {
+        "title": "Roll Back GPU Driver",
+        "content": "Go to Device Manager, select your GPU, click Properties, and roll back the driver to a previous version that worked."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Graphics Driver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download the Latest Driver",
+            "content": "Visit the manufacturer's website or use a trusted driver update tool to download the latest graphics driver."
+          },
+          {
+            "title": "Install the Driver",
+            "content": "Follow the installation instructions provided by the manufacturer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T08:38:46.005Z",
+      "updated": "2026-02-05T08:38:46.005Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/how-do-i-fix-screen-flicker-on-msi-gx740-laptop/904f8664-56ae-4c65-ad07-eba3fe2d700f",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770280756019-120",
+    "title": "Mitigate YubiKey 5 Series Vulnerability",
+    "problemDescription": "YubiKey 5 series and other FIDO devices using Infineon SLB96xx series TPM chip are vulnerable to cloning attacks.",
+    "category": "security",
+    "difficulty": "Hard",
+    "keywords": [
+      "YubiKey",
+      "FIDO",
+      "two-factor authentication",
+      "security",
+      "vulnerability"
+    ],
+    "steps": [
+      {
+        "title": "Upgrade to a Newer Model",
+        "content": "Replace the vulnerable YubiKey 5 series with a newer model that is not affected by the Infineon SLB96xx series TPM chip vulnerability."
+      },
+      {
+        "title": "Use Alternative 2FA Methods",
+        "content": "Implement alternative two-factor authentication methods such as authenticator apps or SMS-based verification until a permanent solution is available."
+      },
+      {
+        "title": "Monitor for Suspicious Activity",
+        "content": "Regularly monitor your accounts for any unauthorized access or suspicious activity."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different FIDO Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to a Non-Infineon FIDO Device",
+            "content": "Use a FIDO device from a different manufacturer that does not use the Infineon SLB96xx series TPM chip."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T08:39:16.019Z",
+      "updated": "2026-02-05T08:39:16.019Z",
+      "sourceUrl": "https://www.tomshardware.com/tech-industry/cyber-security/older-yubikeys-compromised-by-unpatchable-2fa-bug-side-channel-attack-is-critical-but-expensive-and-difficult-to-execute",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
   }
 ]
