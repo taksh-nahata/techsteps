@@ -114970,5 +114970,320 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770333661500-409",
+    "title": "Clean PC Fans and Heatsink",
+    "problemDescription": "Your PC is running slow due to dust buildup in fans and heatsink.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "slow",
+      "pc",
+      "clean",
+      "fans",
+      "heatsink"
+    ],
+    "steps": [
+      {
+        "title": "Power Down and Access Components",
+        "content": "Power down your PC, remove the case lid, and locate the various fans."
+      },
+      {
+        "title": "Clean Fans with Compressed Air",
+        "content": "Use a can of compressed air to blow through the internal slits of the power supply, intake fan, and rear exhaust fan. Aim beneath the center of the fan blades where the motor meets the fan assembly."
+      },
+      {
+        "title": "Restart and Spray Fans",
+        "content": "Restart your PC and, while the fans are spinning, spray them briefly with compressed air to dislodge any remaining dust."
+      },
+      {
+        "title": "Clean Heatsink",
+        "content": "Remove the heatsink from the processor. Clean the old thermal interface material with isopropyl alcohol and a clean cloth."
+      },
+      {
+        "title": "Apply New Thermal Paste",
+        "content": "Apply a thin, consistent layer of new thermal paste to the top of the chip using a scalpel or old credit card. Reattach the heatsink."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Moist Paper Towel and Cotton Buds",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clean Hard-to-Reach Areas",
+            "content": "Use a moist paper towel and cotton buds to clean dust from harder-to-reach areas around the system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T23:21:01.500Z",
+      "updated": "2026-02-05T23:21:01.500Z",
+      "sourceUrl": "https://www.cnet.com/pictures/10-ways-to-fix-a-slow-pc/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770333681220-333",
+    "title": "Fix Roku Error Code 014",
+    "problemDescription": "Roku device unable to connect to Wi-Fi network, displaying error code 014.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "roku",
+      "error code",
+      "wifi",
+      "connection",
+      "streaming"
+    ],
+    "steps": [
+      {
+        "title": "Disable Network Pings",
+        "content": "Press the Home button 5 times on your Roku remote. Then press the forward button, followed by play, rewind, play, and forward buttons. Select 'Disable system pings' and connect to the available Wi-Fi network."
+      },
+      {
+        "title": "Update Roku Software",
+        "content": "If you can't find the 'Disable network pings' option, your Roku device may need a software update. Connect your Roku to a network using an alternative Wi-Fi, Ethernet cable, or mobile hotspot. Press the Home button 5 times, then press the forward button three times and the rewind button twice. Select 'Update Software' and follow the installation prompts to restart your device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Ethernet or Mobile Hotspot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect via Ethernet or Mobile Hotspot",
+            "content": "If Wi-Fi is unstable, connect your Roku device using an Ethernet cable or a mobile hotspot for a more stable connection. This can help in updating the software and resolving the error code."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T23:21:21.220Z",
+      "updated": "2026-02-05T23:21:21.220Z",
+      "sourceUrl": "https://rokuerrorcodes.quora.com/How-to-Fix-Roku-Error-Codes-Problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770333683911-251",
+    "title": "Roku Netflix Login Issue",
+    "problemDescription": "Netflix not working on Roku device due to login or subscription issues.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Roku",
+      "Netflix",
+      "login",
+      "subscription"
+    ],
+    "steps": [
+      {
+        "title": "Check Netflix Subscription",
+        "content": "Ensure your Netflix subscription is active by logging into your Netflix account on the official website."
+      },
+      {
+        "title": "Update Roku Device",
+        "content": "Go to Roku settings and update your device to the latest software version."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-05T23:21:23.911Z",
+      "updated": "2026-02-05T23:21:23.911Z",
+      "sourceUrl": "https://www.quora.com/What-are-some-common-problems-people-sometimes-have-in-attempting-to-turn-on-their-Roku",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770333695132-7",
+    "title": "Restart Your Phone After Verizon Outage",
+    "problemDescription": "Your phone may need a restart after a Verizon outage to restore normal functionality.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "phone",
+      "restart",
+      "verizon",
+      "outage"
+    ],
+    "steps": [
+      {
+        "title": "Restart an iPhone",
+        "content": "Press and hold one of the volume buttons together with the side (power) button until you see the power-off slider. Slide to power off, then wait for the screen to go totally black. After about 30 seconds, press and hold the side button to power it back on. If your iPhone has a Home button, press and hold the side button to pull up the power-off slider."
+      },
+      {
+        "title": "Restart a Samsung Galaxy",
+        "content": "Press and hold the volume down button and side button until you see power options appear. Choose 'Restart,' then tap 'Restart' again."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-05T23:21:35.132Z",
+      "updated": "2026-02-05T23:21:35.132Z",
+      "sourceUrl": "https://lifehacker.com/tech/heres-how-to-fix-your-phone-now-that-verizon-says-the-outage-is-resolved",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770333699486-829",
+    "title": "Fix Persistent Zoom Screen Access Notifications on macOS",
+    "problemDescription": "Zoom repeatedly asks for screen access on macOS despite having the correct permissions.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "macos",
+      "screen access",
+      "permissions"
+    ],
+    "steps": [
+      {
+        "title": "Delete ScreenCaptureApprovals.plist",
+        "content": "Quit Zoom and any other app that is complaining about screen sharing. Open Terminal and paste this command: `open $HOME/Library/Group\\ Containers/group.com.apple.replayd`. This will open a folder in the Finder. In this folder, you should see 'ScreenCaptureApprovals.plist'. Move that file out. Anywhere. Doesn't matter."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reinstall Zoom",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall and Reinstall Zoom",
+            "content": "Uninstall Zoom completely. Restart your Mac. Reinstall the latest version of Zoom from the official website."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T23:21:39.486Z",
+      "updated": "2026-02-05T23:21:39.486Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255886645",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770333712213-495",
+    "title": "Update Wi-Fi Drivers in Windows 11",
+    "problemDescription": "Wi-Fi issues in Windows 11 due to outdated or corrupted network drivers.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "windows 11",
+      "drivers",
+      "network adapters"
+    ],
+    "steps": [
+      {
+        "title": "Open Device Manager",
+        "content": "Press the Windows key + X and select 'Device Manager' from the menu."
+      },
+      {
+        "title": "Locate Network Adapters",
+        "content": "In Device Manager, scroll down and expand the 'Network adapters' category."
+      },
+      {
+        "title": "Update Wi-Fi Driver",
+        "content": "Right-click on your Wi-Fi adapter and select 'Update driver'. Follow the on-screen instructions to complete the update."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Restart Your Router",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unplug the Router",
+            "content": "Unplug the power cable from your router and wait for about 30 seconds."
+          },
+          {
+            "title": "Plug the Router Back In",
+            "content": "Plug the power cable back into the router and wait for it to fully boot up."
+          }
+        ]
+      },
+      {
+        "title": "Check for Interference",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Interfering Devices",
+            "content": "Identify any devices that might be causing interference, such as microwave ovens, Bluetooth devices, or cordless phones."
+          },
+          {
+            "title": "Rearrange Your Router",
+            "content": "Move your Wi-Fi router away from these devices to minimize interference."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T23:21:52.213Z",
+      "updated": "2026-02-05T23:21:52.213Z",
+      "sourceUrl": "https://www.howtogeek.com/fix-wi-fi-issues-windows-11/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770333713842-687",
+    "title": "Reset IP Address for Wi-Fi Issues in Linux",
+    "problemDescription": "Wi-Fi issues in Linux often stem from IP address problems, which can be resolved by releasing and renewing the IP address.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "linux",
+      "ip address",
+      "terminal"
+    ],
+    "steps": [
+      {
+        "title": "Check Current IP Address",
+        "content": "Open the terminal and type `ip address` to view your current IP address."
+      },
+      {
+        "title": "Release the IP Address",
+        "content": "Turn off the network interface by typing `sudo ip link set <interface> down`. Replace `<interface>` with your network interface name (e.g., `wlan0`)."
+      },
+      {
+        "title": "Renew the IP Address",
+        "content": "Turn the interface back on by typing `sudo ip link set <interface> up`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact ISP",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check with ISP",
+            "content": "If the issue persists, contact your Internet Service Provider (ISP) to check for any problems on their end."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T23:21:53.842Z",
+      "updated": "2026-02-05T23:21:53.842Z",
+      "sourceUrl": "https://www.howtogeek.com/how-to-use-the-terminal-to-solve-wi-fi-problems-in-linux/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
