@@ -108322,5 +108322,603 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770277697795-510",
+    "title": "Fix Processor Fan Error on Windows 11 Startup",
+    "problemDescription": "The processor fan fails to respond correctly during Windows 11 startup.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "processor fan",
+      "startup error",
+      "recovery"
+    ],
+    "steps": [
+      {
+        "title": "Access Windows Recovery Environment (WRE)",
+        "content": "Restart the PC and press and hold the power button as soon as the manufacturer's logo disappears. Hold the power button down until the PC completely shuts down. Repeat this process two more times to enter the Windows Recovery Environment (WRE)."
+      },
+      {
+        "title": "Run Startup Repair",
+        "content": "In the WRE, navigate to Troubleshoot > Advanced options > Startup Repair. Follow the on-screen instructions to complete the repair process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Windows Hello",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Windows Settings",
+            "content": "Press Win + I to open Windows Settings in Windows 11."
+          },
+          {
+            "title": "Navigate to Sign-in Options",
+            "content": "Go to Accounts > Sign-in Options."
+          },
+          {
+            "title": "Disable Windows Hello",
+            "content": "Disable the 'For improved security, only allow Windows Hello sign-in for Microsoft Accounts on this device (Recommended)' option."
+          },
+          {
+            "title": "Set Sign-in Requirements",
+            "content": "Select 'Never' from the 'If you've been away, when should Windows require you to sign in again' drop-down list."
+          },
+          {
+            "title": "Remove Current Sign-in Method",
+            "content": "Click your current sign-in method in the 'Ways to sign-in' list and select 'Remove'. Confirm your identity by entering your Microsoft Account password."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Sign in Automatically",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open netplwiz",
+            "content": "Press Win + R and enter the `netplwiz` command into the Run box."
+          },
+          {
+            "title": "Uncheck User Authentication",
+            "content": "Select your user account and uncheck the 'Users must enter a user name and password to use this PC' option."
+          },
+          {
+            "title": "Apply Changes",
+            "content": "Click OK to apply changes and enter your credentials when prompted."
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Restart your computer. Windows 11 will start without asking for a password, PIN, or biometrical authentication."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T07:48:17.795Z",
+      "updated": "2026-02-05T07:48:17.795Z",
+      "sourceUrl": "https://www.quora.com/How-can-I-fix-this-kind-of-error-message-that-I-see-on-a-Windows-11-laptop-whenever-windows-starts-up-The-Processor-Fan-failed-to-respond-correctly",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770277700990-630",
+    "title": "Fix Windows 11 Crashes and Slow Performance",
+    "problemDescription": "Windows 11 crashes and slow performance can be caused by various factors, including unnecessary startup programs, outdated drivers, and network issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "crashes",
+      "slow performance",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Disable Unnecessary Startup Programs",
+        "content": "Press the Windows key and search for 'startup'. Disable programs that are not essential for your system to run smoothly, especially those with high impact on startup."
+      },
+      {
+        "title": "Update Drivers",
+        "content": "Use the command 'pnputil /scan-devices' to scan for and update drivers automatically."
+      },
+      {
+        "title": "Update Windows",
+        "content": "Run 'Get-WindowsUpdate -Install -AcceptAll -AutoReboot' to install all available Windows updates and reboot your system."
+      },
+      {
+        "title": "Clear Network Stack",
+        "content": "If you are experiencing slow internet, run 'Remove-NetIPAddress -InterfaceAlias \"Wi-Fi\" -Confirm:$false' followed by 'Restart-NetAdapter -Name \"Wi-Fi\"' to reset your network adapter."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Remove Bloatware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Xbox and Zune Apps",
+            "content": "Run 'Get-AppxPackage \\xbox\\ | Remove-AppxPackage' and 'Get-AppxPackage -AllUsers | Where-Object {$_.Name -like \"\\zune\"} | Remove-AppxPackage' to remove these apps."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T07:48:20.990Z",
+      "updated": "2026-02-05T07:48:20.990Z",
+      "sourceUrl": "https://www.quora.com/How-would-you-troubleshoot-the-computer-running-Windows-11-What-are-the-steps-to-identify-and-address-the-cause-of-the-crashes-and-slow-performance",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770277705965-146",
+    "title": "Fix Windows 11 Crashes on First Startup",
+    "problemDescription": "Windows 11 crashes consistently on the first startup.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "crash",
+      "startup",
+      "ssd"
+    ],
+    "steps": [
+      {
+        "title": "Update Drivers",
+        "content": "Ensure all your drivers, especially the graphics and chipset drivers, are up to date. You can do this through Device Manager or by downloading the latest drivers from the manufacturer's website."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to Settings > Windows Update and check for any pending updates. Install all available updates, including optional ones, as they may contain critical fixes."
+      },
+      {
+        "title": "Run System File Checker",
+        "content": "Open Command Prompt as an administrator and run the command 'sfc /scannow' to check for and repair any corrupted system files."
+      },
+      {
+        "title": "Perform a Clean Boot",
+        "content": "Use the System Configuration tool (msconfig) to perform a clean boot. This helps identify if any third-party applications are causing the crash."
+      },
+      {
+        "title": "Check for Hardware Issues",
+        "content": "Ensure all hardware components, especially the RAM and storage drives, are functioning properly. Use tools like Windows Memory Diagnostic to check for RAM issues."
+      },
+      {
+        "title": "Reinstall Windows 11",
+        "content": "If all else fails, consider performing a clean installation of Windows 11. Backup your data first and use a bootable USB drive to reinstall the operating system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use an SSD Drive",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install an SSD",
+            "content": "Replace your existing HDD with an SSD, preferably one with NVME capability, to improve system performance and stability."
+          },
+          {
+            "title": "Clone Your System",
+            "content": "Use cloning software to transfer your existing system to the new SSD to avoid reinstalling Windows and applications."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T07:48:25.965Z",
+      "updated": "2026-02-05T07:48:25.965Z",
+      "sourceUrl": "https://www.quora.com/My-windows-11-always-crashes-on-the-first-start-up-how-do-I-fix-that",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770277710883-554",
+    "title": "Restore Classic Start Menu in Windows 11",
+    "problemDescription": "Users are frustrated with the new Start Menu in Windows 11, missing features like Live Tiles, resizing, and named groups.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "start menu",
+      "customization",
+      "live tiles"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install Open-Shell",
+        "content": "Download Open-Shell from the official website and install it on your Windows 11 PC."
+      },
+      {
+        "title": "Launch Open-Shell",
+        "content": "After installation, launch Open-Shell from the Start Menu or desktop shortcut."
+      },
+      {
+        "title": "Select Start Menu Style",
+        "content": "In the Open-Shell settings, choose the 'Classic with two columns' or 'Windows 7 style' option."
+      },
+      {
+        "title": "Customize Start Menu",
+        "content": "Customize the Start Menu layout, including adding Live Tiles, resizing, and creating named groups."
+      },
+      {
+        "title": "Apply Changes",
+        "content": "Click 'OK' to apply the changes and restart your PC if prompted."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Start11",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install Start11",
+            "content": "Download Start11 from the Stardock website and install it on your Windows 11 PC."
+          },
+          {
+            "title": "Launch Start11",
+            "content": "After installation, launch Start11 from the Start Menu or desktop shortcut."
+          },
+          {
+            "title": "Customize Start Menu",
+            "content": "Use Start11 to customize the Start Menu layout, including adding Live Tiles, resizing, and creating named groups."
+          },
+          {
+            "title": "Apply Changes",
+            "content": "Click 'OK' to apply the changes and restart your PC if prompted."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T07:48:30.883Z",
+      "updated": "2026-02-05T07:48:30.883Z",
+      "sourceUrl": "https://www.quora.com/What-are-the-most-frustrating-changes-in-Windows-11-that-make-users-feel-like-Microsoft-is-ignoring-their-needs",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770277729742-999",
+    "title": "Improve Alexa Voice Command Accuracy",
+    "problemDescription": "Alexa struggles with understanding and executing voice commands for smart home devices.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "Alexa",
+      "voice commands",
+      "smart home",
+      "Google Assistant"
+    ],
+    "steps": [
+      {
+        "title": "Use Clear and Consistent Naming",
+        "content": "Ensure all your smart home devices have clear, unique, and consistent names. Avoid similar names that might confuse Alexa."
+      },
+      {
+        "title": "Group Devices by Function",
+        "content": "Group devices by their function or location (e.g., 'Kitchen Lights', 'Living Room Plugs') to simplify commands."
+      },
+      {
+        "title": "Specify Rooms When Necessary",
+        "content": "Use room specifications in your commands (e.g., 'Alexa, turn on the living room lights') to help Alexa understand which device you're referring to."
+      },
+      {
+        "title": "Consider Switching to Google Assistant",
+        "content": "If Alexa continues to struggle, consider switching to Google Assistant, which may have better voice recognition and command execution."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Matter Standard for Compatibility",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Wait for Matter Standard Release",
+            "content": "Matter is a new smart home standard supported by Google, Amazon, Apple, and others. It aims to solve compatibility issues and improve device interoperability."
+          },
+          {
+            "title": "Update Devices to Matter Compatible",
+            "content": "Once Matter is released, update your smart home devices to ensure they are compatible with the new standard."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T07:48:49.742Z",
+      "updated": "2026-02-05T07:48:49.742Z",
+      "sourceUrl": "https://www.howtogeek.com/114351/im-dumping-alexa-but-im-letting-her-stay-as-a-roommate/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770277733027-580",
+    "title": "Alexa Device Compatibility Issues",
+    "problemDescription": "Some smart home devices are not compatible with Alexa, limiting functionality.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Alexa",
+      "smart home",
+      "compatibility",
+      "device"
+    ],
+    "steps": [
+      {
+        "title": "Check Device Compatibility",
+        "content": "Verify if your smart home device is compatible with Alexa by checking the manufacturer's specifications or Alexa's supported devices list."
+      },
+      {
+        "title": "Use a Hub or Dedicated Skill",
+        "content": "If your device requires a hub or dedicated Alexa skill, set it up according to the manufacturer's instructions."
+      },
+      {
+        "title": "Contact Manufacturer for Support",
+        "content": "If your device is not compatible, contact the manufacturer to inquire about future updates or alternative solutions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Alternative Voice Assistants",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to a Compatible Assistant",
+            "content": "If Alexa does not support your device, consider using a different voice assistant that is compatible, such as Google Assistant or Apple HomeKit."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T07:48:53.027Z",
+      "updated": "2026-02-05T07:48:53.027Z",
+      "sourceUrl": "https://www.howtogeek.com/a-smarter-alexa-wont-solve-these-smart-home-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770277744861-591",
+    "title": "Fix Microsoft Teams Audio Not Working",
+    "problemDescription": "Microsoft Teams audio is not working, preventing users from hearing or being heard during calls.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "audio",
+      "not working",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Restart Teams and PC",
+        "content": "Close and reopen Microsoft Teams, then restart your computer."
+      },
+      {
+        "title": "Check Device Settings",
+        "content": "Ensure the correct audio devices are selected in both Teams and your operating system's sound settings."
+      },
+      {
+        "title": "Test Audio Devices",
+        "content": "Make a test call in Teams to verify if the issue persists with different audio devices."
+      },
+      {
+        "title": "Clear Teams Cache",
+        "content": "Quit Teams, delete the cache folders (Windows: %appdata%\\Microsoft\\Teams; macOS: ~/Library/Application Support/Microsoft/Teams), then restart Teams."
+      },
+      {
+        "title": "Update or Reinstall Teams",
+        "content": "Update Teams to the latest version or uninstall and reinstall it."
+      },
+      {
+        "title": "Update Audio Drivers",
+        "content": "Update or roll back your audio drivers, or reset Core Audio on macOS by running 'sudo killall coreaudiod' in Terminal."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Close Conflicting Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Close Other Apps",
+            "content": "Close any other applications that might be using the microphone, such as Zoom, Skype, or DAWs."
+          },
+          {
+            "title": "Check Bluetooth Devices",
+            "content": "Unpair and repair Bluetooth headsets, ensuring they are charged and properly connected."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reconnect Audio Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disconnect and Reconnect",
+            "content": "Close Teams, disconnect and reconnect your audio device via headphone jack or Bluetooth, then reopen Teams."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T07:49:04.861Z",
+      "updated": "2026-02-05T07:49:04.861Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-my-Microsoft-Teams-audio-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770277752773-526",
+    "title": "Resolve Team Dysfunction",
+    "problemDescription": "A team is experiencing conflicts and struggles to discuss ideas in a civil manner.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "team",
+      "conflict",
+      "communication"
+    ],
+    "steps": [
+      {
+        "title": "Hold One-on-One Meetings",
+        "content": "Schedule weekly one-on-one meetings with each team member to identify individual concerns and issues."
+      },
+      {
+        "title": "Address Issues Collectively",
+        "content": "Set up weekly team meetings to discuss the identified issues and work towards resolving conflicts."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Team Building Activities",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Organize Team Building Exercises",
+            "content": "Plan team-building activities to foster better communication and collaboration among team members."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T07:49:12.773Z",
+      "updated": "2026-02-05T07:49:12.773Z",
+      "sourceUrl": "https://www.quora.com/When-a-team-is-dysfunctional-what-are-the-first-steps-to-lead-in-a-way-that-they-can-be-directed-to-resolve-conflicts-and-to-discuss-ideas-in-a-civil-manner",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770277756913-535",
+    "title": "Fix Microsoft Teams Not Working",
+    "problemDescription": "Microsoft Teams is not functioning properly.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "microsoft",
+      "teams",
+      "app-error",
+      "not working"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your internet connection is stable and working properly."
+      },
+      {
+        "title": "Restart Microsoft Teams",
+        "content": "Close and reopen Microsoft Teams to see if the issue resolves."
+      },
+      {
+        "title": "Update Microsoft Teams",
+        "content": "Check for updates and install any available updates for Microsoft Teams."
+      },
+      {
+        "title": "Clear Cache",
+        "content": "Clear the cache and cookies from your browser or the Microsoft Teams application."
+      },
+      {
+        "title": "Reinstall Microsoft Teams",
+        "content": "Uninstall and then reinstall Microsoft Teams to resolve any installation issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Firewall and Antivirus Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Firewall",
+            "content": "Temporarily disable your firewall to see if it is blocking Microsoft Teams."
+          },
+          {
+            "title": "Disable Antivirus",
+            "content": "Temporarily disable your antivirus software to see if it is causing the issue."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for System Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Operating System",
+            "content": "Ensure your operating system is up to date with the latest updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T07:49:16.913Z",
+      "updated": "2026-02-05T07:49:16.913Z",
+      "sourceUrl": "https://itstechguru.quora.com/14-Most-Common-Microsoft-Teams-Problems-and-How-to-Fix-them-So-many-times-you-might-have-observed-that-the-Microsoft-t",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770277759334-825",
+    "title": "Effective Team Problem Solving",
+    "problemDescription": "Demonstrating problem-solving skills within a team setting.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "teamwork",
+      "problem-solving",
+      "collaboration"
+    ],
+    "steps": [
+      {
+        "title": "Gather Team Perspectives",
+        "content": "Ensure all team members have the opportunity to share their viewpoints and ideas."
+      },
+      {
+        "title": "Encourage Open Communication",
+        "content": "Foster an environment where team members feel comfortable expressing their thoughts and concerns."
+      },
+      {
+        "title": "Collaborate on Solutions",
+        "content": "Work together to brainstorm and evaluate potential solutions, leveraging the diverse skills and experiences of the team."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Assign Roles and Responsibilities",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delegate Tasks",
+            "content": "Assign specific tasks to team members based on their strengths and expertise."
+          },
+          {
+            "title": "Set Clear Goals",
+            "content": "Define clear objectives and milestones to keep the team focused and on track."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T07:49:19.334Z",
+      "updated": "2026-02-05T07:49:19.334Z",
+      "sourceUrl": "https://www.quora.com/What-are-some-examples-of-solving-a-problem-with-teamwork",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
