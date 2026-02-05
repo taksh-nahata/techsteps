@@ -111205,5 +111205,226 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770300298309-462",
+    "title": "Fix 'No Device Connected' for USB Debugging in Android Studio",
+    "problemDescription": "Android Studio does not recognize your device for USB debugging.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "usb debugging",
+      "android studio",
+      "adb"
+    ],
+    "steps": [
+      {
+        "title": "Install Samsung USB Drivers",
+        "content": "Uninstall any universal drivers and install the official Samsung USB drivers from the Samsung website."
+      },
+      {
+        "title": "Update Android SDK Manager",
+        "content": "Ensure you have the latest updates in the Android SDK Manager to keep your tools in sync with the platform."
+      },
+      {
+        "title": "Use a High-Quality USB Cable",
+        "content": "Try a new, short USB 3.0 cable to ensure proper connection."
+      },
+      {
+        "title": "Check USB Ports",
+        "content": "Verify that your PC has USB 3.0 ports (blue sockets) and try different ports if necessary."
+      },
+      {
+        "title": "Trust the PC on Your Device",
+        "content": "Ensure your phone asks you to trust the PC and confirm the connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Install Kies",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Kies",
+            "content": "For older Samsung devices, installing Kies might resolve the issue."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Different Computer or USB Hub",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try Another Computer",
+            "content": "Test the connection on a different computer, preferably a Mac, as they have more powerful USB ports."
+          },
+          {
+            "title": "Use a High-Power USB Hub",
+            "content": "Connect your device through a high-power external USB hub, such as an Anker hub."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Use Google's USB Driver Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Google's USB Driver Tool",
+            "content": "Download and install the USB driver tool from the official Google URL to ensure the correct drivers are installed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T14:04:58.309Z",
+      "updated": "2026-02-05T14:04:58.309Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/117503/how-to-fix-no-device-connected-for-usb-debugging-in-android-studio",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770300338275-379",
+    "title": "Enable Alexa Guard",
+    "problemDescription": "How to set up Alexa Guard for home protection.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "Alexa",
+      "Guard",
+      "home protection",
+      "setup"
+    ],
+    "steps": [
+      {
+        "title": "Open the Alexa App",
+        "content": "Open the Alexa app on your phone."
+      },
+      {
+        "title": "Access Settings",
+        "content": "Tap the hamburger menu in the upper left corner and select 'Settings'."
+      },
+      {
+        "title": "Find Guard Option",
+        "content": "Scroll down the list of options until you see 'Guard' and tap on it."
+      },
+      {
+        "title": "Set Up Guard",
+        "content": "Tap 'Set Up Guard' and enable glass detection, smoke detection, and smart light randomization as desired."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-02-05T14:05:38.275Z",
+      "updated": "2026-02-05T14:05:38.275Z",
+      "sourceUrl": "https://www.howtogeek.com/414794/how-your-echos-alexa-guard-can-protect-your-home/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770300362295-436",
+    "title": "Sync Outlook Calendar with Microsoft Teams",
+    "problemDescription": "Outlook calendar changes not updating in Microsoft Teams in real-time.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Teams",
+      "Outlook",
+      "Calendar Sync",
+      "Real-Time Update"
+    ],
+    "steps": [
+      {
+        "title": "Update Microsoft Teams",
+        "content": "Ensure you have the latest version of Microsoft Teams installed to access the new real-time sync feature."
+      },
+      {
+        "title": "Check Calendar Permissions",
+        "content": "Verify that your Outlook calendar permissions allow for real-time updates with Microsoft Teams."
+      },
+      {
+        "title": "Enable Real-Time Sync",
+        "content": "Go to Teams settings and enable the real-time sync option for Outlook calendar events."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Sync",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Manually Refresh Teams",
+            "content": "If real-time sync is not available, manually refresh the Teams calendar by clicking the refresh button."
+          },
+          {
+            "title": "Reconnect Outlook Calendar",
+            "content": "Disconnect and reconnect your Outlook calendar in Teams to force a sync."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T14:06:02.295Z",
+      "updated": "2026-02-05T14:06:02.295Z",
+      "sourceUrl": "https://www.techradar.com/pro/microsoft-teams-may-have-just-solved-one-of-your-most-annoying-scheduling-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770300405269-922",
+    "title": "Fix Zoom Freezing During Calls",
+    "problemDescription": "Zoom freezes during calls due to hardware, software, or network issues.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "freezing",
+      "calls",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Check Camera and Peripherals",
+        "content": "Test with the built-in camera or a different webcam. Disable other apps using the camera and use direct USB ports."
+      },
+      {
+        "title": "Adjust Zoom Settings",
+        "content": "In Zoom → Settings → Video: uncheck 'Start video when joining a meeting,' disable virtual background, and 'Mirror my video.' In Zoom → Settings → Advanced: enable 'Use hardware acceleration for receiving video' only if your GPU supports it; otherwise disable it. In Zoom → Settings → General: enable 'Optimize for low bandwidth.'"
+      },
+      {
+        "title": "Close Heavy Applications",
+        "content": "Close other heavy apps like browsers with many tabs, games, or video editors. Use Task Manager (Windows) or Activity Monitor (macOS) to identify and quit top CPU/RAM consumers."
+      },
+      {
+        "title": "Disable High-Resource Features",
+        "content": "In Zoom settings → Video, disable 'Enable HD' and 'Touch up my appearance.' In Settings → Accessibility, turn off background effects and virtual backgrounds."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Upgrade Zoom Service",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Upgrade to Paid Service",
+            "content": "If the issue persists, upgrade to Zoom's paid service to resolve connectivity issues related to throttling."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T14:06:45.269Z",
+      "updated": "2026-02-05T14:06:45.269Z",
+      "sourceUrl": "https://www.quora.com/Are-there-any-tips-to-stop-my-device-freezing-up-during-zoom-calls",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
