@@ -108064,5 +108064,263 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1770274385610-97",
+    "title": "Improve Battery Life by Managing App Permissions",
+    "problemDescription": "Smartphone battery drains quickly due to unnecessary app permissions and background activity.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "battery",
+      "permissions",
+      "android",
+      "background activity"
+    ],
+    "steps": [
+      {
+        "title": "Restrict Background Activity",
+        "content": "Open the app's info and go to Settings -> Battery -> Restricted. Turn off background activity for unnecessary apps."
+      },
+      {
+        "title": "Manage Location Services",
+        "content": "Review and revoke location permissions for apps that don't need them. Go to Settings -> Location and adjust permissions accordingly."
+      },
+      {
+        "title": "Trim Notifications",
+        "content": "Disable notifications for apps you rarely use or don't care about. Go to Settings -> Apps & notifications -> Notifications."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Nearby Device Scanning",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Device Scanning Settings",
+            "content": "Go to Settings -> Google -> Device connections -> Nearby and turn off nearby device scanning."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T06:53:05.610Z",
+      "updated": "2026-02-05T06:53:05.610Z",
+      "sourceUrl": "https://www.makeuseof.com/i-revoked-these-3-app-permissions-and-my-phone-battery-life-doubled/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770274392302-337",
+    "title": "Fix Windows 11 Battery Drain",
+    "problemDescription": "Windows 11 is experiencing excessive battery drain.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "battery drain",
+      "power settings"
+    ],
+    "steps": [
+      {
+        "title": "Run Power Troubleshooter",
+        "content": "Go to Settings > System > Troubleshoot > Other troubleshooters. Run the Power troubleshooter and follow the on-screen instructions to fix any battery-related issues. Reboot your system afterward."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Update Windows 11",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > Windows Update > Check for updates. Install any available updates and reboot your system to see if the battery performance improves."
+          }
+        ]
+      },
+      {
+        "title": "Disable Fast Startup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Fast Startup",
+            "content": "Go to Control Panel > Power Options > Choose what the power buttons do > Change settings that are currently unavailable. Uncheck 'Turn on fast startup' and save changes."
+          }
+        ]
+      },
+      {
+        "title": "Change Video Playback Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Adjust Video Playback Settings",
+            "content": "Go to Settings > System > Display > Graphics settings. Adjust the video playback settings to optimize for battery life. Reboot your system afterward."
+          }
+        ]
+      },
+      {
+        "title": "Lower Refresh Rate",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Adjust Refresh Rate",
+            "content": "Go to Settings > System > Display > Advanced display. Lower the refresh rate to a lower value (e.g., 60Hz) to reduce battery consumption."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T06:53:12.302Z",
+      "updated": "2026-02-05T06:53:12.302Z",
+      "sourceUrl": "https://www.makeuseof.com/windows-11-battery-drain-fix/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770274435709-909",
+    "title": "Wake on LAN via Amazon Alexa Fix",
+    "problemDescription": "Wake on LAN (WOL) not working via Amazon Alexa due to Microsoft proprietary sleep modes or BIOS settings.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "Wake on LAN",
+      "Amazon Alexa",
+      "PowerShell",
+      "BIOS settings"
+    ],
+    "steps": [
+      {
+        "title": "Change Sleep State",
+        "content": "Use a sleep state where the machine is slowed down but not fully off. The power difference is minor."
+      },
+      {
+        "title": "Use BIOS Boot Option",
+        "content": "Enable the BIOS option to boot as soon as it sees power. Use a smart power plug accessible via the internet to turn the machine on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: PowerShell Command",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install PowerShell Module",
+            "content": "Install the Invoke-WakeOnLan cmdlet in PowerShell."
+          },
+          {
+            "title": "Send Magic Packet",
+            "content": "Use the one-liner command to send a magic packet to wake the machine."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T06:53:55.709Z",
+      "updated": "2026-02-05T06:53:55.709Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/wake-on-lan-via-amazon-alexa-fix.3677405/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770274437268-210",
+    "title": "Fix Raspberry Pi 3B+ Network Unreachable Error",
+    "problemDescription": "Raspberry Pi 3B+ shows 'Network is unreachable' error during Alexa setup.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "raspberry pi",
+      "network",
+      "alexa",
+      "setup"
+    ],
+    "steps": [
+      {
+        "title": "Update and Upgrade Packages",
+        "content": "Run 'sudo apt update' to update the package list and 'sudo apt upgrade' to upgrade the installed packages."
+      },
+      {
+        "title": "Check Network Connection",
+        "content": "Verify your Raspberry Pi is connected to the internet by pinging a reliable server, e.g., 'ping -c 10 google.com'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Limit Ping Attempts",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Limit Ping Attempts",
+            "content": "Use 'ping -c 10 google.com' to limit the number of ping attempts to 10."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T06:53:57.268Z",
+      "updated": "2026-02-05T06:53:57.268Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/help-with-pi3b-alexa.3703068/latest",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770274441781-683",
+    "title": "Reduce Amazon Echo Data Usage",
+    "problemDescription": "Amazon Echo devices are using excessive data even when not in use.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Amazon Echo",
+      "data usage",
+      "Amazon Sidewalk",
+      "firmware update"
+    ],
+    "steps": [
+      {
+        "title": "Disable Amazon Sidewalk",
+        "content": "Go to the Alexa app, navigate to Settings > Amazon Sidewalk, and turn it off to reduce data usage."
+      },
+      {
+        "title": "Unplug the Device",
+        "content": "If the data usage is unacceptable, unplug the Amazon Echo to prevent any data consumption."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check for Firmware Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Firmware",
+            "content": "Ensure your Echo devices are updated to the latest firmware to fix any bugs that might be causing excessive data usage."
+          }
+        ]
+      },
+      {
+        "title": "Monitor Data Usage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Data History",
+            "content": "Review the data usage history of your Echo devices to identify any patterns or anomalies."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-05T06:54:01.781Z",
+      "updated": "2026-02-05T06:54:01.781Z",
+      "sourceUrl": "https://www.tomshardware.com/speakers/amazon-echo-uses-gigabytes-of-data-despite-not-being-used-its-owner-doesnt-think-hes-being-spied-on",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
