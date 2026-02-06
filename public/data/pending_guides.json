@@ -115285,5 +115285,558 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1770341350490-657",
+    "title": "Boost Wi-Fi Signal Strength",
+    "problemDescription": "Your Wi-Fi signal is weak, causing connectivity issues.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "signal",
+      "strength",
+      "boost"
+    ],
+    "steps": [
+      {
+        "title": "Check Signal Strength",
+        "content": "Use a tool like Wi-Fi Diagnostics Utility (Mac) or a third-party tool to measure your Wi-Fi signal strength."
+      },
+      {
+        "title": "Update Firmware and Drivers",
+        "content": "Ensure your router and Wi-Fi adapter have the latest firmware updates. For Mac users, check for EFI Firmware updates."
+      },
+      {
+        "title": "Update Software",
+        "content": "Check for and install any available software driver or operating system updates."
+      },
+      {
+        "title": "Boost Signal",
+        "content": "If the signal strength is low (around -70dBm), consider using a Wi-Fi extender or moving your router to a more central location."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Wi-Fi Extender",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Wi-Fi Extender",
+            "content": "Buy a Wi-Fi extender that is compatible with your router."
+          },
+          {
+            "title": "Set Up the Extender",
+            "content": "Follow the manufacturer's instructions to set up the extender in a location that improves signal coverage."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-06T01:29:10.490Z",
+      "updated": "2026-02-06T01:29:10.490Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/diagnosing-and-addressing-wi-fi-signal-quality-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770341359252-209",
+    "title": "Set Printer as Default",
+    "problemDescription": "How to set a printer as the default printer on your computer.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "default",
+      "windows",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Click on the Start menu and select 'Settings'."
+      },
+      {
+        "title": "Go to Devices",
+        "content": "In the Settings window, click on 'Devices'."
+      },
+      {
+        "title": "Select Printers & Scanners",
+        "content": "Click on 'Printers & scanners' in the left-hand menu."
+      },
+      {
+        "title": "Choose Your Printer",
+        "content": "Select your printer from the list of available printers."
+      },
+      {
+        "title": "Set as Default",
+        "content": "Click on 'Manage' and then click 'Set as default'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Control Panel",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Control Panel",
+            "content": "Press the Windows key and type 'Control Panel', then press Enter."
+          },
+          {
+            "title": "Go to Hardware and Sound",
+            "content": "Click on 'Hardware and Sound'."
+          },
+          {
+            "title": "Select Devices and Printers",
+            "content": "Click on 'Devices and Printers'."
+          },
+          {
+            "title": "Right-Click Your Printer",
+            "content": "Right-click on your printer and select 'Set as default printer'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-06T01:29:19.252Z",
+      "updated": "2026-02-06T01:29:19.252Z",
+      "sourceUrl": "https://www.techradar.com/pro/how-to-set-a-printer-as-default",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770341363963-910",
+    "title": "Improve Printer Speed",
+    "problemDescription": "Your printer is printing slower than expected.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "speed",
+      "driver",
+      "print queue"
+    ],
+    "steps": [
+      {
+        "title": "Update Printer Driver",
+        "content": "Visit the manufacturer's website and locate the driver download section. Enter your printer model and download the latest driver for your operating system. Install the new driver following the manufacturer's instructions, which may require a computer restart."
+      },
+      {
+        "title": "Adjust Print Quality Settings",
+        "content": "Lower the print quality settings for everyday tasks like rough drafts or personal documents. This can significantly improve printing speed. Experiment with different settings to find the right balance between speed and quality."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Clear the Print Queue",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Print Queue",
+            "content": "Open the print queue by searching for 'Printers & scanners' in the Windows search bar and selecting it. Click on your printer and then click 'Open queue'."
+          },
+          {
+            "title": "Cancel All Print Jobs",
+            "content": "Select all print jobs in the queue and click 'Cancel' to remove them. Wait a few seconds for the system to process the cancellation."
+          },
+          {
+            "title": "Restart Print Spooler Service (if needed)",
+            "content": "If any jobs are stuck, restart the print spooler service. Open the Services app (search for 'Services' in the Windows search bar), find 'Print Spooler', right-click it, and select 'Restart'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-06T01:29:23.963Z",
+      "updated": "2026-02-06T01:29:23.963Z",
+      "sourceUrl": "https://www.techradar.com/news/how-to-improve-your-printer-speed",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770341367479-884",
+    "title": "Fix Windows 11 23H2 Printer Random Characters Bug",
+    "problemDescription": "Printers connected via USB in Windows 11 23H2 are printing random characters due to a bug.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "printer",
+      "usb",
+      "bug",
+      "random characters"
+    ],
+    "steps": [
+      {
+        "title": "Update Windows",
+        "content": "Ensure your Windows 11 is updated to the latest version, as Microsoft may have released a fix."
+      },
+      {
+        "title": "Check for Printer Firmware Updates",
+        "content": "Visit the manufacturer's website to check for and install any available firmware updates for your printer."
+      },
+      {
+        "title": "Reinstall Printer Drivers",
+        "content": "Uninstall the current printer drivers and reinstall them from the manufacturer's website or using Windows Update."
+      },
+      {
+        "title": "Use a Different USB Port",
+        "content": "Try connecting the printer to a different USB port on your computer to see if the issue persists."
+      },
+      {
+        "title": "Disable USB Selective Suspend",
+        "content": "Go to Control Panel > Hardware and Sound > Power Options > Change plan settings > Change advanced power settings. Then, expand USB settings and disable USB selective suspend."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Network Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect Printer to Network",
+            "content": "If possible, connect your printer to your network via Wi-Fi or Ethernet instead of using a USB connection."
+          },
+          {
+            "title": "Install Network Printer",
+            "content": "Follow the manufacturer's instructions to install the printer as a network printer on your computer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-06T01:29:27.479Z",
+      "updated": "2026-02-06T01:29:27.479Z",
+      "sourceUrl": "https://www.techradar.com/computing/windows/no-your-printer-isnt-possessed-a-windows-11-23h2-bug-could-be-making-it-print-random-characters-when-connected-via-usb",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770341374599-825",
+    "title": "Disable AI Zoom on Google Pixel Camera",
+    "problemDescription": "Google Pixel Camera automatically applies AI zoom, which may alter images without clear indication.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Google Pixel",
+      "AI zoom",
+      "camera",
+      "Pro Res Zoom"
+    ],
+    "steps": [
+      {
+        "title": "Check Zoom Options",
+        "content": "When zooming past the 5x hardware limit, observe that the camera provides two options: one with Pro Res Zoom (AI) and one without."
+      },
+      {
+        "title": "Select Non-AI Option",
+        "content": "Choose the non-AI zoom option to avoid automatic AI alterations."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable AI Features in Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Camera Settings",
+            "content": "Open the Google Camera app and go to settings."
+          },
+          {
+            "title": "Disable Pro Res Zoom",
+            "content": "Look for the Pro Res Zoom option and disable it to prevent automatic AI zoom."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-06T01:29:34.599Z",
+      "updated": "2026-02-06T01:29:34.599Z",
+      "sourceUrl": "https://lifehacker.com/tech/google-pixel-10-ai-camera-app-features",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770341376231-823",
+    "title": "Systematic Problem Solving",
+    "problemDescription": "A guide to breaking down and solving complex problems effectively.",
+    "category": "general",
+    "difficulty": "Medium",
+    "keywords": [
+      "problem solving",
+      "planning",
+      "motivation"
+    ],
+    "steps": [
+      {
+        "title": "Understand the Problem",
+        "content": "Identify and clearly define the core issue. Break it down into its simplest components to understand what needs to be addressed."
+      },
+      {
+        "title": "Create a Plan",
+        "content": "Develop a series of actionable steps to address the problem. This plan should be specific and detailed, outlining each necessary action."
+      },
+      {
+        "title": "Keep Yourself Motivated",
+        "content": "Maintain motivation throughout the process. Set milestones and celebrate small victories to stay on track and avoid frustration."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Example: Replacing a Hard Drive",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Search for Instructions",
+            "content": "Search online for detailed instructions on how to replace the hard drive."
+          },
+          {
+            "title": "Purchase a Replacement",
+            "content": "Buy a compatible replacement hard drive."
+          },
+          {
+            "title": "Install the New Drive",
+            "content": "Follow the instructions to install the new hard drive."
+          },
+          {
+            "title": "Restore Data",
+            "content": "Use a backup to restore your data to the new drive."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-06T01:29:36.231Z",
+      "updated": "2026-02-06T01:29:36.231Z",
+      "sourceUrl": "https://lifehacker.com/a-systematic-approach-to-solving-just-about-any-problem-5795228",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1770341378171-669",
+    "title": "Make WhatsApp Calls on Desktop",
+    "problemDescription": "How to make or join WhatsApp voice and video calls using the desktop app.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "WhatsApp",
+      "desktop",
+      "voice call",
+      "video call"
+    ],
+    "steps": [
+      {
+        "title": "Install WhatsApp Desktop",
+        "content": "Download and install the WhatsApp Desktop app from the official website."
+      },
+      {
+        "title": "Scan QR Code",
+        "content": "Open WhatsApp on your phone, go to Settings > Linked Devices, and scan the QR code displayed on your desktop app."
+      },
+      {
+        "title": "Make or Join a Call",
+        "content": "Open a chat with the contact you want to call, click on the phone icon for a voice call or the video camera icon for a video call."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use WhatsApp Web",
+        "type": "Alternative Method",
+        "steps": [
+          {
+            "title": "Open WhatsApp Web",
+            "content": "Go to web.whatsapp.com on your desktop browser."
+          },
+          {
+            "title": "Scan QR Code",
+            "content": "Scan the QR code with your phone's WhatsApp app."
+          },
+          {
+            "title": "Make or Join a Call",
+            "content": "Open a chat and click on the phone or video camera icon to start a call."
+          }
+        ]
+      },
+      {
+        "title": "Use Third-Party Apps for Group Calls",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Group Call App",
+            "content": "Download and install a third-party app that supports group calls, such as Zoom or Google Meet."
+          },
+          {
+            "title": "Create or Join a Meeting",
+            "content": "Follow the app's instructions to create or join a group call."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-06T01:29:38.171Z",
+      "updated": "2026-02-06T01:29:38.171Z",
+      "sourceUrl": "https://lifehacker.com/how-to-make-whatsapp-voice-and-video-calls-on-desktop-1846408753",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1770341386491-586",
+    "title": "Repairing AirPods Pro 3",
+    "problemDescription": "AirPods Pro 3 are designed in a way that makes them difficult to repair due to strong glue and delicate components.",
+    "category": "ios",
+    "difficulty": "Hard",
+    "keywords": [
+      "airpods",
+      "repair",
+      "ios",
+      "earbuds"
+    ],
+    "steps": [
+      {
+        "title": "Assess the Damage",
+        "content": "Determine if the issue is worth attempting to repair, as the process is complex and risky."
+      },
+      {
+        "title": "Gather Specialized Tools",
+        "content": "Obtain tools such as a heat gun, sharp pry tools, and a soldering iron, as these are necessary for the repair process."
+      },
+      {
+        "title": "Heat the AirPods",
+        "content": "Carefully heat the AirPods to loosen the strong glue that seals the casing. Be cautious not to melt the plastic."
+      },
+      {
+        "title": "Pry Open the Casing",
+        "content": "Use sharp tools to pry open the casing, avoiding damage to the internal components."
+      },
+      {
+        "title": "Repair or Replace Components",
+        "content": "Attempt to repair or replace the necessary components, such as the battery, while being extremely careful not to damage other parts."
+      },
+      {
+        "title": "Reassemble the AirPods",
+        "content": "Carefully reassemble the AirPods, ensuring all components are properly aligned and secured."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Seek Professional Repair",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Find a Specialized Repair Shop",
+            "content": "Locate a repair shop that specializes in AirPods and has experience with complex repairs."
+          },
+          {
+            "title": "Consult with the Repair Shop",
+            "content": "Discuss the issue with the repair shop and get a quote for the repair service."
+          },
+          {
+            "title": "Authorize the Repair",
+            "content": "If the cost is reasonable, authorize the repair shop to proceed with the necessary fixes."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Apple Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Apple Support",
+            "content": "Reach out to Apple Support to inquire about repair options and costs."
+          },
+          {
+            "title": "Schedule a Repair Appointment",
+            "content": "If applicable, schedule an appointment at an Apple Store or authorized service provider."
+          },
+          {
+            "title": "Follow Apple's Instructions",
+            "content": "Follow the instructions provided by Apple Support or the service provider to get your AirPods repaired."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-06T01:29:46.491Z",
+      "updated": "2026-02-06T01:29:46.491Z",
+      "sourceUrl": "https://lifehacker.com/tech/airpods-pro-3-are-unrepairable",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1770341399584-222",
+    "title": "Fix 2-Step Verification Code Not Auto-Detected on Android",
+    "problemDescription": "2-step verification codes are not automatically detected on Android devices.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "2-step verification",
+      "android",
+      "SMS",
+      "Google Authenticator"
+    ],
+    "steps": [
+      {
+        "title": "Change SMS to Voice Call",
+        "content": "Go to your Google account settings, select 'Sign-in and security', edit 2-Step Verification, change 'Text message' to 'Voice Call', save, and try signing in again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Google Authenticator",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Google Authenticator",
+            "content": "Download and install the Google Authenticator app from the Play Store."
+          },
+          {
+            "title": "Set Up Google Authenticator",
+            "content": "Open the app and scan the QR code provided by your Google account settings to set up 2-step verification."
+          },
+          {
+            "title": "Manually Enter Codes",
+            "content": "Use the codes generated by the Google Authenticator app for 2-step verification."
+          }
+        ]
+      },
+      {
+        "title": "Revert to Stock Messaging App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Default Messaging App",
+            "content": "Go to your messaging app settings, navigate to SMS settings, and set the stock messaging app as the default."
+          },
+          {
+            "title": "Verify SMS Detection",
+            "content": "Try signing in again to see if the 2-step verification code is automatically detected."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-02-06T01:29:59.584Z",
+      "updated": "2026-02-06T01:29:59.584Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/112261/2-step-verification-code-not-automatically-detected-on-android",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
