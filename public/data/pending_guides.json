@@ -116411,5 +116411,387 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1772344166711-908",
+    "title": "Fix Incoming Calls Ending Immediately",
+    "problemDescription": "Incoming calls end immediately after being answered, phone hangs up as soon as call is answered.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "incoming calls",
+      "hang up",
+      "cell service provider"
+    ],
+    "steps": [
+      {
+        "title": "Contact Your Cell Service Provider",
+        "content": "Reach out to your cell service provider to check if there is an outage or issue on their end that might be causing the problem."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Enable WiFi Calling",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable WiFi Calling",
+            "content": "Go to your phone's settings, navigate to the 'Calls' or 'Network & Internet' section, and enable WiFi calling. This can help bypass issues with your cell service provider."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T05:49:26.711Z",
+      "updated": "2026-03-01T05:49:26.711Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/255851/incoming-calls-end-immediately-after-being-answered-phone-hangs-up-as-soon-as-c",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1772344172692-683",
+    "title": "Disable Google Play Services Internet Access",
+    "problemDescription": "Prevent Google Play Services from connecting to the internet while keeping essential apps like WhatsApp functional.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "google play services",
+      "privacy",
+      "whatsapp"
+    ],
+    "steps": [
+      {
+        "title": "Use WhatsApp in Floating Window",
+        "content": "Open WhatsApp, hold the three-line button on the bottom left to turn WhatsApp into a floating window. This allows WhatsApp to work in the background even when Google Play Services is disabled."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Alternative Messaging Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Non-Google Messaging App",
+            "content": "Consider using alternative messaging apps that do not rely on Google Play Services, such as Signal or Telegram."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T05:49:32.692Z",
+      "updated": "2026-03-01T05:49:32.692Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/261814/how-to-stop-google-play-services-from-connecting-to-internet-to-prevent-google",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1772344179636-851",
+    "title": "Fix Computer That Turns On but Displays Nothing",
+    "problemDescription": "Your computer turns on but the screen remains blank.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "computer",
+      "blank screen",
+      "boot",
+      "monitor",
+      "graphics"
+    ],
+    "steps": [
+      {
+        "title": "Wait and Reboot",
+        "content": "Wait a few minutes to see if the PC initializes properly. If the screen remains blank, reboot the computer."
+      },
+      {
+        "title": "Check Monitor Connections",
+        "content": "Ensure the monitor is properly connected to the computer. Try different ports or cables if available."
+      },
+      {
+        "title": "Disconnect Peripheral Devices",
+        "content": "Unplug all external devices such as USB hubs, network cards, additional storage drives, cooling fans, and RGB lighting systems."
+      },
+      {
+        "title": "Test with Onboard Graphics",
+        "content": "If your PC supports onboard graphics, remove the graphics card and try using the onboard graphics to see if the issue persists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Internal Components",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Add-in Cards and Memory",
+            "content": "Remove any add-in cards like USB hubs or network cards, and reduce memory to a single stick."
+          },
+          {
+            "title": "Disconnect Non-Essential Components",
+            "content": "Disconnect any secondary storage drives, cooling fans, fan controllers, and RGB lighting systems."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T05:49:39.636Z",
+      "updated": "2026-03-01T05:49:39.636Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/how-to-fix-a-computer-that-turns-on-but-displays-nothing/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1772344185055-723",
+    "title": "Fix Xbox One Audio Issues",
+    "problemDescription": "Audio is not working properly on Xbox One.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "xbox",
+      "audio",
+      "settings",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check Audio Settings",
+        "content": "Go to Settings > Display & Sound > Audio output. Ensure the correct audio settings are selected for your setup."
+      },
+      {
+        "title": "Verify Connections",
+        "content": "Check all cables and connections between your Xbox One and audio devices. Ensure they are securely connected."
+      },
+      {
+        "title": "Update Console",
+        "content": "Go to Settings > System > Updates & downloads to ensure your console is up to date."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Replace Faulty Cables",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase New Cables",
+            "content": "If the issue persists, try purchasing new HDMI or audio cables to rule out faulty hardware."
+          }
+        ]
+      },
+      {
+        "title": "Contact Microsoft Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Support",
+            "content": "If none of the above steps work, contact Microsoft Support for further assistance or to request a replacement."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T05:49:45.055Z",
+      "updated": "2026-03-01T05:49:45.055Z",
+      "sourceUrl": "https://www.digitaltrends.com/gaming/common-xbox-one-problems-and-how-to-fix-them/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1772344189844-17",
+    "title": "Fix Mac Screen Flickering",
+    "problemDescription": "Mac screen flickers randomly when connected to the internet.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "mac",
+      "screen",
+      "flickering",
+      "restart"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Mac",
+        "content": "Restart your Mac to resolve the flickering issue."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-03-01T05:49:49.844Z",
+      "updated": "2026-03-01T05:49:49.844Z",
+      "sourceUrl": "https://www.quora.com/How-and-why-does-my-computer-screen-flicker-at-random-moments-only-when-I-am-connected-to-the-Net-I-suspect-outside-agents-are-stealing-information-on-me-should-I-be-concerned-and-what-could-I-do",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1772344207196-791",
+    "title": "Fix Hulu App Timer Issue on Roku",
+    "problemDescription": "Hulu app on Roku shows a countdown timer too early, blocking content.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "hulu",
+      "roku",
+      "timer",
+      "streaming",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Sign Out and Sign Back In",
+        "content": "Go to the Hulu app on your Roku device, sign out of your account, and then sign back in to refresh the app's connection."
+      },
+      {
+        "title": "Uninstall and Reinstall the App",
+        "content": "Uninstall the Hulu app from your Roku device, then reinstall it from the Roku Channel Store to ensure a clean installation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Watch via Disney+ App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Subscribe to Disney+",
+            "content": "Ensure you have a subscription to Disney+ in addition to Hulu."
+          },
+          {
+            "title": "Access Hulu Content",
+            "content": "Use the Disney+ app to access and watch Hulu content, as it may not have the same timer issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T05:50:07.196Z",
+      "updated": "2026-03-01T05:50:07.196Z",
+      "sourceUrl": "https://www.makeuseof.com/hulu-roku-app-is-so-bad-time-to-unsubscribe/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1772344214258-616",
+    "title": "Fix Zoom Screen Sharing Issues",
+    "problemDescription": "Unable to share screen or shared content is unreadable in Zoom meetings.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "screen sharing",
+      "unreadable",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Enable Participant Sharing",
+        "content": "If you're the host, enable participant sharing in the meeting settings."
+      },
+      {
+        "title": "Share a Specific Window",
+        "content": "Instead of sharing your entire screen, share a specific window to reduce lag."
+      },
+      {
+        "title": "Optimize for Video Clip",
+        "content": "Use the 'Optimize for video clip' option in the screen sharing settings."
+      },
+      {
+        "title": "Adjust Font and Resolution",
+        "content": "Increase font size or zoom in the app before sharing. Use resolution and scaling that match typical attendee displays."
+      },
+      {
+        "title": "Update Zoom Client",
+        "content": "Ensure you have the latest version of Zoom installed to avoid compatibility issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Share a PDF",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Prepare a PDF",
+            "content": "If the shared content is critical and unreadable, prepare a PDF version."
+          },
+          {
+            "title": "Share the PDF",
+            "content": "Share the PDF instead of the application window."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Adjust Zoom Settings for Bandwidth",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Increase Bandwidth",
+            "content": "Adjust Zoom settings to increase the bandwidth of your video."
+          },
+          {
+            "title": "Disable HD",
+            "content": "Uncheck 'enable HD' or 'Touch Up My Appearance' to reduce lag."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T05:50:14.258Z",
+      "updated": "2026-03-01T05:50:14.258Z",
+      "sourceUrl": "https://www.quora.com/What-are-the-most-common-technical-problems-with-Zoom-meetings",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1772344219604-95",
+    "title": "Fix Zoom Audio Sharing Issue",
+    "problemDescription": "Audio is not sharing when screen sharing on Zoom.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "audio",
+      "screen sharing"
+    ],
+    "steps": [
+      {
+        "title": "Enable Audio Sharing",
+        "content": "Before starting the screen share, click on the 'Share Screen' button, then select the content you want to share. In the share window, check the box that says 'Share computer sound' and click 'Share'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Check Audio Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Audio Source",
+            "content": "Ensure that the correct audio source is selected in your system settings. Sometimes, Zoom may not detect the correct audio output device."
+          },
+          {
+            "title": "Update Zoom",
+            "content": "Make sure you are using the latest version of Zoom. Outdated versions may have bugs that cause audio sharing issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T05:50:19.604Z",
+      "updated": "2026-03-01T05:50:19.604Z",
+      "sourceUrl": "https://www.quora.com/What-are-the-most-common-problems-with-Zoom",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
