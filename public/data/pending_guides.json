@@ -117400,5 +117400,56 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1772350277192-763",
+    "title": "Discord Won't Open on MacOS",
+    "problemDescription": "Discord application fails to launch on MacOS.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "macos",
+      "app-error",
+      "electron"
+    ],
+    "steps": [
+      {
+        "title": "Check Discord Web Version",
+        "content": "Open Chrome or Chromium and navigate to the Discord website to see if the web version works."
+      },
+      {
+        "title": "Perform a Clean Uninstall",
+        "content": "Use AppCleaner or a similar tool to perform a deep-clean uninstall of Discord."
+      },
+      {
+        "title": "Boot into Safe Mode",
+        "content": "Restart your Mac in Safe Mode to clear caches and temporary files."
+      },
+      {
+        "title": "Reinstall Discord",
+        "content": "Download and install the latest version of Discord from the official website."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Discord Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Discord Support",
+            "content": "Go to the Discord support page and submit a request for assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T07:31:17.192Z",
+      "updated": "2026-03-01T07:31:17.192Z",
+      "sourceUrl": "https://discussions.apple.com/thread/251824245",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
