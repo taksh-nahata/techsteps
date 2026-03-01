@@ -115838,5 +115838,376 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1772329805884-901",
+    "title": "Reset AirPods, AirPods Pro, or AirPods Max",
+    "problemDescription": "Need to reset your AirPods to factory settings.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "reset",
+      "AirPods",
+      "AirPods Pro",
+      "AirPods Max",
+      "factory settings"
+    ],
+    "steps": [
+      {
+        "title": "Unpair AirPods",
+        "content": "Make sure your AirPods are in their case with the lid closed. Then, open the lid. If a connect card appears on your iPhone, tap the close button to dismiss it. On your iPhone, tap your AirPods in settings under your name or in Bluetooth settings. Tap 'Forget This Device' and confirm."
+      },
+      {
+        "title": "Reset AirPods or AirPods Pro",
+        "content": "With your AirPods in their case and the lid open, double tap the front of the case while the status light is on. The light will flash white. Double tap the front of the case again. The light will continue flashing white, indicating a reset."
+      },
+      {
+        "title": "Reset AirPods Max",
+        "content": "Press and hold the noise control button and the digital crown on top of the right earphone for about 15 seconds until the LED near the bottom of the right earphone flashes amber and then white. Your AirPods Max are now reset and ready to pair with your device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Bluetooth Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unpair via Bluetooth Settings",
+            "content": "Go to your iPhone's Bluetooth settings. Tap the more info button next to your AirPods. Tap 'Forget Device' and confirm to unpair your AirPods."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T01:50:05.884Z",
+      "updated": "2026-03-01T01:50:05.884Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=yXt6NiFIrP0",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1772329819882-260",
+    "title": "Fix High WindowServer CPU Usage on macOS",
+    "problemDescription": "WindowServer process is consuming excessive CPU, causing system sluggishness.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "WindowServer",
+      "CPU",
+      "macOS",
+      "performance",
+      "Big Sur"
+    ],
+    "steps": [
+      {
+        "title": "Create a New User Account",
+        "content": "Go to System Preferences > Users & Groups > + (Add a new user). Log in to the new account to check if the issue persists. If the problem is resolved, migrate your data to the new account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Remove Chrome and Switch Browsers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Chrome and Keystone",
+            "content": "Follow the instructions to completely remove Chrome and Keystone from your system. Reboot your Mac."
+          },
+          {
+            "title": "Switch to a Different Browser",
+            "content": "Install and use a different browser like Brave or Firefox to see if the issue is resolved."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Avoid Running Animations",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch Tabs to Stop Animations",
+            "content": "If you notice high CPU usage, switch to a different tab to stop any running animations in the background."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T01:50:19.882Z",
+      "updated": "2026-03-01T01:50:19.882Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/390492/windowserver-is-eating-lots-of-cpu-cant-work-out-why",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1772329821749-921",
+    "title": "Fix Magic Keyboard FN Keys on Windows 11",
+    "problemDescription": "The function (FN) keys on the Apple Magic Keyboard do not work properly on Windows 11.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "magic keyboard",
+      "fn keys",
+      "windows 11",
+      "keyboard"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install Boot Camp Support Software",
+        "content": "Download the Boot Camp Support Software from the Apple website or use the Boot Camp Assistant on your Mac to create a bootable USB drive with the necessary drivers."
+      },
+      {
+        "title": "Install the Boot Camp Drivers",
+        "content": "Insert the USB drive into your Windows 11 machine and run the setup.exe file to install the Boot Camp drivers. This should include the necessary drivers for the Magic Keyboard."
+      },
+      {
+        "title": "Check Keyboard Settings",
+        "content": "Go to Control Panel > Hardware and Sound > Device Manager and ensure that the Magic Keyboard is recognized and the drivers are installed correctly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Magic Keyboard Utilities App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Magic Keyboard Utilities",
+            "content": "Download the Magic Keyboard Utilities app from a trusted source."
+          },
+          {
+            "title": "Install and Configure",
+            "content": "Install the app and configure it to remap the FN keys according to your preferences. Note that this app may require a subscription."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T01:50:21.749Z",
+      "updated": "2026-03-01T01:50:21.749Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/467966/magic-keyboard-fn-keys-on-windows-11",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1772329824362-228",
+    "title": "Fix Windows 10 Drivers on MacBook Air",
+    "problemDescription": "Drivers for trackpad, audio, and keyboard not working after Windows 10 installation on MacBook Air via CLI.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "drivers",
+      "macbook",
+      "bootcamp",
+      "installation"
+    ],
+    "steps": [
+      {
+        "title": "Download Windows Support Software",
+        "content": "Open Boot Camp Assistant on your Mac. From the menu bar, select `Action->Download Windows Support Software`. The files will download to a `WindowsSupport` folder in your home folder."
+      },
+      {
+        "title": "Unlock the Downloaded Files",
+        "content": "When prompted, enter your password and click on the `Unlock` button to access the downloaded support software."
+      },
+      {
+        "title": "Install the Drivers",
+        "content": "Transfer the downloaded support software to your Windows 10 installation on the MacBook Air and run the installer to install the necessary drivers."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Boot Camp Assistant for Installation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Boot Camp Assistant",
+            "content": "Instead of using the CLI process, use the Boot Camp Assistant to install Windows 10. This method often handles driver installation more seamlessly."
+          },
+          {
+            "title": "Follow On-Screen Instructions",
+            "content": "Follow the on-screen instructions provided by Boot Camp Assistant to complete the installation and driver setup."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T01:50:24.362Z",
+      "updated": "2026-03-01T01:50:24.362Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/384355/drivers-not-working-on-windows-10-installed-cli-process-on-external-ssd-runnin",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1772329839227-587",
+    "title": "Fix Microsoft Teams Screen Sharing Issue on Mac",
+    "problemDescription": "Screen sharing in Microsoft Teams shows a black screen with a purple dot on Mac.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "screen sharing",
+      "Mac",
+      "black screen",
+      "purple dot"
+    ],
+    "steps": [
+      {
+        "title": "Quit Microsoft Teams and Other Applications",
+        "content": "Close all applications, including Microsoft Teams, to ensure a clean start."
+      },
+      {
+        "title": "Restart Your Mac",
+        "content": "Restart your Mac to clear any temporary issues that might be causing the problem."
+      },
+      {
+        "title": "Reopen Microsoft Teams",
+        "content": "Launch Microsoft Teams again and attempt to share your screen to see if the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Microsoft Teams",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Microsoft Teams",
+            "content": "Go to the Applications folder, find Microsoft Teams, and drag it to the Trash."
+          },
+          {
+            "title": "Download the Latest Version",
+            "content": "Visit the official Microsoft Teams website and download the latest version of the application."
+          },
+          {
+            "title": "Install Microsoft Teams",
+            "content": "Open the downloaded file and follow the installation instructions."
+          },
+          {
+            "title": "Restart Your Mac",
+            "content": "Restart your Mac to ensure the new installation is properly set up."
+          },
+          {
+            "title": "Test Screen Sharing",
+            "content": "Open Microsoft Teams and try sharing your screen again to see if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T01:50:39.227Z",
+      "updated": "2026-03-01T01:50:39.227Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255998555",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1772329841623-301",
+    "title": "Run New Microsoft Teams on macOS Monterey",
+    "problemDescription": "New Microsoft Teams is marked as incompatible with macOS Monterey 12.7.6.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "macOS Monterey",
+      "incompatibility",
+      "Classic Teams"
+    ],
+    "steps": [
+      {
+        "title": "Remove New Teams Completely",
+        "content": "Delete all remnants of New Teams, Teams 2, or any related files from your system. Ensure you empty the trash."
+      },
+      {
+        "title": "Clear Teams Data from Library Folders",
+        "content": "Go to your User/Library folder and delete any Teams-related items from the Containers and Group Containers folders, specifically the UBF8T folders with .microsoft.teams at the end."
+      },
+      {
+        "title": "Run Classic Teams",
+        "content": "Launch Classic Teams from any location. It may be glitchy initially, but after logging in, quit and reopen Teams to see your information populated correctly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Classic Teams with Popups",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Classic Teams",
+            "content": "Classic Teams will work but may show annoying popups to switch to New Teams. Ignore these popups and continue using Classic Teams."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T01:50:41.623Z",
+      "updated": "2026-03-01T01:50:41.623Z",
+      "sourceUrl": "https://discussions.apple.com/thread/256045206",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1772329850797-307",
+    "title": "Fix Instagram Login Issue on iPhone",
+    "problemDescription": "Unable to login to Instagram app on iPhone but can login via browser.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "login",
+      "iphone",
+      "ios"
+    ],
+    "steps": [
+      {
+        "title": "Force Close Instagram",
+        "content": "Double-click the Home button (or swipe up from the bottom of the screen and pause for iPhone X and later) to open the App Switcher. Swipe up on the Instagram app card to force close it."
+      },
+      {
+        "title": "Restart Your iPhone",
+        "content": "Press and hold the Power button until the 'slide to power off' slider appears. Drag the slider to turn off your iPhone. Wait for about 30 seconds, then press and hold the Power button again until the Apple logo appears."
+      },
+      {
+        "title": "Update iOS",
+        "content": "Go to Settings > General > Software Update. If an update is available, tap Download and Install."
+      },
+      {
+        "title": "Reinstall Instagram",
+        "content": "Press and hold the Instagram app icon until it jiggles, then tap the 'x' to delete it. Go to the App Store, search for Instagram, and reinstall it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Instagram Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Instagram Help Center",
+            "content": "Open your browser and go to the Instagram Help Center."
+          },
+          {
+            "title": "Submit a Report",
+            "content": "Follow the instructions to submit a report or contact Instagram directly for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T01:50:50.797Z",
+      "updated": "2026-03-01T01:50:50.797Z",
+      "sourceUrl": "https://discussions.apple.com/thread/251696583",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
