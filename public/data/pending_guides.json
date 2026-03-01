@@ -117451,5 +117451,382 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1772353582109-821",
+    "title": "Fix Google Chrome Freeze on File Upload",
+    "problemDescription": "Google Chrome freezes when attempting to upload a file on Ubuntu 22.04.1 LTS.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "freeze",
+      "upload",
+      "ubuntu",
+      "file"
+    ],
+    "steps": [
+      {
+        "title": "Disable Hardware Acceleration",
+        "content": "Open Chrome, go to Settings > System, and toggle off 'Use hardware acceleration when available'. Restart Chrome."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Input Feedback Sounds",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Command",
+            "content": "Open a terminal and run the command: `gsettings set org.gnome.desktop.sound input-feedback-sounds false`."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Install xdg-desktop-portal-gnome",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Package",
+            "content": "Open a terminal and run the command: `sudo apt install xdg-desktop-portal-gnome`."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Use dconf-editor",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install dconf-editor",
+            "content": "Open a terminal and run the command: `sudo apt-get install dconf-editor`."
+          },
+          {
+            "title": "Disable Input Feedback Sounds",
+            "content": "Open dconf-editor and navigate to `/org/gnome/desktop/sound/`, then turn off `input-feedback-sounds`."
+          }
+        ]
+      },
+      {
+        "title": "Method 5: Toggle Hardware Acceleration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Toggle Setting",
+            "content": "Go to Chrome Settings > System and toggle 'Use hardware acceleration when available' on and off."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T08:26:22.109Z",
+      "updated": "2026-03-01T08:26:22.109Z",
+      "sourceUrl": "https://askubuntu.com/questions/1404550/google-chrome-freeze-uploading-a-file",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1772353592665-155",
+    "title": "Fix Zoom Lag in Cinnamon on Ubuntu 18.04",
+    "problemDescription": "Zoom video conferencing becomes slow and unresponsive when joining or starting a meeting on Ubuntu 18.04 with Cinnamon.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "ubuntu",
+      "cinnamon",
+      "lag",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Disable Hardware Acceleration in Zoom",
+        "content": "Open Zoom, go to Settings > Video, and disable the 'Enable hardware acceleration' option."
+      },
+      {
+        "title": "Update Graphics Drivers",
+        "content": "Ensure your graphics drivers are up to date. Open a terminal and run 'sudo apt update && sudo apt upgrade'."
+      },
+      {
+        "title": "Adjust Cinnamon Settings",
+        "content": "Go to System Settings > Effects and disable any visual effects that might be causing performance issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Desktop Environment",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Different Desktop Environment",
+            "content": "Install a lightweight desktop environment like XFCE or MATE. Open a terminal and run 'sudo apt install xubuntu-desktop' or 'sudo apt install mate-desktop-environment'."
+          },
+          {
+            "title": "Switch Desktop Environments",
+            "content": "Log out and select the newly installed desktop environment from the login screen."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T08:26:32.665Z",
+      "updated": "2026-03-01T08:26:32.665Z",
+      "sourceUrl": "https://askubuntu.com/questions/1225177/18-04-zoom-video-conferencing-issues-only-with-cinnamon",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1772353597882-477",
+    "title": "Test Web Conferencing Issues on Ubuntu",
+    "problemDescription": "Experiencing problems with web conferencing software on Ubuntu 21.04 with Plasma DE.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "web conferencing",
+      "Ubuntu",
+      "Plasma DE",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check System Requirements",
+        "content": "Ensure your system meets the minimum requirements for the web conferencing software."
+      },
+      {
+        "title": "Update System and Software",
+        "content": "Run `sudo apt update` and `sudo apt upgrade` to ensure your system and software are up to date."
+      },
+      {
+        "title": "Check Permissions",
+        "content": "Verify that the web conferencing software has the necessary permissions to access the camera and microphone."
+      },
+      {
+        "title": "Test with Different Software",
+        "content": "Try using a different web conferencing software to isolate the issue."
+      },
+      {
+        "title": "Check for Conflicting Applications",
+        "content": "Close any other applications that might be using the camera or microphone."
+      },
+      {
+        "title": "Review Logs",
+        "content": "Check the system logs for any errors related to the web conferencing software. Use `journalctl -xe` to view recent logs."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall the Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall the Software",
+            "content": "Use `sudo apt remove <software-name>` to uninstall the web conferencing software."
+          },
+          {
+            "title": "Reinstall the Software",
+            "content": "Reinstall the software using the appropriate command or package manager."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Known Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Search for Known Issues",
+            "content": "Search online forums and the software's support page for any known issues with Ubuntu 21.04 and Plasma DE."
+          },
+          {
+            "title": "Apply Patches or Workarounds",
+            "content": "Follow any recommended patches or workarounds provided in the forums or support page."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T08:26:37.882Z",
+      "updated": "2026-03-01T08:26:37.882Z",
+      "sourceUrl": "https://askubuntu.com/questions/1348459/how-can-i-test-web-conferencing-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1772353606090-538",
+    "title": "Fix Screen Sharing Problems on Discord",
+    "problemDescription": "Discord screen sharing feature not working properly.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "screen sharing",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Delete Discord Cache Data",
+        "content": "Close all Discord processes and delete the cache files to resolve screen sharing issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Run Discord With Administrative Rights",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run as Administrator",
+            "content": "Go to the executable file's properties and enable running Discord with administrative rights."
+          }
+        ]
+      },
+      {
+        "title": "Update the App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Manually Update Discord",
+            "content": "Maximize the app window and press Ctrl + R on Windows or Cmd + R on Mac to reload the interface and search for updates."
+          }
+        ]
+      },
+      {
+        "title": "Reinstall Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall Discord",
+            "content": "If the issue persists, uninstall and reinstall Discord to resolve any corrupt or damaged files."
+          }
+        ]
+      },
+      {
+        "title": "Add Your Game to Discord Activity",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Manually Add Game",
+            "content": "Manually add your game or app to Discord to help it detect and fix the screen sharing problem."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T08:26:46.090Z",
+      "updated": "2026-03-01T08:26:46.090Z",
+      "sourceUrl": "https://www.makeuseof.com/discord-fix-screen-sharing-problems/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1772353611694-324",
+    "title": "Fix Discord Audio Input Prompt",
+    "problemDescription": "Discord repeatedly asks to change the audio input device.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "audio",
+      "input",
+      "reinstall"
+    ],
+    "steps": [
+      {
+        "title": "Relaunch Discord",
+        "content": "Close and reopen Discord to see if the issue is resolved."
+      },
+      {
+        "title": "Reinstall Discord",
+        "content": "Uninstall Discord and download the latest version from the official website."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Alternative Fixes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Audio Settings",
+            "content": "Go to User Settings > Voice & Video and ensure the correct input device is selected."
+          },
+          {
+            "title": "Update Audio Drivers",
+            "content": "Update your audio drivers to the latest version."
+          },
+          {
+            "title": "Disable Conflicting Software",
+            "content": "Temporarily disable any software that might interfere with Discord's audio settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T08:26:51.694Z",
+      "updated": "2026-03-01T08:26:51.694Z",
+      "sourceUrl": "https://www.makeuseof.com/how-to-fix-discord-asking-to-change-audio-input/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1772353631187-761",
+    "title": "Connect Amazon Echo to HomeKit",
+    "problemDescription": "Integrate Amazon Echo with HomeKit for smart home control.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "Amazon Echo",
+      "HomeKit",
+      "smart home",
+      "integration"
+    ],
+    "steps": [
+      {
+        "title": "Use the iDevices App",
+        "content": "Download and install the iDevices app on your iOS device. This app allows you to connect your Amazon Echo to HomeKit via Alexa."
+      },
+      {
+        "title": "Set Up HomeKit",
+        "content": "Open the iDevices app and follow the instructions to set up HomeKit. Ensure your Apple TV is also set up as a HomeKit hub."
+      },
+      {
+        "title": "Connect Amazon Echo",
+        "content": "Use the iDevices app to link your Amazon Echo to HomeKit. This will enable you to control your smart home devices using both Alexa and Siri."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Hue Bridge",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase Hue Bridge",
+            "content": "Buy a Hue Bridge if you don't already have one. This will act as the central controller for your smart home devices."
+          },
+          {
+            "title": "Connect Hue Bridge to Echo Plus",
+            "content": "Connect your Hue Bridge to your Amazon Echo Plus. The Echo Plus contains a built-in bridge that can communicate directly with Hue bulbs."
+          },
+          {
+            "title": "Set Up HomeKit",
+            "content": "Use the Hue Bridge to set up HomeKit. This will allow you to control your smart home devices using both Alexa and Siri."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T08:27:11.187Z",
+      "updated": "2026-03-01T08:27:11.187Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/310536/is-it-possible-to-use-an-amazon-echo-with-homekit",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
