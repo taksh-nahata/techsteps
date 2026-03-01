@@ -116793,5 +116793,612 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1772347236809-452",
+    "title": "Fix Bluetooth Settings App Crashing",
+    "problemDescription": "The Bluetooth settings page in Windows 10 opens and closes immediately.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "windows 10",
+      "settings",
+      "crash"
+    ],
+    "steps": [
+      {
+        "title": "Run System File Checker and DISM",
+        "content": "Open Command Prompt as Administrator and run the following commands in order: `DISM.exe /Online /Cleanup-image /StartComponentCleanup`, `DISM.exe /Online /Cleanup-Image /Restorehealth`, `SFC /SCANNOW`. Restart your computer after completion."
+      },
+      {
+        "title": "Update or Reinstall Bluetooth Driver",
+        "content": "After running the above commands, update or reinstall the Bluetooth driver through Device Manager."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Enable Device Association Service",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Service Status",
+            "content": "Open `services.msc` and ensure the 'Device Association Service' is running and set to automatic."
+          },
+          {
+            "title": "Run Command",
+            "content": "Alternatively, open Command Prompt as Administrator and run: `sc config deviceassociationservice start= auto`."
+          }
+        ]
+      },
+      {
+        "title": "Perform Windows 10 Repair Install",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Media Creation Tool",
+            "content": "Go to the Windows Media Creation Link and download the tool."
+          },
+          {
+            "title": "Run Repair Install",
+            "content": "Follow the instructions to perform a repair install of Windows 10."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T06:40:36.809Z",
+      "updated": "2026-03-01T06:40:36.809Z",
+      "sourceUrl": "https://superuser.com/questions/1758164/bluetooth-settings-page-opens-and-closes-right-away",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1772347239474-139",
+    "title": "Fix Bluetooth Headphones Not Autoconnecting on Windows 11",
+    "problemDescription": "Bluetooth headphones are paired but do not autoconnect on Windows 11.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "headphones",
+      "autoconnect",
+      "windows 11"
+    ],
+    "steps": [
+      {
+        "title": "Set Bluetooth Service Startup Type to Automatic",
+        "content": "Sign in as an administrator, open Services (services.msc), find 'Bluetooth Support Service', right-click and select 'Properties'. Set the 'Startup type' to 'Automatic' and click 'Apply'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Run Hardware and Devices Troubleshooter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Troubleshooter",
+            "content": "Go to Settings > Update & Security > Troubleshoot > Additional troubleshooters. Select 'Hardware and Devices' and run the troubleshooter."
+          }
+        ]
+      },
+      {
+        "title": "Uninstall and Reinstall Bluetooth Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Drivers",
+            "content": "Go to Device Manager, expand 'Bluetooth', right-click your Bluetooth adapter, and select 'Uninstall device'."
+          },
+          {
+            "title": "Reinstall Drivers",
+            "content": "Restart your computer. Windows will attempt to reinstall the drivers automatically."
+          }
+        ]
+      },
+      {
+        "title": "Enable Discovery for Bluetooth Devices",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Bluetooth Options",
+            "content": "Go to Settings > Devices > Bluetooth > More Bluetooth options."
+          },
+          {
+            "title": "Enable Discovery",
+            "content": "Check 'Allow Bluetooth devices to find this PC' and click 'Apply'."
+          },
+          {
+            "title": "Repair Device",
+            "content": "Remove the device and re-pair it."
+          }
+        ]
+      },
+      {
+        "title": "Set Bluetooth Audio Gateway Service to Automatic",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Services",
+            "content": "Open Services (services.msc), find 'Bluetooth Audio Gateway Service', right-click and select 'Properties'."
+          },
+          {
+            "title": "Set Startup Type",
+            "content": "Set the 'Startup type' to 'Automatic' and click 'Apply'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T06:40:39.474Z",
+      "updated": "2026-03-01T06:40:39.474Z",
+      "sourceUrl": "https://superuser.com/questions/1772390/bluetooth-headphones-get-paired-but-dont-autoconnect-on-windows-11",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1772347247543-672",
+    "title": "Hide WhatsApp Message Previews",
+    "problemDescription": "Prevent WhatsApp from showing message previews on the lock screen.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "WhatsApp",
+      "privacy",
+      "notifications",
+      "message preview"
+    ],
+    "steps": [
+      {
+        "title": "Access WhatsApp Settings",
+        "content": "Open WhatsApp and go to Settings."
+      },
+      {
+        "title": "Navigate to Notifications",
+        "content": "Tap on Notifications."
+      },
+      {
+        "title": "Disable Message Preview",
+        "content": "Scroll down to Show preview and disable the toggle on the right-hand side."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manage WhatsApp Storage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access WhatsApp Settings",
+            "content": "Open WhatsApp and go to Settings."
+          },
+          {
+            "title": "Navigate to Storage and Data",
+            "content": "Tap on Storage and data."
+          },
+          {
+            "title": "Manage Storage",
+            "content": "Tap on Manage storage to delete large files."
+          },
+          {
+            "title": "Adjust Media Quality",
+            "content": "Adjust the media quality for uploads and downloads."
+          },
+          {
+            "title": "Disable Auto-Download",
+            "content": "Go to Media auto-download and toggle all options to Off."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Link WhatsApp to Another Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open WhatsApp on Second Device",
+            "content": "Open WhatsApp on the device you want to link."
+          },
+          {
+            "title": "Scan QR Code",
+            "content": "Scan the QR code displayed on the second device using your primary device."
+          },
+          {
+            "title": "Link Devices",
+            "content": "Go to Settings > Linked devices > Link a device on your primary device and scan the QR code."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T06:40:47.543Z",
+      "updated": "2026-03-01T06:40:47.543Z",
+      "sourceUrl": "https://www.techradar.com/computing/websites-apps/7-hidden-whatsapp-settings-you-never-knew-existed-and-why-you-need-to-use-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1772347250038-613",
+    "title": "Share Message History with New WhatsApp Group Members",
+    "problemDescription": "New members in a WhatsApp group cannot see previous messages.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "WhatsApp",
+      "group chat",
+      "message history",
+      "new members"
+    ],
+    "steps": [
+      {
+        "title": "Share Message History Before Adding New Members",
+        "content": "Before adding new members to the group, select the messages you want to share with them. Tap on the three dots in the top right corner, then tap on 'Share Message History'."
+      },
+      {
+        "title": "Add New Members",
+        "content": "After sharing the message history, add the new members to the group. They will now be able to see the previously shared messages."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Remove and Re-add Members",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove the New Member",
+            "content": "If you forget to share the message history before adding new members, remove them from the group."
+          },
+          {
+            "title": "Share Message History",
+            "content": "Share the message history as described in the main steps."
+          },
+          {
+            "title": "Re-add the Member",
+            "content": "Re-add the member to the group. They should now be able to see the previously shared messages."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T06:40:50.038Z",
+      "updated": "2026-03-01T06:40:50.038Z",
+      "sourceUrl": "https://www.techradar.com/computing/websites-apps/whatsapp-is-lifting-a-frustrating-group-chat-limitation-ive-hated-for-years-giving-it-the-upper-hand-over-imessage-and-telegram",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1772347251788-942",
+    "title": "Enable Spoiler Hiding in WhatsApp",
+    "problemDescription": "How to hide spoilers in WhatsApp messages to avoid seeing them accidentally.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "WhatsApp",
+      "spoiler",
+      "hide",
+      "message",
+      "feature"
+    ],
+    "steps": [
+      {
+        "title": "Update WhatsApp",
+        "content": "Ensure you have the latest beta version of WhatsApp for iOS installed on your device."
+      },
+      {
+        "title": "Access Spoiler Format Option",
+        "content": "When composing a message, look for the spoiler format option in the text formatting tools."
+      },
+      {
+        "title": "Apply Spoiler Format",
+        "content": "Highlight the text you want to hide as a spoiler and apply the spoiler format. The text will be concealed until the recipient taps on it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Spoiler Warning",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Manually Add Spoiler Warning",
+            "content": "Manually add a spoiler warning at the beginning of your message, such as 'Spoiler Alert!' or 'Do not read if you haven't watched the show.'"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T06:40:51.788Z",
+      "updated": "2026-03-01T06:40:51.788Z",
+      "sourceUrl": "https://www.techradar.com/computing/websites-apps/whatsapp-could-get-a-reddit-style-spoiler-hiding-feature-so-you-wont-have-to-hide-from-group-chats-if-youre-behind-on-the-big-shows",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1772347253552-246",
+    "title": "Use ChatGPT on WhatsApp for Troubleshooting",
+    "problemDescription": "Need quick troubleshooting tips without typing out the problem.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "troubleshooting",
+      "ChatGPT",
+      "WhatsApp",
+      "voice memo",
+      "photo"
+    ],
+    "steps": [
+      {
+        "title": "Snap a Picture",
+        "content": "Take a photo of the issue or problem you're facing."
+      },
+      {
+        "title": "Send to ChatGPT",
+        "content": "Send the photo to ChatGPT on WhatsApp and ask for troubleshooting tips."
+      },
+      {
+        "title": "Receive Response",
+        "content": "ChatGPT will analyze the photo and provide text-based troubleshooting advice."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Record a Voice Memo",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Record Your Problem",
+            "content": "Record a voice memo explaining the issue you're facing."
+          },
+          {
+            "title": "Send to ChatGPT",
+            "content": "Send the voice memo to ChatGPT on WhatsApp."
+          },
+          {
+            "title": "Receive Response",
+            "content": "ChatGPT will listen to the voice memo and provide text-based troubleshooting advice."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T06:40:53.552Z",
+      "updated": "2026-03-01T06:40:53.552Z",
+      "sourceUrl": "https://www.techradar.com/computing/artificial-intelligence/chatgpt-on-whatsapp-can-now-see-hear-and-remember-your-conversations-from-elsewhere",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1772347264087-282",
+    "title": "Install Older Office Versions on iOS 9",
+    "problemDescription": "Microsoft Office apps require iOS 10 or later, but you need to use them on an iOS 9 device.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "ios",
+      "office",
+      "downgrade",
+      "apps"
+    ],
+    "steps": [
+      {
+        "title": "Use a Friend's Device",
+        "content": "Log out from the App Store on your iOS 9 device."
+      },
+      {
+        "title": "Log in on a Friend's Device",
+        "content": "Use a friend's device with iOS 10 or later and log in to the App Store with your Apple ID."
+      },
+      {
+        "title": "Download Office Apps",
+        "content": "Download the Office apps (Word, Excel, PowerPoint) on the friend's device."
+      },
+      {
+        "title": "Log Out on Friend's Device",
+        "content": "Log out from the App Store on the friend's device."
+      },
+      {
+        "title": "Log in on Your Device",
+        "content": "Go back to your iOS 9 device and log in to the App Store."
+      },
+      {
+        "title": "Install Older Versions",
+        "content": "Go to the Purchased list in the App Store. You should see the Office apps. Click on them and choose to install the older versions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Downgrade iOS Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Downgrade Possibility",
+            "content": "Check if your device supports downgrading to iOS 10 or earlier."
+          },
+          {
+            "title": "Backup Data",
+            "content": "Backup your data before proceeding."
+          },
+          {
+            "title": "Downgrade iOS",
+            "content": "Use iTunes or another method to downgrade your iOS version to iOS 10 or earlier."
+          },
+          {
+            "title": "Install Office Apps",
+            "content": "Download and install the Office apps from the App Store."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T06:41:04.087Z",
+      "updated": "2026-03-01T06:41:04.087Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/msoffice_install-mso_imobile-mso_365hp/older-versions-of-office-for-ios-9/0b9645f5-00b9-46ea-aff2-a081b2118734",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1772347268526-856",
+    "title": "Access Online Archiving in Microsoft 365 for Home",
+    "problemDescription": "Users of Microsoft 365 for Home want to know if they have access to online archiving for Outlook.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft 365",
+      "Outlook",
+      "online archiving",
+      "home version"
+    ],
+    "steps": [
+      {
+        "title": "Check Your Subscription",
+        "content": "Verify that you have a Microsoft 365 for Home subscription. This version does not include online archiving, which is typically a feature for enterprise versions."
+      },
+      {
+        "title": "Use Local Archiving",
+        "content": "For Microsoft 365 for Home, you can use local archiving by creating PST files in Outlook for Windows. Note that PST files cannot be opened by Outlook mobile apps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Third-Party Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Research Third-Party Tools",
+            "content": "Look for third-party tools that might offer online archiving capabilities compatible with Microsoft 365 for Home."
+          },
+          {
+            "title": "Install and Configure",
+            "content": "Install the chosen tool and configure it to work with your Outlook account. Ensure the tool is reputable and safe to use."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T06:41:08.526Z",
+      "updated": "2026-03-01T06:41:08.526Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/all/microsoft-365-for-home/9b01d6b3-ac87-42cf-b60b-853f316b2dc4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1772347270144-977",
+    "title": "Barcode Reader Not Working on Some Android Devices",
+    "problemDescription": "Barcode Reader element in PowerApps canvas app fails to work on certain Android devices.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "PowerApps",
+      "Barcode Reader",
+      "Android",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Update the PowerApps App",
+        "content": "Ensure that the PowerApps app is updated to the latest version on the Android device."
+      },
+      {
+        "title": "Check Device Compatibility",
+        "content": "Verify if the Android device meets the minimum requirements for the Barcode Reader element."
+      },
+      {
+        "title": "Enable Camera Permissions",
+        "content": "Go to the device settings and ensure that the PowerApps app has permission to access the camera."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Barcode Reader",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Third-Party Barcode Reader App",
+            "content": "Install a third-party barcode reader app from the Google Play Store and use it in conjunction with the PowerApps app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T06:41:10.144Z",
+      "updated": "2026-03-01T06:41:10.144Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/office/forum/officeversion_other-word/cant-find-my-word/7cc57d66-b23c-4815-9862-90dbb5145150?msgId=dddd8330-46bd-40ea-891e-71efdfb80a23",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1772347281694-530",
+    "title": "Fix Instagram App Integration Error 400 in MailChimp",
+    "problemDescription": "Error code 400 when trying to connect Instagram app integration in MailChimp.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "MailChimp",
+      "Instagram",
+      "integration",
+      "error",
+      "400"
+    ],
+    "steps": [
+      {
+        "title": "Reconnect Instagram Account",
+        "content": "Disconnect your Instagram account from MailChimp and reconnect it. Ensure you have the correct permissions and that your Instagram account is in good standing."
+      },
+      {
+        "title": "Check API Permissions",
+        "content": "Verify that your Instagram account has the necessary API permissions for integration with MailChimp. Ensure that the API is enabled and properly configured."
+      },
+      {
+        "title": "Clear Browser Cache",
+        "content": "Clear your browser cache and cookies, then try the integration process again. Sometimes, cached data can cause issues with API connections."
+      },
+      {
+        "title": "Use a Different Browser",
+        "content": "Try using a different web browser to see if the issue is browser-specific. Some browsers may have compatibility issues with certain APIs."
+      },
+      {
+        "title": "Contact Support",
+        "content": "If the problem persists, contact MailChimp support for further assistance. Provide them with the error code and any relevant screenshots."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Instagram Account Status",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Account Status",
+            "content": "Ensure your Instagram account is not restricted or flagged for any violations. Sometimes, account restrictions can cause integration issues."
+          },
+          {
+            "title": "Use a Business Account",
+            "content": "If you are using a personal Instagram account, switch to a business account. Business accounts often have better integration capabilities with third-party services."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-03-01T06:41:21.694Z",
+      "updated": "2026-03-01T06:41:21.694Z",
+      "sourceUrl": "https://www.reddit.com/r/MailChimp/comments/1i6n3yo/instagram_app_integration_error_code_400_help/",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
