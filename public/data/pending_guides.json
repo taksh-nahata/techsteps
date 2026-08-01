@@ -332183,5 +332183,370 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785563470317-602",
+    "title": "Fix MacBook Air Wi-Fi Drops Due to Dual-Band SSID Conflict",
+    "problemDescription": "MacBook Air frequently disconnects from Wi-Fi when the router broadcasts dual-band networks (2.4 GHz and 5 GHz) with the same SSID name.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook air",
+      "wifi drops",
+      "dual-band router",
+      "SSID conflict",
+      "macos"
+    ],
+    "steps": [
+      {
+        "title": "Change Dual-Band SSID Names",
+        "content": "Log in to your router's admin panel (usually via a web browser at 192.168.1.1 or 192.168.0.1). Navigate to the wireless settings and change the SSID names for the 2.4 GHz and 5 GHz bands to be unique (e.g., 'HomeWiFi_2G' and 'HomeWiFi_5G'). Save the changes and reconnect your MacBook Air to the Wi-Fi."
+      },
+      {
+        "title": "Forget and Reconnect to Wi-Fi",
+        "content": "On your MacBook Air, go to System Preferences > Network. Select Wi-Fi, then click the Advanced button. Find the current network in the list, click the minus (-) button to remove it, and click OK. Reconnect to the Wi-Fi network with the new SSID."
+      },
+      {
+        "title": "Update macOS",
+        "content": "Check for macOS updates by going to System Preferences > Software Update. Install any available updates, as some versions (e.g., 10.10.2 Yosemite) may resolve Wi-Fi stability issues."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "If the issue persists, reset your MacBook Air's network settings by deleting the Wi-Fi preferences file. Open Terminal and run: `sudo rm /Library/Preferences/SystemConfiguration/NetworkInterfaces.plist` and `sudo rm /Library/Preferences/SystemConfiguration/preferences.plist`. Restart your MacBook Air and reconfigure your Wi-Fi connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable 5 GHz Band Temporarily",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable 5 GHz Band in Router",
+            "content": "Log in to your router's admin panel and disable the 5 GHz band temporarily. This forces your MacBook Air to connect only to the 2.4 GHz band, which may resolve the instability."
+          },
+          {
+            "title": "Reconnect and Test",
+            "content": "Reconnect your MacBook Air to the Wi-Fi network and test for stability. If the issue is resolved, consider keeping the 5 GHz band disabled or updating your router's firmware."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a USB Wi-Fi Adapter",
+        "type": "Hardware Solution",
+        "steps": [
+          {
+            "title": "Purchase a Compatible USB Wi-Fi Adapter",
+            "content": "Buy a USB Wi-Fi adapter known to work well with macOS (e.g., TP-Link TL-WN725N). Ensure it supports both 2.4 GHz and 5 GHz bands if needed."
+          },
+          {
+            "title": "Install Drivers and Connect",
+            "content": "Install the necessary drivers for the adapter (if required) and plug it into your MacBook Air. Connect to your Wi-Fi network using the adapter instead of the built-in Wi-Fi."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T05:51:10.317Z",
+      "updated": "2026-08-01T05:51:10.317Z",
+      "sourceUrl": "https://superuser.com/questions/826338/macbook-air-constantly-drops-wifi-connection",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785563503216-54",
+    "title": "Fix iPhone 15 Pro Max Black Screen of Death (No Physical Damage)",
+    "problemDescription": "iPhone 15 Pro Max displays a black screen despite no physical damage, likely caused by a system glitch, failed iOS update, or overcharging. The device does not respond to touch or wake commands.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "black screen",
+      "iPhone 15 Pro Max",
+      "no power",
+      "soft reset",
+      "overcharge",
+      "system glitch"
+    ],
+    "steps": [
+      {
+        "title": "Force Restart the iPhone",
+        "content": "Press and quickly release the Volume Up button, then press and quickly release the Volume Down button. Finally, press and hold the Side (Power) button until the Apple logo appears (about 10 seconds)."
+      },
+      {
+        "title": "Check Brightness Settings",
+        "content": "Swipe down from the top-right corner of the screen to open Control Center. Ensure the brightness slider is not set to the lowest level."
+      },
+      {
+        "title": "Charge the Device Fully",
+        "content": "Connect the iPhone to a working charger and wait at least 30 minutes. Attempt to force restart again after charging."
+      },
+      {
+        "title": "Update iOS (If Possible)",
+        "content": "If the screen temporarily responds, go to Settings > General > Software Update to check for and install any pending updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: DFU Restore (Advanced)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect to Computer",
+            "content": "Use a USB cable to connect the iPhone to a Mac or Windows PC with iTunes/Finder installed."
+          },
+          {
+            "title": "Enter DFU Mode",
+            "content": "Press and release Volume Up, press and release Volume Down, then press and hold the Side button. After 10 seconds, press and hold the Volume Down button while continuing to hold the Side button for 5 more seconds. Release the Side button but keep holding Volume Down for 10 seconds."
+          },
+          {
+            "title": "Restore via iTunes/Finder",
+            "content": "Follow the prompts in iTunes or Finder to restore the iPhone to factory settings. Note: This will erase all data."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Hardware Issues",
+        "type": "Professional Diagnosis",
+        "steps": [
+          {
+            "title": "Inspect for Liquid Damage",
+            "content": "Check the Lightning port and SIM tray for moisture indicators (red or pink). If present, the device may need professional repair."
+          },
+          {
+            "title": "Contact Apple Support",
+            "content": "If the issue persists after all software fixes, contact Apple Support or visit an Apple Store/Authorized Service Provider for hardware diagnostics."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T05:51:43.216Z",
+      "updated": "2026-08-01T05:51:43.216Z",
+      "sourceUrl": "https://www.reddit.com/r/iphone/comments/16yne5i/iphone_15_pro_max_black_screen_of_death_possible",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785563553455-166",
+    "title": "Fix iCloud Crashing on Windows 11",
+    "problemDescription": "iCloud crashes or fails to initialize on Windows 11, often after a Windows update, with issues like login failures or Explorer freezing when accessing iCloud folders.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "iCloud",
+      "Windows 11",
+      "crash",
+      "login",
+      "Windows Store",
+      "administrator"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall the Microsoft Store version of iCloud",
+        "content": "Go to Settings > Apps > Installed Apps, locate 'iCloud' from the Microsoft Store, and uninstall it."
+      },
+      {
+        "title": "Download and install the Windows 7/8 version of iCloud",
+        "content": "Download the standalone installer for iCloud from Apple's official website (Windows 7/8 version) and install it."
+      },
+      {
+        "title": "Run iCloud as Administrator (first launch only)",
+        "content": "Right-click the iCloud desktop shortcut or executable, select 'Run as administrator', and complete the login process."
+      },
+      {
+        "title": "Verify functionality",
+        "content": "After setup, restart your PC and test iCloud functionality (e.g., accessing iCloud Drive folders in File Explorer)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Defer the Faulty Windows Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify the problematic update",
+            "content": "Check Windows Update history for recently installed optional updates. Look for updates with names like 'Cumulative Update for Windows 11' or 'Feature Update'."
+          },
+          {
+            "title": "Defer the update",
+            "content": "Go to Settings > Windows Update > Advanced options > Pause updates for up to 7 days. Alternatively, uninstall the update via Settings > Windows Update > Update history > Uninstall updates."
+          },
+          {
+            "title": "Reinstall iCloud from the Microsoft Store",
+            "content": "After deferring or uninstalling the update, reinstall iCloud from the Microsoft Store and test functionality."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Grant Permissions to WindowsApps Folder",
+        "type": "Advanced Fix",
+        "steps": [
+          {
+            "title": "Take ownership of the WindowsApps folder",
+            "content": "Follow a guide like 'Fix Cannot access WindowsApps Folder in Windows 10' (e.g., thegeekpage.com) to grant your user account full control over the 'C:\\Program Files\\WindowsApps' folder."
+          },
+          {
+            "title": "Run iCloud as Administrator",
+            "content": "Right-click the iCloud executable or shortcut and select 'Run as administrator' to complete the setup."
+          },
+          {
+            "title": "Test functionality",
+            "content": "After setup, restart your PC and verify that iCloud works without requiring administrator rights for normal operation."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T05:52:33.455Z",
+      "updated": "2026-08-01T05:52:33.455Z",
+      "sourceUrl": "https://discussions.apple.com/thread/253112584",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785563558287-824",
+    "title": "Fix Apple Music App 'We've Run Into a Problem' Error on Windows 11",
+    "problemDescription": "Apple Music app on Windows 11 displays 'We've run into a problem' error, preventing access to 'Listen Now', 'Browse', and 'Radio' tabs. Resetting or terminating the app temporarily resolves it, but the issue recurs after restart.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "apple music",
+      "windows 11",
+      "app error",
+      "crash",
+      "reset",
+      "terminate"
+    ],
+    "steps": [
+      {
+        "title": "Terminate Apple Music App Processes",
+        "content": "Open 'Add or Remove Programs' in Windows Settings. Locate 'Apple Music Preview', click 'Advanced Options', then select 'Terminate' to end all running processes. Relaunch the Apple Music app immediately after termination."
+      },
+      {
+        "title": "Reset Apple Music App",
+        "content": "In 'Add or Remove Programs', select 'Apple Music Preview' and click 'Advanced Options'. Choose 'Reset' to restore the app to its default state. Sign back into your account and check if the issue persists."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "After terminating or resetting the app, restart your Windows 11 PC to ensure all background processes are refreshed. Test the Apple Music app again after the restart."
+      },
+      {
+        "title": "Update Apple Music App",
+        "content": "Open the Microsoft Store, search for 'Apple Music', and check for available updates. Install any pending updates and restart the app to see if the issue is resolved."
+      },
+      {
+        "title": "Reinstall Apple Music App",
+        "content": "Uninstall the Apple Music app via 'Add or Remove Programs'. Restart your computer, then reinstall the app from the Microsoft Store. Sign in and verify functionality."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Task Manager to Force Close Apple Music",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Task Manager",
+            "content": "Press 'Ctrl + Shift + Esc' to open Task Manager. Locate any running instances of 'Apple Music' or related processes (e.g., 'AppleMusic.exe')."
+          },
+          {
+            "title": "End Task",
+            "content": "Select the Apple Music process and click 'End Task'. Relaunch the Apple Music app and check if the error persists."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Clear App Cache and Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to 'Settings' > 'Apps' > 'Installed Apps'. Locate 'Apple Music Preview' and click the three-dot menu, then select 'Advanced Options'."
+          },
+          {
+            "title": "Clear Cache and Data",
+            "content": "Under 'Reset', click 'Repair' first to attempt a repair. If the issue persists, click 'Reset' to clear all app data and cache. Sign back in and test the app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T05:52:38.287Z",
+      "updated": "2026-08-01T05:52:38.287Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254918074",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785563563592-481",
+    "title": "Fix Windows 11 Not Detecting iPhone via Apple Devices App",
+    "problemDescription": "Windows 11 PC fails to detect an iPhone 15/16 when connected via USB, despite the device appearing in File Explorer. Apple Devices app or Apple Music does not recognize the iPhone for syncing.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "iphone",
+      "apple devices",
+      "usb detection",
+      "sync"
+    ],
+    "steps": [
+      {
+        "title": "Disable Microsoft Defender Firewall Private Network",
+        "content": "1. Open Windows Security by searching for it in the Start menu.\n2. Go to 'Firewall & network protection'.\n3. Click on 'Microsoft Defender Firewall'.\n4. Under 'Private network settings', toggle off 'Microsoft Defender Firewall'.\n5. Reconnect the iPhone and check if Apple Devices or Apple Music detects it.\n6. Re-enable the firewall after testing."
+      },
+      {
+        "title": "Reinstall Apple Devices and Apple Music Apps",
+        "content": "1. Uninstall Apple Devices and Apple Music apps from the Microsoft Store.\n2. Restart your Windows 11 PC.\n3. Reinstall Apple Devices and Apple Music apps from the Microsoft Store.\n4. Connect your iPhone via USB and open the Apple Devices app to check detection."
+      },
+      {
+        "title": "Update Apple Mobile Device USB Driver",
+        "content": "1. Press Win + X and select 'Device Manager'.\n2. Expand 'Universal Serial Bus controllers'.\n3. Right-click 'Apple Mobile Device USB Driver' and select 'Update driver'.\n4. Choose 'Search automatically for updated driver software'.\n5. Restart your PC and reconnect the iPhone."
+      },
+      {
+        "title": "Reset Apple Mobile Device Service",
+        "content": "1. Press Win + R, type 'services.msc', and press Enter.\n2. Locate 'Apple Mobile Device Service' in the list.\n3. Right-click and select 'Restart'.\n4. If the service is not running, right-click and select 'Start'.\n5. Reconnect the iPhone and test detection."
+      },
+      {
+        "title": "Use a Different USB Cable or Port",
+        "content": "1. Try a different Apple-certified USB cable (preferably the one that came with your iPhone).\n2. Connect to a different USB port on your PC (preferably a USB 2.0 port if available).\n3. Ensure the cable is not damaged and is securely connected to both devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Revert to iTunes for Syncing",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install iTunes",
+            "content": "1. Visit the official Apple website and download the latest version of iTunes for Windows.\n2. Install iTunes and restart your PC.\n3. Connect your iPhone via USB and open iTunes.\n4. Check if iTunes detects the iPhone for syncing or backup."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Windows Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Pending Windows Updates",
+            "content": "1. Open Settings (Win + I) and go to 'Windows Update'.\n2. Click 'Check for updates' and install any pending updates.\n3. Restart your PC if required.\n4. Reconnect the iPhone and test detection in Apple Devices or Apple Music."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T05:52:43.592Z",
+      "updated": "2026-08-01T05:52:43.592Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255893811",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
