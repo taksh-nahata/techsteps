@@ -332548,5 +332548,532 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785571896095-298",
+    "title": "Resolve Google Cloud Outage Impacting Web Services",
+    "problemDescription": "A Google Cloud outage caused widespread internet disruptions, affecting popular services like Discord, Character.ai, Spotify, and Google Workspace for over 2 hours.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "google cloud",
+      "outage",
+      "internet disruption",
+      "services down",
+      "cloud services"
+    ],
+    "steps": [
+      {
+        "title": "Verify the Outage Status",
+        "content": "Check Google Cloud's official status page (https://status.cloud.google.com/) or their social media channels (Twitter/X, @GoogleCloud) for real-time updates on the outage."
+      },
+      {
+        "title": "Check Affected Services",
+        "content": "Visit the status pages of services you rely on (e.g., Discord, Character.ai, Spotify) to confirm if the issue is widespread or isolated to your connection."
+      },
+      {
+        "title": "Restart Network Devices",
+        "content": "Power cycle your modem/router by unplugging it for 30 seconds, then plugging it back in. This may restore connectivity if the issue is local."
+      },
+      {
+        "title": "Flush DNS Cache",
+        "content": "On Windows: Open Command Prompt as admin and run `ipconfig /flushdns`. On macOS: Open Terminal and run `sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`."
+      },
+      {
+        "title": "Switch DNS Servers",
+        "content": "Temporarily switch to Google's DNS (8.8.8.8) or Cloudflare's DNS (1.1.1.1) in your network settings to bypass potential DNS issues."
+      },
+      {
+        "title": "Monitor for Recovery",
+        "content": "Wait for Google Cloud to resolve the outage. Most services should auto-recover once the issue is fixed, but manually restart affected apps if needed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Service Providers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reach Out to Affected Services",
+            "content": "If the outage persists, contact the support teams of affected services (e.g., Discord, Spotify) via their official channels to report the issue and seek updates."
+          },
+          {
+            "title": "Check Third-Party Outage Trackers",
+            "content": "Use outage monitoring sites like Downdetector (https://downdetector.com/) to see if others are reporting the same issue and track recovery progress."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a VPN",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable a VPN",
+            "content": "Connect to a VPN service to route your traffic through unaffected servers. This may bypass regional or DNS-related issues caused by the Google Cloud outage."
+          },
+          {
+            "title": "Test Connectivity",
+            "content": "Verify if the VPN resolves the issue by testing access to affected services. Note: VPNs may not work if the outage is at the service level."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T08:11:36.095Z",
+      "updated": "2026-08-01T08:11:36.095Z",
+      "sourceUrl": "https://www.cnet.com/news-live/google-cloud-stumbled-and-unplugged-the-internet-heres-how-the-crash-loop-began",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785571939124-136",
+    "title": "Fix MTP Device Not Recognized in Ubuntu",
+    "problemDescription": "Ubuntu fails to recognize MTP-enabled devices (e.g., smartphones) for file transfer, despite correct hardware connections.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "mtp",
+      "ubuntu",
+      "device recognition",
+      "file transfer",
+      "libmtp",
+      "gphoto2"
+    ],
+    "steps": [
+      {
+        "title": "Install Required Packages",
+        "content": "Open a terminal and install the necessary packages for MTP support: `sudo apt update && sudo apt install mtp-tools mtpfs libmtp-dev gphoto2 gvfs-backends`."
+      },
+      {
+        "title": "Identify Device Vendor and Product IDs",
+        "content": "Connect your MTP device (e.g., smartphone) via USB. Run `lsusb` in the terminal to list connected devices. Note the `idVendor` and `idProduct` values (e.g., `04e8` and `685c` for a Galaxy Nexus)."
+      },
+      {
+        "title": "Configure Udev Rules for MTP Device",
+        "content": "Create or edit the udev rules file for your device: `sudo gedit /etc/udev/rules.d/69-libmtp.rules`. Add the following line, replacing `VENDORID` and `PRODUCTID` with your device's values:\n`ATTR{idVendor}==\"VENDORID\", ATTR{idProduct}==\"PRODUCTID\", SYMLINK+=\"libmtp-%k\", MODE=\"0666\", GROUP=\"plugdev\"`. Save and close the file."
+      },
+      {
+        "title": "Restart Udev Service",
+        "content": "Apply the new udev rules by restarting the udev service: `sudo service udev restart`."
+      },
+      {
+        "title": "Create Mount Point and Set Permissions",
+        "content": "Create a directory for the device and set permissions: `sudo mkdir -p /media/MTPDevice && sudo chmod a+rwx /media/MTPDevice`."
+      },
+      {
+        "title": "Add User to Fuse Group",
+        "content": "Add your user to the `fuse` group to enable file system access: `sudo adduser $USER fuse`. Log out and log back in for changes to take effect."
+      },
+      {
+        "title": "Enable User Allow Other in Fuse Configuration",
+        "content": "Edit the fuse configuration file: `gksu gedit /etc/fuse.conf`. Remove the `#` from the line `#user_allow_other` to enable it. Save and close the file."
+      },
+      {
+        "title": "Test MTP Connection",
+        "content": "Disconnect and reconnect your device. Open a file manager (e.g., Nautilus) and check if the device appears. Alternatively, test with `mtp-tools` or `gphoto2 --list-files`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Simple-MTPFS for Mounting",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Simple-MTPFS",
+            "content": "Install the `simple-mtpfs` package: `sudo apt install simple-mtpfs`."
+          },
+          {
+            "title": "Mount MTP Device Manually",
+            "content": "Run the following command to mount the device (replace `/media/MTPDevice` with your preferred mount point): `simple-mtpfs /media/MTPDevice`."
+          },
+          {
+            "title": "Unmount Device",
+            "content": "To unmount, use: `fusermount -u /media/MTPDevice`."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use gPhoto2 for File Transfer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install gPhoto2",
+            "content": "Ensure `gphoto2` is installed: `sudo apt install gphoto2`."
+          },
+          {
+            "title": "List Files on Device",
+            "content": "Run `gphoto2 --list-files` to verify the device is recognized and list files."
+          },
+          {
+            "title": "Download Files",
+            "content": "Use `gphoto2 --get-file=FILENUMBER` to download specific files (replace `FILENUMBER` with the actual file index)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T08:12:19.124Z",
+      "updated": "2026-08-01T08:12:19.124Z",
+      "sourceUrl": "https://askubuntu.com/questions/87667/getting-mtp-enabled-devices-to-work-with-ubuntu",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785571967845-270",
+    "title": "Fix Windows 11 RAM Spikes from Connected User Experiences Service",
+    "problemDescription": "Windows 11 experiences sudden RAM spikes due to the persistent Connected User Experiences and Telemetry service, causing system lag even during idle periods.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "ram spikes",
+      "memory usage",
+      "telemetry",
+      "service"
+    ],
+    "steps": [
+      {
+        "title": "Open Services Manager",
+        "content": "Press `Win + R`, type `services.msc`, and press Enter to open the Services Manager."
+      },
+      {
+        "title": "Locate the Connected User Experiences Service",
+        "content": "Scroll down and find the service named 'Connected User Experiences and Telemetry' (or 'DiagTrack')."
+      },
+      {
+        "title": "Disable the Service",
+        "content": "Right-click the service, select 'Properties', set 'Startup type' to 'Disabled', and click 'Stop' to halt the service immediately. Click 'Apply' and 'OK' to save changes."
+      },
+      {
+        "title": "Verify Disabled Status",
+        "content": "Open Task Manager (`Ctrl + Shift + Esc`), go to the 'Services' tab, and confirm that 'DiagTrack' is no longer running."
+      },
+      {
+        "title": "Restart Your Computer (Optional)",
+        "content": "Reboot your system to ensure the changes take full effect, though the service should remain disabled after restart."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable via Group Policy Editor (Windows Pro/Enterprise)",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Open Group Policy Editor",
+            "content": "Press `Win + R`, type `gpedit.msc`, and press Enter to open the Group Policy Editor."
+          },
+          {
+            "title": "Navigate to Telemetry Settings",
+            "content": "Go to: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds."
+          },
+          {
+            "title": "Disable Telemetry",
+            "content": "Double-click 'Allow Telemetry', set it to 'Disabled', and click 'Apply' > 'OK'."
+          },
+          {
+            "title": "Restart Your Computer",
+            "content": "Reboot to apply the changes."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable via Registry Editor",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Open Registry Editor",
+            "content": "Press `Win + R`, type `regedit`, and press Enter. Navigate to: `HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\DiagTrack`."
+          },
+          {
+            "title": "Modify Startup Type",
+            "content": "Double-click 'Start', change the value to `4` (Disabled), and click 'OK'."
+          },
+          {
+            "title": "Restart Your Computer",
+            "content": "Reboot to ensure the service remains disabled."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T08:12:47.845Z",
+      "updated": "2026-08-01T08:12:47.845Z",
+      "sourceUrl": "https://www.makeuseof.com/finally-fixed-my-ram-spikes-by-disabling-useless-windows-11-service",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785571974467-878",
+    "title": "Report iOS Discord Parental Control Issue to Apple",
+    "problemDescription": "Users experience issues with Discord bypassing parental controls on iOS devices, requiring direct reporting to Apple for resolution.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "parental controls",
+      "ios",
+      "bug report",
+      "feature request"
+    ],
+    "steps": [
+      {
+        "title": "Report the Issue as a Bug",
+        "content": "Visit the Apple Feedback page for iPhone: https://www.apple.com/feedback/iphone.html. Select 'Bug Report' as the feedback type and follow the prompts to submit details about the Discord parental control bypass issue."
+      },
+      {
+        "title": "Request a Feature Addition (Optional)",
+        "content": "If Apple does not address the issue, request a feature to enhance parental controls by visiting the same feedback page. Select 'Feature Request' and explain why stricter Discord restrictions are needed. Include a link to this thread for context."
+      },
+      {
+        "title": "Update iOS Device",
+        "content": "Ensure your iPhone 13 is running the latest iOS version. If Wi-Fi is unreliable during updates, connect via Ethernet using a USB-C to Gigabit Ethernet Adapter (e.g., Belkin USB-C to Gigabit Ethernet Adapter) or update via a computer."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-01T08:12:54.467Z",
+      "updated": "2026-08-01T08:12:54.467Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255040760",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785571981511-198",
+    "title": "Fix Discord Not Opening on macOS",
+    "problemDescription": "Discord fails to open after updating macOS or reinstalling the app, suggesting potential cache corruption or incomplete uninstallation.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "macos",
+      "app-not-opening",
+      "electron-app",
+      "cache-clearing"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Mac",
+        "content": "Perform a full restart of your Mac to clear temporary system processes that may interfere with Discord."
+      },
+      {
+        "title": "Use Safe Mode to Clear Caches",
+        "content": "Boot your Mac into Safe Mode (hold Shift during startup) to disable non-essential processes and clear caches. Restart normally afterward."
+      },
+      {
+        "title": "Perform a Clean Uninstall",
+        "content": "Use a third-party uninstaller like AppCleaner to remove Discord and all associated files. Drag the app to the Trash, then run AppCleaner to delete leftover files."
+      },
+      {
+        "title": "Reinstall Discord",
+        "content": "Download the latest version of Discord from the official website and reinstall it."
+      },
+      {
+        "title": "Check for macOS Updates",
+        "content": "Ensure your macOS is up to date via System Preferences > Software Update."
+      },
+      {
+        "title": "Test with Discord Web Version",
+        "content": "Open Discord in a browser (Chrome/Chromium) to verify if the issue is app-specific or system-wide."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset NVRAM/PRAM",
+        "type": "System Reset",
+        "steps": [
+          {
+            "title": "Shut Down Your Mac",
+            "content": "Turn off your Mac completely."
+          },
+          {
+            "title": "Reset NVRAM/PRAM",
+            "content": "Turn on your Mac and immediately hold Command + Option + P + R for about 20 seconds. Release the keys and let your Mac boot normally."
+          },
+          {
+            "title": "Reinstall Discord",
+            "content": "Reinstall Discord after resetting NVRAM/PRAM."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Create a New User Account",
+        "type": "User Profile Test",
+        "steps": [
+          {
+            "title": "Open System Preferences",
+            "content": "Go to System Preferences > Users & Groups."
+          },
+          {
+            "title": "Create a New User",
+            "content": "Click the '+' button to create a new admin user account. Log in to the new account."
+          },
+          {
+            "title": "Test Discord",
+            "content": "Install and test Discord in the new user account to isolate the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T08:13:01.511Z",
+      "updated": "2026-08-01T08:13:01.511Z",
+      "sourceUrl": "https://discussions.apple.com/thread/251824245",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785571985741-8",
+    "title": "Fix iPhone 17 Pro Max Connectivity Issues Caused by VPN",
+    "problemDescription": "iPhone 17 Pro Max running iOS 26.1 experiences offline errors or slow app loading, likely due to VPN app interference or misconfiguration.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iPhone",
+      "VPN",
+      "connectivity",
+      "offline",
+      "iOS 26.1",
+      "network issues"
+    ],
+    "steps": [
+      {
+        "title": "Disable or Uninstall VPN App",
+        "content": "Go to Settings > General > VPN & Device Management. Tap the VPN app (e.g., Proton VPN, NordVPN) and select 'Remove VPN' or 'Delete App'. Restart your iPhone."
+      },
+      {
+        "title": "Test Connectivity",
+        "content": "Open apps like Safari, Spotify, or Discord to verify if the offline errors or slow loading have been resolved."
+      },
+      {
+        "title": "Reconfigure VPN (Optional)",
+        "content": "If you need VPN functionality, reinstall the VPN app from the App Store and complete its setup process. Ensure the VPN is properly configured and connected."
+      },
+      {
+        "title": "Check for iOS Updates",
+        "content": "Go to Settings > General > Software Update to install any available iOS updates that may address VPN-related bugs."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings. This will clear Wi-Fi passwords and VPN configurations, so reconnect to Wi-Fi afterward."
+          },
+          {
+            "title": "Reconnect to Wi-Fi",
+            "content": "Go to Settings > Wi-Fi and reconnect to your network. Re-enter the Wi-Fi password if required."
+          },
+          {
+            "title": "Test Connectivity",
+            "content": "Verify if the connectivity issues have been resolved by testing apps and browser functionality."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable VPN Auto-Connect",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open VPN App Settings",
+            "content": "Launch the VPN app and navigate to its settings menu."
+          },
+          {
+            "title": "Disable Auto-Connect",
+            "content": "Turn off the 'Auto-Connect' or 'Connect on Startup' option to prevent the VPN from interfering with network connections."
+          },
+          {
+            "title": "Test Connectivity",
+            "content": "Check if apps and browser functionality return to normal without the VPN auto-connecting."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T08:13:05.741Z",
+      "updated": "2026-08-01T08:13:05.741Z",
+      "sourceUrl": "https://discussions.apple.com/thread/256141962",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785572009197-30",
+    "title": "Sync Samsung Galaxy S4 with Outlook Calendar",
+    "problemDescription": "User needs to sync their Samsung Galaxy S4 (Android) calendar with Microsoft Outlook, but native sync options are limited or unreliable.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung galaxy s4",
+      "outlook",
+      "calendar sync",
+      "google account",
+      "third-party app"
+    ],
+    "steps": [
+      {
+        "title": "Set Up One-Way Google-to-Outlook Sync",
+        "content": "Use Google Calendar's built-in feature to sync changes from Google to Outlook. Log in to your Google account, open Google Calendar, hover over the desired calendar, click 'Calendar settings', then click the 'ICAL' button to copy the calendar's URL. In Outlook, go to Calendar -> Manage Calendars -> Open Calendar -> From Internet, paste the URL, and click OK."
+      },
+      {
+        "title": "Export and Import Outlook Calendar to Google (One-Time Sync)",
+        "content": "For a one-time transfer of Outlook calendar events to Google, export your Outlook calendar as an .ics file (File -> Open & Export -> Import/Export -> Export to a file -> Outlook Data File (.pst) -> Calendar). Then, import the .ics file into Google Calendar (Settings -> Import & Export -> Select file -> Import)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use gSyncit for Two-Way Sync",
+        "type": "Third-Party Solution",
+        "steps": [
+          {
+            "title": "Install gSyncit on Windows PC",
+            "content": "Download and install gSyncit (https://www.fieldstonsoftware.com/gsyncit/) on your Windows computer. This is a paid add-in for Outlook."
+          },
+          {
+            "title": "Configure gSyncit for Google Account Sync",
+            "content": "Open Outlook, go to gSyncit settings, and configure it to sync your Outlook calendar, contacts, tasks, and emails with your Google account. Follow the on-screen instructions to authenticate and set sync preferences."
+          },
+          {
+            "title": "Sync with Android Device",
+            "content": "Ensure your Samsung Galaxy S4 is synced with the same Google account. Changes made in Outlook will now reflect in Google Calendar and vice versa."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Microsoft Outlook App for Android",
+        "type": "Native App Solution",
+        "steps": [
+          {
+            "title": "Install Outlook App on Android",
+            "content": "Download and install the official Microsoft Outlook app from the Google Play Store on your Samsung Galaxy S4."
+          },
+          {
+            "title": "Add Google Account to Outlook App",
+            "content": "Open the Outlook app, go to Settings, and add your Google account. This will sync your Google Calendar events directly to the Outlook app on your Android device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T08:13:29.197Z",
+      "updated": "2026-08-01T08:13:29.197Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/78758/sync-droid-with-outlook",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
