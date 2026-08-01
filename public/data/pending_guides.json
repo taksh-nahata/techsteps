@@ -334515,5 +334515,250 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785603389840-193",
+    "title": "Fix iPhone Not Receiving Text Notifications",
+    "problemDescription": "iPhone is not alerting you when receiving text messages, despite having a working internet connection.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iPhone",
+      "text notifications",
+      "Messages app",
+      "alerts",
+      "Do Not Disturb"
+    ],
+    "steps": [
+      {
+        "title": "Check Focus/Do Not Disturb Settings",
+        "content": "Open Control Center and tap the Focus icon. Ensure no Focus mode (e.g., Do Not Disturb) is active that may block notifications."
+      },
+      {
+        "title": "Verify Notification Settings for Messages",
+        "content": "Go to Settings > Notifications > Messages. Ensure 'Allow Notifications' is enabled, set delivery to 'Immediate,' and enable Lock Screen, Notification Center, and Banners."
+      },
+      {
+        "title": "Toggle Bluetooth On/Off",
+        "content": "Go to Settings > Bluetooth, turn it off, wait 10 seconds, then turn it back on to reset connectivity."
+      },
+      {
+        "title": "Restart Your iPhone",
+        "content": "Press and hold the side button and either volume button, then slide to power off. Wait 30 seconds, then press the side button to restart."
+      },
+      {
+        "title": "Check for iOS Updates",
+        "content": "Go to Settings > General > Software Update. If an update is available, download and install it."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-01T16:56:29.840Z",
+      "updated": "2026-08-01T16:56:29.840Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/iphone-not-getting-text-notifications-how-to-fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785603412159-263",
+    "title": "Secure Smarthome Devices from Unauthorized Access",
+    "problemDescription": "Smarthome devices are vulnerable to attacks due to weak security measures like lack of two-factor authentication or outdated firmware.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "smarthome",
+      "security",
+      "two-factor authentication",
+      "firmware update",
+      "iot"
+    ],
+    "steps": [
+      {
+        "title": "Enable Two-Factor Authentication (2FA)",
+        "content": "Check if your smarthome device or its companion app supports 2FA. If available, enable it using an authenticator app like Google Authenticator (iOS/Android) or SMS-based codes. Prioritize devices like security cameras, which are high-risk targets."
+      },
+      {
+        "title": "Update Firmware Regularly",
+        "content": "Open the companion app for each smarthome device and check for firmware updates. Enable automatic updates if available. For hub-connected devices (Z-Wave/Zigbee), update the hub’s firmware first, then individual devices."
+      },
+      {
+        "title": "Replace Unsupported Devices",
+        "content": "Visit the manufacturer’s website to verify if your device is still receiving security updates. If support has ended, replace the device immediately to avoid vulnerabilities."
+      },
+      {
+        "title": "Secure Your Router",
+        "content": "Change the default admin password on your router, enable WPA3 encryption, and disable remote management. Regularly update your router’s firmware as well."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Isolate Smarthome Devices on a Separate Network",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up a Guest Network",
+            "content": "Create a separate Wi-Fi network for smarthome devices using your router’s settings. This prevents attackers from accessing your main network if a device is compromised."
+          },
+          {
+            "title": "Use VLANs (Advanced)",
+            "content": "For advanced users, configure a VLAN (Virtual Local Area Network) to segment smarthome traffic from other devices, adding an extra layer of isolation."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T16:56:52.159Z",
+      "updated": "2026-08-01T16:56:52.159Z",
+      "sourceUrl": "https://www.howtogeek.com/435606/how-to-protect-your-smarthome-from-attack",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785603428451-577",
+    "title": "Set Up Alexa Price Tracking on Amazon",
+    "problemDescription": "Users want to track product prices on Amazon using Alexa instead of third-party browser extensions.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "alexa",
+      "amazon",
+      "price tracking",
+      "shopping",
+      "browser extension"
+    ],
+    "steps": [
+      {
+        "title": "Enable Alexa for Shopping",
+        "content": "Open the Amazon app or website on your device. Sign in to your Amazon account if not already logged in. Navigate to the Alexa section or search for 'Alexa for Shopping' in the settings."
+      },
+      {
+        "title": "Ask Alexa to Track a Product Price",
+        "content": "Use your Echo device or the Amazon app to say, 'Alexa, track the price of [Product Name].' Alexa will confirm the product and start monitoring its price."
+      },
+      {
+        "title": "Set a Target Price",
+        "content": "Ask Alexa, 'Set a target price of $[Amount] for [Product Name].' Alexa will notify you when the product reaches or drops below the set price."
+      },
+      {
+        "title": "Enable Automatic Ordering (Optional)",
+        "content": "Say, 'Alexa, place the order for [Product Name] when it reaches $[Amount].' Ensure your payment and shipping details are up to date in your Amazon account."
+      },
+      {
+        "title": "Check Price History",
+        "content": "Ask Alexa, 'What is the price history of [Product Name]?' Alexa will provide details on price fluctuations, including all-time lows or highs."
+      },
+      {
+        "title": "Compare Products or Categories",
+        "content": "Ask Alexa, 'Compare [Product A] and [Product B]' or 'Recommend products in [Category].' Alexa will provide comparisons or suggestions based on your query."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-01T16:57:08.451Z",
+      "updated": "2026-08-01T16:57:08.451Z",
+      "sourceUrl": "https://www.howtogeek.com/amazon-just-gave-alexa-a-price-tracking-superpower-that-could-replace-browser-extensions",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785603449342-327",
+    "title": "Fix Fan Control Fan Speed Sync Issues on Windows",
+    "problemDescription": "Fan Control software fails to sync fan speeds due to dependency issues with LibreHardwareMonitor or NvAPIWrapper libraries.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "fan control",
+      "sync",
+      "fan speed",
+      "windows",
+      "librehardwaremonitor",
+      "nvapiwrapper"
+    ],
+    "steps": [
+      {
+        "title": "Verify Dependencies",
+        "content": "Ensure LibreHardwareMonitor and NvAPIWrapper are installed and up-to-date. Download them from their official repositories (GitHub for LibreHardwareMonitor, NVIDIA's developer site for NvAPIWrapper)."
+      },
+      {
+        "title": "Reinstall Fan Control",
+        "content": "Uninstall Fan Control via 'Add or Remove Programs'. Download the latest version from the official GitHub page and reinstall it. Ensure you run the installer as Administrator."
+      },
+      {
+        "title": "Check Hardware Compatibility",
+        "content": "Confirm your motherboard and GPU are supported by Fan Control. Refer to the software's documentation for a list of compatible hardware."
+      },
+      {
+        "title": "Update Drivers",
+        "content": "Update your motherboard's chipset drivers and GPU drivers to the latest versions. Use manufacturer websites (e.g., ASUS, MSI, NVIDIA, AMD) for driver updates."
+      },
+      {
+        "title": "Run as Administrator",
+        "content": "Right-click the Fan Control executable and select 'Run as Administrator'. This ensures the software has the necessary permissions to control fan speeds."
+      },
+      {
+        "title": "Check BIOS Settings",
+        "content": "Enter BIOS/UEFI and disable any fan control settings (e.g., 'Smart Fan' or 'Auto Fan'). This prevents conflicts between BIOS and Fan Control."
+      },
+      {
+        "title": "Monitor Logs",
+        "content": "Check Fan Control's logs (usually in the installation directory) for errors. Look for messages related to LibreHardwareMonitor or NvAPIWrapper failures."
+      },
+      {
+        "title": "Alternative Libraries",
+        "content": "If issues persist, manually replace the dependency files in Fan Control's installation folder with the latest versions from their respective repositories."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Alternative Fan Control Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Alternative Software",
+            "content": "Download and install an alternative fan control tool like 'Argus Monitor' or 'SpeedFan' from their official websites."
+          },
+          {
+            "title": "Configure Fan Curves",
+            "content": "Set up custom fan curves in the alternative software. Refer to the tool's documentation for guidance."
+          },
+          {
+            "title": "Disable Fan Control",
+            "content": "Uninstall Fan Control to avoid conflicts with the alternative software."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Manual Fan Control via BIOS",
+        "type": "Temporary Fix",
+        "steps": [
+          {
+            "title": "Access BIOS",
+            "content": "Restart your PC and enter BIOS/UEFI (usually by pressing DEL, F2, or F12 during startup)."
+          },
+          {
+            "title": "Adjust Fan Settings",
+            "content": "Navigate to the fan control section and manually set fan speeds or curves. Save changes and exit."
+          },
+          {
+            "title": "Revert to Default",
+            "content": "Note that BIOS settings may reset after a power cycle. Use this as a temporary solution until Fan Control is fixed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T16:57:29.342Z",
+      "updated": "2026-08-01T16:57:29.342Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/best-windows-apps-for-enthusiasts",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
