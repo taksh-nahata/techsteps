@@ -333075,5 +333075,304 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785580254672-396",
+    "title": "Fix Windows 11 Task Manager Running Multiple Instances Slowing PC",
+    "problemDescription": "Windows 11 Task Manager instances remain active in the background after closing, consuming system resources and slowing down the PC.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "Windows 11",
+      "Task Manager",
+      "multiple instances",
+      "slow PC",
+      "resource drain"
+    ],
+    "steps": [
+      {
+        "title": "Close All Task Manager Instances via Command Prompt",
+        "content": "1. Press `Win + S` to open the search bar. \n2. Type `cmd` and select 'Command Prompt' (Run as Administrator if prompted). \n3. Enter the command: `taskkill /im taskmgr.exe /f` and press Enter. \n4. All open Task Manager instances will be forcefully closed."
+      },
+      {
+        "title": "Manually End Task Manager Instances via Task Manager",
+        "content": "1. Press `Ctrl + Shift + Esc` to open Task Manager. \n2. Go to the 'Processes' tab. \n3. Locate all instances of 'Task Manager' in the list. \n4. Select each instance and click 'End task' to close them properly."
+      },
+      {
+        "title": "Avoid Opening Multiple Task Manager Windows",
+        "content": "1. Close Task Manager using the 'X' button only once per session. \n2. If you need to reopen it, use `Ctrl + Shift + Esc` or right-click the taskbar and select 'Task Manager' once."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 3: Restart Windows Explorer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Windows Explorer via Task Manager",
+            "content": "1. Press `Ctrl + Shift + Esc` to open Task Manager. \n2. Locate 'Windows Explorer' under the 'Processes' tab. \n3. Right-click it and select 'Restart'. \n4. This will refresh the taskbar and may resolve lingering Task Manager instances."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T10:30:54.672Z",
+      "updated": "2026-08-01T10:30:54.672Z",
+      "sourceUrl": "https://www.techradar.com/computing/windows/latest-windows-11-update-has-a-weird-bug-that-could-slow-down-your-pc-heres-how-to-fix-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785580279441-245",
+    "title": "Show New Emails at Top of Gmail Conversation Threads",
+    "problemDescription": "Gmail's default conversation view displays new emails at the bottom of threads, making them hard to spot. Users want new emails to appear at the top for better visibility.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "conversation view",
+      "new emails",
+      "inbox sorting"
+    ],
+    "steps": [
+      {
+        "title": "Turn Off Gmail Conversation View",
+        "content": "1. Open Gmail in a web browser and click the gear icon (⚙️) in the top-right corner. 2. Select 'See all settings'. 3. In the 'General' tab, scroll to 'Conversation View'. 4. Select 'Conversation view off'. 5. Scroll to the bottom and click 'Save Changes'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use a Browser Extension to Reverse Conversation Order",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Gmail Reverse Conversation Extension",
+            "content": "1. Open Chrome Web Store or Firefox Add-ons. 2. Search for 'Gmail Reverse Conversation'. 3. Click 'Add to Chrome' or 'Add to Firefox' and follow the prompts to install. 4. Refresh Gmail to see new emails at the top of threads."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T10:31:19.441Z",
+      "updated": "2026-08-01T10:31:19.441Z",
+      "sourceUrl": "https://www.howtogeek.com/414565/how-to-see-new-emails-on-top-of-gmail-conversation-threads",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785580310220-931",
+    "title": "3D Print Custom Appliance Repair Parts",
+    "problemDescription": "Need to replace a broken or missing part for an appliance but the OEM part is expensive or unavailable, leading to delays.",
+    "category": "robotics",
+    "difficulty": "Easy",
+    "keywords": [
+      "3D printing",
+      "appliance repair",
+      "custom parts",
+      "OEM replacement",
+      "cost savings"
+    ],
+    "steps": [
+      {
+        "title": "Identify the Broken or Missing Part",
+        "content": "Locate the specific part that needs replacement by inspecting your appliance or checking the manufacturer's manual."
+      },
+      {
+        "title": "Search for Existing 3D Models",
+        "content": "Visit online repositories like Thingiverse, Cults3D, or Printables to find a pre-designed 3D model of the part. Use keywords like the appliance name and part description (e.g., 'stove knob' or 'MacBook Pro mount')."
+      },
+      {
+        "title": "Download and Prepare the Model",
+        "content": "Download the 3D model file (usually in .STL format) and open it in your slicing software (e.g., Ultimaker Cura, PrusaSlicer). Adjust settings like layer height, infill, and support structures based on the part's requirements."
+      },
+      {
+        "title": "3D Print the Part",
+        "content": "Load the prepared file into your 3D printer and start the printing process. Use the appropriate filament material (e.g., PLA for low-stress parts, PETG for durability). Monitor the print for any issues."
+      },
+      {
+        "title": "Test and Install the Part",
+        "content": "Once printed, test the part to ensure it fits and functions correctly. If satisfied, install it in your appliance and verify that it resolves the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Design a Custom Part from Scratch",
+        "type": "Advanced Method",
+        "steps": [
+          {
+            "title": "Measure the Part",
+            "content": "Use calipers or a ruler to measure the dimensions of the part you need to replace. Note any critical features like holes, grooves, or mounting points."
+          },
+          {
+            "title": "Create a 3D Model",
+            "content": "Use 3D modeling software like Fusion 360, Tinkercad, or Blender to design the part based on your measurements. Ensure the model matches the original part's specifications."
+          },
+          {
+            "title": "Slice and Print the Custom Model",
+            "content": "Follow the same slicing and printing steps as above to produce your custom part."
+          }
+        ]
+      },
+      {
+        "title": "Modify an Existing Model",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Find a Similar Model",
+            "content": "Search for a 3D model that is similar to the part you need but may require minor modifications (e.g., a slightly different size or shape)."
+          },
+          {
+            "title": "Edit the Model",
+            "content": "Use 3D editing software like Meshmixer or Blender to resize, reshape, or add/remove features from the model to match your requirements."
+          },
+          {
+            "title": "Print and Test",
+            "content": "Slice, print, and test the modified part as described in the main steps."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T10:31:50.220Z",
+      "updated": "2026-08-01T10:31:50.220Z",
+      "sourceUrl": "https://www.howtogeek.com/everyday-problems-your-3d-printer-can-solve",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785580327974-164",
+    "title": "Fix Discord Not Starting Due to Corrupted Cache",
+    "problemDescription": "Discord fails to start due to a corrupted cache, preventing normal operation.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "cache",
+      "corrupted",
+      "startup",
+      "app-error"
+    ],
+    "steps": [
+      {
+        "title": "Close Discord Completely",
+        "content": "Ensure Discord is fully closed. Right-click the Discord icon in the system tray (Windows) or menu bar (macOS) and select 'Quit Discord'."
+      },
+      {
+        "title": "Clear Discord Cache (Windows)",
+        "content": "1. Press `Win + R` to open the Run dialog. 2. Type `%appdata%\\Discord` and press Enter. 3. Delete the `Cache` folder. 4. Restart Discord."
+      },
+      {
+        "title": "Clear Discord Cache (macOS)",
+        "content": "1. Open Finder and press `Cmd + Shift + G`. 2. Type `~/Library/Application Support/discord` and press Enter. 3. Delete the `Cache` folder. 4. Restart Discord."
+      },
+      {
+        "title": "Verify Fix",
+        "content": "Launch Discord and check if it starts normally. If issues persist, proceed to reinstall Discord (see alternate method)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Discord",
+            "content": "1. On Windows: Go to Settings > Apps > Apps & Features, find Discord, and click Uninstall. 2. On macOS: Drag Discord from the Applications folder to the Trash."
+          },
+          {
+            "title": "Delete Remaining Files",
+            "content": "1. On Windows: Delete the `%appdata%\\Discord` folder. 2. On macOS: Delete the `~/Library/Application Support/discord` folder."
+          },
+          {
+            "title": "Reinstall Discord",
+            "content": "Download the latest version of Discord from the official website (https://discord.com/download) and install it."
+          },
+          {
+            "title": "Verify Fix",
+            "content": "Launch Discord and check if it starts without issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T10:32:07.974Z",
+      "updated": "2026-08-01T10:32:07.974Z",
+      "sourceUrl": "https://www.reddit.com/r/discordapp/comments/paf3bl/discord_problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785580334712-225",
+    "title": "Fix Discord Audio Issues (RTC Connecting Stuck)",
+    "problemDescription": "Discord gets stuck in 'RTC Connecting' state, preventing audio, often due to AMD CPU/GPU hardware video encoder conflicts.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "audio",
+      "RTC Connecting",
+      "AMD",
+      "hardware encoder"
+    ],
+    "steps": [
+      {
+        "title": "Disable Hardware Acceleration in Discord",
+        "content": "Open Discord settings (User Settings > Advanced). Toggle off 'Hardware Acceleration' and restart Discord."
+      },
+      {
+        "title": "Update AMD Graphics Drivers",
+        "content": "Download and install the latest drivers from AMD's official website for your GPU model."
+      },
+      {
+        "title": "Disable AMD Video Encoder in Discord",
+        "content": "In Discord settings, go to 'Voice & Video' and set 'Video Codec' to 'Software' instead of 'Hardware'."
+      },
+      {
+        "title": "Check for Windows Audio Service Conflicts",
+        "content": "Open Services (Win + R > services.msc), ensure 'Windows Audio' and 'Windows Audio Endpoint Builder' are running. Restart both services if needed."
+      },
+      {
+        "title": "Reset Discord Cache",
+        "content": "Close Discord, navigate to %appdata%\\Discord\\Cache, delete all files, then restart Discord."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Discord Canary Build",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Discord Canary",
+            "content": "Visit Discord's Canary build page and download the latest version. Install and test if the issue persists."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Discord Overlay",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Discord Overlay",
+            "content": "In Discord settings (Game Overlay), disable 'Enable in-game overlay'. Restart Discord and test audio."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T10:32:14.712Z",
+      "updated": "2026-08-01T10:32:14.712Z",
+      "sourceUrl": "https://www.reddit.com/r/discordapp/comments/1qzevb8/discord_bugs_out_every_once_in_a_while_where_i",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
