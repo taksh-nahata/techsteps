@@ -335621,5 +335621,175 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1785621105255-708",
+    "title": "Fix Annoying Notifications in Android Auto",
+    "problemDescription": "Android Auto displays excessive or irrelevant notifications, causing distractions while driving.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android auto",
+      "notifications",
+      "driving mode",
+      "silence"
+    ],
+    "steps": [
+      {
+        "title": "Enable Developer Settings in Android Auto",
+        "content": "Open Android Auto settings on your phone. Scroll to the bottom and tap the 'Version' section multiple times until a pop-up appears asking to enable development settings. Agree to enable them."
+      },
+      {
+        "title": "Adjust Notification Settings in Developer Mode",
+        "content": "Tap the three-dot menu in the top-right corner and select 'Developer settings'. Scroll down to 'Video Resolution' and choose an option. Restart Android Auto if changes don't apply automatically."
+      },
+      {
+        "title": "Configure Driving Mode on Samsung Phones",
+        "content": "Go to Settings > Modes and Routines > Driving. Configure which apps are allowed to send notifications while driving."
+      },
+      {
+        "title": "Configure Driving Mode on Pixel Phones",
+        "content": "Go to Settings > Digital Wellbeing > Driving Mode. Select which apps can send notifications while driving."
+      },
+      {
+        "title": "Enable Do Not Disturb While Driving (OnePlus)",
+        "content": "On OnePlus phones, go to Settings > Sound & Vibration > Do Not Disturb > Driving. Enable the feature to silence notifications while driving."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Android Auto App Notifications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable All Notifications for Android Auto",
+            "content": "Go to Settings > Apps > Android Auto > Notifications. Toggle off all notification categories."
+          },
+          {
+            "title": "Re-enable Only Critical Notifications",
+            "content": "Re-enable notifications only for essential apps like messaging or navigation."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T21:51:45.255Z",
+      "updated": "2026-08-01T21:51:45.255Z",
+      "sourceUrl": "https://www.howtogeek.com/i-finally-fixed-annoying-notifications-in-android-autoheres-the-settings-i-changed-to-do-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785621106898-328",
+    "title": "Reduce Notification Overload on Samsung Galaxy Phones",
+    "problemDescription": "Samsung Galaxy users experience excessive notifications, making it hard to focus on important alerts.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "samsung",
+      "galaxy",
+      "notifications",
+      "overload",
+      "one ui",
+      "app settings"
+    ],
+    "steps": [
+      {
+        "title": "Enable Notification Highlights",
+        "content": "Go to Settings > Notifications > Notification highlights. Turn on the two main features to prioritize important notifications and summarize long conversations."
+      },
+      {
+        "title": "Disable Unnecessary App Notifications",
+        "content": "Go to Settings > Notifications > App notifications. Select an app (e.g., ESPN, Yahoo Sports) and disable notifications entirely or adjust notification categories to reduce clutter."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-01T21:51:46.898Z",
+      "updated": "2026-08-01T21:51:46.898Z",
+      "sourceUrl": "https://www.howtogeek.com/this-one-samsung-galaxy-setting-fixed-my-notification-overload",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785621145992-844",
+    "title": "Fix WhatsApp Not Working",
+    "problemDescription": "WhatsApp fails to open, crashes, or cannot connect to the internet.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "app crash",
+      "connection",
+      "login"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Device",
+        "content": "Turn off your phone completely, wait 10 seconds, then power it back on. This resolves temporary glitches."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your Wi-Fi or mobile data is active and stable. Try opening a webpage to confirm connectivity."
+      },
+      {
+        "title": "Update WhatsApp",
+        "content": "Open the App Store (iOS) or Google Play Store (Android), search for WhatsApp, and update if an update is available."
+      },
+      {
+        "title": "Clear App Cache (Android)",
+        "content": "Go to Settings > Apps > WhatsApp > Storage > Clear Cache. Restart the app afterward."
+      },
+      {
+        "title": "Reinstall WhatsApp",
+        "content": "Uninstall WhatsApp from your device, then reinstall it from the official App Store or Play Store."
+      },
+      {
+        "title": "Check WhatsApp Server Status",
+        "content": "Visit [WhatsApp Status Page](https://www.whatsapp.com/status) or a third-party service like Downdetector to confirm if WhatsApp servers are operational."
+      },
+      {
+        "title": "Log Out and Log Back In",
+        "content": "Open WhatsApp, tap your profile icon > Settings > Account > Log Out. Log back in with your credentials."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Network Settings",
+        "type": "Advanced Fix",
+        "steps": [
+          {
+            "title": "Reset Network Settings (iOS)",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings. Reconnect to Wi-Fi afterward."
+          },
+          {
+            "title": "Reset Network Settings (Android)",
+            "content": "Go to Settings > System > Reset Options > Reset Wi-Fi, Mobile & Bluetooth. Confirm and reconnect to networks."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Free Up Storage Space",
+        "type": "Storage-Related Fix",
+        "steps": [
+          {
+            "title": "Check Device Storage",
+            "content": "Go to Settings > Storage and ensure you have at least 500MB of free space. Delete unnecessary files or apps if needed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T21:52:25.992Z",
+      "updated": "2026-08-01T21:52:25.992Z",
+      "sourceUrl": "https://www.quora.com/My-WhatsApp-is-no-longer-working-How-do-I-get-it-back-to-work",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
