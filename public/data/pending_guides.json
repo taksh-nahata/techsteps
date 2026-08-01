@@ -335791,5 +335791,182 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1785624646493-356",
+    "title": "General Windows 7 Troubleshooting Guide",
+    "problemDescription": "System or application issues with no clear cause, requiring a structured approach to identify and resolve the root problem.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "troubleshooting",
+      "windows 7",
+      "root cause",
+      "system logs",
+      "divide and conquer"
+    ],
+    "steps": [
+      {
+        "title": "Define the Problem Clearly",
+        "content": "Describe the issue in detail, including when it occurs, any error messages, and how it affects your system. Note if it happens consistently or intermittently."
+      },
+      {
+        "title": "Track Recent Changes",
+        "content": "List any recent changes to your system, such as software installations, updates, hardware modifications, or environmental factors (e.g., power outages, storms)."
+      },
+      {
+        "title": "Gather System Information",
+        "content": "Check Windows Event Viewer (eventvwr.msc) for errors or warnings. Use tools like Sysinternals Suite (e.g., Process Explorer, Autoruns) to analyze system performance and running processes."
+      },
+      {
+        "title": "Isolate the Issue",
+        "content": "Disable or disconnect non-essential hardware (e.g., USB devices, secondary monitors) and third-party software to narrow down the cause. Test if the issue persists."
+      },
+      {
+        "title": "Reproduce the Problem",
+        "content": "Attempt to recreate the issue by repeating the steps that led to it. If it’s hardware-related, try swapping components (e.g., RAM, hard drive) with known working ones."
+      },
+      {
+        "title": "Test on Another System (If Possible)",
+        "content": "If available, test the problematic software or hardware on another Windows 7 machine to determine if the issue is system-specific."
+      },
+      {
+        "title": "Apply Fixes and Verify",
+        "content": "Once the root cause is identified, apply the appropriate fix (e.g., driver update, software reinstall, hardware replacement). Test the system to ensure the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using System Restore",
+        "type": "Windows Built-in Tool",
+        "steps": [
+          {
+            "title": "Access System Restore",
+            "content": "Open 'System Restore' by typing 'rstrui' in the Start menu search bar and pressing Enter."
+          },
+          {
+            "title": "Select a Restore Point",
+            "content": "Choose a restore point from before the issue started and follow the prompts to revert your system to that state."
+          },
+          {
+            "title": "Verify the Fix",
+            "content": "Check if the problem persists after the restore. If resolved, the issue was likely caused by a recent change."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Safe Mode Troubleshooting",
+        "type": "Windows Diagnostic Mode",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Restart your computer and press F8 repeatedly before Windows loads. Select 'Safe Mode' from the boot menu."
+          },
+          {
+            "title": "Test the Issue",
+            "content": "Check if the problem occurs in Safe Mode. If it doesn’t, the issue is likely caused by a third-party application or driver."
+          },
+          {
+            "title": "Identify the Culprit",
+            "content": "In Safe Mode, use 'msconfig' to disable startup programs and services one by one to isolate the problematic software."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T22:50:46.493Z",
+      "updated": "2026-08-01T22:50:46.493Z",
+      "sourceUrl": "https://superuser.com/questions/260043/how-do-i-troubleshoot-when-i-have-no-clue-where-to-start",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785624686683-827",
+    "title": "Fix Zoom 'Unable to Establish Secure Connection' Error",
+    "problemDescription": "Zoom fails to establish a secure connection, often due to network issues, outdated software, incorrect system time, or overprotective security tools.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "secure connection",
+      "network",
+      "firewall",
+      "VPN",
+      "time sync"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Load a few websites or stream a short video to confirm your internet is stable. If pages load slowly or fail, proceed to the next step."
+      },
+      {
+        "title": "Restart Your Router",
+        "content": "Turn off the router, wait 10-15 seconds, then turn it back on. Allow 1 minute for full reconnection before retrying Zoom."
+      },
+      {
+        "title": "Restart Zoom Application",
+        "content": "Close Zoom completely and reopen it to clear temporary glitches."
+      },
+      {
+        "title": "Verify System Time and Date",
+        "content": "Ensure your computer's date, time, and time zone are correct. Enable automatic time sync if disabled."
+      },
+      {
+        "title": "Disable VPN or Proxy",
+        "content": "Temporarily turn off any VPN or proxy services, then relaunch Zoom and test the connection."
+      },
+      {
+        "title": "Temporarily Disable Firewall/Antivirus",
+        "content": "Turn off your firewall or antivirus software (only for testing). If Zoom connects, adjust settings to allow Zoom traffic permanently."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "Reboot your computer to clear cached network data and restart background services Zoom relies on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Zoom",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Zoom",
+            "content": "Go to your system's app settings or control panel and uninstall Zoom completely."
+          },
+          {
+            "title": "Download Latest Version",
+            "content": "Visit Zoom's official website and download the latest version of the application."
+          },
+          {
+            "title": "Reinstall and Test",
+            "content": "Install the downloaded version and attempt to join a meeting to verify the fix."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check Zoom Server Status",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Zoom Status Page",
+            "content": "Go to https://status.zoom.us to check if Zoom's services are operational."
+          },
+          {
+            "title": "Verify No Outages",
+            "content": "If there are reported outages, wait for Zoom to resolve them before retrying."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T22:51:26.683Z",
+      "updated": "2026-08-01T22:51:26.683Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=C6-XMYBfk_A",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
