@@ -334005,5 +334005,387 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785596193356-396",
+    "title": "Fix iOS 12 Touch ID Not Working",
+    "problemDescription": "Touch ID fails to recognize fingerprints on an iOS 12 device, likely due to outdated or corrupted fingerprint data.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "touch id",
+      "fingerprint",
+      "ios 12",
+      "authentication"
+    ],
+    "steps": [
+      {
+        "title": "Clean the Touch ID Sensor",
+        "content": "Wipe the Touch ID button with a clean, dry microfiber cloth to remove oils, residue, or grime. Ensure your fingers are dry and clean before attempting to use Touch ID."
+      },
+      {
+        "title": "Delete and Re-add Fingerprint",
+        "content": "Go to Settings > Touch ID & Passcode. Enter your passcode if prompted. Select the fingerprint profile, tap Delete Fingerprint, then add the same fingerprint again by following the on-screen instructions."
+      },
+      {
+        "title": "Restart Your iPhone",
+        "content": "Press and hold the Power button, then slide to power off. Wait 30 seconds, then press and hold the Power button again to turn it back on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Hard Reset iPhone",
+        "type": "Advanced Recovery",
+        "steps": [
+          {
+            "title": "Perform a Hard Reset",
+            "content": "For iOS 12-era iPhones (e.g., iPhone 6s to iPhone X), press and hold the Home button and the Power button simultaneously for at least 10 seconds until the Apple logo appears."
+          },
+          {
+            "title": "Verify Touch ID After Reset",
+            "content": "Once the device restarts, test Touch ID to ensure it is functioning properly."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update Carrier Settings",
+        "type": "System Update",
+        "steps": [
+          {
+            "title": "Check for Carrier Settings Update",
+            "content": "Go to Settings > General > About. If a carrier settings update is available, a popup will appear prompting you to install it."
+          },
+          {
+            "title": "Manually Configure APN Settings (if needed)",
+            "content": "If your carrier requires manual APN settings, go to Settings > Cellular > Cellular Data Options > Cellular Network (or Mobile Data Network). Tap each field to edit the APN settings as provided by your carrier. Note: This option may not be available for all carriers."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T14:56:33.356Z",
+      "updated": "2026-08-01T14:56:33.356Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-ios-12-problems-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785596229573-172",
+    "title": "Fix PC Freezing at 'Preparing to Standby'",
+    "problemDescription": "The PC freezes when attempting to enter standby mode, preventing normal sleep functionality.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "freeze",
+      "standby",
+      "sleep",
+      "drivers"
+    ],
+    "steps": [
+      {
+        "title": "Check and Update Device Drivers",
+        "content": "Open Device Manager by pressing Win + X and selecting 'Device Manager'. Expand categories like 'Display adapters', 'Network adapters', and 'System devices'. Right-click each device and select 'Update driver'. Choose 'Search automatically for updated driver software' and follow the prompts. Focus on updating chipset, graphics, and network drivers first."
+      },
+      {
+        "title": "Run Windows Performance Troubleshooter",
+        "content": "Go to Settings > Update & Security > Troubleshoot. Select 'Additional troubleshooters', then 'Performance'. Run the troubleshooter and apply any recommended fixes. Restart the PC afterward."
+      },
+      {
+        "title": "Update Chipset Drivers Manually",
+        "content": "Visit the official website of your PC's manufacturer (e.g., Dell, HP, Lenovo). Navigate to the 'Support' or 'Drivers' section, enter your PC's model number, and download the latest chipset drivers. Install them and restart the PC."
+      },
+      {
+        "title": "Disable Fast Startup",
+        "content": "Go to Control Panel > Power Options. Click 'Choose what the power buttons do'. Click 'Change settings that are currently unavailable'. Uncheck 'Turn on fast startup (recommended)' and save changes. Restart the PC and test standby mode again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method: Check for Windows Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Pending Windows Updates",
+            "content": "Go to Settings > Update & Security > Windows Update. Click 'Check for updates' and install any available updates. Restart the PC afterward and test standby mode."
+          }
+        ]
+      },
+      {
+        "title": "Method: Reset Power Plan Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restore Default Power Plan Settings",
+            "content": "Go to Control Panel > Power Options. Select your current power plan and click 'Change plan settings'. Click 'Restore default settings for this plan' and confirm. Restart the PC and test standby mode."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T14:57:09.573Z",
+      "updated": "2026-08-01T14:57:09.573Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/pc-freezes-at-preparing-to-standby/9b9171e8-8f5f-e011-8dfc-68b599b31bf5",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785596236069-47",
+    "title": "Fix Slow Windows Boot After Factory Reset and Reinstallation",
+    "problemDescription": "Windows 10/11 system experiences slow boot time despite factory reset, Windows reinstallation, and attempts to repair boot files (BCD issues, 'Access Denied' errors, and 'Automatic Repair Couldn't Repair Your PC').",
+    "category": "windows",
+    "difficulty": "Hard",
+    "keywords": [
+      "slow boot",
+      "windows 10",
+      "windows 11",
+      "factory reset",
+      "reinstall windows",
+      "BCD",
+      "bootrec",
+      "access denied",
+      "automatic repair"
+    ],
+    "steps": [
+      {
+        "title": "Create a Bootable Windows Installation USB",
+        "content": "Download the Windows 10/11 Media Creation Tool from Microsoft's official site. Run the tool and select 'Create installation media for another PC'. Choose the correct language, edition, and architecture (32-bit or 64-bit) matching your system. Insert a USB drive with at least 8GB of space and follow the prompts to create the bootable USB."
+      },
+      {
+        "title": "Boot from USB and Access Command Prompt",
+        "content": "Restart your PC and enter the BIOS/UEFI settings (usually by pressing F2, F12, DEL, or ESC during startup). Change the boot order to prioritize the USB drive. Save changes and exit. On the Windows Setup screen, press SHIFT + F10 to open the Command Prompt."
+      },
+      {
+        "title": "Clean the Disk and Reformat",
+        "content": "In Command Prompt, type `diskpart` and press Enter. Then type the following commands one by one, pressing Enter after each:\n1. `list disk` (Identify your disk, usually Disk 0)\n2. `select disk X` (Replace X with your disk number)\n3. `clean` (This will erase all partitions on the disk)\n4. `create partition primary`\n5. `format fs=ntfs quick`\n6. `assign letter=C`\n7. `exit`\n\nType `exit` again to close diskpart."
+      },
+      {
+        "title": "Reinstall Windows from Scratch",
+        "content": "In the Windows Setup screen, select your language and region, then click 'Install now'. Follow the prompts to install Windows. When prompted for the installation type, select 'Custom: Install Windows only (advanced)'. Select the unallocated space (C:) and click 'Next' to proceed with the installation."
+      },
+      {
+        "title": "Complete Post-Installation Setup",
+        "content": "After installation, follow the on-screen instructions to set up Windows. Ensure you install all necessary drivers from the manufacturer's website. Disable unnecessary startup programs via Task Manager > Startup tab to optimize boot time."
+      },
+      {
+        "title": "Verify Boot Performance",
+        "content": "Restart your PC and observe the boot time. If the issue persists, check for hardware issues (e.g., failing SSD/HDD) using tools like CrystalDiskInfo or run a memory test via Windows Memory Diagnostic."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Third-Party Disk Management Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Run a Partition Manager",
+            "content": "Use a tool like GParted (bootable USB) or EaseUS Partition Master to clean and reformat the disk. Follow the tool's instructions to delete all partitions and create a new NTFS partition. Proceed with a clean Windows installation as described in the primary steps."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Hardware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test Storage Drive Health",
+            "content": "Use CrystalDiskInfo to check the health of your SSD/HDD. If the drive is failing, replace it. For HDDs, run `chkdsk /f /r` in Command Prompt (after booting from USB) to repair file system errors."
+          },
+          {
+            "title": "Test RAM",
+            "content": "Use Windows Memory Diagnostic or MemTest86 to check for RAM issues. If errors are found, reseat the RAM modules or replace faulty sticks."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T14:57:16.069Z",
+      "updated": "2026-08-01T14:57:16.069Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/slow-boot-time-factory-reset-windows/5efd5034-8ba4-40e4-a988-0eb9378f0e62",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1785596241595-562",
+    "title": "Fix Laggy or Slow Microsoft Excel Performance",
+    "problemDescription": "Microsoft Excel runs slowly or lags, even after basic troubleshooting like reducing file size or closing background programs.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "excel",
+      "slow",
+      "laggy",
+      "performance",
+      "hardware acceleration",
+      "language pack"
+    ],
+    "steps": [
+      {
+        "title": "Disable Hardware Acceleration in Excel",
+        "content": "Open Excel. Go to File > Options > Advanced. Under the Display section, check the box for 'Disable hardware graphics acceleration'. Click OK and restart Excel."
+      },
+      {
+        "title": "Reduce File Size",
+        "content": "Open the problematic Excel file. Remove unnecessary data, unused sheets, or complex formulas. Save the file and check performance."
+      },
+      {
+        "title": "Close Background Programs",
+        "content": "Press Ctrl + Shift + Esc to open Task Manager. End tasks for unnecessary programs running in the background to free up system resources."
+      },
+      {
+        "title": "Clear Excel Cache",
+        "content": "Close Excel. Navigate to the Excel cache folder (e.g., C:\\Users\\<YourUsername>\\AppData\\Local\\Microsoft\\Office\\16.0\\OfficeFileCache). Delete all files in the folder. Restart Excel."
+      },
+      {
+        "title": "Increase Virtual Memory",
+        "content": "Press Win + R, type sysdm.cpl, and press Enter. Go to the Advanced tab > Performance Settings > Advanced > Virtual Memory > Change. Set a custom size (e.g., 1.5x your RAM) and restart your PC."
+      },
+      {
+        "title": "Repair Microsoft Office Installation",
+        "content": "Open Control Panel > Programs > Programs and Features. Select Microsoft Office and click Change. Choose 'Quick Repair' and follow the prompts. Restart your PC after completion."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Uninstall Excess Language Packs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Installed Language Packs",
+            "content": "Open Excel. Go to File > Options > Language. Note the number of installed language packs."
+          },
+          {
+            "title": "Uninstall Unnecessary Language Packs",
+            "content": "Close Excel. Go to Control Panel > Programs > Programs and Features. Select a language pack (e.g., 'Microsoft Office Proofing Tools Kit 2021 - <Language>') and click Uninstall. Restart your PC."
+          },
+          {
+            "title": "Verify Performance Improvement",
+            "content": "Open Excel and check if performance has improved. If not, reinstall the language pack if needed."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Downgrade to Office 2019",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Important Files",
+            "content": "Save all critical Excel files to a secure location before uninstalling Office 2021."
+          },
+          {
+            "title": "Uninstall Office 2021",
+            "content": "Go to Control Panel > Programs > Programs and Features. Uninstall Microsoft Office 2021. Follow the prompts to complete the process."
+          },
+          {
+            "title": "Install Office 2019",
+            "content": "Download Office 2019 from Microsoft's official website. Run the installer and follow the installation steps. Restart your PC after installation."
+          },
+          {
+            "title": "Test Performance",
+            "content": "Open Excel and verify if the lagging issue is resolved. Re-import any necessary files."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T14:57:21.595Z",
+      "updated": "2026-08-01T14:57:21.595Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/all/how-to-fix-laggyslow-excel/7330bf65-2c23-4dd8-8f30-fd32eeefb38d",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785596247409-600",
+    "title": "Fix High CPU Usage by ntoskrnl.exe in Windows",
+    "problemDescription": "Windows system process (ntoskrnl.exe) is consuming high CPU resources, potentially due to malware or background apps.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "ntoskrnl",
+      "high CPU",
+      "system process",
+      "malware",
+      "background apps"
+    ],
+    "steps": [
+      {
+        "title": "Scan for Malware",
+        "content": "Download and install the free version of Malwarebytes. Perform a full system scan to detect and remove any malware infections that may be causing high CPU usage."
+      },
+      {
+        "title": "Disable Background Apps",
+        "content": "Press Windows key + X, click Settings, go to Privacy, and turn off 'Let apps run in the background'. This prevents unnecessary apps from consuming CPU resources."
+      },
+      {
+        "title": "Perform a Clean Boot",
+        "content": "After scanning, restart your computer in Clean Boot mode to identify if third-party services or startup programs are causing the high CPU usage. Follow Microsoft's official guide for Clean Boot: https://support.microsoft.com/en-us/topic/how-to-perform-a-clean-boot-in-windows-da2f9573-6eec-40ad-8d5e-23d80c44a5b3"
+      },
+      {
+        "title": "Check Task Manager",
+        "content": "After performing the above steps, open Task Manager (Ctrl + Shift + Esc) and check if the high CPU usage by ntoskrnl.exe has been resolved."
+      },
+      {
+        "title": "Restart and Monitor",
+        "content": "Restart your computer normally and monitor the CPU usage in Task Manager. If the issue persists, proceed to the next steps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Windows and Drivers",
+        "type": "Official Solution",
+        "steps": [
+          {
+            "title": "Check for Windows Updates",
+            "content": "Go to Settings > Update & Security > Windows Update and check for any pending updates. Install all available updates to ensure your system is up to date."
+          },
+          {
+            "title": "Update Device Drivers",
+            "content": "Open Device Manager (Windows key + X > Device Manager), expand categories, right-click each device, and select 'Update driver'. Focus on drivers for hardware like graphics cards, chipsets, and network adapters."
+          },
+          {
+            "title": "Restart and Monitor",
+            "content": "After updating, restart your computer and check Task Manager to see if the high CPU usage has been resolved."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Superfetch (SysMain)",
+        "type": "Advanced Troubleshooting",
+        "steps": [
+          {
+            "title": "Open Services",
+            "content": "Press Windows key + R, type 'services.msc', and press Enter to open the Services window."
+          },
+          {
+            "title": "Locate SysMain Service",
+            "content": "Scroll down and find the 'SysMain' service (previously known as Superfetch). Right-click it and select 'Properties'."
+          },
+          {
+            "title": "Disable SysMain",
+            "content": "In the Properties window, set the 'Startup type' to 'Disabled' and click 'Stop' to halt the service. Click Apply and OK to save changes."
+          },
+          {
+            "title": "Restart and Monitor",
+            "content": "Restart your computer and check Task Manager to see if the high CPU usage has been resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T14:57:27.409Z",
+      "updated": "2026-08-01T14:57:27.409Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/high-cpu-usage-because-of-system-ntoskrnl/6925079a-beb7-41fe-8664-cec7adf5d968",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
