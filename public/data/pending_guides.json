@@ -331893,5 +331893,295 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785550563081-999",
+    "title": "Fix Persistent SELinux Policy Modifications on Android",
+    "problemDescription": "SELinux policy changes made to `/sepolicy` are not persistent after device restart due to the file being stored in a RAM disk image extracted from the boot image.",
+    "category": "android",
+    "difficulty": "Hard",
+    "keywords": [
+      "SELinux",
+      "Android",
+      "policy",
+      "root",
+      "boot image",
+      "persistent changes"
+    ],
+    "steps": [
+      {
+        "title": "Understand the Limitation",
+        "content": "Acknowledge that SELinux policy modifications in `/sepolicy` are temporary and reset on reboot because the file resides in a RAM disk image derived from the boot image."
+      },
+      {
+        "title": "Check Current SELinux Status",
+        "content": "Run `getenforce` in a terminal app (requires root) to verify if SELinux is enforcing or permissive. Note the current mode for reference."
+      },
+      {
+        "title": "Install setools-android",
+        "content": "Download and install the `setools-android` app from a trusted source (e.g., F-Droid or GitHub). This app provides tools like `sepolicy-inject` to modify SELinux policies."
+      },
+      {
+        "title": "Modify SELinux Policy Temporarily",
+        "content": "Use `sepolicy-inject` to set a domain to permissive mode for testing. Example: `sepolicy-inject -s <domain> -t permissive`. Verify changes with `getenforce` or `dmesg | grep avc`."
+      },
+      {
+        "title": "Permanently Modify Boot Image (Advanced)",
+        "content": "Extract the boot image from your device, modify the `/sepolicy` file within it, and repack the boot image. Flash the modified boot image via fastboot. Requires: root, custom recovery, and tools like `mkbootimg`."
+      },
+      {
+        "title": "Verify Persistent Changes",
+        "content": "Reboot the device and run `getenforce` to confirm the SELinux policy changes persist. Check logs for AVC denials if issues arise."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Magisk SELinux Toggles (Root Required)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Magisk",
+            "content": "Ensure Magisk is installed on your rooted Android device."
+          },
+          {
+            "title": "Enable SELinux Toggle",
+            "content": "Open the Magisk app, go to the 'MagiskHide' section, and enable the 'SELinux' toggle to switch between enforcing and permissive modes."
+          },
+          {
+            "title": "Test and Revert",
+            "content": "Reboot the device and verify the SELinux mode change. Revert if needed via Magisk or by reflashing the boot image."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Custom ROMs with Modified SELinux Policies",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Research Custom ROMs",
+            "content": "Identify custom ROMs (e.g., LineageOS, Pixel Experience) that include pre-modified SELinux policies for your device model."
+          },
+          {
+            "title": "Flash Custom ROM",
+            "content": "Backup data, unlock the bootloader, and flash the custom ROM via a custom recovery (e.g., TWRP)."
+          },
+          {
+            "title": "Verify SELinux Policy",
+            "content": "Boot into the custom ROM and run `getenforce` to confirm the SELinux policy changes are applied."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T02:16:03.081Z",
+      "updated": "2026-08-01T02:16:03.081Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/152186/how-to-troubleshoot-selinux-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1785550567496-574",
+    "title": "Fix Samsung Galaxy USB Connection Notification Not Showing",
+    "problemDescription": "Samsung Galaxy phone fails to display the 'USB connected' notification when plugged into a PC via USB, preventing data transfer or USB tethering.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "USB",
+      "connection",
+      "notification",
+      "Samsung Galaxy",
+      "data transfer",
+      "USB cable"
+    ],
+    "steps": [
+      {
+        "title": "Check and Replace the USB Cable",
+        "content": "Use a known-good USB cable that supports data transfer (not just charging). Test with a different cable if the current one is suspected to be faulty."
+      },
+      {
+        "title": "Try a Different USB Port or Computer",
+        "content": "Connect the phone to a different USB port on the same computer or try another computer to rule out port or driver issues."
+      },
+      {
+        "title": "Restart the Phone",
+        "content": "Power off the phone completely, then turn it back on. This can resolve temporary software glitches affecting USB connectivity."
+      },
+      {
+        "title": "Enable USB Debugging (if applicable)",
+        "content": "Go to Settings → Developer Options → Enable USB debugging. If Developer Options is hidden, enable it by tapping Build Number 7 times in Settings → About Phone."
+      },
+      {
+        "title": "Select Media Transfer Mode Manually",
+        "content": "Go to Settings → Storage → Tap the USB symbol at the top → Select 'Media device (MTP)' to force the phone into file transfer mode."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset USB Connection Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Connection Type Settings",
+            "content": "Navigate to Settings → Applications → USB Settings (or Settings → About Phone → USB Settings) and reset the connection type to default."
+          },
+          {
+            "title": "Toggle USB Connection Prompt",
+            "content": "Go to Settings → Connect to PC → Ensure 'Ask me about USB connection type whenever I connect my phone to a PC' is enabled."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset (Last Resort)",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Ensure all important data is backed up before proceeding, as a factory reset will erase all data on the device."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings → Backup and Reset → Factory Data Reset → Reset Device. Follow the on-screen instructions to complete the reset."
+          },
+          {
+            "title": "Reconfigure USB Settings",
+            "content": "After the reset, reconnect the phone to the PC and configure USB settings as needed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T02:16:07.496Z",
+      "updated": "2026-08-01T02:16:07.496Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/12944/android-phone-doesnt-pop-up-with-usb-connected-message",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785550611153-104",
+    "title": "Fix OLED Screen Flicker on Pixel 10 Pro",
+    "problemDescription": "OLED screens use PWM dimming to adjust brightness, causing flicker that may lead to eye strain or headaches. The Pixel 10 Pro introduces a toggle to reduce this flicker by increasing the PWM rate.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel 10 pro",
+      "oled screen",
+      "flicker",
+      "pwm",
+      "eye strain",
+      "brightness"
+    ],
+    "steps": [
+      {
+        "title": "Enable 'Adjust brightness for sensitive eyes'",
+        "content": "Go to Settings > Display > Brightness and toggle on 'Adjust brightness for sensitive eyes'. This increases the PWM rate from 240Hz to 480Hz, reducing flicker."
+      },
+      {
+        "title": "Adjust brightness manually",
+        "content": "If the toggle is unavailable, manually reduce screen brightness to minimize flicker effects."
+      },
+      {
+        "title": "Use dark mode",
+        "content": "Enable dark mode (Settings > Display > Dark theme) to reduce overall brightness and flicker sensitivity."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-01T02:16:51.153Z",
+      "updated": "2026-08-01T02:16:51.153Z",
+      "sourceUrl": "https://www.techradar.com/phones/google-pixel-phones/7-unsung-android-upgrades-you-may-have-missed-from-the-pixel-10-launch",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785550632973-915",
+    "title": "Fix Bluetooth Voice Control Not Working on Nexus 5",
+    "problemDescription": "Bluetooth voice control (e.g., steering wheel button) fails to initialize or respond on a Nexus 5 running Android 4.4.2, preventing voice commands like calls or navigation.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "voice control",
+      "nexus 5",
+      "android 4.4.2",
+      "steering wheel"
+    ],
+    "steps": [
+      {
+        "title": "Enable Bluetooth Voice Commands in Android Settings",
+        "content": "Go to **Settings > Language & input > Voice Search > Bluetooth headset settings** and ensure 'Bluetooth voice commands' is enabled."
+      },
+      {
+        "title": "Check Bluetooth Profile Support",
+        "content": "Verify your car stereo supports the **Hands-Free Profile (HFP)** or **Phone Audio (A2DP)**. Some systems may not fully support voice control on Android."
+      },
+      {
+        "title": "Clear Bluetooth Cache and Re-Pair",
+        "content": "1. Go to **Settings > Bluetooth**. 2. Tap the gear icon next to your car stereo. 3. Select **Unpair** and confirm. 4. Re-pair the device and test voice control again."
+      },
+      {
+        "title": "Update Android and Bluetooth Drivers",
+        "content": "Check for system updates (**Settings > About phone > System updates**) and install any available updates. If possible, update your car stereo's firmware."
+      },
+      {
+        "title": "Test with a Third-Party Voice App",
+        "content": "Install a voice assistant app like **Google Voice Search** or **Voice Access** from the Play Store. Test if voice commands work via Bluetooth with the app."
+      },
+      {
+        "title": "Factory Reset (Last Resort)",
+        "content": "Backup your data and perform a **factory reset** (**Settings > Backup & reset > Factory data reset**). Reconfigure Bluetooth and test voice control after setup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Bluetooth Voice Control App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Bluetooth Voice Control App",
+            "content": "Download an app like **AutoVoice** or **Tasker** from the Play Store, which can intercept Bluetooth button presses and trigger voice commands."
+          },
+          {
+            "title": "Configure the App for Bluetooth Button",
+            "content": "Open the app, go to **Bluetooth button settings**, and set up a profile to trigger voice commands (e.g., 'Call Mom') when the steering wheel button is pressed."
+          },
+          {
+            "title": "Test the Configuration",
+            "content": "Press the Bluetooth button on your steering wheel. The app should intercept the signal and execute the assigned voice command."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Custom ROM",
+        "type": "Advanced Workaround",
+        "steps": [
+          {
+            "title": "Root Your Nexus 5",
+            "content": "Follow a trusted guide to root your device (e.g., using **CF-Auto-Root**). Backup your data before proceeding."
+          },
+          {
+            "title": "Install a Custom ROM with Enhanced Bluetooth Support",
+            "content": "Flash a custom ROM like **LineageOS** or **Resurrection Remix** that may have improved Bluetooth voice control compatibility."
+          },
+          {
+            "title": "Test Bluetooth Voice Commands",
+            "content": "After installation, re-pair your car stereo and test if voice control works with the new ROM."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T02:17:12.973Z",
+      "updated": "2026-08-01T02:17:12.973Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/62116/bluetooth-remote-controll-for-voice-input-on-nexus-5",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
