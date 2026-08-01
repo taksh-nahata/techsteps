@@ -335197,5 +335197,429 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785617056252-585",
+    "title": "Fix WhatsApp Account Rejecting Official Version",
+    "problemDescription": "WhatsApp account is being rejected with an error stating an unofficial version is being used, despite the official app being installed.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "WhatsApp",
+      "unofficial version",
+      "account rejection",
+      "official app"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall WhatsApp",
+        "content": "Go to your device's Settings > Apps > WhatsApp > Uninstall. Confirm the uninstallation."
+      },
+      {
+        "title": "Download Official WhatsApp from Trusted Source",
+        "content": "Visit the official WhatsApp website (https://www.whatsapp.com) or download the app from the Google Play Store (Android) or Apple App Store (iOS). Ensure the app is signed by 'WhatsApp Inc.'"
+      },
+      {
+        "title": "Reinstall WhatsApp",
+        "content": "Install the app from the trusted source and open it. Verify your phone number as prompted."
+      },
+      {
+        "title": "Check for Updates",
+        "content": "Go to your device's app store (Play Store or App Store) and check for any pending updates for WhatsApp. Install updates if available."
+      },
+      {
+        "title": "Clear Cache (Android Only)",
+        "content": "Go to Settings > Apps > WhatsApp > Storage > Clear Cache. Restart your device and reopen WhatsApp."
+      },
+      {
+        "title": "Verify Account via Email",
+        "content": "If the issue persists, contact WhatsApp Support via email (support@whatsapp.com) with your phone number and a screenshot of the error. Include details about the steps already taken."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use WhatsApp Web to Verify",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access WhatsApp Web",
+            "content": "Open a browser and go to https://web.whatsapp.com. Scan the QR code using your phone's WhatsApp app."
+          },
+          {
+            "title": "Check Account Status",
+            "content": "If WhatsApp Web works, the issue may be device-specific. Proceed to reinstall the app as in the primary steps."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Change Device Time Zone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Adjust Time Zone Temporarily",
+            "content": "Go to Settings > Date & Time and disable 'Automatic Time Zone'. Set a different time zone, restart your device, and reopen WhatsApp."
+          },
+          {
+            "title": "Re-enable Automatic Time Zone",
+            "content": "After verifying WhatsApp works, re-enable 'Automatic Time Zone' in Settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T20:44:16.252Z",
+      "updated": "2026-08-01T20:44:16.252Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-my-WhatsApp-account-It-s-rejecting-my-account-saying-that-I-am-using-an-unofficial-version-but-I-m-using-the-official-version-I-tried-to-explain-but-they-are-not-solving-my-issue",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785617086519-478",
+    "title": "Fix WhatsApp Verification Error During Phone Number Confirmation",
+    "problemDescription": "WhatsApp fails to verify a phone number during the registration or login process, displaying an error repeatedly.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "WhatsApp",
+      "verification error",
+      "phone number",
+      "SMS",
+      "OTP"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your device has a stable internet connection (Wi-Fi or mobile data). Try switching between networks if the issue persists."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "Restart your smartphone to clear temporary glitches that may be interfering with WhatsApp's verification process."
+      },
+      {
+        "title": "Reinstall WhatsApp",
+        "content": "Uninstall WhatsApp, restart your device, and then reinstall the latest version from the official app store (Google Play Store or Apple App Store)."
+      },
+      {
+        "title": "Request SMS Instead of Call",
+        "content": "During verification, tap 'Send SMS' instead of 'Call me' if the OTP isn’t delivered via call. Ensure your phone number is correct."
+      },
+      {
+        "title": "Check for WhatsApp Server Issues",
+        "content": "Visit WhatsApp's official status page (https://www.whatsapp.com/status) or third-party sites like Downdetector to confirm if WhatsApp servers are operational."
+      },
+      {
+        "title": "Manually Enter OTP",
+        "content": "If the OTP isn’t auto-filled, manually enter the 6-digit code received via SMS or call."
+      },
+      {
+        "title": "Use a Different Phone Number",
+        "content": "If the issue persists, try verifying with a different phone number to rule out SIM or carrier issues."
+      },
+      {
+        "title": "Contact WhatsApp Support",
+        "content": "If none of the above works, reach out to WhatsApp support via their official website or in-app help section for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear App Cache (Android)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to your device's Settings menu."
+          },
+          {
+            "title": "Navigate to Apps",
+            "content": "Select 'Apps' or 'Application Manager'."
+          },
+          {
+            "title": "Find WhatsApp",
+            "content": "Locate WhatsApp in the list of installed apps."
+          },
+          {
+            "title": "Clear Cache",
+            "content": "Tap 'Storage' and then 'Clear Cache'. Avoid clearing 'Clear Data' as it will log you out."
+          },
+          {
+            "title": "Retry Verification",
+            "content": "Open WhatsApp and attempt to verify your phone number again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Change SIM Card or Carrier",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try Another SIM",
+            "content": "Insert a different SIM card into your device and attempt verification."
+          },
+          {
+            "title": "Check Carrier Restrictions",
+            "content": "Contact your mobile carrier to ensure there are no restrictions blocking SMS or verification codes."
+          },
+          {
+            "title": "Test with Another Device",
+            "content": "If possible, try verifying the number on a different smartphone to isolate the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T20:44:46.519Z",
+      "updated": "2026-08-01T20:44:46.519Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-an-an-error-on-WhatsApp-that-happens-every-time-I-try-to-verify-my-phone-number",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785617102032-751",
+    "title": "Fix Pixel 8 Pro Camera Noise and Rainbow Artifacts",
+    "problemDescription": "High-contrast photos show unnatural noise in shadows or rainbow-like artifacts in fine details, especially when cropping or zooming.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "Pixel 8 Pro",
+      "camera",
+      "noise",
+      "rainbow artifacts",
+      "shadows",
+      "image processing"
+    ],
+    "steps": [
+      {
+        "title": "Update Camera App and Pixel Software",
+        "content": "Ensure your Pixel 8 Pro has the latest software updates. Go to Settings > System > System update and install any available updates. Google has addressed some of these issues in recent updates."
+      },
+      {
+        "title": "Adjust Camera Settings for Better Exposure",
+        "content": "In high-contrast scenes, manually adjust exposure by tapping on the brightest part of the scene to avoid overexposure. Alternatively, use the 'Night Sight' mode for better low-light performance and reduced noise."
+      },
+      {
+        "title": "Reduce Noise in Post-Processing",
+        "content": "Use a photo editing app like Google Photos or Lightroom to apply noise reduction. In Google Photos, open the image, tap 'Edit', and use the 'Noise' slider to reduce graininess. In Lightroom, use the 'Detail' panel to adjust noise reduction."
+      },
+      {
+        "title": "Avoid Heavy Cropping or Zooming",
+        "content": "Rainbow artifacts are more noticeable when zooming in or cropping photos. If possible, take the photo with the desired framing to minimize the need for post-capture adjustments."
+      },
+      {
+        "title": "Use Third-Party Camera Apps",
+        "content": "Try third-party camera apps like 'Open Camera' or 'ProCam X' which offer more manual control over settings like ISO, shutter speed, and exposure, potentially reducing artifacts."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable HDR+ Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Camera App",
+            "content": "Launch the default Pixel Camera app."
+          },
+          {
+            "title": "Disable HDR+ Mode",
+            "content": "Tap the settings icon (gear) > 'Advanced' and toggle off 'HDR+' to reduce aggressive image processing that may exacerbate noise or artifacts."
+          },
+          {
+            "title": "Test and Compare",
+            "content": "Take a test photo in a high-contrast scene and compare the results. If noise or artifacts are reduced, keep HDR+ off for such scenes."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Lightroom for Chromatic Aberration Control",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Import Photo to Lightroom",
+            "content": "Transfer the photo to Adobe Lightroom Mobile."
+          },
+          {
+            "title": "Adjust Chromatic Aberration",
+            "content": "Go to the 'Color' panel and use the 'Defringe' tool to reduce rainbow artifacts. Adjust the 'Amount' slider to minimize color fringing in fine details."
+          },
+          {
+            "title": "Apply Noise Reduction",
+            "content": "In the 'Detail' panel, increase the 'Noise Reduction' slider to smooth out shadow noise while preserving detail."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T20:45:02.032Z",
+      "updated": "2026-08-01T20:45:02.032Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/the-pixel-8-pro-camera-has-some-issues-heres-how-to-sidestep-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785617106990-577",
+    "title": "Fix Google Pixel 2 XL OLED Screen Burn-in",
+    "problemDescription": "Persistent ghosting or faint outlines of static elements (e.g., navigation bar, notification bar) on the Pixel 2 XL's OLED display, indicating screen burn-in.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel 2 xl",
+      "oled",
+      "screen burn-in",
+      "ghosting",
+      "display issue",
+      "warranty"
+    ],
+    "steps": [
+      {
+        "title": "Check Warranty Coverage",
+        "content": "Contact Google Support or visit the Google Store within 15 days of purchase for a full refund or replacement. After 15 days, check if your device is still under the 1-year limited warranty or if the issue qualifies for coverage."
+      },
+      {
+        "title": "Use Built-in Burn-in Fix (If Available)",
+        "content": "Navigate to Settings > Display > Screen Burn-in Fix (if available in your software version). Follow the on-screen instructions to run a burn-in correction tool."
+      },
+      {
+        "title": "Run a Burn-in Correction Video",
+        "content": "Play a 24-hour loop of a solid color video (e.g., white, gray, or black) at maximum brightness to help mitigate burn-in. Use a video with no static elements to avoid worsening the issue."
+      },
+      {
+        "title": "Adjust Display Settings",
+        "content": "Reduce screen brightness to 50% or lower. Enable 'Dark Theme' to minimize static elements. Avoid displaying static content (e.g., widgets, icons) for extended periods."
+      },
+      {
+        "title": "Contact Google Support",
+        "content": "If the issue persists, contact Google Support via the Google Store or official support channels. Provide proof of purchase and describe the issue for warranty evaluation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Third-Party Burn-in Correction Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Burn-in Correction App",
+            "content": "Download a reputable burn-in correction app from the Google Play Store (e.g., 'Screen Burn-in Fixer'). Follow the app's instructions to run a correction cycle."
+          },
+          {
+            "title": "Use a Static Image for Correction",
+            "content": "Display a static image of a solid color (e.g., white or gray) for several hours at maximum brightness. Avoid using images with text or icons."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Professional Repair",
+        "type": "Paid Solution",
+        "steps": [
+          {
+            "title": "Visit an Authorized Service Center",
+            "content": "If the warranty does not cover the issue, visit an authorized Google service center for a professional assessment and repair. Note that this may incur a cost."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T20:45:06.990Z",
+      "updated": "2026-08-01T20:45:06.990Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/pixel-2-xl-oled-screen-burn-in-issue",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785617122784-85",
+    "title": "Fix iOS 9 Notification Sound or Siri Muted Issues",
+    "problemDescription": "Notification sounds for messages are intermittent or missing, and Siri may be muted due to hardware or software settings.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios 9",
+      "notification sound",
+      "siri muted",
+      "volume",
+      "mute switch",
+      "speaker"
+    ],
+    "steps": [
+      {
+        "title": "Check Basic Settings",
+        "content": "Ensure the mute switch on the side of the iPhone is not engaged. Verify that the volume is turned up by pressing the volume up button."
+      },
+      {
+        "title": "Disable Do Not Disturb",
+        "content": "Go to Settings > Do Not Disturb and ensure it is turned off."
+      },
+      {
+        "title": "Toggle Notifications",
+        "content": "Navigate to Settings > Notifications, toggle notification settings off and on, then reboot the device."
+      },
+      {
+        "title": "Inspect Hardware Obstructions",
+        "content": "Check for protective films, screen protectors, or cases that may be blocking the speaker, receiver, or microphones. Remove any obstructions."
+      },
+      {
+        "title": "Clean Speaker and Microphones",
+        "content": "Inspect the speaker, receiver, and microphones for dust or debris. Gently clean them using a soft brush or by blowing air."
+      },
+      {
+        "title": "Disconnect Bluetooth Devices",
+        "content": "Turn off Bluetooth (Settings > Bluetooth) or ensure no Bluetooth devices are connected."
+      },
+      {
+        "title": "Remove Audio Jack Connections",
+        "content": "Ensure nothing is plugged into the audio jack."
+      },
+      {
+        "title": "Test in Different Locations",
+        "content": "Check if the issue persists in different locations or with a different network (contact carrier if needed)."
+      },
+      {
+        "title": "Reset All Settings (Last Resort)",
+        "content": "Go to Settings > General > Reset > Reset All Settings. Note: This will reset all settings but not delete data."
+      },
+      {
+        "title": "Force Restart Device",
+        "content": "Hold the Power and Home buttons together for 10 seconds until the Apple logo appears to force restart the device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > General > Reset > Reset Network Settings. This will reset Wi-Fi networks and passwords, cellular settings, and VPN settings."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check Siri-Specific Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Siri",
+            "content": "Go to Settings > Siri & Search and ensure Siri is enabled."
+          },
+          {
+            "title": "Verify Siri Language",
+            "content": "Go to Settings > General > Accessibility > VoiceOver > Speech > Default Dialect and select the correct language/dialect for Siri."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T20:45:22.784Z",
+      "updated": "2026-08-01T20:45:22.784Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/ios-9-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
