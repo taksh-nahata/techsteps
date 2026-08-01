@@ -334760,5 +334760,211 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785607127598-852",
+    "title": "Enable Lockdown Mode on iPhone to Enhance Security",
+    "problemDescription": "Users may be concerned about security vulnerabilities or privacy risks on their iPhone, especially with reports of unpatched bugs and slow responses from Apple.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "security",
+      "lockdown mode",
+      "privacy",
+      "bug bounty"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Tap the 'Settings' app on your iPhone's home screen."
+      },
+      {
+        "title": "Go to Privacy & Security",
+        "content": "Scroll down and select 'Privacy & Security'."
+      },
+      {
+        "title": "Enable Lockdown Mode",
+        "content": "Scroll to the bottom and tap 'Lockdown Mode'. Then, toggle the switch to enable it."
+      },
+      {
+        "title": "Confirm Activation",
+        "content": "Follow the on-screen instructions to confirm and restart your device if prompted."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update iOS to the Latest Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to 'Settings' > 'General' > 'Software Update' to check for the latest iOS version."
+          },
+          {
+            "title": "Install Updates",
+            "content": "Download and install any available updates to ensure your device has the latest security patches."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Unnecessary Features",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Background App Refresh",
+            "content": "Go to 'Settings' > 'General' > 'Background App Refresh' and disable it for non-essential apps."
+          },
+          {
+            "title": "Disable Location Services",
+            "content": "Go to 'Settings' > 'Privacy & Security' > 'Location Services' and disable it for apps that don't need it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T17:58:47.598Z",
+      "updated": "2026-08-01T17:58:47.598Z",
+      "sourceUrl": "https://en.wikipedia.org/wiki/IPhone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785607131803-398",
+    "title": "iPhone Not Responding to Touch or Voice Commands",
+    "problemDescription": "iPhone screen or Siri does not respond to touch input or voice commands, making it difficult to use the device.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iPhone",
+      "touch not working",
+      "Siri not responding",
+      "voice commands",
+      "unresponsive screen"
+    ],
+    "steps": [
+      {
+        "title": "Force Restart the iPhone",
+        "content": "Quickly press and release the Volume Up button, then the Volume Down button, then press and hold the Side button until the Apple logo appears. Release the Side button and wait for the device to restart."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Go to Settings > General > Software Update. If an update is available, download and install it to ensure your iPhone has the latest bug fixes."
+      },
+      {
+        "title": "Reset All Settings",
+        "content": "Navigate to Settings > General > Transfer or Reset iPhone > Reset > Reset All Settings. This will not erase your data but will reset settings like Wi-Fi passwords and display settings."
+      },
+      {
+        "title": "Check Siri Settings",
+        "content": "Go to Settings > Siri & Search and ensure Siri is enabled. Verify the 'Listen for' option is set to 'Hey Siri' or 'Press Side Button for Siri' as preferred."
+      },
+      {
+        "title": "Test in Safe Mode (if applicable)",
+        "content": "If the issue persists, check if a third-party app is causing the problem. Restart your iPhone and see if the issue resolves. If it does, identify and remove the problematic app."
+      },
+      {
+        "title": "Contact Apple Support",
+        "content": "If none of the above steps work, contact Apple Support via the Apple Support app, website, or visit an Apple Store for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restore iPhone via iTunes/Finder",
+        "type": "Advanced Recovery",
+        "steps": [
+          {
+            "title": "Connect iPhone to Computer",
+            "content": "Use a USB cable to connect your iPhone to a computer with iTunes (Windows/macOS Mojave or earlier) or Finder (macOS Catalina or later)."
+          },
+          {
+            "title": "Enter Recovery Mode",
+            "content": "Force restart your iPhone but continue holding the Side button until the recovery mode screen appears (showing a computer and cable icon)."
+          },
+          {
+            "title": "Restore iPhone",
+            "content": "In iTunes/Finder, select your iPhone, then choose 'Restore iPhone.' This will erase all data and install the latest iOS version. Restore from a backup if needed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T17:58:51.803Z",
+      "updated": "2026-08-01T17:58:51.803Z",
+      "sourceUrl": "https://www.apple.com/iphone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785607135104-85",
+    "title": "Upgrade iPhone with Visible and Affirm Financing",
+    "problemDescription": "User wants to upgrade their iPhone using Visible's Affirm financing offer but is unsure of the process or eligibility.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iPhone",
+      "upgrade",
+      "Visible",
+      "Affirm",
+      "financing"
+    ],
+    "steps": [
+      {
+        "title": "Check Eligibility and Requirements",
+        "content": "Ensure you meet the eligibility criteria: 1) New line required on $45/mo Visible+ plan, 2) Purchase an eligible device (Apple, Samsung, or Google) via Affirm financing from Visible's website, 3) Activate the phone on Visible within 30 days of purchase."
+      },
+      {
+        "title": "Finance Device via Affirm",
+        "content": "Visit Visible's website, select an eligible device, and choose Affirm as the financing option. Complete the Affirm loan application process."
+      },
+      {
+        "title": "Activate Service on Visible",
+        "content": "After receiving the device, activate it on the Visible+ plan within 30 days of purchase."
+      },
+      {
+        "title": "Pay Off at Least 50% of Affirm Loan",
+        "content": "Make payments on your Affirm loan until you have paid off at least 50% of the remaining balance."
+      },
+      {
+        "title": "Finance a New Device",
+        "content": "Once you've paid off 50% of the loan, finance a new eligible device through Affirm on the Visible website."
+      },
+      {
+        "title": "Return Old Device",
+        "content": "Send back your current phone in good working condition within 14 days of upgrading to the new device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Upgrade Without Affirm Financing",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase Device Outright",
+            "content": "Buy the iPhone at full retail price or through another financing option (e.g., carrier direct financing)."
+          },
+          {
+            "title": "Activate on Visible",
+            "content": "Activate the new device on the Visible+ plan."
+          },
+          {
+            "title": "Keep Old Device",
+            "content": "No need to return the old device; simply stop using it after transferring data to the new device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T17:58:55.104Z",
+      "updated": "2026-08-01T17:58:55.104Z",
+      "sourceUrl": "https://www.visible.com/apple",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
