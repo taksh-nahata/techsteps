@@ -335968,5 +335968,95 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1785628527452-945",
+    "title": "Fix OLED Burn-in on Smart TVs",
+    "problemDescription": "OLED burn-in occurs when static elements (like logos or UI elements) remain on the screen too long, causing permanent image retention. Adjusting settings can help mitigate or prevent this issue.",
+    "category": "tv",
+    "difficulty": "Medium",
+    "keywords": [
+      "oled",
+      "burn-in",
+      "image retention",
+      "tv settings",
+      "prevention"
+    ],
+    "steps": [
+      {
+        "title": "Enable Pixel Refresh or Screen Shift",
+        "content": "Navigate to your TV's settings menu and enable features designed to reduce burn-in. For LG TVs, look for 'Pixel Refresh' or 'Screen Shift' under the 'Picture' settings. For Sony, enable 'Pixel Shift' or 'Auto Brightness Limiter'. For Samsung, use 'Pixel Shift' or 'Auto Motion Plus'."
+      },
+      {
+        "title": "Customize Color Temperature",
+        "content": "Adjust the color temperature to reduce blue light, which can contribute to burn-in. For LG TVs, use the dedicated color temperature slider to set it to 'Warm2' or 'Warm1'. For TCL/Hisense, select a warmer preset option (e.g., 'Warm' or 'Cinema'). Avoid 'Cool' or 'Daylight' settings."
+      },
+      {
+        "title": "Apply Settings Across Inputs and Content Types",
+        "content": "Ensure your burn-in prevention settings are applied to all inputs and content types. Go to 'Picture' settings and select 'All' or 'Apply to All' for uniformity. Disable any dynamic contrast or brightness features that may override your settings."
+      },
+      {
+        "title": "Adjust Motion Smoothing",
+        "content": "Disable motion smoothing features that can exacerbate burn-in. For LG TVs, navigate to 'Clarity' or 'Motion' settings and turn off 'Cinematic Movement' or 'True Motion'. For other brands, disable settings like 'Motion Plus', 'Auto Motion', or 'Dynamic Contrast'."
+      },
+      {
+        "title": "Tweak Brightness for SDR Content",
+        "content": "Reduce the brightness level for SDR (Standard Dynamic Range) content to minimize stress on OLED pixels. Set brightness to 50-70% for general viewing. Avoid maximum brightness settings unless necessary for HDR content."
+      },
+      {
+        "title": "Use a Screen Saver or Logo Luminance Reducer",
+        "content": "Enable a screen saver or logo luminance reducer to prevent static elements from staying on screen too long. For LG TVs, enable 'Logo Luminance Reducer' under 'Picture' settings. For other brands, use built-in screen savers or set a timer to turn off the TV after inactivity."
+      },
+      {
+        "title": "Avoid Static Content for Long Periods",
+        "content": "Limit exposure to static content (e.g., news tickers, pause screens, or gaming HUDs). If you must display static elements, reduce their brightness or use a timer to turn them off periodically."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Burn-In Prevention App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Burn-In Prevention App",
+            "content": "Download and install a burn-in prevention app like 'OLED Care' (for LG) or 'Pixel Refresh' (for Sony) from your TV's app store. These apps cycle colors or shift pixels to reduce burn-in risk."
+          },
+          {
+            "title": "Schedule Regular Pixel Refreshes",
+            "content": "Set the app to run a pixel refresh or screen shift every few hours or daily. Configure the app to run during off-hours to avoid interrupting viewing."
+          },
+          {
+            "title": "Monitor Effectiveness",
+            "content": "After a few weeks, check for signs of burn-in. Adjust the app's settings or frequency if needed."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Third-Party Burn-In Prevention Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect a Raspberry Pi or Streaming Device",
+            "content": "Use a Raspberry Pi, Fire TV Stick, or other streaming device to display a burn-in prevention video (e.g., a slow-moving gradient or color cycle) when the TV is idle. Loop the video to cover long periods of inactivity."
+          },
+          {
+            "title": "Set Up Automation",
+            "content": "Use automation tools like Home Assistant or IFTTT to trigger the burn-in prevention video when the TV is turned off or idle for a set time."
+          },
+          {
+            "title": "Adjust Settings",
+            "content": "Ensure the video is not too bright or static. Use a low-contrast, slow-moving pattern to minimize additional stress on the OLED panel."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T23:55:27.452Z",
+      "updated": "2026-08-01T23:55:27.452Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/you-asked-53-oled-burn-in",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
