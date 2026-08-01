@@ -333598,5 +333598,412 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785590623687-577",
+    "title": "Fix iOS 9 Error 56 on iPad Pro",
+    "problemDescription": "iPad Pro running iOS 9 displays 'Error 56' during system operations, often related to software corruption or update issues.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "ios 9",
+      "error 56",
+      "ipad pro",
+      "system error",
+      "software corruption"
+    ],
+    "steps": [
+      {
+        "title": "Perform a Hard Reboot",
+        "content": "Hold down the Sleep/Wake and Home buttons together for about 10 seconds until the Apple logo appears. This may resolve temporary software glitches causing Error 56."
+      },
+      {
+        "title": "Check for Carrier Updates",
+        "content": "Go to Settings > General > About. If a carrier update is available, a prompt will appear. Install it to ensure compatibility with your network provider."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Navigate to Settings > General > Reset > Reset Network Settings. This will clear saved Wi-Fi passwords and network configurations, but may resolve connectivity-related Error 56 issues. Re-enter Wi-Fi passwords afterward."
+      },
+      {
+        "title": "Reset All Settings",
+        "content": "Go to Settings > General > Reset > Reset All Settings. This restores default settings without deleting data but may require reconfiguration of preferences. Backup your device before proceeding."
+      },
+      {
+        "title": "Reinstall Problematic Apps",
+        "content": "Uninstall any recently updated or problematic apps by long-pressing the app icon on the home screen, then tap 'Remove App'. Reinstall them from the App Store to rule out app-specific corruption."
+      },
+      {
+        "title": "Disable Wi-Fi Networking Services (if applicable)",
+        "content": "Go to Settings > Privacy > Location Services > System Services and disable 'Wi-Fi Networking'. This may resolve conflicts causing Error 56, though it could affect location accuracy."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restore via iTunes",
+        "type": "Advanced Recovery",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Connect your iPad Pro to a computer and open iTunes. Back up your device to preserve data before proceeding."
+          },
+          {
+            "title": "Enter Recovery Mode",
+            "content": "Force restart your iPad Pro by holding Sleep/Wake and Home buttons, then release the Sleep/Wake button when the recovery mode screen appears."
+          },
+          {
+            "title": "Restore the Device",
+            "content": "In iTunes, select 'Restore iPad' to reinstall iOS. This will erase all data and settings, so ensure your backup is complete. After restoration, set up the device as new or from the backup."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Apple Support",
+        "type": "Official Support",
+        "steps": [
+          {
+            "title": "Gather Device Information",
+            "content": "Note your iPad Pro model, iOS version, and a detailed description of when Error 56 occurs (e.g., during update, app installation, or random usage)."
+          },
+          {
+            "title": "Reach Out to Apple",
+            "content": "Visit Apple Support (support.apple.com) or call Apple Support directly. Provide the gathered information and follow their troubleshooting steps, which may include a hardware diagnostic or service appointment."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T13:23:43.687Z",
+      "updated": "2026-08-01T13:23:43.687Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/ios-9-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785590629909-125",
+    "title": "Unlock Android Phone When Forgotten PIN/Password/Pattern",
+    "problemDescription": "User cannot access their Android device due to forgotten PIN, password, or pattern lock.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "unlock",
+      "forgot password",
+      "PIN",
+      "pattern",
+      "factory reset"
+    ],
+    "steps": [
+      {
+        "title": "Use Google Find My Device (Android 5.0+)",
+        "content": "1. Go to [Google Find My Device](https://www.google.com/android/find) on a computer or another device. 2. Sign in with your Google Account linked to the locked phone. 3. Select your device from the list. 4. Choose 'Lock' and set a new PIN/password. 5. Unlock your phone with the new PIN/password."
+      },
+      {
+        "title": "Recover Google Account (If Forgotten)",
+        "content": "1. Visit [Google Account Recovery](https://accounts.google.com/signin/recovery) on a computer. 2. Follow the prompts to reset your Google Account password. 3. Use the recovered credentials to unlock your Android device."
+      },
+      {
+        "title": "Use Smart Lock (If Enabled)",
+        "content": "1. Take your phone to a trusted location or near a trusted PC where Smart Lock was previously set up. 2. The device should unlock automatically. 3. Reset your PIN/password/password in Settings > Security."
+      },
+      {
+        "title": "Factory Reset (Last Resort)",
+        "content": "1. Power off the device. 2. Boot into Recovery Mode (varies by device; typically hold Volume Up + Power). 3. Use Volume keys to navigate to 'Wipe data/factory reset' and select it with Power. 4. Confirm the reset. 5. Reboot the device and set it up as new. Note: FRP may require Google Account credentials after reset."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Unlock via Older Android (KitKat or Older)",
+        "type": "Legacy Method",
+        "steps": [
+          {
+            "title": "Enter Wrong PIN/Password 5 Times",
+            "content": "After 5 incorrect attempts, tap 'Forgot pattern', 'Forgot PIN', or 'Forgot password'."
+          },
+          {
+            "title": "Enter Google Account Credentials",
+            "content": "Sign in with your Google Account to reset the lock screen credentials."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T13:23:49.909Z",
+      "updated": "2026-08-01T13:23:49.909Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/forgot-android-password-pin-pattern",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785590641043-56",
+    "title": "Fix Outlook Mail Connection with Two-Factor Authentication in Node.js",
+    "problemDescription": "Node.js application fails to connect to Outlook mail using two-factor authentication, even with application passwords or OAuth.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "two-factor authentication",
+      "nodejs",
+      "email",
+      "oauth",
+      "application password"
+    ],
+    "steps": [
+      {
+        "title": "Verify Application Password Setup",
+        "content": "Ensure an application password is correctly generated for your Outlook account. Go to Outlook.com > Settings > Security > Advanced Security > App Passwords. Generate a new password if missing or invalid. Copy the password without extra spaces or characters."
+      },
+      {
+        "title": "Check Permissions and Scope",
+        "content": "Confirm the application password has sufficient permissions (e.g., 'Read and write mail in all mailboxes'). Adjust permissions in Outlook.com > Settings > Security > Advanced Security > App Passwords."
+      },
+      {
+        "title": "Review Error Messages and Logs",
+        "content": "Examine error logs during connection attempts. Identify specific error codes (e.g., '401 Unauthorized') to diagnose issues like incorrect scopes or expired tokens."
+      },
+      {
+        "title": "Test OAuth Authentication",
+        "content": "Replace application password with OAuth 2.0 authentication. Register your app in Azure AD, configure API permissions (e.g., 'Mail.Read', 'Mail.Send'), and use the OAuth flow in Node.js with libraries like 'msal-node'."
+      },
+      {
+        "title": "Update Node.js Dependencies",
+        "content": "Ensure your Node.js email library (e.g., 'nodemailer') is updated to the latest version. Run `npm update` or reinstall dependencies to avoid compatibility issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use OAuth with Refresh Tokens",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up OAuth with Refresh Tokens",
+            "content": "Configure your Node.js app to use OAuth with refresh tokens for long-term access. Store tokens securely and handle token refresh automatically using libraries like 'simple-oauth2' or 'msal-node'."
+          },
+          {
+            "title": "Enable Less Secure Apps (Temporary)",
+            "content": "As a last resort, enable 'Less secure app access' in Outlook.com settings (if available) for testing purposes. Note: This is deprecated and not recommended for production."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T13:24:01.043Z",
+      "updated": "2026-08-01T13:24:01.043Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum/all/handle-two-factor-authentication-for-outlook-mail/752ac98a-0b0c-4db2-8ed1-ca0dcd6d131b",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785590665166-148",
+    "title": "Update Smart TV Software for Optimal Performance",
+    "problemDescription": "Smart TVs may experience performance issues, bugs, or lack new features due to outdated software or disabled automatic updates.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "smart tv",
+      "software update",
+      "performance",
+      "bug fixes",
+      "automatic updates"
+    ],
+    "steps": [
+      {
+        "title": "Enable Automatic Updates",
+        "content": "Go to your TV's settings menu (usually under System, Support, or About). Look for 'Software Update' or 'System Update' options and enable automatic updates if available."
+      },
+      {
+        "title": "Manually Check for Updates",
+        "content": "If automatic updates are not enabled, navigate to the software update section and select 'Check for Updates' or 'Update Now'. Follow the on-screen prompts to install any available updates."
+      },
+      {
+        "title": "Power Cycle the TV After Updates",
+        "content": "If your TV feels slower after an update, perform a power cycle: turn off the TV, unplug it from the power outlet, wait at least 30 seconds, then plug it back in and turn it on."
+      },
+      {
+        "title": "Schedule Monthly Update Checks",
+        "content": "Set a monthly reminder to manually check for software updates, especially if automatic updates are disabled."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use an HDMI Switcher for Frequent Device Swaps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect an HDMI Switcher",
+            "content": "Purchase and connect an HDMI switcher to your TV. This allows you to switch between devices (e.g., gaming console, streaming device) without repeatedly unplugging cables from the TV."
+          },
+          {
+            "title": "Keep the Switcher Accessible",
+            "content": "Place the HDMI switcher in an easily accessible location to reduce strain on the TV's rear panel ports."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T13:24:25.166Z",
+      "updated": "2026-08-01T13:24:25.166Z",
+      "sourceUrl": "https://www.makeuseof.com/smart-tv-maintenance-tips",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785590669838-824",
+    "title": "Fix YouTube Playback Issues on Samsung Smart TV with TizenTube",
+    "problemDescription": "YouTube on Samsung Smart TVs has limited features like no playback speed control, uncustomizable thumbnails, or ads. TizenTube provides a seamless alternative with these features.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "YouTube",
+      "TizenTube",
+      "Samsung Smart TV",
+      "playback speed",
+      "ads",
+      "thumbnails"
+    ],
+    "steps": [
+      {
+        "title": "Install TizenTube on Your Samsung Smart TV",
+        "content": "Go to the Samsung App Store on your TV. Search for 'TizenTube' and install the app. If not available, sideload the app using a USB drive or third-party app installer (e.g., SideLoader)."
+      },
+      {
+        "title": "Sign in to Your YouTube Account",
+        "content": "Open TizenTube and sign in with your YouTube account credentials. The app will sync your subscriptions and preferences."
+      },
+      {
+        "title": "Enable Playback Speed Control",
+        "content": "Play any video. Use the playback speed option (usually in the video settings or player controls) to adjust speed without affecting video quality. TizenTube supports speeds like 0.5x, 1x, 1.25x, 1.5x, etc."
+      },
+      {
+        "title": "Customize Thumbnails with DeArrow",
+        "content": "Go to TizenTube settings and enable 'DeArrow' to replace clickbait thumbnails with actual video frames. Visit the DeArrow website to see before-and-after comparisons."
+      },
+      {
+        "title": "Block Ads (Optional)",
+        "content": "In TizenTube settings, enable ad-blocking if desired. Note that this may impact content creator revenue, so consider supporting creators through other means."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Third-Party Launcher for Official YouTube App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Third-Party Launcher",
+            "content": "Download and install a third-party launcher like 'SmartTubeNext' or 'Aptoide TV' from the Samsung App Store."
+          },
+          {
+            "title": "Sideload YouTube App",
+            "content": "Download the official YouTube APK for Android TV from a trusted source (e.g., APKMirror). Use the launcher to sideload and install the APK on your TV."
+          },
+          {
+            "title": "Enable Playback Speed",
+            "content": "Open the sideloaded YouTube app and check if playback speed is available in the video settings. Note that this method may not work on all TV models."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T13:24:29.838Z",
+      "updated": "2026-08-01T13:24:29.838Z",
+      "sourceUrl": "https://www.makeuseof.com/tizentube-app-fix-youtube-problems-tv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785590675276-512",
+    "title": "Fix Smart TV App Performance Issues",
+    "problemDescription": "Smart TV apps suffer from performance problems like input lag, freezing, crashes, and interface glitches, making them unreliable compared to other devices.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "smart tv",
+      "app lag",
+      "freezing",
+      "crash",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Smart TV",
+        "content": "Unplug the TV from the power outlet for 30 seconds, then plug it back in. This clears temporary glitches and refreshes the system."
+      },
+      {
+        "title": "Update the TV Firmware",
+        "content": "Go to your TV's settings menu, navigate to 'Support' or 'Software Update,' and check for the latest firmware. Install any available updates to improve performance and fix bugs."
+      },
+      {
+        "title": "Clear App Cache and Data",
+        "content": "For the problematic app, go to your TV's settings, find 'Apps' or 'Application Manager,' select the app, and choose 'Clear Cache' and 'Clear Data.' This resets the app to a fresh state."
+      },
+      {
+        "title": "Reinstall the Problematic App",
+        "content": "Uninstall the app from your TV, restart the TV, then reinstall the app from the app store. This ensures a clean installation without corrupted files."
+      },
+      {
+        "title": "Check for HDMI and Input Issues",
+        "content": "If the issue occurs after reconnecting HDMI cables, ensure the cables are securely connected. Reset the input labels by going to the TV's input settings and reassigning names to HDMI ports."
+      },
+      {
+        "title": "Disable Unused Apps and Features",
+        "content": "Close background apps and disable features like automatic updates or background scanning that may consume resources. This reduces system load and improves responsiveness."
+      },
+      {
+        "title": "Use an External Device for Apps",
+        "content": "If the TV's apps remain unreliable, connect a streaming device (e.g., Roku, Fire Stick, or Apple TV) to your TV. Use the external device for apps, which often have better performance and updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset the Smart TV",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Backup Important Data",
+            "content": "Note down any custom settings, app logins, or important configurations as a factory reset will erase all data."
+          },
+          {
+            "title": "Perform a Factory Reset",
+            "content": "Go to your TV's settings, navigate to 'Support' or 'Reset,' and select 'Factory Reset.' Follow the on-screen instructions to complete the process."
+          },
+          {
+            "title": "Reconfigure the TV",
+            "content": "After the reset, set up the TV from scratch, reinstall apps, and reconfigure settings. This resolves deep-seated software issues but requires time and effort."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Bluetooth Headphone Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Pair Headphones Before Each Use",
+            "content": "Manually pair your Bluetooth headphones with the TV every time you use them. This avoids the issue of the TV forgetting the connection."
+          },
+          {
+            "title": "Use a Wired Connection",
+            "content": "If possible, use a wired connection (3.5mm audio jack or HDMI ARC) for headphones to avoid Bluetooth pairing issues entirely."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T13:24:35.276Z",
+      "updated": "2026-08-01T13:24:35.276Z",
+      "sourceUrl": "https://www.makeuseof.com/reasons-to-not-buy-smart-tv",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
