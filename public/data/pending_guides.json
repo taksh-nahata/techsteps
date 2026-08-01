@@ -333374,5 +333374,229 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785585674591-44",
+    "title": "Fix Bluetooth Headphone Latency and Range Issues on Android TV",
+    "problemDescription": "Bluetooth headphones connected to an Android TV experience high latency, intermittent disconnections, and slow reconnection times (up to 60 seconds).",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "headphones",
+      "latency",
+      "android tv",
+      "audio sync",
+      "reconnection"
+    ],
+    "steps": [
+      {
+        "title": "Check Bluetooth Version Compatibility",
+        "content": "Verify your TV's Bluetooth version (e.g., Bluetooth 4.1) and compare it with your headphones' Bluetooth version (e.g., Bluetooth 5.0). Older TVs may not support advanced features like low-latency audio modes."
+      },
+      {
+        "title": "Enable Bluetooth Low Latency Mode (if available)",
+        "content": "On your Android TV, go to Settings > Remote & Accessories > Bluetooth > [Your Headphones] > Advanced Settings. Look for options like 'Low Latency Mode' or 'Audio Priority' and enable them to reduce delay."
+      },
+      {
+        "title": "Use a Bluetooth Audio Transmitter (for older TVs)",
+        "content": "Purchase a dedicated Bluetooth audio transmitter (e.g., Avantree DG80) and connect it to your TV's 3.5mm audio jack or optical output. This bypasses the TV's built-in Bluetooth and provides a more stable connection."
+      },
+      {
+        "title": "Reset Bluetooth Connection",
+        "content": "Forget the headphones in your TV's Bluetooth settings, restart both the TV and headphones, then re-pair them. This often resolves temporary glitches."
+      },
+      {
+        "title": "Update TV Firmware",
+        "content": "Check for and install any available firmware updates for your Android TV. Manufacturers often release patches to improve Bluetooth stability."
+      },
+      {
+        "title": "Use a Wired Connection (Alternative)",
+        "content": "If Bluetooth issues persist, connect your headphones directly to the TV using a 3.5mm audio cable or USB-C/adapter (if supported). This eliminates wireless latency entirely."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Bluetooth Audio Receiver with Optical Output",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect an Optical-to-Bluetooth Transmitter",
+            "content": "Use a device like the Creative BT-W5 or TaoTronics Optical Bluetooth Transmitter. Connect it to your TV's optical audio output, then pair your headphones to the transmitter."
+          },
+          {
+            "title": "Configure Audio Settings",
+            "content": "Set the transmitter to 'Low Latency Mode' or 'Game Mode' in its settings to minimize audio delay."
+          },
+          {
+            "title": "Test and Adjust",
+            "content": "Play a video with lip-sync challenges (e.g., a movie with dialogue) and adjust the transmitter's delay settings until sync is restored."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use AirPods Max with Apple TV (Best for Low Latency)",
+        "type": "Brand-Specific Solution",
+        "steps": [
+          {
+            "title": "Connect Apple TV to Your TV",
+            "content": "Use an HDMI cable to connect your Apple TV to your TV. Ensure both devices are powered on."
+          },
+          {
+            "title": "Pair AirPods Max with Apple TV",
+            "content": "On your Apple TV, go to Settings > Remotes and Devices > Bluetooth. Put your AirPods Max in pairing mode and select them from the list."
+          },
+          {
+            "title": "Enable Low Latency Mode",
+            "content": "On your Apple TV, go to Settings > Video and Audio > Audio Format. Select 'Dolby Digital Plus' or 'Lossless' for the best audio quality with minimal delay."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T12:01:14.591Z",
+      "updated": "2026-08-01T12:01:14.591Z",
+      "sourceUrl": "https://www.digitaltrends.com/home-theater/apple-tv-airpods-max-solved-my-tv-headphone-woes",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785585690819-128",
+    "title": "Fix Pixel 2 or Pixel 2 XL Random Reboots",
+    "problemDescription": "Pixel 2 or Pixel 2 XL devices reboot randomly, often linked to LTE or Wi-Fi connections.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel 2",
+      "pixel 2 xl",
+      "random reboot",
+      "power off",
+      "lte",
+      "wifi"
+    ],
+    "steps": [
+      {
+        "title": "Restart in Safe Mode",
+        "content": "Press and hold the Power button, then long-press the 'Power off' option. Tap and hold 'Power off' until 'Reboot to Safe Mode' appears. Confirm and wait for the device to restart. If the issue stops, a third-party app is likely causing the problem."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Go to Settings > System > Advanced > System update. Ensure your device is running the latest software version. If an update is available, download and install it."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > System > Advanced > Reset options > Reset Wi-Fi, mobile & Bluetooth. Confirm the reset. This will erase saved Wi-Fi passwords and Bluetooth pairings."
+      },
+      {
+        "title": "Disable LTE Connection",
+        "content": "Go to Settings > Network & internet > Mobile network > Advanced > Preferred network type. Select '3G' instead of 'LTE/4G'. Test if the reboots persist."
+      },
+      {
+        "title": "Factory Reset (Last Resort)",
+        "content": "Backup your data, then go to Settings > System > Advanced > Reset options > Erase all data (factory reset). Confirm and follow the prompts. This will erase all data on the device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Adaptive Battery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Adaptive Battery",
+            "content": "Go to Settings > Battery > Adaptive Battery and toggle it off. This feature may interfere with system stability on some devices."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Remove SIM Card",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Temporarily Remove SIM Card",
+            "content": "Power off the device, remove the SIM card, and power it back on. Check if the reboots stop. If they do, the issue may be related to the SIM card or carrier settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T12:01:30.819Z",
+      "updated": "2026-08-01T12:01:30.819Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-pixel-2-xl-problems-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785585712456-613",
+    "title": "Fix Google Sync 'Currently Experiencing Problems' Error on Android",
+    "problemDescription": "Android device shows 'Sync is currently experiencing problems. It will be back shortly.' under Google account sync settings, preventing data synchronization.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "google sync",
+      "android sync error",
+      "contacts sync",
+      "api limit",
+      "sync problems"
+    ],
+    "steps": [
+      {
+        "title": "Check Google API Call Limit",
+        "content": "Wait 24 hours for the Google API call limit to reset. This is a common cause for the error, especially if sync was working previously."
+      },
+      {
+        "title": "Verify App Permissions for Google Sync",
+        "content": "Go to Settings > Apps > Gear icon (App permissions) > Contacts > Ensure 'Google Contacts Sync' has permission enabled."
+      },
+      {
+        "title": "Force Stop and Clear Cache for Google Services",
+        "content": "Navigate to Settings > Apps > Google Play services > Force stop > Storage > Clear cache. Repeat for 'Google Services Framework'."
+      },
+      {
+        "title": "Remove and Re-add Google Account",
+        "content": "Go to Settings > Accounts > Google > Select your account > Remove account. Re-add the account and enable sync for required services."
+      },
+      {
+        "title": "Check Internet Connection and Sync Settings",
+        "content": "Ensure Wi-Fi or mobile data is stable. Go to Settings > Accounts > Google > Select account > Ensure sync is enabled for Contacts, Calendar, etc."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Battery Optimization for Google Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Battery Optimization",
+            "content": "Go to Settings > Battery > Battery optimization > Select 'All apps' > Find 'Google Play services' and 'Google Services Framework' > Disable optimization."
+          },
+          {
+            "title": "Retry Sync",
+            "content": "Restart the device and check if sync resolves the issue."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Google Account Troubleshooter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Google Account Troubleshooter",
+            "content": "Visit the Google Account Troubleshooter (https://support.google.com/accounts/troubleshooter) and follow the automated steps to diagnose and fix sync issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T12:01:52.456Z",
+      "updated": "2026-08-01T12:01:52.456Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/96171/sync-is-currently-experiencing-problems-it-will-be-back-shortly-error-messag",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
