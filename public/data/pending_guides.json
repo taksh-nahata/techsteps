@@ -334387,5 +334387,133 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785599879057-635",
+    "title": "Fix Phone Dropping Calls or Poor Signal",
+    "problemDescription": "Phone frequently drops calls or has weak/no signal despite being in an area with supposed coverage.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "phone",
+      "signal",
+      "dropping calls",
+      "cellular",
+      "SIM card",
+      "airplane mode"
+    ],
+    "steps": [
+      {
+        "title": "Toggle Airplane Mode",
+        "content": "Swipe down from the top of the screen to open Quick Settings. Tap the airplane icon to enable Airplane Mode, wait 15 seconds, then tap it again to disable it. This resets cellular, Wi-Fi, and Bluetooth connections."
+      },
+      {
+        "title": "Remove and Reinsert SIM Card",
+        "content": "Power off the phone. Use a SIM card tool, unfolded paperclip, or sewing needle to eject the SIM tray. Remove the SIM card, inspect for dirt or damage, clean it with a soft cloth if needed, then reinsert it correctly. Power the phone back on."
+      },
+      {
+        "title": "Restart Your Phone",
+        "content": "Hold the power button and select 'Restart' or 'Reboot'. Wait for the phone to fully power down and restart. This can resolve temporary software glitches affecting signal."
+      },
+      {
+        "title": "Check for Carrier Coverage Issues",
+        "content": "Visit your carrier's coverage map online or use their app to verify signal strength in your area. If coverage is poor, contact your carrier to report the issue or inquire about alternatives like a signal booster."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Network Settings",
+        "type": "Advanced Fix",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > System > Reset > Reset Network Settings (varies by Android version). Confirm the reset. This will erase saved Wi-Fi passwords and Bluetooth pairings but may resolve persistent signal issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Signal Booster",
+        "type": "Hardware Solution",
+        "steps": [
+          {
+            "title": "Purchase and Install a Signal Booster",
+            "content": "Buy a reputable signal booster compatible with your carrier and phone. Follow the manufacturer's instructions to install the outdoor antenna, indoor antenna, and amplifier. This can significantly improve signal strength in weak coverage areas."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T15:57:59.057Z",
+      "updated": "2026-08-01T15:57:59.057Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/how-to-get-better-phone-signal",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785599914629-252",
+    "title": "Fix Google Photos Video Download Not Playing on Mac",
+    "problemDescription": "Videos downloaded from Google Photos to a Mac do not play properly due to incompatible VP9 codec, causing playback issues in QuickTime or other media players.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Google Photos",
+      "video",
+      "download",
+      "Mac",
+      "VP9",
+      "codec",
+      "playback",
+      "QuickTime"
+    ],
+    "steps": [
+      {
+        "title": "Disable Efficient Storage in Google Pixel Camera Settings",
+        "content": "1. Open the Camera app on your Google Pixel device.\n2. Tap the Settings icon (gear) to access camera settings.\n3. Locate and disable the 'Efficient storage' or 'Storage saver' option (exact wording may vary by device model).\n4. Record a new video and upload it to Google Photos.\n5. Download the video to your Mac and verify playback in QuickTime or another media player."
+      },
+      {
+        "title": "Convert Video Codec Using HandBrake",
+        "content": "1. Download and install HandBrake from [handbrake.fr](https://handbrake.fr/).\n2. Open HandBrake and load the downloaded Google Photos video file.\n3. In the output settings, choose a compatible codec (e.g., H.264 or H.265).\n4. Click 'Start Encode' to convert the video.\n5. Play the converted video in QuickTime or another media player on your Mac."
+      },
+      {
+        "title": "Check Video Codec with MediaInfo or Invisor",
+        "content": "1. Download and install MediaInfo ([mediaarea.net](https://mediaarea.net/en/MediaInfo)) or Invisor.\n2. Open the tool and load the problematic Google Photos video file.\n3. Check the video codec. If it shows 'VP9', the file is incompatible with macOS QuickTime.\n4. Use one of the above solutions to resolve the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use VLC Media Player",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install VLC Media Player",
+            "content": "Download and install VLC Media Player from [videolan.org](https://www.videolan.org/)."
+          },
+          {
+            "title": "Play the Video in VLC",
+            "content": "Open the downloaded Google Photos video file directly in VLC Media Player, which supports VP9 codec natively."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Upload to Another Platform First",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Upload to a Third-Party Platform",
+            "content": "Upload the video from your Google Pixel to a third-party platform (e.g., YouTube, Dropbox, or Google Drive) that supports VP9 codec.\n2. Download the video from the third-party platform to your Mac.\n3. Play the video in QuickTime or another media player."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T15:58:34.629Z",
+      "updated": "2026-08-01T15:58:34.629Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255195689",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
