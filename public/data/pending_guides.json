@@ -334966,5 +334966,236 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785610993300-636",
+    "title": "Use USB Bluetooth Adapter with Headset for Both Mic and Speaker",
+    "problemDescription": "A USB Bluetooth adapter fails to use both the microphone and speaker of a Bluetooth headset simultaneously on a PC.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "headset",
+      "mic",
+      "speaker",
+      "USB adapter",
+      "PC"
+    ],
+    "steps": [
+      {
+        "title": "Verify Bluetooth Adapter Compatibility",
+        "content": "Ensure your USB Bluetooth adapter supports both audio input (mic) and output (speaker) for headsets. Check the adapter's specifications or documentation."
+      },
+      {
+        "title": "Pair the Headset with the Adapter",
+        "content": "Put your Bluetooth headset into pairing mode and connect it to the USB Bluetooth adapter via your PC's Bluetooth settings."
+      },
+      {
+        "title": "Set Headset as Default Audio Device",
+        "content": "Go to 'Settings' > 'System' > 'Sound' and set the Bluetooth headset as the default playback and recording device."
+      },
+      {
+        "title": "Test Audio and Mic",
+        "content": "Play audio through the headset and test the microphone to confirm both functions work. Adjust volume levels if needed."
+      },
+      {
+        "title": "Update Bluetooth Drivers",
+        "content": "Ensure your PC's Bluetooth drivers are up to date. Download the latest drivers from the manufacturer's website if necessary."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a 4-Pole to Dual 3-Pole Adapter Cable",
+        "type": "Hardware Workaround",
+        "steps": [
+          {
+            "title": "Purchase a 4-Pole to Dual 3-Pole Adapter Cable",
+            "content": "Buy a 4-pole (TRRS) to dual 3-pole (TRS) adapter cable, which splits the headset's combined mic and speaker connection into separate 3.5mm jacks."
+          },
+          {
+            "title": "Connect the Adapter to Your PC",
+            "content": "Plug the 3.5mm end of the adapter into your PC's audio input and output ports."
+          },
+          {
+            "title": "Connect the Headset to the Adapter",
+            "content": "Plug the 4-pole end of the adapter into your headset. Ensure the headset is set to use the wired connection."
+          },
+          {
+            "title": "Configure Audio Settings",
+            "content": "Go to 'Settings' > 'System' > 'Sound' and set the headset as the default playback and recording device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T19:03:13.300Z",
+      "updated": "2026-08-01T19:03:13.300Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/usb-bluetooth-adapter-both-mic-speaker.3756816",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785611028581-346",
+    "title": "Fix Mac User Account Permissions and ACLs",
+    "problemDescription": "Mac user account files require repeated admin password entry for deletion or modifications. May also cause login issues.",
+    "category": "mac",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "user permissions",
+      "ACLs",
+      "admin password",
+      "login issues"
+    ],
+    "steps": [
+      {
+        "title": "Boot into Recovery Mode",
+        "content": "For macOS 10.7-10.8: Restart your Mac and hold Command (⌘) + R keys during startup to enter Recovery Mode. For macOS 10.6: Hold the 'C' key or Option/Alt key to boot from the OS X installation disk."
+      },
+      {
+        "title": "Open Terminal",
+        "content": "In Recovery Mode, go to Utilities > Terminal."
+      },
+      {
+        "title": "Run Reset Password Utility",
+        "content": "Type 'resetpassword' in Terminal and press Return. This opens the Reset Password utility."
+      },
+      {
+        "title": "Select User Account",
+        "content": "In the Reset Password window, select the user account with permission issues from the dropdown menu."
+      },
+      {
+        "title": "Reset Home Directory Permissions and ACLs",
+        "content": "Click the 'Reset Home Directory Permissions and ACLs' button. Confirm the action if prompted."
+      },
+      {
+        "title": "Restart Mac",
+        "content": "Restart your Mac normally and test if the permission issues are resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Create a New Admin Account (Advanced)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Recovery Mode",
+            "content": "Restart your Mac and hold Command (⌘) + R keys during startup to enter Recovery Mode."
+          },
+          {
+            "title": "Open Terminal",
+            "content": "Go to Utilities > Terminal."
+          },
+          {
+            "title": "Create New Admin Account",
+            "content": "Type the following command and press Return: 'createuser -a -d /Users/newadmin -s /bin/bash newadmin'. Replace 'newadmin' with your desired username. Set a password when prompted."
+          },
+          {
+            "title": "Restart and Log In",
+            "content": "Restart your Mac and log in with the new admin account. Transfer necessary files from the old account to the new one."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T19:03:48.581Z",
+      "updated": "2026-08-01T19:03:48.581Z",
+      "sourceUrl": "https://discussions.apple.com/docs/DOC-3621",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785611038644-251",
+    "title": "Fix Mac Admin Account Not Working After Password Reset",
+    "problemDescription": "Mac admin account becomes inaccessible after a password reset, preventing login even with the correct credentials.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "Mac",
+      "admin account",
+      "password reset",
+      "Single User Mode",
+      "login issue"
+    ],
+    "steps": [
+      {
+        "title": "Boot into Single User Mode",
+        "content": "Restart your Mac and immediately hold down Command (⌘) + S keys until you see a black screen with white text (Terminal)."
+      },
+      {
+        "title": "Mount the System Drive",
+        "content": "At the prompt, type: `mount -uw /` and press Enter. This allows you to modify system files."
+      },
+      {
+        "title": "Delete the Admin Account Password File",
+        "content": "Type: `rm /var/db/.AppleSetupDone` and press Enter. This forces macOS to create a new admin account on the next reboot."
+      },
+      {
+        "title": "Restart Your Mac",
+        "content": "Type: `reboot` and press Enter. Your Mac will restart normally."
+      },
+      {
+        "title": "Create a New Admin Account",
+        "content": "After rebooting, follow the on-screen instructions to create a new admin account. Use this account to reset the password for your original admin account via System Preferences > Users & Groups."
+      },
+      {
+        "title": "Delete the Old Admin Account (Optional)",
+        "content": "Once your original admin account is accessible, you can delete the temporary admin account if no longer needed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Password via Recovery Mode",
+        "type": "Official Method",
+        "steps": [
+          {
+            "title": "Boot into Recovery Mode",
+            "content": "Restart your Mac and immediately hold Command (⌘) + R keys until the Apple logo appears."
+          },
+          {
+            "title": "Open Terminal in Recovery Mode",
+            "content": "From the Utilities menu, select Terminal."
+          },
+          {
+            "title": "Reset the Admin Password",
+            "content": "Type: `resetpassword` and press Enter. Follow the on-screen instructions to reset the password for your admin account."
+          },
+          {
+            "title": "Restart Your Mac",
+            "content": "Quit Terminal and restart your Mac. Log in with the new password."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Another Admin Account to Reset Password",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Log in with Another Admin Account",
+            "content": "If you have another admin account on your Mac, log in using that account."
+          },
+          {
+            "title": "Reset the Password via System Preferences",
+            "content": "Go to System Preferences > Users & Groups. Select the locked admin account, click the lock icon to unlock it, and then click 'Reset Password'."
+          },
+          {
+            "title": "Restart and Log In",
+            "content": "Restart your Mac and log in with the reset password."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-01T19:03:58.644Z",
+      "updated": "2026-08-01T19:03:58.644Z",
+      "sourceUrl": "https://discussions.apple.com/thread/256303142",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
