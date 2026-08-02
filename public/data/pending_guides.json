@@ -340467,5 +340467,432 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785714932623-697",
+    "title": "Fix Mac OS X 10.3.8 Issues After Update",
+    "problemDescription": "Users report various issues after installing Mac OS X 10.3.8, including F12 eject problems, speaker noise, and rapid disk space depletion.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "Mac OS X 10.3.8",
+      "update issues",
+      "F12 eject",
+      "speaker noise",
+      "disk space",
+      "combo updater"
+    ],
+    "steps": [
+      {
+        "title": "Reapply the Mac OS X 10.3.8 Combo Updater",
+        "content": "Download and install the Mac OS X 10.3.8 Combo Updater from Apple's website. This often resolves issues like the F12 eject problem by reinstalling all system files."
+      },
+      {
+        "title": "Reset NVRAM and PRAM",
+        "content": "Shut down your Mac. Hold down Command + Option + O + F keys while starting up to enter Open Firmware. Type 'reset-nvram' and press Return, then type 'reset-all' and press Return again. Restart your Mac."
+      },
+      {
+        "title": "Check and Repair Disk Permissions",
+        "content": "Boot from the Mac OS X Install CD. Open Disk Utility, select your startup volume, and click 'Repair Disk Permissions'. Repeat this after rebooting."
+      },
+      {
+        "title": "Run Disk Utility to Repair Disk",
+        "content": "Boot from the Mac OS X Install CD. Open Disk Utility, select your startup volume, and click 'Repair Disk'. Use third-party tools like DiskWarrior or TechTool Pro if issues persist."
+      },
+      {
+        "title": "Check for Faulty Memory",
+        "content": "Use Apple’s Hardware Test CD to diagnose memory issues. If faulty memory is detected, remove or replace it and check if the problem persists."
+      },
+      {
+        "title": "Avoid Power Disconnection During Sleep",
+        "content": "Ensure your Mac is connected to power when putting it to sleep. Disconnecting power during sleep can cause wake-from-sleep issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clean Install of Mac OS X 10.3.8",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Backup Important Data",
+            "content": "Use Time Machine or another backup method to save your important files before proceeding."
+          },
+          {
+            "title": "Erase and Reinstall Mac OS X",
+            "content": "Boot from the Mac OS X Install CD, use Disk Utility to erase the startup volume, and perform a clean install of Mac OS X 10.3.8."
+          },
+          {
+            "title": "Restore Data from Backup",
+            "content": "After installation, restore your files from the backup. Reapply the Combo Updater if needed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T23:55:32.623Z",
+      "updated": "2026-08-02T23:55:32.623Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/special-report-troubleshooting-mac-os-x-10-3-8",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785714938577-26",
+    "title": "Fix Apple TV AirPlay Not Working",
+    "problemDescription": "AirPlay fails to detect or connect to the Apple TV from other devices despite being on the same network.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPlay",
+      "Apple TV",
+      "streaming",
+      "connection",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Enable AirPlay on Apple TV",
+        "content": "Go to Settings > AirPlay on your Apple TV. Ensure AirPlay is set to 'Everyone' or 'Anyone on the Same Network' to allow connections from other devices."
+      },
+      {
+        "title": "Verify Network Connection",
+        "content": "Ensure both the Apple TV and the streaming device (iPhone, iPad, or Mac) are connected to the same Wi-Fi network."
+      },
+      {
+        "title": "Restart Devices",
+        "content": "Restart both the Apple TV and the streaming device to refresh their network connections."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Go to Settings > System > Software Updates on your Apple TV to ensure it is running the latest firmware."
+      },
+      {
+        "title": "Disable VPN or Firewall",
+        "content": "Temporarily disable VPNs or firewalls on the streaming device, as they may block AirPlay connections."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Network Settings on Apple TV",
+        "type": "Advanced Troubleshooting",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > System > Reset > Reset Network Settings on your Apple TV. Note: This will remove saved Wi-Fi passwords."
+          },
+          {
+            "title": "Reconnect to Wi-Fi",
+            "content": "Reconnect your Apple TV to the Wi-Fi network and attempt AirPlay again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T23:55:38.577Z",
+      "updated": "2026-08-02T23:55:38.577Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/common-apple-tv-problems-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785714971069-228",
+    "title": "Fix AirPods Pro 3 Noise Issues (ANC/Transparency)",
+    "problemDescription": "AirPods Pro 3 users experience loud beeping, high-pitched squeals, or erratic noise cancellation behavior, often due to environmental adaptation or earwax blockage.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods Pro 3",
+      "noise issues",
+      "ANC",
+      "transparency",
+      "high-pitched squeal",
+      "earwax",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Reset AirPods Pro 3",
+        "content": "Place AirPods Pro 3 back in the charging case, close the lid, and wait for 5 minutes to allow a full reset."
+      },
+      {
+        "title": "Check Earwax Buildup",
+        "content": "Inspect your ears for earwax buildup. If present, clean them gently with a soft cloth or seek professional ear cleaning to ensure optimal microphone and ANC performance."
+      },
+      {
+        "title": "Run Hearing Test",
+        "content": "Go to iPhone Settings > Your AirPods > Hearing Test. Complete the test while wearing the AirPods to temporarily disable ANC and check for improvements."
+      },
+      {
+        "title": "Verify ANC Settings",
+        "content": "After the hearing test, ensure ANC is re-enabled. If issues persist, toggle ANC off and on again in Bluetooth settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Replace AirPods Pro 3 (Hardware Issue)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test with Another Device",
+            "content": "Pair the AirPods with a different iOS device to rule out device-specific issues."
+          },
+          {
+            "title": "Contact Apple Support",
+            "content": "If the issue persists after all software fixes, contact Apple Support for a replacement within the 14-day return window."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T23:56:11.069Z",
+      "updated": "2026-08-02T23:56:11.069Z",
+      "sourceUrl": "https://discussions.apple.com/thread/256145529",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785714991926-481",
+    "title": "Reset HomeKit Configuration on iPhone",
+    "problemDescription": "HomeKit stops working after Wi-Fi or network changes, showing 'no response' errors despite other apps (Hue, Alexa) controlling devices normally.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "homekit",
+      "reset",
+      "homekit configuration",
+      "iphone",
+      "no response",
+      "homekit not working"
+    ],
+    "steps": [
+      {
+        "title": "Access HomeKit Reset Option",
+        "content": "Open the Settings app on your iPhone."
+      },
+      {
+        "title": "Navigate to Privacy Settings",
+        "content": "Scroll down and tap on 'Privacy'."
+      },
+      {
+        "title": "Select HomeKit",
+        "content": "Tap on 'HomeKit' to access its settings."
+      },
+      {
+        "title": "Reset HomeKit Configuration",
+        "content": "Tap 'Reset HomeKit Configuration' at the bottom of the screen."
+      },
+      {
+        "title": "Confirm Reset",
+        "content": "A confirmation prompt will appear. Tap 'Reset' to confirm and erase all HomeKit data."
+      },
+      {
+        "title": "Reconfigure HomeKit",
+        "content": "After resetting, set up HomeKit again by adding your devices (e.g., Philips Hue bulbs) to the Home app."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Remove and Re-add HomeKit Devices",
+        "type": "Alternative Solution",
+        "steps": [
+          {
+            "title": "Open Home App",
+            "content": "Launch the Home app on your iPhone."
+          },
+          {
+            "title": "Remove Devices",
+            "content": "Tap and hold a device (e.g., a Philips Hue bulb), then select 'Remove Accessory'. Repeat for all affected devices."
+          },
+          {
+            "title": "Re-add Devices",
+            "content": "Use the '+' icon in the Home app to re-add the devices and reconfigure them in your HomeKit setup."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Restart Apple TV and iPhone",
+        "type": "Quick Fix",
+        "steps": [
+          {
+            "title": "Restart Apple TV",
+            "content": "Unplug the Apple TV from power for 30 seconds, then plug it back in and wait for it to restart."
+          },
+          {
+            "title": "Restart iPhone",
+            "content": "Restart your iPhone by holding the side button and sliding to power off, then turning it back on."
+          },
+          {
+            "title": "Test HomeKit",
+            "content": "Open the Home app and check if devices respond normally."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T23:56:31.926Z",
+      "updated": "2026-08-02T23:56:31.926Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/315732/how-to-reset-homekit",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785715000559-533",
+    "title": "Fix macOS App Permission Denied Error",
+    "problemDescription": "Downloaded macOS app fails to open with 'You do not have permission to open the application' due to incorrect file permissions or quarantine attributes.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "macOS",
+      "permission denied",
+      "app not opening",
+      "quarantine",
+      "chmod",
+      "upx"
+    ],
+    "steps": [
+      {
+        "title": "Check for Multiple Applications Folders",
+        "content": "Navigate to your hard drive (e.g., Macintosh HD). If you see an 'Applications' folder inside the 'Users' folder, move the problematic apps to the main 'Applications' folder. If necessary, boot into Recovery Mode, open Terminal, and run `repairHomePermissions` (case-sensitive) to fix installation paths."
+      },
+      {
+        "title": "Reset File Permissions for the App Bundle",
+        "content": "Open Terminal and run: `sudo chmod -R 755 ` (include a trailing space). Drag the app bundle (e.g., `MyApp.app`) into Terminal and press Enter. Enter your admin password when prompted."
+      },
+      {
+        "title": "Remove Quarantine Attribute",
+        "content": "Run the following command in Terminal to remove the quarantine flag: `sudo xattr -rd com.apple.quarantine /Applications/YourApp.app` (replace 'YourApp.app' with the actual app name)."
+      },
+      {
+        "title": "Decompress UPX-Packed Executables (if applicable)",
+        "content": "If the app uses UPX compression, install Homebrew if not already installed: `/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"`. Then run `brew install upx`. Finally, decompress the executable: `sudo upx -d /Applications/YourApp.app/Contents/MacOS/YourExecutable` (replace paths as needed)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall the App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall and Reinstall",
+            "content": "Delete the problematic app from your system. Re-download it from a trusted source (e.g., official website or App Store) and reinstall it into the main 'Applications' folder."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Developer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Request Support",
+            "content": "Contact the app developer for troubleshooting or an updated version of the app. Provide details about your macOS version and the error message."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T23:56:40.559Z",
+      "updated": "2026-08-02T23:56:40.559Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/408752/the-message-you-do-not-have-permission-to-open-the-application-is-shown-when-t",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785715006077-40",
+    "title": "Fix Bluetooth Echo Dot Not Showing as Audio Output on macOS Big Sur",
+    "problemDescription": "The Amazon Echo Dot is connected via Bluetooth to a Mac running macOS Big Sur and Apple Music, but it does not appear as an audio output option in System Preferences > Sound or Apple Music.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "echo",
+      "macos",
+      "audio output",
+      "amazon echo"
+    ],
+    "steps": [
+      {
+        "title": "Verify Bluetooth Connection",
+        "content": "Ensure the Echo Dot is connected to your Mac via Bluetooth. Go to System Preferences > Bluetooth and confirm the Echo Dot is listed as 'Connected'."
+      },
+      {
+        "title": "Reconnect Echo Dot via Bluetooth",
+        "content": "Click the 'Connect' button next to the Echo Dot in System Preferences > Bluetooth. Wait for the connection to establish."
+      },
+      {
+        "title": "Set Echo Dot as Audio Output",
+        "content": "Go to System Preferences > Sound. Under the 'Output' tab, select the Echo Dot from the list of available devices. If it doesn’t appear, proceed to the next step."
+      },
+      {
+        "title": "Reset Core Audio",
+        "content": "Open Terminal and run the following command to reset Core Audio: `sudo killall coreaudiod`. Press Enter, then enter your admin password. Wait for the service to restart."
+      },
+      {
+        "title": "Restart Bluetooth and Audio Services",
+        "content": "Restart your Mac to refresh Bluetooth and audio services. After reboot, check System Preferences > Sound again for the Echo Dot."
+      },
+      {
+        "title": "Update macOS and Bluetooth Firmware",
+        "content": "Ensure your Mac is running the latest version of macOS Big Sur. Update the Echo Dot’s firmware via the Alexa app if available."
+      },
+      {
+        "title": "Test Audio Output",
+        "content": "Open Apple Music and play a song. Ensure the Echo Dot is selected as the output device in the app’s playback controls."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use AirPlay to Stream to Echo Dot",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable AirPlay on Echo Dot",
+            "content": "Ensure your Echo Dot is on the same Wi-Fi network as your Mac. Open the Alexa app, go to Devices > Echo & Alexa, select your Echo Dot, and enable AirPlay."
+          },
+          {
+            "title": "Stream via AirPlay",
+            "content": "On your Mac, open Apple Music. Click the AirPlay icon in the menu bar and select your Echo Dot from the list of available devices."
+          },
+          {
+            "title": "Troubleshoot AirPlay Connection",
+            "content": "If the Echo Dot doesn’t appear, restart your router and Echo Dot. Ensure no firewall or network restrictions are blocking AirPlay."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Third-Party Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Soundflower or BlackHole",
+            "content": "Download and install a virtual audio driver like Soundflower or BlackHole from their respective websites."
+          },
+          {
+            "title": "Configure Virtual Audio Output",
+            "content": "Open the virtual audio driver settings and set it as the default output device in System Preferences > Sound."
+          },
+          {
+            "title": "Route Audio to Echo Dot",
+            "content": "Use the virtual audio driver to route audio from Apple Music to the Echo Dot via Bluetooth."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T23:56:46.077Z",
+      "updated": "2026-08-02T23:56:46.077Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/408943/apple-macos-big-sur-apple-music-bluetooth-amazon-echo",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
