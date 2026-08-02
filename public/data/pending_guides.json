@@ -338858,5 +338858,273 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785693698606-171",
+    "title": "Fix Printer Not Powering On",
+    "problemDescription": "Printer does not turn on or respond when power button is pressed.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "power",
+      "not working",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check Power Connection",
+        "content": "Ensure the printer's power cable is securely plugged into both the printer and the power outlet. If loose, reconnect it firmly."
+      },
+      {
+        "title": "Inspect Power Cable",
+        "content": "Examine the power cable for any visible damage, burns, or fraying. If damaged, replace it with a compatible cable."
+      },
+      {
+        "title": "Test with Another Outlet",
+        "content": "Plug the printer into a different power outlet to rule out issues with the original outlet."
+      },
+      {
+        "title": "Verify Power Source",
+        "content": "Ensure the power outlet is functional by testing it with another device (e.g., lamp, phone charger)."
+      },
+      {
+        "title": "Power Cycle the Printer",
+        "content": "Unplug the printer, wait 30 seconds, then plug it back in and turn it on."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-02T18:01:38.606Z",
+      "updated": "2026-08-02T18:01:38.606Z",
+      "sourceUrl": "https://www.quora.com/What-is-a-quick-solution-and-troubleshooting-for-printer-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785693775769-617",
+    "title": "Fix WhatsApp Group Messages Not in Order on Android",
+    "problemDescription": "WhatsApp group messages are displayed out of chronological order, with messages grouped by contacts instead of timestamps.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "group messages",
+      "out of order",
+      "android",
+      "timestamps"
+    ],
+    "steps": [
+      {
+        "title": "Check and Adjust Date & Time Settings",
+        "content": "Go to Settings > System > Date & Time. Ensure 'Automatic date & time' is enabled. If already enabled, toggle it off and on again to refresh."
+      },
+      {
+        "title": "Clear WhatsApp Cache",
+        "content": "Go to Settings > Apps > WhatsApp > Storage > Clear Cache. Restart WhatsApp and check if messages are ordered correctly."
+      },
+      {
+        "title": "Reinstall WhatsApp with Fresh Data",
+        "content": "Uninstall WhatsApp, restart your device, then reinstall WhatsApp from the Google Play Store. Avoid restoring backups during setup."
+      },
+      {
+        "title": "Check for WhatsApp Updates",
+        "content": "Open Google Play Store, search for WhatsApp, and update the app if an update is available. Restart WhatsApp after updating."
+      },
+      {
+        "title": "Test in Another Group",
+        "content": "Create a new WhatsApp group with a few contacts and send test messages. If messages are ordered correctly, the issue is specific to the problematic group."
+      },
+      {
+        "title": "Contact WhatsApp Support",
+        "content": "If the issue persists in a specific group, report the problem to WhatsApp support via Settings > Help > Contact Us. Include group details and screenshots."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Battery Optimization for WhatsApp",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Battery Optimization",
+            "content": "Go to Settings > Apps > WhatsApp > Battery > Disable 'Battery optimization'. Restart WhatsApp and check message order."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use WhatsApp Web as a Temporary Fix",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access WhatsApp Web",
+            "content": "Open a browser on your computer, go to web.whatsapp.com, and scan the QR code from your phone. Check if messages are ordered correctly in the web version."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T18:02:55.769Z",
+      "updated": "2026-08-02T18:02:55.769Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/143669/whatsapp-group-messages-are-not-in-order",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785693823954-907",
+    "title": "Reduce iOS System Data Storage",
+    "problemDescription": "iOS System Data storage is consuming excessive space, and users seek ways to reduce it.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "ios",
+      "system data",
+      "storage",
+      "cleanup"
+    ],
+    "steps": [
+      {
+        "title": "Clear Safari Cache and Data",
+        "content": "Go to Settings > Safari > Clear History and Website Data. This removes cached data that may contribute to System Data."
+      },
+      {
+        "title": "Delete Old iMessage Attachments",
+        "content": "Go to Messages > Select a conversation > Tap the contact name > Tap Info > Swipe left on attachments to delete large files or media."
+      },
+      {
+        "title": "Offload Unused Apps",
+        "content": "Go to Settings > General > iPhone Storage > Enable 'Offload Unused Apps'. This removes apps but keeps their data."
+      },
+      {
+        "title": "Review and Delete Large Files",
+        "content": "Go to Settings > General > iPhone Storage > Review large files under 'Documents & Data'. Delete unnecessary files."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings. This clears network-related caches."
+      },
+      {
+        "title": "Update iOS",
+        "content": "Go to Settings > General > Software Update. Ensure your iPhone is running the latest iOS version, as updates may include storage optimizations."
+      },
+      {
+        "title": "Factory Reset (Last Resort)",
+        "content": "Back up your iPhone, then go to Settings > General > Transfer or Reset iPhone > Erase All Content and Settings. Restore from backup afterward."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Third-Party Cleaning Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download a Reputable Cleaning App",
+            "content": "Use apps like 'Cleaner for iPhone' or 'iMyFone Umate' from the App Store to scan and remove junk files."
+          },
+          {
+            "title": "Run a Deep Clean Scan",
+            "content": "Follow the app's instructions to perform a deep scan and remove unnecessary system data."
+          },
+          {
+            "title": "Verify Storage Reduction",
+            "content": "Check iPhone Storage (Settings > General > iPhone Storage) to confirm the reduction in System Data."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T18:03:43.954Z",
+      "updated": "2026-08-02T18:03:43.954Z",
+      "sourceUrl": "https://www.reddit.com/r/iphone/comments/10v8rgp/followed_the_system_data_reduce_guide_and_my_god",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785693828642-568",
+    "title": "Sync Apple Health Data to Mac and iPad",
+    "problemDescription": "Apple Health data is not syncing or transferring to a Mac or iPad for analysis or backup.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "Apple Health",
+      "sync",
+      "Mac",
+      "iPad",
+      "data transfer",
+      "iCloud"
+    ],
+    "steps": [
+      {
+        "title": "Enable iCloud Sync for Health Data",
+        "content": "On your iPhone, go to Settings > [Your Name] > iCloud and ensure 'Health' is toggled ON. Wait a few minutes for the data to sync."
+      },
+      {
+        "title": "Check iCloud Storage",
+        "content": "Ensure your iCloud storage has enough space for Health data. Go to Settings > [Your Name] > iCloud > Manage Storage to check."
+      },
+      {
+        "title": "Update Devices",
+        "content": "Ensure your iPhone, Mac, and iPad are running the latest software versions. Go to Settings > General > Software Update on each device."
+      },
+      {
+        "title": "Sign in with the Same Apple ID",
+        "content": "Verify that all devices (iPhone, Mac, iPad) are signed in with the same Apple ID used for Health data."
+      },
+      {
+        "title": "Restart Devices",
+        "content": "Restart your iPhone, Mac, and iPad to refresh the sync process."
+      },
+      {
+        "title": "Use Health Export Apps",
+        "content": "If iCloud sync fails, use third-party apps like Health Auto Export or QS Access to export Health data to your Mac or iPad."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Export Health Data via Third-Party Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Health Export App",
+            "content": "Download and install an app like Health Auto Export or QS Access from the App Store on your iPhone."
+          },
+          {
+            "title": "Configure Export Settings",
+            "content": "Open the app and configure it to export Health data to a compatible format (e.g., CSV, XML) and save it to a cloud service or local storage."
+          },
+          {
+            "title": "Transfer Data to Mac/iPad",
+            "content": "Access the exported file from your Mac or iPad via the cloud service or by transferring it manually (e.g., AirDrop, USB)."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use iTunes/Finder Backup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup iPhone to Mac",
+            "content": "Connect your iPhone to your Mac using a USB cable. Open Finder (or iTunes on older macOS), select your device, and create an encrypted backup."
+          },
+          {
+            "title": "Extract Health Data",
+            "content": "Use third-party tools like iMazing or iExplorer to extract Health data from the backup and transfer it to your Mac or iPad."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T18:03:48.642Z",
+      "updated": "2026-08-02T18:03:48.642Z",
+      "sourceUrl": "https://www.reddit.com/r/healthautoexport/comments/qsc2hv/guide_how_to_sync_apple_health_data_to_mac_ipad",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
