@@ -338324,5 +338324,312 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785686472102-829",
+    "title": "Fix G Suite Password Reset Not Working",
+    "problemDescription": "User's password reset in G Suite is not working, and changes are not being applied or verified.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "G Suite",
+      "password reset",
+      "admin console",
+      "2FA",
+      "admin logs"
+    ],
+    "steps": [
+      {
+        "title": "Set a Manual Password",
+        "content": "Go to the Google Admin Console (admin.google.com). Navigate to Directory > Users, select the user, and click 'Reset Password'. Choose 'Set a new password' and enter a temporary password manually."
+      },
+      {
+        "title": "Verify Password Change in Admin Logs",
+        "content": "Check the Admin Audit Logs (Reports > Audit > Admin) to confirm if the password change was recorded. If it appears, the reset was successful."
+      },
+      {
+        "title": "Disable 2FA Temporarily (If Enabled)",
+        "content": "If 2FA is enabled, ask the user to disable it temporarily during the password reset process. Re-enable it after the password is set."
+      },
+      {
+        "title": "Retry Password Reset",
+        "content": "After confirming the manual password change in logs, retry the standard password reset process via the Admin Console."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Google Workspace Support",
+        "type": "Official Support",
+        "steps": [
+          {
+            "title": "Contact Google Workspace Support",
+            "content": "If manual reset and logs do not show changes, contact Google Workspace Support for further assistance. Provide them with the user's email and admin logs for verification."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T16:01:12.102Z",
+      "updated": "2026-08-02T16:01:12.102Z",
+      "sourceUrl": "https://www.reddit.com/r/gsuite/comments/194ak3d/trying_to_reset_users_password_not_working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785686477070-834",
+    "title": "Fix Windows Password Reset Failure",
+    "problemDescription": "A user's password reset fails despite following standard procedures, causing account lockout or access issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "password",
+      "reset",
+      "account",
+      "lockout",
+      "helpdesk"
+    ],
+    "steps": [
+      {
+        "title": "Verify User Credentials",
+        "content": "Ensure the user is entering the correct username and that the account is not locked or disabled. Check Active Directory or local user management for account status."
+      },
+      {
+        "title": "Use Admin Credentials for Reset",
+        "content": "Log in with an administrator account to reset the password via Command Prompt (net user <username> <newpassword>) or Computer Management > Local Users and Groups."
+      },
+      {
+        "title": "Check Group Policy Restrictions",
+        "content": "Run 'gpresult /h report.html' to check for Group Policy settings that may prevent password changes. Disable restrictive policies temporarily if needed."
+      },
+      {
+        "title": "Reset via Safe Mode",
+        "content": "Boot into Safe Mode with Command Prompt and use 'net user' to reset the password. This bypasses some system restrictions."
+      },
+      {
+        "title": "Use Password Reset Tools",
+        "content": "Utilize tools like Offline NT Password & Registry Editor or Windows Password Reset USB to bypass Windows login restrictions."
+      },
+      {
+        "title": "Check for Disk Errors",
+        "content": "Run 'chkdsk /f C:' and 'sfc /scannow' in Command Prompt to repair system file corruption that may interfere with password changes."
+      },
+      {
+        "title": "Recreate User Profile",
+        "content": "If the issue persists, create a new user profile and migrate data. Use 'net user <newuser> /add' to create a new account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset via Microsoft Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Microsoft Account Recovery",
+            "content": "If the user has a Microsoft account linked, guide them to reset the password via Microsoft's online recovery tool (account.microsoft.com)."
+          },
+          {
+            "title": "Verify Email/Phone",
+            "content": "Ensure the user has access to the email or phone number linked to the Microsoft account for verification."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: System Restore",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Boot into Recovery Mode",
+            "content": "Restart the PC and boot into Recovery Mode (hold Shift + Restart). Select Troubleshoot > Advanced Options > System Restore."
+          },
+          {
+            "title": "Restore to Earlier Point",
+            "content": "Choose a restore point before the password issue occurred and follow the prompts to revert system settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T16:01:17.070Z",
+      "updated": "2026-08-02T16:01:17.070Z",
+      "sourceUrl": "https://www.reddit.com/r/ITCareerQuestions/comments/xfs2c5/have_you_ever_worked_at_a_helpdesk_where_a_simple",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785686505946-728",
+    "title": "Enable YubiKey Two-Factor Authentication for LUKS Full-Disk Encryption",
+    "problemDescription": "User wants to set up YubiKey as a second factor for unlocking LUKS-encrypted Ubuntu partitions during boot, replacing or supplementing the password.",
+    "category": "linux",
+    "difficulty": "Hard",
+    "keywords": [
+      "yubikey",
+      "luks",
+      "full-disk-encryption",
+      "two-factor-authentication",
+      "ubuntu"
+    ],
+    "steps": [
+      {
+        "title": "Install Required Packages",
+        "content": "Ensure `cryptsetup` and `yubikey-luks` are installed. For Ubuntu 19.04+, use the forked repository for compatibility:\n```bash\nsudo apt update\nsudo apt install cryptsetup yubikey-luks\n# For Ubuntu 19.04+, clone and install the forked yubikey-luks package:\ngit clone https://github.com/cornelinux/yubikey-luks.git\ncd yubikey-luks\nsudo make install\n```"
+      },
+      {
+        "title": "Program YubiKey for HMAC-SHA1",
+        "content": "Configure the YubiKey's second slot for HMAC-SHA1 challenge-response. This will erase any existing slot 2 configuration:\n```bash\nykpersonalize -2 -ochal-resp -ochal-hmac -ohmac-lt64 -oserial-api-visible\n```\nNote the secret key displayed; it will be used for LUKS unlocking."
+      },
+      {
+        "title": "Enroll YubiKey with LUKS",
+        "content": "Run the enrollment command to add the YubiKey as a second factor for LUKS. Replace `/dev/sda3` with your encrypted partition:\n```bash\nsudo yubikey-luks-enroll -d /dev/sda3 -s 7\n```\nFollow the on-screen prompts to set up the challenge password and YubiKey slot."
+      },
+      {
+        "title": "Update Initramfs",
+        "content": "Regenerate the initramfs to include the YubiKey LUKS module:\n```bash\nsudo update-initramfs -u\n```"
+      },
+      {
+        "title": "Reboot and Test",
+        "content": "Reboot the system and test the YubiKey unlock:\n1. Insert the YubiKey.\n2. Boot the system and enter your challenge password when prompted.\n3. The YubiKey will respond to the challenge, unlocking the LUKS partition.\n4. Once decrypted, you can remove the YubiKey."
+      },
+      {
+        "title": "Backup YubiKey Configuration",
+        "content": "Store the YubiKey's secret key and slot configuration in a secure location for recovery. If the YubiKey is lost, use the original LUKS passphrase to unlock the partition and re-enroll a new YubiKey."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Cryptsetup Configuration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Configure LUKS with YubiKey Slot",
+            "content": "Manually configure LUKS to use the YubiKey's HMAC-SHA1 response. This requires advanced knowledge of cryptsetup and LUKS internals:\n```bash\n# Open the LUKS partition with the YubiKey as a keyfile:\nsudo cryptsetup luksAddKey /dev/sda3 /dev/ttyUSB0\n# Follow prompts to set up the YubiKey as a keyfile.\n```"
+          },
+          {
+            "title": "Update Boot Configuration",
+            "content": "Modify the bootloader configuration to include the YubiKey module in initramfs:\n```bash\nsudo nano /etc/initramfs-tools/modules\n# Add: yubikey\nyubikey-luks\n```\nThen regenerate initramfs:\n```bash\nsudo update-initramfs -u\n```"
+          },
+          {
+            "title": "Test Boot Process",
+            "content": "Reboot and verify the YubiKey works as a second factor. If issues arise, check kernel logs for errors:\n```bash\ndmesg | grep yubikey\n```"
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use systemd-cryptenroll (Modern Ubuntu)",
+        "type": "Official Solution",
+        "steps": [
+          {
+            "title": "Enable systemd-cryptenroll",
+            "content": "For Ubuntu 22.04+, use systemd's built-in YubiKey support:\n```bash\nsudo systemctl enable systemd-cryptenroll --now\n```"
+          },
+          {
+            "title": "Enroll YubiKey with LUKS",
+            "content": "Run the enrollment command:\n```bash\nsudo systemd-cryptenroll --fido2-device=auto /dev/sda3\n```\nFollow the prompts to set up the YubiKey as a second factor."
+          },
+          {
+            "title": "Update Bootloader",
+            "content": "Regenerate initramfs and update the bootloader:\n```bash\nsudo update-initramfs -u\nsudo update-grub\n```"
+          },
+          {
+            "title": "Reboot and Test",
+            "content": "Reboot and test the YubiKey unlock. If issues occur, check logs:\n```bash\njournalctl -b | grep cryptenroll\n```"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T16:01:45.946Z",
+      "updated": "2026-08-02T16:01:45.946Z",
+      "sourceUrl": "https://askubuntu.com/questions/599825/yubikey-two-factor-authentication-full-disk-encryption-via-luks",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1785686528595-894",
+    "title": "Fix iPhone WireGuard VPN Connection Issues",
+    "problemDescription": "An iPhone fails to connect to a working WireGuard VPN network that other devices can access, despite correct configuration.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "wireguard",
+      "vpn",
+      "iphone",
+      "connection",
+      "dns",
+      "mtu"
+    ],
+    "steps": [
+      {
+        "title": "Verify WireGuard Configuration on iPhone",
+        "content": "Open the WireGuard app on your iPhone and ensure the configuration matches the server's settings. Check the [Interface] section for correct Address, PrivateKey, DNS, and AllowedIPs. Ensure the [Peer] section has the correct PublicKey, Endpoint, and AllowedIPs (e.g., 0.0.0.0/0, ::/0)."
+      },
+      {
+        "title": "Set DNS Server on iPhone",
+        "content": "Go to Settings > Wi-Fi > tap the (i) icon next to your network > Configure DNS > Manual. Add a public DNS server like 1.1.1.1 or 8.8.8.8. Alternatively, set the DNS in the WireGuard configuration file under [Interface] (e.g., DNS = 1.1.1.1)."
+      },
+      {
+        "title": "Check VPN Server DNS Configuration",
+        "content": "Ensure your WireGuard server's DNS server (e.g., BIND9) is configured to listen on the VPN network interface (e.g., wg0). Update the DNS server settings to include the VPN subnet (e.g., allow-query { localhost; private-network; 10.0.0.0/24; };)."
+      },
+      {
+        "title": "Adjust MTU Settings",
+        "content": "In the WireGuard app, try adjusting the MTU value (e.g., 1420 or 1280) in the [Interface] section. Test connectivity after each change to find a stable value."
+      },
+      {
+        "title": "Set MAC Randomization to Fixed",
+        "content": "Go to Settings > Wi-Fi > tap the (i) icon next to your network > Privacy > set MAC Address Randomization to Fixed. This prevents MAC address changes from disrupting the connection."
+      },
+      {
+        "title": "Verify Firewall and Routing Rules",
+        "content": "On the WireGuard server, ensure the firewall (e.g., iptables/nftables) allows traffic from the VPN subnet (e.g., 10.0.0.0/24) and forwards traffic correctly. Check routing tables to confirm the VPN traffic is routed properly."
+      },
+      {
+        "title": "Test Connectivity with tcpdump",
+        "content": "On the WireGuard server, run tcpdump to monitor traffic from the iPhone's VPN IP (e.g., 10.0.0.4). Check if handshake packets and data traffic are reaching the server. Example: `sudo tcpdump -i wg0 host 10.0.0.4`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use IPv6 Endpoint",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable IPv6 on WireGuard Server",
+            "content": "Ensure your WireGuard server has IPv6 enabled and is configured to accept IPv6 traffic. Update the [Peer] section in the WireGuard configuration to use an IPv6 endpoint (e.g., Endpoint = [2001:db8::1]:51820)."
+          },
+          {
+            "title": "Configure iPhone for IPv6",
+            "content": "In the WireGuard app, ensure the [Interface] section includes an IPv6 address (e.g., Address = 10.0.0.4/24, fdc9:281f:04d7:9ee9::4/64). Test connectivity over IPv6."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Add VPN Server to AllowedIPs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update AllowedIPs on iPhone",
+            "content": "In the WireGuard app, edit the configuration and add the VPN server's IP (e.g., 10.0.0.1/32) to the AllowedIPs field in the [Peer] section. Example: AllowedIPs = 0.0.0.0/0, ::/0, 10.0.0.1/32."
+          },
+          {
+            "title": "Test Connectivity",
+            "content": "Save the configuration and reconnect the VPN. Verify if the iPhone can now forward traffic correctly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T16:02:08.595Z",
+      "updated": "2026-08-02T16:02:08.595Z",
+      "sourceUrl": "https://superuser.com/questions/1859181/why-is-an-iphone-not-connecting-on-an-otherwise-okay-wireguard-network-that-othe",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
