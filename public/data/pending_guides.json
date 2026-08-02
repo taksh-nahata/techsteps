@@ -337515,5 +337515,348 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785672010208-305",
+    "title": "Speed Up Slow Windows 10 PC with High CPU/Memory Idle Usage",
+    "problemDescription": "Windows 10 PC is slow despite normal CPU and memory usage, likely due to background processes or visual effects.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 10",
+      "slow performance",
+      "background services",
+      "visual effects",
+      "startup programs"
+    ],
+    "steps": [
+      {
+        "title": "Disable Unnecessary Background Services",
+        "content": "Press Windows key + R, type 'msconfig', and press Enter. Go to the 'Services' tab, check 'Hide all Microsoft services', then uncheck all remaining services. Click 'Apply' and restart your PC."
+      },
+      {
+        "title": "Optimize Visual Effects",
+        "content": "Press Windows key + R, type 'sysdm.cpl', and press Enter. Go to the 'Advanced' tab, click 'Settings' under 'Performance', select 'Adjust for best performance', then click 'Apply'. Alternatively, manually disable animations like window minimizing/maximizing, taskbar animations, and shadows."
+      },
+      {
+        "title": "Disable Unnecessary Startup Programs",
+        "content": "Press Ctrl + Shift + Esc to open Task Manager. Go to the 'Startup' tab, right-click each unnecessary program, and select 'Disable'. Restart your PC to apply changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Uninstall Problematic Windows Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Recent Updates",
+            "content": "Go to Settings > Update & Security > Windows Update. Click 'View update history' and note any recent updates installed."
+          },
+          {
+            "title": "Uninstall Updates",
+            "content": "Go to Control Panel > Programs > Programs and Features > View installed updates. Right-click any suspicious recent updates (e.g., KB5005010) and select 'Uninstall'. Restart your PC."
+          },
+          {
+            "title": "Use Windows Update MiniTool (Optional)",
+            "content": "Download and install Windows Update MiniTool to block problematic updates from reinstalling automatically."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T12:00:10.208Z",
+      "updated": "2026-08-02T12:00:10.208Z",
+      "sourceUrl": "https://superuser.com/questions/1077801/my-windows-10-pc-got-really-slow-although-cpu-and-memory-usage-is-fine-what-els",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785672017386-232",
+    "title": "Fix Slow Computer When Task Manager Shows Low Usage",
+    "problemDescription": "Computer runs slowly despite Task Manager showing low CPU or memory usage, often due to hidden background processes or I/O bottlenecks.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "slow computer",
+      "task manager",
+      "resource monitor",
+      "background processes",
+      "I/O bottleneck"
+    ],
+    "steps": [
+      {
+        "title": "Check for Hidden Background Processes",
+        "content": "Open Task Manager (Ctrl+Shift+Esc), go to the 'Processes' tab, and sort by CPU usage. Look for unfamiliar or resource-heavy processes. End any suspicious tasks by right-clicking and selecting 'End task'."
+      },
+      {
+        "title": "Disable Unnecessary Startup Programs",
+        "content": "Press Win+R, type 'msconfig', and hit Enter. Navigate to the 'Startup' tab and disable non-essential programs (e.g., antivirus duplicates like McAfee and Cylance, Time and Temp programs). Restart your computer."
+      },
+      {
+        "title": "Analyze Resource Monitor for I/O Bottlenecks",
+        "content": "Open Resource Monitor (type 'resmon' in Run dialog). Check the 'Disk' tab for high activity in processes that aren't showing up in Task Manager. Investigate and terminate any problematic processes."
+      },
+      {
+        "title": "Run a Malware Scan",
+        "content": "Use Windows Defender or a trusted third-party antivirus to scan for malware. Malicious software often runs hidden and consumes resources without appearing in Task Manager."
+      },
+      {
+        "title": "Check for Disk Errors",
+        "content": "Open Command Prompt as Administrator and run 'chkdsk /f /r'. Follow the prompts to schedule a scan on the next restart. This checks for and repairs disk errors that can slow down your system."
+      },
+      {
+        "title": "Update Drivers and Windows",
+        "content": "Go to Settings > Update & Security > Windows Update to install pending updates. Also, update drivers for critical components like storage controllers, chipset, and GPU via Device Manager or manufacturer's website."
+      },
+      {
+        "title": "Perform a Clean Boot",
+        "content": "Press Win+R, type 'msconfig', and go to the 'Services' tab. Check 'Hide all Microsoft services' and click 'Disable all'. Restart your computer to boot into a clean environment. If the issue resolves, re-enable services one by one to identify the culprit."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Performance Monitor for Deeper Analysis",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Open Performance Monitor",
+            "content": "Type 'perfmon' in the Run dialog and press Enter to open Performance Monitor."
+          },
+          {
+            "title": "Add Counters for I/O and CPU",
+            "content": "Click the green '+' icon, add counters like 'Process(_Total)\\% Processor Time' and 'PhysicalDisk(_Total)\\% Disk Time'. Monitor these over time to identify spikes or bottlenecks."
+          },
+          {
+            "title": "Analyze Data",
+            "content": "Look for processes or disk activities that correlate with slowdowns. Use this data to target specific issues for further troubleshooting or termination."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset Windows",
+        "type": "Nuclear Option",
+        "steps": [
+          {
+            "title": "Backup Important Data",
+            "content": "Ensure all critical files are backed up to an external drive or cloud storage."
+          },
+          {
+            "title": "Reset Windows",
+            "content": "Go to Settings > Update & Security > Recovery. Select 'Reset this PC' and choose to keep or remove files. Follow the prompts to reinstall Windows."
+          },
+          {
+            "title": "Reinstall Critical Software",
+            "content": "After reset, reinstall essential software and drivers. Avoid restoring old system settings to prevent reintroducing issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T12:00:17.386Z",
+      "updated": "2026-08-02T12:00:17.386Z",
+      "sourceUrl": "https://superuser.com/questions/1133822/my-computer-is-running-slow-but-task-manager-doesnt-show-excessive-cpu-or-memo",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785672038929-948",
+    "title": "Fix Chrome No Internet While Edge Works",
+    "problemDescription": "Google Chrome cannot access the internet, but Microsoft Edge (Chromium) works normally on Windows 10.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "internet",
+      "dns",
+      "windows 10",
+      "chrome settings"
+    ],
+    "steps": [
+      {
+        "title": "Reset Chrome's Secure DNS Setting",
+        "content": "Open Chrome, go to Settings > Privacy and Security > Security. Toggle 'Use Secure DNS' to 'With your current service provider'. Restart Chrome."
+      },
+      {
+        "title": "Flush DNS and Renew IP",
+        "content": "Open Command Prompt as Administrator and run: `ipconfig /flushdns`, then `ipconfig /release`, `ipconfig /renew`, followed by `netsh winsock reset`. Restart your computer."
+      },
+      {
+        "title": "Change Default DNS to Google Public DNS",
+        "content": "Go to Network Connections > Change adapter options. Right-click your active connection > Properties > IPv4 > Use the following DNS server addresses: `8.8.8.8` and `8.8.4.4`. Click OK and restart Chrome."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Chrome Extensions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Extensions Temporarily",
+            "content": "Open Chrome, go to `chrome://extensions`, disable all extensions, and restart Chrome. If the issue resolves, re-enable extensions one by one to identify the culprit."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset Chrome Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Chrome to Default",
+            "content": "Open Chrome, go to `chrome://settings/reset`, click 'Restore settings to their original defaults', and confirm. This will reset homepage, search engine, and pinned tabs."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T12:00:38.929Z",
+      "updated": "2026-08-02T12:00:38.929Z",
+      "sourceUrl": "https://superuser.com/questions/1504979/no-internet-in-chrome-but-ms-edge-chromium-works-fine-how-is-it-possible",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785672053528-475",
+    "title": "Fix iPhone OS 3.1 Upgrade Issues",
+    "problemDescription": "iPhone users experience battery drain, sync errors, Exchange connectivity failures, or bricked devices after upgrading to iOS 3.1.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "ios",
+      "upgrade",
+      "battery",
+      "sync",
+      "exchange",
+      "brick"
+    ],
+    "steps": [
+      {
+        "title": "Check for Battery Drain Issues",
+        "content": "Participate in Apple's Battery Life Study by installing the BatteryLifeLogging.mobileconfig file. Sync your iPhone with iTunes to generate Powerlog files and send them to Apple for analysis. Alternatively, optimize battery life by reducing screen brightness, disabling push notifications, and closing background apps."
+      },
+      {
+        "title": "Resolve Sync Error (-50)",
+        "content": "Ensure iTunes 9 or later is installed on the computer used for syncing. Upgrade iTunes if necessary, then attempt to sync again with iPhoto or other applications."
+      },
+      {
+        "title": "Fix Exchange Connectivity Problems",
+        "content": "Refer to Apple's documentation on iPhone OS 3.1 Exchange changes. Ensure your Exchange server is compatible and configured correctly. Update iPhone settings if required or contact your Exchange administrator for assistance."
+      },
+      {
+        "title": "Recover a Bricked iPhone",
+        "content": "Perform a factory restore by connecting your iPhone to a computer with iTunes. Enter DFU (Device Firmware Update) mode by holding the Home and Power buttons for 10 seconds, then releasing the Power button while keeping the Home button pressed until iTunes detects a device in recovery mode. Restore the iPhone using iTunes."
+      },
+      {
+        "title": "Use Apple Troubleshooting Assistant",
+        "content": "Visit Apple's official support website and use the iPhone Troubleshooting Assistant for guided steps to diagnose and resolve OS 3.1 upgrade issues before contacting AppleCare or visiting a Genius Bar."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Battery Optimization",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Background App Refresh",
+            "content": "Go to Settings > General > Background App Refresh and turn it off for all apps to reduce battery consumption."
+          },
+          {
+            "title": "Enable Low Power Mode",
+            "content": "Go to Settings > Battery and enable Low Power Mode to temporarily reduce background activity and extend battery life."
+          },
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > General > Reset > Reset Network Settings to resolve persistent connectivity issues after the upgrade."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T12:00:53.528Z",
+      "updated": "2026-08-02T12:00:53.528Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/major-minor-iphone-3-1-upgrade-problems-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785672060265-749",
+    "title": "Fix iPhone 15 Pro Overheating Issues in iOS 17",
+    "problemDescription": "iPhone 15 Pro or Pro Max overheats due to increased background activity, a software bug in iOS 17, or third-party apps overloading the system.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "overheating",
+      "iPhone 15 Pro",
+      "iOS 17",
+      "background activity",
+      "app overload"
+    ],
+    "steps": [
+      {
+        "title": "Enable Low Power Mode",
+        "content": "Go to Control Center or Settings > Battery and turn on Low Power Mode. This reduces background tasks, limits display refresh rate to 60Hz, and lowers brightness."
+      },
+      {
+        "title": "Avoid Direct Sunlight and Heat",
+        "content": "Do not expose your iPhone to direct sunlight or extremely hot environments for prolonged periods."
+      },
+      {
+        "title": "Disable Background App Refresh for Suspected Apps",
+        "content": "Go to Settings > General > Background App Refresh and disable it for apps you suspect may be causing overheating."
+      },
+      {
+        "title": "Update to the Latest iOS Version",
+        "content": "Check for and install the latest iOS update (iOS 17 or later) to resolve the software bug causing overheating."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Force Close Suspected Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Close Background Apps",
+            "content": "Double-click the Home button (or swipe up from the bottom on iPhone X or later) to open the App Switcher. Swipe up on apps to force close them."
+          },
+          {
+            "title": "Monitor Temperature",
+            "content": "Reopen the App Switcher periodically to check if the overheating issue persists after closing apps."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset All Settings",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Backup Your iPhone",
+            "content": "Ensure your data is backed up via iCloud or a computer before proceeding."
+          },
+          {
+            "title": "Reset Settings",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset All Settings. This will not delete your data but will reset all settings to default."
+          },
+          {
+            "title": "Reconfigure Settings",
+            "content": "After the reset, reconfigure your settings and monitor the device for overheating."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T12:01:00.265Z",
+      "updated": "2026-08-02T12:01:00.265Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/a-fix-is-here-apple-resolves-iphone-15-pro-overheating-issues-in-latest-ios-17-update",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
