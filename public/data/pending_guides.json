@@ -336982,5 +336982,347 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1785658443728-579",
+    "title": "Fix Phone Call Drops by Resetting Network Settings",
+    "problemDescription": "Phone calls frequently drop due to unstable network connectivity, often caused by corrupted network settings or weak signal detection.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "phone calls",
+      "dropping",
+      "network settings",
+      "airplane mode",
+      "signal"
+    ],
+    "steps": [
+      {
+        "title": "Reset Network Settings",
+        "content": "On Android: Go to Settings > Search for 'reset network settings' > Tap 'Reset Wi-Fi, mobile & Bluetooth' > Confirm reset. Reconnect to Wi-Fi networks afterward. For iPhone: Go to Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings."
+      },
+      {
+        "title": "Toggle Airplane Mode",
+        "content": "Swipe down from the top of the screen to open Quick Settings > Tap the airplane mode icon to disable all wireless connections > Wait 15 seconds > Tap the airplane mode icon again to re-enable connections."
+      },
+      {
+        "title": "Restart Your Phone",
+        "content": "Hold the power button (or power + volume down on some devices) until the power menu appears > Tap 'Restart' or 'Power Off' > Wait 30 seconds > Press the power button to turn it back on."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-02T08:14:03.728Z",
+      "updated": "2026-08-02T08:14:03.728Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/how-to-get-better-phone-signal",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785658454262-696",
+    "title": "Enable iCloud Keychain Autofill for Two-Factor Authentication on iPhone/iPad",
+    "problemDescription": "Users need to enable Autofill in iCloud Keychain to streamline two-factor authentication code entry on iPhone or iPad.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iPhone",
+      "iPad",
+      "iCloud Keychain",
+      "Autofill",
+      "Two-Factor Authentication",
+      "2FA"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings and Access Passwords",
+        "content": "Open the 'Settings' app on your iPhone or iPad, then tap 'Passwords'. Authenticate using Face ID or Touch ID if prompted."
+      },
+      {
+        "title": "Enable Autofill Passwords",
+        "content": "Tap 'AutoFill Passwords'."
+      },
+      {
+        "title": "Select iCloud Keychain",
+        "content": "Under 'Allow Filling From', tap to enable 'iCloud Keychain'. Close the 'Settings' app."
+      },
+      {
+        "title": "Verify Two-Factor Authentication Setup",
+        "content": "When logging into an app or website that supports two-factor authentication, use the built-in authenticator to retrieve codes without switching apps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manually Add 2FA Codes to iCloud Keychain",
+        "type": "Manual Setup",
+        "steps": [
+          {
+            "title": "Access iCloud Keychain Passwords",
+            "content": "Open 'Settings' > 'Passwords' and authenticate. Tap an existing password entry or the '+' icon to add a new one."
+          },
+          {
+            "title": "Add Website and Credentials",
+            "content": "Enter the website address, username, and password. Use the suggested stronger password if desired, then tap 'Done'."
+          },
+          {
+            "title": "Set Up Verification Code",
+            "content": "From the 'Account Options' section, select 'Set Up Verification Code'. Follow the prompts to add the 2FA code manually."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T08:14:14.262Z",
+      "updated": "2026-08-02T08:14:14.262Z",
+      "sourceUrl": "https://www.howtogeek.com/750040/how-to-use-the-built-in-two-factor-authenticator-on-iphone-and-ipad",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785658459846-317",
+    "title": "Recover Data from Encrypted SSD After Hardware Upgrade",
+    "problemDescription": "Upgrading hardware components (e.g., motherboard) can lock access to an encrypted SSD if recovery paths (passwords, recovery keys, or 2FA) are not properly secured or tested.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "SSD",
+      "encryption",
+      "recovery",
+      "hardware upgrade",
+      "2FA",
+      "backup"
+    ],
+    "steps": [
+      {
+        "title": "Secure Your Encryption Keys and Recovery Paths",
+        "content": "Store your encryption password and recovery key in a trusted password manager and keep a second offline copy (e.g., printed or written on paper)."
+      },
+      {
+        "title": "Diversify 2FA Methods",
+        "content": "If your unlock path relies on an account, avoid single 2FA dependency. Use a second factor (e.g., SMS, authenticator app, or hardware key) that doesn’t depend on the same device."
+      },
+      {
+        "title": "Store Backup Codes and Recovery Keys Safely",
+        "content": "Keep backup codes and recovery keys in multiple secure locations (e.g., encrypted USB drive, physical safe) to ensure access even if primary methods fail."
+      },
+      {
+        "title": "Test Your Recovery Path",
+        "content": "Simulate a recovery scenario by attempting to unlock your encrypted SSD using a different device or method. Verify that all steps (passwords, 2FA, recovery keys) work as expected."
+      },
+      {
+        "title": "Document the Entire Process",
+        "content": "Record the steps you took to secure and test your recovery path. Include details like where keys are stored and which 2FA methods were used."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Manufacturer-Specific Recovery Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Your SSD Manufacturer",
+            "content": "Check the brand of your SSD (e.g., Samsung, Crucial, WD). Visit the manufacturer’s official website to download any proprietary recovery tools or utilities."
+          },
+          {
+            "title": "Download and Install Recovery Software",
+            "content": "Use the manufacturer’s tool to generate a recovery key or unlock code based on your SSD’s unique identifier (e.g., serial number)."
+          },
+          {
+            "title": "Follow On-Screen Instructions",
+            "content": "Use the tool to unlock the SSD by entering the recovery key or following the prompts. This may require connecting the SSD to another computer."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Professional Data Recovery Services",
+        "type": "Professional Solution",
+        "steps": [
+          {
+            "title": "Research Reputable Services",
+            "content": "Look for certified data recovery services with experience in encrypted SSDs. Check reviews and ensure they offer encryption-aware recovery."
+          },
+          {
+            "title": "Provide Necessary Details",
+            "content": "Share your SSD model, encryption method (e.g., BitLocker, FileVault), and any recovery keys or passwords you have. This helps the service tailor their approach."
+          },
+          {
+            "title": "Ship the SSD Securely",
+            "content": "Follow the service’s instructions for shipping the SSD. Use tamper-evident packaging and track the shipment for security."
+          },
+          {
+            "title": "Receive and Verify Recovered Data",
+            "content": "Once recovered, verify the integrity of your data before erasing the SSD or reusing it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T08:14:19.846Z",
+      "updated": "2026-08-02T08:14:19.846Z",
+      "sourceUrl": "https://www.howtogeek.com/please-stop-trusting-encrypted-backups",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785658473897-273",
+    "title": "Fix Google Discover 'Something went wrong' Error on Android",
+    "problemDescription": "Google Discover displays 'Something went wrong' error, often triggered by location changes or network issues.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "Google Discover",
+      "Android",
+      "location-based error",
+      "network issue",
+      "VPN workaround"
+    ],
+    "steps": [
+      {
+        "title": "Toggle Network Connection",
+        "content": "Turn off Wi-Fi and mobile data, wait 10 seconds, then turn them back on."
+      },
+      {
+        "title": "Force Stop Google Play Services",
+        "content": "Go to Settings > Apps > Google Play Services > Force Stop."
+      },
+      {
+        "title": "Clear Google App Cache",
+        "content": "Navigate to Settings > Apps > Google > Storage > Clear Cache."
+      },
+      {
+        "title": "Reinstall Google App Updates",
+        "content": "Open Google Play Store > My Apps & Games > Installed > Google > Uninstall Updates."
+      },
+      {
+        "title": "Restart Your Phone",
+        "content": "Hold the power button and select 'Restart'."
+      },
+      {
+        "title": "Check Location Settings",
+        "content": "Go to Settings > Location > Ensure it is enabled and set to 'High Accuracy'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a VPN to Bypass Location Restrictions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a VPN App",
+            "content": "Download and install a trusted VPN app from the Play Store (e.g., NordVPN, ExpressVPN)."
+          },
+          {
+            "title": "Connect to a VPN Server",
+            "content": "Open the VPN app and connect to a server in a different location (e.g., Seattle)."
+          },
+          {
+            "title": "Retry Google Discover",
+            "content": "Open Google Discover to check if the error persists."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Location Services Temporarily",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Location Services",
+            "content": "Go to Settings > Location > Toggle off Location Services."
+          },
+          {
+            "title": "Retry Google Discover",
+            "content": "Open Google Discover to see if the error resolves."
+          },
+          {
+            "title": "Re-enable Location Services",
+            "content": "Return to Settings > Location > Toggle on Location Services."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T08:14:33.897Z",
+      "updated": "2026-08-02T08:14:33.897Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/243174/google-discover-says-something-went-wrong-how-to-fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785658544621-985",
+    "title": "Fix MS Teams Crashing Ubuntu 20.04 System",
+    "problemDescription": "Microsoft Teams crashes Ubuntu 20.04, causing the entire system to freeze and become unresponsive, requiring a hard reboot.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "ms-teams",
+      "ubuntu",
+      "crash",
+      "freeze",
+      "gpu-acceleration",
+      "x11"
+    ],
+    "steps": [
+      {
+        "title": "Disable GPU Hardware Acceleration in Teams",
+        "content": "Open Microsoft Teams, go to Settings (click profile icon > Settings), navigate to the 'General' tab, and toggle off 'Enable hardware acceleration'. Restart Teams and check for stability."
+      },
+      {
+        "title": "Check and Update GPU Drivers",
+        "content": "Ensure your GPU drivers are up to date. Run `sudo apt update && sudo apt upgrade` to update all packages. For NVIDIA GPUs, use `sudo ubuntu-drivers autoinstall` and reboot."
+      },
+      {
+        "title": "Reduce Display Configuration Complexity",
+        "content": "If using multiple monitors, try disconnecting the external monitor. Alternatively, reduce the display resolution or refresh rate in Ubuntu's Display Settings."
+      },
+      {
+        "title": "Switch to Wayland Session (Alternative)",
+        "content": "Log out of Ubuntu, click the gear icon on the login screen, and select 'Ubuntu on Wayland' instead of 'Ubuntu'. This may resolve GPU-related crashes. Note: Some apps may not support Wayland."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Teams Web Version as Temporary Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Teams via Web Browser",
+            "content": "Open a web browser and navigate to https://teams.microsoft.com. Log in and use Teams in a browser tab instead of the desktop app until a fix is available."
+          },
+          {
+            "title": "Disable Teams Auto-Start",
+            "content": "Open Teams settings, go to 'General', and disable 'Auto-start application'. This prevents Teams from launching at system startup, reducing crash risks."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Downgrade Teams Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Current Teams Installation",
+            "content": "Run `sudo apt remove teams` to uninstall the current version."
+          },
+          {
+            "title": "Install a Stable Version",
+            "content": "Download and install an older stable version of Teams from Microsoft's official repository or archive. For example, use version 1.3.00.30857 if it was stable for you."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T08:15:44.621Z",
+      "updated": "2026-08-02T08:15:44.621Z",
+      "sourceUrl": "https://askubuntu.com/questions/1315559/ms-teams-crashes-ubuntu-20-04",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
