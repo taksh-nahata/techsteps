@@ -338023,5 +338023,306 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785682763600-272",
+    "title": "Fix Slow Mac OS X 10.3.7 Startup with Airport/Wi-Fi Issues",
+    "problemDescription": "After updating to Mac OS X 10.3.7, startup times become excessively slow (up to 2 minutes) when Airport/Wi-Fi is enabled and connected to the internet. Disabling Airport resolves the issue.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "macos",
+      "startup",
+      "slow",
+      "airport",
+      "wifi",
+      "10.3.7",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Disable Airport/Wi-Fi Before Shutdown",
+        "content": "Turn off Airport/Wi-Fi (via the menu bar or System Preferences) before shutting down the Mac. This prevents the system from searching for a dropped connection during startup."
+      },
+      {
+        "title": "Check Network Connection Stability",
+        "content": "Ensure the Wi-Fi network remains stable. If the connection drops frequently, investigate router settings or interference issues."
+      },
+      {
+        "title": "Reset Airport/Wi-Fi Settings",
+        "content": "Go to System Preferences > Network, select Airport, and click 'Advanced'. Remove saved networks and reconfigure them to avoid corrupted settings."
+      },
+      {
+        "title": "Update or Reinstall Airport Drivers",
+        "content": "Check for updates to the Airport drivers or third-party tools like DAVE 5.1 that may conflict with the system. Reinstall if necessary."
+      },
+      {
+        "title": "Verify Ethernet Connection (If Applicable)",
+        "content": "If an Ethernet connection is available, test whether the system boots faster when connected via Ethernet instead of Wi-Fi."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Network Services During Startup",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit Startup Items",
+            "content": "Go to System Preferences > Accounts > Login Items and remove any network-related startup items that may delay boot time."
+          },
+          {
+            "title": "Disable Bonjour",
+            "content": "Open Terminal and run: `sudo defaults write /System/Library/LaunchDaemons/com.apple.mDNSResponder ProgramArguments -array \"/usr/sbin/mDNSResponder\" \"-NoMulticastAdvertisements\"` to disable Bonjour advertisements."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall Mac OS X 10.3.7",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Ensure all important data is backed up before proceeding."
+          },
+          {
+            "title": "Reinstall the Update",
+            "content": "Download the Mac OS X 10.3.7 Combo Update from Apple's support site and reinstall it to fix potential corruption."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T14:59:23.600Z",
+      "updated": "2026-08-02T14:59:23.600Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/mac-os-x-10-3-7-8-more-on-slow-startup-dave-5-1-issues-possible-fix-for-printing-issues-more",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785682803536-495",
+    "title": "Diagnose and Fix Van Battery Drain Issue",
+    "problemDescription": "A van experiences rapid battery drain due to an unidentified power draw, which the garage cannot locate.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery drain",
+      "power draw",
+      "van",
+      "automotive",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check for Obvious Power Drains",
+        "content": "Inspect interior lights, glove box lights, trunk lights, and dome lights to ensure they are not staying on. Close all doors and hood to verify none are stuck open."
+      },
+      {
+        "title": "Use a Multimeter to Measure Standby Current",
+        "content": "Disconnect the negative battery terminal and connect a multimeter in series between the battery and terminal. A healthy standby current should be less than 50mA. If higher, there is an unwanted draw."
+      },
+      {
+        "title": "Isolate the Circuit with the Draw",
+        "content": "Remove fuses one at a time while monitoring the multimeter. When the current drops significantly, the circuit with the draw has been identified."
+      },
+      {
+        "title": "Inspect the Identified Circuit",
+        "content": "Check wiring, connections, and components (e.g., relays, switches, or modules) in the problematic circuit for shorts, corrosion, or faulty parts."
+      },
+      {
+        "title": "Test or Replace Suspect Components",
+        "content": "If a specific component (e.g., a relay or module) is suspected, test it or replace it with a known-good unit to confirm if it is the source of the drain."
+      },
+      {
+        "title": "Reset the Battery and Monitor",
+        "content": "Reconnect the battery, reset any learned settings (e.g., radio presets), and monitor the battery voltage over 24 hours to ensure the drain is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Battery Tester with Parasitic Draw Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect a Battery Tester",
+            "content": "Use a battery tester capable of measuring parasitic draw (e.g., Foxwell BT705 or Autel MaxiCOM). Follow the device’s instructions to connect it to the battery."
+          },
+          {
+            "title": "Activate Parasitic Draw Mode",
+            "content": "Put the van in sleep mode (close all doors, turn off ignition) and activate the parasitic draw test on the device."
+          },
+          {
+            "title": "Identify the Draw",
+            "content": "The tester will display the current draw and may help pinpoint the circuit or component causing the drain. Refer to the device’s manual for interpretation."
+          },
+          {
+            "title": "Follow Up with Manual Checks",
+            "content": "Use the tester’s results to guide further inspection of the identified circuit or component, similar to the multimeter method."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Professional Diagnostic Scan",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit a Dealership or Auto Electrician",
+            "content": "If the issue persists, take the van to a professional with advanced diagnostic tools (e.g., OBD-II scanner with parasitic draw capabilities)."
+          },
+          {
+            "title": "Request a Parasitic Draw Test",
+            "content": "Ask the technician to perform a parasitic draw test using specialized equipment, which may include cycling the van into sleep mode and monitoring current draw."
+          },
+          {
+            "title": "Follow Technician Recommendations",
+            "content": "The technician may identify issues like faulty modules (e.g., body control module, alarm system) or wiring problems that require repair or replacement."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T15:00:03.536Z",
+      "updated": "2026-08-02T15:00:03.536Z",
+      "sourceUrl": "https://www.quora.com/My-van-has-a-power-drain-draw-and-the-garage-can-t-locate-it-It-drains-the-battery-so-fast-What-could-it-be",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785682807326-942",
+    "title": "Fix Car Battery Drainage Issue",
+    "problemDescription": "A car battery keeps draining unexpectedly, causing the vehicle to not start or lose power frequently.",
+    "category": "automotive",
+    "difficulty": "Medium",
+    "keywords": [
+      "car battery",
+      "drainage",
+      "electrical system",
+      "parasitic draw"
+    ],
+    "steps": [
+      {
+        "title": "Check for Parasitic Draw",
+        "content": "Use a multimeter to measure the current draw when the car is off. A healthy system should draw less than 50 milliamps. If higher, identify the source of the draw."
+      },
+      {
+        "title": "Inspect Interior Lights and Accessories",
+        "content": "Ensure all interior lights, trunk lights, and glove box lights are turning off when the car is off. Replace faulty switches or bulbs if necessary."
+      },
+      {
+        "title": "Test the Alternator",
+        "content": "Check the alternator's output voltage with the engine running. It should read between 13.8 and 14.4 volts. A faulty alternator can overcharge or undercharge the battery."
+      },
+      {
+        "title": "Examine Battery Terminals",
+        "content": "Clean corroded or loose battery terminals. Corrosion can cause poor connections and lead to drainage issues."
+      },
+      {
+        "title": "Review Recent Electrical Additions",
+        "content": "If you recently added aftermarket electronics (e.g., alarms, stereos, GPS), they may be drawing power. Check their wiring and connections for shorts or improper installation."
+      },
+      {
+        "title": "Inspect the Battery Itself",
+        "content": "Test the battery's voltage and health using a battery tester. Replace the battery if it is weak or failing."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disconnect the Battery Overnight",
+        "type": "Temporary Workaround",
+        "steps": [
+          {
+            "title": "Disconnect the Negative Terminal",
+            "content": "Turn off all accessories and disconnect the negative terminal of the battery overnight."
+          },
+          {
+            "title": "Monitor Voltage Drop",
+            "content": "After 12-24 hours, reconnect the battery and check the voltage. If it drops significantly, there is likely a parasitic draw."
+          },
+          {
+            "title": "Isolate the Issue",
+            "content": "Reconnect one fuse at a time and monitor the voltage drop to identify the circuit causing the drain."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T15:00:07.326Z",
+      "updated": "2026-08-02T15:00:07.326Z",
+      "sourceUrl": "https://www.quora.com/What-is-a-common-reason-why-your-car-battery-keeps-draining",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785682822664-615",
+    "title": "Fix Samsung Galaxy S3 Not Recognized on Windows PC",
+    "problemDescription": "Samsung Galaxy S3 smartphone is not being detected by a new HP Pavilion 20 computer when connected via USB.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "Samsung Galaxy S3",
+      "USB not recognized",
+      "Windows PC",
+      "driver issue",
+      "device manager"
+    ],
+    "steps": [
+      {
+        "title": "Verify USB Port Functionality",
+        "content": "Connect another USB device (e.g., a thumb drive) to the same port to confirm it works. If not, try a different USB port on the computer."
+      },
+      {
+        "title": "Check Device Manager for USB Controller Issues",
+        "content": "Press `Windows key + X`, select `Device Manager`. Expand `Universal serial bus controllers`. Look for yellow exclamation marks or red crosses on any USB controllers. Right-click the problematic device, select `Properties`, and check the `General` tab for error details. Update the driver if needed."
+      },
+      {
+        "title": "Update USB Drivers",
+        "content": "Download the latest USB drivers from the HP official website for your Pavilion 20 model. Install the drivers and restart the computer."
+      },
+      {
+        "title": "Perform a Clean Boot",
+        "content": "Boot the computer in a clean boot state to rule out software conflicts. Press `Windows key + R`, type `msconfig`, and go to the `Services` tab. Check `Hide all Microsoft services` and click `Disable all`. Restart the computer and reconnect the Samsung Galaxy S3."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to `Settings > Update & Security > Windows Update` and install any pending updates. Restart the computer afterward."
+      },
+      {
+        "title": "Test with a Different USB Cable",
+        "content": "Try using a different USB cable to connect the Samsung Galaxy S3 to the computer. Faulty cables can prevent proper device recognition."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall USB Controllers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall USB Controllers",
+            "content": "Open `Device Manager`, expand `Universal serial bus controllers`, right-click each USB controller, and select `Uninstall device`. Confirm the uninstallation."
+          },
+          {
+            "title": "Restart the Computer",
+            "content": "Restart the computer. Windows will automatically reinstall the USB controllers with default drivers."
+          },
+          {
+            "title": "Reconnect the Samsung Galaxy S3",
+            "content": "After the restart, reconnect the Samsung Galaxy S3 and check if it is recognized."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T15:00:22.664Z",
+      "updated": "2026-08-02T15:00:22.664Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/windows_8-hardware/samsung-galaxy-s3-phone-not-recognized-in-my-new/dedf9ccd-cb57-4dc1-9233-1a0a4e234ba4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
