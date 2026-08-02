@@ -339784,5 +339784,380 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1785707500176-105",
+    "title": "Fix Outlook Scheduled Send Not Working",
+    "problemDescription": "Outlook fails to send scheduled emails or experiences delays in sending scheduled messages.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "scheduled send",
+      "email",
+      "send delay",
+      "add-ins",
+      "profile corruption"
+    ],
+    "steps": [
+      {
+        "title": "Start Outlook in Safe Mode",
+        "content": "Press Win+R, type `outlook /safe`, and press Enter. Test if scheduled sends work in Safe Mode to rule out add-in conflicts."
+      },
+      {
+        "title": "Create a New Outlook Profile",
+        "content": "Go to Control Panel > Mail > Show Profiles > Add. Create a new profile, add your account, and test scheduled sends to check if the issue persists."
+      },
+      {
+        "title": "Reset the Send/Receive Settings (SRS) File",
+        "content": "Navigate to `C:\\Users\\%username%\\AppData\\Roaming\\Microsoft\\Outlook`, rename the `Outlook.srs` file to `Outlook.srs.old`, then restart Outlook to regenerate the file."
+      },
+      {
+        "title": "Temporarily Disable Antivirus Software",
+        "content": "Turn off your antivirus software temporarily, restart Outlook, and test scheduled sends to check if the issue is resolved."
+      },
+      {
+        "title": "Verify Network Stability",
+        "content": "Ensure your internet connection is stable. Test sending the same email to the same recipient to confirm if the issue is network-related."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check OWA for the Issue",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test in Outlook Web App (OWA)",
+            "content": "Log in to Outlook Web App (OWA) and attempt to schedule and send the same email. If it works in OWA but not in the desktop client, the issue is likely client-specific."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T21:51:40.176Z",
+      "updated": "2026-08-02T21:51:40.176Z",
+      "sourceUrl": "https://superuser.com/questions/1818336/when-outlook-scheduled-send-goes-wrong",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785707503277-782",
+    "title": "Fix Missing Outlook Preview Pane",
+    "problemDescription": "The Outlook preview pane is missing or not displaying emails properly.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "outlook",
+      "preview pane",
+      "missing",
+      "email",
+      "view settings"
+    ],
+    "steps": [
+      {
+        "title": "Reset View to Default",
+        "content": "Open Outlook. Go to the 'View' tab in the ribbon. Click 'Reset View' in the 'Current View' group. If 'Reset View' is not visible, click 'Change View' and select 'Compact'."
+      },
+      {
+        "title": "Use View Settings",
+        "content": "Go to 'View' > 'View Settings'. Click 'Reset Current View' and confirm. Adjust the view to 'Compact' if needed."
+      },
+      {
+        "title": "Restart Outlook in Safe Mode",
+        "content": "Press 'Windows + R', type 'outlook.exe /safe' (ensure there is a space between 'exe' and '/'), and press Enter. This will open Outlook without add-ins and may resolve the issue."
+      },
+      {
+        "title": "Log Out and Log Back In",
+        "content": "Sign out of Outlook and log back in. This can refresh the application and restore the preview pane."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change View Manually",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Select Compact View",
+            "content": "Go to the 'View' tab. In the 'Current View' group, click 'Change View' and select 'Compact'."
+          },
+          {
+            "title": "Adjust Reading Pane Settings",
+            "content": "Go to 'File' > 'Options' > 'Mail' > 'Message Preview'. Ensure 'Show reading pane' is checked and set to 'Right' or 'Bottom' as preferred."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T21:51:43.277Z",
+      "updated": "2026-08-02T21:51:43.277Z",
+      "sourceUrl": "https://superuser.com/questions/1552971/what-happened-to-my-outlook-preview-pane",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785707522135-252",
+    "title": "Enhance Windows Defender with Additional Security Layers",
+    "problemDescription": "Users seek to improve Windows Defender's effectiveness by adding complementary security tools and practices.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows defender",
+      "antivirus",
+      "security",
+      "malware",
+      "ad blocker",
+      "DNS",
+      "VPN"
+    ],
+    "steps": [
+      {
+        "title": "Install Browser Extensions for Enhanced Security",
+        "content": "Add uBlock Origin and MalwareBytes Browser Guard to your browser to block ads, trackers, and malicious websites."
+      },
+      {
+        "title": "Configure Encrypted DNS Lookups",
+        "content": "Switch to a security-filtered DNS server (e.g., Cloudflare, Quad9, or OpenDNS) with encrypted DNS (DoH/DoT) to prevent DNS-based attacks."
+      },
+      {
+        "title": "Use a VPN for Privacy",
+        "content": "Install a reputable VPN like Proton VPN to hide your IP address from end servers and enhance privacy."
+      },
+      {
+        "title": "Consider Alternative Antivirus Software",
+        "content": "If Windows Defender feels insufficient, evaluate lightweight alternatives like ESET for robust protection without heavy system impact."
+      },
+      {
+        "title": "Review Privacy Policies",
+        "content": "Always read the privacy policy of any antivirus software to ensure it aligns with your data protection expectations."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Malwarebytes for Periodic Scans",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install Malwarebytes",
+            "content": "Obtain Malwarebytes from the official website and install it on your system."
+          },
+          {
+            "title": "Run Regular Scans",
+            "content": "Perform weekly or bi-weekly scans to detect and remove malware that Windows Defender may miss."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T21:52:02.135Z",
+      "updated": "2026-08-02T21:52:02.135Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/which-antivirus-software.3888085",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785707533857-37",
+    "title": "Fix USB Hub Not Recognizing Devices",
+    "problemDescription": "A USB hub fails to detect connected peripherals like keyboards, mice, or storage devices, despite being powered and connected.",
+    "category": "hardware",
+    "difficulty": "Medium",
+    "keywords": [
+      "usb hub",
+      "device recognition",
+      "peripheral detection",
+      "usb connection"
+    ],
+    "steps": [
+      {
+        "title": "Check Physical Connections",
+        "content": "Ensure the USB hub is properly connected to a powered USB port on your computer. If using a powered hub, confirm the power adapter is plugged in and functional."
+      },
+      {
+        "title": "Test with Different Cables",
+        "content": "Swap the USB cable connecting the hub to your computer with a known-working cable. Faulty cables are a common cause of detection issues."
+      },
+      {
+        "title": "Update USB Hub Drivers",
+        "content": "Open Device Manager (Windows) or System Information (macOS/Linux), locate the USB hub under 'Universal Serial Bus controllers', right-click, and select 'Update driver'."
+      },
+      {
+        "title": "Try a Different USB Port",
+        "content": "Connect the hub to a different USB port on your computer. If using a USB-C hub, ensure the port supports data transfer (not just power delivery)."
+      },
+      {
+        "title": "Disable Power Saving for USB Hub",
+        "content": "In Device Manager (Windows), right-click the USB hub, go to 'Properties' > 'Power Management', and uncheck 'Allow the computer to turn off this device to save power'."
+      },
+      {
+        "title": "Test with Another Computer",
+        "content": "Connect the hub to a different computer to rule out issues with your primary device's USB ports or software."
+      },
+      {
+        "title": "Check for Firmware Updates",
+        "content": "Visit the manufacturer's website for your USB hub model and download any available firmware updates. Follow their instructions to install."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset USB Ports via Command Line (Windows)",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Open Command Prompt as Administrator",
+            "content": "Press Win + X, select 'Terminal (Admin)' or 'Command Prompt (Admin)'."
+          },
+          {
+            "title": "Run USB Reset Commands",
+            "content": "Type the following commands one by one and press Enter after each:\n1. `set devmgr_show_nonpresent_devices=1`\n2. `devmgmt.msc`\n3. In Device Manager, click 'View' > 'Show hidden devices'\n4. Expand 'Universal Serial Bus controllers', right-click each grayed-out USB hub/port, and select 'Uninstall device'\n5. Restart your computer to reinstall drivers automatically."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Different Operating System",
+        "type": "Workaround",
+        "steps": [
+          {
+            "title": "Boot into a Live USB",
+            "content": "Create a bootable USB with a live version of Linux (e.g., Ubuntu) and test the hub in that environment to isolate OS-specific issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T21:52:13.857Z",
+      "updated": "2026-08-02T21:52:13.857Z",
+      "sourceUrl": "https://www.tomshardware.com/best-picks/best-usb-hubs",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785707542603-868",
+    "title": "Fix Microsoft Teams Mic Not Transmitting for First 5 Seconds",
+    "problemDescription": "Microsoft Teams microphone audio is delayed or not transmitted for the first 5 seconds due to conflicting audio enhancements between Teams and the Realtek driver.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "microphone",
+      "audio delay",
+      "Realtek driver",
+      "audio enhancements"
+    ],
+    "steps": [
+      {
+        "title": "Disable Audio Enhancements in Windows Sound Settings",
+        "content": "1. Press `Win + I` to open Settings. Go to `System` > `Sound`.\n2. Scroll down to the `Advanced` section and click `More sound settings`.\n3. In the `Recording` tab, right-click your microphone (e.g., Microphone Array) and select `Properties`.\n4. Navigate to the `Advanced` tab and uncheck `Enable audio enhancements`.\n5. Click `Apply` > `OK` to save changes.\n6. Restart Microsoft Teams and test the microphone."
+      },
+      {
+        "title": "Reset Microsoft Teams Configuration",
+        "content": "1. Close Microsoft Teams completely.\n2. Press `Win + R`, type `%appdata%\\Microsoft\\Teams`, and press Enter.\n3. Delete the `Cache` and `Application Cache` folders.\n4. Relaunch Teams to reset its configuration.\n5. Test the microphone again."
+      },
+      {
+        "title": "Update or Reinstall Realtek Audio Driver",
+        "content": "1. Press `Win + X` and select `Device Manager`.\n2. Expand `Sound, video, and game controllers`, right-click your Realtek audio device, and select `Update driver`.\n3. Choose `Search automatically for updated driver software`.\n4. If no update is found, right-click the device again and select `Uninstall device`.\n5. Restart your PC to reinstall the driver automatically.\n6. Test the microphone in Teams."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Teams Audio Enhancements via Group Policy",
+        "type": "Advanced Workaround",
+        "steps": [
+          {
+            "title": "Disable Teams Audio Enhancements via Registry",
+            "content": "1. Press `Win + R`, type `regedit`, and press Enter.\n2. Navigate to `HKEY_CURRENT_USER\\Software\\Microsoft\\Office\\Teams`.\n3. Create a new `DWORD (32-bit) Value` named `DisableAudioEnhancements` and set its value to `1`.\n4. Restart Teams and test the microphone."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Third-Party Audio Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Voicemeeter Banana for Audio Routing",
+            "content": "1. Download and install [Voicemeeter Banana](https://voicemeeter.com/).\n2. Configure Voicemeeter as your default input/output device in Windows Sound Settings.\n3. Disable all audio enhancements in Voicemeeter and Teams.\n4. Test the microphone to ensure no delay occurs."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T21:52:22.603Z",
+      "updated": "2026-08-02T21:52:22.603Z",
+      "sourceUrl": "https://www.reddit.com/r/sysadmin/comments/1ize6sl/ms_teams_mic_not_transmitting_for_first_5_seconds",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785707552850-576",
+    "title": "Fix Microsoft Teams Audio/Video Issues and Performance Degradation",
+    "problemDescription": "Users report persistent audio/video problems and performance degradation in Microsoft Teams, often resolved by clearing the app cache.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Teams",
+      "audio issues",
+      "video issues",
+      "performance degradation",
+      "cache",
+      "clear cache"
+    ],
+    "steps": [
+      {
+        "title": "Clear Microsoft Teams Cache Using the Official Tool",
+        "content": "Download and run the Microsoft Teams Clear Cache tool from the official Microsoft support site. Follow the on-screen instructions to clear the cache and restart Teams."
+      },
+      {
+        "title": "Manually Clear Teams Cache (Alternative)",
+        "content": "Close Microsoft Teams completely. Navigate to the Teams cache folder (e.g., `%appdata%\\Microsoft\\Teams\\Cache` on Windows or `~/Library/Application Support/Microsoft/Teams/Cache` on macOS). Delete all files inside the folder, then restart Teams."
+      },
+      {
+        "title": "Update Microsoft Teams to the Latest Version",
+        "content": "Open Teams, click your profile picture, go to **Settings** > **About Teams**, and check for updates. Install any available updates and restart the app."
+      },
+      {
+        "title": "Check for System Updates",
+        "content": "Ensure your operating system (Windows/macOS) is up to date. Go to system settings and install any pending updates, as outdated OS components can affect Teams performance."
+      },
+      {
+        "title": "Disable Conflicting Software",
+        "content": "Temporarily disable antivirus/firewall or any third-party software that might interfere with Teams. Test if the issue persists after disabling them."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Teams via Command Line",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Command Prompt or Terminal",
+            "content": "Press `Win + R`, type `cmd`, and press Enter (Windows). On macOS, open Terminal."
+          },
+          {
+            "title": "Run Teams Reset Command",
+            "content": "For Windows, run: `cd %localappdata%\\Microsoft\\Teams` followed by `del /s /q *.*` to delete all files. For macOS, run: `rm -rf ~/Library/Application\\ Support/Microsoft/Teams/*`."
+          },
+          {
+            "title": "Restart Teams",
+            "content": "Launch Microsoft Teams again and sign in to check if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T21:52:32.850Z",
+      "updated": "2026-08-02T21:52:32.850Z",
+      "sourceUrl": "https://www.reddit.com/r/MicrosoftTeams/comments/1lfdppe/teams_having_serious_issues_lately",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
