@@ -337858,5 +337858,170 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1785676596064-5",
+    "title": "Fix Common Outlook Issues",
+    "problemDescription": "Outlook crashes, send/receive errors, sync problems, or performance issues due to outdated software, add-ins, or corrupted profiles.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Outlook",
+      "crash",
+      "sync error",
+      "send/receive error",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Update Outlook",
+        "content": "Go to File > Office Account. Select Update Options and click Update Now to ensure you have the latest version."
+      },
+      {
+        "title": "Verify and Repair Account Settings",
+        "content": "Go to File > Account Settings > Account Settings. Select your account and click Repair to automatically fix configuration issues."
+      },
+      {
+        "title": "Start Outlook in Safe Mode",
+        "content": "Press Windows + R, type 'Outlook.exe /safe', and hit Enter. This disables add-ins to check if they are causing the issue."
+      },
+      {
+        "title": "Disable Problematic Add-ins",
+        "content": "In Outlook, go to File > Options > Add-ins. Select COM Add-ins and click Go. Uncheck all add-ins, restart Outlook, and enable them one by one to identify the problematic one."
+      },
+      {
+        "title": "Repair Outlook Installation",
+        "content": "Go to Settings > Apps > Installed Apps. Find Microsoft Office, click Modify, and select Quick Repair. If the issue persists, try Online Repair."
+      },
+      {
+        "title": "Create a New Outlook Profile",
+        "content": "If all else fails, go to Mail settings in the Control Panel and create a new Outlook profile to resolve persistent issues."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-02T13:16:36.064Z",
+      "updated": "2026-08-02T13:16:36.064Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=YrWRv7pGNls",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785676601570-169",
+    "title": "Fix Corrupted Outlook Profile",
+    "problemDescription": "Outlook fails to open, crashes frequently, shows missing data files, or prompts for passwords repeatedly due to a corrupted profile.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Outlook",
+      "corrupted profile",
+      "crashing",
+      "password prompts",
+      "data files"
+    ],
+    "steps": [
+      {
+        "title": "Close Outlook and Check Background Processes",
+        "content": "Ensure Outlook is closed. Right-click the taskbar and open Task Manager. End any running Outlook processes under the 'Processes' tab."
+      },
+      {
+        "title": "Open Mail Settings in Control Panel",
+        "content": "Press `Win + R`, type `control`, and hit Enter. In Control Panel, search for 'Mail' and open the 'Mail (Microsoft Outlook)' settings."
+      },
+      {
+        "title": "Remove the Corrupted Profile",
+        "content": "In the Mail Setup window, click 'Show Profiles'. Select the corrupted profile and click 'Remove'. Confirm the deletion."
+      },
+      {
+        "title": "Create a New Outlook Profile",
+        "content": "Back in the Mail Setup window, click 'Add'. Enter a new profile name (e.g., 'Outlook') and follow the prompts to configure your email account."
+      },
+      {
+        "title": "Set the New Profile as Default",
+        "content": "In the 'Mail' settings, under 'Always use this profile', select the newly created profile from the dropdown menu. Click 'Apply' and then 'OK'."
+      },
+      {
+        "title": "Restart Outlook and Verify",
+        "content": "Open Outlook. It should now start fresh with the new profile. Check for missing data files or crashes to confirm the fix."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-02T13:16:41.570Z",
+      "updated": "2026-08-02T13:16:41.570Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=kHvqBK_E_3M",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785676635160-0",
+    "title": "Fix Outlook Not Opening on Windows PC",
+    "problemDescription": "Outlook fails to launch on a Windows PC, often due to corrupted files, outdated versions, or malware infections.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "not opening",
+      "launch",
+      "windows",
+      "corrupted",
+      "cache",
+      "update",
+      "antivirus"
+    ],
+    "steps": [
+      {
+        "title": "Use Outlook's Built-in Repair Tool",
+        "content": "Open the Control Panel > Programs > Programs and Features. Right-click Microsoft 365 (or Outlook) and select 'Change'. Choose 'Quick Repair' first. If the issue persists, select 'Online Repair' (requires internet). Follow prompts and restart Outlook."
+      },
+      {
+        "title": "Update Outlook to the Latest Version",
+        "content": "Open Outlook. Go to File > Office Account > Update Options > Update Now. Wait for the update to complete, then restart Outlook."
+      },
+      {
+        "title": "Disable Problematic Add-ins",
+        "content": "Open Outlook in Safe Mode (hold Ctrl while launching). If it works, go to File > Options > Add-ins. Disable all add-ins, then re-enable them one by one to identify the problematic one. Restart Outlook normally."
+      },
+      {
+        "title": "Run a Full Antivirus Scan",
+        "content": "Open Windows Security (Windows + I > Update & Security > Windows Security). Navigate to Virus & Threat Protection > Scan Options. Select 'Full Scan' and click 'Scan Now'. Remove any detected threats, restart your PC, and try launching Outlook again."
+      },
+      {
+        "title": "Clear Outlook Cache",
+        "content": "Close Outlook. Press Windows + R, type `%localappdata%\\Microsoft\\Outlook`, and press Enter. Open the 'RoamCache' folder, select all files (Ctrl + A), and delete them (Shift + Delete to bypass Recycle Bin). Restart Outlook to rebuild the cache."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Outlook",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Outlook",
+            "content": "Go to Settings > Apps > Apps & Features. Search for 'Microsoft 365' or 'Outlook', select it, and click 'Uninstall'. Follow the prompts to complete the process."
+          },
+          {
+            "title": "Reinstall Outlook",
+            "content": "Visit the official Microsoft 365 website (https://www.microsoft.com/en-us/microsoft-365/outlook) and download the installer. Run the installer and follow the on-screen instructions to reinstall Outlook."
+          },
+          {
+            "title": "Sign In and Test",
+            "content": "Launch Outlook, sign in with your Microsoft account, and check if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T13:17:15.160Z",
+      "updated": "2026-08-02T13:17:15.160Z",
+      "sourceUrl": "https://www.howtogeek.com/fix-outlook-not-opening-on-windows",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
