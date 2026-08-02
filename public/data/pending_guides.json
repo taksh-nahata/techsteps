@@ -337324,5 +337324,196 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785666623573-750",
+    "title": "Fix Samsung Galaxy S7 Green Screen or Display Issues",
+    "problemDescription": "The screen displays green tint, bands, or is unresponsive, indicating a potential display defect or software-related issue.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung galaxy s7",
+      "green screen",
+      "display issue",
+      "AMOLED",
+      "hard reset"
+    ],
+    "steps": [
+      {
+        "title": "Adjust AMOLED Display Settings",
+        "content": "Go to Settings > Display > Screen mode. Select 'AMOLED Photo' or 'Basic' to check if the green tint or bands are resolved."
+      },
+      {
+        "title": "Perform a Hard Reset",
+        "content": "Press and hold the Power and Volume Down buttons simultaneously for 10-15 seconds to force a reboot. This may temporarily resolve the issue."
+      },
+      {
+        "title": "Check for Hardware Defect",
+        "content": "If the issue persists, the display may be defective. Contact Samsung Support to initiate a repair process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Always-On Display",
+        "type": "Software Optimization",
+        "steps": [
+          {
+            "title": "Turn Off Always-On Display",
+            "content": "Navigate to Settings > Display and disable 'Always-on display' to reduce potential display-related issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T10:30:23.573Z",
+      "updated": "2026-08-02T10:30:23.573Z",
+      "sourceUrl": "https://www.techradar.com/how-to/samsung-galaxy-s7-problems-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785666636644-792",
+    "title": "Enable Adaptive Galaxy AI for Personalized Phone Accessibility",
+    "problemDescription": "Samsung's Galaxy AI aims to eliminate the need for separate accessibility menus by dynamically adapting the phone's interface to individual user needs, including disabilities or changing abilities over time.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "Galaxy AI",
+      "accessibility",
+      "adaptive interface",
+      "Samsung",
+      "personalization"
+    ],
+    "steps": [
+      {
+        "title": "Check Device Compatibility",
+        "content": "Ensure your Samsung Galaxy device supports Galaxy AI features. Compatible models include Galaxy S24 series, Galaxy Z Fold/Flip series, and newer Galaxy A series devices."
+      },
+      {
+        "title": "Update to Latest Software",
+        "content": "Go to Settings > Software Update > Download and Install to ensure your device has the latest firmware and Galaxy AI updates."
+      },
+      {
+        "title": "Enable Galaxy AI Features",
+        "content": "Navigate to Settings > Advanced Features > Galaxy AI and toggle on the adaptive features such as 'Adaptive Display' or 'Personalized Interface'."
+      },
+      {
+        "title": "Customize AI Adaptation Settings",
+        "content": "Go to Settings > Accessibility > Galaxy AI Adaptation and enable options like 'Dynamic Text Scaling', 'Voice Guidance', or 'Context-Aware UI'. Adjust settings based on your specific needs."
+      },
+      {
+        "title": "Test Adaptive Features",
+        "content": "Use your device normally for a few days. Galaxy AI should automatically adjust display, audio, and input methods based on your usage patterns and needs."
+      },
+      {
+        "title": "Provide Feedback for Improvement",
+        "content": "If the AI adaptation isn't meeting your needs, go to Settings > Advanced Features > Galaxy AI > Feedback and report issues or suggest improvements."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Accessibility Setup",
+        "type": "Traditional Workaround",
+        "steps": [
+          {
+            "title": "Access Accessibility Menu",
+            "content": "Go to Settings > Accessibility and manually configure options like 'Screen Reader', 'Magnifier', 'Font Size', or 'Color Adjustments' based on your current needs."
+          },
+          {
+            "title": "Use Bixby Voice Commands",
+            "content": "Enable Bixby Voice in Settings > Advanced Features > Bixby Voice and use voice commands to quickly adjust settings without navigating menus."
+          },
+          {
+            "title": "Install Third-Party Accessibility Apps",
+            "content": "Download apps like 'Big Launcher' or 'Seeing AI' from the Google Play Store to enhance accessibility if Galaxy AI features are unavailable."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T10:30:36.644Z",
+      "updated": "2026-08-02T10:30:36.644Z",
+      "sourceUrl": "https://www.techradar.com/phones/samsung-galaxy-phones/samsungs-dream-galaxy-ai-feature-would-solve-androids-biggest-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785666688674-770",
+    "title": "Fix Windows 10 Wi-Fi Networks Not Showing Up",
+    "problemDescription": "Windows 10 fails to display available Wi-Fi networks despite a working router, often due to driver issues, VPN conflicts, or registry corruption.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 10",
+      "wifi",
+      "networks not showing",
+      "driver update",
+      "vpn conflict",
+      "registry"
+    ],
+    "steps": [
+      {
+        "title": "Reboot the Router",
+        "content": "Turn off your router, wait 30 seconds, then power it back on. This resolves temporary glitches caused by prolonged uptime."
+      },
+      {
+        "title": "Update Wi-Fi Drivers",
+        "content": "Open Device Manager (search for it in the Start menu). Expand 'Network adapters', right-click your Wi-Fi adapter, select 'Update driver', and follow the prompts to install the latest driver."
+      },
+      {
+        "title": "Reset Wi-Fi Adapter Configuration",
+        "content": "Open Command Prompt as Administrator and run: `netcfg -v -u dni_dne`. This resets the Wi-Fi adapter configuration and may restore network visibility."
+      },
+      {
+        "title": "Check VPN Conflicts",
+        "content": "If you use a VPN, temporarily disable it and check if Wi-Fi networks reappear. Update the VPN software or switch to an alternative if the issue persists."
+      },
+      {
+        "title": "Modify Registry (Advanced)",
+        "content": "Open Command Prompt as Administrator and run: `reg delete HKCR\\CLSID\\{988248f3-a1ad-49bf-9170-676cbbc36ba3} /f`. This removes a registry key that may interfere with Wi-Fi network detection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Network Reset (Windows 10)",
+        "type": "Windows Built-in Tool",
+        "steps": [
+          {
+            "title": "Open Network Reset Settings",
+            "content": "Go to Settings > Network & Internet > Status. Click 'Network reset' at the bottom of the page."
+          },
+          {
+            "title": "Reset Network Configuration",
+            "content": "Click 'Reset now' and confirm. This will reinstall network adapters and reset network settings to default. Restart your PC afterward."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Windows Update",
+        "type": "Microsoft Patch",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > Update & Security > Windows Update. Click 'Check for updates' and install any pending updates, especially those related to networking."
+          },
+          {
+            "title": "Restart After Update",
+            "content": "Reboot your PC after installing updates to ensure changes take effect."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T10:31:28.674Z",
+      "updated": "2026-08-02T10:31:28.674Z",
+      "sourceUrl": "https://www.techradar.com/how-to/100-common-windows-10-problems/5",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
