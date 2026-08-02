@@ -339126,5 +339126,180 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785698260005-630",
+    "title": "Fix Black Screen on Samsung Galaxy Phone",
+    "problemDescription": "Samsung Galaxy phone displays a black screen and does not respond to normal button presses or charging.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "black screen",
+      "Samsung Galaxy",
+      "no display",
+      "power issue"
+    ],
+    "steps": [
+      {
+        "title": "Charge the Device",
+        "content": "Connect the phone to a working charger using the original cable. Let it charge for at least 1-2 minutes, even if the screen remains black."
+      },
+      {
+        "title": "Force Restart the Phone",
+        "content": "Press and hold the Volume Down button and the Side (Power) button simultaneously for 15-20 seconds. Release when the Samsung logo appears. This may take longer on some devices."
+      },
+      {
+        "title": "Check Charging Port for Debris",
+        "content": "Unplug the charger. Inspect the charging port for lint or debris. Use a flashlight and carefully clean the port with a dry, soft brush or compressed air. Avoid metal tools."
+      },
+      {
+        "title": "Reconnect and Retry",
+        "content": "Reconnect the charger and attempt to power on the device. If the screen remains black, try a different charger or cable to rule out hardware issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset via Recovery Mode (Last Resort)",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Enter Recovery Mode",
+            "content": "With the phone powered off, press and hold the Volume Up button and the Side (Power) button simultaneously. Release when the Samsung logo appears, then release the buttons when the Recovery Mode screen loads."
+          },
+          {
+            "title": "Navigate and Select Wipe Data",
+            "content": "Use the Volume buttons to navigate to 'Wipe data/factory reset' and press the Side button to select. Confirm the reset by selecting 'Yes'."
+          },
+          {
+            "title": "Reboot the Device",
+            "content": "After the reset completes, select 'Reboot system now'. Note: This will erase all data on the device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T19:17:40.005Z",
+      "updated": "2026-08-02T19:17:40.005Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=pvMoPoiw_vs",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785698285057-693",
+    "title": "Extract Date from Excel Column with Errors",
+    "problemDescription": "Excel data in a column contains errors or split entries (e.g., dates and text). Need to extract valid dates from mixed or erroneous data.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "excel",
+      "date extraction",
+      "data cleaning",
+      "power query",
+      "mixed data"
+    ],
+    "steps": [
+      {
+        "title": "Use Power Query to Clean and Extract Dates",
+        "content": "1. Select your data range (e.g., A2:K8).\n2. Go to **Data** > **Get & Transform Data** > **From Table/Range**.\n3. In Power Query Editor, ensure headers are correct and click **OK**.\n4. In the **Home** tab, click **Advanced Editor** to view/edit the M code.\n5. Modify the `Table.Group` function to filter rows where the `DOD` column contains a valid date (e.g., using `Date.IsInNextNMonths` or `Date.From` logic).\n6. Apply changes and load the cleaned data back to Excel."
+      },
+      {
+        "title": "Check for Dates Using Formulas (Manual Check)",
+        "content": "1. In a new column (e.g., L2), use `=ISNUMBER(SEARCH(\"2020\", H2))` to check if the `DOA` column contains the year 2020 (adjust year as needed).\n2. In another column (e.g., M2), use `=ISNUMBER(SEARCH(\"2020\", I2))` to check the `DOD` column.\n3. Filter for `TRUE` values to identify valid dates. Manually correct errors in the original data."
+      },
+      {
+        "title": "Split and Clean Data (If Dates Are Split)",
+        "content": "1. Use **Text to Columns** (Data tab) to split the column by commas if dates are merged with other text.\n2. Use `=DATEVALUE()` or `=DATE()` to convert text-formatted dates to actual dates.\n3. Replace errors with `#N/A` or blanks for consistency."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use VBA to Extract Dates",
+        "type": "Advanced Workaround",
+        "steps": [
+          {
+            "title": "Write a VBA Macro to Extract Dates",
+            "content": "1. Press `Alt + F11` to open the VBA editor.\n2. Insert a new module and paste the following code:\n```vba\nFunction ExtractDate(cell As Range) As Variant\n    Dim regex As Object\n    Set regex = CreateObject(\"VBScript.RegExp\")\n    regex.Pattern = \"\\d{4}-\\d{2}-\\d{2}\" ' Adjust pattern to match your date format\n    regex.Global = True\n    If regex.Test(cell.Value) Then\n        ExtractDate = regex.Execute(cell.Value)(0)\n    Else\n        ExtractDate = \"No Date\"\n    End If\nEnd Function\n```\n3. Use the function in Excel as `=ExtractDate(H2)` to extract dates from mixed data."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Flash Fill (Excel 2013+)",
+        "type": "Quick Workaround",
+        "steps": [
+          {
+            "title": "Manually Extract Dates Using Flash Fill",
+            "content": "1. In a new column next to your data, type the first valid date you see (e.g., `2020-01-15`).\n2. Press `Ctrl + E` to let Excel auto-fill the rest of the column with similar patterns.\n3. Review and correct any errors manually."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T19:18:05.057Z",
+      "updated": "2026-08-02T19:18:05.057Z",
+      "sourceUrl": "https://superuser.com/questions/1644699/excel-data-extraction-from-column",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785698328882-638",
+    "title": "Fix Windows 11 Screen Flickering Issue When Gaming",
+    "problemDescription": "Windows 11 screen flickers during gaming due to incorrect graphics settings or refresh rate conflicts.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "screen flickering",
+      "gaming",
+      "refresh rate",
+      "graphics settings"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Refresh Rate in Display Settings",
+        "content": "Open Settings > System > Display > Advanced display. Select a lower refresh rate (e.g., 60Hz instead of 144Hz) and apply changes."
+      },
+      {
+        "title": "Set High-Performance Graphics Mode for the Game",
+        "content": "Open Settings > System > Display > Graphics settings. Add the game's executable file (e.g., from Steam library) and set it to 'High performance' mode."
+      },
+      {
+        "title": "Verify Graphics Driver Settings",
+        "content": "Open NVIDIA Control Panel (or AMD Radeon Software) and ensure the game is set to use the dedicated GPU (e.g., GTX 1650 Super)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Hardware Acceleration in Game",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Hardware Acceleration",
+            "content": "Right-click the game's executable > Properties > Compatibility tab. Check 'Disable fullscreen optimizations' and run the game."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update Graphics Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update GPU Drivers",
+            "content": "Download and install the latest drivers for your GPU (NVIDIA/AMD) from the official website."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T19:18:48.882Z",
+      "updated": "2026-08-02T19:18:48.882Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=8nPVo1V-4RQ",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
