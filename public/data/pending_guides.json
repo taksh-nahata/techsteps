@@ -336419,5 +336419,568 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785649899669-483",
+    "title": "Fix Poor Wi-Fi Connection for Smart TV in Remote Location",
+    "problemDescription": "Smart TV in a remote location (e.g., camper) experiences poor Wi-Fi connection despite having a strong download speed (20+ Mbps), leading to buffering and intermittent disconnections.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "smart tv",
+      "wifi extender",
+      "poor connection",
+      "remote location",
+      "buffering",
+      "line of sight"
+    ],
+    "steps": [
+      {
+        "title": "Check Line of Sight and Distance",
+        "content": "Ensure there is a clear line of sight between the Wi-Fi router (or extender) and the Smart TV. Obstacles like walls, trees, or metal structures can degrade signal quality. If the distance is >50 feet, consider relocating the router or extender."
+      },
+      {
+        "title": "Optimize Extender Placement",
+        "content": "Place the Wavlink extender midway between the main router and the camper. Elevate it (e.g., on a pole or roof) to improve signal propagation. Avoid placing it near metal objects or other electronics that may interfere."
+      },
+      {
+        "title": "Switch to 5GHz Band (if available)",
+        "content": "If your extender supports dual-band (2.4GHz and 5GHz), connect the Smart TV to the 5GHz band for better speed and less interference. Note: 5GHz has shorter range but is faster and less congested."
+      },
+      {
+        "title": "Reduce Interference",
+        "content": "Minimize interference by changing the extender's channel to a less crowded one (use a Wi-Fi analyzer app like WiFi Analyzer for Android). Avoid placing the extender near cordless phones, microwaves, or other Wi-Fi networks."
+      },
+      {
+        "title": "Update Firmware and Settings",
+        "content": "Check for firmware updates for both the Wavlink extender and your Smart TV. Ensure the extender is set to 'Access Point' mode (not 'Repeater' mode) for better performance. Disable any QoS (Quality of Service) settings that may throttle bandwidth."
+      },
+      {
+        "title": "Test Connection Speed",
+        "content": "Use a speed test app (e.g., Speedtest by Ookla) on the Smart TV to verify the actual connection speed. If speeds are still poor, the issue may be with the extender's placement or hardware limitations."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Wi-Fi Bridge or Access Point",
+        "type": "Permanent Solution",
+        "steps": [
+          {
+            "title": "Set Up a Dedicated Wi-Fi Bridge",
+            "content": "Purchase a Wi-Fi bridge (e.g., TP-Link TL-WA850RE) or a second router configured as an access point. Place the bridge closer to the camper and connect it to the main router via Ethernet (if possible) or strong Wi-Fi signal."
+          },
+          {
+            "title": "Configure the Bridge",
+            "content": "Set the bridge to the same SSID and password as the main network to allow seamless roaming. Ensure it uses the 5GHz band for better performance."
+          },
+          {
+            "title": "Connect the Smart TV to the Bridge",
+            "content": "Connect the Smart TV to the bridge's network. This should provide a stronger and more stable connection than an extender."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Upgrade to Wi-Fi 6/6E Hardware",
+        "type": "Long-Term Solution",
+        "steps": [
+          {
+            "title": "Replace the Extender with a Wi-Fi 6/6E Router",
+            "content": "Purchase a Wi-Fi 6 or Wi-Fi 6E router (e.g., ASUS RT-AX88U) and place it near the camper. Configure it as an access point to extend the main network. Wi-Fi 6E supports the 6GHz band for less interference."
+          },
+          {
+            "title": "Bridge the Routers (Optional)",
+            "content": "If you have two Wi-Fi 6E routers, configure one as a bridge to the other using the 6GHz band for ultra-fast, low-latency connections."
+          },
+          {
+            "title": "Connect the Smart TV",
+            "content": "Connect the Smart TV to the new router's network. This setup will provide the best performance for streaming and reduce buffering."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Use Ethernet Over Powerline (if wiring is feasible)",
+        "type": "Alternative Wired Solution",
+        "steps": [
+          {
+            "title": "Install Powerline Adapters",
+            "content": "Purchase a pair of Powerline adapters (e.g., TP-Link AV2000). Plug one adapter into an outlet near the main router and connect it via Ethernet. Plug the second adapter near the camper and connect it to the Smart TV via Ethernet."
+          },
+          {
+            "title": "Test the Connection",
+            "content": "Verify the connection speed on the Smart TV. If speeds are sufficient, this method provides a stable, wired-like connection without Wi-Fi interference."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T05:51:39.669Z",
+      "updated": "2026-08-02T05:51:39.669Z",
+      "sourceUrl": "https://superuser.com/questions/1810997/smart-tv-wifi-connection",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785649952672-343",
+    "title": "Fix macOS Networking Time Bomb (49.7-Day TCP Timer Overflow)",
+    "problemDescription": "macOS machines stop responding to new network connections after 49.7 days due to a TCP timer overflow (tcp_now) in the kernel, requiring a reboot to resolve.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "macOS",
+      "networking",
+      "tcp_now",
+      "time bomb",
+      "reboot",
+      "kernel"
+    ],
+    "steps": [
+      {
+        "title": "Reboot the macOS Machine",
+        "content": "Restart the affected macOS device to reset the tcp_now counter and restore normal network functionality. This is the current mitigation until a permanent fix is released."
+      },
+      {
+        "title": "Monitor Uptime to Prevent Recurrence",
+        "content": "Track system uptime and schedule regular reboots (e.g., monthly) to avoid the 49.7-day threshold. Use system logs or third-party tools to monitor uptime."
+      },
+      {
+        "title": "Check for Apple Updates",
+        "content": "Visit 'System Preferences > Software Update' to install any pending macOS updates that may include a fix for the tcp_now overflow issue."
+      },
+      {
+        "title": "Review Network Connections Before Reboot",
+        "content": "If possible, document active network connections or services running on the machine to minimize disruption during the reboot."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable TCP Timestamps (Temporary Workaround)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Terminal",
+            "content": "Launch Terminal on the affected macOS machine."
+          },
+          {
+            "title": "Disable TCP Timestamps",
+            "content": "Run the following command to disable TCP timestamps (may reduce performance but prevents the overflow):\n```sudo sysctl -w net.inet.tcp.rfc1323=0```"
+          },
+          {
+            "title": "Verify Changes",
+            "content": "Confirm the change took effect by running:\n```sysctl net.inet.tcp.rfc1323```\n(Should return `net.inet.tcp.rfc1323: 0`.)"
+          },
+          {
+            "title": "Re-enable After Fix",
+            "content": "Revert the change once Apple releases a permanent fix by running:\n```sudo sysctl -w net.inet.tcp.rfc1323=1```"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T05:52:32.672Z",
+      "updated": "2026-08-02T05:52:32.672Z",
+      "sourceUrl": "https://www.tomshardware.com/software/macos/macos-has-a-49-7-day-networking-time-bomb-built-in-that-only-a-reboot-fixes-comparison-operation-on-unreliable-time-value-stops-machines-dead-in-their-tracks",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785649961634-610",
+    "title": "Fix XG Mobile Connector Durability Issues on ASUS ROG Flow X13",
+    "problemDescription": "The XG Mobile connector on the ASUS ROG Flow X13 is bulky and permanently attached, raising concerns about potential damage to the cable or connector over time.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "ASUS ROG Flow X13",
+      "XG Mobile",
+      "connector",
+      "durability",
+      "cable breakage"
+    ],
+    "steps": [
+      {
+        "title": "Handle the XG Mobile Unit with Care",
+        "content": "Avoid excessive bending or twisting of the XG Mobile connector and cable. Always hold the unit by its body, not the cable or connector, to prevent strain."
+      },
+      {
+        "title": "Use a Protective Case or Sleeve",
+        "content": "Store the ASUS ROG Flow X13 and XG Mobile unit in a padded case or sleeve when not in use to shield the connector from impacts or pressure."
+      },
+      {
+        "title": "Check for Firmware Updates",
+        "content": "Ensure your ASUS ROG Flow X13 and XG Mobile unit have the latest firmware updates to address any known issues with the connector or cable."
+      },
+      {
+        "title": "Contact ASUS Support for Replacement",
+        "content": "If the connector or cable shows signs of wear or damage, contact ASUS support for a replacement unit. Avoid attempting DIY repairs due to the complexity of the connector."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Third-Party Docking Solution",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Research Compatible Docking Stations",
+            "content": "Look for third-party docking solutions that support the ASUS ROG Flow X13 and offer a more durable or flexible connection than the XG Mobile unit."
+          },
+          {
+            "title": "Test Compatibility and Performance",
+            "content": "Before purchasing, verify that the docking station is compatible with your device and meets your performance needs, as some may not support full functionality."
+          },
+          {
+            "title": "Monitor for Wear and Tear",
+            "content": "Regularly inspect the docking station's connectors and cables for signs of damage, and replace them as needed to avoid connectivity issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T05:52:41.634Z",
+      "updated": "2026-08-02T05:52:41.634Z",
+      "sourceUrl": "https://www.tomshardware.com/reviews/asus-rog-flow-x13-xg-mobile-ryzen-9-5980hs",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785649965169-216",
+    "title": "Fix Poor Audio Quality from Front Panel Audio Jack",
+    "problemDescription": "Audio output from front panel audio jacks on a PC case is poor or non-functional, leading to distorted or low-quality sound.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "audio",
+      "front panel",
+      "jack",
+      "distorted sound",
+      "USB DAC"
+    ],
+    "steps": [
+      {
+        "title": "Check Rear Audio Jacks",
+        "content": "Verify if your rear audio jacks include a dedicated 'Headphone' or 'Headset' port. Plug your headphones into this port instead of the front panel jack."
+      },
+      {
+        "title": "Update Audio Drivers",
+        "content": "Open Device Manager (Win + X > Device Manager), expand 'Sound, video, and game controllers', right-click your audio device, and select 'Update driver'. Restart your PC afterward."
+      },
+      {
+        "title": "Enable Front Panel Jack Detection",
+        "content": "In your audio driver settings (e.g., Realtek Audio Console or manufacturer-specific software), ensure 'Enable front panel jack detection' is turned on. If unavailable, manually select the front panel jack as the output device."
+      },
+      {
+        "title": "Use a USB DAC",
+        "content": "If the issue persists, purchase a USB DAC (Digital-to-Analog Converter) and connect your headphones to it. This bypasses the front panel jack entirely."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Front Panel Jack in BIOS",
+        "type": "Advanced Workaround",
+        "steps": [
+          {
+            "title": "Enter BIOS",
+            "content": "Restart your PC and enter BIOS/UEFI (usually by pressing DEL, F2, or F12 during startup)."
+          },
+          {
+            "title": "Disable Front Panel Audio",
+            "content": "Navigate to 'Advanced > Audio' or similar settings and disable the front panel audio jack. Save changes and exit."
+          },
+          {
+            "title": "Test Audio",
+            "content": "Connect your headphones to the rear audio jack and check if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T05:52:45.169Z",
+      "updated": "2026-08-02T05:52:45.169Z",
+      "sourceUrl": "https://www.tomshardware.com/peripherals/gaming-headsets/asus-teams-up-with-hifiman-for-planar-magnetic-rog-kithara-gaming-headset-extremely-comfortable-and-excellent-audio-for-a-price",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785649975429-670",
+    "title": "Fix iOS 26 Battery Drain Issue",
+    "problemDescription": "iPhones running iOS 26 or 26.0.1 experience rapid battery drain, likely due to app or system performance issues.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "battery drain",
+      "iOS 26",
+      "iPhone",
+      "apps",
+      "hard reset"
+    ],
+    "steps": [
+      {
+        "title": "Update All Apps Manually",
+        "content": "Open the App Store, tap your profile icon, and update all pending apps to ensure compatibility with iOS 26."
+      },
+      {
+        "title": "Perform a Hard Reset",
+        "content": "Press and release Volume Up, then Volume Down. Hold the Power button until the Apple logo appears to force a restart."
+      },
+      {
+        "title": "Disable Motion Effects",
+        "content": "Go to Settings > Accessibility > Motion. Enable 'Reduce Motion' and 'Prefer Cross-Fade Transitions' to reduce system animations."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-02T05:52:55.429Z",
+      "updated": "2026-08-02T05:52:55.429Z",
+      "sourceUrl": "https://discussions.apple.com/thread/256153355",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785649977850-652",
+    "title": "Fix iPhone 17 Battery Drain After iOS Update",
+    "problemDescription": "Battery drains rapidly after updating to iOS 26.3, often due to background processes and system optimizations.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "battery drain",
+      "iOS update",
+      "iPhone 17",
+      "background processes"
+    ],
+    "steps": [
+      {
+        "title": "Check Battery Usage",
+        "content": "Open Settings > Battery and review Battery Usage to identify apps consuming excessive power."
+      },
+      {
+        "title": "Adjust Location Services",
+        "content": "Go to Settings > Privacy & Security > Location Services and set unused apps to 'While Using'."
+      },
+      {
+        "title": "Disable Unnecessary Background App Refresh",
+        "content": "Navigate to Settings > General > Background App Refresh and turn off apps you don’t need."
+      },
+      {
+        "title": "Force Restart iPhone",
+        "content": "Perform a force restart to reset background processes: Quickly press Volume Up, then Volume Down, then hold the Side button until the Apple logo appears."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Wait for Stabilization",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Monitor Battery Over Time",
+            "content": "Allow 24-48 hours for iOS to complete background re-indexing and system optimizations. Battery drain should normalize naturally."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T05:52:57.850Z",
+      "updated": "2026-08-02T05:52:57.850Z",
+      "sourceUrl": "https://discussions.apple.com/thread/256255900",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785649984577-681",
+    "title": "Fix iPhone 7 Battery Draining Fast",
+    "problemDescription": "iPhone 7 battery drains abnormally fast, with standby time significantly higher than usage time.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery drain",
+      "iPhone 7",
+      "standby time",
+      "usage time"
+    ],
+    "steps": [
+      {
+        "title": "Backup Your iPhone",
+        "content": "Connect your iPhone to a computer and create a full backup using iTunes to prevent data loss during troubleshooting."
+      },
+      {
+        "title": "Check Battery Usage",
+        "content": "Go to Settings > Battery and review the list of apps consuming the most power. Identify any suspicious or high-usage apps."
+      },
+      {
+        "title": "Delete and Reinstall Suspicious Apps",
+        "content": "If Facebook or other high-drain apps are listed, delete them and reinstall from the App Store to reset their background activity."
+      },
+      {
+        "title": "Restart Your iPhone",
+        "content": "After entering your passcode post-restart, perform a normal restart by holding only the lock button until the power slider appears."
+      },
+      {
+        "title": "Fully Charge the iPhone",
+        "content": "Charge your iPhone to 100% and observe if the battery drain issue persists. Check Settings > Battery to compare standby and usage times."
+      },
+      {
+        "title": "Unplug Charger and Wait",
+        "content": "Turn off your iPhone, unplug the charger, and wait for 5 minutes before plugging it back in to reset charging-related issues."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-02T05:53:04.577Z",
+      "updated": "2026-08-02T05:53:04.577Z",
+      "sourceUrl": "https://discussions.apple.com/thread/7692925",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785650003100-608",
+    "title": "Fix Samsung Galaxy S9+ Common Issues",
+    "problemDescription": "Identifies frequent problems reported by users of the Samsung Galaxy S9 Plus, including battery drain, overheating, and performance lag.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "Samsung Galaxy S9+",
+      "battery drain",
+      "overheating",
+      "performance lag",
+      "common issues"
+    ],
+    "steps": [
+      {
+        "title": "Check for Software Updates",
+        "content": "Go to Settings > Software Update > Download and Install. Ensure your device is running the latest firmware to fix known bugs and performance issues."
+      },
+      {
+        "title": "Restart the Device",
+        "content": "Hold the power button and select 'Restart'. This can resolve temporary glitches causing battery drain or overheating."
+      },
+      {
+        "title": "Close Background Apps",
+        "content": "Swipe up from the bottom of the screen, hold, and release to open Recent Apps. Swipe left or right to close unnecessary apps running in the background."
+      },
+      {
+        "title": "Disable Unused Features",
+        "content": "Turn off features like GPS, Bluetooth, or Wi-Fi when not in use. Go to Settings > Connections and toggle off unused services to save battery."
+      },
+      {
+        "title": "Check Battery Usage",
+        "content": "Navigate to Settings > Device Care > Battery. Review apps consuming the most battery and uninstall or disable them if necessary."
+      },
+      {
+        "title": "Clear Cache Partition",
+        "content": "Turn off the device. Press and hold Volume Up + Bixby + Power buttons to enter Recovery Mode. Use Volume buttons to highlight 'Wipe Cache Partition' and select it with the Power button. Reboot the device."
+      },
+      {
+        "title": "Factory Reset (Last Resort)",
+        "content": "Backup your data. Go to Settings > General Management > Reset > Factory Data Reset. Follow the prompts to reset the device to factory settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Safe Mode to Identify Issues",
+        "type": "Diagnostic",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Hold the power button, then long-press the 'Power off' option. Select 'Safe Mode' to restart the device. This disables third-party apps."
+          },
+          {
+            "title": "Test Device Performance",
+            "content": "Use the device normally in Safe Mode. If issues persist, the problem may be hardware-related. If resolved, a third-party app is likely the cause."
+          },
+          {
+            "title": "Uninstall Problematic Apps",
+            "content": "Exit Safe Mode and uninstall recently installed apps one by one to identify the culprit causing battery drain or overheating."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Replace Battery (If Hardware Issue)",
+        "type": "Hardware Fix",
+        "steps": [
+          {
+            "title": "Check Battery Health",
+            "content": "Use an app like AccuBattery to check battery health. If capacity is below 80%, consider replacing the battery."
+          },
+          {
+            "title": "Visit a Service Center",
+            "content": "Contact Samsung Support or visit an authorized service center to replace the battery professionally."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T05:53:23.100Z",
+      "updated": "2026-08-02T05:53:23.100Z",
+      "sourceUrl": "https://www.quora.com/What-are-some-common-problems-with-the-Samsung-Galaxy-S9-plus",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785650009973-713",
+    "title": "Force Restart Samsung Galaxy S4",
+    "problemDescription": "Samsung Galaxy S4 becomes unresponsive and does not turn off normally.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "Samsung S4",
+      "won't turn off",
+      "force restart",
+      "unresponsive"
+    ],
+    "steps": [
+      {
+        "title": "Perform a Force Restart",
+        "content": "Press and hold the Power button and the Volume Down button simultaneously for 10-15 seconds until the device vibrates and restarts."
+      },
+      {
+        "title": "Remove the Battery (if unresponsive)",
+        "content": "If the force restart does not work, remove the back cover, take out the battery, wait 30 seconds, then reinsert it and power the device back on."
+      },
+      {
+        "title": "Check for Software Issues",
+        "content": "If the device turns off but keeps rebooting, boot into Safe Mode by holding the Power button, then long-pressing the 'Power off' option. If it works fine in Safe Mode, a third-party app may be causing the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset via Recovery Mode",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Boot into Recovery Mode",
+            "content": "Turn off the device, then press and hold the Power button, Volume Up button, and Home button simultaneously until the Samsung logo appears."
+          },
+          {
+            "title": "Navigate to Factory Reset",
+            "content": "Use the Volume buttons to highlight 'wipe data/factory reset' and press the Power button to select it."
+          },
+          {
+            "title": "Confirm and Restart",
+            "content": "Confirm the reset by selecting 'Yes' and wait for the process to complete. The device will reboot automatically."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T05:53:29.973Z",
+      "updated": "2026-08-02T05:53:29.973Z",
+      "sourceUrl": "https://www.quora.com/What-do-I-do-if-my-Samsung-s4-wont-turn-off",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
