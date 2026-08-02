@@ -336058,5 +336058,366 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785636635453-997",
+    "title": "Fix PC Overheating or Slow Performance Issues",
+    "problemDescription": "PC crashes randomly or runs slowly due to overheating, background processes, or malware. Performance degrades over time without clear cause.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "overheating",
+      "slow performance",
+      "PC crash",
+      "background processes",
+      "malware"
+    ],
+    "steps": [
+      {
+        "title": "Check for Overheating",
+        "content": "Monitor your PC's temperature using tools like HWMonitor or SpeedFan. If temperatures exceed safe thresholds (typically above 80°C for CPUs), improve cooling by cleaning vents, adding a laptop cooler, or ensuring proper airflow."
+      },
+      {
+        "title": "Close Unnecessary Background Processes",
+        "content": "Open Task Manager (Ctrl+Shift+Esc), go to the 'Processes' tab, and sort by CPU or RAM usage. End tasks for unnecessary or suspicious processes. Disable startup programs via Task Manager > Startup tab to reduce load."
+      },
+      {
+        "title": "Run On-Demand Malware Scans",
+        "content": "Use tools like Spybot Search & Destroy or Microsoft Safety Scanner to perform a full system scan. Ensure your primary antivirus is updated and run a scan with it as well. Remove any detected threats."
+      },
+      {
+        "title": "Update System and Drivers",
+        "content": "Check for Windows updates (Settings > Update & Security > Windows Update). Update graphics, chipset, and other critical drivers via Device Manager or manufacturer websites."
+      },
+      {
+        "title": "Clean Up Disk Space",
+        "content": "Use Disk Cleanup (type 'Disk Cleanup' in Start menu) to remove temporary files, system cache, and other unnecessary data. Consider using tools like CCleaner for deeper cleaning."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Advanced Troubleshooting for Persistent Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Event Viewer for Errors",
+            "content": "Open Event Viewer (type 'Event Viewer' in Start menu), navigate to 'Windows Logs > System', and look for critical errors around crash times. Research error codes online for specific solutions."
+          },
+          {
+            "title": "Reset Windows Power Plan",
+            "content": "Go to Control Panel > Power Options, select 'High performance' plan, and adjust settings to ensure maximum performance. Reboot the PC afterward."
+          },
+          {
+            "title": "Reinstall Problematic Software",
+            "content": "Uninstall recently installed or problematic software via Control Panel > Programs > Uninstall a program. Reinstall the latest version if needed, or use a different application."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T02:10:35.453Z",
+      "updated": "2026-08-02T02:10:35.453Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/40-ways-to-fix-your-pc-before-you-call-an-expert",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785636644279-380",
+    "title": "Speed Up Windows 7 Startup Time",
+    "problemDescription": "Windows 7 starts slowly due to excessive restore points, display DPI settings, hardware issues, or background settings.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 7",
+      "startup",
+      "slow",
+      "restore points",
+      "DPI",
+      "hard drive",
+      "background"
+    ],
+    "steps": [
+      {
+        "title": "Disable Excessive Restore Points",
+        "content": "Open 'System' in Control Panel > 'System Protection' tab. Select your system drive and click 'Configure'. Reduce the maximum disk space usage for restore points or disable them if not needed."
+      },
+      {
+        "title": "Adjust Display DPI Settings",
+        "content": "Go to 'Control Panel' > 'Display' > 'Settings' tab > 'Advanced settings'. Under the 'General' tab, ensure the DPI setting is set to 'Smaller - 100%' (96 DPI). Apply changes and restart."
+      },
+      {
+        "title": "Check Hard Drive Power Connector",
+        "content": "Power off the PC and open the case. Inspect the SATA power connector for the hard drive. If loose or faulty, switch to a different power connector from the PSU. Reassemble and test startup speed."
+      },
+      {
+        "title": "Change Desktop Background",
+        "content": "Right-click on the desktop > 'Personalize'. Select a photo or solid-color background (avoid plain colors). Apply changes and restart to observe improvements."
+      },
+      {
+        "title": "Run System File Checker",
+        "content": "Open Command Prompt as Administrator and run: `sfc /scannow`. This repairs corrupted system files that may cause slow startup. Restart after completion."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Startup Programs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Configuration",
+            "content": "Press `Win + R`, type `msconfig`, and hit Enter. Go to the 'Startup' tab."
+          },
+          {
+            "title": "Disable Unnecessary Programs",
+            "content": "Uncheck non-essential programs that launch at startup. Click 'Apply' and 'OK'. Restart the PC to see if startup time improves."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update or Replace Hard Drive",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Hard Drive Health",
+            "content": "Use a tool like CrystalDiskInfo to check for errors or failing sectors. If the drive is failing, back up data and consider replacing it with an SSD for faster performance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T02:10:44.279Z",
+      "updated": "2026-08-02T02:10:44.279Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/how-to-start-windows-7-faster",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785636684624-113",
+    "title": "Fix Instagram Followers Count Stuck",
+    "problemDescription": "Instagram follower count is not updating and appears stuck at a specific number.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Instagram",
+      "followers",
+      "count",
+      "stuck",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Force Close and Reopen Instagram",
+        "content": "Close the Instagram app completely (swipe it away from the recent apps menu) and reopen it to refresh the follower count."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your device has a stable internet connection (Wi-Fi or mobile data) to allow Instagram to sync data properly."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "Restart your phone or tablet to clear temporary glitches that may be affecting Instagram's functionality."
+      },
+      {
+        "title": "Clear Instagram Cache (Android)",
+        "content": "Go to Settings > Apps > Instagram > Storage > Clear Cache. This removes temporary files that might be causing issues."
+      },
+      {
+        "title": "Update Instagram App",
+        "content": "Open the App Store (iOS) or Play Store (Android) and update Instagram to the latest version to fix bugs."
+      },
+      {
+        "title": "Log Out and Log Back In",
+        "content": "Sign out of your Instagram account and log back in to refresh your session and sync data."
+      },
+      {
+        "title": "Wait and Check Later",
+        "content": "Instagram may take some time to update follower counts. Wait a few hours and check again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Instagram Web Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Instagram in a Browser",
+            "content": "Go to instagram.com in a web browser (Chrome, Safari, etc.) and log in to your account."
+          },
+          {
+            "title": "Check Follower Count on Web",
+            "content": "View your profile on the web version to see if the follower count updates correctly."
+          },
+          {
+            "title": "Compare with Mobile App",
+            "content": "If the web version shows the correct count, the issue may be with the mobile app. Reinstall Instagram to fix it."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Report the Issue to Instagram",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Go to Instagram Settings",
+            "content": "Open Instagram, tap your profile icon > Menu (three lines) > Settings and privacy > Help."
+          },
+          {
+            "title": "Report the Problem",
+            "content": "Select 'Report a Problem' > 'Something isn't working' and describe the issue (followers stuck)."
+          },
+          {
+            "title": "Wait for Instagram Support",
+            "content": "Instagram may take some time to investigate and resolve the issue. Check back later."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T02:11:24.624Z",
+      "updated": "2026-08-02T02:11:24.624Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=b6QnXWDBiew",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785636688295-65",
+    "title": "Fix Instagram 'Couldn't Load Image' Tap to Retry Error",
+    "problemDescription": "Instagram fails to load images and displays the 'Couldn't Load Image Tap to Retry' error, preventing users from viewing media.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Instagram",
+      "image loading",
+      "tap to retry",
+      "app error",
+      "media"
+    ],
+    "steps": [
+      {
+        "title": "Clear Instagram App Cache",
+        "content": "Go to your device's Settings > Apps > Instagram > Storage > Clear Cache. Restart the app and check if images load."
+      },
+      {
+        "title": "Update Instagram to the Latest Version",
+        "content": "Open the Google Play Store (Android) or App Store (iOS), search for Instagram, and update the app if an update is available."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "Turn off your phone, wait 30 seconds, then turn it back on. Open Instagram and check if the issue persists."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your device is connected to a stable Wi-Fi or mobile data network. Try switching between Wi-Fi and mobile data to test."
+      },
+      {
+        "title": "Reinstall Instagram",
+        "content": "Uninstall Instagram from your device, restart your phone, then reinstall it from the official app store."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable VPN or Proxy",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off VPN/Proxy",
+            "content": "If you're using a VPN or proxy, disable it in your device settings or app. Instagram may block connections from certain VPNs."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Log Out and Log Back In",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Sign Out and Sign In",
+            "content": "Open Instagram, go to your profile > Settings > Log Out. Wait a minute, then log back in and check if images load."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T02:11:28.295Z",
+      "updated": "2026-08-02T02:11:28.295Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=Bx-7k0BQC84",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785636738994-866",
+    "title": "Plex Media Server Not Detecting External NTFS Hard Drive on Ubuntu",
+    "problemDescription": "Plex Media Server fails to recognize files on an external NTFS hard drive, despite Ubuntu detecting and allowing file access. The drive appears as 'External' in Plex but shows no files.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "plex",
+      "external hard drive",
+      "ntfs",
+      "ubuntu",
+      "mount",
+      "fstab"
+    ],
+    "steps": [
+      {
+        "title": "Find the UUID of the External Drive",
+        "content": "Open a terminal and run: `sudo blkid | grep ntfs` to identify the UUID of your NTFS-formatted external drive."
+      },
+      {
+        "title": "Create a Mount Point",
+        "content": "Create a directory to mount the drive: `sudo mkdir /media/ext_NTFS_USB_Drive`"
+      },
+      {
+        "title": "Edit the fstab File",
+        "content": "Open the fstab file for editing: `sudo nano /etc/fstab` (or use `gksu gedit` if GUI is preferred). Add the following line, replacing the UUID with your drive's UUID:\n`UUID=485CBF485CBF3014 /media/ext_NTFS_USB_Drive ntfs-3g permissions,auto 0 0`"
+      },
+      {
+        "title": "Mount the Drive",
+        "content": "Mount the drive using: `sudo mount /media/ext_NTFS_USB_Drive`\nNote: If the drive is already mounted (e.g., via Nautilus), unmount it first using 'Safely Remove Drive' or the eject icon."
+      },
+      {
+        "title": "Set Permissions for Plex",
+        "content": "Navigate to the media folder: `cd /media/`\nSet permissions to allow Plex access: `sudo chmod -R 777 /media/ext_NTFS_USB_Drive`\nRestart Plex Media Server: `sudo systemctl restart plexmediaserver`"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Auto-Mount via Disks Utility (GUI)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Disks Utility",
+            "content": "Search for 'Disks' in Ubuntu's application menu and open it."
+          },
+          {
+            "title": "Select the External Drive",
+            "content": "Choose your external NTFS drive from the left panel."
+          },
+          {
+            "title": "Edit Mount Options",
+            "content": "Click the gear icon (⚙️) and select 'Edit Mount Options'. Toggle 'Automatic Mount Options' to OFF, then enable 'Mount at system startup' and 'Show in user interface'."
+          },
+          {
+            "title": "Apply and Mount",
+            "content": "Click 'OK' to save, then unmount and remount the drive. Verify the mount point in `/media/` and set permissions as in the primary method."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T02:12:18.994Z",
+      "updated": "2026-08-02T02:12:18.994Z",
+      "sourceUrl": "https://askubuntu.com/questions/395291/plex-media-server-wont-find-media-external-hard-drive",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
