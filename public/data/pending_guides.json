@@ -338631,5 +338631,232 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785689973733-628",
+    "title": "Fix Monitor Flashing Off with AMD GPU",
+    "problemDescription": "The main display monitor briefly turns off and on repeatedly when using an AMD GPU, causing display instability.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "AMD GPU",
+      "monitor flashing",
+      "display driver",
+      "DDU",
+      "cable"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall AMD Drivers Using DDU",
+        "content": "Download and run Display Driver Uninstaller (DDU) in Safe Mode. Select 'Clean and Restart' to completely remove AMD GPU drivers. Avoid using the standard uninstaller."
+      },
+      {
+        "title": "Reinstall Latest AMD Drivers",
+        "content": "Download the latest AMD GPU drivers from the official AMD website. Install them using the 'Express Install' option. Restart your PC after installation."
+      },
+      {
+        "title": "Check and Replace Display Cable",
+        "content": "Inspect the cable connecting your monitor to the GPU. Try a different HDMI/DisplayPort cable or port on the GPU. Ensure the cable is securely connected."
+      },
+      {
+        "title": "Test with Another Monitor",
+        "content": "Connect a different monitor to the same GPU port. If the issue persists, the problem is likely with the GPU or drivers. If it resolves, the original monitor may be faulty."
+      },
+      {
+        "title": "Adjust GPU Settings",
+        "content": "Open AMD Radeon Software. Navigate to 'Display' settings and disable features like 'Radeon Chill' or 'Virtual Super Resolution'. Test if the issue persists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Roll Back to Older Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Roll Back AMD Drivers",
+            "content": "Open Device Manager, expand 'Display adapters', right-click your AMD GPU, and select 'Properties'. Go to the 'Driver' tab and click 'Roll Back Driver' if available."
+          },
+          {
+            "title": "Test Stability",
+            "content": "Monitor the display for flashing issues. If resolved, the newer driver may have compatibility issues. Consider reporting the issue to AMD."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Hardware Acceleration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable in Windows Settings",
+            "content": "Go to 'Settings > System > Display > Advanced display'. Click 'Display adapter properties' and disable hardware acceleration under the 'Troubleshoot' tab."
+          },
+          {
+            "title": "Test Display Stability",
+            "content": "Check if the monitor flashing stops. Note that this may reduce performance in some applications."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T16:59:33.733Z",
+      "updated": "2026-08-02T16:59:33.733Z",
+      "sourceUrl": "https://www.reddit.com/r/AMDHelp/comments/113exol/my_main_display_monitor_flashes_off_for_a_brief",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785690020402-321",
+    "title": "Fix Password Manager Autofill Not Working",
+    "problemDescription": "Password manager fails to autofill login credentials in browser forms, often due to permission issues or browser updates.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "password manager",
+      "autofill",
+      "login",
+      "browser permissions",
+      "credentials"
+    ],
+    "steps": [
+      {
+        "title": "Check Browser Permissions",
+        "content": "Open your browser settings and navigate to the site permissions or extensions section. Ensure the password manager extension has permission to access and fill forms on the website."
+      },
+      {
+        "title": "Clear Browser Cache and Cookies",
+        "content": "Go to your browser's settings, clear the cache and cookies, then restart the browser. This often resolves conflicts with autofill functionality."
+      },
+      {
+        "title": "Update Password Manager",
+        "content": "Check for updates in your password manager's settings or app store. Install the latest version to ensure compatibility with your browser."
+      },
+      {
+        "title": "Re-enable Autofill in Password Manager",
+        "content": "Open your password manager's settings and verify that autofill is enabled. Some managers require explicit toggling for each browser."
+      },
+      {
+        "title": "Test on a Different Browser",
+        "content": "Try using the password manager in another browser to isolate whether the issue is browser-specific."
+      },
+      {
+        "title": "Check for Conflicting Extensions",
+        "content": "Disable other browser extensions temporarily to rule out conflicts with the password manager's autofill feature."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Browser Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Browser to Default",
+            "content": "In your browser settings, find the option to reset all settings to default. This will remove extensions and custom settings but may resolve persistent autofill issues."
+          },
+          {
+            "title": "Reinstall Password Manager Extension",
+            "content": "Uninstall the password manager extension, restart your browser, then reinstall it from the official source."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Manual Entry Temporarily",
+        "type": "Temporary Solution",
+        "steps": [
+          {
+            "title": "Copy Credentials Manually",
+            "content": "If autofill fails, manually copy the username and password from your password manager and paste them into the login form."
+          },
+          {
+            "title": "Enable Clipboard Access",
+            "content": "Ensure your device allows clipboard access for the password manager app to facilitate manual entry."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T17:00:20.402Z",
+      "updated": "2026-08-02T17:00:20.402Z",
+      "sourceUrl": "https://www.makeuseof.com/common-password-manager-issues-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785690047778-502",
+    "title": "Common Issues with MacBooks and Potential Solutions",
+    "problemDescription": "Users often hesitate to purchase MacBooks due to reported hardware or software issues, but these can often be addressed with troubleshooting steps.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "MacBook",
+      "hardware issues",
+      "software problems",
+      "troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Identify the Specific Issue",
+        "content": "Determine whether the reported issues are related to hardware (e.g., keyboard, battery, ports) or software (e.g., macOS bugs, performance lag). Check user reviews or forums for recurring complaints."
+      },
+      {
+        "title": "Check for macOS Updates",
+        "content": "Go to 'System Settings' > 'General' > 'Software Update' and install any available updates. Many performance and stability issues are resolved with updates."
+      },
+      {
+        "title": "Reset NVRAM/PRAM",
+        "content": "Shut down the MacBook, then turn it on and immediately press and hold Command (⌘) + Option + P + R for about 20 seconds. Release the keys and let the MacBook restart. This resets certain settings like volume, display resolution, and startup disk selection."
+      },
+      {
+        "title": "Reset SMC (System Management Controller)",
+        "content": "For Intel-based MacBooks: Shut down the MacBook, then press and hold Shift + Control + Option + Power button for 10 seconds. Release all keys and turn on the MacBook. For M1/M2 MacBooks, the SMC is reset automatically during normal restarts."
+      },
+      {
+        "title": "Run Apple Diagnostics",
+        "content": "Shut down the MacBook, then turn it on and immediately press and hold the D key until the diagnostic screen appears. Follow the on-screen instructions to test for hardware issues."
+      },
+      {
+        "title": "Check Battery Health",
+        "content": "Go to 'System Settings' > 'Battery' > 'Battery Health' to check the battery's condition. If the battery health is below 80%, consider replacing it."
+      },
+      {
+        "title": "Test Hardware Components",
+        "content": "Use built-in tools like 'Activity Monitor' to check CPU/GPU usage and 'Disk Utility' to verify disk health. For external hardware issues (e.g., ports, speakers), test with known-working accessories."
+      },
+      {
+        "title": "Contact Apple Support",
+        "content": "If issues persist, visit the Apple Support website or an Apple Store/Authorized Service Provider for professional diagnosis and repair options."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset (Last Resort)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Use Time Machine or another backup method to save all important files and settings."
+          },
+          {
+            "title": "Erase and Reinstall macOS",
+            "content": "Restart the MacBook and hold Command (⌘) + R to enter Recovery Mode. Select 'Disk Utility' to erase the startup disk, then reinstall macOS from the Recovery menu."
+          },
+          {
+            "title": "Restore from Backup",
+            "content": "After reinstalling macOS, use Time Machine or another backup to restore your files and settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T17:00:47.778Z",
+      "updated": "2026-08-02T17:00:47.778Z",
+      "sourceUrl": "https://www.reddit.com/r/laptops/comments/1fe9myo/whats_wrong_with_macbooks",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
