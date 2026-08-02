@@ -339301,5 +339301,488 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1785703632286-725",
+    "title": "Fix Teams/Calendar Sync Between Google Workspace and Microsoft 365",
+    "problemDescription": "Teams calendar invites and RSVP responses fail due to a domain mismatch between Google Workspace (domain.com) and Microsoft 365 (domain.ca). Users cannot properly respond to meeting invites.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "microsoft 365",
+      "google workspace",
+      "teams",
+      "calendar",
+      "domain",
+      "sync"
+    ],
+    "steps": [
+      {
+        "title": "Verify Domain Ownership in Microsoft 365",
+        "content": "Log in to Microsoft 365 Admin Center. Navigate to 'Settings' > 'Domains' and add 'domain.com' as a verified domain. Follow the DNS verification steps provided by Microsoft."
+      },
+      {
+        "title": "Set Primary Email Address in Microsoft 365",
+        "content": "Go to the Microsoft 365 Admin Center. For each user, update their primary email address to use 'domain.com' instead of 'domain.ca'. Ensure this matches the domain used in Teams and calendar invites."
+      },
+      {
+        "title": "Migrate Email from Google Workspace to Microsoft 365",
+        "content": "Use Microsoft 365's email migration tools to transfer all mailboxes from Google Workspace to Microsoft 365. Follow Microsoft's migration guide for step-by-step instructions."
+      },
+      {
+        "title": "Update DNS Records for Microsoft 365",
+        "content": "In your domain registrar's DNS settings, update the MX, SPF, DKIM, and CNAME records to point to Microsoft 365. Microsoft provides a list of required DNS records during setup."
+      },
+      {
+        "title": "Test Teams and Calendar Functionality",
+        "content": "Send a test Teams meeting invite to a user and verify that RSVP responses work correctly. Check calendar sync between Microsoft 365 and Teams."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Keep Email on Google Workspace (Workaround)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Add Domain as Alias in Microsoft 365",
+            "content": "In Microsoft 365 Admin Center, add 'domain.com' as an alias domain. This ensures display consistency but does not resolve primary email mismatches."
+          },
+          {
+            "title": "Configure Forwarding Rules in Google Workspace",
+            "content": "Set up email forwarding rules in Google Workspace to redirect all emails from 'domain.com' to 'domain.ca'. Note that RSVP responses may still not work properly."
+          },
+          {
+            "title": "Manually Sync Calendars",
+            "content": "Use Microsoft 365's calendar sync tools to manually sync calendars between Google Workspace and Microsoft 365. This is a temporary fix and may not be reliable long-term."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T20:47:12.286Z",
+      "updated": "2026-08-02T20:47:12.286Z",
+      "sourceUrl": "https://superuser.com/questions/1679292/connecting-my-domain-with-microsoft-365",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785703636540-285",
+    "title": "Send Message to Private Teams Channel via Workflow",
+    "problemDescription": "Workflows in Microsoft Teams fail to send messages to private channels due to unsupported bot permissions. The Flow bot cannot post to private channels by default.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "microsoft-teams",
+      "workflow",
+      "private-channel",
+      "webhook",
+      "automation"
+    ],
+    "steps": [
+      {
+        "title": "Verify Channel Type",
+        "content": "Confirm whether the target channel is a private channel. Private channels do not support bot-based workflows by default."
+      },
+      {
+        "title": "Check Workflow Run History",
+        "content": "Go to the Teams channel > More Options (⋯) > Workflows > Manage. Select the workflow and click 'Run History' to review failed attempts and error details."
+      },
+      {
+        "title": "Modify Workflow to Post as User",
+        "content": "Edit the workflow in Power Automate (or Microsoft Flow). Change the 'Post As' setting from 'Flow bot' to 'Your User' to bypass private channel restrictions."
+      },
+      {
+        "title": "Reconfigure Webhook Permissions",
+        "content": "Ensure your account has sufficient permissions to post in the private channel. Re-add the webhook connector if necessary."
+      },
+      {
+        "title": "Test the Workflow",
+        "content": "Run the workflow manually to verify it successfully posts the message to the private channel."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Public Channel",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Migrate to a Public Channel",
+            "content": "Create a new public channel in the same team and reconfigure the workflow to target this channel instead of the private one."
+          },
+          {
+            "title": "Update Workflow Settings",
+            "content": "Modify the workflow to use the public channel's webhook URL or connector settings."
+          },
+          {
+            "title": "Test and Verify",
+            "content": "Run the workflow to ensure messages are successfully posted to the public channel."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Graph API for Automation",
+        "type": "Advanced Workaround",
+        "steps": [
+          {
+            "title": "Set Up Microsoft Graph API Access",
+            "content": "Register an application in Azure AD and grant it the 'ChannelMessage.Send' permission for Microsoft Teams."
+          },
+          {
+            "title": "Authenticate and Post via API",
+            "content": "Use the Graph API to programmatically send messages to the private channel using your application's credentials."
+          },
+          {
+            "title": "Integrate with Workflow",
+            "content": "Replace the Teams workflow with a custom solution (e.g., Azure Logic Apps) that uses the Graph API for posting messages."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T20:47:16.540Z",
+      "updated": "2026-08-02T20:47:16.540Z",
+      "sourceUrl": "https://superuser.com/questions/1888955/how-to-create-a-workflow-for-a-teams-channel-in-order-to-send-a-message-to-t",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785703652233-388",
+    "title": "Enable Storage Permission for Windows Remote Desktop App on Android",
+    "problemDescription": "The Windows Remote Desktop app on Android does not allow users to enable storage permissions through the app or system settings, preventing access to local files.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "remote desktop",
+      "storage permission",
+      "app permissions"
+    ],
+    "steps": [
+      {
+        "title": "Check for App Updates",
+        "content": "Open the Google Play Store, search for 'Windows Remote Desktop', and check if an update is available. Install any pending updates."
+      },
+      {
+        "title": "Clear App Cache and Data",
+        "content": "Go to Settings > Apps > Windows Remote Desktop > Storage > Clear Cache and Clear Data. Restart the app and check if the storage permission prompt appears."
+      },
+      {
+        "title": "Reinstall the App",
+        "content": "Uninstall the Windows Remote Desktop app from your device. Reinstall it from the Google Play Store and launch it to see if the storage permission is now accessible."
+      },
+      {
+        "title": "Check System Permissions Manually",
+        "content": "Go to Settings > Apps > Windows Remote Desktop > Permissions. If storage permission is missing, tap 'Additional Permissions' or 'All Permissions' to see if it appears. Enable it if available."
+      },
+      {
+        "title": "Use Alternative File Transfer Methods",
+        "content": "If storage permission remains unavailable, use alternative methods like OneDrive, Google Drive, or email to transfer files between your Android device and the remote PC."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use ADB to Grant Permissions",
+        "type": "Advanced Workaround",
+        "steps": [
+          {
+            "title": "Enable Developer Options",
+            "content": "Go to Settings > About Phone > tap 'Build Number' 7 times to enable Developer Options."
+          },
+          {
+            "title": "Enable USB Debugging",
+            "content": "Go to Settings > Developer Options > enable 'USB Debugging'."
+          },
+          {
+            "title": "Connect to Computer",
+            "content": "Connect your Android device to a computer via USB. Ensure you have ADB (Android Debug Bridge) installed on your computer."
+          },
+          {
+            "title": "Run ADB Command",
+            "content": "Open a command prompt or terminal on your computer and run: `adb shell pm grant com.microsoft.rdcapp android.permission.READ_EXTERNAL_STORAGE` and `adb shell pm grant com.microsoft.rdcapp android.permission.WRITE_EXTERNAL_STORAGE`."
+          },
+          {
+            "title": "Restart the App",
+            "content": "Restart the Windows Remote Desktop app and check if storage permissions are now enabled."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T20:47:32.233Z",
+      "updated": "2026-08-02T20:47:32.233Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/android-windows-remote-desktop-app-permissions/15632901-537b-4fe4-a2dc-26b648ffa362",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785703656895-306",
+    "title": "Fix Microsoft Authenticator Battery Drain on Android",
+    "problemDescription": "Microsoft Authenticator app is consuming 15-25% of the device's battery, causing rapid battery drain despite battery optimization being enabled.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "microsoft authenticator",
+      "battery drain",
+      "android",
+      "app optimization"
+    ],
+    "steps": [
+      {
+        "title": "Check Battery Optimization Settings",
+        "content": "Go to Settings > Apps > Microsoft Authenticator > Battery > Ensure 'Optimize battery usage' is turned ON. If already enabled, proceed to the next step."
+      },
+      {
+        "title": "Disable Background Data Usage",
+        "content": "Go to Settings > Apps > Microsoft Authenticator > Mobile data & Wi-Fi > Disable 'Allow background data usage'."
+      },
+      {
+        "title": "Clear App Cache and Data",
+        "content": "Go to Settings > Apps > Microsoft Authenticator > Storage > Clear Cache and Clear Data. Reopen the app and sign in again."
+      },
+      {
+        "title": "Disable Push Notifications (Temporarily)",
+        "content": "Go to Settings > Apps > Microsoft Authenticator > Notifications > Disable 'Show notifications'. Check if battery drain reduces. Re-enable if needed."
+      },
+      {
+        "title": "Check for App Updates",
+        "content": "Open Google Play Store > Search for 'Microsoft Authenticator' > Update the app if an update is available."
+      },
+      {
+        "title": "Restart Device in Safe Mode",
+        "content": "Restart your phone in Safe Mode to check if a third-party app is causing the issue. If battery drain stops, uninstall recently installed apps one by one."
+      },
+      {
+        "title": "Factory Reset (Last Resort)",
+        "content": "Backup your data and perform a factory reset if the issue persists. Reinstall apps one by one to identify the culprit."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Battery Optimization for Authenticator (Alternative)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Battery Optimization via ADB",
+            "content": "Enable Developer Options on your phone (Settings > About phone > Tap 'Build number' 7 times). Connect your phone to a computer, open Command Prompt/Terminal, and run: `adb shell dumpsys deviceidle whitelist +com.azure.authenticator`. This prevents Android from optimizing the app aggressively."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Third-Party Battery Optimizer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Battery Optimization App",
+            "content": "Download a reputable battery optimizer app (e.g., AccuBattery) from the Play Store. Use it to whitelist Microsoft Authenticator and prevent aggressive optimization."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T20:47:36.895Z",
+      "updated": "2026-08-02T20:47:36.895Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/all/microsoft-authenticator-android-battery-drain/3bd89285-39cd-42d0-9a71-7a709da72eb9",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785703678533-556",
+    "title": "Fix Google Chrome Black Screen Issue",
+    "problemDescription": "Google Chrome causes intermittent black screen on Windows systems, often linked to GPU rendering or corrupted files.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "black screen",
+      "GPU",
+      "corrupted files",
+      "extensions"
+    ],
+    "steps": [
+      {
+        "title": "Disable Hardware Acceleration in Chrome",
+        "content": "1. Open Google Chrome. 2. Click the three-dot menu (⋮) > Settings. 3. Go to 'System' and toggle off 'Use hardware acceleration when available'. 4. Restart Chrome."
+      },
+      {
+        "title": "Remove Suspicious Extensions",
+        "content": "1. Open Chrome and go to 'chrome://extensions'. 2. Disable all extensions. 3. Restart Chrome and check if the issue persists. 4. Re-enable extensions one by one to identify the culprit."
+      },
+      {
+        "title": "Reinstall Google Chrome",
+        "content": "1. Uninstall Chrome via 'Control Panel > Programs > Uninstall a program'. 2. Download the latest version from [google.com/chrome](https://www.google.com/chrome/). 3. Install Chrome and restart your PC."
+      },
+      {
+        "title": "Run Windows System File Checker (SFC) and DISM",
+        "content": "1. Open Command Prompt as Administrator. 2. Run 'sfc /scannow' and wait for completion. 3. Run 'DISM /Online /Cleanup-Image /RestoreHealth'. 4. Restart your PC."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Chrome Command-Line Flag",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable GPU via Shortcut",
+            "content": "1. Right-click the Chrome desktop shortcut. 2. Select 'Properties'. 3. In the 'Target' field, add ' --disable-gpu' at the end (e.g., '\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --disable-gpu'). 4. Click 'Apply' and restart Chrome."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Switch to Alternative Browser",
+        "type": "Permanent Solution",
+        "steps": [
+          {
+            "title": "Install and Use Microsoft Edge",
+            "content": "1. Download and install Microsoft Edge from [microsoft.com/edge](https://www.microsoft.com/edge). 2. Set Edge as your default browser. 3. Uninstall Google Chrome if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T20:47:58.533Z",
+      "updated": "2026-08-02T20:47:58.533Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/google-chrome-causing-black-screen.3876247",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785703681592-220",
+    "title": "Stop Chrome from Going Back a Page When Clicking History",
+    "problemDescription": "Chrome automatically navigates back to the previous page when clicking a specific page from the browser history.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "Chrome",
+      "browser history",
+      "navigation",
+      "back button",
+      "cache"
+    ],
+    "steps": [
+      {
+        "title": "Clear Chrome Cache and Cookies",
+        "content": "Open Chrome, click the three-dot menu > Settings > Privacy and security > Clear browsing data. Select 'All time' for the time range, check 'Cookies and other site data' and 'Cached images and files', then click 'Clear data'. Restart Chrome and test the issue."
+      },
+      {
+        "title": "Reset Chrome Settings",
+        "content": "Go to Chrome Settings > Reset settings > Restore settings to their original defaults > Reset settings. Confirm and restart Chrome. This will reset homepage, search engine, and pinned tabs to default."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 3: Reinstall Chrome",
+        "type": "Nuclear Option",
+        "steps": [
+          {
+            "title": "Uninstall Chrome",
+            "content": "Go to Control Panel > Programs > Uninstall a program, select Google Chrome, and click Uninstall. Follow the prompts to complete the process."
+          },
+          {
+            "title": "Download and Reinstall Chrome",
+            "content": "Visit https://www.google.com/chrome/ to download the latest version of Chrome. Run the installer and follow the on-screen instructions to reinstall. Sign in and test the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T20:48:01.592Z",
+      "updated": "2026-08-02T20:48:01.592Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/how-do-i-stop-chrome-going-back-a-page-when-i-click-on-a-particular-page-from-my-web-history.3871282",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785703686755-985",
+    "title": "Fix Chrome Crashes When Launching Links from Other Apps",
+    "problemDescription": "Google Chrome crashes immediately when attempting to open a link from another application, such as an email client or document.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "Chrome",
+      "crash",
+      "link",
+      "external application",
+      "MSI Afterburner"
+    ],
+    "steps": [
+      {
+        "title": "Close MSI Afterburner",
+        "content": "MSI Afterburner's overlay or monitoring features can interfere with Chrome's process handling. Fully close the MSI Afterburner application and its related processes (e.g., RTSS.exe) from the system tray."
+      },
+      {
+        "title": "Check Reliability History for Errors",
+        "content": "Press `Win + X` and select 'Event Viewer'. Navigate to 'Windows Logs > System' and look for errors or warnings around the time of the Chrome crash. Note any error codes or messages related to Chrome or MSI Afterburner."
+      },
+      {
+        "title": "Update Chrome and GPU Drivers",
+        "content": "Ensure Chrome is updated to the latest version via `chrome://settings/help`. Also, update your GPU drivers (NVIDIA, AMD, or Intel) from the manufacturer's website to resolve potential compatibility issues."
+      },
+      {
+        "title": "Disable Hardware Acceleration in Chrome",
+        "content": "Open Chrome, go to `chrome://settings/system`, and toggle off 'Use hardware acceleration when available'. Restart Chrome and test opening links again."
+      },
+      {
+        "title": "Reset Chrome Settings",
+        "content": "Go to `chrome://settings/reset` and click 'Restore settings to their original defaults'. This will reset Chrome without deleting bookmarks or passwords. Restart your computer afterward."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Chrome",
+        "type": "Clean Reinstall",
+        "steps": [
+          {
+            "title": "Uninstall Chrome",
+            "content": "Go to 'Control Panel > Programs > Uninstall a program', select Google Chrome, and click 'Uninstall'. Follow the prompts to remove it completely."
+          },
+          {
+            "title": "Delete Chrome Data Folders",
+            "content": "Navigate to `%LOCALAPPDATA%\\Google\\Chrome` and `%APPDATA%\\Google\\Chrome` in File Explorer. Delete the 'User Data' folder to ensure a clean slate."
+          },
+          {
+            "title": "Reinstall Chrome",
+            "content": "Download the latest version of Chrome from [google.com/chrome](https://www.google.com/chrome/) and install it. Restart your computer and test opening links."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Third-Party Extensions",
+        "type": "Extension Conflict",
+        "steps": [
+          {
+            "title": "Open Chrome Extensions Page",
+            "content": "Type `chrome://extensions` in the Chrome address bar and press Enter."
+          },
+          {
+            "title": "Disable All Extensions",
+            "content": "Toggle off all extensions one by one and test opening a link after each disable. Identify if a specific extension is causing the crash."
+          },
+          {
+            "title": "Re-enable Extensions Selectively",
+            "content": "Once the problematic extension is identified, either update it or remove it permanently. Re-enable the remaining extensions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T20:48:06.755Z",
+      "updated": "2026-08-02T20:48:06.755Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/chrome-crashes-when-i-launch-a-link-from-another-application.3528387",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
