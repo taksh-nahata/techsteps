@@ -340159,5 +340159,313 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1785711118821-280",
+    "title": "Check if Pixel 6 Pro is Rooted via Bootloader Status",
+    "problemDescription": "Determine if a Pixel 6 Pro is rooted by checking the bootloader lock status, especially when developer options are unavailable.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "rooted",
+      "bootloader",
+      "unlocked",
+      "pixel 6 pro",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Check Bootloader Lock Status",
+        "content": "Power off the Pixel 6 Pro. Hold the Volume Down and Power buttons simultaneously to enter Fastboot mode. Look for the 'Device State' or 'Lock State' field. If it shows 'locked', the device is not rooted. If it shows 'unlocked', the device is likely rooted."
+      },
+      {
+        "title": "Verify Bootloader Warning Screen",
+        "content": "Power on the phone normally. If you see a warning screen about an unlocked bootloader for approximately 3 seconds during startup, this confirms the bootloader is unlocked, indicating the device may be rooted."
+      },
+      {
+        "title": "Screenshot Bootloader Status",
+        "content": "While in Fastboot mode, take a screenshot of the bootloader status screen. This can be shared with the bank or support teams to confirm the device's security status."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use ADB Commands (Advanced)",
+        "type": "Advanced Method",
+        "steps": [
+          {
+            "title": "Enable USB Debugging",
+            "content": "Go to Settings > About Phone > tap 'Build Number' 7 times to enable Developer Options. Then, enable 'USB Debugging' in Developer Options."
+          },
+          {
+            "title": "Connect to Computer",
+            "content": "Connect the Pixel 6 Pro to a computer via USB. Open a command prompt or terminal and run 'adb devices' to ensure the device is detected."
+          },
+          {
+            "title": "Check Bootloader Status via ADB",
+            "content": "Run the command 'adb reboot bootloader' to enter Fastboot mode. Then run 'fastboot getvar unlocked' or 'fastboot flashing get_unlock_ability'. If the output is '1', the bootloader is unlocked (likely rooted). If '0', it is locked (not rooted)."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Third-Party Apps (Less Reliable)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download a Root Checker App",
+            "content": "Download a reputable root checker app from the Play Store (e.g., 'Root Checker' or 'Magisk'). Install and open the app."
+          },
+          {
+            "title": "Run Root Check",
+            "content": "Follow the app's instructions to check for root access. Note that some apps may give false positives or negatives, especially on newer Android versions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T22:51:58.821Z",
+      "updated": "2026-08-02T22:51:58.821Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/256705/can-i-check-if-my-phone-is-rooted-no-dev-options-with-pixel-6pro",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785711123463-798",
+    "title": "Fix eSIM Compatibility Issues on Google Pixel",
+    "problemDescription": "Google Pixel device fails to activate eSIM due to network or device compatibility restrictions, despite claims on the network's website.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "eSIM",
+      "Google Pixel",
+      "network compatibility",
+      "Android",
+      "carrier restrictions"
+    ],
+    "steps": [
+      {
+        "title": "Verify Device eSIM Support",
+        "content": "Check if your Google Pixel model supports eSIM. Go to Settings > Network & internet > SIMs > Add SIM. If the option is missing, your device may not support eSIM."
+      },
+      {
+        "title": "Confirm Network eSIM Support",
+        "content": "Contact your carrier (e.g., Red-by-SFR) to confirm if they support eSIM activation for your specific Pixel model. Some carriers restrict eSIM to newer devices."
+      },
+      {
+        "title": "Update Device Software",
+        "content": "Ensure your Pixel is running the latest Android version. Go to Settings > System > System update. Outdated software may lack eSIM support."
+      },
+      {
+        "title": "Manual eSIM Activation",
+        "content": "If the carrier's website fails, request an eSIM activation code from the carrier's customer support. Use the code manually via Settings > Network & internet > SIMs > Add SIM > Download a SIM instead of a QR code."
+      },
+      {
+        "title": "Factory Reset (Last Resort)",
+        "content": "If all else fails, back up your data and perform a factory reset. This may resolve software conflicts but will erase all data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Physical SIM as a Temporary Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Request a Physical SIM",
+            "content": "Ask your carrier to provide a physical SIM card compatible with your Pixel model."
+          },
+          {
+            "title": "Activate the Physical SIM",
+            "content": "Insert the physical SIM and follow the carrier's activation instructions."
+          },
+          {
+            "title": "Contact Carrier for eSIM Transfer",
+            "content": "Once the physical SIM is active, request the carrier to transfer your service to an eSIM."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T22:52:03.463Z",
+      "updated": "2026-08-02T22:52:03.463Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/263524/esim-compatibility-between-network-and-device",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785711132953-964",
+    "title": "Fix Zoom Call Issues (Freezing, Echo, No Audio/Video)",
+    "problemDescription": "Zoom calls experience freezing video, echoing audio, or no connection due to service outages, outdated software, or internet issues.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "video call",
+      "freezing",
+      "echo",
+      "no audio",
+      "no video",
+      "internet"
+    ],
+    "steps": [
+      {
+        "title": "Check Zoom's Service Status",
+        "content": "Visit Zoom's Service Status page (https://status.zoom.us) to verify if Zoom's servers are operational. If any component (e.g., meetings, cloud recording) is down, wait for Zoom to resolve the issue."
+      },
+      {
+        "title": "Update Zoom to the Latest Version",
+        "content": "Download and install the latest version of Zoom from the official Zoom Download Center (https://zoom.us/download). Ensure Windows 10 and its drivers are also up-to-date."
+      },
+      {
+        "title": "Use the Zoom Desktop Client Instead of Browser",
+        "content": "If you're using the web version of Zoom, switch to the desktop client for better reliability and features. Download it from the Zoom Download Center."
+      },
+      {
+        "title": "Whitelist Zoom Emails",
+        "content": "Add no-reply@zoom.us to your email whitelist to prevent Zoom emails (e.g., meeting invites) from being marked as spam. If issues persist, whitelist Zoom's IP addresses listed on their support page."
+      },
+      {
+        "title": "Check and Improve Internet Connection",
+        "content": "Close background apps or downloads that may consume bandwidth. Test your internet speed and ensure no other devices are hogging the connection (e.g., streaming services). Consider using a wired connection for stability."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Zoom Audio and Video Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Audio Enhancements",
+            "content": "Go to Zoom settings > Audio > Advanced and disable 'Echo cancellation' or 'Automatically adjust microphone volume' to reduce echo or audio issues."
+          },
+          {
+            "title": "Switch to a Different Audio Device",
+            "content": "In Zoom settings > Audio, select a different microphone or speaker from the dropdown menu to test for hardware compatibility issues."
+          },
+          {
+            "title": "Lower Video Quality",
+            "content": "In Zoom settings > Video, reduce the video quality or turn off HD to improve performance on weak connections."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Restart Devices and Reinstall Zoom",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart Your Computer and Router",
+            "content": "Reboot your computer and router to clear temporary glitches affecting Zoom performance."
+          },
+          {
+            "title": "Reinstall Zoom",
+            "content": "Uninstall Zoom, restart your computer, and reinstall the latest version from the official website."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T22:52:12.953Z",
+      "updated": "2026-08-02T22:52:12.953Z",
+      "sourceUrl": "https://www.makeuseof.com/common-zoom-issues-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785711195750-8",
+    "title": "Fix WhatsApp Audio Call Connection Issues",
+    "problemDescription": "WhatsApp audio calls fail to connect or drop frequently, while regular cellular calls work fine. The issue persists across multiple contacts and regions.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "audio call",
+      "connection",
+      "dropped calls",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your device has a stable Wi-Fi or mobile data connection. Test by opening a webpage or streaming a video."
+      },
+      {
+        "title": "Restart WhatsApp",
+        "content": "Close the WhatsApp app completely (force close if necessary) and reopen it. This can resolve temporary glitches."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "Reboot your smartphone to clear background processes and refresh network settings."
+      },
+      {
+        "title": "Update WhatsApp",
+        "content": "Go to the App Store (iOS) or Play Store (Android) and update WhatsApp to the latest version. Bug fixes are often included in updates."
+      },
+      {
+        "title": "Check WhatsApp Server Status",
+        "content": "Visit [WhatsApp Status Page](https://www.whatsapp.com/status) or third-party sites like [Downdetector](https://downdetector.com/status/whatsapp/) to confirm no ongoing service outages."
+      },
+      {
+        "title": "Clear WhatsApp Cache (Android Only)",
+        "content": "Go to Settings > Apps > WhatsApp > Storage > Clear Cache. This removes temporary files that may cause issues."
+      },
+      {
+        "title": "Reinstall WhatsApp",
+        "content": "Uninstall WhatsApp, restart your device, and reinstall it from the official app store. This ensures a clean installation."
+      },
+      {
+        "title": "Check Background App Refresh (iOS)",
+        "content": "Go to Settings > General > Background App Refresh and ensure WhatsApp is enabled. This allows the app to maintain connections."
+      },
+      {
+        "title": "Disable VPN or Proxy",
+        "content": "If you’re using a VPN or proxy, disable it temporarily as it may interfere with WhatsApp’s servers."
+      },
+      {
+        "title": "Contact WhatsApp Support",
+        "content": "If the issue persists, report the problem via WhatsApp’s in-app support or visit [WhatsApp Help Center](https://faq.whatsapp.com/)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Switch Network Type",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch Between Wi-Fi and Mobile Data",
+            "content": "Toggle between Wi-Fi and mobile data during the call to see if the connection stabilizes. Weak signals can cause drops."
+          },
+          {
+            "title": "Use Airplane Mode Trick",
+            "content": "Enable Airplane Mode for 10 seconds, then disable it. This refreshes your network connection without a full reboot."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset Network Settings",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Reset Network Settings (iOS)",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings. Note: This will erase saved Wi-Fi passwords."
+          },
+          {
+            "title": "Reset Network Settings (Android)",
+            "content": "Go to Settings > System > Reset Options > Reset Wi-Fi, Mobile & Bluetooth. Confirm and restart your device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-02T22:53:15.750Z",
+      "updated": "2026-08-02T22:53:15.750Z",
+      "sourceUrl": "https://apps.apple.com/us/app/whatsapp-messenger/id310633997",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
