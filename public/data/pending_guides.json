@@ -342350,5 +342350,468 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1785782851318-301",
+    "title": "Fix Printers Not Visible in Microsoft Excel",
+    "problemDescription": "Microsoft Excel does not display available printers, preventing print operations.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "excel",
+      "visibility",
+      "print spooler",
+      "registry"
+    ],
+    "steps": [
+      {
+        "title": "Grant Full Permissions to Printer Registry Keys",
+        "content": "1. Press `Win + R`, type `regedit`, and press Enter to open the Registry Editor.\n2. Navigate to `HKEY_CURRENT_USER\\Software\\Microsoft\\Windows NT`.\n3. Right-click the `Devices`, `Printer Ports`, and `Windows` folders one by one.\n4. Select **Permissions**, then click **Advanced**.\n5. Ensure your user account has **Full Control** permissions. If not, add it and apply changes.\n6. Click **OK** to save permissions.\n7. Restart your computer.\n8. Reinstall the printer via **Settings > Devices > Printers & Scanners** (Add a printer)."
+      },
+      {
+        "title": "Restart the Print Spooler Service",
+        "content": "1. Press `Win + R`, type `services.msc`, and press Enter.\n2. Locate **Print Spooler** in the list.\n3. Right-click it and select **Restart**.\n4. Ensure the startup type is set to **Automatic** (double-click the service to verify).\n5. Try printing or checking printer visibility in Excel again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Delete and Recreate User Profile (Windows XP/Older Systems)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete and Recreate User Profile",
+            "content": "1. Open **My Computer** > **Manage** (or press `Win + R`, type `compmgmt.msc`, and press Enter).\n2. Go to **Local Users and Groups** > **Users**.\n3. Right-click your user profile and select **Delete**.\n4. Restart your computer.\n5. Log in to create a new user profile with the same name.\n6. Reinstall the printer and check visibility in Excel."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall Printer Drivers",
+        "type": "Quick Fix",
+        "steps": [
+          {
+            "title": "Reinstall Printer Drivers",
+            "content": "1. Open **Settings** > **Devices** > **Printers & Scanners**.\n2. Select your printer and click **Remove device**.\n3. Download the latest drivers from the printer manufacturer's website.\n4. Reconnect the printer via USB or add it via Wi-Fi/Ethernet.\n5. Test printer visibility in Excel."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T18:47:31.318Z",
+      "updated": "2026-08-03T18:47:31.318Z",
+      "sourceUrl": "https://superuser.com/questions/544376/printers-not-visible-in-microsoft-excel",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785782856889-346",
+    "title": "Add Network Printer as Local Printer in Windows 7",
+    "problemDescription": "Unable to add a network printer using standard methods due to group policies or restrictions. Requires creating a TCP/IP port for local printer setup.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 7",
+      "network printer",
+      "local printer",
+      "TCP/IP port",
+      "add printer"
+    ],
+    "steps": [
+      {
+        "title": "Open Devices and Printers",
+        "content": "Click Start > Devices and Printers."
+      },
+      {
+        "title": "Start Adding a Printer",
+        "content": "Click 'Add a printer' at the top of the window."
+      },
+      {
+        "title": "Select Local Printer Setup",
+        "content": "Choose 'Add a local printer' and click 'Next'."
+      },
+      {
+        "title": "Create a New Port",
+        "content": "Select 'Create a new port', choose 'Local Port' for the Port Type, and click 'Next'."
+      },
+      {
+        "title": "Enter Network Printer Path",
+        "content": "For Port Name, enter the network path to the printer in the format: `\\computer_name\network_printer` or `\\IP_address\network_printer`. Example: `\\dellpc\bpprinter`. Click 'Next'."
+      },
+      {
+        "title": "Select Printer Driver",
+        "content": "Select the printer model from the list or use a generic driver if the exact model isn't available. Click 'Next'."
+      },
+      {
+        "title": "Complete Printer Setup",
+        "content": "Follow the remaining prompts to complete the printer setup. Name the printer if prompted and set sharing preferences if needed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use TCP/IP Port Directly",
+        "type": "Alternative Solution",
+        "steps": [
+          {
+            "title": "Open Add Printer Dialog",
+            "content": "Click Start > Devices and Printers > Add a printer."
+          },
+          {
+            "title": "Select Network Printer Option",
+            "content": "Choose 'Add a network, wireless or Bluetooth printer' and click 'Next'."
+          },
+          {
+            "title": "Use Printer by IP Address",
+            "content": "If the printer is not auto-detected, click 'The printer that I want isn't listed'."
+          },
+          {
+            "title": "Add Printer by IP Address",
+            "content": "Select 'Add a printer using a TCP/IP address or hostname' and click 'Next'."
+          },
+          {
+            "title": "Enter Printer IP or Hostname",
+            "content": "Enter the printer's IP address or hostname. Ensure 'Query the printer and automatically select the driver' is checked if supported. Click 'Next'."
+          },
+          {
+            "title": "Select Printer Driver",
+            "content": "Choose the appropriate printer driver from the list or install it manually. Click 'Next' to complete the setup."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T18:47:36.889Z",
+      "updated": "2026-08-03T18:47:36.889Z",
+      "sourceUrl": "https://superuser.com/questions/899808/add-network-printer-as-a-local-printer",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785782894625-701",
+    "title": "Access Windows 11 Advanced Startup Options to Fix Boot Issues",
+    "problemDescription": "Windows 11 fails to boot properly and you need to access Advanced Startup Options to troubleshoot or recover the system.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "advanced startup",
+      "boot issues",
+      "recovery",
+      "safe mode"
+    ],
+    "steps": [
+      {
+        "title": "Force Enter Recovery Environment (No Installation Media)",
+        "content": "Turn on your PC. As soon as the Dell logo disappears and the blue Windows logo appears, press and hold the power button to shut it down. Repeat this process two more times. On the third restart, your device will automatically enter the Windows Recovery Environment."
+      },
+      {
+        "title": "Navigate to Advanced Startup Options",
+        "content": "From the recovery screen, select 'Troubleshoot' > 'Advanced options' > 'Startup Settings' > 'Restart'. After restarting, you can choose from various startup modes like Safe Mode, Safe Mode with Networking, or Safe Mode with Command Prompt."
+      },
+      {
+        "title": "Access Advanced Startup from Login Screen",
+        "content": "At the login screen, click the power icon in the lower right corner. Hold down the Shift key and click 'Restart'. This will directly boot your PC into the Windows Recovery Environment."
+      },
+      {
+        "title": "Use Windows Settings (If System is Bootable)",
+        "content": "Open 'Settings' > 'System' > 'Recovery'. Under 'Advanced startup', click 'Restart now'. After rebooting, select 'Troubleshoot' > 'Advanced options' to access startup settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Installation Media",
+        "type": "Official Solution",
+        "steps": [
+          {
+            "title": "Boot from Installation Media",
+            "content": "Insert a Windows 11 installation USB or DVD and boot from it. On the setup screen, click 'Next' > 'Repair your computer'."
+          },
+          {
+            "title": "Access Recovery Environment",
+            "content": "Select 'Troubleshoot' > 'Advanced options' to access startup settings, system restore, command prompt, or other recovery tools."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T18:48:14.625Z",
+      "updated": "2026-08-03T18:48:14.625Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=ggRRwbw42T8",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785782901135-880",
+    "title": "Fix Windows Update Causing Boot or Performance Issues",
+    "problemDescription": "A recent Windows update is causing systems to fail booting or experience performance degradation. Users need to uninstall the problematic update and temporarily pause updates.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows update",
+      "boot failure",
+      "performance issues",
+      "uninstall update",
+      "pause updates"
+    ],
+    "steps": [
+      {
+        "title": "Boot into Safe Mode (if system won't start normally)",
+        "content": "Restart your PC and repeatedly press F8 (or Shift + Restart on Windows 10/11) to enter Advanced Startup. Select 'Safe Mode with Networking' to access the system."
+      },
+      {
+        "title": "Uninstall the Problematic Update",
+        "content": "Go to Settings > Windows Update > Update History > Uninstall Updates. Locate the most recent problematic update (e.g., KBxxxxxxx) and click 'Uninstall'. Restart your PC."
+      },
+      {
+        "title": "Pause Updates Temporarily",
+        "content": "Go to Settings > Windows Update > Advanced options. Under 'Pause updates', select a duration (e.g., 1 week or 2 weeks) to prevent the problematic update from reinstalling."
+      },
+      {
+        "title": "Verify System Stability",
+        "content": "After uninstalling the update, monitor your system for stability. If issues persist, check Microsoft's support site for known issues or contact their support."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Command Prompt to Uninstall Update",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Open Command Prompt as Administrator",
+            "content": "Press Win + X and select 'Terminal (Admin)' or 'Command Prompt (Admin)'."
+          },
+          {
+            "title": "List Installed Updates",
+            "content": "Type `wmic qfe list brief /format:table` and press Enter to identify the problematic update's KB number."
+          },
+          {
+            "title": "Uninstall the Update",
+            "content": "Type `wusa /uninstall /kb:KBxxxxxxx` (replace KBxxxxxxx with the actual update number) and press Enter. Follow the prompts to complete the uninstallation."
+          },
+          {
+            "title": "Restart Your PC",
+            "content": "After uninstalling, restart your computer and verify system stability."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use System Restore (if available)",
+        "type": "Recovery",
+        "steps": [
+          {
+            "title": "Access System Restore",
+            "content": "Boot into Safe Mode (if needed) and search for 'Create a restore point'. Open it and click 'System Restore'."
+          },
+          {
+            "title": "Select a Restore Point",
+            "content": "Choose a restore point from before the problematic update was installed. Follow the prompts to restore your system."
+          },
+          {
+            "title": "Verify System Stability",
+            "content": "After restoring, check if the issues are resolved. If not, consider other troubleshooting steps."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T18:48:21.135Z",
+      "updated": "2026-08-03T18:48:21.135Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=wr6HFnN19rc",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785782909966-33",
+    "title": "Fix Windows Update Errors in Windows 10/11",
+    "problemDescription": "Windows Update fails to install or encounters errors, preventing system updates.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows update",
+      "update errors",
+      "sfc scan",
+      "troubleshooter",
+      "services.msc"
+    ],
+    "steps": [
+      {
+        "title": "Run System File Checker (SFC)",
+        "content": "Open Command Prompt as Administrator. Type `sfc /scannow` and press Enter. Wait for the scan to complete (2-5 minutes). Restart your computer."
+      },
+      {
+        "title": "Run Windows Update Troubleshooter",
+        "content": "Go to Settings > System > Troubleshoot > Other troubleshooters. Select 'Windows Update' and click 'Run'. Follow the prompts and restart your computer."
+      },
+      {
+        "title": "Verify Windows Update Service",
+        "content": "Press `Win + R`, type `services.msc`, and press Enter. Scroll to 'Windows Update', double-click it, and ensure the service is running. Set 'Startup type' to 'Automatic' or 'Automatic (Delayed Start)'. Click 'Apply' and 'OK'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Windows Update Components via Command Prompt",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Stop Windows Update Services",
+            "content": "Open Command Prompt as Administrator. Run the following commands one by one, pressing Enter after each:\n`net stop wuauserv`\n`net stop cryptSvc`\n`net stop bits`\n`net stop msiserver`"
+          },
+          {
+            "title": "Rename SoftwareDistribution and Catroot2 Folders",
+            "content": "In the same Command Prompt, run:\n`ren C:\\Windows\\SoftwareDistribution SoftwareDistribution.old`\n`ren C:\\Windows\\System32\\catroot2 catroot2.old`"
+          },
+          {
+            "title": "Restart Windows Update Services",
+            "content": "Run the following commands:\n`net start wuauserv`\n`net start cryptSvc`\n`net start bits`\n`net start msiserver`"
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Restart your computer and attempt to run Windows Update again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T18:48:29.966Z",
+      "updated": "2026-08-03T18:48:29.966Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=YMoq3FUUnOw",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785782931154-516",
+    "title": "Set Up a Security Key for Two-Factor Authentication",
+    "problemDescription": "Users need a reliable method for two-factor authentication (2FA) without relying on phones, networks, or authentication apps.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "security key",
+      "2FA",
+      "authentication",
+      "hardware key"
+    ],
+    "steps": [
+      {
+        "title": "Purchase a Compatible Security Key",
+        "content": "Buy a FIDO2-compliant security key (e.g., YubiKey, Google Titan, or Feitian) that supports your services (e.g., Google, Microsoft, Facebook)."
+      },
+      {
+        "title": "Register the Security Key with Your Accounts",
+        "content": "Go to the security settings of each account (e.g., Google Account, Microsoft Account) and add the security key as a 2FA method. Follow the on-screen instructions to register the key."
+      },
+      {
+        "title": "Enable 2FA Using the Security Key",
+        "content": "Once registered, set the security key as the primary 2FA method for the account. Disable SMS or app-based 2FA if prompted."
+      },
+      {
+        "title": "Test the Security Key",
+        "content": "Log out of your account and attempt to log back in. Insert the security key when prompted and follow the authentication steps."
+      },
+      {
+        "title": "Manage and Revoke Access",
+        "content": "Use the account's security settings to view or revoke access tied to the security key. Add or remove keys as needed."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-03T18:48:51.154Z",
+      "updated": "2026-08-03T18:48:51.154Z",
+      "sourceUrl": "https://www.howtogeek.com/reasons-you-need-a-security-key",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785782965133-786",
+    "title": "Fix NVIDIA Graphics Card Screen Flashing Black in Windows",
+    "problemDescription": "Screen occasionally flashes black or turns corrupt, often accompanied by a BSOD, suggesting a driver or hardware issue with NVIDIA graphics cards in Windows.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "nvidia",
+      "graphics card",
+      "screen flashing",
+      "black screen",
+      "driver issue",
+      "bsod"
+    ],
+    "steps": [
+      {
+        "title": "Update NVIDIA Graphics Driver",
+        "content": "Download and install the latest driver for your NVIDIA GeForce 660 Ti from the official NVIDIA website. Use the 'Custom Installation' option and perform a clean install to remove old drivers."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Ensure Windows is fully updated. Go to Settings > Update & Security > Windows Update and install all pending updates, including optional updates that may contain driver fixes."
+      },
+      {
+        "title": "Disable Automatic Driver Updates",
+        "content": "Prevent Windows from automatically updating the NVIDIA driver, as it may install an incompatible version. Go to Device Manager > Display adapters > NVIDIA GeForce 660 Ti > Properties > Driver > Disable automatic updates."
+      },
+      {
+        "title": "Adjust Power Management Settings",
+        "content": "Disable power-saving features for the graphics card. Go to Device Manager > Display adapters > NVIDIA GeForce 660 Ti > Properties > Power Management > Set 'Maximum Performance' for power plans."
+      },
+      {
+        "title": "Test with Different Monitor Connection",
+        "content": "If using a digital connection (HDMI/DisplayPort), try switching to an analog (VGA) connection temporarily to rule out signal issues. If the problem persists, the issue is likely hardware-related."
+      },
+      {
+        "title": "Check for Overheating",
+        "content": "Monitor GPU temperatures using tools like MSI Afterburner or HWMonitor. If temperatures exceed 85°C under load, clean the GPU fans and ensure proper ventilation."
+      },
+      {
+        "title": "Test with Another Graphics Card",
+        "content": "If possible, test with a different NVIDIA or AMD graphics card to isolate whether the issue is with the GPU itself."
+      },
+      {
+        "title": "Reinstall Windows (Last Resort)",
+        "content": "If all else fails, perform a clean install of Windows to rule out software corruption. Use the latest Windows installation media and avoid restoring old drivers."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Linux for Stable Display",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Linux Distribution",
+            "content": "Boot from a Linux live USB (e.g., Ubuntu or OpenSuSE) and test if the screen flashing issue persists. If it doesn’t, the problem is likely Windows/driver-related."
+          },
+          {
+            "title": "Use Proprietary NVIDIA Drivers in Linux",
+            "content": "Install the proprietary NVIDIA drivers in Linux for better compatibility. This may resolve the issue without hardware changes."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Replace the Graphics Card",
+        "type": "Hardware Solution",
+        "steps": [
+          {
+            "title": "Purchase a New Graphics Card",
+            "content": "If the issue persists after all software troubleshooting, the GPU may be faulty. Replace it with a tested model (e.g., newer NVIDIA or AMD card) and reinstall drivers."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T18:49:25.133Z",
+      "updated": "2026-08-03T18:49:25.133Z",
+      "sourceUrl": "https://superuser.com/questions/496136/screen-occasionally-flashes-black",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
