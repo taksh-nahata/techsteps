@@ -341972,5 +341972,383 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1785773987213-271",
+    "title": "Install WhatsApp on Laptop Without Phone or SIM Card",
+    "problemDescription": "User wants to use WhatsApp on a laptop without an active phone or SIM card for texting purposes.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "laptop",
+      "no phone",
+      "sim card",
+      "texting"
+    ],
+    "steps": [
+      {
+        "title": "Install an Android Emulator (Bluestacks)",
+        "content": "Download and install Bluestacks (Android emulator) on your laptop. Ensure your system meets the minimum requirements (e.g., Windows XP SP3 or later)."
+      },
+      {
+        "title": "Update Windows (if applicable)",
+        "content": "Run Windows Update to ensure your OS has the latest updates, especially if using an older version like Windows XP."
+      },
+      {
+        "title": "Enable Sound",
+        "content": "Verify that sound is working on your laptop to receive WhatsApp voice call verification codes."
+      },
+      {
+        "title": "Sign in to Google Play",
+        "content": "Open Bluestacks and sign in with a Google account to access the Google Play Store."
+      },
+      {
+        "title": "Download WhatsApp",
+        "content": "Search for WhatsApp in the Google Play Store and install it via Bluestacks."
+      },
+      {
+        "title": "Use a Virtual Number for Verification",
+        "content": "Download TextNow (or another virtual number service) on a separate device or another phone. Use the virtual number to receive WhatsApp's verification call/SMS during setup."
+      },
+      {
+        "title": "Complete WhatsApp Setup",
+        "content": "Follow WhatsApp's on-screen instructions to verify your account using the virtual number. Once verified, you can use WhatsApp on your laptop."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use WhatsApp Web (Requires Initial Phone Setup)",
+        "type": "Official Solution",
+        "steps": [
+          {
+            "title": "Set Up WhatsApp on a Phone Temporarily",
+            "content": "Borrow a phone or use an old one to set up WhatsApp with your number. Verify the account using the phone's SIM card."
+          },
+          {
+            "title": "Link WhatsApp to Laptop via WhatsApp Web",
+            "content": "Open WhatsApp Web on your laptop's browser (web.whatsapp.com) and scan the QR code from your phone to sync messages."
+          },
+          {
+            "title": "Remove SIM Card from Phone",
+            "content": "After setup, you can remove the SIM card from the phone. WhatsApp Web will continue working on the laptop as long as the phone remains connected to the internet periodically (for message sync)."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Secondary Phone Number Service",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Sign Up for a Virtual Number Service",
+            "content": "Use services like Google Voice, TextNow, or other virtual number providers to get a temporary number for WhatsApp verification."
+          },
+          {
+            "title": "Install WhatsApp on Emulator or Dual-SIM Phone",
+            "content": "Follow the emulator method (Method 1) or use a dual-SIM phone to receive the verification code on the virtual number."
+          },
+          {
+            "title": "Verify WhatsApp Account",
+            "content": "Enter the virtual number during WhatsApp setup to receive the verification code."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T16:19:47.213Z",
+      "updated": "2026-08-03T16:19:47.213Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/whatsapp-app-without-phone-and-sim-card-is-it-possible.3578590",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785773995966-906",
+    "title": "Fix Microsoft Office for Android Not Opening PDFs from WhatsApp",
+    "problemDescription": "Microsoft Office for Android fails to open PDF files directly from WhatsApp, causing the app to hang indefinitely.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "microsoft office",
+      "android",
+      "pdf",
+      "whatsapp",
+      "file opening"
+    ],
+    "steps": [
+      {
+        "title": "Change Default PDF App to Google Drive",
+        "content": "1. Open WhatsApp and locate the PDF file.\n2. Tap the PDF file to open the share menu.\n3. Select 'Open with' or 'Choose an app'.\n4. Choose 'Google Drive' as the default app for PDFs.\n5. Confirm the selection and try opening the PDF again."
+      },
+      {
+        "title": "Clear Microsoft Office App Cache",
+        "content": "1. Go to 'Settings' > 'Apps' > 'Microsoft Office'.\n2. Tap 'Storage' and select 'Clear Cache'.\n3. Restart the Microsoft Office app and attempt to open the PDF from WhatsApp."
+      },
+      {
+        "title": "Reinstall Microsoft Office",
+        "content": "1. Uninstall Microsoft Office from your device.\n2. Restart your device.\n3. Reinstall Microsoft Office from the Google Play Store.\n4. Attempt to open the PDF from WhatsApp again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Google Drive as Intermediate",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Save PDF to Google Drive First",
+            "content": "1. Open WhatsApp and locate the PDF file.\n2. Tap the 'Share' button and select 'Save to Drive'.\n3. Open Google Drive and locate the saved PDF.\n4. Tap the PDF to open it in Microsoft Office."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Report the Issue to Microsoft Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Send Feedback to Microsoft",
+            "content": "1. Open Microsoft Office on your device.\n2. Tap the menu icon (three lines) and select 'Settings'.\n3. Choose 'Send Feedback' and describe the issue.\n4. Include details about your device and Android version."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T16:19:55.966Z",
+      "updated": "2026-08-03T16:19:55.966Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/microsoft-office-for-android-cant-open-pdf-files-from-whatsapp-directly.3726633",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785774022732-959",
+    "title": "Fix Android Display Brightness Stuck at 0%",
+    "problemDescription": "Android device screen remains black or unresponsive due to brightness being locked at 0%, preventing normal usage.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "brightness",
+      "black screen",
+      "display",
+      "0% brightness"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Device",
+        "content": "Press and hold the power button for 10+ seconds to force a restart. This may reset the brightness settings."
+      },
+      {
+        "title": "Boot into Safe Mode",
+        "content": "1. Power off the device. 2. Hold the power button until the manufacturer logo appears. 3. Release the button and immediately hold the volume down button until 'Safe Mode' appears. 4. Release the button. 5. In Safe Mode, check if the brightness can be adjusted. If yes, a third-party app may be causing the issue."
+      },
+      {
+        "title": "Reset Display Settings via Settings App",
+        "content": "1. If the device is partially responsive, go to Settings > Display. 2. Look for 'Brightness level' or 'Adaptive brightness' and toggle it off. 3. Manually set the brightness slider to at least 20-30%."
+      },
+      {
+        "title": "Clear Cache Partition (For Persistent Issues)",
+        "content": "1. Power off the device. 2. Boot into Recovery Mode (usually by holding Power + Volume Up buttons). 3. Use volume buttons to navigate to 'Wipe cache partition' and select it with the power button. 4. Reboot the device."
+      },
+      {
+        "title": "Factory Reset (Last Resort)",
+        "content": "1. Backup important data. 2. Go to Settings > System > Reset options > Erase all data (factory reset). 3. Confirm and wait for the process to complete. Note: This will erase all data on the device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use ADB to Reset Brightness",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Enable USB Debugging",
+            "content": "1. Go to Settings > About phone > Tap 'Build number' 7 times to enable Developer Options. 2. Go to Developer Options and enable 'USB debugging'."
+          },
+          {
+            "title": "Connect to Computer",
+            "content": "1. Connect the Android device to a computer via USB. 2. Install ADB tools on the computer if not already installed."
+          },
+          {
+            "title": "Run ADB Command to Reset Brightness",
+            "content": "1. Open a terminal or command prompt. 2. Run the command: `adb shell settings put system screen_brightness 255` (255 is the max brightness value). 3. Reboot the device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T16:20:22.732Z",
+      "updated": "2026-08-03T16:20:22.732Z",
+      "sourceUrl": "https://android.stackexchange.com/sitemap-questions-0.xml",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785774061284-65",
+    "title": "Fix OneNote Sign-In Issue on Apple Watch",
+    "problemDescription": "OneNote app on Apple Watch fails to sign in, while the iPhone version works. The issue is resolved by ensuring only one notebook is synced to the iPhone before installing the app on the watch.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "OneNote",
+      "Apple Watch",
+      "iPhone",
+      "sign-in",
+      "sync",
+      "notebook"
+    ],
+    "steps": [
+      {
+        "title": "Check Synced Notebooks on iPhone",
+        "content": "Open OneNote on your iPhone. Verify which notebooks are currently synced by tapping the notebook icon. Note the number of notebooks."
+      },
+      {
+        "title": "Remove Extra Notebooks from iPhone",
+        "content": "If multiple notebooks are synced, remove the extra ones by tapping the notebook icon > selecting the notebook > tapping the three dots (...) > 'Remove from Device'. Keep only your personal notebook."
+      },
+      {
+        "title": "Uninstall OneNote from Both Devices",
+        "content": "Uninstall the OneNote app from your iPhone and Apple Watch. On the iPhone, long-press the app icon and select 'Remove App'. On the Apple Watch, press the app icon > tap 'X' > 'Delete App'."
+      },
+      {
+        "title": "Restart Your iPhone",
+        "content": "Restart your iPhone by holding the power button and sliding to power off. Wait 30 seconds, then turn it back on."
+      },
+      {
+        "title": "Reinstall OneNote on iPhone",
+        "content": "Download and install the latest version of OneNote from the App Store on your iPhone. Open the app and sign in with your Microsoft account."
+      },
+      {
+        "title": "Reinstall OneNote on Apple Watch",
+        "content": "Open the Watch app on your iPhone. Go to 'My Watch' > 'Available Apps' and install OneNote on your Apple Watch."
+      },
+      {
+        "title": "Verify Sync and Sign-In",
+        "content": "Open OneNote on your Apple Watch. Ensure the app syncs correctly and you can access your personal notebook."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Full Cache Clear and Reinstall (Community Workaround)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear OneNote Cache on iPhone",
+            "content": "Go to iPhone Settings > General > iPhone Storage. Find OneNote, tap it, and select 'Offload App' or 'Delete App'. This clears cache and app data."
+          },
+          {
+            "title": "Uninstall OneNote from Both Devices",
+            "content": "Uninstall OneNote from your iPhone and Apple Watch as described in the primary steps."
+          },
+          {
+            "title": "Restart iPhone",
+            "content": "Restart your iPhone to ensure a clean state."
+          },
+          {
+            "title": "Reinstall OneNote on iPhone and Apple Watch",
+            "content": "Reinstall OneNote on both devices from the App Store and sign in with your Microsoft account."
+          },
+          {
+            "title": "Verify Cloud Sync",
+            "content": "Before reinstalling, ensure all notebooks are synced to the cloud by signing in to OneNote online and confirming sync status."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T16:21:01.284Z",
+      "updated": "2026-08-03T16:21:01.284Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/all/apple-watch-5-please-sign-in-to-onenote-on-your/3430a78d-9849-497d-be74-c6ef1fadca41",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785774113680-662",
+    "title": "Fix BT Internet Wi-Fi Lag, Disconnections, or High Ping",
+    "problemDescription": "BT Internet users experience frequent Wi-Fi disconnections, lag, high ping, or slow speeds, often due to router signal strength or channel interference.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "BT Internet",
+      "Wi-Fi",
+      "disconnections",
+      "lag",
+      "high ping",
+      "slow internet",
+      "router settings",
+      "channel interference"
+    ],
+    "steps": [
+      {
+        "title": "Access Your BT Router Settings",
+        "content": "Connect a laptop to the router via Ethernet cable or use a device connected to the Wi-Fi. Open a web browser and enter the router's IP address (e.g., 192.168.1.254 for BT Hubs) or 'btbroadband.com' to log in."
+      },
+      {
+        "title": "Find Default Login Credentials",
+        "content": "Check the sticker on the back or bottom of your BT Hub for the default username (usually 'admin') and password. If changed, use the custom credentials."
+      },
+      {
+        "title": "Navigate to Wireless Settings",
+        "content": "Once logged in, locate the 'Wireless' or 'Wi-Fi' settings section in the router dashboard."
+      },
+      {
+        "title": "Lower Broadcast Speed",
+        "content": "Reduce the Wi-Fi broadcast speed (e.g., from 802.11ac to 802.11n) to improve compatibility with older devices and reduce disconnections."
+      },
+      {
+        "title": "Enable Greenfield Mode (if available)",
+        "content": "Look for 'Greenfield Mode' in the wireless settings and enable it to optimize performance for newer devices."
+      },
+      {
+        "title": "Change Wi-Fi Channel",
+        "content": "Select a less congested channel (e.g., channel 1, 6, or 11 for 2.4GHz) or a higher-numbered channel (e.g., 36, 40, 44, etc., for 5GHz) to avoid interference from neighboring networks."
+      },
+      {
+        "title": "Apply and Test Changes",
+        "content": "Save the settings, log out of the router, and test each Wi-Fi device to ensure disconnections or lag have been resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Router Firmware",
+        "type": "Official Fix",
+        "steps": [
+          {
+            "title": "Check for Firmware Updates",
+            "content": "In the router settings, navigate to 'Advanced' or 'Management' and look for 'Firmware Update' or 'Software Update'. Follow the prompts to download and install the latest firmware."
+          },
+          {
+            "title": "Factory Reset (if needed)",
+            "content": "If updates don't resolve the issue, perform a factory reset via the router settings or a physical reset button. Reconfigure the router afterward."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Change Wi-Fi Mode to 2.4GHz Only",
+        "type": "Workaround",
+        "steps": [
+          {
+            "title": "Switch to 2.4GHz Band",
+            "content": "In the router settings, disable the 5GHz band and set the Wi-Fi mode to '802.11 b/g/n' (2.4GHz only). This can improve stability for older devices."
+          },
+          {
+            "title": "Test Connectivity",
+            "content": "Reconnect all devices to the 2.4GHz network and check for improvements in stability and speed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T16:21:53.680Z",
+      "updated": "2026-08-03T16:21:53.680Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/bt-internet-major-issues-cuts-out-lag-high-ping-slow-internet-please-help.2661861",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
