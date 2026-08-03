@@ -343117,5 +343117,338 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785794662907-543",
+    "title": "Fix Microsoft Teams Audio/Video and Sharing Issues",
+    "problemDescription": "Teams users experience persistent audio/video misconfiguration, cross-tenant meeting access failures, and unreliable screen sharing, often tied to permission mismanagement and client-specific bugs.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "audio settings",
+      "video call",
+      "screen sharing",
+      "cross-tenant",
+      "permissions"
+    ],
+    "steps": [
+      {
+        "title": "Verify Cross-Tenant Meeting Access",
+        "content": "Ensure you are logged into the correct tenant (organization) before joining a meeting. If using the web app, select 'Join as a guest' when prompted, even if already logged in. For Windows app users, try signing out and back in with the correct account."
+      },
+      {
+        "title": "Reset Audio Devices in Teams",
+        "content": "Go to Teams Settings > Devices. Under 'Speaker' and 'Microphone', manually select the correct device. Toggle 'Allow Teams to access your microphone and camera' off and on. Restart Teams after changes."
+      },
+      {
+        "title": "Clear Teams Cache and Reinstall",
+        "content": "Close Teams completely. Navigate to %appdata%\\Microsoft\\Teams and delete the 'Cache' folder. Restart Teams. If issues persist, uninstall Teams, restart your PC, and reinstall the latest version from Microsoft's official site."
+      },
+      {
+        "title": "Fix Screen Sharing Freeze",
+        "content": "If screen sharing freezes, press Ctrl+Shift+E to end sharing. Then, re-enable screen sharing via the Teams toolbar. If the issue persists, try sharing a specific window instead of the entire screen. Update your graphics drivers as a last resort."
+      },
+      {
+        "title": "Adjust Meeting Permissions",
+        "content": "Ask the meeting organizer to check 'Meeting Options' in Outlook or Teams calendar invite. Ensure 'Who can present?' is set to 'Everyone' or 'Specific people' and not 'Only me'. For external users, confirm the organizer has enabled 'Allow dial-in users to bypass the lobby'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Teams Web App as Fallback",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to Web App for Critical Meetings",
+            "content": "If the desktop app fails, join meetings via the web app at teams.microsoft.com. Use Chrome or Edge for better compatibility. Sign in with your work account when prompted, even if the desktop app is already open."
+          },
+          {
+            "title": "Disable Hardware Acceleration",
+            "content": "In the web app, go to Settings > General. Toggle 'Disable hardware acceleration' on. This may resolve audio/video sync issues and screen sharing glitches."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update Teams and System Drivers",
+        "type": "Preventive Solution",
+        "steps": [
+          {
+            "title": "Check for Teams Updates",
+            "content": "Open Teams > Click your profile picture > Check for updates. Install any pending updates. Enable automatic updates in Teams settings if not already configured."
+          },
+          {
+            "title": "Update Audio/Video Drivers",
+            "content": "Open Device Manager, expand 'Audio inputs and outputs' and 'Sound, video and game controllers'. Right-click each device and select 'Update driver'. Reboot your PC after updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T22:04:22.907Z",
+      "updated": "2026-08-03T22:04:22.907Z",
+      "sourceUrl": "https://www.reddit.com/r/MicrosoftTeams/comments/1cpuc72/what_are_your_biggest_problems_with_microsoft",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785794690086-371",
+    "title": "Set Up LAN Printer with IP Address on Android",
+    "problemDescription": "Android device fails to detect a LAN printer via IP address using Default Print Service, despite correct network connectivity and printer compatibility with Windows.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "printer",
+      "lan",
+      "ip address",
+      "print service",
+      "jetdirect"
+    ],
+    "steps": [
+      {
+        "title": "Verify Printer Compatibility and Network",
+        "content": "Ensure the printer supports raw TCP/IP printing (Port 9100) and is connected to the same LAN as your Android device. Confirm the printer's IP address (e.g., 192.168.3.x) is correct and static."
+      },
+      {
+        "title": "Use Default Print Service with Manual IP",
+        "content": "Go to Settings > Connected devices > Printing > Default Print Service. Tap the 3-dot menu > Add printer > Manual printer. Enter the printer's IP address and Port 9100. If prompted for a driver, select a generic or compatible driver (e.g., HP LaserJet 5)."
+      },
+      {
+        "title": "Enable Raw Printing Protocol",
+        "content": "If the printer requires a raw protocol, ensure your Android device can send raw data. Some printers may need additional configuration in the printer's web interface (e.g., JetDirect settings) to accept raw TCP/IP connections."
+      },
+      {
+        "title": "Check Firewall and Network Restrictions",
+        "content": "Disable any firewall or network restrictions on your router or printer that may block port 9100. Ensure the printer is not set to a different subnet or VLAN."
+      },
+      {
+        "title": "Test with a Different App",
+        "content": "Download and install a third-party printing app like 'Let's Print Droid' or the manufacturer's app (e.g., HP Epson Print Service) from the Google Play Store. Manually add the printer using its IP address and port."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Google Cloud Print (Legacy)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up Google Cloud Print",
+            "content": "On a Windows PC, go to Chrome browser > Settings > Advanced > Printing > Manage Cloud Print > Add printers. Share the printer with your Google account."
+          },
+          {
+            "title": "Print from Android via Cloud Print",
+            "content": "Open the document you want to print on your Android device. Tap Share > Print > Select your printer from the cloud print options. Ensure your Android device is logged into the same Google account."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Google Drive for Printing",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Upload Document to Google Drive",
+            "content": "Save the document to Google Drive on your Android device."
+          },
+          {
+            "title": "Print via Google Drive",
+            "content": "Open the document in Google Drive > Tap the 3-dot menu > Print. Select your printer if it appears in the list. If not, use a connected PC to print the document."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T22:04:50.086Z",
+      "updated": "2026-08-03T22:04:50.086Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/207950/how-to-set-up-lan-printer-with-ip-address",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785794725992-372",
+    "title": "Fix Google Pixel 9 Overheating or Battery Issues",
+    "problemDescription": "Google Pixel 9 devices may experience overheating or poor battery life, often due to software bugs or charging issues.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel 9",
+      "overheating",
+      "battery life",
+      "android",
+      "google support"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Pixel 9",
+        "content": "Press and hold the power button, then tap 'Restart' to reboot your device. This often resolves temporary software glitches causing overheating or battery drain."
+      },
+      {
+        "title": "Check and Reconnect to Wi-Fi",
+        "content": "Go to Settings > Network & internet > Wi-Fi. Ensure Wi-Fi is enabled. If connected, tap the network name, select 'Forget', then reconnect by entering the password again."
+      },
+      {
+        "title": "Use a Supported Wireless Charger",
+        "content": "Verify your wireless charger supports the Pixel 9's charging requirements. Use the official Pixel Stand (2nd gen) for optimal 23W charging and to prevent overheating during charging."
+      },
+      {
+        "title": "Wait for a Software Update",
+        "content": "Check for pending updates in Settings > System > System update. Install any available updates, as they may include bug fixes for overheating or battery issues."
+      },
+      {
+        "title": "Contact Google Support",
+        "content": "If the issue persists, contact Google Support via the Pixel app or official website. This may indicate a hardware defect requiring repair or replacement."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset (Last Resort)",
+        "type": "Advanced Troubleshooting",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure all important data is backed up to Google Drive or another cloud service before proceeding."
+          },
+          {
+            "title": "Perform a Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset). Follow the prompts to reset your device to factory settings."
+          },
+          {
+            "title": "Restore Data and Monitor",
+            "content": "After resetting, restore your data and monitor the device for overheating or battery issues. If the problem returns, contact Google Support."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T22:05:25.992Z",
+      "updated": "2026-08-03T22:05:25.992Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/google-pixel-9-problems-common-issues-how-to-fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785794732340-976",
+    "title": "Fix Google Pixel 8 Common Issues",
+    "problemDescription": "Common problems reported by Google Pixel 8 users, including connectivity, touchscreen responsiveness, and battery drain.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel 8",
+      "connectivity",
+      "touchscreen",
+      "battery drain",
+      "bug"
+    ],
+    "steps": [
+      {
+        "title": "Improve Connectivity Issues",
+        "content": "Try switching to an eSIM instead of a physical SIM card. If that doesn't work, consider changing carriers if your contract allows it."
+      },
+      {
+        "title": "Fix Slow or Unresponsive Touchscreen",
+        "content": "Enable power-saving mode to reduce processor usage and heat. Keep the phone out of direct sunlight. Restart the device to clear background apps. If the issue persists, perform a factory reset (back up data first)."
+      },
+      {
+        "title": "Reduce Battery Drain and Screen Bumps",
+        "content": "Lower the screen brightness to save battery. Enable power-saving mode to throttle performance and reduce brightness. Lower the screen resolution to decrease power consumption. Limit high-performance apps like games."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Wait for Google Bug Fixes",
+        "type": "Temporary Workaround",
+        "steps": [
+          {
+            "title": "Monitor for Updates",
+            "content": "Check for software updates in Settings > System > Software update. If a bug fix is released, install it to resolve the issue."
+          }
+        ]
+      },
+      {
+        "title": "Return the Device",
+        "type": "Permanent Solution",
+        "steps": [
+          {
+            "title": "Contact Seller",
+            "content": "If issues are severe and persist, contact the seller or manufacturer for a replacement or refund."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T22:05:32.340Z",
+      "updated": "2026-08-03T22:05:32.340Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/google-pixel-8-and-8-pro-problems-common-issues-how-to-fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785794736324-7",
+    "title": "Fix Google Pixel 3 Camera Memory Issues and Disappearing Photos",
+    "problemDescription": "Photos may disappear or fail to save due to memory handling issues, often linked to HDR conversion or insufficient RAM management in the Pixel 3.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel 3",
+      "camera",
+      "photos disappearing",
+      "memory issues",
+      "HDR",
+      "software update"
+    ],
+    "steps": [
+      {
+        "title": "Check for Android Software Updates",
+        "content": "Go to Settings > System > System Update and install any available updates. Ensure your device is running the latest version of Android, as Google addressed memory handling issues in December's update."
+      },
+      {
+        "title": "Avoid Premature Camera App Closure",
+        "content": "Do not close the camera app or shut down the device while HDR rendering is in progress. Wait for the process to complete before exiting the app."
+      },
+      {
+        "title": "Backup Photos Regularly",
+        "content": "Enable automatic backup for photos to Google Photos or Google Drive to prevent data loss in case of unexpected issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset (Last Resort)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter Recovery Mode",
+            "content": "Power off the device, then press and hold the Power button and Volume Down key simultaneously. Once the screen flickers, release the Power button but continue holding Volume Down until Recovery Mode appears."
+          },
+          {
+            "title": "Navigate to Factory Reset Option",
+            "content": "Use the Volume rocker to highlight 'Recovery mode' and press the Power button to select it. When the 'No Command' screen appears, press and hold the Power button, then press the Volume Up key once and release both buttons."
+          },
+          {
+            "title": "Confirm Factory Reset",
+            "content": "Select 'Wipe data/factory reset' using the Volume rocker and confirm with the Power button. Note that this will erase all data on the device."
+          },
+          {
+            "title": "Restore Data from Backup",
+            "content": "After the reset, restore your data from Google Photos, Google Drive, or other backups."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T22:05:36.324Z",
+      "updated": "2026-08-03T22:05:36.324Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-google-pixel-3-xl-problems-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
