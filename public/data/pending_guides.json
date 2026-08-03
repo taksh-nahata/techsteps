@@ -342813,5 +342813,309 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785788645633-734",
+    "title": "Fix XRDP Blank Screen After Login on Ubuntu 22.04",
+    "problemDescription": "Remote Desktop connection from Windows to Ubuntu 22.04 via XRDP results in a successful login but a blank screen.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "xrdp",
+      "ubuntu",
+      "remote desktop",
+      "blank screen",
+      "dbus",
+      "xsession"
+    ],
+    "steps": [
+      {
+        "title": "Install Missing Dependencies",
+        "content": "Install the `dbus-x11` package, which is required for proper XRDP session handling: `sudo apt update && sudo apt install -y dbus-x11`"
+      },
+      {
+        "title": "Edit Xsession Configuration",
+        "content": "Open the Xsession configuration file in a text editor: `sudo nano /etc/X11/Xsession` Add the following line at the top of the file (before any existing lines): `test -x /etc/X11/Xsession && exec /etc/X11/Xsession` Save the changes and exit the editor (Ctrl+O, Enter, Ctrl+X)."
+      },
+      {
+        "title": "Restart XRDP Service",
+        "content": "Restart the XRDP service to apply the changes: `sudo systemctl restart xrdp`"
+      },
+      {
+        "title": "Verify Connection",
+        "content": "Attempt to reconnect via Remote Desktop from Windows to Ubuntu. The blank screen issue should now be resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall XRDP and Configure Default Session",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall XRDP",
+            "content": "Completely remove and reinstall XRDP to reset configurations: `sudo apt purge -y xrdp && sudo apt autoremove -y && sudo apt install -y xrdp`"
+          },
+          {
+            "title": "Set Default Session for XRDP",
+            "content": "Edit the XRDP startup file to ensure the correct session is launched: `sudo nano /etc/xrdp/startwm.sh` Add the following line at the top of the file: `export XDG_SESSION_TYPE=x11` Save the changes and exit the editor."
+          },
+          {
+            "title": "Restart XRDP and Test",
+            "content": "Restart the XRDP service and test the connection: `sudo systemctl restart xrdp`"
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check and Fix D-Bus Errors",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for D-Bus Errors",
+            "content": "Review the Xsession error logs for D-Bus-related issues: `cat ~/.xsession-errors` Look for errors like `dbus-launch` failures or D-Bus connection issues."
+          },
+          {
+            "title": "Manually Launch D-Bus",
+            "content": "If D-Bus errors are present, manually launch D-Bus before starting the session: `dbus-launch` Then restart XRDP: `sudo systemctl restart xrdp`"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T20:24:05.633Z",
+      "updated": "2026-08-03T20:24:05.633Z",
+      "sourceUrl": "https://askubuntu.com/questions/1404245/remote-desktop-from-windows-onto-ubuntu-22-04-takes-me-to-a-xrdp-login-then-a-bl",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785788654056-390",
+    "title": "Fix Internet Not Working After Upgrading to Ubuntu 24.04",
+    "problemDescription": "Internet connectivity fails after upgrading to Ubuntu 24.04 due to issues with systemd-resolved or broken /etc/resolv.conf symlink.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "24.04",
+      "internet",
+      "network",
+      "systemd-resolved",
+      "resolv.conf"
+    ],
+    "steps": [
+      {
+        "title": "Check and Restart systemd-resolved Service",
+        "content": "Verify if systemd-resolved is masked or inactive. Unmask, start, and enable the service to ensure it runs on boot:"
+      },
+      {
+        "title": "Recreate /etc/resolv.conf Symlink",
+        "content": "Delete the broken /etc/resolv.conf symlink and recreate it as a proper symlink to systemd-resolved's stub resolver:"
+      },
+      {
+        "title": "Reinstall systemd-resolved (if missing)",
+        "content": "Ensure systemd-resolved is installed and properly configured:"
+      },
+      {
+        "title": "Configure systemd-networkd for Wired Connections (if using systemd-resolved)",
+        "content": "Create or edit the network configuration file to ensure DHCP is enabled and interfaces are marked as routable:"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reconfigure DHCP Client (Alternative for Non-systemd-resolved Systems)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to DHCP Client (e.g., dhcpcd)",
+            "content": "Install and configure a DHCP client like dhcpcd to manage network configuration:"
+          },
+          {
+            "title": "Disable systemd-networkd (if conflicting)",
+            "content": "Stop and disable systemd-networkd if it is causing conflicts with your DHCP client:"
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Manual /etc/resolv.conf Configuration",
+        "type": "Manual Fix",
+        "steps": [
+          {
+            "title": "Replace /etc/resolv.conf with a Static Configuration",
+            "content": "Manually create a new /etc/resolv.conf file with DNS server entries (e.g., Google DNS or Cloudflare):"
+          },
+          {
+            "title": "Prevent Overwrites",
+            "content": "Set the file to immutable to prevent systemd-resolved or other services from overwriting it:"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T20:24:14.056Z",
+      "updated": "2026-08-03T20:24:14.056Z",
+      "sourceUrl": "https://askubuntu.com/questions/1511667/internet-is-not-working-after-upgrading-to-ubuntu-24-04",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785788663442-236",
+    "title": "Fix Multiple Displays Not Working After Ubuntu 24.04 Upgrade",
+    "problemDescription": "After upgrading to Ubuntu 24.04, multiple displays stop working due to NVIDIA driver conflicts or misconfigurations in Xorg.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "nvidia",
+      "multiple displays",
+      "xorg",
+      "graphics drivers"
+    ],
+    "steps": [
+      {
+        "title": "Backup and Edit Xorg Configuration",
+        "content": "Backup your existing Xorg configuration and edit it to include both Intel and NVIDIA graphics cards. First, find your BusIDs using: `lspci -vnn | grep -A 12 VGA`. Then backup and edit the config: `sudo cp /etc/X11/xorg.conf /etc/X11/xorg.conf.bak` and `sudo nano /etc/X11/xorg.conf`. Add the following sections to the file:"
+      },
+      {
+        "title": "Add Xorg Configuration Sections",
+        "content": "Insert the following into your xorg.conf file:\n\n```\nSection \"ServerLayout\"\n    Identifier \"layout\"\n    Screen 0 \"Intel\"\n    Screen 1 \"NVIDIA\" RightOf \"Intel\"\nEndSection\n\nSection \"Device\"\n    Identifier \"Intel\"\n    Driver \"modesetting\"\n    BusID \"PCI:0:2:0\"\nEndSection\n\nSection \"Device\"\n    Identifier \"NVIDIA\"\n    Driver \"nvidia\"\n    BusID \"PCI:1:0:0\"\nEndSection\n```\nReplace the BusID values with the ones from your `lspci` output."
+      },
+      {
+        "title": "Restart Display Manager",
+        "content": "Apply the changes by restarting the display manager: `sudo systemctl restart gdm`."
+      },
+      {
+        "title": "Install NVIDIA Driver (if not installed)",
+        "content": "If the NVIDIA driver is not installed, install it using: `sudo apt-get install nvidia-driver-560`."
+      },
+      {
+        "title": "Select NVIDIA Driver in Software & Updates",
+        "content": "Open 'Software & Updates' from the application menu, go to the 'Additional Drivers' tab, select 'NVIDIA driver metapackage from nvidia-driver-560 (proprietary)', click 'Apply Changes', and reboot your system."
+      },
+      {
+        "title": "Disable Secure Boot in BIOS",
+        "content": "Enter your BIOS/UEFI settings during boot, locate the 'Secure Boot' option, disable it, save changes, and exit."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use NVIDIA Prime Profile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Prime Profile Tools",
+            "content": "Install the NVIDIA Prime profile tools: `sudo apt-get install nvidia-prime`."
+          },
+          {
+            "title": "Switch to NVIDIA Profile",
+            "content": "Run `sudo prime-select nvidia` to switch to the NVIDIA profile."
+          },
+          {
+            "title": "Reboot System",
+            "content": "Reboot your system to apply the changes: `sudo reboot`."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reconfigure Xorg Automatically",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Existing Xorg Configuration",
+            "content": "Remove the existing Xorg configuration: `sudo rm /etc/X11/xorg.conf`."
+          },
+          {
+            "title": "Reconfigure Xorg",
+            "content": "Reconfigure Xorg automatically: `sudo dpkg-reconfigure xserver-xorg`."
+          },
+          {
+            "title": "Reboot System",
+            "content": "Reboot your system: `sudo reboot`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T20:24:23.442Z",
+      "updated": "2026-08-03T20:24:23.442Z",
+      "sourceUrl": "https://askubuntu.com/questions/1512666/after-ubuntu-24-04-upgrade-multiple-displays-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785788760283-453",
+    "title": "Fix Google Pixel 6 Fingerprint Scanner Not Working",
+    "problemDescription": "The fingerprint scanner on a Google Pixel 6 fails to recognize touches or unlock the device, preventing biometric authentication.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel 6",
+      "fingerprint scanner",
+      "biometric",
+      "unlock",
+      "authentication"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Device",
+        "content": "Press and hold the Power button, then tap 'Restart' to reboot the Pixel 6. This resolves temporary software glitches affecting the fingerprint scanner."
+      },
+      {
+        "title": "Clean the Fingerprint Sensor",
+        "content": "Wipe the sensor area with a clean, dry microfiber cloth. Remove any dirt, sweat, or screen protector residue that may interfere with scanning."
+      },
+      {
+        "title": "Re-register Fingerprints",
+        "content": "Go to Settings > Security > Fingerprint Unlock. Delete all existing fingerprints, then re-add them by following the on-screen prompts."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Navigate to Settings > System > System Update. Install any available updates to ensure the device has the latest firmware fixes."
+      },
+      {
+        "title": "Disable and Re-enable Fingerprint Unlock",
+        "content": "Toggle off 'Fingerprint Unlock' in Settings > Security, wait 10 seconds, then toggle it back on to reset the feature."
+      },
+      {
+        "title": "Test in Safe Mode",
+        "content": "Hold the Power button, then long-press 'Power off' to enter Safe Mode. Test the fingerprint scanner to determine if a third-party app is causing the issue."
+      },
+      {
+        "title": "Factory Reset (Last Resort)",
+        "content": "Backup data, then go to Settings > System > Reset Options > Erase All Data. This restores the device to factory settings but will erase all data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Cache Partition",
+        "type": "Advanced Troubleshooting",
+        "steps": [
+          {
+            "title": "Boot into Recovery Mode",
+            "content": "Power off the Pixel 6. Press and hold the Power and Volume Up buttons simultaneously until the 'Recovery Mode' screen appears."
+          },
+          {
+            "title": "Navigate to Wipe Cache Partition",
+            "content": "Use the Volume buttons to highlight 'Wipe cache partition' and press the Power button to select it."
+          },
+          {
+            "title": "Confirm and Reboot",
+            "content": "Highlight 'Yes' and press the Power button. Once complete, select 'Reboot system now' to restart the device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T20:26:00.283Z",
+      "updated": "2026-08-03T20:26:00.283Z",
+      "sourceUrl": "https://www.techradar.com/news/google-pixel-6-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
