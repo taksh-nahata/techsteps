@@ -341506,5 +341506,65 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785753543596-80",
+    "title": "Fix iOS Battery Drain and Slow UI Issues",
+    "problemDescription": "iOS devices experience rapid battery drain or sluggish performance due to background app refresh, excessive location services, or resource-heavy apps.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery drain",
+      "slow performance",
+      "background app refresh",
+      "location services",
+      "iOS"
+    ],
+    "steps": [
+      {
+        "title": "Disable Background App Refresh for Power-Hungry Apps",
+        "content": "Go to Settings > General > Background App Refresh. Toggle off the feature entirely or selectively disable it for apps that don’t need frequent updates."
+      },
+      {
+        "title": "Optimize Location Services",
+        "content": "Navigate to Settings > Privacy > Location Services > System Services. Disable features like Location-Based iAds, Popular Near Me, and Frequent Locations to reduce battery drain."
+      },
+      {
+        "title": "Identify Battery-Draining Apps",
+        "content": "Go to Settings > General > Usage > Battery Usage. Review the list of apps consuming the most battery and uninstall or update problematic apps."
+      },
+      {
+        "title": "Free Up Storage Space",
+        "content": "Go to Settings > General > Usage > Manage Storage. Delete unnecessary apps, photos, or files to improve device performance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset All Settings (For Persistent Issues)",
+        "type": "Advanced Reset",
+        "steps": [
+          {
+            "title": "Backup Your Device",
+            "content": "Ensure your data is backed up via iCloud or a computer before proceeding."
+          },
+          {
+            "title": "Reset All Settings",
+            "content": "Go to Settings > General > Reset > Reset All Settings. This will restore default settings without deleting your data."
+          },
+          {
+            "title": "Monitor Performance",
+            "content": "Check if battery life and UI performance improve after the reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T10:39:03.596Z",
+      "updated": "2026-08-03T10:39:03.596Z",
+      "sourceUrl": "https://www.cnet.com/pictures/seven-common-ios-problems-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
