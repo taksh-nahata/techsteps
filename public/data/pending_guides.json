@@ -341277,5 +341277,234 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785737767458-200",
+    "title": "Fix SMS Not Working Between iPhone and Samsung",
+    "problemDescription": "SMS messages fail to send or receive between an iPhone and a specific Samsung device, despite working with other contacts.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "SMS",
+      "iPhone",
+      "Samsung",
+      "cross-platform",
+      "network settings"
+    ],
+    "steps": [
+      {
+        "title": "Verify Contact Details",
+        "content": "Ensure the Samsung user's phone number is correctly saved in your iPhone contacts without typos or missing digits."
+      },
+      {
+        "title": "Check Messaging Service",
+        "content": "Confirm the issue is specific to the Samsung user by testing SMS with other contacts. If it works elsewhere, the problem is likely on the Samsung side."
+      },
+      {
+        "title": "Reset Network Settings on iPhone",
+        "content": "Go to Settings > General > Reset > Reset Network Settings. This will clear saved Wi-Fi passwords and cellular settings, which may resolve network-related SMS issues."
+      },
+      {
+        "title": "Use Cross-Platform Messaging Apps",
+        "content": "Temporarily use apps like WhatsApp or Signal for communication with the Samsung user until the SMS issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Samsung User's Message Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ask Samsung User to Verify Settings",
+            "content": "Have the Samsung user check their message app settings for any blocked numbers or filters that might prevent receiving your SMS."
+          },
+          {
+            "title": "Test with Another SIM Card",
+            "content": "If possible, ask the Samsung user to test with a different SIM card to rule out carrier-specific issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Carrier Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Carrier Settings",
+            "content": "Contact your carrier to ensure there are no restrictions or blocks on your line that could affect SMS delivery to specific numbers."
+          },
+          {
+            "title": "Request SMS Reset",
+            "content": "Ask your carrier to reset your SMS settings or provision your line for SMS services again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T06:16:07.458Z",
+      "updated": "2026-08-03T06:16:07.458Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255477356",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785737799659-798",
+    "title": "Fix Slow App Performance After Upgrading to OS X El Capitan",
+    "problemDescription": "An app becomes slow or unresponsive after upgrading to OS X El Capitan, preventing normal usage.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "macos",
+      "el capitan",
+      "app slow",
+      "performance",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Check for App Updates",
+        "content": "Open the App Store on your Mac. Go to the 'Updates' tab and check if the problematic app has any available updates. Click 'Update' next to the app or 'Update All' to update all apps at once."
+      },
+      {
+        "title": "Restart Your Mac",
+        "content": "After updating the app(s), go to the Apple menu (top-left corner) and select 'Restart'. Wait for your Mac to reboot and test the app again."
+      },
+      {
+        "title": "Check for iTunes Updates",
+        "content": "Open iTunes on your Mac. Go to the 'iTunes' menu in the top menu bar and select 'Check for Updates'. Install any available updates, then restart your Mac if prompted."
+      },
+      {
+        "title": "Verify System Requirements",
+        "content": "Ensure your Mac meets the system requirements for OS X El Capitan and the app in question. Check the app's official website or documentation for compatibility details."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall the Problematic App",
+        "type": "Reinstallation",
+        "steps": [
+          {
+            "title": "Uninstall the App",
+            "content": "Quit the app if it's running. Open Finder, go to the 'Applications' folder, and drag the problematic app to the Trash. Empty the Trash afterward."
+          },
+          {
+            "title": "Reinstall the App",
+            "content": "Reinstall the app from the App Store or the developer's official website. Ensure you download the latest version compatible with OS X El Capitan."
+          },
+          {
+            "title": "Restart Your Mac",
+            "content": "After reinstalling, restart your Mac and test the app again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset App Preferences",
+        "type": "Configuration Reset",
+        "steps": [
+          {
+            "title": "Quit the App",
+            "content": "Ensure the problematic app is not running."
+          },
+          {
+            "title": "Delete App Preferences",
+            "content": "Open Finder, press 'Cmd + Shift + G', and type ~/Library/Preferences/. Locate the preference file for the app (e.g., com.developer.app.plist) and move it to the Trash. Empty the Trash afterward."
+          },
+          {
+            "title": "Restart the App",
+            "content": "Launch the app again. It will recreate default preferences, which may resolve performance issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T06:16:39.659Z",
+      "updated": "2026-08-03T06:16:39.659Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/14-problems-mac-os-x-10-11-el-capitan-fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785737832010-431",
+    "title": "Disable Annoying Notifications in Android Auto",
+    "problemDescription": "Android Auto displays excessive or irrelevant notifications, including group conversations, causing distraction during use.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "Android Auto",
+      "notifications",
+      "group conversations",
+      "development settings"
+    ],
+    "steps": [
+      {
+        "title": "Enable Developer Settings in Android Auto",
+        "content": "Open the Android Auto app on your phone. Scroll to the bottom of the settings page and tap the 'Version' section 5-6 times rapidly until a pop-up appears asking if you want to enable development settings. Tap 'Enable' or 'Allow'."
+      },
+      {
+        "title": "Access Developer Settings",
+        "content": "Tap the three-dot menu (⋮) in the top-right corner of the Android Auto settings screen. Select 'Developer settings' from the dropdown menu."
+      },
+      {
+        "title": "Adjust Notification Settings",
+        "content": "In Developer settings, look for options related to notifications (e.g., 'Notification Priority' or 'Group Conversation Notifications'). Disable or adjust settings to reduce unwanted notifications. If specific options are not listed, proceed to the next step."
+      },
+      {
+        "title": "Change Video Resolution (Optional)",
+        "content": "If notifications persist, scroll to 'Video Resolution' in Developer settings and select a lower resolution option (e.g., 480p or 720p) to reduce background activity that may trigger notifications. Restart Android Auto to apply changes."
+      },
+      {
+        "title": "Restart Android Auto",
+        "content": "Fully close the Android Auto app (swipe it away from the recent apps list) and reopen it. Check if notifications have been reduced or eliminated."
+      },
+      {
+        "title": "Adjust Android Auto App Permissions",
+        "content": "Go to your phone's Settings > Apps > Android Auto > Notifications. Disable 'Allow notifications' or customize which notifications are allowed (e.g., disable group conversations)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Android Auto Companion App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Android Auto Companion App",
+            "content": "Download the 'Android Auto' companion app from the Google Play Store if not already installed. Ensure it is updated to the latest version."
+          },
+          {
+            "title": "Adjust Notification Settings in Companion App",
+            "content": "Open the companion app and navigate to Settings > Notifications. Disable notifications for group conversations or adjust priority settings to reduce chatter."
+          },
+          {
+            "title": "Sync Settings with Vehicle Head Unit",
+            "content": "Ensure your phone and vehicle head unit are synced properly. Restart both devices if changes do not reflect immediately."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Notifications via Phone Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Mute Specific Apps in Android Auto",
+            "content": "Go to your phone's Settings > Apps > Special App Access > Notifications. Find apps that send excessive notifications to Android Auto (e.g., WhatsApp, Messenger) and disable their notification permissions."
+          },
+          {
+            "title": "Use Do Not Disturb Mode",
+            "content": "Enable 'Do Not Disturb' mode on your phone while using Android Auto. Go to Settings > Sound & vibration > Do Not Disturb and set it to silence all notifications except for priority contacts or apps."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T06:17:12.010Z",
+      "updated": "2026-08-03T06:17:12.010Z",
+      "sourceUrl": "https://www.howtogeek.com/i-finally-fixed-annoying-notifications-in-android-autoheres-the-settings-i-changed-to-do-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
