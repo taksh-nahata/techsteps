@@ -340894,5 +340894,388 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785723092583-798",
+    "title": "Fix Shared Printer Not Accessible on macOS Sonoma",
+    "problemDescription": "After upgrading to macOS Sonoma, other devices cannot print to a printer shared by an iMac running Sonoma.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macOS Sonoma",
+      "shared printer",
+      "printing",
+      "lpadmin",
+      "lpstat"
+    ],
+    "steps": [
+      {
+        "title": "Check Printer Name",
+        "content": "Run `lpstat -p` in Terminal to list available printers and note the exact name of the shared printer (e.g., 'Brother_MFC_9330CDW')."
+      },
+      {
+        "title": "Allow All Users to Access the Printer",
+        "content": "Run `sudo lpadmin -p [printer name] -u allow:all` in Terminal to grant access to all users on the network. Replace `[printer name]` with the name from the previous step."
+      },
+      {
+        "title": "Verify Printer Sharing Settings",
+        "content": "Go to System Settings > Printers & Scanners, select the shared printer, and ensure the Sharing Settings show 'No Access' (do not change this)."
+      },
+      {
+        "title": "Restart Printer and Router",
+        "content": "Power cycle the shared printer and your router to refresh network connections."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Re-add Printer to Wi-Fi Network",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disconnect and Reconnect Printer to Wi-Fi",
+            "content": "Remove the printer from your Wi-Fi network and reconnect it to ensure a stable connection."
+          },
+          {
+            "title": "Restart Router",
+            "content": "Power cycle your router to clear any network issues."
+          },
+          {
+            "title": "Re-add Printer on Client Devices",
+            "content": "On other devices, remove and re-add the shared printer in their printing settings."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Enable CUPS Listener",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Start CUPS Service",
+            "content": "Run `sudo launchctl load -w /System/Library/LaunchDaemons/org.cups.cupsd.plist` in Terminal to ensure the CUPS printing service is active."
+          },
+          {
+            "title": "Listen on Port 631",
+            "content": "Run `sudo cupsctl Listen :631` to enable network printing via CUPS."
+          },
+          {
+            "title": "Restart Printer Sharing",
+            "content": "Restart the printer sharing service by toggling it off and on in System Settings > Printers & Scanners."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T02:11:32.583Z",
+      "updated": "2026-08-03T02:11:32.583Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/467970/cannot-print-to-printer-shared-by-imac-sonoma-from-other-computers",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785723102092-810",
+    "title": "Fix macOS Hold for Authentication Error When Printing to Windows Shared Printer",
+    "problemDescription": "macOS (High Sierra/Mojave) fails to print to a Windows shared printer, repeatedly showing 'Hold for Authentication' despite correct credentials. Resetting the printer resolves the issue.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "macOS",
+      "printing",
+      "Windows shared printer",
+      "Hold for Authentication",
+      "printer reset"
+    ],
+    "steps": [
+      {
+        "title": "Remove and Re-add the Printer",
+        "content": "Go to System Preferences > Printers & Scanners. Select the problematic printer and click the '-' button to remove it. Click the '+' button to re-add the printer, ensuring you select the correct shared printer from the Windows server."
+      },
+      {
+        "title": "Use Guest Access (If Available)",
+        "content": "During the re-addition process, try selecting 'Guest' as the authentication method if prompted. This bypasses domain/local account requirements and may allow printing to proceed."
+      },
+      {
+        "title": "Reset the Printer",
+        "content": "Power off the printer, unplug it for 30 seconds, then power it back on. This clears any stuck print jobs or authentication states that may be causing the issue."
+      },
+      {
+        "title": "Check Printer Status in macOS",
+        "content": "After resetting, verify the printer status in System Preferences > Printers & Scanners. Ensure it shows 'Ready' and not 'Paused' or 'Hold for Authentication'."
+      },
+      {
+        "title": "Test Printing",
+        "content": "Send a test print job to confirm the issue is resolved. If it fails, repeat the steps or try an alternative method below."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Configure Windows Printer Sharing for macOS",
+        "type": "Advanced Configuration",
+        "steps": [
+          {
+            "title": "Enable Printer Sharing on Windows",
+            "content": "On the Windows machine hosting the printer, go to Control Panel > Network and Sharing Center > Change advanced sharing settings. Enable 'Turn on file and printer sharing' for the appropriate network profile."
+          },
+          {
+            "title": "Set Printer Permissions",
+            "content": "Right-click the printer in Windows > Printer Properties > Security tab. Ensure 'Everyone' or the specific user/group has 'Print' permissions. Add the local admin account (e.g., 'Guest') if not already present."
+          },
+          {
+            "title": "Disable Windows Firewall Temporarily",
+            "content": "On the Windows machine, disable the firewall temporarily to test if it's blocking the connection. Re-enable it after confirming the printer works."
+          },
+          {
+            "title": "Re-add Printer in macOS",
+            "content": "Follow the primary steps to re-add the printer in macOS, ensuring the Windows machine is discoverable on the network."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use IP Address Instead of Hostname",
+        "type": "Network Configuration",
+        "steps": [
+          {
+            "title": "Find the Printer's IP Address",
+            "content": "On the Windows machine, go to Control Panel > Devices and Printers > Right-click the printer > Properties > Ports tab. Note the IP address or hostname of the printer."
+          },
+          {
+            "title": "Add Printer via IP in macOS",
+            "content": "In macOS, go to System Preferences > Printers & Scanners > '+'. Select the 'IP' tab, enter the printer's IP address, and choose the appropriate protocol (e.g., IPP, LPD)."
+          },
+          {
+            "title": "Configure Authentication",
+            "content": "When prompted, enter the Windows credentials (local admin or guest) or select 'Guest' if available. Save the settings and test printing."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T02:11:42.092Z",
+      "updated": "2026-08-03T02:11:42.092Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/339778/printing-to-windows-not-domain-server-hold-for-authentication",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785723119232-353",
+    "title": "Fix Mobile Network Issues on Samsung Galaxy S24 Series",
+    "problemDescription": "Samsung Galaxy S24, S24+, S24 Ultra, or S24 FE users experience no signal, no service, emergency calls only, call drops, slow internet, or mobile data failures.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "samsung",
+      "galaxy",
+      "s24",
+      "mobile network",
+      "no signal",
+      "5G",
+      "APN",
+      "data",
+      "call drop"
+    ],
+    "steps": [
+      {
+        "title": "Reset Mobile Network Settings",
+        "content": "Go to Settings > General Management > Reset > Reset Mobile Network Settings. Enter your lock password and tap Reset. This will not delete any data."
+      },
+      {
+        "title": "Configure Network Mode",
+        "content": "After reset, go to Settings > Connections > Mobile Networks > Network Mode. Select '5G Preferred' if using a 5G SIM, or reset APN settings by tapping the three dots > Reset to Default."
+      },
+      {
+        "title": "Enable Data Roaming (if needed)",
+        "content": "Go to Settings > Connections > Mobile Networks and enable 'Data Roaming' if you are outside your home network."
+      },
+      {
+        "title": "Enable Mobile Data",
+        "content": "Go to Settings > Connections > Data Usage and ensure 'Mobile Data' is enabled."
+      },
+      {
+        "title": "Verify Network Operator",
+        "content": "Go to Settings > Connections > Mobile Networks > Network Operators and select 'Automatically' to ensure proper network selection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Software Updates",
+        "type": "Software Update",
+        "steps": [
+          {
+            "title": "Update Software",
+            "content": "Go to Settings > Software Update > Download and Install. Ensure your device is running the latest firmware to resolve network issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinsert SIM Card",
+        "type": "Hardware Check",
+        "steps": [
+          {
+            "title": "Remove and Reinsert SIM",
+            "content": "Power off the device, remove the SIM card, clean it gently, and reinsert it. Power on the device and check for network connectivity."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T02:11:59.232Z",
+      "updated": "2026-08-03T02:11:59.232Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=H7iMQDq-V8Q",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785723122746-634",
+    "title": "Fix Samsung Galaxy Not Registered on Network Issue",
+    "problemDescription": "Samsung Galaxy phone displays 'Not registered on network' or 'Emergency calls only', preventing normal cellular service.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "samsung galaxy",
+      "not registered on network",
+      "emergency calls only",
+      "sim card",
+      "dual sim",
+      "network registration"
+    ],
+    "steps": [
+      {
+        "title": "Check SIM Card Settings",
+        "content": "Go to Settings > Connections > SIM card manager. Ensure the correct SIM is selected for calls, texts, and mobile data. The active SIM should have a working connection."
+      },
+      {
+        "title": "Manually Select Network Operator",
+        "content": "Navigate to Settings > Connections > Mobile networks > Network operators. Select 'Select automatically' to force a network search. Repeat for each SIM if using dual SIM."
+      },
+      {
+        "title": "Reinsert SIM Card",
+        "content": "Power off the device, remove the SIM card(s), reinsert them firmly, and power the device back on."
+      },
+      {
+        "title": "Restart the Device",
+        "content": "Restart your Samsung Galaxy phone to refresh network connections."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Network Settings",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Back up important data as this will reset all network settings."
+          },
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > General Management > Reset > Reset network settings. Confirm and restart the device."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Software Updates",
+        "type": "Preventive Measure",
+        "steps": [
+          {
+            "title": "Update Software",
+            "content": "Go to Settings > Software update > Download and install. Ensure the device has the latest firmware."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T02:12:02.746Z",
+      "updated": "2026-08-03T02:12:02.746Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=xH2ufiI5Eq4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785723159321-512",
+    "title": "Fix Google Pixel Battery Drain or Charging Issues",
+    "problemDescription": "Google Pixel phone battery drains quickly or fails to charge properly, often requiring a restart to temporarily resolve the issue.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery",
+      "drain",
+      "charging",
+      "pixel",
+      "restart"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Pixel Phone",
+        "content": "Press and hold the Power button, then tap 'Restart'. Wait for the device to reboot and check if the battery issue persists."
+      },
+      {
+        "title": "Check for Rogue Apps",
+        "content": "Go to Settings > Apps > See all apps. Sort by 'Battery usage' and identify any apps consuming excessive power. Force stop or uninstall suspicious apps."
+      },
+      {
+        "title": "Inspect for Physical Damage",
+        "content": "Examine the charging port and battery for signs of damage (e.g., bent pins, swelling). Clean the port with compressed air if debris is present."
+      },
+      {
+        "title": "Update System and Apps",
+        "content": "Go to Settings > System > System update. Install any available updates. Also, update all apps via the Play Store."
+      },
+      {
+        "title": "Reset Battery Stats",
+        "content": "Drain the battery to 0% and charge it to 100% without interruption. This may recalibrate the battery indicator."
+      },
+      {
+        "title": "Test with Safe Mode",
+        "content": "Hold the Power button, then long-press 'Power off' to enter Safe Mode. If the issue resolves, a third-party app is likely the cause."
+      },
+      {
+        "title": "Factory Reset (Last Resort)",
+        "content": "Backup data, then go to Settings > System > Reset options > Erase all data. Confirm to reset the device to factory settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Replace Battery or Charging Port",
+        "type": "Hardware Solution",
+        "steps": [
+          {
+            "title": "Contact Google Support",
+            "content": "Visit the Google Store or support page to check warranty coverage. Request a battery replacement if under warranty."
+          },
+          {
+            "title": "Visit a Repair Center",
+            "content": "If out of warranty, take the device to a certified repair center for professional battery or charging port replacement."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Different Charger or Cable",
+        "type": "Quick Fix",
+        "steps": [
+          {
+            "title": "Try a Different Charger",
+            "content": "Use the original charger or a certified USB-C charger. Faulty chargers can cause charging issues."
+          },
+          {
+            "title": "Test with a Different Cable",
+            "content": "Replace the USB-C cable with a known working one. Damaged cables can disrupt charging."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-03T02:12:39.321Z",
+      "updated": "2026-08-03T02:12:39.321Z",
+      "sourceUrl": "https://www.reddit.com/r/GooglePixel/comments/1rqpvtf/the_common_hardware_issues_on_google_pixel_phones",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
