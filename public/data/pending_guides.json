@@ -344313,5 +344313,453 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1785856947363-524",
+    "title": "Fix Google Pixel 8 Random Reboots by Enabling Developer Mode",
+    "problemDescription": "Google Pixel 8 experiences random reboots where the screen turns black briefly before the welcome screen reappears, with no Android or Google logo shown.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "google-pixel-8",
+      "random-reboots",
+      "developer-mode",
+      "adb",
+      "logcat"
+    ],
+    "steps": [
+      {
+        "title": "Enable Developer Options",
+        "content": "Go to Settings > About phone > Tap 'Build number' 7 times to enable Developer options."
+      },
+      {
+        "title": "Enable USB Debugging",
+        "content": "Go to Settings > System > Developer options > Enable 'USB debugging'."
+      },
+      {
+        "title": "Connect to Android Studio",
+        "content": "Connect your Pixel 8 to a computer via USB. Open Android Studio and use the logcat tool to monitor logs."
+      },
+      {
+        "title": "Monitor Logs",
+        "content": "Check logcat for errors or warnings before a reboot occurs. No further action is required; just observe the logs."
+      },
+      {
+        "title": "Disable Developer Mode",
+        "content": "After the issue stops, disable Developer options and USB debugging to confirm the fix persists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Ensure all important data is backed up to Google Drive or another cloud service."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset options > Erase all data (factory reset)."
+          },
+          {
+            "title": "Restore Data",
+            "content": "After reset, restore your data from the backup and check if the reboots persist."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Software Updates",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update System and Apps",
+            "content": "Go to Settings > System > System update > Check for updates. Also, update all apps via Google Play Store."
+          },
+          {
+            "title": "Restart Device",
+            "content": "After updating, restart the device and monitor for reboots."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T15:22:27.363Z",
+      "updated": "2026-08-04T15:22:27.363Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/257893/google-pixel-8-random-reboots-fixed-by-debugging-with-android-studio",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785856959500-859",
+    "title": "Unlock Pixel 8 Pro from Spectrum Carrier Lock",
+    "problemDescription": "A Pixel 8 Pro purchased from Spectrum Mobile appears carrier-locked despite claims from Spectrum and Google that it is unlocked. The device shows 'OEM unlocking' as unavailable and displays network error messages when using non-Spectrum SIMs.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "Pixel 8 Pro",
+      "Spectrum Mobile",
+      "carrier lock",
+      "unlock",
+      "OEM unlock",
+      "SIM card"
+    ],
+    "steps": [
+      {
+        "title": "Verify Device Lock Status",
+        "content": "Check if the device is truly locked by inserting a non-Spectrum SIM card. If you see errors like 'Sim card isn't supported' or 'Your device is locked,' proceed to the next steps."
+      },
+      {
+        "title": "Contact Spectrum Mobile Support",
+        "content": "Call Spectrum Mobile customer service (1-833-267-6071) and request an unlock. Provide them with the IMEI number of your Pixel 8 Pro (found in Settings > About phone > IMEI). Escalate to a supervisor if the first representative denies the request."
+      },
+      {
+        "title": "Request Unlock via Spectrum's Official Process",
+        "content": "Follow Spectrum's official unlock process: Visit a Spectrum store in person with your device and ID. Ask them to verify the unlock status and process the request if eligible. Spectrum Mobile typically unlocks devices after 12 months of active service."
+      },
+      {
+        "title": "Check Eligibility Requirements",
+        "content": "Ensure your device meets Spectrum's unlock criteria: 1) Device has been active on Spectrum Mobile for at least 12 months, 2) No outstanding balances, 3) Device is not reported lost or stolen."
+      },
+      {
+        "title": "Attempt OEM Unlocking After Confirmation",
+        "content": "Once Spectrum confirms the unlock, go to Settings > About phone > tap 'Build number' 7 times to enable Developer options. Then go to Settings > System > Developer options and enable 'OEM unlocking.' If the option is still greyed out, the device may still be locked."
+      },
+      {
+        "title": "Use a Third-Party Unlock Service (Last Resort)",
+        "content": "If Spectrum refuses to unlock the device, consider using a reputable third-party unlock service. Provide them with your IMEI and pay for the service. Ensure the service guarantees a refund if the unlock fails."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Escalate to Google Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Google Support",
+            "content": "Reach out to Google Support via chat or phone and request assistance in unlocking the device. Provide them with proof of purchase and the Spectrum account details. Google may escalate the issue to Spectrum on your behalf."
+          },
+          {
+            "title": "Provide Proof of Purchase",
+            "content": "Gather your purchase receipt or order confirmation from Spectrum Mobile. Upload this to Google Support to verify ownership and eligibility for unlocking."
+          },
+          {
+            "title": "Follow Up with Spectrum Again",
+            "content": "After Google escalates the issue, contact Spectrum Mobile again and reference the Google ticket number. Request that they process the unlock immediately."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Spectrum-Compatible SIM Temporarily",
+        "type": "Temporary Workaround",
+        "steps": [
+          {
+            "title": "Obtain a Spectrum SIM Card",
+            "content": "Request a new Spectrum SIM card from Spectrum Mobile or visit a Spectrum store to get one. Insert the new SIM and ensure the device connects to Spectrum's network."
+          },
+          {
+            "title": "Test with Non-Spectrum SIMs Again",
+            "content": "After confirming the device works with the Spectrum SIM, try inserting a non-Spectrum SIM again. If the device is truly unlocked, it should now work with the new SIM."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T15:22:39.500Z",
+      "updated": "2026-08-04T15:22:39.500Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/257256/pixel-8-pro-carrier-locked-looking-for-a-solution",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785856962497-422",
+    "title": "Fix 'android.process.media has stopped' Error on Google Pixel 2",
+    "problemDescription": "Google Photos and Files apps crash with the error 'android.process.media has stopped' due to corrupted or incomplete downloads in the internal storage.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android.process.media",
+      "crash",
+      "Google Photos",
+      "Files app",
+      "internal storage",
+      "downloads"
+    ],
+    "steps": [
+      {
+        "title": "Identify and Remove Problematic Download Files",
+        "content": "Open the Files app, navigate to 'Internal Storage' > 'Downloads', and look for files with names like 'goo.google.com...' or incomplete downloads. Delete these files."
+      },
+      {
+        "title": "Clear App Cache (Optional)",
+        "content": "Go to 'Settings' > 'Apps & notifications' > 'See all apps', select 'Google Photos' and 'Files', then tap 'Storage' > 'Clear Cache'."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "Close all apps, restart your Google Pixel 2, and check if the error persists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset (Last Resort)",
+        "type": "Nuclear Option",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure all important files, photos, and settings are backed up to Google Drive or another cloud service."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to 'Settings' > 'System' > 'Reset options' > 'Erase all data (factory reset)', and follow the prompts to reset your device."
+          },
+          {
+            "title": "Restore Data",
+            "content": "After the reset, restore your data from the backup and reinstall apps."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T15:22:42.497Z",
+      "updated": "2026-08-04T15:22:42.497Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/200709/google-photos-and-files-apps-on-google-pixel-2-is-giving-the-following-error-an",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785856982432-899",
+    "title": "Fix Microsoft Outlook Not Working",
+    "problemDescription": "Microsoft Outlook is not functioning properly, possibly due to a service outage or unexpected error messages.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Microsoft Outlook",
+      "not working",
+      "service outage",
+      "error messages"
+    ],
+    "steps": [
+      {
+        "title": "Check Microsoft Service Status",
+        "content": "Visit Microsoft's official Service Health Status page (https://portal.office.com/servicestatus) to verify if Outlook is experiencing an outage."
+      },
+      {
+        "title": "Restart Outlook",
+        "content": "Close Outlook completely and reopen it. Ensure no background processes are running."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "Reboot your computer or mobile device to clear temporary glitches."
+      },
+      {
+        "title": "Update Outlook",
+        "content": "Ensure Outlook is updated to the latest version via Microsoft Update or your device's app store."
+      },
+      {
+        "title": "Clear Outlook Cache",
+        "content": "Delete cached files in Outlook by navigating to File > Options > Advanced > Outlook Data Files > Settings > Delete."
+      },
+      {
+        "title": "Reconfigure Outlook Account",
+        "content": "Remove and re-add your email account in Outlook to refresh the connection."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your device has a stable internet connection. Test other apps or websites."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Outlook Web App (OWA)",
+        "type": "Workaround",
+        "steps": [
+          {
+            "title": "Access Outlook Online",
+            "content": "Log in to Outlook via a web browser at https://outlook.office.com to check if emails are accessible."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Microsoft Support",
+        "type": "Official Support",
+        "steps": [
+          {
+            "title": "Reach Out to Microsoft",
+            "content": "Visit Microsoft Support (https://support.microsoft.com) and submit a ticket if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T15:23:02.432Z",
+      "updated": "2026-08-04T15:23:02.432Z",
+      "sourceUrl": "https://www.cnet.com/news-live/is-microsoft-outlook-down-microsoft-april-27-2026",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785857022133-433",
+    "title": "Fix Shared Printer Not Accessible on macOS Sonoma",
+    "problemDescription": "Printer shared via an iMac running macOS Sonoma is not accessible from other devices on the same network.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "sharing",
+      "macOS Sonoma",
+      "CUPS",
+      "lpadmin"
+    ],
+    "steps": [
+      {
+        "title": "Enable Printer Sharing on the Host Mac",
+        "content": "Go to System Settings > General > Sharing. Ensure 'Printer Sharing' is enabled and the target printer is selected."
+      },
+      {
+        "title": "Allow All Users to Access the Printer",
+        "content": "Open Terminal and run: `lpstat -p` to list the printer name. Then run: `sudo lpadmin -p [printer_name] -u allow:all` to allow all users on the network to access the printer."
+      },
+      {
+        "title": "Verify CUPS is Listening on All Interfaces",
+        "content": "Enable the CUPS web interface by running: `sudo cupsctl WebInterface=yes`. Then edit the CUPS configuration file by running: `sudo nano /etc/cups/cupsd.conf`. Add or uncomment the line `Listen :631` to ensure CUPS listens on all network interfaces."
+      },
+      {
+        "title": "Restart CUPS Service",
+        "content": "Restart the CUPS service to apply changes: `sudo launchctl stop org.cups.cupsd && sudo launchctl start org.cups.cupsd`."
+      },
+      {
+        "title": "Restart Router and Printer",
+        "content": "Power cycle your router and printer to ensure all network devices are refreshed."
+      },
+      {
+        "title": "Check Printer Sharing Settings",
+        "content": "Go back to System Settings > General > Sharing > Printer Sharing. Ensure the printer is still selected and sharing is enabled. Do not change the 'No Access' setting to 'Can Print'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Direct Printer Connection to Wi-Fi",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect Printer Directly to Wi-Fi",
+            "content": "Add the printer directly to your Wi-Fi network instead of relying on the host Mac for sharing."
+          },
+          {
+            "title": "Restart Router and Printer",
+            "content": "Power cycle your router and printer to ensure the printer is properly recognized on the network."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset Printer Sharing Permissions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove and Re-add Printer Sharing",
+            "content": "Go to System Settings > General > Sharing. Disable 'Printer Sharing', wait a few seconds, then re-enable it and select the printer again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T15:23:42.133Z",
+      "updated": "2026-08-04T15:23:42.133Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/467970/cannot-print-to-printer-shared-by-imac-sonoma-from-other-computers",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785857038686-664",
+    "title": "Fix macOS Inconsistent Printing with Samsung ML-2240/ML-2510",
+    "problemDescription": "macOS fails to print consistently with Samsung ML-2240/ML-2510 printers, where documents queue but do not print unless waiting 5-10 minutes or reconnecting the USB cable.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macOS",
+      "printing",
+      "Samsung ML-2240",
+      "Samsung ML-2510",
+      "USB",
+      "driver"
+    ],
+    "steps": [
+      {
+        "title": "Reset the Printing System",
+        "content": "Go to System Preferences > Printers & Scanners. Right-click (or Ctrl+click) in the printer list and select 'Reset printing system'. Confirm the reset. This removes all printers and clears print queues."
+      },
+      {
+        "title": "Download and Install Samsung Driver",
+        "content": "Download the Samsung ML-2240/ML-2510 driver version 2.6 directly from Apple's support page or Samsung's official website. Install the driver on your Mac."
+      },
+      {
+        "title": "Add Printer Using Samsung Driver",
+        "content": "After resetting, go back to System Preferences > Printers & Scanners. Click the '+' button to add the printer. Select the Samsung ML-2240/ML-2510 from the list and choose the installed driver. Ensure the correct USB connection is selected."
+      },
+      {
+        "title": "Test Printing",
+        "content": "Print a test document to verify the issue is resolved. If successful, the printer should now print documents consistently without delays."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use CUPS Web Interface",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable CUPS Web Interface",
+            "content": "Open Terminal and run: `cupsctl WebInterface=yes`. This enables the CUPS web interface for advanced printer management."
+          },
+          {
+            "title": "Access CUPS Admin Page",
+            "content": "Open a web browser and go to `http://localhost:631`. Navigate to 'Printers' and select your Samsung printer."
+          },
+          {
+            "title": "Modify Printer Settings",
+            "content": "Under 'Administration', choose 'Modify Printer'. Ensure the correct driver (Samsung ML-2240/ML-2510) is selected and apply changes."
+          },
+          {
+            "title": "Test Printing via CUPS",
+            "content": "Print a test page through the CUPS interface. If successful, the issue may be resolved. If not, proceed to the next alternate method."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Generic PostScript Driver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Existing Printer",
+            "content": "Go to System Preferences > Printers & Scanners. Select the Samsung printer and click the '-' button to remove it."
+          },
+          {
+            "title": "Add Printer with Generic Driver",
+            "content": "Click the '+' button to add the printer. Select the Samsung printer from the list, but choose 'Generic PostScript Driver' as the driver instead of the Samsung-specific one."
+          },
+          {
+            "title": "Configure Printer Settings",
+            "content": "Ensure the printer is set to use the PostScript driver. Adjust any necessary settings (e.g., paper size, orientation) and test printing."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T15:23:58.686Z",
+      "updated": "2026-08-04T15:23:58.686Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/325966/macos-inconsistent-printing",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
