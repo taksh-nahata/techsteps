@@ -345347,5 +345347,217 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785877714618-66",
+    "title": "Fix MacBook Pro iSight Camera Not Working After EFI Update",
+    "problemDescription": "The built-in iSight camera on a MacBook Pro is not functioning properly after an EFI firmware update, with applications reporting the camera is already in use by another application.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "MacBook Pro",
+      "iSight",
+      "camera",
+      "EFI firmware update",
+      "SMC reset",
+      "PRAM reset"
+    ],
+    "steps": [
+      {
+        "title": "Perform an SMC Reset",
+        "content": "Shut down your MacBook Pro. Press and hold the Command (⌘), Option (⌥), P, and R keys simultaneously. Turn on the MacBook Pro and continue holding the keys until you hear the startup sound for the third time. Release the keys and allow the Mac to boot normally."
+      },
+      {
+        "title": "Verify iSight Functionality",
+        "content": "Open an application that uses the iSight camera (e.g., FaceTime or Photo Booth) to confirm the camera is now working. If the issue persists, proceed to the next step."
+      },
+      {
+        "title": "Restart Your Mac",
+        "content": "If the SMC reset does not resolve the issue, perform a simple restart of your MacBook Pro. Sometimes, a restart can clear temporary software conflicts."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset PRAM/NVRAM",
+        "type": "Alternative Solution",
+        "steps": [
+          {
+            "title": "Shut Down and Reset PRAM/NVRAM",
+            "content": "Shut down your MacBook Pro. Press the power button to turn it on, then immediately press and hold the Command (⌘), Option (⌥), P, and R keys. Hold the keys for at least 20 seconds, then release them. The Mac will restart."
+          },
+          {
+            "title": "Verify Camera Functionality",
+            "content": "After the reset, open an iSight-compatible application to check if the camera is now functioning correctly."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall macOS",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Before proceeding, ensure all important data is backed up to an external drive or cloud storage."
+          },
+          {
+            "title": "Reinstall macOS",
+            "content": "Restart your MacBook Pro and hold Command (⌘) + R to enter Recovery Mode. Select 'Reinstall macOS' and follow the on-screen instructions to reinstall the operating system without erasing your data."
+          },
+          {
+            "title": "Test the iSight Camera",
+            "content": "After reinstallation, test the iSight camera using a compatible application to confirm functionality."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T21:08:34.618Z",
+      "updated": "2026-08-04T21:08:34.618Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/macbook-pro-efi-firmware-update-1-2-3-resetting-pram-can-solve-a-variety-of-issues-isight-not-functioning-fix-more",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785877718921-325",
+    "title": "Fix MacBook Black Screen Caused by Dual GPU Switching",
+    "problemDescription": "MacBook Pro (2010) experiences a black screen due to automatic switching between integrated and dedicated GPUs, even after Apple's software fix.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "black screen",
+      "MacBook Pro",
+      "GPU switching",
+      "gfxCardStatus",
+      "2010"
+    ],
+    "steps": [
+      {
+        "title": "Force Single GPU Mode Using gfxCardStatus",
+        "content": "Download and install [gfxCardStatus](https://gfx.io/) from the official website. Launch the utility and select 'Integrated Only' or 'Discrete Only' to disable automatic GPU switching. This prevents the black screen issue by avoiding the problematic dual-GPU transition."
+      },
+      {
+        "title": "Save Work and Restart",
+        "content": "Before restarting, save all open documents and applications to avoid data loss. Use the Apple menu to restart your MacBook Pro. After rebooting, the black screen issue should be resolved."
+      },
+      {
+        "title": "Update macOS (If Not Already Done)",
+        "content": "Check for and install any pending macOS updates via 'System Preferences > Software Update'. While Apple's official fix may not resolve all cases, it can help in some scenarios."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset NVRAM/PRAM",
+        "type": "Apple Recommended",
+        "steps": [
+          {
+            "title": "Shut Down MacBook",
+            "content": "Turn off your MacBook Pro completely."
+          },
+          {
+            "title": "Reset NVRAM/PRAM",
+            "content": "Power on the MacBook and immediately hold down the Command (⌘), Option, P, and R keys simultaneously. Hold them for about 20 seconds until you hear the startup chime a second time. Release the keys and allow the MacBook to boot normally."
+          },
+          {
+            "title": "Check for Resolution",
+            "content": "After resetting, check if the black screen issue persists. This method resets certain settings that may interfere with GPU handling."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Hardware Replacement (Last Resort)",
+        "type": "Hardware Fix",
+        "steps": [
+          {
+            "title": "Contact Apple Support or Authorized Service Provider",
+            "content": "If all software solutions fail, the issue may be hardware-related. Schedule a service appointment with Apple or an authorized provider to diagnose and replace the motherboard if necessary."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T21:08:38.921Z",
+      "updated": "2026-08-04T21:08:38.921Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/quick-workaround-for-macbook-black-screen",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785877724332-462",
+    "title": "Fix Audio Buzzing/Static Noise After Mac OS X 10.3.8 Update",
+    "problemDescription": "Users report a distinct 'buzz' or 'static' noise from built-in or external speakers after installing the Mac OS X 10.3.8 update.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macos",
+      "10.3.8",
+      "audio",
+      "buzzing",
+      "static",
+      "speakers"
+    ],
+    "steps": [
+      {
+        "title": "Reapply the Mac OS X 10.3.8 Combo Updater",
+        "content": "Download and install the Mac OS X 10.3.8 Combo Updater from Apple's support website. This updater includes all previous updates and may resolve audio issues caused by partial or interrupted installations."
+      },
+      {
+        "title": "Reset NVRAM and PRAM",
+        "content": "Shut down your Mac. Turn it on and immediately hold Command (⌘), Option, P, and R keys simultaneously. Keep holding until you hear the startup sound for the second time, then release. This resets NVRAM/PRAM, which may clear audio-related settings causing the issue."
+      },
+      {
+        "title": "Check Audio Settings and Volume Levels",
+        "content": "Go to System Preferences > Sound. Ensure the correct output device is selected and the volume is not set too high. Test with headphones to isolate whether the issue is with internal speakers or the audio system itself."
+      },
+      {
+        "title": "Run Apple Hardware Test",
+        "content": "Insert the Apple Hardware Test CD that came with your Mac. Restart your computer while holding the 'D' key to boot into the diagnostic tool. Run tests to check for hardware issues, particularly with memory or audio components."
+      },
+      {
+        "title": "Disconnect External Audio Devices",
+        "content": "Unplug any external speakers, headphones, or audio interfaces. Restart your Mac and test the built-in speakers. If the issue resolves, the problem may be with the external device or its connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Audio Drivers (Advanced)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Audio Drivers",
+            "content": "Open Terminal and run the following command to remove audio-related kext files: `sudo rm -rf /System/Library/Extensions/AppleHDA.kext` (Note: Backup important files before proceeding)."
+          },
+          {
+            "title": "Reinstall Audio Drivers",
+            "content": "Restart your Mac. The system will attempt to reinstall the audio drivers automatically. If not, manually reinstall the Mac OS X 10.3.8 Combo Updater."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Safe Mode Testing",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Restart your Mac and hold the Shift key to boot into Safe Mode. This disables non-essential software and drivers. Test the audio to see if the issue persists."
+          },
+          {
+            "title": "Re-enable Startup Items",
+            "content": "If the issue resolves in Safe Mode, restart normally and check for conflicting startup items or third-party audio software that may be interfering."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T21:08:44.332Z",
+      "updated": "2026-08-04T21:08:44.332Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/special-report-troubleshooting-mac-os-x-10-3-8",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
