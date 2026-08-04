@@ -343450,5 +343450,339 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785816589123-921",
+    "title": "Fix Loom Chrome Extension Errors",
+    "problemDescription": "Loom Chrome extension fails to work properly due to outdated browser, corrupted cache, or extension issues.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "loom",
+      "chrome extension",
+      "microphone",
+      "camera",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Update Google Chrome",
+        "content": "Open Google Chrome, click the three-dot menu in the top-right corner, go to Help > About Google Chrome, and update if available."
+      },
+      {
+        "title": "Clear Chrome Cache",
+        "content": "Open Chrome, type `chrome://history/` in the address bar, select 'Clear browsing data', choose 'All time' and 'Cached images and files', then click 'Clear data'."
+      },
+      {
+        "title": "Restart Browser and Computer",
+        "content": "Close Google Chrome completely, restart your computer, then reopen Chrome and test the Loom extension."
+      },
+      {
+        "title": "Reset Loom Chrome Extension",
+        "content": "Right-click the Loom extension icon (red pinwheel), select 'Remove from Chrome', confirm removal, restart Chrome, then reinstall the latest Loom extension from the Chrome Web Store."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Loom App on Mac",
+        "type": "Platform-Specific",
+        "steps": [
+          {
+            "title": "Check System Permissions",
+            "content": "On Mac, go to System Preferences > Security & Privacy > Privacy, ensure Loom is listed under Camera, Microphone, and Screen Recording with permissions enabled."
+          },
+          {
+            "title": "Reinstall Loom App",
+            "content": "Uninstall Loom from Applications, restart your Mac, then download and install the latest version from the official Loom website."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Loom Support",
+        "type": "Fallback Solution",
+        "steps": [
+          {
+            "title": "Gather Details",
+            "content": "Note down error messages, steps to reproduce, and system/browser details before contacting support."
+          },
+          {
+            "title": "Reach Out",
+            "content": "Visit Loom's official support page or help center to submit a ticket or start a live chat for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T04:09:49.123Z",
+      "updated": "2026-08-04T04:09:49.123Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-loom-problems-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785816592752-171",
+    "title": "Fix Google Assistant Not Responding on Pixelbook",
+    "problemDescription": "Google Assistant fails to respond to voice commands on a Pixelbook running Chrome OS.",
+    "category": "chromeos",
+    "difficulty": "Easy",
+    "keywords": [
+      "google assistant",
+      "pixelbook",
+      "chromeos",
+      "voice command",
+      "ok google"
+    ],
+    "steps": [
+      {
+        "title": "Enable Google Assistant in Settings",
+        "content": "Click the System Clock in the bottom-right corner, then select the Gear icon to open Chrome OS settings. Navigate to 'Search and Assistant' > 'Google Assistant'. Ensure 'Ok Google' is set to 'Always On' or 'On (Recommended)'."
+      },
+      {
+        "title": "Verify Assistant Toggle",
+        "content": "In the same 'Google Assistant' settings screen, confirm that the toggle for Google Assistant is enabled (turned blue). If not, click the toggle to enable it."
+      },
+      {
+        "title": "Test Voice Command",
+        "content": "Press the Google Assistant key on your Pixelbook or say 'OK Google' out loud to test if the assistant responds."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Powerwash (Factory Reset)",
+        "type": "Factory Reset",
+        "steps": [
+          {
+            "title": "Sign Out of Account",
+            "content": "Sign out of your Google account on the Pixelbook if possible."
+          },
+          {
+            "title": "Initiate Powerwash",
+            "content": "Press and hold Ctrl + Alt + Shift + R, then select 'Restart'. In the pop-up window, click the blue 'Powerwash' button and confirm by clicking 'Continue'. Follow the on-screen instructions to reset the device to factory settings."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall Chrome OS",
+        "type": "Advanced Recovery",
+        "steps": [
+          {
+            "title": "Prepare a Second PC",
+            "content": "Use a second computer to download the Chrome OS recovery tool from Google's official website."
+          },
+          {
+            "title": "Create Bootable Flash Drive",
+            "content": "Follow the instructions to create a bootable USB drive with the Chrome OS recovery image."
+          },
+          {
+            "title": "Boot and Reinstall",
+            "content": "Insert the USB drive into the Pixelbook, boot into recovery mode, and follow the prompts to reinstall Chrome OS."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T04:09:52.752Z",
+      "updated": "2026-08-04T04:09:52.752Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/most-common-pixelbook-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785816619960-965",
+    "title": "Fix MacBook Unexpected Shutdowns with SMC Firmware Update",
+    "problemDescription": "MacBook users experiencing sudden, unexpected shutdowns due to faulty internal monitoring systems.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "MacBook",
+      "shutdown",
+      "SMC",
+      "firmware",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Check for Software Updates",
+        "content": "Go to the Apple menu () > System Settings > General > Software Update. Install any available updates, including the 'MacBook SMC Firmware Update v1.1'."
+      },
+      {
+        "title": "Manually Download Firmware Update",
+        "content": "Visit Apple's official support website, search for 'MacBook SMC Firmware Update v1.1', and download the update manually if it does not appear in Software Updates."
+      },
+      {
+        "title": "Restart MacBook After Update",
+        "content": "After installing the update, restart your MacBook to ensure the firmware changes take effect."
+      },
+      {
+        "title": "Verify Update Installation",
+        "content": "Go to Apple menu () > About This Mac > System Report > Hardware > SMC Version to confirm the update was installed."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-04T04:10:19.960Z",
+      "updated": "2026-08-04T04:10:19.960Z",
+      "sourceUrl": "https://www.techradar.com/news/mobile-computing/laptops/computing/apple/apple-macbook-problems-solved-133881",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785816630046-807",
+    "title": "Fix Mac Not Turning On or Starting Up",
+    "problemDescription": "Mac computer fails to power on or start up properly, showing no signs of life or displaying a black screen.",
+    "category": "mac",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "startup",
+      "power",
+      "black screen",
+      "SMC reset",
+      "power supply"
+    ],
+    "steps": [
+      {
+        "title": "Check Power Connection",
+        "content": "Ensure the Mac is properly connected to a working power outlet. Try a different power cable, adapter, or outlet. For desktop Macs (iMac, Mac mini, Mac Pro), test the power lead with another device to rule out cable issues."
+      },
+      {
+        "title": "Verify External Display (For Desktops)",
+        "content": "If using an external monitor, check if it is powered on and displaying correctly. A non-functional external screen may mimic a Mac startup issue."
+      },
+      {
+        "title": "Reset System Management Controller (SMC)",
+        "content": "For Intel-based Macs: Shut down the Mac, then press and hold the power button for 10 seconds. Release, wait a few seconds, then power on. For Macs with T2 or M1/M2 chips, resetting the SMC may require specific steps (refer to Apple Support)."
+      },
+      {
+        "title": "Check Battery and Power Adapter (For Notebooks)",
+        "content": "Ensure the battery is charged or the power adapter is plugged in. If the adapter's light isn't on, try a different power outlet or adapter. Test the adapter with another device if possible."
+      },
+      {
+        "title": "Inspect for Hardware Failure",
+        "content": "If all power-related steps fail, the internal power supply or battery (for notebooks) may be faulty. Contact Apple Support or an authorized service provider for diagnosis and potential warranty replacement."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Safe Mode Boot (For Intel Macs)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Restart the Mac and immediately hold the Shift key. Release when the Apple logo appears. Safe Mode loads only essential software, which can help identify if third-party software is causing startup issues."
+          },
+          {
+            "title": "Test in Safe Mode",
+            "content": "If the Mac starts in Safe Mode, restart normally to exit Safe Mode. If it fails to start, the issue may be hardware-related or require further troubleshooting."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset NVRAM/PRAM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Shut Down and Reset NVRAM",
+            "content": "Shut down the Mac, then power it on and immediately hold Command (⌘) + Option + P + R for 20 seconds. Release the keys and let the Mac start normally. This resets certain settings stored in NVRAM/PRAM."
+          },
+          {
+            "title": "Verify Settings",
+            "content": "After reset, reconfigure any custom settings (e.g., display resolution, startup disk) that may have been reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T04:10:30.046Z",
+      "updated": "2026-08-04T04:10:30.046Z",
+      "sourceUrl": "https://www.techradar.com/news/computing/apple/how-to-fix-mac-startup-problems-959379",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785816644311-779",
+    "title": "Fix High CPU Usage by Zoom on Mac",
+    "problemDescription": "Zoom causes high CPU usage on Mac, especially when using an external display or running older versions of the app.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "cpu",
+      "mac",
+      "external display",
+      "high usage"
+    ],
+    "steps": [
+      {
+        "title": "Update Zoom to the Latest Version",
+        "content": "Open the Zoom app, go to Zoom.us > Check for Updates, and install the latest version. Alternatively, download the latest version directly from the Zoom website."
+      },
+      {
+        "title": "Disconnect External Display",
+        "content": "If using an external display, disconnect it and check if CPU usage drops. Reconnect after testing."
+      },
+      {
+        "title": "Check for Background Processes",
+        "content": "Open Activity Monitor (Applications > Utilities > Activity Monitor), sort by CPU usage, and close any unnecessary background apps or services."
+      },
+      {
+        "title": "Disable Startup Items",
+        "content": "Go to System Settings > General > Login Items, and disable Zoom or other apps that may start automatically."
+      },
+      {
+        "title": "Verify System Resources",
+        "content": "Ensure no other resource-intensive apps (e.g., antivirus, network monitoring tools) are running simultaneously."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Rebuild Spotlight Index",
+        "type": "System Optimization",
+        "steps": [
+          {
+            "title": "Open Terminal",
+            "content": "Go to Applications > Utilities > Terminal."
+          },
+          {
+            "title": "Run Spotlight Rebuild Command",
+            "content": "Type the following command and press Enter: `sudo mdutil -E /` (Enter admin password when prompted)."
+          },
+          {
+            "title": "Restart Mac",
+            "content": "Restart your Mac to complete the process."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Zoom Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Zoom Support",
+            "content": "Go to Zoom's Help Center or Support page to check for known issues or compatibility updates."
+          },
+          {
+            "title": "Submit a Support Request",
+            "content": "If the issue persists, submit a support request to Zoom for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T04:10:44.311Z",
+      "updated": "2026-08-04T04:10:44.311Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255961351",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
