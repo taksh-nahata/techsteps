@@ -345218,5 +345218,134 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785871462685-485",
+    "title": "Fix 'Unable to Connect to Server' on Samsung Galaxy S3",
+    "problemDescription": "The Samsung Galaxy S3 fails to connect to email servers, starting suddenly. The issue may be account-specific or related to network connectivity.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "Samsung Galaxy S3",
+      "unable to connect to server",
+      "email",
+      "account sync",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Remove and Re-add Email Account",
+        "content": "Go to Settings > Accounts and sync > Remove the problematic email account. Re-add it by going to Settings > Accounts and sync > Add account > Enter your email credentials."
+      },
+      {
+        "title": "Test Account Access on PC Browser",
+        "content": "Open a web browser on a PC and log in to your email account (e.g., Outlook, Gmail). Verify if the account is accessible without issues."
+      },
+      {
+        "title": "Check Network Connectivity",
+        "content": "Ensure your device is connected to a stable network (Wi-Fi or mobile data). Try switching between Wi-Fi and mobile data to isolate the issue."
+      },
+      {
+        "title": "Use Outlook.com App (for Outlook Accounts)",
+        "content": "Download and install the Outlook.com app from the Google Play Store. Configure your email account in the app and check if the issue persists."
+      },
+      {
+        "title": "Verify Other Websites",
+        "content": "Open a web browser on your Galaxy S3 and try accessing other websites (e.g., Google, YouTube). If other sites work, the issue is likely account-specific."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear App Cache and Data (for Email App)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Cache and Data",
+            "content": "Go to Settings > Applications > Manage Applications > Select your email app (e.g., Gmail, Outlook) > Clear Cache and Clear Data. Restart the app and re-add your account."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > Backup and reset > Network settings reset > Confirm. Note: This will remove saved Wi-Fi passwords and Bluetooth connections."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T19:24:22.685Z",
+      "updated": "2026-08-04T19:24:22.685Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/i-keep-getting-unable-to-connect-to-server-fron/d7bbd2b7-1576-4434-b3f6-5c842a037ff4",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785871489115-98",
+    "title": "Fix Car Battery Drain Issue",
+    "problemDescription": "Vehicle's battery drains excessively, likely due to a fault in the electrical system or charging system malfunction.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "car battery",
+      "battery drain",
+      "charging system",
+      "electrical fault"
+    ],
+    "steps": [
+      {
+        "title": "Inspect Battery and Terminals",
+        "content": "Check battery terminals for corrosion or loose connections. Clean terminals if corroded and ensure tight connections."
+      },
+      {
+        "title": "Test Battery Voltage",
+        "content": "Use a multimeter to test the battery voltage. A fully charged battery should read around 12.6V. If below 12.4V, charge or replace the battery."
+      },
+      {
+        "title": "Check Alternator Output",
+        "content": "With the engine running, measure voltage at the battery terminals. It should read between 13.8V and 14.4V. If outside this range, the alternator may be faulty."
+      },
+      {
+        "title": "Inspect for Parasitic Drain",
+        "content": "Turn off the engine and all accessories. Disconnect the negative battery terminal and connect a multimeter in series to measure current draw. Normal draw should be less than 50mA. Higher values indicate parasitic drain."
+      },
+      {
+        "title": "Identify Parasitic Drain Source",
+        "content": "If parasitic drain is detected, systematically disconnect fuses in the fuse box to isolate the circuit causing the drain. Check for faulty components like relays, switches, or modules."
+      },
+      {
+        "title": "Use a Thermal Camera",
+        "content": "Scan the vehicle's electrical system with a thermal camera to identify hotspots, which may indicate faulty wiring, connections, or components causing excessive heat and drain."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Professional Diagnostic Scan",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Perform OBD-II Scan",
+            "content": "Use an OBD-II scanner to check for stored trouble codes related to the charging system or electrical faults. Address any codes found."
+          },
+          {
+            "title": "Consult a Professional",
+            "content": "If the issue persists, take the vehicle to a professional mechanic for a comprehensive diagnostic using specialized tools like a battery tester or oscilloscope."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T19:24:49.115Z",
+      "updated": "2026-08-04T19:24:49.115Z",
+      "sourceUrl": "https://www.reddit.com/r/MechanicAdvice/comments/15whhau/mechanic_here_cant_for_the_life_of_me_figure_out",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
