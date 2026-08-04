@@ -343948,5 +343948,213 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785839575226-389",
+    "title": "Fix Horizon Workrooms File Sharing Issues",
+    "problemDescription": "Users cannot view or share files or screens in Facebook's Horizon Workrooms during VR meetings, limiting productivity.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Horizon Workrooms",
+      "VR meeting",
+      "file sharing",
+      "screen sharing",
+      "Oculus Quest 2"
+    ],
+    "steps": [
+      {
+        "title": "Use the Whiteboard for File Sharing",
+        "content": "Post files or images on the virtual whiteboard for participants to view. This is a temporary workaround until native file sharing is fully implemented."
+      },
+      {
+        "title": "Share Screen via Companion App",
+        "content": "Use the Horizon Workrooms companion app on your mobile device to share your screen with the VR meeting. Ensure the app is updated to the latest version."
+      },
+      {
+        "title": "Check for Beta Updates",
+        "content": "Visit the official Horizon Workrooms app page in the Oculus Store to check for beta updates that may include file sharing features."
+      },
+      {
+        "title": "Use Zoom/Google Meet for File Sharing",
+        "content": "If file sharing is critical, switch to a traditional video conferencing tool like Zoom or Google Meet alongside the VR meeting for seamless collaboration."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Third-Party Screen Sharing Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Screen Sharing App",
+            "content": "Use a third-party screen sharing tool like Discord or Steam Remote Play to share your desktop with participants in the VR meeting."
+          },
+          {
+            "title": "Join the VR Meeting and Screen Share",
+            "content": "Start the screen sharing tool and join the Horizon Workrooms meeting simultaneously. Participants can view the shared screen on their devices."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Request Native File Sharing Support",
+        "type": "Feedback-Driven Solution",
+        "steps": [
+          {
+            "title": "Submit Feedback to Meta",
+            "content": "Use the in-app feedback tool in Horizon Workrooms to request native file sharing features. Include details about your use case to prioritize the feature."
+          },
+          {
+            "title": "Join the Horizon Workrooms Community",
+            "content": "Participate in the official Horizon Workrooms community forums or social media groups to stay updated on new features and provide feedback."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T10:32:55.227Z",
+      "updated": "2026-08-04T10:32:55.227Z",
+      "sourceUrl": "https://www.howtogeek.com/95372/trying-facebooks-vr-horizon-workspace-felt-like-the-future-no-one-will-embrace",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785839579414-546",
+    "title": "Enable Zoom Immersive Mode",
+    "problemDescription": "Immersive Mode in Zoom is not available or not working as expected, preventing participants from appearing in a shared virtual background.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Zoom",
+      "Immersive Mode",
+      "virtual background",
+      "update",
+      "participants"
+    ],
+    "steps": [
+      {
+        "title": "Update Zoom to the Latest Version",
+        "content": "Open the Zoom app on your desktop or mobile device. Go to your profile picture, then click 'Check for Updates' (desktop) or ensure your app is set to auto-update (mobile). Install any available updates."
+      },
+      {
+        "title": "Verify Immersive Mode Availability",
+        "content": "Ensure the meeting host has enabled Immersive Mode. Hosts can turn it on during a call by clicking 'View' in the top menu, then selecting 'Immersive View'."
+      },
+      {
+        "title": "Join the Meeting with Immersive Mode",
+        "content": "If the host has enabled Immersive Mode, you should see participants grouped in a shared virtual background. If not, ask the host to enable it."
+      },
+      {
+        "title": "Adjust Participant Layout (Host Only)",
+        "content": "As a host, click 'View' in the top menu, then select 'Immersive View'. You can adjust the layout by clicking and dragging participants to resize or reposition them in the virtual room."
+      },
+      {
+        "title": "Check Participant Count",
+        "content": "If the meeting has more than 25 participants, additional attendees will appear in a thumbnail strip at the top of the screen instead of the main Immersive View."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Enable Immersive Mode on Mobile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Zoom Mobile App",
+            "content": "Open the Google Play Store (Android) or App Store (iOS) and ensure the Zoom app is updated to the latest version."
+          },
+          {
+            "title": "Join the Meeting",
+            "content": "Once updated, join the Zoom meeting. The host must enable Immersive Mode for it to work on mobile devices."
+          },
+          {
+            "title": "Enable Immersive View (Host)",
+            "content": "As the host, tap 'More' (three dots) during the meeting, then select 'Immersive View'. Adjust the layout as needed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T10:32:59.414Z",
+      "updated": "2026-08-04T10:32:59.414Z",
+      "sourceUrl": "https://www.howtogeek.com/79729/zooms-new-immersive-mode-puts-everyone-together-in-the-same-room",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785839613433-143",
+    "title": "Fix AirPods Charging Case Battery Drain Issue",
+    "problemDescription": "AirPods charging case battery drains rapidly even when not in use, leading to reduced standby time.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "airpods",
+      "battery drain",
+      "charging case",
+      "firmware",
+      "idle discharge"
+    ],
+    "steps": [
+      {
+        "title": "Check for and Install Firmware Updates",
+        "content": "Ensure your AirPods are connected to an iPhone/iPad. Go to Settings > General > About > AirPods. If an update is available, it will install automatically. Alternatively, place the AirPods in the charging case and ensure the case is connected to power to trigger the update."
+      },
+      {
+        "title": "Reset AirPods and Charging Case",
+        "content": "Press and hold the setup button on the back of the charging case for 15 seconds until the status light flashes amber, then white. Reconnect the AirPods to your device and check if the battery drain issue persists."
+      },
+      {
+        "title": "Disable Automatic Ear Detection",
+        "content": "Go to Settings > Bluetooth. Tap the 'i' icon next to your AirPods and disable 'Automatic Ear Detection'. This may reduce unnecessary power consumption when the AirPods are not in use."
+      },
+      {
+        "title": "Avoid Extreme Temperatures",
+        "content": "Store and charge your AirPods in a cool, dry place. Avoid exposing them to temperatures above 95°F (35°C) or below 32°F (0°C) to prevent battery degradation."
+      },
+      {
+        "title": "Use Original Apple Charging Accessories",
+        "content": "Ensure you are using the original Apple charging cable and adapter. Third-party accessories may not provide optimal charging and could contribute to battery drain."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset via iPhone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Forget and Reconnect AirPods",
+            "content": "Go to Settings > Bluetooth. Tap the 'i' icon next to your AirPods and select 'Forget This Device'. Place the AirPods back in the charging case and reconnect them to your device."
+          },
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings. This will clear all saved Wi-Fi networks and Bluetooth devices, which may resolve connectivity-related battery drain issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Replace the Charging Case Battery",
+        "type": "Official Service",
+        "steps": [
+          {
+            "title": "Check Apple Support Coverage",
+            "content": "Visit Apple's official support page (support.apple.com) and check if your AirPods or charging case are eligible for battery service or replacement under warranty or AppleCare+."
+          },
+          {
+            "title": "Contact Apple Support",
+            "content": "If eligible, contact Apple Support or visit an Apple Store/Authorized Service Provider to arrange a battery replacement for the charging case."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T10:33:33.433Z",
+      "updated": "2026-08-04T10:33:33.433Z",
+      "sourceUrl": "https://en.wikipedia.org/wiki/AirPods",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
