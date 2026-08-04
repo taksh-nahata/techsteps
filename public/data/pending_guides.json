@@ -345559,5 +345559,457 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785884300090-730",
+    "title": "Fix MacBook Pro 2016 Screen Flickering Lines",
+    "problemDescription": "MacBook Pro 2016 displays flickering horizontal lines that freeze when black pixels appear, indicating a potential hardware issue with the LCD panel.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "MacBook Pro 2016",
+      "screen flickering",
+      "horizontal lines",
+      "LCD panel",
+      "hardware issue"
+    ],
+    "steps": [
+      {
+        "title": "Check for Software Issues",
+        "content": "Restart the MacBook Pro to rule out temporary software glitches. If the issue persists, proceed to hardware checks."
+      },
+      {
+        "title": "Inspect Display Settings",
+        "content": "Go to System Preferences > Displays and ensure the resolution and refresh rate are set correctly. Try changing the resolution temporarily to see if the issue resolves."
+      },
+      {
+        "title": "Test with External Display",
+        "content": "Connect the MacBook Pro to an external monitor or TV via HDMI or Thunderbolt. If the external display works fine, the issue is likely with the MacBook's built-in display."
+      },
+      {
+        "title": "Check for Physical Damage",
+        "content": "Inspect the screen for any visible physical damage, such as cracks or pressure marks. If damage is found, the LCD panel may need replacement."
+      },
+      {
+        "title": "Reset NVRAM/PRAM",
+        "content": "Shut down the MacBook, then turn it on and immediately press and hold Command + Option + P + R for about 20 seconds. Release the keys and let the MacBook boot normally. This resets certain settings that might affect display performance."
+      },
+      {
+        "title": "Run Apple Diagnostics",
+        "content": "Shut down the MacBook, then turn it on while holding the D key. Follow the on-screen instructions to run Apple Diagnostics. This will check for hardware issues, including display problems."
+      },
+      {
+        "title": "Contact Apple Support or Authorized Service Provider",
+        "content": "If the issue persists after all troubleshooting steps, the LCD panel or display cable may be faulty. Contact Apple Support or visit an Apple Store or authorized service provider for professional diagnosis and repair."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Safe Mode Testing",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Restart the MacBook and hold the Shift key to boot into Safe Mode. This loads only essential software and can help determine if third-party software is causing the issue."
+          },
+          {
+            "title": "Test Display in Safe Mode",
+            "content": "Use the MacBook in Safe Mode for a few hours. If the flickering does not occur, a third-party app or driver may be the culprit. Uninstall recently added apps or updates."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: External GPU (eGPU) Test",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect an eGPU",
+            "content": "If available, connect an external GPU to the MacBook Pro. If the display works fine through the eGPU, the issue is likely with the internal display components."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T22:58:20.090Z",
+      "updated": "2026-08-04T22:58:20.090Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/463153/macbook-pro-2016-screen-has-interesting-flickering-lines",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785884310547-804",
+    "title": "Fix Microsoft Teams Login Issues on Android",
+    "problemDescription": "Unable to log into the Microsoft Teams app on an Android device, with potential account or network-related causes.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "microsoft teams",
+      "android",
+      "login",
+      "sign-in",
+      "account",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Verify Account Accessibility",
+        "content": "Try logging into Microsoft Teams via a web browser (e.g., Chrome) on your Android device. If successful, the issue is likely app-specific."
+      },
+      {
+        "title": "Test on Another Device",
+        "content": "Attempt to log in using the same account on a different device (e.g., computer or another phone). If it works, the problem may be isolated to your Android device."
+      },
+      {
+        "title": "Check Network Connection",
+        "content": "Switch from your home Wi-Fi to mobile data (or vice versa) to rule out network-related issues. Ensure your network is stable and not blocking Microsoft services."
+      },
+      {
+        "title": "Clear App Cache and Data",
+        "content": "Go to Settings > Apps > Microsoft Teams > Storage > Clear Cache and Clear Data. Restart the app and attempt to log in again."
+      },
+      {
+        "title": "Update the Teams App",
+        "content": "Open the Google Play Store, search for Microsoft Teams, and update the app to the latest version. Restart your device afterward."
+      },
+      {
+        "title": "Reinstall the Teams App",
+        "content": "Uninstall Microsoft Teams, restart your device, and reinstall the app from the Google Play Store."
+      },
+      {
+        "title": "Check for Account Issues",
+        "content": "If you're using a work or school account, contact your organization's IT department to verify account status or permissions. For personal accounts, ensure your subscription is active."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Force Stop and Restart App",
+        "type": "Quick Fix",
+        "steps": [
+          {
+            "title": "Force Stop the App",
+            "content": "Go to Settings > Apps > Microsoft Teams > Force Stop."
+          },
+          {
+            "title": "Restart Your Device",
+            "content": "Turn off your Android device, wait 30 seconds, and turn it back on."
+          },
+          {
+            "title": "Reopen Teams",
+            "content": "Launch the app and attempt to log in again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for System Updates",
+        "type": "System-Level Fix",
+        "steps": [
+          {
+            "title": "Update Android OS",
+            "content": "Go to Settings > System > Software Update and install any available updates for your device."
+          },
+          {
+            "title": "Update Device Drivers",
+            "content": "For some Android devices, update network-related drivers via Settings > System > Developer Options (if enabled)."
+          },
+          {
+            "title": "Retry Login",
+            "content": "After updating, restart your device and attempt to log into Teams again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T22:58:30.547Z",
+      "updated": "2026-08-04T22:58:30.547Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msteams/forum/all/issue-logging-into-ms-teams-app-on-android/9b239afb-caab-4583-adbf-b60698c349af",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785884314727-403",
+    "title": "Fix Microsoft Teams Assignment Quiz Loading Error",
+    "problemDescription": "Students cannot access assignment quizzes in Microsoft Teams, showing an error. The issue may be related to guest user permissions or Teams Forms integration.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Teams",
+      "assignment",
+      "quiz",
+      "Forms",
+      "guest user",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Verify Guest User Permissions",
+        "content": "Check if students are added as guest users in the class team. If so, remove their guest status and add them as regular members using their institutional accounts."
+      },
+      {
+        "title": "Test in Teams Web App",
+        "content": "Have students try accessing the assignment quiz via the Teams Web App (https://teams.microsoft.com) to see if the issue persists."
+      },
+      {
+        "title": "Create a New Team for Testing",
+        "content": "Create a new team in Microsoft Teams and assign a test quiz to check if the issue is specific to the current team."
+      },
+      {
+        "title": "Check Browser Compatibility",
+        "content": "Ensure students are using a supported browser (e.g., Microsoft Edge, Chrome, or Firefox). Upgrade to Microsoft Edge if using an outdated browser."
+      },
+      {
+        "title": "Review Assignment Settings",
+        "content": "Verify that the assignment is published and visible to all students. Check the assignment due date and ensure it is not set in the past."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Direct Forms Link",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Share the Forms Link Directly",
+            "content": "Copy the direct link to the Microsoft Forms quiz from the assignment and share it with students via email or another platform."
+          },
+          {
+            "title": "Ensure Forms Permissions",
+            "content": "Check that the Forms quiz is set to 'Anyone with the link can respond' or is shared with the specific student group."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Recreate the Assignment",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete and Recreate the Assignment",
+            "content": "Delete the problematic assignment and create a new one with the same quiz. Ensure all settings are correctly configured."
+          },
+          {
+            "title": "Test the New Assignment",
+            "content": "Have students attempt to access the newly created assignment to verify if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T22:58:34.727Z",
+      "updated": "2026-08-04T22:58:34.727Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msteams/forum/all/cant-access-assignment/ddcbe419-61fc-4e0b-b97d-ee0ed9aa1b9b",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785884333575-629",
+    "title": "Fix Smart TV Backlight, Wi-Fi, and App Issues",
+    "problemDescription": "Common Smart TV issues such as no picture (backlight failure), Wi-Fi connectivity problems, and app crashes due to corrupted cache can often be resolved with simple troubleshooting steps.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "smart tv",
+      "backlight",
+      "wi-fi",
+      "cache",
+      "apps",
+      "no picture",
+      "sound only",
+      "internet not working"
+    ],
+    "steps": [
+      {
+        "title": "Check for Backlight Issues (No Picture but Sound)",
+        "content": "Turn off the room lights. Shine a torch close to the TV screen. If a faint image is visible, the backlight is not working. Go to picture settings, disable energy-saving/eco mode, set brightness and backlight to maximum, then restart the TV."
+      },
+      {
+        "title": "Fix Wi-Fi Connectivity Problems",
+        "content": "Open network settings, forget the connected Wi-Fi network, restart both the router and TV, then reconnect using the 2.4 GHz band instead of 5 GHz for better stability."
+      },
+      {
+        "title": "Clear Corrupted Cache for Slow or Unresponsive Apps",
+        "content": "Go to settings, open apps, select the problematic app, and clear its cache only (do not clear data). Restart the TV from the system menu if available."
+      },
+      {
+        "title": "Fix No Sound or Sound Delay",
+        "content": "Check audio output settings, set output to TV speaker, disable digital sound output, and restart the TV."
+      },
+      {
+        "title": "Resolve TV Not Turning On (Standby Light On)",
+        "content": "Unplug the TV from the wall socket, press and hold the TV power button (not remote) for 30 seconds to discharge stored electricity, wait 5 minutes, then plug it back in and turn it on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset for Persistent Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Perform a Factory Reset",
+            "content": "Go to settings, find the reset option (may be under 'Support' or 'General'), and perform a factory reset. Note: This will erase all settings and apps, so use only if other steps fail."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T22:58:53.575Z",
+      "updated": "2026-08-04T22:58:53.575Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=9_0mTvEv5rY",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785884362353-480",
+    "title": "Fix Custom ROM Bootloop on Android with Same Chipset",
+    "problemDescription": "A custom ROM ported to a device with the same chipset and kernel version results in a bootloop, even after applying no-verity-opt-encrypt.zip.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "custom rom",
+      "bootloop",
+      "port rom",
+      "MT6737M",
+      "kernel",
+      "no-verity-opt-encrypt"
+    ],
+    "steps": [
+      {
+        "title": "Verify Kernel Compatibility",
+        "content": "Ensure the ROM's kernel version (e.g., 3.18.35) is not just the same version but also the exact same kernel configuration and build. Check the kernel source or device tree for differences."
+      },
+      {
+        "title": "Extract and Compare Device Tree",
+        "content": "Extract the boot.img from the ROM and the stock ROM. Compare the device tree (dtb) files using tools like `dtc` or `mkbootimg` to ensure hardware compatibility."
+      },
+      {
+        "title": "Check Partition Layout",
+        "content": "Verify that the partition layout of the ROM matches your device. Use tools like `fastboot getvar all` or `adb shell cat /proc/mtd` to compare partitions."
+      },
+      {
+        "title": "Apply Correct Vendor Files",
+        "content": "Ensure the vendor partition and proprietary blobs (e.g., `/vendor`, `/system/vendor`) are compatible. Flash the correct vendor files for your device."
+      },
+      {
+        "title": "Use a Compatible Recovery",
+        "content": "Flash a custom recovery (e.g., TWRP) that is specifically built for your device and kernel version. Avoid generic recoveries."
+      },
+      {
+        "title": "Wipe and Flash Properly",
+        "content": "Wipe `/data`, `/system`, `/cache`, and `/dalvik-cache` before flashing the ROM. Use the 'Clean to Install a New ROM' option in TWRP if available."
+      },
+      {
+        "title": "Check for Bootloop Fixes",
+        "content": "If the bootloop persists, try flashing a bootloop fix zip (e.g., `bootloop-fix.zip`) or manually patch the `boot.img` using tools like `Magisk` or `Kernel Adiutor`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Build ROM from Source",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Set Up Build Environment",
+            "content": "Follow the official LineageOS or AOSP build guide to set up a build environment on a Linux machine."
+          },
+          {
+            "title": "Download Device-Specific Sources",
+            "content": "Clone the device tree, kernel, and vendor blobs for your specific device from repositories like GitHub or GitLab."
+          },
+          {
+            "title": "Build the ROM",
+            "content": "Run `brunch <device_codename>` to build a custom ROM tailored for your device. This ensures kernel and hardware compatibility."
+          },
+          {
+            "title": "Flash the Built ROM",
+            "content": "Flash the newly built ROM using TWRP or fastboot. This avoids compatibility issues from pre-built ROMs."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a ROM Porting Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use ROM Porting Tools",
+            "content": "Tools like `Android Image Kitchen` or `Android Kitchen` can help unpack, modify, and repack boot images to fix bootloops. Follow guides specific to your device."
+          },
+          {
+            "title": "Patch Boot Image",
+            "content": "Patch the `boot.img` with tools like `Magisk` to bypass verity checks or modify kernel parameters. Use `fastboot flash boot boot.img` to flash the patched image."
+          },
+          {
+            "title": "Test and Iterate",
+            "content": "Test the ROM after each modification. If it still bootloops, iterate by comparing logs (`dmesg`, `logcat`) with a working device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T22:59:22.353Z",
+      "updated": "2026-08-04T22:59:22.353Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/224289/bootloop-issue-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785884366781-821",
+    "title": "Disable Data Roaming Notifications on Android",
+    "problemDescription": "Android devices display persistent data roaming notifications that cannot be turned off via standard settings, causing annoyance for users.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "data roaming",
+      "notification",
+      "APN",
+      "root"
+    ],
+    "steps": [
+      {
+        "title": "Temporary APN Workaround (No Root Required)",
+        "content": "1. Go to **Settings** > **Network & Internet** > **Mobile Network** > **Advanced** > **Access Point Names (APN)**.\n2. Tap the **three-dot menu** (⋮) and select **New APN**.\n3. Enter any dummy APN details (e.g., Name: 'Dummy', APN: 'dummy.apn').\n4. Save the APN and set it as the active APN.\n5. Enable **Data Roaming** and **Mobile Data**.\n6. The roaming notifications should stop. Revert to your original APN when returning to your home country."
+      },
+      {
+        "title": "Root Method Using Xposed (Permanent Solution)",
+        "content": "1. **Root your Android device** (requires unlocking bootloader and flashing custom recovery).\n2. Install **Xposed Framework** via a custom recovery (e.g., TWRP).\n3. Download and install the **XphonePlus** module from the Xposed Repository.\n4. Open the Xposed Installer app, go to **Modules**, and enable **XphonePlus**.\n5. Reboot your device.\n6. Open XphonePlus and disable the **Data Roaming Warning** notification under the **Notifications** section.\n7. Reboot again to apply changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Carrier-Specific Solution",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Contact Your Carrier",
+            "content": "1. Reach out to your mobile carrier (e.g., KPN in the Netherlands).\n2. Request them to disable data roaming notifications for your SIM card.\n3. Follow any carrier-specific instructions they provide."
+          }
+        ]
+      },
+      {
+        "title": "Disable All Notifications (Broad Workaround)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Mute Notifications Temporarily",
+            "content": "1. Go to **Settings** > **Apps & Notifications** > **See all apps**.\n2. Find the **Phone** or **Settings** app (depending on where notifications originate).\n3. Tap **Notifications** and disable all notifications for the app.\n4. Note: This may hide other important notifications."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T22:59:26.781Z",
+      "updated": "2026-08-04T22:59:26.781Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/101399/how-to-disable-data-roaming-notification-solved",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
