@@ -343784,5 +343784,169 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785828911726-824",
+    "title": "Fix Apple ID Two-Factor Authentication Stuck on 'Waiting for Approval'",
+    "problemDescription": "Apple devices fail to approve two-factor authentication (2FA) for an Apple ID, remaining stuck on 'Waiting for approval' despite multiple attempts.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "2FA",
+      "Apple ID",
+      "iCloud",
+      "approval",
+      "waiting",
+      "authentication"
+    ],
+    "steps": [
+      {
+        "title": "Enable Keychain on Another Device",
+        "content": "On another device logged in with the same Apple ID, go to Settings > [Your Name] > iCloud and ensure 'Keychain' is turned ON. If it was off, toggle it on and follow the prompts."
+      },
+      {
+        "title": "Reset Keychain Data (if necessary)",
+        "content": "If enabling Keychain doesn't resolve the issue, reset your Keychain data on the problematic device by going to System Preferences > Apple ID > iCloud > Keychain > Advanced > Reset Keychain Data. Confirm the reset and restart the device."
+      },
+      {
+        "title": "Retry Apple ID Sign-In",
+        "content": "On the problematic device, go to Settings > [Your Name] > iCloud and tap 'Update Apple ID Settings'. Enter your Apple ID password and device unlock code when prompted. Wait for the approval prompt to appear on another device."
+      },
+      {
+        "title": "Check for Pending Approvals on Other Devices",
+        "content": "On another device, check for a notification or prompt to approve the new device. If no prompt appears, manually go to Settings > [Your Name] > Sign-In & Security > Two-Factor Authentication and look for pending approvals."
+      },
+      {
+        "title": "Restart All Devices",
+        "content": "Restart all devices signed in to the same Apple ID. After restarting, attempt the approval process again."
+      },
+      {
+        "title": "Contact Apple Support",
+        "content": "If the issue persists, contact Apple Support for further assistance. Provide them with details about the stuck approval process."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Sign Out and Sign Back In",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Sign Out of Apple ID",
+            "content": "On the problematic device, go to System Preferences > Apple ID and click 'Sign Out'. Confirm the action and restart the device."
+          },
+          {
+            "title": "Sign Back In",
+            "content": "After restarting, go to System Preferences > Apple ID and sign back in with your Apple ID. Follow the prompts to complete the 2FA approval process."
+          },
+          {
+            "title": "Check for Approval Prompt",
+            "content": "On another device, check for an approval prompt to approve the newly signed-in device."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update macOS/iOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Software Updates",
+            "content": "On the problematic device, go to System Preferences > Software Update (macOS) or Settings > General > Software Update (iOS) and install any available updates."
+          },
+          {
+            "title": "Retry Apple ID Sign-In",
+            "content": "After updating, attempt to sign in to your Apple ID again and check if the approval process completes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T07:35:11.726Z",
+      "updated": "2026-08-04T07:35:11.726Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/279067/problem-setting-up-2fa-for-the-first-time",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785828949198-423",
+    "title": "Fix Bluetooth Not Working on Linux",
+    "problemDescription": "Bluetooth devices are not detected or connected on a Linux system, despite being enabled.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "linux",
+      "connection",
+      "device detection"
+    ],
+    "steps": [
+      {
+        "title": "Check Bluetooth Service Status",
+        "content": "Run the following command to check if the Bluetooth service is active: `sudo systemctl status bluetooth`. If it is inactive, proceed to the next step."
+      },
+      {
+        "title": "Unblock Bluetooth",
+        "content": "If the service is blocked, unblock it using: `rfkill unblock bluetooth`."
+      },
+      {
+        "title": "Restart Bluetooth Service",
+        "content": "Restart the Bluetooth service with: `sudo systemctl restart bluetooth`."
+      },
+      {
+        "title": "Verify Bluetooth Adapter",
+        "content": "Check if the Bluetooth adapter is detected: `hciconfig -a`. If no adapter is listed, your hardware may not be supported or drivers may be missing."
+      },
+      {
+        "title": "Install Bluetooth Packages",
+        "content": "Ensure required Bluetooth packages are installed: `sudo apt install bluez bluez-tools pulseaudio-module-bluetooth` (for Debian/Ubuntu-based systems)."
+      },
+      {
+        "title": "Pair and Connect Device",
+        "content": "Use `bluetoothctl` to pair and connect your device: `bluetoothctl`, then `power on`, `agent on`, `scan on`, `pair <MAC>`, `connect <MAC>`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Bluetooth Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Existing Drivers",
+            "content": "Uninstall current Bluetooth drivers: `sudo apt purge bluez` (or equivalent for your distro)."
+          },
+          {
+            "title": "Reinstall Drivers",
+            "content": "Reinstall Bluetooth drivers: `sudo apt install bluez` and restart the system."
+          },
+          {
+            "title": "Check Kernel Modules",
+            "content": "Verify Bluetooth kernel modules are loaded: `lsmod | grep bluetooth`. If missing, load them manually: `sudo modprobe btusb`."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Blueman Manager",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Blueman",
+            "content": "Install the Blueman Bluetooth manager: `sudo apt install blueman` (for Debian/Ubuntu-based systems)."
+          },
+          {
+            "title": "Launch Blueman",
+            "content": "Open Blueman from the application menu and attempt to pair/connect your device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T07:35:49.198Z",
+      "updated": "2026-08-04T07:35:49.198Z",
+      "sourceUrl": "https://www.reddit.com/r/linuxmint/comments/1e32j6t/fixing_bluetooth_issues_on_linux_a_stepbystep",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
