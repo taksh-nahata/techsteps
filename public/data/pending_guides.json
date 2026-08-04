@@ -344156,5 +344156,162 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1785848248013-563",
+    "title": "Fix Amazon Alexa Calendar Events Not Showing Past Dates",
+    "problemDescription": "Alexa devices (e.g., Show) fail to display past calendar events, showing 'No events' for dates prior to April 16, 2018, despite events existing in linked calendars.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "alexa",
+      "calendar",
+      "past events",
+      "show device",
+      "app reinstall"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall the Alexa App",
+        "content": "Uninstall the Alexa app from your mobile device, restart the device, then reinstall the app from the App Store (iOS) or Google Play Store (Android)."
+      },
+      {
+        "title": "Reset Alexa Device (Show)",
+        "content": "Unplug the Alexa Show device, wait 30 seconds, then plug it back in. If the issue persists, perform a factory reset via the device settings (Settings > Device Options > Reset to Factory Defaults)."
+      },
+      {
+        "title": "Re-link Calendars",
+        "content": "Open the Alexa app, go to Settings > Calendar, and remove the linked calendar(s). Re-add them by signing in to your calendar account (e.g., Google, Microsoft) again."
+      },
+      {
+        "title": "Update Alexa App and Device Firmware",
+        "content": "Ensure the Alexa app is updated to the latest version. Check for device firmware updates in the Alexa app under Settings > Device Options > Software Updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Amazon Support",
+        "type": "Official Support",
+        "steps": [
+          {
+            "title": "Initiate Chat or Call",
+            "content": "Contact Amazon Alexa support via the app (Help > Contact Us) or visit https://www.amazon.com/gp/help/customer/display.html. Request escalation for persistent calendar issues."
+          },
+          {
+            "title": "Provide Device Logs",
+            "content": "If prompted, enable diagnostic logging in the Alexa app (Settings > Device Options > Send Logs) and share them with support for deeper troubleshooting."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Alternative Calendar Integration",
+        "type": "Workaround",
+        "steps": [
+          {
+            "title": "Add Calendar via IFTTT",
+            "content": "Set up an IFTTT applet to sync your calendar events to Alexa. This may bypass the native calendar integration issue. Visit https://ifttt.com/alexa for setup instructions."
+          },
+          {
+            "title": "Check Third-Party Calendar Apps",
+            "content": "Use a third-party calendar app (e.g., Google Calendar) with Alexa skills to manage events, as native calendar integration may be unreliable."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T12:57:28.013Z",
+      "updated": "2026-08-04T12:57:28.013Z",
+      "sourceUrl": "https://apps.apple.com/us/app/amazon-alexa/id944011620",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785848262745-856",
+    "title": "Fix Gmail Global Disruption",
+    "problemDescription": "Gmail users worldwide experience error messages, high latency, or unexpected behavior due to a global service disruption.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "email",
+      "disruption",
+      "outage",
+      "error",
+      "global"
+    ],
+    "steps": [
+      {
+        "title": "Check Gmail Status",
+        "content": "Visit Google's official service status page (https://www.google.com/appsstatus) to confirm if Gmail is experiencing an outage."
+      },
+      {
+        "title": "Wait for Resolution",
+        "content": "If confirmed, wait for Google to resolve the issue. Google typically provides an estimated resolution time (e.g., 'hope to have the issue resolved by 4 p.m. PT')."
+      },
+      {
+        "title": "Try Alternative Access Methods",
+        "content": "If Gmail is still not working, try accessing it via the Gmail mobile app or a different web browser (e.g., Chrome, Firefox, Edge)."
+      },
+      {
+        "title": "Clear Browser Cache",
+        "content": "If using a web browser, clear the cache and cookies for Gmail: Go to browser settings > Privacy & Security > Clear Browsing Data > Select 'Cookies and other site data' and 'Cached images and files'."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your internet connection is stable. Try restarting your router or switching to a different network (e.g., mobile hotspot)."
+      },
+      {
+        "title": "Use Gmail Offline Mode",
+        "content": "If you have Gmail Offline enabled, try accessing Gmail offline to draft or read emails. Go to Gmail settings > Offline > Enable Offline Mail."
+      },
+      {
+        "title": "Contact Google Support",
+        "content": "If the issue persists after Google confirms resolution, contact Google Workspace Support or report the issue via the Google Admin Console (for business users)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Email Client",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up a Temporary Email Client",
+            "content": "Use a third-party email client like Microsoft Outlook, Apple Mail, or Thunderbird to access Gmail via IMAP. Ensure IMAP is enabled in Gmail settings (Settings > Forwarding and POP/IMAP > Enable IMAP)."
+          },
+          {
+            "title": "Configure Gmail in Email Client",
+            "content": "Add your Gmail account to the email client using the following settings: Incoming Mail (IMAP) Server: imap.gmail.com, Port: 993, SSL: Yes. Outgoing Mail (SMTP) Server: smtp.gmail.com, Port: 465 or 587, SSL: Yes."
+          },
+          {
+            "title": "Sync and Access Emails",
+            "content": "Sync the client to download emails. This allows you to read, draft, and send emails until Gmail service is restored."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Regional Restrictions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a VPN",
+            "content": "If the outage is region-specific, try accessing Gmail using a VPN service to switch your virtual location."
+          },
+          {
+            "title": "Test with a VPN Server",
+            "content": "Connect to a VPN server in a different country (e.g., US, UK, or Japan) and attempt to access Gmail. If it works, the issue may be regional."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T12:57:42.745Z",
+      "updated": "2026-08-04T12:57:42.745Z",
+      "sourceUrl": "https://www.digitaltrends.com/web/gmail-experiencing-disruption-globally-google-confirms",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
