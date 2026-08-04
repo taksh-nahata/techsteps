@@ -344761,5 +344761,462 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785865347212-433",
+    "title": "Fix Undetected USB Drive After Rufus Usage",
+    "problemDescription": "A USB drive becomes undetectable in Windows after being used with Rufus, likely due to partition or formatting changes.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "USB",
+      "Rufus",
+      "undetected",
+      "partition",
+      "Windows"
+    ],
+    "steps": [
+      {
+        "title": "Repartition USB Drive Using Partition Wizard",
+        "content": "1. Download and install MiniTool Partition Wizard from the official website.\n2. Plug in the USB drive.\n3. Open MiniTool Partition Wizard.\n4. Locate your USB drive in the list of disks.\n5. Right-click the existing partition and select 'Delete'.\n6. Right-click the unallocated space and select 'Create'.\n7. Choose a new partition (e.g., FAT32 or NTFS) and click 'OK'.\n8. Click 'Apply' to execute the changes.\n9. Safely eject the USB drive and reconnect it. Windows should now detect it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clean USB Drive Using DiskPart",
+        "type": "Command Line",
+        "steps": [
+          {
+            "title": "Open Command Prompt as Administrator",
+            "content": "Press 'Win + R', type 'cmd', then right-click the Command Prompt and select 'Run as administrator'."
+          },
+          {
+            "title": "Launch DiskPart",
+            "content": "Type 'DISKPART' and press Enter. Wait for the DiskPart utility to load."
+          },
+          {
+            "title": "List Disks",
+            "content": "Type 'list disk' and press Enter. Identify your USB drive by its size/capacity."
+          },
+          {
+            "title": "Select USB Disk",
+            "content": "Type 'select disk n' (replace 'n' with your USB disk number) and press Enter."
+          },
+          {
+            "title": "Clean Disk",
+            "content": "Type 'clean' and press Enter. DiskPart will remove all partitions and data from the disk."
+          },
+          {
+            "title": "Create New Partition",
+            "content": "Type 'create partition primary' and press Enter.\nType 'format fs=fat32 quick' (or 'format fs=ntfs quick') and press Enter.\nType 'assign' and press Enter to assign a drive letter.\nType 'exit' to close DiskPart."
+          },
+          {
+            "title": "Verify Detection",
+            "content": "Safely eject and reconnect the USB drive. Windows should now detect it."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset USB Drive Using Rufus",
+        "type": "Rufus Tool",
+        "steps": [
+          {
+            "title": "Open Rufus",
+            "content": "Launch Rufus on your computer."
+          },
+          {
+            "title": "Select USB Drive",
+            "content": "Choose your undetected USB drive from the device dropdown menu."
+          },
+          {
+            "title": "Reset Partition Scheme",
+            "content": "In the 'Boot selection' dropdown, select 'Non bootable'.\nClick 'Start' to reset the USB drive's partition scheme.\nWait for the process to complete."
+          },
+          {
+            "title": "Verify Detection",
+            "content": "Safely eject and reconnect the USB drive. Windows should now detect it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T17:42:27.212Z",
+      "updated": "2026-08-04T17:42:27.212Z",
+      "sourceUrl": "https://superuser.com/questions/663942/rufus-damaged-my-usb-windows-can-not-detect-usb",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785865357343-853",
+    "title": "Fix Windows 7 Boot from USB Not Working",
+    "problemDescription": "Windows 7 fails to boot from a USB drive even after correctly setting the BIOS to prioritize USB boot. The system may not recognize the USB drive as a bootable device.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 7",
+      "boot from USB",
+      "BIOS",
+      "USB not detected",
+      "bootable USB"
+    ],
+    "steps": [
+      {
+        "title": "Verify USB Bootable Status",
+        "content": "Ensure the USB drive is properly created as a bootable device using a tool like Universal USB Installer or Rufus."
+      },
+      {
+        "title": "Access BIOS/UEFI Settings",
+        "content": "Restart the computer and enter BIOS/UEFI by pressing the designated key (e.g., F2, DEL, ESC) during startup."
+      },
+      {
+        "title": "Set USB as First Boot Device",
+        "content": "Navigate to the 'Boot' tab in BIOS, set the USB drive as the first boot device, and save changes (usually by pressing F10)."
+      },
+      {
+        "title": "Trigger Manual Boot Selection",
+        "content": "On reboot, press the BIOS-specific key (e.g., F9, F12, ESC) to open the boot menu and manually select the USB drive."
+      },
+      {
+        "title": "Confirm USB Recognition",
+        "content": "After saving BIOS settings, the system should now recognize the USB drive by brand/model in the boot menu."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Secure Boot and Enable Legacy Mode",
+        "type": "BIOS Configuration",
+        "steps": [
+          {
+            "title": "Enter BIOS Setup",
+            "content": "Restart the computer and access BIOS using the designated key."
+          },
+          {
+            "title": "Disable Secure Boot",
+            "content": "Navigate to 'Security' or 'Boot' tab and disable Secure Boot if enabled."
+          },
+          {
+            "title": "Enable Legacy Boot Mode",
+            "content": "Set 'Boot Mode' to 'Legacy' or 'CSM' (Compatibility Support Module) instead of UEFI."
+          },
+          {
+            "title": "Save and Exit",
+            "content": "Save changes and exit BIOS. The system should now boot from the USB drive."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T17:42:37.343Z",
+      "updated": "2026-08-04T17:42:37.343Z",
+      "sourceUrl": "https://superuser.com/questions/602123/cant-boot-from-usb-even-with-bios-set-correctly",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785865371913-520",
+    "title": "Fix Windows 11 Update Installation Error 0x80073712",
+    "problemDescription": "Windows 11 update fails to install due to error 0x80073712, caused by missing or corrupted update components.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "update",
+      "error 0x80073712",
+      "installation failure",
+      "corrupted update"
+    ],
+    "steps": [
+      {
+        "title": "Pause and Resume Windows Update",
+        "content": "Go to Settings > Windows Update > Pause updates for 1 week. Wait a few minutes, then unpause updates and check for updates again."
+      },
+      {
+        "title": "Run Windows Update Troubleshooter",
+        "content": "Navigate to Settings > System > Troubleshoot > Other troubleshooters. Select 'Windows Update' and run the troubleshooter. Follow the on-screen instructions to apply fixes."
+      },
+      {
+        "title": "Manually Download and Install the Update",
+        "content": "Visit the Microsoft Update Catalog (https://www.catalog.update.microsoft.com) and search for the specific KB number of the failed update. Download the standalone installer and run it manually."
+      },
+      {
+        "title": "Reset Windows Update Components",
+        "content": "Open Command Prompt as Administrator and run the following commands sequentially:\n1. `net stop wuauserv`\n2. `net stop cryptSvc`\n3. `net stop bits`\n4. `net stop msiserver`\n5. `ren C:\\Windows\\SoftwareDistribution SoftwareDistribution.old`\n6. `ren C:\\Windows\\System32\\catroot2 catroot2.old`\n7. `net start wuauserv`\n8. `net start cryptSvc`\n9. `net start bits`\n10. `net start msiserver`\nRestart your PC and check for updates again."
+      },
+      {
+        "title": "Use Media Creation Tool for Clean Install (Last Resort)",
+        "content": "Download the Windows 11 Media Creation Tool from Microsoft's official site. Create a bootable USB drive, back up your data, and perform a clean install of Windows 11. This will erase all files, so ensure backups are complete."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Delay Update via Group Policy (For Pro/Enterprise Users)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Group Policy Editor",
+            "content": "Press `Win + R`, type `gpedit.msc`, and press Enter to open the Group Policy Editor."
+          },
+          {
+            "title": "Configure Update Settings",
+            "content": "Navigate to Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage end user experience. Enable 'Configure Automatic Updates' and set it to '2 - Notify for download and notify for install'."
+          },
+          {
+            "title": "Restart and Check Updates",
+            "content": "Restart your PC. Windows Update will now notify you before downloading or installing updates, allowing you to avoid problematic updates until Microsoft resolves the issue."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use DISM to Repair System Image",
+        "type": "Advanced Troubleshooting",
+        "steps": [
+          {
+            "title": "Open Command Prompt as Administrator",
+            "content": "Press `Win + X` and select 'Terminal (Admin)' or 'Command Prompt (Admin)'."
+          },
+          {
+            "title": "Run DISM Command",
+            "content": "Type the following command and press Enter:\n`DISM /Online /Cleanup-Image /RestoreHealth`\nWait for the process to complete, then restart your PC and check for updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T17:42:51.913Z",
+      "updated": "2026-08-04T17:42:51.913Z",
+      "sourceUrl": "https://www.tomshardware.com/software/windows/latest-windows-11-update-is-broken-refuses-to-install-microsoft-pulls-latest-update-over-missing-files-error",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785865383642-237",
+    "title": "Windows 11 24H2 Update Issues and Copilot Recall Concerns",
+    "problemDescription": "Users report concerns about bugs in the Windows 11 24H2 update and potential privacy issues with Copilot Recall, despite generally positive experiences with Windows 11 stability.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "Windows 11",
+      "24H2 update",
+      "Copilot Recall",
+      "bugs",
+      "privacy",
+      "update delay"
+    ],
+    "steps": [
+      {
+        "title": "Delay the 24H2 Update",
+        "content": "Use Windows Update settings to pause feature updates for up to 5 weeks. This allows Microsoft to address bugs before installation."
+      },
+      {
+        "title": "Backup Your System Drive",
+        "content": "Before installing the 24H2 update, create a full backup of your system drive using Windows Backup or third-party tools like Macrium Reflect."
+      },
+      {
+        "title": "Opt Out of Unwanted Features During Installation",
+        "content": "At installation time, decline optional features like Copilot, AI tools, and telemetry. Use the 'Express Settings' option to customize your preferences."
+      },
+      {
+        "title": "Disable Copilot Recall (If Installed)",
+        "content": "If Copilot Recall is enabled, open Windows Settings > Privacy & Security > Copilot & Recall and disable the feature to prevent local data collection."
+      },
+      {
+        "title": "Monitor for Bug Reports",
+        "content": "Check Microsoft's official release notes and forums like Tom's Hardware for known issues. Delay installation if critical bugs are reported."
+      },
+      {
+        "title": "Use an Alternative Browser (If Needed)",
+        "content": "If your current browser is outdated and causing display issues, upgrade to the latest version of Chrome, Firefox, Edge, or another supported browser."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clean Install of Windows 11 24H2",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Download Windows 11 24H2 ISO",
+            "content": "Download the official ISO from Microsoft's website or the Media Creation Tool."
+          },
+          {
+            "title": "Create Installation Media",
+            "content": "Use a USB drive (8GB+) to create bootable installation media with the ISO."
+          },
+          {
+            "title": "Backup Data and Perform Clean Install",
+            "content": "Back up all important data, then boot from the USB and perform a clean install of Windows 11 24H2."
+          },
+          {
+            "title": "Reconfigure Settings",
+            "content": "After installation, reconfigure privacy settings and disable unwanted features like Copilot Recall."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Windows Update Troubleshooter",
+        "type": "Built-in Tool",
+        "steps": [
+          {
+            "title": "Open Windows Update Troubleshooter",
+            "content": "Go to Settings > System > Troubleshoot > Other troubleshooters and run the 'Windows Update' troubleshooter."
+          },
+          {
+            "title": "Apply Fixes",
+            "content": "Follow the on-screen instructions to apply any fixes detected by the troubleshooter."
+          },
+          {
+            "title": "Retry the Update",
+            "content": "After applying fixes, retry installing the 24H2 update."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T17:43:03.642Z",
+      "updated": "2026-08-04T17:43:03.642Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/questions-about-windows-11-24h2-update-bugs-worked-out-copilot-recall.3888775",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785865419316-70",
+    "title": "Fix iPhone Location Sharing Not Working on iOS 18",
+    "problemDescription": "Two iPhones running iOS 18 fail to share their locations with each other despite enabling the feature.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "ios",
+      "iphone",
+      "location sharing",
+      "find my iphone",
+      "geolocation"
+    ],
+    "steps": [
+      {
+        "title": "Restart Both iPhones",
+        "content": "Power off and restart both iPhones to clear temporary glitches in the system."
+      },
+      {
+        "title": "Reset Location Sharing in Messages",
+        "content": "On both devices, open the Messages app, select the conversation with the other user, tap their name at the top, then choose 'Stop Sharing My Location'. Wait 2-3 minutes, then restart sharing by selecting 'Share My Location'."
+      },
+      {
+        "title": "Ensure Both Devices Are Updated",
+        "content": "Go to Settings > General > Software Update on both iPhones to confirm they are running the latest iOS version (iOS 18.4 or later)."
+      },
+      {
+        "title": "Re-enable Location Services",
+        "content": "Navigate to Settings > Privacy & Security > Location Services and ensure it is enabled. Then, tap 'Share My Location' and verify the setting is turned on."
+      },
+      {
+        "title": "Check Find My App Settings",
+        "content": "Open the Find My app, tap 'Me' at the bottom, then ensure 'Share My Location' is toggled on. Repeat for the other device."
+      },
+      {
+        "title": "Wait for Location Updates",
+        "content": "After re-enabling sharing, wait 5-10 minutes for the locations to reappear in the Find My app or Messages."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings. This will clear Wi-Fi passwords and cellular settings, so reconnect to networks afterward."
+          },
+          {
+            "title": "Re-enable Location Sharing",
+            "content": "Repeat the steps from the primary method to restart location sharing."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Apple Support",
+        "type": "Official Support",
+        "steps": [
+          {
+            "title": "Contact Apple Support",
+            "content": "Visit Apple Support online or visit an Apple Store/authorized service provider. Provide them with the issue details and your device IDs for backend diagnostics."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T17:43:39.316Z",
+      "updated": "2026-08-04T17:43:39.316Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/479602/how-can-i-troubleshoot-when-two-iphones-stop-sharing-location-on-ios-18",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785865422634-630",
+    "title": "Add .crt Certificate to iPhone's Keychain",
+    "problemDescription": "Unable to install a .crt certificate on an iPhone due to compatibility issues or incorrect installation steps.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "certificate",
+      "keychain",
+      "iPhone",
+      "crt",
+      "trust settings"
+    ],
+    "steps": [
+      {
+        "title": "Verify Certificate Compatibility",
+        "content": "Ensure the certificate has a 'common name' and 'Subject Type=CA'. iOS requires these for root certificates."
+      },
+      {
+        "title": "Transfer Certificate to iPhone",
+        "content": "Use one of the following methods to transfer the .crt file to your iPhone: AirDrop (from a Mac), Email, Safari download, or a file-sharing app."
+      },
+      {
+        "title": "Install the Certificate",
+        "content": "Open the transferred file on your iPhone. Tap 'Install' when prompted, then confirm the installation."
+      },
+      {
+        "title": "Enable Full Trust for the Certificate",
+        "content": "Go to Settings → General → About → Certificate Trust Settings. Enable the toggle for your newly installed certificate under 'Enable Full Trust for Root Certificates'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Personal Web Server",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up a Personal Web Server",
+            "content": "Use a free app like 'Personal Web Server' on your Mac to host the .crt file."
+          },
+          {
+            "title": "Download Certificate via Safari",
+            "content": "On your iPhone, open Safari and navigate to the server's local address (e.g., http://localhost:8080/certificate.crt). Download the file."
+          },
+          {
+            "title": "Install and Trust the Certificate",
+            "content": "Follow the same installation and trust steps as in the primary method."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-04T17:43:42.634Z",
+      "updated": "2026-08-04T17:43:42.634Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/123988/how-to-add-a-crt-certificate-to-iphones-keychain",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
