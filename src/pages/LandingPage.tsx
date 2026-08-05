@@ -102,56 +102,105 @@ const LandingPage: React.FC = () => {
           data-scroll-milestone="hero"
           className="relative flex min-h-[92vh] flex-col justify-center px-5 pb-24 pt-28 sm:px-8"
         >
-          <div className="mx-auto w-full max-w-7xl">
-            <motion.p
-              initial="hidden"
-              animate="visible"
-              variants={fadeUp(0, reduced)}
-              className="mb-8 text-xs font-semibold uppercase tracking-[0.2em] text-ink-muted"
-            >
-              {t('landing.hero.tagline', 'Clear tech help, whenever you need it')}
-            </motion.p>
+          <div className="mx-auto grid w-full max-w-7xl gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+            <div>
+              <motion.p
+                initial="hidden"
+                animate="visible"
+                variants={fadeUp(0, reduced)}
+                className="mb-8 text-xs font-semibold uppercase tracking-[0.2em] text-ink-muted"
+              >
+                {t('landing.hero.tagline', 'Clear tech help, whenever you need it')}
+              </motion.p>
 
-            <motion.h1
-              initial="hidden"
-              animate="visible"
-              variants={fadeUp(0.08, reduced)}
-              className="font-display font-extrabold leading-[0.95] tracking-[-0.04em] text-ink"
-              style={{ fontSize: 'clamp(48px, 8vw, 96px)' }}
-            >
-              {t('landing.hero.title', 'Technology made')}
-              <br />
-              <span className="text-brand">
-                {t('landing.hero.titleHighlight', 'simple & clear')}
-              </span>
-            </motion.h1>
+              <motion.h1
+                initial="hidden"
+                animate="visible"
+                variants={fadeUp(0.08, reduced)}
+                className="font-display font-extrabold leading-[0.95] tracking-[-0.04em] text-ink"
+                style={{ fontSize: 'clamp(44px, 7vw, 84px)' }}
+              >
+                {t('landing.hero.title', 'Technology made')}
+                <br />
+                <span className="text-brand">
+                  {t('landing.hero.titleHighlight', 'simple & clear')}
+                </span>
+              </motion.h1>
 
-            <motion.p
-              initial="hidden"
-              animate="visible"
-              variants={fadeUp(0.16, reduced)}
-              className="mt-8 max-w-xl text-lg leading-relaxed text-ink-muted sm:text-xl"
-              style={{ fontSize: 'clamp(18px, 2vw, 20px)' }}
-            >
-              {t(
-                'landing.hero.subtitle',
-                'Master technology with confidence through personalized, step-by-step guidance that feels like having a patient friend by your side.'
-              )}
-            </motion.p>
+              <motion.p
+                initial="hidden"
+                animate="visible"
+                variants={fadeUp(0.16, reduced)}
+                className="mt-8 max-w-xl text-lg leading-relaxed text-ink-muted sm:text-xl"
+                style={{ fontSize: 'clamp(18px, 2vw, 20px)' }}
+              >
+                {t(
+                  'landing.hero.subtitle',
+                  'Master technology with confidence through personalized, step-by-step guidance that feels like having a patient friend by your side.'
+                )}
+              </motion.p>
 
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={fadeUp(0.24, reduced)}
+                className="mt-12 flex flex-wrap items-center gap-5"
+              >
+                <Link
+                  to="/auth"
+                  className="btn-primary inline-flex items-center gap-3 px-8 py-4 text-base sm:text-lg"
+                >
+                  {t('landing.hero.startLearningButton', 'Start Learning Free')}
+                  <ArrowRight className="h-5 w-5 rtl-flip" />
+                </Link>
+                <span className="text-sm text-ink-muted">
+                  {t('landing.hero.noCreditCard', 'No credit card required')}
+                </span>
+              </motion.div>
+            </div>
+
+            {/* Live product preview — shows the actual step-by-step guide, not just a promise */}
             <motion.div
               initial="hidden"
               animate="visible"
-              variants={fadeUp(0.24, reduced)}
-              className="mt-12"
+              variants={fadeUp(0.2, reduced, reduced ? 0 : 24)}
+              className="relative"
+              aria-hidden
             >
-              <Link
-                to="/auth"
-                className="btn-primary inline-flex items-center gap-3 px-8 py-4 text-base sm:text-lg"
-              >
-                {t('landing.hero.startLearningButton', 'Start Learning Free')}
-                <ArrowRight className="h-5 w-5 rtl-flip" />
-              </Link>
+              <div className="absolute -inset-6 -z-10 rounded-[32px] bg-brand-soft blur-2xl opacity-60" />
+              <div className="rounded-[24px] border border-hairline bg-surface shadow-senior-lg overflow-hidden">
+                <div className="flex items-center justify-between border-b border-hairline bg-canvas/60 px-5 py-3">
+                  <span className="text-[11px] font-bold uppercase tracking-widest text-brand">
+                    3. Guide
+                  </span>
+                  <span className="text-[10px] text-ink-muted">Live demo</span>
+                </div>
+                <div className="flex flex-col gap-3 p-5">
+                  <div className="flex justify-end">
+                    <div className="max-w-[85%] rounded-2xl rounded-tr-md bg-brand text-white px-4 py-2.5 text-sm leading-snug">
+                      How do I connect to Wi-Fi on my iPad?
+                    </div>
+                  </div>
+                  <div className="flex justify-start">
+                    <div className="max-w-[85%] rounded-2xl rounded-tl-md bg-subtle text-ink px-4 py-2.5 text-sm border border-hairline leading-snug">
+                      Here are clear steps with pictures.
+                    </div>
+                  </div>
+                  <div className="mt-1 grid gap-2">
+                    {['Open Settings', 'Tap Wi-Fi', 'Choose your network'].map((title, i) => (
+                      <div
+                        key={title}
+                        className="flex items-center gap-2.5 rounded-xl border border-hairline bg-canvas px-3 py-2.5"
+                      >
+                        <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-brand text-[11px] font-bold text-white">
+                          {i + 1}
+                        </span>
+                        <span className="text-sm font-medium text-ink">{title}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </div>
 
@@ -167,37 +216,6 @@ const LandingPage: React.FC = () => {
         </section>
 
         <ScrollHowItWorks />
-
-        {/* ── Dark value band ── */}
-        <section data-nav-theme="dark" data-scroll-milestone="value" className="bg-ink px-5 py-28 sm:px-8 sm:py-36">
-          <motion.div
-            className="mx-auto max-w-7xl"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: '-80px' }}
-            variants={stagger(reduced)}
-          >
-            <motion.p
-              variants={fadeUp(0, reduced)}
-              className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-[#8a8275]"
-            >
-              Why TechSteps
-            </motion.p>
-            <motion.h2
-              variants={fadeUp(0.05, reduced)}
-              className="max-w-4xl font-display text-4xl font-extrabold leading-[1.05] tracking-[-0.03em] text-[#f6f2ea] sm:text-5xl md:text-6xl lg:text-7xl"
-            >
-              Technology shouldn&apos;t feel overwhelming.
-            </motion.h2>
-            <motion.p
-              variants={fadeUp(0.1, reduced)}
-              className="mt-8 max-w-2xl text-lg leading-relaxed text-[#cfc8ba] sm:text-xl"
-            >
-              Every question becomes clear, patient guidance — at your pace, in your
-              words, whenever you need it.
-            </motion.p>
-          </motion.div>
-        </section>
 
         {/* ── Features grid ── */}
         <section id="features" data-scroll-milestone="features" className="bg-surface px-5 py-28 sm:px-8 sm:py-36">
@@ -220,14 +238,14 @@ const LandingPage: React.FC = () => {
                   variants={fadeUp(0.05, reduced)}
                   className="font-display text-3xl font-extrabold tracking-[-0.03em] text-ink sm:text-4xl md:text-5xl"
                 >
-                  {t('landing.featuresSection.subtitle', 'Built to help you grow')}
+                  Technology shouldn&apos;t feel overwhelming.
                 </motion.h2>
               </div>
               <motion.p
                 variants={fadeUp(0.1, reduced)}
                 className="max-w-sm text-base text-ink-muted"
               >
-                Four ways we make tech feel human — no jargon, no rush.
+                Every question becomes clear, patient guidance — at your pace, in your words.
               </motion.p>
             </motion.div>
 

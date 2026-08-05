@@ -146,8 +146,11 @@ i18n
       }
     },
     // Missing key handler for translation validation (development only)
-    missingKeyHandler: process.env.NODE_ENV === 'development' 
+    missingKeyHandler: process.env.NODE_ENV === 'development'
       ? (lng, ns, key) => {
+          // Skip false positives fired while the translation backend is still
+          // loading on first paint (useSuspense is off, so t() runs before then)
+          if (!i18n.isInitialized) return;
           translationReporting.reportIssue(lng, key, 'Missing translation key');
         }
       : undefined,
