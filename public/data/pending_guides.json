@@ -348193,5 +348193,169 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785945605926-346",
+    "title": "Fix Microsoft Teams Rooms App Failure on Surface Hub v1",
+    "problemDescription": "Microsoft Teams Rooms app will stop working on Windows 10 devices after October 14, including Surface Hub v1, leaving meeting rooms unusable.",
+    "category": "windows",
+    "difficulty": "Hard",
+    "keywords": [
+      "Microsoft Teams Rooms",
+      "Surface Hub v1",
+      "Windows 10 EOL",
+      "Teams Rooms app failure",
+      "meeting room upgrade"
+    ],
+    "steps": [
+      {
+        "title": "Assess Hardware Compatibility",
+        "content": "Check if your Surface Hub v1 can support Windows 11 by verifying hardware requirements (e.g., TPM 2.0, Secure Boot). Many Surface Hub v1 devices may not meet these requirements."
+      },
+      {
+        "title": "Evaluate Upgrade Options",
+        "content": "For Surface Hub 2S users, consider installing a Surface Hub 3 Compute Cartridge. For Surface Hub v1 users, evaluate purchasing a new Surface Hub model or compatible device."
+      },
+      {
+        "title": "Perform Software Migration (If Applicable)",
+        "content": "If your device supports Windows 11, perform a clean installation or upgrade before October 14. Backup critical data and follow Microsoft's official Windows 11 installation guide."
+      },
+      {
+        "title": "Contact IT or Managed Service Provider",
+        "content": "For enterprises with outsourced providers or multi-departmental setups, coordinate with IT teams or external vendors to plan upgrades, migrations, or replacements."
+      },
+      {
+        "title": "Test Teams Rooms App Post-Upgrade",
+        "content": "After upgrading or replacing hardware, test the Microsoft Teams Rooms app to ensure functionality. Verify meeting room integration and remote management capabilities."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual USB Installation of Windows 11 (If Supported)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Windows 11 ISO",
+            "content": "Download the official Windows 11 ISO from Microsoft's website."
+          },
+          {
+            "title": "Create Bootable USB",
+            "content": "Use the Media Creation Tool to create a bootable USB drive."
+          },
+          {
+            "title": "Install Windows 11",
+            "content": "Boot from the USB drive and follow the on-screen instructions to install Windows 11. Ensure you back up data before proceeding."
+          },
+          {
+            "title": "Reinstall Teams Rooms App",
+            "content": "After installation, reinstall the Microsoft Teams Rooms app and reconfigure meeting room settings."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Alternative Meeting Solutions",
+        "type": "Temporary Workaround",
+        "steps": [
+          {
+            "title": "Evaluate Third-Party Apps",
+            "content": "Research and test alternative meeting room solutions compatible with Windows 10, such as Zoom Rooms or Google Meet hardware."
+          },
+          {
+            "title": "Plan for Gradual Transition",
+            "content": "If upgrading immediately is not feasible, plan a gradual transition to new hardware or software to minimize disruption."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T16:00:05.926Z",
+      "updated": "2026-08-05T16:00:05.926Z",
+      "sourceUrl": "https://www.techradar.com/pro/security/thousands-of-businesses-could-face-meeting-chaos-worldwide-because-teams-rooms-app-wont-work-from-october-14-and-yes-you-can-blame-windows-10-for-that",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1785945675477-445",
+    "title": "Remove Paired Bluetooth Devices on Android",
+    "problemDescription": "Android device fails to connect to Bluetooth devices or has persistent connection issues due to outdated or corrupted paired devices.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "paired devices",
+      "android",
+      "unpair",
+      "connection issues"
+    ],
+    "steps": [
+      {
+        "title": "Open Bluetooth Settings",
+        "content": "Go to your Android device's 'Settings' app, then tap 'Connections' or 'Connected devices'."
+      },
+      {
+        "title": "Select Bluetooth",
+        "content": "Tap on 'Bluetooth' to view the list of paired devices."
+      },
+      {
+        "title": "Unpair a Device",
+        "content": "Find the device you want to remove, then tap the 'Settings' (gear) icon next to it."
+      },
+      {
+        "title": "Confirm Unpairing",
+        "content": "Tap 'Unpair' or 'Forget' to remove the device from your paired list."
+      },
+      {
+        "title": "Restart Bluetooth",
+        "content": "Turn Bluetooth off and on again to refresh the connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Bluetooth Settings",
+        "type": "System Reset",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Go to 'Settings' > 'General Management' > 'Reset'."
+          },
+          {
+            "title": "Reset Network Settings",
+            "content": "Tap 'Reset Network Settings' to clear Bluetooth and Wi-Fi configurations. Note: This does not erase personal data."
+          },
+          {
+            "title": "Restart Device",
+            "content": "Reboot your Android device to apply changes."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset (Last Resort)",
+        "type": "Factory Reset",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Ensure all important data is backed up to Google Drive or another cloud service."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to 'Settings' > 'General Management' > 'Reset' > 'Factory Data Reset'."
+          },
+          {
+            "title": "Reconfigure Bluetooth",
+            "content": "After reset, set up Bluetooth connections again from scratch."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T16:01:15.477Z",
+      "updated": "2026-08-05T16:01:15.477Z",
+      "sourceUrl": "https://www.howtogeek.com/how-to-remove-paired-bluetooth-devices-on-android",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
