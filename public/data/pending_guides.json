@@ -349544,5 +349544,299 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785974090383-532",
+    "title": "Fix Samsung Galaxy S4 Battery Swelling or Overheating Issue",
+    "problemDescription": "Samsung Galaxy S4 devices may experience battery swelling, overheating, or even catching fire due to faulty batteries or charging issues.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "Samsung Galaxy S4",
+      "battery swelling",
+      "overheating",
+      "fire hazard",
+      "battery replacement"
+    ],
+    "steps": [
+      {
+        "title": "Identify the Issue",
+        "content": "Check for signs of battery swelling (bulging back cover), overheating during charging, or unusual battery drain. If the device feels hot or the battery is visibly swollen, stop using it immediately."
+      },
+      {
+        "title": "Stop Using the Device",
+        "content": "Disconnect the charger and power off the device to prevent further risk of damage or fire."
+      },
+      {
+        "title": "Contact Samsung Support",
+        "content": "Visit Samsung's official support website or contact their customer service to report the issue. Provide your device's IMEI number and purchase details for verification."
+      },
+      {
+        "title": "Request a Battery Replacement",
+        "content": "Samsung offers free battery replacements for affected Galaxy S4 devices. Schedule a service appointment at an authorized Samsung service center or mail-in the device for repair."
+      },
+      {
+        "title": "Follow Safety Precautions",
+        "content": "Do not attempt to open or repair the device yourself. Use only genuine Samsung batteries and chargers to avoid recurrence of the issue."
+      },
+      {
+        "title": "Monitor for Recurrence",
+        "content": "After replacement, monitor the device for any signs of swelling or overheating. If the issue persists, contact Samsung support again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Third-Party Battery Replacement",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a High-Quality Replacement Battery",
+            "content": "Buy a reputable third-party battery (e.g., from Anker or iFixit) that is compatible with the Galaxy S4. Ensure it has safety certifications."
+          },
+          {
+            "title": "Replace the Battery Yourself",
+            "content": "Follow a step-by-step guide (e.g., from iFixit) to safely replace the battery. Use proper tools and avoid damaging the device."
+          },
+          {
+            "title": "Test the Device",
+            "content": "Power on the device and monitor for overheating or swelling. If issues persist, revert to an official Samsung replacement."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T23:54:50.383Z",
+      "updated": "2026-08-05T23:54:50.383Z",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Samsung_Electronics",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785974111118-674",
+    "title": "Prevent Auto-Pairing for Bluetooth Devices on macOS",
+    "problemDescription": "Bluetooth devices automatically pair with macOS, making it difficult to control when connections occur. Users need a way to manually manage pairing for specific devices.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "auto-pairing",
+      "macOS",
+      "manual control",
+      "blueutil"
+    ],
+    "steps": [
+      {
+        "title": "Install blueutil via Homebrew",
+        "content": "Open Terminal and run: `brew install blueutil` to install the command-line tool for Bluetooth management."
+      },
+      {
+        "title": "Create Automator Quick Actions",
+        "content": "1. Open Automator and create a new 'Quick Action' (macOS Ventura or later) or 'Service' (older macOS).\n2. Set 'Workflow receives' to 'no input' and 'in' to 'any application'.\n3. Add a 'Run Shell Script' action.\n4. For pairing/connecting, use the script:\n```\n/usr/local/bin/blueutil --pair <MAC_ADDRESS_OF_BT_DEVICE>\nsleep 5\n/usr/local/bin/blueutil --connect <MAC_ADDRESS_OF_BT_DEVICE>\n```\n5. For unpairing/disconnecting, use:\n```\n/usr/local/bin/blueutil --disconnect <MAC_ADDRESS_OF_BT_DEVICE>\n/usr/local/bin/blueutil --unpair <MAC_ADDRESS_OF_BT_DEVICE>\n```\n6. Save the actions as 'Pair Bluetooth Device' and 'Unpair Bluetooth Device'."
+      },
+      {
+        "title": "Assign Keyboard Shortcuts",
+        "content": "Go to System Settings (or System Preferences) → Keyboard → Keyboard Shortcuts → Services. Find your new actions under 'General' and assign unique keyboard shortcuts to them."
+      },
+      {
+        "title": "Manually Control Bluetooth Pairing",
+        "content": "Use the keyboard shortcuts to manually pair/connect or unpair/disconnect your Bluetooth device instead of relying on auto-pairing."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Bluetooth Explorer (Advanced Users)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Bluetooth Explorer",
+            "content": "Download 'Bluetooth Explorer' from Apple's Developer Tools (requires an Apple Developer account) or third-party sources."
+          },
+          {
+            "title": "Disable Auto-Pairing via Bluetooth Explorer",
+            "content": "1. Open Bluetooth Explorer.\n2. Navigate to the device in question.\n3. Look for an option to disable auto-pairing or set the device as 'non-connectable'.\n4. Save changes and restart Bluetooth."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Temporarily Disable Bluetooth",
+        "type": "Quick Fix",
+        "steps": [
+          {
+            "title": "Turn Off Bluetooth When Not in Use",
+            "content": "Manually disable Bluetooth in System Settings (or System Preferences) → Bluetooth when the device is not needed to prevent auto-pairing."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T23:55:11.118Z",
+      "updated": "2026-08-05T23:55:11.118Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/159548/prevent-auto-pairing-for-certain-devices-bluetooth",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785974158495-913",
+    "title": "Reset Forgotten GNOME Keyring Password in Ubuntu",
+    "problemDescription": "User has forgotten the GNOME Keyring password and needs to reset it without losing stored passwords.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "gnome keyring",
+      "password reset",
+      "ubuntu",
+      "seahorse",
+      "login.keyring"
+    ],
+    "steps": [
+      {
+        "title": "Delete the Keyring File",
+        "content": "Open a terminal and run the following command to delete the login keyring file:\n```bash\nrm ~/.local/share/keyrings/login.keyring\n```\nAlternatively, for older Ubuntu versions (pre-12.10), use:\n```bash\nrm ~/.gnome2/keyrings/login.keyring\n```"
+      },
+      {
+        "title": "Log Out and Log Back In",
+        "content": "Log out of your Ubuntu session and log back in. Ubuntu will automatically create a new `login.keyring` file with a new password prompt."
+      },
+      {
+        "title": "Set a New Keyring Password",
+        "content": "When prompted, enter a new password for the GNOME Keyring. This password will be used to unlock the keyring in the future."
+      },
+      {
+        "title": "Verify Keyring Access",
+        "content": "Open the 'Passwords and Keys' (Seahorse) application to confirm the keyring is accessible and passwords are retained."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Keyring Password via Seahorse",
+        "type": "GUI Method",
+        "steps": [
+          {
+            "title": "Open Passwords and Keys (Seahorse)",
+            "content": "Type `seahorse` in the terminal or search for 'Passwords and Keys' in the Ubuntu application menu."
+          },
+          {
+            "title": "Unlock or Delete the Keyring",
+            "content": "If the password is known: Select the 'login' keyring under 'Passwords' and click 'Unlock'.\nIf the password is unknown: Right-click the 'login' keyring and select 'Delete' to reset it."
+          },
+          {
+            "title": "Create a New Keyring",
+            "content": "Log out and log back in. Ubuntu will prompt you to create a new keyring with a new password."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Backup and Restore Keyring (Advanced)",
+        "type": "Backup Method",
+        "steps": [
+          {
+            "title": "Backup the Keyring File",
+            "content": "Run the following commands to back up the keyring:\n```bash\ncd ~/.local/share/keyrings/\ncp login.keyring login.keyring.backup\n```"
+          },
+          {
+            "title": "Delete and Recreate the Keyring",
+            "content": "Delete the original keyring file:\n```bash\nrm ~/.local/share/keyrings/login.keyring\n```\nLog out and log back in to create a new keyring."
+          },
+          {
+            "title": "Restore the Backup",
+            "content": "Replace the new keyring with the backup:\n```bash\ncd ~/.local/share/keyrings/\nmv login.keyring.backup login.keyring\n```\nThe new keyring will use the old passwords but require a new password."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T23:55:58.495Z",
+      "updated": "2026-08-05T23:55:58.495Z",
+      "sourceUrl": "https://askubuntu.com/questions/65281/how-to-recover-reset-forgotten-gnome-keyring-password",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785974162695-16",
+    "title": "Fix SSH 'Connection reset by peer' Error",
+    "problemDescription": "SSH connection fails with 'ssh_exchange_identification: read: Connection reset by peer' due to misconfigured SSH server, firewall rules, or corrupted host files.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "ssh",
+      "connection reset",
+      "peer",
+      "sshd",
+      "firewall"
+    ],
+    "steps": [
+      {
+        "title": "Restart SSH Service",
+        "content": "Restart the SSH service to apply any pending changes: `sudo systemctl restart sshd`"
+      },
+      {
+        "title": "Check SSH Service Status",
+        "content": "Verify the SSH service is running: `sudo systemctl status sshd`. If inactive, start it with `sudo systemctl start sshd`."
+      },
+      {
+        "title": "Install OpenSSH Server (if missing)",
+        "content": "Ensure OpenSSH server is installed: `sudo apt update && sudo apt install openssh-server`"
+      },
+      {
+        "title": "Clear Corrupted Host Keys",
+        "content": "Remove corrupted host keys and regenerate them: `sudo rm /etc/ssh/ssh_host_* && sudo dpkg-reconfigure openssh-server`"
+      },
+      {
+        "title": "Check Firewall Rules",
+        "content": "Allow SSH (port 22) in the firewall: `sudo ufw allow 22` or adjust firewall rules accordingly."
+      },
+      {
+        "title": "Verify Hosts.allow Configuration",
+        "content": "Ensure your local IP is allowed in `/etc/hosts.allow`: Add `sshd:YOUR_LOCAL_IP:allow` and save the file."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Rebuild SSH Daemon Configuration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup SSH Config",
+            "content": "Backup the SSH configuration: `sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak`"
+          },
+          {
+            "title": "Reset MaxAuthTries",
+            "content": "Edit `/etc/ssh/sshd_config` and set `MaxAuthTries 6` (default value). Save and restart SSH: `sudo systemctl restart sshd`"
+          },
+          {
+            "title": "Clear Known Hosts",
+            "content": "Delete the `known_hosts` file to reset trusted hosts: `rm ~/.ssh/known_hosts`"
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Rebuild SSH Runtime Directory",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Recreate SSH Runtime Directory",
+            "content": "Recreate the SSH runtime directory with correct permissions: `sudo mkdir -p /var/run/sshd && sudo chmod 755 /var/run/sshd`"
+          },
+          {
+            "title": "Restart SSH Service",
+            "content": "Restart the SSH service: `sudo service ssh restart`"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T23:56:02.695Z",
+      "updated": "2026-08-05T23:56:02.695Z",
+      "sourceUrl": "https://askubuntu.com/questions/918667/how-to-fix-ssh-exchange-identification-read-connection-reset-by-peer-error",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
