@@ -1,5 +1,5 @@
 // Enhanced Service Worker for TechStep PWA
-const CACHE_VERSION = 'v3'; // Increment version to force cache invalidation
+const CACHE_VERSION = 'v4'; // Increment version to force cache invalidation
 const STATIC_CACHE = `techstep-static-${CACHE_VERSION}`;
 const DYNAMIC_CACHE = `techstep-dynamic-${CACHE_VERSION}`;
 const OFFLINE_CACHE = `techstep-offline-${CACHE_VERSION}`;
@@ -12,14 +12,6 @@ const CRITICAL_RESOURCES = [
   '/offline.html'
 ];
 
-// App shell resources
-const APP_SHELL = [
-  '/src/main.tsx',
-  '/src/App.tsx',
-  '/src/pages/LandingPage.tsx',
-  '/src/components/pwa/NetworkStatus.tsx'
-];
-
 // Learning content patterns to cache
 const LEARNING_CONTENT_PATTERNS = [
   /\/api\/tutorials/,
@@ -27,28 +19,21 @@ const LEARNING_CONTENT_PATTERNS = [
   /\/api\/content/
 ];
 
-// Install event - cache critical resources and app shell
+// Install event - cache critical resources
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    Promise.all([
-      // Cache critical resources
-      caches.open(STATIC_CACHE).then((cache) => {
+    caches.open(STATIC_CACHE)
+      .then((cache) => {
         console.log('Service Worker: Caching critical resources');
         return cache.addAll(CRITICAL_RESOURCES);
-      }),
-      // Cache app shell
-      caches.open(DYNAMIC_CACHE).then((cache) => {
-        console.log('Service Worker: Caching app shell');
-        return cache.addAll(APP_SHELL.filter(url => !CRITICAL_RESOURCES.includes(url)));
       })
-    ])
-    .then(() => {
-      console.log('Service Worker: Installation complete');
-      return self.skipWaiting();
-    })
-    .catch((error) => {
-      console.error('Service Worker: Installation failed', error);
-    })
+      .then(() => {
+        console.log('Service Worker: Installation complete');
+        return self.skipWaiting();
+      })
+      .catch((error) => {
+        console.error('Service Worker: Installation failed', error);
+      })
   );
 });
 
@@ -112,16 +97,12 @@ self.addEventListener('fetch', (event) => {
   }
 });
 
-// Navigation requests - cache first with network fallback
+// Navigation requests - network first, cache only as an offline fallback.
+// This must never be cache-first: index.html references content-hashed JS
+// filenames that change on every deploy, so a stale cached shell points at
+// script URLs that no longer exist on the server once a new version ships.
 async function handleNavigationRequest(request) {
   try {
-    const cachedResponse = await caches.match(request);
-    if (cachedResponse) {
-      // Update cache in background
-      updateCacheInBackground(request);
-      return cachedResponse;
-    }
-
     const networkResponse = await fetch(request);
     if (networkResponse.ok) {
       const cache = await caches.open(DYNAMIC_CACHE);
@@ -129,9 +110,9 @@ async function handleNavigationRequest(request) {
     }
     return networkResponse;
   } catch (error) {
-    console.error('Navigation request failed:', error);
-    // Return offline page or cached homepage
-    return caches.match('/offline.html') || caches.match('/');
+    console.error('Navigation request failed, falling back to cache:', error);
+    const cachedResponse = await caches.match(request);
+    return cachedResponse || caches.match('/offline.html');
   }
 }
 
@@ -189,19 +170,6 @@ async function handleDefaultRequest(request) {
       return cachedResponse;
     }
     throw error;
-  }
-}
-
-// Background cache update
-async function updateCacheInBackground(request) {
-  try {
-    const networkResponse = await fetch(request);
-    if (networkResponse.ok) {
-      const cache = await caches.open(DYNAMIC_CACHE);
-      cache.put(request, networkResponse.clone());
-    }
-  } catch (error) {
-    console.log('Background update failed:', error);
   }
 }
 
