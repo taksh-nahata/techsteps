@@ -347331,5 +347331,368 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1785918547472-575",
+    "title": "Fix Facebook & Messenger Video/Audio Calls Not Working",
+    "problemDescription": "Video and audio calls on Facebook or Messenger fail to connect, showing a black screen with no mutual video/audio despite the camera and microphone being active. The issue persists across apps and browsers.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "facebook",
+      "messenger",
+      "video call",
+      "audio call",
+      "black screen",
+      "no connection",
+      "windows 10"
+    ],
+    "steps": [
+      {
+        "title": "Check for Conflicting Background Apps",
+        "content": "Open Task Manager (Ctrl+Shift+Esc), go to the 'Startup' tab, and disable any non-essential apps that might interfere with camera/microphone access. Restart your PC and test Facebook/Messenger again."
+      },
+      {
+        "title": "Verify Camera and Microphone Permissions",
+        "content": "Go to Windows Settings > Privacy > Camera/Microphone. Ensure both Facebook and Messenger have permission to access your camera and microphone. Toggle permissions off and on again if needed."
+      },
+      {
+        "title": "Reset Camera and Microphone Settings",
+        "content": "Open Command Prompt as Administrator and run: `devmgmt.msc`. In Device Manager, expand 'Cameras' and 'Audio inputs and outputs', right-click your device, select 'Uninstall device', then restart your PC to reinstall drivers automatically."
+      },
+      {
+        "title": "Clear Browser Cache and Reset Settings",
+        "content": "For Brave/Edge browsers, clear cache (Ctrl+Shift+Del), reset settings to default (Settings > Reset settings), and ensure no extensions are blocking camera/microphone access."
+      },
+      {
+        "title": "Check Event Viewer for Errors",
+        "content": "Open Event Viewer (eventvwr.msc), navigate to Windows Logs > Application/System, and look for errors or warnings around the time Facebook/Messenger fails. Note any error codes for further troubleshooting."
+      },
+      {
+        "title": "Test with Another User Account",
+        "content": "Create a new Windows user account (Settings > Accounts > Family & other users > Add someone else), log in, and test Facebook/Messenger calls. If it works, your main account may have corrupted settings."
+      },
+      {
+        "title": "Reinstall WebRTC Components",
+        "content": "Uninstall Chrome/Edge if installed, then reinstall the latest version. WebRTC issues often stem from outdated or corrupted browser components. Test calls after reinstallation."
+      },
+      {
+        "title": "Disable Hardware Acceleration in Browsers",
+        "content": "In Brave/Edge, go to Settings > System, disable 'Use hardware acceleration when available', restart the browser, and test calls again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable VPN or Proxy",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off VPN/Proxy",
+            "content": "Disconnect any VPN or proxy services (check system tray or VPN app). Test Facebook/Messenger calls again, as these services can interfere with WebRTC connections."
+          },
+          {
+            "title": "Flush DNS Cache",
+            "content": "Open Command Prompt as Administrator and run: `ipconfig /flushdns`. Restart your PC and test calls."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check Firewall and Antivirus Exclusions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Add Exceptions to Firewall",
+            "content": "Go to Windows Defender Firewall > Allow an app through firewall, ensure 'Facebook' and 'Messenger' are checked for both private and public networks. Add them manually if missing."
+          },
+          {
+            "title": "Temporarily Disable Antivirus",
+            "content": "Turn off Avast (or other antivirus) temporarily and test calls. If it works, add Facebook/Messenger to the antivirus exclusion list."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T08:29:07.472Z",
+      "updated": "2026-08-05T08:29:07.472Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/solved-facebook-messenger-video-audio-not-working.3857814",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785918568490-314",
+    "title": "Fix Audio Output on 2015 Google Chromebook Pixel II (Ubuntu)",
+    "problemDescription": "Audio output is not working on a 2015 Google Chromebook Pixel II running Ubuntu. The sound is muted or not routed correctly to the speakers.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "audio",
+      "sound",
+      "alsa",
+      "chromebook",
+      "pixel"
+    ],
+    "steps": [
+      {
+        "title": "Install ALSA Utilities",
+        "content": "Open a terminal and install `alsa-utils` if not already installed. Run the following commands to remove any existing installation and reinstall it cleanly:"
+      },
+      {
+        "title": "Run alsamixer and Configure Audio Output",
+        "content": "Launch `alsamixer` in the terminal. Press `F6` to select the correct sound card (`bdw-rt5677`). Ensure the card is not mapped to volume keys in system settings. Scroll right to find `Out1`, `Out2`, and `Out3`. Press `m` to toggle each output from `MM` (muted) to `00` (unmuted)."
+      },
+      {
+        "title": "Enable Audio Scripts for Persistent Fix",
+        "content": "Navigate to the repository's `scripts/setup/brightness` folder. Run the following commands to set up and enable the audio fix on boot:"
+      },
+      {
+        "title": "Test Audio Output",
+        "content": "Play an audio file or video to verify that sound is now working. If the issue persists, restart your Chromebook."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual ALSA Configuration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit ALSA Configuration File",
+            "content": "Open `/etc/asound.conf` or create it if it doesn't exist. Add the following configuration to route audio to the correct output:"
+          },
+          {
+            "title": "Restart ALSA",
+            "content": "Run `sudo alsa force-reload` or restart your system to apply changes."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: PulseAudio Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Kill and Restart PulseAudio",
+            "content": "Run the following commands to reset PulseAudio, which may resolve audio routing issues:"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T08:29:28.490Z",
+      "updated": "2026-08-05T08:29:28.490Z",
+      "sourceUrl": "https://askubuntu.com/questions/1200213/audio-fix-for-2015-google-chromebook-pixel-ii",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785918583350-752",
+    "title": "Fix Windows 11 Updates Not Showing",
+    "problemDescription": "Windows 11 is not displaying available updates in the Windows Update settings, preventing system updates.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 11",
+      "updates",
+      "windows update",
+      "troubleshooter"
+    ],
+    "steps": [
+      {
+        "title": "Run Windows Update Troubleshooter",
+        "content": "1. Press `Win + I` to open Settings.\n2. Go to `System` > `Troubleshoot` > `Other troubleshooters`.\n3. Locate `Windows Update` in the list and click `Run`.\n4. Follow the on-screen instructions to complete the troubleshooting process.\n5. Restart your computer after the troubleshooter finishes."
+      },
+      {
+        "title": "Check Windows Version",
+        "content": "1. Right-click the `Start` button and select `Run`.\n2. Type `winver` and press `Enter`.\n3. Note the version number (e.g., 22H2). If it is outdated, proceed to the next step."
+      },
+      {
+        "title": "Use Windows Update Assistant",
+        "content": "1. Visit the official Microsoft Windows 11 download page: [https://www.microsoft.com/software-download/windows11](https://www.microsoft.com/software-download/windows11).\n2. Download and run the `Windows 11 Installation Assistant`.\n3. Follow the prompts to upgrade to the latest version of Windows 11.\n4. Restart your computer after the upgrade completes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Windows Update Components Manually",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Stop Windows Update Services",
+            "content": "1. Press `Win + X` and select `Terminal (Admin)` or `Command Prompt (Admin)`.\n2. Run the following commands one by one:\n   - `net stop wuauserv`\n   - `net stop cryptSvc`\n   - `net stop bits`\n   - `net stop msiserver`"
+          },
+          {
+            "title": "Rename SoftwareDistribution and Catroot2 Folders",
+            "content": "1. In the same Command Prompt window, run:\n   - `ren C:\\Windows\\SoftwareDistribution SoftwareDistribution.old`\n   - `ren C:\\Windows\\System32\\catroot2 Catroot2.old`"
+          },
+          {
+            "title": "Restart Windows Update Services",
+            "content": "1. Run the following commands:\n   - `net start wuauserv`\n   - `net start cryptSvc`\n   - `net start bits`\n   - `net start msiserver`\n2. Close the Command Prompt and restart your computer."
+          },
+          {
+            "title": "Check for Updates Again",
+            "content": "1. Go to `Settings` > `Windows Update` and click `Check for updates`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T08:29:43.350Z",
+      "updated": "2026-08-05T08:29:43.350Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/windows-11-windows-updates-are-not-showing-at-all-help-please.3784675",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785918586535-938",
+    "title": "Fix Windows 11 Recovery Loop with Broken USB Input",
+    "problemDescription": "Windows 11 Recovery Environment (WinRE) fails due to a botched update, disabling USB keyboard and mouse input, leaving users unable to access recovery tools.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "recovery loop",
+      "USB input",
+      "WinRE",
+      "KB5070773"
+    ],
+    "steps": [
+      {
+        "title": "Update Windows via Windows Update (if accessible)",
+        "content": "If you can log into Windows, open Settings > Windows Update and install the emergency patch KB5070773. Reboot your system afterward."
+      },
+      {
+        "title": "Use a USB Recovery Drive",
+        "content": "Create a Windows 11 recovery drive on another PC using the Media Creation Tool. Boot from the USB drive and access recovery options."
+      },
+      {
+        "title": "Utilize Touchscreen or PS/2 Input",
+        "content": "If your device supports touchscreen or PS/2 ports, use these to navigate the recovery environment."
+      },
+      {
+        "title": "OEM/Enterprise Workaround (PXE Boot)",
+        "content": "For OEMs or enterprises, use Preboot Execution Environment (PXE) via Configuration Manager to remotely service the affected system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Update via Offline Installer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download the Offline Installer",
+            "content": "Download the standalone installer for KB5070773 from the Microsoft Update Catalog (https://www.catalog.update.microsoft.com/)."
+          },
+          {
+            "title": "Run the Installer in Safe Mode",
+            "content": "Boot into Safe Mode (if possible) and run the downloaded installer to apply the patch."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T08:29:46.535Z",
+      "updated": "2026-08-05T08:29:46.535Z",
+      "sourceUrl": "https://www.tomshardware.com/software/windows/microsoft-rushes-out-emergency-windows-11-patch",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785918590773-106",
+    "title": "Fix Windows 11 Installation Error: 'Could Not Continue with Installation'",
+    "problemDescription": "Windows 11 installation fails with the error 'Windows could not continue with Windows installation' when attempting a clean install on a new system.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "installation error",
+      "clean install",
+      "NVMe",
+      "BIOS",
+      "USB"
+    ],
+    "steps": [
+      {
+        "title": "Disconnect All Non-Essential Drives",
+        "content": "Power off the system and disconnect all drives except the target NVMe/SSD where Windows 11 will be installed. This prevents potential conflicts during installation."
+      },
+      {
+        "title": "Clean the Target Drive Using DiskPart",
+        "content": "During the Windows 11 installation process, press Shift+F10 to open Command Prompt. Type the following commands sequentially:\n1. `diskpart`\n2. `list disk` (identify the target disk number)\n3. `select disk X` (replace X with the target disk number)\n4. `clean` (this erases all partitions and data on the disk)\n5. `exit` (to close DiskPart)\n6. `exit` (to close Command Prompt)."
+      },
+      {
+        "title": "Proceed with Windows 11 Installation",
+        "content": "Return to the Windows 11 installation screen and select the cleaned disk as the installation target. Proceed with the installation as normal."
+      },
+      {
+        "title": "Update BIOS (If Necessary)",
+        "content": "If the issue persists, ensure your motherboard's BIOS is updated to the latest version. Check the manufacturer's website for your specific motherboard model (e.g., ASUS X670E-E) and follow their instructions to update the BIOS."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Media Creation Tool for Clean Installation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Windows 11 Media Creation Tool",
+            "content": "Download the official Windows 11 Media Creation Tool from Microsoft's website and create a bootable USB drive."
+          },
+          {
+            "title": "Boot from USB and Start Installation",
+            "content": "Boot the system from the USB drive and start the installation process. During installation, select 'Custom: Install Windows only' and format the target disk before proceeding."
+          },
+          {
+            "title": "Check for Driver Compatibility",
+            "content": "If the installation still fails, ensure all hardware components (e.g., chipset, storage, and GPU drivers) are compatible with Windows 11. Update drivers via the manufacturer's website if needed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T08:29:50.773Z",
+      "updated": "2026-08-05T08:29:50.773Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/error-installing-windows-11-on-new-system-windows-could-not-continue-with-windows-installation.3794792",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785918611209-168",
+    "title": "Disable Alexa's 'OK' Confirmation or Enable Follow-Up Mode",
+    "problemDescription": "Users want to reduce Alexa's spoken confirmations or enable multi-command sequences without repeating the wake word.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Alexa",
+      "voice assistant",
+      "confirmation",
+      "Brief Mode",
+      "Follow-Up Mode"
+    ],
+    "steps": [
+      {
+        "title": "Disable 'OK' Confirmation with Brief Mode",
+        "content": "Say, 'Alexa, turn on Brief Mode.' Alternatively, open the Alexa app, go to Settings > Alexa Voice Responses, and toggle on Brief Mode."
+      },
+      {
+        "title": "Enable Follow-Up Mode for Multi-Command Sequences",
+        "content": "Say, 'Alexa, turn on Follow-Up Mode.' After issuing a command, wait for Alexa to say 'Okay' before speaking the next command within a few seconds."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-05T08:30:11.209Z",
+      "updated": "2026-08-05T08:30:11.209Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/amazon-echo-alexa-tips",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
