@@ -346011,5 +346011,608 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785888042328-567",
+    "title": "Fix Wi-Fi Sticky Client Issue Due to Low Data Rates",
+    "problemDescription": "Wi-Fi clients associate with weaker access points due to enabled low data rates, causing reduced throughput and sticky client problems.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "sticky client",
+      "low data rates",
+      "throughput",
+      "packet capture",
+      "Wireshark"
+    ],
+    "steps": [
+      {
+        "title": "Disable Low Data Rates in Access Point Configuration",
+        "content": "Log in to your Wi-Fi router or access point admin panel. Navigate to the wireless settings and disable low data rates (e.g., 1, 2, 5.5, 6, 9 Mbps). Ensure only higher data rates (e.g., 12, 24, 48, 54 Mbps) are enabled to force clients to connect to stronger signals."
+      },
+      {
+        "title": "Check Client Device Capabilities",
+        "content": "Review the association request frame of the problematic client device using a packet analyzer like Wireshark. Verify if the device supports higher data rates and is not artificially limited by its configuration."
+      },
+      {
+        "title": "Monitor Retry Rates and Throughput",
+        "content": "Use network monitoring tools (e.g., Ekahau, Wireshark) to observe retry rates and average throughput speeds. High retry rates or low throughput may indicate sticky client issues caused by low data rates."
+      },
+      {
+        "title": "Update Firmware and Drivers",
+        "content": "Ensure both the access point firmware and client device drivers are updated to the latest versions. Manufacturers often release updates to improve compatibility and performance."
+      },
+      {
+        "title": "Adjust Transmit Power Settings",
+        "content": "If sticky clients persist, reduce the transmit power of the access point slightly to encourage clients to connect to stronger signals. Avoid excessive reduction to prevent coverage gaps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Packet Capture Analysis for Advanced Troubleshooting",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Capture Wi-Fi Traffic with Wireshark",
+            "content": "Set up a packet capture on a device near the problematic client. Use Wireshark with custom coloring rules to filter and analyze association request frames, retry rates, and data rates."
+          },
+          {
+            "title": "Identify Sticky Client Behavior",
+            "content": "Look for clients that repeatedly associate with weaker access points despite stronger signals being available. Focus on frames with low data rates and high retry counts."
+          },
+          {
+            "title": "Implement Custom Configuration",
+            "content": "Based on Wireshark analysis, adjust access point settings (e.g., disable specific low data rates, tweak transmit power) to optimize client association and performance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T00:00:42.328Z",
+      "updated": "2026-08-05T00:00:42.328Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=mccZQe7tjEY",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785888065252-553",
+    "title": "Fix Linux Boot Errors with PCI Express Device Errors",
+    "problemDescription": "Linux system fails to boot and displays PCI Express device errors during startup, preventing normal operation.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "linux",
+      "boot",
+      "pci",
+      "error",
+      "hardware",
+      "device"
+    ],
+    "steps": [
+      {
+        "title": "Access GRUB Boot Menu",
+        "content": "Restart your Linux system and hold the Shift key (or repeatedly press Esc) to access the GRUB boot menu before the system fully boots."
+      },
+      {
+        "title": "Disable Splash Screen to View Errors",
+        "content": "Highlight the default boot entry and press 'e' to edit it. Locate the line starting with 'linux' and remove the 'quiet' and 'splash' parameters. Press Ctrl+X or F10 to boot with these changes. This will display detailed boot errors, including PCI Express device errors."
+      },
+      {
+        "title": "Identify Problematic Hardware",
+        "content": "Note the specific PCI device mentioned in the error message (e.g., 'PCI Bus Error'). Common culprits include graphics cards, network adapters, or storage controllers."
+      },
+      {
+        "title": "Disconnect Unnecessary Hardware",
+        "content": "Power off the system and disconnect all non-essential hardware (e.g., printers, USB devices, secondary monitors). Focus on the device identified in the error message."
+      },
+      {
+        "title": "Update Kernel and Drivers",
+        "content": "Boot into a working state (if possible) and update your Linux kernel and relevant drivers. For Debian/Ubuntu-based systems, run: `sudo apt update && sudo apt upgrade`. For other distributions, use the appropriate package manager (e.g., `dnf` for Fedora)."
+      },
+      {
+        "title": "Check Kernel Messages",
+        "content": "After updating, reboot and check kernel messages for the problematic device: `dmesg | grep -i pci`. Look for errors or warnings related to the device."
+      },
+      {
+        "title": "Reinstall or Blacklist Problematic Driver",
+        "content": "If the device is identified (e.g., a specific GPU driver), reinstall the driver or blacklist it temporarily. For example, to blacklist a driver: `echo \"blacklist <driver_name>\" | sudo tee -a /etc/modprobe.d/blacklist.conf` and reboot."
+      },
+      {
+        "title": "Test with a Live USB",
+        "content": "If the issue persists, boot from a Linux Live USB. If the system works normally, the problem is likely software-related (e.g., driver or kernel issue). If the error persists, the hardware may be faulty."
+      },
+      {
+        "title": "Check for Hardware Issues",
+        "content": "If the error occurs even with minimal hardware, test the system with another PCIe slot or a different device. If possible, test the device in another system to rule out hardware failure."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Different Kernel Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access GRUB and Select Advanced Options",
+            "content": "In the GRUB menu, select 'Advanced options for [Your Linux Distribution]' and choose an older kernel version from the list."
+          },
+          {
+            "title": "Boot with Older Kernel",
+            "content": "Select the older kernel and press Enter to boot. If the system boots successfully, the issue may be related to a recent kernel update."
+          },
+          {
+            "title": "Permanently Use Older Kernel",
+            "content": "If the older kernel resolves the issue, set it as the default in GRUB: Edit `/etc/default/grub` and change `GRUB_DEFAULT` to the position of the older kernel in the GRUB menu (e.g., `GRUB_DEFAULT=\"1>2\"`). Update GRUB: `sudo update-grub`."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable PCIe ASPM (Active State Power Management)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Edit GRUB Configuration",
+            "content": "In the GRUB menu, press 'e' to edit the boot entry. Add `pcie_aspm=off` to the end of the line starting with 'linux'. Press Ctrl+X or F10 to boot."
+          },
+          {
+            "title": "Make the Change Permanent",
+            "content": "If this resolves the issue, make the change permanent by editing `/etc/default/grub` and adding `GRUB_CMDLINE_LINUX_DEFAULT=\"$GRUB_CMDLINE_LINUX_DEFAULT pcie_aspm=off\"`. Update GRUB: `sudo update-grub`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T00:01:05.252Z",
+      "updated": "2026-08-05T00:01:05.252Z",
+      "sourceUrl": "https://www.techradar.com/how-to/computing/how-to-fix-any-linux-problem-1322630",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785888085381-442",
+    "title": "Fix ChatGPT Login Not Working",
+    "problemDescription": "Unable to log in or access the ChatGPT login screen due to server issues, browser incompatibilities, or connection problems.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "ChatGPT",
+      "login",
+      "server",
+      "browser",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Check OpenAI Server Status",
+        "content": "Visit the OpenAI status page (status.openai.com) to confirm if ChatGPT services are operational. If servers are down, wait and retry later."
+      },
+      {
+        "title": "Verify Login Credentials",
+        "content": "Ensure your username and password are correct. Use a password manager to store and retrieve credentials accurately."
+      },
+      {
+        "title": "Clear Browser Cache and Cookies",
+        "content": "Go to your browser settings and clear cache, cookies, and site data for ChatGPT. This resolves potential conflicts from corrupted data."
+      },
+      {
+        "title": "Try a Different Browser",
+        "content": "Switch to a supported browser like Chrome, Firefox, Edge, or Safari. Ensure it is updated to the latest version."
+      },
+      {
+        "title": "Disable Browser Extensions",
+        "content": "Temporarily disable all browser extensions, especially ad-blockers or privacy tools, as they may interfere with ChatGPT."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your device has a stable internet connection. Restart your router if necessary and test connectivity with other websites."
+      },
+      {
+        "title": "Use Incognito/Private Mode",
+        "content": "Open ChatGPT in an incognito or private browsing window to rule out profile-specific issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change DNS Settings",
+        "type": "Advanced Troubleshooting",
+        "steps": [
+          {
+            "title": "Switch to Google or Cloudflare DNS",
+            "content": "Go to your network settings and change DNS servers to 8.8.8.8 (Google) or 1.1.1.1 (Cloudflare) to bypass potential DNS issues."
+          },
+          {
+            "title": "Flush DNS Cache",
+            "content": "On Windows, open Command Prompt as admin and run 'ipconfig /flushdns'. On macOS, run 'sudo dscacheutil -flushcache'."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a VPN",
+        "type": "Workaround",
+        "steps": [
+          {
+            "title": "Connect to a VPN",
+            "content": "If ChatGPT is region-locked, use a reliable VPN service to connect to a supported country. Ensure the VPN is active before accessing ChatGPT."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T00:01:25.381Z",
+      "updated": "2026-08-05T00:01:25.381Z",
+      "sourceUrl": "https://www.howtogeek.com/874406/how-to-fix-chatgpt-login-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785888089422-701",
+    "title": "Fix iPhone Issues by Erasing and Setting Up as New",
+    "problemDescription": "iPhone issues persist even after restoring from backup, suggesting corruption in the backup or device state.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "reset",
+      "backup",
+      "corruption",
+      "data loss"
+    ],
+    "steps": [
+      {
+        "title": "Backup Current Data (Optional)",
+        "content": "If possible, create a fresh backup of your iPhone via iCloud or a computer to preserve recent data before proceeding."
+      },
+      {
+        "title": "Erase All Content and Settings",
+        "content": "Go to Settings > General > Transfer or Reset iPhone > Erase All Content and Settings. Confirm the action."
+      },
+      {
+        "title": "Set Up iPhone as New",
+        "content": "Follow the on-screen instructions to set up the iPhone as a new device (do not restore from backup yet)."
+      },
+      {
+        "title": "Test for the Issue",
+        "content": "Check if the problem persists. If resolved, the issue was likely caused by the backup or device state."
+      },
+      {
+        "title": "Restore from an Older Backup",
+        "content": "If the issue is resolved, restore your iPhone from an older iCloud or local backup (not the most recent one) to avoid reintroducing the problem."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restore from Recovery Mode",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Connect iPhone to Computer",
+            "content": "Use a USB cable to connect your iPhone to a Mac or Windows PC with iTunes or Finder open."
+          },
+          {
+            "title": "Enter Recovery Mode",
+            "content": "For iPhone 8 or later: Quickly press Volume Up, then Volume Down, then hold the Side button until the recovery screen appears. For older models, hold the Home and Side buttons simultaneously."
+          },
+          {
+            "title": "Restore via Computer",
+            "content": "In iTunes or Finder, select 'Restore iPhone' to reinstall the latest iOS version. This will erase all data but may resolve deeper system issues."
+          },
+          {
+            "title": "Set Up iPhone",
+            "content": "After restoration, set up the iPhone as new or restore from a backup."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Force Restart iPhone",
+        "type": "Quick Fix",
+        "steps": [
+          {
+            "title": "Force Restart iPhone",
+            "content": "Quickly press Volume Up, then Volume Down, then hold the Side button until the Apple logo appears. This may resolve minor software glitches without data loss."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T00:01:29.422Z",
+      "updated": "2026-08-05T00:01:29.422Z",
+      "sourceUrl": "https://www.howtogeek.com/iphone-troubleshooting-tips-to-fix-all-kinds-of-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785888092895-539",
+    "title": "Fix Nexus 7 Screen Separation Issue",
+    "problemDescription": "The screen of the Nexus 7 is separating from the device, causing a spongy feeling and creaking sound when pressed.",
+    "category": "android",
+    "difficulty": "Hard",
+    "keywords": [
+      "nexus 7",
+      "screen separation",
+      "hardware issue",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Identify the Issue",
+        "content": "Press on the top-left side of the screen. If there is a spongy feeling and a creaking sound, the screen is separating from the device."
+      },
+      {
+        "title": "Check Warranty Status",
+        "content": "Verify if your Nexus 7 is still under warranty. If it is, contact Google for a potential replacement."
+      },
+      {
+        "title": "Contact Google Support",
+        "content": "Reach out to Google Support to inquire about a warranty replacement or repair. Explain the issue and provide proof of purchase if required."
+      },
+      {
+        "title": "DIY Repair (If Warranty is Void)",
+        "content": "If the warranty is expired or void, proceed with caution. Use a plastic pry tool to carefully separate the screen from the device. Apply even pressure around the edges to avoid damaging the display. Reattach the screen securely, ensuring no gaps remain. Note: This may void the warranty and carries a risk of further damage."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Professional Repair Service",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Find a Local Repair Shop",
+            "content": "Search for a reputable repair shop that specializes in Nexus 7 or Android tablet repairs."
+          },
+          {
+            "title": "Get a Quote",
+            "content": "Obtain a repair quote and confirm the shop’s experience with Nexus 7 screen separation issues."
+          },
+          {
+            "title": "Proceed with Repair",
+            "content": "Hand over the device for repair. Ensure the shop provides a warranty on the repair work."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T00:01:32.895Z",
+      "updated": "2026-08-05T00:01:32.895Z",
+      "sourceUrl": "https://www.howtogeek.com/131109/the-ultimate-nexus-7-troubleshooting-guide-6-potential-problems-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1785888103541-357",
+    "title": "Fix USB Devices Not Recognized on macOS Despite Power Draw",
+    "problemDescription": "USB devices (e.g., iPhone, iPod, broadband modem) draw power but are not recognized by macOS, while simple USB disks work. The issue persists after SMC reset and Safe Mode boot, but works in Windows.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "usb",
+      "recognition",
+      "power",
+      "macos",
+      "composite devices"
+    ],
+    "steps": [
+      {
+        "title": "Check USB Device Compatibility",
+        "content": "Verify if the USB device is a composite device (requires multiple drivers). Simple storage devices may work while others fail. Test with another macOS machine if possible."
+      },
+      {
+        "title": "Reset NVRAM/PRAM",
+        "content": "Shut down the Mac. Turn it on and immediately press and hold Command (⌘) + Option + P + R for about 20 seconds. Release the keys and let the Mac boot normally."
+      },
+      {
+        "title": "Create a New User Account",
+        "content": "Go to System Preferences > Users & Groups. Create a new admin account and log in. Test USB recognition in this account to rule out user-specific corruption."
+      },
+      {
+        "title": "Update macOS",
+        "content": "Go to System Preferences > Software Update. Install any available updates, as USB recognition issues are often fixed in newer versions."
+      },
+      {
+        "title": "Check System Information",
+        "content": "Open About This Mac > System Report > USB. Verify if the device appears here but isn’t mounting. If it appears, proceed to the next step."
+      },
+      {
+        "title": "Reset USB Ports via Terminal",
+        "content": "Open Terminal and run: `sudo killall -3 kernelmanagerd` followed by a reboot. This resets the USB subsystem without affecting other settings."
+      },
+      {
+        "title": "Test in Safe Mode",
+        "content": "Restart the Mac in Safe Mode (hold Shift during boot). Test USB recognition. If it works, a third-party app or service is likely interfering."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "Back up data and reinstall macOS via Recovery Mode (Command + R during boot). This preserves files but reinstalls system software."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable USB Power Saving",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Terminal",
+            "content": "Run the command: `sudo pmset -a tcpkeepalive 0` to disable USB power-saving features that may interfere with device recognition."
+          },
+          {
+            "title": "Reboot",
+            "content": "Restart the Mac and test USB recognition."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use USB Hub with External Power",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect a Powered USB Hub",
+            "content": "Plug a self-powered USB hub into the Mac. Connect the problematic device to the hub. This provides stable power and may bypass recognition issues."
+          },
+          {
+            "title": "Test Device",
+            "content": "Check if the device is now recognized in macOS."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T00:01:43.541Z",
+      "updated": "2026-08-05T00:01:43.541Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/8977/why-are-usb-devices-drawing-power-but-not-being-recognized-by-the-os",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785888107981-566",
+    "title": "Fix MacBook Pro USB Port Not Working",
+    "problemDescription": "A USB port on a MacBook Pro stops functioning after resetting NVRAM, likely due to a hardware issue such as a loose connection or damaged port.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "MacBook Pro",
+      "USB port",
+      "NVRAM reset",
+      "hardware issue",
+      "USB hub workaround"
+    ],
+    "steps": [
+      {
+        "title": "Verify the Issue is Hardware-Related",
+        "content": "Test the USB port with multiple devices to confirm the issue persists across different peripherals. If the 'light' turns on but the device isn't recognized, it indicates a power issue rather than a connection problem."
+      },
+      {
+        "title": "Check for Physical Damage or Debris",
+        "content": "Inspect the USB port for any visible damage, bent pins, or debris. Use a flashlight and gently clean the port with compressed air if necessary. Avoid using sharp objects that could cause further damage."
+      },
+      {
+        "title": "Reset SMC (System Management Controller)",
+        "content": "Resetting the SMC can resolve power-related issues. For MacBook Pro models with a T2 chip (2018 and later), shut down the Mac, press and hold the power button for 10 seconds, then release. For older models, shut down, unplug the power adapter, hold Shift+Control+Option+Power for 10 seconds, then release and power on."
+      },
+      {
+        "title": "Test with a Powered USB Hub",
+        "content": "Purchase a powered USB hub to bypass the faulty port. Connect the hub to a working USB port and then connect your devices to the hub. Ensure the hub is powered to provide sufficient power to devices."
+      },
+      {
+        "title": "Seek Professional Repair",
+        "content": "If the issue persists, the USB port may require component-level repair or replacement. Search for specialized repair shops (e.g., Rossman Repair Group in NYC) or contact Apple Support for authorized service options."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Bluetooth or Wireless Alternatives",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to Wireless Peripherals",
+            "content": "Replace wired USB devices with Bluetooth or wireless alternatives (e.g., wireless keyboard, mouse, or external storage). This avoids reliance on the faulty USB port."
+          },
+          {
+            "title": "Use Thunderbolt/USB-C Adapters",
+            "content": "If your MacBook Pro has Thunderbolt/USB-C ports, use a compatible adapter to connect USB devices. Ensure the adapter is powered if the device requires additional power."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T00:01:47.981Z",
+      "updated": "2026-08-05T00:01:47.981Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/296975/macbook-pro-usb-port-wont-work",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785888115594-902",
+    "title": "Fix MacBook Pro USB Ports Not Working",
+    "problemDescription": "USB ports on a MacBook Pro (mid-2009) are unresponsive to devices like flash drives or iPads, but devices are recognized in a Windows VM, indicating a software issue.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "usb",
+      "ports",
+      "macbook pro",
+      "mid-2009",
+      "device recognition",
+      "software issue"
+    ],
+    "steps": [
+      {
+        "title": "Repair Disk Permissions",
+        "content": "1. Open 'Disk Utility' (Applications > Utilities > Disk Utility).\n2. Select your startup disk (e.g., Macintosh HD).\n3. Click 'First Aid' and then 'Repair Disk Permissions'.\n4. Wait for the process to complete and restart your MacBook Pro."
+      },
+      {
+        "title": "Reset PRAM (Parameter RAM)",
+        "content": "1. Shut down your MacBook Pro.\n2. Press the power button and immediately hold down Command (⌘) + Option + P + R.\n3. Keep holding the keys for about 20 seconds until you hear the startup chime twice.\n4. Release the keys and let your MacBook Pro boot normally."
+      },
+      {
+        "title": "Test USB Devices",
+        "content": "After completing the above steps, reconnect your USB devices to verify if they are now recognized by macOS."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-05T00:01:55.594Z",
+      "updated": "2026-08-05T00:01:55.594Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/9037/macbook-pro-usb-ports-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785888129072-210",
+    "title": "Fix Microsoft Teams Not Showing Latest Messages",
+    "problemDescription": "Microsoft Teams displays older messages and threads instead of the latest updates, causing missed communications.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Teams",
+      "messages",
+      "not updating",
+      "freeze",
+      "restart"
+    ],
+    "steps": [
+      {
+        "title": "Restart Microsoft Teams",
+        "content": "On Windows: Right-click the Teams icon in the taskbar (expand if needed) and select 'Quit'. On Mac: Right-click the Teams icon in the Dock and choose 'Quit'. Reopen Teams to check if messages update."
+      },
+      {
+        "title": "Update Microsoft Teams",
+        "content": "Ensure you are running the latest version of Microsoft Teams. Check for updates in the app or download the latest version from the official Microsoft Teams website."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Switch Audio Output",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Audio Source",
+            "content": "If the issue persists, switch to audio from your phone or use your car’s Bluetooth connection instead of Teams' built-in audio."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T00:02:09.072Z",
+      "updated": "2026-08-05T00:02:09.072Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/microsoft-teams-problems-how-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
