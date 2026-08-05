@@ -6,46 +6,84 @@
 @tailwind utilities;
 
 :root {
-  --accent-color: #007aff;
-  --accent-color-dark: #0056b3;
-  --background-color: #f0f2f5;
-  --card-background: #ffffff;
-  --text-primary: #1d1d1f;
-  --text-secondary: #6e6e73;
-  --border-color: #d1d1d6;
-  --input-background: #f9fafb;
-  --success-color: #34c759;
-  --error-color: #ff3b30;
-  --warning-color: #ff9500;
+  /* Warm editorial accents (aligned with index.css premium tokens) */
+  --accent-color: #c2502e;
+  --accent-color-dark: #9f3d20;
+  --background-color: #f1eee7;
+  --card-background: #fcfbf7;
+  --text-primary: #1a1712;
+  --text-secondary: #6e6657;
+  --border-color: #e4decf;
+  --input-background: #fcfbf7;
+  --success-color: #2e6a63;
+  --error-color: #b23a1c;
+  --warning-color: #b4791f;
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-body, 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
   color: var(--text-primary);
   line-height: 1.6;
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, var(--accent-color), #6366f1);
+  background: linear-gradient(105deg, var(--accent-color) 0%, #d98a2b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .card {
-  @apply bg-white rounded-2xl border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300;
+  background-color: var(--bg-surface, #fcfbf7);
+  border: 1px solid var(--border-subtle, #e4decf);
+  box-shadow: var(--shadow-micro, 0 1px 2px rgba(26,23,18,0.05), 0 10px 30px -12px rgba(26,23,18,0.10));
+  border-radius: 16px;
+  transition: all 0.3s ease;
 }
 
 .btn-primary {
-  @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none disabled:shadow-lg;
+  background-color: var(--brand-accent, #c2502e);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  transform: translateY(0);
+  min-height: 48px;
+}
+.btn-primary:hover {
+  background-color: var(--brand-accent-strong, #9f3d20);
+  transform: translateY(-2px);
+}
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
 }
 
 .btn-secondary {
-  @apply bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-3 px-6 rounded-xl transition-all duration-200 border border-gray-300 hover:border-gray-400;
+  background-color: var(--bg-surface, #fcfbf7);
+  border: 1px solid var(--border-subtle, #e4decf);
+  color: var(--text-primary, #1a1712);
+  font-weight: 500;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  min-height: 48px;
 }
+.btn-secondary:hover { background-color: var(--bg-subtle, #ece7dd); }
 
 .input-field {
-  @apply w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white text-gray-800 placeholder-gray-500;
+  background-color: var(--bg-surface, #fcfbf7);
+  border: 1px solid var(--border-subtle, #e4decf);
+  color: var(--text-primary);
+  @apply w-full px-4 py-3 rounded-[14px] transition-all duration-200;
+}
+.input-field::placeholder { color: var(--text-muted, #6e6657); }
+.input-field:focus {
+  outline: none;
+  border-color: var(--brand-accent, #c2502e);
+  box-shadow: 0 0 0 3px var(--brand-accent-soft, #f4e5dc);
 }
 
 .animate-fade-in {
@@ -147,7 +185,8 @@ body {
 
 /* Focus states for accessibility */
 .focus-visible {
-  @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bg-canvas, #f1eee7), 0 0 0 5px var(--brand-accent, #c2502e);
 }
 
 /* Removed conflicting underline animation - using the one in index.css instead */
@@ -166,17 +205,17 @@ body {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-/* Gradient backgrounds */
+/* Gradient backgrounds — warm editorial */
 .gradient-bg {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #2a211c 0%, #1a1712 100%);
 }
 
 .gradient-bg-blue {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #c2502e 0%, #9f3d20 100%);
 }
 
 .gradient-bg-purple {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #2e6a63 0%, #234f4a 100%);
 }
 
 /* Mobile responsive enhancements */
@@ -203,7 +242,7 @@ body {
 
 /* Enhanced input focus effects */
 .input-field:focus {
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 0 3px var(--brand-accent-soft, #f4e5dc);
 }
 
 /* Success and error states */
@@ -237,7 +276,11 @@ body {
 
 /* Icon hover effects */
 .icon-hover {
-  @apply transition-all duration-200 hover:scale-110 hover:text-blue-600;
+  transition: all 0.2s ease;
+}
+.icon-hover:hover {
+  transform: scale(1.1);
+  color: var(--brand-accent, #c2502e);
 }
 
 /* Glass morphism effects */

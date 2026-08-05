@@ -7,11 +7,11 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="TechStep">
-    <meta name="theme-color" content="#007aff">
+    <meta name="apple-mobile-web-app-title" content="TechSteps">
+    <meta name="theme-color" content="#f1eee7">
     <title>TechStep - Technology made simple, one step at a time</title>
-    <meta name="description" content="Empowering seniors with step-by-step tech guidance. Master technology with confidence through personalized, easy-to-follow instructions and live support.">
-    <meta name="keywords" content="senior tech help, learn technology for seniors, easy tech tutorials, smartphone help, computer basics for elderly, tech support for seniors, digital literacy seniors">
+    <meta name="description" content="Clear, step-by-step tech guidance for any device. Get confident answers in plain language — at your pace.">
+    <meta name="keywords" content="tech help, step-by-step tutorials, smartphone help, computer basics, plain language tech support, digital literacy">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EEG4XMYEBH"></script>
@@ -27,23 +27,23 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.techstep.com/">
     <meta property="og:title" content="TechStep - Technology made simple, one step at a time">
-    <meta property="og:description" content="Empowering seniors with step-by-step tech guidance. Master technology with confidence through personalized, easy-to-follow instructions and live support.">
+    <meta property="og:description" content="Clear, step-by-step tech guidance for any device. Get confident answers in plain language — at your pace.">
     <!-- <meta property="og:image" content="https://www.techstep.com/og-image.png"> -->
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.techstep.com/">
     <meta property="twitter:title" content="TechStep - Technology made simple, one step at a time">
-    <meta property="twitter:description" content="Empowering seniors with step-by-step tech guidance. Master technology with confidence through personalized, easy-to-follow instructions and live support.">
+    <meta property="twitter:description" content="Clear, step-by-step tech guidance for any device. Get confident answers in plain language — at your pace.">
     <!-- <meta property="twitter:image" content="https://www.techstep.com/twitter-image.png"> -->
 
     <!-- Preconnect for Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- Preload critical resources -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+    <!-- Preload critical resources: Plus Jakarta Sans (display) + Inter (body) -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
     
     <!-- DNS prefetch for external resources -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -52,34 +52,136 @@
     
     <!-- Critical CSS inline (will be added by build process) -->
     <style>
-      /* Critical above-the-fold styles */
-      body { margin: 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
+      /* Critical above-the-fold — matches AppLoader editorial tokens */
+      :root {
+        --bg-canvas: #f1eee7;
+        --text-primary: #1a1712;
+        --brand-accent: #c2502e;
+        --brand-accent-soft: #f4e5dc;
+        --border-subtle: #e4decf;
+        --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+      body { margin: 0; font-family: var(--font-body); background-color: var(--bg-canvas); color: var(--text-primary); }
       #root { min-height: 100vh; }
-      .loading-fallback { 
-        display: flex; 
-        align-items: center; 
-        justify-content: center; 
-        min-height: 100vh; 
-        background: linear-gradient(135deg, #f9fafb 0%, #e0e7ff 100%);
+      .app-loader-static {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: var(--bg-canvas);
+      }
+      .app-loader-static__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 0 1.5rem;
+      }
+      .app-loader-static__brand {
+        display: flex;
+        align-items: center;
+        gap: 0.625rem;
+      }
+      .app-loader-static__mark {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 10px;
+        background: var(--brand-accent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-family: var(--font-display);
+        font-weight: 800;
+        font-size: 1.125rem;
+        line-height: 1;
+        box-shadow: 0 1px 2px rgba(26, 23, 18, 0.05), 0 10px 30px -12px rgba(26, 23, 18, 0.10);
+      }
+      .app-loader-static__wordmark {
+        font-family: var(--font-display);
+        font-weight: 800;
+        font-size: 1.5rem;
+        letter-spacing: -0.02em;
+        color: var(--text-primary);
+      }
+      .app-loader-static__progress-wrap {
+        width: 12rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
+      }
+      .app-loader-static__blocks {
+        display: flex;
+        gap: 0.375rem;
+        align-items: center;
+      }
+      .app-loader-static__block {
+        display: block;
+        width: 1.5rem;
+        height: 0.25rem;
+        border-radius: 9999px;
+        background: var(--brand-accent-soft);
+        animation: app-loader-pulse 1.2s ease-in-out infinite;
+      }
+      .app-loader-static__block:nth-child(2) { animation-delay: 0.15s; }
+      .app-loader-static__block:nth-child(3) { animation-delay: 0.3s; }
+      .app-loader-static__block:nth-child(4) { animation-delay: 0.45s; }
+      .app-loader-static__track {
+        width: 100%;
+        height: 1px;
+        border-radius: 9999px;
+        background: var(--border-subtle);
+        overflow: hidden;
+      }
+      .app-loader-static__bar {
+        height: 100%;
+        width: 45%;
+        border-radius: 9999px;
+        background: var(--brand-accent);
+        animation: app-loader-bar 1.5s ease-in-out infinite;
+      }
+      @keyframes app-loader-pulse {
+        0%, 100% { opacity: 0.4; transform: scaleX(0.3); background: var(--brand-accent-soft); }
+        50% { opacity: 1; transform: scaleX(1); background: var(--brand-accent); }
+      }
+      @keyframes app-loader-bar {
+        0% { width: 0%; margin-left: 0; }
+        50% { width: 75%; margin-left: 12.5%; }
+        100% { width: 100%; margin-left: 0; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .app-loader-static__block,
+        .app-loader-static__bar { animation: none; }
+        .app-loader-static__bar { width: 100%; }
       }
     </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="app-loader-static" role="status" aria-live="polite" aria-label="Loading TechSteps">
+        <div class="app-loader-static__inner">
+          <div class="app-loader-static__brand">
+            <div class="app-loader-static__mark" aria-hidden="true">T</div>
+            <span class="app-loader-static__wordmark">TECHSTEPS</span>
+          </div>
+          <div class="app-loader-static__progress-wrap" aria-hidden="true">
+            <div class="app-loader-static__blocks">
+              <span class="app-loader-static__block"></span>
+              <span class="app-loader-static__block"></span>
+              <span class="app-loader-static__block"></span>
+              <span class="app-loader-static__block"></span>
+            </div>
+            <div class="app-loader-static__track">
+              <div class="app-loader-static__bar"></div>
+            </div>
+          </div>
+          <span class="sr-only" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Loading</span>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
     
-    <!--Start of Crisp Script-->
-    <script type="text/javascript">
-      window.$crisp=[];
-      window.CRISP_WEBSITE_ID="bd34aa4a-b1b3-4bf5-b064-c31ec968a054";
-      (function(){
-        d=document;
-        s=d.createElement("script");
-        s.src="https://client.crisp.chat/l.js";
-        s.async=1;
-        d.getElementsByTagName("head")[0].appendChild(s);
-      })();
-    </script>
-    <!--End of Crisp Script-->
   </body>
 </html>

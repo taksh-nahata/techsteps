@@ -4,9 +4,7 @@ import { ArrowLeft, User, Volume2, Palette, Globe, Save, Check } from 'lucide-re
 import { useUser } from '../contexts/UserContext';
 import { useTranslation } from 'react-i18next';
 
-import LanguageSelector from '../components/layout/LanguageSelector'; // Import LanguageSelector
-
-
+import LanguageSelector from '../components/layout/LanguageSelector';
 
 const SettingsPage: React.FC = () => {
   const { userData, updateUserData } = useUser();
@@ -19,7 +17,7 @@ const SettingsPage: React.FC = () => {
     primaryDevices: userData?.primaryDevices || [],
     techExperience: userData?.techExperience || 'beginner' as 'beginner' | 'some' | 'comfortable',
     preferences: {
-      autoTextToSpeech: userData?.preferences?.autoTextToSpeech ?? true,
+      autoTextToSpeech: userData?.preferences?.autoTextToSpeech ?? false,
       textSize: userData?.preferences?.textSize || 'normal' as 'normal' | 'large' | 'extra-large',
       theme: userData?.preferences?.theme || 'light' as 'light' | 'dark' | 'high-contrast',
       language: userData?.preferences?.language || i18n.language,
@@ -27,7 +25,6 @@ const SettingsPage: React.FC = () => {
     }
   });
 
-  // Available devices with translation keys
   const devices = [
     { key: 'windowsComputer', label: t('settings.devices.windowsComputer', 'Windows Computer') },
     { key: 'macComputer', label: t('settings.devices.macComputer', 'Mac Computer') },
@@ -40,39 +37,49 @@ const SettingsPage: React.FC = () => {
 
   const [loading, setLoading] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [saveError, setSaveError] = useState('');
 
-  // Apply theme changes immediately
+  useEffect(() => {
+    if (!userData) return;
+    setFormData({
+      firstName: userData.firstName || '',
+      lastName: userData.lastName || '',
+      age: userData.age || 65,
+      primaryDevices: userData.primaryDevices || [],
+      techExperience: userData.techExperience || 'beginner',
+      preferences: {
+        autoTextToSpeech: userData.preferences?.autoTextToSpeech ?? false,
+        textSize: userData.preferences?.textSize || 'normal',
+        theme: userData.preferences?.theme || 'light',
+        language: userData.preferences?.language || i18n.language,
+        seniorMode: userData.preferences?.seniorMode ?? false
+      }
+    });
+  }, [userData, i18n.language]);
+
   useEffect(() => {
     const root = document.documentElement;
     const theme = formData.preferences.theme;
     const seniorMode = formData.preferences.seniorMode;
 
-    // Remove existing theme classes
     root.classList.remove('light', 'dark', 'high-contrast');
-
-    // Add new theme class
     root.classList.add(theme);
 
-    // Handle Senior Mode
     if (seniorMode) {
       root.classList.add('senior-mode');
     } else {
       root.classList.remove('senior-mode');
     }
 
-    // Apply text size
     const textSize = formData.preferences.textSize;
 
-    // In senior mode, minimum font size is larger
     if (seniorMode) {
-      root.style.fontSize = textSize === 'extra-large' ? '22px' : '20px'; // Significantly larger base
+      root.style.fontSize = textSize === 'extra-large' ? '22px' : '20px';
     } else {
       root.style.fontSize = textSize === 'large' ? '18px' : textSize === 'extra-large' ? '20px' : '16px';
     }
-
   }, [formData.preferences.theme, formData.preferences.textSize, formData.preferences.seniorMode]);
 
-  // Sync formData with i18n language changes (if changed from external Selector)
   useEffect(() => {
     setFormData(prev => ({
       ...prev,
@@ -83,6 +90,7 @@ const SettingsPage: React.FC = () => {
   const handleSave = async () => {
     setLoading(true);
     setSaved(false);
+    setSaveError('');
 
     try {
       await updateUserData(formData);
@@ -90,51 +98,45 @@ const SettingsPage: React.FC = () => {
       setTimeout(() => setSaved(false), 3000);
     } catch (error) {
       console.error('Error saving settings:', error);
-      alert('Error saving settings. Please try again.');
+      setSaveError(t('settings.saveError', 'Error saving settings. Please try again.'));
     } finally {
       setLoading(false);
     }
   };
 
-  const toggleDevice = (device: string) => {
+  const toggleDevice = (deviceKey: string) => {
     setFormData(prev => ({
       ...prev,
-      primaryDevices: (prev.primaryDevices || []).includes(device)
-        ? (prev.primaryDevices || []).filter(d => d !== device)
-        : [...(prev.primaryDevices || []), device]
+      primaryDevices: (prev.primaryDevices || []).includes(deviceKey)
+        ? (prev.primaryDevices || []).filter(d => d !== deviceKey)
+        : [...(prev.primaryDevices || []), deviceKey]
     }));
   };
 
   return (
-    <div className="min-h-screen w-full relative bg-gradient-to-br from-indigo-50 via-purple-50 to-fuchsia-50">
-      {/* Background blobs */}
-      <div className="fixed top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-blue-400/20 blur-3xl pointer-events-none" />
-      <div className="fixed bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-purple-400/20 blur-3xl pointer-events-none" />
-
-      {/* Header */}
-      <header className="sticky top-0 z-50 px-4 py-4">
-        <div className="max-w-4xl mx-auto glass-panel rounded-2xl px-6 py-3">
+    <div className="min-h-screen w-full bg-canvas text-ink">
+      <header className="sticky top-0 z-50 px-4 py-4 border-b border-hairline bg-surface/85 backdrop-blur-md">
+        <div className="max-w-4xl mx-auto surface-card rounded-2xl px-6 py-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <Link
-                to="/chat"
-                className="p-2 text-indigo-900 hover:bg-white/50 rounded-lg transition-colors"
+                to="/dashboard"
+                className="p-2 text-ink-muted hover:text-ink hover:bg-subtle rounded-lg transition-colors focus-ring"
                 title={t('common.back', 'Back')}
               >
                 <ArrowLeft className="w-5 h-5" />
               </Link>
-              <h1 className="text-xl font-bold text-indigo-900">{t('settings.title', 'Settings')}</h1>
+              <h1 className="text-xl font-bold text-ink">{t('settings.title', 'Settings')}</h1>
             </div>
 
-            {/* Save Button */}
             <button
               onClick={handleSave}
               disabled={loading}
               className={`
-                flex items-center px-4 md:px-6 py-2 rounded-xl font-bold transition-all duration-200 shadow-md
+                flex items-center px-4 md:px-6 py-2 rounded-pill font-bold transition-all duration-200 shadow-micro focus-ring
                 ${saved
-                  ? 'bg-green-100 text-green-700 border border-green-300'
-                  : 'bg-indigo-600 text-white hover:bg-indigo-700 hover:shadow-lg hover:-translate-y-0.5'
+                  ? 'bg-brand-soft text-brand border border-brand/30'
+                  : 'bg-brand text-white hover:bg-brand-strong'
                 }
                 ${loading ? 'opacity-50 cursor-not-allowed' : ''}
               `}
@@ -152,24 +154,29 @@ const SettingsPage: React.FC = () => {
               )}
             </button>
           </div>
+
+          {saveError && (
+            <p className="mt-3 text-sm text-red-600 font-medium" role="alert">
+              {saveError}
+            </p>
+          )}
         </div>
       </header>
 
-      <div className="max-w-4xl mx-auto px-4 pb-12 relative z-10">
+      <div className="max-w-4xl mx-auto px-4 pb-12 pt-6">
         <div className="space-y-8">
 
-          {/* Personal Information */}
-          <div className="glass-panel p-4 md:p-8 rounded-3xl">
+          <div className="surface-card p-4 md:p-8 rounded-3xl">
             <div className="flex items-center mb-6">
-              <div className="p-3 bg-indigo-100 rounded-xl mr-4">
-                <User className="w-6 h-6 text-indigo-600" />
+              <div className="p-3 bg-brand-soft rounded-xl mr-4">
+                <User className="w-6 h-6 text-brand" />
               </div>
-              <h2 className="text-xl font-bold text-indigo-900">{t('settings.personalInfo.title', 'Personal Information')}</h2>
+              <h2 className="text-xl font-bold text-ink">{t('settings.personalInfo.title', 'Personal Information')}</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2 ml-1">
+                <label className="block text-sm font-semibold text-ink-muted mb-2 ml-1">
                   {t('settings.personalInfo.firstName', 'First Name')}
                 </label>
                 <input
@@ -182,7 +189,7 @@ const SettingsPage: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2 ml-1">
+                <label className="block text-sm font-semibold text-ink-muted mb-2 ml-1">
                   {t('settings.personalInfo.lastName', 'Last Name')}
                 </label>
                 <input
@@ -195,7 +202,7 @@ const SettingsPage: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2 ml-1">
+                <label className="block text-sm font-semibold text-ink-muted mb-2 ml-1">
                   {t('settings.personalInfo.age', 'Age')}
                 </label>
                 <input
@@ -209,7 +216,7 @@ const SettingsPage: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2 ml-1">
+                <label className="block text-sm font-semibold text-ink-muted mb-2 ml-1">
                   {t('settings.personalInfo.techExperience', 'Tech Experience Level')}
                 </label>
                 <select
@@ -225,21 +232,21 @@ const SettingsPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Primary Devices */}
-          <div className="glass-panel p-4 md:p-8 rounded-3xl">
-            <h2 className="text-xl font-bold text-indigo-900 mb-2">{t('settings.devices.title', 'Primary Device(s)')}</h2>
-            <p className="text-gray-600 mb-6">{t('settings.devices.description', 'Select all devices you use regularly')}</p>
+          <div className="surface-card p-4 md:p-8 rounded-3xl">
+            <h2 className="text-xl font-bold text-ink mb-2">{t('settings.devices.title', 'Primary Device(s)')}</h2>
+            <p className="text-ink-muted mb-6">{t('settings.devices.description', 'Select all devices you use regularly')}</p>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {devices.map((device) => (
                 <button
                   key={device.key}
-                  onClick={() => toggleDevice(device.label)}
+                  type="button"
+                  onClick={() => toggleDevice(device.key)}
                   className={`
-                    p-4 text-left border rounded-2xl transition-all duration-200
-                    ${(formData.primaryDevices || []).includes(device.label)
-                      ? 'border-indigo-500 bg-indigo-50/80 text-indigo-900 shadow-md scale-[1.02]'
-                      : 'border-white/40 bg-white/40 hover:bg-white/60 text-gray-700 hover:border-indigo-200'
+                    p-4 text-left border rounded-2xl transition-all duration-200 focus-ring
+                    ${(formData.primaryDevices || []).includes(device.key)
+                      ? 'border-brand bg-brand-soft text-ink shadow-micro'
+                      : 'border-hairline bg-surface hover:bg-subtle text-ink-muted hover:border-brand/40'
                     }
                   `}
                 >
@@ -249,30 +256,33 @@ const SettingsPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Audio & Speech Settings */}
-          <div className="glass-panel p-4 md:p-8 rounded-3xl">
+          <div className="surface-card p-4 md:p-8 rounded-3xl">
             <div className="flex items-center mb-6">
-              <div className="p-3 bg-purple-100 rounded-xl mr-4">
-                <Volume2 className="w-6 h-6 text-purple-600" />
+              <div className="p-3 bg-brand-soft rounded-xl mr-4">
+                <Volume2 className="w-6 h-6 text-brand" />
               </div>
-              <h2 className="text-xl font-bold text-indigo-900">{t('settings.audio.title', 'Audio & Speech')}</h2>
+              <h2 className="text-xl font-bold text-ink">{t('settings.audio.title', 'Audio & Speech')}</h2>
             </div>
 
             <div className="space-y-4">
-              <div className="flex items-center justify-between p-5 bg-white/40 rounded-2xl border border-white/40">
+              <div className="flex items-center justify-between p-5 bg-subtle rounded-2xl border border-hairline">
                 <div>
-                  <h3 className="font-bold text-gray-900">{t('settings.audio.autoTTS', 'Auto Text-to-Speech')}</h3>
-                  <p className="text-sm text-gray-600 mt-1">{t('settings.audio.autoTTSDesc', 'Automatically read AI messages aloud')}</p>
+                  <h3 className="font-bold text-ink">{t('settings.audio.autoTTS', 'Auto Text-to-Speech')}</h3>
+                  <p className="text-sm text-ink-muted mt-1">{t('settings.audio.autoTTSDesc', 'Automatically read AI messages aloud')}</p>
                 </div>
                 <button
+                  type="button"
+                  role="switch"
+                  aria-checked={formData.preferences.autoTextToSpeech}
+                  aria-label={t('settings.audio.autoTTS', 'Auto Text-to-Speech')}
                   onClick={() => setFormData(prev => ({
                     ...prev,
                     preferences: { ...prev.preferences, autoTextToSpeech: !prev.preferences.autoTextToSpeech }
                   }))}
                   className={`
-                    relative inline-flex h-7 w-12 border-2 border-transparent rounded-full cursor-pointer 
-                    transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
-                    ${formData.preferences.autoTextToSpeech ? 'bg-indigo-600' : 'bg-gray-300'}
+                    relative inline-flex h-7 w-12 border-2 border-transparent rounded-full cursor-pointer
+                    transition-colors ease-in-out duration-200 focus-ring
+                    ${formData.preferences.autoTextToSpeech ? 'bg-brand' : 'bg-subtle'}
                   `}
                 >
                   <span className={`
@@ -284,29 +294,31 @@ const SettingsPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Display Settings */}
-          <div className="glass-panel p-4 md:p-8 rounded-3xl">
+          <div className="surface-card p-4 md:p-8 rounded-3xl">
             <div className="flex items-center mb-6">
-              <div className="p-3 bg-pink-100 rounded-xl mr-4">
-                <Palette className="w-6 h-6 text-pink-600" />
+              <div className="p-3 bg-brand-soft rounded-xl mr-4">
+                <Palette className="w-6 h-6 text-brand" />
               </div>
-              <h2 className="text-xl font-bold text-indigo-900">{t('settings.display.title', 'Display Settings')}</h2>
+              <h2 className="text-xl font-bold text-ink">{t('settings.display.title', 'Display Settings')}</h2>
             </div>
 
             <div className="space-y-8">
 
-              {/* Senior Mode Toggle */}
-              <div className="flex items-center justify-between p-6 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 rounded-2xl shadow-sm">
+              <div className="flex items-center justify-between p-6 bg-subtle border border-hairline rounded-2xl">
                 <div>
                   <div className="flex items-center">
-                    <h3 className="font-bold text-indigo-900 text-lg">{t('settings.display.seniorMode', 'Senior Friendly Mode')}</h3>
-                    <span className="ml-3 px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wide rounded-full">Recommended</span>
+                    <h3 className="font-bold text-ink text-lg">{t('settings.display.seniorMode', 'Senior Friendly Mode')}</h3>
+                    <span className="ml-3 px-3 py-1 bg-brand-soft text-brand text-xs font-bold uppercase tracking-wide rounded-full">Recommended</span>
                   </div>
-                  <p className="text-gray-700 mt-2 max-w-md">
+                  <p className="text-ink-muted mt-2 max-w-md">
                     {t('settings.display.seniorModeDesc', 'Larger text, simpler buttons, and higher contrast for easier use.')}
                   </p>
                 </div>
                 <button
+                  type="button"
+                  role="switch"
+                  aria-checked={formData.preferences.seniorMode}
+                  aria-label={t('settings.display.seniorMode', 'Senior Friendly Mode')}
                   onClick={() => {
                     const newValue = !formData.preferences.seniorMode;
                     setFormData(prev => ({
@@ -314,16 +326,15 @@ const SettingsPage: React.FC = () => {
                       preferences: {
                         ...prev.preferences,
                         seniorMode: newValue,
-                        // Auto-adjust specific settings when enabling
                         textSize: newValue ? 'large' : prev.preferences.textSize,
                         theme: newValue ? 'light' : prev.preferences.theme
                       }
                     }));
                   }}
                   className={`
-                    relative inline-flex h-9 w-16 border-2 border-transparent rounded-full cursor-pointer 
-                    transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500
-                    ${formData.preferences.seniorMode ? 'bg-blue-600' : 'bg-gray-300'}
+                    relative inline-flex h-9 w-16 border-2 border-transparent rounded-full cursor-pointer
+                    transition-colors ease-in-out duration-200 focus-ring
+                    ${formData.preferences.seniorMode ? 'bg-brand' : 'bg-subtle'}
                   `}
                 >
                   <span className={`
@@ -334,7 +345,7 @@ const SettingsPage: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-3 ml-1">
+                <label className="block text-sm font-semibold text-ink-muted mb-3 ml-1">
                   {t('settings.display.textSize', 'Text Size')}
                 </label>
                 <div className="grid grid-cols-3 gap-4">
@@ -345,15 +356,16 @@ const SettingsPage: React.FC = () => {
                   ].map((size) => (
                     <button
                       key={size.value}
+                      type="button"
                       onClick={() => setFormData(prev => ({
                         ...prev,
                         preferences: { ...prev.preferences, textSize: size.value as 'normal' | 'large' | 'extra-large' }
                       }))}
                       className={`
-                        p-4 border rounded-2xl transition-all duration-200 text-center
+                        p-4 border rounded-2xl transition-all duration-200 text-center focus-ring
                         ${formData.preferences.textSize === size.value
-                          ? 'border-indigo-500 bg-indigo-50 text-indigo-900 shadow-md'
-                          : 'border-white/40 bg-white/40 hover:bg-white/60 text-gray-700'
+                          ? 'border-brand bg-brand-soft text-ink shadow-micro'
+                          : 'border-hairline bg-surface hover:bg-subtle text-ink-muted'
                         }
                       `}
                     >
@@ -369,7 +381,7 @@ const SettingsPage: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-3 ml-1">
+                <label className="block text-sm font-semibold text-ink-muted mb-3 ml-1">
                   {t('settings.display.theme', 'Color Theme')}
                 </label>
                 <div className="grid grid-cols-3 gap-4">
@@ -380,22 +392,23 @@ const SettingsPage: React.FC = () => {
                   ].map((theme) => (
                     <button
                       key={theme.value}
+                      type="button"
                       onClick={() => setFormData(prev => ({
                         ...prev,
                         preferences: { ...prev.preferences, theme: theme.value as 'light' | 'dark' | 'high-contrast' }
                       }))}
                       className={`
-                        p-4 border rounded-2xl transition-all duration-200
+                        p-4 border rounded-2xl transition-all duration-200 focus-ring
                         ${formData.preferences.theme === theme.value
-                          ? 'border-indigo-500 ring-2 ring-indigo-200 shadow-md'
-                          : 'border-white/40 hover:border-indigo-200'
+                          ? 'border-brand ring-2 ring-brand/20 shadow-micro'
+                          : 'border-hairline hover:border-brand/40'
                         }
                       `}
                     >
                       <div className={`w-full h-14 rounded-lg ${theme.bg} ${theme.border} border mb-3 flex items-center justify-center shadow-inner`}>
                         <span className={`text-lg font-bold ${theme.text}`}>Aa</span>
                       </div>
-                      <div className="text-sm font-medium text-gray-700">{theme.label}</div>
+                      <div className="text-sm font-medium text-ink-muted">{theme.label}</div>
                     </button>
                   ))}
                 </div>
@@ -403,26 +416,25 @@ const SettingsPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Language Settings */}
-          <div className="glass-panel p-4 md:p-8 rounded-3xl">
+          <div className="surface-card p-4 md:p-8 rounded-3xl">
             <div className="flex items-center mb-6">
-              <div className="p-3 bg-teal-100 rounded-xl mr-4">
-                <Globe className="w-6 h-6 text-teal-600" />
+              <div className="p-3 bg-brand-soft rounded-xl mr-4">
+                <Globe className="w-6 h-6 text-brand" />
               </div>
-              <h2 className="text-xl font-bold text-indigo-900">{t('settings.language.title', 'Language Preference')}</h2>
+              <h2 className="text-xl font-bold text-ink">{t('settings.language.title', 'Language Preference')}</h2>
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2 ml-1">
+              <label className="block text-sm font-semibold text-ink-muted mb-2 ml-1">
                 {t('settings.language.interfaceLanguage', 'Interface Language')}
               </label>
-              <div className="relative z-20"> {/* Increased z-index for dropdown */}
+              <div className="relative z-20">
                 <LanguageSelector
                   className="w-full"
                   showLabel={true}
                 />
               </div>
-              <p className="text-sm text-gray-500 mt-2 ml-1">
+              <p className="text-sm text-ink-muted mt-2 ml-1">
                 {t('settings.language.description', 'This affects the interface language and voice for text-to-speech')}
               </p>
             </div>

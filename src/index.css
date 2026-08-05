@@ -12,6 +12,39 @@
     -webkit-tap-highlight-color: transparent;
   }
 
+  /* ============================================================
+     PREMIUM EDITORIAL DESIGN TOKENS (TechSteps)
+     High-contrast, flat, lavender-tinted canvas. No muddy gradients.
+     ============================================================ */
+  :root {
+    /* Warm editorial system — paper + clay + ink. Avoids cold AI blues/purples. */
+    --bg-canvas: #f1eee7;        /* warm "Cloud Dancer" paper canvas */
+    --bg-surface: #fcfbf7;       /* warm white cards / panels         */
+    --bg-subtle: #ece7dd;        /* sand fill for inputs / chips       */
+    --text-primary: #1a1712;     /* warm espresso near-black ink       */
+    --text-muted: #6e6657;       /* warm taupe secondary text          */
+    --brand-accent: #c2502e;     /* terracotta / clay accent           */
+    --brand-accent-strong: #9f3d20; /* deeper clay for hover / text     */
+    --brand-accent-soft: #f4e5dc;   /* warm tint behind brand elements  */
+    --accent-cool: #2e6a63;      /* muted teal — sparing editorial tension */
+    --accent-cool-soft: #e2eceb;
+    --border-subtle: #e4decf;    /* warm hairline borders              */
+    --shadow-micro: 0 1px 2px rgba(26, 23, 18, 0.05), 0 10px 30px -12px rgba(26, 23, 18, 0.10);
+    --font-display: 'Plus Jakarta Sans', 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  /* Subtle paper grain over the canvas — tactile, human, anti-"AI-generated" */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  }
+
   /* Senior Mode Overrides */
   :root.senior-mode body {
     line-height: 1.8;
@@ -24,12 +57,33 @@
   }
 
   body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: var(--font-body);
     line-height: 1.7;
     /* Increased for better readability */
-    color: theme('colors.neutral.900');
+    color: var(--text-primary);
+    background-color: var(--bg-canvas);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Display typeface for headings — tight, intentional, editorial */
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+  }
+
+  /* Keep app content above the paper-grain overlay */
+  #root {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Human chat widget removed for now */
+  #crisp-chatbox,
+  .crisp-client {
+    display: none !important;
   }
 
   /* Theme System */
@@ -42,17 +96,33 @@
   }
 
   :root.dark {
-    --bg-primary: #1f2937;
-    --bg-secondary: #374151;
-    --text-primary: #f9fafb;
-    --text-secondary: #d1d5db;
-    --border-color: #4b5563;
+    --bg-canvas: #141210;
+    --bg-surface: #1f1c18;
+    --bg-subtle: #2a2620;
+    --text-primary: #f6f2ea;
+    --text-muted: #a89f8f;
+    --brand-accent-soft: #3d2a22;
+    --accent-cool-soft: #1e3330;
+    --border-subtle: #3d3830;
+    --shadow-micro: 0 1px 2px rgba(0, 0, 0, 0.25), 0 10px 30px -12px rgba(0, 0, 0, 0.35);
+    --bg-primary: #1f1c18;
+    --bg-secondary: #2a2620;
+    --text-secondary: #a89f8f;
+    --border-color: #3d3830;
   }
 
   :root.high-contrast {
+    --bg-canvas: #000000;
+    --bg-surface: #0a0a0a;
+    --bg-subtle: #1a1a1a;
+    --text-primary: #ffff00;
+    --text-muted: #ffffff;
+    --brand-accent: #ffff00;
+    --brand-accent-strong: #ffffff;
+    --brand-accent-soft: #333300;
+    --border-subtle: #ffff00;
     --bg-primary: #000000;
     --bg-secondary: #1a1a1a;
-    --text-primary: #ffff00;
     --text-secondary: #ffffff;
     --border-color: #ffff00;
   }
@@ -61,7 +131,7 @@
   .light body,
   .dark body,
   .high-contrast body {
-    background-color: var(--bg-primary);
+    background-color: var(--bg-canvas);
     color: var(--text-primary);
   }
 
@@ -154,52 +224,135 @@
     @apply min-h-button min-w-button;
   }
 
-  /* Glassmorphism Utilities */
+  /* ============================================================
+     PREMIUM SURFACE + CONTROL UTILITIES
+     glass-panel is re-tuned from glassmorphism into a clean,
+     flat editorial surface so existing screens upgrade in place.
+     ============================================================ */
   .glass-panel {
-    @apply bg-white/60 backdrop-blur-2xl border border-white/50 shadow-xl shadow-indigo-100/40;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-micro);
+  }
+
+  .surface-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-micro);
   }
 
   .glass-button {
-    @apply bg-white/30 hover:bg-white/50 backdrop-blur-md border border-white/40 transition-all duration-300 active:scale-95;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    @apply transition-all duration-200 active:scale-[0.98];
+  }
+
+  .glass-button:hover {
+    background-color: var(--bg-subtle);
   }
 
   .glass-input {
-    @apply bg-white/50 focus:bg-white/80 backdrop-blur-md border border-white/40 transition-all duration-300 focus:ring-2 focus:ring-indigo-400/50 shadow-inner;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    @apply transition-all duration-200;
+  }
+
+  .glass-input:focus {
+    outline: none;
+    border-color: var(--brand-accent);
+    box-shadow: 0 0 0 3px var(--brand-accent-soft);
+  }
+
+  /* Pill controls (fully rounded, generous tap target) */
+  .btn-pill {
+    @apply inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 active:scale-[0.98];
+    min-height: 48px;
+    padding: 0 22px;
+    font-family: var(--font-body);
+  }
+
+  .btn-pill-primary {
+    background-color: var(--brand-accent);
+    color: #ffffff;
+  }
+  .btn-pill-primary:hover { background-color: var(--brand-accent-strong); }
+
+  .btn-pill-ghost {
+    background-color: var(--bg-surface);
+    color: var(--text-primary);
+    border: 1px solid var(--border-subtle);
+  }
+  .btn-pill-ghost:hover { background-color: var(--bg-subtle); }
+
+  /* Small pill tab used in chat header */
+  .pill-tab {
+    @apply inline-flex items-center justify-center rounded-full text-sm font-semibold transition-all duration-200;
+    min-height: 40px;
+    padding: 0 16px;
+    background-color: var(--bg-subtle);
+    color: var(--text-muted);
+    border: 1px solid transparent;
+  }
+  .pill-tab:hover {
+    color: var(--text-primary);
+    border-color: var(--border-subtle);
+  }
+
+  /* Strong, visible focus for accessibility */
+  .focus-ring:focus-visible {
+    outline: 3px solid var(--brand-accent);
+    outline-offset: 2px;
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
   }
 
   /* Custom Select Dropdown Styling */
   .glass-select,
   select.glass-input {
-    @apply bg-white/50 focus:bg-white/80 backdrop-blur-md border border-white/40 transition-all duration-300 focus:ring-2 focus:ring-indigo-400/50 shadow-inner cursor-pointer;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-primary);
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236366f1' d='M2.5 4.5L6 8l3.5-3.5'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23c2502e' d='M2.5 4.5L6 8l3.5-3.5'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 1rem center;
     background-size: 12px;
     padding-right: 2.5rem;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
   }
 
   .glass-select:hover,
   select.glass-input:hover {
-    @apply bg-white/70 border-indigo-200;
+    border-color: var(--brand-accent);
+  }
+
+  .glass-select:focus,
+  select.glass-input:focus {
+    outline: none;
+    border-color: var(--brand-accent);
+    box-shadow: 0 0 0 3px var(--brand-accent-soft);
   }
 
   .glass-select option,
   select.glass-input option {
-    @apply bg-white text-gray-900 py-2;
+    background-color: var(--bg-surface);
+    color: var(--text-primary);
+    padding: 0.5rem;
   }
 
   .glass-select option:checked,
   select.glass-input option:checked {
-    background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
-    color: #4338ca;
-  }
-
-  .glass-select option:hover,
-  select.glass-input option:hover {
-    background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+    background-color: var(--brand-accent-soft);
+    color: var(--brand-accent-strong);
   }
 
   /* Text Rendering Optimization */

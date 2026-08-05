@@ -73,6 +73,8 @@ export interface FlashcardStep {
   title: string;
   content: string;
   instructions: string[];
+  /** Full per-device map — resolved at render if device changes */
+  directionsByDevice?: Partial<Record<string, string[]>>;
   icon?: string;
   audioScript?: string;
   estimatedDuration: number;

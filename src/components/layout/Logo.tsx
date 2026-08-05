@@ -1,33 +1,38 @@
 import React from 'react';
-
-// Logo component
+import TechyMark from './TechyMark';
 
 interface LogoProps {
   size?: 'sm' | 'md' | 'lg';
   showText?: boolean;
+  responsiveText?: boolean;
+  /** Use on dark backgrounds (footer, ink sections) */
+  variant?: 'default' | 'light';
 }
 
-const Logo: React.FC<LogoProps> = ({ size = 'md', showText = true }) => {
-  const sizeClasses = {
-    sm: 'w-8 h-8',
-    md: 'w-10 h-10',
-    lg: 'w-12 h-12'
-  };
+const markSizes = { sm: 28, md: 36, lg: 44 };
+const textSizeClasses = { sm: 'text-lg', md: 'text-xl', lg: 'text-2xl' };
 
-  const textSizeClasses = {
-    sm: 'text-lg',
-    md: 'text-xl',
-    lg: 'text-2xl'
-  };
+const Logo: React.FC<LogoProps> = ({
+  size = 'md',
+  showText = true,
+  responsiveText = false,
+  variant = 'default',
+}) => {
+  const textClass =
+    variant === 'light'
+      ? 'text-[#f6f2ea]'
+      : 'text-ink';
 
   return (
-    <div className="flex items-center space-x-3">
-      <div className={`${sizeClasses[size]} rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg`}>
-        <span className="text-white font-bold text-lg">T</span>
-      </div>
+    <div className="flex items-center gap-2 min-w-0">
+      <TechyMark size={markSizes[size]} />
       {showText && (
-        <span className={`font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent ${textSizeClasses[size]}`}>
-          TechSteps
+        <span
+          className={`font-display font-extrabold tracking-[-0.02em] truncate ${textSizeClasses[size]} ${textClass} ${
+            responsiveText ? 'hidden sm:inline' : ''
+          }`}
+        >
+          TECHSTEPS
         </span>
       )}
     </div>

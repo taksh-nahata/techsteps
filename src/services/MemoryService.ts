@@ -15,6 +15,11 @@ import {
 } from 'firebase/firestore';
 import { TroubleshootingGuide } from '../types/guides';
 
+/** Firestore rejects undefined field values — strip them before writes. */
+function stripUndefined<T>(value: T): T {
+    return JSON.parse(JSON.stringify(value)) as T;
+}
+
 export interface Message {
     id: string;
     content: string;
@@ -25,6 +30,10 @@ export interface Message {
         url: string;
         name: string;
     }[];
+    /** Links to a persisted step-by-step guide card */
+    guideId?: string;
+    guideTitle?: string;
+    guideStepCount?: number;
 }
 
 export const MemoryService = {
@@ -43,7 +52,10 @@ export const MemoryService = {
                 attachments: message.attachments || []
             });
         } catch (error) {
-            console.error("Error saving message:", error);
+            const msg = String(error);
+            if (!msg.includes('permission') && !msg.includes('PERMISSION_DENIED')) {
+                console.error("Error saving message:", error);
+            }
         }
     },
 
@@ -157,10 +169,10 @@ export const MemoryService = {
     savePendingGuide: async (guide: TroubleshootingGuide) => {
         try {
             const pendingRef = doc(db, 'pending_guides', guide.id);
-            await setDoc(pendingRef, {
+            await setDoc(pendingRef, stripUndefined({
                 ...guide,
                 lastUpdated: Timestamp.now()
-            });
+            }));
             console.log(`📝 Saved pending guide to Firebase: ${guide.title}`);
         } catch (error) {
             console.error("Error saving pending guide:", error);

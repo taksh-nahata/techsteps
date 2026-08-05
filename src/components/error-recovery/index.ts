@@ -8,7 +8,6 @@ export { globalErrorHandler, handleError } from '../../utils/errors/globalErrorH
 
 // React hooks
 export { useErrorRecovery } from '../../hooks/useErrorRecovery';
-export { useUserFriendlyError } from './UserFriendlyError';
 export { useErrorNotifications } from './ErrorNotificationSystem';
 
 // Context and providers
@@ -20,10 +19,8 @@ export {
 } from '../../contexts/ErrorRecoveryContext';
 
 // UI Components
-export { UserFriendlyErrorDisplay } from './UserFriendlyError';
 export { ErrorNotificationSystem } from './ErrorNotificationSystem';
 export { NetworkStatusMonitor } from './NetworkStatusMonitor';
-export { SessionRestorePrompt } from './SessionRestorePrompt';
 
 // Fallback components
 export {

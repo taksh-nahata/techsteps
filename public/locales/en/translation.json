@@ -7,10 +7,10 @@
   },
   "landing": {
     "hero": {
-      "tagline": "Trusted by seniors worldwide",
+      "tagline": "Clear tech help, whenever you need it",
       "title": "Technology made",
       "titleHighlight": "simple & clear",
-      "subtitle": "Master technology with confidence through personalized, step-by-step guidance that feels like having a patient friend by your side.",
+      "subtitle": "Get confident with any device through personalized, step-by-step guidance — explained plainly, at your pace.",
       "startLearningButton": "Start Learning Free",
       "watchDemoButton": "Watch Demo",
       "freeForever": "Free forever",
@@ -34,8 +34,8 @@
           "description": "Take a photo of any cable, button, or device and get an instant explanation of what it is and how to use it."
         },
         {
-          "title": "Senior-Friendly Design",
-          "description": "Large text, intuitive interface, and patient explanations designed specifically with seniors in mind."
+          "title": "Comfortable Design",
+          "description": "Large text, calm layout, and patient explanations — nothing cramped, rushed, or full of jargon."
         },
         {
           "title": "Safe & Secure",
@@ -49,12 +49,12 @@
     },
     "popularQuestionsSection": {
       "title": "Popular Questions We Help With",
-      "subtitle": "See what other seniors are asking about",
+      "subtitle": "Real questions people ask every day",
       "askYourQuestionButton": "Ask Your Question Now"
     },
     "testimonialsSection": {
       "title": "What Our Community Says",
-      "subtitle": "Join thousands of seniors who've found tech help made simple",
+      "subtitle": "Join thousands of people who've made tech feel simpler",
       "testimonialContent": [
         {
           "name": "Margaret K.",
@@ -67,7 +67,7 @@
           "name": "Robert H.",
           "age": 68,
           "location": "Seattle, WA",
-          "content": "The voice feature is amazing! I can just ask my questions out loud and get clear answers. It's like having a tech-savvy grandchild available 24/7.",
+          "content": "The voice feature is amazing! I can just ask my questions out loud and get clear answers. It's like having a patient expert available whenever I need one.",
           "avatar": "R"
         },
         {
@@ -89,12 +89,12 @@
     },
     "ctaSection": {
       "title": "Ready to Master Technology?",
-      "subtitle": "Join our community of empowered seniors who've made technology simple and approachable. Start getting clear, helpful answers today - completely free!",
+      "subtitle": "Join people who've made technology feel simple and approachable. Start getting clear, helpful answers today — completely free!",
       "getStartedButton": "Get Started Free Today",
       "setupInMinutes": "Setup in 2 minutes"
     },
     "footer": {
-      "description": "Making technology accessible and understandable for seniors everywhere.",
+      "description": "Making technology accessible and understandable for everyone.",
       "featuresTitle": "Features",
       "featuresItems": [
         "Step-by-Step Help",
@@ -119,9 +119,9 @@
         "Terms of Service",
         "Accessibility"
       ],
-      "copyright": "© 2025 TechStep. Made with ❤️ for seniors everywhere.",
+      "copyright": "© 2025 TechSteps. Made with care for learners everywhere.",
       "trustedBy": "Trusted by",
-      "trustedByCount": "50,000+ seniors"
+      "trustedByCount": "50,000+ learners"
     }
   },
   "dashboard": {
@@ -673,6 +673,12 @@
     "windowsSettings": "How do I change Windows settings?"
   },
   "chat": {
+    "title": "Chat",
+    "last14Days": "Showing last 14 days",
+    "followUpSuggestions": "You might also want to ask",
+    "generatingSuggestions": "Generating suggestions...",
+    "showOriginal": "Original",
+    "showTranslated": "Translated",
     "welcome": {
       "title": "How can I help you today?",
       "subtitle": "Ask me anything about technology!"
@@ -700,6 +706,8 @@
     "historyEmpty": "No past conversations",
     "loadConversation": "Load",
     "deleteConversation": "Delete",
+    "delete": "Delete",
+    "thinking": "Thinking...",
     "moveTopicPrompt": "This looks like a new topic. Start a new chat?",
     "translatingChat": "Translating chat...",
     "speechRecording": "Recording...",
@@ -708,9 +716,13 @@
   },
   "flashcards": {
     "title": "Step-by-Step Guide",
+    "stepByStepGuide": "Step-by-Step Guide",
     "progress": "Step {{current}} of {{total}}",
     "instructions": "Instructions:",
-    "markCompleted": "Mark as Completed"
+    "markCompleted": "Mark as Completed",
+    "stepCount": "{{count}} steps — tap to open",
+    "guideOpen": "Guide is open on the right",
+    "buildingGuide": "Building your step-by-step guide…"
   },
   "settings": {
     "title": "Settings",
@@ -1016,7 +1028,11 @@
     "signOut": "Sign Out",
     "close": "Close",
     "comingSoon": "Coming Soon",
-    "friend": "friend"
+    "friend": "friend",
+    "previous": "Previous",
+    "next": "Next",
+    "done": "Done!",
+    "finish": "Finish"
   },
   "tips": {
     "connectWifi": "Connect to Wi-Fi",

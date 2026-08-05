@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
+import AppLoader from '../components/layout/AppLoader';
 import { auth } from '../services/firebase';
 import {
   setPersistence,
@@ -65,7 +66,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   return (
     <AuthContext.Provider value={value}>
-      {!loading && children}
+      {loading ? <AppLoader hold /> : children}
     </AuthContext.Provider>
   );
 };

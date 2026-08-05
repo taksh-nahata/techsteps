@@ -21,6 +21,12 @@ import {
 import Logo from '../components/layout/Logo';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
+import {
+  detectGuideDevice,
+  detectOnboardingDeviceId,
+  GUIDE_DEVICE_LABELS,
+  onboardingDeviceToSettingsKeys,
+} from '../utils/deviceDetection';
 import Cookies from 'js-cookie';
 
 const OnboardingPage: React.FC = () => {
@@ -32,10 +38,10 @@ const OnboardingPage: React.FC = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState(() => ({
     firstName: '',
     age: 65,
-    os: 'windowscomputer',
+    os: detectOnboardingDeviceId(),
     techExperience: 'beginner' as const,
     primaryConcerns: [] as string[],
     selectedLanguages: [i18n.language] as string[],
@@ -47,7 +53,12 @@ const OnboardingPage: React.FC = () => {
       highContrast: false,
       allowPersonalization: true
     }
-  });
+  }));
+
+  const detectedDeviceLabel = useMemo(() => {
+    const detected = detectGuideDevice();
+    return GUIDE_DEVICE_LABELS[detected];
+  }, []);
 
   // Redirect if already completed
   useEffect(() => {
@@ -113,6 +124,7 @@ const OnboardingPage: React.FC = () => {
         onboardingCompleted: true,
         techExperience: formData.techExperience,
         primaryDevice: formData.os,
+        primaryDevices: onboardingDeviceToSettingsKeys(formData.os),
         primaryConcerns: formData.primaryConcerns,
       };
 
@@ -151,24 +163,24 @@ const OnboardingPage: React.FC = () => {
           >
             <div className="flex flex-col space-y-4">
               <div className="relative">
-                <label className="text-sm font-semibold text-gray-500 ml-1 mb-2 block uppercase tracking-wider">
+                <label className="text-sm font-semibold text-ink-muted ml-1 mb-2 block uppercase tracking-wider">
                   {t('onboarding.step1.firstName')}
                 </label>
                 <div className="relative group">
-                  <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-blue-500 group-focus-within:text-blue-600 transition-colors" />
+                  <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-brand group-focus-within:text-brand transition-colors" />
                   <input
                     type="text"
                     value={formData.firstName}
                     onChange={e => setFormData(f => ({ ...f, firstName: e.target.value }))}
                     placeholder={t('onboarding.step1.firstNamePlaceholder')}
-                    className="w-full bg-white/50 backdrop-blur-sm border-2 border-blue-100 rounded-2xl py-4 pl-12 pr-4 text-xl focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all"
+                    className="w-full bg-white/50 backdrop-blur-sm border-2 border-hairline rounded-2xl py-4 pl-12 pr-4 text-xl focus:border-brand focus:ring-4 focus:ring-brand/10 outline-none transition-all"
                     autoFocus
                   />
                 </div>
               </div>
 
               <div className="relative">
-                <label className="text-sm font-semibold text-gray-500 ml-1 mb-2 block uppercase tracking-wider">
+                <label className="text-sm font-semibold text-ink-muted ml-1 mb-2 block uppercase tracking-wider">
                   {t('onboarding.step1.age')}
                 </label>
                 <div className="flex items-center space-x-6">
@@ -178,9 +190,9 @@ const OnboardingPage: React.FC = () => {
                     max="100"
                     value={formData.age}
                     onChange={e => setFormData(f => ({ ...f, age: parseInt(e.target.value) }))}
-                    className="flex-1 accent-blue-600 h-2 bg-blue-100 rounded-lg appearance-none cursor-pointer"
+                    className="flex-1 accent-[#c2502e] h-2 bg-brand-soft rounded-lg appearance-none cursor-pointer"
                   />
-                  <span className="text-3xl font-bold text-blue-600 tabular-nums w-12">{formData.age}</span>
+                  <span className="text-3xl font-bold text-brand tabular-nums w-12">{formData.age}</span>
                 </div>
               </div>
             </div>
@@ -198,13 +210,13 @@ const OnboardingPage: React.FC = () => {
             className="space-y-4"
           >
             <div className="relative group mb-4">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 group-focus-within:text-blue-500 transition-colors" />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-ink-muted group-focus-within:text-brand transition-colors" />
               <input
                 type="text"
                 placeholder={t('onboarding.step2.searchLanguages')}
                 value={languageSearch}
                 onChange={e => setLanguageSearch(e.target.value)}
-                className="w-full bg-white/50 border-2 border-gray-100 rounded-2xl py-3 pl-12 pr-4 outline-none focus:border-blue-500 transition-all"
+                className="w-full bg-white/50 border-2 border-gray-100 rounded-2xl py-3 pl-12 pr-4 outline-none focus:border-brand transition-all"
               />
             </div>
 
@@ -220,8 +232,8 @@ const OnboardingPage: React.FC = () => {
                     setFormData(f => ({ ...f, selectedLanguages: selected }));
                   }}
                   className={`flex items-center justify-between p-4 rounded-2xl border-2 transition-all ${formData.selectedLanguages.includes(lang.code)
-                    ? 'border-blue-500 bg-blue-50 text-blue-700'
-                    : 'border-white bg-white/40 hover:border-blue-200'
+                    ? 'border-brand bg-brand-soft text-brand-strong'
+                    : 'border-white bg-white/40 hover:border-brand/30'
                     }`}
                 >
                   <div className="text-left">
@@ -246,7 +258,7 @@ const OnboardingPage: React.FC = () => {
             className="space-y-6"
           >
             <div className="space-y-3">
-              <label className="text-sm font-semibold text-gray-500 uppercase tracking-wider ml-1">
+              <label className="text-sm font-semibold text-ink-muted uppercase tracking-wider ml-1">
                 {t('onboarding.step3.experienceLevel')}
               </label>
               <div className="grid gap-3">
@@ -259,16 +271,16 @@ const OnboardingPage: React.FC = () => {
                     key={level.id}
                     onClick={() => setFormData(f => ({ ...f, techExperience: level.id as any }))}
                     className={`flex items-start space-x-4 p-4 rounded-3xl border-2 transition-all text-left ${formData.techExperience === level.id
-                      ? 'border-blue-500 bg-blue-50 ring-4 ring-blue-500/10'
-                      : 'border-white bg-white/40 hover:border-blue-200'
+                      ? 'border-brand bg-brand-soft ring-4 ring-brand/10'
+                      : 'border-white bg-white/40 hover:border-brand/30'
                       }`}
                   >
-                    <div className={`p-3 rounded-2xl ${formData.techExperience === level.id ? 'bg-blue-500 text-white' : 'bg-blue-100 text-blue-600'}`}>
+                    <div className={`p-3 rounded-2xl ${formData.techExperience === level.id ? 'bg-brand-soft0 text-white' : 'bg-brand-soft text-brand'}`}>
                       <level.icon className="w-6 h-6" />
                     </div>
                     <div>
                       <div className="font-bold text-lg">{level.title}</div>
-                      <div className="text-sm text-gray-500 leading-relaxed">{level.desc}</div>
+                      <div className="text-sm text-ink-muted leading-relaxed">{level.desc}</div>
                     </div>
                   </button>
                 ))}
@@ -276,9 +288,12 @@ const OnboardingPage: React.FC = () => {
             </div>
 
             <div className="space-y-3">
-              <label className="text-sm font-semibold text-gray-500 uppercase tracking-wider ml-1">
+              <label className="text-sm font-semibold text-ink-muted uppercase tracking-wider ml-1">
                 {t('onboarding.step3.devices.title')}
               </label>
+              <p className="text-sm text-ink-muted ml-1">
+                We detected you&apos;re on <strong>{detectedDeviceLabel}</strong> — confirm below or pick a different device.
+              </p>
               <div className="flex flex-wrap gap-2">
                 {[
                   { id: 'windowscomputer', label: t('onboarding.step3.devices.windowscomputer'), icon: Monitor },
@@ -292,8 +307,8 @@ const OnboardingPage: React.FC = () => {
                     key={dev.id}
                     onClick={() => setFormData(f => ({ ...f, os: dev.id }))}
                     className={`flex items-center space-x-2 px-4 py-3 rounded-full border-2 transition-all font-medium ${formData.os === dev.id
-                      ? 'border-blue-500 bg-blue-600 text-white shadow-lg shadow-blue-500/30'
-                      : 'border-white bg-white/50 text-gray-700 hover:border-blue-200'
+                      ? 'border-brand bg-brand text-white shadow-lg shadow-micro'
+                      : 'border-white bg-white/50 text-ink hover:border-brand/30'
                       }`}
                   >
                     <dev.icon className="w-4 h-4" />
@@ -317,17 +332,17 @@ const OnboardingPage: React.FC = () => {
           >
             <div className="flex items-center justify-between p-6 bg-white/40 border border-white rounded-[2rem] shadow-sm hover:shadow-md transition-shadow">
               <div className="flex items-center space-x-5">
-                <div className="p-3 bg-purple-100 rounded-2xl text-purple-600">
+                <div className="p-3 bg-brand-soft rounded-2xl text-brand">
                   <Volume2 className="w-8 h-8" />
                 </div>
                 <div>
                   <div className="font-bold text-xl">{t('onboarding.step4.textToSpeech')}</div>
-                  <div className="text-sm text-gray-500">Listen to AI explainers</div>
+                  <div className="text-sm text-ink-muted">Listen to AI explainers</div>
                 </div>
               </div>
               <button
                 onClick={() => setFormData(f => ({ ...f, preferences: { ...f.preferences, textToSpeech: !f.preferences.textToSpeech } }))}
-                className={`w-16 h-8 rounded-full transition-all relative ${formData.preferences.textToSpeech ? 'bg-green-500' : 'bg-gray-300'}`}
+                className={`w-16 h-8 rounded-full transition-all relative ${formData.preferences.textToSpeech ? 'bg-brand' : 'bg-subtle'}`}
               >
                 <div className={`absolute top-1 w-6 h-6 bg-white rounded-full transition-all ${formData.preferences.textToSpeech ? 'right-1' : 'left-1 shadow-sm'}`} />
               </button>
@@ -335,24 +350,24 @@ const OnboardingPage: React.FC = () => {
 
             <div className="flex items-center justify-between p-6 bg-white/40 border border-white rounded-[2rem] shadow-sm hover:shadow-md transition-shadow">
               <div className="flex items-center space-x-5">
-                <div className="p-3 bg-blue-100 rounded-2xl text-blue-600">
+                <div className="p-3 bg-brand-soft rounded-2xl text-brand">
                   <Mic className="w-8 h-8" />
                 </div>
                 <div>
                   <div className="font-bold text-xl">{t('onboarding.step4.voiceInput')}</div>
-                  <div className="text-sm text-gray-500">Ask questions with your voice</div>
+                  <div className="text-sm text-ink-muted">Ask questions with your voice</div>
                 </div>
               </div>
               <button
                 onClick={() => setFormData(f => ({ ...f, preferences: { ...f.preferences, voiceInput: !f.preferences.voiceInput } }))}
-                className={`w-16 h-8 rounded-full transition-all relative ${formData.preferences.voiceInput ? 'bg-green-500' : 'bg-gray-300'}`}
+                className={`w-16 h-8 rounded-full transition-all relative ${formData.preferences.voiceInput ? 'bg-brand' : 'bg-subtle'}`}
               >
                 <div className={`absolute top-1 w-6 h-6 bg-white rounded-full transition-all ${formData.preferences.voiceInput ? 'right-1' : 'left-1 shadow-sm'}`} />
               </button>
             </div>
 
             <div className="space-y-4 pt-4">
-              <div className="flex items-center space-x-3 text-sm font-semibold text-gray-500 uppercase tracking-widest ml-2">
+              <div className="flex items-center space-x-3 text-sm font-semibold text-ink-muted uppercase tracking-widest ml-2">
                 <Type className="w-4 h-4" />
                 <span>{t('onboarding.step4.textSize')}</span>
               </div>
@@ -366,8 +381,8 @@ const OnboardingPage: React.FC = () => {
                     key={opt.id}
                     onClick={() => setFormData(f => ({ ...f, preferences: { ...f.preferences, fontSize: opt.id as any } }))}
                     className={`flex-1 py-3 rounded-xl font-bold transition-all ${formData.preferences.fontSize === opt.id
-                      ? 'bg-blue-600 text-white shadow-lg'
-                      : 'text-gray-600 hover:bg-white'
+                      ? 'bg-brand text-white shadow-lg'
+                      : 'text-ink-muted hover:bg-white'
                       }`}
                   >
                     {opt.label}
@@ -389,7 +404,7 @@ const OnboardingPage: React.FC = () => {
             className="space-y-6"
           >
             <div className="space-y-3">
-              <label className="text-sm font-semibold text-gray-500 uppercase tracking-wider ml-1">
+              <label className="text-sm font-semibold text-ink-muted uppercase tracking-wider ml-1">
                 {t('onboarding.step5.subtitle')}
               </label>
               <div className="flex flex-wrap gap-2">
@@ -406,8 +421,8 @@ const OnboardingPage: React.FC = () => {
                       setFormData(f => ({ ...f, primaryConcerns: concerns }));
                     }}
                     className={`px-5 py-3 rounded-[1.5rem] border-2 transition-all font-semibold ${formData.primaryConcerns.includes(key)
-                      ? 'border-blue-500 bg-blue-600 text-white shadow-lg'
-                      : 'border-white bg-white/50 text-gray-700 hover:border-blue-200'
+                      ? 'border-brand bg-brand text-white shadow-lg'
+                      : 'border-white bg-white/50 text-ink hover:border-brand/30'
                       }`}
                   >
                     {t(`onboarding.step5.concerns.${key}`)}
@@ -416,23 +431,23 @@ const OnboardingPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="pt-6 border-t border-blue-100">
-              <div className="flex items-start justify-between p-6 bg-blue-600/5 border border-blue-100 rounded-[2.5rem]">
+            <div className="pt-6 border-t border-hairline">
+              <div className="flex items-start justify-between p-6 bg-brand/5 border border-hairline rounded-[2.5rem]">
                 <div className="flex-1 pr-6">
                   <div className="flex items-center space-x-2 mb-2">
-                    <ShieldCheck className="w-5 h-5 text-green-600" />
-                    <h3 className="font-bold text-lg text-blue-900">{t('onboarding.step5.privacy.title')}</h3>
+                    <ShieldCheck className="w-5 h-5 text-[#2e6a63]" />
+                    <h3 className="font-bold text-lg text-ink">{t('onboarding.step5.privacy.title')}</h3>
                   </div>
-                  <p className="text-sm text-blue-800/70 leading-relaxed">
+                  <p className="text-sm text-ink-muted leading-relaxed">
                     {t('onboarding.step5.privacy.description')}
                   </p>
-                  <p className="text-xs text-blue-600 font-medium mt-3 italic">
+                  <p className="text-xs text-brand font-medium mt-3 italic">
                     {t('onboarding.step5.privacy.note')}
                   </p>
                 </div>
                 <button
                   onClick={() => setFormData(f => ({ ...f, preferences: { ...f.preferences, allowPersonalization: !f.preferences.allowPersonalization } }))}
-                  className={`w-16 h-8 rounded-full transition-all relative mt-1 ${formData.preferences.allowPersonalization ? 'bg-green-500' : 'bg-gray-300'}`}
+                  className={`w-16 h-8 rounded-full transition-all relative mt-1 ${formData.preferences.allowPersonalization ? 'bg-brand' : 'bg-subtle'}`}
                 >
                   <div className={`absolute top-1 w-6 h-6 bg-white rounded-full transition-all ${formData.preferences.allowPersonalization ? 'right-1' : 'left-1 shadow-sm'}`} />
                 </button>
@@ -449,16 +464,17 @@ const OnboardingPage: React.FC = () => {
   return (
     <div className="min-h-screen relative overflow-hidden flex flex-col items-center justify-center p-4">
       {/* Dynamic Background */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+      <div className="absolute inset-0 -z-10 bg-canvas">
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -top-40 -left-40 w-96 h-96 bg-blue-200 rounded-full blur-[100px]"
+          className="absolute -top-40 -left-40 w-96 h-96 bg-brand-soft rounded-full blur-[100px]"
         />
         <motion.div
           animate={{ scale: [1, 1.3, 1], opacity: [0.2, 0.4, 0.2] }}
           transition={{ duration: 15, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-          className="absolute -bottom-40 -right-40 w-[30rem] h-[30rem] bg-purple-200 rounded-full blur-[120px]"
+          className="absolute -bottom-40 -right-40 w-[30rem] h-[30rem] rounded-full blur-[120px]"
+          style={{ background: 'rgba(46, 106, 99, 0.15)' }}
         />
       </div>
 
@@ -468,7 +484,7 @@ const OnboardingPage: React.FC = () => {
           <motion.div
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            className="inline-flex items-center justify-center p-4 bg-white/60 backdrop-blur-xl rounded-[2rem] border border-white shadow-xl shadow-blue-500/5 mb-8"
+            className="inline-flex items-center justify-center p-4 bg-surface backdrop-blur-xl rounded-[2rem] border border-hairline shadow-micro mb-8"
           >
             <Logo size="lg" showText />
           </motion.div>
@@ -479,10 +495,10 @@ const OnboardingPage: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             className="space-y-2"
           >
-            <h1 className="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">
+            <h1 className="text-4xl sm:text-5xl font-black text-ink tracking-tight">
               {t(`onboarding.step${currentStep + 1}.title`)}
             </h1>
-            <p className="text-lg text-gray-500 font-medium">
+            <p className="text-lg text-ink-muted font-medium">
               {t(`onboarding.step${currentStep + 1}.subtitle`)}
             </p>
           </motion.div>
@@ -493,14 +509,14 @@ const OnboardingPage: React.FC = () => {
           {/* Decorative glass elements */}
           <div className="absolute -inset-4 bg-white/20 backdrop-blur-3xl rounded-[3rem] -z-10 border border-white/50" />
 
-          <div className="bg-white/80 backdrop-blur-2xl border border-white/80 rounded-[2.5rem] shadow-2xl p-8 sm:p-12 relative overflow-hidden min-h-[480px] flex flex-col justify-between">
+          <div className="bg-surface backdrop-blur-2xl border border-hairline rounded-card shadow-micro p-8 sm:p-12 relative overflow-hidden min-h-[480px] flex flex-col justify-between">
             {/* Progress dots */}
             <div className="flex justify-center space-x-3 mb-10">
               {[0, 1, 2, 3, 4].map(idx => (
                 <div
                   key={idx}
-                  className={`h-2 transition-all duration-500 rounded-full ${idx === currentStep ? 'w-10 bg-blue-600 shadow-lg shadow-blue-500/20' :
-                    idx < currentStep ? 'w-2 bg-green-500' : 'w-2 bg-gray-200'
+                  className={`h-2 transition-all duration-500 rounded-full ${idx === currentStep ? 'w-10 bg-brand shadow-lg shadow-micro' :
+                    idx < currentStep ? 'w-2 bg-[#2e6a63]' : 'w-2 bg-subtle'
                     }`}
                 />
               ))}
@@ -512,12 +528,12 @@ const OnboardingPage: React.FC = () => {
             </AnimatePresence>
 
             {/* Navigation Controls */}
-            <div className="flex items-center space-x-4 mt-12 pt-8 border-t border-gray-50">
+            <div className="flex items-center space-x-4 mt-12 pt-8 border-t border-hairline">
               {currentStep > 0 && (
                 <button
                   onClick={handleBack}
                   disabled={loading}
-                  className="flex items-center justify-center p-4 rounded-3xl bg-gray-100 text-gray-500 hover:bg-gray-200 transition-all active:scale-95 disabled:opacity-50"
+                  className="flex items-center justify-center p-4 rounded-3xl bg-subtle text-ink-muted hover:bg-brand-soft transition-all active:scale-95 disabled:opacity-50 focus-ring"
                   aria-label="Go back"
                 >
                   <ChevronLeft className="w-6 h-6" />
@@ -527,9 +543,9 @@ const OnboardingPage: React.FC = () => {
               <button
                 onClick={handleNext}
                 disabled={!canProceed() || loading || isAnimating}
-                className={`flex-1 flex items-center justify-center py-5 rounded-[2rem] text-xl font-bold transition-all shadow-xl active:scale-[0.98] ${!canProceed()
-                  ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                  : 'bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-blue-500/30 hover:shadow-blue-500/50 hover:translate-y-[-2px]'
+                className={`flex-1 flex items-center justify-center py-5 rounded-[2rem] text-xl font-bold transition-all active:scale-[0.98] focus-ring ${!canProceed()
+                  ? 'bg-subtle text-ink-muted cursor-not-allowed'
+                  : 'bg-brand text-white shadow-micro hover:bg-brand-strong hover:-translate-y-0.5'
                   }`}
               >
                 {loading ? (
@@ -555,7 +571,7 @@ const OnboardingPage: React.FC = () => {
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.5 }}
-          className="text-center mt-12 text-sm font-medium text-gray-500"
+          className="text-center mt-12 text-sm font-medium text-ink-muted"
         >
           Need help? Just wave at the companion in the corner!
         </motion.p>

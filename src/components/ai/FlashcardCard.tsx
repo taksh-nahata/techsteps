@@ -1,288 +1,219 @@
-import React, { useState, useCallback } from 'react';
+import React, { useCallback, useMemo } from 'react';
 import { motion, PanInfo } from 'framer-motion';
-import { Volume2, VolumeX, Check } from 'lucide-react';
+import { Check, MousePointerClick, ChevronRight } from 'lucide-react';
 import { FlashcardStep } from '../../types/services';
 import MarkdownRenderer from './MarkdownRenderer';
+import { getDirectionsForDevice, GuideDeviceType, GUIDE_DEVICE_LABELS } from '../../utils/deviceDetection';
 
 interface FlashcardCardProps {
-    step: FlashcardStep;
-    stepNumber: number;
-    totalSteps: number;
-    direction: number; // -1 for left, 1 for right, 0 for initial
-    onNext: () => void;
-    onPrevious: () => void;
-    isCompleted?: boolean;
-    onSpeak?: (text: string) => void;
-    isSpeaking?: boolean;
+  step: FlashcardStep;
+  stepNumber: number;
+  totalSteps: number;
+  direction: number;
+  onNext: () => void;
+  onPrevious: () => void;
+  isCompleted?: boolean;
+  deviceType?: GuideDeviceType;
 }
 
 const FlashcardCard: React.FC<FlashcardCardProps> = ({
-    step,
-    stepNumber,
-    totalSteps,
-    direction,
-    onNext,
-    onPrevious,
-    isCompleted = false,
-    onSpeak,
-    isSpeaking = false,
+  step,
+  stepNumber,
+  totalSteps,
+  direction,
+  onNext,
+  onPrevious,
+  isCompleted = false,
+  deviceType = 'all',
 }) => {
-    const [isFlipped, setIsFlipped] = useState(false);
-    const [isDragging, setIsDragging] = useState(false);
+  const prefersReducedMotion =
+    typeof window !== 'undefined' &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    // Check for reduced motion
-    const prefersReducedMotion = typeof window !== 'undefined'
-        && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const plainContent = step.content.replace(/<[^>]*>/g, '').trim();
+  const hasImage = Boolean(step.image);
 
-    // Handle swipe gestures
-    const handleDragEnd = useCallback((
-        _event: MouseEvent | TouchEvent | PointerEvent,
-        info: PanInfo
-    ) => {
-        setIsDragging(false);
-        const threshold = 100;
-        const velocity = 0.5;
-
-        if (info.offset.x > threshold || info.velocity.x > velocity) {
-            onPrevious();
-        } else if (info.offset.x < -threshold || info.velocity.x < -velocity) {
-            onNext();
-        }
-    }, [onNext, onPrevious]);
-
-    const handleFlip = useCallback(() => {
-        if (!isDragging) {
-            setIsFlipped(prev => !prev);
-        }
-    }, [isDragging]);
-
-    const handleSpeak = useCallback((e: React.MouseEvent) => {
-        e.stopPropagation();
-        const text = step.content.replace(/<[^>]*>/g, '');
-        onSpeak?.(text);
-    }, [step.content, onSpeak]);
-
-    // Card animation variants
-    const cardVariants = {
-        enter: (dir: number) => ({
-            x: dir > 0 ? 300 : -300,
-            opacity: 0,
-            scale: 0.8,
-            rotateY: dir > 0 ? 15 : -15,
-        }),
-        center: {
-            x: 0,
-            opacity: 1,
-            scale: 1,
-            rotateY: 0,
-            transition: {
-                duration: prefersReducedMotion ? 0.15 : 0.5,
-                ease: "easeOut" as const,
-            },
-        },
-        exit: (dir: number) => ({
-            x: dir < 0 ? 300 : -300,
-            opacity: 0,
-            scale: 0.8,
-            rotateY: dir < 0 ? 15 : -15,
-            transition: {
-                duration: prefersReducedMotion ? 0.15 : 0.4,
-            },
-        }),
-    };
-
-    // 3D flip variants
-    const flipVariants = {
-        front: {
-            rotateY: 0,
-            transition: { duration: prefersReducedMotion ? 0.1 : 0.6, ease: "easeOut" as const },
-        },
-        back: {
-            rotateY: 180,
-            transition: { duration: prefersReducedMotion ? 0.1 : 0.6, ease: "easeOut" as const },
-        },
-    };
-
-    const hasInstructions = step.instructions && step.instructions.length > 0;
-
-    return (
-        <motion.div
-            className="h-full w-full flex items-center justify-center p-4"
-            custom={direction}
-            variants={cardVariants}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            drag={prefersReducedMotion ? false : "x"}
-            dragConstraints={{ left: 0, right: 0 }}
-            dragElastic={0.2}
-            onDragStart={() => setIsDragging(true)}
-            onDragEnd={handleDragEnd}
-            style={{ perspective: 1000 }}
-        >
-            {/* 3D Flip Container - Fixed Aspect Ratio */}
-            <motion.div
-                className="relative cursor-pointer w-full max-w-2xl"
-                style={{
-                    transformStyle: 'preserve-3d',
-                    aspectRatio: '4 / 3'
-                }}
-                animate={isFlipped ? 'back' : 'front'}
-                variants={flipVariants}
-                onClick={hasInstructions ? handleFlip : undefined}
-                whileHover={prefersReducedMotion ? {} : { scale: 1.02 }}
-                whileTap={prefersReducedMotion ? {} : { scale: 0.98 }}
-            >
-                {/* Front Face */}
-                <motion.div
-                    className="absolute inset-0 rounded-3xl overflow-hidden"
-                    style={{
-                        backfaceVisibility: 'hidden',
-                        background: 'linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%)',
-                        backdropFilter: 'blur(20px)',
-                        boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.15), inset 0 0 0 1px rgba(255,255,255,0.8)',
-                        border: '1px solid rgba(255,255,255,0.5)',
-                    }}
-                >
-                    {/* Gradient Border Effect */}
-                    <div
-                        className="absolute inset-0 rounded-3xl pointer-events-none"
-                        style={{
-                            background: 'linear-gradient(135deg, rgba(99,102,241,0.2) 0%, rgba(168,85,247,0.2) 100%)',
-                            mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
-                            maskComposite: 'xor',
-                            WebkitMaskComposite: 'xor',
-                            padding: '2px',
-                        }}
-                    />
-
-                    {/* Card Content - Fills Container */}
-                    <div className="h-full w-full flex flex-col p-8 gap-4">
-                        {/* Header */}
-                        <div className="flex items-center justify-between gap-3 flex-shrink-0 flex-wrap">
-                            {/* Step Badge */}
-                            <motion.div
-                                className="px-4 py-2 rounded-full text-sm font-bold whitespace-nowrap"
-                                style={{
-                                    background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
-                                    color: 'white',
-                                    boxShadow: '0 4px 12px rgba(99, 102, 241, 0.4)',
-                                    fontSize: '0.9em'
-                                }}
-                                initial={{ scale: 0 }}
-                                animate={{ scale: 1 }}
-                                transition={{ delay: 0.2, type: 'spring' }}
-                            >
-                                Step {stepNumber} of {totalSteps}
-                            </motion.div>
-
-                            {/* Completed Badge */}
-                            {isCompleted && (
-                                <motion.div
-                                    className="flex items-center gap-1 px-3 py-1 bg-green-100 text-green-700 rounded-full font-medium"
-                                    style={{ fontSize: '0.85em' }}
-                                    initial={{ scale: 0 }}
-                                    animate={{ scale: 1 }}
-                                    transition={{ type: 'spring' }}
-                                >
-                                    <Check className="w-4 h-4" />
-                                    Done
-                                </motion.div>
-                            )}
-
-                            {/* Audio Button */}
-                            <motion.button
-                                onClick={handleSpeak}
-                                className={`p-2 rounded-full transition-all flex-shrink-0 ${isSpeaking
-                                    ? 'bg-indigo-100 text-indigo-600 ring-2 ring-indigo-400'
-                                    : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
-                                    }`}
-                                whileHover={{ scale: 1.1 }}
-                                whileTap={{ scale: 0.9 }}
-                                aria-label={isSpeaking ? "Stop speaking" : "Read aloud"}
-                            >
-                                {isSpeaking ? (
-                                    <motion.div
-                                        animate={{ scale: [1, 1.2, 1] }}
-                                        transition={{ repeat: Infinity, duration: 0.8 }}
-                                    >
-                                        <VolumeX className="w-5 h-5" />
-                                    </motion.div>
-                                ) : (
-                                    <Volume2 className="w-5 h-5" />
-                                )}
-                            </motion.button>
-                        </div>
-
-                        {/* Main Content - Flexible Height */}
-                        <div className="flex-1 flex items-center justify-center min-h-0">
-                            <div className="text-2xl font-medium leading-snug text-gray-800 text-center overflow-y-auto">
-                                <MarkdownRenderer
-                                    content={step.content.replace(/<[^>]*>/g, '')}
-                                    className="prose prose-sm md:prose-base prose-indigo max-w-none"
-                                />
-                            </div>
-                        </div>
-
-                        {/* Flip Hint */}
-                        {hasInstructions && (
-                            <motion.p
-                                className="text-center text-gray-400 text-sm flex-shrink-0"
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ delay: 0.5 }}
-                            >
-                                Tap card to see detailed instructions
-                            </motion.p>
-                        )}
-                    </div>
-                </motion.div>
-
-                {/* Back Face (Instructions) */}
-                {hasInstructions && (
-                    <motion.div
-                        className="absolute inset-0 rounded-3xl overflow-hidden"
-                        style={{
-                            backfaceVisibility: 'hidden',
-                            transform: 'rotateY(180deg)',
-                            background: 'linear-gradient(135deg, rgba(99,102,241,0.95) 0%, rgba(139,92,246,0.95) 100%)',
-                            backdropFilter: 'blur(20px)',
-                            boxShadow: '0 25px 50px -12px rgba(99, 102, 241, 0.3), inset 0 0 0 1px rgba(255,255,255,0.2)',
-                            border: '1px solid rgba(255,255,255,0.3)',
-                        }}
-                    >
-                        <div className="h-full w-full flex flex-col text-white p-8 gap-4">
-                            {/* Back Header */}
-                            <div className="flex items-center justify-between flex-shrink-0">
-                                <h3 className="text-xl font-bold">Instructions</h3>
-                                <span className="text-white/60 text-xs">Tap to flip back</span>
-                            </div>
-
-                            {/* Instructions List */}
-                            <div className="flex-1 overflow-y-auto custom-scrollbar pr-2 min-h-0">
-                                <ol className="space-y-3">
-                                    {step.instructions?.map((instruction, index) => (
-                                        <motion.li
-                                            key={index}
-                                            className="flex items-start gap-3"
-                                            initial={{ opacity: 0, x: -20 }}
-                                            animate={{ opacity: 1, x: 0 }}
-                                            transition={{ delay: index * 0.1 }}
-                                        >
-                                            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-sm font-bold">
-                                                {index + 1}
-                                            </span>
-                                            <span className="text-lg leading-snug pt-0.5">{instruction}</span>
-                                        </motion.li>
-                                    ))}
-                                </ol>
-                            </div>
-                        </div>
-                    </motion.div>
-                )}
-            </motion.div>
-        </motion.div>
+  const directions = useMemo(() => {
+    const resolved = getDirectionsForDevice(
+      step.directionsByDevice as Partial<Record<GuideDeviceType, string[]>>,
+      deviceType,
+      step.instructions,
+      plainContent
     );
+    if (resolved.length) return resolved.slice(0, 8);
+    if (step.instructions?.length) return step.instructions.slice(0, 5);
+    const lines = plainContent
+      .split(/\n+/)
+      .map((l) => l.replace(/^[\d•\-*.]+\s*/, '').trim())
+      .filter((l) => l.length > 8);
+    return lines.length > 1 ? lines : [];
+  }, [step.directionsByDevice, step.instructions, plainContent, deviceType]);
+
+  const handleDragEnd = useCallback(
+    (_e: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
+      const threshold = 70;
+      if (info.offset.x > threshold || info.velocity.x > 0.4) onPrevious();
+      else if (info.offset.x < -threshold || info.velocity.x < -0.4) onNext();
+    },
+    [onNext, onPrevious]
+  );
+
+  return (
+    <motion.div
+      className="h-full w-full min-h-0 flex flex-col px-1 pb-1"
+      initial={{ opacity: 0, x: direction > 0 ? 60 : direction < 0 ? -60 : 0 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: direction > 0 ? -60 : 60 }}
+      transition={{ duration: prefersReducedMotion ? 0.1 : 0.28 }}
+      drag={prefersReducedMotion ? false : 'x'}
+      dragConstraints={{ left: 0, right: 0 }}
+      dragElastic={0.1}
+      onDragEnd={handleDragEnd}
+    >
+      <article className="flex flex-col flex-1 min-h-0 rounded-[16px] border border-hairline bg-surface shadow-micro overflow-hidden">
+        {/* Top bar */}
+        <header className="flex-shrink-0 flex items-center justify-between px-3 py-2 border-b border-hairline">
+          <span className="text-[11px] font-bold uppercase tracking-widest text-brand">
+            Step {stepNumber} of {totalSteps}
+          </span>
+          {deviceType !== 'all' && (
+            <span className="text-[10px] font-medium text-ink-muted bg-subtle px-2 py-0.5 rounded-full">
+              {GUIDE_DEVICE_LABELS[deviceType]}
+            </span>
+          )}
+          {isCompleted && (
+            <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-accent-cool">
+              <Check className="w-3 h-3" /> Done
+            </span>
+          )}
+        </header>
+
+        {hasImage ? (
+          <div className="flex-1 min-h-0 grid md:grid-cols-2 overflow-hidden">
+            <figure className="bg-subtle/40 border-b md:border-b-0 md:border-r border-hairline flex items-center justify-center p-3 min-h-[140px]">
+              <img
+                src={step.image}
+                alt={step.title || `Step ${stepNumber}`}
+                className="max-h-full max-w-full object-contain rounded-lg"
+                loading="lazy"
+              />
+            </figure>
+            <StepBody
+              title={step.title}
+              directions={directions}
+              plainContent={plainContent}
+              stepNumber={stepNumber}
+              compact
+            />
+          </div>
+        ) : (
+          <div className="flex-1 min-h-0 grid md:grid-cols-[minmax(0,42%)_1fr] overflow-hidden">
+            <div className="relative flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-hairline bg-gradient-to-br from-brand-soft/70 via-canvas to-subtle/30 p-6 min-h-[140px] md:min-h-0">
+              <div
+                className="absolute inset-0 opacity-[0.07] pointer-events-none"
+                style={{
+                  backgroundImage:
+                    'repeating-linear-gradient(-45deg, #c2502e 0, #c2502e 1px, transparent 0, transparent 50%)',
+                  backgroundSize: '12px 12px',
+                }}
+              />
+              <motion.div
+                className="relative flex h-[88px] w-[88px] md:h-[104px] md:w-[104px] items-center justify-center rounded-[24px] bg-brand text-white font-display text-5xl md:text-6xl font-extrabold shadow-micro"
+                animate={prefersReducedMotion ? {} : { scale: [1, 1.05, 1] }}
+                transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
+              >
+                {stepNumber}
+              </motion.div>
+              {step.title && (
+                <p className="relative mt-5 text-center font-display font-bold text-ink text-lg md:text-xl leading-snug max-w-[220px]">
+                  {step.title}
+                </p>
+              )}
+              <p className="relative mt-3 flex items-center gap-1.5 text-xs font-medium text-ink-muted">
+                <MousePointerClick className="w-3.5 h-3.5 shrink-0" />
+                Do each step below, then tap Next
+              </p>
+            </div>
+            <StepBody
+              directions={directions}
+              plainContent={plainContent}
+              stepNumber={stepNumber}
+              fillHeight
+            />
+          </div>
+        )}
+      </article>
+    </motion.div>
+  );
 };
+
+function StepBody({
+  title,
+  directions,
+  plainContent,
+  stepNumber,
+  compact = false,
+  fillHeight = false,
+}: {
+  title?: string;
+  directions: string[];
+  plainContent: string;
+  stepNumber: number;
+  compact?: boolean;
+  fillHeight?: boolean;
+}) {
+  return (
+    <div
+      className={`flex-1 min-h-0 flex flex-col overflow-y-auto custom-scrollbar ${
+        fillHeight ? 'p-5 md:p-6' : 'p-4 md:p-5'
+      }`}
+    >
+      {title && compact && (
+        <h3 className="font-display font-bold text-lg text-ink mb-3">{title}</h3>
+      )}
+
+      {directions.length > 0 ? (
+        <ol
+          className={`flex-1 ${fillHeight ? 'flex flex-col justify-center gap-5 md:gap-6' : compact ? 'space-y-3' : 'space-y-4'}`}
+        >
+          {directions.map((instruction, index) => (
+            <li key={index} className="flex gap-4 items-start">
+              <span
+                className={`flex-shrink-0 flex items-center justify-center rounded-full bg-brand text-white font-bold ${
+                  fillHeight ? 'h-10 w-10 text-base' : 'h-8 w-8 text-sm'
+                }`}
+              >
+                {index + 1}
+              </span>
+              <p
+                className={`leading-relaxed text-ink ${
+                  fillHeight ? 'text-base md:text-lg pt-1.5' : compact ? 'text-sm pt-1' : 'text-base pt-0.5'
+                }`}
+              >
+                {instruction}
+              </p>
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <div
+          className={`flex-1 flex flex-col justify-center ${fillHeight ? 'text-base md:text-lg' : compact ? 'text-sm' : 'text-base'}`}
+        >
+          <MarkdownRenderer
+            content={plainContent}
+            className="prose prose-sm md:prose-base max-w-none prose-p:my-2 text-ink"
+          />
+        </div>
+      )}
+
+      {!fillHeight && (
+        <p className="flex-shrink-0 mt-4 pt-3 border-t border-hairline text-xs text-ink-muted flex items-center gap-1">
+          <ChevronRight className="w-3 h-3" />
+          Swipe or use Next when you&apos;ve done step {stepNumber}
+        </p>
+      )}
+    </div>
+  );
+}
 
 export default FlashcardCard;

@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { Conversation } from '../../services/LocalStorageService';
 import { useTranslation } from 'react-i18next';
-import { X, ChevronRight } from 'lucide-react';
+import { X } from 'lucide-react';
 
 interface Props {
   conversations: Conversation[];
@@ -28,19 +28,19 @@ const ChatHistorySidebar: React.FC<Props> = ({ conversations, isOpen, onLoad, on
     <>
       {/* Sidebar */}
       <div
-        className={`fixed left-0 top-0 h-screen w-72 bg-white border-r border-gray-200 shadow-lg transition-transform duration-300 ease-in-out z-40 flex flex-col
+        className={`fixed left-0 top-0 h-screen w-72 bg-surface border-r border-hairline shadow-micro transition-transform duration-300 ease-out z-40 flex flex-col
           ${isOpen ? 'translate-x-0' : '-translate-x-full'}
         `}
       >
         {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b border-gray-200">
-          <h2 className="font-semibold text-gray-800">{t('chat.history', 'Chat History')}</h2>
+        <div className="flex items-center justify-between p-4 border-b border-hairline">
+          <h2 className="font-display font-bold tracking-[-0.01em] text-ink text-lg">{t('chat.history', 'Chat History')}</h2>
           <button
             onClick={onToggle}
-            className="p-1 hover:bg-gray-100 rounded-lg transition-colors"
+            className="flex h-9 w-9 items-center justify-center hover:bg-subtle rounded-full transition-colors focus-ring"
             aria-label="Close sidebar"
           >
-            <X className="w-5 h-5 text-gray-600" />
+            <X className="w-5 h-5 text-ink-muted" />
           </button>
         </div>
 
@@ -49,7 +49,8 @@ const ChatHistorySidebar: React.FC<Props> = ({ conversations, isOpen, onLoad, on
           {recentConversations.length === 0 ? (
             <div className="flex items-center justify-center h-full p-4">
               <div className="text-center">
-                <p className="text-gray-500 text-sm">{t('chat.historyEmpty', 'No past conversations')}</p>
+                <p className="text-ink-muted text-sm">{t('chat.historyEmpty', 'No past conversations yet')}</p>
+                <p className="text-ink-muted text-xs mt-2">Chats save automatically on this device after you send a message.</p>
               </div>
             </div>
           ) : (
@@ -57,16 +58,16 @@ const ChatHistorySidebar: React.FC<Props> = ({ conversations, isOpen, onLoad, on
               {recentConversations.map((conv) => (
                 <div
                   key={conv.id}
-                  className="p-3 rounded-lg hover:bg-indigo-50 transition-colors group border border-gray-100 hover:border-indigo-200"
+                  className="p-3 rounded-card hover:bg-subtle transition-colors group border border-hairline hover:border-brand/40"
                 >
                   <button
                     onClick={() => onLoad(conv)}
                     className="w-full text-left mb-2"
                   >
-                    <div className="font-medium text-gray-800 text-sm truncate hover:text-indigo-600 transition-colors">
+                    <div className="font-semibold text-ink text-sm truncate group-hover:text-brand transition-colors">
                       {conv.title}
                     </div>
-                    <div className="text-xs text-gray-400 mt-1">
+                    <div className="text-xs text-ink-muted mt-1">
                       {new Date(conv.createdAt).toLocaleDateString(undefined, {
                         month: 'short',
                         day: 'numeric',
@@ -92,23 +93,13 @@ const ChatHistorySidebar: React.FC<Props> = ({ conversations, isOpen, onLoad, on
         </div>
 
         {/* Info */}
-        <div className="border-t border-gray-200 p-4">
-          <p className="text-xs text-gray-500 text-center">
+        <div className="border-t border-hairline p-4">
+          <p className="text-xs text-ink-muted text-center">
             {t('chat.last14Days', 'Showing last 14 days')}
           </p>
         </div>
       </div>
 
-      {/* Toggle button (visible when sidebar is closed) */}
-      {!isOpen && (
-        <button
-          onClick={onToggle}
-          className="fixed left-4 top-24 z-30 p-2 bg-white rounded-lg shadow-md hover:shadow-lg border border-gray-200 transition-all"
-          aria-label="Open chat history"
-        >
-          <ChevronRight className="w-5 h-5 text-gray-600" />
-        </button>
-      )}
 
       {/* Overlay when sidebar is open */}
       {isOpen && (

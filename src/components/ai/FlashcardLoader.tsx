@@ -41,10 +41,7 @@ const FlashcardLoader: React.FC<FlashcardLoaderProps> = ({
                 >
                     {/* Tile Grid Container */}
                     <motion.div
-                        className="relative bg-white/40 backdrop-blur-xl rounded-3xl p-6 shadow-2xl border border-white/30"
-                        style={{
-                            background: 'linear-gradient(135deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.3) 100%)',
-                        }}
+                        className="relative bg-surface rounded-card p-6 shadow-micro border border-hairline"
                     >
                         {/* Tile Grid */}
                         <div
@@ -63,8 +60,8 @@ const FlashcardLoader: React.FC<FlashcardLoaderProps> = ({
                                         key={index}
                                         className="w-10 h-10 rounded-xl"
                                         style={{
-                                            background: 'linear-gradient(135deg, #818cf8 0%, #a78bfa 50%, #c4b5fd 100%)',
-                                            boxShadow: '0 4px 12px rgba(99, 102, 241, 0.3)',
+                                            background: 'linear-gradient(135deg, #c2502e 0%, #d98a2b 50%, #f4e5dc 100%)',
+                                            boxShadow: 'var(--shadow-micro)',
                                         }}
                                         initial={{ opacity: 0, scale: 0.2, rotate: -10 }}
                                         animate={prefersReducedMotion ? {
@@ -76,9 +73,9 @@ const FlashcardLoader: React.FC<FlashcardLoaderProps> = ({
                                             scale: [0.85, 1, 0.85],
                                             rotate: 0,
                                             background: [
-                                                'linear-gradient(135deg, #818cf8 0%, #a78bfa 50%, #c4b5fd 100%)',
-                                                'linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a78bfa 100%)',
-                                                'linear-gradient(135deg, #818cf8 0%, #a78bfa 50%, #c4b5fd 100%)',
+                                                'linear-gradient(135deg, #c2502e 0%, #d98a2b 50%, #f4e5dc 100%)',
+                                                'linear-gradient(135deg, #9f3d20 0%, #c2502e 50%, #d98a2b 100%)',
+                                                'linear-gradient(135deg, #c2502e 0%, #d98a2b 50%, #f4e5dc 100%)',
                                             ],
                                         }}
                                         transition={prefersReducedMotion ? {
@@ -139,17 +136,17 @@ const FlashcardLoader: React.FC<FlashcardLoaderProps> = ({
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3 }}
                     >
-                        <p className="text-lg font-medium bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                        <p className="text-lg font-display font-semibold text-brand">
                             {message}{dots}
                         </p>
-                        <p className="text-sm text-gray-500 mt-1">
+                        <p className="text-sm text-ink-muted mt-1">
                             This will just take a moment
                         </p>
                     </motion.div>
 
                     {/* Decorative Elements */}
                     <motion.div
-                        className="absolute -z-10 w-32 h-32 rounded-full bg-indigo-200/50 blur-3xl"
+                        className="absolute -z-10 w-32 h-32 rounded-full bg-brand-soft blur-3xl"
                         animate={prefersReducedMotion ? {} : {
                             scale: [1, 1.2, 1],
                             opacity: [0.3, 0.5, 0.3],
@@ -162,7 +159,8 @@ const FlashcardLoader: React.FC<FlashcardLoaderProps> = ({
                         style={{ top: '20%', left: '10%' }}
                     />
                     <motion.div
-                        className="absolute -z-10 w-24 h-24 rounded-full bg-purple-200/50 blur-3xl"
+                        className="absolute -z-10 w-24 h-24 rounded-full blur-3xl"
+                        style={{ background: 'rgba(46, 106, 99, 0.15)', bottom: '20%', right: '10%' }}
                         animate={prefersReducedMotion ? {} : {
                             scale: [1.2, 1, 1.2],
                             opacity: [0.5, 0.3, 0.5],
@@ -172,7 +170,6 @@ const FlashcardLoader: React.FC<FlashcardLoaderProps> = ({
                             repeat: Infinity,
                             ease: 'easeInOut',
                         }}
-                        style={{ bottom: '20%', right: '10%' }}
                     />
                 </motion.div>
             )}

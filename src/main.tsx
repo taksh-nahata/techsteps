@@ -18,7 +18,7 @@ import { AccessibilityProvider } from './contexts/AccessibilityContext';
 //   errorLogger.logError(error, 'Security services initialization failed');
 // });
 
-import TileWaveLoader from './components/layout/TileWaveLoader';
+import AppLoader from './components/layout/AppLoader';
 
 // Initialize performance monitoring before app starts
 const appStartTime = performance.now();
@@ -26,7 +26,7 @@ const appStartTime = performance.now();
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ErrorBoundary onError={(error, errorInfo) => console.error('React Error:', error, errorInfo)}>
-      <Suspense fallback={<TileWaveLoader />}>
+      <Suspense fallback={<AppLoader compact />}>
         <AccessibilityProvider>
           <TranslationAnimationProvider>
             <AuthProvider>

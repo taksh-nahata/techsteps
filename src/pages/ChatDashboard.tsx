@@ -1,17 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useUser } from '../contexts/UserContext';
 import { useAuth } from '../contexts/AuthContext';
 import { FlashcardStep, ConversationContext } from '../types/services';
 import { TroubleshootingGuide } from '../types/guides';
-import { Settings } from 'lucide-react';
+import { Settings, BookOpen } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { LogOut } from 'lucide-react';
-import EnhancedAvatarCompanion from '../components/ai/EnhancedAvatarCompanion';
+import Logo from '../components/layout/Logo';
 import ChatInterface from '../components/ai/ChatInterface';
 import FlashcardPanel from '../components/ai/FlashcardPanel';
 import FlashcardLoader from '../components/ai/FlashcardLoader';
-import FollowUpQuestions from '../components/ai/FollowUpQuestions';
 import { ttsService } from '../services/TextToSpeechService';
 import { AvatarProvider, useAvatar } from '../contexts/AvatarContext';
 import { parseCommand } from '../utils/CommandParser';
@@ -19,14 +18,13 @@ import { MemoryService, Message } from '../services/MemoryService';
 import { LocalStorageService, Conversation } from '../services/LocalStorageService';
 import { StorageService } from '../services/StorageService';
 import { MistralService } from '../services/ai';
+import { guideToFlashcardSteps, resolveFlashcardStepsForDevice } from '../services/guideUtils';
+import { GuideDeviceType } from '../utils/deviceDetection';
+import { useUserDevice } from '../hooks/useUserDevice';
+import { sanitizeFlashcardSteps } from '../services/FlashcardImageService';
+import { GuideStorageService } from '../services/GuideStorageService';
 import { GoogleSpeechToTextService } from '../services/GoogleSpeechToTextService';
 import ChatHistorySidebar from '../components/ai/ChatHistorySidebar';
-
-declare global {
-  interface Window {
-    $crisp: any;
-  }
-}
 
 const ChatDashboardContent: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -37,9 +35,23 @@ const ChatDashboardContent: React.FC = () => {
 
   const [messages, setMessages] = useState<Message[]>([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [flashcardSteps, setFlashcardSteps] = useState<FlashcardStep[]>([]);
+  const userDevice = useUserDevice();
+  const [rawFlashcardSteps, setRawFlashcardSteps] = useState<FlashcardStep[]>([]);
+  const [viewDevice, setViewDevice] = useState<GuideDeviceType>(userDevice);
   const [showFlashcards, setShowFlashcards] = useState(false);
+  useEffect(() => {
+    setViewDevice(userDevice);
+  }, [userDevice]);
+
+  const flashcardSteps = useMemo(
+    () => resolveFlashcardStepsForDevice(rawFlashcardSteps, viewDevice),
+    [rawFlashcardSteps, viewDevice]
+  );
+
+  const [flashcardActiveStep, setFlashcardActiveStep] = useState(1);
   const [isGeneratingFlashcards, setIsGeneratingFlashcards] = useState(false);
+  const [generatingGuideMessageId, setGeneratingGuideMessageId] = useState<string | null>(null);
+  const [activeGuideId, setActiveGuideId] = useState<string | null>(null);
   const [currentTranscript, setCurrentTranscript] = useState('');
   const [lastUserMessage, setLastUserMessage] = useState('');
 
@@ -48,13 +60,14 @@ const ChatDashboardContent: React.FC = () => {
   const [translationMap, setTranslationMap] = useState<Record<string, string>>({});
   const [isTranslating, setIsTranslating] = useState(false);
   const [showOriginal, setShowOriginal] = useState(true);
+  const [activeConversationId, setActiveConversationId] = useState<string | null>(null);
 
   // Sync TTS events with Avatar Context
   useEffect(() => {
     ttsService.setCallbacks({
       onSpeakStart: () => setSpeaking(true),
       onSpeakEnd: () => setSpeaking(false),
-      onAudioLevel: (_level) => { /* Optional: visualization logic */ }
+      onAudioLevel: () => { /* Reserved for future audio visualization */ }
     });
   }, [setSpeaking]);
 
@@ -90,62 +103,81 @@ const ChatDashboardContent: React.FC = () => {
     loadData();
   }, [user, userData, t]);
 
-  // Save messages to local storage
+  // Save messages to local storage + keep conversation history in sync
   useEffect(() => {
-    if (user?.uid) {
-      LocalStorageService.saveChatHistory(user.uid, messages);
-    }
-  }, [messages, user?.uid]);
+    const userId = user?.uid;
+    if (!userId) return;
 
-  // Translate entire conversation when language changes
+    LocalStorageService.saveChatHistory(userId, messages);
+
+    const firstUser = messages.find((m) => m.sender === 'user');
+    if (!firstUser || messages.length < 2) return;
+
+    const timer = setTimeout(() => {
+      const convId = activeConversationId || `conv-${firstUser.id}`;
+      if (!activeConversationId) setActiveConversationId(convId);
+
+      const title = firstUser.content.slice(0, 80) || 'Chat';
+
+      setConversations((prev) => {
+        const existing = prev.find((c) => c.id === convId);
+        const conv: Conversation = {
+          id: convId,
+          title,
+          messages,
+          createdAt: existing?.createdAt || new Date().toISOString(),
+        };
+        const updated = [conv, ...prev.filter((c) => c.id !== convId)];
+        LocalStorageService.saveConversations(userId, updated);
+        return updated;
+      });
+    }, 350);
+
+    return () => clearTimeout(timer);
+  }, [messages, user?.uid, activeConversationId]);
+
+  // Translate only when user explicitly views translated mode (not on every message)
   useEffect(() => {
-    if (!messages || messages.length === 0) {
+    if (showOriginal || i18n.language === 'en' || messages.length === 0) {
       setTranslationMap({});
       return;
     }
 
+    let cancelled = false;
     const doTranslate = async () => {
       setIsTranslating(true);
       try {
         const mistralService = new MistralService();
-        const texts = messages.map(m => m.content);
+        const texts = messages.map((m) => m.content);
         const translated = await mistralService.translateTexts(texts, i18n.language);
+        if (cancelled) return;
         const map: Record<string, string> = {};
         for (let i = 0; i < messages.length; i++) {
           map[messages[i].id] = translated[i] || messages[i].content;
         }
         setTranslationMap(map);
-      } catch (e) {
-        console.warn('Conversation translation failed:', e);
-        setTranslationMap({});
+      } catch {
+        if (!cancelled) setTranslationMap({});
       } finally {
-        setIsTranslating(false);
+        if (!cancelled) setIsTranslating(false);
       }
     };
 
-    // Debounce small delays to avoid spam calls
-    const timer = setTimeout(() => {
-      doTranslate();
-    }, 300);
-    return () => clearTimeout(timer);
-  }, [i18n.language, messages]);
+    const timer = setTimeout(doTranslate, 500);
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
+  }, [i18n.language, showOriginal]);
 
   const handleNewChat = async () => {
-    const userId = user?.uid || 'guest';
     try {
-      if (messages && messages.length > 0) {
-        const first = messages.find(m => m.sender === 'user') || messages[0];
-        const title = first ? (first.content.slice(0, 80) || new Date().toLocaleString()) : new Date().toLocaleString();
-        const conv: Conversation = {
-          id: `conv-${Date.now()}`,
-          title,
-          messages,
-          createdAt: new Date().toISOString()
-        };
-        LocalStorageService.saveConversation(userId, conv);
-        setConversations(prev => [conv, ...prev]);
-      }
       setMessages([]);
+      setActiveConversationId(null);
+      setShowFlashcards(false);
+      setRawFlashcardSteps([]);
+      setActiveGuideId(null);
+      setLastUserMessage('');
     } catch (e) {
       console.error('handleNewChat error:', e);
     }
@@ -156,8 +188,24 @@ const ChatDashboardContent: React.FC = () => {
   const _closeHistory = () => setShowHistory(false);
 
   const loadConversation = (conv: Conversation) => {
-    setMessages(conv.messages.map(m => ({ ...m, timestamp: new Date(m.timestamp) })));
+    setMessages(conv.messages.map((m) => ({ ...m, timestamp: new Date(m.timestamp) })));
+    setActiveConversationId(conv.id);
     setShowHistory(false);
+    setShowFlashcards(false);
+    setActiveGuideId(null);
+    setRawFlashcardSteps([]);
+  };
+
+  const handleOpenGuide = (guideId: string) => {
+    const userId = user?.uid;
+    if (!userId) return;
+    const guide = GuideStorageService.get(userId, guideId);
+    if (!guide) return;
+    setActiveGuideId(guideId);
+    setRawFlashcardSteps(guide.steps);
+    setViewDevice(userDevice);
+    setFlashcardActiveStep(1);
+    setShowFlashcards(true);
   };
 
   const deleteConversation = (id: string) => {
@@ -165,6 +213,10 @@ const ChatDashboardContent: React.FC = () => {
     const filtered = conversations.filter(c => c.id !== id);
     setConversations(filtered);
     LocalStorageService.saveConversations(userId, filtered);
+    if (activeConversationId === id) {
+      setActiveConversationId(null);
+      setMessages([]);
+    }
   };
 
   const handleSendMessage = async (messageContent: string, attachments: File[] = []) => {
@@ -190,21 +242,6 @@ const ChatDashboardContent: React.FC = () => {
     }
 
     try {
-      // Topic detection: ask Mistral whether this is a new topic
-      try {
-        const mistralService = new MistralService();
-        const prevContents = messages.map(m => m.content);
-        const topicChanged = await mistralService.detectTopicChange(prevContents, messageContent);
-        if (topicChanged) {
-          const proceed = window.confirm(t('chat.moveTopicPrompt', 'This looks like a new topic. Start a new chat?'));
-          if (proceed) {
-            await handleNewChat();
-          }
-        }
-      } catch (e) {
-        console.warn('Topic detection failed, continuing:', e);
-      }
-
       // 2. Add user message
       const userMessage: Message = {
         id: 'user-' + Date.now(),
@@ -239,20 +276,21 @@ const ChatDashboardContent: React.FC = () => {
         userSkillLevel: userData?.skillLevel || 'beginner',
         failureCount: 0,
         knownFacts: knownFacts,
-        // userId is not in ConversationContext type, and userData is optional
+        guideDeviceType: userDevice,
       };
 
       // Primary content generation
       const mistralResponse = await mistralService.sendMessage(messageContent, context);
 
+      const aiMessageId = 'ai-' + Date.now();
       const aiMessage: Message = {
-        id: 'ai-' + Date.now(),
+        id: aiMessageId,
         content: mistralResponse.content,
         sender: 'ai',
-        timestamp: new Date()
+        timestamp: new Date(),
       };
 
-      setMessages(prev => [...prev, aiMessage]);
+      setMessages((prev) => [...prev, aiMessage]);
       await MemoryService.saveMessage(userId, aiMessage);
 
       // 4. Save any extracted facts and user data to the database
@@ -267,12 +305,41 @@ const ChatDashboardContent: React.FC = () => {
         await MemoryService.saveUserData(userId, (mistralResponse as any).userData);
       }
 
-      // 5. Handle Flashcards
+      // 5. Handle Flashcards — persist guide + show card in chat (user opens panel on click)
       if (mistralResponse.flashcards && mistralResponse.flashcards.length > 0) {
-        setIsGeneratingFlashcards(false);
-        console.log('Displaying generated flashcards:', mistralResponse.flashcards);
-        setFlashcardSteps(mistralResponse.flashcards as FlashcardStep[]);
-        setShowFlashcards(true);
+        setIsGeneratingFlashcards(true);
+        setGeneratingGuideMessageId(aiMessageId);
+        const rawSteps = mistralResponse.flashcards as FlashcardStep[];
+        let cleaned = rawSteps;
+        try {
+          cleaned = await sanitizeFlashcardSteps(rawSteps);
+        } catch (imgErr) {
+          console.warn('Flashcard sanitize failed, using text-only steps:', imgErr);
+        } finally {
+          setIsGeneratingFlashcards(false);
+          setGeneratingGuideMessageId(null);
+        }
+
+        const guideId = `guide-${Date.now()}`;
+        const guideTitle =
+          messageContent.slice(0, 60) + (messageContent.length > 60 ? '…' : '') || 'Step-by-step guide';
+
+        GuideStorageService.save(userId, {
+          id: guideId,
+          messageId: aiMessageId,
+          title: guideTitle,
+          steps: cleaned,
+          createdAt: new Date().toISOString(),
+        });
+
+        const withGuide: Message = {
+          ...aiMessage,
+          guideId,
+          guideTitle,
+          guideStepCount: cleaned.length,
+        };
+        setMessages((prev) => prev.map((m) => (m.id === aiMessageId ? withGuide : m)));
+        await MemoryService.saveMessage(userId, withGuide);
 
         // ========== NEW: Save to Pending Review Workflow ==========
         // Only save if it's a fresh generation (not from cache)
@@ -284,14 +351,17 @@ const ChatDashboardContent: React.FC = () => {
             problemDescription: mistralResponse.content.slice(0, 200) + (mistralResponse.content.length > 200 ? '...' : ''),
             keywords: messageContent.toLowerCase().split(/\W+/).filter(w => w.length > 3),
             category: 'ai-chat',
-            steps: mistralResponse.flashcards.map((f: any) => ({
-              id: f.id,
-              title: f.title,
-              content: f.content,
-              image: f.image,
-              imageCaption: f.imageCaption,
-              annotations: f.annotations || []
-            })),
+            steps: mistralResponse.flashcards.map((f: any) => {
+              const step: Record<string, unknown> = {
+                id: f.id || `step-${Date.now()}`,
+                title: f.title || '',
+                content: f.content || '',
+              };
+              if (f.image) step.image = f.image;
+              if (f.imageCaption) step.imageCaption = f.imageCaption;
+              if (f.annotations?.length) step.annotations = f.annotations;
+              return step;
+            }),
             meta: {
               created: new Date().toISOString(),
               updated: new Date().toISOString(),
@@ -303,15 +373,9 @@ const ChatDashboardContent: React.FC = () => {
           };
           await MemoryService.savePendingGuide(newGuide);
         }
-      } else {
-        setShowFlashcards(false);
       }
 
-      // 6. Speak (use optimized spokenText if available)
-      const textToSpeak = mistralResponse.spokenText || mistralResponse.content;
-      if (textToSpeak) {
-        ttsService.speak(textToSpeak, { lang: i18n.language });
-      }
+      // Auto TTS disabled for now — voice will be reworked separately
 
     } catch (e: any) {
       console.error('Chat Error:', e);
@@ -321,19 +385,6 @@ const ChatDashboardContent: React.FC = () => {
       const errorMsg = e.message?.includes('429')
         ? "I'm a bit overwhelmed right now! Please try again in a few seconds."
         : randomEncouragement;
-
-      // Send error to Crisp
-      if (window.$crisp) {
-        const lastMessages = messages.slice(-3).map(m => `${m.sender}: ${m.content}`).join('\\n');
-        window.$crisp.push([
-          "do",
-          "message:send",
-          [
-            "text",
-            `User ${user?.uid} encountered an error: ${e.message}.\\n\\nRecent messages:\\n${lastMessages}`
-          ]
-        ]);
-      }
 
       setMessages(prev => [...prev, { id: 'err-' + Date.now(), content: errorMsg, sender: 'ai', timestamp: new Date() }]);
     } finally {
@@ -437,7 +488,7 @@ const ChatDashboardContent: React.FC = () => {
   };
 
   return (
-    <div className="h-screen w-full relative overflow-hidden bg-gradient-to-br from-indigo-50 via-purple-50 to-fuchsia-50">
+    <div className="h-screen w-full flex flex-col overflow-hidden bg-canvas text-ink">
       <ChatHistorySidebar
         conversations={conversations}
         isOpen={showHistory}
@@ -445,59 +496,75 @@ const ChatDashboardContent: React.FC = () => {
         onDelete={deleteConversation}
         onToggle={() => setShowHistory(!showHistory)}
       />
-      <div className="absolute top-0 w-full z-20 p-4 flex justify-between items-center">
-        <div className="glass-panel px-4 py-2 rounded-xl font-bold text-indigo-900">TechSteps AI</div>
+      <header className="shrink-0 w-full z-20 px-4 md:px-8 h-14 flex justify-between items-center border-b border-hairline bg-surface/90 backdrop-blur-md">
+        <Link to="/" className="flex items-center gap-2 focus-ring rounded-pill min-w-0" aria-label="TechSteps home">
+          <Logo size="md" showText responsiveText />
+          <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-ink-muted">AI</span>
+        </Link>
         <div className="flex items-center gap-2">
-          <Link to="/settings" className="p-2 bg-white/50 rounded-full">
-            <Settings className="w-6 h-6 text-gray-700" />
+          <Link to="/guide-editor" aria-label="Guide library" className="flex h-11 w-11 items-center justify-center rounded-full border border-hairline bg-surface text-ink hover:bg-subtle transition-colors focus-ring" title="Guide library">
+            <BookOpen className="w-5 h-5" />
           </Link>
-          <button onClick={handleLogout} className="p-2 bg-white/50 rounded-full hover:bg-white transition-colors">
-            <LogOut className="w-6 h-6 text-gray-700" />
+          <Link to="/settings" aria-label="Settings" className="flex h-11 w-11 items-center justify-center rounded-full border border-hairline bg-surface text-ink hover:bg-subtle transition-colors focus-ring">
+            <Settings className="w-5 h-5" />
+          </Link>
+          <button onClick={handleLogout} aria-label="Log out" className="flex h-11 w-11 items-center justify-center rounded-full border border-hairline bg-surface text-ink hover:bg-subtle transition-colors focus-ring">
+            <LogOut className="w-5 h-5" />
           </button>
         </div>
-      </div>
+      </header>
 
-      <div className="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-10 transform md:scale-100 scale-75 origin-bottom-left" title="Click me to use speech-to-text">
-        <EnhancedAvatarCompanion onAvatarClick={handleAvatarClick} />
-      </div>
-
-      <div className="h-full pt-18 pb-5 px-4 md:px-6 w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-4">
-        <div className={`flex-1 ml-40 glass-panel rounded-3xl overflow-hidden transition-all duration-500 ease-in-out ${showFlashcards ? 'md:flex-1' : 'w-full'}`}>
-          <div className="flex flex-col h-full">
-            <ChatInterface
-              messages={messages}
-              onSendMessage={handleSendMessage}
-              isLoading={isLoading}
-              isListening={avatarState.isListening}
-              currentTranscript={currentTranscript}
-              onNewChat={handleNewChat}
-              onOpenHistory={() => setShowHistory(!showHistory)}
-              translationMap={translationMap}
-              isTranslating={isTranslating}
-              showOriginal={showOriginal}
-              onToggleOriginal={() => setShowOriginal(!showOriginal)}
-            />
-            {!isLoading && messages.length > 0 && (
-              <div className="px-4 pb-4">
-                <FollowUpQuestions
-                  lastUserMessage={lastUserMessage}
-                  onQuestionClick={(question) => handleSendMessage(question)}
-                  isLoading={isLoading}
-                />
-              </div>
-            )}
-          </div>
+      <div className="flex-1 min-h-0 w-full flex flex-col lg:flex-row gap-3 md:gap-4 px-3 md:px-8 pb-3 md:pb-4">
+        <div className={`flex-1 min-h-0 min-w-0 surface-card rounded-card overflow-hidden flex flex-col ${showFlashcards ? 'lg:w-1/2' : 'w-full'}`}>
+          <ChatInterface
+            className="flex-1 min-h-0"
+            messages={messages}
+            onSendMessage={handleSendMessage}
+            isLoading={isLoading}
+            isListening={avatarState.isListening}
+            currentTranscript={currentTranscript}
+            onNewChat={handleNewChat}
+            onOpenHistory={() => setShowHistory(!showHistory)}
+            onAvatarClick={handleAvatarClick}
+            translationMap={translationMap}
+            isTranslating={isTranslating}
+            showOriginal={showOriginal}
+            onToggleOriginal={() => setShowOriginal(!showOriginal)}
+            lastUserMessage={lastUserMessage}
+            onFollowUpClick={(q) => handleSendMessage(q)}
+            showFollowUps={!showFlashcards}
+            guideStep={
+              showFlashcards && flashcardSteps.length > 0
+                ? { current: flashcardActiveStep, total: flashcardSteps.length }
+                : undefined
+            }
+            onOpenGuide={handleOpenGuide}
+            activeGuideId={activeGuideId}
+            generatingGuideMessageId={generatingGuideMessageId}
+            showFlashcardPanel={showFlashcards}
+          />
         </div>
 
-        {isGeneratingFlashcards && (
-          <div className="w-full md:flex-1 glass-panel rounded-3xl flex items-center justify-center min-h-[300px]">
-            <FlashcardLoader isVisible={true} message="Generating your guide..." />
-          </div>
-        )}
-
-        {showFlashcards && !isGeneratingFlashcards && (
-          <div className="w-full md:flex-1 glass-panel rounded-3xl p-4 animate-in slide-in-from-right duration-500 min-h-[300px]">
-            <FlashcardPanel steps={flashcardSteps} isVisible={true} onClose={() => setShowFlashcards(false)} />
+        {showFlashcards && (
+          <div className="flex-1 min-h-0 min-w-0 lg:w-1/2 surface-card rounded-card overflow-hidden">
+            {isGeneratingFlashcards || flashcardSteps.length === 0 ? (
+              <div className="h-full min-h-[280px] flex items-center justify-center">
+                <FlashcardLoader isVisible message="Preparing your visual guide…" />
+              </div>
+            ) : (
+              <FlashcardPanel
+                steps={flashcardSteps}
+                isVisible
+                deviceType={viewDevice}
+                onDeviceTypeChange={setViewDevice}
+                showDevicePicker
+                onClose={() => {
+                  setShowFlashcards(false);
+                  setActiveGuideId(null);
+                }}
+                onStepChange={setFlashcardActiveStep}
+              />
+            )}
           </div>
         )}
       </div>

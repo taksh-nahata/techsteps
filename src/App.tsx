@@ -17,7 +17,7 @@ import { GuideEditorPage } from './pages/GuideEditorPage';
 
 import ProtectedRoute from './components/routing/ProtectedRoute';
 import PublicRoute from './components/routing/PublicRoute';
-import TileWaveLoader from './components/layout/TileWaveLoader'; // Import Loader
+import AppLoader from './components/layout/AppLoader';
 import { PWAProvider } from './components/pwa/PWAProvider';
 // Main App component
 import { CookieManager } from './utils/cookieManager';
@@ -36,16 +36,9 @@ import './styles/globals.css';
 
 function App() {
   const { setIsTranslating } = useTranslationAnimation();
-  const [showSplash, setShowSplash] = React.useState(true);
-
   // Get authentication and user status
-  const { user, loading: authLoading } = useAuth();
+  const { user } = useAuth();
   const { hasCompletedOnboarding, loading: userLoading } = useUser();
-
-  // TileWaveLoader handles its own timing, just hide when it signals complete
-  const handleSplashComplete = React.useCallback(() => {
-    setShowSplash(false);
-  }, []);
 
   // Initialize performance optimizations
   usePerformanceOptimization({
@@ -114,16 +107,13 @@ function App() {
             onError={(error, errorInfo) => console.error('React Error:', error, errorInfo)}
           >
             <KeyboardNavigationManager>
-              {showSplash && <TileWaveLoader onComplete={handleSplashComplete} />}
-              <Router>
+              <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
                 <AccessibilityAnnouncer />
                 <GlobalSearch />
                 <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-100">
                   <Routes>
                     <Route path="/" element={
-                      (authLoading || userLoading) ? <div className="min-h-screen flex items-center justify-center">
-                        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-primary-500"></div>
-                      </div> :
+                      userLoading ? <AppLoader compact /> :
                         user && hasCompletedOnboarding ? <Navigate to="/dashboard" replace /> :
                           user && !hasCompletedOnboarding ? <Navigate to="/onboarding" replace /> :
                             <LandingPage />

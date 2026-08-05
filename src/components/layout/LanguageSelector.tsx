@@ -101,7 +101,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
       <button
         onClick={() => setIsOpen(!isOpen)}
         onKeyDown={handleKeyDown}
-        className="w-full flex items-center justify-between px-4 py-3 bg-white border border-gray-200 rounded-xl hover:border-indigo-400 hover:ring-2 hover:ring-indigo-100 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        className="w-full flex items-center justify-between px-4 py-3 bg-surface border border-hairline rounded-xl hover:border-brand/40 transition-all duration-200 focus-ring"
         aria-label={t('language.select')}
         aria-expanded={isOpen}
         aria-haspopup="listbox"
@@ -111,12 +111,12 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
           <span className="text-xl" role="img" aria-label="flag">
             {languageFlags[i18n.language] || '🌐'}
           </span>
-          <span className="font-medium text-gray-700">
+          <span className="font-medium text-ink">
             {currentLanguage?.nativeName || 'English'}
-            <span className="text-gray-400 text-sm ml-2 font-normal">({currentLanguage?.code.toUpperCase()})</span>
+            <span className="text-ink-muted text-sm ml-2 font-normal">({currentLanguage?.code.toUpperCase()})</span>
           </span>
         </div>
-        <ChevronDown className={`w-5 h-5 text-gray-400 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+        <ChevronDown className={`w-5 h-5 text-ink-muted transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
       </button>
 
       {isOpen && (
@@ -130,13 +130,13 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
 
           {/* Dropdown */}
           <div
-            className="absolute top-full left-0 mt-2 w-80 bg-white rounded-xl shadow-2xl border border-gray-200 z-50 max-h-96 overflow-hidden"
+            className="absolute top-full left-0 mt-2 w-80 bg-surface rounded-xl shadow-micro border border-hairline z-50 max-h-96 overflow-hidden"
             role="listbox"
             aria-label={t('language.select')}
           >
-            <div className="p-4 border-b border-gray-100 bg-gray-50 flex flex-col gap-3 sticky top-0 z-10">
+            <div className="p-4 border-b border-hairline bg-canvas flex flex-col gap-3 sticky top-0 z-10">
               <div className="flex items-center justify-between">
-                <h3 className="text-sm font-semibold text-gray-800 flex items-center">
+                <h3 className="text-sm font-semibold text-ink flex items-center">
                   <Globe className="w-4 h-4 mr-2" />
                   {t('language.select')}
                 </h3>
@@ -145,7 +145,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
                 <input
                   type="text"
                   placeholder={t('language.searchPlaceholder', 'Search language...')}
-                  className="w-full pl-9 pr-4 py-2 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                  className="w-full pl-9 pr-4 py-2 glass-input rounded-lg text-sm focus-ring"
                   autoFocus
                   onClick={(e) => e.stopPropagation()}
                   onChange={(e) => {
@@ -159,7 +159,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
                     setSearchQuery(val);
                   }}
                 />
-                <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+                <div className="absolute left-3 top-1/2 -translate-y-1/2 text-ink-muted">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                 </div>
               </div>
@@ -170,8 +170,8 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
                 <button
                   key={lang.code}
                   onClick={() => handleLanguageChange(lang.code)}
-                  className={`w-full px-4 py-3 text-left transition-colors flex items-center justify-between group focus:outline-none 
-                    ${i18n.language === lang.code ? 'bg-blue-50 text-blue-700 border-r-4 border-blue-500' : 'text-gray-700 hover:bg-gray-50 focus:bg-blue-50'}
+                  className={`w-full px-4 py-3 text-left transition-colors flex items-center justify-between group focus-ring 
+                    ${i18n.language === lang.code ? 'bg-brand-soft text-brand border-r-4 border-brand' : 'text-ink hover:bg-subtle'}
                   `}
                   role="option"
                   aria-selected={i18n.language === lang.code}
@@ -181,28 +181,28 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
                       {languageFlags[lang.code] || '🌐'}
                     </span>
                     <div>
-                      <div className={`font-medium ${i18n.language === lang.code ? 'text-blue-800' : 'text-gray-800'}`}>
+                      <div className={`font-medium ${i18n.language === lang.code ? 'text-brand-strong' : 'text-ink'}`}>
                         {lang.nativeName}
                       </div>
-                      <div className={`text-xs ${i18n.language === lang.code ? 'text-blue-600' : 'text-gray-500'}`}>
+                      <div className={`text-xs ${i18n.language === lang.code ? 'text-brand' : 'text-ink-muted'}`}>
                         {lang.name} • {lang.code.toUpperCase()}
-                        {lang.rtl && <span className="ml-2 px-1.5 py-0.5 bg-gray-100 text-gray-600 rounded text-[10px] font-medium border border-gray-200">RTL</span>}
+                        {lang.rtl && <span className="ml-2 px-1.5 py-0.5 bg-subtle text-ink-muted rounded text-[10px] font-medium border border-hairline">RTL</span>}
                       </div>
                     </div>
                   </div>
                   {i18n.language === lang.code && (
-                    <Check className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                    <Check className="w-5 h-5 text-brand flex-shrink-0" />
                   )}
                 </button>
               )) : (
-                <div className="py-8 text-center text-gray-500 text-sm">
+                <div className="py-8 text-center text-ink-muted text-sm">
                   <p>No languages found</p>
                 </div>
               )}
             </div>
 
-            <div className="p-3 border-t border-gray-100 bg-gray-50">
-              <p className="text-xs text-gray-500 text-center">
+            <div className="p-3 border-t border-hairline bg-canvas">
+              <p className="text-xs text-ink-muted text-center">
                 {t('languageSelector.moreComingSoon')}
               </p>
             </div>

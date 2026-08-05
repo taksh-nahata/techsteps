@@ -6,69 +6,179 @@ import {
     HelpContent,
     PageContext
 } from '../../types/services';
-import { FALLBACK_CONFIG, GLOBAL_SYSTEM_PROMPT } from './config';
+import { FALLBACK_CONFIG, DEFAULT_GEMINI_CONFIG, GROQ_CONFIG, GLOBAL_SYSTEM_PROMPT } from './config';
 import { parseAIJSONResponse } from './responseParser';
 import { guideMatchingService } from '../GuideMatchingService';
 import { imageLibraryService } from '../ImageLibraryService';
+import { guideToFlashcardSteps } from '../guideUtils';
+import { detectGuideDevice, GuideDeviceType } from '../../utils/deviceDetection';
+
+type ChatMessage = { role: 'system' | 'user' | 'assistant'; content: string };
 
 export class MistralService implements AIService {
     private apiKey: string;
     private model: string;
+    private groqKey: string;
+    private groqModel: string;
+    private geminiKey: string;
+    private geminiModel: string;
     private conversationHistory: Map<string, AIMessage[]> = new Map();
 
     constructor(apiKey?: string, model?: string) {
+        this.groqKey = GROQ_CONFIG.apiKey;
+        this.groqModel = GROQ_CONFIG.model;
         this.apiKey = apiKey || FALLBACK_CONFIG.mistralKey;
         this.model = model || FALLBACK_CONFIG.mistralModel;
-        if (!this.apiKey) {
-            console.warn('MistralService initialized without an API key. Set VITE_MISTRAL_API_KEY in your env to enable AI features.');
+        this.geminiKey = DEFAULT_GEMINI_CONFIG.apiKey;
+        this.geminiModel = 'gemini-flash-latest';
+        if (!this.groqKey && !this.apiKey && !this.geminiKey) {
+            console.warn('No AI keys configured. Set VITE_GROQ_API_KEY (primary), or VITE_MISTRAL_API_KEY / VITE_GEMINI_API_KEY.');
         }
     }
 
-    // Simple raw message to Mistral without JSON parsing (used for follow-up question generation)
-    async sendRawMessage(message: string, systemPrompt: string, options?: { maxTokens?: number }): Promise<string> {
-        try {
-            const response = await fetch('https://api.mistral.ai/v1/chat/completions', {
-                method: 'POST',
-                headers: {
-                    'Authorization': `Bearer ${this.apiKey}`,
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    model: this.model,
-                    messages: [
-                        { role: 'system', content: systemPrompt },
-                        { role: 'user', content: message }
-                    ],
-                    max_tokens: options?.maxTokens || 500
-                })
-            });
+    /** Groq — primary provider (OpenAI-compatible). */
+    private async groqCompletion(
+        messages: ChatMessage[],
+        maxTokens = GROQ_CONFIG.maxTokens,
+        jsonMode = false
+    ): Promise<string> {
+        if (!this.groqKey) throw new Error('No Groq API key; set VITE_GROQ_API_KEY.');
 
-            if (!response.ok) {
-                let errBody: any = null;
-                try {
-                    errBody = await response.json();
-                } catch (jsonErr) {
-                    try {
-                        errBody = await response.text();
-                    } catch (txtErr) {
-                        errBody = response.statusText;
-                    }
-                }
-                const statusMsg = `Status ${response.status} ${response.statusText}`;
-                const detail = typeof errBody === 'string' ? errBody : JSON.stringify(errBody);
-                throw new Error(`Mistral API Error: ${statusMsg} - ${detail}`);
-            }
+        const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+            method: 'POST',
+            headers: {
+                Authorization: `Bearer ${this.groqKey}`,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                model: this.groqModel,
+                messages,
+                max_tokens: maxTokens,
+                temperature: GROQ_CONFIG.temperature,
+                ...(jsonMode ? { response_format: { type: 'json_object' } } : {}),
+            }),
+        });
 
-            const data = await response.json();
-            const contentText = data?.choices?.[0]?.message?.content;
-            if (!contentText) {
-                throw new Error('Mistral API returned unexpected response shape');
-            }
-            return contentText;
-        } catch (error) {
-            console.error('Mistral sendRawMessage Error:', error);
-            throw error;
+        if (!res.ok) {
+            const detail = await res.text().catch(() => res.statusText);
+            throw new Error(`Groq API Error: ${res.status} - ${detail}`);
         }
+
+        const data = await res.json();
+        const text = data?.choices?.[0]?.message?.content;
+        if (!text) throw new Error('Groq returned empty content');
+        return text;
+    }
+
+    /** Provider chain: Groq → Mistral → Gemini. */
+    private async chatCompletion(
+        systemContent: string,
+        history: Array<{ role: string; content: string }>,
+        userMessage: string,
+        maxTokens?: number,
+        jsonMode = false
+    ): Promise<{ text: string; provider: string; model: string }> {
+        const messages: ChatMessage[] = [
+            { role: 'system', content: systemContent },
+            ...history.map((m) => ({
+                role: (m.role === 'assistant' ? 'assistant' : 'user') as 'user' | 'assistant',
+                content: m.content,
+            })),
+            { role: 'user', content: userMessage },
+        ];
+
+        if (this.groqKey) {
+            try {
+                const text = await this.groqCompletion(messages, maxTokens || GROQ_CONFIG.maxTokens, jsonMode);
+                return { text, provider: 'Groq', model: this.groqModel };
+            } catch (e) {
+                console.warn('Groq failed, trying next provider:', e);
+            }
+        }
+
+        if (this.apiKey) {
+            try {
+                const response = await fetch('https://api.mistral.ai/v1/chat/completions', {
+                    method: 'POST',
+                    headers: {
+                        Authorization: `Bearer ${this.apiKey}`,
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        model: this.model,
+                        messages,
+                        max_tokens: maxTokens || 2048,
+                    }),
+                });
+                if (!response.ok) throw new Error(`Mistral ${response.status}`);
+                const data = await response.json();
+                const text = data?.choices?.[0]?.message?.content;
+                if (!text) throw new Error('Mistral empty response');
+                return { text, provider: 'Mistral AI', model: this.model };
+            } catch (e) {
+                console.warn('Mistral failed, trying Gemini:', e);
+            }
+        }
+
+        const text = await this.geminiCompletion(systemContent, history, userMessage, maxTokens);
+        return { text, provider: 'Google Gemini', model: this.geminiModel };
+    }
+
+    /**
+     * Google Gemini completion used as a fallback provider.
+     * Maps the OpenAI-style {role, content} history into Gemini's contents format.
+     */
+    private async geminiCompletion(
+        systemContent: string,
+        history: Array<{ role: string; content: string }>,
+        userMessage: string,
+        maxTokens?: number
+    ): Promise<string> {
+        if (!this.geminiKey) {
+            throw new Error('No Gemini API key configured for fallback (set VITE_GEMINI_API_KEY).');
+        }
+
+        const contents = [
+            ...history.map(m => ({
+                role: m.role === 'assistant' || m.role === 'model' ? 'model' : 'user',
+                parts: [{ text: m.content }]
+            })),
+            { role: 'user', parts: [{ text: userMessage }] }
+        ];
+
+        const res = await fetch(
+            `https://generativelanguage.googleapis.com/v1beta/models/${this.geminiModel}:generateContent?key=${this.geminiKey}`,
+            {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    systemInstruction: { parts: [{ text: systemContent }] },
+                    contents,
+                    generationConfig: maxTokens ? { maxOutputTokens: maxTokens } : undefined
+                })
+            }
+        );
+
+        if (!res.ok) {
+            let errBody: any = null;
+            try { errBody = await res.json(); } catch { errBody = await res.text().catch(() => res.statusText); }
+            const detail = typeof errBody === 'string' ? errBody : JSON.stringify(errBody);
+            throw new Error(`Gemini API Error: Status ${res.status} ${res.statusText} - ${detail}`);
+        }
+
+        const data = await res.json();
+        const text = data?.candidates?.[0]?.content?.parts?.map((p: any) => p.text).join('') || '';
+        if (!text) {
+            throw new Error('Gemini API returned an unexpected response shape: ' + JSON.stringify(data).slice(0, 200));
+        }
+        return text;
+    }
+
+    // Simple raw message without JSON parsing (used for follow-up question generation).
+    // Tries Mistral first, automatically falls back to Gemini on missing key / error.
+    async sendRawMessage(message: string, systemPrompt: string, options?: { maxTokens?: number }): Promise<string> {
+        const { text } = await this.chatCompletion(systemPrompt, [], message, options?.maxTokens || 500);
+        return text;
     }
 
     async sendMessage(message: string, context: ConversationContext): Promise<AIResponse> {
@@ -79,22 +189,18 @@ export class MistralService implements AIService {
         if (existingMatch && existingMatch.score > 0.6) {
             console.log(`📚 [Mistral] Found matching guide: "${existingMatch.guide.title}" (${Math.round(existingMatch.score * 100)}% match)`);
 
-            // Convert existing guide to flashcard format
-            const flashcards = existingMatch.guide.steps.map((step, index) => {
-                // Try to find matching images for this step
+            const device: GuideDeviceType =
+              (context.guideDeviceType as GuideDeviceType) || detectGuideDevice();
+
+            const flashcards = guideToFlashcardSteps(existingMatch.guide, device).map((card, index) => {
+                const step = existingMatch.guide.steps[index];
                 const suggestedImages = imageLibraryService.suggestImagesForStep(step.content, step.title);
                 const imageUrl = step.image || (suggestedImages.length > 0 ? suggestedImages[0].imageUrl : undefined);
 
                 return {
-                    id: step.id || `step-${index + 1}`,
-                    stepNumber: index + 1,
-                    title: step.title,
-                    content: step.content,
-                    instructions: step.content.split('. ').filter((s: string) => s.length > 10),
-                    audioScript: `Step ${index + 1}: ${step.title}. ${step.content}`,
-                    estimatedDuration: 30,
-                    image: imageUrl,
-                    imageCaption: step.imageCaption
+                    ...card,
+                    image: imageUrl ?? card.image,
+                    imageCaption: step.imageCaption ?? card.imageCaption,
                 };
             });
 
@@ -136,51 +242,12 @@ export class MistralService implements AIService {
                 }
             }
 
-            const response = await fetch('https://api.mistral.ai/v1/chat/completions', {
-                method: 'POST',
-                headers: {
-                    'Authorization': `Bearer ${this.apiKey}`,
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    model: this.model,
-                    messages: [
-                        { role: 'system', content: GLOBAL_SYSTEM_PROMPT + '\n' + factsPrefix },
-                        ...this.getHistoryForMistral(context),
-                        { role: 'user', content: message }
-                    ]
-                })
-            });
+            const systemContent = GLOBAL_SYSTEM_PROMPT + '\n' + factsPrefix;
+            const history = this.getHistoryForMistral(context);
 
-            if (!response.ok) {
-                // Try to parse JSON error, but fallback to text if the response isn't JSON
-                let errBody: any = null;
-                try {
-                    errBody = await response.json();
-                } catch (jsonErr) {
-                    try {
-                        errBody = await response.text();
-                    } catch (txtErr) {
-                        errBody = response.statusText;
-                    }
-                }
-
-                const statusMsg = `Status ${response.status} ${response.statusText}`;
-                const detail = typeof errBody === 'string' ? errBody : JSON.stringify(errBody);
-                throw new Error(`Mistral API Error: ${statusMsg} - ${detail}`);
-            }
-
-            const data = await response.json();
-            // Be defensive about response shape
-            let contentText: string | undefined;
-            try {
-                contentText = data?.choices?.[0]?.message?.content || data?.output?.[0]?.content || data?.content || (typeof data === 'string' ? data : undefined);
-            } catch (e) {
-                contentText = undefined;
-            }
-            if (!contentText) {
-                throw new Error('Mistral API returned an unexpected response shape: ' + JSON.stringify(data).slice(0, 200));
-            }
+            const { text: contentText, provider: usedProvider, model: usedModel } =
+                await this.chatCompletion(systemContent, history, message, GROQ_CONFIG.maxTokens, true);
+            const usedTokens = 0;
 
             // Parse JSON response using unified parser
             const parsed = parseAIJSONResponse(contentText);
@@ -200,9 +267,9 @@ export class MistralService implements AIService {
                 flashcards: parsed.flashcards,
                 metadata: {
                     processingTime,
-                    model: this.model,
-                    tokens: data.usage?.total_tokens || data?.usage?.total_tokens || 0,
-                    sources: ['Mistral AI'].concat(performedSearchResults.length ? ['WebSearch(DuckDuckGo)'] : [])
+                    model: usedModel,
+                    tokens: usedTokens,
+                    sources: [usedProvider].concat(performedSearchResults.length ? ['WebSearch(DuckDuckGo)'] : [])
                 }
             };
         } catch (error) {
@@ -212,43 +279,16 @@ export class MistralService implements AIService {
     }
 
     // New: detect whether a new incoming message changes topic compared to previous messages.
-    async detectTopicChange(prevMessages: string[], newMessage: string): Promise<boolean> {
-        try {
-            const prompt = `
-You are a topic-detection assistant. Given the previous conversation messages and a new user message, answer ONLY "YES" or "NO" (uppercase) indicating whether the new message starts a new topic or thread compared to the previous messages.
-
-Previous messages:
-${prevMessages.map((m, i) => `${i + 1}. ${m}`).join('\n')}
-
-New message:
-${newMessage}
-
-Answer with a single word: YES or NO.
-`;
-            const raw = await this.sendRawMessage(prompt, GLOBAL_SYSTEM_PROMPT, { maxTokens: 30 });
-            if (!raw) return false;
-            const normalized = raw.trim().toUpperCase();
-            if (normalized.startsWith('YES')) return true;
-            if (normalized.startsWith('NO')) return false;
-            if (/YES/i.test(raw)) return true;
-            if (/NO/i.test(raw)) return false;
-            return false;
-        } catch (e) {
-            console.warn('detectTopicChange failed defensively:', e);
-            return false;
-        }
+    async detectTopicChange(_prevMessages: string[], _newMessage: string): Promise<boolean> {
+        return false;
     }
 
     // New: translate array of texts to target language and return array of translated strings.
     async translateTexts(texts: string[], targetLang: string): Promise<string[]> {
+        if (!targetLang || targetLang === 'en') return texts;
         try {
-            const instruction = `
-Translate the following JSON array of strings into ${targetLang}. Respond with a JSON array of translated strings only (no extra commentary).
-
-Input:
-${JSON.stringify(texts)}
-`;
-            const raw = await this.sendRawMessage(instruction, GLOBAL_SYSTEM_PROMPT, { maxTokens: 1000 });
+            const instruction = `Translate this JSON array into ${targetLang}. Return ONLY a JSON array of strings.\n${JSON.stringify(texts)}`;
+            const raw = await this.sendRawMessage(instruction, 'You are a translator. Output JSON array only.', { maxTokens: 800 });
             const jsonStart = raw.indexOf('[');
             const jsonEnd = raw.lastIndexOf(']');
             if (jsonStart >= 0 && jsonEnd >= 0 && jsonEnd > jsonStart) {

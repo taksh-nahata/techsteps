@@ -249,6 +249,8 @@ export interface ConversationContext {
   previousQuestions?: string[];
   failureCount: number;
   knownFacts?: string[]; // Add this
+  /** User's device for device-specific guide directions */
+  guideDeviceType?: string;
 }
 
 export interface AIResponse {

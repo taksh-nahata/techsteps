@@ -13,12 +13,26 @@ export default {
     extend: {
       // Font family configuration
       fontFamily: {
-        'sans': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'sans-serif'],
-        'display': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-        'body': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        'sans': ['Inter', 'Geist', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        'display': ['Plus Jakarta Sans', 'Geist', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        'body': ['Inter', 'Geist', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
       // Senior-friendly design tokens
       colors: {
+        // Premium editorial palette (mapped to CSS variables in index.css)
+        canvas: 'var(--bg-canvas)',
+        surface: 'var(--bg-surface)',
+        subtle: 'var(--bg-subtle)',
+        ink: {
+          DEFAULT: 'var(--text-primary)',
+          muted: 'var(--text-muted)',
+        },
+        brand: {
+          DEFAULT: 'var(--brand-accent)',
+          strong: 'var(--brand-accent-strong)',
+          soft: 'var(--brand-accent-soft)',
+        },
+        hairline: 'var(--border-subtle)',
         // High contrast color palette with 4.5:1 minimum ratios
         primary: {
           50: '#eff6ff',
@@ -143,9 +157,12 @@ export default {
         'senior': '12px',
         'senior-lg': '16px',
         'senior-xl': '20px',
+        'card': '16px',
+        'pill': '9999px',
       },
       // Enhanced shadows for better depth perception
       boxShadow: {
+        'micro': 'var(--shadow-micro)',
         'senior': '0 2px 8px -2px rgba(0, 0, 0, 0.1), 0 4px 12px -4px rgba(0, 0, 0, 0.1)',
         'senior-md': '0 4px 12px -2px rgba(0, 0, 0, 0.12), 0 8px 16px -4px rgba(0, 0, 0, 0.08)',
         'senior-lg': '0 8px 24px -4px rgba(0, 0, 0, 0.15), 0 12px 20px -8px rgba(0, 0, 0, 0.1)',

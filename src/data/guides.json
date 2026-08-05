@@ -1,1 +1,145 @@
-[]
+[
+  {
+    "id": "guide-connect-wifi",
+    "title": "Connect to Wi‑Fi",
+    "problemDescription": "Join a wireless network on your phone, tablet, or computer.",
+    "keywords": ["wifi", "wireless", "internet", "network", "connect"],
+    "category": "wifi",
+    "steps": [
+      {
+        "id": "wifi-1",
+        "title": "Open network settings",
+        "content": "Open your device's Wi‑Fi settings.",
+        "directionsByDevice": {
+          "iphone": ["Open Settings, then tap Wi‑Fi."],
+          "ipad": ["Open Settings, then tap Wi‑Fi."],
+          "android-phone": ["Open Settings → Network & internet → Internet."],
+          "android-tablet": ["Open Settings → Network & internet → Internet."],
+          "windows": ["Click the Wi‑Fi icon in the taskbar (bottom-right)."],
+          "mac": ["Open Apple menu → System Settings → Wi‑Fi."],
+          "chromebook": ["Click the time in the bottom-right, then click the Wi‑Fi icon."]
+        }
+      },
+      {
+        "id": "wifi-2",
+        "title": "Choose your network",
+        "content": "Select your home network from the list.",
+        "directionsByDevice": {
+          "all": [
+            "Look for your network name (often on a sticker on your router).",
+            "Tap or click the network name.",
+            "Wait a moment for it to connect."
+          ]
+        }
+      },
+      {
+        "id": "wifi-3",
+        "title": "Enter the password",
+        "content": "Type the Wi‑Fi password if asked.",
+        "directionsByDevice": {
+          "all": [
+            "Enter the password carefully — passwords are case-sensitive.",
+            "Tap Join, Connect, or OK.",
+            "You should see a checkmark or \"Connected\" when it works."
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T00:00:00.000Z",
+      "updated": "2026-01-01T00:00:00.000Z",
+      "source": "manual",
+      "confidenceScore": 1,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "guide-screenshot-iphone",
+    "title": "Take a screenshot on iPhone",
+    "problemDescription": "Capture what's on your iPhone screen and find the photo afterward.",
+    "keywords": ["screenshot", "iphone", "ios", "capture", "screen"],
+    "category": "ios",
+    "steps": [
+      {
+        "id": "ss-1",
+        "title": "Press the buttons",
+        "content": "Use the side button and volume up together.",
+        "directionsByDevice": {
+          "iphone": [
+            "Open the screen you want to capture.",
+            "Press the Side button and Volume Up at the same time.",
+            "Release quickly — the screen will flash."
+          ],
+          "ipad": [
+            "Open the screen you want to capture.",
+            "Press the Top button and Volume Up at the same time.",
+            "Release quickly — the screen will flash."
+          ]
+        }
+      },
+      {
+        "id": "ss-2",
+        "title": "Find your screenshot",
+        "content": "Open the Photos app to view it.",
+        "directionsByDevice": {
+          "iphone": [
+            "Tap the thumbnail in the bottom-left corner (if it appears), or",
+            "Open Photos → Albums → Screenshots.",
+            "Tap the image to view or share it."
+          ],
+          "ipad": [
+            "Tap the thumbnail in the bottom-left corner (if it appears), or",
+            "Open Photos → Albums → Screenshots.",
+            "Tap the image to view or share it."
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T00:00:00.000Z",
+      "updated": "2026-01-01T00:00:00.000Z",
+      "source": "manual",
+      "confidenceScore": 1,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "guide-text-size",
+    "title": "Make text bigger on your phone",
+    "problemDescription": "Increase text size for easier reading on iPhone or Android.",
+    "keywords": ["text", "size", "font", "read", "display", "accessibility"],
+    "category": "general",
+    "steps": [
+      {
+        "id": "text-1",
+        "title": "Open display settings",
+        "content": "Go to your phone's display or accessibility settings.",
+        "directionsByDevice": {
+          "iphone": ["Open Settings → Display & Brightness → Text Size."],
+          "ipad": ["Open Settings → Display & Brightness → Text Size."],
+          "android-phone": ["Open Settings → Display → Font size (wording may vary by brand)."],
+          "android-tablet": ["Open Settings → Display → Font size (wording may vary by brand)."]
+        }
+      },
+      {
+        "id": "text-2",
+        "title": "Adjust the slider",
+        "content": "Move the slider until text looks comfortable.",
+        "directionsByDevice": {
+          "all": [
+            "Drag the slider toward the larger end.",
+            "Check the sample text on screen as you adjust.",
+            "Leave settings — changes apply immediately."
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "created": "2026-01-01T00:00:00.000Z",
+      "updated": "2026-01-01T00:00:00.000Z",
+      "source": "manual",
+      "confidenceScore": 1,
+      "difficulty": "Easy"
+    }
+  }
+]

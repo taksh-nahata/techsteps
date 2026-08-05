@@ -1,7 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, MessageSquare, Users, Plus, Search, ThumbsUp, Reply, Flag, Clock } from 'lucide-react';
+import { motion } from 'framer-motion';
+import {
+  ArrowLeft,
+  MessageSquare,
+  Plus,
+  Search,
+  ThumbsUp,
+  Clock,
+  X,
+} from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
+import Logo from '../components/layout/Logo';
 
 interface Post {
   id: string;
@@ -22,342 +32,277 @@ interface PostReply {
   likes: number;
 }
 
+const STORAGE_KEY = 'communityPosts';
+
 const Community: React.FC = () => {
   const { t } = useTranslation();
   const [posts, setPosts] = useState<Post[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [showNewPostForm, setShowNewPostForm] = useState(false);
-  const [newPost, setNewPost] = useState({
-    title: '',
-    content: '',
-    category: 'general'
-  });
+  const [newPost, setNewPost] = useState({ title: '', content: '', category: 'general' });
 
-  // Scroll to top when component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
-
-    // Load posts from localStorage if available
-    const savedPosts = localStorage.getItem('communityPosts');
-    if (savedPosts) {
-      const parsedPosts = JSON.parse(savedPosts).map((post: any) => ({
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (!saved) return;
+    try {
+      const parsed = JSON.parse(saved).map((post: Post) => ({
         ...post,
         timestamp: new Date(post.timestamp),
-        replies: post.replies.map((reply: any) => ({
-          ...reply,
-          timestamp: new Date(reply.timestamp)
-        }))
+        replies: (post.replies || []).map((r: PostReply) => ({
+          ...r,
+          timestamp: new Date(r.timestamp),
+        })),
       }));
-      setPosts(parsedPosts);
+      setPosts(parsed);
+    } catch {
+      localStorage.removeItem(STORAGE_KEY);
     }
   }, []);
 
-  const categories = [
-    { id: 'all', name: t('community.sidebar.topics.all'), icon: '📋' },
-    { id: 'general', name: t('community.sidebar.topics.general'), icon: '❓' },
-    { id: 'mobile', name: t('community.sidebar.topics.mobile'), icon: '📱' },
-    { id: 'computer', name: t('community.sidebar.topics.computer'), icon: '💻' },
-    { id: 'apps', name: t('community.sidebar.topics.apps'), icon: '📱' },
-    { id: 'internet', name: t('community.sidebar.topics.internet'), icon: '🌐' },
-    { id: 'safety', name: t('community.sidebar.topics.safety'), icon: '🔒' }
-  ];
+  useEffect(() => {
+    if (posts.length === 0) return;
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(posts));
+  }, [posts]);
 
-  // Profanity filter - simple word list
-  const profanityFilter = (text: string): boolean => {
-    const badWords = ['spam', 'scam', 'inappropriate']; // Add more as needed
-    const lowerText = text.toLowerCase();
-    return badWords.some(word => lowerText.includes(word));
-  };
+  const categories = [
+    { id: 'all', name: t('community.sidebar.topics.all', 'All topics'), icon: '📋' },
+    { id: 'general', name: t('community.sidebar.topics.general', 'General'), icon: '💬' },
+    { id: 'mobile', name: t('community.sidebar.topics.mobile', 'Phones & tablets'), icon: '📱' },
+    { id: 'computer', name: t('community.sidebar.topics.computer', 'Computers'), icon: '💻' },
+    { id: 'apps', name: t('community.sidebar.topics.apps', 'Apps'), icon: '🧩' },
+    { id: 'internet', name: t('community.sidebar.topics.internet', 'Internet'), icon: '🌐' },
+    { id: 'safety', name: t('community.sidebar.topics.safety', 'Safety'), icon: '🔒' },
+  ];
 
   const handleNewPost = (e: React.FormEvent) => {
     e.preventDefault();
-
-    // Check for profanity
-    if (profanityFilter(newPost.title) || profanityFilter(newPost.content)) {
-      if (profanityFilter(newPost.title) || profanityFilter(newPost.content)) {
-        alert(t('community.createPost.profanityAlert'));
-        return;
-      }
-      return;
-    }
-
     const post: Post = {
       id: Date.now().toString(),
-      title: newPost.title,
-      content: newPost.content,
-      author: 'You', // In a real app, this would be the logged-in user
+      title: newPost.title.trim(),
+      content: newPost.content.trim(),
+      author: 'You',
       timestamp: new Date(),
       likes: 0,
       replies: [],
-      category: newPost.category
+      category: newPost.category,
     };
-
-    setPosts([post, ...posts]);
+    setPosts((prev) => [post, ...prev]);
     setNewPost({ title: '', content: '', category: 'general' });
     setShowNewPostForm(false);
   };
 
-  const handleLike = (postId: string, replyId?: string) => {
-    setPosts(posts.map(post => {
-      if (post.id === postId) {
-        if (replyId) {
-          return {
-            ...post,
-            replies: post.replies.map(reply =>
-              reply.id === replyId ? { ...reply, likes: reply.likes + 1 } : reply
-            )
-          };
-        } else {
-          return { ...post, likes: post.likes + 1 };
-        }
-      }
-      return post;
-    }));
+  const handleLike = (postId: string) => {
+    setPosts((prev) =>
+      prev.map((p) => (p.id === postId ? { ...p, likes: p.likes + 1 } : p))
+    );
   };
 
-  const filteredPosts = posts.filter(post => {
-    const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      post.content.toLowerCase().includes(searchTerm.toLowerCase());
+  const filteredPosts = posts.filter((post) => {
+    const q = searchTerm.toLowerCase();
+    const matchesSearch =
+      post.title.toLowerCase().includes(q) || post.content.toLowerCase().includes(q);
     const matchesCategory = selectedCategory === 'all' || post.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
 
   const formatTimeAgo = (date: Date) => {
-    const now = new Date();
-    const diffInHours = Math.floor((now.getTime() - date.getTime()) / (1000 * 60 * 60));
-
-    if (diffInHours < 1) return t('community.posts.timeAgo.justNow');
-    if (diffInHours === 1) return t('community.posts.timeAgo.oneHour');
-    if (diffInHours < 24) return t('community.posts.timeAgo.hours', { count: diffInHours });
-
-    const diffInDays = Math.floor(diffInHours / 24);
-    if (diffInDays === 1) return t('community.posts.timeAgo.oneDay');
-    return t('community.posts.timeAgo.days', { count: diffInDays });
+    const diffH = Math.floor((Date.now() - date.getTime()) / 3_600_000);
+    if (diffH < 1) return t('community.posts.timeAgo.justNow', 'Just now');
+    if (diffH < 24) return t('community.posts.timeAgo.hours', { count: diffH });
+    const diffD = Math.floor(diffH / 24);
+    return t('community.posts.timeAgo.days', { count: diffD });
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <div className="bg-white shadow-sm">
-        <div className="container mx-auto px-4 sm:px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link
-              to="/"
-              className="inline-flex items-center text-blue-600 hover:text-blue-700 transition-colors"
-            >
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              {t('community.header.backToHome')}
+    <div className="min-h-screen bg-canvas text-ink">
+      <header className="sticky top-0 z-30 border-b border-hairline bg-surface/90 backdrop-blur-md">
+        <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:px-8">
+          <Link to="/" className="focus-ring rounded-lg">
+            <Logo size="sm" showText responsiveText />
+          </Link>
+          <div className="flex items-center gap-2">
+            <Link to="/" className="btn-pill btn-pill-ghost text-sm py-2 min-h-0 hidden sm:inline-flex">
+              <ArrowLeft className="w-4 h-4 mr-1" />
+              {t('community.header.backToHome', 'Home')}
             </Link>
             <button
+              type="button"
               onClick={() => setShowNewPostForm(true)}
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center"
+              className="btn-pill btn-pill-primary text-sm py-2 min-h-0 inline-flex items-center gap-1.5"
             >
-              <Plus className="w-4 h-4 mr-2" />
-              {t('community.header.newPost')}
+              <Plus className="w-4 h-4" />
+              {t('community.header.newPost', 'New post')}
             </button>
           </div>
         </div>
-      </div>
+      </header>
 
-      {/* Content */}
-      <div className="container mx-auto px-4 sm:px-6 py-8">
-        <div className="max-w-6xl mx-auto">
-          {/* Page Header */}
-          <div className="text-center mb-8">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Users className="w-8 h-8 text-blue-600" />
+      <main className="mx-auto max-w-6xl px-4 sm:px-8 py-10 sm:py-14">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="mb-10 text-center sm:text-left"
+        >
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-ink-muted mb-2">
+            Community
+          </p>
+          <h1 className="font-display text-3xl sm:text-4xl font-extrabold tracking-[-0.03em]">
+            {t('community.header.title', 'Community Forum')}
+          </h1>
+          <p className="mt-3 text-ink-muted max-w-2xl mx-auto sm:mx-0">
+            {t('community.header.subtitle', 'Ask questions, share tips, and learn from others.')}
+          </p>
+        </motion.div>
+
+        <div className="grid gap-8 lg:grid-cols-[240px_1fr]">
+          <aside className="space-y-4">
+            <div className="surface-card rounded-card p-4 border border-hairline">
+              <h2 className="text-sm font-bold text-ink mb-3">
+                {t('community.sidebar.categories', 'Categories')}
+              </h2>
+              <div className="flex flex-wrap gap-2 lg:flex-col lg:gap-1">
+                {categories.map((cat) => (
+                  <button
+                    key={cat.id}
+                    type="button"
+                    onClick={() => setSelectedCategory(cat.id)}
+                    className={`text-left px-3 py-2 rounded-xl text-sm font-medium transition-colors focus-ring ${
+                      selectedCategory === cat.id
+                        ? 'bg-brand-soft text-brand'
+                        : 'text-ink-muted hover:bg-subtle hover:text-ink'
+                    }`}
+                  >
+                    <span className="mr-2">{cat.icon}</span>
+                    {cat.name}
+                  </button>
+                ))}
+              </div>
             </div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">{t('community.header.title')}</h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              {t('community.header.subtitle')}
-            </p>
-          </div>
 
-          <div className="grid lg:grid-cols-4 gap-8">
-            {/* Sidebar */}
-            <div className="lg:col-span-1">
-              <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
-                <h3 className="font-semibold text-gray-900 mb-4">{t('community.sidebar.categories')}</h3>
-                <div className="space-y-2">
-                  {categories.map(category => (
-                    <button
-                      key={category.id}
-                      onClick={() => setSelectedCategory(category.id)}
-                      className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center ${selectedCategory === category.id
-                        ? 'bg-blue-100 text-blue-800'
-                        : 'hover:bg-gray-100 text-gray-700'
-                        }`}
-                    >
-                      <span className="mr-2">{category.icon}</span>
-                      {category.name}
-                    </button>
-                  ))}
+            <div className="surface-card rounded-card p-4 border border-hairline bg-brand-soft/30">
+              <h3 className="text-sm font-bold text-ink mb-2">
+                {t('community.sidebar.guidelines.title', 'Guidelines')}
+              </h3>
+              <ul className="text-xs text-ink-muted space-y-1.5">
+                {(t('community.sidebar.guidelines.items', {
+                  returnObjects: true,
+                  defaultValue: ['Be kind and patient', 'No spam', 'Share what worked for you'],
+                }) as string[]).map((item, i) => (
+                  <li key={i}>• {item}</li>
+                ))}
+              </ul>
+            </div>
+          </aside>
+
+          <div className="min-w-0 space-y-4">
+            <div className="relative">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-ink-muted" />
+              <input
+                type="search"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                placeholder={t('community.search.placeholder', 'Search posts…')}
+                className="w-full pl-10 pr-4 py-3 glass-input rounded-xl focus-ring"
+              />
+            </div>
+
+            {showNewPostForm && (
+              <motion.div
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="surface-card rounded-card p-5 border border-hairline"
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="font-display font-bold text-ink">
+                    {t('community.createPost.title', 'Create a post')}
+                  </h3>
+                  <button type="button" onClick={() => setShowNewPostForm(false)} className="p-2 rounded-full hover:bg-subtle focus-ring">
+                    <X className="w-4 h-4" />
+                  </button>
                 </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-lg p-6 border border-green-200">
-                <h3 className="font-semibold text-green-900 mb-2">{t('community.sidebar.guidelines.title')}</h3>
-                <ul className="text-sm text-green-800 space-y-1">
-                  {(t('community.sidebar.guidelines.items', { returnObjects: true }) as string[]).map((item, idx) => (
-                    <li key={idx}>• {item}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            {/* Main Content */}
-            <div className="lg:col-span-3">
-              {/* Search Bar */}
-              <div className="bg-white rounded-lg shadow-sm p-4 mb-6">
-                <div className="relative">
-                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+                <form onSubmit={handleNewPost} className="space-y-4">
+                  <select
+                    value={newPost.category}
+                    onChange={(e) => setNewPost({ ...newPost, category: e.target.value })}
+                    className="w-full glass-input rounded-xl px-3 py-2.5 focus-ring"
+                  >
+                    {categories.slice(1).map((c) => (
+                      <option key={c.id} value={c.id}>{c.name}</option>
+                    ))}
+                  </select>
                   <input
-
-                    type="text"
-                    placeholder={t('community.search.placeholder')}
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    required
+                    value={newPost.title}
+                    onChange={(e) => setNewPost({ ...newPost, title: e.target.value })}
+                    placeholder={t('community.createPost.titlePlaceholder', 'Post title')}
+                    className="w-full glass-input rounded-xl px-3 py-2.5 focus-ring"
                   />
-                </div>
-              </div>
-
-              {/* New Post Form */}
-              {showNewPostForm && (
-                <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('community.createPost.title')}</h3>
-                  <form onSubmit={handleNewPost} className="space-y-4">
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">{t('community.createPost.categoryLabel')}</label>
-                      <select
-                        value={newPost.category}
-                        onChange={(e) => setNewPost({ ...newPost, category: e.target.value })}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      >
-                        {categories.slice(1).map(category => (
-                          <option key={category.id} value={category.id}>{category.name}</option>
-                        ))}
-                      </select>
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">{t('community.createPost.titleLabel')}</label>
-                      <input
-                        type="text"
-                        required
-                        value={newPost.title}
-                        onChange={(e) => setNewPost({ ...newPost, title: e.target.value })}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                        placeholder={t('community.createPost.titlePlaceholder')}
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">{t('community.createPost.contentLabel')}</label>
-                      <textarea
-                        required
-                        rows={4}
-                        value={newPost.content}
-                        onChange={(e) => setNewPost({ ...newPost, content: e.target.value })}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                        placeholder={t('community.createPost.contentPlaceholder')}
-                      />
-                    </div>
-                    <div className="flex space-x-3">
-                      <button
-                        type="submit"
-                        className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-                      >
-                        {t('community.createPost.submit')}
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => setShowNewPostForm(false)}
-                        className="bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-400 transition-colors"
-                      >
-                        {t('community.createPost.cancel')}
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              )}
-
-              {/* Posts */}
-              <div className="space-y-6">
-                {filteredPosts.length === 0 ? (
-                  <div className="bg-white rounded-lg shadow-sm p-8 text-center">
-                    <MessageSquare className="w-12 h-12 text-gray-400 mx-auto mb-4" />
-                    <p className="text-gray-600">{t('community.posts.empty')}</p>
+                  <textarea
+                    required
+                    rows={4}
+                    value={newPost.content}
+                    onChange={(e) => setNewPost({ ...newPost, content: e.target.value })}
+                    placeholder={t('community.createPost.contentPlaceholder', 'What would you like to ask or share?')}
+                    className="w-full glass-input rounded-xl px-3 py-2.5 focus-ring resize-y"
+                  />
+                  <div className="flex gap-2">
+                    <button type="submit" className="btn-pill btn-pill-primary text-sm">
+                      {t('community.createPost.submit', 'Post')}
+                    </button>
+                    <button type="button" onClick={() => setShowNewPostForm(false)} className="btn-pill btn-pill-ghost text-sm">
+                      {t('community.createPost.cancel', 'Cancel')}
+                    </button>
                   </div>
-                ) : (
-                  filteredPosts.map(post => (
-                    <div key={post.id} className="bg-white rounded-lg shadow-sm p-6">
-                      <div className="flex items-start justify-between mb-4">
-                        <div className="flex-1">
-                          <h3 className="text-lg font-semibold text-gray-900 mb-2">{post.title}</h3>
-                          <div className="flex items-center text-sm text-gray-500 mb-3">
-                            <span>{post.author}</span>
-                            <span className="mx-2">•</span>
-                            <Clock className="w-4 h-4 mr-1" />
-                            <span>{formatTimeAgo(post.timestamp)}</span>
-                            <span className="mx-2">•</span>
-                            <span className="bg-gray-100 px-2 py-1 rounded text-xs">
-                              {categories.find(c => c.id === post.category)?.name}
-                            </span>
-                          </div>
-                        </div>
-                        <button className="text-gray-400 hover:text-gray-600">
-                          <Flag className="w-4 h-4" />
-                        </button>
-                      </div>
+                </form>
+              </motion.div>
+            )}
 
-                      <p className="text-gray-700 mb-4">{post.content}</p>
-
-                      <div className="flex items-center justify-between border-t pt-4">
-                        <button
-                          onClick={() => handleLike(post.id)}
-                          className="flex items-center text-gray-500 hover:text-blue-600 transition-colors"
-                        >
-                          <ThumbsUp className="w-4 h-4 mr-1" />
-                          <span>{post.likes}</span>
-                        </button>
-                        <div className="flex items-center text-gray-500">
-                          <Reply className="w-4 h-4 mr-1" />
-                          <span>{t('community.posts.replies', { count: post.replies.length })}</span>
-                        </div>
-                      </div>
-
-                      {/* Replies */}
-                      {post.replies.length > 0 && (
-                        <div className="mt-4 pl-4 border-l-2 border-gray-200 space-y-3">
-                          {post.replies.map(reply => (
-                            <div key={reply.id} className="bg-gray-50 rounded-lg p-4">
-                              <div className="flex items-center justify-between mb-2">
-                                <div className="flex items-center text-sm text-gray-500">
-                                  <span className="font-medium">{reply.author}</span>
-                                  <span className="mx-2">•</span>
-                                  <span>{formatTimeAgo(reply.timestamp)}</span>
-                                </div>
-                                <button
-                                  onClick={() => handleLike(post.id, reply.id)}
-                                  className="flex items-center text-gray-400 hover:text-blue-600 transition-colors text-sm"
-                                >
-                                  <ThumbsUp className="w-3 h-3 mr-1" />
-                                  <span>{reply.likes}</span>
-                                </button>
-                              </div>
-                              <p className="text-gray-700">{reply.content}</p>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  ))
-                )}
+            {filteredPosts.length === 0 ? (
+              <div className="surface-card rounded-card p-12 text-center border border-hairline">
+                <MessageSquare className="w-10 h-10 text-ink-muted mx-auto mb-3" />
+                <p className="text-ink-muted">{t('community.posts.empty', 'No posts yet — be the first!')}</p>
               </div>
-            </div>
+            ) : (
+              filteredPosts.map((post, i) => (
+                <motion.article
+                  key={post.id}
+                  initial={{ opacity: 0, x: i % 2 === 0 ? -12 : 12 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, margin: '-40px' }}
+                  transition={{ duration: 0.4 }}
+                  className="surface-card rounded-card p-5 sm:p-6 border border-hairline hover:border-brand/25 transition-colors"
+                >
+                  <div className="flex items-start justify-between gap-3 mb-3">
+                    <div className="min-w-0">
+                      <h3 className="font-display font-bold text-lg text-ink truncate">{post.title}</h3>
+                      <div className="flex flex-wrap items-center gap-2 mt-1 text-xs text-ink-muted">
+                        <span>{post.author}</span>
+                        <span>•</span>
+                        <Clock className="w-3 h-3" />
+                        <span>{formatTimeAgo(post.timestamp)}</span>
+                        <span className="rounded-full bg-subtle px-2 py-0.5 text-ink">
+                          {categories.find((c) => c.id === post.category)?.name}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-ink-muted leading-relaxed mb-4">{post.content}</p>
+                  <button
+                    type="button"
+                    onClick={() => handleLike(post.id)}
+                    className="inline-flex items-center gap-1.5 text-sm text-ink-muted hover:text-brand transition-colors focus-ring rounded-full px-2 py-1"
+                  >
+                    <ThumbsUp className="w-4 h-4" />
+                    {post.likes}
+                  </button>
+                </motion.article>
+              ))
+            )}
           </div>
         </div>
-      </div>
+      </main>
     </div>
   );
 };

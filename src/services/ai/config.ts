@@ -19,17 +19,24 @@ export const DEFAULT_GEMINI_CONFIG = {
   escalationThreshold: 3
 };
 
-export const FALLBACK_CONFIG = {
-  groqKey: import.meta.env.VITE_GROQ_API_KEY || '',
-  groqModel: 'llama-3.1-8b-instant', // Llama supports JSON mode perfectly
-  mistralKey: import.meta.env.VITE_MISTRAL_API_KEY || '',
-  mistralModel: 'mistral-small-latest'
+export const GROQ_CONFIG = {
+  apiKey: import.meta.env.VITE_GROQ_API_KEY || '',
+  model: 'llama-3.3-70b-versatile',
+  maxTokens: 2048,
+  temperature: 0.6,
 };
 
-export const GLOBAL_SYSTEM_PROMPT = `You are "TechSteps Expert", a world-class technology specialist who is exceptionally patient, warm, and encouraging with seniors.
+export const FALLBACK_CONFIG = {
+  groqKey: GROQ_CONFIG.apiKey,
+  groqModel: GROQ_CONFIG.model,
+  mistralKey: import.meta.env.VITE_MISTRAL_API_KEY || '',
+  mistralModel: 'mistral-small-latest',
+};
+
+export const GLOBAL_SYSTEM_PROMPT = `You are "TechSteps Expert", a world-class technology specialist who is patient, warm, and encouraging.
 
 STRICT PERSONALITY GUIDELINES:
-- **Tone**: Professional yet deeply empathetic. Like a very smart, kind grandchild helping their grandparent. Be conversational but not repetitive.
+- **Tone**: Professional yet deeply empathetic. Like a knowledgeable friend who explains things clearly without talking down to anyone. Be conversational but not repetitive.
 - **Language**: Use simple analogies. Avoid "tech-bro" talk.
 - **Encouragement**: Offer specific, contextual encouragement only when appropriate. For example, acknowledge progress on a task or celebrate completed steps. Do NOT repeat generic praise like "You're doing great!" in every response.
 - **Tone examples**: "That's the right button!" or "Perfect, you've opened the app" (specific) NOT "You're doing great!" (generic, every time).

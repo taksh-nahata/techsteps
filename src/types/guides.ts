@@ -19,8 +19,12 @@ export interface GuideStep {
     id: string;
     title: string;
     content: string;
-    image?: string; // filename in /public/guides/
-    imageCaption?: string; // Description of image for AI context
+    /** @deprecated use directionsByDevice */
+    instructions?: string[];
+    /** Numbered directions per device — users only see their device */
+    directionsByDevice?: Partial<Record<string, string[]>>;
+    image?: string;
+    imageCaption?: string;
     annotations?: GuideAnnotation[];
 }
 

@@ -1,462 +1,475 @@
 import { Link } from 'react-router-dom';
+import { motion, useReducedMotion } from 'framer-motion';
 import {
   ArrowRight,
-  MessageSquare,
-  Star,
-  CheckCircle,
-  Heart
+  ArrowDown,
+  ListChecks,
+  Mic,
+  Camera,
+  Heart,
 } from 'lucide-react';
-import React, { lazy, Suspense, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Logo from '../components/layout/Logo';
-import LanguageSelector from '../components/layout/LanguageSelector';
-import LazySection from '../components/common/LazySection';
-// Lazy load HeroAnimation for better performance
-const HeroAnimation = lazy(() => import('../components/animations/HeroAnimation'));
-const CursorTrail = lazy(() => import('../components/animations/CursorTrail'));
-
-import { performanceMonitor } from '../utils/performanceMonitor';
+import ScrollHowItWorks from '../components/landing/ScrollHowItWorks';
+import LandingEffects from '../components/landing/LandingEffects';
+import LandingNav from '../components/landing/LandingNav';
+import FeaturesScrollStrip from '../components/landing/FeaturesScrollStrip';
 import { useTranslation, useRTLStyles } from '../hooks/useTranslation';
 
-// Lazy load non-critical sections
-const FeatureSection = lazy(() => import('../components/sections/FeatureSection'));
+type FeatureItem = { title: string; description: string };
 
-// Create loading fallback component
-const SectionLoadingFallback: React.FC<{ className?: string }> = ({ className = '' }) => (
-  <section className={`py-16 sm:py-24 ${className}`}>
-    <div className="container mx-auto px-4 sm:px-6">
-      <div className="text-center mb-12 sm:mb-20">
-        <div className="h-12 bg-gray-200 rounded-lg animate-pulse mb-6 max-w-md mx-auto"></div>
-        <div className="h-6 bg-gray-200 rounded-lg animate-pulse max-w-2xl mx-auto"></div>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {[...Array(8)].map((_, index) => (
-          <div key={index} className="bg-white p-6 rounded-xl border border-gray-200">
-            <div className="w-8 h-8 bg-gray-200 rounded-full mb-3 animate-pulse"></div>
-            <div className="space-y-2">
-              <div className="h-4 bg-gray-200 rounded animate-pulse"></div>
-              <div className="h-4 bg-gray-200 rounded animate-pulse w-3/4"></div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-);
+const FEATURE_ICONS = [ListChecks, Mic, Camera, Heart] as const;
+
+const FALLBACK_FEATURES: FeatureItem[] = [
+  {
+    title: 'Step-by-Step Guidance',
+    description:
+      'Clear, easy-to-follow instructions for any tech question — explained in simple terms.',
+  },
+  {
+    title: 'Voice Support',
+    description:
+      'Ask questions with your voice and hear answers read aloud. Hands-free help when you need it.',
+  },
+  {
+    title: 'Photo Explainer',
+    description:
+      'Snap a photo of any cable, button, or device and get an instant, plain-language explanation.',
+  },
+  {
+    title: 'Comfortable Design',
+    description:
+      'Large text, calm layout, and patient explanations — built so nothing feels rushed or cramped.',
+  },
+];
+
+const QUESTION_KEYS = [
+  'questions.connectWifi',
+  'questions.makeTextBigger',
+  'questions.takeScreenshot',
+  'questions.updateApps',
+  'questions.makeVideoCall',
+  'questions.backupPhotos',
+] as const;
+
+const fadeUp = (delay = 0, reduced = false, drift = 0) => ({
+  hidden: { opacity: 0, y: reduced ? 0 : 32, x: reduced ? 0 : drift },
+  visible: {
+    opacity: 1,
+    y: 0,
+    x: 0,
+    transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] },
+  },
+});
+
+const stagger = (reduced = false) => ({
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: reduced ? 0 : 0.12, delayChildren: 0.05 },
+  },
+});
 
 const LandingPage: React.FC = () => {
   const { t } = useTranslation();
-  const { isRTL, direction } = useRTLStyles();
+  const { direction } = useRTLStyles();
+  const prefersReducedMotion = useReducedMotion();
+  const reduced = !!prefersReducedMotion;
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    // Start measuring landing page performance
-    performanceMonitor.measureLandingPageLoad();
-  }, []);
+  const rawFeatures = t('landing.featuresSection.items', {
+    returnObjects: true,
+  }) as FeatureItem[] | string;
+  const features: FeatureItem[] = Array.isArray(rawFeatures)
+    ? rawFeatures.slice(0, 4)
+    : FALLBACK_FEATURES;
 
-  const popularQuestions = [
-    t('questions.connectWifi'),
-    t('questions.makeTextBigger'),
-    t('questions.takeScreenshot'),
-    t('questions.updateApps'),
-    t('questions.makeVideoCall'),
-    t('questions.backupPhotos'),
-    t('questions.onlineBanking'),
-    t('questions.joinZoom')
-  ];
-
-  const [loadedSections, setLoadedSections] = useState<number[]>([0]);
+  const popularQuestions = QUESTION_KEYS.map((key) =>
+    t(key, key.split('.').pop() ?? key)
+  );
 
   return (
-    <div className="min-h-screen">
-      {/* Navigation */}
-      <nav className="w-full sticky top-0 bg-white/90 backdrop-blur-md z-50 border-b border-gray-100" dir={direction}>
-        <div className="container mx-auto px-4 sm:px-6 md:px-8">
-          <div className={`flex items-center justify-between h-16 ${isRTL ? 'flex-row-reverse' : ''}`}>
-            {/* Logo */}
-            <div className="flex items-center h-full">
-              <Logo size="md" />
-            </div>
+    <div className="min-h-screen bg-canvas text-ink relative" dir={direction}>
+      <LandingEffects />
+      <LandingNav
+        menuOpen={menuOpen}
+        onMenuToggle={() => setMenuOpen((o) => !o)}
+        onMenuClose={() => setMenuOpen(false)}
+        t={t}
+      />
+      <main>
+        {/* ── Hero ── */}
+        <section
+          data-scroll-milestone="hero"
+          className="relative flex min-h-[92vh] flex-col justify-center px-5 pb-24 pt-28 sm:px-8"
+        >
+          <div className="mx-auto w-full max-w-7xl">
+            <motion.p
+              initial="hidden"
+              animate="visible"
+              variants={fadeUp(0, reduced)}
+              className="mb-8 text-xs font-semibold uppercase tracking-[0.2em] text-ink-muted"
+            >
+              {t('landing.hero.tagline', 'Clear tech help, whenever you need it')}
+            </motion.p>
 
-            {/* Mobile Menu Button */}
-            <div className="lg:hidden flex items-center h-full">
-              <button
-                className="text-gray-600 hover:text-gray-800 focus:outline-none p-2 rounded-md hover:bg-gray-100 transition-colors flex items-center justify-center"
-                onClick={() => {
-                  const mobileMenu = document.getElementById('mobile-menu');
-                  if (mobileMenu) {
-                    mobileMenu.classList.toggle('hidden');
-                  }
-                }}
-                aria-label="Toggle mobile menu"
-              >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-              </button>
-            </div>
+            <motion.h1
+              initial="hidden"
+              animate="visible"
+              variants={fadeUp(0.08, reduced)}
+              className="font-display font-extrabold leading-[0.95] tracking-[-0.04em] text-ink"
+              style={{ fontSize: 'clamp(48px, 8vw, 96px)' }}
+            >
+              {t('landing.hero.title', 'Technology made')}
+              <br />
+              <span className="text-brand">
+                {t('landing.hero.titleHighlight', 'simple & clear')}
+              </span>
+            </motion.h1>
 
-            {/* Desktop Menu */}
-            <div className={`hidden lg:flex items-center h-full space-x-6 ${isRTL ? 'space-x-reverse' : ''}`}>
-              <a
-                href="#features"
-                className="text-gray-600 hover:text-gray-800 font-medium transition-colors whitespace-nowrap text-sm flex items-center h-full"
-              >
-                {t('nav.features')}
-              </a>
+            <motion.p
+              initial="hidden"
+              animate="visible"
+              variants={fadeUp(0.16, reduced)}
+              className="mt-8 max-w-xl text-lg leading-relaxed text-ink-muted sm:text-xl"
+              style={{ fontSize: 'clamp(18px, 2vw, 20px)' }}
+            >
+              {t(
+                'landing.hero.subtitle',
+                'Master technology with confidence through personalized, step-by-step guidance that feels like having a patient friend by your side.'
+              )}
+            </motion.p>
 
-              <div className="flex items-center h-full">
-                <LanguageSelector showLabel={false} />
-              </div>
-
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeUp(0.24, reduced)}
+              className="mt-12"
+            >
               <Link
                 to="/auth"
-                className="text-gray-600 hover:text-gray-800 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-100 whitespace-nowrap text-sm flex items-center"
+                className="btn-primary inline-flex items-center gap-3 px-8 py-4 text-base sm:text-lg"
               >
-                {t('nav.signIn')}
+                {t('landing.hero.startLearningButton', 'Start Learning Free')}
+                <ArrowRight className="h-5 w-5 rtl-flip" />
               </Link>
-
-              <Link
-                to="/auth"
-                className="btn-primary text-sm px-6 py-2.5 whitespace-nowrap font-medium flex items-center"
-              >
-                {t('nav.getStarted')}
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile Menu */}
-        <div id="mobile-menu" className="hidden lg:hidden">
-          <div className="container mx-auto px-4 sm:px-6">
-            <div className="flex flex-col space-y-4 py-4 border-t border-gray-200">
-              <a href="#features" className="text-gray-600 hover:text-gray-800 font-medium transition-colors py-2 text-sm">
-                {t('nav.features')}
-              </a>
-              <div className="py-2">
-                <LanguageSelector showLabel={true} />
-              </div>
-              <Link
-                to="/auth"
-                className="text-gray-600 hover:text-gray-800 font-medium transition-colors py-2 text-sm"
-              >
-                {t('nav.signIn')}
-              </Link>
-              <Link
-                to="/auth"
-                className="btn-primary text-sm px-4 py-3 text-center font-medium"
-              >
-                {t('nav.getStarted')}
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      {/* Hero Section */}
-      <LazySection
-        sectionIndex={0}
-        canLoad={loadedSections.includes(0)}
-        onLoadComplete={() =>
-          setLoadedSections((prev) =>
-            prev.includes(1) ? prev : [...prev, 1]
-          )
-        }
-      >
-        <section className="container mx-auto px-4 sm:px-6 py-16 md:py-20 relative overflow-hidden" data-hero-section>
-          {/* Background decoration */}
-          <div className="absolute inset-0 -z-10">
-            <div className="absolute top-20 left-10 w-64 h-64 bg-blue-200/30 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-20 right-10 w-80 h-80 bg-purple-200/30 rounded-full blur-3xl"></div>
+            </motion.div>
           </div>
 
-          {/* Cursor Trail Effect */}
-          <Suspense fallback={null}>
-            <CursorTrail />
-          </Suspense>
-
-          <div className="max-w-6xl mx-auto animate-fade-in" dir={direction}>
-            <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${isRTL ? 'lg:grid-flow-col-dense' : ''}`}>
-              {/* Text Content - Order changes based on RTL */}
-              <div className={`text-center lg:text-start ${isRTL ? 'lg:col-start-2' : ''}`}>
-                <h1 className="font-bold text-gray-800 mb-6 leading-tight" style={{ fontSize: 'clamp(42px, 5vw, 72px)' }}>
-                  {t('landing.hero.title')}
-                  <div className="block mt-4">
-                    <span className="gradient-text glow-text relative inline-block">
-                      {t('landing.hero.titleHighlight')}
-                      <div
-                        className={`absolute -bottom-2 h-2 animate-underline-expand ${isRTL ? 'right-0' : 'left-0'}`}
-                        style={{
-                          background: 'linear-gradient(90deg, transparent 0%, #3b82f6 30%, #8b5cf6 50%, #3b82f6 70%, transparent 100%)',
-                          backgroundSize: '200% 100%'
-                        }}
-                      ></div>
-                    </span>
-                  </div>
-                </h1>
-                <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
-                  {t('landing.hero.subtitle')}
-                </p>
-
-                <div className={`flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-8 ${isRTL ? 'sm:flex-row-reverse' : ''}`}>
-                  <div className="relative hero-outline-anim">
-                    <Link
-                      to="/auth"
-                      className="btn-primary text-base sm:text-lg md:text-xl px-12 py-4 sm:px-16 sm:py-5 md:px-20 md:py-6 inline-flex items-center shadow-2xl hover:shadow-3xl transform hover:scale-105 w-full sm:w-auto relative z-10"
-                    >
-                      {t('landing.hero.startLearningButton')}
-                      <ArrowRight className={`w-5 h-5 sm:w-6 sm:h-6 ${isRTL ? 'mr-3 rtl-flip' : 'ml-3'}`} />
-                    </Link>
-                    <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{ padding: '-2px' }}>
-                      <rect
-                        x="1"
-                        y="1"
-                        width="calc(100% - 2px)"
-                        height="calc(100% - 2px)"
-                        rx="12"
-                        ry="12"
-                        fill="none"
-                        stroke="rgba(59, 130, 246, 0.6)"
-                        strokeWidth="2"
-                        strokeDasharray="20 200"
-                        strokeDashoffset="0"
-                        className="hero-outline-path"
-                      />
-                    </svg>
-                  </div>
-                </div>
-
-                <div className={`flex flex-wrap justify-center lg:justify-start items-center text-xs sm:text-sm text-gray-500 mb-8 gap-y-2 ${isRTL ? 'space-x-reverse space-x-2 sm:space-x-4' : 'space-x-2 sm:space-x-4'}`}>
-                  <div className="flex items-center">
-                    <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-green-500 mr-2" />
-                    <span>{t('landing.hero.freeForever')}</span>
-                  </div>
-                  <span className="hidden sm:inline mx-2 text-gray-300">•</span>
-                  <div className="flex items-center">
-                    <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-green-500 mr-2" />
-                    <span>{t('landing.hero.noCreditCard')}</span>
-                  </div>
-                  <span className="hidden sm:inline mx-2 text-gray-300">•</span>
-                  <div className="flex items-center">
-                    <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-green-500 mr-2" />
-                    <span>{t('landing.hero.available247')}</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Hero Animation - Order changes based on RTL */}
-              <div className={`flex justify-center lg:justify-end ${isRTL ? 'lg:col-start-1 lg:justify-start' : ''}`}>
-                <Suspense fallback={
-                  <div className="w-full max-w-lg h-96 bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl animate-pulse flex items-center justify-center">
-                    <div className="w-16 h-16 bg-blue-200 rounded-full animate-bounce"></div>
-                  </div>
-                }>
-                  <HeroAnimation className="w-full max-w-lg" />
-                </Suspense>
-              </div>
-            </div>
-          </div>
+          <a
+            href="#how-it-works"
+            className="absolute bottom-10 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 text-ink-muted hover:text-ink transition-colors"
+          >
+            <span className="text-[11px] font-semibold uppercase tracking-[0.25em]">
+              See how it works
+            </span>
+            <ArrowDown className="h-4 w-4" strokeWidth={1.5} />
+          </a>
         </section>
-      </LazySection>
 
-      {/* Features Section */}
-      <LazySection
-        sectionIndex={1}
-        canLoad={loadedSections.includes(1)}
-        onLoadComplete={() =>
-          setLoadedSections((prev) =>
-            prev.includes(2) ? prev : [...prev, 2]
-          )
-        }
-        fallback={
-          <section className="py-16 sm:py-24 bg-white">
-            <div className="container mx-auto px-4 sm:px-6">
-              <div className="text-center mb-12 sm:mb-20">
-                <div className="h-12 bg-gray-200 rounded-lg animate-pulse mb-6 max-w-md mx-auto"></div>
-                <div className="h-6 bg-gray-200 rounded-lg animate-pulse max-w-2xl mx-auto"></div>
-              </div>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto">
-                {[...Array(6)].map((_, index) => (
-                  <div key={index} className="card p-6 md:p-8">
-                    <div className="w-16 h-16 md:w-20 md:h-20 bg-gray-200 rounded-2xl mx-auto mb-6 animate-pulse"></div>
-                    <div className="h-8 bg-gray-200 rounded-lg animate-pulse mb-6 max-w-xs mx-auto"></div>
-                    <div className="space-y-2">
-                      <div className="h-4 bg-gray-200 rounded animate-pulse"></div>
-                      <div className="h-4 bg-gray-200 rounded animate-pulse"></div>
-                      <div className="h-4 bg-gray-200 rounded animate-pulse w-3/4 mx-auto"></div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-        }
-      >
-        <Suspense fallback={null}>
-          <FeatureSection />
-        </Suspense>
-      </LazySection>
+        <ScrollHowItWorks />
 
-      {/* Popular Questions */}
-      <LazySection
-        sectionIndex={2}
-        canLoad={loadedSections.includes(2)}
-        onLoadComplete={() =>
-          setLoadedSections((prev) =>
-            prev.includes(3) ? prev : [...prev, 3]
-          )
-        }
-        fallback={<SectionLoadingFallback className="bg-gray-50" />}
-        className="bg-gray-50"
-      >
-        <section className="py-16 sm:py-24">
-          <div className="container mx-auto px-4 sm:px-6">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                {t('landing.popularQuestionsSection.title')}
-              </h2>
-              <p className="text-base sm:text-lg md:text-xl text-gray-600">
-                {t('landing.popularQuestionsSection.subtitle')}
-              </p>
-            </div>
+        {/* ── Dark value band ── */}
+        <section data-nav-theme="dark" data-scroll-milestone="value" className="bg-ink px-5 py-28 sm:px-8 sm:py-36">
+          <motion.div
+            className="mx-auto max-w-7xl"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: '-80px' }}
+            variants={stagger(reduced)}
+          >
+            <motion.p
+              variants={fadeUp(0, reduced)}
+              className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-[#8a8275]"
+            >
+              Why TechSteps
+            </motion.p>
+            <motion.h2
+              variants={fadeUp(0.05, reduced)}
+              className="max-w-4xl font-display text-4xl font-extrabold leading-[1.05] tracking-[-0.03em] text-[#f6f2ea] sm:text-5xl md:text-6xl lg:text-7xl"
+            >
+              Technology shouldn&apos;t feel overwhelming.
+            </motion.h2>
+            <motion.p
+              variants={fadeUp(0.1, reduced)}
+              className="mt-8 max-w-2xl text-lg leading-relaxed text-[#cfc8ba] sm:text-xl"
+            >
+              Every question becomes clear, patient guidance — at your pace, in your
+              words, whenever you need it.
+            </motion.p>
+          </motion.div>
+        </section>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
-              {popularQuestions.map((question, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300 cursor-pointer group"
-                  style={{ animationDelay: `${index * 100}ms` }}
+        {/* ── Features grid ── */}
+        <section id="features" data-scroll-milestone="features" className="bg-surface px-5 py-28 sm:px-8 sm:py-36">
+          <div className="mx-auto max-w-7xl">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: '-80px' }}
+              variants={stagger(reduced)}
+              className="mb-16 flex flex-col gap-6 md:mb-20 md:flex-row md:items-end md:justify-between"
+            >
+              <div>
+                <motion.p
+                  variants={fadeUp(0, reduced)}
+                  className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-ink-muted"
                 >
-                  <div className="flex items-start">
-                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0 group-hover:bg-blue-200 transition-colors">
-                      <MessageSquare className="w-4 h-4 text-blue-600" />
+                  {t('landing.featuresSection.title', 'Features')}
+                </motion.p>
+                <motion.h2
+                  variants={fadeUp(0.05, reduced)}
+                  className="font-display text-3xl font-extrabold tracking-[-0.03em] text-ink sm:text-4xl md:text-5xl"
+                >
+                  {t('landing.featuresSection.subtitle', 'Built to help you grow')}
+                </motion.h2>
+              </div>
+              <motion.p
+                variants={fadeUp(0.1, reduced)}
+                className="max-w-sm text-base text-ink-muted"
+              >
+                Four ways we make tech feel human — no jargon, no rush.
+              </motion.p>
+            </motion.div>
+
+            <motion.div
+              className="grid grid-cols-1 gap-px border border-hairline bg-hairline sm:grid-cols-2"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: '-60px' }}
+              variants={stagger(reduced)}
+            >
+              {features.map((feature, index) => {
+                const Icon = FEATURE_ICONS[index] ?? ListChecks;
+                return (
+                  <motion.article
+                    key={feature.title}
+                    variants={fadeUp(index * 0.06, reduced, index % 2 === 0 ? -20 : 20)}
+                    whileHover={reduced ? {} : { y: -4, transition: { duration: 0.25 } }}
+                    className="group bg-surface p-8 sm:p-10 lg:p-12"
+                  >
+                    <div className="mb-6 flex items-center justify-between">
+                      <div className="flex h-11 w-11 items-center justify-center rounded-full border border-hairline">
+                        <Icon
+                          className="h-5 w-5"
+                          style={{ color: index % 2 === 0 ? '#c2502e' : '#2e6a63' }}
+                          strokeWidth={1.5}
+                        />
+                      </div>
+                      <span className="font-display text-sm font-bold text-ink-muted/50">
+                        {String(index + 1).padStart(2, '0')}
+                      </span>
                     </div>
-                    <p className="text-gray-700 group-hover:text-gray-900 transition-colors">{question}</p>
-                  </div>
-                </div>
+                    <h3 className="font-display text-xl font-bold tracking-[-0.02em] text-ink sm:text-2xl">
+                      {feature.title}
+                    </h3>
+                    <p className="mt-4 text-base leading-relaxed text-ink-muted">
+                      {feature.description}
+                    </p>
+                  </motion.article>
+                );
+              })}
+            </motion.div>
+          </div>
+        </section>
+
+        <FeaturesScrollStrip />
+
+        {/* ── Popular questions ── */}
+        <section className="bg-canvas px-5 py-28 sm:px-8 sm:py-36">
+          <div className="mx-auto max-w-7xl">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: '-80px' }}
+              variants={stagger(reduced)}
+              className="mb-16 md:mb-20"
+            >
+              <motion.p
+                variants={fadeUp(0, reduced)}
+                className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-ink-muted"
+              >
+                {t('landing.popularQuestionsSection.title', 'Popular Questions')}
+              </motion.p>
+              <motion.h2
+                variants={fadeUp(0.05, reduced)}
+                className="max-w-2xl font-display text-3xl font-extrabold tracking-[-0.03em] text-ink sm:text-4xl md:text-5xl"
+              >
+                {t(
+                  'landing.popularQuestionsSection.subtitle',
+                  'Real questions people ask every day'
+                )}
+              </motion.h2>
+            </motion.div>
+
+            <motion.ol
+              className="divide-y divide-hairline border-y border-hairline"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: '-60px' }}
+              variants={stagger(reduced)}
+            >
+              {popularQuestions.map((question, index) => (
+                <motion.li
+                  key={question}
+                  variants={fadeUp(index * 0.05, reduced, index % 2 === 0 ? 16 : -16)}
+                  whileHover={reduced ? {} : { x: index % 2 === 0 ? 6 : -6 }}
+                >
+                  <Link
+                    to="/auth"
+                    className="group flex items-center gap-6 py-7 transition-colors hover:bg-surface sm:gap-10 sm:py-8"
+                  >
+                    <span className="w-10 shrink-0 font-display text-sm font-bold text-brand sm:w-14 sm:text-base">
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+                    <span className="flex-1 font-display text-lg font-semibold tracking-[-0.02em] text-ink transition-colors group-hover:text-brand sm:text-xl md:text-2xl">
+                      {question}
+                    </span>
+                    <ArrowRight
+                      className="h-5 w-5 shrink-0 text-ink-muted opacity-0 transition-all group-hover:translate-x-1 group-hover:opacity-100 rtl-flip"
+                      strokeWidth={1.5}
+                    />
+                  </Link>
+                </motion.li>
               ))}
-            </div>
+            </motion.ol>
 
-            <div className="text-center mt-12">
-              <Link
-                to="/auth"
-                className="btn-primary text-base px-6 py-3 sm:text-lg sm:px-8 sm:py-4"
-              >
-                {t('landing.popularQuestionsSection.askYourQuestionButton')}
+            <motion.div
+              className="mt-12"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeUp(0, reduced)}
+            >
+              <Link to="/auth" className="btn-secondary inline-flex items-center gap-2">
+                {t(
+                  'landing.popularQuestionsSection.askYourQuestionButton',
+                  'Ask Your Question Now'
+                )}
+                <ArrowRight className="h-4 w-4 rtl-flip" />
               </Link>
-            </div>
+            </motion.div>
           </div>
         </section>
-      </LazySection>
 
-      {/* CTA Section */}
-      <LazySection
-        sectionIndex={3}
-        canLoad={loadedSections.includes(3)}
-        onLoadComplete={() =>
-          setLoadedSections((prev) =>
-            prev.includes(4) ? prev : [...prev, 4]
-          )
-        }
-        className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 relative overflow-hidden"
-      >
-        <section className="py-16 sm:py-24">
-          <div className="absolute inset-0 bg-black/20"></div>
-          <div className="container mx-auto px-4 sm:px-6 text-center relative z-10">
-            <Heart className="w-12 h-12 sm:w-16 sm:h-16 text-white/80 mx-auto mb-6" />
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
-              {t('landing.ctaSection.title')}
-            </h2>
-            <p className="text-base sm:text-lg md:text-xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-              {t('landing.ctaSection.subtitle')}
+        {/* ── CTA band ── */}
+        <section data-nav-theme="dark" data-scroll-milestone="cta" className="relative overflow-hidden bg-ink px-5 py-28 sm:px-8 sm:py-36">
+          <div
+            className="pointer-events-none absolute inset-0"
+            style={{
+              background:
+                'radial-gradient(ellipse 80% 60% at 50% 100%, rgba(194,80,46,0.22) 0%, transparent 70%)',
+            }}
+          />
+          <motion.div
+            className="relative mx-auto max-w-3xl text-center"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: '-80px' }}
+            variants={stagger(reduced)}
+          >
+            <motion.h2
+              variants={fadeUp(0, reduced)}
+              className="font-display text-3xl font-extrabold tracking-[-0.03em] text-[#f6f2ea] sm:text-4xl md:text-5xl lg:text-6xl"
+            >
+              {t('landing.ctaSection.title', 'Ready to Master Technology?')}
+            </motion.h2>
+            <motion.p
+              variants={fadeUp(0.08, reduced)}
+              className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-[#cfc8ba] sm:text-lg"
+            >
+              {t(
+                'landing.ctaSection.subtitle',
+                "Join people who've made technology feel simple. Start getting clear, helpful answers today — completely free."
+              )}
+            </motion.p>
+            <motion.div variants={fadeUp(0.16, reduced)} className="mt-10">
+              <Link
+                to="/auth"
+                className="btn-primary inline-flex items-center gap-3 px-10 py-4 text-base sm:text-lg"
+              >
+                {t('landing.ctaSection.getStartedButton', 'Get Started Free Today')}
+                <ArrowRight className="h-5 w-5 rtl-flip" />
+              </Link>
+            </motion.div>
+            <motion.p
+              variants={fadeUp(0.22, reduced)}
+              className="mt-6 text-sm text-[#8a8275]"
+            >
+              {t('landing.hero.noCreditCard', 'No credit card required')} ·{' '}
+              {t('landing.hero.freeForever', 'Free forever')} ·{' '}
+              {t('landing.ctaSection.setupInMinutes', 'Setup in 2 minutes')}
+            </motion.p>
+          </motion.div>
+        </section>
+      </main>
+
+      {/* ── Footer ── */}
+      <footer data-nav-theme="dark" className="border-t border-[#2a2620] bg-ink px-5 py-14 sm:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col gap-10 md:flex-row md:items-start md:justify-between">
+          <div>
+            <Logo size="sm" variant="light" />
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-[#8a8275]">
+              {t(
+                'landing.footer.description',
+                'Making technology accessible and understandable for everyone.'
+              )}
             </p>
+          </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-              <Link
-                to="/auth"
-                className="inline-flex items-center bg-white text-blue-600 font-bold px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 rounded-xl text-base sm:text-lg md:text-xl hover:bg-gray-100 transition-all duration-200 shadow-2xl hover:shadow-3xl transform hover:-translate-y-1"
-              >
-                {t('landing.ctaSection.getStartedButton')}
-                <ArrowRight className="ml-3 w-5 h-5 sm:w-6 sm:h-6" />
-              </Link>
+          <div className="flex flex-wrap gap-12 sm:gap-16">
+            <div>
+              <h4 className="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#cfc8ba]">
+                {t('landing.footer.communityTitle', 'Community')}
+              </h4>
+              <ul className="space-y-2 text-sm text-[#8a8275]">
+                <li>
+                  <Link to="/auth" className="transition-colors hover:text-[#f6f2ea]">
+                    {t('landing.footer.supportItems.0', 'Help Center')}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/community" className="transition-colors hover:text-[#f6f2ea]">
+                    {t('landing.footer.supportItems.2', 'Community')}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="transition-colors hover:text-[#f6f2ea]">
+                    {t('landing.footer.supportItems.3', 'Contact Us')}
+                  </Link>
+                </li>
+              </ul>
             </div>
-
-            <div className="flex flex-col space-y-2 sm:flex-row sm:space-y-0 items-center justify-center sm:space-x-4 md:space-x-6 text-blue-100 text-sm sm:text-base">
-              <div className="flex items-center">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                <span>{t('landing.hero.noCreditCard')}</span>
-              </div>
-              <div className="flex items-center">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                <span>{t('landing.hero.freeForever')}</span>
-              </div>
-              <div className="flex items-center">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                <span>{t('landing.ctaSection.setupInMinutes')}</span>
-              </div>
+            <div>
+              <h4 className="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#cfc8ba]">
+                {t('landing.footer.legalTitle', 'Legal & Support')}
+              </h4>
+              <ul className="space-y-2 text-sm text-[#8a8275]">
+                <li>
+                  <Link to="/privacy-policy" className="transition-colors hover:text-[#f6f2ea]">
+                    {t('landing.footer.companyItems.1', 'Privacy Policy')}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/terms-of-service" className="transition-colors hover:text-[#f6f2ea]">
+                    {t('landing.footer.companyItems.2', 'Terms of Service')}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/accessibility" className="transition-colors hover:text-[#f6f2ea]">
+                    {t('landing.footer.companyItems.3', 'Accessibility')}
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
-        </section>
-      </LazySection>
+        </div>
 
-      {/* Footer */}
-      <LazySection
-        sectionIndex={4}
-        canLoad={loadedSections.includes(4)}
-        onLoadComplete={() =>
-          setLoadedSections((prev) =>
-            prev.includes(5) ? prev : [...prev, 5]
-          )
-        }
-        className="bg-gray-900 text-white"
-      >
-        <footer className="py-12 sm:py-16">
-          <div className="container mx-auto px-4 sm:px-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-12">
-              <div className="col-span-1 sm:col-span-2 md:col-span-1">
-                <Logo size="sm" />
-                <p className="text-gray-400 mt-4 leading-relaxed text-sm">
-                  {t('landing.footer.description')}
-                </p>
-                <div className="mt-4 text-gray-400 text-sm">
-                  <p><strong>{t('landing.footer.contactEmail').split(':')[0]}:</strong></p>
-                  <p>{t('landing.footer.contactEmail').split(': ')[1]}</p>
-                </div>
-              </div>
-
-              <div>
-                <h4 className="font-semibold mb-4 text-base">{t('landing.footer.communityTitle')}</h4>
-                <ul className="space-y-2 text-gray-400 text-sm">
-                  <li><Link to="/community" className="hover:text-white transition-colors">{t('landing.footer.supportItems.2')}</Link></li>
-                  <li><Link to="/contact" className="hover:text-white transition-colors">{t('landing.footer.supportItems.3')}</Link></li>
-                  <li><Link to="/auth" className="hover:text-white transition-colors">{t('landing.footer.supportItems.1')}</Link></li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="font-semibold mb-4 text-base">{t('landing.footer.legalTitle')}</h4>
-                <ul className="space-y-2 text-gray-400 text-sm">
-                  <li><Link to="/privacy-policy" className="hover:text-white transition-colors">{t('landing.footer.companyItems.1')}</Link></li>
-                  <li><Link to="/terms-of-service" className="hover:text-white transition-colors">{t('landing.footer.companyItems.2')}</Link></li>
-                  <li><Link to="/accessibility" className="hover:text-white transition-colors">{t('landing.footer.companyItems.3')}</Link></li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="border-t border-gray-800 pt-8">
-              <div className="flex flex-col md:flex-row justify-between items-center text-sm">
-                <p className="text-gray-400 mb-4 md:mb-0">{t('landing.footer.copyright')}</p>
-                <div className="flex items-center space-x-2 sm:space-x-4">
-                  <span className="text-gray-400">{t('landing.footer.trustedBy')}</span>
-                  <div className="flex items-center space-x-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </LazySection>
+        <div className="mx-auto mt-12 max-w-7xl border-t border-[#2a2620] pt-8">
+          <p className="text-sm text-[#6e6657]">
+            {t('landing.footer.copyright', '© 2025 TechSteps. Made with care for learners everywhere.')}
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };

@@ -47,12 +47,12 @@ const AuthPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center py-12 px-4">
+    <div className="min-h-screen bg-canvas flex items-center justify-center py-12 px-4">
       <div className="w-full max-w-md">
         {/* Back to home link */}
         <Link
           to="/"
-          className="inline-flex items-center text-gray-600 hover:text-gray-800 mb-8 transition-colors p-2 -ml-2 rounded-lg hover:bg-gray-100"
+          className="inline-flex items-center text-ink-muted hover:text-ink mb-8 transition-colors p-2 -ml-2 rounded-lg hover:bg-subtle focus-ring"
         >
           <ArrowLeft className="w-5 h-5 mr-3" />
           <span className="text-base font-medium">{t('auth.backToHome')}</span>
@@ -63,10 +63,10 @@ const AuthPage: React.FC = () => {
             <div className="flex justify-center mb-4 sm:mb-6">
               <Logo size="lg" showText={false} />
             </div>
-            <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-1 sm:mb-2">
+            <h1 className="font-display text-2xl sm:text-3xl font-bold tracking-[-0.02em] text-ink mb-1 sm:mb-2">
               {isSignUp ? t('auth.createAccount') : t('auth.welcomeBack')}
             </h1>
-            <p className="text-sm sm:text-base text-gray-600">
+            <p className="text-sm sm:text-base text-ink-muted">
               {isSignUp
                 ? t('auth.joinFamily')
                 : t('auth.welcomeBackDesc')
@@ -76,7 +76,7 @@ const AuthPage: React.FC = () => {
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="email" className="block text-sm font-semibold uppercase tracking-[0.08em] text-ink-muted mb-2">
                 {t('auth.email')}
               </label>
               <input
@@ -92,7 +92,7 @@ const AuthPage: React.FC = () => {
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="password" className="block text-sm font-semibold uppercase tracking-[0.08em] text-ink-muted mb-2">
                 {t('auth.password')}
               </label>
               <div className="relative">
@@ -109,7 +109,7 @@ const AuthPage: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700"
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-ink-muted hover:text-brand focus-ring rounded-full"
                 >
                   {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
                 </button>
@@ -118,7 +118,7 @@ const AuthPage: React.FC = () => {
 
             {isSignUp && (
               <div>
-                <label htmlFor="confirmPassword" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="confirmPassword" className="block text-sm font-semibold uppercase tracking-[0.08em] text-ink-muted mb-2">
                   {t('auth.confirmPassword')}
                 </label>
                 <input
@@ -135,7 +135,7 @@ const AuthPage: React.FC = () => {
             )}
 
             {error && (
-              <div className="text-red-600 text-sm text-center p-3 bg-red-50 rounded-lg">
+              <div className="text-[#b23a1c] text-sm text-center p-3 bg-[#f9ebe6] border border-[#e8c4b8] rounded-[12px]">
                 {error}
               </div>
             )}
@@ -164,7 +164,7 @@ const AuthPage: React.FC = () => {
                   setPassword('');
                   setConfirmPassword('');
                 }}
-                className="text-blue-600 hover:text-blue-800 font-medium"
+                className="text-brand hover:text-brand-strong font-semibold focus-ring rounded-pill px-2 py-1"
               >
                 {isSignUp
                   ? t('auth.alreadyHaveAccount')
