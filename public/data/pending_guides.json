@@ -349066,5 +349066,426 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785963776136-178",
+    "title": "Get Android Screen Resolution and DPI via ADB",
+    "problemDescription": "Need to retrieve the current screen resolution and DPI of an Android device using ADB commands.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "adb",
+      "screen resolution",
+      "dpi",
+      "display info"
+    ],
+    "steps": [
+      {
+        "title": "Check if ADB is connected",
+        "content": "Ensure your Android device is connected to your computer via USB and ADB is enabled. Run `adb devices` to verify the connection."
+      },
+      {
+        "title": "Use `wm` command to get resolution and DPI",
+        "content": "Run the following commands in your terminal or command prompt:\n- For screen resolution: `adb shell wm size`\n- For screen density (DPI): `adb shell wm density`\n\nNote: The `wm` tool is available on most modern Android devices."
+      },
+      {
+        "title": "Alternative: Use `dumpsys` for detailed display info",
+        "content": "If `wm` is unavailable, run:\n`adb shell dumpsys display | grep mBaseDisplayInfo`\n\nThis will display resolution, density, and other display-related information. The output format may vary by device manufacturer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using `dumpsys` for specific display modes",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check available display modes",
+            "content": "Run: `adb shell dumpsys display | grep mRequestedMode`"
+          },
+          {
+            "title": "Get current mode details",
+            "content": "Run: `adb shell dumpsys display | grep mMode={id=`"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T21:02:56.136Z",
+      "updated": "2026-08-05T21:02:56.136Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/44480/a-way-to-get-the-current-resolution-size-and-dpi-from-the-command-line-terminal",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785963781552-856",
+    "title": "Connect Microphone to Android TV for Karaoke",
+    "problemDescription": "User wants to connect a microphone to an Android TV to mix microphone audio with karaoke app audio for output through TV speakers.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android tv",
+      "microphone",
+      "karaoke",
+      "bluetooth",
+      "audio mix"
+    ],
+    "steps": [
+      {
+        "title": "Check Bluetooth Support on Android TV",
+        "content": "Verify that your Android TV supports Bluetooth. Most modern Android TVs (especially those with Android 11) support Bluetooth 5.0 or later, which allows for multi-point connections."
+      },
+      {
+        "title": "Connect a Bluetooth Microphone",
+        "content": "Pair a Bluetooth-enabled microphone with your Android TV. Go to Settings > Remote & Accessories > Add Accessory and follow the pairing instructions."
+      },
+      {
+        "title": "Install a Karaoke App",
+        "content": "Download and install a karaoke app from the Google Play Store (e.g., Smule, Karaoke Anywhere, or KaraFun). Ensure the app supports audio mixing."
+      },
+      {
+        "title": "Enable Audio Mixing",
+        "content": "Open the karaoke app and check its settings for an option to enable microphone input or audio mixing. This ensures both the app's audio and microphone input are output through the TV speakers."
+      },
+      {
+        "title": "Test the Setup",
+        "content": "Play a karaoke track and speak into the microphone to confirm that both the background music and your voice are audible through the TV speakers."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Karaoke Set with Audio Mixer",
+        "type": "Hardware Solution",
+        "steps": [
+          {
+            "title": "Purchase a Karaoke Set with Built-in Mixer",
+            "content": "Buy a dedicated karaoke set that includes microphones and an audio mixer. These sets combine microphone inputs and send the mixed audio to the TV via an auxiliary (3.5mm) or HDMI input."
+          },
+          {
+            "title": "Connect the Karaoke Set to the TV",
+            "content": "Plug the karaoke set's output (e.g., 3.5mm audio jack or HDMI) into the corresponding input on your Android TV. Use the TV's input selector to choose the correct source."
+          },
+          {
+            "title": "Play Karaoke Tracks",
+            "content": "Use the karaoke set's built-in player or connect a device (e.g., smartphone) to play karaoke tracks. The mixed audio (microphone + music) will play through the TV speakers."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a USB Audio Interface (Advanced)",
+        "type": "Advanced Hardware Solution",
+        "steps": [
+          {
+            "title": "Purchase a USB Audio Interface",
+            "content": "Buy a USB audio interface that supports microphone input (e.g., a USB sound card with XLR or 3.5mm mic input)."
+          },
+          {
+            "title": "Connect the Microphone to the Interface",
+            "content": "Plug your microphone into the audio interface using the appropriate cable (e.g., XLR or 3.5mm)."
+          },
+          {
+            "title": "Connect the Interface to the TV",
+            "content": "Use a USB OTG adapter to connect the audio interface to your Android TV. Ensure the TV recognizes the device (check Settings > Device Preferences > Storage & USB)."
+          },
+          {
+            "title": "Configure Audio Settings",
+            "content": "Open the karaoke app and set the audio input source to the USB audio interface. Adjust the app's audio mixing settings to include the microphone input."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T21:03:01.552Z",
+      "updated": "2026-08-05T21:03:01.552Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/251618/connect-a-microphone-to-a-smart-tv-for-karaoke-purposes",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785963799492-107",
+    "title": "Fix Display Artifacts and Blurry Text on High-Resolution Monitor",
+    "problemDescription": "Users report arbitrary pixel lines turning white and blurry text/icons on a 3840x2160 monitor, likely due to hardware pixel interpolation causing display issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "display",
+      "artifacts",
+      "blurry text",
+      "high resolution",
+      "pixel interpolation",
+      "Windows 10"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Display Scaling Settings",
+        "content": "Go to Settings > System > Display. Under 'Scale and layout', set the scaling to 100% or 125% (recommended for 4K monitors). Avoid custom scaling values."
+      },
+      {
+        "title": "Set Correct Resolution",
+        "content": "Ensure the display resolution is set to the native resolution of your monitor (3840x2160). Right-click on the desktop > Display settings > Resolution > Select 3840x2160."
+      },
+      {
+        "title": "Disable Hardware Acceleration for Specific Apps",
+        "content": "For apps like Photoshop, disable hardware acceleration: Open the app > Edit > Preferences > Performance > Uncheck 'Use Graphics Processor' > Restart the app."
+      },
+      {
+        "title": "Update Graphics Drivers",
+        "content": "Download and install the latest graphics drivers from the manufacturer's website (NVIDIA, AMD, or Intel). Reboot the system after installation."
+      },
+      {
+        "title": "Check Monitor Scaling Settings",
+        "content": "Access your monitor's OSD (On-Screen Display) menu and ensure scaling is set to '1:1' or 'Pixel Perfect' if available. Refer to your monitor's manual for specific steps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Custom Scaling for Specific Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Custom Scaling",
+            "content": "Go to Settings > System > Display > Advanced scaling settings > Turn on 'Custom scaling' and enter a value (e.g., 125%)."
+          },
+          {
+            "title": "Override Scaling for Apps",
+            "content": "Right-click the app shortcut > Properties > Compatibility tab > Check 'Override high DPI scaling behavior' > Select 'System' or 'System (Enhanced)' from the dropdown."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Third-Party Tools for Pixel-Perfect Scaling",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Scaling Tools",
+            "content": "Use tools like 'Custom Resolution Utility (CRU)' or 'Integer Scaling Fix' to force pixel-perfect scaling. Download from trusted sources."
+          },
+          {
+            "title": "Configure Scaling",
+            "content": "Open the tool and set the scaling mode to 'Integer Scaling' or 'Pixel Perfect'. Apply changes and restart the system."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T21:03:19.492Z",
+      "updated": "2026-08-05T21:03:19.492Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/new-build-questions.3836713/page-10",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785963810463-578",
+    "title": "Fix Asus ZenWifi AX (XT8) AiMesh Connection Drops",
+    "problemDescription": "Asus ZenWifi AX (XT8) AiMesh nodes experience intermittent connection drops, particularly with smart devices like Google Nest and Amazon Alexa. Connections may take up to 30 seconds to establish.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "asus",
+      "zenwifi",
+      "xt8",
+      "aimesh",
+      "connection drops",
+      "smart devices",
+      "2.4ghz",
+      "5ghz"
+    ],
+    "steps": [
+      {
+        "title": "Disable 802.11k and 802.11v on 2.4GHz Band",
+        "content": "Access your Asus ZenWifi AX (XT8) router admin panel via a web browser (typically 192.168.1.1). Navigate to Wireless > Professional > 2.4GHz. Disable 'Enable 802.11k (Neighbor Report)' and 'Enable 802.11v (Wireless Network Management)'. Apply changes and restart the router if prompted."
+      },
+      {
+        "title": "Check Channel Bandwidth and Channel Selection",
+        "content": "In the same Wireless > Professional > 2.4GHz section, ensure the channel bandwidth is set to '20 MHz' instead of '20/40 MHz'. Manually select a non-overlapping channel (e.g., 1, 6, or 11) to avoid interference from neighboring networks."
+      },
+      {
+        "title": "Update Firmware",
+        "content": "Go to Administration > Firmware Upgrade. Check for the latest firmware version and update if available. Ensure both AiMesh nodes are updated to the same firmware version."
+      },
+      {
+        "title": "Reset and Reconfigure AiMesh",
+        "content": "Perform a factory reset on both nodes (hold the reset button for 10 seconds). Reconfigure the AiMesh system from scratch using the Asus Router app or web interface. Ensure the main node is connected via Ethernet backhaul if possible."
+      },
+      {
+        "title": "Optimize Smart Device Placement",
+        "content": "Move smart devices (e.g., Google Nest, Amazon Alexa) closer to the AiMesh nodes or main router to improve signal strength. Avoid placing them near large metal objects or other electronics that may interfere with the signal."
+      },
+      {
+        "title": "Check for Interference",
+        "content": "Use a Wi-Fi analyzer app (e.g., Wi-Fi Analyzer for Android) to identify nearby networks and potential interference sources. Adjust the 2.4GHz channel or switch to 5GHz if possible to reduce congestion."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable 802.11r (Fast Roaming)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Fast Roaming on All Bands",
+            "content": "Access the router admin panel and navigate to Wireless > Professional. Disable 'Enable 802.11r (Fast Roaming)' on all bands (2.4GHz, 5GHz-1, and 5GHz-2). Apply changes and restart the router."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Ethernet Backhaul",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Connect Nodes via Ethernet",
+            "content": "Physically connect the AiMesh nodes to the main router using Ethernet cables. This reduces latency and improves stability, especially for smart devices. Disable wireless backhaul in the AiMesh settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T21:03:30.463Z",
+      "updated": "2026-08-05T21:03:30.463Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/2-x-asus-zenwifi-ax-xt8-aimesh-connection-and-dropout-issues.3738428",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785963825239-302",
+    "title": "Fix ADB Device Not Detected on MacBook When Phone is Charging via USB-C",
+    "problemDescription": "A Samsung phone charges a MacBook via USB-C but does not appear as an ADB device for development. The issue is linked to macOS compatibility with Samsung Smart Switch, which is required for ADB recognition.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "adb",
+      "macos",
+      "samsung",
+      "usb-c",
+      "smart-switch",
+      "SIP"
+    ],
+    "steps": [
+      {
+        "title": "Disable SIP (System Integrity Protection) Temporarily",
+        "content": "1. Restart your MacBook into Recovery Mode by holding Command + R during startup.\n2. Open Terminal from the Utilities menu.\n3. Run the command: `csrutil disable`\n4. Restart your MacBook normally."
+      },
+      {
+        "title": "Install Samsung Smart Switch (Temporary Workaround)",
+        "content": "1. Download and install Samsung Smart Switch for macOS from the official Samsung website.\n2. Follow the on-screen instructions to complete the installation.\n3. Restart your MacBook if prompted."
+      },
+      {
+        "title": "Enable USB Debugging and Trust the Computer",
+        "content": "1. On your Samsung phone, go to Settings > Developer Options.\n2. Ensure USB Debugging is enabled.\n3. Connect your phone to the MacBook via USB-C.\n4. When prompted, select 'Trust this computer' on your phone."
+      },
+      {
+        "title": "Verify ADB Device Detection",
+        "content": "1. Open Terminal on your MacBook.\n2. Run the command: `adb devices`\n3. Check if your phone appears in the list of connected devices."
+      },
+      {
+        "title": "Re-enable SIP (After Confirming ADB Works)",
+        "content": "1. Restart your MacBook into Recovery Mode again.\n2. Open Terminal from the Utilities menu.\n3. Run the command: `csrutil enable`\n4. Restart your MacBook normally."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a USB-C Hub with Power Passthrough",
+        "type": "Hardware Workaround",
+        "steps": [
+          {
+            "title": "Purchase a USB-C Hub with Power Passthrough",
+            "content": "Buy a USB-C hub that supports power passthrough and data transfer simultaneously. This allows your phone to charge the MacBook while still appearing as an ADB device."
+          },
+          {
+            "title": "Connect Your Phone via the Hub",
+            "content": "1. Plug the USB-C hub into your MacBook.\n2. Connect your phone to the hub using a USB-C to USB-C cable.\n3. Ensure the hub is powered if required."
+          },
+          {
+            "title": "Enable USB Debugging and Verify ADB",
+            "content": "1. On your phone, go to Settings > Developer Options and enable USB Debugging.\n2. Connect your phone to the hub.\n3. Run `adb devices` in Terminal to check if your phone is detected."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Different USB Cable or Port",
+        "type": "Hardware Workaround",
+        "steps": [
+          {
+            "title": "Try a Different USB-C Cable",
+            "content": "Use a high-quality USB-C to USB-C cable that supports data transfer. Some cables are designed only for charging and do not support data."
+          },
+          {
+            "title": "Test Different USB Ports",
+            "content": "If your MacBook has multiple USB-C ports, try connecting your phone to a different port to see if the issue persists."
+          },
+          {
+            "title": "Enable USB Debugging and Verify ADB",
+            "content": "1. On your phone, go to Settings > Developer Options and enable USB Debugging.\n2. Connect your phone to the MacBook.\n3. Run `adb devices` in Terminal to check if your phone is detected."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T21:03:45.239Z",
+      "updated": "2026-08-05T21:03:45.239Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/237355/my-phone-is-charging-my-macbook-over-usb-c-and-not-showing-up-as-an-adb-device",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785963833242-387",
+    "title": "Fix Fastboot Freezing on Mac OS Sierra",
+    "problemDescription": "Fastboot command freezes or hangs when running on Mac OS Sierra, particularly on 2016 MacBook Pro models.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "fastboot",
+      "Mac OS Sierra",
+      "Android Platform Tools",
+      "freeze",
+      "hang"
+    ],
+    "steps": [
+      {
+        "title": "Update Android Platform Tools via Homebrew",
+        "content": "Open Terminal and run the following commands to update Android Platform Tools to version 25.0.4 or higher:\n1. `brew update`\n2. `brew install android-platform-tools`\n3. Verify the version with `fastboot --version` or `adb version`."
+      },
+      {
+        "title": "Restart ADB with libusb Support (Optional)",
+        "content": "If the issue persists, enable libusb support for ADB:\n1. Run `adb kill-server` to stop the ADB server.\n2. Set the environment variable and restart ADB:\n   `ADB_LIBUSB=1 adb start-server`\n3. Verify libusb is active by running `adb host-features` and checking for \"libusb\" in the output."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Virtual Machine (Workaround)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up a Virtual Machine",
+            "content": "Install a virtualization tool like Parallels Desktop or VirtualBox on your Mac."
+          },
+          {
+            "title": "Install Ubuntu and Fastboot",
+            "content": "Create a lightweight Ubuntu virtual machine and install Android Platform Tools using:\n1. `sudo apt update`\n2. `sudo apt install android-tools-adb android-tools-fastboot`"
+          },
+          {
+            "title": "Connect Device to VM",
+            "content": "Plug your Android device into the Mac and configure the VM to recognize the USB device. Run fastboot commands within the VM."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T21:03:53.242Z",
+      "updated": "2026-08-05T21:03:53.242Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/164682/fastboot-freezes-on-mac-os-sierra",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
