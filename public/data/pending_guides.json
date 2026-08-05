@@ -348650,5 +348650,421 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785957720943-924",
+    "title": "Fix Zoom Audio Issues Caused by Citrix or Workplace Servers",
+    "problemDescription": "Zoom audio does not work when accessed through a Citrix or secure workplace server, blocking audio functionality.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "audio",
+      "citrix",
+      "workplace",
+      "server",
+      "blocked"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall Zoom Outside the Citrix Server",
+        "content": "Download and install Zoom directly on your local machine, bypassing the Citrix server. Ensure you are not logged into the Citrix environment during installation."
+      },
+      {
+        "title": "Test Zoom Audio",
+        "content": "After installation, open Zoom and test the audio by joining a test meeting or starting a new meeting. Verify that both input (microphone) and output (speaker) audio work."
+      },
+      {
+        "title": "Use a Different Device",
+        "content": "If reinstallation is not possible, use Zoom on a personal device not connected to the workplace server. Ensure the device meets Zoom's system requirements."
+      },
+      {
+        "title": "Contact IT Department",
+        "content": "If the issue persists, contact your workplace IT department. Request them to check server-side audio policies or whitelist Zoom for audio access."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Virtual Audio Cable (Advanced)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Virtual Audio Cable Tool",
+            "content": "Download and install a virtual audio cable tool like Voicemeeter or VB-Cable. These tools create virtual audio devices that can bypass server restrictions."
+          },
+          {
+            "title": "Configure Zoom to Use Virtual Audio",
+            "content": "In Zoom settings, go to Audio > Speaker and Microphone, and select the virtual audio device created by the tool. Test the audio to ensure it works."
+          },
+          {
+            "title": "Monitor for Stability",
+            "content": "Virtual audio tools may introduce latency or instability. Use them only if other methods fail and monitor performance during meetings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T19:22:00.943Z",
+      "updated": "2026-08-05T19:22:00.943Z",
+      "sourceUrl": "https://www.makeuseof.com/fix-zoom-audio-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785957725179-731",
+    "title": "Fix Zoom Installation or Access Issues",
+    "problemDescription": "Zoom fails to install, join meetings, or throws errors like 'XmppDll.dll is missing' or 'There is no disk in the drive'.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "installation",
+      "error",
+      "dll",
+      "meeting"
+    ],
+    "steps": [
+      {
+        "title": "Disable Real-Time Virus Protection",
+        "content": "Temporarily disable Windows Defender or third-party antivirus to check if it blocks Zoom. Re-enable after testing."
+      },
+      {
+        "title": "Allow Zoom Through Windows Firewall",
+        "content": "1. Open Windows Security > Firewall & network protection. 2. Click 'Allow an app through firewall'. 3. Find 'Zoom Video Conference' and enable both Private and Public. 4. Click OK."
+      },
+      {
+        "title": "Uninstall and Reinstall Zoom",
+        "content": "1. Press Windows key + I > Apps. 2. Find Zoom, click Uninstall. 3. Download the latest Zoom client from the official website and reinstall."
+      },
+      {
+        "title": "Disable Windows Firewall Temporarily",
+        "content": "1. Go to Firewall & network protection. 2. Select your active network (e.g., Private). 3. Turn off Microsoft Defender Firewall. 4. Test Zoom and re-enable afterward."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Repair Zoom Installation",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Zoom Repair Tool",
+            "content": "Download and run the Zoom Repair Tool from the official Zoom support page to fix corrupt installation files without a full reinstall."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Conflicting Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Close Background Apps",
+            "content": "Temporarily close other applications (e.g., VPNs, screen recorders) that might interfere with Zoom's file access or network permissions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T19:22:05.179Z",
+      "updated": "2026-08-05T19:22:05.179Z",
+      "sourceUrl": "https://www.makeuseof.com/how-to-fix-zoom-problems-and-error-codes",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785957744242-123",
+    "title": "Fix Discord Stuck on RTC Connecting on Windows",
+    "problemDescription": "Discord remains stuck on 'RTC Connecting' on Windows, preventing voice/video communication.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "rtc connecting",
+      "windows",
+      "dns",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Restart Discord and Your PC",
+        "content": "Close the Discord app completely. Restart your Windows PC to clear temporary glitches. Reopen Discord and check if the issue persists."
+      },
+      {
+        "title": "Check Discord Status and Hardware",
+        "content": "Visit the Discord Status page (https://discordstatus.com) to ensure Discord's servers are operational. Test your microphone and camera using the WebRTC Troubleshooter (https://webrtc.github.io/samples/src/content/devices/input-output/) and resolve any hardware or software issues."
+      },
+      {
+        "title": "Flush DNS Cache",
+        "content": "Open Command Prompt as Administrator (search for 'cmd', right-click, and select 'Run as administrator'). Type 'ipconfig /flushdns' (include the space) and press Enter. Restart your PC and Discord to apply changes."
+      },
+      {
+        "title": "Change DNS Servers",
+        "content": "Go to 'Settings > Network & Internet > Change adapter options'. Right-click your active network connection, select 'Properties', then 'Internet Protocol Version 4 (TCP/IPv4)', and click 'Properties'. Select 'Use the following DNS server addresses' and enter '1.1.1.1' (Cloudflare) or '8.8.8.8' (Google) for Preferred DNS. Click 'OK' and restart your PC."
+      },
+      {
+        "title": "Disable VPN Temporarily",
+        "content": "Turn off any VPN software and check if Discord connects. If it works, consider switching to a different VPN or using Discord without one."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Network Settings",
+        "type": "Advanced Fix",
+        "steps": [
+          {
+            "title": "Reset Network Adapter",
+            "content": "Open Command Prompt as Administrator and run the following commands one by one: 'netsh winsock reset', 'netsh int ip reset', and 'ipconfig /release'. Restart your PC afterward."
+          },
+          {
+            "title": "Reinstall Network Drivers",
+            "content": "Press 'Win + X' and select 'Device Manager'. Expand 'Network adapters', right-click your network adapter, and select 'Uninstall device'. Restart your PC to automatically reinstall the driver."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T19:22:24.242Z",
+      "updated": "2026-08-05T19:22:24.242Z",
+      "sourceUrl": "https://www.makeuseof.com/windows-discord-rtc-connecting",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785957791117-109",
+    "title": "Fix Sudden Battery Drain on Android 6.0 Marshmallow",
+    "problemDescription": "Android 6.0 device experiences an unexplained sudden increase in battery drain, often linked to Google apps or services.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery drain",
+      "android 6.0",
+      "google apps",
+      "marshmallow",
+      "battery monitor"
+    ],
+    "steps": [
+      {
+        "title": "Check Battery Usage by App",
+        "content": "Go to Settings > Battery. Review the battery usage breakdown. Identify any app consuming an unusually high percentage (e.g., 50%+ of total battery)."
+      },
+      {
+        "title": "Disable or Uninstall Suspicious Apps",
+        "content": "For non-system apps, uninstall them. For pre-installed Google apps (e.g., Calendar), disable them via Settings > Apps > [App Name] > Disable. Note: Some apps cannot be uninstalled."
+      },
+      {
+        "title": "Turn Off Automatic App Updates",
+        "content": "Go to Google Play Store > Settings > Auto-update apps. Select 'Do not auto-update apps' to prevent background updates that may cause battery drain."
+      },
+      {
+        "title": "Restart the Device",
+        "content": "Restart your Android device to clear temporary glitches affecting battery performance."
+      },
+      {
+        "title": "Update Android OS",
+        "content": "Go to Settings > About phone > System updates. Install any available updates to patch known battery drain issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset (Last Resort)",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Back up important data to Google Drive or a computer before proceeding."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > Backup & reset > Factory data reset. Follow the prompts to reset the device to factory settings."
+          },
+          {
+            "title": "Restore Data Selectively",
+            "content": "After reset, restore data gradually to identify if a specific app or setting causes the battery drain."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Clear Cache Partition",
+        "type": "System Maintenance",
+        "steps": [
+          {
+            "title": "Boot into Recovery Mode",
+            "content": "Turn off the device. Press and hold the Volume Up + Power buttons simultaneously until the recovery menu appears."
+          },
+          {
+            "title": "Select Wipe Cache Partition",
+            "content": "Use the volume buttons to navigate to 'Wipe cache partition' and select it with the Power button. Confirm the action."
+          },
+          {
+            "title": "Reboot the Device",
+            "content": "Select 'Reboot system now' to restart the device with a cleared cache."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T19:23:11.117Z",
+      "updated": "2026-08-05T19:23:11.117Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/140262/how-to-fix-a-sudden-increase-in-battery-drain",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785957796207-533",
+    "title": "Fix Android System Battery Drain on Marshmallow (6.0)",
+    "problemDescription": "Android System is consuming excessive battery power, often due to weak signal, background processes, or app updates. Common on Marshmallow (6.0) devices like Huawei Mate 8.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "battery drain",
+      "marshmallow",
+      "android system",
+      "huawei"
+    ],
+    "steps": [
+      {
+        "title": "Check Cellular Signal Strength",
+        "content": "Observe signal bars at night or in weak coverage areas. If weak, enable Airplane Mode or switch to Wi-Fi to reduce cellular radio power usage."
+      },
+      {
+        "title": "Disable Automatic App Updates",
+        "content": "Go to Google Play Store > Settings > Auto-update apps > Select 'Do not auto-update apps'. Restart the device afterward."
+      },
+      {
+        "title": "Clear Cache Partition",
+        "content": "Boot into Recovery Mode (Power + Volume Up), select 'Wipe cache partition', and confirm. Reboot the device."
+      },
+      {
+        "title": "Reboot the Device",
+        "content": "Hold the power button and select 'Restart'. This can resolve temporary system glitches causing battery drain."
+      },
+      {
+        "title": "Identify Battery-Draining Apps",
+        "content": "Go to Settings > Battery > Battery Usage. Look for apps with high usage (e.g., Google Play Services, AndroidOS). Force stop or uninstall problematic apps."
+      },
+      {
+        "title": "Use Wakelock Detector (Optional)",
+        "content": "Install 'Wakelock Detector' from the Play Store to identify apps keeping the device awake unnecessarily. Uninstall or restrict such apps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset (Last Resort)",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Back up important files, contacts, and apps to cloud storage or a computer."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > Backup & Reset > Factory Data Reset > Reset Phone. Follow on-screen instructions."
+          },
+          {
+            "title": "Restore Data Gradually",
+            "content": "After reset, restore data and monitor battery usage. Reinstall apps one by one to identify the culprit."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Unnecessary Features",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Background Sync",
+            "content": "Go to Settings > Accounts > Google > Select your account > Disable 'Sync' for non-essential apps."
+          },
+          {
+            "title": "Disable Location Services",
+            "content": "Go to Settings > Location > Disable 'Location' or set to 'Battery Saving' mode."
+          },
+          {
+            "title": "Reduce Screen Timeout",
+            "content": "Go to Settings > Display > Sleep > Set to 30 seconds or less."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T19:23:16.207Z",
+      "updated": "2026-08-05T19:23:16.207Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/161938/android-system-battery-drain",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785957810588-561",
+    "title": "Fix Rapid Battery Drain on Samsung Galaxy S8/S8+ After Reformatting",
+    "problemDescription": "Samsung Galaxy S8/S8+ devices experience rapid battery drain after reformatting, which may be linked to faulty battery cells. A third-party app can resolve this issue.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery drain",
+      "Samsung Galaxy S8",
+      "S8+",
+      "reformat",
+      "KNOX",
+      "battery cells"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install 'Repair Battery Life' App",
+        "content": "Download the 'Repair Battery Life' app from a trusted source (e.g., APKMirror or the developer's website). Ensure your device allows installations from unknown sources in Settings > Security."
+      },
+      {
+        "title": "Run Battery Diagnosis and Repair",
+        "content": "Open the app and run a full battery diagnosis. Follow the on-screen instructions to repair any identified faulty battery cells. This may take several minutes."
+      },
+      {
+        "title": "Monitor Battery Performance",
+        "content": "After repair, monitor your battery performance for a few days. If the issue recurs, repeat the repair process or consider replacing the battery."
+      },
+      {
+        "title": "Avoid Reformatting",
+        "content": "Refrain from reformatting your device unless absolutely necessary, as it may trigger the battery drain issue again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset with Battery Reset",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Back up all important data to an external source or cloud storage."
+          },
+          {
+            "title": "Perform a Factory Reset",
+            "content": "Go to Settings > General Management > Reset > Factory Data Reset. Confirm and wait for the process to complete."
+          },
+          {
+            "title": "Recharge Fully Before First Use",
+            "content": "After the reset, charge your device to 100% before turning it on to recalibrate the battery."
+          },
+          {
+            "title": "Monitor Battery Health",
+            "content": "Use the 'Repair Battery Life' app or a similar tool to check battery health post-reset."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T19:23:30.588Z",
+      "updated": "2026-08-05T19:23:30.588Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/223624/debunk-tripping-knox-removes-your-battery-life",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
