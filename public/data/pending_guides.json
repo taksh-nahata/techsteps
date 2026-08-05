@@ -346614,5 +346614,166 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1785897475556-881",
+    "title": "Fix SSH Permission Denied on Correct Password Authentication",
+    "problemDescription": "SSH connection fails with 'Permission denied' error despite using the correct password, often due to misconfigured SSH server settings or network/DNS issues.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "ssh",
+      "permission denied",
+      "password authentication",
+      "sshd_config",
+      "static IP"
+    ],
+    "steps": [
+      {
+        "title": "Verify SSH Server Configuration",
+        "content": "Open the SSH server configuration file using a text editor with root privileges: `sudo nano /etc/ssh/sshd_config`"
+      },
+      {
+        "title": "Enable Password Authentication",
+        "content": "Locate the line `#PasswordAuthentication yes` and uncomment it by removing the `#` symbol. Ensure it reads `PasswordAuthentication yes`."
+      },
+      {
+        "title": "Restart SSH Service",
+        "content": "Apply the changes by restarting the SSH service: `sudo systemctl restart sshd`"
+      },
+      {
+        "title": "Check Server IP Address",
+        "content": "On the server, run `ifconfig` to check the current IP address. If it has changed, update the DNS A record to point to the new IP address."
+      },
+      {
+        "title": "Set Static IP Address (Optional)",
+        "content": "To prevent future IP changes, set a static IP address on the server. Edit the network configuration file (e.g., `/etc/netplan/01-netcfg.yaml` on Ubuntu) and assign a static IP."
+      },
+      {
+        "title": "Test SSH Connection",
+        "content": "Attempt to SSH into the server again using the correct password: `ssh username@server_ip`"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Firewall and Port Forwarding",
+        "type": "Network Configuration",
+        "steps": [
+          {
+            "title": "Verify Firewall Rules",
+            "content": "Ensure the firewall allows SSH traffic (port 22). For UFW on Ubuntu: `sudo ufw allow 22`"
+          },
+          {
+            "title": "Check Port Forwarding (If Applicable)",
+            "content": "If connecting through a router, ensure port forwarding is set up for port 22 to the server's IP address."
+          },
+          {
+            "title": "Test Connection Again",
+            "content": "Retry the SSH connection after making firewall or port forwarding changes."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Enable Root Login (If Necessary)",
+        "type": "Configuration Change",
+        "steps": [
+          {
+            "title": "Edit SSH Configuration",
+            "content": "Open `/etc/ssh/sshd_config` and locate `#PermitRootLogin yes`. Uncomment and set it to `PermitRootLogin yes` if root login is required."
+          },
+          {
+            "title": "Restart SSH Service",
+            "content": "Apply changes: `sudo systemctl restart sshd`"
+          },
+          {
+            "title": "Test Root Login",
+            "content": "Attempt to SSH as root: `ssh root@server_ip`"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T02:37:55.556Z",
+      "updated": "2026-08-05T02:37:55.556Z",
+      "sourceUrl": "https://superuser.com/questions/543626/ssh-permission-denied-on-correct-password-authentication",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785897491399-954",
+    "title": "Fix Slow MacBook Due to Failing Battery or High Disk Usage",
+    "problemDescription": "A MacBook becomes slow due to a failing battery throttling CPU performance or excessive disk usage filling storage space.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "slow",
+      "battery",
+      "disk",
+      "cpu throttling",
+      "storage"
+    ],
+    "steps": [
+      {
+        "title": "Check Battery Health",
+        "content": "Open 'About This Mac' > 'System Report' > 'Power' to check the battery condition. If it shows 'Service Battery' or 'Replace Soon', the battery may be failing and throttling CPU performance."
+      },
+      {
+        "title": "Verify CPU Performance",
+        "content": "Download and install 'Intel Power Gadget' from Intel's website. Run it to check if your CPU is running at reduced clock speeds (e.g., 50% of max). If so, the battery is likely causing throttling."
+      },
+      {
+        "title": "Monitor Disk Usage",
+        "content": "Open 'Activity Monitor' (Applications > Utilities) and check the 'Disk' tab. Look for high 'Data/Sec' activity or near-full disk usage. If disk space is critically low (e.g., <10% free), free up space by deleting unnecessary files or apps."
+      },
+      {
+        "title": "Clean Up Storage",
+        "content": "Use 'About This Mac' > 'Storage' to identify large files. Delete old downloads, unused apps, or duplicate files. Consider moving large media files to cloud storage or an external drive."
+      },
+      {
+        "title": "Perform a Clean macOS Reinstall",
+        "content": "Back up your data using Time Machine. Erase the disk and reinstall macOS from recovery mode (Cmd+R at startup). Test performance before restoring files to rule out software corruption."
+      },
+      {
+        "title": "Replace the Battery",
+        "content": "If the battery is failing, replace it with an official Apple battery or a reputable third-party option. This should restore full CPU performance and resolve throttling issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset SMC and NVRAM",
+        "type": "Quick Fix",
+        "steps": [
+          {
+            "title": "Reset SMC",
+            "content": "Shut down your Mac. For Intel-based MacBooks, press and hold Shift+Control+Option+Power for 10 seconds, then release. Power on the Mac and check performance."
+          },
+          {
+            "title": "Reset NVRAM",
+            "content": "Shut down the Mac. Power on and immediately hold Command+Option+P+R for 20 seconds. Release and let the Mac boot normally."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Create a New User Account",
+        "type": "Diagnostic Test",
+        "steps": [
+          {
+            "title": "Test with a New User",
+            "content": "Go to 'System Preferences' > 'Users & Groups' and create a new admin account. Log in to the new account and check if performance improves. If it does, your original account may have corrupted preferences or login items."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T02:38:11.399Z",
+      "updated": "2026-08-05T02:38:11.399Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/333928/my-macbook-is-slow-recently-how-do-i-fix-this",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
