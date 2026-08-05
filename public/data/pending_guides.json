@@ -348357,5 +348357,298 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1785951075922-953",
+    "title": "Set Up Google 2FA with Third-Party OTP App When Enrollment is Restricted",
+    "problemDescription": "Users are unable to set up Google 2FA with a third-party OTP app due to enrollment restrictions (e.g., forced security key requirement or admin-enforced settings).",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Google 2FA",
+      "third-party OTP",
+      "Authenticator app",
+      "enrollment restriction",
+      "security key",
+      "virtual hardware key"
+    ],
+    "steps": [
+      {
+        "title": "Use Google Prompt (Recommended)",
+        "content": "On your phone, install the official Google app (not Google Authenticator). When signing in, select 'Try another way' and choose 'Google prompt'. Tap 'Yes' on your phone to complete the 2FA setup."
+      },
+      {
+        "title": "Enable Authenticator App Mode",
+        "content": "During 2FA setup, look for an option labeled 'Authenticator app' or 'Set up authenticator app'. Google may hide this option behind a 'Try another way' or 'More options' link. Select it to generate a QR code for your third-party OTP app."
+      },
+      {
+        "title": "Use a Virtual Security Key (Workaround)",
+        "content": "1. Open Chrome DevTools (F12 or Ctrl+Shift+I).\n2. Go to the 'Sensors' tab and select 'Security' > 'Virtual Authenticator Device'.\n3. Choose 'u2f' as the type and create the virtual device.\n4. Initiate Google 2FA setup and select 'Security Key' as the method.\n5. Complete the setup using the virtual device.\n6. Now, the 'Authenticator app' option will appear in 2FA setup. Scan the QR code with your third-party OTP app."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Admin for Backup Codes",
+        "type": "Admin Intervention",
+        "steps": [
+          {
+            "title": "Request Backup Codes",
+            "content": "Contact your organization's admin and request backup codes for your account. These codes can be used to bypass 2FA temporarily while you set up a third-party OTP app."
+          },
+          {
+            "title": "Set Up Third-Party OTP App",
+            "content": "Once logged in with a backup code, go to your Google account security settings and set up a third-party OTP app using the provided QR code or manual entry."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T17:31:15.922Z",
+      "updated": "2026-08-05T17:31:15.922Z",
+      "sourceUrl": "https://superuser.com/questions/1658659/how-to-set-up-google-2fa-with-third-party-otp-app",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785951094447-475",
+    "title": "Transfer Google Authenticator 2FA to a Second Device",
+    "problemDescription": "Users need to set up Google Authenticator on a second device without generating new keys or losing access to accounts.",
+    "category": "ios",
+    "difficulty": "Hard",
+    "keywords": [
+      "Google Authenticator",
+      "2FA",
+      "second device",
+      "transfer",
+      "TWRP",
+      "database"
+    ],
+    "steps": [
+      {
+        "title": "Backup Google Authenticator Database (Android)",
+        "content": "Boot your Android device into TWRP Recovery (Volume Up + Power). Navigate to the file manager and copy the file `/data/data/com.google.android.apps.authenticator2/databases/databases` to `/storage/emulated/0/Download/`. Transfer this file to your computer."
+      },
+      {
+        "title": "Extract 2FA Secrets from Database",
+        "content": "On your computer, open the database file using `sqlite3.exe`. Run the following commands to view the secrets:\n```\nsqlite3.exe databases\n.tables\nSELECT * FROM accounts;\n```\nNote the `secret` values for each account."
+      },
+      {
+        "title": "Set Up Google Authenticator on Second Device",
+        "content": "Install Google Authenticator on your second device (iOS/Android). Manually add each account by entering the `secret` value obtained from the database. Do not remove the original device from the account until the second device is fully set up."
+      },
+      {
+        "title": "Verify and Remove Original Device",
+        "content": "Test the 2FA codes on both devices. Once confirmed, you may remove the original device from the account if desired."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Authy Instead of Google Authenticator",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Authy on Both Devices",
+            "content": "Download and install Authy on both your primary and secondary devices (iOS/Android). Authy supports the same 2FA algorithms as Google Authenticator."
+          },
+          {
+            "title": "Set Up Authy with Existing Accounts",
+            "content": "Open Authy on your primary device and add your accounts by scanning QR codes or entering the secret keys. Authy will sync these accounts to your secondary device."
+          },
+          {
+            "title": "Verify and Remove Google Authenticator",
+            "content": "Test the 2FA codes on both devices. Once confirmed, you may uninstall Google Authenticator if desired."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T17:31:34.447Z",
+      "updated": "2026-08-05T17:31:34.447Z",
+      "sourceUrl": "https://superuser.com/questions/742726/google-authenticator-and-second-device-setup",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1785951142978-767",
+    "title": "Fix ADB Not Detecting Android Devices After Windows 11 23H2 Update",
+    "problemDescription": "ADB fails to detect Android devices after upgrading to Windows 11 23H2, with no devices appearing in 'adb devices' and no USB connection tones.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "adb",
+      "android",
+      "usb-debugging",
+      "windows-11",
+      "23H2",
+      "device detection"
+    ],
+    "steps": [
+      {
+        "title": "Reattach the Keyboard (if applicable)",
+        "content": "If using a 2-in-1 device like a Microsoft Surface Book 3, detach and reattach the keyboard to reset USB port functionality. This may restore ADB device detection."
+      },
+      {
+        "title": "Check USB Port Functionality",
+        "content": "Test the USB ports with other devices (e.g., flash drive) to confirm they are working. If only USB-C ports detect devices, use a USB-C to USB-A adapter for testing."
+      },
+      {
+        "title": "Update USB Drivers",
+        "content": "Open Device Manager (Win + X > Device Manager), expand 'Universal Serial Bus controllers', right-click each 'USB Root Hub' or 'Generic USB Hub', and select 'Update driver'. Choose 'Search automatically for updated driver software'."
+      },
+      {
+        "title": "Reinstall ADB Drivers",
+        "content": "Download and install the latest Google USB Driver from the Android SDK Platform-Tools package or directly from Google's website. Extract the driver files and manually update the driver via Device Manager by pointing to the extracted folder."
+      },
+      {
+        "title": "Enable USB Debugging on Android Device",
+        "content": "Ensure USB debugging is enabled on your Android device (Settings > Developer options > USB debugging). If Developer options are hidden, go to Settings > About phone > tap 'Build number' 7 times."
+      },
+      {
+        "title": "Restart ADB Server",
+        "content": "Run the following commands in Command Prompt (Admin): 'adb kill-server' followed by 'adb start-server'. Then check 'adb devices' again."
+      },
+      {
+        "title": "Test with Different Cable and Port",
+        "content": "Use a high-quality USB cable (preferably the original one) and try different USB ports. Avoid hubs or adapters if possible."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use USB Driver from Manufacturer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Manufacturer-Specific USB Driver",
+            "content": "Visit your laptop manufacturer's support page (e.g., Microsoft for Surface devices) and download the latest USB drivers for your model."
+          },
+          {
+            "title": "Install Driver Manually",
+            "content": "In Device Manager, right-click the problematic USB device, select 'Update driver' > 'Browse my computer for drivers' > 'Let me pick from a list' > 'Have Disk', and browse to the downloaded driver files."
+          },
+          {
+            "title": "Reboot and Test",
+            "content": "Restart your computer and test ADB device detection again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable USB Power Saving",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Press Win + X and select 'Device Manager'."
+          },
+          {
+            "title": "Disable USB Power Saving",
+            "content": "Expand 'Universal Serial Bus controllers', right-click each 'USB Root Hub' or 'Generic USB Hub', select 'Properties' > 'Power Management' tab, and uncheck 'Allow the computer to turn off this device to save power'."
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Reboot your computer and check if ADB detects devices."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T17:32:22.978Z",
+      "updated": "2026-08-05T17:32:22.978Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/256662/adb-stopped-working-after-installing-windows-11-23h2",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785951161235-64",
+    "title": "Fix Samsung Kies Not Detecting Galaxy S GT-i9000 on Windows 7",
+    "problemDescription": "Kies software fails to detect or sync with a Samsung Galaxy S GT-i9000 on Windows 7, despite the device being connected.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "Kies",
+      "Galaxy S",
+      "GT-i9000",
+      "Windows 7",
+      "sync",
+      "detection",
+      "USB"
+    ],
+    "steps": [
+      {
+        "title": "Unmount Internal Storage and Remove External SD Card",
+        "content": "On your Galaxy S GT-i9000, go to Settings > SD card and phone storage > Unmount SD card and internal storage. Physically remove the external SD card from the device."
+      },
+      {
+        "title": "Shut Down the Phone",
+        "content": "Power off your Galaxy S completely."
+      },
+      {
+        "title": "Update Windows Search (KB940157)",
+        "content": "Download and install Windows Search 4.0 for Windows XP (KB940157) from Microsoft's website. This update resolves compatibility issues with older synchronization software."
+      },
+      {
+        "title": "Connect to a Rear USB Port",
+        "content": "Plug your Galaxy S into a USB port located on the back of your PC (avoid front panel ports)."
+      },
+      {
+        "title": "Start Kies and Sync",
+        "content": "Open Samsung Kies and attempt to sync with your device. It should now be detected."
+      },
+      {
+        "title": "Reinsert SD Card and Restart",
+        "content": "Safely disconnect the phone, power it off, reinsert the external SD card, and restart the device. Reconnect to verify the fix persists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Uninstall Conflicting Software (e.g., PALM Sync)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Conflicting Software",
+            "content": "Check your PC for previously installed synchronization software (e.g., PALM Desktop) that may conflict with Kies."
+          },
+          {
+            "title": "Uninstall the Software",
+            "content": "Use Windows Add/Remove Programs to uninstall the conflicting software."
+          },
+          {
+            "title": "Restart PC and Retry Kies",
+            "content": "Reboot your computer and reconnect your Galaxy S. Open Kies to test detection."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable USB Debugging and Check USB Mode",
+        "type": "Community Suggestion",
+        "steps": [
+          {
+            "title": "Disable USB Debugging",
+            "content": "Go to Settings > Applications > Development and ensure 'USB debugging' is turned off."
+          },
+          {
+            "title": "Set USB Mode to 'Mass Storage'",
+            "content": "Connect your phone via USB, then select 'Mass storage' mode when prompted on the device."
+          },
+          {
+            "title": "Retry Kies Connection",
+            "content": "Open Kies and check if the device is detected. If not, try switching to 'Media device (MTP)' mode."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T17:32:41.235Z",
+      "updated": "2026-08-05T17:32:41.235Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/4319/how-can-i-get-kies-to-detect-my-galaxy-s-gt-i9000-on-windows-7",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
