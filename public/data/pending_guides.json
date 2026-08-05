@@ -347890,5 +347890,308 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785938036046-470",
+    "title": "Fix Microphone Not Detected in FaceTime on macOS",
+    "problemDescription": "FaceTime incorrectly detects a non-existent microphone (e.g., Microsoft Teams audio device) and ignores system settings.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "microphone",
+      "facetime",
+      "audio",
+      "coredaudio",
+      "hal"
+    ],
+    "steps": [
+      {
+        "title": "Restart CoreAudio Service",
+        "content": "Open Terminal and run: `sudo killall coreaudiod`. This restarts the CoreAudio daemon, clearing cached audio devices."
+      },
+      {
+        "title": "Reset FaceTime Microphone Preferences",
+        "content": "Open FaceTime, go to the 'Video' tab, and select 'Use System Setting' in the microphone section to reset FaceTime's cached input device."
+      },
+      {
+        "title": "Check Audio MIDI Setup",
+        "content": "Open 'Audio MIDI Setup' (Applications > Utilities), verify if the problematic microphone appears. If it does, remove it."
+      },
+      {
+        "title": "Inspect HAL Audio Drivers",
+        "content": "Navigate to `/Library/Audio/Plug-Ins/HAL/` in Finder. Look for any leftover microphone drivers (e.g., related to Microsoft Teams) and delete them if unnecessary."
+      },
+      {
+        "title": "Clear FaceTime Preferences",
+        "content": "Go to `~/Library/Preferences/` (press Cmd+Shift+G in Finder), find and delete files like `com.apple.FaceTime.plist` to reset FaceTime settings."
+      },
+      {
+        "title": "Restart Your Mac",
+        "content": "After completing the above steps, restart your Mac to ensure all changes take effect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Microsoft Teams Audio Driver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Teams Audio Driver",
+            "content": "Use the Microsoft Teams uninstaller or manually remove files from `/Library/Audio/Plug-Ins/HAL/` related to Teams."
+          },
+          {
+            "title": "Reinstall Teams",
+            "content": "Download and reinstall Microsoft Teams to restore its audio driver if needed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T13:53:56.046Z",
+      "updated": "2026-08-05T13:53:56.046Z",
+      "sourceUrl": "https://discussions.apple.com/thread/256044430",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785938039212-756",
+    "title": "Fix AirPods Pro Gen 2 Low Call Volume on Microsoft Teams",
+    "problemDescription": "AirPods Pro Gen 2 have unusually low call volume during Microsoft Teams calls, making it difficult to hear the other person clearly.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "AirPods Pro Gen 2",
+      "Microsoft Teams",
+      "call volume",
+      "low volume",
+      "iOS"
+    ],
+    "steps": [
+      {
+        "title": "Adjust Microsoft Teams Audio Settings",
+        "content": "Open Microsoft Teams, go to Settings > Devices. Under the 'Microphone' section, select your laptop's built-in microphone instead of the AirPods. Restart your laptop to apply changes."
+      },
+      {
+        "title": "Disable Noise Cancellation",
+        "content": "Open your AirPods settings on your iPhone (Settings > Bluetooth > AirPods Pro Gen 2 > Info icon). Toggle off 'Noise Cancellation' and switch to 'Adaptive' mode if available."
+      },
+      {
+        "title": "Increase AirPods Volume During Calls",
+        "content": "During a call in Microsoft Teams (or other apps like Zoom), use the AirPods stem to increase volume by swiping upwards. Ensure it reaches 100% (you'll hear a higher pitch tone). Then adjust the computer volume as needed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset AirPods Connection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Forget and Reconnect AirPods",
+            "content": "On your iPhone, go to Settings > Bluetooth, tap the 'i' icon next to your AirPods, and select 'Forget This Device'. Reconnect them by holding the setup button on the AirPods case until the LED flashes white."
+          },
+          {
+            "title": "Test Call Volume",
+            "content": "Make a test call in Microsoft Teams to verify if the volume issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T13:53:59.212Z",
+      "updated": "2026-08-05T13:53:59.212Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254924003",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785938047475-918",
+    "title": "Fix Low Call Volume on AirPods 4 ANC with Microsoft Teams",
+    "problemDescription": "AirPods 4 ANC users experience low call volume during Microsoft Teams calls, affecting both input and output audio quality.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "AirPods 4",
+      "ANC",
+      "Microsoft Teams",
+      "low volume",
+      "call quality",
+      "Bluetooth"
+    ],
+    "steps": [
+      {
+        "title": "Reset AirPods 4 ANC",
+        "content": "Open the AirPods case, then double-tap the setup button for 2 seconds, release, then double-tap again for 2 seconds, and double-tap once more. This resets the AirPods firmware and may resolve volume issues."
+      },
+      {
+        "title": "Reconnect AirPods to Windows",
+        "content": "After resetting, reconnect the AirPods to your Windows PC via Bluetooth and test the call volume in Microsoft Teams."
+      },
+      {
+        "title": "Update Windows 11",
+        "content": "Ensure your Windows 11 is updated to version 24H2 or later, as this update may include fixes for Bluetooth audio issues with AirPods."
+      },
+      {
+        "title": "Select Correct Microphone in Teams",
+        "content": "In Microsoft Teams, go to Settings > Devices and ensure the microphone is set to 'AirPods Mic' or 'Mic Array' instead of a generic Bluetooth option."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Bluetooth Transmitter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Bluetooth Transmitter",
+            "content": "Use a third-party Bluetooth transmitter (e.g., Twelve South Airfly Duo) to relay audio from your PC to the AirPods, bypassing native Bluetooth issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Temporary Workaround in Teams",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch Microphone During Call",
+            "content": "While in a Teams call, open Audio Settings and temporarily switch the microphone to a different device. Wait a few seconds, then switch back to AirPods to restore higher output volume."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T13:54:07.475Z",
+      "updated": "2026-08-05T13:54:07.475Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255775544",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785938074940-477",
+    "title": "Fix Apple Devices App Not Detecting iPhone on Windows 11",
+    "problemDescription": "The Apple Devices app on Windows 11 fails to detect an iPhone, despite the device being visible in File Explorer and accessible for file transfers.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "apple devices",
+      "iphone detection",
+      "apple music",
+      "firewall"
+    ],
+    "steps": [
+      {
+        "title": "Disable Microsoft Defender Firewall Private Network",
+        "content": "Open Windows Security > Firewall & network protection > Private network > Turn off Microsoft Defender Firewall."
+      },
+      {
+        "title": "Restart Apple Devices Service",
+        "content": "Press Win + R, type 'services.msc', locate 'Apple Mobile Device Service', right-click and select Restart."
+      },
+      {
+        "title": "Reinstall Apple Devices App",
+        "content": "Uninstall Apple Devices from Microsoft Store, restart your PC, then reinstall it from the Microsoft Store."
+      },
+      {
+        "title": "Check USB Connection",
+        "content": "Use a certified USB cable, try a different USB port (preferably USB 2.0), and ensure the iPhone is unlocked during connection."
+      },
+      {
+        "title": "Update Windows and Apple Software",
+        "content": "Ensure Windows 11 is fully updated via Settings > Windows Update. Also, update iOS on your iPhone and Apple Devices app on your PC."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Network Settings on iPhone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "On your iPhone, go to Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings. Reconnect to Wi-Fi and try again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use iTunes as a Fallback",
+        "type": "Fallback Solution",
+        "steps": [
+          {
+            "title": "Install iTunes",
+            "content": "Download and install iTunes from Apple's official website. Connect your iPhone and check if it detects the device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T13:54:34.940Z",
+      "updated": "2026-08-05T13:54:34.940Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255893811",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785938117371-252",
+    "title": "Fix Android Nougat Random Reboots and Bootloops",
+    "problemDescription": "Android Nougat devices experience random reboots or bootloops, which may be temporarily resolved by rebooting but persist over time.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "nougat",
+      "reboot",
+      "bootloop",
+      "random reboots"
+    ],
+    "steps": [
+      {
+        "title": "Disable Battery Optimization for Camera and Google Photos",
+        "content": "Go to Settings > Battery > (three dots menu) > Battery optimization > All apps. Find 'Camera' and 'Google Photos', select each, and choose 'Don't optimize'."
+      },
+      {
+        "title": "Perform a Network Settings Reset",
+        "content": "Navigate to Settings > More > Network settings reset > Reset settings. Reconnect to Bluetooth devices to test if the issue persists."
+      },
+      {
+        "title": "Factory Reset the Device",
+        "content": "Backup your data, then go to Settings > Backup & reset > Factory data reset > Reset phone. This may resolve persistent bootloop issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for OTA Updates",
+        "type": "Official Fix",
+        "steps": [
+          {
+            "title": "Manually Check for Updates",
+            "content": "Go to Settings > System > Advanced > System update > Check for update. Install any available updates, as they may include fixes for reboot issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Location Services Temporarily",
+        "type": "Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Location Services",
+            "content": "Swipe down the notification bar and toggle off the 'Location' tile. Test if the device continues to reboot randomly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T13:55:17.371Z",
+      "updated": "2026-08-05T13:55:17.371Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/android-70-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
