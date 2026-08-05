@@ -349487,5 +349487,62 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1785968305715-872",
+    "title": "Fix Ubuntu Login Issues via Recovery Mode",
+    "problemDescription": "Unable to log in to Ubuntu due to forgotten password or login failure, and unable to reset the password through normal means.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "login",
+      "password",
+      "recovery",
+      "root"
+    ],
+    "steps": [
+      {
+        "title": "Boot into Recovery Mode",
+        "content": "Restart your Ubuntu system. Immediately after the BIOS/UEFI screen, hold down the SHIFT key (or press ESC repeatedly for some systems) to access the GRUB menu."
+      },
+      {
+        "title": "Select Recovery Mode",
+        "content": "Use the arrow keys to highlight the 'Advanced options for Ubuntu' entry, then press ENTER. Next, select the 'Recovery Mode' option (usually the second entry) and press ENTER again."
+      },
+      {
+        "title": "Enable Networking (Optional)",
+        "content": "If you need internet access to reset the password, select 'network' from the recovery menu and press ENTER to enable networking."
+      },
+      {
+        "title": "Drop to Root Shell Prompt",
+        "content": "From the recovery menu, select 'root' (Drop to root shell prompt) and press ENTER. You may need to press ENTER again to confirm."
+      },
+      {
+        "title": "Remount Filesystem as Read-Write",
+        "content": "At the root prompt, type the following command and press ENTER: `mount -o remount,rw /`"
+      },
+      {
+        "title": "Reset the Password",
+        "content": "Type the following command to reset the password for your user account (replace 'username' with your actual username): `passwd username` Enter a new password when prompted, then confirm it."
+      },
+      {
+        "title": "Remount Filesystem as Read-Only",
+        "content": "After resetting the password, remount the filesystem as read-only to prevent data corruption: `mount -o remount,ro /`"
+      },
+      {
+        "title": "Reboot the System",
+        "content": "Type `exit` to leave the root shell, then select 'resume' from the recovery menu to boot into Ubuntu normally. Log in with your new password."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-05T22:18:25.715Z",
+      "updated": "2026-08-05T22:18:25.715Z",
+      "sourceUrl": "https://askubuntu.com/questions/319697/unable-to-log-in-and-unable-to-reset-the-password",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
