@@ -10,7 +10,7 @@ As of January 2026, the project uses **Mistral AI exclusively** for chat and fla
 - API Key: `VITE_MISTRAL_API_KEY`
 - Model: `mistral-small-latest`
 
-GeminiService and GroqService exist as legacy/fallback code but are **not actively used**.
+GeminiService and GroqService were removed — Mistral is the only provider now.
 
 ## Key Services
 
