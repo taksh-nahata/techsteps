@@ -347694,5 +347694,201 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1785928659041-171",
+    "title": "Fix iPhone Bendgate Issue",
+    "problemDescription": "iPhone 6 or 6 Plus users experience bending of the device under normal use, commonly referred to as 'bendgate'.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "bendgate",
+      "iPhone 6",
+      "iPhone 6 Plus",
+      "bending",
+      "device damage"
+    ],
+    "steps": [
+      {
+        "title": "Check for Physical Damage",
+        "content": "Inspect the iPhone for any visible signs of bending or damage. If the device is severely bent, avoid using it further to prevent internal component damage."
+      },
+      {
+        "title": "Remove Case and Check for Pressure Points",
+        "content": "Remove any protective case and examine if the case is applying uneven pressure on the device. Replace the case with a well-fitted, rigid case if necessary."
+      },
+      {
+        "title": "Avoid Carrying in Back Pocket",
+        "content": "Apple and users have reported that carrying the iPhone in the back pocket increases the risk of bending due to pressure. Carry the iPhone in the front pocket or a bag instead."
+      },
+      {
+        "title": "Apply Gentle Pressure",
+        "content": "If the device is slightly bent, apply gentle pressure to the bent area while holding the device firmly. Do not force it, as this may cause further damage."
+      },
+      {
+        "title": "Contact Apple Support",
+        "content": "If the bending is significant or the device is malfunctioning, contact Apple Support or visit an Apple Store for professional assessment and potential repair."
+      },
+      {
+        "title": "Consider Device Replacement",
+        "content": "If the device is under warranty or AppleCare+, check eligibility for a replacement. Apple acknowledged the issue and offered replacements for affected devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Rigid Case for Prevention",
+        "type": "Preventive Measure",
+        "steps": [
+          {
+            "title": "Purchase a Rigid Case",
+            "content": "Buy a high-quality, rigid case designed specifically for the iPhone 6 or 6 Plus to provide additional structural support."
+          },
+          {
+            "title": "Ensure Proper Fit",
+            "content": "Ensure the case fits snugly without applying excessive pressure on any part of the device."
+          },
+          {
+            "title": "Avoid Heavy Items in the Same Pocket",
+            "content": "Do not carry heavy items, such as keys or coins, in the same pocket as the iPhone to reduce pressure points."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T11:17:39.041Z",
+      "updated": "2026-08-05T11:17:39.041Z",
+      "sourceUrl": "https://en.wikipedia.org/wiki/IPhone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785928677430-342",
+    "title": "Fix iPhone 14 Pro Screen Flickering/Glitching",
+    "problemDescription": "The iPhone 14 Pro screen flickers or glitches intermittently, causing visual disruptions.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "screen flickering",
+      "glitching",
+      "iPhone 14 Pro",
+      "visual issues",
+      "software glitch"
+    ],
+    "steps": [
+      {
+        "title": "Perform a Simple Restart",
+        "content": "Turn off your iPhone 14 Pro by holding the Side button and either Volume button until the power off slider appears. Slide to power off, wait 30 seconds, then press and hold the Side button to turn it back on."
+      },
+      {
+        "title": "Force Restart if Simple Restart Fails",
+        "content": "Quickly press and release the Volume Up button, then the Volume Down button. Finally, press and hold the Side button until the Apple logo appears."
+      },
+      {
+        "title": "Update iOS to the Latest Version",
+        "content": "Go to Settings > General > Software Update and install any available updates. Ensure your iPhone is connected to Wi-Fi and has at least 50% battery."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Reset All Settings",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Backup Your iPhone (Optional)",
+            "content": "Go to Settings > [Your Name] > iCloud > iCloud Backup > Back Up Now to save your current settings and data."
+          },
+          {
+            "title": "Reset All Settings",
+            "content": "Navigate to Settings > General > Transfer & Reset > Reset > Reset All Settings. Confirm the action. This will reset all personalized settings but retain your data."
+          },
+          {
+            "title": "Reconfigure Settings",
+            "content": "After the reset, reconfigure your Wi-Fi, Bluetooth, display, and other preferences as needed."
+          }
+        ]
+      },
+      {
+        "title": "Restore iPhone via iTunes/Finder",
+        "type": "Nuclear Option",
+        "steps": [
+          {
+            "title": "Backup Your iPhone",
+            "content": "Connect your iPhone to a computer and back it up using iTunes (Windows/macOS Mojave or earlier) or Finder (macOS Catalina or later)."
+          },
+          {
+            "title": "Restore iPhone",
+            "content": "In iTunes/Finder, select your iPhone, click 'Restore iPhone,' and follow the prompts to erase and reinstall iOS. Restore your data from the backup afterward."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T11:17:57.430Z",
+      "updated": "2026-08-05T11:17:57.430Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255111929",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785928685615-870",
+    "title": "Fix Random Screen Flickering on MacBook Pro (Early 2015)",
+    "problemDescription": "Random screen flickering occurs while watching videos or using the MacBook Pro, particularly in scaled display modes or with hardware acceleration enabled.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen flickering",
+      "MacBook Pro",
+      "Early 2015",
+      "hardware acceleration",
+      "scaled resolution"
+    ],
+    "steps": [
+      {
+        "title": "Switch to Native Screen Resolution",
+        "content": "Go to System Preferences > Displays. Select the 'Display' tab and choose the native resolution (2560x1600 for 13-inch Retina models). Restart the MacBook to apply changes."
+      },
+      {
+        "title": "Disable Hardware Acceleration in Chrome",
+        "content": "Open Google Chrome, click the three-dot menu (Customize and Control Google Chrome) > Settings > Show advanced settings. Scroll to the 'System' section and uncheck 'Use hardware acceleration when available'. Restart Chrome for changes to take effect."
+      },
+      {
+        "title": "Reset NVRAM and SMC",
+        "content": "Shut down the MacBook. Reset NVRAM by turning it on and immediately holding Command + Option + P + R for about 20 seconds. For SMC reset, shut down, then hold Shift + Control + Option + Power button for 10 seconds. Release and power on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Lock CDN Provider in Netflix (Safari/Chrome)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Override CDN Provider in Netflix",
+            "content": "While playing a video in Netflix (fullscreen), press Control + Option + Shift + S to open the Netflix debug menu. Select a CDN provider from the dropdown and click 'Override'. Restart Netflix to apply changes."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Firefox for Streaming",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to Firefox for Video Playback",
+            "content": "Download and install Firefox. Use Firefox for streaming videos (Netflix, YouTube, etc.) instead of Safari or Chrome. This has been reported to eliminate flickering issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T11:18:05.615Z",
+      "updated": "2026-08-05T11:18:05.615Z",
+      "sourceUrl": "https://discussions.apple.com/thread/7682777",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
