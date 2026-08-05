@@ -1,5 +1,4 @@
 import { guideLibraryService } from './GuideLibraryService';
-import { TroubleshootingGuide } from '../types/guides';
 
 export interface CatalogedImage {
   imageUrl: string;

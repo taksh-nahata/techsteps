@@ -1,7 +1,7 @@
 // Error Recovery Framework for Senior Learning Platform
 // Implements retry mechanisms, session restoration, progress preservation, and offline action queueing
 
-import { ErrorContext } from '../types/core';
+import { ErrorContext } from '../../types/core';
 import { errorLogger } from './errorLogger';
 
 export interface RetryConfig {

@@ -37,17 +37,6 @@ export const SETTINGS_DEVICE_KEYS = [
 
 export type SettingsDeviceKey = (typeof SETTINGS_DEVICE_KEYS)[number];
 
-const GUIDE_TO_SETTINGS: Record<GuideDeviceType, SettingsDeviceKey | null> = {
-  all: null,
-  iphone: 'iphone',
-  ipad: 'ipad',
-  'android-phone': 'androidPhone',
-  'android-tablet': 'androidTablet',
-  windows: 'windowsComputer',
-  mac: 'macComputer',
-  chromebook: 'chromebook',
-};
-
 const SETTINGS_TO_GUIDE: Partial<Record<SettingsDeviceKey, GuideDeviceType>> = {
   iphone: 'iphone',
   ipad: 'ipad',
@@ -121,9 +110,9 @@ export function onboardingDeviceToSettingsKeys(
     case 'androidphoneortablet':
       return ['androidPhone', 'androidTablet'];
     case 'multipledevices':
-      return detectSettingsDeviceKeys();
+      return [...SETTINGS_DEVICE_KEYS];
     default:
-      return detectSettingsDeviceKeys();
+      return [...SETTINGS_DEVICE_KEYS];
   }
 }
 

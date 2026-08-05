@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useUser } from '../contexts/UserContext';
+import { useUser, UserData } from '../contexts/UserContext';
 import {
   ChevronLeft,
   ChevronRight,
@@ -32,7 +32,7 @@ import Cookies from 'js-cookie';
 const OnboardingPage: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [languageSearch, setLanguageSearch] = useState('');
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [isAnimating] = useState(false);
   const { t, i18n } = useTranslation();
   const { userData, updateUserData } = useUser();
   const navigate = useNavigate();
@@ -106,13 +106,10 @@ const OnboardingPage: React.FC = () => {
   const handleComplete = async () => {
     setLoading(true);
     try {
-      const finalData = {
+      const finalData: Partial<UserData> = {
         ...userData,
-        profile: {
-          ...userData?.profile,
-          firstName: formData.firstName,
-          age: formData.age,
-        },
+        firstName: formData.firstName,
+        age: formData.age,
         preferences: {
           ...userData?.preferences,
           language: formData.selectedLanguages[0] || 'en',
@@ -123,7 +120,6 @@ const OnboardingPage: React.FC = () => {
         },
         onboardingCompleted: true,
         techExperience: formData.techExperience,
-        primaryDevice: formData.os,
         primaryDevices: onboardingDeviceToSettingsKeys(formData.os),
         primaryConcerns: formData.primaryConcerns,
       };
@@ -295,14 +291,14 @@ const OnboardingPage: React.FC = () => {
                 We detected you&apos;re on <strong>{detectedDeviceLabel}</strong> — confirm below or pick a different device.
               </p>
               <div className="flex flex-wrap gap-2">
-                {[
+                {([
                   { id: 'windowscomputer', label: t('onboarding.step3.devices.windowscomputer'), icon: Monitor },
                   { id: 'macapplecomputer', label: t('onboarding.step3.devices.macapplecomputer'), icon: Monitor },
                   { id: 'iphone', label: t('onboarding.step3.devices.iphone'), icon: Smartphone },
                   { id: 'ipad', label: t('onboarding.step3.devices.ipad'), icon: Smartphone },
                   { id: 'androidphoneortablet', label: t('onboarding.step3.devices.androidphoneortablet'), icon: Smartphone },
                   { id: 'multipledevices', label: t('onboarding.step3.devices.multipledevices'), icon: Globe },
-                ].map(dev => (
+                ] as const).map(dev => (
                   <button
                     key={dev.id}
                     onClick={() => setFormData(f => ({ ...f, os: dev.id }))}

@@ -155,7 +155,13 @@ export function createBlankGuide(): TroubleshootingGuide {
         directionsByDevice: { all: [''] },
       },
     ],
-    meta: { source: 'manual', difficulty: 'Easy', confidenceScore: 1 },
+    meta: {
+      created: new Date().toISOString(),
+      updated: new Date().toISOString(),
+      source: 'manual',
+      difficulty: 'Easy',
+      confidenceScore: 1,
+    },
   });
 }
 

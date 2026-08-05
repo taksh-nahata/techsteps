@@ -74,9 +74,7 @@ export async function sanitizeFlashcardSteps(steps: FlashcardStep[]): Promise<Fl
     }
 
     // Strip any AI-hallucinated or random URLs
-    const { image: _img, imageCaption: _cap, ...clean } = step as FlashcardStep & {
-      imageCaption?: string;
-    };
+    const { image: _img, imageCaption: _cap, ...clean } = step;
     out.push(clean);
   }
 

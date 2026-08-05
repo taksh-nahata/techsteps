@@ -11,6 +11,7 @@ interface PWADatabase extends DBSchema {
       timestamp: number;
       retryCount: number;
     };
+    indexes: { timestamp: number };
   };
   'cached-content': {
     key: string;
@@ -20,6 +21,7 @@ interface PWADatabase extends DBSchema {
       timestamp: number;
       expiresAt: number;
     };
+    indexes: { expiresAt: number };
   };
   'user-progress': {
     key: string;
@@ -80,8 +82,7 @@ class PWAService {
 
           // User progress store
           if (!db.objectStoreNames.contains('user-progress')) {
-            const progressStore = db.createObjectStore('user-progress', { keyPath: 'id' });
-            progressStore.createIndex('synced', 'synced');
+            db.createObjectStore('user-progress', { keyPath: 'id' });
           }
 
           // Push subscriptions store
@@ -311,7 +312,7 @@ class PWAService {
           userVisibleOnly: true,
           applicationServerKey: this.urlBase64ToUint8Array(
             import.meta.env.VITE_VAPID_PUBLIC_KEY || ''
-          ),
+          ) as BufferSource,
         });
       }
 

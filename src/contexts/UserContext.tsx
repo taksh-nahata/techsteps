@@ -34,13 +34,14 @@ interface ChatMemory {
   };
 }
 
-interface UserData {
+export interface UserData {
   // Essential user information
   firstName: string;
   lastName: string;
   age: number;
   primaryDevices: string[]; // Changed from 'os' to support multiple devices
   techExperience: 'beginner' | 'some' | 'comfortable';
+  primaryConcerns?: string[]; // Tech topics the user is most concerned about
 
   // Core preferences that impact the website
   preferences: {
@@ -49,6 +50,7 @@ interface UserData {
     theme: 'light' | 'dark' | 'high-contrast';
     language: string; // Primary language preference
     seniorMode?: boolean; // Toggle for senior-friendly UI adjustments
+    voiceInput?: boolean; // Whether the user wants to ask questions by speaking
   };
 
   // System fields

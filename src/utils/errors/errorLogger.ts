@@ -1,5 +1,5 @@
 // Error logging and console error handling utility
-import { ErrorLog, ErrorDetails, ErrorContext } from '../types/core';
+import { ErrorLog, ErrorDetails, ErrorContext } from '../../types/core';
 
 class ErrorLogger {
     private static instance: ErrorLogger;
@@ -272,8 +272,7 @@ class ErrorLogger {
         const walker = document.createTreeWalker(
             document.body,
             NodeFilter.SHOW_COMMENT,
-            null,
-            false
+            null
         );
 
         const commentsToRemove: Comment[] = [];

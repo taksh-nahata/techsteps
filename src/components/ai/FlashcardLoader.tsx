@@ -3,13 +3,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 interface FlashcardLoaderProps {
     isVisible: boolean;
-    onComplete?: () => void;
     message?: string;
 }
 
 const FlashcardLoader: React.FC<FlashcardLoaderProps> = ({
     isVisible,
-    onComplete,
     message = "Generating your guide..."
 }) => {
     const [dots, setDots] = useState('');

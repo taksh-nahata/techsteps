@@ -20,9 +20,9 @@ const DefaultErrorFallback: React.FC<{ error: Error; resetError: () => void }> =
       <Icon 
         name="AlertTriangle" 
         size="xl" 
-        color="warning" 
+        color="warning"
         className="mx-auto mb-4"
-        aria-hidden="false"
+        aria-hidden={false}
       />
       
       <Typography variant="h3" className="mb-4">

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Download, X } from 'lucide-react';
 import { usePWA } from '../../hooks/usePWA';
 import { useTranslation } from '../../hooks/useTranslation';

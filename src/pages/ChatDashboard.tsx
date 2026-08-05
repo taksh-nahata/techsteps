@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useUser } from '../contexts/UserContext';
 import { useAuth } from '../contexts/AuthContext';
 import { FlashcardStep, ConversationContext } from '../types/services';
-import { TroubleshootingGuide } from '../types/guides';
+import { TroubleshootingGuide, GuideStep } from '../types/guides';
 import { Settings, BookOpen } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { LogOut } from 'lucide-react';
@@ -18,7 +18,7 @@ import { MemoryService, Message } from '../services/MemoryService';
 import { LocalStorageService, Conversation } from '../services/LocalStorageService';
 import { StorageService } from '../services/StorageService';
 import { MistralService } from '../services/ai';
-import { guideToFlashcardSteps, resolveFlashcardStepsForDevice } from '../services/guideUtils';
+import { resolveFlashcardStepsForDevice } from '../services/guideUtils';
 import { GuideDeviceType } from '../utils/deviceDetection';
 import { useUserDevice } from '../hooks/useUserDevice';
 import { sanitizeFlashcardSteps } from '../services/FlashcardImageService';
@@ -182,10 +182,6 @@ const ChatDashboardContent: React.FC = () => {
       console.error('handleNewChat error:', e);
     }
   };
-
-  // Historical methods (kept for reference or future use)
-  const _openHistory = () => setShowHistory(true);
-  const _closeHistory = () => setShowHistory(false);
 
   const loadConversation = (conv: Conversation) => {
     setMessages(conv.messages.map((m) => ({ ...m, timestamp: new Date(m.timestamp) })));
@@ -352,7 +348,7 @@ const ChatDashboardContent: React.FC = () => {
             keywords: messageContent.toLowerCase().split(/\W+/).filter(w => w.length > 3),
             category: 'ai-chat',
             steps: mistralResponse.flashcards.map((f: any) => {
-              const step: Record<string, unknown> = {
+              const step: GuideStep = {
                 id: f.id || `step-${Date.now()}`,
                 title: f.title || '',
                 content: f.content || '',

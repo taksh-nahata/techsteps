@@ -1,5 +1,4 @@
 // Legacy learning types - extending core types for backward compatibility
-import { Tutorial, LearningProgress, BadgeProgress } from './core';
 
 export interface SkillAssessmentResult {
   skillLevel: 'Beginner' | 'Intermediate' | 'Advanced';

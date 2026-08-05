@@ -11,8 +11,7 @@ interface LanguageSelectorProps {
 }
 
 const LanguageSelector: React.FC<LanguageSelectorProps> = ({
-  className = '',
-  showLabel = true // Keeping it for backward compatibility but it might be ignored for now
+  className = ''
 }) => {
   const { i18n, t } = useTranslation();
   const { triggerTranslationAnimation } = useTranslationAnimation();
@@ -149,14 +148,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
                   autoFocus
                   onClick={(e) => e.stopPropagation()}
                   onChange={(e) => {
-                    const val = e.target.value.toLowerCase();
-                    const filtered = supportedLanguages.filter(l =>
-                      l.name.toLowerCase().includes(val) ||
-                      l.nativeName.toLowerCase().includes(val) ||
-                      l.code.toLowerCase().includes(val)
-                    );
-                    // Store filtered state (simplest way is strictly local var if we rely on re-render, but here I'll need a state)
-                    setSearchQuery(val);
+                    setSearchQuery(e.target.value.toLowerCase());
                   }}
                 />
                 <div className="absolute left-3 top-1/2 -translate-y-1/2 text-ink-muted">

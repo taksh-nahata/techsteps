@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { motion, useReducedMotion } from 'framer-motion';
+import { motion, useReducedMotion, type Variants } from 'framer-motion';
 import {
   ArrowRight,
   ArrowDown,
@@ -52,17 +52,19 @@ const QUESTION_KEYS = [
   'questions.backupPhotos',
 ] as const;
 
-const fadeUp = (delay = 0, reduced = false, drift = 0) => ({
+const EASE_OUT = [0.22, 1, 0.36, 1] as const;
+
+const fadeUp = (delay = 0, reduced = false, drift = 0): Variants => ({
   hidden: { opacity: 0, y: reduced ? 0 : 32, x: reduced ? 0 : drift },
   visible: {
     opacity: 1,
     y: 0,
     x: 0,
-    transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.7, delay, ease: EASE_OUT },
   },
 });
 
-const stagger = (reduced = false) => ({
+const stagger = (reduced = false): Variants => ({
   hidden: {},
   visible: {
     transition: { staggerChildren: reduced ? 0 : 0.12, delayChildren: 0.05 },

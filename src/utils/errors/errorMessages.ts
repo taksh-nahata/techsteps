@@ -204,7 +204,7 @@ class ErrorMessageTranslator {
     };
   }
 
-  private createActions(actionTypes: string[], context?: any): ErrorAction[] {
+  private createActions(actionTypes: string[], _context?: any): ErrorAction[] {
     const actionMap: Record<string, ErrorAction> = {
       try_again: {
         label: 'Try Again',
@@ -225,12 +225,12 @@ class ErrorMessageTranslator {
       },
       go_home: {
         label: 'Go to Home',
-        action: () => window.location.href = '/',
+        action: () => { window.location.href = '/'; },
         icon: 'Home'
       },
       sign_in: {
         label: 'Sign In',
-        action: () => window.location.href = '/auth',
+        action: () => { window.location.href = '/auth'; },
         primary: true,
         icon: 'LogIn'
       },

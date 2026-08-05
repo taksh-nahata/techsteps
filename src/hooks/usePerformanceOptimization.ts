@@ -77,8 +77,9 @@ export const usePerformanceOptimization = (config: PerformanceConfig = {}) => {
     const fidObserver = new PerformanceObserver((list) => {
       const entries = list.getEntries();
       entries.forEach((entry) => {
-        if (entry.processingStart - entry.startTime > 100) {
-          console.warn(`High FID detected: ${entry.processingStart - entry.startTime}ms`);
+        const eventEntry = entry as PerformanceEventTiming;
+        if (eventEntry.processingStart - eventEntry.startTime > 100) {
+          console.warn(`High FID detected: ${eventEntry.processingStart - eventEntry.startTime}ms`);
         }
       });
     });

@@ -4,7 +4,7 @@
 import { errorLogger } from './errorLogger';
 import { errorRecovery } from './errorRecovery';
 import { errorMessageTranslator, UserFriendlyError } from './errorMessages';
-import { ErrorContext } from '../types/core';
+import { ErrorContext } from '../../types/core';
 
 export interface ErrorHandlerOptions {
   showUserFriendlyMessage?: boolean;

@@ -9,7 +9,6 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content, cla
   // Function to parse and render markdown-like formatting that Gemini uses
   const parseMarkdown = (text: string): React.ReactNode[] => {
     const elements: React.ReactNode[] = [];
-    let currentIndex = 0;
     let elementKey = 0;
 
     // Safety check
@@ -83,9 +82,8 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content, cla
 
           // Process the rest of the line
           const parts = processedLine.split(/(__CODE_BLOCK_\d+__)/);
-          parts.forEach((part, index) => {
+          parts.forEach((part) => {
             if (part.match(/^__CODE_BLOCK_\d+__$/)) {
-              const codeIndex = parseInt(part.match(/\d+/)?.[0] || '0');
               // Code block already added above
             } else if (part.trim()) {
               lineElements.push(
@@ -120,7 +118,6 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content, cla
   // Function to handle inline formatting within a line
   const parseInlineFormatting = (text: string): React.ReactNode[] => {
     const elements: React.ReactNode[] = [];
-    let currentIndex = 0;
     let elementKey = 0;
 
     // Handle bold text (**text** or __text__)

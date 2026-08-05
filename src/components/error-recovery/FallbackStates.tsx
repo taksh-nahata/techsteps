@@ -172,7 +172,7 @@ export const AIFallback: React.FC<{
   onContactHuman: () => void;
   onContinueWithoutAI: () => void;
   error?: Error;
-}> = ({ onContactHuman, onContinueWithoutAI, error }) => {
+}> = ({ onContactHuman, onContinueWithoutAI }) => {
   const { t } = useTranslation();
 
   return (
@@ -232,7 +232,7 @@ export const CriticalFailureFallback: React.FC<{
   error: Error;
   onEmergencySupport: () => void;
   onSafeMode: () => void;
-}> = ({ error, onEmergencySupport, onSafeMode }) => {
+}> = ({ onEmergencySupport, onSafeMode }) => {
   const { t } = useTranslation();
 
   return (
@@ -291,7 +291,6 @@ export const EmergencySupport: React.FC<{
   onClose?: () => void;
 }> = ({ reason, onClose }) => {
   const { t } = useTranslation();
-  const [contactMethod, setContactMethod] = useState<'phone' | 'email' | 'chat'>('phone');
 
   const handleEmergencyContact = (method: 'phone' | 'email' | 'chat') => {
     switch (method) {

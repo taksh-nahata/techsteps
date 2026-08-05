@@ -21,7 +21,6 @@ export const ErrorNotificationSystem: React.FC<ErrorNotificationSystemProps> = (
   position = 'top-right',
   className = ''
 }) => {
-  const { t } = useTranslation();
   const [notifications, setNotifications] = useState<ErrorNotification[]>([]);
 
   useEffect(() => {
@@ -118,7 +117,6 @@ const ErrorNotificationCard: React.FC<ErrorNotificationCardProps> = ({
   onDismiss
 }) => {
   const { t } = useTranslation();
-  const [isExpanded, setIsExpanded] = useState(false);
   const { error } = notification;
 
   const getSeverityColor = () => {

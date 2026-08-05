@@ -147,11 +147,12 @@ i18n
     },
     // Missing key handler for translation validation (development only)
     missingKeyHandler: process.env.NODE_ENV === 'development'
-      ? (lng, ns, key) => {
+      ? (lng, _ns, key) => {
           // Skip false positives fired while the translation backend is still
           // loading on first paint (useSuspense is off, so t() runs before then)
           if (!i18n.isInitialized) return;
-          translationReporting.reportIssue(lng, key, 'Missing translation key');
+          const language = Array.isArray(lng) ? lng[0] : lng;
+          translationReporting.reportIssue(language, key, 'Missing translation key');
         }
       : undefined,
     // Save missing translations for reporting (development only)

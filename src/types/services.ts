@@ -3,7 +3,6 @@
 export type {
   AIResponse,
   ConversationContext,
-  Tutorial,
   LocalizedContent,
   UserAction,
   ActionContext,
@@ -16,7 +15,6 @@ export type {
 import type {
   AIResponse,
   ConversationContext,
-  Tutorial,
   LocalizedContent,
   UserAction,
   ActionContext,
@@ -81,6 +79,7 @@ export interface FlashcardStep {
   methodGroup?: string; // For grouping steps by method (e.g., "Method 1: Using Settings", "Method 2: Using Control Panel")
   methodStepCount?: number; // Total steps in this method group
   image?: string;
+  imageCaption?: string;
   annotations?: {
     type: 'arrow' | 'circle' | 'blur';
     x: number;
@@ -106,30 +105,9 @@ export interface FlashcardMethod {
 
 // Content Management Service Interface
 export interface ContentService {
-  getTutorials(filters?: TutorialFilters): Promise<Tutorial[]>;
-  getTutorial(id: string): Promise<Tutorial>;
-  createTutorial(tutorial: TutorialDraft): Promise<Tutorial>;
-  updateTutorial(id: string, updates: Partial<Tutorial>): Promise<Tutorial>;
-  publishTutorial(id: string): Promise<void>;
   getLocalizedContent(contentId: string, locale: string): Promise<LocalizedContent>;
   searchContent(query: string, filters?: SearchFilters): Promise<SearchResult[]>;
   validateAccessibility(contentId: string): Promise<AccessibilityReport>;
-}
-
-export interface TutorialFilters {
-  difficulty?: 'beginner' | 'intermediate' | 'advanced';
-  category?: string;
-  language?: string;
-  duration?: { min?: number; max?: number };
-  tags?: string[];
-}
-
-export interface TutorialDraft {
-  title: string;
-  description: string;
-  difficulty: 'beginner' | 'intermediate' | 'advanced';
-  content: any;
-  authorId: string;
 }
 
 export interface SearchFilters {
