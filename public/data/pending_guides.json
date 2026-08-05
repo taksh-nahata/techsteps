@@ -346775,5 +346775,561 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785908536213-41",
+    "title": "Fix Mac Wi-Fi Disconnects Without Restarting",
+    "problemDescription": "Mac intermittently disconnects from Wi-Fi networks and requires a manual restart to reconnect.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "mac",
+      "wifi",
+      "disconnect",
+      "terminal",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Reset Wi-Fi Interface via Terminal",
+        "content": "Open Terminal (Applications > Utilities > Terminal) and run the following commands sequentially:\n1. `sudo ifconfig en0 down`\n2. `sudo ifconfig en0 up`\n\nThis resets the Wi-Fi interface without restarting your Mac."
+      },
+      {
+        "title": "Remove Duplicate or Old Wi-Fi Networks",
+        "content": "Go to System Settings > Wi-Fi > Advanced. Remove any duplicate or unused Wi-Fi networks from the list to prevent connection conflicts."
+      },
+      {
+        "title": "Restart Mac (If Issues Persist)",
+        "content": "If the problem continues, restart your Mac to refresh system processes and network settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Wi-Fi Preferences",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete Wi-Fi Preferences File",
+            "content": "Navigate to `/Library/Preferences/SystemConfiguration/` and delete the following files:\n- `com.apple.airport.preferences.plist`\n- `NetworkInterfaces.plist`\n- `preferences.plist`\n\nRestart your Mac afterward."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Renew DHCP Lease",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Renew DHCP Lease via Terminal",
+            "content": "Open Terminal and run:\n`sudo ipconfig set en0 DHCP`\n\nReplace `en0` with your Wi-Fi interface if different (check with `ifconfig`)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T05:42:16.213Z",
+      "updated": "2026-08-05T05:42:16.213Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=0xMNVpfO07I",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785908570538-987",
+    "title": "Fix Non-Bootable USB Drive for OS Installation",
+    "problemDescription": "A USB drive created from an ISO image fails to boot, preventing OS installation or recovery access.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "usb",
+      "bootable",
+      "iso",
+      "installation",
+      "bios"
+    ],
+    "steps": [
+      {
+        "title": "Verify ISO Bootability",
+        "content": "Test the ISO by burning it to a USB drive using a tool like Rufus, Ventoy, or UNetbootin. If the USB still doesn't boot, proceed to the next steps."
+      },
+      {
+        "title": "Wipe the USB Drive",
+        "content": "Use DiskPart (Windows) or `dd` (Linux/macOS) to completely wipe the USB drive. Open Command Prompt as admin, run `diskpart`, select the USB drive with `list disk` and `select disk X` (replace X with your USB's disk number), then run `clean` to erase all partitions."
+      },
+      {
+        "title": "Make USB Bootable (BIOS Systems)",
+        "content": "For BIOS systems, use `bootsect.exe` (included in Windows ADK or standalone) to add a boot sector. Open Command Prompt as admin, navigate to the folder containing `bootsect.exe`, then run: `bootsect.exe /nt60 X:` (replace X with your USB drive letter). This writes the Volume Boot Record (VBR) required for BIOS booting."
+      },
+      {
+        "title": "Copy ISO Files to USB",
+        "content": "Mount the ISO file (double-click in Windows) and copy all files to the USB drive. Ensure the folder structure matches the target OS requirements (e.g., Windows ISO files must be in the root or specific subfolders). Alternatively, use a tool like Rufus to directly write the ISO to the USB."
+      },
+      {
+        "title": "Test Boot from USB",
+        "content": "Restart your computer, enter BIOS/UEFI (usually by pressing F2, F12, DEL, or ESC during startup), and select the USB drive as the boot device. If it boots successfully, the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use GRUB or Syslinux for Non-Windows ISOs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install GRUB or Syslinux",
+            "content": "For Linux-based ISOs or non-Windows systems, use GRUB or Syslinux to make the USB bootable. Download GRUB for USB from [grub4dos](http://grub4dos.chenall.net/) or Syslinux from [syslinux.org](https://www.syslinux.org/). Follow a tutorial specific to your Linux distribution (e.g., Ubuntu, Arch) to install the bootloader."
+          },
+          {
+            "title": "Copy ISO Files and Configure Bootloader",
+            "content": "Copy the ISO files to the USB drive. For GRUB, create a `menu.lst` or `grub.cfg` file in the root of the USB with boot entries pointing to the ISO. For Syslinux, edit the `syslinux.cfg` file in the `syslinux` folder to include the correct paths to the ISO files."
+          },
+          {
+            "title": "Test Boot from USB",
+            "content": "Restart your computer, enter BIOS/UEFI, and select the USB drive to boot. If configured correctly, the bootloader should load and allow you to select the ISO to boot from."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Ventoy for Multi-ISO USB",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install Ventoy",
+            "content": "Download Ventoy from [ventoy.net](https://www.ventoy.net/) and install it to your USB drive. Ventoy is a tool that allows you to store multiple ISO files on a single USB drive and boot from them without reformatting."
+          },
+          {
+            "title": "Copy ISO Files to USB",
+            "content": "Copy your ISO files directly to the Ventoy-formatted USB drive. No additional boot sector or file structure changes are needed."
+          },
+          {
+            "title": "Test Boot from USB",
+            "content": "Restart your computer, enter BIOS/UEFI, and select the Ventoy USB drive. Ventoy will display a menu of available ISO files to boot from."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T05:42:50.538Z",
+      "updated": "2026-08-05T05:42:50.538Z",
+      "sourceUrl": "https://blog.superuser.com",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785908597000-702",
+    "title": "Fix iOS 10 Zoom Lag and Unresponsiveness",
+    "problemDescription": "iOS 10 zoom feature causes lag, unresponsiveness, and inaccurate touch inputs, making the device difficult to use, especially for accessibility users.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "zoom",
+      "lag",
+      "unresponsiveness",
+      "accessibility"
+    ],
+    "steps": [
+      {
+        "title": "Disable Zoom Temporarily (If Possible)",
+        "content": "Go to Settings > General > Accessibility > Zoom and toggle it OFF. This will immediately resolve the lag but disable the zoom feature."
+      },
+      {
+        "title": "Use VoiceOver as an Alternative",
+        "content": "Enable VoiceOver by going to Settings > General > Accessibility > VoiceOver. VoiceOver can be used alongside zoom for better accessibility without lag issues."
+      },
+      {
+        "title": "Apply the 3-Finger Tap Workaround",
+        "content": "While using zoom, tap once on the screen with three fingers between each swipe or press. This helps improve touch responsiveness."
+      },
+      {
+        "title": "Check for iOS Updates",
+        "content": "Go to Settings > General > Software Update to check for and install any available iOS updates that may include a fix for the zoom issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Accessibility Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Accessibility Settings",
+            "content": "Go to Settings > General > Reset > Reset All Settings. This will reset all settings to default but may resolve software conflicts causing the zoom lag."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Restart Your Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart iPhone/iPad",
+            "content": "Press and hold the power button, then slide to power off. Wait 30 seconds, then press and hold the power button again to turn it back on. This can clear temporary software glitches."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T05:43:17.000Z",
+      "updated": "2026-08-05T05:43:17.000Z",
+      "sourceUrl": "https://discussions.apple.com/thread/7668603",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785908605439-853",
+    "title": "Fix Push Notifications Not Working Over Wi-Fi on Android 5.1+ Devices",
+    "problemDescription": "Push notifications (e.g., Gmail, Hangouts) fail to work over Wi-Fi on Android 5.1.1+ devices, while working correctly on mobile data or older Android versions.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "push notifications",
+      "android 5.1.1",
+      "wifi",
+      "GCM",
+      "IPv6",
+      "port 5228"
+    ],
+    "steps": [
+      {
+        "title": "Check if the issue is IPv6-related",
+        "content": "If your router allows it, disable IPv6 temporarily to test if push notifications start working. If this resolves the issue, contact your ISP or router manufacturer for an IPv6-compatible update."
+      },
+      {
+        "title": "Open port 5228 on your router",
+        "content": "Ensure outbound port 5228 (used by Google Cloud Messaging) is open. Access your router settings, locate the port forwarding or firewall section, and add a rule to allow TCP/UDP traffic on port 5228."
+      },
+      {
+        "title": "Change Wi-Fi channel to avoid congestion",
+        "content": "Access your router settings and manually select a less congested Wi-Fi channel. This can reduce interference and improve push notification reliability."
+      },
+      {
+        "title": "Update Google Play Services and apps",
+        "content": "Ensure Google Play Services and all apps (e.g., Gmail, Hangouts) are updated to the latest versions. Go to the Google Play Store, check for updates, and install any available updates."
+      },
+      {
+        "title": "Test on a different Wi-Fi network",
+        "content": "Connect your Android device to a different Wi-Fi network (e.g., workplace, mobile hotspot) to determine if the issue is specific to your home network."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset (Last Resort)",
+        "type": "Advanced Troubleshooting",
+        "steps": [
+          {
+            "title": "Backup your data",
+            "content": "Before proceeding, back up all important data on your device to avoid permanent loss."
+          },
+          {
+            "title": "Perform a factory reset",
+            "content": "Go to Settings > Backup & reset > Factory data reset. Follow the on-screen instructions to reset your device to factory settings."
+          },
+          {
+            "title": "Restore data and test",
+            "content": "After the reset, restore your data and check if push notifications work over Wi-Fi. If they do, the issue was likely software-related."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Mobile Data as a Temporary Workaround",
+        "type": "Workaround",
+        "steps": [
+          {
+            "title": "Switch to mobile data",
+            "content": "Temporarily disable Wi-Fi on your device and use mobile data to receive push notifications until the issue is resolved."
+          },
+          {
+            "title": "Monitor for updates",
+            "content": "Keep an eye on official Android or Google Play Services updates that may address this issue in future releases."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T05:43:25.439Z",
+      "updated": "2026-08-05T05:43:25.440Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/112084/push-notifications-not-working-over-wifi-on-google-devices",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785908609605-756",
+    "title": "Fix Samsung Galaxy S8/S8+ Always-On Display Not Showing Notifications",
+    "problemDescription": "After an update, the Always-On Display (AOD) on a Samsung Galaxy S8/S8+ no longer shows notifications, even when enabled.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "Samsung Galaxy S8",
+      "S8+",
+      "Always-On Display",
+      "AOD",
+      "notifications",
+      "lock screen",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Enable a Screen Lock Option",
+        "content": "Go to Settings > Lock Screen > Screen Lock Type. Select 'Swipe', 'Pattern', 'PIN', or 'Password' (not 'None'). Restart your device and check if notifications appear in AOD."
+      },
+      {
+        "title": "Switch AOD Layout to Clock Only",
+        "content": "Go to Settings > Lock Screen > Always On Display. Select 'Clock' under 'Always On Display style'. Ensure 'Show notifications' is enabled. Restart the device."
+      },
+      {
+        "title": "Clear App Data for Notification Issues",
+        "content": "Go to Settings > Apps > [Problematic App] > Storage > Clear Data. Restart the device and check if notifications reappear in AOD."
+      },
+      {
+        "title": "Switch Email App (If Using Samsung Email)",
+        "content": "Uninstall or disable the Samsung Email app. Install the Gmail app or another email client. Configure your email accounts in the new app and check for notifications in AOD."
+      },
+      {
+        "title": "Fine-Tune Notification Settings",
+        "content": "Go to Settings > Apps > [App] > Notifications. Ensure notifications are enabled for the app. Repeat for all relevant apps. Restart the device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset App Preferences",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset App Preferences",
+            "content": "Go to Settings > Apps > (3-dot menu) > Reset App Preferences. Restart the device and check if notifications reappear in AOD."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Change AOD Theme",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch AOD Theme",
+            "content": "Go to Settings > Lock Screen > Always On Display > Always On Display style. Choose a different theme (e.g., 'Digital Clock' or 'Analog Clock'). Restart the device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T05:43:29.605Z",
+      "updated": "2026-08-05T05:43:29.605Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/176189/s8-stock-always-on-display-not-showing-notifications",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785908622709-75",
+    "title": "Fix Samsung Calendar Notifications Not Playing Sound",
+    "problemDescription": "Calendar app notifications on Samsung devices running Android 8.0+ intermittently fail to play sound, despite popups appearing. The issue persists across multiple devices and resets.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "calendar",
+      "notifications",
+      "sound",
+      "android 8.0",
+      "notification volume"
+    ],
+    "steps": [
+      {
+        "title": "Check App Notification Settings",
+        "content": "Open Settings > Apps > Calendar > Notifications. Ensure 'Allow notifications' is enabled and 'Sound' is selected. Adjust the notification sound if needed."
+      },
+      {
+        "title": "Verify Notification Volume Settings",
+        "content": "Go to Settings > Sounds and vibration > Notification sounds. Ensure the 'Notifications' volume slider is not muted or too low. Test with a different sound."
+      },
+      {
+        "title": "Disable Do Not Disturb Mode",
+        "content": "Check if Do Not Disturb is enabled: Swipe down from the top to open Quick Settings > Tap 'Do not disturb' to disable it. Ensure exceptions include your Calendar app."
+      },
+      {
+        "title": "Disable Battery Optimization for Calendar",
+        "content": "Open Settings > Apps > Calendar > Battery > Disable 'Optimize battery usage'. This prevents Android from restricting background processes."
+      },
+      {
+        "title": "Check Third-Party App Interference",
+        "content": "Uninstall or disable apps like Greenify that may hibernate the Calendar app. Test notifications after making changes."
+      },
+      {
+        "title": "Reset App Preferences",
+        "content": "Go to Settings > Apps > (3-dot menu) > Reset app preferences. This resets all app notification settings to default without deleting data."
+      },
+      {
+        "title": "Update Google Calendar and Samsung System",
+        "content": "Open Google Play Store > Update Google Calendar and Samsung system apps. Ensure your device is running the latest Android version."
+      },
+      {
+        "title": "Factory Reset (Last Resort)",
+        "content": "Backup data, then go to Settings > General Management > Reset > Factory data reset. Test notifications after setup. Note: This erases all data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Third-Party Calendar App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Reliable Calendar App",
+            "content": "Download a third-party calendar app like 'aCalendar' or 'Business Calendar' from the Play Store. Migrate your events to this app."
+          },
+          {
+            "title": "Configure Notifications in New App",
+            "content": "Open the new app's settings and enable notifications with sound. Set a custom notification sound if needed."
+          },
+          {
+            "title": "Disable Default Calendar Notifications",
+            "content": "Go to Settings > Apps > Calendar > Notifications and disable all notifications to avoid conflicts."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Automation Apps (Advanced)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Tasker or MacroDroid",
+            "content": "Download and install an automation app like Tasker or MacroDroid from the Play Store."
+          },
+          {
+            "title": "Create a Notification Trigger",
+            "content": "Set up a task to monitor Google Calendar events and trigger a custom notification with sound when an event is detected."
+          },
+          {
+            "title": "Test the Automation",
+            "content": "Verify the automation works by creating a test event. Adjust settings as needed for reliability."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T05:43:42.709Z",
+      "updated": "2026-08-05T05:43:42.709Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/196398/how-do-i-consistently-receive-notifications-from-one-app-and-no-others",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785908634617-961",
+    "title": "Fix Surface Book/Pro 4 Display Flickering Issue",
+    "problemDescription": "Surface Book and Surface Pro 4 devices experience random screen flickering due to an outdated HD Graphics 520 driver.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "Surface Book",
+      "Surface Pro 4",
+      "display flickering",
+      "HD Graphics 520",
+      "driver update"
+    ],
+    "steps": [
+      {
+        "title": "Check Current Driver Version",
+        "content": "Press `Win + X` and select 'Device Manager'. Expand 'Display adapters', right-click 'Intel(R) HD Graphics 520', and select 'Properties'. Note the driver version under the 'Driver' tab."
+      },
+      {
+        "title": "Download and Install the Latest Driver",
+        "content": "Visit Microsoft's official support site or Intel's driver download page. Search for 'HD Graphics 520 driver v20.19.15.4308' or later. Download and run the installer. Follow on-screen instructions to complete the update."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "After installation, restart your Surface Book or Surface Pro 4 to apply the changes."
+      },
+      {
+        "title": "Verify the Fix",
+        "content": "Open a few applications and observe the display for flickering. If the issue persists, proceed to the next step."
+      },
+      {
+        "title": "Run Windows Update",
+        "content": "Press `Win + I` to open Settings. Go to 'Update & Security' > 'Windows Update'. Click 'Check for updates' and install any pending updates, including firmware updates for Surface devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Driver Installation via Device Manager",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Press `Win + X` and select 'Device Manager'."
+          },
+          {
+            "title": "Update Driver Manually",
+            "content": "Expand 'Display adapters', right-click 'Intel(R) HD Graphics 520', and select 'Update driver'. Choose 'Browse my computer for drivers', then 'Let me pick from a list of available drivers'. Select the latest driver version if available, or click 'Have Disk' to install a downloaded driver file."
+          },
+          {
+            "title": "Restart and Verify",
+            "content": "Restart your device and check if the flickering issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T05:43:54.617Z",
+      "updated": "2026-08-05T05:43:54.617Z",
+      "sourceUrl": "https://www.techradar.com/news/mobile-computing/laptops/microsoft-patches-flickering-display-problem-on-surface-book-and-surface-pro-4-1308178",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785908637372-510",
+    "title": "Fix Apple Watch 9/Ultra 2 Display Flickering Bug",
+    "problemDescription": "Apple Watch Series 9 and Ultra 2 devices exhibit screen flickering or pink flashes when the Always-On display feature is enabled.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "apple watch",
+      "display flickering",
+      "always-on",
+      "screen bug",
+      "ultra 2"
+    ],
+    "steps": [
+      {
+        "title": "Disable Always-On Display",
+        "content": "Open the Apple Watch app on your paired iPhone. Go to My Watch > Display & Brightness. Toggle off the 'Always On' setting. The flickering should stop immediately."
+      },
+      {
+        "title": "Restart Apple Watch",
+        "content": "Press and hold the side button on your Apple Watch until the Power Off slider appears. Drag the slider to turn off the device. Wait 30 seconds, then press and hold the side button again to restart it."
+      },
+      {
+        "title": "Update Apple Watch Software",
+        "content": "Ensure your Apple Watch is connected to Wi-Fi and paired with your iPhone. Go to Settings > General > Software Update on your iPhone to check for and install any available updates for your Apple Watch."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Force Restart Apple Watch",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force Restart",
+            "content": "Press and quickly release the Digital Crown. Press and quickly release the side button. Then, press and hold both buttons simultaneously until the Apple logo appears. Release and wait for the device to restart."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-05T05:43:57.372Z",
+      "updated": "2026-08-05T05:43:57.372Z",
+      "sourceUrl": "https://www.techradar.com/health-fitness/smartwatches/there-might-soon-be-a-fix-for-the-apple-watch-9-and-ultra-2s-annoying-display-bug",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
