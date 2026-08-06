@@ -11,7 +11,7 @@ import { parseAIJSONResponse } from './responseParser';
 import { guideMatchingService } from '../GuideMatchingService';
 import { imageLibraryService } from '../ImageLibraryService';
 import { guideToFlashcardSteps } from '../guideUtils';
-import { detectGuideDevice, GuideDeviceType } from '../../utils/deviceDetection';
+import { detectGuideDevice, GuideDeviceType, GUIDE_DEVICE_LABELS } from '../../utils/deviceDetection';
 
 type ChatMessage = { role: 'system' | 'user' | 'assistant'; content: string };
 
@@ -242,7 +242,18 @@ export class MistralService implements AIService {
                 }
             }
 
-            const systemContent = GLOBAL_SYSTEM_PROMPT + '\n' + factsPrefix;
+            const device: GuideDeviceType =
+                (context.guideDeviceType as GuideDeviceType) || detectGuideDevice();
+            const deviceLabel = GUIDE_DEVICE_LABELS[device] || device;
+            let userContextPrefix = '';
+            if (device && device !== 'all') {
+                userContextPrefix += `USER'S DEVICE: ${deviceLabel}. Give exact menu names, button labels, and icon locations for THIS device specifically — do not give generic multi-platform instructions unless the user is asking about a different device than their own.\n`;
+            }
+            if (context.userSkillLevel) {
+                userContextPrefix += `USER'S TECH COMFORT LEVEL: ${context.userSkillLevel}. If beginner, avoid assuming they know terms like "menu bar" or "system tray" without a one-clause explanation. If comfortable/advanced, don't over-explain basics they clearly already know.\n`;
+            }
+
+            const systemContent = GLOBAL_SYSTEM_PROMPT + '\n' + userContextPrefix + factsPrefix;
             const history = this.getHistoryForMistral(context);
 
             const { text: contentText, provider: usedProvider, model: usedModel } =

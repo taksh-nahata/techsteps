@@ -289,6 +289,11 @@ const ChatDashboardContent: React.FC = () => {
       setMessages((prev) => [...prev, aiMessage]);
       await MemoryService.saveMessage(userId, aiMessage);
 
+      // Brief happy flash on every successful reply — the companion should
+      // visibly react to a good outcome, not just sit in one idle pose.
+      setEmotion('happy');
+      setTimeout(() => setEmotion('neutral'), 2200);
+
       // 4. Save any extracted facts and user data to the database
       if (mistralResponse.extractedFacts && mistralResponse.extractedFacts.length > 0) {
         console.log('Saving learned facts:', mistralResponse.extractedFacts);
@@ -376,6 +381,7 @@ const ChatDashboardContent: React.FC = () => {
     } catch (e: any) {
       console.error('Chat Error:', e);
       setEmotion('concerned');
+      setTimeout(() => setEmotion('neutral'), 2500);
       const encouragement = t('encouragement', { returnObjects: true }) as string[];
       const randomEncouragement = encouragement[Math.floor(Math.random() * encouragement.length)];
       const errorMsg = e.message?.includes('429')

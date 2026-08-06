@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { FlashcardStep } from '../../types/services';
 import FlashcardCard from './FlashcardCard';
 import { GuideDeviceType, GUIDE_DEVICE_LABELS } from '../../utils/deviceDetection';
+import { useAvatar } from '../../contexts/AvatarContext';
 
 interface FlashcardPanelProps {
   steps: FlashcardStep[];
@@ -28,6 +29,7 @@ export const FlashcardPanel: React.FC<FlashcardPanelProps> = ({
   showDevicePicker = false,
 }) => {
   const { t } = useTranslation();
+  const { setEmotion } = useAvatar();
   const [activeStep, setActiveStep] = useState(0);
   const [completedSteps, setCompletedSteps] = useState<Set<number>>(new Set());
   const [direction, setDirection] = useState(0);
@@ -59,8 +61,11 @@ export const FlashcardPanel: React.FC<FlashcardPanelProps> = ({
       setActiveStep((prev) => prev + 1);
     } else if (activeStep === totalSteps - 1) {
       setCompletedSteps((prev) => new Set([...prev, activeStep]));
+      // Finishing the whole guide is worth celebrating, not just logging.
+      setEmotion('excited');
+      setTimeout(() => setEmotion('neutral'), 2600);
     }
-  }, [activeStep, totalSteps]);
+  }, [activeStep, totalSteps, setEmotion]);
 
   const goToPreviousStep = useCallback(() => {
     if (activeStep > 0) {

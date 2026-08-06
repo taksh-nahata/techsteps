@@ -28,6 +28,8 @@ export const TECHY_COLORS = {
   thinking: ['#b8791f', '#d98a2b'] as [string, string],
   speaking: ['#9f3d20', '#c2502e'] as [string, string],
   happy: ['#2e6a63', '#4a8a82'] as [string, string],
+  excited: ['#d98a2b', '#f4b942'] as [string, string],
+  concerned: ['#9a7b5c', '#b89a78'] as [string, string],
 };
 
 export function techyColorForState(
@@ -40,5 +42,7 @@ export function techyColorForState(
   if (isThinking) return TECHY_COLORS.thinking;
   if (isSpeaking) return TECHY_COLORS.speaking;
   if (emotion === 'happy') return TECHY_COLORS.happy;
+  if (emotion === 'excited') return TECHY_COLORS.excited;
+  if (emotion === 'concerned') return TECHY_COLORS.concerned;
   return TECHY_COLORS.idle;
 }
