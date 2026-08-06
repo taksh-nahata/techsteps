@@ -349838,5 +349838,190 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785981494735-557",
+    "title": "Fix Chrome Remote Desktop Dual Monitor Access",
+    "problemDescription": "Chrome Remote Desktop does not correctly display both monitors or allows selection between them during a remote session.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome remote desktop",
+      "dual monitor",
+      "remote access",
+      "display selection"
+    ],
+    "steps": [
+      {
+        "title": "Disable Scaling and Select Display",
+        "content": "On the client device (laptop/tablet), open the Chrome Remote Desktop session options by clicking the arrow to the right. Uncheck the 'Scale to fit' option, then scroll down to the 'Displays' section. Choose the specific monitor you want to use for the remote session."
+      },
+      {
+        "title": "Configure Local Display Settings",
+        "content": "On the local computer (host), ensure the display settings are set to 'Extend' or 'Duplicate' the main monitor. This allows Chrome Remote Desktop to recognize both monitors during the session."
+      },
+      {
+        "title": "Start Remote Session in Full Screen",
+        "content": "Initiate the Chrome Remote Desktop session and enter full-screen mode. This ensures both monitors are accessible and displayed correctly."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Duplicate Local Displays",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Local Displays to Duplicate",
+            "content": "On the local computer, go to Display Settings and set the secondary monitor to 'Duplicate' the primary monitor. This forces Chrome Remote Desktop to recognize both screens as a single display."
+          },
+          {
+            "title": "Start Remote Session",
+            "content": "Launch Chrome Remote Desktop and enter full-screen mode. Both monitors will now be accessible, though resolutions may appear inconsistent."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Accessibility Zoom (Mac Only)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Screen Zoom",
+            "content": "On the Mac client, go to System Preferences > Accessibility > Zoom and enable 'Use keyboard shortcuts to zoom'."
+          },
+          {
+            "title": "Zoom to Desired Monitor",
+            "content": "During the remote session, use the keyboard shortcut (e.g., Control + Option + 8) to zoom into the specific monitor you want to view."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T01:58:14.735Z",
+      "updated": "2026-08-06T01:58:14.735Z",
+      "sourceUrl": "https://superuser.com/questions/1563736/accessing-a-dual-monitor-system-using-chrome-remote-desktop-using-the-dual-monit",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785981500057-994",
+    "title": "Fix Google Chrome Blank Search Results Pages",
+    "problemDescription": "Google Chrome displays a blank screen when loading any Google search results page, while other search engines (Bing, Yahoo) work normally.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "blank screen",
+      "google search",
+      "local storage",
+      "extensions"
+    ],
+    "steps": [
+      {
+        "title": "Clear Chrome's Local Storage Data",
+        "content": "1. Close all Chrome windows. Open Task Manager (Ctrl+Shift+Esc), end all Chrome-related tasks, and confirm. 2. Enable hidden files in File Explorer: Open Folder Options > View tab > select 'Show hidden files, folders, and drives' > OK. 3. Navigate to: C:\\Users\\<YourUsername>\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Local Storage\\. 4. Delete all files in this folder (e.g., leveldb, .ldb files). 5. Restart Chrome and test Google search."
+      },
+      {
+        "title": "Disable or Remove Suspicious Extensions",
+        "content": "1. Open Chrome and go to chrome://extensions. 2. Disable all extensions one by one, restarting Chrome after each to identify the culprit. 3. If a specific extension is identified, remove it permanently. 4. Alternatively, reset Chrome extensions by navigating to chrome://settings/reset and selecting 'Restore settings to their original defaults'."
+      },
+      {
+        "title": "Disable Chrome's Compatibility Mode",
+        "content": "1. Right-click the Chrome shortcut (on Desktop/Start Menu/Taskbar) and select 'Properties'. 2. Go to the 'Compatibility' tab. 3. Uncheck 'Run this program in compatibility mode for' and click Apply > OK. 4. Restart Chrome and test Google search."
+      },
+      {
+        "title": "Scan for Malware and Reinstall Chrome",
+        "content": "1. Run a full system scan using a trusted antivirus (e.g., Windows Defender, Malwarebytes). 2. Remove any detected threats. 3. Uninstall Chrome via Control Panel > Programs > Uninstall a program. 4. Download the latest Chrome offline installer from google.com/chrome and install it. 5. Restart your computer and test Google search."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method: Disable Chrome Sandbox (Security Risk)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Sandbox Temporarily",
+            "content": "1. Right-click the Chrome shortcut and select 'Properties'. 2. In the 'Target' field, append: --no-sandbox (e.g., 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' --no-sandbox). 3. Click Apply > OK. 4. Restart Chrome and test Google search. **Note:** Disabling sandboxing reduces security; re-enable it after testing."
+          }
+        ]
+      },
+      {
+        "title": "Method: Reset Chrome Settings via Command Line",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Reset Chrome via Command Prompt",
+            "content": "1. Close all Chrome windows. 2. Open Command Prompt as Administrator. 3. Run: `cd %LOCALAPPDATA%\\Google\\Chrome\\User Data\\` 4. Run: `del /f /q Default\\Local Storage\\*` 5. Restart Chrome. If issue persists, reset Chrome settings by running: `chrome.exe --reset-settings` in Command Prompt."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T01:58:20.057Z",
+      "updated": "2026-08-06T01:58:20.057Z",
+      "sourceUrl": "https://superuser.com/questions/1468445/why-does-any-google-search-results-page-gives-me-a-blank-screen-in-google-chrome",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785981504098-18",
+    "title": "Fix 'File Can't Be Downloaded Securely' Error in Google Chrome",
+    "problemDescription": "Google Chrome blocks file downloads from websites with mixed content (HTTP/HTTPS) or insecure origins, displaying a 'File can't be downloaded securely' error.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "download",
+      "security",
+      "mixed content",
+      "insecure origin"
+    ],
+    "steps": [
+      {
+        "title": "Allow Insecure Content on the Host Site",
+        "content": "1. Navigate to the website hosting the file. \n2. Click the padlock icon (🔒) in the address bar. \n3. Select 'Site settings'. \n4. Scroll to 'Insecure content' and set it to 'Allow'. \n5. Reload the page and attempt the download again."
+      },
+      {
+        "title": "Add the PDF URL to 'Insecure Origins Treated as Secure'",
+        "content": "1. Attempt to download the file and go to the Downloads page in Chrome. \n2. Right-click the failed download link and select 'Copy link address'. \n3. Open a new tab and go to `chrome://flags/#unsafely-treat-insecure-origin-as-secure`. \n4. In the 'Insecure origins treated as secure' field, paste the copied URL. \n5. Click 'Enabled' from the dropdown menu. \n6. Restart Chrome for changes to take effect."
+      },
+      {
+        "title": "Use Firefox as an Alternative Browser",
+        "content": "1. Download and install Firefox if not already installed. \n2. Open Firefox and navigate to the website. \n3. Attempt to download the file using Firefox's download manager."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Chrome's Security Warnings (Not Recommended)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Security Warnings in Chrome Settings",
+            "content": "1. Open Chrome and go to `chrome://settings/security`. \n2. Disable 'Enhanced protection' or 'Standard protection' (varies by Chrome version). \n3. Note: This reduces security and is not recommended for regular use."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Website Administrator",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Request HTTPS Implementation",
+            "content": "1. Contact the website owner/developer. \n2. Request them to update their site to use HTTPS for all resources. \n3. Explain that mixed content (HTTP resources on HTTPS pages) triggers this error."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T01:58:24.098Z",
+      "updated": "2026-08-06T01:58:24.098Z",
+      "sourceUrl": "https://superuser.com/questions/1781123/fixing-file-cant-be-downloaded-securely-error-in-google-chrome",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
