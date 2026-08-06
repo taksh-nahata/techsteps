@@ -31,7 +31,7 @@ const ChatDashboardContent: React.FC = () => {
   const { userData } = useUser();
   const { user, logout } = useAuth();
   const navigate = useNavigate();
-  const { state: avatarState, setEmotion, setListening, setSpeaking, setThinking } = useAvatar();
+  const { state: avatarState, setEmotion, setListening, setSpeaking, setThinking, setMessage } = useAvatar();
 
   const [messages, setMessages] = useState<Message[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -42,6 +42,17 @@ const ChatDashboardContent: React.FC = () => {
   useEffect(() => {
     setViewDevice(userDevice);
   }, [userDevice]);
+
+  // Gentle idle nudge: if there's an active conversation and nothing's
+  // happening for a while, let the companion check in instead of just
+  // sitting there. Clears itself as soon as the user does anything.
+  useEffect(() => {
+    if (messages.length === 0 || isLoading || avatarState.isListening) return;
+    const idleTimer = setTimeout(() => {
+      setMessage('Still here if you need me!');
+    }, 50000);
+    return () => clearTimeout(idleTimer);
+  }, [messages, isLoading, avatarState.isListening, setMessage]);
 
   const flashcardSteps = useMemo(
     () => resolveFlashcardStepsForDevice(rawFlashcardSteps, viewDevice),
@@ -219,6 +230,7 @@ const ChatDashboardContent: React.FC = () => {
     const userId = user?.uid || 'guest';
     setIsLoading(true);
     setThinking(true);
+    setMessage(null); // clear any idle nudge — the user's back
     setLastUserMessage(messageContent); // Track the user's message for follow-up suggestions
 
     // 1. Check for system commands

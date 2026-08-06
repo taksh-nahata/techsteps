@@ -8,6 +8,7 @@ import EnhancedAvatarCompanion from './EnhancedAvatarCompanion';
 import FollowUpQuestions from './FollowUpQuestions';
 import GuidePromptCard from './GuidePromptCard';
 import type { Message } from '../../services/MemoryService';
+import { useAvatar } from '../../contexts/AvatarContext';
 
 interface ChatInterfaceProps {
   messages: Message[];
@@ -61,6 +62,7 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
   showFlashcardPanel = false,
 }) => {
   const { t } = useTranslation();
+  const { state: avatarState } = useAvatar();
   const prefersReducedMotion = useReducedMotion();
   const [inputValue, setInputValue] = useState('');
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
@@ -390,7 +392,7 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
                         ? 'Thinking…'
                         : guideStep
                           ? `Step ${guideStep.current} of ${guideStep.total}`
-                          : undefined
+                          : avatarState.message || undefined
                   }
                 />
               </div>
