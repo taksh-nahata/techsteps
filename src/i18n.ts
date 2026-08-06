@@ -122,6 +122,10 @@ i18n
   // Pass the i18n instance to react-i18next.
   .use(initReactI18next)
   .init({
+    // Force English for everyone for now, regardless of browser/OS locale or
+    // a stale localStorage value from testing. Remove this once translation
+    // quality is good enough to turn other languages back on.
+    lng: 'en',
     // The default language
     fallbackLng: 'en',
     // Supported languages - all languages with translation files
