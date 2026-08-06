@@ -517,7 +517,12 @@ const ChatDashboardContent: React.FC = () => {
       </header>
 
       <div className="flex-1 min-h-0 w-full flex flex-col lg:flex-row gap-3 md:gap-4 px-3 md:px-8 pb-3 md:pb-4">
-        <div className={`flex-1 min-h-0 min-w-0 surface-card rounded-card overflow-hidden flex flex-col ${showFlashcards ? 'lg:w-1/2' : 'w-full'}`}>
+        {/* Below the lg breakpoint, chat and the guide panel used to split height
+            50/50 regardless of content, which crammed the guide's device tabs,
+            progress dots, card, and nav into a box barely taller than its own
+            content. Below lg, showing the guide now fully replaces chat instead
+            of squeezing beside it; closing the guide brings chat back. */}
+        <div className={`flex-1 min-h-0 min-w-0 surface-card rounded-card overflow-hidden flex flex-col ${showFlashcards ? 'hidden lg:flex lg:w-1/2' : 'w-full'}`}>
           <ChatInterface
             className="flex-1 min-h-0"
             messages={messages}
