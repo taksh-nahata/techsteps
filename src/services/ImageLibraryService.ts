@@ -64,7 +64,10 @@ export class ImageLibraryService {
 
     return this.imageCache
       .map((img) => ({ image: img, score: this.calculateSimilarity(queryKeywords, img.keywords) }))
-      .filter((item) => item.score > 0.1)
+      // 0.1 Jaccard similarity is barely more than chance overlap -- it was letting
+      // through images for a different device or a loosely-related step just
+      // because a couple of generic words (like "settings" or "tap") matched.
+      .filter((item) => item.score > 0.35)
       .sort((a, b) => b.score - a.score)
       .slice(0, limit)
       .map((item) => item.image);

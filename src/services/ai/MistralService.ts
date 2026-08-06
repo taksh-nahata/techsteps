@@ -185,8 +185,16 @@ export class MistralService implements AIService {
         const startTime = Date.now();
 
         // ========== GUIDE MATCHING - Check for existing guides first ==========
+        // This is a fast path that skips the LLM entirely, so it has to be
+        // conservative: it's plain word-overlap scoring with no concept of
+        // device or negation, so "connect my printer" and "disconnect my
+        // printer" -- or an iPhone guide vs. an Android question -- can both
+        // score deceptively high. 0.6 was letting through matches that were
+        // topically close but not actually what was asked, which read as
+        // generic and unspecific. Raised the bar so more borderline cases
+        // fall through to a real, personalized AI-generated answer instead.
         const existingMatch = guideMatchingService.findBestMatch(message, 0.5);
-        if (existingMatch && existingMatch.score > 0.6) {
+        if (existingMatch && existingMatch.score > 0.72) {
             console.log(`📚 [Mistral] Found matching guide: "${existingMatch.guide.title}" (${Math.round(existingMatch.score * 100)}% match)`);
 
             const device: GuideDeviceType =
@@ -205,7 +213,7 @@ export class MistralService implements AIService {
             });
 
             return {
-                content: `I found a verified guide that should help you with this!\n\n**${existingMatch.guide.title}**\n\n${existingMatch.guide.problemDescription}`,
+                content: `Good news — this is something we've already walked people through before, so I can get straight to it.\n\n**${existingMatch.guide.title}**\n\n${existingMatch.guide.problemDescription}`,
                 confidence: 0.95,
                 suggestedActions: [],
                 requiresHumanEscalation: false,
@@ -226,16 +234,28 @@ export class MistralService implements AIService {
                 ? `KNOWN USER FACTS:\n${context.knownFacts.map((f: string) => `- ${f}`).join('\n')}\n\n`
                 : "";
 
-            // Optional web search trigger: messages starting with "search: <query>" or containing "search the web for"
+            // Web search trigger: explicit "search: <query>" / "search the web for X",
+            // OR automatically when the question itself sounds time-sensitive (asking
+            // about the latest/current version, price, or availability of something).
+            // Relying only on the magic phrase meant almost no real conversation ever
+            // triggered a search -- nobody actually types "search the web for".
             let performedSearchResults: string[] = [];
             const searchPrefixMatch = message.trim().match(/^search:\s*(.+)$/i);
-            if (searchPrefixMatch || /search the web for/i.test(message)) {
-                const query = searchPrefixMatch ? searchPrefixMatch[1] : message.replace(/.*search the web for/i, '').trim();
+            const explicitSearchPhrase = /search the web for/i.test(message);
+            const looksTimeSensitive = /\b(latest|newest|current(ly)?|up[- ]to[- ]date|this year|202[4-9]|how much (does|is|do)|price of|cost of|still (works?|supported|available)|discontinued)\b/i.test(message);
+            if (searchPrefixMatch || explicitSearchPhrase || looksTimeSensitive) {
+                const query = searchPrefixMatch
+                    ? searchPrefixMatch[1]
+                    : explicitSearchPhrase
+                        ? message.replace(/.*search the web for/i, '').trim()
+                        : message;
                 try {
                     performedSearchResults = await this.webSearch(query);
                     if (performedSearchResults.length > 0) {
                         factsPrefix = `WEB SEARCH RESULTS (top snippets):\n${performedSearchResults.map(r => `- ${r}`).join('\n')}\n\n` + factsPrefix;
-                        message = `Please synthesize the following search results and answer the user's original question: ${query}`;
+                        if (searchPrefixMatch || explicitSearchPhrase) {
+                            message = `Please synthesize the following search results and answer the user's original question: ${query}`;
+                        }
                     }
                 } catch (err) {
                     console.warn('Web search failed:', err);
@@ -280,7 +300,11 @@ export class MistralService implements AIService {
                     processingTime,
                     model: usedModel,
                     tokens: usedTokens,
-                    sources: [usedProvider].concat(performedSearchResults.length ? ['WebSearch(DuckDuckGo)'] : [])
+                    sources: [usedProvider].concat(
+                        performedSearchResults.length
+                            ? [import.meta.env.VITE_TAVILY_API_KEY ? 'WebSearch(Tavily)' : 'WebSearch(DuckDuckGo)']
+                            : []
+                    )
                 }
             };
         } catch (error) {
@@ -328,8 +352,43 @@ export class MistralService implements AIService {
         }));
     }
 
-    // Lightweight web search using DuckDuckGo Instant Answer API (no API key required)
+    // Real web search via Tavily (same key the discovery-agent script already uses)
+    // when configured, since DuckDuckGo's free Instant Answer API only returns
+    // Wikipedia-style infobox snippets and comes back empty for most real
+    // troubleshooting questions. Falls back to DuckDuckGo if no Tavily key is set
+    // or the request fails, so search never hard-fails to nothing.
     private async webSearch(query: string): Promise<string[]> {
+        const tavilyKey = import.meta.env.VITE_TAVILY_API_KEY;
+        if (tavilyKey) {
+            try {
+                const res = await fetch('https://api.tavily.com/search', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        api_key: tavilyKey,
+                        query,
+                        search_depth: 'basic',
+                        include_answer: true,
+                        max_results: 5,
+                    }),
+                });
+                if (res.ok) {
+                    const json = await res.json();
+                    const snippets: string[] = [];
+                    if (json.answer) snippets.push(json.answer);
+                    if (Array.isArray(json.results)) {
+                        for (const r of json.results.slice(0, 4)) {
+                            if (r.content) snippets.push(`${r.title ? r.title + ': ' : ''}${r.content}`);
+                        }
+                    }
+                    const cleaned = snippets.map((s) => s.replace(/\s+/g, ' ').trim()).filter(Boolean);
+                    if (cleaned.length > 0) return cleaned;
+                }
+            } catch (e) {
+                console.warn('Tavily search error, falling back to DuckDuckGo', e);
+            }
+        }
+
         try {
             const encoded = encodeURIComponent(query);
             const url = `https://api.duckduckgo.com/?q=${encoded}&format=json&no_html=1&skip_disambig=1`;
