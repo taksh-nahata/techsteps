@@ -350023,5 +350023,230 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1785993397159-133",
+    "title": "Fix Mac User Account Permissions or Login Issues",
+    "problemDescription": "Mac user account files require repeated admin password entry or user cannot log in due to permission issues or forgotten password.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "user account",
+      "permissions",
+      "login",
+      "admin password",
+      "reset password"
+    ],
+    "steps": [
+      {
+        "title": "Boot into Recovery Mode",
+        "content": "For macOS 10.7-10.13: Restart Mac and hold Command + R keys during startup to enter Recovery Mode. For macOS 10.6: Restart Mac and hold C key or Option/Alt key to boot from the 10.6 disk."
+      },
+      {
+        "title": "Open Terminal",
+        "content": "In Recovery Mode, select Utilities > Terminal."
+      },
+      {
+        "title": "Reset Home Directory Permissions",
+        "content": "Type 'resetpassword' and press Return. Select the drive at the top, then choose the affected user account. Click the 'Reset Home Directory Permissions and ACLs' button."
+      },
+      {
+        "title": "Reset Password (if needed)",
+        "content": "If login issues persist, select 'Reset Password' in the same tool. Enter and confirm a new password, then write it down. Note: Resetting the password may cause Keychain issues."
+      },
+      {
+        "title": "Create New Admin Account (if necessary)",
+        "content": "If unable to log into the sole account, open Terminal and type: 'rm /var/db/.AppleSetupDone'. Restart Mac and follow on-screen instructions to create a new admin account. Use this account to access files or perform updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Password via Single User Mode (macOS 10.6)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Single User Mode",
+            "content": "Restart Mac and hold Command + S keys during startup."
+          },
+          {
+            "title": "Run Commands",
+            "content": "Type the following commands one by one, pressing Return after each:\nmount -uw /\nrm /var/db/.AppleSetupDone\nreboot"
+          },
+          {
+            "title": "Create New Admin Account",
+            "content": "After reboot, follow on-screen instructions to create a new admin account. Use this account to reset the password of the original user via System Preferences > Users & Groups."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T05:16:37.159Z",
+      "updated": "2026-08-06T05:16:37.159Z",
+      "sourceUrl": "https://discussions.apple.com/docs/DOC-3621",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1785993429562-625",
+    "title": "Fix Gmail Standard View Not Loading",
+    "problemDescription": "Gmail's standard view fails to load, redirecting users to a basic HTML version or showing errors. This may be due to browser issues, extensions, or outdated software.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "standard view",
+      "html view",
+      "browser",
+      "loading error"
+    ],
+    "steps": [
+      {
+        "title": "Update Your Browser",
+        "content": "Ensure you are using a supported browser (e.g., Chrome, Firefox, Edge, Safari) and update it to the latest version."
+      },
+      {
+        "title": "Disable Browser Extensions",
+        "content": "Temporarily disable all browser extensions, especially ad blockers or privacy tools, as they may interfere with Gmail's standard view. Re-enable them one by one to identify the culprit."
+      },
+      {
+        "title": "Clear Cache and Cookies",
+        "content": "Clear your browser's cache and cookies, then restart the browser. This removes corrupted data that may prevent Gmail from loading properly."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Restart your router or modem to resolve potential connectivity issues. If the problem persists, try a different network or device."
+      },
+      {
+        "title": "Switch to Gmail App (Mobile)",
+        "content": "If using a mobile device, download and use the official Gmail app instead of the browser version for better compatibility."
+      },
+      {
+        "title": "Enable Standard View Manually",
+        "content": "If redirected to the HTML view, look for an in-product announcement or setting to switch back to the standard view before it is permanently disabled."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Incognito/Private Mode",
+        "type": "Quick Fix",
+        "steps": [
+          {
+            "title": "Open Gmail in Incognito Mode",
+            "content": "Open your browser in incognito/private mode (Ctrl+Shift+N in Chrome, Ctrl+Shift+P in Firefox) and navigate to Gmail. This bypasses extensions and cached data."
+          },
+          {
+            "title": "Check for Errors",
+            "content": "If Gmail loads correctly in incognito mode, the issue is likely caused by an extension or corrupted cache. Proceed to disable extensions and clear cache as in the main steps."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset Browser Settings",
+        "type": "Advanced Fix",
+        "steps": [
+          {
+            "title": "Reset Browser to Default",
+            "content": "Reset your browser settings to default (e.g., in Chrome: Settings > Reset settings > Restore settings to their original defaults). This removes all extensions, cookies, and custom settings."
+          },
+          {
+            "title": "Reinstall Browser",
+            "content": "If resetting doesn’t work, uninstall and reinstall the browser to ensure a clean installation."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T05:17:09.562Z",
+      "updated": "2026-08-06T05:17:09.562Z",
+      "sourceUrl": "https://www.techradar.com/pro/a-classic-version-of-gmail-is-shutting-down-heres-what-you-need-to-know",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1785993470882-788",
+    "title": "Reduce Bluetooth Audio Delay with SBC Codec on Android",
+    "problemDescription": "Bluetooth headphones with SBC codec cause noticeable audio delay when watching videos on an Android device.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "headphones",
+      "audio delay",
+      "SBC codec",
+      "Android"
+    ],
+    "steps": [
+      {
+        "title": "Enable Developer Options",
+        "content": "Go to Settings > About Phone and tap 'Build Number' 7 times to enable Developer Options."
+      },
+      {
+        "title": "Set Bluetooth Audio Codec to SBC",
+        "content": "Open Developer Options and look for 'Bluetooth Audio Codec'. Ensure it is set to 'SBC' (default for your headphones)."
+      },
+      {
+        "title": "Adjust Bluetooth Audio Priority",
+        "content": "In Developer Options, set 'Bluetooth Audio Priority' to 'High' to prioritize audio over other Bluetooth functions."
+      },
+      {
+        "title": "Use Wired Connection for Critical Audio",
+        "content": "If possible, use a wired connection for media playback to eliminate delay entirely."
+      },
+      {
+        "title": "Test with Different Media Apps",
+        "content": "Some apps (e.g., YouTube, Netflix) handle Bluetooth audio better than others. Try a different app to see if delay persists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Bluetooth Audio Transmitter with Lower Latency",
+        "type": "Hardware Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Low-Latency Bluetooth Transmitter",
+            "content": "Buy a dedicated Bluetooth audio transmitter that supports aptX Low Latency or similar low-latency codecs."
+          },
+          {
+            "title": "Connect Transmitter to Your Device",
+            "content": "Plug the transmitter into your phone's audio jack or USB-C port and pair your headphones to the transmitter."
+          },
+          {
+            "title": "Enable Low-Latency Mode",
+            "content": "Check the transmitter's settings or manual to enable low-latency mode for reduced delay."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Third-Party Audio App",
+        "type": "Software Workaround",
+        "steps": [
+          {
+            "title": "Download a Low-Latency Audio App",
+            "content": "Install an app like 'Bluetooth Auto Connect' or 'SoundAbout' from the Play Store."
+          },
+          {
+            "title": "Configure App Settings",
+            "content": "Open the app and enable options like 'Force SBC Codec' or 'Audio Priority' to reduce delay."
+          },
+          {
+            "title": "Test Audio Delay",
+            "content": "Play a video and check if the delay has improved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T05:17:50.882Z",
+      "updated": "2026-08-06T05:17:50.882Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/224323/i-got-a-new-bluetooth-headphones-and-i-have-a-delay-is-there-a-solution",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
