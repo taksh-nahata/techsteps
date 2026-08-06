@@ -10,13 +10,11 @@ interface FollowUpQuestionsProps {
 }
 
 function buildStaticFollowUps(message: string): string[] {
-  const topic = message.replace(/\?+$/, '').trim();
-  if (!topic) return [];
-  const short = topic.length > 48 ? `${topic.slice(0, 45)}…` : topic;
+  if (!message.trim()) return [];
   return [
-    `Step-by-step for ${short}?`,
-    `Easier way?`,
-    `With pictures?`,
+    `Can you break that into steps?`,
+    `Is there an easier way?`,
+    `Can you show me with a picture?`,
   ];
 }
 
