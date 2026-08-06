@@ -350446,5 +350446,366 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1786015000045-345",
+    "title": "Fix Samsung Galaxy Screen Not Responding After Repair",
+    "problemDescription": "After a screen replacement, the Samsung Galaxy device's touchscreen is unresponsive or partially non-functional.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "samsung",
+      "galaxy",
+      "screen replacement",
+      "touchscreen not working",
+      "adhesive tape",
+      "display issue"
+    ],
+    "steps": [
+      {
+        "title": "Verify Proper Screen Installation",
+        "content": "Ensure the new screen is correctly aligned and fully seated in the device frame. Check for gaps or misalignment that could affect touch sensitivity."
+      },
+      {
+        "title": "Check Adhesive Tape Application",
+        "content": "Confirm that the bonding tape (used for Galaxy S21 and newer models) is evenly applied between the display and frame. Improper tape application can cause touch issues."
+      },
+      {
+        "title": "Perform a Hard Reset",
+        "content": "Hold the Power and Volume Down buttons simultaneously for 10-15 seconds to force a restart. This can resolve temporary software glitches affecting touch functionality."
+      },
+      {
+        "title": "Test in Safe Mode",
+        "content": "Boot the device into Safe Mode (hold Power button, then long-press 'Power off' and select 'Safe Mode'). If the touchscreen works in Safe Mode, a third-party app may be the cause."
+      },
+      {
+        "title": "Update Device Software",
+        "content": "Go to Settings > Software Update > Download and Install. Ensure the device has the latest firmware, as outdated software can cause touchscreen issues."
+      },
+      {
+        "title": "Inspect for Physical Damage",
+        "content": "Check for cracks, pressure marks, or debris on the screen or frame. Even minor damage can disrupt touch sensitivity."
+      },
+      {
+        "title": "Reapply Pressure and Clamping",
+        "content": "If the issue persists, use a screen pressing machine (or a specialized jig) to reapply uniform pressure to the display assembly. This ensures proper bonding of the tape and screen."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Original Screen (If Available)",
+        "type": "Fallback Solution",
+        "steps": [
+          {
+            "title": "Replace with Original Screen",
+            "content": "If the replacement screen is faulty, reinstall the original screen (if available) to rule out hardware defects in the replacement part."
+          },
+          {
+            "title": "Test Touch Functionality",
+            "content": "Power on the device and test the touchscreen. If it works, the replacement screen may be defective."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Professional Recalibration",
+        "type": "Advanced Fix",
+        "steps": [
+          {
+            "title": "Access Service Menu",
+            "content": "Dial *#2663# (or *#0*# for some models) to enter the service menu. Navigate to 'Touch Key Test' or 'Touchscreen Test' and follow calibration prompts."
+          },
+          {
+            "title": "Perform Touchscreen Calibration",
+            "content": "If the service menu offers calibration options, follow the on-screen instructions to recalibrate the touchscreen."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T11:16:40.045Z",
+      "updated": "2026-08-06T11:16:40.045Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/inside-the-giant-warehouse-where-broken-samsung-phones-get-fixed",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786015007746-306",
+    "title": "Fix Samsung Galaxy Nexus Volume Dropping Issue",
+    "problemDescription": "The Samsung Galaxy Nexus may experience sudden volume drops to zero, affecting calls, music, and ringtones, particularly when near another phone using the 900MHz 2G frequency.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "volume",
+      "bug",
+      "Samsung Galaxy Nexus",
+      "Android",
+      "2G frequency",
+      "O2",
+      "Vodafone"
+    ],
+    "steps": [
+      {
+        "title": "Wait for Official Google Update",
+        "content": "Google has announced an official fix for the volume issue, which will be rolled out to all affected devices over the next week. Simply wait for the update to arrive via OTA (Over-The-Air) notification."
+      },
+      {
+        "title": "Check for Software Update Manually",
+        "content": "If the update hasn't arrived automatically, manually check for updates: Go to Settings > About phone > System updates > Check for updates. Download and install the update if available."
+      },
+      {
+        "title": "Avoid Affected Frequencies (Temporary Workaround)",
+        "content": "If you cannot wait for the update, avoid using the 900MHz 2G frequency by switching to a different network (e.g., Orange, T-Mobile, or Three in the UK) or disabling 2G mode in Settings > Mobile networks > Network mode > WCDMA (3G preferred)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Unofficial Fix (Advanced Users Only)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Unlock Bootloader",
+            "content": "Unlock your Samsung Galaxy Nexus bootloader. Note: This voids warranty. Follow instructions from XDA Developers or trusted sources to unlock the bootloader."
+          },
+          {
+            "title": "Flash Official Fix Image",
+            "content": "Download the official fix image provided by Google or trusted community sources. Use fastboot tools to flash the image to your device. Example command: `fastboot flash boot boot.img` (replace with actual image file)."
+          },
+          {
+            "title": "Re-lock Bootloader (Optional)",
+            "content": "After flashing, you may re-lock the bootloader if desired (not required for the fix to work)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T11:16:47.747Z",
+      "updated": "2026-08-06T11:16:47.747Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/samsung-galaxy-nexus-volume-bug-solution-released-by-google",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786015034181-681",
+    "title": "Fix Amazon Echo Dot Max Wi-Fi Connection Issues",
+    "problemDescription": "The Amazon Echo Dot Max fails to connect to Wi-Fi or pair with the Alexa app, resulting in no internet access or setup failure.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "Amazon Echo Dot Max",
+      "Wi-Fi",
+      "connection",
+      "Alexa app",
+      "setup mode"
+    ],
+    "steps": [
+      {
+        "title": "Reset the Echo Dot Max",
+        "content": "Press and hold the Volume Down button and the Microphone Enable/Disable button simultaneously for 15 seconds. Release when the orange spinning light appears, indicating setup mode."
+      },
+      {
+        "title": "Disable Wi-Fi on Your Phone",
+        "content": "Turn off Wi-Fi on the phone running the Alexa app and ensure mobile data is enabled."
+      },
+      {
+        "title": "Reconnect via Alexa App",
+        "content": "Open the Alexa app, tap the plus sign (+) to add a new device, and follow the prompts to reconnect the Echo Dot Max to Wi-Fi."
+      },
+      {
+        "title": "Check for Updates",
+        "content": "After reconnecting, check for any pending software updates in the Alexa app and install them."
+      },
+      {
+        "title": "Manually Change Wi-Fi Network (if needed)",
+        "content": "In the Alexa app, go to Devices > Select your Echo Dot Max > Tap the cogwheel > Change or Remove Wi-Fi Network > Join Another Wi-Fi Network."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Factory Reset the Echo Dot Max",
+        "type": "Last Resort",
+        "steps": [
+          {
+            "title": "Initiate Factory Reset",
+            "content": "Press and hold the Volume Down button and the Microphone Enable/Disable button simultaneously for 30 seconds until the light ring turns orange and then blue."
+          },
+          {
+            "title": "Reconfigure the Device",
+            "content": "Follow the on-screen instructions in the Alexa app to set up the Echo Dot Max as a new device."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T11:17:14.181Z",
+      "updated": "2026-08-06T11:17:14.181Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=8-vSYsdD0qM",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786015053546-506",
+    "title": "Fix Honor View 10 Lite USB Not Recognized by PC",
+    "problemDescription": "The Honor View 10 Lite running Android 9.0 Pie is not recognized by a PC via USB, even after trying multiple cables and settings.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "honor view 10 lite",
+      "android 9.0 pie",
+      "usb not recognized",
+      "pc connection",
+      "hisuite"
+    ],
+    "steps": [
+      {
+        "title": "Enable USB via HiSuite",
+        "content": "1. Connect your Honor View 10 Lite to the PC using a USB cable.\n2. Open HiSuite on your PC.\n3. In HiSuite, locate and select the USB option for your device.\n4. On your phone, check for a prompt to allow USB debugging or change the USB mode.\n5. Select the appropriate USB mode (e.g., File Transfer or MTP) when prompted."
+      },
+      {
+        "title": "Check USB Mode and Developer Options",
+        "content": "1. Go to 'Settings' > 'Developer options' on your phone.\n2. Ensure 'USB debugging' is turned ON.\n3. Set 'USB configuration' to 'File Transfer' or 'MTP' mode.\n4. If the settings revert to 'Charge only' or 'Debugging off', try toggling them multiple times or restarting the device."
+      },
+      {
+        "title": "Test with Different Cables and Ports",
+        "content": "1. Try using a different USB cable (preferably the original one).\n2. Connect the phone to a different USB port on your PC.\n3. Test the connection with another PC if possible to rule out PC-side issues."
+      },
+      {
+        "title": "Update HiSuite and Drivers",
+        "content": "1. Ensure HiSuite is updated to the latest version on your PC.\n2. Download and install the latest USB drivers for your Honor View 10 Lite from the official Honor website.\n3. Restart both your phone and PC after updating."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset USB Settings via ProjectMenu",
+        "type": "Advanced Workaround",
+        "steps": [
+          {
+            "title": "Access ProjectMenu",
+            "content": "1. Open the 'Phone' app on your device.\n2. Dial '*#*#2846579#*#*' to access the ProjectMenu (hidden menu).\n3. Enter the password if prompted (default is often '0000' or '1234')."
+          },
+          {
+            "title": "Reset USB Configuration",
+            "content": "1. Navigate to 'Background Settings' > 'USB Settings'.\n2. Select 'Manufacture Mode' or 'Google Mode'.\n3. Save the settings and restart your device.\n4. Reconnect the phone to the PC and check for recognition."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset (Last Resort)",
+        "type": "Nuclear Option",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "1. Backup all important data from your phone to an external source or cloud storage."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "1. Go to 'Settings' > 'System' > 'Reset options'.\n2. Select 'Erase all data (factory reset)' and confirm.\n3. After the reset, set up the device and reconnect it to the PC."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T11:17:33.546Z",
+      "updated": "2026-08-06T11:17:33.546Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/213643/honor-view-10-liteusb-device-not-recognized-by-pc",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786015057884-206",
+    "title": "USB Flash Drive Not Recognized or Detected",
+    "problemDescription": "A USB flash drive is not being detected by a computer or is not showing up in the file explorer.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "usb",
+      "flash drive",
+      "not detected",
+      "connection",
+      "file explorer"
+    ],
+    "steps": [
+      {
+        "title": "Check Physical Connection",
+        "content": "Ensure the USB flash drive is properly inserted into the USB port. Try gently removing and reinserting the drive."
+      },
+      {
+        "title": "Try a Different USB Port",
+        "content": "Plug the USB flash drive into another USB port on your computer to rule out a faulty port."
+      },
+      {
+        "title": "Test on Another Computer",
+        "content": "Connect the USB flash drive to a different computer to determine if the issue is with the drive or the original computer."
+      },
+      {
+        "title": "Check File Explorer or Finder",
+        "content": "Open File Explorer (Windows) or Finder (Mac) and look for the USB drive under 'This PC' or 'Devices'. If it appears but is empty, check the Recycle Bin or Trash for accidentally deleted files."
+      },
+      {
+        "title": "Restart Your Computer",
+        "content": "Restart your computer to refresh system processes and potentially resolve detection issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update USB Drivers (Windows)",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Press `Win + X` and select 'Device Manager' from the menu."
+          },
+          {
+            "title": "Locate USB Controllers",
+            "content": "Expand the 'Universal Serial Bus controllers' section."
+          },
+          {
+            "title": "Update Drivers",
+            "content": "Right-click each USB controller and select 'Update driver'. Follow the prompts to search automatically for updated driver software."
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Restart your computer after updating the drivers."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Assign a Drive Letter (Windows)",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Open Disk Management",
+            "content": "Press `Win + X` and select 'Disk Management'."
+          },
+          {
+            "title": "Locate the USB Drive",
+            "content": "Find your USB flash drive in the list of drives. It may appear without a drive letter."
+          },
+          {
+            "title": "Assign Drive Letter",
+            "content": "Right-click the USB drive and select 'Change Drive Letter and Paths'. Click 'Add' and assign a new drive letter, then click 'OK'."
+          },
+          {
+            "title": "Restart Computer",
+            "content": "Restart your computer to apply changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T11:17:37.884Z",
+      "updated": "2026-08-06T11:17:37.884Z",
+      "sourceUrl": "https://www.sandisk.com/topics/usb-flash-drives/what-is-a-usb-flash-drive",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
