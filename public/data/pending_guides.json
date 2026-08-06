@@ -350807,5 +350807,574 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1786024189150-460",
+    "title": "Fix Random Black Screen Flickering on Arch Linux with KDE Plasma (Wayland)",
+    "problemDescription": "Random black screen flickering occurs when switching between fullscreen and windowed modes or taking screenshots with Spectacle on KDE Plasma (Wayland) in Arch Linux.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "black screen",
+      "flickering",
+      "KDE Plasma",
+      "Wayland",
+      "Arch Linux",
+      "Spectacle"
+    ],
+    "steps": [
+      {
+        "title": "Disable Adaptive Sync in Display Settings",
+        "content": "Open 'System Settings' > 'Display and Monitor' > 'Adaptive Sync'. Change the setting from 'Automatic' to 'Never'. This may reduce flickering but is a workaround, not a full fix."
+      },
+      {
+        "title": "Restart KDE Plasma Session",
+        "content": "Save any open work and restart your KDE Plasma session by logging out and back in, or running `plasmashell --replace &` in the terminal."
+      },
+      {
+        "title": "Check for Wayland-Specific Issues",
+        "content": "Verify if the issue persists in X11 sessions. If not, the problem may be specific to Wayland. Consider switching to X11 as a temporary workaround."
+      },
+      {
+        "title": "Update System and KDE Plasma",
+        "content": "Ensure your Arch Linux system and KDE Plasma are up to date by running `sudo pacman -Syu` in the terminal. Reboot after updating."
+      },
+      {
+        "title": "Check for Known Bugs or Issues",
+        "content": "Search the Arch Linux forums or KDE bug tracker for similar reports. If a bug is confirmed, wait for an official fix or apply a patch if available."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use X11 Session Instead of Wayland",
+        "type": "Permanent Workaround",
+        "steps": [
+          {
+            "title": "Switch to X11 Session",
+            "content": "At the login screen, select the gear icon (session options) and choose 'Plasma (X11)' instead of 'Plasma (Wayland)'. Log in and check if flickering persists."
+          },
+          {
+            "title": "Configure Display Settings in X11",
+            "content": "Reconfigure display settings in X11, including disabling Adaptive Sync if necessary, to ensure stability."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Compositor Effects Temporarily",
+        "type": "Temporary Fix",
+        "steps": [
+          {
+            "title": "Disable Desktop Effects",
+            "content": "Open 'System Settings' > 'Workspace Behavior' > 'Desktop Effects'. Toggle off all effects or set them to 'Low' performance mode to test if effects are causing the flickering."
+          },
+          {
+            "title": "Test for Flickering",
+            "content": "Switch between fullscreen and windowed modes or use Spectacle to take screenshots. If flickering stops, re-enable effects one by one to identify the culprit."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T13:49:49.150Z",
+      "updated": "2026-08-06T13:49:49.150Z",
+      "sourceUrl": "https://www.reddit.com/r/archlinux/comments/1jckpty/fix_for_random_black_screen_flickering_on_arch",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786024194047-310",
+    "title": "Fix Screen Flickering on Windows",
+    "problemDescription": "The computer screen flickers intermittently, disrupting the display and user experience.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen flicker",
+      "graphics driver",
+      "display issue",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Enter Safe Mode",
+        "content": "Restart your computer and press F8 (or Shift + Restart on Windows 10/11) to enter Safe Mode."
+      },
+      {
+        "title": "Uninstall Graphics Drivers",
+        "content": "Open Device Manager, expand 'Display adapters', right-click your GPU, and select 'Uninstall device'. Check 'Delete the driver software for this device' if available."
+      },
+      {
+        "title": "Use DDU to Remove Leftover Drivers",
+        "content": "Download Display Driver Uninstaller (DDU) from [official site](https://www.wagnardsoft.com/). Run it in Safe Mode to completely remove all traces of your GPU drivers."
+      },
+      {
+        "title": "Download Latest Drivers",
+        "content": "Visit your GPU manufacturer's website (NVIDIA, AMD, or Intel) and download the latest drivers for your specific model."
+      },
+      {
+        "title": "Install New Drivers",
+        "content": "Run the downloaded driver installer and follow the on-screen instructions. Restart your computer afterward."
+      },
+      {
+        "title": "Test for Flickering",
+        "content": "After rebooting, check if the flickering persists. If resolved, proceed with normal usage."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Refresh Rate",
+        "type": "Quick Fix",
+        "steps": [
+          {
+            "title": "Open Display Settings",
+            "content": "Right-click on the desktop and select 'Display settings'."
+          },
+          {
+            "title": "Change Refresh Rate",
+            "content": "Scroll down to 'Advanced display' and select your monitor. Try lowering the refresh rate (e.g., from 144Hz to 60Hz) and apply changes."
+          },
+          {
+            "title": "Test for Flickering",
+            "content": "Check if the flickering stops. If it does, the issue may be related to an incompatible refresh rate."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check Hardware Connections",
+        "type": "Hardware Inspection",
+        "steps": [
+          {
+            "title": "Power Down and Unplug",
+            "content": "Shut down your computer and unplug the power cable. Open the case to access the GPU."
+          },
+          {
+            "title": "Re-seat the GPU",
+            "content": "Gently remove the GPU from its slot and reseat it firmly. Ensure the power cables are securely connected."
+          },
+          {
+            "title": "Test for Flickering",
+            "content": "Reconnect power, boot up, and check if the flickering persists. If resolved, the issue was likely a loose connection."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T13:49:54.047Z",
+      "updated": "2026-08-06T13:49:54.047Z",
+      "sourceUrl": "https://www.reddit.com/r/computerhelp/comments/1ocw2zp/guys_my_computer_keep_flickering_any_tips_or",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786024267438-273",
+    "title": "Fix Wi-Fi Device Limit for Smart Home Network",
+    "problemDescription": "A smart home network reaches the 32-device limit per Wi-Fi band (2.4 GHz or 5 GHz), causing connectivity issues for additional devices.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "smart home",
+      "device limit",
+      "2.4 GHz",
+      "5 GHz",
+      "router"
+    ],
+    "steps": [
+      {
+        "title": "Identify Current Band Usage",
+        "content": "Check your router's admin panel to see how many devices are connected to the 2.4 GHz and 5 GHz bands. Note that most smart home devices use 2.4 GHz."
+      },
+      {
+        "title": "Offload Dual-Band Devices to 5 GHz",
+        "content": "Move all dual-band devices (e.g., smartphones, tablets) to the 5 GHz band to free up space on the 2.4 GHz band for smart home devices."
+      },
+      {
+        "title": "Upgrade to a Tri-Band Router",
+        "content": "Replace your dual-band router with a tri-band model (e.g., NETGEAR Nighthawk X6 AC3200) to add a second 5 GHz radio, increasing the total device limit from 64 to 96."
+      },
+      {
+        "title": "Add a Secondary Access Point",
+        "content": "Introduce an additional access point or mesh router system to distribute devices across multiple networks, reducing congestion on a single router."
+      },
+      {
+        "title": "Optimize 2.4 GHz Band Usage",
+        "content": "If most devices are 2.4 GHz-only, consider adding another dual-band router to create a separate 2.4 GHz network, doubling the limit for 2.4 GHz devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use VLANs for Device Segmentation",
+        "type": "Advanced Workaround",
+        "steps": [
+          {
+            "title": "Set Up VLANs on Your Router",
+            "content": "Configure Virtual LANs (VLANs) to segment smart home devices from other devices, reducing broadcast traffic and improving performance."
+          },
+          {
+            "title": "Assign Devices to VLANs",
+            "content": "Move smart home devices to a dedicated VLAN to isolate them from high-bandwidth devices like streaming media."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Ethernet for High-Priority Devices",
+        "type": "Physical Connection Workaround",
+        "steps": [
+          {
+            "title": "Identify High-Bandwidth Devices",
+            "content": "Determine which devices (e.g., smart TVs, gaming consoles) consume the most bandwidth and connect them via Ethernet."
+          },
+          {
+            "title": "Free Up Wi-Fi Bandwidth",
+            "content": "Reduce the number of devices on Wi-Fi by using wired connections for high-bandwidth devices."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T13:51:07.438Z",
+      "updated": "2026-08-06T13:51:07.438Z",
+      "sourceUrl": "https://superuser.com/questions/1472724/i-have-a-smart-home-with-a-lot-of-wifi-connected-devices-is-there-a-limit-to-ho",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786024274962-488",
+    "title": "Block Voice Assistants on Home Network via Firewall",
+    "problemDescription": "Voice assistants (Siri, Bixby, Google Assistant, Alexa, Cortana) are sending data to their respective servers even when not actively used. User wants to block them entirely from the home network.",
+    "category": "network",
+    "difficulty": "Medium",
+    "keywords": [
+      "voice assistant",
+      "firewall",
+      "block",
+      "privacy",
+      "network"
+    ],
+    "steps": [
+      {
+        "title": "Identify Voice Assistant Domains and IPs",
+        "content": "Research and list the domains/IPs used by each voice assistant. Common domains include: alexa.amazon.com, google.com/voice-assistant, api.siri.com, bixby.com, cortana.com. Use tools like Wireshark or online DNS lookup services to identify these endpoints."
+      },
+      {
+        "title": "Access Router Firewall Settings",
+        "content": "Log in to your router’s admin panel (usually via a web browser at 192.168.1.1 or 192.168.0.1). Enter your admin credentials (check router manual if unsure)."
+      },
+      {
+        "title": "Create Firewall Rules to Block Domains/IPs",
+        "content": "Navigate to the firewall or parental controls section. Add rules to block outbound traffic to the identified voice assistant domains/IPs. For advanced routers (e.g., pfSense, OpenWRT), use DNS-based blocking or create custom rules. Example for pfSense: Firewall > Rules > LAN > Add rule to block destination addresses for each voice assistant domain."
+      },
+      {
+        "title": "Enable DNS Filtering (Optional)",
+        "content": "Use a DNS service like Pi-hole or OpenDNS to block known voice assistant domains at the DNS level. Configure your router to use the DNS server IP (e.g., 192.168.1.100 for Pi-hole). Add domains like '*.alexa.amazon.com' to the blocklist."
+      },
+      {
+        "title": "Test Blocking Effectiveness",
+        "content": "Disable Wi-Fi on a device with a voice assistant. Attempt to trigger the assistant. If the device cannot connect to the internet, the blocking is successful. Check router logs for blocked connections."
+      },
+      {
+        "title": "Automate Updates (Advanced)",
+        "content": "For routers supporting custom scripts (e.g., Fritz!Box with FRITZ!OS), set up a cron job or scheduled task to periodically update the blocklist with new voice assistant domains. Use community-maintained blocklists (e.g., from GitHub) for automation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Dedicated Pi-hole Server",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up Pi-hole on a Raspberry Pi",
+            "content": "Install Pi-hole on a Raspberry Pi or spare computer. Follow the official Pi-hole installation guide (https://docs.pi-hole.net/). Configure Pi-hole to block known voice assistant domains by adding them to the blocklist."
+          },
+          {
+            "title": "Configure Router to Use Pi-hole as DNS",
+            "content": "Change your router’s DNS settings to point to the Pi-hole server’s IP address (e.g., 192.168.1.100). Ensure all devices on the network use this DNS server."
+          },
+          {
+            "title": "Maintain Blocklist",
+            "content": "Regularly update the Pi-hole blocklist with new voice assistant domains. Use community blocklists or manually add domains like '*.google.com/voice-assistant' or '*.siri.com'."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Voice Assistant Services on Devices",
+        "type": "Device-Specific Solution",
+        "steps": [
+          {
+            "title": "Disable Voice Assistant on Each Device",
+            "content": "For each device (phone, smart speaker, etc.), disable the voice assistant service in settings. Example: On Android, go to Settings > Google > Services > Google Assistant > Disable. On iOS, go to Settings > Siri & Search > Disable 'Listen for 'Hey Siri''."
+          },
+          {
+            "title": "Remove Permissions for Voice Assistants",
+            "content": "Revoke microphone permissions for voice assistant apps in device settings. Example: On Android, go to Settings > Apps > Google > Permissions > Microphone > Deny. On iOS, go to Settings > Privacy > Microphone > Disable for Siri."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T13:51:14.962Z",
+      "updated": "2026-08-06T13:51:14.962Z",
+      "sourceUrl": "https://superuser.com/questions/1469528/block-siri-bixby-google-assistant-alexa-cortana-in-home-network",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786024281557-983",
+    "title": "Resolve WSL2 Port Conflict with Windows Services",
+    "problemDescription": "WSL2 services are unable to bind to ports because Windows services (e.g., IIS, Hyper-V, or other applications) are already using the same ports.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "wsl2",
+      "port",
+      "conflict",
+      "windows",
+      "localhost",
+      "binding"
+    ],
+    "steps": [
+      {
+        "title": "Identify the Conflicting Process",
+        "content": "Open Command Prompt as Administrator and run: `netstat -ano | findstr :<PORT>`. Replace `<PORT>` with the port number (e.g., 80, 443). Note the PID (Process ID) of the conflicting process."
+      },
+      {
+        "title": "Check the Process Name",
+        "content": "Run `tasklist | findstr <PID>` to identify the process name (e.g., `httpd.exe` for IIS)."
+      },
+      {
+        "title": "Stop the Conflicting Service",
+        "content": "If the process is a Windows service, stop it via Services Manager (`services.msc`) or Command Prompt: `net stop <ServiceName>`. For example, to stop IIS: `net stop w3svc`."
+      },
+      {
+        "title": "Disable the Service (Optional)",
+        "content": "To prevent future conflicts, disable the service permanently: `sc config <ServiceName> start= disabled`."
+      },
+      {
+        "title": "Configure WSL2 to Use a Different Port",
+        "content": "Edit `/etc/wsl.conf` in your WSL2 distribution and add: `[network] bindPortRange = 5000-5100`. Restart WSL2: `wsl --shutdown` in PowerShell, then restart your WSL terminal."
+      },
+      {
+        "title": "Verify Port Binding in WSL2",
+        "content": "Inside WSL2, run `sudo netstat -tulnp | grep <PORT>` to confirm the port is now available for your application."
+      },
+      {
+        "title": "Restart Windows",
+        "content": "Reboot your system to ensure all changes take effect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows Firewall to Redirect Ports",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Windows Firewall with Advanced Security",
+            "content": "Press `Win + R`, type `wf.msc`, and hit Enter."
+          },
+          {
+            "title": "Create an Inbound Port Rule",
+            "content": "Go to `Inbound Rules` > `New Rule`. Select `Port` and click `Next`. Choose `TCP` and enter the conflicting port (e.g., 80). Select `Allow the connection` and proceed."
+          },
+          {
+            "title": "Redirect Traffic to WSL2",
+            "content": "In the rule properties, go to the `Advanced` tab and add a custom command to redirect traffic: `netsh interface portproxy add v4tov4 listenport=<PORT> connectaddress=127.0.0.1 connectport=<WSL_PORT>`. Replace `<WSL_PORT>` with the port your WSL2 service uses."
+          },
+          {
+            "title": "Test the Connection",
+            "content": "Access your WSL2 service via `http://localhost:<WSL_PORT>` to verify the redirection works."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use `wsl --shutdown` and Reconfigure WSL2",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Shutdown WSL2",
+            "content": "Run `wsl --shutdown` in PowerShell to force a clean restart of WSL2."
+          },
+          {
+            "title": "Update WSL2 Configuration",
+            "content": "Edit `%USERPROFILE%\\.wslconfig` (create if missing) and add: `[wsl2] kernelPortRange = 5000-5100`. This reserves a port range for WSL2."
+          },
+          {
+            "title": "Restart WSL2",
+            "content": "Open your WSL2 terminal to restart the distribution."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T13:51:21.557Z",
+      "updated": "2026-08-06T13:51:21.557Z",
+      "sourceUrl": "https://superuser.com/questions/1644133/how-to-resolve-wsl2-port-conflict-with-windows-services",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786024286554-851",
+    "title": "Fix WSL2 GUI Not Working",
+    "problemDescription": "GUI applications in WSL2 fail to launch due to incorrect DISPLAY variable configuration or dynamic IP assignment from the router.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "wsl2",
+      "gui",
+      "display",
+      "xserver",
+      "ubuntu",
+      "windows-subsystem-for-linux"
+    ],
+    "steps": [
+      {
+        "title": "Verify X Server is Running on Windows",
+        "content": "Ensure an X server (e.g., VcXsrv, Xming, or GWSL) is installed and running on your Windows host. Confirm it is configured to allow public connections."
+      },
+      {
+        "title": "Set DISPLAY Variable in WSL2",
+        "content": "Manually set the DISPLAY variable in your WSL2 terminal using your Windows host's IPv4 address. Replace <HOST_IP> with your actual IP (e.g., `export DISPLAY=192.168.1.100:0`)."
+      },
+      {
+        "title": "Make DISPLAY Variable Persistent",
+        "content": "Add the DISPLAY export command to your shell configuration file (e.g., `~/.bashrc` or `~/.zshrc`) to ensure it loads automatically on startup."
+      },
+      {
+        "title": "Assign Static IP to Windows Host",
+        "content": "Configure your router to assign a static IP address to your Windows host to avoid IP changes that break the DISPLAY variable."
+      },
+      {
+        "title": "Test GUI Application",
+        "content": "Run a GUI application (e.g., `gedit` or `xeyes`) in WSL2 to verify the fix works."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Automate DISPLAY Variable with Resolv.conf",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use resolv.conf to Dynamically Set DISPLAY",
+            "content": "Run `export DISPLAY=$(awk '/nameserver / {print $2;exit}' /etc/resolv.conf):0` in your WSL2 terminal to dynamically fetch the host's IP."
+          },
+          {
+            "title": "Add to Shell Configuration",
+            "content": "Append the above command to your shell startup file (e.g., `~/.bashrc`) to automate the process."
+          },
+          {
+            "title": "Verify X Server Configuration",
+            "content": "Ensure your X server is configured to accept connections from WSL2 (e.g., disable access control in VcXsrv settings)."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use WSLg (Windows 11 or Updated WSL2)",
+        "type": "Official Solution",
+        "steps": [
+          {
+            "title": "Update WSL2",
+            "content": "Ensure you are using Windows 11 or have updated WSL2 to the latest version with WSLg support."
+          },
+          {
+            "title": "Enable WSLg",
+            "content": "Run `wsl --update` in PowerShell to ensure WSLg is enabled. GUI apps should work automatically."
+          },
+          {
+            "title": "Test GUI Application",
+            "content": "Run a GUI application (e.g., `gedit` or `xeyes`) in WSL2 to verify the fix works."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T13:51:26.554Z",
+      "updated": "2026-08-06T13:51:26.554Z",
+      "sourceUrl": "https://superuser.com/questions/1535899/wsl2-gui-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786024293209-76",
+    "title": "Fix 'cannot execute binary file' Error in Linux",
+    "problemDescription": "Linux displays 'cannot execute binary file' when attempting to run an executable that is either incompatible with the system architecture or corrupted.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "linux",
+      "binary",
+      "execute",
+      "architecture",
+      "corrupted"
+    ],
+    "steps": [
+      {
+        "title": "Verify Executable Architecture Compatibility",
+        "content": "Run `file [executable]` to check the target architecture (e.g., 32-bit vs 64-bit). Ensure it matches your system's architecture. If incompatible, obtain the correct version of the executable."
+      },
+      {
+        "title": "Check File Permissions",
+        "content": "Run `chmod +x [executable]` to ensure the file has execute permissions. Verify with `ls -l [executable]` to confirm the 'x' flag is set."
+      },
+      {
+        "title": "Test in Single-User Mode (Recovery Mode)",
+        "content": "Boot into single-user mode (or recovery mode) via physical console access. Navigate to the executable's directory and attempt to run it from a root shell to rule out system-level issues."
+      },
+      {
+        "title": "Reinstall or Recompile the Executable",
+        "content": "If the file is corrupted or missing dependencies, reinstall the software or recompile the binary from source. Use `ldd [executable]` to check for missing libraries."
+      },
+      {
+        "title": "Update System Libraries",
+        "content": "Run `sudo apt update && sudo apt upgrade` (Debian/Ubuntu) or equivalent for your distro to ensure all system libraries are up-to-date and compatible."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Compatible Environment (Chroot or Container)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up a Chroot Environment",
+            "content": "Create a chroot environment matching the target architecture using `debootstrap` or similar tools. Copy the executable and its dependencies into the chroot and attempt execution there."
+          },
+          {
+            "title": "Use a Container (Docker/LXC)",
+            "content": "Run the executable in a container with the correct architecture using Docker (`docker run --platform [arch]`) or LXC. This isolates the environment and ensures compatibility."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Debug Missing Dependencies",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Missing Libraries",
+            "content": "Run `ldd [executable]` to list required shared libraries. Install missing libraries using your package manager (e.g., `sudo apt install [library]`)."
+          },
+          {
+            "title": "Set Library Path Temporarily",
+            "content": "If libraries are installed but not found, set `LD_LIBRARY_PATH` to include their directories: `export LD_LIBRARY_PATH=/path/to/libs:$LD_LIBRARY_PATH` and retry execution."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T13:51:33.209Z",
+      "updated": "2026-08-06T13:51:33.209Z",
+      "sourceUrl": "https://superuser.com/questions/435988/how-can-i-resolve-the-error-cannot-execute-binary-file",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
