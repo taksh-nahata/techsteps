@@ -350248,5 +350248,203 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786004621431-673",
+    "title": "Fix Wi-Fi Connection Timeout on macOS",
+    "problemDescription": "macOS fails to connect to Wi-Fi due to connection timeout, often caused by corrupt keychain entries, conflicting networks, or router issues.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "connection timeout",
+      "macos",
+      "keychain",
+      "router"
+    ],
+    "steps": [
+      {
+        "title": "Manually Join the Wi-Fi Network",
+        "content": "Open the Wi-Fi menu in the top-right corner of the screen. Click 'Join Other Network...'. Enter the network name (SSID), select the encryption type (e.g., WPA2 Personal), and input the password. Click 'Join' to connect."
+      },
+      {
+        "title": "Reset Wi-Fi Connection Information",
+        "content": "Go to System Preferences > Network. Select Wi-Fi from the left panel. Click the 'Advanced...' button. In the 'Wi-Fi' tab, find your network in the list and click the '-' button to remove it. Click 'OK' and reconnect by entering the password."
+      },
+      {
+        "title": "Delete Corrupt Keychain Entry",
+        "content": "Open 'Keychain Access' (Applications > Utilities > Keychain Access). Search for your Wi-Fi network name. Delete the entry for your network. Reconnect to the network and re-enter your credentials."
+      },
+      {
+        "title": "Reset Network Location",
+        "content": "Go to System Preferences > Network. Click the 'Location:' dropdown and select 'Edit Locations...'. Click the '+' button to create a new location. Name it (e.g., 'Home Wi-Fi Fix') and click 'Done'. Select the new location and reconnect to your Wi-Fi network."
+      },
+      {
+        "title": "Reset Your Router",
+        "content": "Unplug the router from the power source. Wait 30 seconds, then plug it back in. Wait for the router to fully reboot (indicated by steady lights). Attempt to reconnect to the Wi-Fi network."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change Wi-Fi Channel (Advanced)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Wi-Fi Interference",
+            "content": "Use a Wi-Fi analyzer tool (e.g., Wi-Fi Explorer) to identify conflicting networks on the same channel. Note the least congested channel."
+          },
+          {
+            "title": "Change Router Channel",
+            "content": "Access your router’s admin panel (usually via a web browser at 192.168.1.1 or 192.168.0.1). Log in with your admin credentials. Navigate to the Wi-Fi settings and change the channel to the least congested one identified earlier. Save changes and restart the router."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update macOS (Last Resort)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for macOS Updates",
+            "content": "Go to System Preferences > Software Update. Install any available updates for macOS. Restart your Mac after the update completes."
+          },
+          {
+            "title": "Verify Wi-Fi Connectivity",
+            "content": "After updating, reconnect to your Wi-Fi network and check if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T08:23:41.431Z",
+      "updated": "2026-08-06T08:23:41.431Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/74419/wifi-wont-connect-connection-timeout-mac",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786004625509-151",
+    "title": "Fix iMac Not Detecting Wi-Fi Network",
+    "problemDescription": "An iMac fails to detect a Wi-Fi network that works on other devices, often due to interference, SSID conflicts, or software glitches.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "wifi",
+      "network",
+      "imac",
+      "not detecting",
+      "SSID",
+      "interference"
+    ],
+    "steps": [
+      {
+        "title": "Restart iMac with Safe Boot",
+        "content": "Shut down the iMac. Turn it on and immediately hold the Shift key until the Apple logo appears. Release the key and wait for the login screen. This clears temporary software glitches affecting Wi-Fi detection."
+      },
+      {
+        "title": "Move Wi-Fi Router Away from iMac",
+        "content": "Ensure the Wi-Fi access point (router) is at least 2 meters away from the iMac to reduce electromagnetic interference. Avoid placing the router directly next to the computer."
+      },
+      {
+        "title": "Change Wi-Fi Network Name (SSID)",
+        "content": "Temporarily rename the Wi-Fi network (SSID) to a new name via the router settings. This can resolve conflicts with cached network profiles on the iMac."
+      },
+      {
+        "title": "Update macOS and Router Firmware",
+        "content": "Go to 'System Preferences > Software Update' to install any pending macOS updates. Also, log in to your router’s admin panel and update its firmware to the latest version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Network Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete Wi-Fi Preferences",
+            "content": "Open Finder, press Command+Shift+G, and go to '/Library/Preferences/SystemConfiguration/'. Delete the files 'com.apple.airport.preferences.plist' and 'NetworkInterfaces.plist'. Restart the iMac."
+          },
+          {
+            "title": "Change Wi-Fi Channel",
+            "content": "Log in to your router’s admin panel and change the Wi-Fi channel to a less congested one (e.g., 1, 6, or 11 for 2.4GHz). Save settings and restart the router."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Full Power Cycle",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Power Cycle iMac and Router",
+            "content": "Shut down the iMac completely. Unplug the router for 30 seconds, then plug it back in. Wait for it to fully reboot, then power on the iMac."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T08:23:45.509Z",
+      "updated": "2026-08-06T08:23:45.509Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/125539/imac-suddenly-stopped-seeing-my-wifi-network-which-works-with-every-other-devic",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786004661020-57",
+    "title": "Fix Pixel 2/Pixel 2 XL Audio Recording Distortion",
+    "problemDescription": "Audio recorded during video capture is distorted or unclear, likely due to microphone hardware or software issues.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "Pixel 2",
+      "Pixel 2 XL",
+      "audio recording",
+      "distorted audio",
+      "microphone",
+      "Android Oreo 8.1"
+    ],
+    "steps": [
+      {
+        "title": "Check for Software Update",
+        "content": "Go to Settings > System > Advanced > System Update. Install any available updates, particularly Android Oreo 8.1 or later, which includes a fix for audio recording issues."
+      },
+      {
+        "title": "Test Audio Recording",
+        "content": "Record a video using the default camera app and play it back to verify if the audio distortion has been resolved."
+      },
+      {
+        "title": "Factory Reset (If Issue Persists)",
+        "content": "If the problem continues after updating, back up your data and perform a factory reset via Settings > System > Reset > Factory Data Reset. Note: This will erase all data on the device."
+      },
+      {
+        "title": "Contact Google Support",
+        "content": "If the issue remains unresolved, contact Google Support for warranty coverage or further assistance. The Pixel 2 and Pixel 2 XL have a two-year warranty covering manufacturer defects."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use Third-Party Camera Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download a Third-Party Camera App",
+            "content": "Install a reputable third-party camera app from the Google Play Store (e.g., Open Camera, Filmic Pro) that may handle audio recording better than the default app."
+          },
+          {
+            "title": "Test Audio Recording",
+            "content": "Record a video using the third-party app and check if the audio quality improves."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-06T08:24:21.020Z",
+      "updated": "2026-08-06T08:24:21.020Z",
+      "sourceUrl": "https://www.techradar.com/news/google-pixel-2-and-pixel-2-xl-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
