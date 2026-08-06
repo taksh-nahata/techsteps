@@ -143,14 +143,15 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
       </div>
 
       {/* Messages Area */}
-      <div className="flex-1 min-h-0 overflow-y-auto px-3 py-2 md:px-5 md:py-3 space-y-2 md:space-y-3 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+      <div className="flex-1 min-h-0 overflow-y-auto px-3 py-2 md:px-5 md:py-3 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+        <div className="mx-auto w-full max-w-3xl space-y-3 md:space-y-4">
         {isTranslating && (
           <div className="px-4 py-2 text-sm text-gray-600 italic">{t('chat.translatingChat', 'Translating chat...')}</div>
         )}
         {messages.length === 0 ? (
-          <div className="flex items-center justify-center h-full">
+          <div className="flex items-center justify-center h-full min-h-[50vh]">
             <motion.div
-              className="text-center px-6 py-10 max-w-md mx-auto"
+              className="text-center px-6 py-10 max-w-lg mx-auto"
               variants={{ visible: { transition: { staggerChildren: 0.09, delayChildren: 0.05 } } }}
               initial={prefersReducedMotion ? false : 'hidden'}
               animate="visible"
@@ -159,7 +160,12 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
                 variants={{ hidden: { opacity: 0, scale: 0.85 }, visible: { opacity: 1, scale: 1, transition: { type: 'spring', stiffness: 300, damping: 18 } } }}
                 className="flex justify-center mb-8 overflow-visible"
               >
-                <TechyMark size={56} />
+                <motion.div
+                  animate={prefersReducedMotion ? {} : { y: [0, -4, 0] }}
+                  transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+                >
+                  <TechyMark size={56} />
+                </motion.div>
               </motion.div>
               <motion.h3
                 variants={{ hidden: { opacity: 0, y: 14 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] } } }}
@@ -169,10 +175,29 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
               </motion.h3>
               <motion.p
                 variants={{ hidden: { opacity: 0, y: 14 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] } } }}
-                className="text-ink-muted text-base md:text-lg max-w-sm mx-auto leading-relaxed"
+                className="text-ink-muted text-base md:text-lg max-w-sm mx-auto leading-relaxed mb-8"
               >
                 {t('chat.welcome.subtitle', 'Click the avatar to speak or type your question below')}
               </motion.p>
+              <motion.div
+                variants={{ hidden: { opacity: 0, y: 14 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] } } }}
+                className="flex flex-wrap justify-center gap-2"
+              >
+                {[
+                  t('questions.connectWifi', 'How do I connect to Wi-Fi?'),
+                  t('questions.takeScreenshot', 'How do I take a screenshot?'),
+                  t('questions.makeVideoCall', 'How do I make a video call?'),
+                ].map((q) => (
+                  <button
+                    key={q}
+                    type="button"
+                    onClick={() => onSendMessage(q)}
+                    className="rounded-full border border-hairline bg-surface px-4 py-2 text-sm font-medium text-ink shadow-micro transition-colors hover:border-brand/40 hover:bg-brand-soft focus-ring"
+                  >
+                    {q}
+                  </button>
+                ))}
+              </motion.div>
             </motion.div>
           </div>
         ) : (
@@ -183,14 +208,19 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
                 initial={prefersReducedMotion ? false : { opacity: 0, y: 16, scale: 0.98 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
+                className={`flex items-end gap-2 ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
               >
+                {message.sender === 'ai' && (
+                  <div className="mb-1 hidden shrink-0 sm:block">
+                    <TechyMark size={26} />
+                  </div>
+                )}
                 <div
                   className={`
-                    max-w-[90%] md:max-w-[85%] rounded-[20px] px-4 py-3 md:px-6 md:py-4 text-base md:text-lg leading-relaxed relative group transition-colors duration-200
+                    max-w-[90%] md:max-w-[82%] rounded-[20px] px-4 py-3 md:px-6 md:py-4 text-base md:text-lg leading-relaxed relative group transition-colors duration-200
                     ${message.sender === 'user'
-                      ? 'bg-brand text-white rounded-br-md ml-8 md:ml-12'
-                      : 'bg-subtle text-ink rounded-bl-md mr-8 md:mr-12 border border-hairline'
+                      ? 'bg-brand text-white rounded-br-md shadow-senior'
+                      : 'bg-surface text-ink rounded-bl-md border border-hairline shadow-micro'
                     }
                   `}
                 >
@@ -255,15 +285,20 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
               </motion.div>
             ))}
 
-            {/* Listening indicator */}
+            {/* Listening indicator — animated waveform, not generic bouncing dots */}
             {isListening && (
               <div className="flex justify-end animate-fade-in">
-                <div className="bg-brand text-white rounded-[20px] rounded-br-md px-5 py-4 ml-12">
-                  <div className="flex items-center space-x-3">
-                    <div className="flex space-x-1.5">
-                      <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDuration: '1s' }} />
-                      <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDuration: '1s', animationDelay: '0.2s' }} />
-                      <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDuration: '1s', animationDelay: '0.4s' }} />
+                <div className="bg-brand text-white rounded-[20px] rounded-br-md px-5 py-4">
+                  <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-[3px] h-4">
+                      {[0, 1, 2, 3, 4].map((i) => (
+                        <motion.span
+                          key={i}
+                          className="w-[3px] rounded-full bg-white"
+                          animate={prefersReducedMotion ? { height: 8 } : { height: [6, 16, 6] }}
+                          transition={{ duration: 0.9, repeat: Infinity, ease: 'easeInOut', delay: i * 0.12 }}
+                        />
+                      ))}
                     </div>
                     <span className="font-semibold">{t('chat.input.listeningShort', 'Listening...')}</span>
                   </div>
@@ -276,16 +311,20 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
               </div>
             )}
 
-            {/* Loading indicator */}
+            {/* Loading indicator — the brand mark breathing, not generic bouncing dots */}
             {isLoading && (
-              <div className="flex justify-start animate-fade-in">
-                <div className="bg-subtle rounded-[20px] rounded-bl-md px-5 py-4 mr-12 border border-hairline">
-                  <div className="flex items-center space-x-3">
-                    <div className="flex space-x-1.5">
-                      <div className="w-2 h-2 bg-brand rounded-full animate-pulse" />
-                      <div className="w-2 h-2 bg-brand rounded-full animate-pulse" style={{ animationDelay: '0.2s' }} />
-                      <div className="w-2 h-2 bg-brand rounded-full animate-pulse" style={{ animationDelay: '0.4s' }} />
-                    </div>
+              <div className="flex items-end gap-2 justify-start animate-fade-in">
+                <div className="mb-1 hidden shrink-0 sm:block">
+                  <TechyMark size={26} />
+                </div>
+                <div className="bg-surface rounded-[20px] rounded-bl-md px-5 py-4 border border-hairline shadow-micro">
+                  <div className="flex items-center gap-3">
+                    <motion.div
+                      animate={prefersReducedMotion ? {} : { scale: [1, 1.15, 1], opacity: [0.7, 1, 0.7] }}
+                      transition={{ duration: 1.4, repeat: Infinity, ease: 'easeInOut' }}
+                    >
+                      <TechyMark size={18} />
+                    </motion.div>
                     <span className="text-ink-muted font-medium">{t('chat.thinking', 'Thinking...')}</span>
                   </div>
                 </div>
@@ -294,6 +333,7 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
           </>
         )}
         <div ref={messagesEndRef} />
+        </div>
       </div>
 
       {showFollowUps && lastUserMessage && onFollowUpClick && !isLoading && messages.length > 0 && (
