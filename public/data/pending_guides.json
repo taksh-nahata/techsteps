@@ -355073,5 +355073,507 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786128338488-469",
+    "title": "Fix Gmail Threading Hiding Replies or Messages",
+    "problemDescription": "Gmail's conversation view hides older replies in a thread, making it appear as if no one has responded. Your replies may also get buried, especially if you're CC'd.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "threading",
+      "conversation view",
+      "replies",
+      "search"
+    ],
+    "steps": [
+      {
+        "title": "Check the Thread Manually",
+        "content": "Open the email thread and scroll through to see if older replies are collapsed. Click 'Show trimmed content' or expand each message to view all replies."
+      },
+      {
+        "title": "Verify Your Sent Folder",
+        "content": "Go to your Sent folder to confirm if you already replied to the email. This helps determine if the thread is truly stalled."
+      },
+      {
+        "title": "Use Gmail Search Filters",
+        "content": "Search for specific keywords or use filters like 'has:attachment' to quickly locate the email or attachment you need. Example: 'project update has:attachment'."
+      },
+      {
+        "title": "Temporarily Disable Conversation View",
+        "content": "Go to Gmail Settings (⚙️) > See all settings > General > Conversation view. Select 'Conversation view off' and save changes. Note: This may disable some smart features like nudges."
+      },
+      {
+        "title": "Use Bright Profile Picture",
+        "content": "Set a personalized and bright Gmail profile picture to make your replies stand out in threads."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Advanced Search Operators",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Search with Operators",
+            "content": "Use advanced search operators to narrow down results. Example: 'from:me subject:\"project update\" has:attachment'."
+          },
+          {
+            "title": "Combine Filters",
+            "content": "Use multiple filters like 'older_than:7d' to find recent emails or 'is:unread' to find unread messages in a thread."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Create Custom Labels and Filters",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up Labels",
+            "content": "Go to Gmail Settings > See all settings > Labels. Create a new label (e.g., 'Important Replies') and apply it to threads where you frequently reply."
+          },
+          {
+            "title": "Create Filters",
+            "content": "Go to Settings > See all settings > Filters and Blocked Addresses > Create a new filter. Set criteria like 'subject:project' and apply the 'Important Replies' label automatically."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T18:45:38.488Z",
+      "updated": "2026-08-07T18:45:38.488Z",
+      "sourceUrl": "https://www.makeuseof.com/gmail-threading-hiding-messages",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786128355049-448",
+    "title": "Fix Windows Program Crashes and Access Violations",
+    "problemDescription": "Windows programs crash frequently with access violations or WerFault.exe errors, despite low temperatures and no overclocking. RAM errors were initially suspected but ruled out.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "program crash",
+      "access violation",
+      "WerFault.exe",
+      "registry cleaner"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall Third-Party Registry Cleaners",
+        "content": "Uninstall all registry cleaners (e.g., Registry First Aid Platinum, CCleaner, System Mechanic, Iolo) as they often cause system instability. Use Windows' built-in tools instead."
+      },
+      {
+        "title": "Run System File Checker (SFC) and DISM",
+        "content": "Open Command Prompt as Administrator and run: `sfc /scannow` followed by `DISM /Online /Cleanup-Image /RestoreHealth`. Reboot after completion."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to Settings > Update & Security > Windows Update and install all pending updates. Reboot if required."
+      },
+      {
+        "title": "Disable Conflicting Startup Programs",
+        "content": "Open Task Manager (Ctrl+Shift+Esc), go to the Startup tab, and disable non-essential startup programs. Focus on programs like NahimicScc32.exe, AISuite3.exe, and AdobeIPCBroker.exe."
+      },
+      {
+        "title": "Test with Clean Boot",
+        "content": "Run `msconfig`, go to the Services tab, check 'Hide all Microsoft services', then click 'Disable all'. Reboot and test for crashes. Re-enable services one by one to identify the culprit."
+      },
+      {
+        "title": "Check for Driver Updates",
+        "content": "Update all drivers, especially graphics (NVIDIA WebHelper.exe) and chipset drivers. Use manufacturer's website or Windows Update."
+      },
+      {
+        "title": "Monitor System Logs",
+        "content": "Open Event Viewer (eventvwr.msc), navigate to Windows Logs > Application, and look for error entries related to the crashing programs. Note the error codes or modules."
+      },
+      {
+        "title": "Test Hardware Components",
+        "content": "Run a memory test (e.g., Windows Memory Diagnostic) and a disk check (`chkdsk /f /r`). Ensure no hardware faults are causing instability."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Problematic Programs",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Problematic Programs",
+            "content": "Use the Event Viewer logs to identify frequently crashing programs (e.g., DaDispatcherServices.exe, FXC_ProxyProcess.exe)."
+          },
+          {
+            "title": "Reinstall or Repair Installations",
+            "content": "Uninstall the problematic programs via Control Panel or their uninstallers. Reinstall the latest versions from official sources."
+          },
+          {
+            "title": "Check for Conflicting Software",
+            "content": "Some programs (e.g., Adobe, HP, NVIDIA tools) may conflict. Temporarily disable or remove them to test for stability."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset Windows",
+        "type": "Nuclear Option",
+        "steps": [
+          {
+            "title": "Backup Important Data",
+            "content": "Create a full backup of your data before proceeding."
+          },
+          {
+            "title": "Reset Windows",
+            "content": "Go to Settings > Update & Security > Recovery > Reset this PC. Choose 'Keep my files' or 'Remove everything' based on your needs. Follow the prompts."
+          },
+          {
+            "title": "Reinstall Programs Gradually",
+            "content": "After resetting, reinstall programs one by one and test for crashes. This ensures no lingering conflicts."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T18:45:55.049Z",
+      "updated": "2026-08-07T18:45:55.049Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/i-really-would-like-a-solution-to-my-neverending-problems.3618350",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786128359304-550",
+    "title": "Fix Graphics Card Driver Issues with Clean Install",
+    "problemDescription": "New graphics card causes crashes, poor performance, or driver conflicts due to leftover drivers or incorrect installations.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "graphics card",
+      "driver",
+      "clean install",
+      "crash",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Prepare for Clean Driver Installation",
+        "content": "Download the latest drivers for your specific GPU model from the manufacturer's official website (NVIDIA, AMD, or Intel). Ensure they are compatible with your Windows version."
+      },
+      {
+        "title": "Uninstall Existing Graphics Drivers",
+        "content": "Use Display Driver Uninstaller (DDU) in Safe Mode to completely remove all traces of previous graphics drivers. Follow the official DDU instructions to avoid system instability."
+      },
+      {
+        "title": "Verify Power Supply Stability",
+        "content": "Ensure your power supply unit (PSU) meets the minimum wattage requirements for your new graphics card. Check for stable power delivery and no overheating issues."
+      },
+      {
+        "title": "Install New Drivers",
+        "content": "Boot into normal mode and install the freshly downloaded drivers. Avoid using driver discs or generic drivers from Windows Update."
+      },
+      {
+        "title": "Test Performance and Stability",
+        "content": "Run benchmark tests or stress tests (e.g., FurMark, 3DMark) to verify stability. Monitor temperatures and check for crashes or artifacts."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Registry Cleanup",
+        "type": "Advanced Workaround",
+        "steps": [
+          {
+            "title": "Backup Registry",
+            "content": "Create a full system backup and registry backup before making changes."
+          },
+          {
+            "title": "Delete Graphics Driver Registry Keys",
+            "content": "Manually delete registry keys related to previous graphics drivers (e.g., HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e968-e325-11ce-bfc1-08002be10318})."
+          },
+          {
+            "title": "Reinstall Drivers",
+            "content": "Reinstall drivers after cleaning the registry and reboot."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T18:45:59.304Z",
+      "updated": "2026-08-07T18:45:59.304Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/troubleshooting-and-diagnosing-graphics-card-issues.2139908",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786128367843-318",
+    "title": "Customize Liquid Glass Transparency on macOS 27",
+    "problemDescription": "Users want to adjust the transparency of Liquid Glass effects in macOS 27 to improve readability or aesthetics.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "macos",
+      "liquid glass",
+      "transparency",
+      "settings",
+      "readability"
+    ],
+    "steps": [
+      {
+        "title": "Open System Settings",
+        "content": "Click the Apple logo in the top-left corner of your screen and select 'System Settings'."
+      },
+      {
+        "title": "Navigate to Accessibility",
+        "content": "In the sidebar, scroll down and click 'Accessibility'."
+      },
+      {
+        "title": "Adjust Display & Text Size",
+        "content": "Under the 'Display & Text Size' section, locate the 'Liquid Glass' option."
+      },
+      {
+        "title": "Customize Transparency",
+        "content": "Use the slider to adjust the transparency from 'Ultra-Clear' (fully transparent) to 'Fully Tinted' (opaque)."
+      },
+      {
+        "title": "Verify Changes",
+        "content": "Close System Settings and check the effect in any open app or window."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-07T18:46:07.843Z",
+      "updated": "2026-08-07T18:46:07.843Z",
+      "sourceUrl": "https://www.tomshardware.com/software/macos/apple-demonstrates-cross-platform-siri-upgrades-in-macos-27-golden-gate-at-wwdc-update-brings-liquid-glass-improvements-and-unifies-ai-strategy",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786128372541-799",
+    "title": "Access Mac Mini Server Headless via VNC or SSH",
+    "problemDescription": "Need to remotely access a headless Mac Mini server for maintenance or file management without physical access.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac mini",
+      "headless",
+      "remote access",
+      "VNC",
+      "SSH"
+    ],
+    "steps": [
+      {
+        "title": "Enable Screen Sharing (VNC) on Mac Mini",
+        "content": "On the Mac Mini, go to System Settings > General > Sharing. Toggle on 'Screen Sharing' and note the address (e.g., vnc://[IP_ADDRESS]). Ensure the firewall allows VNC connections."
+      },
+      {
+        "title": "Connect from Another Mac",
+        "content": "Open Finder > Go > Connect to Server. Enter the VNC address (e.g., vnc://[IP_ADDRESS]) and authenticate with the Mac Mini's credentials."
+      },
+      {
+        "title": "Connect from Windows",
+        "content": "Install RealVNC or another VNC client. Launch the client and enter the Mac Mini's VNC address (e.g., [IP_ADDRESS]:5900). Authenticate to access the desktop."
+      },
+      {
+        "title": "Enable SSH for Command-Line Access",
+        "content": "On the Mac Mini, go to System Settings > General > Sharing. Toggle on 'Remote Login' (SSH). From another Mac, use Terminal with 'ssh [USERNAME]@[IP_ADDRESS]'. From Windows, use PowerShell with 'ssh [USERNAME]@[IP_ADDRESS]'."
+      },
+      {
+        "title": "Optimize Remote Connection Performance",
+        "content": "On the Mac Mini, reduce motion effects (System Settings > Accessibility > Display > Reduce Motion), set a solid color background, and lower screen resolution (System Settings > Displays) to minimize lag."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use an HDMI Dummy Plug for Headless Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase an HDMI Dummy Plug",
+            "content": "Buy an HDMI dummy plug (e.g., 1080p or 4K resolution) from an electronics retailer."
+          },
+          {
+            "title": "Connect the Dummy Plug to Mac Mini",
+            "content": "Plug the dummy HDMI adapter into the Mac Mini's HDMI port. This forces the system to output a signal, preventing sleep or low-power modes."
+          },
+          {
+            "title": "Access via VNC or SSH as Usual",
+            "content": "Proceed with VNC or SSH as described in the primary method. The dummy plug ensures the Mac Mini remains in a high-resolution state for remote access."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T18:46:12.541Z",
+      "updated": "2026-08-07T18:46:12.541Z",
+      "sourceUrl": "https://www.tomshardware.com/desktops/mini-pcs/a-mac-mini-server-is-running-headless-in-my-closet-it-manages-my-photo-library-and-handles-my-backups",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786128391484-620",
+    "title": "Stream Audio/Video from Sony to TCL Roku TV Wirelessly",
+    "problemDescription": "Unable to transmit audio/video from a non-WiFi Sony device to a WiFi-enabled TCL Roku TV without HDMI cables. Seeking a wireless solution for a 15-foot distance.",
+    "category": "home-theater",
+    "difficulty": "Medium",
+    "keywords": [
+      "wireless",
+      "HDMI",
+      "audio/video",
+      "streaming",
+      "Sony",
+      "TCL Roku",
+      "4K"
+    ],
+    "steps": [
+      {
+        "title": "Use a Wireless HDMI Transmitter/Receiver Kit",
+        "content": "Purchase a wireless HDMI transmitter/receiver kit designed for 4K video and audio transmission. Examples include the 'OSSC Wireless HDMI Extender' or 'J-Tech Digital HDMI over IP Extender'. Connect the transmitter to the HDMI ARC port on your TCL Roku TV and the receiver to the HDMI port on your Sony device. Ensure both devices are powered on and paired according to the manufacturer's instructions."
+      },
+      {
+        "title": "Configure the Roku TV for HDMI Input",
+        "content": "On your TCL Roku TV, switch the input source to the HDMI port where the wireless receiver is connected. Use the Roku remote to navigate to 'Settings > System > HDMI' and ensure the input is set to the correct HDMI port."
+      },
+      {
+        "title": "Test the Connection",
+        "content": "Play a video or audio source on your Sony device and verify that the audio and video are transmitted wirelessly to the Roku TV. Adjust volume and settings as needed."
+      },
+      {
+        "title": "Optimize for 4K and Audio Sync",
+        "content": "If using a 4K device, ensure the wireless HDMI kit supports 4K resolution and HDCP 2.2. Check the audio sync settings in the kit's app or menu to prevent lip-sync issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Media Server with DLNA/Chromecast",
+        "type": "Software-Based Workaround",
+        "steps": [
+          {
+            "title": "Set Up a Media Server on Your Network",
+            "content": "Install a media server software like Plex, Kodi, or Emby on a computer or NAS device connected to your network. Add your Sony device's media files to the library."
+          },
+          {
+            "title": "Stream to Roku TV via DLNA or Chromecast",
+            "content": "On your Roku TV, open the Roku Media Player app or cast content from your computer/laptop using Google Chrome's 'Cast' feature. Select the media server and play the desired content."
+          },
+          {
+            "title": "Use AirPlay for Audio/Video (If Supported)",
+            "content": "If your Roku TV supports AirPlay 2, use an Apple device to mirror or stream content from your Sony device (if compatible) to the TV. Note: AirPlay may not support all Sony devices."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Bluetooth Audio Transmitter (Audio-Only)",
+        "type": "Audio-Only Workaround",
+        "steps": [
+          {
+            "title": "Connect a Bluetooth Audio Transmitter to Sony HDMI",
+            "content": "Purchase a Bluetooth audio transmitter that connects to your Sony device's HDMI ARC/eARC port (e.g., 'Avantree DG80'). Plug the transmitter into the HDMI port and pair it with a Bluetooth receiver connected to your Roku TV's 3.5mm audio input or optical input."
+          },
+          {
+            "title": "Pair the Devices",
+            "content": "Turn on the Bluetooth transmitter and pair it with the receiver. Ensure the receiver is connected to the Roku TV's audio input. Test the audio transmission."
+          },
+          {
+            "title": "Note Limitations",
+            "content": "This method only transmits audio. Video must still be viewed on the Sony device. Ensure the transmitter supports your desired audio format (e.g., Dolby Digital)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T18:46:31.484Z",
+      "updated": "2026-08-07T18:46:31.484Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/i-have-a-sony-digital-audio-video-control-center-and-a-tcl-roku-tv-set.3739287",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786128418474-477",
+    "title": "Fix iOS 12 App Crashes and Touch ID Issues",
+    "problemDescription": "Apps crash frequently after iOS 12 update, or Touch ID fails to recognize fingerprints properly.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios 12",
+      "app crash",
+      "touch id",
+      "group facetime"
+    ],
+    "steps": [
+      {
+        "title": "Update Apps to the Latest Version",
+        "content": "Open the App Store, tap 'Updates' in the bottom-right corner, and install any pending app updates."
+      },
+      {
+        "title": "Force Quit and Relaunch Problematic Apps",
+        "content": "Swipe up from the bottom of the screen and pause in the middle to open the App Switcher. Swipe up on the app to force quit it, then reopen it."
+      },
+      {
+        "title": "Restart Your iPhone",
+        "content": "Press and hold the Side button and either Volume button, then drag the power off slider. Wait 30 seconds, then press the Side button to turn it back on."
+      },
+      {
+        "title": "Reinstall Problematic Apps",
+        "content": "Press and hold the app icon on the Home Screen, tap 'Remove App', then select 'Delete App'. Reinstall the app from the App Store."
+      },
+      {
+        "title": "Clean Touch ID Sensor",
+        "content": "Use a soft, lint-free cloth to gently wipe the Touch ID sensor. Avoid using liquids or abrasive materials."
+      },
+      {
+        "title": "Re-register Fingerprints in Touch ID Settings",
+        "content": "Go to Settings > Touch ID & Passcode > Enter your passcode > Delete your existing fingerprint > Add a new fingerprint by following the on-screen instructions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset All Settings (For Persistent Issues)",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Backup Your iPhone",
+            "content": "Connect your iPhone to a computer and back up using iTunes or Finder."
+          },
+          {
+            "title": "Reset All Settings",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset All Settings. This will not delete your data but will reset settings like Wi-Fi passwords and display preferences."
+          },
+          {
+            "title": "Restore from Backup",
+            "content": "After resetting, restore your iPhone using the backup you created."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update iOS to the Latest Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for iOS Updates",
+            "content": "Go to Settings > General > Software Update and install any available updates."
+          },
+          {
+            "title": "Ensure Group FaceTime Compatibility",
+            "content": "Verify that all participants in a Group FaceTime call have the latest iOS update installed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T18:46:58.474Z",
+      "updated": "2026-08-07T18:46:58.474Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-ios-12-problems-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
