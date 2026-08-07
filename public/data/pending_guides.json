@@ -351653,5 +351653,269 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786074383972-445",
+    "title": "Fix Laptop with No Wi-Fi Connection",
+    "problemDescription": "Laptop shows no Wi-Fi connection despite hardware switch being ON and no red icon on the wireless entry, indicating a potential hardware or driver issue.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "wifi",
+      "no connection",
+      "laptop",
+      "wireless",
+      "hardware switch"
+    ],
+    "steps": [
+      {
+        "title": "Check Wi-Fi Hardware Switch",
+        "content": "Ensure the physical Wi-Fi switch or key combination (e.g., Fn + F2) is turned ON. Verify the switch has a light indicator (if applicable) showing Wi-Fi is enabled."
+      },
+      {
+        "title": "Verify Wi-Fi Adapter in Device Manager",
+        "content": "Press `Win + X` and select 'Device Manager'. Expand 'Network adapters' and look for your Wi-Fi adapter (e.g., Intel Wireless, Realtek). Right-click and select 'Enable device' if disabled."
+      },
+      {
+        "title": "Update or Reinstall Wi-Fi Driver",
+        "content": "In Device Manager, right-click your Wi-Fi adapter and select 'Update driver'. Choose 'Search automatically for updated driver software'. If that fails, right-click and select 'Uninstall device', then restart your laptop to reinstall the driver automatically."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to `Settings > Update & Security > Windows Update` and click 'Check for updates'. Install any pending updates, especially those related to networking or drivers."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Open Command Prompt as Administrator and run: `netsh winsock reset` followed by `netsh int ip reset`. Restart your laptop afterward."
+      },
+      {
+        "title": "Test with External USB Wi-Fi Adapter",
+        "content": "If all software steps fail, purchase a compatible USB Wi-Fi adapter. Plug it in and follow the manufacturer's instructions to install drivers and connect to Wi-Fi."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: BIOS/UEFI Wireless Settings",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Access BIOS/UEFI",
+            "content": "Restart your laptop and press the BIOS key (e.g., F2, F12, Del) during startup to enter BIOS/UEFI settings."
+          },
+          {
+            "title": "Enable Wireless Radio",
+            "content": "Navigate to the 'Wireless' or 'Advanced' tab and ensure 'Wireless Radio' or 'Wi-Fi' is set to 'Enabled'. Save changes and exit."
+          },
+          {
+            "title": "Verify Boot Order",
+            "content": "Ensure the Wi-Fi adapter is not disabled in the boot order or hardware configuration."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T03:46:23.972Z",
+      "updated": "2026-08-07T03:46:23.972Z",
+      "sourceUrl": "https://superuser.com/questions/1576485/how-to-solve-no-wifi-at-all-on-laptop",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786074401541-683",
+    "title": "Fix 'Permission Denied' Error When Creating Windows Bootable USB on Mac",
+    "problemDescription": "Encountering a 'Permission denied' error when copying the install.wim file to a USB drive while creating a Windows 10/11 bootable USB on a Mac.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "Windows bootable USB",
+      "Mac",
+      "install.wim",
+      "permission denied",
+      "WIM file",
+      "USB drive"
+    ],
+    "steps": [
+      {
+        "title": "Copy install.wim Directly to USB Drive",
+        "content": "1. Ensure the USB drive is formatted as FAT32 or exFAT. \n2. Navigate to the directory containing the install.wim file. \n3. Use the terminal command: `cp install.wim /Volumes/MYUSB/sources/install.wim` to copy the file directly to the USB drive's sources folder. \n4. Boot from the USB drive to start the Windows installation."
+      },
+      {
+        "title": "Use Two USB Drives for Large install.wim Files",
+        "content": "1. Format USB stick A (>2 GB) as FAT32 and USB stick B (>8 GB) as exFAT using macOS Disk Utility. \n2. Download the Windows ISO and open it with Finder. \n3. Copy all files except the `sources` folder to USB stick A. \n4. Create a `sources` folder on USB stick A and copy only the `boot.wim` file into it. \n5. Copy all files from the ISO to USB stick B. \n6. Plug both USB drives into the target PC and boot from USB stick A. The installer will use files from USB stick B."
+      },
+      {
+        "title": "Split install.wim File for FAT32 USB Drives",
+        "content": "1. Ensure the USB drive is formatted as FAT32. \n2. Use the terminal command to split the install.wim file into smaller parts: `split -b 3700m /path/to/install.wim install.wim`. \n3. Copy the split files (e.g., install.wimaa, install.wimab) to the USB drive's sources folder. \n4. Boot from the USB drive to start the Windows installation."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use NTFS for USB Drive (Advanced)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Format USB Drive as NTFS",
+            "content": "1. Format the USB drive as NTFS using a third-party tool like Paragon NTFS for Mac. \n2. Copy the entire contents of the Windows ISO to the USB drive. \n3. Boot from the USB drive to start the Windows installation."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T03:46:41.541Z",
+      "updated": "2026-08-07T03:46:41.541Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/355930/how-to-create-a-windows-10-or-windows-11-bootable-usb-on-a-mac-for-pc-without-bo",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786074406630-807",
+    "title": "Fix Missing Drivers on Windows 10 Bootcamp External SSD",
+    "problemDescription": "Windows 10 installed on an external SSD via Boot Camp on a MacBook Air 2018 is missing critical drivers, leading to hardware malfunctions or limited functionality.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "bootcamp",
+      "windows 10",
+      "external ssd",
+      "drivers",
+      "macbook air"
+    ],
+    "steps": [
+      {
+        "title": "Install Boot Camp Support Software Manually",
+        "content": "Download the latest Boot Camp Support Software for your Mac model from Apple's official support page. Run the installer on the Windows 10 external SSD to install missing drivers."
+      },
+      {
+        "title": "Update Drivers via Device Manager",
+        "content": "Open Device Manager (Win + X > Device Manager). Identify devices with yellow exclamation marks, right-click each, and select 'Update driver'. Choose 'Search automatically for updated driver software'."
+      },
+      {
+        "title": "Use Apple Software Update",
+        "content": "Open Apple Software Update from the Start menu. Install any available updates, including driver updates for your MacBook Air 2018."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to Settings > Update & Security > Windows Update. Install all pending updates to ensure compatibility with Boot Camp drivers."
+      },
+      {
+        "title": "Verify Boot Camp Version",
+        "content": "Open Boot Camp Control Panel (Control Panel > Boot Camp). Ensure the version matches the latest available for your Mac model."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Driver Installation from Manufacturer",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Missing Drivers",
+            "content": "Use Device Manager to note the hardware IDs (right-click device > Properties > Details > Hardware Ids) of devices with missing drivers."
+          },
+          {
+            "title": "Download Drivers from Manufacturer",
+            "content": "Visit the manufacturer's website (e.g., Intel for Wi-Fi, Realtek for audio) and download the latest drivers for your hardware IDs."
+          },
+          {
+            "title": "Install Drivers Manually",
+            "content": "Run the downloaded driver installer or use Device Manager to manually install the drivers by selecting 'Browse my computer for drivers' and pointing to the downloaded files."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall Windows 10 with Boot Camp Assistant",
+        "type": "Reinstallation",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Back up all important data from the external SSD."
+          },
+          {
+            "title": "Reinstall Windows 10",
+            "content": "Use Boot Camp Assistant on macOS to reinstall Windows 10 on the external SSD. Ensure the 'Install Windows 10' option is selected during the process."
+          },
+          {
+            "title": "Install Boot Camp Support Software",
+            "content": "After Windows installation, install the Boot Camp Support Software from the macOS installer media or Apple's support page."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T03:46:46.630Z",
+      "updated": "2026-08-07T03:46:46.630Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/384355/drivers-not-working-on-windows-10-installed-cli-process-on-external-ssd-runnin",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786074431257-600",
+    "title": "MacBook First-Time User Setup Guide",
+    "problemDescription": "New MacBook user transitioning from Windows seeks essential tips and setup guidance.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "MacBook",
+      "setup",
+      "first-time",
+      "transition",
+      "Windows"
+    ],
+    "steps": [
+      {
+        "title": "Basic Navigation and Gestures",
+        "content": "Familiarize yourself with the trackpad gestures: Swipe with two fingers to scroll, pinch to zoom, and swipe with three fingers to switch between full-screen apps. Press Command (⌘) + Space to open Spotlight Search for quick app/file access."
+      },
+      {
+        "title": "Understand the Menu Bar and Dock",
+        "content": "The Menu Bar at the top provides app-specific options. The Dock at the bottom holds your frequently used apps. Right-click an app icon in the Dock to see recent files or options."
+      },
+      {
+        "title": "Learn Keyboard Shortcuts",
+        "content": "Replace Windows shortcuts with Mac equivalents: Copy (⌘ + C), Paste (⌘ + V), Cut (⌘ + X), Undo (⌘ + Z), and Save (⌘ + S). Use Command (⌘) instead of Ctrl for most shortcuts."
+      },
+      {
+        "title": "Set Up iCloud and Apple ID",
+        "content": "Sign in with your Apple ID to sync contacts, photos, and documents via iCloud. Go to System Settings > [Your Name] > iCloud to enable syncing for Mail, Photos, and Notes."
+      },
+      {
+        "title": "Install and Uninstall Apps",
+        "content": "Download apps from the App Store for security. To uninstall, drag the app from the Applications folder to Trash or use Launchpad by holding the app icon until it wiggles, then click the 'X' to delete."
+      },
+      {
+        "title": "Use Finder for File Management",
+        "content": "Finder is your file explorer. Use Command (⌘) + Shift + G to go to a specific folder path. Press Command (⌘) + Space and type 'Terminal' to open the command line interface."
+      },
+      {
+        "title": "Customize System Preferences",
+        "content": "Go to System Settings (previously System Preferences) to adjust display, sound, keyboard, and network settings. For example, change the wallpaper under Desktop & Screen Saver."
+      },
+      {
+        "title": "Learn About Mission Control",
+        "content": "Press F3 or swipe up with three fingers to open Mission Control, which shows all open windows and desktops. Use it to organize and switch between apps easily."
+      },
+      {
+        "title": "Use Time Machine for Backups",
+        "content": "Connect an external drive and set up Time Machine in System Settings > General > Time Machine to automatically back up your MacBook."
+      },
+      {
+        "title": "Adjust Trackpad and Keyboard Settings",
+        "content": "Go to System Settings > Trackpad to customize gestures and click speed. For the keyboard, adjust key repeat and delay until repeat under Keyboard settings."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-07T03:47:11.257Z",
+      "updated": "2026-08-07T03:47:11.257Z",
+      "sourceUrl": "https://www.quora.com/I-bought-a-new-MacBook-today-I-am-using-a-MacBook-for-the-first-time-I-was-a-Windows-user-earlier-What-are-some-tips-tricks-or-guides-I-can-use",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
