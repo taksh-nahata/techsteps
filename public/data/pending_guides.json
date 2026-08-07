@@ -354071,5 +354071,204 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786117864920-809",
+    "title": "Fix XPS Printer Not Functioning in Windows",
+    "problemDescription": "XPS Printer stops working due to corrupted system files or missing Microsoft Document Writer in Windows 8.1.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "XPS Printer",
+      "Microsoft Document Writer",
+      "corrupted files",
+      "Windows 8.1",
+      "SFC scan"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall Microsoft Document Writer",
+        "content": "1. Press `Win + R`, type `appwiz.cpl`, and press Enter to open Programs and Features.\n2. Click 'Turn Windows features on or off' on the left panel.\n3. Scroll down and uncheck 'Microsoft XPS Document Writer'. Click OK and restart your PC.\n4. Repeat the process but this time check 'Microsoft XPS Document Writer' to reinstall it.\n5. Restart your computer again and test the XPS Printer."
+      },
+      {
+        "title": "Run System File Checker (SFC) Scan",
+        "content": "1. Open Command Prompt as Administrator (Right-click Start > Command Prompt (Admin)).\n2. Type `sfc /scannow` and press Enter.\n3. Wait for the scan to complete (may take 10-30 minutes).\n4. If corruption is found, restart your PC and check if the issue is resolved.\n5. If SFC fails to repair, proceed to the next step."
+      },
+      {
+        "title": "Refresh Windows (Last Resort)",
+        "content": "1. Open Settings (Win + I) > Update & Security > Recovery.\n2. Under 'Reset this PC', click 'Get started'.\n3. Choose 'Keep my files' to refresh Windows without losing personal data.\n4. Follow the on-screen instructions and restart your PC.\n5. Test the XPS Printer after the refresh."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manually Repair XPS Services",
+        "type": "Advanced Workaround",
+        "steps": [
+          {
+            "title": "Check XPS Services",
+            "content": "1. Press `Win + R`, type `services.msc`, and press Enter.\n2. Locate 'Microsoft XPS Document Writer' and 'Print Spooler' services.\n3. Ensure both services are set to 'Automatic' and are running. If not, right-click each > Properties > Start the service.\n4. Restart your PC and test the printer."
+          },
+          {
+            "title": "Reinstall Printer Drivers",
+            "content": "1. Press `Win + X` > Device Manager.\n2. Expand 'Print queues', right-click 'Microsoft XPS Document Writer', and select 'Uninstall device'.\n3. Check 'Delete the driver software for this device' and confirm.\n4. Restart your PC to automatically reinstall the driver.\n5. Test the XPS Printer."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T15:51:04.920Z",
+      "updated": "2026-08-07T15:51:04.920Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/windows8_1-hardware/xps-printer-no-longer-functions/2c76735d-7cc2-4e2c-ae43-7a7e4be2640e",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786117868409-950",
+    "title": "Fix 'Wait for Printer Connection' Popup in Windows",
+    "problemDescription": "Windows frequently displays a 'Wait for printer connection' popup, preventing other tasks until the issue is resolved.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "popup",
+      "print spooler",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Printer",
+        "content": "Turn off your printer, unplug it from the power source, wait for 30 seconds, then plug it back in and turn it on."
+      },
+      {
+        "title": "Restart the Print Spooler Service",
+        "content": "Press `Windows key + R`, type `services.msc`, and press Enter. Locate the 'Print Spooler' service, right-click it, and select 'Restart'. Close the Services window and try printing a test page."
+      },
+      {
+        "title": "Set a Default Printer",
+        "content": "Go to Settings > Devices > Printers & Scanners. Disable 'Let Windows manage my default printer' and manually set a default printer (e.g., 'Adobe PDF' or another available printer)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Print Queue",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Print Queue",
+            "content": "Press `Windows key + R`, type `control printers`, and press Enter. Double-click your printer to open the print queue."
+          },
+          {
+            "title": "Cancel All Print Jobs",
+            "content": "Right-click any pending print jobs and select 'Cancel'. Close the print queue and restart your printer."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Network Printers Temporarily",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Network Printers",
+            "content": "Go to Settings > Devices > Printers & Scanners. Select your network printer and click 'Remove device'. Re-enable it when you return to the network."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T15:51:08.409Z",
+      "updated": "2026-08-07T15:51:08.409Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/hi-i-am-getting-popup-often-wait-for-printer/8d985c92-553b-42cd-8fd5-04a7e3921077",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786117874239-131",
+    "title": "Fix Ricoh Printer Scan-to-Email Failure Due to OAuth Requirement",
+    "problemDescription": "Ricoh printer scan-to-email stops working because Outlook enforces modern authentication (OAuth), which older printer firmware may not support.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Ricoh printer",
+      "scan-to-email",
+      "Outlook",
+      "OAuth",
+      "modern authentication"
+    ],
+    "steps": [
+      {
+        "title": "Check Ricoh Printer Firmware Compatibility",
+        "content": "Verify if your Ricoh printer model supports modern authentication (OAuth). Contact Ricoh support or check the printer's firmware release notes for OAuth compatibility."
+      },
+      {
+        "title": "Update Ricoh Printer Firmware",
+        "content": "If supported, update the printer's firmware to the latest version via Ricoh's official support website. Follow the manufacturer's instructions for firmware updates."
+      },
+      {
+        "title": "Configure Printer for OAuth Authentication",
+        "content": "Access the printer's web interface. Navigate to the email settings and enable OAuth authentication. Enter your Outlook email credentials when prompted. Save the settings and restart the printer."
+      },
+      {
+        "title": "Test Scan-to-Email Functionality",
+        "content": "Perform a test scan and send it to your email address. Verify that the email is received successfully."
+      },
+      {
+        "title": "Use a Different Email Provider (If Unsupported)",
+        "content": "If your Ricoh printer does not support OAuth, configure the printer to use a different email provider (e.g., Gmail) that supports basic authentication or has a workaround for legacy devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use SMTP Relay Service",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up an SMTP Relay Service",
+            "content": "Use a third-party SMTP relay service (e.g., SendGrid, Mailgun) that supports OAuth. Configure the printer to send emails through this relay service instead of directly via Outlook."
+          },
+          {
+            "title": "Configure Printer SMTP Settings",
+            "content": "In the printer's email settings, replace the Outlook SMTP server with the relay service's SMTP server details. Enter the required credentials and authentication method (OAuth or API key)."
+          },
+          {
+            "title": "Test the Configuration",
+            "content": "Send a test scan to verify the email is delivered via the relay service."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Local SMTP Server",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up a Local SMTP Server",
+            "content": "Install and configure a local SMTP server (e.g., hMailServer, Postfix) on a networked computer. Ensure the server allows relaying from the printer's IP address."
+          },
+          {
+            "title": "Configure Printer to Use Local SMTP",
+            "content": "Update the printer's email settings to use the local SMTP server's IP address and port (e.g., 25). Disable authentication if the local server allows open relay within the local network."
+          },
+          {
+            "title": "Configure Email Forwarding",
+            "content": "Set up the local SMTP server to forward emails to your Outlook account using a supported authentication method (e.g., OAuth or app password)."
+          },
+          {
+            "title": "Test the Setup",
+            "content": "Send a test scan and verify the email is received in your Outlook inbox."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T15:51:14.239Z",
+      "updated": "2026-08-07T15:51:14.239Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum/all/how-to-fix-scan-to-email-issue-from-ricoh-printer/92e54351-e19a-4dd9-a211-d80960a667fe",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
