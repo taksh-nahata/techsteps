@@ -353515,5 +353515,218 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786106899656-186",
+    "title": "Fix MacBook Slowdown When Connecting External Monitor",
+    "problemDescription": "A mid-2015 MacBook Pro running Catalina slows down significantly when an external monitor is connected, affecting performance.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "MacBook",
+      "slowdown",
+      "external monitor",
+      "Catalina",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Check for macOS Updates",
+        "content": "Ensure your MacBook is running the latest version of macOS Catalina. Go to Apple Menu > System Preferences > Software Update and install any available updates."
+      },
+      {
+        "title": "Reset NVRAM/PRAM",
+        "content": "Shut down your MacBook. Turn it on and immediately hold Command (⌘) + Option (⌥) + P + R for about 20 seconds. Release the keys and let the MacBook restart."
+      },
+      {
+        "title": "Reset SMC",
+        "content": "Shut down your MacBook. Press and hold Shift + Control + Option keys on the left side of the built-in keyboard, then press the power button at the same time. Hold all keys for 10 seconds, then release. Power on the MacBook."
+      },
+      {
+        "title": "Disable Automatic Graphics Switching",
+        "content": "Go to Apple Menu > System Preferences > Energy Saver. Uncheck 'Automatic graphics switching' to force the use of the discrete GPU, which may improve performance when connected to an external monitor."
+      },
+      {
+        "title": "Close Unnecessary Background Apps",
+        "content": "Open Activity Monitor (Applications > Utilities > Activity Monitor) and quit any unnecessary applications or processes running in the background to free up system resources."
+      },
+      {
+        "title": "Check for External Monitor Compatibility",
+        "content": "Ensure the external monitor is compatible with your MacBook's resolution and refresh rate. Use a monitor with a resolution no higher than 1920x1080 or 2560x1440 for better performance on older MacBooks."
+      },
+      {
+        "title": "Use a USB-C to HDMI Adapter with Power Delivery",
+        "content": "If using a USB-C to HDMI adapter, ensure it supports power delivery to avoid draining the MacBook's battery and causing performance throttling. Consider using a high-quality adapter like the Belkin USB-C to HDMI Adapter."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Create a New User Account",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a New User Account",
+            "content": "Go to Apple Menu > System Preferences > Users & Groups. Click the lock to make changes, then click the '+' button to add a new user account. Log in to the new account and test performance with the external monitor."
+          },
+          {
+            "title": "Migrate Essential Data",
+            "content": "If the new account resolves the issue, migrate essential data from the old account to the new one using Migration Assistant (Applications > Utilities > Migration Assistant)."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Different Display Profile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Display Preferences",
+            "content": "Go to Apple Menu > System Preferences > Displays. Hold the Option key and click 'Scaled' to reveal additional resolution options."
+          },
+          {
+            "title": "Select a Lower Resolution",
+            "content": "Choose a lower resolution (e.g., 1600x900 or 1280x720) to reduce the load on the GPU and improve performance when connected to the external monitor."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T12:48:19.656Z",
+      "updated": "2026-08-07T12:48:19.656Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/387997/os-slows-down-when-i-connect-external-monitor",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786106917111-209",
+    "title": "Fix Samsung Galaxy S5 Mail Download Size Problem",
+    "problemDescription": "Samsung Galaxy S5 fails to download full email content due to incorrect size limits being interpreted in bytes instead of kilobytes, resulting in truncated emails.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "Samsung Galaxy S5",
+      "email",
+      "download size",
+      "Exchange",
+      "ActiveSync",
+      "truncation"
+    ],
+    "steps": [
+      {
+        "title": "Manually Set Email Download Size in Bytes",
+        "content": "On your Galaxy S5, navigate to Settings > Accounts > Email > Settings > Primary Account > Sync Settings > Size to retrieve emails. Enter a large value in bytes (e.g., 1000000) to ensure full email content is downloaded. This bypasses the default interpretation issue where the device reads limits in bytes instead of kilobytes."
+      },
+      {
+        "title": "Recreate the Email Account",
+        "content": "Delete and recreate your email account on the Galaxy S5 to apply the new size limit settings. Ensure the account is set up with the manually entered byte value for download size."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Exchange ActiveSync Policy (Admin)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Modify Exchange ActiveSync Policy",
+            "content": "Access your Exchange server and run the following command in Exchange Management Shell to adjust the email body truncation size for all devices: `set-mobiledevicemailboxpolicy -Identity Default -MaxEmailBodyTruncationSize 200KB -MaxEmailHTMLBodyTruncationSize 200KB`. Replace 'Default' with your specific policy name if needed."
+          },
+          {
+            "title": "Apply Policy Changes",
+            "content": "Ensure the policy changes are applied and synchronized with all devices. This method requires administrative access to the Exchange server."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T12:48:37.111Z",
+      "updated": "2026-08-07T12:48:37.111Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/78564/samsung-galaxy-s5-mail-download-size-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786106961427-855",
+    "title": "Recover or Create a New Apple ID with a Different Email",
+    "problemDescription": "User forgot security questions for their Apple ID and cannot recover it, seeking to use a new email address for a new Apple ID.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "Apple ID",
+      "email",
+      "recovery",
+      "security questions",
+      "new account"
+    ],
+    "steps": [
+      {
+        "title": "Attempt to Recover Existing Apple ID",
+        "content": "Visit iforgot.apple.com and try to reset your Apple ID password or security questions using your existing email. If successful, update your recovery options to prevent future issues."
+      },
+      {
+        "title": "Create a New Apple ID with the New Email",
+        "content": "Go to appleid.apple.com and select 'Create Your Apple ID'. Use your new email address as the primary email. Ensure you set up strong security questions and a trusted phone number for recovery."
+      },
+      {
+        "title": "Update Apple Devices and Services",
+        "content": "Sign out of the old Apple ID on all devices (Settings > [Your Name] > Sign Out). Sign in with the new Apple ID on your iPhone, iPad, Mac, and other Apple devices. Update App Store, iCloud, and other services to use the new ID."
+      },
+      {
+        "title": "Transfer Data and Purchases (If Needed)",
+        "content": "Note that purchases (apps, music, etc.) are tied to the original Apple ID. To transfer purchases, you may need to contact Apple Support or use Family Sharing if applicable. Data like photos and notes can be manually transferred."
+      },
+      {
+        "title": "Update Payment and Subscription Information",
+        "content": "Go to Settings > [Your Name] > Payment & Shipping and update your payment method and subscriptions to the new Apple ID. Ensure subscriptions like iCloud+ are active."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Apple Support for Account Recovery",
+        "type": "Official Support",
+        "steps": [
+          {
+            "title": "Gather Account Details",
+            "content": "Prepare proof of ownership such as purchase receipts, device serial numbers, or billing information associated with the old Apple ID."
+          },
+          {
+            "title": "Contact Apple Support",
+            "content": "Visit support.apple.com and select 'Apple ID' > 'Forgot Apple ID or password' > 'Get Support'. Choose 'Account Recovery' and follow the prompts to verify your identity."
+          },
+          {
+            "title": "Wait for Verification",
+            "content": "Apple Support will review your request. This may take several days. Once verified, you can reset your security questions or recover your account."
+          },
+          {
+            "title": "Update Recovery Options",
+            "content": "After recovering your account, update your security questions, trusted phone number, and recovery email to prevent future issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Different Email for Apple Services (Workaround)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a Secondary Email for Apple Services",
+            "content": "If you only need Apple services like iCloud or App Store access, consider using a secondary email (e.g., Gmail) as an alias. Add this email to your Apple ID as a 'verified' contact email under appleid.apple.com."
+          },
+          {
+            "title": "Sign In with Secondary Email",
+            "content": "Use the secondary email to sign in to Apple services where possible, but note that the primary Apple ID email will still be required for purchases and account management."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T12:49:21.427Z",
+      "updated": "2026-08-07T12:49:21.427Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/427207/will-i-face-a-problem-if-i-have-a-different-email-id-for-android-and-apple",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
