@@ -354603,5 +354603,475 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1786124647288-546",
+    "title": "Tom's Account Password Reset Not Working",
+    "problemDescription": "User received a password reset code via email but cannot reset their password, and an email confirms the password was changed without user action.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "password reset",
+      "account security",
+      "email confirmation"
+    ],
+    "steps": [
+      {
+        "title": "Check Email for Reset Link",
+        "content": "Open the email containing the password reset code. Ensure it is from the official Tom's Hardware domain (e.g., support@tomsguide.com or similar). Click the 'Reset Password' link in the email instead of manually entering the code."
+      },
+      {
+        "title": "Verify Account Ownership",
+        "content": "If the reset link does not work, check if you have access to the email account associated with the Tom's Hardware account. If not, contact Tom's Hardware support immediately to report unauthorized access."
+      },
+      {
+        "title": "Change Password Manually",
+        "content": "Log in to your Tom's Hardware account using your current password. Navigate to 'Account Settings' > 'Security' and manually change your password. Ensure the new password is strong and unique."
+      },
+      {
+        "title": "Enable Two-Factor Authentication (2FA)",
+        "content": "Go to 'Account Settings' > 'Security' and enable Two-Factor Authentication (2FA) to prevent future unauthorized access. Use an authenticator app like Google Authenticator or Authy."
+      },
+      {
+        "title": "Contact Support",
+        "content": "If the issue persists, contact Tom's Hardware support via their official contact form or support email. Provide details of the unauthorized password change and request further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Phishing Emails",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Inspect Email Sender",
+            "content": "Verify the sender's email address. Scammers often use lookalike domains (e.g., support@tomsguidee.com). Do not click any links in suspicious emails."
+          },
+          {
+            "title": "Report Phishing Attempt",
+            "content": "Forward the suspicious email to Tom's Hardware's official support or security team. Delete the email immediately to avoid potential security risks."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Password Manager Recovery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Password Manager",
+            "content": "If you use a password manager (e.g., LastPass, 1Password), check if it has stored your Tom's Hardware credentials. Use the password manager to log in and update your password."
+          },
+          {
+            "title": "Update Password in Manager",
+            "content": "Once logged in, update the stored password in your password manager to ensure future logins are secure."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T17:44:07.288Z",
+      "updated": "2026-08-07T17:44:07.288Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/toms-account-password-reset-help.2792786",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786124656123-448",
+    "title": "Fix Forced Password Reset on Every Sign-In",
+    "problemDescription": "User is repeatedly required to reset their password when signing into a forum or website, despite entering correct credentials.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "password reset",
+      "login issue",
+      "browser cache",
+      "cookies",
+      "session management"
+    ],
+    "steps": [
+      {
+        "title": "Clear Browser Cache and Cookies",
+        "content": "1. Open your browser settings (e.g., Chrome, Firefox, Edge).\n2. Navigate to 'Privacy and Security' or 'Clear Browsing Data'.\n3. Select 'Cookies and other site data' and 'Cached images and files'.\n4. Choose the time range 'All time' and click 'Clear data'.\n5. Restart your browser and attempt to log in again."
+      },
+      {
+        "title": "Disable Browser Extensions",
+        "content": "1. Open your browser's extension manager (e.g., Chrome: chrome://extensions).\n2. Disable all extensions temporarily.\n3. Attempt to log in. If successful, re-enable extensions one by one to identify the culprit."
+      },
+      {
+        "title": "Check for Corrupted Browser Profile",
+        "content": "1. Create a new browser profile (e.g., Chrome: Settings > Manage Profile > Add Profile).\n2. Log in using the new profile.\n3. If the issue persists, the problem may be with the website's server or account settings."
+      },
+      {
+        "title": "Verify Account Settings on the Website",
+        "content": "1. Log in using a different device or browser to rule out local issues.\n2. Check if the website has a 'Remember Me' or 'Stay Signed In' option.\n3. Contact the website's support team to confirm if there are account-specific restrictions (e.g., forced password resets due to security policies)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Incognito/Private Mode",
+        "type": "Quick Fix",
+        "steps": [
+          {
+            "title": "Open Incognito/Private Window",
+            "content": "1. Open a private/incognito window in your browser (Ctrl+Shift+N for Chrome/Firefox, Ctrl+Shift+P for Edge).\n2. Navigate to the login page and attempt to sign in.\n3. If successful, the issue is likely due to cached data or extensions in your regular browser."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset Browser Settings",
+        "type": "Advanced Fix",
+        "steps": [
+          {
+            "title": "Reset Browser to Default",
+            "content": "1. Open your browser settings.\n2. Navigate to 'Reset Settings' or 'Restore Settings to Default' (e.g., Chrome: Settings > Reset Settings).\n3. Confirm the reset and restart the browser.\n4. Attempt to log in again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T17:44:16.123Z",
+      "updated": "2026-08-07T17:44:16.123Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/why-do-i-have-to-reset-my-password-every-time-i-sign-in.2191711",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786124670477-292",
+    "title": "Fix 'Hey Siri' Not Working on macOS Mojave",
+    "problemDescription": "The 'Hey Siri' voice command fails to trigger Siri on macOS Mojave, despite manual Siri activation working. The issue persists after troubleshooting steps like NVRAM reset and OS reinstall.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "siri",
+      "hey siri",
+      "macos mojave",
+      "microphone",
+      "touch bar"
+    ],
+    "steps": [
+      {
+        "title": "Verify Microphone Permissions",
+        "content": "Go to System Preferences > Security & Privacy > Privacy. Select 'Microphone' from the left panel and ensure 'Siri' is checked for your user account."
+      },
+      {
+        "title": "Reset Siri Settings",
+        "content": "Open Terminal and run: `defaults delete com.apple.assistant.support` followed by `killall Siri`. Then restart your Mac."
+      },
+      {
+        "title": "Check Bluetooth Headphone Interference",
+        "content": "Disconnect all Bluetooth devices, including headphones, and test 'Hey Siri' again. Reconnect devices one by one to identify conflicts."
+      },
+      {
+        "title": "Update macOS",
+        "content": "Back up your data and upgrade to macOS Catalina or later, as Mojave may have unresolved compatibility issues with Siri voice activation."
+      },
+      {
+        "title": "Test in Safe Mode",
+        "content": "Restart your Mac in Safe Mode (hold Shift during boot). If 'Hey Siri' works, a third-party app or service is likely causing the issue. Exit Safe Mode and disable startup items to identify the culprit."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall macOS (Last Resort)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Create a full Time Machine backup or manually copy important files to an external drive."
+          },
+          {
+            "title": "Reinstall macOS",
+            "content": "Boot into Recovery Mode (Cmd+R at startup), open Disk Utility to repair permissions, then reinstall macOS without erasing data."
+          },
+          {
+            "title": "Verify Siri Functionality",
+            "content": "After reinstallation, test 'Hey Siri' and check microphone permissions again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: External Microphone Test",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect an External Microphone",
+            "content": "Plug in a wired or Bluetooth microphone and set it as the default input device in System Preferences > Sound > Input."
+          },
+          {
+            "title": "Test 'Hey Siri'",
+            "content": "Ensure the external microphone is recognized and test the voice command."
+          },
+          {
+            "title": "Revert to Built-in Microphone",
+            "content": "If successful, the issue may be with the internal microphone or its drivers. Contact Apple Support for hardware diagnostics."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T17:44:30.477Z",
+      "updated": "2026-08-07T17:44:30.477Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/369978/hey-siri-suddenly-stopped-working-on-macos-mojave",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786124674138-82",
+    "title": "Fix macOS Language Switching Bug After Authentication",
+    "problemDescription": "macOS fails to switch input language after authentication events (e.g., Apple Watch unlock or Safari credit card edits), requiring a restart or workaround.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "macOS",
+      "language switch",
+      "input source",
+      "authentication",
+      "Apple Watch",
+      "Safari"
+    ],
+    "steps": [
+      {
+        "title": "Restart Authentication Remote Service",
+        "content": "Open Terminal and run: `sudo killall -9 localAuthenticationRemoteService`. This restarts the service causing the issue."
+      },
+      {
+        "title": "Use 'Select Previous Input Source'",
+        "content": "Go to System Preferences > Keyboard > Shortcuts > Input Sources. Ensure you use 'Select the previous input source' instead of 'next' in the Input menu."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Siri and Restart",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Siri",
+            "content": "Go to System Preferences > Siri & Spotlight and turn off Siri. Reboot your Mac."
+          },
+          {
+            "title": "Use Previous Input Source",
+            "content": "After reboot, use 'Select the previous input source' in the Input menu to switch languages."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Full System Restart",
+        "type": "Fallback Solution",
+        "steps": [
+          {
+            "title": "Restart Mac",
+            "content": "Restart your Mac to reset all services and resolve the language switching issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T17:44:34.138Z",
+      "updated": "2026-08-07T17:44:34.138Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/263882/how-to-fix-macos-sierra-language-switching-bug",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786124698457-332",
+    "title": "Fix Slow Performance on MacBook Pro 2012",
+    "problemDescription": "A MacBook Pro 2012 becomes unbearably slow with frequent spinning beach balls, even during basic tasks like browsing or typing, suggesting potential hardware or software issues.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "MacBook Pro 2012",
+      "slow performance",
+      "beach ball",
+      "hard drive failure",
+      "SSD upgrade"
+    ],
+    "steps": [
+      {
+        "title": "Check Disk Health",
+        "content": "Open Disk Utility (Applications > Utilities > Disk Utility), select the startup disk, and run 'First Aid' to check for errors. If errors are found, repair them."
+      },
+      {
+        "title": "Monitor System Activity",
+        "content": "Open Activity Monitor (Applications > Utilities > Activity Monitor) and check for high CPU or memory usage by processes. Sort by 'CPU' or 'Memory' to identify resource-heavy apps."
+      },
+      {
+        "title": "Reset NVRAM/PRAM",
+        "content": "Shut down the Mac, then turn it on and immediately hold Command (⌘) + Option (⌥) + P + R for about 20 seconds. Release the keys and let the Mac boot normally."
+      },
+      {
+        "title": "Reset SMC",
+        "content": "Shut down the Mac, then press and hold Shift + Control + Option (left side) + Power button for 10 seconds. Release all keys and power on the Mac."
+      },
+      {
+        "title": "Reinstall macOS",
+        "content": "Back up important data, then reinstall macOS via Recovery Mode (hold Command (⌘) + R at startup). Choose 'Reinstall macOS' and follow the prompts."
+      },
+      {
+        "title": "Upgrade to SSD",
+        "content": "If performance remains poor, replace the hard drive with an SSD. This significantly improves speed and responsiveness. Follow a reliable guide or seek professional help."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clean Up System Files",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Unnecessary Startup Items",
+            "content": "Go to System Preferences > Users & Groups > Login Items and remove unnecessary apps that launch at startup."
+          },
+          {
+            "title": "Clear Cache and Temporary Files",
+            "content": "Use a tool like OnyX or CleanMyMac to clear system caches, logs, and temporary files. Alternatively, manually delete files from ~/Library/Caches/."
+          },
+          {
+            "title": "Disable Visual Effects",
+            "content": "Go to System Preferences > Accessibility > Display and check 'Reduce transparency' and 'Reduce motion' to improve performance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T17:44:58.457Z",
+      "updated": "2026-08-07T17:44:58.457Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/217898/diagnose-possible-issue-with-mbpro-2012-running-very-slow",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786124707745-53",
+    "title": "Fix Finder Shortcut Shift Key Slow-Motion Animation in macOS Monterey",
+    "problemDescription": "Finder shortcuts using the Shift key trigger a slow-motion animation when opening folders, and disabling 'Reduce Motion' does not resolve the issue.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macOS",
+      "Finder",
+      "Shift key",
+      "slow-motion animation",
+      "shortcuts"
+    ],
+    "steps": [
+      {
+        "title": "Disable Dock Animation Duration",
+        "content": "Open Terminal and run the following command to set the Dock animation duration to 0 (instant): `defaults write com.apple.dock autohide-time-modifier -int 0 && killall Dock`"
+      },
+      {
+        "title": "Reset Dock Preferences",
+        "content": "Navigate to System Settings > Desktop & Dock and ensure 'Animate opening applications' is enabled. If the issue persists, reset Dock preferences by running: `defaults delete com.apple.dock && killall Dock`"
+      },
+      {
+        "title": "Check Accessibility Settings",
+        "content": "Go to System Settings > Accessibility > Display and ensure 'Reduce Motion' is disabled. Test if the issue persists."
+      },
+      {
+        "title": "Verify Keyboard Shortcuts",
+        "content": "Go to System Settings > Keyboard > Keyboard Shortcuts > App Shortcuts. Ensure no conflicting shortcuts are assigned to Shift key in Finder."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Rebind Finder Shortcuts",
+        "type": "Workaround",
+        "steps": [
+          {
+            "title": "Change Finder Shortcut Key",
+            "content": "Go to System Settings > Keyboard > Keyboard Shortcuts > App Shortcuts. Select Finder, then modify the shortcut to use a different key (e.g., Option) instead of Shift."
+          },
+          {
+            "title": "Test Shortcut",
+            "content": "Open Finder and test the new shortcut to confirm the slow-motion animation no longer occurs."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T17:45:07.745Z",
+      "updated": "2026-08-07T17:45:07.745Z",
+      "sourceUrl": "https://apple.stackexchange.com/posts/475348/timeline",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786124727307-264",
+    "title": "Fix Zoom Not Closing Properly on Ubuntu 20.04",
+    "problemDescription": "Zoom minimizes instead of closing when clicking the X button, and the process remains active in the system monitor, requiring manual termination.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "zoom",
+      "ubuntu",
+      "close",
+      "process",
+      "snap",
+      "system monitor"
+    ],
+    "steps": [
+      {
+        "title": "Disable Minimize on Close in Zoom Settings",
+        "content": "Open Zoom. Click the settings cog icon (⚙️) in the top-right corner. Go to the 'General' tab. Uncheck 'When closed minimize windows to the notification area instead of the task bar'. Close Zoom and reopen it to apply changes."
+      },
+      {
+        "title": "Force Close Zoom via Terminal",
+        "content": "Open a terminal and run: `pkill zoom` or `killall zoom`. If the process persists, use `killall -9 zoom` to force terminate it."
+      },
+      {
+        "title": "Reinstall Zoom (if issue persists)",
+        "content": "Uninstall Zoom: `sudo snap remove zoom-client`. Reinstall Zoom: `sudo snap install zoom-client`. Ensure the latest version is installed."
+      },
+      {
+        "title": "Check for Background Processes",
+        "content": "Open 'System Monitor' (or run `htop` in terminal). Look for any remaining 'zoom' processes. Right-click and select 'End Process' if found."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Zoom's Built-in Quit Option",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Quit Zoom from the System Tray",
+            "content": "If Zoom is minimized, right-click the Zoom icon in the system tray (top panel) and select 'Quit'. This should fully close the application."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Snap and Use .deb Package",
+        "type": "Alternative Installation",
+        "steps": [
+          {
+            "title": "Uninstall Snap Version",
+            "content": "Run: `sudo snap remove zoom-client`."
+          },
+          {
+            "title": "Download and Install .deb Package",
+            "content": "Download the official .deb package from Zoom's website: `wget https://zoom.us/client/latest/zoom_amd64.deb`. Install it using: `sudo dpkg -i zoom_amd64.deb`."
+          },
+          {
+            "title": "Verify Proper Closure",
+            "content": "Open Zoom, close it using the X button, and check if the process terminates properly in the system monitor."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T17:45:27.307Z",
+      "updated": "2026-08-07T17:45:27.307Z",
+      "sourceUrl": "https://askubuntu.com/questions/1329742/zoom-wont-close-and-more-common-issues",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
