@@ -353246,5 +353246,144 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786099625455-216",
+    "title": "Install or Reinstall Google Chrome on Android",
+    "problemDescription": "Google Chrome fails to install or function properly on an Android device, requiring a fresh installation or troubleshooting steps.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "install",
+      "android",
+      "reinstall",
+      "play store"
+    ],
+    "steps": [
+      {
+        "title": "Install Google Chrome from the Play Store",
+        "content": "1. Open the **Google Play Store** app on your Android device.\n2. In the search bar, type **Chrome** and tap the search icon.\n3. Select **Google Chrome** from the results.\n4. Tap **Install** to download and install the app.\n5. Once installed, tap **Open** to launch Chrome or find it in your **All Apps** list."
+      },
+      {
+        "title": "Reinstall Google Chrome to Fix Issues",
+        "content": "1. Open the **Google Play Store** app.\n2. Search for **Chrome** and tap on it.\n3. Select **Uninstall** to remove the app.\n4. After uninstalling, search for **Chrome** again and tap **Install** to reinstall it.\n5. Launch Chrome from your Home screen or All Apps."
+      },
+      {
+        "title": "Check for Updates",
+        "content": "1. Open the **Google Play Store** app.\n2. Tap the **profile icon** (top-right corner) and select **Manage apps and device**.\n3. Under **Updates available**, check if Chrome is listed. If so, tap **Update** next to it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Cache and Data (If Chrome Crashes)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Chrome App Data",
+            "content": "1. Go to **Settings** > **Apps** (or **Apps & notifications**).\n2. Find and tap **Google Chrome** in the list.\n3. Select **Storage** > **Clear Cache** and **Clear Data**.\n4. Restart your device and reinstall Chrome if necessary."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check Device Compatibility",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Android Version Support",
+            "content": "1. Go to **Settings** > **About phone** (or **About device**).\n2. Check your **Android version** (e.g., 8.0 or higher is recommended for Chrome).\n3. If your device is too old, consider using a lightweight browser like **Firefox Lite** or **Opera Mini**."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T10:47:05.455Z",
+      "updated": "2026-08-07T10:47:05.455Z",
+      "sourceUrl": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DAndroid",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786099641332-524",
+    "title": "Fix Steam Login Error After Password Reset",
+    "problemDescription": "Steam login fails even after password reset, possibly due to autofill issues or unsupported characters in the password.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Steam",
+      "login",
+      "password reset",
+      "error"
+    ],
+    "steps": [
+      {
+        "title": "Manually Type the Password",
+        "content": "Avoid using autofill or copy/pasting. Manually type the new password to ensure no hidden characters or formatting issues are introduced."
+      },
+      {
+        "title": "Check for Unsupported Characters",
+        "content": "Ensure the password contains only standard English letters (a-z, A-Z), numbers (0-9), and common symbols like !@#$%^&*. Avoid special characters that may not be supported."
+      },
+      {
+        "title": "Verify Caps Lock Status",
+        "content": "Confirm that Caps Lock is off or on as intended, as case sensitivity may affect the password."
+      },
+      {
+        "title": "Clear Steam Browser Cache",
+        "content": "Go to Steam settings, clear browser cache and cookies, then attempt to log in again."
+      },
+      {
+        "title": "Use Steam Client Instead of Browser",
+        "content": "Try logging in via the Steam desktop client instead of a web browser to rule out browser-specific issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Password Again",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Request Another Password Reset",
+            "content": "Use the 'Forgot your password?' option on the Steam login page to request another reset link."
+          },
+          {
+            "title": "Check Email Spam Folder",
+            "content": "Ensure the reset email wasn't filtered into the spam or junk folder."
+          },
+          {
+            "title": "Use a Different Email",
+            "content": "If the issue persists, try resetting the password using a different email address linked to the Steam account."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Steam Support",
+        "type": "Official Support",
+        "steps": [
+          {
+            "title": "Visit Steam Support Page",
+            "content": "Go to the Steam Support website and submit a ticket describing the login issue."
+          },
+          {
+            "title": "Provide Account Details",
+            "content": "Include your Steam account name, email, and any relevant details to help support verify your identity."
+          },
+          {
+            "title": "Wait for Verification",
+            "content": "Follow the instructions provided by Steam support to resolve the issue, which may involve account verification."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T10:47:21.332Z",
+      "updated": "2026-08-07T10:47:21.332Z",
+      "sourceUrl": "https://www.quora.com/I-can-t-log-into-Steam-I-reset-my-password-but-its-still-showing-an-error-What-do-I-do",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
