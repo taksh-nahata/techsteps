@@ -356340,5 +356340,100 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1786138430921-100",
+    "title": "Fix 3D Printer Filament Clogging Issues",
+    "problemDescription": "3D printer filament gets stuck in the teflon pipe or nozzle due to heat expansion or blockages, causing print failures.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "3d printing",
+      "filament clog",
+      "nozzle blockage",
+      "extruder grinding",
+      "heat creep"
+    ],
+    "steps": [
+      {
+        "title": "Remove and Clean the Teflon Pipe",
+        "content": "Power off the printer and let it cool. Disassemble the printhead to access the teflon pipe. Heat the pipe with hot water to soften the stuck filament, then gently remove it. Reassemble the printhead before printing again."
+      },
+      {
+        "title": "Clear Nozzle Blockages",
+        "content": "Use nozzle cleaning needles to clear debris from the nozzle. For stubborn blockages, perform a cold pull: heat the nozzle, insert filament, then rapidly cool and pull the filament to remove residue. Replace the nozzle if cleaning fails."
+      },
+      {
+        "title": "Adjust Printing Temperature",
+        "content": "Lower the printing temperature closer to the filament's minimum rated range to reduce heat creep and stringing. Ensure the temperature remains within the filament's safe operating range."
+      },
+      {
+        "title": "Check and Adjust Extruder Settings",
+        "content": "Increase retraction settings to reduce stringing. If the extruder grinds filament, ensure the tension is correct and the filament path is unobstructed. Calibrate the extruder steps/mm if grinding persists."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Replace the Nozzle",
+        "type": "Quick Fix",
+        "steps": [
+          {
+            "title": "Replace the Nozzle",
+            "content": "Power off the printer and let it cool. Unscrew the old nozzle and replace it with a new one. Reheat the printer and resume printing. This is often the fastest solution for severe blockages."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Metal Plunger for Debris Removal",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove Debris with a Metal Plunger",
+            "content": "After heating the nozzle, use the metal plunger that came with your printer to push out burnt debris. Combine this with cleaning needles for stubborn blockages."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T21:33:50.921Z",
+      "updated": "2026-08-07T21:33:50.921Z",
+      "sourceUrl": "https://www.howtogeek.com/5-3d-printing-issues-that-drive-me-crazy-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786138493188-685",
+    "title": "Fix Pixel 2 or Pixel 2 XL Random Reboots or Power Offs",
+    "problemDescription": "Pixel 2 or Pixel 2 XL devices randomly power off or reboot, regardless of connection type (LTE or Wi-Fi).",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel",
+      "reboot",
+      "power off",
+      "random",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Check for and Install Latest Software Update",
+        "content": "Go to Settings > System > System Update and tap 'Check for Update'. Install any available updates to ensure your device has the latest bug fixes."
+      },
+      {
+        "title": "Contact Google Support for Replacement",
+        "content": "If the issue persists after updating, go to Settings > Support & tips and choose 'Phone' or 'Chat' to report the problem. Request a replacement if the issue cannot be resolved."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-07T21:34:53.188Z",
+      "updated": "2026-08-07T21:34:53.188Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/common-pixel-2-xl-problems-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
