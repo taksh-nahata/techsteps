@@ -354270,5 +354270,338 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786121169554-455",
+    "title": "Fix Printer Paper, Ink, or Toner Issues",
+    "problemDescription": "Printer is not printing due to lack of paper, ink, or toner, or is displaying paper mismatch errors.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "printer",
+      "paper",
+      "ink",
+      "toner",
+      "error",
+      "printing"
+    ],
+    "steps": [
+      {
+        "title": "Check and Resupply Paper, Ink, or Toner",
+        "content": "Open the printer and check if it has paper, ink, or toner. If not, refill the paper tray or replace the ink/toner cartridge as needed."
+      },
+      {
+        "title": "Verify Paper Type and Tray Selection",
+        "content": "If you recently changed paper, ensure the paper type selected in the printer settings or printing app matches the paper loaded. If your printer has multiple trays, confirm the correct tray is selected."
+      },
+      {
+        "title": "Clear Paper Jams or Misalignment",
+        "content": "If paper is jammed, wrinkled, or misaligned, turn off the printer, unplug it, and carefully remove the jammed paper. Check for any misaligned paper guides or rollers."
+      },
+      {
+        "title": "Wake Up a Sleeping Printer",
+        "content": "If the printer is unresponsive, press the Ready, Home, or Power button to wake it from sleep mode. Wait a few seconds for the printer to initialize."
+      },
+      {
+        "title": "Check for Error Messages",
+        "content": "Look at the printer screen for any error messages. Note the message and refer to your printer's manual or manufacturer's website for specific troubleshooting steps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Align Printhead or Color Plane",
+        "type": "Maintenance Fix",
+        "steps": [
+          {
+            "title": "Access Printer Maintenance Settings",
+            "content": "Open your printer's mobile app or use the printer's screen to navigate to the maintenance section."
+          },
+          {
+            "title": "Run Printhead or Color Plane Alignment",
+            "content": "For inkjet printers, select 'Printhead Alignment.' For laser printers, select 'Color Plane Alignment.' Follow the on-screen instructions to complete the alignment process."
+          },
+          {
+            "title": "Test Print Quality",
+            "content": "After alignment, print a test page to verify that the issue with lines, gaps, or poor color quality is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T16:46:09.554Z",
+      "updated": "2026-08-07T16:46:09.554Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-printer-problems-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786121178345-904",
+    "title": "Fix MacBook Air USB Port Not Working",
+    "problemDescription": "The USB port on a MacBook Air is unresponsive, failing to recognize connected devices.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "MacBook Air",
+      "USB port",
+      "not working",
+      "device recognition"
+    ],
+    "steps": [
+      {
+        "title": "Check for Physical Obstructions",
+        "content": "Inspect the USB port for debris, dust, or damage. Use a flashlight to ensure no foreign objects are blocking the connection."
+      },
+      {
+        "title": "Test with Another Device",
+        "content": "Connect a different USB device (e.g., a flash drive or mouse) to the same port to verify if the issue is with the port or the original device."
+      },
+      {
+        "title": "Try a Different USB Port",
+        "content": "If your MacBook Air has multiple USB ports, test the device in another port to rule out a port-specific issue."
+      },
+      {
+        "title": "Restart Your MacBook Air",
+        "content": "Restart your MacBook Air to reset system processes that may be interfering with USB functionality."
+      },
+      {
+        "title": "Reset the SMC",
+        "content": "Reset the System Management Controller (SMC) by shutting down your MacBook, pressing and holding the left Control + Option + Shift keys along with the power button for 10 seconds, then releasing and powering it back on."
+      },
+      {
+        "title": "Update macOS",
+        "content": "Check for and install any available macOS updates via System Preferences > Software Update, as updates may include fixes for USB-related issues."
+      },
+      {
+        "title": "Check System Information",
+        "content": "Go to Apple Menu > About This Mac > System Report > USB. Verify if the connected device appears in the list. If it does but isn’t functioning, the issue may be software-related."
+      },
+      {
+        "title": "Reset NVRAM/PRAM",
+        "content": "Shut down your MacBook, then turn it on and immediately press and hold Command + Option + P + R for about 20 seconds. Release the keys and allow your MacBook to boot normally."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a USB Hub or Adapter",
+        "type": "Workaround",
+        "steps": [
+          {
+            "title": "Connect a USB Hub",
+            "content": "Use a powered USB hub connected to your MacBook Air. Plug your device into the hub to see if it is recognized."
+          },
+          {
+            "title": "Try a USB-C to USB Adapter",
+            "content": "If your MacBook Air has only USB-C ports, use a compatible adapter to connect USB-A devices. Ensure the adapter is properly connected and functional."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall USB Drivers",
+        "type": "Advanced Troubleshooting",
+        "steps": [
+          {
+            "title": "Open Terminal",
+            "content": "Launch Terminal from Applications > Utilities."
+          },
+          {
+            "title": "List USB Devices",
+            "content": "Type `system_profiler SPUSBDataType` and press Enter to list all connected USB devices. Note any unrecognized devices."
+          },
+          {
+            "title": "Remove USB Drivers",
+            "content": "Type `sudo rm -rf /System/Library/Extensions/IOUSBFamily.kext` and press Enter. Enter your admin password when prompted."
+          },
+          {
+            "title": "Rebuild Kernel Cache",
+            "content": "Type `sudo kextcache -i /` and press Enter to rebuild the kernel cache."
+          },
+          {
+            "title": "Restart Your MacBook",
+            "content": "Restart your MacBook Air to allow the system to reinstall USB drivers automatically."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T16:46:18.345Z",
+      "updated": "2026-08-07T16:46:18.345Z",
+      "sourceUrl": "https://www.digitaltrends.com/computing/common-macbook-air-problems-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786121231801-118",
+    "title": "Fix Chrome Preventing MacBook from Sleeping",
+    "problemDescription": "Google Chrome prevents a MacBook from entering sleep mode, even when no active downloads or tasks are running.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "sleep",
+      "macbook",
+      "activity monitor",
+      "extensions"
+    ],
+    "steps": [
+      {
+        "title": "Check Activity Monitor for Sleep Prevention",
+        "content": "Open Activity Monitor (Applications > Utilities > Activity Monitor) and check the 'Preventing Sleep' column. If Chrome is listed, proceed to the next steps."
+      },
+      {
+        "title": "Disable Extensions Temporarily",
+        "content": "Go to Chrome > Window > Extensions. Disable all extensions one by one and check Activity Monitor to see if the issue resolves. Focus on extensions like 'Disconnect.me' or others that may interfere with sleep."
+      },
+      {
+        "title": "Close All Tabs and Restart Chrome",
+        "content": "Close all Chrome tabs, then quit and restart Chrome. Reopen Activity Monitor to verify if the 'Preventing Sleep' status is cleared."
+      },
+      {
+        "title": "Check for Problematic Websites",
+        "content": "Visit websites one by one to identify if a specific site triggers the sleep prevention. Close tabs individually to isolate the culprit. Pay attention to pop-under tabs or ads."
+      },
+      {
+        "title": "Reset Chrome Settings",
+        "content": "Go to Chrome > Settings > Advanced > Reset settings. This will reset Chrome to default without removing bookmarks or passwords. Restart Chrome and check Activity Monitor."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Chrome Canary (Experimental)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install Chrome Canary",
+            "content": "Visit the Chrome Canary website (https://www.google.com/chrome/canary/) and download the latest version. Note: Chrome Canary is unstable and may introduce other issues."
+          },
+          {
+            "title": "Test for Sleep Prevention",
+            "content": "Use Chrome Canary as your primary browser for a day. Monitor Activity Monitor to see if the sleep prevention issue persists."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Background Apps and Services",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Disable Background Processes in Chrome",
+            "content": "Go to Chrome > Settings > Advanced > System. Toggle off 'Continue running background apps when Google Chrome is closed'. Restart Chrome and check Activity Monitor."
+          },
+          {
+            "title": "Check for Other Background Apps",
+            "content": "Open Activity Monitor and look for other apps (e.g., Dropbox, OneDrive) that may prevent sleep. Quit or disable these apps temporarily."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T16:47:11.801Z",
+      "updated": "2026-08-07T16:47:11.801Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/205228/chrome-prevents-macbook-from-sleeping",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786121237605-656",
+    "title": "Fix WebGL Not Working in Google Chrome on macOS",
+    "problemDescription": "WebGL fails to work in Google Chrome on macOS, with gpu_compositing disabled in chrome://gpu page.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "WebGL",
+      "Google Chrome",
+      "macOS",
+      "gpu_compositing",
+      "disabled"
+    ],
+    "steps": [
+      {
+        "title": "Backup Chrome Data",
+        "content": "Ensure your Google Chrome data is synced with Google or backed up before proceeding."
+      },
+      {
+        "title": "Download Chrome Installer",
+        "content": "Go to chrome.google.com and download the latest Google Chrome installer."
+      },
+      {
+        "title": "Quit Google Chrome",
+        "content": "Quit Google Chrome from the menu bar by selecting `Google Chrome > Quit Google Chrome`."
+      },
+      {
+        "title": "Remove Google Chrome",
+        "content": "Open Finder, navigate to the Applications folder, right-click Google Chrome, and select `Move to Trash`."
+      },
+      {
+        "title": "Clear Chrome Application Support Data",
+        "content": "Open Finder, press `Cmd + Shift + G`, and navigate to `~/Library/Application Support/Google/Chrome`. Delete the entire `Chrome` folder."
+      },
+      {
+        "title": "Reinstall Google Chrome",
+        "content": "Run the downloaded Chrome installer to reinstall Google Chrome."
+      },
+      {
+        "title": "Verify WebGL Functionality",
+        "content": "Open Chrome and navigate to chrome://gpu to confirm that gpu_compositing is now enabled. Test WebGL using a site like https://get.webgl.org."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-07T16:47:17.605Z",
+      "updated": "2026-08-07T16:47:17.605Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/465008/webgl-is-not-working-on-google-chrome-for-macos-the-chrome-gpu-page-shows-tha",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786121240477-36",
+    "title": "Restore Chrome Address Bar in macOS High Sierra After Update",
+    "problemDescription": "The Chrome address bar and window controls disappear after updating to macOS High Sierra, making navigation difficult.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "address bar",
+      "macOS High Sierra",
+      "window controls",
+      "full-screen"
+    ],
+    "steps": [
+      {
+        "title": "Enable Toolbar in Full-Screen Mode",
+        "content": "Open Google Chrome. Press Control + Command + F to enter full-screen mode. Move your cursor to the top of the screen to reveal the menu bar. Click 'View' in the menu bar, then select 'Always show toolbar in full-screen mode'. Exit full-screen mode (Control + Command + F) to apply changes."
+      },
+      {
+        "title": "Reset Chrome Window State",
+        "content": "Close Chrome completely. Open Finder, go to 'Go' > 'Go to Folder' (Shift + Command + G). Type ~/Library and press Enter. Navigate to 'Saved Application State' > 'com.google.Chrome.savedState'. Delete the folder. Reopen Chrome to reset window state."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Full-Screen Mode Temporarily",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Exit Full-Screen Mode",
+            "content": "Press Control + Command + F to exit full-screen mode if Chrome is currently in full-screen. The address bar and window controls should reappear in normal window mode."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T16:47:20.477Z",
+      "updated": "2026-08-07T16:47:20.477Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/336299/chrome-address-bar-disappeared-after-update",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
