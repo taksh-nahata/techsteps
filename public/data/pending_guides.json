@@ -351917,5 +351917,207 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1786080647673-436",
+    "title": "Fix Microsoft 365 Subscription Not Showing in iPad Settings",
+    "problemDescription": "Microsoft 365 Personal subscription was renewed but does not appear in iPad settings under 'Subscriptions', despite being charged.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "microsoft 365",
+      "subscription",
+      "ipad",
+      "settings",
+      "renewal",
+      "apple id"
+    ],
+    "steps": [
+      {
+        "title": "Verify Subscription Payment",
+        "content": "Check your bank or credit card statement to confirm the renewal payment was processed by Microsoft (not Apple App Store)."
+      },
+      {
+        "title": "Check Microsoft Account",
+        "content": "Sign in to your Microsoft account (account.microsoft.com) and verify the subscription status. If renewed, it should show active."
+      },
+      {
+        "title": "Update Microsoft 365 App",
+        "content": "Open the App Store on your iPad, go to 'Updates', and ensure the Microsoft 365 app is updated to the latest version."
+      },
+      {
+        "title": "Sign Out and Back Into Apple ID",
+        "content": "Go to iPad Settings > [Your Name] > Sign Out. Restart your iPad, then sign back in and check subscriptions again."
+      },
+      {
+        "title": "Check Subscription in App Store",
+        "content": "Open the App Store, tap your profile icon, then 'Subscriptions'. Look for Microsoft 365 and verify its status."
+      },
+      {
+        "title": "Contact Microsoft Support",
+        "content": "If the subscription still doesn't appear, visit Microsoft Support (support.microsoft.com) and request assistance for subscription issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Microsoft 365 App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete and Reinstall App",
+            "content": "Uninstall the Microsoft 365 app from your iPad, restart the device, then reinstall it from the App Store."
+          },
+          {
+            "title": "Sign In and Verify",
+            "content": "Open the reinstalled app, sign in with your Microsoft account, and check if the subscription is recognized."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Web Browser to Check Subscription",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Safari or Chrome",
+            "content": "Launch a web browser on your iPad and go to account.microsoft.com."
+          },
+          {
+            "title": "Sign In and Navigate to Subscriptions",
+            "content": "Sign in with your Microsoft account and navigate to the 'Subscriptions' section to verify the active status."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T05:30:47.673Z",
+      "updated": "2026-08-07T05:30:47.673Z",
+      "sourceUrl": "https://discussions.apple.com/thread/256195596",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786080658381-24",
+    "title": "Fix Videos Not Playing in Any Browser",
+    "problemDescription": "Videos fail to play across all browsers, indicating a potential driver or browser-related issue.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "video",
+      "playback",
+      "browser",
+      "driver",
+      "AMD"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall AMD Graphics Driver",
+        "content": "Download the latest AMD graphics driver from the official AMD website. Uninstall the current driver using Device Manager or AMD Cleanup Utility, then install the new driver."
+      },
+      {
+        "title": "Reinstall Browser",
+        "content": "Uninstall the problematic browser completely, including user data. Download the latest version from the official website and reinstall it."
+      },
+      {
+        "title": "Restart Computer",
+        "content": "Perform a full system restart to clear temporary glitches affecting video playback."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-07T05:30:58.381Z",
+      "updated": "2026-08-07T05:30:58.381Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/no-videos-will-play-on-any-browser.2918529",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786080679919-985",
+    "title": "Fix Zoom App Error (Error Code 5, 5003, 1132, 104103, 13224)",
+    "problemDescription": "Zoom app displays error codes (e.g., 5, 5003, 1132, 104103, 13224) or 'unstable network' messages, preventing meeting access on phone or laptop.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Zoom",
+      "error code",
+      "app crash",
+      "unstable network",
+      "meeting access"
+    ],
+    "steps": [
+      {
+        "title": "Restart Zoom and Device",
+        "content": "Close the Zoom app completely (force stop on mobile). Restart your device (phone/laptop) to clear temporary glitches."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "Ensure your device has a stable internet connection. Try switching between Wi-Fi and mobile data or restarting your router."
+      },
+      {
+        "title": "Update Zoom App",
+        "content": "Open the app store (Google Play Store/Apple App Store) or Zoom's official website to check for and install the latest Zoom app update."
+      },
+      {
+        "title": "Clear Zoom App Cache (Mobile)",
+        "content": "Go to Settings > Apps > Zoom > Storage > Clear Cache. Restart the app afterward."
+      },
+      {
+        "title": "Reinstall Zoom App",
+        "content": "Uninstall the Zoom app and reinstall it from the official app store or Zoom's website to resolve corrupted files."
+      },
+      {
+        "title": "Check Zoom Server Status",
+        "content": "Visit Zoom's official status page (status.zoom.us) to confirm if the service is operational. If servers are down, wait for resolution."
+      },
+      {
+        "title": "Disable VPN/Proxy (If Used)",
+        "content": "Turn off any VPN or proxy services that may interfere with Zoom's connection. Retry joining the meeting."
+      },
+      {
+        "title": "Check Firewall/Antivirus Settings",
+        "content": "Temporarily disable firewall or antivirus software to rule out blocking. Re-enable after testing."
+      },
+      {
+        "title": "Join Meeting via Browser",
+        "content": "If the app fails, join the meeting directly via a web browser (Chrome, Firefox, Edge) using the meeting link."
+      },
+      {
+        "title": "Contact Zoom Support",
+        "content": "If the issue persists, visit Zoom's support page (support.zoom.us) or contact their customer service for further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Network Settings (Mobile)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Settings",
+            "content": "Go to Settings > System > Reset Options > Reset Wi-Fi, Mobile & Bluetooth. Reconnect to the network and retry Zoom."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Zoom Web Client for Critical Meetings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Join via Web Client",
+            "content": "If the app is consistently problematic, use Zoom's web client (zoom.us) as a reliable alternative for joining meetings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T05:31:19.919Z",
+      "updated": "2026-08-07T05:31:19.919Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-solve-an-issue-error-in-Zoom",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
