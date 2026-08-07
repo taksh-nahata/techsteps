@@ -352400,5 +352400,391 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786092720107-608",
+    "title": "Fix Missing Repair Button in SCANPST.exe for Outlook",
+    "problemDescription": "The Repair button is missing in SCANPST.exe after multiple iterations, preventing Outlook PST file repair.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "scanpst.exe",
+      "repair",
+      "pst file",
+      "missing button"
+    ],
+    "steps": [
+      {
+        "title": "Reboot the System",
+        "content": "Restart your computer to clear temporary files and ensure the system is running optimally."
+      },
+      {
+        "title": "Run SCANPST.exe as Administrator",
+        "content": "Right-click on the `SCANPST.exe` file (typically located in `C:\\Program Files\\Microsoft Office\\OfficeXX` or `C:\\Program Files (x86)\\Microsoft Office\\OfficeXX`) and select 'Run as Administrator'. Check if the Repair button appears."
+      },
+      {
+        "title": "Run System File Checker (SFC)",
+        "content": "Open Command Prompt as Administrator and run `sfc /scannow` to repair corrupted system files. Wait for the process to complete and restart your computer."
+      },
+      {
+        "title": "Repair or Reinstall Outlook",
+        "content": "If the issue persists, use the Microsoft Office Repair tool or reinstall Outlook to fix underlying corruption issues. Go to 'Control Panel > Programs > Programs and Features', select Microsoft Office, and choose 'Change' to repair."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Outlook's Built-in Repair Tool",
+        "type": "Alternative Solution",
+        "steps": [
+          {
+            "title": "Open Outlook in Safe Mode",
+            "content": "Press `Win + R`, type `outlook.exe /safe`, and press Enter to open Outlook in Safe Mode. This bypasses add-ins that may interfere with the repair process."
+          },
+          {
+            "title": "Run SCANPST.exe Again",
+            "content": "After opening Outlook in Safe Mode, attempt to run `SCANPST.exe` as Administrator again to see if the Repair button is now available."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for PST File Corruption in Another Location",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Locate the PST File",
+            "content": "Ensure you are running `SCANPST.exe` on the correct PST file. The default location is `C:\\Users\\<YourUsername>\\Documents\\Outlook Files\\`."
+          },
+          {
+            "title": "Copy the PST File to a New Location",
+            "content": "Copy the PST file to a new folder (e.g., `Desktop`) and run `SCANPST.exe` on the copied file to rule out path-related issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T08:52:00.107Z",
+      "updated": "2026-08-07T08:52:00.107Z",
+      "sourceUrl": "https://superuser.com/questions/1842954/scanpst-exe-missing-repair-button-after-3-iterations",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786092738637-800",
+    "title": "Fix Outlook Only Showing First Line of Emails",
+    "problemDescription": "Outlook displays only the first line of every email message, hiding the rest of the content.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Outlook",
+      "email",
+      "display",
+      "first line",
+      "content"
+    ],
+    "steps": [
+      {
+        "title": "Check Outlook Version",
+        "content": "Open any Office app (e.g., Word or Excel), go to File > Account > About Outlook. Note the version number (e.g., 16.0.xxxxx.xxxx)."
+      },
+      {
+        "title": "Revert to Prior Version",
+        "content": "Press Win + R, paste the following command (replace the version number with the prior stable version for your Office installation):\n\n\"C:\\Program Files\\Common Files\\Microsoft shared\\ClickToRun\\OfficeC2RClient.exe\" /update user updatetoversion=16.0.13901.20462\n\nPress Enter and wait for the update to complete (approx. 10 minutes)."
+      },
+      {
+        "title": "Disable Automatic Updates Temporarily",
+        "content": "Open any Office app, go to File > Account > Update Options > Disable Updates. This prevents the issue from recurring until a fix is officially released."
+      },
+      {
+        "title": "Verify Fix",
+        "content": "Restart Outlook and open an email to confirm that all lines are now visible."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Repair Office Installation",
+        "type": "Official Solution",
+        "steps": [
+          {
+            "title": "Open Control Panel",
+            "content": "Go to Control Panel > Programs > Programs and Features."
+          },
+          {
+            "title": "Repair Office",
+            "content": "Select Microsoft Office from the list, click Change, then select Quick Repair or Online Repair. Follow the prompts to complete the repair."
+          },
+          {
+            "title": "Restart Outlook",
+            "content": "After the repair completes, restart Outlook and check if the issue is resolved."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Office Configuration Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Office Configuration Tool",
+            "content": "Download the Office Configuration Tool (OCT) from Microsoft's official site if available for your version."
+          },
+          {
+            "title": "Configure Display Settings",
+            "content": "Use the tool to adjust email display settings or reset the reading pane layout."
+          },
+          {
+            "title": "Apply Changes",
+            "content": "Save the configuration and restart Outlook to apply changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T08:52:18.637Z",
+      "updated": "2026-08-07T08:52:18.637Z",
+      "sourceUrl": "https://superuser.com/questions/1648424/how-do-i-fix-outlook-only-showing-the-first-line-of-every-message",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786092756452-647",
+    "title": "Fix HP Printer Not Working After Ubuntu 20.04 Installation",
+    "problemDescription": "HP Envy 5640 printer stops working after installing Ubuntu 20.04, despite having hplip and CUPS installed.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "HP Envy 5640",
+      "Ubuntu 20.04",
+      "hplip",
+      "CUPS",
+      "USB"
+    ],
+    "steps": [
+      {
+        "title": "Verify Printer Connection and Detection",
+        "content": "Connect the printer via USB and run `lsusb` in the terminal to check if Ubuntu detects the printer. Look for an entry containing 'HP' or 'Envy'."
+      },
+      {
+        "title": "Install or Reinstall HPLIP",
+        "content": "Ensure HPLIP is properly installed. Run: `sudo apt install --reinstall hplip hplip-data hplip-doc hplip-gui`. Then restart the printer and computer."
+      },
+      {
+        "title": "Check CUPS Service Status",
+        "content": "Verify CUPS is running: `sudo systemctl status cups`. If inactive, start it with `sudo systemctl start cups` and enable it to start on boot: `sudo systemctl enable cups`."
+      },
+      {
+        "title": "Add Printer via CUPS Web Interface",
+        "content": "Open a browser and go to `http://localhost:631`. Navigate to 'Administration' > 'Add Printer'. Select the detected HP printer and follow the prompts to add it."
+      },
+      {
+        "title": "Install HP Printer Driver Manually",
+        "content": "Download the latest HPLIP driver from [HP's official site](https://developers.hp.com/hp-linux-imaging-and-printing/gethplip). Run the installer: `sh hplip-*.run` and follow the on-screen instructions."
+      },
+      {
+        "title": "Test Printer Functionality",
+        "content": "Print a test page from the CUPS web interface or via the terminal: `lp -d <printer-name> /usr/share/cups/data/testprint`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use HP Device Manager",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install HP Device Manager",
+            "content": "Run `sudo apt install hplip-gui` to install the HP Device Manager GUI."
+          },
+          {
+            "title": "Run HP Device Manager",
+            "content": "Open HP Device Manager from the applications menu. It should detect the printer and allow you to configure and test it."
+          },
+          {
+            "title": "Reconfigure Printer",
+            "content": "Follow the prompts in HP Device Manager to reconfigure the printer. This may resolve driver or connection issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for USB Port Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Try a Different USB Port",
+            "content": "Unplug the printer and plug it into a different USB port on your computer. Some ports may not provide enough power or may have driver conflicts."
+          },
+          {
+            "title": "Test with Another USB Cable",
+            "content": "Replace the USB cable with a known working one to rule out cable issues."
+          },
+          {
+            "title": "Check USB Power Management",
+            "content": "Disable USB power saving in Ubuntu: Edit `/etc/default/grub` and add `usbcore.autosuspend=-1` to `GRUB_CMDLINE_LINUX`. Update GRUB with `sudo update-grub` and reboot."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T08:52:36.452Z",
+      "updated": "2026-08-07T08:52:36.452Z",
+      "sourceUrl": "https://askubuntu.com/questions/1233521/printer-problems-after-installing-ubuntu-20-04",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786092766377-470",
+    "title": "Configure Network Printer in Ubuntu 14.04",
+    "problemDescription": "Unable to add or configure network printers on Ubuntu 14.04, which are accessible from Windows desktops on the same Wi-Fi network.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "network printer",
+      "ubuntu 14.04",
+      "printer setup",
+      "samba"
+    ],
+    "steps": [
+      {
+        "title": "Install Required Packages",
+        "content": "Open a terminal and install the necessary packages for printer sharing and Samba support: `sudo apt-get update && sudo apt-get install samba smbclient system-config-printer-gnome`"
+      },
+      {
+        "title": "Enable Samba Service",
+        "content": "Start and enable the Samba service to ensure network printer discovery works: `sudo service smbd start && sudo service nmbd start`"
+      },
+      {
+        "title": "Add Network Printer via GUI",
+        "content": "Go to 'System Settings' > 'Printing'. Click 'Add' and select 'Network Printer'. Choose the printer from the list or enter its IP address manually. Follow the prompts to install the appropriate driver."
+      },
+      {
+        "title": "Verify Printer Connection",
+        "content": "Print a test page to confirm the printer is correctly configured and accessible."
+      },
+      {
+        "title": "Troubleshoot Driver Issues",
+        "content": "If the printer is not listed, manually download the driver from the manufacturer's website and install it via the 'Add Printer' dialog."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Configuration via CUPS",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Access CUPS Web Interface",
+            "content": "Open a web browser and go to `http://localhost:631`. Navigate to 'Administration' > 'Add Printer'."
+          },
+          {
+            "title": "Enter Printer Details",
+            "content": "Select 'LPD/LPR Host or Printer' and enter the printer's IP address (e.g., `lpd://192.168.1.100/printer`). Follow the prompts to configure the printer."
+          },
+          {
+            "title": "Install Driver",
+            "content": "Choose the correct driver from the list or provide a PPD file if available. Complete the setup and test the printer."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Using Samba Share (if printer is shared from Windows)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Samba Client",
+            "content": "Ensure Samba client is installed: `sudo apt-get install smbclient`"
+          },
+          {
+            "title": "Connect to Windows Shared Printer",
+            "content": "In the 'Add Printer' dialog, select 'Windows Printer via SAMBA' and enter the Windows share path (e.g., `smb://WINDOWS-PC/PrinterName`). Provide credentials if required."
+          },
+          {
+            "title": "Install Driver and Test",
+            "content": "Follow the prompts to install the driver and print a test page."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T08:52:46.377Z",
+      "updated": "2026-08-07T08:52:46.377Z",
+      "sourceUrl": "https://askubuntu.com/questions/513713/how-to-configure-a-network-printer-in-ubuntu-14-04",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786092786530-771",
+    "title": "Fix Instagram Reels or Content Sound Not Playing",
+    "problemDescription": "Sound is not playing on Instagram Reels or shared content, despite the app functioning otherwise.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "instagram",
+      "reels",
+      "sound",
+      "audio",
+      "ios",
+      "app"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your iPhone",
+        "content": "Press and hold the side button and either volume button until the power off slider appears. Drag the slider to turn off your device, wait 30 seconds, then press and hold the side button again to turn it back on."
+      },
+      {
+        "title": "Uninstall and Reinstall Instagram",
+        "content": "Press and hold the Instagram app icon, then tap 'Remove App'. Confirm by selecting 'Delete App'. Reinstall Instagram from the App Store."
+      },
+      {
+        "title": "Check for App Updates",
+        "content": "Open the App Store, tap your profile icon, and scroll to see if an update for Instagram is available. If so, tap 'Update'."
+      },
+      {
+        "title": "Test Sound in Another App",
+        "content": "Open another app (e.g., Music, YouTube) and play a video or song to verify if sound works. If not, the issue may be with your device's audio settings."
+      },
+      {
+        "title": "Check Instagram Sound Settings",
+        "content": "Open Instagram, go to your profile, tap the menu (☰), then 'Settings and privacy' > 'Settings' > 'Account' > 'Data usage'. Ensure 'Use less data' is turned off."
+      },
+      {
+        "title": "Verify Device Volume and Mute Settings",
+        "content": "Ensure your iPhone's volume is not muted (check the side switch or Control Center). Also, check if 'Silent Mode' is enabled in Settings > Sounds & Haptics."
+      },
+      {
+        "title": "Test on Another Device",
+        "content": "If possible, log into your Instagram account on another iOS device and check if the sound works there. If it does, the issue may be device-specific."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Report the Issue to Instagram and Apple",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Report to Instagram Support",
+            "content": "Send an email to support@instagram.com with a screenshot of the issue (if applicable) and a brief description. Include the URL of the Apple Community thread for reference."
+          },
+          {
+            "title": "Report to Apple Support",
+            "content": "Visit Apple's support page (https://support.apple.com) and report the issue. Provide details about the problem and steps already taken."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T08:53:06.530Z",
+      "updated": "2026-08-07T08:53:06.530Z",
+      "sourceUrl": "https://discussions.apple.com/thread/256182315",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
