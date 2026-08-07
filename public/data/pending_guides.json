@@ -353728,5 +353728,348 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786111744808-911",
+    "title": "Fix Cambridge Dictionary Website Error: 'The word in the example sentence does not match the entry word'",
+    "problemDescription": "The Cambridge Dictionary website displays an error message stating that the word in the example sentence does not match the entry word when browsing dictionary entries.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "dictionary",
+      "error",
+      "website",
+      "browser",
+      "Cambridge Dictionary"
+    ],
+    "steps": [
+      {
+        "title": "Refresh the Page",
+        "content": "Press F5 or click the refresh button in your browser to reload the page. This often resolves temporary glitches."
+      },
+      {
+        "title": "Clear Browser Cache and Cookies",
+        "content": "Go to your browser settings, clear the cache and cookies for the Cambridge Dictionary website, then reload the page."
+      },
+      {
+        "title": "Disable Browser Extensions",
+        "content": "Temporarily disable all browser extensions (e.g., ad blockers, translation tools) and reload the page to check if an extension is causing the issue."
+      },
+      {
+        "title": "Try a Different Browser",
+        "content": "Open the Cambridge Dictionary website in a different browser (e.g., Chrome, Firefox, Edge) to see if the issue persists."
+      },
+      {
+        "title": "Check for Website Maintenance",
+        "content": "Visit the Cambridge Dictionary's official social media or status page to check if they are performing maintenance or experiencing downtime."
+      },
+      {
+        "title": "Contact Cambridge Dictionary Support",
+        "content": "If the issue persists, report the error to Cambridge Dictionary support via their contact page or feedback form."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Incognito/Private Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Incognito/Private Window",
+            "content": "Open a new incognito (Chrome) or private (Firefox/Edge) browsing window."
+          },
+          {
+            "title": "Navigate to Cambridge Dictionary",
+            "content": "Type the Cambridge Dictionary URL (https://dictionary.cambridge.org) and press Enter."
+          },
+          {
+            "title": "Test the Entry",
+            "content": "Search for a word (e.g., 'how') and check if the error still appears."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T14:09:04.808Z",
+      "updated": "2026-08-07T14:09:04.808Z",
+      "sourceUrl": "https://dictionary.cambridge.org/us/dictionary/english/how",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786111748431-297",
+    "title": "Understanding the Word 'How' in English",
+    "problemDescription": "The user is confused about the multiple meanings and uses of the word 'how' in English, including its roles as an adverb, conjunction, and noun.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "english grammar",
+      "word usage",
+      "adverb",
+      "conjunction",
+      "noun"
+    ],
+    "steps": [
+      {
+        "title": "Identify the Role of 'How' in a Sentence",
+        "content": "Determine whether 'how' is used as an adverb (e.g., 'How do you sell these tomatoes?'), a conjunction (e.g., 'He couldn't figure out how to solve the problem'), or a noun (e.g., 'a child's unending whys and hows')."
+      },
+      {
+        "title": "Understand Adverbial Uses",
+        "content": "Recognize that 'how' often asks about the manner, method, or degree of something. Examples: 'How does the demon appear?' or 'How does the medication come?'."
+      },
+      {
+        "title": "Analyze Conjunctional Uses",
+        "content": "Note that 'how' can introduce clauses describing the way or manner in which something is done. Example: 'I don't care how you leave your desk.'"
+      },
+      {
+        "title": "Examine Noun Uses",
+        "content": "Observe that 'how' can function as a noun referring to the manner or way something is done. Example: 'a child's unending whys and hows'."
+      },
+      {
+        "title": "Practice with Examples",
+        "content": "Read sentences containing 'how' and classify its role. Example: 'You can travel how you please' (adverb) vs. 'He told us how he was honest' (conjunction)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Visual Aids",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a Diagram",
+            "content": "Draw a diagram categorizing the different uses of 'how' (adverb, conjunction, noun) with example sentences."
+          },
+          {
+            "title": "Use Color Coding",
+            "content": "Highlight adverbial uses in blue, conjunctional uses in green, and noun uses in yellow to visually distinguish them."
+          },
+          {
+            "title": "Review with Flashcards",
+            "content": "Create flashcards with sentences on one side and the role of 'how' on the other. Test yourself regularly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T14:09:08.431Z",
+      "updated": "2026-08-07T14:09:08.431Z",
+      "sourceUrl": "https://www.collinsdictionary.com/us/dictionary/english/how",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786111752021-864",
+    "title": "Distinguish Between 'How do you mean?' and 'What do you mean?'",
+    "problemDescription": "Users confuse the usage of 'How do you mean?' and 'What do you mean?' in English conversations.",
+    "category": "english",
+    "difficulty": "Easy",
+    "keywords": [
+      "english",
+      "grammar",
+      "phrases",
+      "meaning"
+    ],
+    "steps": [
+      {
+        "title": "Understand 'What do you mean?'",
+        "content": "Use 'What do you mean?' when you want the speaker to clarify or rephrase their statement. It asks for specifics or additional details about what was said."
+      },
+      {
+        "title": "Understand 'How do you mean?'",
+        "content": "Use 'How do you mean?' when you want to know the manner, method, or way in which something is being referred to. It asks for the reasoning or context behind the statement."
+      },
+      {
+        "title": "Practice with examples",
+        "content": "Example 1: 'What do you mean by \"I’m tired\"?' (Asking for clarification on the statement.)\nExample 2: 'How do you mean you’re tired?' (Asking about the way they feel tired, e.g., physically or emotionally)."
+      },
+      {
+        "title": "Listen for context",
+        "content": "Pay attention to the context of the conversation. If the speaker is asking for a rephrasing or more details, use 'What do you mean?'. If they are asking about the manner or method, use 'How do you mean?'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Mnemonics for Remembering",
+        "type": "Memory Aid",
+        "steps": [
+          {
+            "title": "Associate 'What' with Clarity",
+            "content": "Remember that 'What' starts with 'W' like 'Why' or 'Which', both of which seek specific answers. 'What do you mean?' seeks a specific clarification."
+          },
+          {
+            "title": "Associate 'How' with Manner",
+            "content": "Remember that 'How' is often used to describe manner or method (e.g., 'How did you do that?'). 'How do you mean?' seeks the manner or method behind a statement."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T14:09:12.021Z",
+      "updated": "2026-08-07T14:09:12.021Z",
+      "sourceUrl": "https://www.reddit.com/r/ENGLISH/comments/115lz55/how_vs_what",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786111815338-934",
+    "title": "Fix ChromeOS Screen Flickering When Adjusting Display Angle",
+    "problemDescription": "The screen flickers or turns black intermittently when adjusting the display angle on a ChromeOS device, making it difficult to use.",
+    "category": "chromeos",
+    "difficulty": "Medium",
+    "keywords": [
+      "chromeos",
+      "screen flicker",
+      "display angle",
+      "hardware issue",
+      "flex cable"
+    ],
+    "steps": [
+      {
+        "title": "Check for Physical Damage or Loose Connections",
+        "content": "Inspect the device for any visible damage to the screen or hinges. If comfortable doing so, gently open and close the lid while observing the screen to see if the flickering correlates with movement. If the issue persists, the flex cable connecting the display to the motherboard may be loose or damaged."
+      },
+      {
+        "title": "Update ChromeOS to the Latest Version",
+        "content": "Go to Settings > About ChromeOS > Check for updates. Install any available updates to ensure your system is running the latest software, which may include fixes for display-related issues."
+      },
+      {
+        "title": "Adjust Display Settings",
+        "content": "Navigate to Settings > Device > Displays. Try changing the resolution, refresh rate, or enabling/disabling hardware acceleration to see if the flickering stops. Some users report that switching to a lower resolution or disabling hardware acceleration resolves the issue."
+      },
+      {
+        "title": "Test in Guest Mode",
+        "content": "Restart your device and log in as a guest user. If the flickering does not occur in guest mode, the issue may be related to a user profile or installed extension. Proceed to reset or create a new user profile."
+      },
+      {
+        "title": "Perform a Powerwash (Factory Reset)",
+        "content": "Backup your data, then go to Settings > Advanced > Reset settings > Powerwash. Confirm the reset and follow the prompts to restore the device to factory settings. This will erase all local data, so ensure backups are complete."
+      },
+      {
+        "title": "Contact Manufacturer Support",
+        "content": "If the issue persists after all software troubleshooting steps, the flex cable or display panel may be physically damaged. Contact the manufacturer's support for warranty claims or repair options. Provide them with details of the issue and steps already attempted."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Display Power Saving Features",
+        "type": "Software Workaround",
+        "steps": [
+          {
+            "title": "Disable Screen Blanking",
+            "content": "Go to Settings > Device > Power and disable 'Turn off screen when idle' or adjust the timeout settings to a longer duration."
+          },
+          {
+            "title": "Disable Adaptive Brightness",
+            "content": "Navigate to Settings > Device > Displays and turn off 'Adaptive brightness' to prevent the system from adjusting brightness dynamically, which may contribute to flickering."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use an External Monitor",
+        "type": "Hardware Workaround",
+        "steps": [
+          {
+            "title": "Connect an External Display",
+            "content": "Use a USB-C to HDMI or DisplayPort adapter to connect an external monitor. If the external display works without flickering, the issue is likely with the internal display or its connection."
+          },
+          {
+            "title": "Adjust External Display Settings",
+            "content": "Configure the external display settings in ChromeOS to match your preferred resolution and refresh rate to ensure optimal performance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T14:10:15.338Z",
+      "updated": "2026-08-07T14:10:15.338Z",
+      "sourceUrl": "https://www.reddit.com/r/chromeos/comments/ppf7ae/my_screen_turnsflickers_black_when_i_move_it_up",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786111826705-399",
+    "title": "Fix Occasional Lost Tracking with Grey Screen in Valve Index",
+    "problemDescription": "The Valve Index VR headset occasionally loses tracking, resulting in a grey screen during use.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "valve index",
+      "vr tracking",
+      "grey screen",
+      "tracking loss",
+      "base stations"
+    ],
+    "steps": [
+      {
+        "title": "Ensure Base Stations Have Clear Line of Sight",
+        "content": "Position base stations at least 2 meters high and angled downward slightly. Ensure no objects (including reflective surfaces) are blocking their view of the headset or controllers."
+      },
+      {
+        "title": "Check and Secure Cables",
+        "content": "Inspect the headset and controller cables for twists or tangles. Ensure they are not pulling or restricting movement, which can disrupt tracking."
+      },
+      {
+        "title": "Adjust Windows Power Settings",
+        "content": "Open Windows Power Options and set the plan to 'High Performance' to prevent the system from throttling USB or GPU resources during VR use."
+      },
+      {
+        "title": "Remove Reflective Surfaces Near Playspace",
+        "content": "Identify and cover or remove any reflective surfaces (e.g., mirrors, glass tables) near the playspace, as they can interfere with base station tracking."
+      },
+      {
+        "title": "Restart Base Stations and Headset",
+        "content": "Power cycle the base stations and headset by unplugging them for 30 seconds, then reconnecting. This can reset tracking issues caused by temporary glitches."
+      },
+      {
+        "title": "Update SteamVR and Firmware",
+        "content": "Ensure SteamVR and your Valve Index firmware are up to date via the SteamVR settings menu. Outdated software can cause tracking instability."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Base Station Placement for Better Coverage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Place Base Stations Opposite Each Other",
+            "content": "Position one base station in the front-left corner and the other in the back-right corner of the playspace, angled toward the center. This improves coverage and reduces tracking blind spots."
+          },
+          {
+            "title": "Use Base Station Extenders",
+            "content": "If the playspace is large, consider using base station extenders or additional base stations to improve tracking coverage in all areas."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable USB Power Saving",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Press Win + X and select 'Device Manager'."
+          },
+          {
+            "title": "Disable USB Power Saving",
+            "content": "Expand 'Universal Serial Bus controllers', right-click each 'USB Root Hub', go to 'Properties' > 'Power Management', and uncheck 'Allow the computer to turn off this device to save power'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T14:10:26.705Z",
+      "updated": "2026-08-07T14:10:26.705Z",
+      "sourceUrl": "https://www.reddit.com/r/ValveIndex/comments/sttvgl/guide_how_to_fix_occasional_lost_tracking_with",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
