@@ -356435,5 +356435,438 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1786145330121-310",
+    "title": "Recover Outlook.com Account Locked Due to 2FA Loss",
+    "problemDescription": "User is locked out of their Outlook.com email account after losing access to the authenticator app used for two-factor authentication (2FA).",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook.com",
+      "2fa",
+      "locked out",
+      "authenticator app",
+      "recovery"
+    ],
+    "steps": [
+      {
+        "title": "Verify Password Recovery Options",
+        "content": "Check if you have saved your password in your device's keychain or browser. If not, proceed to the next steps."
+      },
+      {
+        "title": "Contact Microsoft Support",
+        "content": "Visit the Microsoft Account Recovery page: https://account.live.com/acsr. Fill out the recovery form with as much detail as possible about your account."
+      },
+      {
+        "title": "Provide Account Verification Details",
+        "content": "Prepare the following for verification: previous passwords, email addresses used for recovery, dates of account creation, and any security questions you may have set up."
+      },
+      {
+        "title": "Use Account Recovery via Phone or Email",
+        "content": "If you have a recovery email or phone number linked to your account, Microsoft may send a verification code to help regain access."
+      },
+      {
+        "title": "Chat or Call Microsoft Support",
+        "content": "If the recovery form fails, initiate a live chat or call Microsoft Support directly. Visit: https://support.microsoft.com/en-us/contactus or call +1 (800) MICROSOFT."
+      },
+      {
+        "title": "Follow Identity Verification Process",
+        "content": "Microsoft may require additional identity verification, such as providing a government-issued ID or answering security questions."
+      },
+      {
+        "title": "Regain Access and Update Recovery Options",
+        "content": "Once verified, reset your password and update your 2FA methods (e.g., add a new authenticator app or SMS verification)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Trusted Device",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Trusted Devices",
+            "content": "If you previously logged in from a trusted device (e.g., personal computer or phone), try accessing your account from that device. Microsoft may allow access without 2FA on trusted devices."
+          },
+          {
+            "title": "Use Microsoft Authenticator App Backup",
+            "content": "If you had enabled cloud backup for the Microsoft Authenticator app, restore it on a new device. This may allow you to receive 2FA codes again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Microsoft via Social Media",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Tweet or Message Microsoft Support",
+            "content": "Post a message on Twitter (@MicrosoftHelps) or Facebook (Microsoft Support) explaining your situation. Microsoft may respond with recovery steps or escalate your case."
+          },
+          {
+            "title": "Provide Account Details",
+            "content": "Include your email address, approximate account creation date, and any other identifying details to help Microsoft verify your identity."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T23:28:50.121Z",
+      "updated": "2026-08-07T23:28:50.121Z",
+      "sourceUrl": "https://superuser.com/questions/1603762/locked-out-of-my-outlook-com-email-that-had-2-step-verification-on",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786145333253-512",
+    "title": "Fix GitHub Push Authentication Failed with Two-Factor Auth",
+    "problemDescription": "Git push fails with 'Authentication failed' when pushing to a GitHub repo that has two-factor authentication enabled, even after authenticating via GitHub Desktop and using SSH keys.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "github",
+      "push",
+      "authentication",
+      "two-factor-authentication",
+      "git"
+    ],
+    "steps": [
+      {
+        "title": "Generate a Personal Access Token",
+        "content": "Go to GitHub's Settings > Developer settings > Personal access tokens. Click 'Generate new token', provide a name, select the required permissions (e.g., 'repo'), and generate the token. Copy the token as it will not be shown again."
+      },
+      {
+        "title": "Use the Token for Git Push",
+        "content": "When prompted for a password during `git push`, paste the personal access token instead of your GitHub password. Alternatively, configure Git to remember the token by running: `git config --global credential.helper store` and then push again."
+      },
+      {
+        "title": "Verify SSH Key (Optional)",
+        "content": "Ensure your SSH key is added to GitHub (Settings > SSH and GPG keys). Test the connection with `ssh -T git@github.com`. If using HTTPS, SSH keys do not apply."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Switch to SSH Protocol",
+        "type": "Permanent Solution",
+        "steps": [
+          {
+            "title": "Change Remote URL to SSH",
+            "content": "Run `git remote set-url origin git@github.com:username/repo.git` to switch from HTTPS to SSH protocol. Then push using `git push -u origin master`."
+          },
+          {
+            "title": "Verify SSH Setup",
+            "content": "Ensure your SSH key is added to `ssh-agent` by running `ssh-add ~/.ssh/id_rsa` (or your key file). Test the connection with `ssh -T git@github.com`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T23:28:53.253Z",
+      "updated": "2026-08-07T23:28:53.253Z",
+      "sourceUrl": "https://superuser.com/questions/647829/pushing-a-local-repo-to-a-github-repo-which-has-dual-factor-authentication",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786145377048-205",
+    "title": "Fix Flickering Lights in Your Home",
+    "problemDescription": "Lights flicker due to loose bulbs, incompatible dimmer switches, or faulty wiring behind switches.",
+    "category": "home-electrical",
+    "difficulty": "Easy",
+    "keywords": [
+      "flickering lights",
+      "dimmer switch",
+      "loose bulb",
+      "electrical issue"
+    ],
+    "steps": [
+      {
+        "title": "Tighten Loose Bulbs",
+        "content": "Turn off the power to the fixture. Using a glove to protect your hand from heat, screw the bulb in more tightly to ensure proper contact with the socket."
+      },
+      {
+        "title": "Check and Replace Incompatible Dimmer Switches",
+        "content": "Inspect the wall switch for dimmers designed for incandescent bulbs. If connected to LEDs, replace with a compatible dimmer switch (e.g., Lutron Caseta). Turn off power from the circuit breaker before replacing the switch."
+      },
+      {
+        "title": "Inspect Wiring Behind the Switch",
+        "content": "If flickering persists after tightening bulbs and replacing switches, check for loose or poor wiring behind the switch. If unsure, consult an electrician to avoid electrical hazards."
+      },
+      {
+        "title": "Verify Bulb and Dimmer Compatibility",
+        "content": "Ensure the bulb's wattage and type (e.g., LED) are compatible with the dimmer switch's ratings. Mismatches can cause flickering, buzzing, or other issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Circuit Breaker and Voltage Issues",
+        "type": "Advanced Troubleshooting",
+        "steps": [
+          {
+            "title": "Inspect Circuit Breaker",
+            "content": "If flickering is widespread or occurs with multiple fixtures, check the circuit breaker panel for tripped breakers or loose connections. Reset or tighten as needed."
+          },
+          {
+            "title": "Test Voltage Levels",
+            "content": "Use a multimeter to check voltage levels at the outlet or fixture. Inconsistent voltage (e.g., below 110V or above 125V) may indicate a utility or wiring issue. Contact an electrician if voltage is unstable."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Replace Poor-Quality Bulbs",
+        "type": "Quick Fix",
+        "steps": [
+          {
+            "title": "Swap Out Bulbs",
+            "content": "If flickering persists with a single bulb, replace it with a high-quality LED bulb from a reputable brand. Poor-quality bulbs are more prone to flickering."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T23:29:37.048Z",
+      "updated": "2026-08-07T23:29:37.048Z",
+      "sourceUrl": "https://www.cnet.com/home/kitchen-and-household/seeing-flickering-lights-check-these-common-culprits",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786145379563-44",
+    "title": "Fix Droid X Screen Flickering or Banding Issue",
+    "problemDescription": "A small percentage of Droid X smartphones exhibit vertical banding or flickering on the display, requiring a replacement unit.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "Droid X",
+      "screen flickering",
+      "banding",
+      "display issue",
+      "replacement"
+    ],
+    "steps": [
+      {
+        "title": "Contact Motorola or Verizon Support",
+        "content": "Reach out to Motorola customer support or Verizon Wireless to report the screen issue. Provide your device's IMEI or serial number if requested."
+      },
+      {
+        "title": "Request a Replacement Device",
+        "content": "Explain the flickering or banding display problem. Verizon and Motorola will confirm eligibility and arrange for a replacement phone to be shipped to you."
+      },
+      {
+        "title": "Backup Your Data (Optional)",
+        "content": "If possible, back up your data before sending the device for replacement, as the replacement process may not preserve your data."
+      },
+      {
+        "title": "Ship the Defective Device",
+        "content": "Follow the instructions provided by Motorola or Verizon to return the defective Droid X. They will typically provide a prepaid shipping label."
+      },
+      {
+        "title": "Activate the Replacement Device",
+        "content": "Once you receive the replacement phone, activate it using your existing SIM card and Verizon account."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-07T23:29:39.563Z",
+      "updated": "2026-08-07T23:29:39.563Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/verizon-confirms-droid-x-screen-glitch-and-fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786145383530-889",
+    "title": "Fix Mac OS X 10.3.5 Blank Screen After Wake or Sleep",
+    "problemDescription": "Mac OS X 10.3.5 may display a blank screen after waking from sleep or unplugging external devices, requiring a hard reboot.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "macos",
+      "blank screen",
+      "wake",
+      "sleep",
+      "cache",
+      "preferences"
+    ],
+    "steps": [
+      {
+        "title": "Clear System Extensions Cache",
+        "content": "Open Terminal and run the following commands in order:\n1. `sudo rm -rf /System/Library/Extensions.kextcache`\n2. `sudo rm -rf /System/Library/Extensions.mkext`\n3. `sudo rm -rf /System/Library/com.apple.kernelcaches`\n4. `sudo touch /System/Library/Extensions`\n5. Restart your Mac."
+      },
+      {
+        "title": "Reset LaunchServices Cache",
+        "content": "Delete the following files to reset the LaunchServices database:\n1. `rm ~/Library/Preferences/com.apple.LaunchServices.plist`\n2. `rm ~/Library/Caches/com.apple.LaunchServices.*`\n3. Restart your Mac."
+      },
+      {
+        "title": "Use Sleep/Wake Workaround",
+        "content": "If the screen goes blank after wake:\n1. Press and hold the power button until the shutdown dialog appears (even if invisible).\n2. Press 'S' to put the Mac to sleep.\n3. Wait for the sleep light to pulse, then wake the Mac normally."
+      },
+      {
+        "title": "Log Out and Back In",
+        "content": "Instead of restarting, log out (Shift+Cmd+Q) and log back in to resolve the issue without a full reboot."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Combo Updater",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Reinstall Combo Updater",
+            "content": "Download the Mac OS X 10.3.5 Combo Updater from Apple's website and reinstall it over the existing installation. This may resolve corrupted system files causing the blank screen issue."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Repair Permissions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Repair Disk Permissions",
+            "content": "Open Disk Utility (Applications > Utilities > Disk Utility), select your startup disk, and click 'Repair Disk Permissions'. This can fix permission issues that may cause system instability."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T23:29:43.530Z",
+      "updated": "2026-08-07T23:29:43.530Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/special-report-troubleshooting-mac-os-x-10-3-5",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786145432075-225",
+    "title": "Fix Google Play Errors (491, 495, 919, 921)",
+    "problemDescription": "Google Play Store errors (491, 495, 919, 921) prevent app downloads or updates, often due to account, cache, or storage issues.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "google play",
+      "error 491",
+      "error 495",
+      "error 919",
+      "error 921",
+      "app download",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Clear Google Play Cache and Data",
+        "content": "Go to Settings > Apps > Google Play Store > Storage > Clear Cache and Clear Data."
+      },
+      {
+        "title": "Clear Google Services Framework Cache and Data",
+        "content": "Go to Settings > Apps > Google Services Framework > Storage > Clear Cache and Clear Data."
+      },
+      {
+        "title": "Remove and Re-add Google Account",
+        "content": "Go to Settings > Accounts > Google > Select your account > Remove Account. Restart the device, then re-add the account."
+      },
+      {
+        "title": "Check Device Storage",
+        "content": "Go to Settings > Storage and check available space. Delete unused apps, photos, or videos if storage is low."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset (Last Resort)",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Ensure all important data is backed up to Google Drive or another cloud service."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > System > Reset Options > Erase All Data (Factory Reset). Confirm and wait for the process to complete."
+          },
+          {
+            "title": "Reconfigure Device",
+            "content": "After reset, set up the device and re-add your Google account."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T23:30:32.075Z",
+      "updated": "2026-08-07T23:30:32.075Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/how-to-fix-google-play-errors",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786145435721-409",
+    "title": "Resolve Gmail Account Deactivation for Sensitive Data Leak",
+    "problemDescription": "A bank accidentally sent sensitive customer data to a random Gmail address and requested Google to deactivate the account to prevent data exposure.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "gmail",
+      "data leak",
+      "privacy",
+      "account deactivation",
+      "sensitive information"
+    ],
+    "steps": [
+      {
+        "title": "Contact Google Support for Account Deactivation",
+        "content": "Reach out to Google Support (via their official help center) and provide details of the incident, including the Gmail address involved and proof of ownership of the data (e.g., court order or legal request)."
+      },
+      {
+        "title": "Obtain a Court Order (if required)",
+        "content": "If Google requires legal intervention, file a motion in court to compel Google to deactivate the account and disclose the owner's details."
+      },
+      {
+        "title": "Verify Account Deactivation",
+        "content": "After Google complies, confirm that the Gmail account has been deactivated and no longer has access to the sensitive data."
+      },
+      {
+        "title": "Notify Affected Customers",
+        "content": "Inform all affected customers about the data leak, the steps taken to mitigate it, and any actions they should take (e.g., credit monitoring)."
+      },
+      {
+        "title": "Review and Strengthen Data Handling Policies",
+        "content": "Implement stricter email protocols (e.g., double-check recipient addresses, use encrypted channels) to prevent future incidents."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Direct Legal Request to Google",
+        "type": "Legal Workaround",
+        "steps": [
+          {
+            "title": "Consult Legal Counsel",
+            "content": "Engage a lawyer to draft a formal request to Google demanding account deactivation due to the sensitive data exposure."
+          },
+          {
+            "title": "Submit Request with Evidence",
+            "content": "Provide Google with evidence of the data leak (e.g., email logs, customer complaints) and a deadline for compliance."
+          },
+          {
+            "title": "Follow Up with Google",
+            "content": "Monitor communications from Google and escalate if they fail to act within the given timeframe."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T23:30:35.721Z",
+      "updated": "2026-08-07T23:30:35.721Z",
+      "sourceUrl": "https://www.cnet.com/news/privacy/google-bank-resolve-issue-over-misfired-e-mail",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
