@@ -355575,5 +355575,439 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1786132164428-840",
+    "title": "Fix Zoom Connectivity Issues on MacBook",
+    "problemDescription": "Zoom meetings experience lag, disconnections, or poor video/audio quality due to weak Wi-Fi signal or insufficient internet speed on a MacBook.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "Zoom",
+      "Wi-Fi",
+      "internet speed",
+      "MacBook",
+      "video call"
+    ],
+    "steps": [
+      {
+        "title": "Check Internet Speed",
+        "content": "Use an online speed test tool (e.g., speedtest.net) to verify your download speed. Aim for at least 3 Mbps for stable Zoom calls."
+      },
+      {
+        "title": "Optimize Wi-Fi Signal",
+        "content": "Move your MacBook as close as possible to the Wi-Fi router. Ensure there are no physical obstacles (walls, furniture) blocking the signal."
+      },
+      {
+        "title": "Update Zoom and macOS",
+        "content": "Open the Zoom app and check for updates. Also, update your MacBook to the latest macOS version via System Preferences > Software Update."
+      },
+      {
+        "title": "Close Background Apps",
+        "content": "Quit unnecessary applications running in the background to free up bandwidth and system resources."
+      },
+      {
+        "title": "Restart Router and MacBook",
+        "content": "Power cycle your Wi-Fi router by unplugging it for 30 seconds, then plugging it back in. Restart your MacBook afterward."
+      },
+      {
+        "title": "Switch to Ethernet (If Possible)",
+        "content": "If your MacBook supports Ethernet, connect it directly to the router using a cable for a more stable connection."
+      },
+      {
+        "title": "Adjust Zoom Settings",
+        "content": "In Zoom, go to Settings > Video and disable HD video. Also, turn off background effects if not needed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change Wi-Fi Channel",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Router Settings",
+            "content": "Log in to your router’s admin panel (usually via a web browser using the router’s IP address)."
+          },
+          {
+            "title": "Change Wi-Fi Channel",
+            "content": "Switch to a less congested Wi-Fi channel (e.g., 1, 6, or 11 for 2.4GHz). Save changes and restart the router."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use 5GHz Band",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Router Compatibility",
+            "content": "Ensure your router supports the 5GHz band. Most modern routers do."
+          },
+          {
+            "title": "Connect to 5GHz Network",
+            "content": "On your MacBook, disconnect from the 2.4GHz network and connect to the 5GHz network for faster speeds and less interference."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T19:49:24.428Z",
+      "updated": "2026-08-07T19:49:24.428Z",
+      "sourceUrl": "https://discussions.apple.com/thread/251946321",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786132184997-532",
+    "title": "Fix MacBook Pro Kernel Panics After Sleep",
+    "problemDescription": "A 2015 13\" MacBook Pro experiences kernel panics when waking from sleep, likely caused by faulty software, incompatible hardware, or external devices.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "kernel panic",
+      "sleep",
+      "MacBook Pro",
+      "2015",
+      "wake",
+      "software",
+      "hardware"
+    ],
+    "steps": [
+      {
+        "title": "Boot into Safe Mode and Check for Updates",
+        "content": "Restart your MacBook Pro while holding the Shift key to enter Safe Mode. Once logged in, go to Apple Menu > System Preferences > Software Update and install any available updates."
+      },
+      {
+        "title": "Uninstall Third-Party Software and Plug-ins",
+        "content": "Open Finder, navigate to the Applications folder, and remove any non-Apple software or plug-ins that may be causing conflicts. Check the 'Utilities' folder for any suspicious items."
+      },
+      {
+        "title": "Disconnect All External Devices",
+        "content": "Unplug all USB, Thunderbolt, or other external devices connected to the MacBook Pro. Reboot normally and check if the kernel panic persists."
+      },
+      {
+        "title": "Run Apple Diagnostics",
+        "content": "Shut down your MacBook Pro. Turn it on and immediately hold the D key to start Apple Diagnostics. Follow the on-screen instructions to test hardware components. Note any error codes reported."
+      },
+      {
+        "title": "Reset NVRAM/PRAM",
+        "content": "Shut down your MacBook Pro. Turn it on and immediately hold Command (⌘) + Option + P + R for about 20 seconds. Release the keys and allow your Mac to boot normally."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall macOS",
+        "type": "Advanced Recovery",
+        "steps": [
+          {
+            "title": "Back Up Your Data",
+            "content": "Ensure all important files are backed up using Time Machine or an external drive before proceeding."
+          },
+          {
+            "title": "Reinstall macOS via Recovery Mode",
+            "content": "Restart your MacBook Pro and hold Command (⌘) + R to enter Recovery Mode. Select 'Reinstall macOS' and follow the prompts. This will not erase your personal data but may resolve software-related kernel panics."
+          },
+          {
+            "title": "Verify System Integrity",
+            "content": "After reinstallation, check for updates and monitor the system for kernel panics. If the issue persists, consider hardware diagnostics or contacting Apple Support."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T19:49:44.997Z",
+      "updated": "2026-08-07T19:49:44.997Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/2015-13-macbook-pro-kernel-panics-when-waking-from-sleep.3733540",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786132189572-304",
+    "title": "Upgrade MacBook Pro Mid 2012 to macOS Catalina",
+    "problemDescription": "MacBook Pro Mid 2012 is incompatible with newer macOS versions, causing software compatibility issues. A fresh install of macOS Catalina is recommended for optimal performance.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "macOS",
+      "Catalina",
+      "upgrade",
+      "MacBook Pro",
+      "Mid 2012",
+      "fresh install"
+    ],
+    "steps": [
+      {
+        "title": "Backup Important Files",
+        "content": "Save all important files (documents, pictures, etc.) to an external drive or cloud storage to prevent data loss during the upgrade."
+      },
+      {
+        "title": "Download macOS Catalina",
+        "content": "Download macOS Catalina from the Mac App Store but do not install it immediately. Ensure you have a stable internet connection."
+      },
+      {
+        "title": "Create a Bootable Installer",
+        "content": "Use Disk Maker X to create a bootable USB installer for macOS Catalina. Follow the on-screen instructions to prepare the flash drive."
+      },
+      {
+        "title": "Boot from USB Installer",
+        "content": "Insert the bootable USB installer into your MacBook Pro. Restart the Mac and hold the Option key to access the boot menu. Select the USB drive to boot from."
+      },
+      {
+        "title": "Erase the Disk",
+        "content": "In the macOS installer interface, open Disk Utility. Select your Mac's internal drive and click 'Erase' to format it. Choose 'APFS' or 'Mac OS Extended (Journaled)' as the format."
+      },
+      {
+        "title": "Install macOS Catalina",
+        "content": "Exit Disk Utility and proceed with the macOS Catalina installer. Follow the on-screen instructions to complete the installation. Your Mac will restart during the process."
+      },
+      {
+        "title": "Set Up macOS",
+        "content": "After installation, set up your Mac as new or restore from a Time Machine backup if available. Configure your preferences and update macOS to the latest version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Upgrade via Recovery Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Files",
+            "content": "Ensure all important files are backed up to an external drive or cloud storage."
+          },
+          {
+            "title": "Boot into Recovery Mode",
+            "content": "Restart your Mac and hold Command + R to enter Recovery Mode. Select 'Disk Utility' and erase the internal drive if needed."
+          },
+          {
+            "title": "Reinstall macOS",
+            "content": "From Recovery Mode, select 'Reinstall macOS' and follow the prompts to install the latest compatible version (e.g., Catalina)."
+          },
+          {
+            "title": "Restore Data",
+            "content": "After installation, restore your files from the backup or set up the Mac as new."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T19:49:49.572Z",
+      "updated": "2026-08-07T19:49:49.572Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/mac-os-for-macbook-pro-mid-2012-model.3610238",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786132200207-926",
+    "title": "Fix Audio, Sleep, and Brightness Issues on Windows-Installed MacBook",
+    "problemDescription": "Windows installed on a MacBook as the sole OS causes missing audio drivers, sleep function failure, and inability to adjust screen brightness.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "macbook",
+      "windows",
+      "audio",
+      "sleep",
+      "brightness",
+      "boot camp"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall macOS to Resolve Driver Issues",
+        "content": "Boot from a macOS USB installer by holding the Option key during startup. Select the USB as the boot device, then open Disk Utility in the installer. Format the internal drive as 'Mac OS Journaled', exit Disk Utility, and proceed with a clean macOS installation to restore full hardware functionality."
+      },
+      {
+        "title": "Reinstall Boot Camp Drivers (If Keeping Windows)",
+        "content": "Download the latest Boot Camp Support Software from Apple's support website. Run the installer while booted into Windows to reinstall missing drivers (audio, brightness, sleep). Ensure you select the correct version for your MacBook model."
+      },
+      {
+        "title": "Check Windows Power Settings for Sleep Issues",
+        "content": "Open Control Panel > Power Options. Click 'Choose what the power buttons do' and ensure 'Sleep' is selected under 'When I press the power button'. Also, disable 'Fast Startup' in Power Options > 'Choose what the power buttons do' to prevent shutdown-like sleep behavior."
+      },
+      {
+        "title": "Update Graphics and Chipset Drivers",
+        "content": "Visit the manufacturer's website (Intel/NVIDIA/AMD) to download and install the latest graphics drivers for your MacBook's GPU. Also, update chipset drivers via Device Manager (right-click 'This PC' > Manage > Device Manager > System devices)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Driver Installation from Device Manager",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Missing Drivers",
+            "content": "Open Device Manager (Win + X > Device Manager). Look for devices with yellow exclamation marks (e.g., audio, graphics, network). Note the hardware IDs (right-click device > Properties > Details > Hardware IDs)."
+          },
+          {
+            "title": "Download Drivers Manually",
+            "content": "Search for the hardware IDs on the manufacturer's website (e.g., Realtek for audio, Intel for graphics). Download and install the drivers manually. Reboot after installation."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Third-Party Driver Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Driver Booster or Snappy Driver Installer",
+            "content": "Download and install a reputable third-party driver tool like Driver Booster or Snappy Driver Installer. Run a scan and install all recommended drivers for your MacBook's hardware. Reboot after completion."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T19:50:00.207Z",
+      "updated": "2026-08-07T19:50:00.207Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/windows-installed-on-macbook-as-the-only-os.3162418",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786132286826-452",
+    "title": "Fix MacOS Application Switcher Not Showing Closed Apps",
+    "problemDescription": "The MacOS application switcher (⌘ ⇥) does not redisplay previously closed applications, making it difficult to reopen them quickly.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "MacOS",
+      "application switcher",
+      "⌘ ⇥",
+      "closed apps"
+    ],
+    "steps": [
+      {
+        "title": "Enable 'Recent Applications' in Application Switcher",
+        "content": "Go to **System Settings** > **Desktop & Dock** > **Mission Control**. Under 'Application Switcher', enable the option for 'Show recent applications in Application Switcher'."
+      },
+      {
+        "title": "Reset Application Switcher Settings",
+        "content": "Quit all applications, then open **Terminal** and run: `defaults delete com.apple.dock appswitcher-all-displays` followed by `killall Dock` to reset the switcher settings."
+      },
+      {
+        "title": "Check for macOS Updates",
+        "content": "Go to **System Settings** > **General** > **Software Update** and install any available updates for macOS."
+      },
+      {
+        "title": "Restart Your Mac",
+        "content": "Click the Apple logo in the top-left corner and select **Restart** to refresh system processes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Spotlight for Quick App Reopening",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Spotlight Search",
+            "content": "Press **⌘ + Space** to open Spotlight."
+          },
+          {
+            "title": "Type the App Name",
+            "content": "Start typing the name of the closed application you want to reopen."
+          },
+          {
+            "title": "Select and Open the App",
+            "content": "Use arrow keys to highlight the app and press **Enter** to reopen it."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T19:51:26.826Z",
+      "updated": "2026-08-07T19:51:26.826Z",
+      "sourceUrl": "https://www.reddit.com/r/MacOS/comments/12rw1sn/a_long_list_of_problems_with_macos_and_their",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786132291461-182",
+    "title": "Choose the Right MacBook Model for Your Needs",
+    "problemDescription": "Users are overwhelmed by repetitive MacBook buying questions and need a concise guide to select the best model based on their use case.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "MacBook",
+      "buying guide",
+      "Intel",
+      "M1",
+      "M2",
+      "M3",
+      "performance",
+      "budget"
+    ],
+    "steps": [
+      {
+        "title": "Identify Your Primary Use Case",
+        "content": "Determine if you need the MacBook for basic tasks (web browsing, documents), creative work (photo/video editing), or professional workloads (coding, 3D rendering)."
+      },
+      {
+        "title": "Choose Between Intel or Apple Silicon (M-Series)",
+        "content": "For most users, Apple Silicon (M1/M2/M3) is recommended due to better performance, battery life, and efficiency. Only consider Intel if you need legacy software compatibility."
+      },
+      {
+        "title": "Select the Right Screen Size",
+        "content": "13-inch for portability, 14-inch or 16-inch for more screen real estate and better performance."
+      },
+      {
+        "title": "Decide on Storage Capacity",
+        "content": "Base models start at 256GB. Upgrade to 512GB or 1TB if you store large files (photos, videos, apps)."
+      },
+      {
+        "title": "Compare RAM Options",
+        "content": "8GB is sufficient for basic use. 16GB is ideal for multitasking and creative work. 32GB+ is for professional workloads."
+      },
+      {
+        "title": "Check Port Requirements",
+        "content": "M1/M2 models have limited ports (USB-C only). M3 models may include HDMI and SD card slots. Use adapters if needed."
+      },
+      {
+        "title": "Compare Battery Life",
+        "content": "Apple Silicon MacBooks typically offer 15-20 hours of battery life. Intel models vary but are generally less efficient."
+      },
+      {
+        "title": "Review Budget and Finalize Model",
+        "content": "Compare prices across models and retailers. Prioritize features based on your needs and budget."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Compatibility with Existing Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "List Required Software",
+            "content": "Identify all apps and tools you use regularly."
+          },
+          {
+            "title": "Verify Compatibility",
+            "content": "Check if the software runs natively on Apple Silicon or requires Rosetta 2 (Intel emulation)."
+          },
+          {
+            "title": "Consider Cloud Alternatives",
+            "content": "If critical software isn’t compatible, explore cloud-based alternatives (e.g., Adobe Creative Cloud, Google Workspace)."
+          },
+          {
+            "title": "Use Boot Camp (Intel Only)",
+            "content": "If you must run Windows apps, Intel Macs support Boot Camp. Apple Silicon does not."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T19:51:31.461Z",
+      "updated": "2026-08-07T19:51:31.461Z",
+      "sourceUrl": "https://www.reddit.com/r/macbook/comments/1f2c75o/easy_buying_guide",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
