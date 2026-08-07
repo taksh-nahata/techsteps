@@ -351376,5 +351376,282 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786063093534-259",
+    "title": "Fix Lexmark Printer Error by Updating MarkNet Print Server Firmware",
+    "problemDescription": "Lexmark printers display errors due to outdated firmware on the MarkNet Print Server, causing connectivity or functionality issues.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "Lexmark",
+      "printer",
+      "firmware",
+      "MarkNet Print Server",
+      "error",
+      "update"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Printer",
+        "content": "Power off the Lexmark printer, wait 30 seconds, then power it back on to clear temporary errors."
+      },
+      {
+        "title": "Download the Latest Firmware",
+        "content": "Visit Lexmark's official support website and download the latest firmware for the MarkNet Print Server (version 1.10.191 for Optra Series printers)."
+      },
+      {
+        "title": "Access MarkVision",
+        "content": "Open MarkVision software on your computer. If not installed, download it from Lexmark's support site."
+      },
+      {
+        "title": "Update Firmware via MarkVision",
+        "content": "In MarkVision, select the affected printer, navigate to the firmware update section, and upload the downloaded firmware file. Follow on-screen prompts to complete the update."
+      },
+      {
+        "title": "Verify Update",
+        "content": "After updating, check the printer's status in MarkVision to confirm the firmware version matches the latest revision."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-07T00:38:13.534Z",
+      "updated": "2026-08-07T00:38:13.534Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/lexmark-printer-error-a-solution",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786063107117-226",
+    "title": "Fix Gmail Not Working on iPad",
+    "problemDescription": "Gmail account on iPad fails to refresh or receive new emails, with no apparent cause.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "email",
+      "ipad",
+      "refresh",
+      "network settings"
+    ],
+    "steps": [
+      {
+        "title": "Force Close Gmail App",
+        "content": "Double-click the Home button to open the app switcher. Swipe left or right to locate the Gmail app, then swipe it up to close it completely."
+      },
+      {
+        "title": "Restart the iPad",
+        "content": "Press and hold the Power button until the 'Slide to power off' slider appears. Slide it to turn off the iPad, wait 10 seconds, then press the Power button again to restart it."
+      },
+      {
+        "title": "Re-add Gmail Account",
+        "content": "Go to Settings > Mail, Contacts, Calendars > Gmail account > Delete Account. Restart the iPad, then go back to Settings > Mail, Contacts, Calendars > Add Account and re-enter your Gmail credentials."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Navigate to Settings > General > Reset > Reset Network Settings. Confirm the reset. Note: This will erase saved Wi-Fi passwords and VPN settings. Reconnect to your network afterward."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Gmail App as Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Gmail App",
+            "content": "Install the official Gmail app from the App Store if not already installed."
+          },
+          {
+            "title": "Use Gmail App Instead",
+            "content": "Open the Gmail app to access emails as an alternative to the built-in Mail app."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for iOS Updates",
+        "type": "Preventive Measure",
+        "steps": [
+          {
+            "title": "Update iPad Software",
+            "content": "Go to Settings > General > Software Update to check for and install any available iOS updates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T00:38:27.117Z",
+      "updated": "2026-08-07T00:38:27.117Z",
+      "sourceUrl": "https://discussions.apple.com/thread/5963983",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786063114518-294",
+    "title": "Fix Gmail Login Issue on New iPhone",
+    "problemDescription": "Unable to sign into Gmail on a new iPhone, with authentication prompts not appearing or failing.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "login",
+      "authentication",
+      "iphone",
+      "app reinstall"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall the Gmail App",
+        "content": "Delete the Gmail app from your iPhone's home screen by long-pressing the app icon and selecting 'Remove App' > 'Delete App'. Then, reinstall it from the App Store."
+      },
+      {
+        "title": "Update Google Chrome",
+        "content": "Open the App Store, go to your profile, and update Google Chrome if an update is available."
+      },
+      {
+        "title": "Sign in to Gmail",
+        "content": "Open the newly installed Gmail app and attempt to sign in with your credentials."
+      },
+      {
+        "title": "Approve Authentication Prompt",
+        "content": "Check another device (e.g., PC, iPad) where you are already signed into Gmail. Approve the authentication prompt by selecting 'Yes, it was me'."
+      },
+      {
+        "title": "Verify Access",
+        "content": "Return to your new iPhone and confirm that Gmail is now accessible."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-07T00:38:34.518Z",
+      "updated": "2026-08-07T00:38:34.518Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255403865",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786063154331-2",
+    "title": "Fix Google Pixel 6 Display Noise and Connection Issues",
+    "problemDescription": "Google Pixel 6 screen displays noise or faults out intermittently, especially when the phone is open. The issue may stem from a faulty display connection or dirty/damaged display cables.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel 6",
+      "display noise",
+      "faulty screen",
+      "connection issue",
+      "display cable",
+      "clean cable"
+    ],
+    "steps": [
+      {
+        "title": "Power Off and Remove Battery",
+        "content": "Turn off the Google Pixel 6 completely and remove the battery if possible to prevent short circuits during cleaning or repair."
+      },
+      {
+        "title": "Inspect and Reconnect Display Cable",
+        "content": "Open the phone and locate the display cable. Gently disconnect and reconnect the cable to ensure a secure connection. Check for any visible damage or debris."
+      },
+      {
+        "title": "Clean the Display Cable",
+        "content": "Use a pre-moistened alcohol-based lens wipe to gently clean the display cable connectors. Remove any skin oil or dirt that may be causing poor contact. Allow the cable to dry completely before reassembling."
+      },
+      {
+        "title": "Reattach the Original Display",
+        "content": "If the issue persists, reattach the original display (if available) to rule out a faulty replacement display. Ensure the display is properly seated and secured."
+      },
+      {
+        "title": "Test the Display",
+        "content": "Power on the phone and test the display. If the noise or faults persist, the display itself may be defective and require replacement."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Replace the Display",
+        "type": "Permanent Fix",
+        "steps": [
+          {
+            "title": "Purchase a Compatible Replacement Display",
+            "content": "Order a high-quality replacement display for the Google Pixel 6 from a trusted supplier. Ensure it is compatible with your device model."
+          },
+          {
+            "title": "Follow a Detailed Repair Guide",
+            "content": "Use a step-by-step repair guide or video tutorial specific to the Google Pixel 6 to safely replace the display. Tools such as a heat gun, plastic pry tools, and a screwdriver set may be required."
+          },
+          {
+            "title": "Reassemble and Test",
+            "content": "After replacing the display, reassemble the phone and power it on. Test the display thoroughly to ensure the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T00:39:14.331Z",
+      "updated": "2026-08-07T00:39:14.331Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/attempting-to-repair-a-google-pixel-6-screen-works-but-turns-to-noise-sometimes-and-faults-out.3889758",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786063169567-137",
+    "title": "Fix Android Ghost Touch Issues",
+    "problemDescription": "Android device exhibits unintended screen touches (ghost touches), causing erratic behavior or incorrect inputs.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "ghost touch",
+      "screen issues",
+      "touchscreen"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Android Device",
+        "content": "Press and hold the power button, then select 'Restart' or 'Reboot'. Wait for the device to fully restart and check if the ghost touch issue persists."
+      },
+      {
+        "title": "Remove Screen Protector or Case",
+        "content": "Remove any screen protector, tempered glass, or phone case that may be interfering with the touch sensitivity. Clean the screen with a microfiber cloth and test the device."
+      },
+      {
+        "title": "Update Your Android OS",
+        "content": "Open Settings > Software update > Download and install. Wait for the device to check for and install any available updates. Restart the device after updating."
+      },
+      {
+        "title": "Factory Reset Your Android Device",
+        "content": "Back up your data first. Then go to Settings > General management > Reset > Factory data reset. Follow the on-screen prompts to reset the device. Restore your data after the reset."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Contact Manufacturer Support",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check Warranty Status",
+            "content": "Visit your manufacturer's official website or contact their customer support to verify if your device is still under warranty."
+          },
+          {
+            "title": "Request Repair or Replacement",
+            "content": "If under warranty, follow the manufacturer's instructions to send the device for repair or replacement. Ensure all personal data is backed up before sending."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T00:39:29.567Z",
+      "updated": "2026-08-07T00:39:29.567Z",
+      "sourceUrl": "https://www.makeuseof.com/how-to-fix-ghost-touch-problem-android",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
