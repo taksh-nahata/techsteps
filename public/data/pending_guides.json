@@ -356009,5 +356009,336 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1786134855474-536",
+    "title": "Fix MacOS High Sierra Printer Queue Stuck on 'Looking for Printer'",
+    "problemDescription": "Printer jobs in MacOS High Sierra queue get stuck with 'Looking for Printer' message, failing to print despite reboots of printer, router, or Mac.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "queue",
+      "macos",
+      "high sierra",
+      "bonjour",
+      "ip-based printing"
+    ],
+    "steps": [
+      {
+        "title": "Reset the Printing System",
+        "content": "Go to System Preferences > Printers & Scanners. Right-click (or Ctrl+click) in the printer list and select 'Reset printing system...'. Confirm the reset. This clears all printer configurations and queues."
+      },
+      {
+        "title": "Reinstall Printers via IP Address",
+        "content": "Open System Preferences > Printers & Scanners. Click the '+' button to add a printer. Select the 'IP' tab. Enter the printer's IP address (found on the printer's status page or network settings). Choose the appropriate driver and add the printer. Avoid Bonjour or AirPrint options."
+      },
+      {
+        "title": "Verify Printer Connectivity",
+        "content": "Open Terminal and ping the printer's IP address: `ping <printer-ip-address>`. If the printer responds, proceed. If not, check network connectivity or restart the printer."
+      },
+      {
+        "title": "Set Printer Queue to Use IP Address",
+        "content": "After adding the printer via IP, ensure the queue is using the IP address instead of Bonjour. Right-click the printer in the queue, select 'Use Printer Offline' (if enabled), then disable it. Restart the printer and Mac."
+      },
+      {
+        "title": "Clear Printer Queue and Restart",
+        "content": "Open the printer queue, select all jobs, and delete them. Restart the Mac to ensure a clean state. Test printing a small document."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use CUPS Web Interface to Reset Printer",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Open CUPS Web Interface",
+            "content": "Open Safari or another browser and go to `http://localhost:631/printers`. This opens the CUPS (Common Unix Printing System) web interface."
+          },
+          {
+            "title": "Stop and Restart the Printer",
+            "content": "Find the printer in the list, click on it, and select 'Stop Printer' to pause it. Wait a few seconds, then click 'Start Printer' to resume. This can sometimes reset the connection."
+          },
+          {
+            "title": "Delete and Re-add Printer via CUPS",
+            "content": "In the CUPS interface, delete the printer by selecting it and clicking 'Delete Printer'. Then, re-add it using the 'Add Printer' button and follow the prompts to configure it via IP address."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update Printer Firmware and Drivers",
+        "type": "Preventive",
+        "steps": [
+          {
+            "title": "Check for Printer Firmware Updates",
+            "content": "Visit the printer manufacturer's website (e.g., Epson, HP) and download the latest firmware for your printer model. Follow the manufacturer's instructions to update the firmware."
+          },
+          {
+            "title": "Update Printer Drivers",
+            "content": "Go to the manufacturer's website and download the latest printer drivers for MacOS High Sierra. Install the drivers and restart the Mac."
+          },
+          {
+            "title": "Reconfigure Printer Queue",
+            "content": "After updating, reset the printing system (Step 1) and reinstall the printer using the updated drivers and IP address."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T20:34:15.474Z",
+      "updated": "2026-08-07T20:34:15.474Z",
+      "sourceUrl": "https://discussions.apple.com/thread/8381045",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786134860239-331",
+    "title": "Fix Paused or Stalled Printers on macOS",
+    "problemDescription": "Printers connected to macOS get paused or stuck in the print queue, preventing jobs from completing.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "printer",
+      "paused",
+      "print queue",
+      "macOS",
+      "CUPS",
+      "AirPrint"
+    ],
+    "steps": [
+      {
+        "title": "Enable CUPS Web Interface",
+        "content": "Open Terminal.app and run the command: `cupsctl WebInterface=yes`. This enables the CUPS web management interface for further troubleshooting."
+      },
+      {
+        "title": "Access CUPS Admin Panel",
+        "content": "Open a web browser and navigate to `http://localhost:631`. Click on 'Administration' > 'Jobs' to view and manage print jobs."
+      },
+      {
+        "title": "Clear Stalled Print Jobs",
+        "content": "In the CUPS admin panel, locate any paused, stalled, or stuck print jobs. Select them and click 'Cancel Job' to clear the queue."
+      },
+      {
+        "title": "Restart Printer and macOS",
+        "content": "Power cycle the printer (unplug for 30 seconds) and restart your Mac to reset the printing system."
+      },
+      {
+        "title": "Check for Third-Party Interference",
+        "content": "Boot into Safe Mode (hold Shift during startup) to disable third-party software. Test printing to see if the issue persists."
+      },
+      {
+        "title": "Verify Printer Connection",
+        "content": "Ensure the printer is properly connected (USB or AirPrint). If using Wi-Fi, try a direct cable connection to rule out wireless issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Printing System via Terminal",
+        "type": "Terminal Command",
+        "steps": [
+          {
+            "title": "Open Terminal",
+            "content": "Launch Terminal.app from Applications > Utilities."
+          },
+          {
+            "title": "Reset Printing System",
+            "content": "Run the command: `sudo launchctl stop org.cups.cupsd` followed by `sudo launchctl start org.cups.cupsd`. This restarts the CUPS service."
+          },
+          {
+            "title": "Re-add Printers",
+            "content": "Go to System Preferences > Printers & Scanners, remove all printers, and re-add them."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall Printer Drivers",
+        "type": "Driver Reinstallation",
+        "steps": [
+          {
+            "title": "Remove Current Drivers",
+            "content": "In Terminal, run: `sudo rm -rf /Library/Printers/` to delete printer drivers."
+          },
+          {
+            "title": "Download Latest Drivers",
+            "content": "Visit the printer manufacturer's website to download and install the latest drivers for your model."
+          },
+          {
+            "title": "Reconfigure Printer",
+            "content": "Add the printer again via System Preferences > Printers & Scanners."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T20:34:20.239Z",
+      "updated": "2026-08-07T20:34:20.239Z",
+      "sourceUrl": "https://discussions.apple.com/thread/253887941",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786134871642-498",
+    "title": "Fix Brother Printer Offline Issue on macOS",
+    "problemDescription": "Brother printer frequently shows as offline on macOS (Ventura/MacBook Pro) despite working network connectivity.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Brother printer",
+      "offline",
+      "macOS",
+      "Ventura",
+      "AirPrint",
+      "IP address"
+    ],
+    "steps": [
+      {
+        "title": "Add Printer Using IP Address",
+        "content": "Go to System Settings > Printers & Scanners. Click the '+' button to add a new printer. Select the 'IP' tab (globe icon). Enter the printer's IP address in the 'Address' field. Ensure 'Protocol' is set to 'AirPrint'. Name the printer (e.g., 'Brother_IP_Printer') and add it."
+      },
+      {
+        "title": "Set New Printer as Default",
+        "content": "In Printers & Scanners settings, right-click the newly added printer and select 'Set as Default Printer'. This ensures macOS uses the IP-based connection instead of the problematic default printer."
+      },
+      {
+        "title": "Remove Old Offline Printer",
+        "content": "Select the original Brother printer (marked offline) and click the '-' button to remove it. This prevents confusion between the two printers."
+      },
+      {
+        "title": "Verify Printer Connection",
+        "content": "Print a test page to confirm the printer is online and functional. If successful, the issue is resolved."
+      },
+      {
+        "title": "Install Brother iPrint&Scan (Optional)",
+        "content": "Download and install the 'Brother iPrint&Scan' app from the Mac App Store for additional printer management features."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Printer Spooler",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Stop Print Spooler",
+            "content": "Open Terminal and run: `sudo launchctl stop com.apple.printing.PrinterProxy`."
+          },
+          {
+            "title": "Clear Printer Queue",
+            "content": "Run: `sudo rm -rf /var/spool/cups/*`."
+          },
+          {
+            "title": "Restart Printer Spooler",
+            "content": "Run: `sudo launchctl start com.apple.printing.PrinterProxy`."
+          },
+          {
+            "title": "Re-add Printer",
+            "content": "Follow the steps in the main solution to re-add the printer using its IP address."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update Printer Firmware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Firmware",
+            "content": "Visit Brother's official support website, enter your printer model, and download the latest firmware."
+          },
+          {
+            "title": "Install Firmware",
+            "content": "Follow Brother's instructions to install the firmware update via USB or network."
+          },
+          {
+            "title": "Reconfigure Printer",
+            "content": "After updating, reconfigure the printer in macOS using the IP address method."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T20:34:31.642Z",
+      "updated": "2026-08-07T20:34:31.642Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254927888",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786134931593-966",
+    "title": "Fix iPhone Volume Keeps Going Down By Itself",
+    "problemDescription": "The iPhone's volume decreases automatically due to features like Attention Aware, Reduce Loud Sounds, or accidental button presses.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "volume",
+      "automatic",
+      "iPhone",
+      "settings",
+      "headphone safety"
+    ],
+    "steps": [
+      {
+        "title": "Disable 'Change with Buttons'",
+        "content": "Go to Settings > Sounds & Haptics > Headphone Safety and toggle off 'Change with Buttons'. This prevents volume buttons from affecting ringtones and alerts."
+      },
+      {
+        "title": "Turn Off 'Reduce Loud Sounds'",
+        "content": "Navigate to Settings > Sounds & Haptics > Headphone Safety and disable 'Reduce Loud Sounds'. This feature lowers volume automatically to protect hearing."
+      },
+      {
+        "title": "Disable Attention Aware Features",
+        "content": "Go to Settings > Accessibility > Audio/Visual and turn off 'Attention Aware Features'. This prevents volume adjustments based on your attention."
+      },
+      {
+        "title": "Turn Off Focus Modes",
+        "content": "Go to Settings > Focus, select each mode (e.g., Do Not Disturb, Sleep), and disable 'Smart Activation'. This prevents automatic activation of Focus modes that may adjust volume."
+      },
+      {
+        "title": "Restart Your iPhone",
+        "content": "Press and hold the Side button and either Volume button, then drag the power off slider. Wait 30 seconds, then press the Side button to turn it back on."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Bluetooth and Reset Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Bluetooth",
+            "content": "Go to Settings > Bluetooth and turn it off. Bluetooth devices may interfere with volume controls."
+          },
+          {
+            "title": "Reset All Settings",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset All Settings. This resets all settings without deleting data."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update iOS and Check for Hardware Issues",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Update iOS",
+            "content": "Go to Settings > General > Software Update and install any available updates. Software bugs may cause volume issues."
+          },
+          {
+            "title": "Check for Hardware Issues",
+            "content": "Inspect the volume buttons for debris or damage. If the issue persists, contact Apple Support or visit an Apple Store."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T20:35:31.593Z",
+      "updated": "2026-08-07T20:35:31.593Z",
+      "sourceUrl": "https://www.howtogeek.com/fix-iphone-volume-keeps-going-down",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
