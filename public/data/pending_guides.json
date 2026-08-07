@@ -353385,5 +353385,135 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1786102879086-616",
+    "title": "Add Windows 11 to GRUB Menu in Dual Boot",
+    "problemDescription": "Windows 11 is not appearing in the GRUB boot menu after dual-boot installation with Ubuntu, causing direct boot into Windows without GRUB selection.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "grub",
+      "dual-boot",
+      "windows-11",
+      "os-prober"
+    ],
+    "steps": [
+      {
+        "title": "Enable os-prober in GRUB configuration",
+        "content": "Open the GRUB configuration file with: `sudo nano /etc/default/grub`. Find the line `GRUB_DISABLE_OS_PROBER` and change it to `GRUB_DISABLE_OS_PROBER=false` to enable scanning for other operating systems. Save the file (Ctrl+O, Enter, Ctrl+X)."
+      },
+      {
+        "title": "Update GRUB to detect Windows 11",
+        "content": "Run the following command to update GRUB and regenerate the boot menu: `sudo update-grub`. This will scan all partitions and add Windows 11 to the GRUB menu if detected."
+      },
+      {
+        "title": "Verify Windows 11 appears in GRUB",
+        "content": "Reboot your system: `sudo reboot`. Check if the GRUB menu now displays Windows 11 as an option."
+      },
+      {
+        "title": "If Windows 11 still does not appear",
+        "content": "Manually add Windows 11 to the GRUB menu by editing the custom configuration file: `sudo nano /etc/grub.d/40_custom`. Add the following entry (adjust paths if necessary):\n\n```\nmenuentry 'Windows 11' {\n    insmod ntfs\n    set root='(hdX,Y)'\n    if [ x$feature_platform_search_hint = xy ]; then\n      search --no-floppy --fs-uuid --set=root --hint-bios=hdX,Y --hint-efi=hdX,Y --hint-baremetal=ahciX,Y  ZZZZ-ZZZZ\n    else\n      search --no-floppy --fs-uuid --set=root ZZZZ-ZZZZ\n    fi\n    chainloader (${root})/EFI/Microsoft/Boot/bootmgfw.efi\n}\n```\nReplace `hdX,Y` with your Windows partition (e.g., `hd0,1`) and `ZZZZ-ZZZZ` with the actual UUID of your EFI partition (find with `sudo blkid`). Save the file and run `sudo update-grub` again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reorder Boot Priority in BIOS/UEFI",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access BIOS/UEFI settings",
+            "content": "Restart your computer and enter the BIOS/UEFI setup (usually by pressing F2, F12, DEL, or ESC during boot)."
+          },
+          {
+            "title": "Change boot order",
+            "content": "Locate the boot order settings and move the Ubuntu/GRUB entry to the top of the list. Save changes and exit."
+          },
+          {
+            "title": "Verify GRUB menu appears",
+            "content": "Reboot your system. The GRUB menu should now appear, allowing you to select Windows 11."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Fast Startup in Windows 11",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Power Options in Windows",
+            "content": "Boot into Windows 11, press `Win + R`, type `powercfg.cpl`, and press Enter."
+          },
+          {
+            "title": "Disable Fast Startup",
+            "content": "Click on 'Choose what the power buttons do' > 'Change settings that are currently unavailable'. Uncheck 'Turn on fast startup (recommended)' and save changes."
+          },
+          {
+            "title": "Reboot and check GRUB",
+            "content": "Restart your computer and verify if the GRUB menu now includes Windows 11."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T11:41:19.086Z",
+      "updated": "2026-08-07T11:41:19.086Z",
+      "sourceUrl": "https://askubuntu.com/questions/1425637/how-can-i-add-windows-11-to-grub-menu",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786102915510-18",
+    "title": "Fix Google Pixel 4 Display Stuck at 60Hz",
+    "problemDescription": "Google Pixel 4 screen may be stuck at 60Hz refresh rate, causing laggy performance and reduced smoothness despite 90Hz hardware support.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "pixel 4",
+      "display",
+      "90hz",
+      "refresh rate",
+      "smooth display",
+      "developer options"
+    ],
+    "steps": [
+      {
+        "title": "Enable Developer Options",
+        "content": "Go to Settings > About Phone and tap the Build Number seven times consecutively to unlock Developer Options."
+      },
+      {
+        "title": "Access Smooth Display Setting",
+        "content": "Navigate back to Settings > System > Developer Options and locate the 'Smooth Display' option."
+      },
+      {
+        "title": "Enable 90Hz Refresh Rate",
+        "content": "Toggle 'Smooth Display' ON to force the display to operate at 90Hz permanently. Note that this may significantly reduce battery life."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Wait for Official Software Update",
+        "type": "Official Solution",
+        "steps": [
+          {
+            "title": "Check for Updates",
+            "content": "Go to Settings > System > Advanced > System Update and check for any available software patches that may resolve the refresh rate issue."
+          },
+          {
+            "title": "Wait for Fix",
+            "content": "If no update is available, wait for Google to release a future patch that addresses the display refresh rate problem."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T11:41:55.511Z",
+      "updated": "2026-08-07T11:41:55.511Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/google-pixel-4-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
