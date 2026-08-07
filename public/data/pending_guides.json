@@ -352119,5 +352119,286 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786086358223-209",
+    "title": "Fix Siri Not Understanding Commands Immediately",
+    "problemDescription": "Siri responds with 'I don't understand what you said' almost instantly after activation, and the iPhone overheats unexpectedly.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "Siri",
+      "voice recognition",
+      "overheating",
+      "iOS"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your iPhone",
+        "content": "Press and hold the Side button and either Volume button until the power off slider appears. Drag the slider to turn off your device, wait 30 seconds, then press and hold the Side button again to restart."
+      },
+      {
+        "title": "Check Microphone Permissions",
+        "content": "Go to Settings > Siri & Search > Siri & Dictation. Ensure 'Listen for Hey Siri' and 'Press Side Button for Siri' are enabled. Also, check Settings > Privacy > Microphone and ensure Siri is allowed."
+      },
+      {
+        "title": "Update iOS and Siri",
+        "content": "Go to Settings > General > Software Update to check for and install any available updates. Also, ensure Siri is updated via the App Store if applicable."
+      },
+      {
+        "title": "Reset Siri Settings",
+        "content": "Go to Settings > Siri & Search > Siri & Dictation > Siri Voice. Tap Reset Siri Voice to reset voice recognition settings."
+      },
+      {
+        "title": "Check for Background App Issues",
+        "content": "Close all background apps by swiping up from the bottom of the screen and pausing in the middle, then swipe up on each app preview to close them. This can reduce overheating and improve Siri performance."
+      },
+      {
+        "title": "Disable Background App Refresh",
+        "content": "Go to Settings > General > Background App Refresh and disable it for all apps or selectively for apps that may be causing overheating."
+      },
+      {
+        "title": "Check for Hardware Issues",
+        "content": "If the problem persists, contact Apple Support or visit an Apple Store to check for hardware issues, such as a faulty microphone or overheating components."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset All Settings",
+        "type": "Advanced Reset",
+        "steps": [
+          {
+            "title": "Backup Your iPhone",
+            "content": "Ensure your data is backed up via iCloud or a computer before proceeding."
+          },
+          {
+            "title": "Reset All Settings",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset All Settings. This will not delete your data but will reset all settings to default."
+          },
+          {
+            "title": "Reconfigure Siri",
+            "content": "After the reset, reconfigure Siri by going to Settings > Siri & Search and enabling the required options."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T07:05:58.223Z",
+      "updated": "2026-08-07T07:05:58.223Z",
+      "sourceUrl": "https://www.quora.com/Siri-immediately-says-it-does-not-understand-what-I-said-like-0-2-seconds-after-I-activate-it-is-my-iPhone-faulty-Also-one-day-it-got-super-hot",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786086361819-104",
+    "title": "Stop Siri from Activating Unintentionally on iPhone",
+    "problemDescription": "Siri activates on an iPhone without user intent, such as accidental voice triggers or background noise.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "Siri",
+      "activation",
+      "voice control",
+      "iPhone",
+      "accidental"
+    ],
+    "steps": [
+      {
+        "title": "Disable 'Hey Siri'",
+        "content": "Go to **Settings** > **Siri & Search** > Toggle off **Listen for 'Hey Siri'**."
+      },
+      {
+        "title": "Turn Off Siri on Lock Screen",
+        "content": "In **Settings** > **Siri & Search**, disable **Allow Siri When Locked**."
+      },
+      {
+        "title": "Adjust Siri's Voice Recognition Sensitivity",
+        "content": "Go to **Settings** > **Accessibility** > **Siri** > Toggle off **Siri Announcements** or adjust **Voice Control** settings."
+      },
+      {
+        "title": "Check for Background Noise",
+        "content": "Move to a quieter environment or cover the microphone area if background noise triggers Siri."
+      },
+      {
+        "title": "Reset Siri Settings",
+        "content": "Go to **Settings** > **Siri & Search** > **Reset Siri Settings** (Note: This resets all Siri-related settings)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Siri Completely",
+        "type": "Permanent Solution",
+        "steps": [
+          {
+            "title": "Turn Off Siri Entirely",
+            "content": "Go to **Settings** > **Siri & Search** > Toggle off **Siri & Dictation** (disables Siri completely)."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Headphones to Prevent Accidental Activation",
+        "type": "Workaround",
+        "steps": [
+          {
+            "title": "Use Wired or Bluetooth Headphones",
+            "content": "Plug in headphones to ensure Siri only activates when using the headset microphone."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T07:06:01.819Z",
+      "updated": "2026-08-07T07:06:01.819Z",
+      "sourceUrl": "https://www.quora.com/Why-does-Siri-keep-coming-on-my-iPhone-even-when-I-don-t-ask-her-a-question",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786086386937-164",
+    "title": "Fix Dead or Stuck Pixels on a Laptop Screen",
+    "problemDescription": "A laptop screen displays dead or stuck pixels that do not change color, affecting display quality. Screen replacement is often suggested, but software-based fixes may resolve the issue.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "laptop",
+      "display",
+      "dead pixel",
+      "stuck pixel",
+      "lenovo"
+    ],
+    "steps": [
+      {
+        "title": "Identify the Problematic Pixel",
+        "content": "Use a solid color background (e.g., black, white, or red) to locate the dead or stuck pixel. Dead pixels appear as black spots, while stuck pixels remain a single color (e.g., red, green, or blue)."
+      },
+      {
+        "title": "Use a Pixel-Fixing Tool",
+        "content": "Download and run a pixel-fixing tool like JScreenFix (https://www.jscreenfix.com/) or UDPixel. These tools rapidly flash colors to attempt to unstick the pixel. Run the tool for 10-30 minutes."
+      },
+      {
+        "title": "Apply Gentle Pressure (If Software Fails)",
+        "content": "Turn off the laptop and use a soft, lint-free cloth wrapped around a blunt tool (e.g., a pencil eraser). Gently press and rub the affected area for 10-15 seconds. Turn the laptop back on and check if the pixel is fixed."
+      },
+      {
+        "title": "Check for Warranty Coverage",
+        "content": "If the laptop is under warranty, contact the manufacturer (e.g., Lenovo) to inquire about warranty-covered screen replacement. Provide proof of purchase if required."
+      },
+      {
+        "title": "Replace the Screen (Last Resort)",
+        "content": "If software fixes and pressure methods fail, consider replacing the screen. Purchase a compatible replacement panel and follow a disassembly guide (e.g., from iFixit) or seek professional repair."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Pixel Massage",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off the Laptop",
+            "content": "Power down the laptop completely to avoid accidental damage."
+          },
+          {
+            "title": "Use a Damp Cloth",
+            "content": "Lightly dampen a microfiber cloth with distilled water or isopropyl alcohol (70% or higher). Wring out excess liquid to avoid moisture damage."
+          },
+          {
+            "title": "Gently Rub the Pixel",
+            "content": "Place the cloth over the stuck pixel and gently rub in a circular motion for 10-20 seconds. Avoid excessive pressure to prevent screen damage."
+          },
+          {
+            "title": "Test the Display",
+            "content": "Turn the laptop back on and check if the pixel issue is resolved. Repeat if necessary."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T07:06:26.937Z",
+      "updated": "2026-08-07T07:06:26.937Z",
+      "sourceUrl": "https://superuser.com/questions/1280361/is-screen-replacement-the-only-solution",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786086391936-950",
+    "title": "Disable Sub-Pixel Anti-Aliasing in Chrome's PDF Viewer on Linux",
+    "problemDescription": "Google Chrome's PDF viewer applies sub-pixel anti-aliasing, causing distracting color fringing in fonts. Users want to disable this for clearer rendering.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "chrome",
+      "pdf",
+      "sub-pixel",
+      "anti-aliasing",
+      "fonts",
+      "linux",
+      "freetype"
+    ],
+    "steps": [
+      {
+        "title": "Install freetype-freeworld package",
+        "content": "Open a terminal and run: `sudo dnf install freetype-freeworld` (for Fedora/RHEL-based systems) or `sudo apt install freetype2-dbg` (for Debian/Ubuntu-based systems). This replaces the default freetype library with a version that disables sub-pixel rendering."
+      },
+      {
+        "title": "Restart Chrome",
+        "content": "Close all Chrome windows and reopen Chrome. The PDF viewer should now render fonts without sub-pixel anti-aliasing."
+      },
+      {
+        "title": "Verify the change",
+        "content": "Open a PDF in Chrome and check if the font rendering appears cleaner without color fringing."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Apply a CSS Userstyle to Force Grayscale",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a userstyle manager extension",
+            "content": "Install an extension like 'Stylus' or 'User CSS' from the Chrome Web Store to manage custom CSS."
+          },
+          {
+            "title": "Add the grayscale CSS rule",
+            "content": "Create a new userstyle with the following CSS rule: `embed { filter: saturate(0); }`. This converts the PDF to grayscale, effectively disabling sub-pixel anti-aliasing."
+          },
+          {
+            "title": "Apply and test",
+            "content": "Save the userstyle and reload any open PDFs in Chrome. The text should now appear in grayscale without color fringing."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Adjust Font Rendering via System Settings",
+        "type": "Advanced System Tweak",
+        "steps": [
+          {
+            "title": "Edit font configuration files",
+            "content": "Open `~/.fonts.conf` (create if it doesn't exist) and add the following to disable sub-pixel rendering:\n```\n<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"urn:fontconfig:fonts.dtd\">\n<fontconfig>\n  <match target=\"font\">\n    <edit name=\"rgba\" mode=\"assign\"><const>none</const></edit>\n  </match>\n</fontconfig>\n```"
+          },
+          {
+            "title": "Update font cache",
+            "content": "Run `fc-cache -fv` in the terminal to update the font cache."
+          },
+          {
+            "title": "Restart Chrome and verify",
+            "content": "Close and reopen Chrome, then check a PDF to see if the rendering has improved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T07:06:31.936Z",
+      "updated": "2026-08-07T07:06:31.936Z",
+      "sourceUrl": "https://superuser.com/questions/930036/how-can-i-disable-google-chromes-terrible-sub-pixel-anti-aliasing-in-pdfs",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
