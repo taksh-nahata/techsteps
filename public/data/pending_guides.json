@@ -352786,5 +352786,465 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786096556279-143",
+    "title": "Fix 'sudo: unable to resolve host (none)' Error in Linux",
+    "problemDescription": "The system displays an error 'sudo: unable to resolve host (none)' when running sudo commands, though the commands may still execute after password entry.",
+    "category": "linux",
+    "difficulty": "Easy",
+    "keywords": [
+      "sudo",
+      "resolve host",
+      "hostname",
+      "/etc/hosts",
+      "network-manager"
+    ],
+    "steps": [
+      {
+        "title": "Edit /etc/hosts to resolve hostname",
+        "content": "Open a terminal and run: `sudo nano /etc/hosts`. Add a line with your hostname (e.g., `127.0.1.1 my-machine`) matching the output of `hostname`. Save (Ctrl+O) and exit (Ctrl+X)."
+      },
+      {
+        "title": "Verify hostname configuration",
+        "content": "Run `sudo hostname` to check the current hostname. If incorrect, set it temporarily with `sudo hostname my-machine` (replace 'my-machine' with your desired hostname)."
+      },
+      {
+        "title": "Restart network-manager (if network-related)",
+        "content": "If the issue persists, restart the network manager: `sudo systemctl restart NetworkManager` or `sudo /etc/init.d/network-manager restart`."
+      },
+      {
+        "title": "Reboot the system",
+        "content": "Reboot to ensure hostname changes persist: `sudo reboot`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Recovery Console",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Boot into recovery mode",
+            "content": "Restart your system and hold Shift (for GRUB) to enter recovery mode. Select 'root' or 'Drop to root shell prompt'."
+          },
+          {
+            "title": "Edit /etc/hosts",
+            "content": "Run `nano /etc/hosts` and add the correct hostname entry (e.g., `127.0.1.1 my-machine`). Save and exit."
+          },
+          {
+            "title": "Set hostname",
+            "content": "Run `hostname my-machine` to set the hostname temporarily."
+          },
+          {
+            "title": "Reboot",
+            "content": "Type `reboot` to exit recovery mode and restart normally."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T09:55:56.279Z",
+      "updated": "2026-08-07T09:55:56.279Z",
+      "sourceUrl": "https://askubuntu.com/questions/59458/error-message-sudo-unable-to-resolve-host-none",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786096563615-965",
+    "title": "Fix nmcli Wi-Fi Network Not Found Issue",
+    "problemDescription": "nmcli fails to find a Wi-Fi network when attempting to connect directly, even though the network is visible during scans.",
+    "category": "wifi",
+    "difficulty": "Medium",
+    "keywords": [
+      "nmcli",
+      "wifi",
+      "network not found",
+      "NetworkManager",
+      "scan-rand-mac-address"
+    ],
+    "steps": [
+      {
+        "title": "Disable MAC Address Randomization for Wi-Fi",
+        "content": "Open the NetworkManager configuration file in a text editor with sudo privileges: `sudo nano /etc/NetworkManager/NetworkManager.conf`"
+      },
+      {
+        "title": "Add MAC Randomization Setting",
+        "content": "Add the following lines under the `[device]` section:\n```\n[device]\nwifi.scan-rand-mac-address=no\n```"
+      },
+      {
+        "title": "Save and Restart NetworkManager",
+        "content": "Save the file (Ctrl+O, then Ctrl+X in nano), then restart NetworkManager to apply changes:\n`sudo systemctl restart NetworkManager`"
+      },
+      {
+        "title": "Connect to the Wi-Fi Network",
+        "content": "Attempt to connect to the network using nmcli:\n`sudo nmcli dev wifi connect \"SSID\" password \"wifipassword`\""
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Remove Virtual Interface Conflict",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Virtual Interfaces",
+            "content": "List all network interfaces to identify any virtual ones: `ip link show` or `iw dev`"
+          },
+          {
+            "title": "Remove Conflicting Virtual Interface",
+            "content": "If a virtual interface (e.g., `ap0`) is present, remove it: `sudo iw dev ap0 del`"
+          },
+          {
+            "title": "Retry Connection",
+            "content": "Attempt to connect to the Wi-Fi network again using nmcli."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T09:56:03.615Z",
+      "updated": "2026-08-07T09:56:03.615Z",
+      "sourceUrl": "https://askubuntu.com/questions/1028578/nmcli-the-wifi-network-could-not-be-found",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786096567538-750",
+    "title": "Fix 'sudo: unable to open ... Read-only file system' in Ubuntu",
+    "problemDescription": "Ubuntu filesystem becomes read-only due to errors, preventing write operations and requiring troubleshooting to restore normal access.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "read-only filesystem",
+      "fsck",
+      "sudo",
+      "dmesg",
+      "fast startup"
+    ],
+    "steps": [
+      {
+        "title": "Check for filesystem errors with fsck",
+        "content": "Run `sudo fsck.ext4 -f /dev/sdXY` (replace `/dev/sdXY` with your actual partition, e.g., `/dev/sda1`). Follow prompts to fix errors."
+      },
+      {
+        "title": "Reboot the system",
+        "content": "After fixing errors, reboot the system to apply changes: `sudo reboot`."
+      },
+      {
+        "title": "Check disk errors using dmesg",
+        "content": "Run `dmesg | grep -i error` to identify disk-related issues. Address any errors reported."
+      },
+      {
+        "title": "Disable Fast Startup (if dual-booting with Windows)",
+        "content": "In Windows, go to Control Panel > Power Options > Choose what the power buttons do > Change settings that are currently unavailable > Untick 'Turn on fast startup'. Reboot into Ubuntu."
+      },
+      {
+        "title": "Repair filesystem via GUI (if available)",
+        "content": "Open the Disks application, select the affected drive, click the gears icon, and choose 'Repair Filesystem'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Remount filesystem as read-write",
+        "type": "Quick Fix",
+        "steps": [
+          {
+            "title": "Remount the filesystem",
+            "content": "Run `sudo mount -o remount,rw /` to temporarily make the filesystem writable. Note: This is a temporary fix; address underlying errors."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Live USB (if system is unresponsive)",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Boot from a Live USB",
+            "content": "Create a Ubuntu Live USB, boot from it, and open a terminal."
+          },
+          {
+            "title": "Run fsck on the affected partition",
+            "content": "Identify the partition (e.g., `/dev/sda1`) and run `sudo fsck.ext4 -f /dev/sdXY` to repair errors."
+          },
+          {
+            "title": "Remount and reboot",
+            "content": "After repair, reboot the system normally."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T09:56:07.538Z",
+      "updated": "2026-08-07T09:56:07.538Z",
+      "sourceUrl": "https://askubuntu.com/questions/197459/how-to-fix-sudo-unable-to-open-read-only-file-system",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786096572077-361",
+    "title": "Install Ubuntu Desktop 22.04 ARM64 on macOS Apple Silicon (M1/Pro/Max) in Parallels",
+    "problemDescription": "Users need to install Ubuntu Desktop 22.04 ARM64 on macOS with Apple Silicon (M1/Pro/Max) using Parallels, but encounter issues with installation steps or compatibility.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "parallels",
+      "apple silicon",
+      "m1",
+      "arm64",
+      "desktop"
+    ],
+    "steps": [
+      {
+        "title": "Download Ubuntu ARM64 Server ISO",
+        "content": "Download the ARM64 Server edition of Ubuntu 22.04 from the official Ubuntu website or the `daily-live` folder for the latest build."
+      },
+      {
+        "title": "Create a New VM in Parallels",
+        "content": "Open Parallels Desktop and create a new virtual machine. Select the downloaded Ubuntu ARM64 Server ISO as the installation media."
+      },
+      {
+        "title": "Install Ubuntu Server",
+        "content": "Follow the on-screen instructions to install Ubuntu Server. Ensure you select the correct disk and configure the system as needed."
+      },
+      {
+        "title": "Update and Upgrade System",
+        "content": "After installation, log in and run the following commands to update and upgrade the system: `sudo apt update && sudo apt upgrade -y`. Reboot the system afterward."
+      },
+      {
+        "title": "Install Ubuntu Desktop",
+        "content": "Install the desktop environment by running: `sudo apt install ubuntu-desktop`. Wait for the installation to complete."
+      },
+      {
+        "title": "Reboot the System",
+        "content": "Reboot the VM to apply changes: `sudo reboot`."
+      },
+      {
+        "title": "Install Parallels Tools",
+        "content": "After rebooting, install Parallels Tools for better integration. Use the menubar: Actions → Install Parallels Tools, or run the following in the terminal: `cd /media/USERNAME/Parallels\\ Tools && sudo ./install && sudo reboot`."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using Vagrant with QEMU",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Vagrant and QEMU",
+            "content": "Ensure Vagrant and QEMU are installed on your macOS system. You can install them via Homebrew: `brew install vagrant qemu`."
+          },
+          {
+            "title": "Create Vagrantfile",
+            "content": "Create a `Vagrantfile` with the following content to configure the Ubuntu ARM64 VM:\n```\nVagrant.configure(\"2\") do |config|\n  config.vm.box = \"perk/ubuntu-2204-arm64\"\n  config.vm.provider \"qemu\" do |qe|\n    qe.ssh_port = \"50022\"\n  end\nend\n```"
+          },
+          {
+            "title": "Start the VM",
+            "content": "Run `vagrant up --provider=qemu` to download and start the VM using QEMU."
+          },
+          {
+            "title": "Log into the VM",
+            "content": "Access the VM via SSH: `vagrant ssh`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T09:56:12.077Z",
+      "updated": "2026-08-07T09:56:12.077Z",
+      "sourceUrl": "https://askubuntu.com/questions/1405124/install-ubuntu-desktop-22-04-arm64-on-macos-apple-silicon-m1-pro-max-in-parall",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786096585189-510",
+    "title": "Fix Amazon Echo and Alexa App Connection Issues",
+    "problemDescription": "The Amazon Echo device fails to connect properly with the Alexa app, causing unresponsive behavior or communication errors.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "amazon echo",
+      "alexa app",
+      "connection",
+      "bluetooth",
+      "restart",
+      "deregister"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Alexa App",
+        "content": "Close the Alexa app completely on your iOS or Android device. Reopen it to check if the connection issue is resolved."
+      },
+      {
+        "title": "Restart Your Mobile Device",
+        "content": "Turn off your smartphone or tablet, wait 30 seconds, then power it back on. This clears temporary software glitches affecting the app."
+      },
+      {
+        "title": "Ensure Bluetooth is Enabled",
+        "content": "On your phone, go to Settings > Bluetooth and enable it. Ensure your Echo device is discoverable and listed in the Bluetooth settings."
+      },
+      {
+        "title": "Deregister and Reregister the Echo Device",
+        "content": "Open the Alexa app, go to Devices, select your Echo device, tap the cog icon, scroll down, and choose Deregister. Then, register it again by tapping Devices > plus icon > Add Device."
+      },
+      {
+        "title": "Update or Reinstall the Alexa App",
+        "content": "Check the App Store or Google Play Store for available updates for the Alexa app. If no updates are available, uninstall the app and reinstall it from the store."
+      },
+      {
+        "title": "Factory Reset Echo Device (if applicable)",
+        "content": "For Echo Show 5, 8, 10, or Echo Spot: Swipe down from the top of the screen, tap Settings > Device Options > Reset to Factory Defaults. For original Echo Show: Hold the volume down and mute buttons for 15-20 seconds."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Wi-Fi Network and Router",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Wi-Fi Connection",
+            "content": "Ensure your Echo device is connected to the correct Wi-Fi network. Check the network name and password in the Alexa app under Devices > Echo > Wi-Fi Network."
+          },
+          {
+            "title": "Restart Your Router",
+            "content": "Unplug your router for 30 seconds, then plug it back in. Wait for it to fully reboot before reconnecting your Echo device."
+          },
+          {
+            "title": "Check for Wi-Fi Interference",
+            "content": "Move your Echo device closer to the router or away from other electronic devices that may cause interference. Consider changing the Wi-Fi channel if interference persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T09:56:25.189Z",
+      "updated": "2026-08-07T09:56:25.189Z",
+      "sourceUrl": "https://www.makeuseof.com/troubleshoot-problems-between-amazon-echo-alexa-app",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786096600571-490",
+    "title": "Fix 'Problem Loading Content' Error in Apple TV App",
+    "problemDescription": "The Apple TV app fails to load content and displays a 'Problem Loading Content' error on smart TVs or streaming devices.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "Apple TV app",
+      "Problem Loading Content",
+      "smart TV",
+      "streaming device",
+      "reset app"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Apple TV App",
+        "content": "Close the Apple TV app completely by navigating to it and pressing the 'Back' or 'Home' button on your remote. Reopen the app to check if the issue is resolved."
+      },
+      {
+        "title": "Reset the Apple TV App",
+        "content": "If restarting doesn’t work, reset the app to its default settings. Open the Apple TV app, go to the sidebar (press 'Back', 'Up', or 'Left' on the remote), select 'Settings', then choose 'Reset'. Confirm the reset to erase all app data, including accounts and configurations."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "If the issue persists, restart your smart TV, streaming device, or gaming console to clear temporary glitches affecting the app."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-07T09:56:40.571Z",
+      "updated": "2026-08-07T09:56:40.571Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255805711",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786096616883-256",
+    "title": "Fix Apple TV+ 'Video Unavailable' Error on Samsung Smart TV",
+    "problemDescription": "Apple TV+ content shows 'Video Unavailable' error on a Samsung Smart TV, despite working trailers and other apps. AirPlay also fails.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Apple TV+",
+      "video unavailable",
+      "Samsung Smart TV",
+      "AirPlay",
+      "Smart Hub"
+    ],
+    "steps": [
+      {
+        "title": "Disable Samsung Smart Hub Settings",
+        "content": "Go to your Samsung Smart TV settings. Navigate to 'Smart Features' > 'Smart Hub' and turn it off. Also disable 'Keep Last App Running' if enabled. Restart the TV and check if the Apple TV+ app works."
+      },
+      {
+        "title": "Turn Off HDMI CEC",
+        "content": "Access your Samsung TV settings. Go to 'General' > 'External Device Manager' > 'Anynet+' (HDMI-CEC) and disable it. Restart the TV and test the Apple TV+ app again."
+      },
+      {
+        "title": "Update Software and Apps",
+        "content": "Check for the latest TV firmware updates in 'Support' > 'Software Update'. Ensure the Apple TV+ app is updated either manually or by enabling automatic updates in the app store."
+      },
+      {
+        "title": "Reset or Reinstall Apple TV+ App",
+        "content": "Clear the app cache or reset the Apple TV+ app in the TV settings. If possible, uninstall and reinstall the app. Restart the TV afterward."
+      },
+      {
+        "title": "Restart the TV",
+        "content": "Power off the Samsung Smart TV completely (unplug for 30 seconds). Plug it back in, turn it on, and relaunch the Apple TV+ app."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Network and Router Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Verify Network Connection",
+            "content": "Ensure your Samsung TV is connected to a stable Wi-Fi network. Test the connection by streaming other apps like YouTube or Netflix."
+          },
+          {
+            "title": "Restart Router",
+            "content": "Unplug your router for 30 seconds, then plug it back in. Wait for it to fully reboot and reconnect the TV. Test the Apple TV+ app again."
+          },
+          {
+            "title": "Change DNS Settings",
+            "content": "Go to your TV's network settings and manually set the DNS to Google's (8.8.8.8) or Cloudflare's (1.1.1.1). Save and reconnect to test."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset TV (Last Resort)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup Important Data",
+            "content": "Note down any important settings or app logins. A factory reset will erase all data."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to 'Support' > 'Self Diagnosis' > 'Reset' > 'Factory Reset'. Follow the on-screen instructions. After reset, reconfigure the TV and reinstall the Apple TV+ app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-07T09:56:56.883Z",
+      "updated": "2026-08-07T09:56:56.883Z",
+      "sourceUrl": "https://discussions.apple.com/thread/254808997",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
