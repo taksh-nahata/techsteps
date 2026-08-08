@@ -359696,5 +359696,183 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786199169374-387",
+    "title": "Fix iOS 26 Battery Drain Issues",
+    "problemDescription": "iPhone running iOS 26 experiences rapid battery drain, reducing overall battery life significantly.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "ios",
+      "battery life",
+      "drain",
+      "optimization",
+      "settings"
+    ],
+    "steps": [
+      {
+        "title": "Disable Always On Display",
+        "content": "Go to Settings > Display & Brightness > Always On Display and toggle it off to reduce battery consumption."
+      },
+      {
+        "title": "Enable Optimized Battery Charging",
+        "content": "Navigate to Settings > Battery > Charging and turn on the Optimized Battery Charging toggle to minimize battery wear."
+      },
+      {
+        "title": "Update Apps and Reboot",
+        "content": "Update all apps via the App Store and reboot your iPhone to resolve potential software glitches causing battery drain."
+      },
+      {
+        "title": "Check Battery Usage by Apps",
+        "content": "Go to Settings > Battery and review the battery usage section. Uninstall or reinstall apps that consume excessive battery."
+      },
+      {
+        "title": "Enable Low Power Mode Temporarily",
+        "content": "Go to Settings > Battery and toggle Low Power Mode on to reduce background activity and extend battery life when needed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable 5G for Battery Savings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to 4G/LTE",
+            "content": "Go to Settings > Cellular > Cellular Data Options > Voice & Data and select LTE or 4G to reduce power consumption from 5G."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Background App Refresh",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Background Refresh",
+            "content": "Go to Settings > General > Background App Refresh and disable it entirely or for specific apps to save battery."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T14:26:09.374Z",
+      "updated": "2026-08-08T14:26:09.374Z",
+      "sourceUrl": "https://www.techradar.com/phones/iphone/still-having-ios-26-battery-life-problems-try-these-5-fixes-to-improve-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786199181332-56",
+    "title": "Fix Pixel 2 XL Missing Android OS Error",
+    "problemDescription": "Pixel 2 XL devices shipped without an operating system, displaying an error message on startup, rendering the phone unusable.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "pixel",
+      "android",
+      "os",
+      "error",
+      "missing os",
+      "google support"
+    ],
+    "steps": [
+      {
+        "title": "Contact Google Customer Support",
+        "content": "Reach out to Google's official customer support via their support website, phone, or live chat. Provide your device's IMEI or serial number for verification."
+      },
+      {
+        "title": "Request a Replacement or Repair",
+        "content": "Explain the issue to the support representative. Google will either replace the defective unit or repair it at no cost."
+      },
+      {
+        "title": "Follow Return Instructions (if applicable)",
+        "content": "If a replacement is offered, follow the provided instructions to return the defective device. Google will ship a new or refurbished unit once the defective one is received."
+      },
+      {
+        "title": "Verify OS Installation",
+        "content": "After receiving the replacement, power on the device and ensure Android OS is properly installed. Check for updates via Settings > System > Advanced > System Update."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-08T14:26:21.332Z",
+      "updated": "2026-08-08T14:26:21.332Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/pixel-2-xl-delivered-without-android-os",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786199197315-939",
+    "title": "Reduce Android Notification Overload with Notification Cooldown",
+    "problemDescription": "Android notifications are overwhelming and disrupt workflow. Notification cooldown can help by reducing volume, vibrations, and previews while still queuing alerts silently.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "notifications",
+      "overload",
+      "cooldown",
+      "Do Not Disturb"
+    ],
+    "steps": [
+      {
+        "title": "Enable Notification Cooldown on Pixel Devices",
+        "content": "Go to Settings > Sound & vibration > Do Not Disturb > Modes. Select 'Pause Point' or create a custom mode. Configure it to mute notifications during specific times or locations while allowing priority alerts."
+      },
+      {
+        "title": "Adjust App-Specific Notification Settings",
+        "content": "Open Settings > Notifications > App notifications. Select an app (e.g., WhatsApp) and customize its notification behavior. For WhatsApp, tap the three dots in a chat > Mute notifications > choose duration (8 hours, 1 week, or indefinitely)."
+      },
+      {
+        "title": "Configure General Notification Behavior",
+        "content": "Navigate to Settings > Notifications. Toggle 'Pause notifications' to enable cooldown. Adjust 'Show notifications silently' to hide previews while queuing alerts in the status bar."
+      },
+      {
+        "title": "Set Priority Interruptions",
+        "content": "In Do Not Disturb settings, add important contacts or apps to the 'People' or 'Apps' exceptions list to ensure critical alerts still come through."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Do Not Disturb Mode",
+        "type": "Alternative Solution",
+        "steps": [
+          {
+            "title": "Enable Do Not Disturb",
+            "content": "Swipe down from the top of the screen to open Quick Settings. Tap the Do Not Disturb icon (or long-press it to customize). Set a schedule or manual activation for muting all notifications."
+          },
+          {
+            "title": "Allow Exceptions",
+            "content": "In Do Not Disturb settings, add priority contacts or apps to bypass the mute. Customize exceptions to ensure important alerts are not missed."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: App-Specific Mute (e.g., Snapchat)",
+        "type": "App-Level Control",
+        "steps": [
+          {
+            "title": "Open App Notification Settings",
+            "content": "Go to Settings > Notifications > App notifications. Select an app like Snapchat."
+          },
+          {
+            "title": "Customize Alert Types",
+            "content": "Toggle off specific notification types (e.g., emoji responses or typing indicators) while keeping direct messages enabled."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T14:26:37.315Z",
+      "updated": "2026-08-08T14:26:37.315Z",
+      "sourceUrl": "https://www.techradar.com/phones/android/drowning-in-android-notifications-this-hidden-pixel-feature-has-fixed-the-problem-for-me-alongside-these-3-other-tricks",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
