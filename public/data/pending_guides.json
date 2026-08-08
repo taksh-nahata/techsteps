@@ -358644,5 +358644,151 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786188219389-636",
+    "title": "Fix Bluetooth Keeps Disconnecting on Windows",
+    "problemDescription": "Bluetooth devices frequently disconnect on Windows due to power management settings or battery optimization restrictions.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "disconnecting",
+      "windows",
+      "power management",
+      "battery optimization"
+    ],
+    "steps": [
+      {
+        "title": "Disable Bluetooth Power Saving in Device Manager",
+        "content": "Open Device Manager (Win + X > Device Manager). Expand 'Bluetooth', right-click your Bluetooth Adapter (not the device itself), select 'Properties' > 'Power Management'. Uncheck 'Allow the computer to turn off this device to save power' and click 'OK'."
+      },
+      {
+        "title": "Disable Battery Optimization for Bluetooth",
+        "content": "Open 'Settings' > 'Apps' > toggle 'Show system apps'. Scroll to find 'Bluetooth', tap it, then select 'Battery'. Change the setting from 'Optimized' to 'Unrestricted'. If not found, navigate to 'Apps' > 'Special Access' > 'Optimize battery usage' > 'Bluetooth' and set to 'Unrestricted'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Bluetooth Drivers",
+        "type": "Advanced Fix",
+        "steps": [
+          {
+            "title": "Update Bluetooth Drivers",
+            "content": "Open Device Manager, expand 'Bluetooth', right-click your Bluetooth Adapter, and select 'Update driver'. Choose 'Search automatically for updated driver software' and follow the prompts. Restart your PC after updating."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset Bluetooth Stack",
+        "type": "Advanced Fix",
+        "steps": [
+          {
+            "title": "Reset Bluetooth Stack via Command Prompt",
+            "content": "Open Command Prompt as Administrator. Run the following commands sequentially: 'net stop bthserv', 'net start bthserv', 'reg delete HKLM\\SYSTEM\\CurrentControlSet\\Services\\BTHPORT\\Parameters\\Keys /f', and restart your PC."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T11:23:39.389Z",
+      "updated": "2026-08-08T11:23:39.389Z",
+      "sourceUrl": "https://www.howtogeek.com/why-your-bluetooth-keeps-disconnecting-and-the-one-setting-that-fixes-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786188229651-539",
+    "title": "Fix iOS 12 Not Opening App When Tapping Notification",
+    "problemDescription": "Notifications are not opening the corresponding app when tapped on iOS 12.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iOS 12",
+      "notification",
+      "app not opening",
+      "tap issue"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your iPhone",
+        "content": "Press and hold the Side button and either Volume button until the power off slider appears. Drag the slider to turn off your device. After 30 seconds, press and hold the Side button again to turn it back on."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-08T11:23:49.651Z",
+      "updated": "2026-08-08T11:23:49.651Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/336840/ios-12-tapping-on-notification-to-open-app-not-working",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786188233351-440",
+    "title": "Fix iPhone 7 Plus Notification Beep Not Working",
+    "problemDescription": "The iPhone 7 Plus does not emit a sound (beep) for notifications despite having sound enabled.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "notification",
+      "beep",
+      "sound",
+      "iPhone 7 Plus",
+      "Do Not Disturb"
+    ],
+    "steps": [
+      {
+        "title": "Restart the iPhone",
+        "content": "Fully shut down the iPhone by long-pressing the side button and swiping to power off. Wait 30 seconds, then turn it back on."
+      },
+      {
+        "title": "Disable Do Not Disturb",
+        "content": "Open Settings > Focus > Do Not Disturb and ensure it is turned off. Alternatively, swipe down from the top-right corner of the screen to open Control Center and tap the Do Not Disturb icon to disable it."
+      },
+      {
+        "title": "Check Notification Sounds",
+        "content": "Go to Settings > Sounds & Haptics and verify that 'Sound & Vibration Patterns' is enabled for notifications. Tap a sound to preview and ensure it plays."
+      },
+      {
+        "title": "Test with a Different App",
+        "content": "Open an app like Messages or Mail and send a test notification to confirm if the issue is app-specific or system-wide."
+      },
+      {
+        "title": "Reset All Settings",
+        "content": "If the issue persists, go to Settings > General > Transfer or Reset iPhone > Reset > Reset All Settings. This will not delete data but will reset all settings to default."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check Silent Mode and Volume",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Silent Mode",
+            "content": "Ensure the side switch (above the volume buttons) is not set to silent mode (orange indicator visible). If it is, flip the switch to disable silent mode."
+          },
+          {
+            "title": "Increase Notification Volume",
+            "content": "Go to Settings > Sounds & Haptics and adjust the 'Ringer and Alerts' volume slider to a higher level. Test by sending a notification."
+          },
+          {
+            "title": "Check Bluetooth Devices",
+            "content": "If connected to Bluetooth devices, disconnect them temporarily by going to Settings > Bluetooth and tapping the 'i' icon next to the device, then 'Disconnect'. Test notifications again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T11:23:53.351Z",
+      "updated": "2026-08-08T11:23:53.351Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/444258/iphone-7-plus-not-getting-notification-beep",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
