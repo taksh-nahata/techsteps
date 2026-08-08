@@ -357560,5 +357560,46 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786167563656-335",
+    "title": "Fix MacBook Sudden Shutdowns with SMC Firmware Update",
+    "problemDescription": "MacBook experiences unexpected shutdowns due to a known issue with the internal monitoring system, which can be resolved by applying a firmware update.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "MacBook",
+      "sudden shutdown",
+      "firmware update",
+      "SMC",
+      "unexpected shutdowns"
+    ],
+    "steps": [
+      {
+        "title": "Check for Available Updates",
+        "content": "Go to the Apple menu () > System Settings > General > Software Update. If an update is available, install it."
+      },
+      {
+        "title": "Manually Download the Firmware Update",
+        "content": "Visit Apple's official support website, search for 'MacBook SMC Firmware Update v1.1', and download the update manually if it doesn't appear in Software Update."
+      },
+      {
+        "title": "Install the Update",
+        "content": "Follow the on-screen instructions to install the firmware update. Ensure your MacBook is connected to a power source during the process."
+      },
+      {
+        "title": "Restart Your MacBook",
+        "content": "After installation, restart your MacBook to apply the changes. Verify that the sudden shutdown issue is resolved."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-08T05:39:23.656Z",
+      "updated": "2026-08-08T05:39:23.656Z",
+      "sourceUrl": "https://www.techradar.com/news/mobile-computing/laptops/computing/apple/apple-macbook-problems-solved-133881",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
