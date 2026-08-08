@@ -359350,5 +359350,351 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786196466813-283",
+    "title": "Fix Microsoft Word Pagination Issues on Mac",
+    "problemDescription": "Microsoft Word on Mac displays pages with no spacing between them, causing incorrect pagination and unwanted blank pages when adding new content.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Microsoft Word",
+      "Mac",
+      "pagination",
+      "blank pages",
+      "layout issues"
+    ],
+    "steps": [
+      {
+        "title": "Reset Word Preferences",
+        "content": "Quit Microsoft Word. Open Finder, go to ~/Library/Preferences/ (hold Option key to reveal Library). Delete files named 'com.microsoft.Word.plist' and 'com.microsoft.office.plist'. Restart Word to reset preferences."
+      },
+      {
+        "title": "Check Document Layout Settings",
+        "content": "Open the problematic document. Go to Layout tab. Ensure margins, paper size, and orientation are correctly set. Adjust line spacing (Format > Paragraph > Spacing) to default values (e.g., 1.15 or 1.5)."
+      },
+      {
+        "title": "Disable 'Insert Page Break' Feature",
+        "content": "Avoid using 'Insert > Page Break' manually. Word auto-paginates based on layout settings. Manually inserting breaks can disrupt flow and create unwanted pages."
+      },
+      {
+        "title": "Update Microsoft Word",
+        "content": "Open Word. Go to Help > Check for Updates. Install any available updates to ensure compatibility with macOS."
+      },
+      {
+        "title": "Repair Office Installation",
+        "content": "Quit all Office apps. Open Finder > Applications > Utilities > Terminal. Run: 'sudo /Applications/Microsoft\\ Word.app/Contents/Resources/OfficeRepairTool.app/Contents/MacOS/OfficeRepairTool'. Follow prompts to repair."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Create a New Document Template",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Copy Content to New Document",
+            "content": "Open the problematic document. Select all content (Cmd+A), copy (Cmd+C). Create a new blank document. Paste (Cmd+V) the content. Save as a new file to avoid formatting issues."
+          },
+          {
+            "title": "Adjust Default Template",
+            "content": "Go to Word > Preferences > File Locations. Note the 'User Templates' path. Open Finder, navigate to the path, and delete the 'Normal.dotm' file. Restart Word to regenerate the default template."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Safe Mode to Diagnose",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Word in Safe Mode",
+            "content": "Quit Word. Hold Shift key while opening Word. This disables add-ins and custom settings. Test if pagination issues persist. If resolved, disable add-ins via Word > Preferences > Add-ins."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T13:41:06.813Z",
+      "updated": "2026-08-08T13:41:06.813Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/msoffice/forum/all/how-can-i-fix-this-problem-with-word-on-mac-air/16bff2a3-9e30-4982-838d-2600fd46c3e7",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786196471588-945",
+    "title": "Fix OneNote for Mac Unable to Create New Tags",
+    "problemDescription": "OneNote for Mac (version 16.105.2) fails to create new tags, showing a spinning wheel indefinitely after clicking 'Create New Tag'.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "OneNote",
+      "MacOS",
+      "tags",
+      "create",
+      "error",
+      "spinning wheel"
+    ],
+    "steps": [
+      {
+        "title": "Update OneNote to the Latest Version",
+        "content": "Open the Mac App Store, go to the 'Updates' tab, and install any pending updates for OneNote. Restart OneNote afterward."
+      },
+      {
+        "title": "Clear OneNote Cache",
+        "content": "Quit OneNote. Open Finder, press Cmd+Shift+G, and navigate to ~/Library/Containers/com.microsoft.onenote.mac/Data/Library/Caches/. Delete the 'com.microsoft.onenote.mac' folder. Restart OneNote."
+      },
+      {
+        "title": "Reset OneNote Preferences",
+        "content": "Quit OneNote. Open Terminal and run: `defaults delete com.microsoft.onenote.mac`. Restart OneNote to rebuild preferences."
+      },
+      {
+        "title": "Check for macOS Updates",
+        "content": "Go to Apple Menu > System Preferences > Software Update. Install any available macOS updates. Restart your Mac afterward."
+      },
+      {
+        "title": "Reinstall OneNote",
+        "content": "Uninstall OneNote by dragging it from the Applications folder to Trash. Download the latest version from the Mac App Store and reinstall it."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Office Online as a Temporary Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access OneNote Online",
+            "content": "Open a web browser and go to https://www.onenote.com. Sign in with your Microsoft account. Create or edit tags using the web interface."
+          },
+          {
+            "title": "Sync Changes Later",
+            "content": "After updating OneNote on your Mac, any changes made in OneNote Online will sync to your local app."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Downgrade OneNote (Advanced Users)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Current OneNote",
+            "content": "Quit OneNote and drag it from the Applications folder to Trash. Empty the Trash afterward."
+          },
+          {
+            "title": "Download Previous Version",
+            "content": "Visit a trusted source like MacUpdate or Softonic to download an older stable version of OneNote for Mac (e.g., version 16.99)."
+          },
+          {
+            "title": "Install and Test",
+            "content": "Install the older version and restart your Mac. Test if the 'Create New Tag' feature works as expected."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T13:41:11.588Z",
+      "updated": "2026-08-08T13:41:11.588Z",
+      "sourceUrl": "http://answers.microsoft.com/en-us/office/forum/office_2010-office_install/office-2010-and-never-ending-flt-files-in-the/39942b0f-5b4d-e011-8dfc-68b599b31bf5?msgId=3628403f-af4d-e011-8dfc-68b599b31bf5",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786196510056-35",
+    "title": "Fix Device Freezing During Zoom Calls",
+    "problemDescription": "Device freezes or lags during Zoom calls, likely due to weak Wi-Fi signal or bandwidth congestion.",
+    "category": "wifi",
+    "difficulty": "Easy",
+    "keywords": [
+      "zoom",
+      "freezing",
+      "lag",
+      "wifi",
+      "bandwidth"
+    ],
+    "steps": [
+      {
+        "title": "Move Closer to the Router",
+        "content": "Position your device within 10-15 feet of the Wi-Fi router to improve signal strength. Avoid walls or obstructions between the device and router."
+      },
+      {
+        "title": "Disconnect Unnecessary Devices",
+        "content": "Pause or disconnect other devices (e.g., streaming services, downloads) from the network to free up bandwidth for your Zoom call."
+      },
+      {
+        "title": "Use a Wired Connection (If Possible)",
+        "content": "Connect your device directly to the router via Ethernet cable for a more stable and faster connection."
+      },
+      {
+        "title": "Close Background Applications",
+        "content": "Shut down unnecessary programs or browser tabs running in the background to reduce CPU and memory usage."
+      },
+      {
+        "title": "Restart Your Device and Router",
+        "content": "Reboot your device and Wi-Fi router to clear temporary glitches or memory issues causing freezes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Zoom Settings",
+        "type": "Software Optimization",
+        "steps": [
+          {
+            "title": "Lower Video Quality in Zoom",
+            "content": "Go to Zoom settings > Video > Disable HD video or enable 'Touch up my appearance' to reduce processing load."
+          },
+          {
+            "title": "Disable Virtual Background",
+            "content": "Turn off virtual backgrounds in Zoom settings to reduce CPU usage during calls."
+          },
+          {
+            "title": "Use Zoom's 'Original Sound' Feature",
+            "content": "Enable 'Original Sound' in Zoom settings to reduce audio processing and improve performance."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Upgrade Hardware",
+        "type": "Long-Term Solution",
+        "steps": [
+          {
+            "title": "Upgrade to a Dual-Band Router",
+            "content": "Switch to a dual-band router (2.4GHz and 5GHz) to reduce interference and improve performance for video calls."
+          },
+          {
+            "title": "Increase RAM or Upgrade Device",
+            "content": "If your device frequently freezes, consider upgrading RAM or switching to a more powerful device with better processing capabilities."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T13:41:50.056Z",
+      "updated": "2026-08-08T13:41:50.056Z",
+      "sourceUrl": "https://www.quora.com/Are-there-any-tips-to-stop-my-device-freezing-up-during-zoom-calls",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786196555620-748",
+    "title": "Fix Printing Issues with HP Print AI",
+    "problemDescription": "HP Print AI aims to resolve common printing problems like unwanted content (ads, white space) and formatting issues in web pages and spreadsheets.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "printing",
+      "HP Print AI",
+      "formatting",
+      "unwanted content"
+    ],
+    "steps": [
+      {
+        "title": "Enable HP Print AI in HP Smart App",
+        "content": "Open the HP Smart app on your device. Navigate to the printer settings and enable the 'Perfect Output' feature under HP Print AI. Ensure your printer firmware is updated to the latest version."
+      },
+      {
+        "title": "Select Printable Content",
+        "content": "When printing from a web browser or spreadsheet, use the HP Smart app to select the specific content you want to print. The AI will automatically detect and exclude unwanted elements like ads or excessive white space."
+      },
+      {
+        "title": "Adjust Print Settings",
+        "content": "In the print dialog, choose the 'HP Print AI' option for optimized output. Adjust page layout settings if necessary to ensure tables or charts are not split across pages."
+      },
+      {
+        "title": "Test Print",
+        "content": "Print a test page to verify that the AI has correctly identified and excluded unwanted content. Make further adjustments if needed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Content Selection",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Copy and Paste Content",
+            "content": "Copy the desired content from the web page or spreadsheet and paste it into a word processor (e.g., Microsoft Word or Google Docs). Manually remove any unwanted elements before printing."
+          },
+          {
+            "title": "Use Print Preview",
+            "content": "Use the print preview feature in your browser or application to manually select the content to print, ensuring no ads or unnecessary elements are included."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T13:42:35.620Z",
+      "updated": "2026-08-08T13:42:35.620Z",
+      "sourceUrl": "https://www.techradar.com/pro/hp-is-giving-your-printer-an-ai-upgrade-that-might-actually-solve-some-of-your-biggest-printing-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786196562773-240",
+    "title": "Optimize IT Support with Helpdesk Software",
+    "problemDescription": "A manufacturing company struggled with inefficient IT support using email-based systems, leading to repetitive issues and wasted time.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "helpdesk",
+      "IT support",
+      "process improvement",
+      "automation",
+      "onboarding"
+    ],
+    "steps": [
+      {
+        "title": "Identify Recurring Issues",
+        "content": "Use helpdesk software to analyze support tickets and identify patterns (e.g., frequent printer issues or software installation requests)."
+      },
+      {
+        "title": "Create Standardized Processes",
+        "content": "Develop improved onboarding checklists and maintenance schedules based on identified patterns to streamline support."
+      },
+      {
+        "title": "Implement Automation",
+        "content": "Configure automated responses or workflows for common issues to reduce manual intervention and response time."
+      },
+      {
+        "title": "Enable Self-Service Access",
+        "content": "Set up a knowledge base or FAQ section in the helpdesk platform to allow users to resolve simple issues independently."
+      },
+      {
+        "title": "Monitor and Refine",
+        "content": "Regularly review helpdesk data to refine processes and address new recurring issues proactively."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Ticket Tracking (Legacy Approach)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Track Issues via Email",
+            "content": "Manually categorize and track support emails to identify recurring problems."
+          },
+          {
+            "title": "Create Spreadsheet Reports",
+            "content": "Use spreadsheets to log and analyze recurring issues, then adjust processes accordingly."
+          },
+          {
+            "title": "Implement Basic Checklists",
+            "content": "Develop manual checklists for common tasks like software installation or printer maintenance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T13:42:42.773Z",
+      "updated": "2026-08-08T13:42:42.774Z",
+      "sourceUrl": "https://www.techradar.com/pro/what-does-helpdesk-software-actually-do",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
