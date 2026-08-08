@@ -357750,5 +357750,230 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1786175039451-334",
+    "title": "Fix Windows Slowdown After Update",
+    "problemDescription": "Windows PC becomes sluggish after an update, with lag in File Explorer, search, or visual performance.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows update",
+      "slow performance",
+      "lag",
+      "file explorer",
+      "search",
+      "visual effects"
+    ],
+    "steps": [
+      {
+        "title": "Wait for Background Tasks to Complete",
+        "content": "Leave your computer idle for 30 minutes to allow Windows to finish background tasks. Restart once more to trigger any final optimizations."
+      },
+      {
+        "title": "Check for Buggy Updates",
+        "content": "Right-click the Start button, open 'Settings' > 'Windows Update' to view installed updates. Note the KB number of the most recent update. Search online for complaints about this specific update to confirm if it's causing performance issues."
+      },
+      {
+        "title": "Uninstall Problematic Update",
+        "content": "Go to 'Settings' > 'Windows Update' > 'Update history' > 'Uninstall updates'. Select the problematic update and click 'Uninstall'. Restart your PC afterward."
+      },
+      {
+        "title": "Reset File Explorer",
+        "content": "Press Ctrl + Shift + Esc to open Task Manager. Locate 'Windows Explorer' in the Processes tab, right-click it, and select 'Restart'. Alternatively, open Command Prompt as Administrator and run: 'taskkill /f /im explorer.exe' followed by 'explorer.exe' to restart it."
+      },
+      {
+        "title": "Clear File Explorer Cache",
+        "content": "Open File Explorer, click the three-dot menu, and select 'Options'. Under the 'General' tab, click 'Clear' next to 'Clear File Explorer history'."
+      },
+      {
+        "title": "Rebuild Search Index",
+        "content": "Open 'Settings' > 'Search' > 'Searching Windows'. Click 'Advanced search indexer settings', then 'Advanced'. Under 'Index Settings', click 'Rebuild'. Wait for the process to complete and restart your PC."
+      },
+      {
+        "title": "Check and Adjust Visual Effects",
+        "content": "Right-click 'This PC' and select 'Properties'. Click 'Advanced system settings', then under 'Performance', click 'Settings'. Select 'Adjust for best performance' or manually disable visual effects like animations and transparency. Click 'Apply' and restart."
+      },
+      {
+        "title": "Update or Roll Back Graphics Drivers",
+        "content": "Open 'Device Manager', expand 'Display adapters', right-click your graphics card, and select 'Update driver'. If the issue persists, right-click the driver and select 'Properties' > 'Driver' > 'Roll Back Driver' (if available). Alternatively, download the latest driver from the manufacturer's website."
+      },
+      {
+        "title": "Disable Unnecessary Startup Apps",
+        "content": "Press Ctrl + Shift + Esc to open Task Manager. Go to the 'Startup' tab, right-click unnecessary apps, and select 'Disable'. Restart your PC to apply changes."
+      },
+      {
+        "title": "Review BIOS or Boot Settings",
+        "content": "Restart your PC and enter BIOS/UEFI (usually by pressing F2, F12, DEL, or ESC during startup). Check for boot-related settings like 'Fast Startup' or 'Secure Boot' and disable them if they are causing slowdowns. Save changes and exit."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows Performance Troubleshooter",
+        "type": "Built-in Tool",
+        "steps": [
+          {
+            "title": "Run Performance Troubleshooter",
+            "content": "Open 'Settings' > 'Update & Security' > 'Troubleshoot' > 'Additional troubleshooters'. Select 'Performance' and click 'Run the troubleshooter'. Follow the on-screen instructions to apply recommended fixes."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset Windows to Default Settings",
+        "type": "Nuclear Option",
+        "steps": [
+          {
+            "title": "Backup Important Data",
+            "content": "Ensure all important files are backed up to an external drive or cloud storage."
+          },
+          {
+            "title": "Reset Windows",
+            "content": "Open 'Settings' > 'Update & Security' > 'Recovery'. Under 'Reset this PC', click 'Get started'. Choose 'Keep my files' or 'Remove everything' based on your preference. Follow the prompts to reset Windows to default settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T07:43:59.451Z",
+      "updated": "2026-08-08T07:43:59.451Z",
+      "sourceUrl": "https://www.howtogeek.com/fix-slow-windows-after-update",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786175052739-163",
+    "title": "Fix Windows 11 Update Error: Couldn't Connect to Update Service",
+    "problemDescription": "Windows 11 fails to connect to the update service, preventing system updates. This may be caused by network issues, corrupted system files, or misconfigured update components.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "update error",
+      "couldn't connect to update service",
+      "network reset",
+      "repair install"
+    ],
+    "steps": [
+      {
+        "title": "Run Windows Update Troubleshooter",
+        "content": "Go to Settings > System > Troubleshoot > Other troubleshooters. Select 'Windows Update' and run the troubleshooter to automatically detect and fix common update issues."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Open Command Prompt as Administrator and run the following commands sequentially: `netsh winsock reset`, `netsh int ip reset`, `ipconfig /flushdns`. Restart your computer afterward."
+      },
+      {
+        "title": "Check Windows Update Services",
+        "content": "Press Win + R, type `services.msc`, and press Enter. Ensure the following services are running and set to 'Automatic': Windows Update, Background Intelligent Transfer Service (BITS), Cryptographic Services. Restart them if necessary."
+      },
+      {
+        "title": "Manually Reset Windows Update Components",
+        "content": "Open Command Prompt as Administrator and run these commands one by one: `net stop wuauserv`, `net stop cryptSvc`, `net stop bits`, `net stop msiserver`, `ren C:\\Windows\\SoftwareDistribution SoftwareDistribution.old`, `ren C:\\Windows\\System32\\catroot2 catroot2.old`, `net start wuauserv`, `net start cryptSvc`, `net start bits`, `net start msiserver`. Restart your computer."
+      },
+      {
+        "title": "Perform a Repair Install (In-Place Upgrade)",
+        "content": "Download the Windows 11 ISO from Microsoft's official site. Mount the ISO, run `setup.exe`, and select 'Keep personal files and apps'. Follow the on-screen instructions to complete the repair install without losing data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Media Creation Tool for Clean Install",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Windows 11 Media Creation Tool",
+            "content": "Visit Microsoft's official site and download the Media Creation Tool for Windows 11."
+          },
+          {
+            "title": "Create Installation Media",
+            "content": "Run the tool and select 'Create installation media for another PC'. Choose your language, edition, and architecture, then select 'USB flash drive' or 'ISO file' to create bootable media."
+          },
+          {
+            "title": "Boot from Installation Media",
+            "content": "Insert the USB or mount the ISO, restart your PC, and boot from the installation media. Follow the prompts to reinstall Windows 11, selecting 'Keep personal files and apps' during setup."
+          },
+          {
+            "title": "Verify Update Service Connection",
+            "content": "After reinstallation, check for updates in Settings > Windows Update to ensure the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T07:44:12.739Z",
+      "updated": "2026-08-08T07:44:12.739Z",
+      "sourceUrl": "https://superuser.com/questions/1814535/windows-11-update-error-we-couldnt-connect-to-the-update-service",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786175063491-325",
+    "title": "Fix Windows Issues After Booting into Safe Mode",
+    "problemDescription": "Windows works in Safe Mode but fails in normal mode, indicating a startup software conflict or corruption.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "safe mode",
+      "windows startup",
+      "corruption",
+      "update",
+      "clean boot"
+    ],
+    "steps": [
+      {
+        "title": "Uninstall Recent Windows Updates",
+        "content": "Go to Settings > Update & Security > Windows Update > View update history > Uninstall updates. Remove the most recent updates and restart the PC."
+      },
+      {
+        "title": "Run System File Checker (SFC)",
+        "content": "Open Command Prompt as Administrator and run `sfc /scannow`. Wait for the scan to complete and restart the PC."
+      },
+      {
+        "title": "Run CHKDSK for Disk Errors",
+        "content": "Open Command Prompt as Administrator and run `chkdsk /r c:`. Confirm the schedule for the next boot, restart the PC, and wait for the scan to finish."
+      },
+      {
+        "title": "Perform a Clean Boot",
+        "content": "Press Win + R, type `msconfig`, and go to the Services tab. Check 'Hide all Microsoft services' and click 'Disable all'. Then go to the Startup tab and click 'Open Task Manager' to disable all startup items. Restart the PC and check if the issue persists."
+      },
+      {
+        "title": "Identify Problematic Startup Items",
+        "content": "If the issue is resolved in Clean Boot, re-enable startup items in groups to identify the problematic software. Focus on recently installed or updated applications."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use System Restore",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restore to a Previous System State",
+            "content": "Open System Restore by searching for 'Create a restore point' in the Start menu. Click 'System Restore' and follow the prompts to restore Windows to a date before the issue started."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset Windows",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Reset Windows to Default Settings",
+            "content": "Go to Settings > Update & Security > Recovery > Reset this PC. Choose 'Keep my files' or 'Remove everything' based on your preference, and follow the on-screen instructions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T07:44:23.491Z",
+      "updated": "2026-08-08T07:44:23.491Z",
+      "sourceUrl": "https://superuser.com/questions/1164881/what-to-do-after-booting-into-safe-mode",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
