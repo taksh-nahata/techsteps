@@ -358790,5 +358790,565 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1786192463765-486",
+    "title": "Fix G-Sync Flickering on Monitor",
+    "problemDescription": "G-Sync or FreeSync monitor flickers when FPS drops below the adaptive sync range or due to overclocking the refresh rate.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "G-Sync",
+      "FreeSync",
+      "flickering",
+      "refresh rate",
+      "overclocking",
+      "adaptive sync"
+    ],
+    "steps": [
+      {
+        "title": "Check Monitor's Adaptive Sync Range",
+        "content": "Refer to your monitor's manual to confirm the supported adaptive sync range (e.g., 48Hz-155Hz for DisplayPort, 48Hz-144Hz for HDMI). Avoid exceeding these limits."
+      },
+      {
+        "title": "Revert Overclocked Refresh Rate",
+        "content": "Disconnect the DisplayPort cable and use the monitor's OSD menu to reset the refresh rate to its default (e.g., 144Hz). Avoid manual overclocking."
+      },
+      {
+        "title": "Replace DisplayPort Cable",
+        "content": "Use a high-quality DisplayPort cable (preferably certified for your monitor's refresh rate). Faulty or low-quality cables can cause flickering."
+      },
+      {
+        "title": "Extend FreeSync/G-Sync Range Using CRU",
+        "content": "Download and install Custom Resolution Utility (CRU). Select your monitor, click 'Edit', and under 'Data Blocks', set a lower range (e.g., 32Hz-100Hz). Restart your PC and test with Nvidia Pendulum or a game."
+      },
+      {
+        "title": "Test with Nvidia Pendulum",
+        "content": "Run Nvidia Pendulum to check for flickering. If flickering persists, adjust the FreeSync/G-Sync range in CRU incrementally (e.g., 30Hz-100Hz) and retest."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Adaptive Sync Temporarily",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable G-Sync/FreeSync in NVIDIA Control Panel",
+            "content": "Open NVIDIA Control Panel, go to 'Display' > 'Adjust desktop color settings', and disable G-Sync. Test if flickering stops."
+          },
+          {
+            "title": "Enable Adaptive Sync in Monitor OSD",
+            "content": "Re-enable G-Sync/FreeSync in your monitor's OSD menu and test again. If flickering returns, the issue may be hardware-related."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update GPU Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Latest GPU Drivers",
+            "content": "Visit NVIDIA's website and download the latest drivers for your GPU. Install them and restart your PC."
+          },
+          {
+            "title": "Reset NVIDIA Control Panel Settings",
+            "content": "Open NVIDIA Control Panel, click 'Reset' to restore default settings, then reconfigure G-Sync/FreeSync."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T12:34:23.765Z",
+      "updated": "2026-08-08T12:34:23.765Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/g-sync-flickering-is-there-a-solution-yet.3537526",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786192472824-674",
+    "title": "Fix MacBook Air Display Flickering",
+    "problemDescription": "The MacBook Air display flickers randomly when using a certain application, despite being a relatively new device.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "MacBook Air",
+      "display flickering",
+      "application",
+      "restart"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your MacBook Air",
+        "content": "Click the Apple logo in the top-left corner and select 'Restart'. Wait for the device to fully reboot and check if the flickering persists."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Go to 'System Settings' > 'General' > 'Software Update' and install any available updates for macOS."
+      },
+      {
+        "title": "Reset NVRAM/PRAM",
+        "content": "Shut down your MacBook. Turn it on and immediately press and hold Command (⌘) + Option + P + R for about 20 seconds. Release the keys and let the Mac boot normally."
+      },
+      {
+        "title": "Test in Safe Mode",
+        "content": "Restart your MacBook and hold the Shift key to enter Safe Mode. Use the device normally and observe if the flickering occurs. If it doesn’t, a third-party app may be the cause."
+      },
+      {
+        "title": "Check Display Settings",
+        "content": "Go to 'System Settings' > 'Displays' and adjust the resolution or refresh rate. Ensure the correct display is selected if using multiple monitors."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset SMC",
+        "type": "Advanced Troubleshooting",
+        "steps": [
+          {
+            "title": "Reset SMC on Intel-based MacBook Air",
+            "content": "Shut down your MacBook. Press and hold Control + Option + Shift for 7 seconds, then press and hold the power button for another 7 seconds. Release all keys and power on the Mac."
+          },
+          {
+            "title": "Reset SMC on M1/M2 MacBook Air",
+            "content": "Shut down your MacBook. Press and hold the power button for 10 seconds, then release and wait a few seconds before powering it back on."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Hardware Issues",
+        "type": "Hardware Inspection",
+        "steps": [
+          {
+            "title": "Inspect Display Cable",
+            "content": "If comfortable, open the back panel of your MacBook Air and check the display cable for any loose connections or damage. Reconnect if necessary."
+          },
+          {
+            "title": "Test with External Display",
+            "content": "Connect an external monitor to your MacBook Air via HDMI or USB-C. If the flickering stops, the issue may be with the internal display."
+          },
+          {
+            "title": "Contact Apple Support",
+            "content": "If hardware inspection or external display testing confirms an issue, contact Apple Support or visit an authorized service provider for further diagnosis."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T12:34:32.824Z",
+      "updated": "2026-08-08T12:34:32.824Z",
+      "sourceUrl": "https://www.quora.com/My-MacBook-Air-display-is-randomly-flickering-when-Im-using-a-certain-application-Why-is-that-I-also-only-brought-it-a-year-ago",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786192476293-856",
+    "title": "Fix MacBook Pro Screen Flickering",
+    "problemDescription": "The screen on a MacBook Pro 13'' is flickering, potentially caused by software issues like brightness auto-adjustment or outdated macOS.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "MacBook Pro",
+      "screen flickering",
+      "brightness",
+      "macOS update"
+    ],
+    "steps": [
+      {
+        "title": "Disable Automatic Brightness Adjustment",
+        "content": "Go to System Settings > Displays and turn off 'Automatically Adjust Brightness'. Check if the flickering stops."
+      },
+      {
+        "title": "Update macOS",
+        "content": "Go to System Settings > General > Software Update. Install any available updates to resolve potential software bugs causing the flickering."
+      },
+      {
+        "title": "Restart Your MacBook",
+        "content": "Restart your MacBook to clear temporary software glitches that may be causing the flickering."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset NVRAM/PRAM",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Shut Down Your MacBook",
+            "content": "Ensure your MacBook is completely turned off."
+          },
+          {
+            "title": "Reset NVRAM/PRAM",
+            "content": "Turn on your MacBook and immediately press and hold Command (⌘) + Option + P + R for about 20 seconds. Release the keys and let your MacBook start normally."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Hardware Issues",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect to External Display",
+            "content": "Plug your MacBook into an external monitor or TV. If the flickering stops, the issue is likely with the internal display or its connections."
+          },
+          {
+            "title": "Inspect Display Cable",
+            "content": "If comfortable, open the back panel of your MacBook (requires tools) and check the display cable for any damage or loose connections. Reconnect if necessary."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T12:34:36.293Z",
+      "updated": "2026-08-08T12:34:36.293Z",
+      "sourceUrl": "https://www.quora.com/My-MacBook-Pro-13-screen-is-flickering-Could-you-help-me-with-how-to-solve-it-Is-there-anyone-who-has-the-same-issue",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786192479465-663",
+    "title": "Fix Screen Flickering on a New Laptop",
+    "problemDescription": "A new laptop's screen flickers intermittently, especially at night, and returns to normal after shutdown.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen flicker",
+      "display driver",
+      "new laptop",
+      "windows"
+    ],
+    "steps": [
+      {
+        "title": "Update or Reinstall Display Drivers",
+        "content": "Press `Win + X` and select 'Device Manager'. Expand 'Display adapters', right-click your GPU, and choose 'Update driver'. If the issue persists, right-click the GPU again and select 'Uninstall device'. Restart your laptop to let Windows install the default driver automatically."
+      },
+      {
+        "title": "Check for Hardware Issues",
+        "content": "Inspect the laptop for physical damage or loose connections. If the flickering persists after driver updates, contact the manufacturer for warranty support or a hardware inspection."
+      },
+      {
+        "title": "Adjust Power Settings",
+        "content": "Go to 'Control Panel > Power Options'. Select your current power plan, click 'Change plan settings', then 'Change advanced power settings'. Under 'Display', set 'Turn off display' to 'Never' and reduce 'Display brightness' to a stable level."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Hardware Acceleration in Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable in Browser",
+            "content": "Open your browser settings, search for 'hardware acceleration', and disable it. Restart the browser to check if flickering stops."
+          },
+          {
+            "title": "Disable in Apps",
+            "content": "For other applications (e.g., video players), disable hardware acceleration in their settings under 'Display' or 'Performance'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T12:34:39.465Z",
+      "updated": "2026-08-08T12:34:39.465Z",
+      "sourceUrl": "https://www.quora.com/Why-my-screen-flicker-like-this-its-a-new-laptop-I-see-this-in-night-and-shutdown-in-morning-its-wakeup-as-normal-its-first-time",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786192483531-310",
+    "title": "Fix LCD Monitor Flickering and Lagging",
+    "problemDescription": "An LCD monitor displays flickering or lagging, causing visual disruptions and poor performance.",
+    "category": "hardware",
+    "difficulty": "Medium",
+    "keywords": [
+      "LCD monitor",
+      "flickering",
+      "lagging",
+      "display issues",
+      "hardware troubleshooting"
+    ],
+    "steps": [
+      {
+        "title": "Check the Cable Connections",
+        "content": "Ensure the video cable (HDMI, DisplayPort, VGA) is securely connected to both the monitor and the computer. Try a different cable if possible."
+      },
+      {
+        "title": "Adjust the Refresh Rate",
+        "content": "Go to your computer's display settings and set the refresh rate to the recommended value (e.g., 60Hz). Higher refresh rates may cause flickering."
+      },
+      {
+        "title": "Update or Reinstall Graphics Drivers",
+        "content": "Visit the manufacturer's website (e.g., NVIDIA, AMD, Intel) to download and install the latest graphics drivers. Alternatively, uninstall and reinstall the current drivers."
+      },
+      {
+        "title": "Test with Another Device",
+        "content": "Connect the monitor to a different device (e.g., laptop, gaming console) to determine if the issue is with the monitor or the original device."
+      },
+      {
+        "title": "Check for Electromagnetic Interference",
+        "content": "Move electronic devices (e.g., routers, speakers) away from the monitor, as they may cause interference."
+      },
+      {
+        "title": "Reset Monitor Settings to Default",
+        "content": "Access the monitor's on-screen menu and reset all settings to factory defaults."
+      },
+      {
+        "title": "Inspect for Hardware Damage",
+        "content": "Look for physical damage or dead pixels on the screen. If damage is found, consider professional repair or replacement."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Power Settings",
+        "type": "Software Workaround",
+        "steps": [
+          {
+            "title": "Disable Display Power Saving",
+            "content": "Go to your computer's power settings and disable any display power-saving features that may be causing flickering."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Different Port or Adapter",
+        "type": "Hardware Workaround",
+        "steps": [
+          {
+            "title": "Try a Different Port",
+            "content": "If using HDMI, switch to DisplayPort or VGA to see if the issue persists."
+          },
+          {
+            "title": "Use an Active Adapter",
+            "content": "If using an adapter (e.g., HDMI to VGA), try an active adapter instead of a passive one."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T12:34:43.531Z",
+      "updated": "2026-08-08T12:34:43.531Z",
+      "sourceUrl": "https://www.quora.com/How-can-you-fix-an-LCD-monitor-that-keeps-flickering-and-lagging",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786192487975-335",
+    "title": "Fix Laptop Screen Flickering or Glitching",
+    "problemDescription": "Laptop screen randomly flickers or glitches without a specific pattern or frequency.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "screen flickering",
+      "glitching",
+      "display issues",
+      "laptop",
+      "graphics driver"
+    ],
+    "steps": [
+      {
+        "title": "Update Graphics Drivers",
+        "content": "Press `Win + X` and select 'Device Manager'. Expand 'Display adapters', right-click your graphics card (e.g., Intel UHD Graphics, NVIDIA, AMD), and choose 'Update driver'. Select 'Search automatically for updated driver software' and follow the prompts."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to `Settings > Update & Security > Windows Update` and click 'Check for updates'. Install any pending updates, as they may include fixes for display issues."
+      },
+      {
+        "title": "Adjust Power Settings for Display",
+        "content": "Open `Control Panel > Power Options`. Select your current power plan and click 'Change plan settings'. Choose 'Change advanced power settings', then expand 'Display' and set 'Turn off display' to 'Never'."
+      },
+      {
+        "title": "Test in Safe Mode",
+        "content": "Restart your laptop in Safe Mode by pressing `Win + R`, typing `msconfig`, and selecting the 'Boot' tab. Check 'Safe boot' and restart. If the flickering stops, the issue is likely driver-related."
+      },
+      {
+        "title": "Check for Hardware Issues",
+        "content": "Inspect the laptop screen cable connections (if comfortable doing so) or connect an external monitor. If the issue persists on the external monitor, the problem may be with the graphics card."
+      },
+      {
+        "title": "Reset Display Settings",
+        "content": "Right-click the desktop and select 'Display settings'. Scroll down and click 'Advanced display settings', then 'Display adapter properties'. Go to the 'Monitor' tab and set the refresh rate to the recommended value (e.g., 60Hz)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Roll Back Graphics Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Device Manager",
+            "content": "Press `Win + X` and select 'Device Manager'."
+          },
+          {
+            "title": "Roll Back Driver",
+            "content": "Expand 'Display adapters', right-click your graphics card, and select 'Properties'. Go to the 'Driver' tab and click 'Roll Back Driver' if available. Follow the prompts to revert to the previous driver version."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Hardware Acceleration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Graphics Settings",
+            "content": "Right-click the desktop and select 'Graphics properties' or open the graphics control panel (e.g., Intel Graphics Command Center, NVIDIA Control Panel)."
+          },
+          {
+            "title": "Disable Acceleration",
+            "content": "Look for settings related to hardware acceleration (e.g., 'Performance' or '3D settings') and disable them. Apply the changes and restart your laptop."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T12:34:47.975Z",
+      "updated": "2026-08-08T12:34:47.975Z",
+      "sourceUrl": "https://www.quora.com/My-laptop-has-been-acting-weird-The-screen-will-randomly-flickering-or-like-glitching-out-It-does-not-happen-frequently-and-does-not-have-a-specific-pattern-but-it-happened-enough-to-where-I-notice-it-Does-anyone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786192504783-364",
+    "title": "Fix Android Smart TV Screen Color Issues and Lines",
+    "problemDescription": "Android Smart TV displays incorrect colors, lines, or flickering, indicating potential software or hardware issues.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android smart tv",
+      "display issue",
+      "color problem",
+      "lines",
+      "flickering",
+      "screen damage"
+    ],
+    "steps": [
+      {
+        "title": "Perform a Soft Reset",
+        "content": "Unplug the TV from the power source and wait for 5 minutes. Reconnect the power and check if the display issue is resolved."
+      },
+      {
+        "title": "Adjust Picture Settings",
+        "content": "Go to TV Settings > Device Preferences > Display/Picture. Change the picture mode to 'Standard' or 'Vivid'. Adjust backlight brightness and contrast settings."
+      },
+      {
+        "title": "Disable Developer Options Layer Bounds",
+        "content": "If Developer Options are enabled, go to Settings > Developer Options > Drawing > Turn off 'Show layout bounds'. Check if the issue persists."
+      },
+      {
+        "title": "Check for Physical Damage",
+        "content": "If the problem (lines, flickering) persists after software adjustments, the display may be physically damaged. Contact a professional service center."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset (Last Resort)",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Backup Important Data",
+            "content": "Note down app settings or save important files externally, as a factory reset will erase all data."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > Device Preferences > Reset > Factory Data Reset. Confirm and wait for the process to complete."
+          },
+          {
+            "title": "Reconfigure TV Settings",
+            "content": "After reset, reconfigure display settings and check if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T12:35:04.783Z",
+      "updated": "2026-08-08T12:35:04.783Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=XS5w0FbDF9E",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786192508842-210",
+    "title": "Fix Smart TV Turning On and Off By Itself",
+    "problemDescription": "A smart TV powers on and off intermittently without user input, disrupting normal operation.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "smart tv",
+      "power cycle",
+      "turning off",
+      "remote",
+      "firmware",
+      "factory reset"
+    ],
+    "steps": [
+      {
+        "title": "Check Power Connection",
+        "content": "Ensure the TV's power cable is securely plugged into both the TV and the wall outlet. Wiggle the cable to confirm a stable connection."
+      },
+      {
+        "title": "Inspect Remote Control",
+        "content": "Press each button on the remote to check for stuck or unresponsive keys. Clean the remote with a dry cloth or replace the batteries if needed."
+      },
+      {
+        "title": "Disable Automatic Power Off",
+        "content": "Navigate to the TV's settings menu. Look for 'Power Management' or 'Automatic Power Off' and disable the feature to prevent the TV from turning off due to inactivity."
+      },
+      {
+        "title": "Disable Eco Mode",
+        "content": "Check if your TV has an 'Eco Mode' or similar energy-saving feature in the settings. Disable it to prevent unexpected power cycling."
+      },
+      {
+        "title": "Disconnect from Wi-Fi",
+        "content": "Temporarily disconnect the TV from Wi-Fi to rule out network-related triggers causing the issue. Reconnect after testing."
+      },
+      {
+        "title": "Check for Firmware Updates",
+        "content": "Go to the TV's settings and check for available firmware updates. Install any updates to fix known bugs or software issues."
+      },
+      {
+        "title": "Perform a Factory Reset",
+        "content": "If all else fails, perform a factory reset. This will restore the TV to its original settings, erasing all custom configurations and apps. Use this as a last resort."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check HDMI-CEC Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable HDMI-CEC",
+            "content": "Navigate to the TV's settings and disable 'HDMI-CEC' or similar features that allow connected devices to control the TV's power state."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Replace Power Cable",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Test with a New Cable",
+            "content": "Replace the TV's power cable with a known working one to rule out cable defects causing intermittent power issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T12:35:08.842Z",
+      "updated": "2026-08-08T12:35:08.842Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=SdM9MQ5q7ZM",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
