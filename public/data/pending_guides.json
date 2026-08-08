@@ -356909,5 +356909,341 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1786159249298-836",
+    "title": "Secure Instagram Account After Password Exposure Risk",
+    "problemDescription": "Instagram's 'Download Your Data' tool may have exposed user passwords to third parties due to a security vulnerability, affecting a small number of users.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Instagram",
+      "password exposure",
+      "security vulnerability",
+      "Download Your Data tool",
+      "two-factor authentication"
+    ],
+    "steps": [
+      {
+        "title": "Check for Notification from Instagram",
+        "content": "Verify if Instagram sent you a notification about the security issue. If you received one, your password may have been exposed."
+      },
+      {
+        "title": "Change Your Instagram Password",
+        "content": "Go to Instagram settings > Security > Password and change your password to a strong, unique one. Avoid reusing passwords from other accounts."
+      },
+      {
+        "title": "Enable Two-Factor Authentication (2FA)",
+        "content": "Navigate to Instagram settings > Security > Two-Factor Authentication and enable it. Use an authenticator app (e.g., Google Authenticator) or SMS for verification."
+      },
+      {
+        "title": "Review Account Activity",
+        "content": "Check your Instagram account for any suspicious activity, such as unrecognized logins or posts. Go to settings > Security > Login Activity."
+      },
+      {
+        "title": "Update Passwords on Other Accounts",
+        "content": "If you reused the exposed password on other websites or apps, change those passwords immediately to prevent unauthorized access."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Instagram's Security Checkup",
+        "type": "Instagram Official Tool",
+        "steps": [
+          {
+            "title": "Open Instagram and Go to Settings",
+            "content": "Tap your profile icon > Menu (☰) > Settings and privacy > Accounts Center."
+          },
+          {
+            "title": "Run Security Checkup",
+            "content": "Select 'Security checkup' and follow the prompts to review login activity, update passwords, and enable 2FA."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T03:20:49.298Z",
+      "updated": "2026-08-08T03:20:49.298Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/instagram-tool-exposes-user-passwords",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1786159253268-23",
+    "title": "Fix Instagram to Facebook Photo Sharing Connection",
+    "problemDescription": "Instagram photos fail to sync to Facebook after disconnecting sharing, even after following Instagram's recommended fixes.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Instagram",
+      "Facebook",
+      "photo sharing",
+      "sync",
+      "connection"
+    ],
+    "steps": [
+      {
+        "title": "Reconnect Instagram to Facebook via Facebook App",
+        "content": "Open the Facebook app on your mobile device. Go to Settings > Apps > Instagram > Connect to Facebook. Follow the prompts to re-enable photo sharing."
+      },
+      {
+        "title": "Clear Instagram and Facebook App Cache",
+        "content": "On Android: Go to Settings > Apps > Instagram > Storage > Clear Cache. Repeat for Facebook app. On iOS: Uninstall and reinstall both apps to clear cache."
+      },
+      {
+        "title": "Check Facebook Page Permissions",
+        "content": "Ensure your Facebook Page (if applicable) has permissions to receive posts from Instagram. Go to Facebook Page Settings > Instagram > Connect."
+      },
+      {
+        "title": "Use Facebook's 'Share to Facebook' Feature in Instagram",
+        "content": "Open Instagram, go to Settings > Account > Linked Accounts. Select Facebook and log in. Manually share photos to Facebook via the share button during upload."
+      },
+      {
+        "title": "Contact Facebook Support",
+        "content": "Visit Facebook Help Center (https://www.facebook.com/help) and report the issue. Provide details about the disconnection and steps already attempted."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Facebook's 'Import from Instagram' Feature",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Import Photos Manually",
+            "content": "Go to your Facebook profile. Click 'Photos' > 'Upload' > 'Import from Instagram'. Log in to Instagram and select photos to import."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Third-Party Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Use a Sync Tool",
+            "content": "Use third-party tools like 'IFTTT' or 'Zapier' to create an automated workflow between Instagram and Facebook. Set up an applet to copy Instagram posts to Facebook."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T03:20:53.268Z",
+      "updated": "2026-08-08T03:20:53.268Z",
+      "sourceUrl": "https://www.digitaltrends.com/social-media/last-minute-questions-about-this-whole-video-for-instagram-thing",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786159262833-352",
+    "title": "Fix Battery Drain and Charging Issues After Windows 11 Upgrade",
+    "problemDescription": "Laptop experiences rapid battery drain, unusual charging behavior, or fails to charge after upgrading to Windows 11.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery drain",
+      "charging issues",
+      "Windows 11",
+      "upgrade",
+      "laptop"
+    ],
+    "steps": [
+      {
+        "title": "Reset Battery Drivers in Device Manager",
+        "content": "Open Device Manager by right-clicking the Start button and selecting it. Expand the 'Batteries' section, right-click each device under it (e.g., 'Microsoft AC Adapter', 'Microsoft ACPI-Compliant Control Method Battery'), and select 'Disable'. Wait a few seconds, then right-click each device again and select 'Enable'. Close Device Manager and restart your laptop."
+      },
+      {
+        "title": "Restart Your Laptop",
+        "content": "After resetting the battery drivers, perform a restart (not a shutdown) to ensure changes take effect. Check if the battery starts charging normally."
+      },
+      {
+        "title": "Update Chipset Drivers",
+        "content": "Visit your laptop manufacturer's official support page, download the recommended Chipset drivers for your model, and install them. Ensure no pending BIOS updates are available (if BitLocker is not enabled)."
+      },
+      {
+        "title": "Check Power Settings",
+        "content": "Go to Settings > System > Power & sleep > Additional power settings. Select your current power plan and click 'Change plan settings'. Adjust settings to 'Balanced' or 'Power saver' if applicable, and ensure no aggressive power-saving features are enabled."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Battery Drivers via Command Prompt",
+        "type": "Advanced Troubleshooting",
+        "steps": [
+          {
+            "title": "Open Command Prompt as Administrator",
+            "content": "Press Win + X and select 'Terminal (Admin)' or 'Command Prompt (Admin)'."
+          },
+          {
+            "title": "Uninstall Battery Drivers",
+            "content": "Run the following commands one by one:\n`pnputil /delete-driver oem*.inf /uninstall /force`\n`pnputil /delete-driver oem*.inf /uninstall /force` (repeat if multiple entries exist)."
+          },
+          {
+            "title": "Restart Your Laptop",
+            "content": "After uninstalling, restart your laptop. Windows will automatically reinstall the battery drivers."
+          },
+          {
+            "title": "Verify Battery Functionality",
+            "content": "Check if the battery charges normally after the restart."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset BIOS to Default Settings",
+        "type": "Hardware-Level Fix",
+        "steps": [
+          {
+            "title": "Access BIOS Setup",
+            "content": "Restart your laptop and press the BIOS key (e.g., F2, F12, DEL, or ESC) during startup to enter BIOS."
+          },
+          {
+            "title": "Reset BIOS Settings",
+            "content": "Navigate to the 'Exit' tab and select 'Load Default Settings' or 'Restore Defaults'. Save changes and exit BIOS."
+          },
+          {
+            "title": "Recheck Battery Functionality",
+            "content": "After resetting BIOS, restart your laptop and check if the battery charges normally."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T03:21:02.833Z",
+      "updated": "2026-08-08T03:21:02.833Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/battery-drain-and-charging-issues-after-windows-11/8997ac48-0739-4d99-891c-4bf89cff7d53",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786159271685-335",
+    "title": "Fix AX201 Bluetooth Power Drain During Sleep in Windows 11",
+    "problemDescription": "The Intel AX201 Bluetooth module drains battery power while the system is in sleep mode on Windows 11, leading to reduced battery life.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "power drain",
+      "sleep mode",
+      "AX201",
+      "battery"
+    ],
+    "steps": [
+      {
+        "title": "Disable Bluetooth in Device Manager Before Sleep",
+        "content": "1. Press `Win + X` and select **Device Manager**.\n2. Expand **Bluetooth** and right-click on **Intel(R) Wi-Fi 6 AX201 Bluetooth**.\n3. Select **Disable device**.\n4. Put your system to sleep. Re-enable Bluetooth after waking if needed."
+      },
+      {
+        "title": "Update Bluetooth Drivers",
+        "content": "1. Open **Device Manager** (`Win + X` > **Device Manager**).\n2. Expand **Bluetooth**, right-click **Intel(R) Wi-Fi 6 AX201 Bluetooth**, and select **Update driver**.\n3. Choose **Search automatically for updated driver software** and follow the prompts.\n4. Restart your system after updating."
+      },
+      {
+        "title": "Adjust Power Management Settings for Bluetooth",
+        "content": "1. Open **Device Manager** (`Win + X` > **Device Manager**).\n2. Expand **Bluetooth**, right-click **Intel(R) Wi-Fi 6 AX201 Bluetooth**, and select **Properties**.\n3. Go to the **Power Management** tab.\n4. Uncheck **Allow the computer to turn off this device to save power** and click **OK**.\n5. Restart your system."
+      },
+      {
+        "title": "Disable Bluetooth Wake Capability",
+        "content": "1. Open **Device Manager** (`Win + X` > **Device Manager**).\n2. Expand **Bluetooth**, right-click **Intel(R) Wi-Fi 6 AX201 Bluetooth**, and select **Properties**.\n3. Go to the **Power Management** tab.\n4. Uncheck **Allow this device to wake the computer** and click **OK**.\n5. Restart your system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Use an External Bluetooth Adapter",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Internal Bluetooth and Use External Adapter",
+            "content": "1. Open **Device Manager** (`Win + X` > **Device Manager**).\n2. Expand **Bluetooth**, right-click **Intel(R) Wi-Fi 6 AX201 Bluetooth**, and select **Disable device**.\n3. Plug in an external Bluetooth adapter (e.g., USB Bluetooth dongle).\n4. Unplug the adapter when putting the system to sleep to prevent power drain."
+          }
+        ]
+      },
+      {
+        "title": "Disable Bluetooth via Windows Settings",
+        "type": "Quick Fix",
+        "steps": [
+          {
+            "title": "Turn Off Bluetooth in Windows Settings",
+            "content": "1. Press `Win + A` to open the Action Center.\n2. Click the **Bluetooth** tile to turn it off.\n3. Put your system to sleep. Re-enable Bluetooth after waking if needed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T03:21:11.685Z",
+      "updated": "2026-08-08T03:21:11.685Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/ax201-bluetooth-drain-power-when-sleep-in-windows/f032e554-28d7-4f4e-89a5-f4763e5359be",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786159277057-41",
+    "title": "Fix Surface Laptop Studio Battery Drain from Idle Nvidia dGPU",
+    "problemDescription": "Surface Laptop Studio with Nvidia dGPU experiences excessive battery drain (20W+ discharge) even when idle, reducing battery life to 3 hours instead of the expected 9-12 hours.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "surface laptop studio",
+      "nvidia dgpu",
+      "battery drain",
+      "idle power",
+      "device manager"
+    ],
+    "steps": [
+      {
+        "title": "Disable Nvidia dGPU via Device Manager",
+        "content": "1. Press `Win + X` and select **Device Manager**. \n2. Expand **Display adapters**. \n3. Right-click on **NVIDIA GeForce RTX 3050 Ti Laptop GPU** and select **Disable device**. \n4. Confirm the action and restart the device. \n5. Monitor battery discharge rate via HWInfo to confirm it drops below 10W."
+      },
+      {
+        "title": "Set Nvidia dGPU to Auto-Select in Nvidia Control Panel",
+        "content": "1. Right-click on the desktop and select **NVIDIA Control Panel**. \n2. Navigate to **Manage 3D Settings** > **Program Settings**. \n3. Set **Preferred graphics processor** to **Auto-select** for all programs. \n4. Apply changes and restart the device. \n5. Check if battery drain persists."
+      },
+      {
+        "title": "Update Nvidia Drivers to Studio Drivers",
+        "content": "1. Visit [Nvidia's Studio Driver page](https://www.nvidia.com/Download/driverResults.aspx/183855/en-us/). \n2. Download and install the latest **NVIDIA Studio Driver** for your GPU. \n3. Restart the device after installation. \n4. Verify battery discharge rate via HWInfo."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "1. Press `Win + I` to open **Settings**. \n2. Go to **Update & Security** > **Windows Update**. \n3. Click **Check for updates** and install any pending updates. \n4. Restart the device and monitor battery performance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable dGPU via BIOS (if available)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access BIOS Settings",
+            "content": "1. Shut down the Surface Laptop Studio. \n2. Press and hold the **Volume Up** button, then press the **Power** button to enter BIOS."
+          },
+          {
+            "title": "Disable Discrete GPU in BIOS",
+            "content": "1. Navigate to **Advanced** > **Graphics Configuration**. \n2. Set **Discrete Graphics** to **Disabled**. \n3. Save changes and exit BIOS. \n4. Verify battery discharge rate."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Nvidia Optimus to Force dGPU Off on Battery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Configure Nvidia Optimus Settings",
+            "content": "1. Right-click on the desktop and select **NVIDIA Control Panel**. \n2. Go to **Manage 3D Settings** > **Global Settings**. \n3. Set **Preferred graphics processor** to **Integrated graphics**. \n4. Click **Apply**. \n5. Restart the device and check battery performance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T03:21:17.057Z",
+      "updated": "2026-08-08T03:21:17.057Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/surface/forum/all/surface-laptop-studio-battery-drain-due-to-idle/59eea61f-e7a9-4723-a74b-9195711baf75",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
