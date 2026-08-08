@@ -358293,5 +358293,356 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1786184740010-617",
+    "title": "Recover Gmail Account When Password and Recovery Info is Lost",
+    "problemDescription": "User cannot access their Gmail account due to forgotten password and lost recovery phone number or email.",
+    "category": "app-error",
+    "difficulty": "Hard",
+    "keywords": [
+      "gmail",
+      "account recovery",
+      "password",
+      "recovery email",
+      "phone number"
+    ],
+    "steps": [
+      {
+        "title": "Attempt Account Recovery via Google's Self-Service Process",
+        "content": "Go to the Google Account Recovery page (https://accounts.google.com/signin/recovery) and follow the prompts to verify your identity. Enter any possible recovery email or phone number you might have used."
+      },
+      {
+        "title": "Check for Previously Saved Passwords",
+        "content": "Search your browser's saved passwords or password manager for your Gmail account. Use a device where you might have previously logged in."
+      },
+      {
+        "title": "Review Connected Devices",
+        "content": "Check devices where you were previously logged into Gmail (e.g., phones, tablets, or computers). Some devices may still have active sessions."
+      },
+      {
+        "title": "Contact Google Support via Web Form",
+        "content": "Visit the Google Account Help page (https://support.google.com/accounts) and use the 'Contact Us' option to explain your situation. Provide as much detail as possible about the account (e.g., last used date, approximate creation date)."
+      },
+      {
+        "title": "Submit a Support Request for Business Gmail",
+        "content": "If this is a Google Workspace (formerly G Suite) account, contact your domain administrator. They can submit a support request to Google on your behalf."
+      },
+      {
+        "title": "Wait for Verification",
+        "content": "If you provide sufficient proof of ownership (e.g., billing information, account activity history), Google may review and restore access. This process can take several days to weeks."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Trusted Contact for Recovery",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Ask a Trusted Contact",
+            "content": "If you have a trusted contact who has previously emailed you from this Gmail account, ask them to forward an old email to you. You can then use the 'Forgot Password' link in that email to reset your password."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check Third-Party Services",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Review Linked Services",
+            "content": "Check other services (e.g., social media, shopping sites) where you might have used this Gmail address. Some services allow password resets via email."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T10:25:40.010Z",
+      "updated": "2026-08-08T10:25:40.010Z",
+      "sourceUrl": "https://www.reddit.com/r/GoogleSupport/comments/1n301cq/how_do_i_reach_out_to_google_support_gmail",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1786184764717-718",
+    "title": "Fix Slow MacBook Pro Performance by Replacing Hard Drive Cable",
+    "problemDescription": "A mid-2012 MacBook Pro with 4GB RAM and a 500GB HDD runs extremely slowly, even in Recovery Mode, despite passing hardware tests and having sufficient free disk space.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "slow",
+      "performance",
+      "MacBook Pro",
+      "hard drive cable",
+      "disk speed"
+    ],
+    "steps": [
+      {
+        "title": "Verify the Issue is Hardware-Related",
+        "content": "Check if the slow performance persists in Recovery Mode (hold Command + R during startup). If it does, the issue is likely hardware-related, not software."
+      },
+      {
+        "title": "Replace the Hard Drive Cable",
+        "content": "Purchase a replacement hard drive cable (compatible with mid-2012 MacBook Pro 13\"). Tools needed: Philips-00 screwdriver and a PH0 screwdriver. Follow a step-by-step guide or video tutorial for disassembly and replacement."
+      },
+      {
+        "title": "Clean Internal Components",
+        "content": "Use an airduster to clean dust from the fan and heat-pipe radiator to improve cooling and prevent overheating, which can further degrade performance."
+      },
+      {
+        "title": "Reassemble and Test",
+        "content": "Reassemble the MacBook Pro, ensuring all screws are securely fastened. Power on the device and verify if the performance has improved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Upgrade to an SSD",
+        "type": "Performance Upgrade",
+        "steps": [
+          {
+            "title": "Replace HDD with an SSD",
+            "content": "Upgrade the internal hard drive to a Solid State Drive (SSD) for significantly faster read/write speeds and overall system responsiveness."
+          },
+          {
+            "title": "Clone the Old Drive (Optional)",
+            "content": "Use a cloning tool like Carbon Copy Cloner or SuperDuper! to transfer the existing macOS installation and data to the new SSD."
+          },
+          {
+            "title": "Reassemble and Test",
+            "content": "Reassemble the MacBook Pro and test performance. Ensure the SSD is properly recognized in System Information."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset NVRAM/PRAM and SMC",
+        "type": "Software Reset",
+        "steps": [
+          {
+            "title": "Reset NVRAM/PRAM",
+            "content": "Shut down the MacBook Pro. Press the power button, then immediately hold Command + Option + P + R for about 20 seconds. Release the keys and let the Mac boot normally."
+          },
+          {
+            "title": "Reset SMC",
+            "content": "Shut down the MacBook Pro. Press and hold Shift + Control + Option + Power button for 10 seconds. Release all keys and power on the Mac."
+          },
+          {
+            "title": "Test Performance",
+            "content": "After resetting, check if the performance has improved. If not, proceed with hardware checks."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T10:26:04.717Z",
+      "updated": "2026-08-08T10:26:04.717Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/177603/ridiculously-slow-macbook-pro",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786184787393-328",
+    "title": "Fix Mac Hardware Issues: Liquid Damage, Boot Failure, or Screen Problems",
+    "problemDescription": "Mac experiences hardware-related issues such as liquid damage, boot failure, or screen display problems requiring troubleshooting or professional repair.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "mac",
+      "hardware",
+      "liquid damage",
+      "boot failure",
+      "screen issues",
+      "display",
+      "recovery mode"
+    ],
+    "steps": [
+      {
+        "title": "Handle Liquid Damage",
+        "content": "Immediately turn off the Mac, disconnect power, and unplug accessories. Flip the Mac over to disconnect the battery if possible. Remove the back cover (if tech-savvy) to drain excess liquid. Allow the Mac to dry for 24-48 hours before powering it on. If issues persist, contact Apple Support."
+      },
+      {
+        "title": "Fix Startup Disk Issues (Folder with Question Mark)",
+        "content": "Boot into macOS Recovery: For Intel Macs, hold Cmd + R at startup. For Apple silicon Macs, press and hold the power button, then select Options > Continue. Open Disk Utility, select the startup disk, and run First Aid to check for errors. If errors are found or no issues are detected, reinstall macOS via Recovery Mode."
+      },
+      {
+        "title": "Resolve Mac Not Starting Up Properly",
+        "content": "Boot into Safe Mode: For Intel Macs, hold Shift at startup. For Apple silicon Macs, select the startup disk, then hold Shift and choose 'Continue in Safe Mode.' Use Disk Utility in Safe Mode to repair disk permissions or file system. If the issue persists, recover critical files from a non-booting Mac."
+      },
+      {
+        "title": "Troubleshoot Screen Display Issues (No Backlight, Flickering)",
+        "content": "Restart the Mac. If the issue persists, check for physical damage or loose connections. For persistent problems, contact Apple Support or an authorized service provider for hardware diagnostics and repair."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset NVRAM/PRAM (For Boot or Display Issues)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset NVRAM/PRAM",
+            "content": "Shut down the Mac. Turn it on and immediately hold Cmd + Option + P + R for 20 seconds. Release the keys and allow the Mac to boot normally. This resets certain settings that may cause display or boot issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: External Display Test (For Screen Issues)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect to External Display",
+            "content": "Use an external monitor or TV via HDMI/DisplayPort to determine if the issue is with the Mac's display or internal components. If the external display works, the problem is likely with the Mac's screen or GPU."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T10:26:27.393Z",
+      "updated": "2026-08-08T10:26:27.393Z",
+      "sourceUrl": "https://www.makeuseof.com/how-to-fix-common-mac-hardware-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786184803957-708",
+    "title": "Fix Bluetooth Audio Dropouts on AirPods When Skipping/Pausing on Windows",
+    "problemDescription": "Bluetooth audio via USB adapter drops when skipping or pausing music on Windows 11 with AirPods, despite USB power management being disabled.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "airpods",
+      "audio dropouts",
+      "windows 11",
+      "usb adapter"
+    ],
+    "steps": [
+      {
+        "title": "Check for Background Processes Interfering with Audio",
+        "content": "Open Task Manager (Ctrl+Shift+Esc) and Resource Monitor (resmon.exe). Monitor system resources (CPU, RAM, Disk, Network) while playing music. Skip or pause audio and observe if any process spikes in resource usage (e.g., network activity). Note any suspicious processes and end them if necessary."
+      },
+      {
+        "title": "Move the USB Bluetooth Adapter",
+        "content": "Unplug the USB Bluetooth adapter and use a USB extension cable to reposition it away from the PC case (e.g., closer to the front panel). This may improve signal strength and reduce interference."
+      },
+      {
+        "title": "Update Bluetooth and Audio Drivers",
+        "content": "Open Device Manager (devmgmt.msc), expand 'Bluetooth' and 'Sound, video, and game controllers'. Right-click each relevant device (e.g., Bluetooth adapter, audio drivers) and select 'Update driver'. Choose 'Search automatically for updated driver software' and follow the prompts."
+      },
+      {
+        "title": "Disable Audio Enhancements",
+        "content": "Right-click the speaker icon in the taskbar, select 'Sounds', go to the 'Playback' tab, and double-click your AirPods. Under the 'Enhancements' tab, check 'Disable all enhancements' and click OK. Test if the issue persists."
+      },
+      {
+        "title": "Adjust Bluetooth Service Settings",
+        "content": "Press Win+R, type 'services.msc', and press Enter. Locate 'Bluetooth Support Service' and 'Windows Audio'. Right-click each, select 'Properties', set 'Startup type' to 'Automatic', and click 'Start' if the service is stopped. Restart your PC."
+      },
+      {
+        "title": "Test with a Different Audio Player",
+        "content": "Use a different media player (e.g., VLC, Spotify) to play music. If the issue does not occur, the problem may be specific to the original player (e.g., YouTube)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Bluetooth Hands-Free Telephony",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Bluetooth Settings",
+            "content": "Go to Settings > Bluetooth & devices. Click the three dots next to your AirPods and select 'Device properties'."
+          },
+          {
+            "title": "Disable Hands-Free Telephony",
+            "content": "Toggle off 'Hands-free telephony' if available. This may prevent the system from switching audio profiles during playback changes."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Dedicated Bluetooth Audio Receiver",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Purchase a Bluetooth Audio Receiver",
+            "content": "Buy a dedicated Bluetooth audio receiver (e.g., Creative BT-W3) and connect it to your PC via USB or 3.5mm audio jack. Pair your AirPods with the receiver instead of the built-in Bluetooth adapter."
+          },
+          {
+            "title": "Configure Audio Output",
+            "content": "Set the receiver as the default playback device in Windows Sound settings. This bypasses the USB Bluetooth adapter entirely."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T10:26:43.957Z",
+      "updated": "2026-08-08T10:26:43.957Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/bluetooth-adapter-stops-playing-music-through-airpods-when-skipping-pausing-audio.3805606",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786184857089-849",
+    "title": "Fix Unrecognized USB Hub on iMac After Updates",
+    "problemDescription": "After installing system updates, third-party USB devices (e.g., MacAlly USB Hub) are no longer recognized by the iMac.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "iMac",
+      "USB",
+      "hub",
+      "unrecognized",
+      "system update",
+      "MacAlly"
+    ],
+    "steps": [
+      {
+        "title": "Reinstall Original System Software",
+        "content": "Boot the iMac from the original system software CD that came with the device. Reinstall the initial system software to restore default USB driver compatibility."
+      },
+      {
+        "title": "Check for Driver Updates",
+        "content": "Visit the manufacturer's website (e.g., MacAlly) to download and install the latest USB hub drivers compatible with your iMac's current macOS version."
+      },
+      {
+        "title": "Reset NVRAM/PRAM",
+        "content": "Shut down the iMac, then power it on and immediately hold Command + Option + P + R for about 20 seconds to reset NVRAM/PRAM, which may resolve hardware recognition issues."
+      },
+      {
+        "title": "Test with Different USB Ports",
+        "content": "Plug the USB hub into a different USB port on the iMac to rule out port-specific issues. Avoid using USB hubs with external power sources unless necessary."
+      },
+      {
+        "title": "Update macOS",
+        "content": "Ensure your iMac is running the latest version of macOS. Go to Apple Menu > System Preferences > Software Update and install any available updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a USB 2.0 Hub",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Replace with USB 2.0 Hub",
+            "content": "If the issue persists, replace the USB hub with a USB 2.0-compatible model, as older hubs may lack drivers for newer macOS versions."
+          },
+          {
+            "title": "Disable USB Power Management",
+            "content": "Go to System Preferences > Energy Saver and uncheck 'Put hard disks to sleep when possible' to prevent USB power interruptions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T10:27:37.089Z",
+      "updated": "2026-08-08T10:27:37.089Z",
+      "sourceUrl": "https://www.cnet.com/tech/computing/imac-updates-usb-problems-continue-to-be-reported",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
