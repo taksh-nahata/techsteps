@@ -356868,5 +356868,46 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786151336567-139",
+    "title": "Fix Missing Notifications on Redmi 8 (MIUI 11/12)",
+    "problemDescription": "Notifications are not appearing on a Redmi 8 device running MIUI 11 or 12 due to battery optimization restrictions.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "notifications",
+      "redmi 8",
+      "miui",
+      "battery optimization",
+      "app battery saver"
+    ],
+    "steps": [
+      {
+        "title": "Open Battery & Performance Settings",
+        "content": "Go to your device's Settings and select 'Battery & performance'."
+      },
+      {
+        "title": "Access App Battery Saver",
+        "content": "Tap on 'App battery saver' to view the list of apps with battery restrictions."
+      },
+      {
+        "title": "Disable Battery Saver for the App",
+        "content": "Select the app(s) experiencing notification issues, then change the setting from 'Battery Saver' to 'No restrictions'."
+      },
+      {
+        "title": "Restart the App (if needed)",
+        "content": "Force close and reopen the app to ensure changes take effect."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-08-08T01:08:56.567Z",
+      "updated": "2026-08-08T01:08:56.567Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/231567/notification-doesnt-show-up-on-redmi-8-miui-11-and-12",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
