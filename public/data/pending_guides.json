@@ -357245,5 +357245,320 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786164609143-401",
+    "title": "Fix Galaxy S7 Battery Drain Issue",
+    "problemDescription": "The Galaxy S7 experiences extremely rapid battery drain, often linked to software issues after updates like Marshmallow.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery drain",
+      "Galaxy S7",
+      "Android",
+      "cache partition",
+      "factory reset"
+    ],
+    "steps": [
+      {
+        "title": "Wipe Cache Partition via Recovery Mode",
+        "content": "Turn off your Galaxy S7. Press and hold the Power button. When the 'Samsung Galaxy S7' logo appears, release Power and immediately press and hold the Volume Down button to enter Fastboot mode. Use Volume buttons to highlight 'Recovery' and press Power to confirm. If you see the Android robot, press Power, then briefly press Volume Up to access Recovery. Navigate to 'Wipe cache partition' using Volume buttons, select it with Power, then confirm with 'Yes'. Reboot the device."
+      },
+      {
+        "title": "Clear App Cache via Settings",
+        "content": "Go to Settings > Storage and USB > Cached Data > OK to clear cached data for all apps."
+      },
+      {
+        "title": "Factory Reset (Last Resort)",
+        "content": "Backup all important data. Go to Settings > Backup and Reset > Factory Data Reset > Reset Device. Follow on-screen instructions to complete the reset."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Safe Mode Check",
+        "type": "Diagnostic",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Press and hold the Power button. When the 'Samsung Galaxy S7' logo appears, release Power and immediately press and hold the Volume Down button until the device boots into Safe Mode. Check if battery drain persists. If not, a third-party app is likely the cause."
+          },
+          {
+            "title": "Uninstall Suspect Apps",
+            "content": "In Safe Mode, go to Settings > Apps > sort by 'Most Used' or 'Recently Updated'. Uninstall any recently installed or suspicious apps one by one to identify the culprit."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T04:50:09.143Z",
+      "updated": "2026-08-08T04:50:09.143Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/182745/battery-draining-extremely-quickly-galaxy-s7",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786164612312-92",
+    "title": "Fix mm-qcamera-daemon Battery Drain on Android 4.4 KitKat",
+    "problemDescription": "The mm-qcamera-daemon process causes excessive battery drain on Android 4.4 KitKat devices, often triggered by camera-using apps like Skype or Hangouts.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "mm-qcamera-daemon",
+      "battery drain",
+      "Android 4.4",
+      "KitKat",
+      "camera app",
+      "Skype",
+      "Hangouts"
+    ],
+    "steps": [
+      {
+        "title": "Reboot the Device",
+        "content": "Restart your phone to temporarily stop the high CPU usage caused by mm-qcamera-daemon."
+      },
+      {
+        "title": "Uninstall or Disable Problematic Apps",
+        "content": "Uninstall or disable apps that frequently use the camera (e.g., Skype, Hangouts) to reduce the likelihood of triggering the bug."
+      },
+      {
+        "title": "Wait for Android Maintenance Update",
+        "content": "Monitor for official Android updates that may include a fix for the mm-qcamera-daemon issue."
+      },
+      {
+        "title": "Use a Camera Disabler App",
+        "content": "Install an app like 'Disable Camera device ICS/JB' to temporarily disable the camera and prevent the daemon from running."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Camera via ADB",
+        "type": "Advanced Workaround",
+        "steps": [
+          {
+            "title": "Enable Developer Options",
+            "content": "Go to Settings > About Phone and tap 'Build Number' 7 times to enable Developer Options."
+          },
+          {
+            "title": "Connect to ADB",
+            "content": "Connect your device to a computer with ADB installed and run 'adb devices' to confirm connection."
+          },
+          {
+            "title": "Disable Camera",
+            "content": "Run the command: `adb shell pm disable com.android.camera` to disable the camera app."
+          },
+          {
+            "title": "Re-enable Camera When Needed",
+            "content": "To re-enable, run: `adb shell pm enable com.android.camera`"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T04:50:12.312Z",
+      "updated": "2026-08-08T04:50:12.312Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/64569/mm-qcamera-daemon-causing-massive-battery-drain",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786164616679-183",
+    "title": "Fix 'Phone Idle' Battery Drain on Unrooted Android",
+    "problemDescription": "Excessive battery drain during 'Phone Idle' state due to rogue wakelocks or background processes on an unrooted Android device.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "battery drain",
+      "phone idle",
+      "wakelock",
+      "unrooted",
+      "android"
+    ],
+    "steps": [
+      {
+        "title": "Monitor Wakelocks for 1-2 Hours",
+        "content": "Install and open 'Wakelock Detector' from the Play Store. Let the device idle for 1-2 hours without use to accumulate wakelock statistics. Avoid using the device during this period."
+      },
+      {
+        "title": "Identify Top Wakelock Culprits",
+        "content": "Open Wakelock Detector and review the top apps with long wakelock usage times. Focus on apps with excessive 'Screen Wakelock', 'CPU Wakelock', or 'Wakeup triggers'. These are likely causing battery drain."
+      },
+      {
+        "title": "Use GSam Battery Monitor for Enhanced Stats",
+        "content": "Install 'GSam Battery Monitor' from the Play Store. Enable enhanced statistics by going to Menu → More → Enable more stats. Grant the app the BATTERY_STATS permission using ADB: `adb -d shell pm grant com.gsamlabs.bbm android.permission.BATTERY_STATS`. Force stop the app to apply changes."
+      },
+      {
+        "title": "Disable or Restrict Problematic Apps",
+        "content": "Based on the wakelock data, disable or restrict apps identified as major contributors to battery drain. Go to Settings → Apps → Select the app → Disable or restrict background activity."
+      },
+      {
+        "title": "Use ADB Bugreport for Advanced Analysis (Optional)",
+        "content": "If preferred, generate a bugreport using `adb bugreport` and analyze it with Battery Historian to identify problematic apps. Disable or restrict apps flagged in the report."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use ADB to Tune Doze Without Extra Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Doze Mode via ADB",
+            "content": "Connect your device to a computer with ADB installed. Run the following command to enable Doze mode: `adb shell dumpsys deviceidle enable`."
+          },
+          {
+            "title": "Check Doze Status",
+            "content": "Verify Doze status with: `adb shell dumpsys deviceidle status`."
+          },
+          {
+            "title": "Manually Force Apps into Doze",
+            "content": "For specific apps, use: `adb shell am set-inactive <package.name> true` to force them into Doze."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T04:50:16.679Z",
+      "updated": "2026-08-08T04:50:16.679Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/191668/how-to-tame-phone-idle-battery-drain-on-unrooted-device",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786164671557-994",
+    "title": "Transfer WhatsApp Data from Android to iPhone",
+    "problemDescription": "Users cannot transfer WhatsApp chats, photos, and media from an Android device to an iPhone, losing years of conversations and media.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "whatsapp",
+      "data transfer",
+      "android to ios",
+      "migration"
+    ],
+    "steps": [
+      {
+        "title": "Install 'Move to iOS' on Android",
+        "content": "Download and install the 'Move to iOS' app from the Google Play Store on your Android device."
+      },
+      {
+        "title": "Prepare Your iPhone",
+        "content": "Set up your new iPhone until you reach the 'Apps & Data' screen. Select 'Move Data from Android'."
+      },
+      {
+        "title": "Connect Devices",
+        "content": "On your Android device, open 'Move to iOS' and enter the 10-digit code displayed on your iPhone. Wait for the devices to connect."
+      },
+      {
+        "title": "Select WhatsApp Data",
+        "content": "On your Android device, choose 'WhatsApp' from the list of data types to transfer. Confirm the transfer and wait for it to complete."
+      },
+      {
+        "title": "Complete Setup on iPhone",
+        "content": "Finish setting up your iPhone. Open WhatsApp and log in with the same phone number used on Android. Verify your account and restore your chats and media."
+      },
+      {
+        "title": "Verify Transfer",
+        "content": "Check your WhatsApp on iPhone to ensure all chats, photos, and media have been transferred successfully."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Backup and Restore (Not Recommended)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Backup WhatsApp on Android",
+            "content": "Go to WhatsApp > Settings > Chats > Chat Backup and create a local backup of your chats and media."
+          },
+          {
+            "title": "Transfer Backup to iPhone",
+            "content": "Manually transfer the WhatsApp backup file to your iPhone using cloud storage or a computer."
+          },
+          {
+            "title": "Restore on iPhone",
+            "content": "Install WhatsApp on iPhone and verify your phone number. The app will prompt to restore from the backup if detected."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T04:51:11.557Z",
+      "updated": "2026-08-08T04:51:11.557Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/whatsapp-now-lets-you-move-chats-photos-from-android-to-iphone",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786164684713-440",
+    "title": "Fix Siri Shortcut Connection and Access Issues",
+    "problemDescription": "Siri fails to run shortcuts due to connection errors, untrusted shortcuts, or lack of personal request access.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "Siri",
+      "shortcuts",
+      "connection",
+      "personal requests",
+      "HomeKit"
+    ],
+    "steps": [
+      {
+        "title": "Enable Untrusted Shortcuts",
+        "content": "Open Settings > Scroll to Shortcuts > Enable 'Allow Untrusted Shortcuts'. Confirm by tapping 'Allow' and entering your passcode if required."
+      },
+      {
+        "title": "Check Wi-Fi and HomePod Network",
+        "content": "Ensure your iPhone is on the same Wi-Fi network as your HomePod or HomeKit hub (Apple TV, iPad, or HomePod Mini)."
+      },
+      {
+        "title": "Enable Personal Requests for HomePod",
+        "content": "Open the Home app > Tap the House icon > Home Settings > Tap your name > Enable 'Personal Requests' for all HomePods. Tap 'Done' to save."
+      },
+      {
+        "title": "Share Shortcuts with Others",
+        "content": "On the other person's iPhone, download the Shortcuts app and the manufacturer's device app. Send the shortcut to their phone and ensure they enable 'Personal Requests' in Settings."
+      },
+      {
+        "title": "Grant Home Access to Others",
+        "content": "In the Home app, tap the House icon > Home Settings > People > Select the person > Enable 'Allow Editing' and 'Personal Requests'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use HomeKit-Compatible Devices",
+        "type": "Workaround",
+        "steps": [
+          {
+            "title": "Replace Non-HomeKit Devices",
+            "content": "Replace non-HomeKit compatible devices with HomeKit-supported alternatives to simplify Siri control."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Automation Instead of Shortcuts",
+        "type": "Workaround",
+        "steps": [
+          {
+            "title": "Create HomeKit Automations",
+            "content": "In the Home app, create automations (e.g., 'Turn off lights when I arrive home') instead of relying on Siri shortcuts."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T04:51:24.713Z",
+      "updated": "2026-08-08T04:51:24.713Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=boMYP_qTn_w",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
