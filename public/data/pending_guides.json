@@ -357975,5 +357975,245 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786178062906-9",
+    "title": "Fix Slow Loading Times on High-End PC",
+    "problemDescription": "A high-end PC experiences very slow loading times despite having no detected viruses or malware after multiple scans.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "slow loading",
+      "high-end PC",
+      "performance",
+      "SSD",
+      "Windows errors"
+    ],
+    "steps": [
+      {
+        "title": "Check for Disk Errors",
+        "content": "Open Command Prompt as Administrator and run 'chkdsk C: /f /r'. Restart the PC if prompted. This scans and repairs file system errors and bad sectors."
+      },
+      {
+        "title": "Verify SSD Health",
+        "content": "Use manufacturer tools (e.g., Samsung Magician, Crucial Storage Executive) to check SSD health and firmware. Replace the SSD if errors are found."
+      },
+      {
+        "title": "Perform a Clean Windows Reinstall",
+        "content": "Back up important data. Use Windows Media Creation Tool to create a bootable USB. Reinstall Windows, ensuring a clean installation without bloatware."
+      },
+      {
+        "title": "Check Background Processes",
+        "content": "Open Task Manager (Ctrl+Shift+Esc), go to the 'Startup' tab, and disable unnecessary startup programs. Also, check the 'Processes' tab for resource-heavy applications."
+      },
+      {
+        "title": "Update Drivers and BIOS",
+        "content": "Download and install the latest drivers for all hardware components from the manufacturer's website. Also, update the BIOS/UEFI to the latest version."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to Settings > Update & Security > Windows Update and install all pending updates. Ensure the system is fully patched."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Windows Without Reinstalling",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Windows Reset Feature",
+            "content": "Go to Settings > Update & Security > Recovery. Select 'Reset this PC' and choose 'Keep my files' to reinstall Windows while preserving personal files."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Malware in Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Restart the PC and press F8 (or Shift+F8) during boot to enter Safe Mode. Run multiple antivirus scans (e.g., Malwarebytes, Windows Defender) in this mode."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T08:34:22.906Z",
+      "updated": "2026-08-08T08:34:22.906Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/high-end-pc-has-very-slow-loading-times.2915792",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786178069970-647",
+    "title": "Fix Unstable Memory Configuration or RAM Errors",
+    "problemDescription": "PC experiences instability or fails to boot due to unstable memory configuration or RAM errors, often indicated by errors in MemTest86 or system crashes.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "memory",
+      "ram",
+      "instability",
+      "memtest86",
+      "cmos",
+      "voltage",
+      "timings"
+    ],
+    "steps": [
+      {
+        "title": "Run MemTest86 to Confirm RAM Errors",
+        "content": "Download MemTest86 from the official website (https://www.memtest86.com/). Extract the USB image file using the 'Extract to Here' option. Run the included imageUSB tool to create a bootable USB drive (this will erase all data on the drive). Boot from the USB drive and run MemTest86 to check for RAM errors. If errors are detected, proceed to the next steps."
+      },
+      {
+        "title": "Reset BIOS/UEFI Settings to Default",
+        "content": "Power off the PC and remove the CMOS battery for 5 minutes. Reinsert the battery and power on the system. This resets BIOS/UEFI settings to default, including memory timings and voltage. Check if the issue persists."
+      },
+      {
+        "title": "Adjust DRAM Voltage Slightly",
+        "content": "If errors persist after resetting CMOS, enter BIOS/UEFI. Locate the DRAM voltage setting (usually under 'Memory Settings' or 'Overclocking'). Increase the voltage by a small increment (e.g., 0.05V). Save settings and reboot. Test stability with MemTest86 again."
+      },
+      {
+        "title": "Check and Adjust Primary Memory Timings",
+        "content": "If voltage adjustment does not resolve the issue, enter BIOS/UEFI and locate the primary memory timings (e.g., CAS latency, tRCD, tRP, tRAS). Reset these to default values if they were manually adjusted. Save settings and reboot. Test stability with MemTest86."
+      },
+      {
+        "title": "Reseat or Replace RAM Modules",
+        "content": "Power off the PC and unplug it. Open the case and reseat the RAM modules by removing and reinserting them firmly into their slots. Ensure they click into place. If possible, test each module individually in different slots to isolate faulty RAM. Replace any modules that fail MemTest86."
+      },
+      {
+        "title": "Test with Minimal Hardware Configuration",
+        "content": "Disconnect all non-essential devices (secondary drives, GPUs, peripherals). Leave only the CPU, one RAM module, and the boot drive connected. Power on the system and test stability. If stable, reconnect devices one at a time to identify the cause of instability."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows Memory Diagnostic Tool",
+        "type": "Alternative Tool",
+        "steps": [
+          {
+            "title": "Run Windows Memory Diagnostic",
+            "content": "Press `Win + R`, type `mdsched.exe`, and press Enter. Choose to restart now and check for problems. The tool will run automatically on reboot and report any memory issues. Follow the prompts to address errors."
+          },
+          {
+            "title": "Interpret Results and Take Action",
+            "content": "If errors are found, repeat the steps above (reset CMOS, adjust voltage/timings, reseat RAM). Windows Memory Diagnostic is less thorough than MemTest86 but can provide initial insights."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update BIOS/UEFI Firmware",
+        "type": "Firmware Update",
+        "steps": [
+          {
+            "title": "Check Current BIOS Version",
+            "content": "Enter BIOS/UEFI and note the current version. Visit the motherboard manufacturer's website and check for newer BIOS versions. Download the update file and follow the manufacturer's instructions to flash the BIOS."
+          },
+          {
+            "title": "Flash BIOS and Reset Settings",
+            "content": "After updating BIOS, reset settings to default. Reconfigure memory settings if necessary. Test stability with MemTest86 to ensure the update resolved the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T08:34:29.970Z",
+      "updated": "2026-08-08T08:34:29.970Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/common-pc-troubleshooting-steps.2223646",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786178091726-823",
+    "title": "Fix Slow Windows PC After Update",
+    "problemDescription": "Windows PC becomes sluggish or unresponsive after a system update, affecting performance in specific areas like File Explorer, search, or visual effects.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows update",
+      "slow pc",
+      "performance",
+      "laggy",
+      "buggy update"
+    ],
+    "steps": [
+      {
+        "title": "Wait and Restart",
+        "content": "Allow Windows to complete background tasks for 30 minutes. Restart the PC to trigger final optimizations. Check if performance improves."
+      },
+      {
+        "title": "Identify the Slow Component",
+        "content": "Determine if the slowdown affects the entire system or specific areas (e.g., File Explorer, search, visual effects, boot time)."
+      },
+      {
+        "title": "Check for Buggy Updates",
+        "content": "Right-click the Start button > Settings > Windows Update. Note the KB number of the latest update. Search online for reports of performance issues with this KB number."
+      },
+      {
+        "title": "Uninstall Problematic Update",
+        "content": "If a buggy update is identified, go to Settings > Windows Update > Update history > Uninstall updates. Select the problematic update and uninstall it. Restart the PC."
+      },
+      {
+        "title": "Reset File Explorer",
+        "content": "Press Ctrl + Shift + Esc to open Task Manager. Find 'Windows Explorer' under Processes, right-click it, and select 'Restart'. Alternatively, clear File Explorer's cache by opening File Explorer > View > Options > Change folder and search options > Clear File Explorer history."
+      },
+      {
+        "title": "Rebuild Search Index",
+        "content": "Go to Settings > Search > Searching Windows. Click 'Advanced search indexer settings'. Click 'Advanced' > 'Rebuild'. Wait for the process to complete and restart the PC."
+      },
+      {
+        "title": "Adjust Visual Effects",
+        "content": "Go to Settings > System > About > Advanced system settings > Performance Settings. Select 'Adjust for best performance' or manually disable unnecessary visual effects. Click Apply and restart the PC."
+      },
+      {
+        "title": "Disable Unnecessary Startup Apps",
+        "content": "Press Ctrl + Shift + Esc to open Task Manager. Go to the 'Startup' tab. Disable apps that are not essential for startup by right-clicking and selecting 'Disable'. Restart the PC."
+      },
+      {
+        "title": "Update or Roll Back Graphics Drivers",
+        "content": "Go to Device Manager > Display adapters. Right-click your graphics driver and select 'Update driver' or 'Properties' > 'Driver' > 'Roll Back Driver' if available. Restart the PC."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows Troubleshooter",
+        "type": "Built-in Tool",
+        "steps": [
+          {
+            "title": "Run Performance Troubleshooter",
+            "content": "Go to Settings > System > Troubleshoot > Other troubleshooters. Run the 'Performance' troubleshooter and follow the on-screen instructions. Restart the PC."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reset Windows Update Components",
+        "type": "Advanced Fix",
+        "steps": [
+          {
+            "title": "Stop Windows Update Services",
+            "content": "Open Command Prompt as Administrator and run the following commands sequentially: 'net stop wuauserv', 'net stop cryptSvc', 'net stop bits', 'net stop msiserver'."
+          },
+          {
+            "title": "Rename SoftwareDistribution and Catroot2 Folders",
+            "content": "In Command Prompt, run: 'ren C:\\Windows\\SoftwareDistribution SoftwareDistribution.old' and 'ren C:\\Windows\\System32\\catroot2 Catroot2.old'."
+          },
+          {
+            "title": "Restart Services and PC",
+            "content": "Run the following commands to restart services: 'net start wuauserv', 'net start cryptSvc', 'net start bits', 'net start msiserver'. Restart the PC."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T08:34:51.726Z",
+      "updated": "2026-08-08T08:34:51.726Z",
+      "sourceUrl": "https://www.howtogeek.com/fix-slow-windows-after-update",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
