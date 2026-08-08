@@ -358215,5 +358215,83 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1786181510309-771",
+    "title": "Reduce Android Auto Battery Drain with Automation",
+    "problemDescription": "Android Auto drains battery excessively due to continuous Bluetooth and Wi-Fi usage, especially during wireless connections.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "Android Auto",
+      "battery drain",
+      "automation",
+      "battery saver",
+      "wireless connection"
+    ],
+    "steps": [
+      {
+        "title": "Enable Battery Saver Mode for Android Auto",
+        "content": "Go to Settings > Battery > Battery Saver. Enable it and set it to activate automatically when the battery drops below a certain percentage (e.g., 20%)."
+      },
+      {
+        "title": "Use Wired Connection Instead of Wireless",
+        "content": "Connect your phone to the car via USB cable. Wired connections reduce battery drain by avoiding Bluetooth and Wi-Fi usage."
+      },
+      {
+        "title": "Automate Battery Saver Activation with Tasker or Macrodroid",
+        "content": "Install Tasker or Macrodroid. Create a task to enable Battery Saver mode when Android Auto is connected (detected via USB or Bluetooth)."
+      },
+      {
+        "title": "Disable Unnecessary Features in Android Auto",
+        "content": "Open Android Auto, go to Settings > Connected Car Settings. Disable features like 'Show Notifications' or 'Enable Data Usage' to reduce background activity."
+      },
+      {
+        "title": "Check for Manufacturer-Specific Battery Optimization",
+        "content": "Some Android phones (e.g., Samsung, OnePlus) have proprietary battery optimization features. Enable these in Settings > Battery > Background Usage Limits."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Developer Options to Limit Background Activity",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Enable Developer Options",
+            "content": "Go to Settings > About Phone > tap 'Build Number' 7 times."
+          },
+          {
+            "title": "Limit Background Processes",
+            "content": "Go to Developer Options > Limit Background Processes > Set to '2 processes'. This reduces battery drain by restricting background app activity."
+          },
+          {
+            "title": "Disable Animation Scales",
+            "content": "In Developer Options, set 'Window Animation Scale', 'Transition Animation Scale', and 'Animator Duration Scale' to 'Animation off'."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Dedicated Battery Optimization App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install AccuBattery or Greenify",
+            "content": "Download and install AccuBattery or Greenify from the Play Store."
+          },
+          {
+            "title": "Configure App for Android Auto",
+            "content": "Set the app to aggressively hibernate Android Auto when not in use. Greenify can also force close background processes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T09:31:50.309Z",
+      "updated": "2026-08-08T09:31:50.310Z",
+      "sourceUrl": "https://www.howtogeek.com/this-simple-android-auto-automation-quietly-saves-my-battery-on-every-drive",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
