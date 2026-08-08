@@ -357601,5 +357601,154 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1786171289211-909",
+    "title": "Mirror iPad Screen to TV for Bedroom Streaming",
+    "problemDescription": "User wants to wirelessly mirror their TV screen to an iPad mounted on a bed for convenient viewing.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "mirror",
+      "stream",
+      "iPad",
+      "TV",
+      "AirPlay",
+      "screen mirroring"
+    ],
+    "steps": [
+      {
+        "title": "Check Device Compatibility",
+        "content": "Ensure your TV supports AirPlay or has an Apple TV connected. Verify your iPad runs iOS 12 or later (Settings > General > About)."
+      },
+      {
+        "title": "Connect Both Devices to the Same Wi-Fi Network",
+        "content": "On your iPad, go to Settings > Wi-Fi and connect to the same network as your TV or Apple TV. Ensure both devices have stable internet."
+      },
+      {
+        "title": "Enable AirPlay on Your TV or Apple TV",
+        "content": "On your TV or Apple TV, go to Settings > AirPlay and enable AirPlay. Note the TV name for selection on your iPad."
+      },
+      {
+        "title": "Mirror iPad Screen to TV",
+        "content": "On your iPad, swipe down from the top-right corner to open Control Center. Tap Screen Mirroring and select your TV or Apple TV from the list. Enter the AirPlay code if prompted."
+      },
+      {
+        "title": "Adjust Display Settings (Optional)",
+        "content": "To optimize viewing, adjust the iPad's display settings (Settings > Display & Brightness) or use the TV's zoom/aspect ratio settings for better fit."
+      },
+      {
+        "title": "Troubleshoot Connection Issues",
+        "content": "If mirroring fails, restart both devices, reset network settings on the iPad (Settings > General > Transfer or Reset iPad > Reset > Reset Network Settings), or check for Wi-Fi interference."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Wired HDMI Adapter (For Stable Connection)",
+        "type": "Alternative Solution",
+        "steps": [
+          {
+            "title": "Purchase a Lightning to HDMI Adapter",
+            "content": "Buy an Apple-approved Lightning to HDMI adapter (e.g., Lightning Digital AV Adapter) and an HDMI cable."
+          },
+          {
+            "title": "Connect iPad to TV",
+            "content": "Plug the adapter into your iPad, connect the HDMI cable to the adapter and your TV's HDMI port. Select the correct HDMI input on your TV."
+          },
+          {
+            "title": "Enable HDMI Output",
+            "content": "On your iPad, the screen should automatically mirror to the TV. If not, check the adapter's connection or restart the iPad."
+          },
+          {
+            "title": "Adjust Settings for Best Quality",
+            "content": "Go to Settings > Display & Brightness on your iPad to adjust resolution or scaling if needed."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Third-Party Apps (For Non-Apple TVs)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Screen Mirroring App",
+            "content": "Download a reputable app like Reflector, AirServer, or ApowerMirror on both your iPad and computer/TV (if applicable)."
+          },
+          {
+            "title": "Connect Devices",
+            "content": "Follow the app's instructions to connect your iPad to the TV. This may involve entering an IP address or scanning a QR code."
+          },
+          {
+            "title": "Start Mirroring",
+            "content": "Open the app on your iPad and select the TV as the mirroring destination. Adjust settings for optimal performance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T06:41:29.211Z",
+      "updated": "2026-08-08T06:41:29.211Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/316328/is-there-a-magical-solution-cable-box-to-simply-mirror-and-stream-everything-tha",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1786171310301-946",
+    "title": "Fix iPhone 5 Screen Flicker or Unresponsive Touchscreen",
+    "problemDescription": "Intermittent screen flicker or unresponsive touchscreen issues on iPhone 5, often linked to software glitches or hardware faults.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone 5",
+      "screen flicker",
+      "touchscreen unresponsive",
+      "software glitch",
+      "hard reset"
+    ],
+    "steps": [
+      {
+        "title": "Check for iOS Updates",
+        "content": "Go to Settings > General > Software Update. If an update is available, install it to fix potential software-related flickering or touchscreen issues."
+      },
+      {
+        "title": "Perform a Hard Reset",
+        "content": "Press and hold the Lock (Sleep/Wake) button and the Home button simultaneously for at least 10 seconds until the Apple logo appears. Release the buttons and wait for the device to restart."
+      },
+      {
+        "title": "Delete and Re-add Exchange Account (if applicable)",
+        "content": "Go to Settings > Mail, Contacts, Calendars. Select your Exchange account, tap Delete Account, then restart your iPhone. Re-add the Exchange account by going to Settings > Mail, Contacts, Calendars > Add Account."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Wait for Software Fix",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Monitor for Updates",
+            "content": "Check Apple’s support forums or release notes for future iOS updates that may address the flickering or touchscreen issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Apple Support",
+        "type": "Official Support",
+        "steps": [
+          {
+            "title": "Reach Out to Apple",
+            "content": "If the issue persists after trying the above steps, contact Apple Support or visit an Apple Store for further diagnostics or potential hardware replacement."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-08-08T06:41:50.301Z",
+      "updated": "2026-08-08T06:41:50.301Z",
+      "sourceUrl": "https://www.digitaltrends.com/phones/iphone-5-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
