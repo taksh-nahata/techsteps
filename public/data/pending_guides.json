@@ -359874,5 +359874,534 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1788242364152-156",
+    "title": "Fix Apple TV Not Opening on Samsung TV",
+    "problemDescription": "Apple TV app fails to open or crashes on a Samsung Smart TV, causing freezing or unplayable videos.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "Apple TV",
+      "Samsung TV",
+      "app not opening",
+      "crash",
+      "freezing"
+    ],
+    "steps": [
+      {
+        "title": "Reset Smart Hub on Samsung TV",
+        "content": "Navigate to Settings > Support > Self Diagnosis > Reset Smart Hub. Enter the default PIN (0000) when prompted. After the reset, press the Home button and select Setup to reconfigure the TV."
+      },
+      {
+        "title": "Factory Reset Samsung TV via SmartThings App",
+        "content": "Open the SmartThings app on your mobile device. Select your Samsung TV, go to Settings > Support > Device Care > Reset > Factory Reset. Wait for the TV to restart and update its Smart Hub. Reinstall the Apple TV app."
+      },
+      {
+        "title": "Remove TV from Apple ID Devices",
+        "content": "On your Mac or iOS device, go to System Settings > Apple ID > Devices. Remove your Samsung TV from the list. Restart the TV and reopen the Apple TV app to force a re-login."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Apple TV App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall and Reinstall Apple TV App",
+            "content": "On your Samsung TV, navigate to the Apple TV app, press and hold the Select button on your remote, and choose Uninstall. Reinstall the app from the Samsung TV app store and open it to check for resolution."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update Samsung TV Firmware",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Firmware Updates",
+            "content": "Go to Settings > Support > Software Update on your Samsung TV. Ensure the TV is running the latest firmware. Restart the TV and reopen the Apple TV app."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T05:59:24.152Z",
+      "updated": "2026-09-01T05:59:24.152Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255375697",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788242382669-627",
+    "title": "Fix Intermittent Mobile Data Disconnects on Samsung Galaxy A55 5G",
+    "problemDescription": "Mobile data on a Samsung Galaxy A55 5G frequently disconnects, requiring Airplane Mode toggling to restore connectivity.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "mobile data",
+      "disconnects",
+      "Samsung Galaxy A55 5G",
+      "Airplane Mode",
+      "network issue"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Device",
+        "content": "Press and hold the power button, then select 'Restart' to reboot the device. This often resolves temporary network glitches."
+      },
+      {
+        "title": "Toggle Airplane Mode Manually",
+        "content": "Swipe down from the top of the screen to open the notification panel. Tap the Airplane Mode icon to enable it, wait 10 seconds, then tap it again to disable it."
+      },
+      {
+        "title": "Check APN Settings",
+        "content": "Go to Settings > Connections > Mobile Networks > Access Point Names. Ensure your carrier's APN settings are correct. If unsure, contact your carrier or reset to default."
+      },
+      {
+        "title": "Disable Wi-Fi Calling and VoLTE",
+        "content": "Navigate to Settings > Connections > Mobile Networks. Turn off 'Wi-Fi Calling' and 'VoLTE' to prevent conflicts with mobile data."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > General Management > Reset > Reset Network Settings. Confirm the reset and restart the device. Note: This will remove saved Wi-Fi passwords."
+      },
+      {
+        "title": "Update Carrier and System Software",
+        "content": "Check for updates: Settings > Software Update > Download and Install. Also, ensure your carrier settings are up to date via Settings > Software Update > Carrier Settings Update."
+      },
+      {
+        "title": "Test in Safe Mode",
+        "content": "Boot the device in Safe Mode (hold power button, long-press 'Power Off' > 'Safe Mode'). If the issue persists, it may be hardware-related. If resolved, a third-party app is likely the cause."
+      },
+      {
+        "title": "Factory Reset (Last Resort)",
+        "content": "Backup data, then go to Settings > General Management > Reset > Factory Data Reset. This erases all data and restores the device to factory settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Battery Optimization for SIM Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Battery Settings",
+            "content": "Go to Settings > Battery and device care > Battery > More battery settings."
+          },
+          {
+            "title": "Disable Optimization for SIM Apps",
+            "content": "Scroll to 'Apps that won't be put to sleep' and ensure your SIM-related apps (e.g., carrier services) are not optimized for battery."
+          },
+          {
+            "title": "Restart the Device",
+            "content": "Reboot the device to apply changes and check if the issue persists."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Replace SIM Card",
+        "type": "Hardware Check",
+        "steps": [
+          {
+            "title": "Contact Carrier for SIM Replacement",
+            "content": "Visit your carrier's store or contact support to request a new SIM card. Faulty SIMs can cause intermittent disconnections."
+          },
+          {
+            "title": "Test with New SIM",
+            "content": "Insert the new SIM and restart the device. Check if the issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T05:59:42.669Z",
+      "updated": "2026-09-01T05:59:42.669Z",
+      "sourceUrl": "https://superuser.com/questions/1929980/mobile-data-intermittenty-disconnects-on-samsung-galaxy-a55-5g",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788242384604-674",
+    "title": "Factory Reset Samsung Galaxy Tab 10.1",
+    "problemDescription": "User needs to perform a factory reset on a Samsung Galaxy Tab 10.1 but is unsure of the correct steps.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "factory reset",
+      "Samsung Galaxy Tab 10.1",
+      "hard reset",
+      "reset device"
+    ],
+    "steps": [
+      {
+        "title": "Access Factory Reset via Settings",
+        "content": "Go to 'Settings' > 'Privacy' > 'Factory Data Reset'. Follow the on-screen instructions to confirm the reset."
+      },
+      {
+        "title": "Perform Hard Reset (Alternative Method)",
+        "content": "Turn off the device. Press and hold the 'Volume Down' + 'Power' buttons simultaneously for 10 seconds until the recovery menu appears. Use the volume buttons to navigate and the power button to select 'Wipe data/factory reset'. Confirm the selection and wait for the process to complete."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-09-01T05:59:44.604Z",
+      "updated": "2026-09-01T05:59:44.604Z",
+      "sourceUrl": "https://superuser.com/questions/402101/how-to-check-if-firewall-is-stopped-on-redhat-7",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788242386266-788",
+    "title": "Fix Galaxy S3 Phone Utility Access Issue",
+    "problemDescription": "User cannot access the phone utility on a Samsung Galaxy S3 (I535).",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "Galaxy S3",
+      "Phone Utility",
+      "Access",
+      "USB Debugging",
+      "PDANET"
+    ],
+    "steps": [
+      {
+        "title": "Enable USB Debugging",
+        "content": "Go to Settings > Developer Options and turn on USB Debugging. This may resolve the utility access issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Install PDANET",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download and Install PDANET",
+            "content": "Download and install the PDANET app from a trusted source on your Galaxy S3."
+          },
+          {
+            "title": "Connect and Test",
+            "content": "Use PDANET to connect and check if the phone utility becomes accessible."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T05:59:46.266Z",
+      "updated": "2026-09-01T05:59:46.266Z",
+      "sourceUrl": "https://superuser.com/questions/632531/cant-access-phone-util-on-galaxy-s3-i535",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788242402910-785",
+    "title": "Fix Amazon Echo Dot Not Showing as Audio Output Device on Ubuntu",
+    "problemDescription": "Amazon Echo Dot is detected as an input device but not as an output device in Ubuntu, preventing audio playback.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "echo-dot",
+      "audio-output",
+      "bluetooth",
+      "ubuntu",
+      "input-device"
+    ],
+    "steps": [
+      {
+        "title": "Check Bluetooth Audio Profile",
+        "content": "Open a terminal and run `pactl list cards` to verify if the Echo Dot is listed with an audio profile. If it shows only as an input device, proceed to the next step."
+      },
+      {
+        "title": "Set Correct Audio Profile",
+        "content": "Run `pactl set-card-profile <card-name> a2dp_sink` to switch the Echo Dot to A2DP Sink mode (replace `<card-name>` with the actual card name from the previous command)."
+      },
+      {
+        "title": "Restart Bluetooth Service",
+        "content": "Restart the Bluetooth service to apply changes: `sudo systemctl restart bluetooth`."
+      },
+      {
+        "title": "Reconnect Echo Dot",
+        "content": "Disconnect and reconnect the Echo Dot via Bluetooth in your system settings or using `bluetoothctl` (run `connect <device-MAC>`)."
+      },
+      {
+        "title": "Verify Output Device",
+        "content": "Check if the Echo Dot now appears as an output device in `pactl list sinks` or your system's sound settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use pavucontrol for Manual Profile Switch",
+        "type": "GUI Workaround",
+        "steps": [
+          {
+            "title": "Install pavucontrol",
+            "content": "Install PulseAudio Volume Control if not already installed: `sudo apt install pavucontrol`."
+          },
+          {
+            "title": "Open pavucontrol",
+            "content": "Run `pavucontrol` in the terminal or launch it from the application menu."
+          },
+          {
+            "title": "Switch to A2DP Profile",
+            "content": "Go to the 'Configuration' tab, select the Echo Dot, and choose 'A2DP Sink' from the profile dropdown menu."
+          },
+          {
+            "title": "Reconnect Device",
+            "content": "Disconnect and reconnect the Echo Dot to apply the changes."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update Bluetooth Firmware and Drivers",
+        "type": "System Update",
+        "steps": [
+          {
+            "title": "Update System Packages",
+            "content": "Run `sudo apt update && sudo apt upgrade -y` to ensure all packages, including Bluetooth drivers, are up to date."
+          },
+          {
+            "title": "Check Bluetooth Adapter",
+            "content": "Verify your Bluetooth adapter supports A2DP by running `hciconfig -a` and checking for A2DP support in the output."
+          },
+          {
+            "title": "Reinstall Bluetooth Packages",
+            "content": "Reinstall Bluetooth packages to fix potential corruption: `sudo apt install --reinstall bluez pulseaudio-module-bluetooth`."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T06:00:02.910Z",
+      "updated": "2026-09-01T06:00:02.910Z",
+      "sourceUrl": "https://askubuntu.com/questions/1207704/amazon-echo-dot-only-visible-as-input-device-not-output",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788242416054-574",
+    "title": "Install and Configure Open-Source Apps for Inventory and Grocery Management",
+    "problemDescription": "Users struggle with managing inventory or avoiding duplicate grocery purchases due to inefficient software solutions.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "inventory",
+      "grocery",
+      "open-source",
+      "HomeBox",
+      "KitchenOwl",
+      "ntfy"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install HomeBox for Inventory Management",
+        "content": "Visit the official HomeBox GitHub repository (https://github.com/hay-kot/homebox) and download the latest release for your operating system (Windows, macOS, or Linux). Follow the installation instructions for your platform."
+      },
+      {
+        "title": "Set Up HomeBox for Inventory Tracking",
+        "content": "Launch HomeBox and create a new inventory. Add items by entering details such as name, category, quantity, and location. Use the search function to quickly find items in your inventory."
+      },
+      {
+        "title": "Download and Install KitchenOwl for Grocery Management",
+        "content": "Go to the KitchenOwl GitHub repository (https://github.com/tombursch/kitchenowl) and download the appropriate version for your device (Android, iOS, or web). Install the app and create an account."
+      },
+      {
+        "title": "Configure KitchenOwl to Avoid Duplicate Grocery Purchases",
+        "content": "Add your grocery items to KitchenOwl’s list. Use the app’s built-in scanner or manual entry to track items you already have. KitchenOwl will alert you if you attempt to add an item you already own, preventing duplicates."
+      },
+      {
+        "title": "Use ntfy for Personal Notifications (Optional)",
+        "content": "Download ntfy from its GitHub repository (https://github.com/binwiederhier/ntfy). Configure ntfy to send notifications for low-stock items or reminders via scripts or integrations with other apps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Spreadsheet-Based Inventory (No App Installation)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a Spreadsheet for Inventory",
+            "content": "Open a spreadsheet application (e.g., Google Sheets or Microsoft Excel) and create columns for item name, category, quantity, and location."
+          },
+          {
+            "title": "Use Conditional Formatting for Alerts",
+            "content": "Set up conditional formatting to highlight low-stock items or duplicate entries. Use formulas like `=COUNTIF()` to identify duplicates."
+          },
+          {
+            "title": "Manually Track Grocery Purchases",
+            "content": "Maintain a separate sheet for grocery lists and cross-reference it with your inventory sheet to avoid buying duplicates."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T06:00:16.054Z",
+      "updated": "2026-09-01T06:00:16.054Z",
+      "sourceUrl": "https://www.howtogeek.com/these-open-source-apps-solved-problems-i-didnt-think-software-could-fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788242420968-112",
+    "title": "Fix 'Screen Overlay Detected' Error on Android",
+    "problemDescription": "Android displays a 'Screen Overlay Detected' error when an app is trying to draw over other apps, preventing certain functions like app installations or permissions from working.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "screen overlay",
+      "draw over apps",
+      "permission error"
+    ],
+    "steps": [
+      {
+        "title": "Access 'Draw Over Other Apps' Settings",
+        "content": "Go to Settings > Apps > Special Access > Draw Over Other Apps. If using a manufacturer like Samsung, navigate to Settings > Apps > [Three-dot menu] > Special Access > Draw Over Other Apps."
+      },
+      {
+        "title": "Disable Suspicious Overlay Apps",
+        "content": "Review the list of apps with overlay permissions. Disable any apps you don't recognize or don't need overlay access. Toggle off the permission for each app."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "After disabling overlay apps, restart your Android device to ensure changes take effect."
+      },
+      {
+        "title": "Reattempt the Blocked Action",
+        "content": "Try the action that previously triggered the error (e.g., installing an app or granting permissions)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Safe Mode to Identify the Offending App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Hold the power button, then long-press the 'Power off' option. Tap 'OK' to reboot into Safe Mode. In Safe Mode, only pre-installed apps run."
+          },
+          {
+            "title": "Test the Blocked Action",
+            "content": "Attempt the action that triggered the error (e.g., installing an app). If it works, an app you installed is causing the overlay."
+          },
+          {
+            "title": "Uninstall Suspicious Apps",
+            "content": "Go to Settings > Apps > Installed Apps. Uninstall apps you recently added or don't recognize, then reboot normally."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset (Last Resort)",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Backup Your Data",
+            "content": "Ensure all important data is backed up to Google Drive, a computer, or another storage device."
+          },
+          {
+            "title": "Perform a Factory Reset",
+            "content": "Go to Settings > System > Reset Options > Erase All Data. Follow the prompts to reset your device to factory settings."
+          },
+          {
+            "title": "Reinstall Apps Gradually",
+            "content": "After resetting, reinstall apps one by one and test for the error after each installation to identify the culprit."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T06:00:20.968Z",
+      "updated": "2026-09-01T06:00:20.968Z",
+      "sourceUrl": "https://www.howtogeek.com/271519/how-to-fix-the-screen-overlay-detected-error-on-android",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788242430437-572",
+    "title": "Fix Android Auto Connection or App Freezing Issues",
+    "problemDescription": "Android Auto apps (e.g., Spotify, Waze, Google Maps) randomly stop playing, freeze, or disconnect after a few minutes due to aggressive battery optimization or background data restrictions.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android auto",
+      "spotify",
+      "waze",
+      "google maps",
+      "freezing",
+      "disconnect",
+      "battery optimization",
+      "background data"
+    ],
+    "steps": [
+      {
+        "title": "Disable Battery Optimization for Problematic Apps",
+        "content": "Go to **Settings > Apps > [Select the problematic app, e.g., Spotify, Waze, or Google Maps] > Battery**. Choose **Don't optimize** or **Unrestricted** to prevent the app from being restricted in the background."
+      },
+      {
+        "title": "Enable Background Data for Android Auto and Media Apps",
+        "content": "Go to **Settings > Apps > [Select Android Auto or the problematic app] > Mobile data & Wi-Fi**. Toggle on **Background data** to ensure the app can access data even when running in the background."
+      },
+      {
+        "title": "Restart Android Auto and Your Phone",
+        "content": "After adjusting the settings, restart both your phone and your car's infotainment system (if possible) to apply the changes. Unplug and replug the USB cable to reconnect Android Auto."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Android Auto Cache and Data",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Android Auto Cache",
+            "content": "Go to **Settings > Apps > Android Auto > Storage**. Tap **Clear cache** to remove temporary files that may be causing issues."
+          },
+          {
+            "title": "Clear Android Auto Data",
+            "content": "In the same **Storage** menu, tap **Clear data** (note: this will reset app preferences). Reconfigure Android Auto after clearing data."
+          },
+          {
+            "title": "Reconnect Android Auto",
+            "content": "Unplug and replug the USB cable to restart the connection. Ensure your phone's USB debugging is enabled if required."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Different USB Cable or Port",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check USB Cable Quality",
+            "content": "Use a high-quality USB cable (preferably the one that came with your phone or a certified MFi cable) to ensure a stable connection."
+          },
+          {
+            "title": "Try a Different USB Port",
+            "content": "If your car has multiple USB ports, try plugging the cable into a different port to rule out port-specific issues."
+          },
+          {
+            "title": "Enable USB Debugging (if needed)",
+            "content": "Go to **Settings > About phone > Tap Build number 7 times** to enable Developer options. Then go to **Developer options > Enable USB debugging**. Reconnect Android Auto after enabling."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T06:00:30.437Z",
+      "updated": "2026-09-01T06:00:30.437Z",
+      "sourceUrl": "https://www.howtogeek.com/these-settings-fix-most-android-auto-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
