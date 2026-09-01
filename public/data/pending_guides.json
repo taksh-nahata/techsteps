@@ -360906,5 +360906,735 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1788278183123-189",
+    "title": "Fix Apple Push Notifications Not Working Over Wi-Fi",
+    "problemDescription": "Apple push notifications (APNs) fail to arrive when connected to Wi-Fi, despite working on mobile data.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "Apple Push Notifications",
+      "Wi-Fi",
+      "iOS",
+      "APNs",
+      "notifications"
+    ],
+    "steps": [
+      {
+        "title": "Check Wi-Fi Connection Stability",
+        "content": "Ensure your Wi-Fi network is stable and has a strong signal. Test by loading a webpage or streaming a video."
+      },
+      {
+        "title": "Disable VPN or Proxy",
+        "content": "Turn off any VPN or proxy services on your iOS device, as they may interfere with APNs."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings. Reconnect to Wi-Fi afterward."
+      },
+      {
+        "title": "Enable Background App Refresh",
+        "content": "Go to Settings > General > Background App Refresh and ensure it is enabled for the app experiencing notification issues."
+      },
+      {
+        "title": "Check Apple Server Status",
+        "content": "Visit Apple’s System Status page (https://www.apple.com/support/systemstatus/) to confirm APNs are operational."
+      },
+      {
+        "title": "Update iOS",
+        "content": "Go to Settings > General > Software Update and install any available updates for your device."
+      },
+      {
+        "title": "Re-enable Push Notifications",
+        "content": "Go to Settings > Notifications > [App Name] and toggle off/on the 'Allow Notifications' option."
+      },
+      {
+        "title": "Restart iPhone",
+        "content": "Restart your iPhone to clear temporary glitches affecting APNs."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Change DNS Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Switch to Google or Cloudflare DNS",
+            "content": "Go to Settings > Wi-Fi > Tap the (i) icon next to your network > Configure DNS > Manual. Enter 8.8.8.8 (Google) or 1.1.1.1 (Cloudflare) as the DNS server."
+          },
+          {
+            "title": "Test Notifications",
+            "content": "Check if Apple push notifications now work over Wi-Fi."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Forget and Reconnect to Wi-Fi",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Forget Wi-Fi Network",
+            "content": "Go to Settings > Wi-Fi > Tap the (i) icon next to your network > Forget This Network."
+          },
+          {
+            "title": "Reconnect to Wi-Fi",
+            "content": "Reconnect to the same Wi-Fi network by entering the password again."
+          },
+          {
+            "title": "Test Notifications",
+            "content": "Verify if push notifications now work."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T15:56:23.123Z",
+      "updated": "2026-09-01T15:56:23.123Z",
+      "sourceUrl": "https://www.quora.com/How-can-I-fix-this-Apple-push-notification-WiFi-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788278188335-53",
+    "title": "Fix iPhone Notifications Not Showing and Calls Auto-Declining After iOS 15.6.1 Update",
+    "problemDescription": "After updating to iOS 15.6.1, the iPhone fails to display notifications and automatically declines incoming calls when answered.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iPhone",
+      "iOS 15.6.1",
+      "notifications",
+      "calls",
+      "auto-decline",
+      "update issue"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your iPhone",
+        "content": "Press and hold the Side button and either Volume button until the power off slider appears. Drag the slider to turn off your iPhone, then press and hold the Side button again to restart it."
+      },
+      {
+        "title": "Check Notification Settings",
+        "content": "Go to Settings > Notifications. Ensure notifications are enabled for all critical apps (e.g., Messages, Phone, Mail). Verify that 'Show Previews' is set to 'Always' or 'When Unlocked'."
+      },
+      {
+        "title": "Reset Notification Settings",
+        "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset All Settings. This will not delete data but will reset all settings to default."
+      },
+      {
+        "title": "Update All Apps",
+        "content": "Open the App Store, tap your profile icon, and update all pending app updates. Some apps may need updates to work correctly with iOS 15.6.1."
+      },
+      {
+        "title": "Check Do Not Disturb and Focus Modes",
+        "content": "Go to Settings > Focus. Ensure Do Not Disturb and other Focus modes are turned off. Also, check Settings > Focus > Scheduled to ensure no unintended schedules are active."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings. This will reset Wi-Fi and cellular settings but may resolve call-related issues."
+      },
+      {
+        "title": "Check for iOS Updates",
+        "content": "Go to Settings > General > Software Update. If an update is available (e.g., iOS 15.6.2 or later), install it to patch known bugs."
+      },
+      {
+        "title": "Factory Reset (Last Resort)",
+        "content": "Back up your iPhone via iCloud or a computer. Go to Settings > General > Transfer or Reset iPhone > Erase All Content and Settings. Restore from backup after the reset."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Background App Refresh",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Background App Refresh",
+            "content": "Go to Settings > General > Background App Refresh and disable it for all apps. Re-enable it after testing if the issue persists."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Bluetooth and Wi-Fi Calling",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Bluetooth and Wi-Fi Calling",
+            "content": "Go to Settings > Cellular > Wi-Fi Calling and toggle it off. Also, turn off Bluetooth in Control Center. Restart your iPhone afterward."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T15:56:28.335Z",
+      "updated": "2026-09-01T15:56:28.335Z",
+      "sourceUrl": "https://www.quora.com/After-I-updated-my-iPhone-to-15-6-1-I-can-t-see-notifications-and-when-I-accept-calls-they-are-automatically-declined-How-do-I-fix-this",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788278200781-835",
+    "title": "Fix iPhone 7 Battery Drain After iOS 13.4.1 Update",
+    "problemDescription": "iPhone 7 running iOS 13.4.1 experiences rapid battery drain, likely due to software or setting conflicts after an update.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iphone 7",
+      "battery drain",
+      "ios 13.4.1",
+      "settings reset"
+    ],
+    "steps": [
+      {
+        "title": "Reset All Settings",
+        "content": "Go to Settings > General > Reset > Reset All Settings. Confirm the action. This will not erase data but will reset all settings (Wi-Fi passwords, display settings, etc.) to default."
+      },
+      {
+        "title": "Check Battery Health",
+        "content": "After resetting, go to Settings > Battery > Battery Health to ensure the battery is functioning properly. If the issue persists, consider replacing the battery."
+      },
+      {
+        "title": "Update Apps",
+        "content": "Open the App Store and update all apps to their latest versions, as outdated apps may cause battery drain."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Background App Refresh",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Background App Refresh",
+            "content": "Go to Settings > General > Background App Refresh and disable it entirely or for specific apps. This reduces battery consumption by preventing apps from updating in the background."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Force Restart",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Force Restart the iPhone",
+            "content": "Press and quickly release the Volume Up button, then the Volume Down button. Press and hold the Side button until the Apple logo appears. This can resolve temporary software glitches causing battery drain."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T15:56:40.781Z",
+      "updated": "2026-09-01T15:56:40.781Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/390389/iphone-7-13-4-1-battery-drain-issue",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788278206022-708",
+    "title": "Disable Broken USB Port on MacBook Pro to Fix Battery Drain",
+    "problemDescription": "A broken USB-C port on a MacBook Pro is suspected to cause excessive battery drain, and the user seeks to disable it via kext editing.",
+    "category": "macos",
+    "difficulty": "Hard",
+    "keywords": [
+      "usb",
+      "battery drain",
+      "kext editing",
+      "macbook pro",
+      "monterey"
+    ],
+    "steps": [
+      {
+        "title": "Backup Important Data",
+        "content": "Create a full backup of your MacBook Pro using Time Machine or another backup method to prevent data loss during the process."
+      },
+      {
+        "title": "Enable Root User",
+        "content": "Open Terminal and run `sudo passwd root` to set a root password. This is required for kext editing."
+      },
+      {
+        "title": "Disable System Integrity Protection (SIP)",
+        "content": "Reboot into Recovery Mode (hold Command + R at startup), open Terminal, and run `csrutil disable`. Reboot normally."
+      },
+      {
+        "title": "Locate the USB Kext File",
+        "content": "Open Terminal and run `kextstat | grep -i usb` to identify the USB-related kext files. Common ones include `AppleUSBHostController.kext` or `IOUSBHostFamily.kext`."
+      },
+      {
+        "title": "Edit the Kext File",
+        "content": "Navigate to `/System/Library/Extensions/` and locate the kext file. Right-click and select 'Show Package Contents'. Edit the `Info.plist` file using a text editor (e.g., Xcode or nano)."
+      },
+      {
+        "title": "Disable the Broken USB Port",
+        "content": "Within the `Info.plist` file, locate the entry for the broken USB port (e.g., `IOUSBHostDevice` or `AppleUSBHostController`). Modify the `IOProviderClass` or `IOUSBHostDevice` properties to exclude the broken port. Save the file."
+      },
+      {
+        "title": "Clear Kext Cache",
+        "content": "Run `sudo kextcache -system-prelinked-kernel` and `sudo kextcache -system-caches` in Terminal to clear the kext cache."
+      },
+      {
+        "title": "Reboot and Verify",
+        "content": "Restart your MacBook Pro. Check the battery drain issue and ensure the broken USB port is no longer active by testing with peripherals."
+      },
+      {
+        "title": "Re-enable SIP (Optional)",
+        "content": "If the issue is resolved, reboot into Recovery Mode and run `csrutil enable` to re-enable System Integrity Protection for security."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use USB Port Blocker or Disable via System Preferences",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use a USB Port Blocker",
+            "content": "Physically block the broken USB-C port using a USB-C port blocker or tape to prevent accidental use."
+          },
+          {
+            "title": "Disable USB Port via System Preferences",
+            "content": "Go to System Preferences > Energy Saver > Power Adapter and uncheck 'Wake for network access' to reduce power drain from USB ports."
+          },
+          {
+            "title": "Check for Software Updates",
+            "content": "Ensure your MacBook Pro is running the latest macOS version, as updates may include fixes for USB-related battery drain issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T15:56:46.022Z",
+      "updated": "2026-09-01T15:56:46.023Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/446374/disable-one-usb-port-through-kext-editing-on-macbook-pro-running-monterey",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1788278209353-213",
+    "title": "Fix MacBook Air 2014 Battery Drain Caused by Firefox",
+    "problemDescription": "MacBook Air 13\" 2014 experiences rapid battery drain when using Firefox, significantly more than Safari.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "battery drain",
+      "firefox",
+      "macbook air 2014",
+      "safari"
+    ],
+    "steps": [
+      {
+        "title": "Close Firefox Completely",
+        "content": "Quit Firefox by right-clicking its icon in the Dock and selecting 'Quit', or use Command + Q."
+      },
+      {
+        "title": "Switch to Safari for Web Browsing",
+        "content": "Open Safari and use it as your primary browser to reduce battery consumption."
+      },
+      {
+        "title": "Check for Firefox Updates",
+        "content": "If you prefer Firefox, update it to the latest version via Firefox > About Firefox."
+      },
+      {
+        "title": "Disable Unnecessary Firefox Extensions",
+        "content": "Go to Firefox > Preferences > Extensions and disable any extensions that may be causing high CPU usage."
+      },
+      {
+        "title": "Reset Firefox Settings",
+        "content": "If issues persist, reset Firefox by going to Help > Troubleshooting Information > Refresh Firefox."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Firefox with Energy-Saving Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Firefox Energy Saver",
+            "content": "Go to Firefox > Preferences > General and enable 'Reduce animations and videos when in background'."
+          },
+          {
+            "title": "Disable Hardware Acceleration",
+            "content": "Go to Firefox > Preferences > General and uncheck 'Use recommended performance settings'. Then disable 'Use hardware acceleration when available'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T15:56:49.353Z",
+      "updated": "2026-09-01T15:56:49.353Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/233155/macbook-air-13-2014-battery-drain",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788278219320-67",
+    "title": "Reduce Battery Drain in Areas with Poor Wi-Fi Signal",
+    "problemDescription": "Battery drains faster in locations with weak Wi-Fi or cellular signals due to increased power consumption from the device constantly searching for a stable connection.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "battery drain",
+      "poor wifi",
+      "weak signal",
+      "ios",
+      "airplane mode"
+    ],
+    "steps": [
+      {
+        "title": "Enable Airplane Mode and Re-enable Wi-Fi",
+        "content": "Go to Settings > Airplane Mode and toggle it ON. Then, while still in Airplane Mode, toggle Wi-Fi back ON. This stops cellular searches while maintaining Wi-Fi connectivity."
+      },
+      {
+        "title": "Disable Cellular Data Temporarily",
+        "content": "Go to Settings > Cellular > Cellular Data and toggle it OFF. This prevents the device from using cellular data, reducing battery drain in weak signal areas."
+      },
+      {
+        "title": "Lower Screen Brightness and Timeout",
+        "content": "Reduce screen brightness in Settings > Display & Brightness and set Auto-Lock to a shorter duration (e.g., 30 seconds) to conserve battery."
+      },
+      {
+        "title": "Close Unused Background Apps",
+        "content": "Double-tap the Home button (or swipe up from the bottom on newer models) and swipe up on apps to close them, reducing background activity."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Low Power Mode",
+        "type": "Built-in Feature",
+        "steps": [
+          {
+            "title": "Enable Low Power Mode",
+            "content": "Go to Settings > Battery and toggle Low Power Mode ON. This reduces background activity and optimizes battery usage."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Background App Refresh",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Background App Refresh",
+            "content": "Go to Settings > General > Background App Refresh and toggle it OFF for all apps or selectively for high-drain apps."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T15:56:59.320Z",
+      "updated": "2026-09-01T15:56:59.320Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/278940/myth-need-to-be-solved-will-the-battery-drain-faster-in-places-with-poor-wifi-s",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788278268821-23",
+    "title": "Fix Instagram First Draft Tool Not Working",
+    "problemDescription": "The Instagram First Draft tool fails to assemble raw footage into a finished video after one-tap activation.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Instagram",
+      "First Draft",
+      "video editing",
+      "tool not working",
+      "raw footage"
+    ],
+    "steps": [
+      {
+        "title": "Check Instagram App Update",
+        "content": "Open the Google Play Store (Android) or App Store (iOS) and ensure Instagram is updated to the latest version."
+      },
+      {
+        "title": "Restart the Instagram App",
+        "content": "Close the Instagram app completely (swipe it away from the recent apps list) and reopen it."
+      },
+      {
+        "title": "Verify Raw Footage Format",
+        "content": "Ensure the raw footage is in a supported format (e.g., MP4, MOV). Instagram First Draft does not support all formats."
+      },
+      {
+        "title": "Check Device Storage",
+        "content": "Ensure your device has enough free storage (at least 1GB) to process and save the video."
+      },
+      {
+        "title": "Clear Instagram App Cache (Android)",
+        "content": "Go to Settings > Apps > Instagram > Storage > Clear Cache. Reopen Instagram and try again."
+      },
+      {
+        "title": "Reinstall Instagram",
+        "content": "Uninstall Instagram, restart your device, and reinstall it from the official app store."
+      },
+      {
+        "title": "Test with a New Clip",
+        "content": "Create a new short clip (under 15 seconds) and attempt to use First Draft to rule out corruption in the original footage."
+      },
+      {
+        "title": "Check Instagram Server Status",
+        "content": "Visit Instagram’s official Twitter/X account or a third-party site like Downdetector to confirm no ongoing service outages."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Instagram’s Manual Editing Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Instagram and Start a New Post",
+            "content": "Tap the '+' icon to create a new post."
+          },
+          {
+            "title": "Select Multiple Clips",
+            "content": "Choose up to 10 clips or photos from your gallery."
+          },
+          {
+            "title": "Edit Manually",
+            "content": "Use Instagram’s built-in editing tools (trim, filters, text, music) to assemble the footage into a finished video."
+          },
+          {
+            "title": "Post the Video",
+            "content": "Once satisfied, tap 'Next' and post the video manually."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T15:57:48.821Z",
+      "updated": "2026-09-01T15:57:48.821Z",
+      "sourceUrl": "https://www.digitaltrends.com/social-media/i-found-an-app-that-finally-broke-my-toxic-affair-with-doomscrolling",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788278303046-797",
+    "title": "Fix Random Reboots After Disabling CPU Overclock",
+    "problemDescription": "A system experiences random reboots shortly after disabling CPU overclocking, despite no fan issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "cpu",
+      "overclock",
+      "reboot",
+      "random",
+      "hardware"
+    ],
+    "steps": [
+      {
+        "title": "Reset BIOS/UEFI Settings to Default",
+        "content": "Power off the system, enter BIOS/UEFI (usually by pressing Del, F2, or F12 during startup), and load default settings. Save changes and exit."
+      },
+      {
+        "title": "Update BIOS/UEFI Firmware",
+        "content": "Download the latest BIOS/UEFI update from the motherboard manufacturer's website. Follow their instructions to flash the update while ensuring stable power."
+      },
+      {
+        "title": "Check CPU Voltage and Temperatures",
+        "content": "Use monitoring tools like HWMonitor or Core Temp to verify CPU voltage and temperatures under load. Ensure voltages are within safe ranges (e.g., VCore < 1.4V for most CPUs)."
+      },
+      {
+        "title": "Test with Minimal Hardware Configuration",
+        "content": "Disconnect all non-essential peripherals and components (e.g., extra drives, USB devices). Boot the system with only essential hardware (CPU, 1 RAM stick, GPU if needed) to rule out conflicts."
+      },
+      {
+        "title": "Run MemTest86 for RAM Errors",
+        "content": "Create a bootable USB with MemTest86 and run a full test. If errors are detected, reseat or replace RAM modules."
+      },
+      {
+        "title": "Check for Power Supply Issues",
+        "content": "Test the system with a known-good PSU or use a PSU tester to ensure stable power delivery. Faulty PSUs can cause random reboots."
+      },
+      {
+        "title": "Monitor Event Viewer for Errors",
+        "content": "Open Event Viewer (eventvwr.msc), navigate to 'Windows Logs > System', and look for critical errors (e.g., 'Kernel-Power' or 'WHEA-Logger') around reboot times."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable C-States in BIOS",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter BIOS/UEFI and Disable C-States",
+            "content": "Navigate to advanced power settings (often under 'CPU Configuration' or 'Advanced CPU Settings') and disable 'C-States' or 'CPU Power Management'. Save and exit."
+          },
+          {
+            "title": "Test System Stability",
+            "content": "Monitor the system for reboots over 24-48 hours. If stable, the issue may be related to aggressive power-saving features."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reapply Thermal Paste",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove CPU Cooler and Clean Old Paste",
+            "content": "Power off the system, unplug it, and remove the CPU cooler. Clean the CPU and cooler surfaces with isopropyl alcohol and a lint-free cloth."
+          },
+          {
+            "title": "Apply New Thermal Paste",
+            "content": "Apply a small pea-sized drop of high-quality thermal paste (e.g., Arctic MX-6 or Noctua NT-H1) to the center of the CPU. Reattach the cooler and ensure even pressure."
+          },
+          {
+            "title": "Monitor Temperatures",
+            "content": "Boot the system and use monitoring tools to verify that temperatures are within safe ranges under load (e.g., <85°C for most CPUs)."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T15:58:23.046Z",
+      "updated": "2026-09-01T15:58:23.046Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/support-team-stumped.3664572/latest",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788278313013-386",
+    "title": "Windows 7 Network Connection Fails After Prolonged Use",
+    "problemDescription": "Windows 7 loses internet connectivity after several hours of use despite showing a connected network. Restarting the PC temporarily resolves the issue.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 7",
+      "network",
+      "connection",
+      "tcp",
+      "time wait delay",
+      "firewall"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Computer",
+        "content": "Perform a full restart of the Windows 7 PC to temporarily restore network connectivity."
+      },
+      {
+        "title": "Update Windows 7",
+        "content": "Check for and install all available Windows updates, including hotfixes, via Windows Update. Pay special attention to network-related updates."
+      },
+      {
+        "title": "Disable TCP Timed Wait Delay",
+        "content": "Open Registry Editor (regedit), navigate to HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters, and create/modify the DWORD value 'TcpTimedWaitDelay' to '30' (decimal). Reboot the PC."
+      },
+      {
+        "title": "Reset TCP/IP Stack",
+        "content": "Open Command Prompt as Administrator and run: 'netsh int ip reset'. Reboot the PC."
+      },
+      {
+        "title": "Check for Conflicting Software",
+        "content": "Uninstall or disable TeamViewer and any other remote access software temporarily to rule out conflicts. Test network connectivity after removal."
+      },
+      {
+        "title": "Disable Windows Firewall Temporarily",
+        "content": "Turn off Windows Firewall via Control Panel > System and Security > Windows Firewall. Test if connectivity improves. Re-enable afterward."
+      },
+      {
+        "title": "Check Network Adapter Settings",
+        "content": "Open Network Connections, right-click the active adapter, select Properties, and ensure 'Internet Protocol Version 4 (TCP/IPv4)' is set to obtain IP and DNS automatically."
+      },
+      {
+        "title": "Update Network Adapter Drivers",
+        "content": "Download and install the latest drivers for your network adapter from the manufacturer's website. Reboot the PC afterward."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable IPv6",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable IPv6",
+            "content": "Open Network Connections, right-click the active adapter, select Properties, and uncheck 'Internet Protocol Version 6 (TCP/IPv6)'. Click OK and reboot the PC."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Flush DNS Cache",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Flush DNS Cache",
+            "content": "Open Command Prompt as Administrator and run: 'ipconfig /flushdns'. Test network connectivity afterward."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T15:58:33.013Z",
+      "updated": "2026-09-01T15:58:33.013Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/network-connection-issues-win-7.3427180",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788278321384-103",
+    "title": "Fix Windows 7 Not Genuine Error",
+    "problemDescription": "Windows 7 displays a 'This copy of Windows is not genuine' error despite being activated, causing system restrictions and notifications.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 7",
+      "genuine",
+      "activation",
+      "group policy",
+      "permissions"
+    ],
+    "steps": [
+      {
+        "title": "Edit Group Policy Permissions",
+        "content": "1. Press `Win + R`, type `gpedit.msc`, and press Enter to open Group Policy Editor. \n2. Navigate to `Computer Configuration > Administrative Templates > System > Windows Activation Technologies`. \n3. Right-click the policy and select `Edit`. \n4. Click `Edit Security`, then `Advanced`. \n5. In the `Allow` section, grant permissions for: Query template, Query status, Enumerate dependents, Interrogate, User-defined control, and Read permissions. \n6. Click `Apply` and `OK`. \n7. Restart your computer."
+      },
+      {
+        "title": "Disable Plug and Play Policy",
+        "content": "1. Press `Win + R`, type `rsop.msc`, and press Enter to open Resultant Set of Policy. \n2. Navigate to `Computer Configuration > Policies > Windows Settings > Security Settings > System Services`. \n3. Locate the `Plug and Play` service, right-click, and select `Properties`. \n4. Disable the group policy setting and click `Apply`. \n5. Reapply the group policy by running `gpupdate /force` in Command Prompt (Admin). \n6. Restart your computer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 3: Use SLMGR Commands",
+        "type": "Command Line Solution",
+        "steps": [
+          {
+            "title": "Reinstall Product Key",
+            "content": "1. Open Command Prompt as Administrator. \n2. Type `slmgr /ipk <your_product_key>` and press Enter to reinstall the product key. \n3. Type `slmgr /ato` to activate Windows. \n4. Restart your computer."
+          },
+          {
+            "title": "Reset Licensing Status",
+            "content": "1. Open Command Prompt as Administrator. \n2. Type `slmgr /rilc` to reset the licensing status. \n3. Type `slmgr /rearm` to reset the activation timer. \n4. Restart your computer."
+          }
+        ]
+      },
+      {
+        "title": "Method 4: Contact Microsoft Support",
+        "type": "Official Support",
+        "steps": [
+          {
+            "title": "Contact Microsoft",
+            "content": "1. Visit the Microsoft Support website or call their support line. \n2. Provide your Windows product key and system details. \n3. Follow the instructions provided by Microsoft support to resolve the issue."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T15:58:41.384Z",
+      "updated": "2026-09-01T15:58:41.384Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/windows-7-not-genuine.1211131",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
