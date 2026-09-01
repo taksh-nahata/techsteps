@@ -360403,5 +360403,508 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1788260866686-509",
+    "title": "Fix Roku No Signal or Connection Issues",
+    "problemDescription": "Roku device loses signal or fails to connect to the internet, often due to temporary glitches or network interruptions.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "roku",
+      "no signal",
+      "connection",
+      "internet",
+      "soft reset"
+    ],
+    "steps": [
+      {
+        "title": "Perform a Soft Reset",
+        "content": "Unplug your Roku device from the power source. Wait for at least 30 seconds to ensure all temporary data is cleared. Plug the device back in and wait for it to fully restart. Check if the signal or connection issue is resolved."
+      },
+      {
+        "title": "Check Network Connection",
+        "content": "Go to Roku Settings > Network > Check Connection. Follow the on-screen instructions to test the network. Ensure your Wi-Fi network is stable and within range of the Roku device."
+      },
+      {
+        "title": "Restart Your Router",
+        "content": "Unplug your router from the power source. Wait for 30 seconds, then plug it back in. Allow the router to fully restart (usually takes 1-2 minutes). Reconnect your Roku to the network and check for improvements."
+      },
+      {
+        "title": "Reconnect Roku to Wi-Fi",
+        "content": "Go to Roku Settings > Network > Set up connection > Wireless. Select your Wi-Fi network and enter the password if prompted. Ensure the network name and password are correct."
+      },
+      {
+        "title": "Update Roku Software",
+        "content": "Go to Roku Settings > System > System update > Check now. If an update is available, install it and restart the device. Updates often include fixes for connectivity issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset (Last Resort)",
+        "type": "Factory Reset",
+        "steps": [
+          {
+            "title": "Backup Settings (Optional)",
+            "content": "If possible, note down your Roku settings, such as channel preferences or network details, as a factory reset will erase them."
+          },
+          {
+            "title": "Initiate Factory Reset",
+            "content": "Go to Roku Settings > System > Advanced system settings > Factory reset. Follow the prompts to reset the device to factory defaults."
+          },
+          {
+            "title": "Re-setup Roku",
+            "content": "After the reset, set up your Roku again by connecting to Wi-Fi and signing in to your account. Reinstall any necessary channels."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T11:07:46.686Z",
+      "updated": "2026-09-01T11:07:46.686Z",
+      "sourceUrl": "https://www.reddit.com/r/FixRoku",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788260896079-89",
+    "title": "Fix Slow Computer Despite High Specs and Fresh Reset",
+    "problemDescription": "A computer with high specifications and low resource usage runs slowly, even after a fresh Windows reset.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "slow computer",
+      "high specs",
+      "fresh reset",
+      "Windows performance",
+      "RAM",
+      "hard drive"
+    ],
+    "steps": [
+      {
+        "title": "Check for Hardware Issues",
+        "content": "Run a diagnostic test on your RAM and hard drive to rule out hardware failures. Use Windows Memory Diagnostic for RAM and `chkdsk` for the hard drive. Open Command Prompt (Admin) and run: `mdsched.exe` for RAM and `chkdsk /f /r` for the hard drive."
+      },
+      {
+        "title": "Perform a Clean Boot",
+        "content": "Start Windows with minimal drivers and services to identify if third-party software is causing the slowdown. Press `Win + R`, type `msconfig`, go to the 'Services' tab, check 'Hide all Microsoft services', then click 'Disable all'. Restart your computer."
+      },
+      {
+        "title": "Update Windows and Drivers",
+        "content": "Ensure Windows and all drivers are up to date. Go to Settings > Update & Security > Windows Update and install any pending updates. For drivers, visit your manufacturer's website or use Device Manager to update them manually."
+      },
+      {
+        "title": "Disable Startup Programs",
+        "content": "Reduce startup load by disabling unnecessary programs. Press `Ctrl + Shift + Esc` to open Task Manager, go to the 'Startup' tab, and disable programs that are not essential."
+      },
+      {
+        "title": "Check Disk Space and Defragment",
+        "content": "Ensure your hard drive has sufficient free space (at least 15% free). Use Disk Cleanup to remove temporary files and defragment your hard drive if it's a traditional HDD (not SSD). Open File Explorer, right-click on the drive, select 'Properties', and use the 'Tools' tab."
+      },
+      {
+        "title": "Adjust Power Settings",
+        "content": "Switch to a high-performance power plan to optimize system performance. Go to Control Panel > Hardware and Sound > Power Options and select 'High performance'."
+      },
+      {
+        "title": "Reset Windows (Last Resort)",
+        "content": "If all else fails, perform a full Windows reset while keeping your personal files. Go to Settings > Update & Security > Recovery and select 'Reset this PC'. Choose the option to keep your files and follow the on-screen instructions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use System File Checker (SFC)",
+        "type": "Built-in Windows Tool",
+        "steps": [
+          {
+            "title": "Run SFC Scan",
+            "content": "Open Command Prompt (Admin) and run the command: `sfc /scannow`. This will scan and repair corrupted system files that may be causing performance issues."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Visual Effects",
+        "type": "Performance Optimization",
+        "steps": [
+          {
+            "title": "Adjust Visual Settings",
+            "content": "Disable unnecessary visual effects to improve performance. Right-click 'This PC', select 'Properties', go to 'Advanced system settings', click 'Settings' under Performance, and choose 'Adjust for best performance'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T11:08:16.079Z",
+      "updated": "2026-09-01T11:08:16.079Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/slow-computer-despite-low-resources-high-specs-and/1cefadf9-eabe-4fd4-93b9-e18de12b1011",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788260900282-513",
+    "title": "Fix Slow Performance After Windows Update",
+    "problemDescription": "Windows PC becomes slow or unresponsive after installing the latest Windows update.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows update",
+      "slow performance",
+      "system file corruption",
+      "clean boot"
+    ],
+    "steps": [
+      {
+        "title": "Perform a Clean Boot",
+        "content": "Press Windows + R, type 'msconfig', and press Enter. In the System Configuration window, go to the Services tab, check 'Hide all Microsoft services', then click 'Disable all'. Next, go to the Startup tab, click 'Open Task Manager', and disable all startup items. Restart your PC to check if the issue persists."
+      },
+      {
+        "title": "Run System File Checker (SFC)",
+        "content": "Open Command Prompt as an administrator. Type 'sfc /scannow' and press Enter. Wait for the scan to complete and follow any on-screen instructions to repair corrupted system files."
+      },
+      {
+        "title": "Run DISM Commands",
+        "content": "In the same Command Prompt (as admin), run the following commands one by one: 'DISM /Online /Cleanup-Image /CheckHealth', 'DISM /Online /Cleanup-Image /ScanHealth', and finally 'DISM /Online /Cleanup-Image /RestoreHealth'. Wait for each command to finish before proceeding to the next."
+      },
+      {
+        "title": "Check for Additional Updates",
+        "content": "Go to Settings > Update & Security > Windows Update and check for any pending updates. Install all available updates to ensure your system is fully patched."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Windows Update Components",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Stop Windows Update Services",
+            "content": "Open Command Prompt as an administrator and run the following commands one by one: 'net stop wuauserv', 'net stop cryptSvc', 'net stop bits', and 'net stop msiserver'."
+          },
+          {
+            "title": "Rename SoftwareDistribution and Catroot2 Folders",
+            "content": "In the same Command Prompt, run: 'ren C:\\Windows\\SoftwareDistribution SoftwareDistribution.old' and 'ren C:\\Windows\\System32\\catroot2 Catroot2.old'."
+          },
+          {
+            "title": "Restart Windows Update Services",
+            "content": "Run the following commands to restart the services: 'net start wuauserv', 'net start cryptSvc', 'net start bits', and 'net start msiserver'."
+          },
+          {
+            "title": "Restart Your PC",
+            "content": "Restart your computer and check if the performance has improved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T11:08:20.282Z",
+      "updated": "2026-09-01T11:08:20.282Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/slow-after-latest-windows-update/7c8aa323-17ec-4cf7-95d3-e260689803b1",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788260926840-332",
+    "title": "Fix Wi-Fi Showing 'No Internet' on Windows 10",
+    "problemDescription": "Windows 10 displays 'No Internet' on Wi-Fi despite an active connection, preventing access to online services.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 10",
+      "wi-fi",
+      "no internet",
+      "connection",
+      "ip settings",
+      "dns"
+    ],
+    "steps": [
+      {
+        "title": "Change IP and DNS Settings",
+        "content": "1. Open 'Settings' > 'Network & Internet' > 'Wi-Fi'.\n2. Click on your connected network name.\n3. Scroll down and click 'Edit' under 'IP settings'.\n4. Select 'Manual' and enter a static IP (e.g., 192.168.1.100) and subnet mask (255.255.255.0).\n5. For DNS, set 'Preferred DNS' to 8.8.8.8 (Google DNS) and 'Alternate DNS' to 8.8.4.4.\n6. Save changes and restart your PC."
+      },
+      {
+        "title": "Reset Network Adapter",
+        "content": "1. Open 'Command Prompt' as Administrator.\n2. Run: `netsh int ip reset` and press Enter.\n3. Run: `netsh winsock reset` and press Enter.\n4. Restart your computer."
+      },
+      {
+        "title": "Check Windows Network Troubleshooter",
+        "content": "1. Go to 'Settings' > 'Network & Internet' > 'Status'.\n2. Click 'Network troubleshooter' and follow the prompts.\n3. Apply any recommended fixes and restart."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update or Reinstall Network Drivers",
+        "type": "Advanced Fix",
+        "steps": [
+          {
+            "title": "Update Network Drivers",
+            "content": "1. Press `Win + X` and select 'Device Manager'.\n2. Expand 'Network adapters', right-click your Wi-Fi adapter, and select 'Update driver'.\n3. Choose 'Search automatically for updated driver software' and follow the prompts."
+          },
+          {
+            "title": "Reinstall Network Drivers",
+            "content": "1. In 'Device Manager', right-click your Wi-Fi adapter and select 'Uninstall device'.\n2. Check 'Delete the driver software for this device' and confirm.\n3. Restart your PC to reinstall drivers automatically."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable IPv6",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable IPv6 via Network Settings",
+            "content": "1. Open 'Settings' > 'Network & Internet' > 'Wi-Fi'.\n2. Click on your connected network name.\n3. Scroll down and click 'Edit' under 'IP settings'.\n4. Set 'IPv6' to 'Disabled'.\n5. Save changes and restart your PC."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T11:08:46.840Z",
+      "updated": "2026-09-01T11:08:46.840Z",
+      "sourceUrl": "https://superuser.com/questions/1447816/how-to-fix-wi-fi-saying-no-internet-on-windows-10-even-if-the-wi-fi-is-working-f",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788260944706-852",
+    "title": "Fix Discord Update Loop",
+    "problemDescription": "Discord repeatedly attempts to update but fails, getting stuck in an update loop.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "discord",
+      "update loop",
+      "cache",
+      "restart"
+    ],
+    "steps": [
+      {
+        "title": "Clear Discord Cache",
+        "content": "1. Close Discord completely. 2. Press `Win + R`, type `%appdata%\\Discord\\Cache` and press Enter. 3. Delete all files in the Cache folder. 4. Restart Discord."
+      },
+      {
+        "title": "Restart Your Device",
+        "content": "1. Save any open work. 2. Restart your computer or mobile device. 3. Open Discord and check if the update loop persists."
+      },
+      {
+        "title": "Check Internet Connection",
+        "content": "1. Ensure your device is connected to the internet. 2. Test your connection by opening a web browser and visiting a website. 3. If the connection is unstable, restart your router or contact your ISP."
+      },
+      {
+        "title": "Reinstall Discord",
+        "content": "1. Uninstall Discord from your device. 2. Download the latest version from the official Discord website (https://discord.com/download). 3. Install the new version and restart your device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Run Discord as Administrator (Windows)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Discord as Administrator",
+            "content": "1. Right-click the Discord shortcut or executable. 2. Select 'Run as administrator'. 3. Allow the update to complete. 4. Restart Discord normally afterward."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Antivirus Temporarily",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Temporarily Disable Antivirus",
+            "content": "1. Open your antivirus software. 2. Disable real-time protection temporarily. 3. Attempt to update Discord. 4. Re-enable protection after the update completes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T11:09:04.706Z",
+      "updated": "2026-09-01T11:09:04.706Z",
+      "sourceUrl": "https://www.quora.com/How-do-I-fix-a-discord-update-loop",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788260971393-763",
+    "title": "Fix Wrong Number Calls to Business from Siri",
+    "problemDescription": "Siri is directing calls to the wrong number for a business, likely due to incorrect or outdated information in Apple Maps or Siri's business listings.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "Siri",
+      "wrong number",
+      "business calls",
+      "Apple Maps",
+      "contact info"
+    ],
+    "steps": [
+      {
+        "title": "Verify and Update Business Information in Apple Maps",
+        "content": "Open the Apple Maps app on your iPhone or visit maps.apple.com on a computer. Search for your business. If incorrect, tap 'Report an Issue' or 'Edit' to correct the phone number, address, or business name. Ensure all details match your official business records."
+      },
+      {
+        "title": "Check Siri Business Listing",
+        "content": "Ask Siri, 'What is the phone number for [Your Business Name]?' If the wrong number appears, it may be pulling from an outdated source. Ensure your business is correctly listed in Apple Business Connect (businessconnect.apple.com) and that the phone number is accurate."
+      },
+      {
+        "title": "Update Business Profile in Apple Business Connect",
+        "content": "Visit businessconnect.apple.com, sign in with your Apple ID, and search for your business. Update the phone number and other details to match your official records. This ensures Siri and Maps pull the correct information."
+      },
+      {
+        "title": "Contact Apple Support for Persistent Issues",
+        "content": "If the wrong number persists after updating, contact Apple Support via the Apple Support app or website. Provide them with your business name, correct phone number, and any relevant business documentation to verify the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Siri Business Search Temporarily",
+        "type": "Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Siri Business Search",
+            "content": "Go to Settings > Siri & Search > Siri Suggestions & Search. Toggle off 'Suggestions in Search' and 'Learn from this App' for apps like Maps or Contacts. This prevents Siri from pulling incorrect business information."
+          },
+          {
+            "title": "Manually Share Correct Number",
+            "content": "When customers ask Siri for your business, manually provide the correct number or ask them to save it in their contacts. This avoids reliance on Siri's automated suggestions."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T11:09:31.393Z",
+      "updated": "2026-09-01T11:09:31.393Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/466796/wrong-number-calls-to-my-business-from-siri",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788260979080-515",
+    "title": "Fix Safari and Desktop App Connectivity Issues on macOS",
+    "problemDescription": "Safari and desktop applications on macOS fail to connect to the internet, while Chrome and ping commands work normally.",
+    "category": "macos",
+    "difficulty": "Medium",
+    "keywords": [
+      "safari",
+      "connectivity",
+      "dns",
+      "mDNSResponder",
+      "macos"
+    ],
+    "steps": [
+      {
+        "title": "Flush DNS Cache on macOS",
+        "content": "Open Terminal (Applications > Utilities > Terminal) and run: `sudo killall -HUP mDNSResponder`. Enter your admin password when prompted."
+      },
+      {
+        "title": "Verify DNS Resolution",
+        "content": "Test DNS resolution by running `ping apple.com` in Terminal. If it resolves to an IP address, DNS is working."
+      },
+      {
+        "title": "Check Network Settings",
+        "content": "Go to System Preferences > Network. Ensure your connection is active and DHCP is enabled. Click 'Advanced' and verify DNS servers (e.g., 8.8.8.8 or 1.1.1.1)."
+      },
+      {
+        "title": "Restart Network Interfaces",
+        "content": "In Terminal, run: `sudo ifconfig en0 down && sudo ifconfig en0 up` (replace 'en0' with your active interface from `ifconfig`)."
+      },
+      {
+        "title": "Test Safari and Apps",
+        "content": "Restart Safari and any affected desktop apps. Check if connectivity is restored."
+      },
+      {
+        "title": "Check for Firewall Interference",
+        "content": "Go to System Preferences > Security & Privacy > Firewall. Ensure it’s not blocking Safari or the apps. Temporarily disable it to test."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Network Preferences",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete Network Configuration Files",
+            "content": "In Terminal, run: `sudo rm /Library/Preferences/SystemConfiguration/NetworkInterfaces.plist` and `sudo rm /Library/Preferences/SystemConfiguration/preferences.plist`."
+          },
+          {
+            "title": "Restart macOS",
+            "content": "Reboot your Mac. macOS will recreate the network configuration files automatically."
+          },
+          {
+            "title": "Reconfigure Network Settings",
+            "content": "After reboot, go to System Preferences > Network and reconnect to your network."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T11:09:39.080Z",
+      "updated": "2026-09-01T11:09:39.080Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/401226/safari-and-desktop-apps-have-connectivity-issues-but-chrome-and-ping-work",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788260981860-479",
+    "title": "Change Email Address on Apple ID",
+    "problemDescription": "User needs to update the email address associated with their Apple ID but is unsure how to do it.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "Apple ID",
+      "email",
+      "change",
+      "update",
+      "account"
+    ],
+    "steps": [
+      {
+        "title": "Access Apple ID Settings",
+        "content": "Open the Settings app on your iPhone, iPad, or iPod touch."
+      },
+      {
+        "title": "Navigate to Sign-In & Security",
+        "content": "Tap your name at the top of the screen, then tap 'Sign-In & Security'."
+      },
+      {
+        "title": "Edit Email & Phone Numbers",
+        "content": "Under 'Email & Phone Numbers', tap 'Edit'."
+      },
+      {
+        "title": "Remove Old Email",
+        "content": "Tap the 'Remove' button next to the email address you want to remove."
+      },
+      {
+        "title": "Add New Email",
+        "content": "Tap 'Add Email or Phone Number' and follow the prompts to add the new email address."
+      },
+      {
+        "title": "Verify New Email",
+        "content": "Check your new email inbox for a verification code from Apple and enter it to confirm."
+      },
+      {
+        "title": "Update Apple ID",
+        "content": "Once verified, the new email will become your Apple ID. Sign out and back in if prompted."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-09-01T11:09:41.860Z",
+      "updated": "2026-09-01T11:09:41.860Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/470859/changing-the-email-address-attached-to-an-apple-id",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
