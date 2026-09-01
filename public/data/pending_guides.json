@@ -361636,5 +361636,600 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1788289835567-11",
+    "title": "Install WhatsApp on iPad After Official Release",
+    "problemDescription": "Users are unable to install or use WhatsApp on their iPad due to the lack of an official iPad app until recently.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "ipad",
+      "install",
+      "app store",
+      "messaging"
+    ],
+    "steps": [
+      {
+        "title": "Check iPad Compatibility",
+        "content": "Ensure your iPad is running iPadOS 15 or later. Older versions may not support the new WhatsApp app."
+      },
+      {
+        "title": "Update iPadOS",
+        "content": "Go to Settings > General > Software Update and install any available updates to meet the minimum requirements."
+      },
+      {
+        "title": "Open the App Store",
+        "content": "Tap the App Store icon on your iPad's home screen to launch the store."
+      },
+      {
+        "title": "Search for WhatsApp",
+        "content": "Tap the Search tab at the bottom, type 'WhatsApp' in the search bar, and press Search."
+      },
+      {
+        "title": "Download WhatsApp",
+        "content": "Find the official WhatsApp Messenger app in the search results and tap 'Get' to download it. Authenticate with Face ID, Touch ID, or your Apple ID password if prompted."
+      },
+      {
+        "title": "Open WhatsApp",
+        "content": "Once downloaded, tap 'Open' to launch WhatsApp. Sign in with your phone number and verify it via SMS or call."
+      },
+      {
+        "title": "Enable Notifications (Optional)",
+        "content": "Go to Settings > Notifications > WhatsApp and enable notifications to stay updated on messages."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use WhatsApp Web on iPad",
+        "type": "Workaround",
+        "steps": [
+          {
+            "title": "Open Safari on iPad",
+            "content": "Launch the Safari browser on your iPad."
+          },
+          {
+            "title": "Visit WhatsApp Web",
+            "content": "Go to web.whatsapp.com."
+          },
+          {
+            "title": "Scan QR Code",
+            "content": "Open WhatsApp on your phone, tap the three dots (menu) > WhatsApp Web, and scan the QR code displayed on your iPad."
+          },
+          {
+            "title": "Use WhatsApp Web",
+            "content": "Once scanned, you can use WhatsApp on your iPad through the browser. Note: This requires your phone to be connected to the internet."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Third-Party App Clones (Not Recommended)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Search for WhatsApp Clones",
+            "content": "Use the App Store to search for third-party apps claiming to offer WhatsApp functionality on iPad."
+          },
+          {
+            "title": "Download with Caution",
+            "content": "Be cautious of security risks and privacy concerns. Many of these apps are unofficial and may violate WhatsApp's terms of service."
+          },
+          {
+            "title": "Use at Your Own Risk",
+            "content": "These apps may not provide the same security or features as the official app. Proceed with caution."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T19:10:35.567Z",
+      "updated": "2026-09-01T19:10:35.567Z",
+      "sourceUrl": "https://www.howtogeek.com/whatsapp-finally-releases-an-official-ipad-app",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788289843344-839",
+    "title": "Enable Screen Lock Password on WhatsApp Web",
+    "problemDescription": "WhatsApp Web lacks built-in security, leaving conversations vulnerable. Users need to enable a screen lock password to protect access.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "web",
+      "security",
+      "screen lock",
+      "password"
+    ],
+    "steps": [
+      {
+        "title": "Open WhatsApp Web Settings",
+        "content": "Go to WhatsApp Web on your browser and click the three vertical dots (menu) in the top-right corner of the chat list."
+      },
+      {
+        "title": "Navigate to Privacy Settings",
+        "content": "Select 'Settings' > 'Privacy' from the dropdown menu."
+      },
+      {
+        "title": "Enable Screen Lock",
+        "content": "Under the 'Screen Lock' section, tick the box next to 'Screen Lock'."
+      },
+      {
+        "title": "Set a Password",
+        "content": "Enter your preferred password (minimum 6 characters, letters, numbers, and common punctuation). Confirm it by entering it again, then click 'OK'."
+      },
+      {
+        "title": "Configure Auto-Lock Duration",
+        "content": "Choose a timeframe (1 minute, 15 minutes, or 1 hour) for automatic screen lock activation after inactivity. Click 'OK' to save."
+      },
+      {
+        "title": "Manually Lock Screen (Optional)",
+        "content": "To manually lock WhatsApp Web, click the three vertical dots again and select 'Lock Screen'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Disable Screen Lock",
+        "type": "Removal Guide",
+        "steps": [
+          {
+            "title": "Open WhatsApp Web Settings",
+            "content": "Go to WhatsApp Web and click the three vertical dots (menu) in the top-right corner."
+          },
+          {
+            "title": "Navigate to Privacy Settings",
+            "content": "Select 'Settings' > 'Privacy'."
+          },
+          {
+            "title": "Disable Screen Lock",
+            "content": "Uncheck the box next to 'Screen Lock'. Enter your current password when prompted, then click 'OK'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T19:10:43.344Z",
+      "updated": "2026-09-01T19:10:43.344Z",
+      "sourceUrl": "https://www.howtogeek.com/secure-whatsapp-web-with-a-password",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788289850354-680",
+    "title": "Fix Xfce Multiple Volume Notifications",
+    "problemDescription": "Xfce desktop environment displays multiple volume change notifications instead of a single one.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "xfce",
+      "volume",
+      "notifications",
+      "pulseaudio",
+      "xfce4-notifyd"
+    ],
+    "steps": [
+      {
+        "title": "Check and Install Notification Daemon",
+        "content": "Verify if `xfce4-notifyd` is installed by running: `sudo apt list --installed | grep xfce4-notifyd`. If not installed, install it with: `sudo apt install xfce4-notifyd` and restart your session or system."
+      },
+      {
+        "title": "Reset Notification Daemon Settings",
+        "content": "Reset the notification daemon settings to default by running: `xfce4-notifyd-config --reset` and restart the daemon: `pkill -f xfce4-notifyd && xfce4-notifyd &`."
+      },
+      {
+        "title": "Check PulseAudio Volume Notifier",
+        "content": "Ensure PulseAudio's volume notifier is not conflicting. Disable it by editing `/etc/pulse/client.conf` and adding: `enable-shm = false`. Restart PulseAudio: `pulseaudio -k && pulseaudio --start`."
+      },
+      {
+        "title": "Verify Notification Settings",
+        "content": "Open `Settings > Notifications` in Xfce and ensure volume notifications are not duplicated. Adjust the notification daemon's behavior if needed."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable PulseAudio Volume OSD",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable PulseAudio Volume OSD",
+            "content": "Edit `/etc/pulse/daemon.conf` and set: `enable-osd = no`. Restart PulseAudio: `pulseaudio -k && pulseaudio --start`."
+          },
+          {
+            "title": "Use Alternative Notification System",
+            "content": "Install and use `dunst` as an alternative notification daemon: `sudo apt install dunst` and configure it to handle volume notifications exclusively."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T19:10:50.354Z",
+      "updated": "2026-09-01T19:10:50.354Z",
+      "sourceUrl": "https://askubuntu.com/questions/1035378/xfce-multiple-volume-notifications",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788289854558-133",
+    "title": "Disable GNOME Notifications at Startup in Ubuntu",
+    "problemDescription": "GNOME desktop environment displays unwanted notifications immediately after system startup, disrupting the user experience.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "gnome",
+      "notifications",
+      "startup",
+      "disable"
+    ],
+    "steps": [
+      {
+        "title": "Open GNOME Tweaks",
+        "content": "Install GNOME Tweaks if not already installed: `sudo apt install gnome-tweaks`. Launch it from the application menu."
+      },
+      {
+        "title": "Disable Notifications",
+        "content": "Navigate to the 'Notifications' section in GNOME Tweaks. Toggle off the 'Notifications' switch to disable all notifications globally."
+      },
+      {
+        "title": "Configure Do Not Disturb Mode",
+        "content": "In GNOME Tweaks, enable 'Do Not Disturb' mode to suppress notifications during startup. Alternatively, set a custom schedule in the 'Notifications' section."
+      },
+      {
+        "title": "Restart the System",
+        "content": "Reboot the system to verify that notifications are no longer displayed at startup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Specific Notification Services",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Identify Notification Service",
+            "content": "Run `journalctl -b` to check which services are generating notifications at startup. Look for entries related to 'notify-send' or 'org.gnome.Shell.Notifications'."
+          },
+          {
+            "title": "Disable Notification Service",
+            "content": "Use `systemctl --user mask org.gnome.Shell.Notifications.service` to disable the GNOME Shell notifications service. Requires a system restart."
+          },
+          {
+            "title": "Verify Disabled Service",
+            "content": "Run `systemctl --user status org.gnome.Shell.Notifications.service` to confirm the service is masked. Reboot to test."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Edit GNOME Shell Extensions",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install GNOME Shell Extensions",
+            "content": "Install the GNOME Shell Extensions package: `sudo apt install gnome-shell-extensions`. Enable it via the Extensions app."
+          },
+          {
+            "title": "Disable Notification Extensions",
+            "content": "Open the Extensions app and disable any extensions related to notifications (e.g., 'Ubuntu Dock' or 'Dash to Panel'). Restart GNOME Shell with `Alt+F2`, type 'r', and press Enter."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T19:10:54.558Z",
+      "updated": "2026-09-01T19:10:54.558Z",
+      "sourceUrl": "https://askubuntu.com/questions/1255219/disable-notifications-at-startup",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788289872282-947",
+    "title": "Fix 'localhost can't provide a secure connection' in Chrome",
+    "problemDescription": "Google Chrome displays an error when accessing localhost due to HSTS (HTTP Strict Transport Security) policies caching localhost as a secure-only domain.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "localhost",
+      "secure connection",
+      "Chrome",
+      "HSTS",
+      "net-internals"
+    ],
+    "steps": [
+      {
+        "title": "Clear HSTS for localhost in Chrome",
+        "content": "Open Chrome and navigate to chrome://net-internals/#hsts. In the 'Delete domain' section, enter 'localhost' and click 'Delete'. Restart Chrome and try accessing localhost again."
+      },
+      {
+        "title": "Disable HSTS for localhost (Alternative)",
+        "content": "If the issue persists, open Chrome and navigate to chrome://flags/#allow-insecure-localhost. Enable the flag 'Allow invalid certificates for resources loaded from localhost' and restart Chrome."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-09-01T19:11:12.282Z",
+      "updated": "2026-09-01T19:11:12.282Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/266573/fix-localhost-cant-provide-a-secure-connection",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788289879113-997",
+    "title": "Fix Google Chrome Not Opening URL Files by Double Click",
+    "problemDescription": "Google Chrome fails to open saved URL files (.url) when double-clicked, though dragging and dropping the file into Chrome works.",
+    "category": "browser",
+    "difficulty": "Medium",
+    "keywords": [
+      "Chrome",
+      "URL file",
+      "double click",
+      "file association",
+      "macOS"
+    ],
+    "steps": [
+      {
+        "title": "Change File Association for .url Files",
+        "content": "Right-click the .url file, select 'Get Info', then under 'Open with', choose 'Google Chrome'. Click 'Change All...' to apply this setting to all .url files."
+      },
+      {
+        "title": "Reset Default Browser",
+        "content": "Go to System Preferences > General > Default web browser and ensure 'Google Chrome' is selected as the default browser."
+      },
+      {
+        "title": "Reinstall Chrome",
+        "content": "Uninstall Chrome by dragging it to the Trash, then download and reinstall the latest version from the official Chrome website."
+      },
+      {
+        "title": "Check File Permissions",
+        "content": "Ensure the .url file has proper read permissions. Right-click the file, select 'Get Info', and verify the permissions under 'Sharing & Permissions'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Third-Party App to Handle .url Files",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a URL File Handler",
+            "content": "Download and install a third-party app like 'URL Handler' or 'Open in Chrome' from the Mac App Store to manage .url file associations."
+          },
+          {
+            "title": "Configure the App",
+            "content": "Open the installed app, follow the setup instructions to associate .url files with Google Chrome, and test by double-clicking a .url file."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Convert .url to .webloc",
+        "type": "Alternative Solution",
+        "steps": [
+          {
+            "title": "Create a .webloc File",
+            "content": "Open Safari, drag the URL from the .url file into Safari's address bar, then drag the resulting .webloc file to your desktop. Double-click the .webloc file to open it in Chrome."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T19:11:19.113Z",
+      "updated": "2026-09-01T19:11:19.114Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/237434/google-chrome-wont-open-url-files-by-double-click",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788289883291-727",
+    "title": "Fix Google Chrome Toolbar Empty Space Issue on macOS",
+    "problemDescription": "Google Chrome displays an excessive empty space below the Apple menu bar when opening a new window.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "Google Chrome",
+      "toolbar",
+      "empty space",
+      "macOS",
+      "window size"
+    ],
+    "steps": [
+      {
+        "title": "Reset Chrome Window Size",
+        "content": "Close all Chrome windows. Open a new Chrome window and manually resize it by dragging the bottom edge upward to reduce the empty space. Ensure the window is not maximized."
+      },
+      {
+        "title": "Disable Full-Screen Mode",
+        "content": "Check if Chrome is in full-screen mode. Press `Control + Command + F` to exit full-screen mode, then resize the window manually."
+      },
+      {
+        "title": "Clear Chrome Preferences",
+        "content": "Quit Chrome. Open Finder, go to `~/Library/Preferences/` and delete the file `com.google.Chrome.plist`. Relaunch Chrome to reset window settings."
+      },
+      {
+        "title": "Update Chrome",
+        "content": "Ensure Chrome is updated to the latest version via `Chrome Menu > About Google Chrome`. Outdated versions may cause display issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Chrome Profile",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a New Chrome Profile",
+            "content": "Open Chrome, click the profile icon, and select 'Add'. Sign in with a new account or use a guest profile to test if the issue persists."
+          },
+          {
+            "title": "Reset Existing Profile",
+            "content": "Go to `chrome://settings/reset` and click 'Restore settings to their original defaults'. Note: This will reset bookmarks, history, and extensions."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Adjust macOS Display Settings",
+        "type": "System-Level Fix",
+        "steps": [
+          {
+            "title": "Change Display Scaling",
+            "content": "Go to `System Preferences > Displays` and try switching between 'Default' and 'Scaled' modes. Test if the empty space issue is resolved."
+          },
+          {
+            "title": "Reset NVRAM/PRAM",
+            "content": "Shut down your Mac. Turn it on and immediately press `Command + Option + P + R` for 20 seconds. Release the keys and let the Mac restart."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T19:11:23.291Z",
+      "updated": "2026-09-01T19:11:23.291Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/434411/google-chrome-toolbar-space-problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788289901662-387",
+    "title": "Fix Crossed Circle Notification Icon on Amazon Kindle Fire HD 10",
+    "problemDescription": "A crossed circle system notification icon appears on the Amazon Kindle Fire HD 10, indicating Alexa hands-free mode is disabled or silent mode is active.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "crossed circle",
+      "notification icon",
+      "Alexa",
+      "hands-free",
+      "silent mode",
+      "Kindle Fire HD 10"
+    ],
+    "steps": [
+      {
+        "title": "Check Alexa Hands-Free Mode",
+        "content": "Swipe down from the top of the screen to open the notification panel. Tap the crossed circle icon to enable 'Hands-Free' mode for Alexa. If the icon persists, proceed to the next step."
+      },
+      {
+        "title": "Disable Silent Mode",
+        "content": "Open the notification panel again. Tap the crossed circle icon to disable silent mode if it is active. Alternatively, go to Settings > Sound & Notification and ensure silent mode is turned off."
+      },
+      {
+        "title": "Restart the Device",
+        "content": "Press and hold the power button, then select 'Restart' to reboot the Kindle Fire HD 10. Check if the crossed circle icon disappears after the device restarts."
+      },
+      {
+        "title": "Update Alexa App",
+        "content": "Open the Amazon Appstore, search for 'Alexa', and check for updates. Install any available updates to ensure compatibility with the device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Alexa App Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clear Alexa App Cache",
+            "content": "Go to Settings > Apps > Alexa. Tap 'Storage' and select 'Clear Cache'. Restart the device and check if the icon is resolved."
+          },
+          {
+            "title": "Re-enable Alexa in Settings",
+            "content": "Navigate to Settings > Alexa > Enable Alexa if it is disabled. Ensure all permissions are granted for Alexa to function properly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T19:11:41.662Z",
+      "updated": "2026-09-01T19:11:41.662Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/230409/what-does-a-crossed-circle-system-notification-icon-mean-on-amazon-kindle-fire",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788289937162-853",
+    "title": "Disable Smart Home App Notifications for Pest Alerts",
+    "problemDescription": "Smart home security devices are generating unwanted pest alert notifications, especially at night.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "smart home",
+      "notifications",
+      "pest alerts",
+      "silence"
+    ],
+    "steps": [
+      {
+        "title": "Open the Smart Home App",
+        "content": "Launch the app associated with your smart home security system (e.g., Ring, Nest, Arlo)."
+      },
+      {
+        "title": "Navigate to Notification Settings",
+        "content": "Go to the app's settings menu, then select 'Notifications' or 'Alerts'."
+      },
+      {
+        "title": "Disable Pest Alert Notifications",
+        "content": "Find the pest-related alert category (e.g., 'Pest Detection' or 'Motion Alerts') and toggle it off."
+      },
+      {
+        "title": "Adjust Notification Schedule (Optional)",
+        "content": "If available, set a 'Do Not Disturb' schedule during nighttime hours to silence all non-critical alerts."
+      },
+      {
+        "title": "Save Changes",
+        "content": "Confirm the changes and exit the settings menu."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Device-Specific Settings",
+        "type": "Device Workaround",
+        "steps": [
+          {
+            "title": "Access Device Settings",
+            "content": "Open the smart home app and select the specific device (e.g., camera or sensor) generating pest alerts."
+          },
+          {
+            "title": "Modify Alert Triggers",
+            "content": "Disable or adjust the sensitivity of the pest detection feature in the device's settings."
+          },
+          {
+            "title": "Test Changes",
+            "content": "Verify that pest alerts are no longer triggered while ensuring other critical alerts remain active."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Mute Notifications via Device",
+        "type": "Hardware Workaround",
+        "steps": [
+          {
+            "title": "Locate the Device",
+            "content": "Physically access the smart home device (e.g., camera or sensor) generating the alerts."
+          },
+          {
+            "title": "Disable Alerts Temporarily",
+            "content": "Use the device's physical button or switch (if available) to mute notifications for a set period."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T19:12:17.162Z",
+      "updated": "2026-09-01T19:12:17.162Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/i-studied-how-home-security-tech-can-help-track-pest-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
