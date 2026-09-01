@@ -362231,5 +362231,1126 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1788301174257-284",
+    "title": "Fix Zoom Audio Not Casting via Miracast on Android",
+    "problemDescription": "Zoom app fails to cast audio when using Miracast for screen mirroring on an Android device.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "Zoom",
+      "Miracast",
+      "audio casting",
+      "screen mirroring",
+      "Android"
+    ],
+    "steps": [
+      {
+        "title": "Enable HDMI Audio Routing (Alternative Solution)",
+        "content": "Connect your Android device to an HDMI adapter or dock that supports audio passthrough. Ensure the HDMI output is selected as the audio output device in your device's sound settings."
+      },
+      {
+        "title": "Use Bluetooth Audio for Zoom Call",
+        "content": "Pair a Bluetooth headset or speaker with your Android device. Join the Zoom call and select the Bluetooth device as the audio output in Zoom's settings."
+      },
+      {
+        "title": "Check Miracast Audio Settings",
+        "content": "Go to your Android device's display settings and ensure Miracast is enabled. Verify that the receiving device (e.g., TV or monitor) supports audio casting via Miracast."
+      },
+      {
+        "title": "Update Zoom and Android System",
+        "content": "Open the Google Play Store and update the Zoom app. Also, check for system updates in your Android device's settings and install any available updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Third-Party Casting App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Third-Party Casting App",
+            "content": "Download and install a third-party screen mirroring app like ApowerMirror or TeamViewer QuickSupport from the Google Play Store."
+          },
+          {
+            "title": "Cast Screen and Audio",
+            "content": "Open the app, connect to your receiving device, and enable screen and audio casting. Join the Zoom call and ensure the audio is routed through the casting app."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use USB-C to HDMI Adapter with Audio",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Connect USB-C to HDMI Adapter",
+            "content": "Plug a USB-C to HDMI adapter with built-in audio support into your Android device. Connect the HDMI cable to your TV or monitor."
+          },
+          {
+            "title": "Select HDMI as Audio Output",
+            "content": "Go to your Android device's sound settings and select the HDMI output as the default audio device. Join the Zoom call and verify audio is working."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T22:19:34.257Z",
+      "updated": "2026-09-01T22:19:34.257Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/222238/zoom-app-wont-cast-audio-via-miracast",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788301177725-294",
+    "title": "Add URL Scheme to Android Home Screen",
+    "problemDescription": "Users want to create a home screen shortcut for a URL scheme (e.g., `tel:`, `mailto:`) on Android, similar to the iOS Shortcuts app functionality.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android",
+      "home screen",
+      "shortcut",
+      "URL scheme",
+      "tel",
+      "mailto"
+    ],
+    "steps": [
+      {
+        "title": "Use a Third-Party Launcher App",
+        "content": "Install a launcher app like 'Nova Launcher' or 'Tasker' that supports custom shortcuts. Create a shortcut with the desired URL scheme (e.g., `tel:1234567890` or `mailto:example@email.com`)."
+      },
+      {
+        "title": "Use Chrome Custom Tabs (Limited Support)",
+        "content": "Open the desired URL scheme in Chrome (e.g., `tel:1234567890`). Tap the three-dot menu, then 'Add to Home screen'. Note: This may not work for all schemes."
+      },
+      {
+        "title": "Use a Bookmark App",
+        "content": "Install an app like 'Bookmark Home' or 'Shortcut Maker'. Create a shortcut with the URL scheme and place it on the home screen."
+      },
+      {
+        "title": "Use Tasker (Advanced)",
+        "content": "Create a Tasker task with the 'Open URL' action. Add a home screen shortcut to this task. Requires Tasker and AutoShortcut plugin."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Web App Manifest (PWA)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a PWA",
+            "content": "Develop or use an existing Progressive Web App (PWA) that supports URL schemes. Add it to the home screen via the browser's 'Add to Home screen' option."
+          },
+          {
+            "title": "Test URL Scheme",
+            "content": "Ensure the PWA correctly handles the URL scheme (e.g., `tel:` or `mailto:`) when launched from the home screen."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T22:19:37.725Z",
+      "updated": "2026-09-01T22:19:37.725Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/265690/add-url-scheme-to-home-screen",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788301181460-430",
+    "title": "Enable Double Tap to Zoom in Chrome on Pixel 3a",
+    "problemDescription": "Chrome browser on Pixel 3a does not support double tap to zoom functionality, unlike the user's previous iPhone.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "browser",
+      "zoom",
+      "double tap",
+      "pixel 3a"
+    ],
+    "steps": [
+      {
+        "title": "Check Chrome Settings for Zoom Gestures",
+        "content": "Open Chrome on your Pixel 3a. Tap the three-dot menu (⋮) in the top-right corner, then select 'Settings'. Scroll down and tap 'Accessibility'. Ensure 'Force enable zoom' is toggled ON."
+      },
+      {
+        "title": "Enable Accessibility Zoom in Android Settings",
+        "content": "Go to your Pixel 3a's Settings. Tap 'Accessibility', then 'Magnification'. Toggle 'Magnify with triple-tap' to OFF (this may interfere with double-tap zoom in Chrome)."
+      },
+      {
+        "title": "Update Chrome to the Latest Version",
+        "content": "Open the Google Play Store, search for 'Chrome', and tap 'Update' if an update is available. Restart Chrome after updating."
+      },
+      {
+        "title": "Clear Chrome Cache and Data",
+        "content": "Go to Settings > Apps > Chrome > Storage. Tap 'Clear Cache' and 'Clear Data'. Restart your device and reopen Chrome."
+      },
+      {
+        "title": "Test Double Tap Zoom in Chrome",
+        "content": "Open a webpage in Chrome and try double-tapping to zoom. If it doesn’t work, proceed to the next step."
+      },
+      {
+        "title": "Enable Experimental Features in Chrome (if needed)",
+        "content": "In Chrome, type 'chrome://flags' in the address bar and press Enter. Search for 'Enable pinch to zoom' and set it to 'Enabled'. Restart Chrome."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Third-Party Browser with Double Tap Zoom",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Browser with Double Tap Zoom Support",
+            "content": "Download and install a browser like Firefox or Opera from the Google Play Store."
+          },
+          {
+            "title": "Configure Double Tap Zoom in the New Browser",
+            "content": "Open the new browser, go to its settings, and enable double tap to zoom if available. Test the feature on a webpage."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T22:19:41.460Z",
+      "updated": "2026-09-01T22:19:41.460Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/214413/double-tap-to-zoom-on-pixel-3a-chrome-browser",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788301188374-31",
+    "title": "Resolve Harmony/Discord Imbalance in Cosmere Context",
+    "problemDescription": "The balance between Harmony and Discord in the Cosmere universe appears disrupted, requiring a constructive interference approach to restore equilibrium.",
+    "category": "app-error",
+    "difficulty": "Hard",
+    "keywords": [
+      "Harmony",
+      "Discord",
+      "Cosmere",
+      "balance",
+      "Ruin",
+      "Preservation"
+    ],
+    "steps": [
+      {
+        "title": "Understand the Constructive Interference Principle",
+        "content": "Review the concept of constructive interference where Ruin and Preservation's powers combine to create Harmony. Identify how their waves interact to form balance."
+      },
+      {
+        "title": "Analyze Current Wave Interference",
+        "content": "Examine the current state of Ruin and Preservation's influence to determine if their waves are constructively or destructively interfering. Use in-universe lore or external resources for reference."
+      },
+      {
+        "title": "Adjust Power Distribution",
+        "content": "If destructive interference is detected, adjust the distribution of Ruin and Preservation's influence to restore constructive interference. This may involve symbolic or narrative adjustments in storytelling or worldbuilding."
+      },
+      {
+        "title": "Test for Balance",
+        "content": "Verify the restoration of Harmony by checking for consistent constructive interference in the Cosmere's narrative or lore. Ensure Discord is minimized or resolved."
+      },
+      {
+        "title": "Consult Lore Experts",
+        "content": "Engage with Cosmere community members, authors, or lore experts to validate the adjustments and ensure alignment with established canon."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Narrative Resolution via External Forces",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Introduce a New Force",
+            "content": "Introduce a third force (e.g., a new Shard or entity) to mediate between Ruin and Preservation, creating a new equilibrium that resolves the Discord."
+          },
+          {
+            "title": "Develop a Narrative Arc",
+            "content": "Write or propose a narrative arc where this new force interacts with Ruin and Preservation to restore balance, ensuring it fits within the Cosmere's existing lore."
+          },
+          {
+            "title": "Validate with Community",
+            "content": "Share the proposed arc with the Cosmere community for feedback and adjustments before implementation."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T22:19:48.374Z",
+      "updated": "2026-09-01T22:19:48.374Z",
+      "sourceUrl": "https://www.reddit.com/r/Cosmere/comments/1p8n4aw/possible_solution_to_the_harmonydiscord_problem",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1788301198722-16",
+    "title": "Recover or Recreate a Deleted Discord Server",
+    "problemDescription": "A Discord server was deleted due to terms of service violation, and users need to either recover it or create a new temporary server.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Discord",
+      "server",
+      "deleted",
+      "recover",
+      "temporary"
+    ],
+    "steps": [
+      {
+        "title": "Check for Server Recovery Options",
+        "content": "Visit Discord's support page at https://support.discord.com/hc/en-us/articles/360044105771-Discord-Server-Recovery to check if the server can be recovered. Follow the instructions provided to submit a recovery request if eligible."
+      },
+      {
+        "title": "Verify Account Ownership",
+        "content": "Ensure you are the owner or have admin access to the original account linked to the deleted server. Recovery requests typically require proof of ownership."
+      },
+      {
+        "title": "Create a New Temporary Server",
+        "content": "If recovery is not possible, create a new temporary server by clicking the '+' icon in the Discord app, selecting 'Create My Own', and following the prompts to set it up."
+      },
+      {
+        "title": "Invite Members to the New Server",
+        "content": "Generate an invite link for the new server by right-clicking the server name, selecting 'Invite People', and sharing the link with members via a trusted platform."
+      },
+      {
+        "title": "Update Community Channels",
+        "content": "Inform members about the new server through alternative communication channels (e.g., email, social media) and update any pinned messages or announcements."
+      },
+      {
+        "title": "Configure Server Settings",
+        "content": "Adjust server settings, roles, and permissions as needed to replicate the original server's structure and security settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Contact Discord Support Directly",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Gather Evidence",
+            "content": "Collect screenshots, logs, or other evidence showing the server was active and compliant with Discord's terms of service prior to deletion."
+          },
+          {
+            "title": "Submit a Support Ticket",
+            "content": "Visit Discord's support page at https://support.discord.com/hc/en-us/requests/new and submit a detailed ticket explaining the situation, including evidence and the server's name/ID."
+          },
+          {
+            "title": "Follow Up",
+            "content": "Monitor your email for responses from Discord support and provide any additional information they request promptly."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Backup Bot (If Previously Configured)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for Backup Bots",
+            "content": "If you previously set up a backup bot (e.g., Dyno, MEE6), log in to the bot's dashboard and check if server backups are available."
+          },
+          {
+            "title": "Restore from Backup",
+            "content": "If a backup exists, use the bot's restore feature to recreate the server with channels, roles, and messages from the backup."
+          },
+          {
+            "title": "Update Members",
+            "content": "Share the new server invite link with members and ensure they are aware of the changes."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T22:19:58.722Z",
+      "updated": "2026-09-01T22:19:58.722Z",
+      "sourceUrl": "https://www.facebook.com/61580116182887/posts/unfortunately-our-discord-got-deleted-but-we-shall-start-fresh-heres-the-link-to/122134154997003872",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788301212171-404",
+    "title": "Fix Discord SingletonLock Input/Output Error on Linux",
+    "problemDescription": "Discord fails to start on Linux due to an Input/Output error when creating the SingletonLock file in the user's config directory.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "linux",
+      "singletonlock",
+      "input/output error",
+      "symlink"
+    ],
+    "steps": [
+      {
+        "title": "Check for Symlink Issues in Config Directory",
+        "content": "Verify if ~/.config/discord is a symlink by running: `ls -l ~/.config/discord`. If it is, proceed to the next steps."
+      },
+      {
+        "title": "Remove or Recreate the Config Directory",
+        "content": "Delete the problematic directory with: `rm -rf ~/.config/discord`. Then recreate it: `mkdir -p ~/.config/discord`."
+      },
+      {
+        "title": "Restart Discord",
+        "content": "Launch Discord again to see if the issue is resolved."
+      },
+      {
+        "title": "Check Filesystem Permissions",
+        "content": "Ensure your user has write permissions to ~/.config: `chmod 755 ~/.config` and `chown $USER:$USER ~/.config`."
+      },
+      {
+        "title": "Verify Filesystem Health",
+        "content": "Check for filesystem errors on the disk where ~/.config resides: `sudo fsck -f /dev/sdXN` (replace with your actual partition)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Flatpak Version of Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Flatpak Version",
+            "content": "Install Discord via Flatpak: `flatpak install flathub com.discordapp.Discord`."
+          },
+          {
+            "title": "Run Discord",
+            "content": "Launch the Flatpak version: `flatpak run com.discordapp.Discord`."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable SMB Symlink Support (If Applicable)",
+        "type": "Advanced Fix",
+        "steps": [
+          {
+            "title": "Edit Samba Configuration",
+            "content": "Open /etc/samba/smb.conf and add: `unix extensions = no` under the [global] section. Restart Samba: `sudo systemctl restart smbd`."
+          },
+          {
+            "title": "Retry Discord",
+            "content": "Restart your system and try launching Discord again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T22:20:12.171Z",
+      "updated": "2026-09-01T22:20:12.171Z",
+      "sourceUrl": "https://superuser.com/questions/1851476/failed-to-create-home-maksio-config-discord-singletonlock-input-output-error",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788301215817-67",
+    "title": "Fix Bluetooth Headphone Quality Drop in Discord Calls",
+    "problemDescription": "Bluetooth headphone audio quality degrades when joining a Discord call, often due to Discord switching the headset to handsfree mode.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "bluetooth",
+      "headphones",
+      "discord",
+      "audio quality",
+      "handsfree mode"
+    ],
+    "steps": [
+      {
+        "title": "Check Discord's Microphone Settings",
+        "content": "Open Discord settings (User Settings > Voice & Video). Ensure the correct input device is selected and disable 'Automatically determine input sensitivity' to prevent Discord from forcing handsfree mode."
+      },
+      {
+        "title": "Disable PulseAudio's Handsfree Mode",
+        "content": "Run `pactl list sinks | grep -i 'name:'` to identify your Bluetooth headset. Then, set the profile to A2DP (high-quality audio) using: `pactl set-card-profile <card-name> a2dp_sink`. Replace `<card-name>` with your headset's identifier."
+      },
+      {
+        "title": "Restart Bluetooth Service",
+        "content": "Restart the Bluetooth service to apply changes: `sudo systemctl restart bluetooth`. Reconnect your headphones afterward."
+      },
+      {
+        "title": "Test with Another Application",
+        "content": "Use another app (e.g., Zoom or a media player) to verify if the issue persists. If the audio quality remains good, Discord is likely the cause."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use PipeWire Instead of PulseAudio",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Switch to PipeWire",
+            "content": "Install PipeWire and its Bluetooth support: `sudo apt install pipewire pipewire-pulse wireplumber libspa-0.2-bluetooth`. Then, restart your system."
+          },
+          {
+            "title": "Configure PipeWire for A2DP",
+            "content": "Edit `/etc/pipewire/pipewire.conf` to ensure Bluetooth profiles default to A2DP. Restart PipeWire: `systemctl --user restart pipewire pipewire-pulse`"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T22:20:15.817Z",
+      "updated": "2026-09-01T22:20:15.817Z",
+      "sourceUrl": "https://superuser.com/questions/1822781/bluetooth-headphones-quality-gets-bad-when-joining-discord-call",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788301222007-530",
+    "title": "Fix Discord Links Not Opening in Firefox Nightly",
+    "problemDescription": "Links clicked in Discord do not open in Firefox Nightly, even though manually running the command works. The browser window is not visible in the window manager (bspwm).",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "discord",
+      "firefox-nightly",
+      "xdg-open",
+      "bspwm",
+      "links"
+    ],
+    "steps": [
+      {
+        "title": "Check Default Browser Configuration",
+        "content": "Run `xdg-mime query default x-scheme-handler/https` to verify the default browser. If it does not point to Firefox Nightly, set it using `xdg-mime default firefox-nightly.desktop x-scheme-handler/https`."
+      },
+      {
+        "title": "Verify BROWSER Environment Variable",
+        "content": "Ensure the `BROWSER` environment variable is not set to an incorrect value. Run `echo $BROWSER` to check. If set, unset it with `unset BROWSER` or modify your shell configuration to remove the setting."
+      },
+      {
+        "title": "Check mimeapps.list for Conflicts",
+        "content": "Inspect `~/.config/mimeapps.list` for conflicting entries under `[Default Applications]` and `[Added Associations]`. Remove or correct any entries related to `x-scheme-handler/https` that do not point to Firefox Nightly."
+      },
+      {
+        "title": "Test Discord Link Handling",
+        "content": "Restart Discord and test clicking a link. If the issue persists, proceed to the next step."
+      },
+      {
+        "title": "Manually Configure Discord to Use Firefox Nightly",
+        "content": "Edit Discord's desktop file (e.g., `/usr/share/applications/discord.desktop`) to include `Exec=env BROWSER=/opt/firefox-nightly/firefox-bin discord %U` in the `[Desktop Entry]` section. Save the file and restart Discord."
+      },
+      {
+        "title": "Debug Window Manager Issues",
+        "content": "Check if Firefox Nightly is launching but not appearing due to bspwm rules. Run `firefox-nightly` manually and verify if the window is hidden or minimized. Adjust bspwm rules if necessary (e.g., `bspc rule -a Firefox Nightly state=floating`)."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Wrapper Script for Discord",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a Wrapper Script",
+            "content": "Create a script (e.g., `~/discord-wrapper.sh`) with the following content:\n```bash\n#!/bin/bash\nexec env BROWSER=/opt/firefox-nightly/firefox-bin /usr/bin/discord \"$@\"\n```\nMake it executable with `chmod +x ~/discord-wrapper.sh`."
+          },
+          {
+            "title": "Update Discord Desktop File",
+            "content": "Edit Discord's desktop file (e.g., `/usr/share/applications/discord.desktop`) to point to the wrapper script:\n```ini\nExec=/home/yourusername/discord-wrapper.sh %U\n```\nSave the file and restart Discord."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use xdg-open with a Custom Handler",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Create a Custom Handler Script",
+            "content": "Create a script (e.g., `~/firefox-nightly-handler.sh`) with the following content:\n```bash\n#!/bin/bash\n/opt/firefox-nightly/firefox-bin \"$@\"\n```\nMake it executable with `chmod +x ~/firefox-nightly-handler.sh`."
+          },
+          {
+            "title": "Register the Handler",
+            "content": "Run the following commands to register the handler:\n```bash\nxdg-mime default firefox-nightly-handler.desktop x-scheme-handler/https\nupdate-desktop-database ~/.local/share/applications\n```"
+          },
+          {
+            "title": "Test the Handler",
+            "content": "Click a link in Discord to verify if it opens in Firefox Nightly."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T22:20:22.007Z",
+      "updated": "2026-09-01T22:20:22.007Z",
+      "sourceUrl": "https://superuser.com/questions/1372096/links-from-discord-is-stuck/1372142",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788301231692-839",
+    "title": "Fix Windows Automatically Muting Sounds During Communication",
+    "problemDescription": "Windows mutes all system sounds when it detects communication activity (e.g., Discord calls, game chat).",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows",
+      "sound",
+      "mute",
+      "communication",
+      "audio drivers"
+    ],
+    "steps": [
+      {
+        "title": "Disable Communication Sound Muting in Windows Settings",
+        "content": "Go to **Settings > System > Sound > More sound settings**. In the **Communications** tab, select **Do nothing** under 'When Windows detects communication activity'. Click **Apply** and **OK**."
+      },
+      {
+        "title": "Check and Adjust Sound Settings in Communication Apps",
+        "content": "Open apps like Discord or SteelSeries GG. Ensure their sound settings are not configured to mute system audio during calls or chats. For Discord: **User Settings > Voice & Video > Disable 'Attenuate others while speaking'**."
+      },
+      {
+        "title": "Update Audio Drivers",
+        "content": "Press **Win + X > Device Manager**. Expand **Sound, video, and game controllers**, right-click your audio device, and select **Update driver**. Choose **Search automatically for updated driver software** and follow the prompts."
+      },
+      {
+        "title": "Reinstall Audio Drivers",
+        "content": "In **Device Manager**, right-click your audio device and select **Uninstall device**. Check **Delete the driver software for this device** (if available) and confirm. Restart your PC to reinstall the driver automatically."
+      },
+      {
+        "title": "Set Default Audio Device",
+        "content": "Right-click the speaker icon in the taskbar and select **Open Sound settings**. Under **Output**, ensure your primary audio device (e.g., speakers or headset) is set as the default device."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Audio Enhancements",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Audio Enhancements",
+            "content": "Right-click the speaker icon in the taskbar and select **Sounds**. Go to the **Playback** tab, right-click your default device, and select **Properties**. Under the **Enhancements** tab, check **Disable all enhancements** and click **Apply > OK**."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Adjust SteelSeries GG Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Configure SteelSeries GG for Audio",
+            "content": "Open SteelSeries GG, go to **Audio** settings, and ensure the **Game Channel** is not set to override system audio. Disable any audio-related features that might interfere with system sounds."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T22:20:31.692Z",
+      "updated": "2026-09-01T22:20:31.692Z",
+      "sourceUrl": "https://superuser.com/questions/1691403/windows-keeps-muting-all-sounds-when-detecting-communication",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788301239603-42",
+    "title": "Fix iPhone Unable to Log into Websites",
+    "problemDescription": "iPhone fails to log into websites despite correct credentials, with keyboard/input issues persisting even after factory reset.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iphone",
+      "login",
+      "websites",
+      "keyboard",
+      "input",
+      "factory reset"
+    ],
+    "steps": [
+      {
+        "title": "Check Safari Settings and Clear Website Data",
+        "content": "Go to Settings > Safari > Clear History and Website Data. Restart the iPhone and attempt to log in again."
+      },
+      {
+        "title": "Disable Private Relay (if enabled)",
+        "content": "Go to Settings > [Your Name] > iCloud > Private Relay and toggle it off. Test the login process."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings. Reconnect to Wi-Fi and test."
+      },
+      {
+        "title": "Update iOS to Latest Version",
+        "content": "Go to Settings > General > Software Update. Install any available updates and restart the device."
+      },
+      {
+        "title": "Check for App-Specific Issues",
+        "content": "Uninstall and reinstall the app you're trying to log into. Ensure the app is updated to the latest version."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Restore iPhone via iTunes/Finder",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Backup iPhone Data",
+            "content": "Connect iPhone to a computer and back up data using iTunes (Windows) or Finder (Mac)."
+          },
+          {
+            "title": "Restore iPhone",
+            "content": "In iTunes/Finder, select Restore iPhone and follow prompts to erase and restore the device to factory settings."
+          },
+          {
+            "title": "Set Up as New Device",
+            "content": "After restore, set up the iPhone as a new device (do not restore from backup). Test the login issue."
+          },
+          {
+            "title": "Restore Data Selectively",
+            "content": "If the issue is resolved, restore data selectively (e.g., contacts, photos) to identify the problematic data."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T22:20:39.603Z",
+      "updated": "2026-09-01T22:20:39.603Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/iphone-completely-unable-to-log-into-websites-had-a-talk-with-the-apple-experts-but-they-couldnt-fix-it-phone-is-still-under-warranty.3844521",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788301242926-707",
+    "title": "Fix iPhone SE Battery Not Charging or Dying",
+    "problemDescription": "iPhone SE battery is dead, not charging, or shutting down due to unreliable voltage output.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iPhone SE",
+      "battery",
+      "dead",
+      "not charging",
+      "shutting down",
+      "replacement"
+    ],
+    "steps": [
+      {
+        "title": "Check Battery Health",
+        "content": "Go to Settings > Battery > Battery Health. If the battery health is below 80%, consider replacement."
+      },
+      {
+        "title": "Force Restart iPhone SE",
+        "content": "Press and quickly release the Volume Up button, then the Volume Down button. Finally, press and hold the Side button until the Apple logo appears."
+      },
+      {
+        "title": "Try a Different Charger and Cable",
+        "content": "Use an Apple-certified charger and MFi-certified Lightning cable to rule out charging issues."
+      },
+      {
+        "title": "Inspect for Physical Damage",
+        "content": "Check the battery and charging port for swelling, corrosion, or debris. Clean the port gently with a dry toothbrush if needed."
+      },
+      {
+        "title": "Replace the Battery",
+        "content": "If the battery is not holding a charge or is physically damaged, replace it with a genuine or high-quality third-party battery. Contact Apple Support or a certified technician for assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use DFU Mode to Restore iPhone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter DFU Mode",
+            "content": "Connect iPhone to a computer with iTunes/Finder. Press and release Volume Up, then Volume Down. Hold the Side button until the screen turns black, then hold Volume Down + Side button for 5 seconds before releasing Side button."
+          },
+          {
+            "title": "Restore iPhone via iTunes/Finder",
+            "content": "Follow on-screen instructions in iTunes/Finder to restore the iPhone. This may resolve software-related battery issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T22:20:42.926Z",
+      "updated": "2026-09-01T22:20:42.926Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/iphone-se-battery-dead.3536020",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788301249578-958",
+    "title": "Fix iPhone 12 Pro Max Not Recognized by Windows 10 for Photo/Video Import",
+    "problemDescription": "Windows 10 PC fails to recognize an iPhone 12 Pro Max, preventing photo, video, or chat data import despite multiple reinstallation attempts.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "iPhone",
+      "Windows 10",
+      "USB connection",
+      "photo import",
+      "device recognition"
+    ],
+    "steps": [
+      {
+        "title": "Enable Trust on iPhone and Check USB Connection",
+        "content": "1. Unlock your iPhone 12 Pro Max. 2. Connect it to your Windows 10 PC using a certified USB cable. 3. On your iPhone, tap 'Trust' when prompted to allow the computer access. 4. Ensure the cable is properly connected to both devices and try a different USB port if needed."
+      },
+      {
+        "title": "Update iTunes and Windows USB Drivers",
+        "content": "1. Download and install the latest version of iTunes from Apple's official website. 2. Open Device Manager on your PC (Win + X > Device Manager). 3. Expand 'Universal Serial Bus controllers' and look for 'Apple Mobile Device USB Driver'. 4. Right-click it and select 'Update driver' > 'Search automatically for updated driver software'. 5. Restart your PC after updating."
+      },
+      {
+        "title": "Reset iPhone Location & Privacy Settings",
+        "content": "1. On your iPhone, go to Settings > General > Transfer or Reset iPhone > Reset. 2. Tap 'Reset Location & Privacy'. 3. Reconnect your iPhone to the PC and re-enable trust when prompted."
+      },
+      {
+        "title": "Use iCloud for Windows to Import Media",
+        "content": "1. Download and install iCloud for Windows from Apple's website. 2. Sign in with your Apple ID. 3. Select 'Photos' and click 'Options' to configure sync settings. 4. Click 'Apply' and wait for the sync to complete. 5. Access your photos/videos in the iCloud Photos folder on your PC."
+      },
+      {
+        "title": "Try a Third-Party Tool",
+        "content": "1. Download and install a reliable third-party tool like iMazing, Syncios, or AnyTrans. 2. Connect your iPhone to the PC. 3. Open the tool and follow the on-screen instructions to import photos, videos, or chat data. 4. Ensure the tool is compatible with Windows 10 and iPhone 12 Pro Max."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows File Explorer to Manually Transfer Files",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable File Sharing on iPhone",
+            "content": "1. On your iPhone, go to Settings > Photos. 2. Scroll down and select 'Transfer to Mac or PC' and choose 'Keep Originals'."
+          },
+          {
+            "title": "Access iPhone Files via Windows File Explorer",
+            "content": "1. Connect your iPhone to the PC. 2. Open File Explorer (Win + E). 3. In the left panel, look for your iPhone under 'This PC'. 4. Navigate to 'Internal Storage' > 'DCIM' > '100APPLE' to access photos and videos. 5. Copy and paste the files to your desired location on your PC."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use iCloud.com to Download Media",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Upload Media to iCloud from iPhone",
+            "content": "1. On your iPhone, go to Settings > [Your Name] > iCloud > Photos. 2. Enable 'iCloud Photos' and ensure 'Upload to My Photo Stream' is turned on. 3. Wait for the media to upload to iCloud."
+          },
+          {
+            "title": "Download Media from iCloud.com on PC",
+            "content": "1. Open a web browser on your PC and go to iCloud.com. 2. Sign in with your Apple ID. 3. Click 'Photos' and select the media you want to download. 4. Click the download button (cloud with arrow) to save the files to your PC."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T22:20:49.578Z",
+      "updated": "2026-09-01T22:20:49.578Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/best-software-for-importing-photos-videos-chat-from-iphone-12-pro-max-to-windows-10-pc.3745792",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788301253980-74",
+    "title": "Fix iOS 17 Unable to Find or Connect to Hidden Business Wi-Fi",
+    "problemDescription": "iPhone running iOS 17 fails to detect or connect to a hidden business Wi-Fi network, despite correct credentials.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "iOS 17",
+      "hidden Wi-Fi",
+      "connection failure",
+      "business network",
+      "iPhone 15"
+    ],
+    "steps": [
+      {
+        "title": "Restart iPhone and Router",
+        "content": "Restart your iPhone by holding the Side button and Volume button until the power slider appears. Slide to power off, wait 30 seconds, then turn it back on. Also, power cycle the router by unplugging it for 30 seconds and plugging it back in."
+      },
+      {
+        "title": "Update iOS and Router Firmware",
+        "content": "Go to Settings > General > Software Update to check for and install any pending iOS updates. Additionally, log in to your router’s admin panel (usually via a web browser) and update its firmware to the latest version."
+      },
+      {
+        "title": "Re-enter Wi-Fi Network Details",
+        "content": "Go to Settings > Wi-Fi, tap the (i) icon next to the hidden network, select 'Forget This Network', then reconnect by selecting the network again and entering the SSID and password manually."
+      },
+      {
+        "title": "Check Network Visibility Settings",
+        "content": "Ensure the hidden network is set to broadcast its SSID. Log in to the router’s admin panel and verify that the 'Hide SSID' or 'Network Broadcast' option is disabled for the business network."
+      },
+      {
+        "title": "Reset Network Settings",
+        "content": "Go to Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings. This will remove all saved Wi-Fi passwords and VPN settings, so you’ll need to re-enter them."
+      },
+      {
+        "title": "Disable Private Wi-Fi Address",
+        "content": "Go to Settings > Wi-Fi, tap the (i) icon next to the hidden network, and toggle off 'Private Address'. This ensures your iPhone uses a consistent MAC address for the network."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset (Last Resort)",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Backup iPhone Data",
+            "content": "Connect your iPhone to a computer and back up your data using iTunes or Finder (macOS Catalina and later). Alternatively, use iCloud to back up your data wirelessly."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > General > Transfer or Reset iPhone > Erase All Content and Settings. Follow the prompts to reset your iPhone to factory defaults."
+          },
+          {
+            "title": "Restore Data and Reconnect to Wi-Fi",
+            "content": "After the reset, restore your data from the backup. Then, attempt to reconnect to the hidden Wi-Fi network using the correct SSID and password."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T22:20:53.980Z",
+      "updated": "2026-09-01T22:20:53.980Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/ios-17-unable-to-find-or-connect-to-hidden-business-wifi-lan.3826096",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788301262035-177",
+    "title": "Fix Outlook Link Popup Dialog in Windows",
+    "problemDescription": "Outlook displays a popup dialog asking to locate the browser when clicking links, disrupting workflow.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "outlook",
+      "links",
+      "popup",
+      "browser",
+      "default",
+      "registry"
+    ],
+    "steps": [
+      {
+        "title": "Reset Default Browser via Folder Options",
+        "content": "1. Open File Explorer (My Computer).\n2. Go to Tools > Folder Options (if Tools menu is hidden, press Alt to reveal it).\n3. Navigate to the File Types tab.\n4. Scroll to and select the 'URL:HyperText Transfer Protocol' and 'URL:HyperText Transfer Protocol with Privacy' file types.\n5. Click Advanced > Set as Default.\n6. Repeat for 'URL:File Transfer Protocol' and 'URL:Gopher Protocol' if needed.\n7. Click OK to save changes and restart Outlook."
+      },
+      {
+        "title": "Repair Default Browser Association",
+        "content": "1. Open Windows Settings (Win + I).\n2. Go to Apps > Default Apps.\n3. Scroll down and click on 'Set defaults by app'.\n4. Select your preferred browser (e.g., Chrome, Edge, Firefox).\n5. Click 'Set this program as default' for all associated protocols (HTTP, HTTPS, etc.).\n6. Restart Outlook to test."
+      },
+      {
+        "title": "Edit Windows Registry (Advanced)",
+        "content": "1. Press Win + R, type `regedit`, and press Enter.\n2. Navigate to: `HKEY_CLASSES_ROOT\\http\\shell\\open\\command`\n3. Double-click the (Default) value and ensure it points to your browser executable (e.g., `\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" -- %1`).\n4. Repeat for `HKEY_CLASSES_ROOT\\https\\shell\\open\\command`.\n5. Restart your computer for changes to take effect."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Default Browser",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reinstall Browser",
+            "content": "1. Uninstall your current browser via Settings > Apps > Installed Apps.\n2. Download the latest version from the official website.\n3. Install the browser and set it as default in Windows Settings.\n4. Restart Outlook."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Group Policy Editor (Windows Pro/Enterprise)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Configure Default Browser via Group Policy",
+            "content": "1. Press Win + R, type `gpedit.msc`, and press Enter.\n2. Navigate to: Computer Configuration > Administrative Templates > Windows Components > File Explorer.\n3. Enable 'Set default associations configuration file' and specify a file with default protocol associations.\n4. Restart the computer.\n5. Verify in Outlook that links open without popup dialogs."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T22:21:02.035Z",
+      "updated": "2026-09-01T22:21:02.035Z",
+      "sourceUrl": "https://www.howtogeek.com/1114/troubleshooting-prevent-locate-link-browser-popup-dialog-when-clicking-on-links-in-outlook",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788301267494-251",
+    "title": "Fix Office 365 Common Problems with Support and Recovery Assistant",
+    "problemDescription": "Office 365 applications are not working correctly, and you need to diagnose or resolve common issues using built-in troubleshooting tools.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Office 365",
+      "troubleshooting",
+      "Support and Recovery Assistant",
+      "common problems"
+    ],
+    "steps": [
+      {
+        "title": "Download and Install Support and Recovery Assistant",
+        "content": "Go to the official Microsoft website and download the Support and Recovery Assistant for Office 365. Install the tool on the machine where you are experiencing issues."
+      },
+      {
+        "title": "Run the Support and Recovery Assistant",
+        "content": "Open the installed Support and Recovery Assistant and sign in with your Office 365 account credentials. Follow the on-screen instructions to start diagnosing your issue."
+      },
+      {
+        "title": "Select the Problem Area",
+        "content": "Choose the specific Office 365 application or service (e.g., Outlook, Word, OneDrive) that is not working properly. The tool will guide you through troubleshooting steps tailored to your selection."
+      },
+      {
+        "title": "Follow Automated Diagnostics",
+        "content": "Allow the tool to run automated diagnostics. It will check for common issues such as connectivity problems, corrupted installations, or account-related errors."
+      },
+      {
+        "title": "Apply Recommended Fixes",
+        "content": "Review the results and apply any recommended fixes provided by the tool. This may include repairing Office installations, resetting settings, or updating credentials."
+      },
+      {
+        "title": "Restart Office 365 Applications",
+        "content": "After applying fixes, restart all Office 365 applications to ensure changes take effect. Test the application to confirm the issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Office 365 Online Repair Tool",
+        "type": "Microsoft Official",
+        "steps": [
+          {
+            "title": "Open Control Panel",
+            "content": "Press `Win + R`, type `appwiz.cpl`, and press Enter to open the Programs and Features window."
+          },
+          {
+            "title": "Select Office 365 and Repair",
+            "content": "Find Microsoft Office 365 in the list, right-click it, and select 'Change'. Choose 'Quick Repair' or 'Online Repair' (Online Repair is more thorough but takes longer)."
+          },
+          {
+            "title": "Follow On-Screen Instructions",
+            "content": "Complete the repair process by following the prompts. Restart your computer after the repair is finished."
+          },
+          {
+            "title": "Test Office 365 Applications",
+            "content": "Open an Office 365 application (e.g., Word or Excel) to verify that the issue is resolved."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check Office 365 Service Status",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit Office 365 Service Health Dashboard",
+            "content": "Go to https://portal.office.com/servicestatus and check the current status of Office 365 services. Look for any reported outages or service disruptions."
+          },
+          {
+            "title": "Verify Your Account Status",
+            "content": "Ensure your Office 365 subscription is active and not expired. Log in to your Microsoft account to confirm."
+          },
+          {
+            "title": "Wait or Contact Support",
+            "content": "If a service outage is confirmed, wait for Microsoft to resolve it. Otherwise, contact Microsoft Support for further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-01T22:21:07.494Z",
+      "updated": "2026-09-01T22:21:07.494Z",
+      "sourceUrl": "https://www.howtogeek.com/271183/how-to-use-office-365s-troubleshooting-tools-to-fix-common-problems",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788301268994-782",
+    "title": "Disable Instant Search in Outlook 2007",
+    "problemDescription": "Users experience performance issues or unwanted search behavior in Outlook 2007 due to Instant Search functionality.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Outlook 2007",
+      "Instant Search",
+      "disable",
+      "performance"
+    ],
+    "steps": [
+      {
+        "title": "Access Instant Search Options",
+        "content": "Click the tiny drop-down arrow next to the Instant Search box in Outlook 2007."
+      },
+      {
+        "title": "Open Search Options",
+        "content": "From the menu, select 'Search Options'."
+      },
+      {
+        "title": "Disable Instant Search",
+        "content": "In the Search Options window, uncheck the box labeled 'Enable Instant Search' and click 'OK' to save changes."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-09-01T22:21:08.994Z",
+      "updated": "2026-09-01T22:21:08.994Z",
+      "sourceUrl": "https://www.howtogeek.com/915/disabling-instant-search-in-outlook-2007",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788301271106-900",
+    "title": "Reset Outlook View to Default",
+    "problemDescription": "Outlook's inbox or folder view is misconfigured, showing incorrect columns or sorting, and needs to be reset to default.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Outlook",
+      "reset view",
+      "default view",
+      "inbox",
+      "columns"
+    ],
+    "steps": [
+      {
+        "title": "Open Outlook and Navigate to the View Tab",
+        "content": "Launch Microsoft Outlook and ensure you are in the mailbox or folder where the view needs to be reset."
+      },
+      {
+        "title": "Access the Reset View Option",
+        "content": "Go to the 'View' tab in the ribbon at the top of the window."
+      },
+      {
+        "title": "Reset the Current View",
+        "content": "In the 'Current View' section of the 'View' tab, click on 'Reset View'."
+      },
+      {
+        "title": "Confirm Reset",
+        "content": "A prompt will appear asking if you want to reset the view to its default settings. Click 'Yes'."
+      },
+      {
+        "title": "Verify the Reset",
+        "content": "Check that the view has returned to the default layout with standard columns and sorting."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-09-01T22:21:11.106Z",
+      "updated": "2026-09-01T22:21:11.106Z",
+      "sourceUrl": "https://www.howtogeek.com/894503/how-to-reset-the-view-in-outlook",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
