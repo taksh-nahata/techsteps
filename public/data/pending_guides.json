@@ -365297,5 +365297,292 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1788360888648-946",
+    "title": "Fix Nexus 7 Screen Flicker in Low Light",
+    "problemDescription": "Screen flickers at low brightness, especially with weak Wi-Fi signals or when viewing bright content like Google.com.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "nexus 7",
+      "screen flicker",
+      "low brightness",
+      "wi-fi optimization",
+      "display issue"
+    ],
+    "steps": [
+      {
+        "title": "Disable Wi-Fi Optimization",
+        "content": "Open Settings > Wi-Fi > Menu (three dots) > Advanced. Uncheck 'Wi-Fi optimization' to reduce flickering."
+      },
+      {
+        "title": "Increase Display Brightness",
+        "content": "Manually set brightness to a higher level (avoid auto-brightness) to reduce flicker, though this may impact battery life."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-09-02T14:54:48.648Z",
+      "updated": "2026-09-02T14:54:48.648Z",
+      "sourceUrl": "https://www.howtogeek.com/131109/the-ultimate-nexus-7-troubleshooting-guide-6-potential-problems-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788360897806-990",
+    "title": "Fix Website Loading Issues in Chrome",
+    "problemDescription": "A website fails to load correctly in Chrome, possibly due to user agent mismatches, cache issues, or browser conflicts.",
+    "category": "browser",
+    "difficulty": "Easy",
+    "keywords": [
+      "chrome",
+      "website",
+      "load",
+      "user agent",
+      "cache"
+    ],
+    "steps": [
+      {
+        "title": "Clear Chrome Cache and Cookies",
+        "content": "Open Chrome, click the three-dot menu > Settings > Privacy and security > Clear browsing data. Select 'All time' for Time range, check 'Cookies and other site data' and 'Cached images and files', then click 'Clear data'."
+      },
+      {
+        "title": "Disable Browser Extensions",
+        "content": "Go to Chrome settings > Extensions. Disable all extensions temporarily, then reload the website. If it works, re-enable extensions one by one to identify the conflicting one."
+      },
+      {
+        "title": "Change User Agent in Chrome",
+        "content": "Install the 'User-Agent Switcher for Chrome' extension from the Chrome Web Store. Open the extension, select a different user agent (e.g., 'Firefox' or 'Safari'), then reload the website."
+      },
+      {
+        "title": "Check for Chrome Updates",
+        "content": "Go to Chrome settings > About Chrome. If an update is available, install it and restart Chrome. Outdated browsers may cause compatibility issues."
+      },
+      {
+        "title": "Try Incognito Mode",
+        "content": "Open a new Incognito window (Ctrl+Shift+N) and navigate to the website. Incognito mode disables extensions and cached data, helping isolate the issue."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Chrome Settings",
+        "type": "Advanced Fix",
+        "steps": [
+          {
+            "title": "Reset Chrome to Default Settings",
+            "content": "Go to Chrome settings > Reset settings > Restore settings to their original defaults > Reset settings. This removes all extensions, cookies, and cached data while keeping bookmarks and passwords."
+          },
+          {
+            "title": "Reinstall Chrome",
+            "content": "Uninstall Chrome from your system, download the latest version from google.com/chrome, and reinstall it. This ensures a clean slate if the issue persists."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T14:54:57.806Z",
+      "updated": "2026-09-02T14:54:57.806Z",
+      "sourceUrl": "https://au.lifehacker.com/internet/61503/news/why-wont-this-web-site-load-correctly-and-how-can-i-fix-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788360914523-224",
+    "title": "Fix Gmail App Push Notifications Not Working on iPhone",
+    "problemDescription": "Push notifications for the Gmail app on an iPhone are either missing or inconsistent, despite correct settings. Notifications may appear for unimportant emails while missing for important ones.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "gmail",
+      "push notifications",
+      "iphone",
+      "app settings",
+      "email alerts"
+    ],
+    "steps": [
+      {
+        "title": "Reset Gmail App Notifications",
+        "content": "Open the Gmail app on your iPhone. Tap your profile picture or initial in the top-right corner to open Settings. Scroll down and select 'Notifications'. Toggle the 'Allow Notifications' switch off, then back on. Ensure 'Primary only' is selected under 'Notification Categories'. Close the app completely (swipe up from the bottom and pause mid-screen, then swipe up on the Gmail app preview) and reopen it. Test by sending a test email to your primary inbox."
+      },
+      {
+        "title": "Check iPhone Notification Settings",
+        "content": "Go to your iPhone's Settings app. Scroll down and tap 'Notifications'. Select 'Gmail' from the list. Ensure 'Allow Notifications' is toggled on. Under 'Notification Style', choose 'Alerts' or 'Banners' and ensure 'Sounds' is enabled. Verify that 'Lock Screen' and 'Notification Center' are also enabled."
+      },
+      {
+        "title": "Update Gmail App",
+        "content": "Open the App Store on your iPhone. Tap your profile icon in the top-right corner. Scroll down to the 'Available Updates' section and look for the Gmail app. If an update is available, tap 'Update'. After updating, restart your iPhone and test notifications again."
+      },
+      {
+        "title": "Re-enable Background App Refresh",
+        "content": "Go to your iPhone's Settings app. Scroll down and tap 'General'. Select 'Background App Refresh'. Ensure 'Background App Refresh' is toggled on at the top. Scroll down and find 'Gmail' in the list. Ensure it is toggled on. Restart your iPhone and test notifications."
+      },
+      {
+        "title": "Re-add Gmail Account",
+        "content": "Open the Gmail app on your iPhone. Tap your profile picture or initial in the top-right corner. Select the gear icon (Settings) > 'Manage accounts on this device'. Tap 'Remove from this device' next to your Gmail account. Confirm the removal. Restart your iPhone. Reopen the Gmail app and sign back into your account. Test notifications after setup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Gmail Web Push Notifications via Safari",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Gmail Web Notifications in Safari",
+            "content": "Open Safari on your iPhone and go to mail.google.com. Log in to your Gmail account if prompted. Tap the 'AA' icon in the address bar and select 'Website Settings'. Ensure 'Notifications' is set to 'Allow'. Close Safari completely and reopen it. Test by sending a test email to your primary inbox."
+          },
+          {
+            "title": "Bookmark Gmail for Quick Access",
+            "content": "In Safari, tap the share icon (square with an arrow) and select 'Add to Home Screen'. Name the bookmark (e.g., 'Gmail') and tap 'Add'. This creates a shortcut on your home screen for quick access to Gmail. Use this shortcut to check emails if push notifications fail."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Switch to a Third-Party Gmail Client",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download a Reliable Gmail Client",
+            "content": "Visit the App Store and download an alternative Gmail client such as 'Spark' or 'Edison Mail'. Install the app and sign in to your Gmail account. Ensure push notifications are enabled within the app's settings."
+          },
+          {
+            "title": "Configure Notifications in the New App",
+            "content": "Open the newly installed app. Navigate to its settings (usually found in the profile or gear icon). Enable push notifications and customize them to only alert for important emails. Test the app by sending a test email to your primary inbox."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T14:55:14.523Z",
+      "updated": "2026-09-02T14:55:14.523Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/120288/iphone-gmail-app-push-notifications-not-working?lastactivity=",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788360928645-471",
+    "title": "Fix macOS Notifications Not Working with Multi-Monitor Setup",
+    "problemDescription": "Notifications fail to appear when using a multi-monitor setup after updating to macOS Monterey, but work fine with only the laptop display.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "macos",
+      "monterey",
+      "notifications",
+      "multi-monitor",
+      "external display"
+    ],
+    "steps": [
+      {
+        "title": "Enable Notifications for Multi-Monitor Setup",
+        "content": "Go to System Preferences > Notifications & Focus. Check the box for 'When mirroring or sharing the display' to allow notifications to appear while using external monitors."
+      },
+      {
+        "title": "Verify Display Connection",
+        "content": "Ensure your multi-monitor setup is properly connected via Thunderbolt, DisplayLink, or other supported method. Confirm the external monitors are recognized in System Preferences > Displays."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Notification Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Notifications",
+            "content": "Go to System Preferences > Notifications & Focus. Disable and re-enable notifications for critical apps to reset their behavior."
+          },
+          {
+            "title": "Restart Notification Service",
+            "content": "Open Terminal and run: `killall NotificationCenter` to restart the notification service."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T14:55:28.645Z",
+      "updated": "2026-09-02T14:55:28.645Z",
+      "sourceUrl": "https://apple.stackexchange.com/questions/430983/macos-notifications-not-working-with-multi-monitor-after-monterey-update",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788360966125-350",
+    "title": "Disable iMessage 'Check In' Prompts on iPhone",
+    "problemDescription": "iMessage is repeatedly asking users to 'Check In' with contacts, likely due to Siri & Search learning features.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "iMessage",
+      "Check In",
+      "Siri & Search",
+      "iPhone",
+      "prompts"
+    ],
+    "steps": [
+      {
+        "title": "Open Settings",
+        "content": "Tap the 'Settings' app on your iPhone's home screen."
+      },
+      {
+        "title": "Navigate to Messages Settings",
+        "content": "Scroll down and tap 'Messages'."
+      },
+      {
+        "title": "Access Siri & Search Settings",
+        "content": "Tap 'Siri & Search' within the Messages settings."
+      },
+      {
+        "title": "Disable Learning Features",
+        "content": "Toggle off 'Learn from this App' and ensure all other toggles (e.g., 'Show Siri Suggestions', 'Suggest Apps') are also turned off."
+      },
+      {
+        "title": "Restart iMessage",
+        "content": "Force close the Messages app (swipe up from the bottom and pause, then swipe the app card up) and reopen it to apply changes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset Siri & Dictation History",
+        "type": "Advanced Fix",
+        "steps": [
+          {
+            "title": "Open Settings",
+            "content": "Tap the 'Settings' app on your iPhone."
+          },
+          {
+            "title": "Go to Siri & Search",
+            "content": "Scroll down and tap 'Siri & Search'."
+          },
+          {
+            "title": "Reset Learning & History",
+            "content": "Tap 'Siri & Dictation History' and select 'Delete Siri & Dictation History' to reset all data."
+          },
+          {
+            "title": "Disable Suggestions",
+            "content": "Toggle off 'Suggest Apps' and 'Suggest Shortcuts' under 'Siri Suggestions'."
+          },
+          {
+            "title": "Restart iPhone",
+            "content": "Press and hold the side button and either volume button, then slide to power off. Wait 30 seconds, then turn it back on."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T14:56:06.125Z",
+      "updated": "2026-09-02T14:56:06.125Z",
+      "sourceUrl": "https://www.howtogeek.com/is-imessage-asking-you-to-check-in-with-contacts-heres-how-to-fix-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
