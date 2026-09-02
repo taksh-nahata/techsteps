@@ -364586,5 +364586,716 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1788344661342-296",
+    "title": "Fix Apple TV Remote or App Issues",
+    "problemDescription": "Apple TV remote buttons not working, apps not responding, or general glitchiness despite internet connection.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "Apple TV",
+      "remote",
+      "app",
+      "glitchy",
+      "Play button",
+      "HDMI",
+      "resolution"
+    ],
+    "steps": [
+      {
+        "title": "Reset the Siri Remote",
+        "content": "Hold the remote close to the Apple TV and press and hold the Menu and Volume Up buttons for 2-3 seconds to enter pairing mode. This can resolve unresponsive buttons."
+      },
+      {
+        "title": "Re-pair the Siri Remote",
+        "content": "Go to Settings > Remotes and Devices > Bluetooth > Apple TV Remote and select your remote to re-establish the connection."
+      },
+      {
+        "title": "Reboot the Apple TV",
+        "content": "Unplug the Apple TV from power for 30 seconds, then plug it back in. This can resolve software glitches affecting the remote or apps."
+      },
+      {
+        "title": "Force Close a Non-Responsive App",
+        "content": "Double-press the TV/Home button, swipe to highlight the problematic app, then swipe up on the Siri remote touchpad to force close it."
+      },
+      {
+        "title": "Check HDMI Connection and Input",
+        "content": "Ensure the HDMI cable is securely connected to both the Apple TV and TV. Verify the TV is set to the correct HDMI input source."
+      },
+      {
+        "title": "Cycle Output Resolutions",
+        "content": "Hold the Menu and Volume Down buttons on the Siri remote for 5 seconds to reset the output resolution. This can fix display issues."
+      },
+      {
+        "title": "Charge the Siri Remote",
+        "content": "Connect the remote to a power source using the Lightning port on the bottom edge. Check the charge level in Settings > Remotes & Devices."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use an iOS Device as Remote",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download the Apple TV Remote App",
+            "content": "Install the Apple TV Remote app from the App Store on your iPhone or iPad."
+          },
+          {
+            "title": "Connect to Apple TV",
+            "content": "Open the app, ensure your iOS device and Apple TV are on the same Wi-Fi network, then use the app as a temporary remote."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T10:24:21.342Z",
+      "updated": "2026-09-02T10:24:21.342Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/common-apple-tv-problems-and-how-to-fix-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788344674920-532",
+    "title": "Fix HomePod Voice Recognition Not Working",
+    "problemDescription": "HomePod fails to recognize your voice despite setting up Hey Siri on iPhone. Siri cannot identify you when asked 'Hey Siri, who am I?'",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "HomePod",
+      "voice recognition",
+      "Hey Siri",
+      "Home app",
+      "reset"
+    ],
+    "steps": [
+      {
+        "title": "Verify Hey Siri Setup on iPhone",
+        "content": "Ensure Hey Siri is enabled on your iPhone: Go to Settings > Siri & Search > toggle 'Listen for Hey Siri' ON. Train your voice if prompted."
+      },
+      {
+        "title": "Check HomePod Language Settings",
+        "content": "Open the Home app, long-press the HomePod tile > Settings gear > scroll to 'Language'. Ensure it matches your iPhone's language."
+      },
+      {
+        "title": "Toggle Voice Recognition in Home App",
+        "content": "Open the Home app, long-press the HomePod tile > Settings gear > scroll to 'Voice Recognition'. Toggle it OFF, wait 30 seconds, then toggle it ON again."
+      },
+      {
+        "title": "Re-register Voice with Hey Siri",
+        "content": "On your iPhone, go to Settings > Siri & Search > Hey Siri & Dictation > toggle 'Listen for Hey Siri' OFF and ON. Follow the voice training prompts."
+      },
+      {
+        "title": "Remove Other Family Members from Home App",
+        "content": "Open the Home app, tap the House icon > Home Settings > People > select a family member > Remove Person. Repeat for all other users except yourself."
+      },
+      {
+        "title": "Factory Reset HomePod",
+        "content": "Open the Home app, long-press the HomePod tile > Settings gear > scroll to bottom > Reset HomePod > Remove Accessory. Confirm the reset and wait for the HomePod to restart."
+      },
+      {
+        "title": "Re-setup HomePod and Voice Recognition",
+        "content": "After reset, hold the top of the HomePod until the setup chime plays. Follow the on-screen instructions to re-add it to your Home. Re-enable Voice Recognition in the Home app."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update iOS and HomePod Software",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Check for iOS Updates",
+            "content": "On your iPhone, go to Settings > General > Software Update. Install any available updates."
+          },
+          {
+            "title": "Check for HomePod Updates",
+            "content": "Open the Home app, long-press the HomePod tile > Settings gear > scroll to 'Software Update'. Ensure your HomePod is running the latest firmware."
+          },
+          {
+            "title": "Retry Voice Recognition Setup",
+            "content": "After updating, re-enable Voice Recognition in the Home app and test by asking Siri 'Hey Siri, who am I?'"
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reboot HomePod and iPhone",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Restart HomePod",
+            "content": "Unplug the HomePod power cable, wait 10 seconds, then plug it back in. Wait for the HomePod to fully restart."
+          },
+          {
+            "title": "Restart iPhone",
+            "content": "On your iPhone, go to Settings > General > Shut Down. Slide to power off, wait 30 seconds, then turn it back on."
+          },
+          {
+            "title": "Re-enable Voice Recognition",
+            "content": "Open the Home app, long-press the HomePod tile > Settings gear > toggle Voice Recognition OFF and ON again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T10:24:34.920Z",
+      "updated": "2026-09-02T10:24:34.920Z",
+      "sourceUrl": "https://www.cnet.com/home/smart-home/apples-homepod-can-recognize-your-voice-heres-how-to-set-it-up",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788344690891-281",
+    "title": "Upgrade RAM to Fix Slow Windows Vista Performance",
+    "problemDescription": "A Windows Vista computer is running too slowly, and increasing RAM is suggested as a solution.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows vista",
+      "slow performance",
+      "RAM upgrade",
+      "memory"
+    ],
+    "steps": [
+      {
+        "title": "Check Current RAM",
+        "content": "Go to Control Panel > System and Maintenance > System to check the current RAM installed."
+      },
+      {
+        "title": "Verify System Compatibility",
+        "content": "Ensure your motherboard supports additional RAM and check the maximum supported capacity."
+      },
+      {
+        "title": "Purchase Compatible RAM",
+        "content": "Buy DDR2 RAM modules (common for Vista-era PCs) with at least 2GB capacity per stick."
+      },
+      {
+        "title": "Install the RAM",
+        "content": "Power off the PC, unplug it, open the case, and insert the new RAM into the available slots. Ensure it clicks into place."
+      },
+      {
+        "title": "Verify Installation",
+        "content": "Boot the PC and confirm the new RAM is recognized in Control Panel > System."
+      },
+      {
+        "title": "Close Unnecessary Programs",
+        "content": "Use Task Manager (Ctrl+Shift+Esc) to end unnecessary background processes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Startup Programs",
+        "type": "Software Optimization",
+        "steps": [
+          {
+            "title": "Open System Configuration",
+            "content": "Press Win+R, type 'msconfig', and hit Enter."
+          },
+          {
+            "title": "Disable Unnecessary Startup Items",
+            "content": "Go to the 'Startup' tab and uncheck programs that don't need to launch at boot."
+          },
+          {
+            "title": "Apply Changes and Restart",
+            "content": "Click OK, restart the PC, and check for improved performance."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Defragment Hard Drive",
+        "type": "Disk Optimization",
+        "steps": [
+          {
+            "title": "Open Disk Defragmenter",
+            "content": "Go to Start > All Programs > Accessories > System Tools > Disk Defragmenter."
+          },
+          {
+            "title": "Select Drive and Defragment",
+            "content": "Choose the system drive (usually C:) and click 'Defragment'."
+          },
+          {
+            "title": "Wait for Completion",
+            "content": "Allow the process to finish, which may take several hours."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T10:24:50.891Z",
+      "updated": "2026-09-02T10:24:50.891Z",
+      "sourceUrl": "https://superuser.com/questions/612305/computer-too-slow",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788344713098-393",
+    "title": "Fix Windows 11 24H2 Update Blocked by Intel SST Driver",
+    "problemDescription": "Windows 11 version 24H2 fails to install on PCs with Intel 11th-gen (Rocket Lake/Tiger Lake) processors due to a compatibility hold caused by an outdated Intel SST audio driver.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "24H2",
+      "intel",
+      "SST driver",
+      "update",
+      "compatibility hold"
+    ],
+    "steps": [
+      {
+        "title": "Check Current Intel SST Driver Version",
+        "content": "Press `Win + X` and select 'Device Manager'. Expand 'System devices', right-click 'Intel(R) Smart Sound Technology (Intel(R) SST)', and select 'Properties'. Note the driver version under the 'Driver' tab."
+      },
+      {
+        "title": "Download and Install Updated Intel SST Driver",
+        "content": "Visit Intel's official driver download page or use Windows Update to search for the latest Intel SST driver. Ensure the driver version is 10.30.00.5714 (or 10.29.00.5714) or later. Install the driver and restart your PC."
+      },
+      {
+        "title": "Check for Windows 11 24H2 Update",
+        "content": "Go to `Settings > Windows Update` and click 'Check for updates'. If the update is still not offered, wait a few hours and check again as Windows Update may take time to reflect the driver change."
+      },
+      {
+        "title": "Manually Install Windows 11 24H2 (if needed)",
+        "content": "If the update is still not available, download the Windows 11 24H2 ISO from Microsoft's official website and perform an in-place upgrade using the Media Creation Tool."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Intel Driver & Support Assistant",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Intel Driver & Support Assistant",
+            "content": "Visit Intel's official website and download the Intel Driver & Support Assistant tool. Install and run the tool to automatically detect and update outdated drivers, including the Intel SST driver."
+          },
+          {
+            "title": "Verify and Install Updates",
+            "content": "Follow the tool's prompts to install the latest Intel SST driver. Restart your PC and check for the Windows 11 24H2 update via `Settings > Windows Update`."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Clean Install of Windows 11 24H2",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Backup Important Data",
+            "content": "Create a full backup of your files and settings using Windows Backup or a third-party tool."
+          },
+          {
+            "title": "Download Windows 11 24H2 ISO",
+            "content": "Download the latest Windows 11 24H2 ISO from Microsoft's official website."
+          },
+          {
+            "title": "Create Bootable USB",
+            "content": "Use the Media Creation Tool to create a bootable USB drive with the Windows 11 24H2 ISO."
+          },
+          {
+            "title": "Perform Clean Install",
+            "content": "Boot from the USB drive, follow the on-screen instructions to install Windows 11 24H2, and restore your data from the backup."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T10:25:13.098Z",
+      "updated": "2026-09-02T10:25:13.098Z",
+      "sourceUrl": "https://www.techradar.com/computing/windows/windows-11-bug-that-stopped-some-intel-pcs-from-getting-the-24h2-update-is-fixed-but-it-took-a-whole-year",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788344719476-910",
+    "title": "Resolve Windows 11 Stability and Performance Issues",
+    "problemDescription": "Windows 11 users experience instability, performance degradation, or new glitches after Microsoft releases updates, leading to reduced market adoption and user dissatisfaction.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "stability",
+      "performance",
+      "update issues",
+      "glitches"
+    ],
+    "steps": [
+      {
+        "title": "Run Windows Update Troubleshooter",
+        "content": "Go to Settings > System > Troubleshoot > Other troubleshooters. Select 'Windows Update' and run the troubleshooter to automatically detect and fix update-related issues."
+      },
+      {
+        "title": "Check for Pending Updates",
+        "content": "Navigate to Settings > Windows Update and ensure all pending updates are installed. If updates are stuck, click 'Check for updates' and wait for the process to complete."
+      },
+      {
+        "title": "Perform a Clean Boot",
+        "content": "Press Win + R, type 'msconfig', and hit Enter. Go to the 'Services' tab, check 'Hide all Microsoft services', then click 'Disable all'. Restart your PC to eliminate third-party software conflicts."
+      },
+      {
+        "title": "Reset Windows Update Components",
+        "content": "Open Command Prompt as Administrator and run the following commands sequentially:\n1. `net stop wuauserv`\n2. `net stop cryptSvc`\n3. `net stop bits`\n4. `net stop msiserver`\n5. `ren C:\\Windows\\SoftwareDistribution SoftwareDistribution.old`\n6. `ren C:\\Windows\\System32\\catroot2 catroot2.old`\n7. `net start wuauserv`\n8. `net start cryptSvc`\n9. `net start bits`\n10. `net start msiserver`\nRestart your PC afterward."
+      },
+      {
+        "title": "Roll Back Recent Updates",
+        "content": "If issues started after a recent update, go to Settings > Windows Update > Update history > Uninstall updates. Select the problematic update and click 'Uninstall'."
+      },
+      {
+        "title": "Check System File Integrity",
+        "content": "Open Command Prompt as Administrator and run `sfc /scannow` followed by `DISM /Online /Cleanup-Image /RestoreHealth`. Restart your PC after completion."
+      },
+      {
+        "title": "Adjust Power Settings for Performance",
+        "content": "Go to Control Panel > Power Options and select 'High performance' to ensure your system prioritizes performance over energy savings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows Recovery Environment",
+        "type": "Advanced Recovery",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Restart your PC and repeatedly press F8 (or Shift + Restart from the login screen) to enter Advanced Startup. Select 'Troubleshoot' > 'Advanced options' > 'Startup Settings' > 'Restart'. Press 4 or F4 to boot into Safe Mode."
+          },
+          {
+            "title": "Restore to a Previous Point",
+            "content": "In Safe Mode, go to Control Panel > Recovery > Open System Restore. Select a restore point from before the issues began and follow the prompts to revert your system."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Reinstall Windows 11",
+        "type": "Last Resort",
+        "steps": [
+          {
+            "title": "Back Up Your Data",
+            "content": "Create a full backup of your important files using an external drive or cloud storage to prevent data loss."
+          },
+          {
+            "title": "Download Windows 11 ISO",
+            "content": "Visit the official Microsoft website to download the Windows 11 ISO file. Use the Media Creation Tool if needed."
+          },
+          {
+            "title": "Perform a Clean Install",
+            "content": "Boot from the ISO file or USB drive, follow the on-screen instructions, and select 'Custom: Install Windows only' to perform a clean installation. Reinstall necessary drivers and applications afterward."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T10:25:19.476Z",
+      "updated": "2026-09-02T10:25:19.476Z",
+      "sourceUrl": "https://www.techradar.com/computing/windows/microsoft-is-finally-fixing-windows-11-under-the-hood-but-new-stats-suggest-it-could-be-too-little-too-late",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788344724137-639",
+    "title": "Fix Windows 11 Update Issues Using 'Fix problems using Windows Update'",
+    "problemDescription": "Windows 11 fails to resolve issues using the built-in 'Fix problems using Windows Update' tool, preventing system repairs or reinstallations.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "windows update",
+      "repair tool",
+      "system reinstall"
+    ],
+    "steps": [
+      {
+        "title": "Access 'Fix problems using Windows Update'",
+        "content": "Open Settings (Win + I), go to System > Recovery, and click 'Fix problems using Windows Update'."
+      },
+      {
+        "title": "Run the Tool",
+        "content": "Follow the on-screen prompts to diagnose and repair issues. The tool may attempt to reinstall Windows 11 if necessary."
+      },
+      {
+        "title": "Check for Updates",
+        "content": "Ensure your system is up to date by going to Settings > Windows Update and clicking 'Check for updates'."
+      },
+      {
+        "title": "Restart Your PC",
+        "content": "After running the tool, restart your computer to apply changes."
+      },
+      {
+        "title": "Check for Corrupted System Files",
+        "content": "Open Command Prompt as Administrator and run: `sfc /scannow` followed by `DISM /Online /Cleanup-Image /RestoreHealth`."
+      },
+      {
+        "title": "Reset Windows Update Components",
+        "content": "Open Command Prompt as Administrator and run the following commands sequentially:\n1. `net stop wuauserv`\n2. `net stop cryptSvc`\n3. `net stop bits`\n4. `net stop msiserver`\n5. `ren C:\\Windows\\SoftwareDistribution SoftwareDistribution.old`\n6. `ren C:\\Windows\\System32\\catroot2 catroot2.old`\n7. `net start wuauserv`\n8. `net start cryptSvc`\n9. `net start bits`\n10. `net start msiserver`"
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows 11 Installation Media",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Windows 11 ISO",
+            "content": "Download the official Windows 11 ISO from Microsoft's website using the Media Creation Tool."
+          },
+          {
+            "title": "Create Bootable USB",
+            "content": "Use the ISO to create a bootable USB drive with tools like Rufus."
+          },
+          {
+            "title": "Boot from USB",
+            "content": "Restart your PC and boot from the USB drive (may require changing BIOS/UEFI settings)."
+          },
+          {
+            "title": "Repair or Reinstall Windows",
+            "content": "Select 'Repair your computer' > 'Troubleshoot' > 'Reset this PC' to reinstall Windows while preserving files or perform a clean install."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use System Restore",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open System Restore",
+            "content": "Search for 'Create a restore point' in the Start menu and open it."
+          },
+          {
+            "title": "Run System Restore",
+            "content": "Click 'System Restore' and follow the prompts to restore your system to a previous working state."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T10:25:24.137Z",
+      "updated": "2026-09-02T10:25:24.137Z",
+      "sourceUrl": "https://www.techradar.com/computing/windows/major-windows-11-fails-make-microsofts-fix-problems-using-windows-update-tool-more-useful-than-ever-but-it-might-not-work-for-you",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788344738075-712",
+    "title": "Fix New Outlook for Windows Gmail Reauthentication Bug",
+    "problemDescription": "New Outlook for Windows repeatedly asks to reauthenticate a Gmail account after every restart, despite working functionality otherwise.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "outlook",
+      "gmail",
+      "reauthentication",
+      "credential manager",
+      "cached data"
+    ],
+    "steps": [
+      {
+        "title": "Remove Conflicting Credentials in Windows Credential Manager",
+        "content": "1. Open Control Panel > Credential Manager.\n2. Under 'Web Credentials', locate and remove any outdated or conflicting entries for Gmail or Outlook.\n3. Restart Outlook and attempt to sign in again."
+      },
+      {
+        "title": "Clear Cached Data in Outlook",
+        "content": "1. Close Outlook.\n2. Navigate to %localappdata%\\Microsoft\\Outlook in File Explorer.\n3. Delete cached files (e.g., .ost files) while ensuring your data is synced online.\n4. Restart Outlook and test authentication."
+      },
+      {
+        "title": "Repair the New Outlook App",
+        "content": "1. Open Settings > Apps > Installed Apps.\n2. Locate 'New Outlook', click the ellipsis (three dots), and select 'Repair'.\n3. Wait for the process to complete, then restart Outlook and test."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall New Outlook",
+        "type": "Full Reinstallation",
+        "steps": [
+          {
+            "title": "Uninstall New Outlook",
+            "content": "1. Open Settings > Apps > Installed Apps.\n2. Locate 'New Outlook', click the ellipsis (three dots), and select 'Uninstall'.\n3. Follow the prompts to remove the app."
+          },
+          {
+            "title": "Reinstall New Outlook",
+            "content": "1. Download the latest version of New Outlook from the Microsoft Store.\n2. Install the app and sign in with your Gmail account.\n3. Verify that reauthentication issues are resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T10:25:38.075Z",
+      "updated": "2026-09-02T10:25:38.075Z",
+      "sourceUrl": "https://answers.microsoft.com/ko-kr/outlook_com/forum/all/new-outlook-for-windows-gmail-account/f2a5d535-bd27-402c-957e-5b717a53bdbe",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788344742865-384",
+    "title": "Fix Gmail Send Failure on iOS",
+    "problemDescription": "Gmail fails to send emails, including attachments or basic text, on an iOS device, possibly due to account setup, server issues, or app configuration.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "Gmail",
+      "send failure",
+      "iOS",
+      "Apple Mail",
+      "email setup"
+    ],
+    "steps": [
+      {
+        "title": "Verify Gmail Account Setup in Apple Mail",
+        "content": "Open Settings > Mail > Accounts and ensure your Gmail account is listed. If not, add it by selecting 'Add Account' and entering your Gmail credentials."
+      },
+      {
+        "title": "Enable Gmail Mail Sync",
+        "content": "Tap your Gmail account in Settings > Mail > Accounts. Ensure 'Mail' is toggled ON to sync emails."
+      },
+      {
+        "title": "Test Sending a Simple Email",
+        "content": "Open the Apple Mail app, compose a short email to yourself or a friend, and attempt to send it. Check for success or error messages."
+      },
+      {
+        "title": "Install and Use the Official Gmail App",
+        "content": "Download the Gmail app from the App Store. Open it, sign in with your Gmail account, and attempt to send an email to verify functionality."
+      },
+      {
+        "title": "Check Gmail Server Status",
+        "content": "Visit Google's Gmail Status page (https://www.google.com/appsstatus) to ensure Gmail services are operational. If marked as 'Available,' proceed."
+      },
+      {
+        "title": "Clear Browser Cache (if using Gmail Web)",
+        "content": "If accessing Gmail via a browser, clear cache/cookies (Settings > Safari > Clear History and Website Data) and restart the browser."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Check for Large Attachments or Unsupported File Types",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reduce Attachment Size",
+            "content": "If sending large files, upload them to Google Drive and share a link in your email instead of attaching directly (Gmail limits attachments to 25MB)."
+          },
+          {
+            "title": "Avoid Unsupported File Types",
+            "content": "Gmail blocks certain file types (e.g., .exe, .bat). Rename or convert files to a supported format (e.g., .zip for archives) and retry sending."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Antivirus/Firewall Temporarily",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Antivirus",
+            "content": "Temporarily disable your antivirus or firewall software and attempt to send an email. Re-enable it after testing."
+          },
+          {
+            "title": "Check for Email Sending Limits",
+            "content": "If sending multiple emails rapidly, wait 1-2 hours before retrying, as Gmail may temporarily block sending due to rate limits."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T10:25:42.865Z",
+      "updated": "2026-09-02T10:25:42.865Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/why-cant-i-send-gmail-without-getting-failure/a658ea77-e433-4bc8-882e-f7604b481e6a",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788344758832-485",
+    "title": "Fix Gmail Account Addition Loop in Outlook.com",
+    "problemDescription": "Outlook.com users with a Microsoft 365 subscription encounter an endless authentication loop when attempting to add a Gmail account, preventing successful account integration.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "Outlook.com",
+      "Gmail",
+      "authentication loop",
+      "Microsoft 365",
+      "account addition"
+    ],
+    "steps": [
+      {
+        "title": "Verify Microsoft 365 Subscription and Outlook.com Account",
+        "content": "Ensure you are signed in to Outlook.com using the account associated with your active Microsoft 365 subscription. Confirm your subscription is valid and not expired."
+      },
+      {
+        "title": "Clear Browser Cache and Cookies",
+        "content": "Clear the cache, cookies, and browsing data for your browser. This can resolve authentication conflicts. Restart the browser afterward."
+      },
+      {
+        "title": "Use Incognito/Private Mode",
+        "content": "Open Outlook.com in an incognito or private browsing window (Ctrl+Shift+N for Chrome/Edge, Ctrl+Shift+P for Firefox). Attempt to add the Gmail account again."
+      },
+      {
+        "title": "Disable Browser Extensions",
+        "content": "Temporarily disable all browser extensions, especially ad-blockers or privacy tools, as they may interfere with the authentication process."
+      },
+      {
+        "title": "Try a Different Browser or Device",
+        "content": "Switch to a different browser (e.g., Chrome, Firefox, Edge) or device to rule out browser-specific issues. Ensure the browser is updated to the latest version."
+      },
+      {
+        "title": "Wait and Retry Later",
+        "content": "If the issue persists, wait for 24 hours and attempt the process again. Microsoft or Google servers may be experiencing temporary issues."
+      },
+      {
+        "title": "Manually Configure Gmail in Outlook Using IMAP/POP",
+        "content": "If the loop continues, manually add the Gmail account to Outlook.com using IMAP or POP settings. Navigate to Settings > Mail > Sync email > Other email accounts and enter Gmail's IMAP/POP details manually."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Outlook Desktop App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install Outlook Desktop App",
+            "content": "Download and install the Outlook desktop application from Microsoft's official site if not already installed."
+          },
+          {
+            "title": "Add Gmail Account via Desktop App",
+            "content": "Open Outlook desktop app, go to File > Add Account, and enter your Gmail credentials. Follow the prompts to complete the setup."
+          },
+          {
+            "title": "Sync with Outlook.com",
+            "content": "Once added, the Gmail account will sync with your Outlook.com account. Check if the issue is resolved in the web version afterward."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Google's Less Secure App Access (If Available)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enable Less Secure Apps in Gmail",
+            "content": "Log in to your Gmail account, go to Account Settings > Security > Less secure app access, and enable it (Note: This option may not be available for all accounts)."
+          },
+          {
+            "title": "Retry Adding Gmail to Outlook.com",
+            "content": "Attempt to add the Gmail account to Outlook.com again after enabling less secure app access."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T10:25:58.832Z",
+      "updated": "2026-09-02T10:25:58.832Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/outlook_com/forum/all/stuck-in-a-loop-when-trying-to-add-gmail-account/cf582f53-cb9d-4da2-a8f3-12e40a508815",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
