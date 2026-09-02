@@ -366034,5 +366034,382 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1788392855386-396",
+    "title": "Fix Alexa Echo Device Not Discovering or Connecting to Smart Home Devices",
+    "problemDescription": "Alexa Echo speaker fails to discover, connect, or maintain connection with smart home devices or Wi-Fi network.",
+    "category": "ios",
+    "difficulty": "Medium",
+    "keywords": [
+      "alexa",
+      "echo",
+      "smart home",
+      "device discovery",
+      "wifi connection",
+      "skill issues"
+    ],
+    "steps": [
+      {
+        "title": "Restart the Alexa App",
+        "content": "Close the Alexa app completely on your mobile device. Reopen it, tap 'Devices', then tap the '+' icon in the top-right corner. Search for your smart device to attempt re-discovery."
+      },
+      {
+        "title": "Ensure Devices Are on the Same Wi-Fi Network",
+        "content": "Verify that both your Echo speaker and the smart home device are connected to the same Wi-Fi network. Avoid mixing 2.4GHz and 5GHz bands for the same device pair."
+      },
+      {
+        "title": "Hard Reset the Echo Speaker",
+        "content": "Unplug the Echo speaker, wait 10 seconds, then reconnect power. Once the speaker is back online, go to the Alexa app, tap 'Devices', then 'Echo & Alexa'. Select your device and attempt to re-add the smart home device."
+      },
+      {
+        "title": "Re-enable or Re-add the Skill",
+        "content": "Open the Alexa app, tap 'More', then 'Skills & Games'. Go to 'Your Skills', find the problematic skill, and either disable and re-enable it, or delete and re-add it."
+      },
+      {
+        "title": "Test the Connection",
+        "content": "Ask Alexa, 'Are you connected to the Internet?' to confirm network status. Alternatively, test by asking Alexa to control a smart home device or launch a skill."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Hard Reset Network Equipment",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Reset Network Equipment",
+            "content": "Unplug the Echo speaker, router, and modem. Wait 10 seconds, then power them back on in reverse order: modem, router, Echo. This forces a fresh network connection."
+          },
+          {
+            "title": "Verify Network Band Assignment",
+            "content": "After reset, ensure your Echo reconnects to the original Wi-Fi band (2.4GHz or 5GHz) it was assigned to. Check your router settings if needed."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T23:47:35.386Z",
+      "updated": "2026-09-02T23:47:35.386Z",
+      "sourceUrl": "https://www.digitaltrends.com/home/common-echo-problems-and-how-to-solve-them",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788392879875-101",
+    "title": "Reduce Battery Drain on HP ProBook 445 G7 When Off",
+    "problemDescription": "The HP ProBook 445 G7 experiences significant battery drain when powered off, likely due to residual power consumption from the battery itself.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "battery drain",
+      "HP ProBook 445 G7",
+      "power off",
+      "removable battery"
+    ],
+    "steps": [
+      {
+        "title": "Remove the Battery When Not in Use",
+        "content": "If your HP ProBook 445 G7 has a removable battery, power off the laptop and unplug the AC adapter. Then, remove the battery to prevent any residual power drain while the device is not in use."
+      },
+      {
+        "title": "Check for Background Processes",
+        "content": "Ensure no background processes or firmware issues are causing drain. Update BIOS/UEFI and Windows to the latest versions via HP Support Assistant."
+      },
+      {
+        "title": "Disable Fast Startup",
+        "content": "Go to Control Panel > Power Options > Choose what the power buttons do > Uncheck 'Turn on fast startup' to reduce unnecessary power consumption during shutdown."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Battery Saver Mode",
+        "type": "Software Solution",
+        "steps": [
+          {
+            "title": "Enable Battery Saver",
+            "content": "Go to Settings > System > Power & sleep > Additional power settings > Choose a power plan. Select 'Battery Saver' to reduce background activity and extend battery life."
+          },
+          {
+            "title": "Adjust Power Plan Settings",
+            "content": "Customize the power plan by reducing screen brightness, shortening display timeout, and disabling unnecessary background apps."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T23:47:59.875Z",
+      "updated": "2026-09-02T23:47:59.875Z",
+      "sourceUrl": "https://superuser.com/questions/1724574/how-can-i-reduce-battery-drain-on-my-hp-probook-445-g7-while-its-off",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788392884767-659",
+    "title": "Fix Computer Waking from Sleep and Draining Battery",
+    "problemDescription": "A computer wakes up from sleep mode unexpectedly, causing rapid battery drain and potential lid malfunction.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "sleep mode",
+      "battery drain",
+      "wake up",
+      "lid malfunction",
+      "power plan"
+    ],
+    "steps": [
+      {
+        "title": "Check Power Plan Settings",
+        "content": "Open Control Panel > Power Options. Ensure the active power plan is set to 'Balanced'. If not, switch to it and test."
+      },
+      {
+        "title": "Update System Drivers",
+        "content": "Open Device Manager (Win + X > Device Manager). Expand 'Keyboards', 'Mice and other pointing devices', and 'System devices'. Right-click each device and select 'Update driver'. Also, run Windows Update (Settings > Windows Update > Check for updates) to update all system components."
+      },
+      {
+        "title": "Reset Power Plan to Default",
+        "content": "In Power Options, select the active power plan and click 'Change plan settings'. Then click 'Restore default settings for this plan'. Test if the issue persists."
+      },
+      {
+        "title": "Disable Wake Timers",
+        "content": "In Power Options, click 'Change plan settings' for the active plan. Go to 'Change advanced power settings'. Expand 'Sleep' > 'Allow wake timers' and set both 'On battery' and 'Plugged in' to 'Disable'. Apply changes and test."
+      },
+      {
+        "title": "Check Lid Switch Functionality",
+        "content": "Press the lid switch manually to ensure it is not stuck. If the switch is faulty, replace the lid or consult a technician. Test the system after confirming the switch works."
+      },
+      {
+        "title": "Disable Wake on LAN",
+        "content": "Open Device Manager. Expand 'Network adapters', right-click your network adapter, and select 'Properties'. Go to the 'Power Management' tab and uncheck 'Allow this device to wake the computer'. Click OK and test."
+      },
+      {
+        "title": "Update BIOS/UEFI",
+        "content": "Visit the manufacturer's website (e.g., Dell, HP, Lenovo) and download the latest BIOS/UEFI update for your model. Follow the instructions to update and restart the computer."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Wake on Keyboard/Mouse",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Wake Devices",
+            "content": "Open Device Manager. Expand 'Keyboards' and 'Mice and other pointing devices'. For each device, go to 'Properties' > 'Power Management' tab and uncheck 'Allow this device to wake the computer'. Click OK and test."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Command Prompt to Check Wake Sources",
+        "type": "Advanced Troubleshooting",
+        "steps": [
+          {
+            "title": "List Wake Sources",
+            "content": "Open Command Prompt as Administrator and run: `powercfg /lastwake`. Note the device or event causing the wake. Then run: `powercfg -devicequery wake_armed` to list devices enabled to wake the system. Disable the problematic device via Device Manager."
+          },
+          {
+            "title": "Disable Problematic Device",
+            "content": "In Device Manager, locate the device identified in the previous step. Right-click it, select 'Properties' > 'Power Management' tab, and uncheck 'Allow this device to wake the computer'. Click OK and test."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T23:48:04.767Z",
+      "updated": "2026-09-02T23:48:04.767Z",
+      "sourceUrl": "https://superuser.com/questions/1814856/computer-wakes-up-from-sleep-and-drains-battery-lid-malfunction",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788392909658-124",
+    "title": "Fix USB Device Not Recognized Error",
+    "problemDescription": "A connected USB device is not being recognized by the computer or phone, leading to malfunction or failure to detect the device.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "USB",
+      "device not recognized",
+      "malfunction",
+      "data cable"
+    ],
+    "steps": [
+      {
+        "title": "Check Physical Connections",
+        "content": "Unplug the USB device and reconnect it to a different USB port on your computer or phone. Ensure the connection is secure."
+      },
+      {
+        "title": "Restart Devices",
+        "content": "Restart both your computer and the connected device (e.g., phone or external hard drive). Sometimes, a simple reboot resolves recognition issues."
+      },
+      {
+        "title": "Inspect the USB Cable",
+        "content": "If the issue persists, try using a different USB cable. Faulty or damaged cables are a common cause of this error."
+      },
+      {
+        "title": "Test on Another Device",
+        "content": "Connect the USB device to another computer or phone to verify if the issue is with the device itself or the original system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update USB Drivers (Windows)",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Press `Win + X` and select 'Device Manager' from the menu."
+          },
+          {
+            "title": "Locate USB Controllers",
+            "content": "Expand the 'Universal Serial Bus controllers' section in Device Manager."
+          },
+          {
+            "title": "Update Drivers",
+            "content": "Right-click on any listed USB device with a yellow exclamation mark and select 'Update driver'. Follow the prompts to complete the update."
+          },
+          {
+            "title": "Restart System",
+            "content": "Restart your computer after updating the drivers to apply changes."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable USB Selective Suspend (Windows)",
+        "type": "Power Management Fix",
+        "steps": [
+          {
+            "title": "Open Power Options",
+            "content": "Press `Win + R`, type `powercfg.cpl`, and hit Enter."
+          },
+          {
+            "title": "Change Plan Settings",
+            "content": "Click 'Change plan settings' next to your selected power plan, then 'Change advanced power settings'."
+          },
+          {
+            "title": "Disable USB Selective Suspend",
+            "content": "Scroll to 'USB settings', expand it, and set both 'On battery' and 'Plugged in' to 'Disabled'. Apply changes."
+          },
+          {
+            "title": "Restart System",
+            "content": "Restart your computer to ensure the changes take effect."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T23:48:29.658Z",
+      "updated": "2026-09-02T23:48:29.658Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=6oj0EtbRP5I",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788392925729-462",
+    "title": "Get Android Support via Twitter",
+    "problemDescription": "Android users can receive direct support from Google by tweeting their issue with the #AndroidHelp hashtag.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "android",
+      "support",
+      "twitter",
+      "hashtag",
+      "google"
+    ],
+    "steps": [
+      {
+        "title": "Tweet Your Issue",
+        "content": "Open Twitter (X) and compose a new tweet. Include a clear description of your Android issue (e.g., 'My phone won't connect to Wi-Fi') and add the hashtag #AndroidHelp."
+      },
+      {
+        "title": "Tag Google Support",
+        "content": "In the same tweet, tag Google's official support account (@Google) to ensure visibility."
+      },
+      {
+        "title": "Wait for Response",
+        "content": "Google's support team will respond via Twitter with troubleshooting steps or further instructions."
+      },
+      {
+        "title": "Follow Instructions",
+        "content": "Carefully follow any steps provided in the response to resolve your issue."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-09-02T23:48:45.729Z",
+      "updated": "2026-09-02T23:48:45.729Z",
+      "sourceUrl": "https://www.techradar.com/news/you-can-now-get-support-direct-from-google-with-the-androidhelp-hashtag",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788392929102-526",
+    "title": "Fix Android Auto Connection Issues After Update",
+    "problemDescription": "Android Auto may not work properly due to outdated software or pending updates in the Google Play Store.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "Android Auto",
+      "update",
+      "connection",
+      "Play Store"
+    ],
+    "steps": [
+      {
+        "title": "Check for Pending Updates in Google Play Store",
+        "content": "Open the Google Play Store app on your Android phone. Tap your profile picture (top right corner) and select 'Manage apps and device'. Go to the 'Updates available' tab and check if Android Auto has an update pending. If yes, tap 'Update' to install the latest version."
+      },
+      {
+        "title": "Restart Android Auto and Your Phone",
+        "content": "After updating, close the Android Auto app completely. Restart your phone to ensure all changes take effect. Then, reopen Android Auto and check if the connection issues are resolved."
+      },
+      {
+        "title": "Reconnect Android Auto to Your Car",
+        "content": "If the issue persists, open Android Auto on your phone, go to Settings, and select 'Disconnect'. Reconnect your phone to your car via USB or Bluetooth and follow the on-screen instructions to re-establish the connection."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Cache and Data for Android Auto",
+        "type": "Advanced Troubleshooting",
+        "steps": [
+          {
+            "title": "Clear Android Auto App Cache",
+            "content": "Go to your phone's Settings > Apps > See all apps > Android Auto. Tap 'Storage and cache' and select 'Clear cache'. Then, tap 'Clear data' to reset the app to its default state."
+          },
+          {
+            "title": "Reinstall Android Auto",
+            "content": "Uninstall Android Auto from your phone by going to Settings > Apps > Android Auto > Uninstall. Then, reinstall it from the Google Play Store and set it up again."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for System Updates",
+        "type": "System-Level Fix",
+        "steps": [
+          {
+            "title": "Update Your Android OS",
+            "content": "Go to your phone's Settings > System > System update. Check for any available updates and install them. A system update may include fixes for Android Auto compatibility issues."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T23:48:49.102Z",
+      "updated": "2026-09-02T23:48:49.102Z",
+      "sourceUrl": "https://www.techradar.com/news/update-your-phone-now-to-get-the-latest-major-fix-for-android-auto",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
