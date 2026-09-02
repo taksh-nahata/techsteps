@@ -365584,5 +365584,289 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1788373336232-526",
+    "title": "Fix NVIDIA Screen Flickering Issue",
+    "problemDescription": "Screen flickering occurs on systems with NVIDIA GPUs, often due to power management settings or outdated drivers.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "nvidia",
+      "screen flickering",
+      "gpu",
+      "driver",
+      "power management"
+    ],
+    "steps": [
+      {
+        "title": "Update NVIDIA Drivers",
+        "content": "Download and install the latest drivers from NVIDIA's official website (https://www.nvidia.com/Download/index.aspx). Use the 'Custom' installation option and perform a clean install."
+      },
+      {
+        "title": "Adjust Power Management Settings",
+        "content": "Open NVIDIA Control Panel (right-click desktop > NVIDIA Control Panel). Navigate to 'Manage 3D Settings' > 'Program Settings'. Select your application or set to 'Global Settings'. Under 'Power management mode', choose 'Prefer Maximum Performance'."
+      },
+      {
+        "title": "Disable Adaptive Sync (if applicable)",
+        "content": "In NVIDIA Control Panel, go to 'Display' > 'Set up G-SYNC'. Ensure 'Enable G-SYNC, G-SYNC Compatible' is unchecked if flickering persists."
+      },
+      {
+        "title": "Check Windows Power Plan",
+        "content": "Open Windows Power Options (Win + R > powercfg.cpl). Select 'High performance' power plan. Ensure 'Turn off display' and 'Put the computer to sleep' are set to 'Never'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable Hardware Acceleration in Apps",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Hardware Acceleration in Browser",
+            "content": "For Chrome/Edge: Go to Settings > System > Disable 'Use hardware acceleration when available'. Restart the browser."
+          },
+          {
+            "title": "Disable Hardware Acceleration in Other Apps",
+            "content": "Check settings in applications like Adobe Photoshop, VLC, or video players where hardware acceleration can be toggled."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Roll Back NVIDIA Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Roll Back to Previous Driver",
+            "content": "Open Device Manager (Win + X > Device Manager). Expand 'Display adapters', right-click NVIDIA GPU > Properties > Driver > Roll Back Driver. Select a previous stable version if available."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T18:22:16.232Z",
+      "updated": "2026-09-02T18:22:16.232Z",
+      "sourceUrl": "https://www.reddit.com/r/nvidia/comments/r7iv4z/psa_you_can_fix_the_screen_flickering_issue_by",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788373346159-192",
+    "title": "Fix Slight Monitor Screen Flickering",
+    "problemDescription": "A monitor displays slight flickering, which may be caused by outdated graphics drivers, incorrect resolution settings, or monitor-specific features like anti-flicker technology.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "monitor",
+      "flickering",
+      "graphics drivers",
+      "resolution",
+      "anti-flicker"
+    ],
+    "steps": [
+      {
+        "title": "Update Graphics Drivers",
+        "content": "Visit the manufacturer's website (e.g., NVIDIA, AMD, Intel) to download and install the latest drivers for your graphics card. Alternatively, use Windows Update or a driver update tool like Driver Booster."
+      },
+      {
+        "title": "Set Native Resolution",
+        "content": "Right-click on the desktop, select 'Display settings', and ensure the resolution matches the monitor's native resolution (check the manual or manufacturer's website)."
+      },
+      {
+        "title": "Disable Monitor's Anti-Flicker Feature",
+        "content": "Access the monitor's OSD (On-Screen Display) menu and disable any 'Anti-Flicker', 'Motion Smoothing', or 'LED Comfort Mode' features that may interfere with display stability."
+      },
+      {
+        "title": "Check Cable Connections",
+        "content": "Inspect the HDMI/DisplayPort/VGA cable for damage. Try a different cable or port on the graphics card to rule out connection issues."
+      },
+      {
+        "title": "Test with Another Monitor",
+        "content": "Connect a different monitor to the same PC to determine if the flickering persists. If it stops, the issue is likely with the original monitor."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Refresh Rate",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Change Refresh Rate",
+            "content": "Go to 'Display settings' > 'Advanced display settings' > 'Display adapter properties'. Under the 'Monitor' tab, try changing the refresh rate to a lower value (e.g., 59Hz instead of 60Hz) to reduce flickering."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Hardware Acceleration",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Hardware Acceleration",
+            "content": "For applications like browsers or games, disable hardware acceleration in settings. For example, in Chrome: 'Settings' > 'System' > Toggle off 'Use hardware acceleration when available'."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T18:22:26.159Z",
+      "updated": "2026-09-02T18:22:26.159Z",
+      "sourceUrl": "https://www.reddit.com/r/techsupport/comments/obfsv7/how_to_fix_slight_flickering_on_monitor_screen",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788373379049-952",
+    "title": "Disable Microsoft Teams Auto-Start in Ubuntu",
+    "problemDescription": "Microsoft Teams automatically starts when Ubuntu boots up, consuming system resources unnecessarily.",
+    "category": "linux",
+    "difficulty": "Easy",
+    "keywords": [
+      "microsoft teams",
+      "auto-start",
+      "ubuntu",
+      "linux",
+      "startup applications"
+    ],
+    "steps": [
+      {
+        "title": "Open Microsoft Teams Settings",
+        "content": "Right-click the Microsoft Teams icon in the system tray (top-right panel) and select 'Settings'."
+      },
+      {
+        "title": "Disable Auto-Start",
+        "content": "In the Settings window, navigate to the 'General' tab and uncheck the option labeled 'Auto-start application'."
+      },
+      {
+        "title": "Save and Restart",
+        "content": "Click 'Apply' or 'Save' if prompted, then close Teams. Restart your system to verify the change."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable via Startup Applications",
+        "type": "System Configuration",
+        "steps": [
+          {
+            "title": "Open Startup Applications",
+            "content": "Press 'Super' (Windows key) and search for 'Startup Applications' or run `gnome-session-properties` in the terminal."
+          },
+          {
+            "title": "Find and Disable Teams",
+            "content": "Look for an entry related to Microsoft Teams (e.g., 'Microsoft Teams' or 'teams') and uncheck the box next to it."
+          },
+          {
+            "title": "Save and Restart",
+            "content": "Click 'Close' and restart your system to confirm the auto-start is disabled."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Remove Teams from Autostart Directory",
+        "type": "Manual Removal",
+        "steps": [
+          {
+            "title": "Open Terminal",
+            "content": "Press 'Ctrl + Alt + T' to open the terminal."
+          },
+          {
+            "title": "Navigate to Autostart Directory",
+            "content": "Run `cd ~/.config/autostart/` to access the autostart directory."
+          },
+          {
+            "title": "Delete Teams Autostart File",
+            "content": "Run `rm microsoft-teams.desktop` to remove the autostart file for Microsoft Teams."
+          },
+          {
+            "title": "Restart System",
+            "content": "Restart your system to ensure the change takes effect."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T18:22:59.049Z",
+      "updated": "2026-09-02T18:22:59.049Z",
+      "sourceUrl": "https://askubuntu.com/questions/1254225/how-to-disable-auto-startup-of-microsoft-teams-in-ubuntu",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788373391733-681",
+    "title": "Fix Microsoft Teams New Meeting Window Broken on Ubuntu",
+    "problemDescription": "Microsoft Teams new meeting window fails to display or render correctly on Ubuntu, even after reinstalling the application.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "microsoft teams",
+      "meeting window",
+      "ubuntu",
+      "rendering",
+      "purge reinstall"
+    ],
+    "steps": [
+      {
+        "title": "Purge Microsoft Teams Completely",
+        "content": "Run the following commands to remove Teams and its residual files:\n```bash\nsudo apt purge teams\nsudo apt autoremove\nrm -rf ~/.config/Microsoft/Microsoft Teams/\nrm -rf ~/.local/share/Teams/\n```"
+      },
+      {
+        "title": "Reinstall Microsoft Teams",
+        "content": "Install Teams from the official Microsoft repository:\n```bash\nwget https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -\nsudo sh -c 'echo \"deb [arch=amd64] https://packages.microsoft.com/repos/ms-teams stable main\" > /etc/apt/sources.list.d/teams.list'\nsudo apt update\nsudo apt install teams\n```"
+      },
+      {
+        "title": "Clear Browser Cache (if using Teams in a browser)",
+        "content": "If Teams is accessed via a web browser, clear the browser cache:\n- **Firefox**: `Ctrl+Shift+Del` > Select 'Cache' > Clear.\n- **Chrome/Edge**: `Ctrl+Shift+Del` > Select 'Cached images and files' > Clear."
+      },
+      {
+        "title": "Launch Teams and Test",
+        "content": "Open Teams and attempt to create a new meeting. Verify if the window renders correctly."
+      },
+      {
+        "title": "Check for Known Issues",
+        "content": "Visit the [Microsoft Teams Linux support page](https://docs.microsoft.com/en-us/microsoftteams/get-clients#linux) or [Ask Ubuntu thread](https://askubuntu.com/questions/1452181/ms-teams-new-meeting-window-broken) for known bugs or updates."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Teams Web Version as Temporary Workaround",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Teams via Web Browser",
+            "content": "Open a browser and navigate to [Teams Web](https://teams.microsoft.com). Log in and use the web version to create meetings until the issue is resolved."
+          },
+          {
+            "title": "Disable Hardware Acceleration (if using Electron-based Teams)",
+            "content": "If the issue persists, disable hardware acceleration in Teams settings:\n1. Open Teams.\n2. Go to **Settings** > **General**.\n3. Toggle off **Enable hardware acceleration**.\n4. Restart Teams."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Downgrade Teams to a Stable Version",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Older Teams Version",
+            "content": "Download a previous stable version of Teams from [Microsoft's archive](https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/) and install it manually:\n```bash\nsudo dpkg -i teams_<version>.deb\n```"
+          },
+          {
+            "title": "Pin Version to Prevent Updates",
+            "content": "Prevent automatic updates to avoid re-triggering the issue:\n```bash\necho \"teams hold\" | sudo dpkg --set-selections\n```"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T18:23:11.733Z",
+      "updated": "2026-09-02T18:23:11.733Z",
+      "sourceUrl": "https://askubuntu.com/questions/1452181/ms-teams-new-meeting-window-broken",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
