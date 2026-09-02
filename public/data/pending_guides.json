@@ -365868,5 +365868,171 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1788384750495-742",
+    "title": "Fix Windows 10 Bluetooth Unknown Device Issue",
+    "problemDescription": "Windows 10 Bluetooth suddenly detects headphones as an unknown device, preventing proper pairing or connection.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "bluetooth",
+      "headphones",
+      "unknown device",
+      "windows 10"
+    ],
+    "steps": [
+      {
+        "title": "Remove the Unknown Device",
+        "content": "Go to Settings > Devices > Bluetooth and other devices. Locate your headphones under the 'Other devices' section, click on them, and select 'Remove device'."
+      },
+      {
+        "title": "Re-pair the Headphones",
+        "content": "Put your headphones in pairing mode (refer to the manufacturer's instructions). Then, click 'Add Bluetooth or other device' in the same menu and follow the prompts to re-pair them."
+      },
+      {
+        "title": "Restart Bluetooth Services",
+        "content": "Press Win + R, type 'services.msc', and press Enter. Locate 'Bluetooth Support Service', right-click it, select 'Restart', and ensure it is set to 'Automatic'."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-09-02T21:32:30.495Z",
+      "updated": "2026-09-02T21:32:30.495Z",
+      "sourceUrl": "https://superuser.com/questions/1547114/windows-10-bluetooth-all-of-sudden-sees-my-headphones-as-an-unknown-device",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788384762479-137",
+    "title": "Fix Instagram Password Reset Email Bug",
+    "problemDescription": "Instagram users receive unexpected password reset emails due to a bug, which Meta has patched.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "Instagram",
+      "password reset",
+      "security email",
+      "bug"
+    ],
+    "steps": [
+      {
+        "title": "Check for Official Updates",
+        "content": "Visit Instagram's official blog or social media channels to confirm if the issue has been resolved by Meta."
+      },
+      {
+        "title": "Ignore Suspicious Emails",
+        "content": "Do not click any links in unexpected password reset emails. Delete them immediately."
+      },
+      {
+        "title": "Change Password Proactively",
+        "content": "If concerned, manually change your Instagram password via the app or official website to ensure security."
+      },
+      {
+        "title": "Enable Two-Factor Authentication",
+        "content": "Go to Instagram settings > Security > Two-Factor Authentication and enable it for added protection."
+      },
+      {
+        "title": "Report Suspicious Activity",
+        "content": "If you suspect unauthorized access, report it to Instagram via the app or their help center."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-09-02T21:32:42.479Z",
+      "updated": "2026-09-02T21:32:42.479Z",
+      "sourceUrl": "https://lifehacker.com/tech/that-instagram-password-reset-email-is-a-bug",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788384775249-892",
+    "title": "Fix Slow Performance and Freezing in Ubuntu",
+    "problemDescription": "Ubuntu system experiences slow performance and frequent freezes, resolved by upgrading the kernel.",
+    "category": "linux",
+    "difficulty": "Medium",
+    "keywords": [
+      "ubuntu",
+      "slow",
+      "freezing",
+      "kernel",
+      "upgrade"
+    ],
+    "steps": [
+      {
+        "title": "Check Current Kernel Version",
+        "content": "Open a terminal and run `uname -r` to verify your current kernel version."
+      },
+      {
+        "title": "Update Package List",
+        "content": "Run `sudo apt update` to ensure your package lists are up to date."
+      },
+      {
+        "title": "Upgrade Kernel",
+        "content": "Install the latest available kernel by running `sudo apt install --install-recommends linux-generic-hwe-22.04` (adjust version as needed for your Ubuntu release)."
+      },
+      {
+        "title": "Reboot System",
+        "content": "After installation, reboot your system to apply the new kernel: `sudo reboot`."
+      },
+      {
+        "title": "Verify New Kernel",
+        "content": "After reboot, confirm the new kernel is active by running `uname -r` again."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Install Mainline Kernel Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Add Mainline Kernel PPA",
+            "content": "Run `sudo add-apt-repository ppa:cappelikan/ppa -y` to add the Mainline Kernel tool repository."
+          },
+          {
+            "title": "Install Mainline Kernel Tool",
+            "content": "Install the tool with `sudo apt install mainline`."
+          },
+          {
+            "title": "Launch Mainline Tool",
+            "content": "Open Mainline from the applications menu or via terminal with `mainline`."
+          },
+          {
+            "title": "Select and Install Latest Kernel",
+            "content": "Choose the latest stable kernel from the list and install it. Follow prompts to reboot."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Check for Resource-Heavy Processes",
+        "type": "Additional Checks",
+        "steps": [
+          {
+            "title": "Open System Monitor",
+            "content": "Run `gnome-system-monitor` or use the GUI to open System Monitor."
+          },
+          {
+            "title": "Identify High CPU/Memory Usage",
+            "content": "Check the 'Processes' tab for applications consuming excessive CPU or RAM."
+          },
+          {
+            "title": "Close or Uninstall Problematic Apps",
+            "content": "Terminate unnecessary processes or uninstall resource-heavy applications."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T21:32:55.249Z",
+      "updated": "2026-09-02T21:32:55.249Z",
+      "sourceUrl": "https://askubuntu.com/questions/1295877/my-system-is-slow-and-keeps-freezing",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
