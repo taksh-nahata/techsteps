@@ -363352,5 +363352,1239 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1788310032702-788",
+    "title": "Fix Instagram Issues: Drafts Disappearing, Image Quality Degradation, and Follow Restrictions",
+    "problemDescription": "Users report Instagram Reel drafts disappearing unexpectedly, image quality degradation after posting, and prolonged account restrictions preventing normal use like following others.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Instagram",
+      "Reel drafts",
+      "image quality",
+      "account restrictions",
+      "follow limit"
+    ],
+    "steps": [
+      {
+        "title": "Recover Missing Reel Drafts",
+        "content": "Open Instagram, go to Reels > Drafts. If drafts are missing, check if they were saved to your phone's local storage. If not, try restarting the app or reinstalling Instagram to refresh cache. Ensure you have sufficient storage space."
+      },
+      {
+        "title": "Restore Original Image Quality",
+        "content": "Go to Instagram Settings > Account > Data Usage. Enable 'High-Quality Images'. Ensure your phone's camera settings are set to maximum resolution before capturing. Avoid using Instagram's in-app camera for best quality."
+      },
+      {
+        "title": "Resolve Account Restrictions",
+        "content": "If your account is restricted from following others, wait for Instagram to review the issue (typically 24-48 hours). If unresolved, report the issue via Instagram Help Center: Settings > Help > Report a Problem > 'Account Restrictions'. Provide screenshots and details."
+      },
+      {
+        "title": "Check for App Updates",
+        "content": "Go to App Store/Play Store > Instagram > Update. Ensure you are using the latest version to avoid bugs causing these issues."
+      },
+      {
+        "title": "Clear App Cache and Data",
+        "content": "For Android: Settings > Apps > Instagram > Storage > Clear Cache/Data. For iOS: Uninstall and reinstall the app. This resets temporary files that may cause glitches."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Instagram Web Version for Drafts",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Drafts via Web",
+            "content": "Log in to Instagram via a web browser (chrome.instagram.com). Navigate to Reels > Drafts. If drafts appear here but not in the app, the issue may be app-specific. Transfer drafts to your device manually if possible."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Contact Instagram Support Directly",
+        "type": "Escalation",
+        "steps": [
+          {
+            "title": "Submit a Support Request",
+            "content": "Go to Instagram Help Center (help.instagram.com) > 'Report a Problem' > 'Something Isn’t Working'. Select 'Account Access' or 'Technical Issues'. Provide detailed descriptions, screenshots, and timestamps of the issues. Follow up via email if no response within 48 hours."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T00:47:12.702Z",
+      "updated": "2026-09-02T00:47:12.702Z",
+      "sourceUrl": "https://apps.apple.com/za/app/instagram/id389801252",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788310036951-813",
+    "title": "Fix Instagram Logo Legibility Without Losing Brand Identity",
+    "problemDescription": "Instagram's new logo's 'R' is often misread as 'U' or 'Z', reducing legibility while maintaining brand identity is challenging.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Instagram",
+      "logo",
+      "legibility",
+      "branding",
+      "typography"
+    ],
+    "steps": [
+      {
+        "title": "Analyze the Current Logo",
+        "content": "Observe the Instagram logo and note how the 'R' is often misinterpreted as 'U' or 'Z'. This reduces clarity and user recognition."
+      },
+      {
+        "title": "Compare Sans-Serif and Cursive Elements",
+        "content": "Identify that the current logo mixes a sans-serif typeface (I, T, A, N) with a cursive 'R'. The sans-serif elements are modern and clean, while the cursive 'R' adds personality but causes confusion."
+      },
+      {
+        "title": "Redesign the 'R' for Legibility",
+        "content": "Modify the 'R' to ensure it is clearly distinguishable while retaining a cursive or semi-cursive style. For example, adjust the curve of the 'R' to avoid resembling a 'U' or 'Z'."
+      },
+      {
+        "title": "Maintain Brand Consistency",
+        "content": "Ensure the redesigned 'R' aligns with Instagram's new brand refresh, which favors simplicity and modern typography. Avoid overly retro designs that conflict with the current aesthetic."
+      },
+      {
+        "title": "Test the Redesigned Logo",
+        "content": "Display the redesigned logo to a small group of users and gather feedback on legibility and brand recognition. Iterate based on their responses."
+      },
+      {
+        "title": "Finalize the Logo",
+        "content": "Once the redesigned 'R' is validated, finalize the logo and update all digital and physical assets to reflect the change."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Hybrid Typography Approach",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Combine Sans-Serif and Cursive Elements",
+            "content": "Experiment with a hybrid approach where the 'R' is partially cursive but includes subtle sans-serif characteristics to improve legibility. For example, use a cursive 'R' with a straight vertical stem."
+          },
+          {
+            "title": "Adjust the 'R' Proportions",
+            "content": "Increase the height of the 'R' relative to other letters to make it more distinct. This can help differentiate it from 'U' or 'Z'."
+          },
+          {
+            "title": "Test with Users",
+            "content": "Conduct user testing to ensure the hybrid approach maintains brand identity while improving legibility."
+          },
+          {
+            "title": "Implement Changes",
+            "content": "Apply the hybrid typography to the logo and roll it out after validation."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T00:47:16.951Z",
+      "updated": "2026-09-02T00:47:16.951Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=RmwRpeMLyeI",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788310041630-624",
+    "title": "Fix Instagram Login Issues After Account Suspension",
+    "problemDescription": "Users are locked out of Instagram after account suspension due to not receiving verification codes or password reset emails, with login attempts failing with 'try again later' errors.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "Instagram",
+      "login",
+      "account suspension",
+      "verification code",
+      "password reset"
+    ],
+    "steps": [
+      {
+        "title": "Wait and Retry Later",
+        "content": "Instagram's servers may be temporarily overloaded. Wait 24-48 hours before attempting to log in again."
+      },
+      {
+        "title": "Check Spam/Junk Folders",
+        "content": "Verify if the verification or password reset email was filtered into your spam or junk folder."
+      },
+      {
+        "title": "Use Instagram's Web Version",
+        "content": "Access Instagram via a web browser (instagram.com) to check if the issue is app-specific. Use the 'Forgot Password' option if needed."
+      },
+      {
+        "title": "Contact Instagram Support via Web Form",
+        "content": "Visit Instagram's Help Center (help.instagram.com) and submit an appeal using the 'Report a Problem' form. Include your username and details about the suspension."
+      },
+      {
+        "title": "Request a Manual Review",
+        "content": "If the account was suspended in error, request a manual review through the Instagram app or website. Provide any necessary documentation to verify ownership."
+      },
+      {
+        "title": "Use a Different Device or Network",
+        "content": "Try logging in from a different device (e.g., computer or tablet) or switch to a different network (e.g., mobile data instead of Wi-Fi)."
+      },
+      {
+        "title": "Clear App Cache and Data (Android)",
+        "content": "Go to Settings > Apps > Instagram > Storage > Clear Cache and Clear Data. Reopen the app and attempt to log in again."
+      },
+      {
+        "title": "Update the Instagram App",
+        "content": "Ensure the Instagram app is updated to the latest version via the Google Play Store."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Facebook Login (If Linked)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Open Instagram App",
+            "content": "Launch the Instagram app and tap 'Log in with Facebook' if your account is linked to Facebook."
+          },
+          {
+            "title": "Follow Facebook Login Prompts",
+            "content": "Complete the login process through Facebook. If successful, you may regain access to your account."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Report via Instagram's Help Email",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Send an Email to Instagram Support",
+            "content": "Email support@instagram.com with your username, email, and a detailed explanation of the issue. Include screenshots if possible."
+          },
+          {
+            "title": "Wait for Response",
+            "content": "Monitor your email for a response from Instagram's support team. This may take several days."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T00:47:21.630Z",
+      "updated": "2026-09-02T00:47:21.630Z",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=en_US",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788310055394-601",
+    "title": "Reset Password for Inkling Library Ebook Access",
+    "problemDescription": "Users are unable to reset their password to access the Inkling library ebook platform, blocking access to purchased content.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Inkling",
+      "ebook",
+      "password reset",
+      "access",
+      "NowLearning"
+    ],
+    "steps": [
+      {
+        "title": "Access the NowLearning Portal",
+        "content": "Go to the NowLearning portal (https://nowlearning.servicenow.com) and log in with your existing credentials."
+      },
+      {
+        "title": "Navigate to Help Section",
+        "content": "Click on the 'Help' section located at the top of the portal."
+      },
+      {
+        "title": "Submit a Support Case",
+        "content": "Select 'Submit a Case' or 'Contact Support' and choose the option related to password reset or Inkling library access."
+      },
+      {
+        "title": "Provide Required Details",
+        "content": "Fill in the required fields, including your username, email, and a brief description of the issue (e.g., 'Unable to reset password for Inkling library ebook access')."
+      },
+      {
+        "title": "Submit and Wait for Response",
+        "content": "Submit the case and wait for a response from the support team. They will guide you through the password reset process or provide further assistance."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Direct Contact via Email",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Find Support Email",
+            "content": "Locate the official support email for Inkling library access (e.g., inkling-support@servicenow.com)."
+          },
+          {
+            "title": "Send Password Reset Request",
+            "content": "Send an email to the support team with your registered email address and a request to reset your password for the Inkling library."
+          },
+          {
+            "title": "Verify Identity",
+            "content": "Follow any verification steps provided by the support team (e.g., answering security questions or providing account details)."
+          },
+          {
+            "title": "Reset Password via Email",
+            "content": "Once verified, the support team will send a password reset link or instructions to your email."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T00:47:35.394Z",
+      "updated": "2026-09-02T00:47:35.394Z",
+      "sourceUrl": "https://www.servicenow.com/community/community-central-forum/can-t-reset-a-password-to-access-inkling-library-ebook/m-p/3048105",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788310057686-305",
+    "title": "Disable Apple Passwords App and Autofill on Mac, iPhone, and iPad",
+    "problemDescription": "Users want to disable the built-in Apple Passwords app and its autofill functionality to use third-party password managers like 1Password.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "apple passwords",
+      "autofill",
+      "1password",
+      "password manager",
+      "disable"
+    ],
+    "steps": [
+      {
+        "title": "Disable Apple Passwords and Autofill on Mac",
+        "content": "1. Click the Apple logo in the top-right corner of the menu bar.\n2. Select 'System Settings'.\n3. Click 'General' > 'Autofill & Passwords'.\n4. Turn off 'Autofill Passwords and Passkeys'."
+      },
+      {
+        "title": "Disable Apple Passwords and Autofill on iPhone/iPad",
+        "content": "1. Open the 'Settings' app.\n2. Tap 'General' > 'AutoFill & Passwords'.\n3. Turn on 'AutoFill Passwords and Passkeys'.\n4. Turn off 'Apple Passwords'.\n5. Ensure '1Password' is turned on for third-party password manager integration."
+      },
+      {
+        "title": "Disable Browser Password Managers (Optional)",
+        "content": "Follow the guide linked in the source to disable built-in password managers in your browser (e.g., Chrome, Safari, Firefox)."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-09-02T00:47:37.686Z",
+      "updated": "2026-09-02T00:47:37.686Z",
+      "sourceUrl": "https://www.1password.community/1password-at-home-31/how-to-turn-off-the-apple-passwords-app-23783",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788310061410-179",
+    "title": "Perform a Flip Reset in Rocket League",
+    "problemDescription": "Players struggle to execute a flip reset in Rocket League due to timing and positioning challenges.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "Rocket League",
+      "flip reset",
+      "aerial",
+      "reset",
+      "mechanics"
+    ],
+    "steps": [
+      {
+        "title": "Position Your Car",
+        "content": "Start by driving towards the ball at a moderate speed. Position your car so that the front is facing the ball and you're slightly to the side of it."
+      },
+      {
+        "title": "Jump and Boost",
+        "content": "Press the jump button (default: X) and immediately hold the boost button (default: Square/Circle) to gain upward momentum."
+      },
+      {
+        "title": "Aerial to the Ball",
+        "content": "Use your aerial controls (default: Right Stick) to fly towards the ball. Aim to hit the ball with the top of your car."
+      },
+      {
+        "title": "Flip Reset Execution",
+        "content": "As you make contact with the ball, perform a front flip (default: Up on the Right Stick + Flip button). The goal is to hit the ball with the bottom of your car while flipping, resetting its trajectory."
+      },
+      {
+        "title": "Recover and Land",
+        "content": "After the flip reset, quickly adjust your car's orientation to land safely. Use small boost adjustments to stabilize your car and prepare for the next play."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Practice in Free Play",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter Free Play Mode",
+            "content": "Load Rocket League and select 'Free Play' from the main menu to practice without pressure."
+          },
+          {
+            "title": "Focus on Aerials",
+            "content": "Spend time practicing aerial shots and flips to improve your timing and control."
+          },
+          {
+            "title": "Slow-Motion Drills",
+            "content": "Use the slow-motion feature (default: L1/LB) to analyze and refine your flip reset technique."
+          },
+          {
+            "title": "Repetition",
+            "content": "Repeat the flip reset process multiple times until you feel comfortable with the timing and execution."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T00:47:41.410Z",
+      "updated": "2026-09-02T00:47:41.410Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=5g2VH3gy3ew",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788310069762-683",
+    "title": "Fix Instagram Module Media ID Not Available Error (9007, OAuthException)",
+    "problemDescription": "The Instagram module in Make (Integromat) fails with 'Media ID is not available (9007, OAuthException)' when publishing media, often due to OAuth token expiration or unsupported image formats.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Instagram",
+      "Make",
+      "Integromat",
+      "OAuthException",
+      "Media ID",
+      "9007",
+      "image format"
+    ],
+    "steps": [
+      {
+        "title": "Re-authorize the Facebook/Instagram Connection",
+        "content": "1. Go to your Make (Integromat) scenario. 2. Open the Instagram for Business module. 3. Click on the connection (e.g., Facebook/Instagram). 4. Select 'Re-authorize' or 'Reconnect' and follow the prompts to grant permissions again. 5. Save the scenario and rerun it."
+      },
+      {
+        "title": "Ensure Image Format is JPG",
+        "content": "1. Check the image file being uploaded to Instagram. 2. Convert the image to JPG format if it is currently PNG or another format. 3. Use a direct JPG URL (e.g., from a public URL or HTTP module) in the Instagram module. 4. Save and rerun the scenario."
+      },
+      {
+        "title": "Add an HTTP Module Before Instagram Module",
+        "content": "1. Insert an 'HTTP > Make a request' module before the Instagram module. 2. Configure it to fetch the image file (e.g., using a public URL). 3. Do NOT use the output of the HTTP module in the Instagram module's Photo URL parameter. 4. Save and rerun the scenario."
+      },
+      {
+        "title": "Use a Break Module to Retry on Failure",
+        "content": "1. Insert a 'Break' module after the Instagram module. 2. Configure the Break module to trigger if the Instagram module fails with the error. 3. Save and rerun the scenario. This will automatically retry the Instagram module upon failure."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use 0CodeKit Temporary URL Module",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Up 0CodeKit Temporary URL Module",
+            "content": "1. Sign up for a 0CodeKit account (if not already done). 2. Add the 'Create temporary URL to file' module from 0CodeKit to your scenario. 3. Configure it to point to your image file (e.g., from Google Drive, Dropbox, or a public URL). 4. Use the output of this module as the Photo URL in the Instagram module."
+          },
+          {
+            "title": "Re-authorize Facebook/Instagram Connection",
+            "content": "1. Re-authorize the Facebook/Instagram connection in the Instagram module as described in the primary steps. 2. Save and rerun the scenario."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Remove and Recreate the Instagram Module",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Delete and Recreate the Instagram Module",
+            "content": "1. Delete the existing Instagram for Business module from your scenario. 2. Add a new Instagram for Business module to the scenario. 3. Reconnect the Facebook/Instagram account during setup. 4. Configure the new module with the same settings as the old one. 5. Save and rerun the scenario."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T00:47:49.762Z",
+      "updated": "2026-09-02T00:47:49.762Z",
+      "sourceUrl": "https://community.make.com/t/instagram-module-suddenly-failing-with-media-id-is-not-available-9007-oauthexception/92819",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788310074135-310",
+    "title": "Fix Instagram Posts Appearing Too Bright on iPhone",
+    "problemDescription": "Some Instagram posts and videos appear abnormally bright on an iPhone, despite normal screen brightness settings.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "instagram",
+      "brightness",
+      "hdr",
+      "iphone",
+      "display"
+    ],
+    "steps": [
+      {
+        "title": "Disable HDR Media Display in Instagram",
+        "content": "Open the Instagram app on your iPhone. Tap your profile icon in the bottom-left corner. Tap the three horizontal lines in the top-right corner. Scroll down and select 'Media Quality'. Toggle off 'Display of HDR material'. If it is already off, toggle it on momentarily, then turn it off again."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-09-02T00:47:54.135Z",
+      "updated": "2026-09-02T00:47:54.135Z",
+      "sourceUrl": "https://discussions.apple.com/thread/255969469",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788310079474-654",
+    "title": "Recover Permanently Deleted Instagram Account",
+    "problemDescription": "Instagram accounts are being permanently deleted without valid explanation or appeal process, causing loss of personal content and memories.",
+    "category": "app-error",
+    "difficulty": "Hard",
+    "keywords": [
+      "Instagram",
+      "account deletion",
+      "permanent suspension",
+      "appeal",
+      "account recovery"
+    ],
+    "steps": [
+      {
+        "title": "Submit an Appeal via Instagram Help Center",
+        "content": "Visit the Instagram Help Center (https://help.instagram.com/) and navigate to 'Report a Problem' or 'Appeal a Decision'. Provide detailed information about your account, including the username, email, and any previous appeal attempts. Explain the situation clearly and request a human review."
+      },
+      {
+        "title": "Contact Instagram Support via Email",
+        "content": "Send an email to Instagram's support team at support@instagram.com or accountfeedback@instagram.com. Include your account details, a clear explanation of the issue, and any proof of ownership (e.g., screenshots of old posts, birth certificate if previously submitted). Request a review of the deletion decision."
+      },
+      {
+        "title": "Reach Out via Facebook (Meta) Support",
+        "content": "Since Instagram is owned by Meta, try contacting Facebook's support team. Go to Facebook's Help Center (https://www.facebook.com/help/) and submit a request. Mention that your Instagram account was unfairly deleted and request assistance."
+      },
+      {
+        "title": "File a Complaint with the App Store or Google Play Store",
+        "content": "If you downloaded Instagram from the App Store or Google Play Store, file a complaint about the account deletion. Provide details about the issue and request intervention from the platform's support team."
+      },
+      {
+        "title": "Post About Your Issue on Social Media",
+        "content": "Publicly share your issue on platforms like Twitter (X), Facebook, or Reddit. Tag @Instagram and @Meta, and use hashtags like #InstagramHelp or #AccountRecovery. This may increase visibility and pressure Instagram to review your case."
+      },
+      {
+        "title": "Wait and Check for Updates",
+        "content": "After submitting appeals and contacting support, wait for a response. Instagram may take days or weeks to review your case. Regularly check your email (including spam folders) for any updates or requests for additional information."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Third-Party Recovery Service (Not Recommended)",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Research Reputable Services",
+            "content": "Look for third-party services that claim to recover deleted Instagram accounts. Read reviews and ensure they are legitimate to avoid scams."
+          },
+          {
+            "title": "Provide Account Details",
+            "content": "If you choose to proceed, provide the service with your account details, including username, email, and any associated phone numbers."
+          },
+          {
+            "title": "Pay for the Service",
+            "content": "Most services require payment upfront. Be cautious of services that ask for excessive fees or personal information."
+          },
+          {
+            "title": "Follow Service Instructions",
+            "content": "The service may provide steps to recover your account, such as submitting additional proof or contacting Instagram on your behalf. Follow their instructions carefully."
+          },
+          {
+            "title": "Verify Account Recovery",
+            "content": "After following the steps, check if your account has been recovered. If not, the service may offer a refund or further assistance."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T00:47:59.474Z",
+      "updated": "2026-09-02T00:47:59.474Z",
+      "sourceUrl": "https://apps.apple.com/nz/app/instagram/id389801252",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1788310084441-174",
+    "title": "Fix Instagram Reels Export Quality in Adobe Premiere Pro",
+    "problemDescription": "Videos exported from Adobe Premiere Pro to Instagram Reels lose quality or don't play back in high resolution.",
+    "category": "app-error",
+    "difficulty": "Medium",
+    "keywords": [
+      "Instagram Reels",
+      "Adobe Premiere Pro",
+      "export settings",
+      "HEVC H.265",
+      "video quality"
+    ],
+    "steps": [
+      {
+        "title": "Set Correct Export Format and Codec",
+        "content": "Open Adobe Premiere Pro and go to File > Export > Media (or press Ctrl+M/Cmd+M). In the Export Settings window, ensure the following: Format: H.264 or H.265 (HEVC). For best quality, select HEVC H.265. Match Source for resolution (e.g., 1080x1920) and frame rate (e.g., 23.976 FPS)."
+      },
+      {
+        "title": "Use Match Source for Sequence Settings",
+        "content": "Under the Video tab in Export Settings, click 'Match Source' to automatically apply your sequence settings (resolution, frame rate, etc.). This ensures consistency with your project."
+      },
+      {
+        "title": "Export and Send Directly to Instagram",
+        "content": "After configuring settings, click 'Export' to render the video. Once rendered, open the Exports app (if using Adobe's Media Encoder) and click the Instagram button in the bottom left to send the video directly to Instagram. Avoid downloading and manually uploading, as this reduces quality."
+      },
+      {
+        "title": "Verify Instagram Upload Settings",
+        "content": "After sending to Instagram, ensure the post settings page appears. Instagram will automatically optimize the video for Reels. If manually uploading, confirm the format is HEVC H.265 and resolution is 1080x1920."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Upload with Optimized Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Export with Custom Preset",
+            "content": "In Adobe Premiere Pro, go to File > Export > Media. Select 'Match Source - High Bitrate' preset or create a custom preset with the following: Format: H.265 (HEVC), Resolution: 1080x1920, Frame Rate: 24/30/60 FPS (match source), Bitrate: 10-15 Mbps (VBR, 2-pass)."
+          },
+          {
+            "title": "Download and Upload Manually",
+            "content": "After exporting, download the video and upload it directly to Instagram Reels. Ensure Instagram recognizes the video as a Reel (not a Story) by selecting 'Reel' in the upload interface."
+          },
+          {
+            "title": "Use Third-Party Tools",
+            "content": "If issues persist, use third-party tools like CapCut or InShot to re-encode the video with Instagram-compatible settings before uploading. Export from these apps with HEVC H.265 and 1080x1920 resolution."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T00:48:04.441Z",
+      "updated": "2026-09-02T00:48:04.441Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=4rG_ZxpjIKs&vl=en",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788310092072-755",
+    "title": "Understand WhatsApp Terms of Service Changes",
+    "problemDescription": "Users are concerned about WhatsApp's updated Terms of Service and its implications on privacy and data sharing with Facebook.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "terms of service",
+      "privacy",
+      "data sharing",
+      "facebook"
+    ],
+    "steps": [
+      {
+        "title": "Review WhatsApp's Official Statement",
+        "content": "Visit WhatsApp's official blog or website to read their statement on the updated Terms of Service. Confirm what data is shared with Facebook and what remains private."
+      },
+      {
+        "title": "Check Your Privacy Settings",
+        "content": "Open WhatsApp > Settings > Account > Privacy. Review and adjust settings like 'Last Seen', 'Profile Photo', 'About', and 'Status' to control who sees your information."
+      },
+      {
+        "title": "Download Your Data",
+        "content": "Go to WhatsApp > Settings > Account > Request Account Info. Request your data to see what information WhatsApp has stored about you."
+      },
+      {
+        "title": "Consider Alternatives",
+        "content": "If you no longer trust WhatsApp, explore alternatives like Signal or Telegram. These apps offer end-to-end encryption and do not share data with Facebook."
+      },
+      {
+        "title": "Stop Using WhatsApp (If Necessary)",
+        "content": "If you decide to leave WhatsApp, uninstall the app and switch to a trusted alternative. Inform your contacts about the change to ensure seamless communication."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Verify Data Sharing with Third-Party Tools",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Use Privacy Checker Tools",
+            "content": "Visit websites like PrivacyTools.io or Terms of Service; Didn’t Read to compare WhatsApp’s privacy policy with other messaging apps. Look for red flags in data sharing practices."
+          },
+          {
+            "title": "Check App Permissions",
+            "content": "On your phone, go to Settings > Apps > WhatsApp > Permissions. Disable any unnecessary permissions like contacts, location, or storage access to limit data sharing."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T00:48:12.072Z",
+      "updated": "2026-09-02T00:48:12.072Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=JYgrCH4Ztqk",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788310099987-92",
+    "title": "Optimize WhatsApp-like Messaging System for Privacy and Fault Tolerance",
+    "problemDescription": "Design a scalable messaging system that minimizes data storage, ensures privacy, and handles frequent component failures while maintaining persistent client-server connections.",
+    "category": "robotics",
+    "difficulty": "Hard",
+    "keywords": [
+      "messaging",
+      "privacy",
+      "fault tolerance",
+      "websockets",
+      "scalability"
+    ],
+    "steps": [
+      {
+        "title": "Define Functional and Non-Functional Requirements",
+        "content": "Identify core requirements: (1) Minimize message storage duration to reduce liability and privacy risks. (2) Ensure fault tolerance to handle frequent component failures. (3) Support persistent client-server connections for real-time messaging. (4) Address security concerns like spam prevention and data scraping."
+      },
+      {
+        "title": "Implement Short-Lived Message Storage",
+        "content": "Store messages on the server only long enough to fulfill functional requirements (e.g., delivery to recipient). Use automated cleanup mechanisms (e.g., TTL-based deletion) to ensure messages are purged promptly after delivery or a predefined retention period."
+      },
+      {
+        "title": "Adopt Encryption for Data Protection",
+        "content": "Encrypt messages end-to-end to ensure even the server cannot access plaintext data. Use protocols like Signal Protocol or similar to guarantee privacy. Avoid storing decryption keys on the server to prevent unauthorized access."
+      },
+      {
+        "title": "Design for Fault Tolerance",
+        "content": "Implement redundancy and failover mechanisms for critical components (e.g., databases, message brokers). Use distributed systems patterns like leader-follower replication, circuit breakers, and retry mechanisms to handle failures gracefully without disrupting service."
+      },
+      {
+        "title": "Use Persistent Connections with WebSockets",
+        "content": "Replace RESTful APIs with WebSocket connections to maintain a persistent, bidirectional channel between clients and servers. This enables real-time message delivery without the overhead of repeated HTTP handshakes. For high-scale systems, consider using a lightweight protocol like TLS over raw sockets to reduce overhead."
+      },
+      {
+        "title": "Define a Custom WebSocket API",
+        "content": "Design a WebSocket-based API with commands for message sending, delivery acknowledgments, and connection management. Since there is no standard for WebSocket APIs, document your API structure clearly (e.g., JSON-based payloads for commands like 'send_message', 'ack_delivery', 'heartbeat')."
+      },
+      {
+        "title": "Implement Security Measures",
+        "content": "Add layers to prevent spam, scraping, and abuse: (1) Rate limiting to throttle excessive requests. (2) CAPTCHA or proof-of-work challenges for sensitive operations. (3) IP blacklisting and anomaly detection to block malicious actors. (4) Regular security audits and penetration testing."
+      },
+      {
+        "title": "Monitor and Optimize Performance",
+        "content": "Deploy monitoring tools to track system health, message delivery latency, and failure rates. Use metrics to optimize resource allocation (e.g., scaling message brokers during peak loads). Implement logging for debugging while ensuring logs do not store sensitive data."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Hybrid Approach for High Availability",
+        "type": "Advanced Optimization",
+        "steps": [
+          {
+            "title": "Combine WebSockets with RESTful APIs",
+            "content": "Use WebSockets for real-time messaging but fall back to RESTful APIs for non-critical operations (e.g., user authentication, profile updates). This hybrid approach balances real-time needs with simplicity for less latency-sensitive tasks."
+          },
+          {
+            "title": "Leverage Edge Computing",
+            "content": "Deploy edge servers closer to users to reduce latency for message delivery. Use edge caching for frequently accessed data (e.g., user profiles) while ensuring sensitive operations (e.g., message sending) are handled by centralized servers."
+          },
+          {
+            "title": "Implement Message Queues",
+            "content": "Use message queues (e.g., Kafka, RabbitMQ) to decouple message producers (clients) from consumers (servers). This improves fault tolerance by buffering messages during server outages and enables horizontal scaling."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Database Sharding for Scalability",
+        "type": "Database Optimization",
+        "steps": [
+          {
+            "title": "Partition User Data Across Shards",
+            "content": "Shard the database by user ID or geographic region to distribute load and reduce query latency. Ensure each shard can handle a subset of users independently, improving fault isolation."
+          },
+          {
+            "title": "Use a Time-Series Database for Messages",
+            "content": "Store messages in a time-series database optimized for fast writes and retrievals. Configure automatic data expiration to purge old messages and reduce storage costs."
+          },
+          {
+            "title": "Implement Read Replicas",
+            "content": "Deploy read replicas for the database to handle high read loads (e.g., fetching message history). Route read queries to replicas while keeping writes on the primary database to maintain consistency."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T00:48:19.987Z",
+      "updated": "2026-09-02T00:48:19.987Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=cr6p0n0N-VA",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "id": "draft-1788310106984-348",
+    "title": "Change WhatsApp Profile Picture on iPhone",
+    "problemDescription": "The user's WhatsApp profile picture is outdated and needs to be updated on an iPhone.",
+    "category": "ios",
+    "difficulty": "Easy",
+    "keywords": [
+      "whatsapp",
+      "profile picture",
+      "iphone",
+      "update",
+      "photo"
+    ],
+    "steps": [
+      {
+        "title": "Open WhatsApp",
+        "content": "Launch the WhatsApp application on your iPhone."
+      },
+      {
+        "title": "Access Profile Settings",
+        "content": "Tap the 'Settings' icon (gear icon) in the bottom toolbar, then tap your profile picture at the top."
+      },
+      {
+        "title": "Edit Profile Picture",
+        "content": "Tap 'Edit Photo' at the top of the profile screen."
+      },
+      {
+        "title": "Select New Picture",
+        "content": "Choose a photo from your photo library or tap 'Favourites' to select a previously favorited image."
+      },
+      {
+        "title": "Crop and Confirm",
+        "content": "Crop the image as desired, then tap 'Done' to save changes."
+      },
+      {
+        "title": "Verify Update",
+        "content": "Check any chat to confirm the new profile picture appears."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-09-02T00:48:26.984Z",
+      "updated": "2026-09-02T00:48:26.984Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=mN8whkYLUlU",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788310115473-411",
+    "title": "Fix Smart Glasses Display Not Activating",
+    "problemDescription": "The head-up display on the Smart Glasses G2 does not activate when looking up, despite the feature being available in the G1 model.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "smart glasses",
+      "display",
+      "activation",
+      "head-up display",
+      "G2"
+    ],
+    "steps": [
+      {
+        "title": "Check Display Auto-Off Setting",
+        "content": "Open the Smart Glasses companion app on your smartphone. Navigate to the display settings and ensure the auto-off timer is not set to 'Never' or a long duration. Adjust it to 3 seconds or 10 seconds if needed."
+      },
+      {
+        "title": "Verify Internet Connection",
+        "content": "Ensure your Smart Glasses are connected to the internet. The display may require an active connection to function properly. Check your device's Wi-Fi or mobile data settings."
+      },
+      {
+        "title": "Restart the Smart Glasses",
+        "content": "Power off the Smart Glasses completely, wait 10 seconds, and then power them back on. This can resolve temporary software glitches affecting display activation."
+      },
+      {
+        "title": "Update Firmware",
+        "content": "Open the Smart Glasses app and check for any available firmware updates. Install the latest update if available, as it may include fixes for display activation issues."
+      },
+      {
+        "title": "Reset Display Settings",
+        "content": "In the Smart Glasses app, reset the display settings to default. This can clear any misconfigured settings that might be preventing the display from activating."
+      },
+      {
+        "title": "Test with External Remote",
+        "content": "Connect an external remote control to the Smart Glasses and attempt to activate the display using the remote. If it works, the issue may be with the touchpad sensitivity."
+      },
+      {
+        "title": "Contact Support",
+        "content": "If none of the above steps work, contact the manufacturer's support team for further assistance. Provide details about the issue and any troubleshooting steps already attempted."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Adjust Touchpad Sensitivity",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Clean Touchpads",
+            "content": "Gently clean the touchpads at the back of the Smart Glasses with a soft, dry cloth. Dust or smudges may interfere with touch sensitivity."
+          },
+          {
+            "title": "Test Touch Response",
+            "content": "Hold your finger on the touchpad for 2-3 seconds to see if the display activates. If it does, the touchpad may have a delayed response issue."
+          },
+          {
+            "title": "Calibrate Touchpads",
+            "content": "Check the Smart Glasses app for a touchpad calibration option. Follow the on-screen instructions to recalibrate the touch sensitivity."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Factory Reset",
+        "type": "Advanced Troubleshooting",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Before performing a factory reset, ensure any important data or settings are backed up, as this will erase all personalized configurations."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Use the Smart Glasses app to initiate a factory reset. Alternatively, hold the power button for 10 seconds to force a reset if the app method fails."
+          },
+          {
+            "title": "Reconfigure Settings",
+            "content": "After the reset, reconfigure the Smart Glasses from scratch, including display settings, internet connection, and app preferences."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T00:48:35.473Z",
+      "updated": "2026-09-02T00:48:35.473Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=dlW6a17NRew",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788310120189-87",
+    "title": "Configure AYN Thor Display and Performance Settings",
+    "problemDescription": "Users need to optimize display, audio, and performance settings on the AYN Thor handheld device for external monitors, USB connections, and gaming performance.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "AYN Thor",
+      "display settings",
+      "performance mode",
+      "external monitor",
+      "USB connection",
+      "fan control",
+      "controller settings"
+    ],
+    "steps": [
+      {
+        "title": "Disable Sleep Mode and Configure Display for External Monitor",
+        "content": "Go to the device settings. Navigate to the display section. Turn off the sleep mode when plugged into an external monitor. Ensure the display output is set to the external monitor (e.g., 'Hero' or 'Full Screen' mode to avoid vignetting)."
+      },
+      {
+        "title": "Set Audio Output Destination",
+        "content": "In the same display settings, locate the audio output option. Choose whether audio should play from the device itself or the connected TV/monitor."
+      },
+      {
+        "title": "Configure USB Connection Notifications",
+        "content": "Go to the USB connection settings. Enable or disable notifications when plugging the device into a computer via USB."
+      },
+      {
+        "title": "Enable Internet Speed Display",
+        "content": "In the display or status bar settings, enable the option to show internet speed on the screen."
+      },
+      {
+        "title": "Adjust Controller Style for Performance",
+        "content": "Open the controller settings. Select the 'Standard' style for general use. For PC games or Nintendo Switch emulation, switch to a higher performance mode (e.g., 'Performance' or 'Turbo')."
+      },
+      {
+        "title": "Modify Fan Modes and Curves",
+        "content": "In the performance settings, select a fan mode: 'Quiet' for minimal noise, 'Smart' for automatic adjustment, or 'Sport' for aggressive cooling. In 'Smart' mode, tap 'Edit' to adjust the fan curve based on temperature thresholds."
+      },
+      {
+        "title": "Customize LED Lights and Vignetting",
+        "content": "Go to the LED light settings. Tap the arrow to access customization options. Adjust the LED lights around the analog sticks. Disable vignetting by selecting 'Full Screen' mode in the display settings."
+      },
+      {
+        "title": "Download and Apply Theme Assets",
+        "content": "Navigate to the theme settings. Download the required assets (e.g., 'Hero' and 'Logo') for the selected theme. Manually apply these assets to ensure proper display and avoid missing artwork."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset to Default Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Factory Reset Controller and Display Settings",
+            "content": "If settings are not saving or behaving erratically, perform a factory reset on the AYN Thor. Go to Settings > System > Reset. Note: This will erase all custom configurations."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T00:48:40.189Z",
+      "updated": "2026-09-02T00:48:40.189Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=lNfo6MkyPpk",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788310124843-339",
+    "title": "Fix Major Micro Stuttering or Hitching in Games",
+    "problemDescription": "Games experience micro stuttering or hitching, where high FPS counters do not match smooth gameplay, often linked to MediaTek wireless devices or USB input issues.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "gaming",
+      "stuttering",
+      "hitching",
+      "MediaTek",
+      "USB",
+      "driver",
+      "micro stutter"
+    ],
+    "steps": [
+      {
+        "title": "Identify the Root Cause",
+        "content": "Check if the issue is related to MediaTek wireless devices or USB input devices. Unplug the mouse and test gameplay without it to see if the problem persists."
+      },
+      {
+        "title": "Uninstall and Reinstall the Wireless Driver",
+        "content": "Go to Device Manager, locate the MediaTek wireless device under 'Network adapters', right-click and select 'Uninstall device'. Restart your PC and let Windows reinstall the driver automatically."
+      },
+      {
+        "title": "Disable MediaTek Wireless Device in BIOS",
+        "content": "Restart your PC and enter BIOS/UEFI settings. Locate the MediaTek wireless device and disable it. Save changes and exit."
+      },
+      {
+        "title": "Replace the Wireless Device (Hardware Solution)",
+        "content": "Purchase a new PCI Express wireless card or USBC wireless adapter. Install the new hardware and ensure proper drivers are installed."
+      },
+      {
+        "title": "Test Gameplay After Changes",
+        "content": "Launch the game and monitor for stuttering or hitching. If the issue persists, repeat the steps or try alternative solutions."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Update Chipset and GPU Drivers",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Update Chipset Drivers",
+            "content": "Download and install the latest chipset drivers from your motherboard manufacturer's website. This can resolve compatibility issues causing stuttering."
+          },
+          {
+            "title": "Update GPU Drivers",
+            "content": "Visit the official website of your GPU manufacturer (NVIDIA, AMD, or Intel) and download the latest drivers. Perform a clean install using tools like DDU (Display Driver Uninstaller) if necessary."
+          },
+          {
+            "title": "Test Gameplay",
+            "content": "After updating drivers, launch the game and check for improvements in stuttering or hitching."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Adjust Windows Power Settings",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Set Power Plan to High Performance",
+            "content": "Go to Control Panel > Power Options and select 'High performance' power plan. This ensures maximum performance for your hardware."
+          },
+          {
+            "title": "Disable USB Selective Suspend",
+            "content": "In Power Options, click 'Change plan settings' > 'Change advanced power settings'. Locate 'USB settings' and disable 'USB selective suspend setting'."
+          },
+          {
+            "title": "Test Gameplay",
+            "content": "Restart your PC and test the game to see if stuttering has improved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T00:48:44.843Z",
+      "updated": "2026-09-02T00:48:44.843Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=YWTZkB9rVU0",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788310128841-764",
+    "title": "Create an Effective Study Environment to Improve Focus",
+    "problemDescription": "Distractions in living areas make it difficult to focus while studying, leading to poor retention and frustration.",
+    "category": "app-error",
+    "difficulty": "Easy",
+    "keywords": [
+      "study",
+      "focus",
+      "distractions",
+      "environment"
+    ],
+    "steps": [
+      {
+        "title": "Designate a Dedicated Study Space",
+        "content": "Choose a quiet area in your home, away from high-traffic zones like the living room or kitchen. If possible, use a separate room or a corner of your bedroom."
+      },
+      {
+        "title": "Eliminate Visual and Auditory Distractions",
+        "content": "Turn off the TV, stereo, and other background noise. If you must study in a shared space, use noise-canceling headphones or a white noise machine to block out distractions."
+      },
+      {
+        "title": "Use Task Lighting",
+        "content": "Bring a desk lamp or study lamp to your designated area. Ensure the lighting is bright enough to reduce eye strain but not so harsh that it causes glare on your materials."
+      },
+      {
+        "title": "Keep the Area Organized and Clutter-Free",
+        "content": "Remove unnecessary items from your study space. A clean, organized environment helps your brain associate the area with focus and productivity."
+      },
+      {
+        "title": "Set Clear Boundaries",
+        "content": "Inform family members or roommates about your study schedule and ask them to avoid interrupting you during these times. Use a 'Do Not Disturb' sign if needed."
+      },
+      {
+        "title": "Personalize Your Study Space",
+        "content": "Add motivational items like a vision board, inspirational quotes, or a small plant to make the space feel inviting and conducive to learning."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Study in a Library or Quiet Public Space",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Visit a Local Library",
+            "content": "Libraries are designed for quiet, focused study. Find a seat in a less crowded section and use the resources available, such as reference books or study guides."
+          },
+          {
+            "title": "Use a Coffee Shop or Co-Working Space",
+            "content": "If a library isn't an option, choose a quiet coffee shop or co-working space during off-peak hours. Bring your own noise-canceling headphones to minimize distractions."
+          },
+          {
+            "title": "Schedule Regular Study Sessions",
+            "content": "Block out specific times in your calendar for studying in these locations to create a routine and reduce the temptation to procrastinate."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T00:48:48.841Z",
+      "updated": "2026-09-02T00:48:48.841Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=IlU-zDU6aQ0",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788310133946-220",
+    "title": "SMART Board Not Responding to Touch Inputs",
+    "problemDescription": "The SMART Board interactive display is unresponsive to touch inputs, preventing users from interacting with the screen.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "SMART Board",
+      "touch not working",
+      "interactive display",
+      "unresponsive",
+      "calibration"
+    ],
+    "steps": [
+      {
+        "title": "Check Physical Connections",
+        "content": "Ensure all cables (USB, HDMI, power) are securely connected to the SMART Board and the computer. Reconnect any loose cables."
+      },
+      {
+        "title": "Restart the SMART Board",
+        "content": "Power off the SMART Board using the power button, wait 30 seconds, then power it back on. Allow the system to fully reboot."
+      },
+      {
+        "title": "Restart the Computer",
+        "content": "Reboot the connected computer to refresh the system and clear any software glitches affecting the SMART Board."
+      },
+      {
+        "title": "Recalibrate the SMART Board",
+        "content": "Open the SMART Board Control Panel (via Start Menu or SMART software). Navigate to 'Calibration' and follow the on-screen instructions to recalibrate the touch inputs."
+      },
+      {
+        "title": "Update SMART Software",
+        "content": "Download and install the latest version of SMART Notebook or SMART Board software from the official SMART website. Ensure compatibility with your operating system."
+      },
+      {
+        "title": "Check for Driver Issues",
+        "content": "Open Device Manager (Windows) or System Preferences > Software Update (macOS). Look for any SMART Board drivers with yellow exclamation marks. Update or reinstall the drivers if needed."
+      },
+      {
+        "title": "Test with Another Computer",
+        "content": "Connect the SMART Board to a different computer to rule out issues with the original device. If it works, the problem may be with the first computer's settings or drivers."
+      },
+      {
+        "title": "Contact SMART Support",
+        "content": "If the issue persists, contact SMART Technical Support for further diagnostics. Provide them with the board's model number, software version, and a description of the problem."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reset SMART Board Settings to Default",
+        "type": "Advanced Troubleshooting",
+        "steps": [
+          {
+            "title": "Access SMART Board Settings",
+            "content": "Open the SMART Board Control Panel and navigate to 'Settings' or 'Advanced Settings'."
+          },
+          {
+            "title": "Reset Configuration",
+            "content": "Look for an option to 'Reset to Default' or 'Restore Factory Settings'. Confirm the action and restart the board."
+          },
+          {
+            "title": "Reconfigure Touch Inputs",
+            "content": "After resetting, recalibrate the touch inputs as described in the primary steps to ensure proper functionality."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Test with a Different USB Port",
+        "type": "Quick Fix",
+        "steps": [
+          {
+            "title": "Switch USB Ports",
+            "content": "Unplug the SMART Board's USB cable and plug it into a different USB port on the computer. Avoid using USB hubs if possible."
+          },
+          {
+            "title": "Check for Port Issues",
+            "content": "Test the new port with another USB device to confirm it is functioning properly. If the issue persists, the problem may be with the USB cable or board."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-02T00:48:53.946Z",
+      "updated": "2026-09-02T00:48:53.946Z",
+      "sourceUrl": "https://www.smarttech.com",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
