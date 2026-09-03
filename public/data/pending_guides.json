@@ -366718,5 +366718,64 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1788438609966-296",
+    "title": "Fix Windows 11 Update Errors",
+    "problemDescription": "Windows 11 fails to install updates due to corrupted system files, conflicting services, or update components.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "windows 11",
+      "update error",
+      "system file corruption",
+      "troubleshooter"
+    ],
+    "steps": [
+      {
+        "title": "Run the Windows Update Troubleshooter",
+        "content": "Press `Win + I` to open Settings. Go to `System > Troubleshoot > Other troubleshooters`. Find 'Windows Update' and click 'Run'. Follow the on-screen instructions to detect and fix issues."
+      },
+      {
+        "title": "Run a System File Scan",
+        "content": "Open Command Prompt as Administrator. Type `sfc /scannow` and press Enter. Wait for the scan to complete. If errors are found, restart your PC. For deeper issues, run `DISM /Online /Cleanup-Image /RestoreHealth` in the same Command Prompt."
+      },
+      {
+        "title": "Reset Windows Update Components",
+        "content": "Open Command Prompt as Administrator. Stop the Windows Update service by typing `net stop wuauserv` and `net stop cryptSvc`. Rename the SoftwareDistribution and catroot2 folders by typing `ren C:\\Windows\\SoftwareDistribution SoftwareDistribution.old` and `ren C:\\Windows\\System32\\catroot2 catroot2.old`. Restart the services with `net start wuauserv` and `net start cryptSvc`."
+      },
+      {
+        "title": "Clean Boot Windows",
+        "content": "Press `Win + R`, type `msconfig`, and press Enter. Go to the 'Services' tab, check 'Hide all Microsoft services', then click 'Disable all'. Go to the 'Startup' tab and click 'Open Task Manager'. Disable all startup items. Restart your PC and attempt the update again."
+      },
+      {
+        "title": "Reset Windows 11 (Last Resort)",
+        "content": "Press `Win + I` to open Settings. Go to `System > Recovery > Reset PC`. Choose 'Keep my files' to retain personal data or 'Remove everything' for a full reset. Follow the prompts to complete the reset. Backup important data before proceeding."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows Update Assistant",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Windows Update Assistant",
+            "content": "Visit Microsoft's official website and download the 'Windows Update Assistant' tool."
+          },
+          {
+            "title": "Run the Assistant",
+            "content": "Open the downloaded file and follow the on-screen instructions to update Windows 11 manually."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-03T12:30:09.966Z",
+      "updated": "2026-09-03T12:30:09.966Z",
+      "sourceUrl": "https://www.makeuseof.com/windows-11-update-error-fixes",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
