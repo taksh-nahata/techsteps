@@ -366452,5 +366452,271 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1788421136878-986",
+    "title": "Create a Windows 8 Password Reset Disk",
+    "problemDescription": "User needs to create a password reset disk for Windows 8 to recover access if the password is forgotten.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "windows 8",
+      "password reset",
+      "password reset disk",
+      "user account"
+    ],
+    "steps": [
+      {
+        "title": "Open Control Panel",
+        "content": "Press the Windows key + R to open the Run dialog, type 'control' and press Enter to open the Control Panel."
+      },
+      {
+        "title": "Search for Password Reset Disk Option",
+        "content": "In the Control Panel search box, type 'password reset disk' and press Enter."
+      },
+      {
+        "title": "Access User Accounts",
+        "content": "Under the 'User Accounts' section, click on 'Create a password reset disk'."
+      },
+      {
+        "title": "Follow the Forgotten Password Wizard",
+        "content": "Insert a USB flash drive, then follow the on-screen instructions to create the password reset disk."
+      },
+      {
+        "title": "Store the Disk Safely",
+        "content": "Label the USB drive and store it in a secure location. Do not leave it plugged into the computer."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-09-03T07:38:56.878Z",
+      "updated": "2026-09-03T07:38:56.878Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/windows-8-issues.1313617",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "id": "draft-1788421142677-711",
+    "title": "Fix Linksys WRT120N Router Password Not Working After Factory Reset",
+    "problemDescription": "After performing a factory reset on a Linksys WRT120N router, the default password still does not work, preventing access to the router's admin interface.",
+    "category": "networking",
+    "difficulty": "Medium",
+    "keywords": [
+      "Linksys WRT120N",
+      "router reset",
+      "default password",
+      "admin access",
+      "30/30/30 reset"
+    ],
+    "steps": [
+      {
+        "title": "Perform a 30/30/30 Hard Reset",
+        "content": "1. Power on the router. 2. Press and hold the reset button for 30 seconds. 3. While still holding the reset button, unplug the router's power. 4. Continue holding the reset button for another 30 seconds. 5. While still holding the reset button, plug the router back in. 6. Keep holding the reset button for a final 30 seconds. 7. Release the reset button and wait for the router to reboot. 8. Try accessing the router's admin interface using the default credentials (admin/admin or admin/password)."
+      },
+      {
+        "title": "Verify Default Credentials",
+        "content": "Ensure you are using the correct default username and password for the WRT120N model. Common defaults are 'admin' for both username and password, or 'admin' with 'password'. Check the router's manual or the manufacturer's website if unsure."
+      },
+      {
+        "title": "Check Physical Connections",
+        "content": "Confirm the router is properly powered and connected to your computer via Ethernet. Use a different Ethernet cable or port if necessary to rule out connection issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Firmware Reinstallation",
+        "type": "Advanced",
+        "steps": [
+          {
+            "title": "Download Firmware",
+            "content": "Download the latest firmware for the WRT120N from the official Linksys website."
+          },
+          {
+            "title": "Access Recovery Mode",
+            "content": "Power off the router, then power it on while holding the reset button until the power LED starts flashing (may take up to 30 seconds)."
+          },
+          {
+            "title": "Upload Firmware",
+            "content": "Open a web browser and navigate to 192.168.1.1. Use the firmware recovery tool to upload the downloaded firmware file."
+          },
+          {
+            "title": "Reconfigure Router",
+            "content": "After firmware installation, perform a factory reset again and reconfigure the router settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-03T07:39:02.677Z",
+      "updated": "2026-09-03T07:39:02.677Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/wrt120n-after-factory-reset-default-password-still-not-working.2872566",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788421153651-973",
+    "title": "Reset Windows 7 Password via Factory Reset When Forgotten",
+    "problemDescription": "User cannot access a Windows 7 PC due to a forgotten password and needs to restore it to factory settings.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "Windows 7",
+      "password reset",
+      "factory reset",
+      "forgot password"
+    ],
+    "steps": [
+      {
+        "title": "Create a Password Reset Disk Using Windows Password Key",
+        "content": "On an accessible computer, download and install Windows Password Key from the official source. Follow the instructions to burn a password reset CD or USB flash drive."
+      },
+      {
+        "title": "Boot from the Password Reset Disk",
+        "content": "Insert the created password reset CD or USB into the locked Windows 7 PC. Restart the computer and enter the BIOS/UEFI settings (usually by pressing F2, F12, DEL, or ESC during startup). Change the boot order to prioritize the CD/USB drive, save changes, and exit. The PC should now boot from the password reset disk."
+      },
+      {
+        "title": "Reset the Password",
+        "content": "Once the Windows Password Key tool loads, follow the on-screen instructions to select the Windows 7 installation and the user account with the forgotten password. Choose the option to reset or remove the password. Confirm the action and restart the computer."
+      },
+      {
+        "title": "Access the System and Perform Factory Reset",
+        "content": "After resetting the password, log in to Windows 7. Navigate to 'Control Panel > System and Security > Backup and Restore > Recover system settings or your computer > Advanced recovery methods > Return your computer to factory condition.' Follow the prompts to restore the system to factory settings."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows 7 Installation Media for Password Reset",
+        "type": "Official Microsoft Method",
+        "steps": [
+          {
+            "title": "Boot from Windows 7 Installation Media",
+            "content": "Insert the original Windows 7 installation DVD or USB into the locked PC. Restart the computer and boot from the installation media by changing the boot order in BIOS/UEFI settings."
+          },
+          {
+            "title": "Access Command Prompt",
+            "content": "On the Windows Setup screen, press 'Shift + F10' to open the Command Prompt."
+          },
+          {
+            "title": "Replace Utility Manager with Command Prompt",
+            "content": "In the Command Prompt, type the following commands one by one, pressing Enter after each:\n1. `move c:\\windows\\system32\\utilman.exe c:\\windows\\system32\\utilman.exe.bak`\n2. `copy c:\\windows\\system32\\cmd.exe c:\\windows\\system32\\utilman.exe`\nThis replaces the Utility Manager with the Command Prompt."
+          },
+          {
+            "title": "Restart and Access Command Prompt via Utility Manager",
+            "content": "Close the Command Prompt and restart the computer. On the login screen, click the 'Ease of Access' icon (bottom-left corner) to open the Command Prompt. Type `net user [username] *` to reset the password for the specified user account. Replace `[username]` with the actual account name."
+          },
+          {
+            "title": "Restore Original Files and Reboot",
+            "content": "In the Command Prompt, type:\n1. `copy c:\\windows\\system32\\utilman.exe.bak c:\\windows\\system32\\utilman.exe`\n2. `del c:\\windows\\system32\\utilman.exe.bak`\nRestart the computer and log in with the new password."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "After regaining access, navigate to 'Control Panel > System and Security > Backup and Restore > Recover system settings or your computer > Advanced recovery methods > Return your computer to factory condition.' Follow the prompts to restore the system to factory settings."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Safe Mode with Built-in Administrator Account",
+        "type": "Built-in Administrator Method",
+        "steps": [
+          {
+            "title": "Boot into Safe Mode",
+            "content": "Restart the locked Windows 7 PC. Press F8 repeatedly during startup to access the Advanced Boot Options menu. Select 'Safe Mode with Command Prompt.'"
+          },
+          {
+            "title": "Access Built-in Administrator Account",
+            "content": "Log in using the built-in Administrator account (no password required by default)."
+          },
+          {
+            "title": "Reset Password via Command Prompt",
+            "content": "Open Command Prompt and type `net user [username] *` to reset the password for the specified user account. Replace `[username]` with the actual account name."
+          },
+          {
+            "title": "Restart and Log In",
+            "content": "Restart the computer and log in with the new password."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Navigate to 'Control Panel > System and Security > Backup and Restore > Recover system settings or your computer > Advanced recovery methods > Return your computer to factory condition.' Follow the prompts to restore the system to factory settings."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-03T07:39:13.651Z",
+      "updated": "2026-09-03T07:39:13.651Z",
+      "sourceUrl": "https://forums.tomshardware.com/threads/how-do-i-restore-your-computer-to-factory-settings-windows-7-when-you-have-forgotten-password.1540565",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788421189546-955",
+    "title": "Fix USB Device Not Safely Removed in Windows 10",
+    "problemDescription": "Windows 10 allows sudden removal of USB devices without using the 'Safely Remove Hardware' feature, causing potential data corruption or device issues.",
+    "category": "windows",
+    "difficulty": "Easy",
+    "keywords": [
+      "USB",
+      "safely remove",
+      "data corruption",
+      "disk management"
+    ],
+    "steps": [
+      {
+        "title": "Enable Quick Removal Policy for USB Devices",
+        "content": "Right-click the Start button and select 'Disk Management'. Locate your USB drive, right-click it, and choose 'Properties'. Go to the 'Policies' tab and select 'Quick removal (default)'. Click 'OK' to apply."
+      },
+      {
+        "title": "Verify USB Device Settings",
+        "content": "Open 'Device Manager' (right-click Start > Device Manager), expand 'Disk drives', right-click your USB device, select 'Properties' > 'Policies', and ensure 'Quick removal' is selected."
+      },
+      {
+        "title": "Check for Pending Writes",
+        "content": "If the issue persists, ensure no files are in use or being written to the USB device. Close all applications accessing the device before removal."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use 'Safely Remove Hardware' Notification Icon",
+        "type": "Alternative Solution",
+        "steps": [
+          {
+            "title": "Enable Notification Icon",
+            "content": "Right-click the taskbar and select 'Taskbar settings'. Under 'Notification area', click 'Select which icons appear on the taskbar'. Ensure 'Safely Remove Hardware and Eject Media' is turned on."
+          },
+          {
+            "title": "Eject USB Safely",
+            "content": "Click the up arrow in the taskbar notification area, locate the 'Safely Remove Hardware' icon, and click it to eject your USB device properly."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Write Caching for USB Devices",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Open Device Manager",
+            "content": "Right-click the Start button and select 'Device Manager'. Expand 'Disk drives' and right-click your USB device."
+          },
+          {
+            "title": "Disable Write Caching",
+            "content": "Go to the 'Policies' tab, uncheck 'Enable write caching on the device', and click 'OK'. Restart your computer for changes to take effect."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-03T07:39:49.546Z",
+      "updated": "2026-09-03T07:39:49.546Z",
+      "sourceUrl": "https://www.techradar.com/news/windows-10-now-lets-you-yank-out-usb-devices-at-the-drop-of-a-hat",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
