@@ -367067,5 +367067,347 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1788473573825-341",
+    "title": "Fix Slow Windows Startup",
+    "problemDescription": "Windows takes an unusually long time to start up, potentially due to malware, unnecessary startup programs, or temporary files.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "slow startup",
+      "windows boot",
+      "malware",
+      "startup programs",
+      "disk cleanup"
+    ],
+    "steps": [
+      {
+        "title": "Check for Malware",
+        "content": "Download and install Malwarebytes (free version for home users). Update its definitions and run a full scan in normal mode. Temporarily disable other security software during the scan."
+      },
+      {
+        "title": "Run ADWCleaner",
+        "content": "Download and run ADWCleaner to remove adware and potentially unwanted programs. Allow 2-3 hours for the system to process changes and restart your computer twice during this period."
+      },
+      {
+        "title": "Perform a Clean Boot",
+        "content": "Press `Win + R`, type `msconfig`, and go to the 'Services' tab. Check 'Hide all Microsoft services' and click 'Disable all'. Then, go to the 'Startup' tab and click 'Open Task Manager'. Disable all non-Microsoft startup items. Restart your computer and observe if the startup time improves."
+      },
+      {
+        "title": "Remove Temporary Files",
+        "content": "Run Disk Cleanup by typing `cleanmgr` in the Run dialog (`Win + R`). Select your drive and check temporary files, system files, and other unnecessary items. Alternatively, use a tool like CCleaner to clean temporary files and optimize the system."
+      },
+      {
+        "title": "Identify and Disable Problematic Startup Programs",
+        "content": "After performing a clean boot, re-enable startup programs one by one to identify which ones are causing slowdowns. Focus on third-party applications like Bullguard, Adobe Reader, and Acer backup manager, as these are commonly known to slow down startup."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use Windows Task Manager to Disable Startup Programs",
+        "type": "Alternative",
+        "steps": [
+          {
+            "title": "Open Task Manager",
+            "content": "Press `Ctrl + Shift + Esc` to open Task Manager. Go to the 'Startup' tab."
+          },
+          {
+            "title": "Disable Unnecessary Startup Programs",
+            "content": "Right-click on each non-essential program (e.g., Adobe Reader, Bullguard, Acer backup manager) and select 'Disable'. Focus on programs that are not critical for system operation."
+          },
+          {
+            "title": "Restart and Monitor",
+            "content": "Restart your computer and monitor the startup time. If the issue persists, re-enable programs one by one to identify the culprit."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Update Windows and Drivers",
+        "type": "Preventive",
+        "steps": [
+          {
+            "title": "Check for Windows Updates",
+            "content": "Go to `Settings > Update & Security > Windows Update` and check for updates. Install any available updates to ensure your system is running the latest patches and optimizations."
+          },
+          {
+            "title": "Update Drivers",
+            "content": "Visit your manufacturer's website (e.g., Dell, HP, Acer) and download the latest drivers for your hardware, especially for graphics, chipset, and storage drivers."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-03T22:12:53.825Z",
+      "updated": "2026-09-03T22:12:53.825Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/windows-startup-very-slow/9f808120-ae0f-42d6-95a6-234b6ab66fa2",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788473579108-705",
+    "title": "Fix Cortana Voice Recognition Issues in Windows 10",
+    "problemDescription": "Cortana misinterprets voice commands despite correct pronunciation and calibration settings, while Siri on an iPhone works properly.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "Cortana",
+      "voice recognition",
+      "Windows 10",
+      "misinterpretation",
+      "calibration"
+    ],
+    "steps": [
+      {
+        "title": "Recalibrate Cortana's Microphone",
+        "content": "Go to Settings > System > Sound > Sound Control Panel. Select the 'Recording' tab, choose your microphone, click 'Properties', then 'Levels'. Ensure the microphone is not muted and the volume is set to a moderate level. Test the microphone by speaking into it."
+      },
+      {
+        "title": "Run the Speech Recognition Troubleshooter",
+        "content": "Open Settings > Update & Security > Troubleshoot. Select 'Speech' and run the troubleshooter. Follow the on-screen instructions to diagnose and fix any issues with speech recognition."
+      },
+      {
+        "title": "Check Language and Region Settings",
+        "content": "Go to Settings > Time & Language > Language. Ensure your display language and speech language are set to the correct regional settings. If needed, add the correct language pack."
+      },
+      {
+        "title": "Update Windows and Cortana",
+        "content": "Go to Settings > Update & Security > Windows Update. Click 'Check for updates' and install any available updates. Also, ensure Cortana is updated by checking the Microsoft Store for updates."
+      },
+      {
+        "title": "Reset Cortana",
+        "content": "Open Settings > Apps > Apps & features. Find 'Cortana' in the list, click on it, and select 'Advanced options'. Click 'Reset' to reset Cortana to its default state."
+      },
+      {
+        "title": "Check Microphone Privacy Settings",
+        "content": "Go to Settings > Privacy > Microphone. Ensure that apps, including Cortana, have permission to access your microphone. Toggle the switch to 'On' if it is disabled."
+      },
+      {
+        "title": "Test with a Different Microphone",
+        "content": "If possible, try using a different microphone to see if the issue persists. This can help determine if the problem is with the microphone hardware."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable and Re-enable Cortana",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Disable Cortana via Group Policy",
+            "content": "Press Win + R, type 'gpedit.msc', and press Enter. Navigate to Computer Configuration > Administrative Templates > Windows Components > Search. Double-click 'Allow Cortana' and set it to 'Disabled'. Click Apply and OK."
+          },
+          {
+            "title": "Re-enable Cortana",
+            "content": "Follow the same steps but set 'Allow Cortana' to 'Enabled' or 'Not Configured'. Restart your computer to apply changes."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use a Third-Party Voice Recognition Tool",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Third-Party Tool",
+            "content": "Download and install a third-party voice recognition tool like Dragon NaturallySpeaking or Windows Speech Recognition alternatives. Follow the installation and setup instructions provided by the tool."
+          },
+          {
+            "title": "Configure the Tool",
+            "content": "Open the installed tool and follow the setup process to calibrate your microphone and train the software to recognize your voice accurately."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-03T22:12:59.108Z",
+      "updated": "2026-09-03T22:12:59.108Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/windows_10-performance/i-received-my-free-upgrade-to-windows-10-and-hate/4f687ee3-a230-44ee-b889-c4a6b18e11ff",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788473584355-475",
+    "title": "Fix Cortana Voice/Type Reminder Not Working After Update",
+    "problemDescription": "Cortana fails to set voice or type reminders after an update, requiring manual input instead of accepting voice commands.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "Cortana",
+      "reminder",
+      "voice command",
+      "update",
+      "Windows 10"
+    ],
+    "steps": [
+      {
+        "title": "Restart Cortana Service",
+        "content": "Press 'Windows + R', type 'services.msc', and press Enter. Locate 'Cortana' in the services list, right-click it, and select 'Restart'."
+      },
+      {
+        "title": "Reset Cortana App",
+        "content": "Go to 'Settings > Apps > Apps & Features', find 'Cortana', click 'Advanced options', and select 'Reset'. Restart your PC afterward."
+      },
+      {
+        "title": "Re-register Cortana",
+        "content": "Open PowerShell as Administrator, paste the following command, and press Enter: 'Get-AppXPackage -Name Microsoft.Windows.Cortana | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register \"$($_.InstallLocation)\\AppXManifest.xml\"}'. Restart your PC."
+      },
+      {
+        "title": "Check for Windows Updates",
+        "content": "Go to 'Settings > Update & Security > Windows Update' and click 'Check for updates'. Install any pending updates and restart your PC."
+      },
+      {
+        "title": "Verify Voice Command Permissions",
+        "content": "Go to 'Settings > Privacy > Speech', ensure 'Online speech recognition' is enabled. Also, check 'Microphone' permissions under 'Settings > Privacy > Microphone' and grant access to Cortana."
+      },
+      {
+        "title": "Reinstall Cortana via Command Prompt",
+        "content": "Open Command Prompt as Administrator, paste the following command, and press Enter: 'Get-AppxPackage *cortana* -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register \"$($_.InstallLocation)\\AppXManifest.xml\"}'. Restart your PC."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Use a Third-Party Reminder App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Install a Third-Party Reminder App",
+            "content": "Download and install a reliable third-party reminder app like 'Google Assistant', 'Alexa', or 'Todoist' from the Microsoft Store or official website."
+          },
+          {
+            "title": "Set Up Voice Commands",
+            "content": "Follow the app's instructions to enable voice commands and set reminders using natural language."
+          },
+          {
+            "title": "Disable Cortana Reminders",
+            "content": "If Cortana is no longer needed for reminders, disable it via 'Settings > Apps > Apps & Features' to avoid conflicts."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Roll Back Windows Update",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Access Windows Update History",
+            "content": "Go to 'Settings > Update & Security > Windows Update > Update history'. Note the most recent update that may have caused the issue."
+          },
+          {
+            "title": "Uninstall the Update",
+            "content": "Go to 'Settings > Update & Security > Windows Update > View update history > Uninstall updates'. Select the problematic update and click 'Uninstall'. Restart your PC."
+          },
+          {
+            "title": "Block Future Updates",
+            "content": "Go to 'Settings > Update & Security > Windows Update > Advanced options > Pause updates' to temporarily block updates until a fix is released."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-03T22:13:04.355Z",
+      "updated": "2026-09-03T22:13:04.355Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/windows_10-win_cortana/cortana-voicetype-reminder-not-working-after/ff242efd-4c05-4285-8149-1400592addff",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788473602632-536",
+    "title": "Fix Annoying Notifications in Android Auto by Adjusting Video Resolution",
+    "problemDescription": "Android Auto displays oversized or intrusive notifications on the car's dashboard display, disrupting the user experience.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "Android Auto",
+      "notifications",
+      "video resolution",
+      "developer settings",
+      "dashboard display"
+    ],
+    "steps": [
+      {
+        "title": "Enable Developer Options in Android Auto",
+        "content": "Open the Android Auto app on your phone. Scroll to the bottom of the settings and tap the 'Version' section 5 times quickly. A pop-up will appear asking if you want to enable developer settings. Tap 'OK' or 'Enable'."
+      },
+      {
+        "title": "Access Developer Settings",
+        "content": "Tap the three-dot menu (⋮) in the top-right corner of the Android Auto settings screen. Select 'Developer settings' from the dropdown menu."
+      },
+      {
+        "title": "Adjust Video Resolution",
+        "content": "Scroll down to the 'Video Resolution' option in the developer settings. Tap it to view available resolution options (e.g., 480p, 720p, 1080p)."
+      },
+      {
+        "title": "Test and Select Optimal Resolution",
+        "content": "Choose a lower resolution (e.g., 480p) and observe the notification display on your car's dashboard. Repeat with higher resolutions until notifications appear appropriately sized and non-intrusive. Restart Android Auto if changes do not take effect immediately."
+      },
+      {
+        "title": "Disable Developer Options (Optional)",
+        "content": "After finding a suitable resolution, you may disable developer options for security by repeating the 'Version' tap sequence and selecting 'Disable' when prompted."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-09-03T22:13:22.632Z",
+      "updated": "2026-09-03T22:13:22.632Z",
+      "sourceUrl": "https://www.howtogeek.com/i-finally-fixed-annoying-notifications-in-android-autoheres-the-settings-i-changed-to-do-it",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788473605150-714",
+    "title": "Fix macOS Notifications Not Showing",
+    "problemDescription": "macOS notifications are not appearing despite being enabled in settings.",
+    "category": "macos",
+    "difficulty": "Easy",
+    "keywords": [
+      "macOS",
+      "notifications",
+      "alerts",
+      "missing"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Mac",
+        "content": "Restart your Mac to refresh the notification system. Go to the Apple menu > Restart."
+      },
+      {
+        "title": "Check Notification Settings",
+        "content": "Ensure notifications are enabled for the specific app. Go to System Settings > Notifications, select the app, and verify its settings."
+      },
+      {
+        "title": "Toggle Do Not Disturb",
+        "content": "Disable Do Not Disturb mode. Click the Control Center icon in the menu bar > Do Not Disturb to turn it off."
+      },
+      {
+        "title": "Reset Notification Center",
+        "content": "Open Terminal and run: `killall NotificationCenter` to reset the notification system."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Re-enable App Notifications",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Remove and Re-add App Permissions",
+            "content": "Go to System Settings > Privacy & Security > Notifications, remove the app, then re-add it and re-enable notifications."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-03T22:13:25.150Z",
+      "updated": "2026-09-03T22:13:25.150Z",
+      "sourceUrl": "https://www.howtogeek.com/348935/not-getting-macos-notifications-heres-how-to-fix-it-without-rebooting",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
