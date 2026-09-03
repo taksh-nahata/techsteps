@@ -366777,5 +366777,227 @@
       "priorityScore": 0.8,
       "difficulty": "Medium"
     }
+  },
+  {
+    "id": "draft-1788454376379-81",
+    "title": "Fix Logitech C170 Webcam Not Installing on Windows 7",
+    "problemDescription": "The Logitech C170 webcam fails to install on Windows 7 despite working on other systems, with installation errors persisting even after following standard troubleshooting steps.",
+    "category": "windows",
+    "difficulty": "Medium",
+    "keywords": [
+      "Logitech C170",
+      "webcam",
+      "installation",
+      "Windows 7",
+      "driver",
+      "Windows Update"
+    ],
+    "steps": [
+      {
+        "title": "Run Windows Update Troubleshooter",
+        "content": "Download and run the Windows Update troubleshooter from Microsoft's official site. This tool can automatically detect and fix issues preventing updates, which may include driver installations."
+      },
+      {
+        "title": "Perform Clean Boot",
+        "content": "1. Press `Win + R`, type `msconfig`, and hit Enter. 2. Go to the 'Services' tab, check 'Hide all Microsoft services', then click 'Disable all'. 3. Go to the 'Startup' tab and click 'Open Task Manager'. Disable all startup items. 4. Restart your PC and attempt to install the webcam again."
+      },
+      {
+        "title": "Disable Security Software Temporarily",
+        "content": "Temporarily disable your antivirus or firewall software. Some security tools may block driver installations. Re-enable them after installation is complete."
+      },
+      {
+        "title": "Manually Install Driver via Windows Update",
+        "content": "1. Connect the webcam to your PC. 2. Open 'Device Manager' (Win + X > Device Manager). 3. Locate the webcam under 'Other devices' (likely marked with a yellow exclamation mark). 4. Right-click the device, select 'Update Driver Software', then choose 'Search automatically for updated driver software'."
+      },
+      {
+        "title": "Check Windows Update Service Status",
+        "content": "1. Press `Win + R`, type `services.msc`, and hit Enter. 2. Locate 'Windows Update' service. 3. Ensure its 'Startup type' is set to 'Automatic' and the service is 'Running'. If not, right-click and select 'Start'."
+      },
+      {
+        "title": "Install System Update Readiness Tool",
+        "content": "Download and install the 'System Update Readiness Tool' for Windows 7 from Microsoft's official site. This tool fixes inconsistencies in the Windows Update store that may prevent driver installations."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Manual Driver Installation from Logitech",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Download Official Driver",
+            "content": "Visit Logitech's official support page, search for 'C170', and download the latest Windows 7-compatible driver for your webcam."
+          },
+          {
+            "title": "Install Driver Manually",
+            "content": "1. Extract the downloaded driver files. 2. Open 'Device Manager' (Win + X > Device Manager). 3. Right-click the webcam under 'Other devices' and select 'Update Driver Software'. 4. Choose 'Browse my computer for driver software', then 'Let me pick from a list of device drivers'. 5. Click 'Have Disk', browse to the extracted driver folder, and select the appropriate .inf file."
+          },
+          {
+            "title": "Restart and Test",
+            "content": "Restart your PC after installation. Open a video application (e.g., Skype, Camera app) to verify the webcam is working."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Use Compatibility Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Run Installer in Compatibility Mode",
+            "content": "1. Right-click the Logitech driver installer file. 2. Select 'Properties' > 'Compatibility' tab. 3. Check 'Run this program in compatibility mode for:' and select 'Windows 7'. 4. Check 'Run as administrator'. 5. Click 'Apply' and then 'OK'. Run the installer again."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-03T16:52:56.379Z",
+      "updated": "2026-09-03T16:52:56.379Z",
+      "sourceUrl": "https://answers.microsoft.com/en-us/windows/forum/all/c170-logitech-cam-not-installing-on-windows-7/ea48886a-3d1b-4216-b52e-a842d9904468",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788454397285-549",
+    "title": "Fix Auto Brightness and Display Issues on Samsung Galaxy A36/A56",
+    "problemDescription": "Auto brightness not working properly or display showing blue/green lines on Samsung Galaxy A36/A56 devices.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "auto brightness",
+      "display issue",
+      "blue line",
+      "green line",
+      "Samsung Galaxy A36",
+      "Samsung Galaxy A56"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Device",
+        "content": "Press and hold the power button, then tap 'Restart' to reboot your Samsung Galaxy A36/A56. This can resolve temporary software glitches affecting auto brightness or display rendering."
+      },
+      {
+        "title": "Check for Software Updates",
+        "content": "Go to 'Settings' > 'Software Update' > 'Download and Install'. Ensure your device is running the latest firmware, as updates often include fixes for display-related issues."
+      },
+      {
+        "title": "Reset Display Settings to Default",
+        "content": "Navigate to 'Settings' > 'Display' > 'Reset Display Settings' (or 'Reset Settings'). Confirm to restore default display configurations, which may resolve auto brightness malfunctions."
+      },
+      {
+        "title": "Toggle Adaptive Brightness Off and On",
+        "content": "Go to 'Settings' > 'Display' > 'Adaptive Brightness' and turn it off. Wait 30 seconds, then turn it back on. This refreshes the sensor and may fix calibration issues."
+      },
+      {
+        "title": "Check for Physical Damage or Screen Burn-in",
+        "content": "Inspect the display for physical damage, pressure marks, or burn-in patterns (especially if the blue/green lines persist). If detected, contact Samsung Support for repair or replacement."
+      },
+      {
+        "title": "Factory Reset (Last Resort)",
+        "content": "Backup your data, then go to 'Settings' > 'General Management' > 'Reset' > 'Factory Data Reset'. This erases all data and reinstalls the OS, potentially fixing persistent software-related display issues."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Clear Cache Partition",
+        "type": "Advanced Troubleshooting",
+        "steps": [
+          {
+            "title": "Boot into Recovery Mode",
+            "content": "Power off your device. Press and hold the 'Volume Up' and 'Power' buttons simultaneously until the Samsung logo appears, then release. Use volume buttons to navigate to 'Recovery Mode'."
+          },
+          {
+            "title": "Clear Cache Partition",
+            "content": "In Recovery Mode, select 'Wipe Cache Partition' using the power button. Confirm the action and wait for the process to complete. Reboot your device afterward."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-03T16:53:17.285Z",
+      "updated": "2026-09-03T16:53:17.285Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=IWndItoE1XI",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788454401289-362",
+    "title": "Fix Galaxy Themes 'Something Went Wrong' Error on Samsung",
+    "problemDescription": "Samsung Galaxy Themes app fails to open or displays a 'Something went wrong' error, preventing theme customization.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "Galaxy Themes",
+      "Samsung",
+      "customization",
+      "app error",
+      "themes not working"
+    ],
+    "steps": [
+      {
+        "title": "Clear Galaxy Themes App Cache and Data",
+        "content": "Go to Settings > Apps > Galaxy Themes > Storage. Tap 'Clear Cache' and then 'Clear Data'. Restart your device and try opening Galaxy Themes again."
+      },
+      {
+        "title": "Update Galaxy Themes App",
+        "content": "Open the Galaxy Store app, search for 'Galaxy Themes', and update it if an update is available. Restart your device afterward."
+      },
+      {
+        "title": "Restart Your Samsung Device",
+        "content": "Press and hold the power button, then tap 'Restart'. Wait for the device to reboot and try opening Galaxy Themes again."
+      },
+      {
+        "title": "Check for System Software Updates",
+        "content": "Go to Settings > Software Update > Download and Install. Install any available updates and restart your device."
+      },
+      {
+        "title": "Reset App Preferences",
+        "content": "Go to Settings > Apps > More Options (three dots) > Reset App Preferences. This resets permissions and defaults for all apps, including Galaxy Themes."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Reinstall Galaxy Themes App",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Uninstall Galaxy Themes",
+            "content": "Go to Settings > Apps > Galaxy Themes > Uninstall. Confirm the uninstallation."
+          },
+          {
+            "title": "Reinstall Galaxy Themes",
+            "content": "Open the Galaxy Store, search for 'Galaxy Themes', and reinstall the app. Restart your device afterward."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Boot into Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter Safe Mode",
+            "content": "Press and hold the power button, then long-press the 'Power Off' option. Tap 'Safe Mode' to reboot your device."
+          },
+          {
+            "title": "Test Galaxy Themes in Safe Mode",
+            "content": "Open Galaxy Themes and check if the error persists. If it works, a third-party app may be causing the issue."
+          },
+          {
+            "title": "Exit Safe Mode",
+            "content": "Restart your device normally to exit Safe Mode."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-03T16:53:21.289Z",
+      "updated": "2026-09-03T16:53:21.289Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=yg85b0uKMlc",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
