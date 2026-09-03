@@ -366411,5 +366411,46 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1788402676529-831",
+    "title": "Enable System Audio Sharing in Discord on Linux",
+    "problemDescription": "Users on Linux could not share system audio while screen sharing in Discord due to a bug that has now been fixed.",
+    "category": "linux",
+    "difficulty": "Easy",
+    "keywords": [
+      "Discord",
+      "Linux",
+      "screen sharing",
+      "audio sharing",
+      "bug fix"
+    ],
+    "steps": [
+      {
+        "title": "Update Discord",
+        "content": "Ensure you are running the latest version of Discord. Open Discord, click the gear icon (User Settings), go to 'Advanced', and enable 'Enable auto-updating'."
+      },
+      {
+        "title": "Start Screen Sharing",
+        "content": "Open the Discord app and start or join a voice channel. Click the 'Screen Share' button in the voice channel toolbar."
+      },
+      {
+        "title": "Enable System Audio Sharing",
+        "content": "After selecting the screen or application to share, look for the new toggle labeled 'Also share system audio' below the sharing options. Toggle it ON."
+      },
+      {
+        "title": "Verify Audio Sharing",
+        "content": "Ask a friend in the voice channel to confirm they can hear the system audio. If not, restart Discord and repeat the steps."
+      }
+    ],
+    "alternates": [],
+    "meta": {
+      "created": "2026-09-03T02:31:16.529Z",
+      "updated": "2026-09-03T02:31:16.529Z",
+      "sourceUrl": "https://www.howtogeek.com/discord-linux-screen-sharing-bug-fix",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
