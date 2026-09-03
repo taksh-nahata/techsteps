@@ -366999,5 +366999,73 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1788464173038-158",
+    "title": "Fix Google Play Errors by Re-adding Account and Clearing Cache",
+    "problemDescription": "Google Play Store shows errors or fails to load content due to corrupted account data or cached files.",
+    "category": "android",
+    "difficulty": "Easy",
+    "keywords": [
+      "Google Play",
+      "errors",
+      "account",
+      "cache",
+      "Android"
+    ],
+    "steps": [
+      {
+        "title": "Remove Google Account",
+        "content": "Go to Settings > Accounts and Backup > Manage Accounts. Select your Google account and tap 'Remove Account'."
+      },
+      {
+        "title": "Re-add Google Account",
+        "content": "Go back to Settings > Accounts and Backup > Manage Accounts > Add Account. Sign in with your Google account credentials."
+      },
+      {
+        "title": "Clear Google Services Cache",
+        "content": "Navigate to Settings > Apps > See All Apps > Google Play Services. Tap 'Storage' and then 'Clear Cache'."
+      },
+      {
+        "title": "Restart Device",
+        "content": "Restart your Android device to apply changes and refresh system services."
+      },
+      {
+        "title": "Open Google Play Store",
+        "content": "Launch the Google Play Store and check if the errors are resolved. If not, proceed to the next step."
+      },
+      {
+        "title": "Clear Google Play Store Cache",
+        "content": "Go to Settings > Apps > See All Apps > Google Play Store. Tap 'Storage' and then 'Clear Cache'."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Factory Reset (Last Resort)",
+        "type": "Advanced Solution",
+        "steps": [
+          {
+            "title": "Backup Data",
+            "content": "Ensure all important data is backed up to Google Drive or another storage service."
+          },
+          {
+            "title": "Perform Factory Reset",
+            "content": "Go to Settings > General Management > Reset > Factory Data Reset. Follow the prompts to reset your device."
+          },
+          {
+            "title": "Reconfigure Google Account",
+            "content": "After reset, set up your device and re-add your Google account. Reinstall apps from the Google Play Store."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-03T19:36:13.038Z",
+      "updated": "2026-09-03T19:36:13.038Z",
+      "sourceUrl": "https://www.cnet.com/tech/mobile/how-to-fix-google-play-errors",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Easy"
+    }
   }
 ]
