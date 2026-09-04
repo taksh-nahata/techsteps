@@ -367409,5 +367409,236 @@
       "priorityScore": 0.8,
       "difficulty": "Easy"
     }
+  },
+  {
+    "id": "draft-1788482800368-601",
+    "title": "Fix Car Battery Drain with Digital Multimeter",
+    "problemDescription": "A car battery drains overnight or repeatedly dies, indicating an electrical issue that needs diagnosis and repair.",
+    "category": "robotics",
+    "difficulty": "Medium",
+    "keywords": [
+      "car battery",
+      "battery drain",
+      "multimeter",
+      "amps",
+      "fuses",
+      "relays"
+    ],
+    "steps": [
+      {
+        "title": "Prepare Your Tools",
+        "content": "Gather a Digital Volt Ohm Meter (DVOM) set to 10A DC current mode, and ensure you have a set of safety gloves and eye protection."
+      },
+      {
+        "title": "Disconnect the Negative Battery Terminal",
+        "content": "Safely disconnect the negative (black) battery terminal to isolate the battery from the vehicle's electrical system."
+      },
+      {
+        "title": "Set Up the Multimeter",
+        "content": "Connect the multimeter in series between the negative battery terminal and the disconnected cable. Ensure the red probe is connected to the battery terminal and the black probe to the cable."
+      },
+      {
+        "title": "Check for Parasitic Drain",
+        "content": "Turn the ignition to the 'Off' position and observe the multimeter reading. A normal parasitic drain should be less than 50mA. If higher, proceed to the next step."
+      },
+      {
+        "title": "Pull Fuses One by One",
+        "content": "Starting with the fuse box, pull each fuse one at a time while monitoring the multimeter. If the drain drops significantly when a fuse is pulled, the issue lies in that circuit."
+      },
+      {
+        "title": "Inspect Relays",
+        "content": "Remove and inspect relays in the fuse box, as a faulty relay can cause a short circuit. Reinsert relays after inspection to avoid confusion."
+      },
+      {
+        "title": "Identify and Repair the Faulty Circuit",
+        "content": "Once the problematic fuse or relay is identified, inspect the associated wiring, switches, or components for damage, corrosion, or short circuits. Repair or replace as needed."
+      },
+      {
+        "title": "Reconnect the Battery and Test",
+        "content": "Reconnect the negative battery terminal and test the vehicle to ensure the battery drain issue is resolved."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Using a Test Light",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Prepare the Test Light",
+            "content": "Use a 12V test light connected to the negative battery terminal and ground. The test light should illuminate if there is a parasitic drain."
+          },
+          {
+            "title": "Trace the Circuit",
+            "content": "Follow the wiring from the test light to identify which circuit is causing the drain. This method is less precise but can help narrow down the issue."
+          },
+          {
+            "title": "Inspect Components",
+            "content": "Check components like the alternator, starter, or aftermarket accessories for faults. Replace or repair faulty parts as necessary."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-04T00:46:40.368Z",
+      "updated": "2026-09-04T00:46:40.368Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=bwGhdOeGQGk",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788482820222-67",
+    "title": "Fix Android 9 Screen Flickering or App Crashes After Security Update",
+    "problemDescription": "After installing the latest Android 9 security update, users experience screen flickering or apps closing unexpectedly while running in the background.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "android 9",
+      "screen flickering",
+      "app crashes",
+      "background apps",
+      "security update"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Device",
+        "content": "Press and hold the power button, then select 'Restart'. This can resolve temporary glitches caused by the update."
+      },
+      {
+        "title": "Clear App Cache and Data",
+        "content": "Go to Settings > Apps > [Problematic App] > Storage > Clear Cache and Clear Data. Reopen the app to check if the issue persists."
+      },
+      {
+        "title": "Update All Apps",
+        "content": "Open the Google Play Store, tap your profile icon > Manage apps & device > Updates available. Update all apps to ensure compatibility with the new system."
+      },
+      {
+        "title": "Check for Additional System Updates",
+        "content": "Go to Settings > System > Advanced > System Update. Install any pending updates that may include bug fixes for the flickering or app crashes."
+      },
+      {
+        "title": "Disable Battery Optimization for Problematic Apps",
+        "content": "Go to Settings > Apps > [Problematic App] > Battery > Disable 'Battery optimization'. This prevents the system from aggressively closing background apps."
+      },
+      {
+        "title": "Factory Reset (Last Resort)",
+        "content": "Backup your data, then go to Settings > System > Advanced > Reset options > Erase all data (factory reset). This should only be done if the issue persists after all other steps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Boot into Safe Mode",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Enter Safe Mode",
+            "content": "Press and hold the power button, then long-press 'Power off' until 'Reboot to safe mode' appears. Tap OK to confirm."
+          },
+          {
+            "title": "Test in Safe Mode",
+            "content": "Check if the screen flickering or app crashes persist. If they don’t, a third-party app is likely causing the issue."
+          },
+          {
+            "title": "Uninstall Suspect Apps",
+            "content": "Go to Settings > Apps > Uninstall apps you recently installed or suspect may be causing the issue. Restart your device normally afterward."
+          }
+        ]
+      },
+      {
+        "title": "Method 3: Disable Adaptive Brightness",
+        "type": "Community Workaround",
+        "steps": [
+          {
+            "title": "Turn Off Adaptive Brightness",
+            "content": "Go to Settings > Display > Adaptive brightness and toggle it off. Screen flickering may be caused by rapid brightness adjustments."
+          },
+          {
+            "title": "Adjust Brightness Manually",
+            "content": "Set a fixed brightness level and observe if the flickering stops."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-04T00:47:00.222Z",
+      "updated": "2026-09-04T00:47:00.222Z",
+      "sourceUrl": "https://lifehacker.com/the-latest-android-9-security-update-includes-helpful-f-1830862271",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "id": "draft-1788482850666-967",
+    "title": "Fix mm-qcamera-daemon Battery Drain on Android",
+    "problemDescription": "The mm-qcamera-daemon process is consuming excessive battery power on Android devices, often due to a bug in the camera subsystem.",
+    "category": "android",
+    "difficulty": "Medium",
+    "keywords": [
+      "mm-qcamera-daemon",
+      "battery drain",
+      "android",
+      "camera",
+      "process"
+    ],
+    "steps": [
+      {
+        "title": "Restart Your Device",
+        "content": "Press and hold the power button, then select 'Restart' to reboot your device. This often temporarily resolves the issue by clearing the problematic process."
+      },
+      {
+        "title": "Check for Android Updates",
+        "content": "Go to Settings > System > Software Update and check for any available updates. Install the latest version of Android (e.g., 4.4.4 KitKat or later) to patch known bugs."
+      },
+      {
+        "title": "Disable Unused Camera Features",
+        "content": "Open the Camera app, go to Settings, and disable features like 'HDR', 'Night Mode', or 'Scene Detection' if they are not in use."
+      },
+      {
+        "title": "Clear Camera App Cache",
+        "content": "Go to Settings > Apps > Camera > Storage > Clear Cache. This removes temporary files that may be causing the daemon to misbehave."
+      },
+      {
+        "title": "Force Stop the Camera App",
+        "content": "Go to Settings > Apps > Camera > Force Stop. This terminates the app and its associated processes, which may resolve the issue temporarily."
+      },
+      {
+        "title": "Factory Reset (Last Resort)",
+        "content": "Backup your data and perform a factory reset via Settings > System > Reset Options > Erase All Data. This should only be done if the issue persists after all other steps."
+      }
+    ],
+    "alternates": [
+      {
+        "title": "Method 2: Disable mm-qcamera-daemon via ADB",
+        "type": "Advanced Workaround",
+        "steps": [
+          {
+            "title": "Enable Developer Options",
+            "content": "Go to Settings > About Phone and tap 'Build Number' 7 times to enable Developer Options."
+          },
+          {
+            "title": "Connect to ADB",
+            "content": "Connect your device to a computer with ADB installed. Open a terminal/command prompt and run 'adb devices' to verify the connection."
+          },
+          {
+            "title": "Disable the Daemon",
+            "content": "Run the command 'adb shell pm disable-user --user 0 com.qti.qualcomm.datastatusnotification' to disable the problematic daemon. Note: This may affect camera functionality."
+          },
+          {
+            "title": "Reboot the Device",
+            "content": "Restart your device to apply changes and check if the battery drain issue is resolved."
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "created": "2026-09-04T00:47:30.666Z",
+      "updated": "2026-09-04T00:47:30.666Z",
+      "sourceUrl": "https://android.stackexchange.com/questions/64569/mm-qcamera-daemon-causing-massive-battery-drain",
+      "confidenceScore": 0.85,
+      "priorityScore": 0.8,
+      "difficulty": "Medium"
+    }
   }
 ]
