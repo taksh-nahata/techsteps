@@ -176,7 +176,7 @@ export const AIFallback: React.FC<{
   const { t } = useTranslation();
 
   return (
-    <Card variant="outlined" padding="lg" className="border-l-4 border-l-warning-500 bg-warning-50">
+    <Card variant="outlined" padding="lg" className="border-warning-200 bg-warning-50">
       <div className="flex items-start space-x-4">
         <Icon name="MessageCircle" size="lg" color="warning" className="shrink-0 mt-1" />
         
@@ -237,7 +237,7 @@ export const CriticalFailureFallback: React.FC<{
 
   return (
     <div className="min-h-screen bg-red-50 flex items-center justify-center p-4">
-      <Card variant="elevated" padding="lg" className="max-w-md text-center border-l-4 border-l-red-500">
+      <Card variant="elevated" padding="lg" className="max-w-md text-center border-error-200">
         <Icon name="AlertTriangle" size="xl" color="error" className="mx-auto mb-4" />
         
         <Typography variant="h2" className="mb-4 text-red-800">

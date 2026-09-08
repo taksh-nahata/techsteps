@@ -291,7 +291,7 @@ const LearningCenterPage: React.FC = () => {
 
         <div className="container mx-auto px-6 py-8 max-w-4xl">
           {/* English Only Notice */}
-          <div className="rounded-xl p-4 mb-8 text-center" style={{ background: '#fdf6e8', borderLeft: '4px solid #f0dfa8', color: '#8a6316' }}>
+          <div className="rounded-xl p-4 mb-8 text-center text-sm" style={{ background: '#fdf6e8', border: '1px solid #f0dfa8', color: '#8a6316' }}>
             {t('learningPage.englishOnlyNotice')}
           </div>
 

@@ -66,10 +66,10 @@ export const NetworkStatusMonitor: React.FC<NetworkStatusMonitorProps> = ({
     <Card 
       variant="outlined" 
       padding="md" 
-      className={`${className} border-l-4 ${
-        isOffline ? 'border-l-error-500' : 
-        isRecovering ? 'border-l-warning-500' : 
-        'border-l-primary-500'
+      className={`${className} ${
+        isOffline ? 'border-error-200' :
+        isRecovering ? 'border-warning-200' :
+        'border-primary-200'
       }`}
     >
       <div className="flex items-center space-x-3">
