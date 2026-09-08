@@ -15,6 +15,7 @@ import LandingEffects from '../components/landing/LandingEffects';
 import LandingNav from '../components/landing/LandingNav';
 import FeaturesScrollStrip from '../components/landing/FeaturesScrollStrip';
 import PhoneShowcase from '../components/landing/PhoneShowcase';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { useTranslation, useRTLStyles } from '../hooks/useTranslation';
 
 type FeatureItem = { title: string; description: string };
@@ -390,15 +391,25 @@ const LandingPage: React.FC = () => {
             viewport={{ once: true, margin: '-80px' }}
             variants={stagger(reduced)}
           >
-            <motion.h2
+            <motion.div
               variants={fadeUp(0, reduced)}
-              className="font-display text-3xl font-extrabold tracking-[-0.03em] text-[#f6f2ea] sm:text-4xl md:text-5xl lg:text-6xl"
+              className="mx-auto -mt-4 mb-2 h-40 w-40 sm:h-48 sm:w-48"
+            >
+              <DotLottieReact
+                src="/animations/tech-support.lottie"
+                loop
+                autoplay={!reduced}
+              />
+            </motion.div>
+            <motion.h2
+              variants={fadeUp(0.04, reduced)}
+              className="font-display text-3xl font-extrabold tracking-[-0.03em] text-[#eaf9d9] sm:text-4xl md:text-5xl lg:text-6xl"
             >
               {t('landing.ctaSection.title', 'Ready to Master Technology?')}
             </motion.h2>
             <motion.p
               variants={fadeUp(0.08, reduced)}
-              className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-[#cfc8ba] sm:text-lg"
+              className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-[#a8a2c0] sm:text-lg"
             >
               {t(
                 'landing.ctaSection.subtitle',
@@ -416,7 +427,7 @@ const LandingPage: React.FC = () => {
             </motion.div>
             <motion.p
               variants={fadeUp(0.22, reduced)}
-              className="mt-6 text-sm text-[#8a8275]"
+              className="mt-6 text-sm text-[#8a84a8]"
             >
               {t('landing.hero.noCreditCard', 'No credit card required')} ·{' '}
               {t('landing.hero.freeForever', 'Free forever')} ·{' '}
@@ -427,11 +438,11 @@ const LandingPage: React.FC = () => {
       </main>
 
       {/* ── Footer ── */}
-      <footer data-nav-theme="dark" className="border-t border-[#2a2620] bg-ink px-5 py-14 sm:px-8">
+      <footer data-nav-theme="dark" className="border-t border-[#332e5c] bg-ink px-5 py-14 sm:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div>
             <Logo size="sm" variant="light" />
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-[#8a8275]">
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-[#8a84a8]">
               {t(
                 'landing.footer.description',
                 'Making technology accessible and understandable for everyone.'
@@ -441,44 +452,44 @@ const LandingPage: React.FC = () => {
 
           <div className="flex flex-wrap gap-12 sm:gap-16">
             <div>
-              <h4 className="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#cfc8ba]">
+              <h4 className="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#a8a2c0]">
                 {t('landing.footer.communityTitle', 'Community')}
               </h4>
-              <ul className="space-y-2 text-sm text-[#8a8275]">
+              <ul className="space-y-2 text-sm text-[#8a84a8]">
                 <li>
-                  <Link to="/auth" className="transition-colors hover:text-[#f6f2ea]">
+                  <Link to="/auth" className="transition-colors hover:text-[#eaf9d9]">
                     {t('landing.footer.supportItems.0', 'Help Center')}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/community" className="transition-colors hover:text-[#f6f2ea]">
+                  <Link to="/community" className="transition-colors hover:text-[#eaf9d9]">
                     {t('landing.footer.supportItems.2', 'Community')}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact" className="transition-colors hover:text-[#f6f2ea]">
+                  <Link to="/contact" className="transition-colors hover:text-[#eaf9d9]">
                     {t('landing.footer.supportItems.3', 'Contact Us')}
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h4 className="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#cfc8ba]">
+              <h4 className="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#a8a2c0]">
                 {t('landing.footer.legalTitle', 'Legal & Support')}
               </h4>
-              <ul className="space-y-2 text-sm text-[#8a8275]">
+              <ul className="space-y-2 text-sm text-[#8a84a8]">
                 <li>
-                  <Link to="/privacy-policy" className="transition-colors hover:text-[#f6f2ea]">
+                  <Link to="/privacy-policy" className="transition-colors hover:text-[#eaf9d9]">
                     {t('landing.footer.companyItems.1', 'Privacy Policy')}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/terms-of-service" className="transition-colors hover:text-[#f6f2ea]">
+                  <Link to="/terms-of-service" className="transition-colors hover:text-[#eaf9d9]">
                     {t('landing.footer.companyItems.2', 'Terms of Service')}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/accessibility" className="transition-colors hover:text-[#f6f2ea]">
+                  <Link to="/accessibility" className="transition-colors hover:text-[#eaf9d9]">
                     {t('landing.footer.companyItems.3', 'Accessibility')}
                   </Link>
                 </li>
@@ -487,8 +498,8 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="mx-auto mt-12 max-w-7xl border-t border-[#2a2620] pt-8">
-          <p className="text-sm text-[#6e6657]">
+        <div className="mx-auto mt-12 max-w-7xl border-t border-[#332e5c] pt-8">
+          <p className="text-sm text-[#8a84a8]">
             {t('landing.footer.copyright', '© 2025 TechSteps. Made with care for learners everywhere.')}
           </p>
         </div>
