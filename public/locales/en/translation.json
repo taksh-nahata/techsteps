@@ -1264,7 +1264,25 @@
     "loadingPaths": "Loading courses...",
     "moduleListTitle": "Lessons in {{pathTitle}}:",
     "noLessonAvailable": "No lesson available.",
-    "retakeAssessment": "Retake Skills Assessment"
+    "retakeAssessment": "Retake Skills Assessment",
+    "headerTitle": "Learning Center",
+    "englishOnlyNotice": "Course lessons are currently available in English only.",
+    "featureInteractiveDemos": "Interactive Demos",
+    "featureInteractiveDemosDesc": "Practice in a safe space before trying it for real.",
+    "featureAudioSupport": "Audio Support",
+    "featureAudioSupportDesc": "Have every lesson read aloud to you.",
+    "featurePrintableGuides": "Printable Guides",
+    "featurePrintableGuidesDesc": "Keep a paper copy handy by your desk.",
+    "featureCertificates": "Certificates",
+    "featureCertificatesDesc": "Earn a certificate for every course you finish.",
+    "photoExplainer": {
+      "title": "Photo Explainer",
+      "description": "Take or upload a photo of any cable, button, or device and get a plain-language explanation.",
+      "takePhoto": "Take a photo",
+      "chooseFromLibrary": "Choose from library",
+      "button": "Explain this photo",
+      "comingSoon": "Photo explanations are coming soon!"
+    }
   },
   "courseView": {
     "previousLesson": "Previous Lesson",

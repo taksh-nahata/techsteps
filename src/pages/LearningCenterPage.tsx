@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { HelpCircle } from 'lucide-react';
+import { HelpCircle, Camera, ImageUp } from 'lucide-react';
 import * as LucideIcons from 'lucide-react';
 
 import { useUser } from '../contexts/UserContext';
@@ -291,7 +291,7 @@ const LearningCenterPage: React.FC = () => {
 
         <div className="container mx-auto px-6 py-8 max-w-4xl">
           {/* English Only Notice */}
-          <div className="bg-yellow-100 border-l-4 border-yellow-400 text-yellow-800 p-4 rounded mb-8 text-center">
+          <div className="rounded-xl p-4 mb-8 text-center" style={{ background: '#fdf6e8', borderLeft: '4px solid #f0dfa8', color: '#8a6316' }}>
             {t('learningPage.englishOnlyNotice')}
           </div>
 
@@ -393,8 +393,8 @@ const LearningCenterPage: React.FC = () => {
 
           {/* Course Completion */}
           {progressPercentage === 100 && (
-            <div className="card p-8 text-center bg-gradient-to-r from-green-50 to-blue-50 border-green-200">
-              {renderIcon(LucideIcons['Award'], "w-16 h-16 text-green-600 mx-auto mb-4")}
+            <div className="card p-8 text-center" style={{ background: 'linear-gradient(135deg, #eef6f0 0%, #e3e1f0 100%)', borderColor: '#bfe0c6' }}>
+              <div style={{ color: '#2f7a3d' }}>{renderIcon(LucideIcons['Award'], "w-16 h-16 mx-auto mb-4")}</div>
               <h2 className="text-2xl font-display font-bold text-ink mb-2">{t('courseView.congratulations')}</h2>
               <p className="text-ink-muted mb-4">{t('courseView.courseComplete', { courseTitle: t(selectedPath.titleKey) })}</p>
               <button className="btn-primary">
@@ -461,7 +461,7 @@ const LearningCenterPage: React.FC = () => {
         <div className="container mx-auto px-2 sm:px-4 py-4 sm:py-8">
           {/* Hero Section */}
           <div className="text-center mb-6 sm:mb-10">
-            <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-6">
+            <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-6" style={{ background: 'linear-gradient(135deg, #2f2963 0%, #429ea6 100%)' }}>
               {renderIcon(LucideIcons['BookOpen'], "w-7 h-7 sm:w-10 sm:h-10 text-white")}
             </div>
             <h2 className="text-xl sm:text-3xl md:text-4xl font-display font-bold text-ink mb-2 sm:mb-4">
@@ -488,22 +488,28 @@ const LearningCenterPage: React.FC = () => {
                 <h3 className="font-display font-bold text-ink text-base sm:text-lg">{t('learningPage.photoExplainer.title')}</h3>
               </div>
               <p className="text-xs sm:text-sm text-ink-muted mb-3 text-center">{t('learningPage.photoExplainer.description')}</p>
-              <div className="flex flex-col sm:flex-row gap-2 w-full justify-center">
-                <input
-                  type="file"
-                  accept="image/*"
-                  capture="environment"
-                  className="block w-full sm:w-auto text-sm text-ink-muted border border-hairline rounded-lg p-2 mb-2 sm:mb-0"
-                  onChange={e => handlePhotoChange(e)}
-                  style={{ maxWidth: '180px' }}
-                />
-                <input
-                  type="file"
-                  accept="image/*"
-                  className="block w-full sm:w-auto text-sm text-ink-muted border border-hairline rounded-lg p-2"
-                  onChange={e => handlePhotoChange(e)}
-                  style={{ maxWidth: '180px' }}
-                />
+              <div className="flex flex-col sm:flex-row gap-3 w-full justify-center">
+                <label className="btn-secondary inline-flex items-center cursor-pointer justify-center gap-2">
+                  <Camera className="w-4 h-4" />
+                  {t('learningPage.photoExplainer.takePhoto', 'Take a photo')}
+                  <input
+                    type="file"
+                    accept="image/*"
+                    capture="environment"
+                    className="sr-only"
+                    onChange={e => handlePhotoChange(e)}
+                  />
+                </label>
+                <label className="btn-secondary inline-flex items-center cursor-pointer justify-center gap-2">
+                  <ImageUp className="w-4 h-4" />
+                  {t('learningPage.photoExplainer.chooseFromLibrary', 'Choose from library')}
+                  <input
+                    type="file"
+                    accept="image/*"
+                    className="sr-only"
+                    onChange={e => handlePhotoChange(e)}
+                  />
+                </label>
               </div>
               {photoPreview && (
                 <div className="mt-4 w-full flex flex-col items-center">
@@ -517,7 +523,7 @@ const LearningCenterPage: React.FC = () => {
           {/* Learning Paths Grid */}
           {isLoadingPaths && (
             <div className="text-center py-10">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto"></div>
+              <div className="w-10 h-10 sm:w-12 sm:h-12 border-4 border-brand border-t-transparent rounded-full animate-spin mx-auto"></div>
               <p className="mt-3 sm:mt-4 text-ink-muted text-sm sm:text-base">{t('learningPage.loadingPaths')}</p>
             </div>
           )}
@@ -617,7 +623,7 @@ const LearningCenterPage: React.FC = () => {
   if (currentView === 'pathDetail' && selectedPath) {
     // Add a button to start/continue the course
     return (
-      <div>
+      <div className="min-h-screen bg-canvas">
         <header className="bg-surface/90 backdrop-blur-md border-b border-hairline sticky top-0 z-30">
           <div className="container mx-auto px-4 sm:px-6 py-4 flex items-center space-x-3 sm:space-x-4">
             <button onClick={() => setCurrentView('overview')} className="p-2 text-ink-muted hover:text-ink rounded-full hover:bg-subtle focus-ring">
@@ -628,12 +634,12 @@ const LearningCenterPage: React.FC = () => {
           </div>
         </header>
         <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-8">
-          <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">{t(selectedPath.descriptionKey)}</h2>
-          <p className="mb-4 sm:mb-6 text-sm sm:text-base">{t('learningPage.moduleListTitle', { pathTitle: t(selectedPath.titleKey) })}</p>
+          <h2 className="text-xl sm:text-2xl font-display font-bold text-ink mb-3 sm:mb-4">{t(selectedPath.descriptionKey)}</h2>
+          <p className="mb-4 sm:mb-6 text-sm sm:text-base text-ink-muted">{t('learningPage.moduleListTitle', { pathTitle: t(selectedPath.titleKey) })}</p>
           <div className="space-y-3 sm:space-y-4">
             {(selectedPath.modules as Module[]).map(module => (
               <div key={module.id} className="card p-3 sm:p-4">
-                <h3 className="text-base sm:text-lg font-semibold">{t(module.titleKey)}</h3>
+                <h3 className="text-base sm:text-lg font-display font-bold text-ink">{t(module.titleKey)}</h3>
                 <p className="text-xs sm:text-sm text-ink-muted">{t(module.descriptionKey)}</p>
                 <p className="text-xs text-ink-muted/70 mt-1">{t('learningPage.moduleTimeLabel')}{module.estimatedTime}</p>
               </div>
@@ -673,7 +679,7 @@ const LearningCenterPage: React.FC = () => {
       : false;
     // --- Render real content if available ---
     return (
-      <div>
+      <div className="min-h-screen bg-canvas">
         <header className="bg-surface/90 backdrop-blur-md border-b border-hairline sticky top-0 z-30">
           <div className="container mx-auto px-4 sm:px-6 py-4 flex items-center space-x-3 sm:space-x-4">
             <button onClick={() => setCurrentView('course')} className="p-2 text-ink-muted hover:text-ink rounded-full hover:bg-subtle focus-ring">
@@ -684,7 +690,7 @@ const LearningCenterPage: React.FC = () => {
           </div>
         </header>
         <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-8 max-w-2xl">
-          <h2 className="text-2xl font-bold mb-4">{t(lesson.titleKey)}</h2>
+          <h2 className="text-2xl font-display font-bold text-ink mb-4">{t(lesson.titleKey)}</h2>
           <p className="mb-6 text-ink-muted">{t(lesson.descriptionKey)}</p>
           {/* Render real lesson content if available */}
           <div className="mb-8 p-4 bg-subtle rounded-xl border border-hairline">
