@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo } from 'react';
 import { motion, PanInfo } from 'framer-motion';
-import { Check, MousePointerClick, ChevronRight } from 'lucide-react';
+import { Check, ChevronRight } from 'lucide-react';
 import { FlashcardStep } from '../../types/services';
 import MarkdownRenderer from './MarkdownRenderer';
 import { getDirectionsForDevice, GuideDeviceType, GUIDE_DEVICE_LABELS } from '../../utils/deviceDetection';
@@ -107,32 +107,16 @@ const FlashcardCard: React.FC<FlashcardCardProps> = ({
             />
           </div>
         ) : (
-          <div className="flex-1 min-h-0 grid md:grid-cols-[minmax(0,42%)_1fr] overflow-hidden">
-            <div className="relative flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-hairline bg-gradient-to-br from-brand-soft/70 via-canvas to-subtle/30 p-6 min-h-[140px] md:min-h-0">
-              <div
-                className="absolute inset-0 opacity-[0.07] pointer-events-none"
-                style={{
-                  backgroundImage:
-                    'repeating-linear-gradient(-45deg, #2f2963 0, #2f2963 1px, transparent 0, transparent 50%)',
-                  backgroundSize: '12px 12px',
-                }}
-              />
-              <motion.div
-                className="relative flex h-[88px] w-[88px] md:h-[104px] md:w-[104px] items-center justify-center rounded-[24px] bg-brand text-white font-display text-5xl md:text-6xl font-extrabold shadow-micro"
-                animate={prefersReducedMotion ? {} : { scale: [1, 1.05, 1] }}
-                transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
-              >
+          <div className="flex-1 min-h-0 grid md:grid-cols-[minmax(0,38%)_1fr] overflow-hidden">
+            <div className="flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-hairline bg-brand-soft/40 p-6 min-h-[120px] md:min-h-0">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-brand text-white font-display text-3xl font-extrabold">
                 {stepNumber}
-              </motion.div>
+              </div>
               {step.title && (
-                <p className="relative mt-5 text-center font-display font-bold text-ink text-lg md:text-xl leading-snug max-w-[220px]">
+                <p className="mt-4 text-center font-display font-bold text-ink text-lg leading-snug max-w-[220px]">
                   {step.title}
                 </p>
               )}
-              <p className="relative mt-3 flex items-center gap-1.5 text-xs font-medium text-ink-muted">
-                <MousePointerClick className="w-3.5 h-3.5 shrink-0" />
-                Do each step below, then tap Next
-              </p>
             </div>
             <StepBody
               directions={directions}

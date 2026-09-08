@@ -31,7 +31,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content, cla
         const HeaderTag = `h${Math.min(level + 2, 6)}` as keyof JSX.IntrinsicElements; // h3, h4, h5, h6
 
         elements.push(
-          <HeaderTag key={elementKey++} className="font-semibold text-gray-900 mt-4 mb-2 first:mt-0">
+          <HeaderTag key={elementKey++} className="font-display font-bold text-ink mt-4 mb-2 first:mt-0">
             {parseInlineFormatting(headerText)}
           </HeaderTag>
         );
@@ -43,7 +43,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content, cla
         const bulletText = line.replace(/^\s*[-*]\s+/, '');
         elements.push(
           <div key={elementKey++} className="flex items-start mb-1">
-            <span className="text-gray-600 mr-2 mt-1">•</span>
+            <span className="text-brand mr-2 mt-1">•</span>
             <span>{parseInlineFormatting(bulletText)}</span>
           </div>
         );
@@ -58,7 +58,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content, cla
 
         elements.push(
           <div key={elementKey++} className="flex items-start mb-1">
-            <span className="text-gray-600 mr-2 mt-1 font-medium">{number}.</span>
+            <span className="text-brand mr-2 mt-1 font-semibold">{number}.</span>
             <span>{parseInlineFormatting(listText)}</span>
           </div>
         );
@@ -74,7 +74,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content, cla
             const codeContent = code.replace(/```/g, '');
             processedLine = processedLine.replace(code, `__CODE_BLOCK_${index}__`);
             lineElements.push(
-              <code key={lineKey++} className="bg-gray-100 px-2 py-1 rounded text-sm font-mono text-gray-800">
+              <code key={lineKey++} className="bg-subtle px-2 py-1 rounded text-sm font-mono text-ink">
                 {codeContent}
               </code>
             );
@@ -136,7 +136,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content, cla
       // Add bold text
       const boldText = match[2] || match[3]; // Either **text** or __text__
       elements.push(
-        <strong key={elementKey++} className="font-semibold text-gray-900">
+        <strong key={elementKey++} className="font-semibold text-ink">
           {boldText}
         </strong>
       );
@@ -173,7 +173,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content, cla
 
       // Add code text
       elements.push(
-        <code key={elementKey++} className="bg-gray-100 px-1 py-0.5 rounded text-sm font-mono text-gray-800">
+        <code key={elementKey++} className="bg-subtle px-1 py-0.5 rounded text-sm font-mono text-ink">
           {match[1]}
         </code>
       );
@@ -212,7 +212,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content, cla
       // Add italic text
       const italicText = match[2] || match[3]; // Either *text* or _text_
       elements.push(
-        <em key={elementKey++} className="italic text-gray-800">
+        <em key={elementKey++} className="italic text-ink-muted">
           {italicText}
         </em>
       );

@@ -106,7 +106,6 @@ export const FlashcardPanel: React.FC<FlashcardPanelProps> = ({
   const currentStepData = steps[activeStep];
   const isFirstStep = activeStep === 0;
   const isLastStep = activeStep === totalSteps - 1;
-  const progress = ((activeStep + 1) / totalSteps) * 100;
   const isAllCompleted = completedSteps.size === totalSteps;
 
   return (
@@ -164,26 +163,6 @@ export const FlashcardPanel: React.FC<FlashcardPanelProps> = ({
         </div>
       )}
 
-      <div className="flex-shrink-0 flex justify-center gap-2 px-3 py-2">
-        {steps.map((_, index) => (
-          <motion.button
-            key={index}
-            onClick={() => goToStep(index)}
-            className={`relative rounded-full transition-all ${
-              index === activeStep
-                ? 'w-8 h-2.5 bg-brand'
-                : completedSteps.has(index)
-                  ? 'w-2.5 h-2.5 bg-accent-cool'
-                  : 'w-2.5 h-2.5 bg-subtle hover:bg-brand-soft'
-            }`}
-            whileHover={{ scale: 1.15 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label={`Go to step ${index + 1}`}
-            aria-current={index === activeStep ? 'step' : undefined}
-          />
-        ))}
-      </div>
-
       <div className="flex-1 min-h-0 overflow-hidden">
         <AnimatePresence initial={false} custom={direction} mode="wait">
           <FlashcardCard
@@ -201,13 +180,24 @@ export const FlashcardPanel: React.FC<FlashcardPanelProps> = ({
       </div>
 
       <div className="flex-shrink-0 p-3 border-t border-hairline bg-surface/80">
-        <div className="h-1.5 bg-subtle rounded-full overflow-hidden mb-3">
-          <motion.div
-            className="h-full rounded-full bg-brand"
-            initial={{ width: 0 }}
-            animate={{ width: `${progress}%` }}
-            transition={{ duration: prefersReducedMotion ? 0.1 : 0.4, ease: 'easeOut' }}
-          />
+        <div className="flex justify-center gap-2 mb-3">
+          {steps.map((_, index) => (
+            <motion.button
+              key={index}
+              onClick={() => goToStep(index)}
+              className={`relative rounded-full transition-all ${
+                index === activeStep
+                  ? 'w-8 h-2.5 bg-brand'
+                  : completedSteps.has(index)
+                    ? 'w-2.5 h-2.5 bg-accent-cool'
+                    : 'w-2.5 h-2.5 bg-subtle hover:bg-brand-soft'
+              }`}
+              whileHover={{ scale: 1.15 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label={`Go to step ${index + 1}`}
+              aria-current={index === activeStep ? 'step' : undefined}
+            />
+          ))}
         </div>
 
         <div className="flex items-center justify-between gap-3">
