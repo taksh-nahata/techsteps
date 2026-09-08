@@ -23,9 +23,25 @@ const Logo: React.FC<LogoProps> = ({
       ? 'text-[#f6f2ea]'
       : 'text-ink';
 
+  const mark =
+    variant === 'light' ? (
+      // The real logo file has a solid canvas-colored background baked in,
+      // so it can't sit transparently on a dark panel -- fall back to the
+      // vector mark here, which is transparent and matches the same design.
+      <TechyMark size={markSizes[size]} />
+    ) : (
+      <img
+        src="/logo-mark.png"
+        alt=""
+        width={markSizes[size]}
+        height={markSizes[size]}
+        className="shrink-0 rounded-[22%]"
+      />
+    );
+
   return (
     <div className="flex items-center gap-2 min-w-0">
-      <TechyMark size={markSizes[size]} />
+      {mark}
       {showText && (
         <span
           className={`font-display font-extrabold tracking-[-0.02em] truncate ${textSizeClasses[size]} ${textClass} ${

@@ -80,16 +80,16 @@ const AuthPage: React.FC = () => {
           <ul className="mt-10 space-y-6">
             {REASSURANCES.map(({ icon: Icon, text }) => (
               <li key={text} className="flex items-start gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#3a352c] bg-[#211d17]">
-                  <Icon className="h-4.5 w-4.5 text-brand" strokeWidth={1.5} />
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/10">
+                  <Icon className="h-4.5 w-4.5 text-[#6fc2c9]" strokeWidth={1.5} />
                 </span>
-                <span className="pt-2 text-[15px] leading-snug text-[#cfc8ba]">{text}</span>
+                <span className="pt-2 text-[15px] leading-snug text-[#a8a2c0]">{text}</span>
               </li>
             ))}
           </ul>
         </div>
 
-        <p className="relative text-sm text-[#8a8275]">
+        <p className="relative text-sm text-[#a8a2c0]">
           {t('landing.hero.noCreditCard', 'No credit card required')} ·{' '}
           {t('landing.hero.freeForever', 'Free forever')}
         </p>

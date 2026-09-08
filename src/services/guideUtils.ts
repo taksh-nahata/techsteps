@@ -165,6 +165,22 @@ export function createBlankGuide(): TroubleshootingGuide {
   });
 }
 
+/**
+ * True only when at least one step has real per-device directions for more
+ * than one device — i.e. the device picker would actually change what's
+ * shown. AI chat guides only ever populate a single "all" bucket (tailored
+ * once to the asker's detected device), so the picker has nothing to switch
+ * between and showing it just promises a feature that doesn't work.
+ */
+export function hasDeviceVariants(steps: FlashcardStep[]): boolean {
+  return steps.some((step) => {
+    const byDevice = step.directionsByDevice as Partial<Record<GuideDeviceType, string[]>> | undefined;
+    if (!byDevice) return false;
+    const populated = Object.entries(byDevice).filter(([key, lines]) => key !== 'all' && (lines?.length ?? 0) > 0);
+    return populated.length > 0;
+  });
+}
+
 /** Update one device’s direction list on a step (preserves empty rows for editing) */
 export function resolveFlashcardStepsForDevice(
   steps: FlashcardStep[],

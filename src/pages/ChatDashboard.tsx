@@ -18,7 +18,7 @@ import { MemoryService, Message } from '../services/MemoryService';
 import { LocalStorageService, Conversation } from '../services/LocalStorageService';
 import { StorageService } from '../services/StorageService';
 import { MistralService } from '../services/ai';
-import { resolveFlashcardStepsForDevice } from '../services/guideUtils';
+import { resolveFlashcardStepsForDevice, hasDeviceVariants } from '../services/guideUtils';
 import { GuideDeviceType } from '../utils/deviceDetection';
 import { useUserDevice } from '../hooks/useUserDevice';
 import { sanitizeFlashcardSteps } from '../services/FlashcardImageService';
@@ -58,6 +58,10 @@ const ChatDashboardContent: React.FC = () => {
     () => resolveFlashcardStepsForDevice(rawFlashcardSteps, viewDevice),
     [rawFlashcardSteps, viewDevice]
   );
+  // AI chat guides are tailored once to the asker's own device — they never
+  // carry real per-device variants, so the picker would just be a switch
+  // that does nothing. Only show it when there's something to actually switch.
+  const canPickDevice = useMemo(() => hasDeviceVariants(rawFlashcardSteps), [rawFlashcardSteps]);
 
   const [flashcardActiveStep, setFlashcardActiveStep] = useState(1);
   const [isGeneratingFlashcards, setIsGeneratingFlashcards] = useState(false);
@@ -578,7 +582,7 @@ const ChatDashboardContent: React.FC = () => {
                 isVisible
                 deviceType={viewDevice}
                 onDeviceTypeChange={setViewDevice}
-                showDevicePicker
+                showDevicePicker={canPickDevice}
                 onClose={() => {
                   setShowFlashcards(false);
                   setActiveGuideId(null);
