@@ -14,6 +14,7 @@ import ScrollHowItWorks from '../components/landing/ScrollHowItWorks';
 import LandingEffects from '../components/landing/LandingEffects';
 import LandingNav from '../components/landing/LandingNav';
 import FeaturesScrollStrip from '../components/landing/FeaturesScrollStrip';
+import PhoneShowcase from '../components/landing/PhoneShowcase';
 import { useTranslation, useRTLStyles } from '../hooks/useTranslation';
 
 type FeatureItem = { title: string; description: string };
@@ -293,6 +294,8 @@ const LandingPage: React.FC = () => {
         </section>
 
         <FeaturesScrollStrip />
+
+        <PhoneShowcase />
 
         {/* ── Popular questions ── */}
         <section className="bg-canvas px-5 py-28 sm:px-8 sm:py-36">
