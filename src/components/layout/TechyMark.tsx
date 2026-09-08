@@ -1,57 +1,27 @@
 import React from 'react';
-import { TECHY_PIVOT, TECHY_ROTATE_DEG, TECHY_TILE_RADIUS, TECHY_VISIBLE, techyOuterBox } from './techyShared';
 
 interface TechyMarkProps {
   size?: number;
   className?: string;
 }
 
-/** Exact Techy silhouette — rotated staircase on bottom-left pivot. */
+/** TechSteps mark — an ascending staircase, teal to indigo. */
 const TechyMark: React.FC<TechyMarkProps> = ({ size = 40, className = '' }) => {
-  const box = techyOuterBox(size);
-
   return (
-    <div
-      className={`relative inline-flex items-center justify-center overflow-visible shrink-0 ${className}`}
-      style={{ width: box, height: box }}
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`shrink-0 ${className}`}
       aria-hidden
     >
-      <div
-        className="grid grid-cols-3"
-        style={{
-          width: size,
-          height: size,
-          gap: size * 0.07,
-          transform: `rotate(${TECHY_ROTATE_DEG}deg)`,
-          transformOrigin: TECHY_PIVOT,
-        }}
-      >
-        {Array.from({ length: 9 }).map((_, i) => {
-          const visible = TECHY_VISIBLE.includes(i as (typeof TECHY_VISIBLE)[number]);
-          if (!visible) return <div key={i} />;
-          const [c1, c2] = ['#c2502e', '#d98a2b'];
-          return (
-            <div
-              key={i}
-              style={{
-                borderRadius: TECHY_TILE_RADIUS[i],
-                background: `linear-gradient(135deg, ${c1} 0%, ${c2} 100%)`,
-                boxShadow: `0 2px 8px ${c1}33`,
-              }}
-            />
-          );
-        })}
-      </div>
-      <div
-        className="absolute rounded-full bg-brand-strong pointer-events-none"
-        style={{
-          width: Math.max(3, size * 0.07),
-          height: Math.max(3, size * 0.07),
-          left: box * 0.2,
-          bottom: box * 0.18,
-        }}
-      />
-    </div>
+      <rect x="4" y="21" width="6" height="8" rx="1.8" fill="#429ea6" />
+      <rect x="10" y="15" width="6" height="14" rx="1.8" fill="#429ea6" />
+      <rect x="16" y="9" width="6" height="20" rx="1.8" fill="#2f2963" />
+      <rect x="22" y="3" width="6" height="26" rx="1.8" fill="#2f2963" />
+    </svg>
   );
 };
 

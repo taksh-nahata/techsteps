@@ -23,13 +23,13 @@ export const TECHY_TILE_RADIUS: Record<number, string> = {
 };
 
 export const TECHY_COLORS = {
-  idle: ['#c2502e', '#d98a2b'] as [string, string],
-  listening: ['#c2502e', '#e07a4f'] as [string, string],
-  thinking: ['#b8791f', '#d98a2b'] as [string, string],
-  speaking: ['#9f3d20', '#c2502e'] as [string, string],
-  happy: ['#2e6a63', '#4a8a82'] as [string, string],
-  excited: ['#d98a2b', '#f4b942'] as [string, string],
-  concerned: ['#9a7b5c', '#b89a78'] as [string, string],
+  idle: ['#2f2963', '#429ea6'] as [string, string],
+  listening: ['#2f2963', '#5b4fa0'] as [string, string],
+  thinking: ['#241f52', '#429ea6'] as [string, string],
+  speaking: ['#201c47', '#2f2963'] as [string, string],
+  happy: ['#429ea6', '#6fc2c9'] as [string, string],
+  excited: ['#db7f8e', '#f0a8b5'] as [string, string],
+  concerned: ['#8a8398', '#a8a2b5'] as [string, string],
 };
 
 export function techyColorForState(

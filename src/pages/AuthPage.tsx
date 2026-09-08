@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Eye, EyeOff } from 'lucide-react';
+import { ArrowLeft, Eye, EyeOff, Mic, Camera, ListChecks } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { useTranslation } from 'react-i18next';
 import Logo from '../components/layout/Logo';
+import TechyMark from '../components/layout/TechyMark';
+
+const REASSURANCES = [
+  { icon: ListChecks, text: 'Step-by-step guides, written in plain language' },
+  { icon: Mic, text: 'Ask by voice or by typing — whatever feels easier' },
+  { icon: Camera, text: 'Snap a photo of any device and get help instantly' },
+];
 
 const AuthPage: React.FC = () => {
   const [isSignUp, setIsSignUp] = useState(false);
@@ -47,22 +54,63 @@ const AuthPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-canvas flex items-center justify-center py-12 px-4">
-      <div className="w-full max-w-md">
-        {/* Back to home link */}
-        <Link
-          to="/"
-          className="inline-flex items-center text-ink-muted hover:text-ink mb-8 transition-colors p-2 -ml-2 rounded-lg hover:bg-subtle focus-ring"
-        >
-          <ArrowLeft className="w-5 h-5 mr-3" />
-          <span className="text-base font-medium">{t('auth.backToHome')}</span>
+    <div className="min-h-screen bg-canvas grid lg:grid-cols-[1fr_1.1fr]">
+      {/* ── Brand panel — hidden on mobile, sets the mood before the form ── */}
+      <div className="relative hidden overflow-hidden bg-ink lg:flex lg:flex-col lg:justify-between px-12 py-14">
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              'radial-gradient(ellipse 70% 50% at 15% 15%, rgba(47,41,99,0.35) 0%, transparent 65%)',
+          }}
+        />
+        <TechyMark
+          size={340}
+          className="pointer-events-none absolute -bottom-16 -right-16 opacity-[0.07]"
+        />
+
+        <Link to="/" className="relative w-fit">
+          <Logo size="md" variant="light" />
         </Link>
 
-        <div className="card p-6 sm:p-8 animate-slide-up">
-          <div className="text-center mb-6 sm:mb-8">
-            <div className="flex justify-center mb-4 sm:mb-6">
-              <Logo size="lg" showText={false} />
-            </div>
+        <div className="relative max-w-sm">
+          <h2 className="font-display text-3xl font-extrabold leading-[1.1] tracking-[-0.03em] text-[#f6f2ea] xl:text-4xl">
+            Technology made simple & clear
+          </h2>
+          <ul className="mt-10 space-y-6">
+            {REASSURANCES.map(({ icon: Icon, text }) => (
+              <li key={text} className="flex items-start gap-4">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#3a352c] bg-[#211d17]">
+                  <Icon className="h-4.5 w-4.5 text-brand" strokeWidth={1.5} />
+                </span>
+                <span className="pt-2 text-[15px] leading-snug text-[#cfc8ba]">{text}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <p className="relative text-sm text-[#8a8275]">
+          {t('landing.hero.noCreditCard', 'No credit card required')} ·{' '}
+          {t('landing.hero.freeForever', 'Free forever')}
+        </p>
+      </div>
+
+      {/* ── Form panel ── */}
+      <div className="flex items-center justify-center px-4 py-12 sm:px-8">
+        <div className="w-full max-w-md">
+          <Link
+            to="/"
+            className="mb-8 inline-flex items-center rounded-lg p-2 -ml-2 text-ink-muted transition-colors hover:bg-subtle hover:text-ink focus-ring lg:hidden"
+          >
+            <ArrowLeft className="w-5 h-5 mr-3" />
+            <span className="text-base font-medium">{t('auth.backToHome')}</span>
+          </Link>
+
+          <div className="mb-6 sm:mb-8 lg:hidden">
+            <Logo size="lg" showText={false} />
+          </div>
+
+          <div className="mb-6 sm:mb-8">
             <h1 className="font-display text-2xl sm:text-3xl font-bold tracking-[-0.02em] text-ink mb-1 sm:mb-2">
               {isSignUp ? t('auth.createAccount') : t('auth.welcomeBack')}
             </h1>

@@ -394,13 +394,15 @@ const ChatDashboardContent: React.FC = () => {
       console.error('Chat Error:', e);
       setEmotion('concerned');
       setTimeout(() => setEmotion('neutral'), 2500);
-      const encouragement = t('encouragement', { returnObjects: true }) as string[];
-      const randomEncouragement = encouragement[Math.floor(Math.random() * encouragement.length)];
+      // Never disguise a failed answer as a real one — a cheerful non-sequitur
+      // ("You're doing great!") in place of an actual answer reads as a genuine
+      // response to someone who doesn't know the AI failed, which is worse than
+      // no answer at all. Always say plainly that this attempt didn't work.
       const errorMsg = e.message?.includes('429')
-        ? "I'm a bit overwhelmed right now! Please try again in a few seconds."
-        : randomEncouragement;
+        ? t('chat.answerFailedBusy', "I'm a bit overwhelmed right now! Please try again in a few seconds.")
+        : t('chat.answerFailed', "I couldn't get an answer that time — the connection dropped. Please try asking again.");
 
-      setMessages(prev => [...prev, { id: 'err-' + Date.now(), content: errorMsg, sender: 'ai', timestamp: new Date() }]);
+      setMessages(prev => [...prev, { id: 'err-' + Date.now(), content: errorMsg, sender: 'ai', timestamp: new Date(), isError: true }]);
     } finally {
       setIsLoading(false);
       setThinking(false);

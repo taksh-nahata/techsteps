@@ -113,7 +113,7 @@ const FlashcardCard: React.FC<FlashcardCardProps> = ({
                 className="absolute inset-0 opacity-[0.07] pointer-events-none"
                 style={{
                   backgroundImage:
-                    'repeating-linear-gradient(-45deg, #c2502e 0, #c2502e 1px, transparent 0, transparent 50%)',
+                    'repeating-linear-gradient(-45deg, #2f2963 0, #2f2963 1px, transparent 0, transparent 50%)',
                   backgroundSize: '12px 12px',
                 }}
               />

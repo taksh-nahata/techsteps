@@ -34,6 +34,8 @@ export interface Message {
     guideId?: string;
     guideTitle?: string;
     guideStepCount?: number;
+    /** True when this message reports a failed attempt, not a real answer */
+    isError?: boolean;
 }
 
 export const MemoryService = {

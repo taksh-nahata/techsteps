@@ -246,13 +246,13 @@ const EnhancedAvatarCompanion: React.FC<EnhancedAvatarCompanionProps> = ({
 
         {guideStep && (
           <svg className="absolute inset-0 pointer-events-none" viewBox="0 0 100 100" aria-hidden>
-            <circle cx="50" cy="50" r="46" fill="none" stroke="rgba(194,80,46,0.15)" strokeWidth="4" />
+            <circle cx="50" cy="50" r="46" fill="none" stroke="rgba(47,41,99,0.15)" strokeWidth="4" />
             <circle
               cx="50"
               cy="50"
               r="46"
               fill="none"
-              stroke="#c2502e"
+              stroke="#2f2963"
               strokeWidth="4"
               strokeLinecap="round"
               strokeDasharray={`${(guideStep.current / guideStep.total) * 289} 289`}

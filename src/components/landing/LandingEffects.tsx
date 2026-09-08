@@ -33,7 +33,7 @@ const LandingEffects: React.FC = () => {
           height: 120,
           left: pos.x - 60,
           top: pos.y - 60,
-          background: 'radial-gradient(circle, rgba(194,80,46,0.14) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(47,41,99,0.18) 0%, transparent 70%)',
         }}
         animate={{ opacity: visible ? 1 : 0, scale: visible ? 1 : 0.6 }}
         transition={{ type: 'spring', stiffness: 150, damping: 22, mass: 0.4 }}

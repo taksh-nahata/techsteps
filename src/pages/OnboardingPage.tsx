@@ -186,7 +186,7 @@ const OnboardingPage: React.FC = () => {
                     max="100"
                     value={formData.age}
                     onChange={e => setFormData(f => ({ ...f, age: parseInt(e.target.value) }))}
-                    className="flex-1 accent-[#c2502e] h-2 bg-brand-soft rounded-lg appearance-none cursor-pointer"
+                    className="flex-1 accent-[#2f2963] h-2 bg-brand-soft rounded-lg appearance-none cursor-pointer"
                   />
                   <span className="text-3xl font-bold text-brand tabular-nums w-12">{formData.age}</span>
                 </div>
@@ -431,7 +431,7 @@ const OnboardingPage: React.FC = () => {
               <div className="flex items-start justify-between p-6 bg-brand/5 border border-hairline rounded-[2.5rem]">
                 <div className="flex-1 pr-6">
                   <div className="flex items-center space-x-2 mb-2">
-                    <ShieldCheck className="w-5 h-5 text-[#2e6a63]" />
+                    <ShieldCheck className="w-5 h-5 text-[#429ea6]" />
                     <h3 className="font-bold text-lg text-ink">{t('onboarding.step5.privacy.title')}</h3>
                   </div>
                   <p className="text-sm text-ink-muted leading-relaxed">
@@ -512,7 +512,7 @@ const OnboardingPage: React.FC = () => {
                 <div
                   key={idx}
                   className={`h-2 transition-all duration-500 rounded-full ${idx === currentStep ? 'w-10 bg-brand shadow-lg shadow-micro' :
-                    idx < currentStep ? 'w-2 bg-[#2e6a63]' : 'w-2 bg-subtle'
+                    idx < currentStep ? 'w-2 bg-[#429ea6]' : 'w-2 bg-subtle'
                     }`}
                 />
               ))}

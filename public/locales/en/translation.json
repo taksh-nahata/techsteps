@@ -685,6 +685,9 @@
     },
     "welcomeMessage": "Hello {{name}}! I'm here to help.",
     "navigating": "Navigating to {{target}}...",
+    "answerFailed": "I couldn't get an answer that time — the connection dropped. Please try asking again.",
+    "answerFailedBusy": "I'm a bit overwhelmed right now! Please try again in a few seconds.",
+    "answerFailedLabel": "Didn't go through",
     "input": {
       "placeholder": "Message AI assistant...",
       "helper": "Press Enter to send, Shift+Enter for new line",

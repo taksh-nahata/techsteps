@@ -190,19 +190,19 @@ const LearningCenterPage: React.FC = () => {
     const currentQuestion = assessmentQuestions[assessmentStep];
 
     return (
-      <div className="min-h-screen bg-gray-50">
-        <header className="bg-white border-b border-gray-200">
+      <div className="min-h-screen bg-canvas">
+        <header className="bg-surface/90 backdrop-blur-md border-b border-hairline">
           <div className="container mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-4">
                 <button
                   onClick={() => setCurrentView('overview')}
-                  className="p-2 text-gray-600 hover:text-gray-800 rounded-full hover:bg-gray-100 transition-colors"
+                  className="p-2 text-ink-muted hover:text-ink rounded-full hover:bg-subtle transition-colors focus-ring"
                 >
                   {renderIcon(LucideIcons['ArrowLeft'], "w-5 h-5")}
                 </button>
                 <Logo size="sm" />
-                <h1 className="text-xl font-semibold text-gray-800">{t('assessmentView.headerTitle')}</h1>
+                <h1 className="text-xl font-display font-bold text-ink">{t('assessmentView.headerTitle')}</h1>
               </div>
             </div>
           </div>
@@ -211,22 +211,22 @@ const LearningCenterPage: React.FC = () => {
         <div className="container mx-auto px-6 py-12 max-w-2xl">
           <div className="card p-8">
             <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                {renderIcon(LucideIcons['HelpCircle'], "w-8 h-8 text-blue-600")}
+              <div className="w-16 h-16 bg-brand-soft rounded-full flex items-center justify-center mx-auto mb-4">
+                {renderIcon(LucideIcons['HelpCircle'], "w-8 h-8 text-brand")}
               </div>
-              <h2 className="text-2xl font-bold text-gray-800 mb-2">
+              <h2 className="text-2xl font-display font-bold text-ink mb-2">
                 {t('assessmentView.questionProgress', { current: assessmentStep + 1, total: assessmentQuestions.length })}
               </h2>
-              <div className="w-full bg-gray-200 rounded-full h-2 mb-4">
+              <div className="w-full bg-subtle rounded-full h-2 mb-4">
                 <div
-                  className="bg-blue-600 h-2 rounded-full transition-all duration-300"
+                  className="bg-brand h-2 rounded-full transition-all duration-300"
                   style={{ width: `${((assessmentStep + 1) / assessmentQuestions.length) * 100}%` }}
                 ></div>
               </div>
             </div>
 
             <div className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-6 text-center">
+              <h3 className="text-xl font-display font-bold text-ink mb-6 text-center">
                 {currentQuestion.question}
               </h3>
 
@@ -235,7 +235,7 @@ const LearningCenterPage: React.FC = () => {
                   <button
                     key={index}
                     onClick={() => handleAssessmentAnswer(index)}
-                    className="w-full p-4 text-left rounded-xl border-2 border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-200"
+                    className="w-full p-4 text-left rounded-xl border-2 border-hairline hover:border-brand/40 hover:bg-brand-soft transition-all duration-200"
                   >
                     {option}
                   </button>
@@ -251,7 +251,7 @@ const LearningCenterPage: React.FC = () => {
                 {t('assessmentView.skipAssessment')}
               </button>
 
-              <div className="text-sm text-gray-500">
+              <div className="text-sm text-ink-muted/70">
                 {t('assessmentView.chooseBestOption')}
               </div>
             </div>
@@ -271,19 +271,19 @@ const LearningCenterPage: React.FC = () => {
     const progressPercentage = (completedLessons / selectedPath.modules.length) * 100;
 
     return (
-      <div className="min-h-screen bg-gray-50">
-        <header className="bg-white border-b border-gray-200">
+      <div className="min-h-screen bg-canvas">
+        <header className="bg-surface/90 backdrop-blur-md border-b border-hairline">
           <div className="container mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-4">
                 <button
                   onClick={() => setCurrentView('overview')}
-                  className="p-2 text-gray-600 hover:text-gray-800 rounded-full hover:bg-gray-100 transition-colors"
+                  className="p-2 text-ink-muted hover:text-ink rounded-full hover:bg-subtle transition-colors focus-ring"
                 >
                   {renderIcon(LucideIcons['ArrowLeft'], "w-5 h-5")}
                 </button>
                 <Logo size="sm" />
-                <h1 className="text-xl font-semibold text-gray-800">{t(selectedPath.titleKey)}</h1>
+                <h1 className="text-xl font-display font-bold text-ink">{t(selectedPath.titleKey)}</h1>
               </div>
             </div>
           </div>
@@ -298,22 +298,22 @@ const LearningCenterPage: React.FC = () => {
           {/* Course Header */}
           <div className="card p-8 mb-8">
             <div className="flex items-start space-x-6">
-              <div className={`w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center`}>
-                {renderIcon(LucideIcons['HelpCircle'], "w-8 h-8 text-blue-600")}
+              <div className={`w-16 h-16 bg-brand-soft rounded-2xl flex items-center justify-center`}>
+                {renderIcon(LucideIcons['HelpCircle'], "w-8 h-8 text-brand")}
               </div>
               <div className="flex-1">
-                <h2 className="text-3xl font-bold text-gray-800 mb-2">{t(selectedPath.titleKey)}</h2>
-                <p className="text-lg text-gray-600 mb-4">{t(selectedPath.descriptionKey)}</p>
+                <h2 className="text-3xl font-display font-bold text-ink mb-2">{t(selectedPath.titleKey)}</h2>
+                <p className="text-lg text-ink-muted mb-4">{t(selectedPath.descriptionKey)}</p>
 
                 {/* Progress Bar */}
                 <div className="mb-4">
-                  <div className="flex justify-between text-sm text-gray-600 mb-2">
+                  <div className="flex justify-between text-sm text-ink-muted mb-2">
                     <span>{t('learningPage.progressLabel')}</span>
                     <span>{t('learningPage.completedOutOfTotal', { completed: completedLessons, total: selectedPath.modules.length })}</span>
                   </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2">
+                  <div className="w-full bg-subtle rounded-full h-2">
                     <div
-                      className={`bg-blue-500 h-2 rounded-full transition-all duration-300`}
+                      className={`bg-brand h-2 rounded-full transition-all duration-300`}
                       style={{ width: `${progressPercentage}%` }}
                     ></div>
                   </div>
@@ -324,7 +324,7 @@ const LearningCenterPage: React.FC = () => {
 
           {/* Lessons */}
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-gray-800">{t('courseView.lessonsHeader')}</h2>
+            <h2 className="text-2xl font-display font-bold text-ink">{t('courseView.lessonsHeader')}</h2>
             {selectedPath.modules.map((lesson, index) => {
               const progressEntry = courseProgress.find((p: any) => p.lessonId === lesson.id) || {};
               const isCompleted = !!progressEntry.completed;
@@ -333,19 +333,19 @@ const LearningCenterPage: React.FC = () => {
                 <div key={lesson.id} className="card p-6 hover:shadow-lg transition-shadow">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-4 flex-1">
-                      <div className={`w-12 h-12 rounded-full flex items-center justify-center ${isCompleted ? 'bg-green-100' : 'bg-gray-100'
+                      <div className={`w-12 h-12 rounded-full flex items-center justify-center ${isCompleted ? 'bg-green-100' : 'bg-subtle'
                         }`}>
                         {isCompleted ? (
                           renderIcon(LucideIcons['CheckCircle'], "w-6 h-6 text-green-600")
                         ) : (
-                          <span className="text-gray-600 font-semibold">{index + 1}</span>
+                          <span className="text-ink-muted font-semibold">{index + 1}</span>
                         )}
                       </div>
 
                       <div className="flex-1">
-                        <h3 className="text-lg font-semibold text-gray-800">{t(lesson.titleKey)}</h3>
-                        <p className="text-gray-600 mb-2">{t(lesson.descriptionKey)}</p>
-                        <div className="flex items-center space-x-4 text-sm text-gray-500">
+                        <h3 className="text-lg font-display font-bold text-ink">{t(lesson.titleKey)}</h3>
+                        <p className="text-ink-muted mb-2">{t(lesson.descriptionKey)}</p>
+                        <div className="flex items-center space-x-4 text-sm text-ink-muted/70">
                           <div className="flex items-center space-x-1">
                             {renderIcon(LucideIcons['Clock'], "w-4 h-4")}
                             <span>{t('learningPage.moduleTimeLabel')}{lesson.estimatedTime}</span>
@@ -368,7 +368,7 @@ const LearningCenterPage: React.FC = () => {
                             updateUserData({ learningProgress: newProgress });
                           }
                         }}
-                        className={`p-2 rounded-full transition-colors ${isBookmarked ? 'text-yellow-600 bg-yellow-100' : 'text-gray-400 hover:text-gray-600'
+                        className={`p-2 rounded-full transition-colors ${isBookmarked ? 'text-yellow-600 bg-yellow-100' : 'text-ink-muted/50 hover:text-ink-muted'
                           }`}
                         title={isBookmarked ? t('courseView.removeBookmark') : t('courseView.addBookmark')}
                       >
@@ -395,8 +395,8 @@ const LearningCenterPage: React.FC = () => {
           {progressPercentage === 100 && (
             <div className="card p-8 text-center bg-gradient-to-r from-green-50 to-blue-50 border-green-200">
               {renderIcon(LucideIcons['Award'], "w-16 h-16 text-green-600 mx-auto mb-4")}
-              <h2 className="text-2xl font-bold text-gray-800 mb-2">{t('courseView.congratulations')}</h2>
-              <p className="text-gray-600 mb-4">{t('courseView.courseComplete', { courseTitle: t(selectedPath.titleKey) })}</p>
+              <h2 className="text-2xl font-display font-bold text-ink mb-2">{t('courseView.congratulations')}</h2>
+              <p className="text-ink-muted mb-4">{t('courseView.courseComplete', { courseTitle: t(selectedPath.titleKey) })}</p>
               <button className="btn-primary">
                 {renderIcon(LucideIcons['Download'], "w-4 h-4 mr-2")}
                 {t('courseView.downloadCertificate')}
@@ -411,7 +411,7 @@ const LearningCenterPage: React.FC = () => {
   // Main overview
   if (currentView === 'overview') {
     return (
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-canvas">
         {showAssessmentModal && !userLoading && (
           <SkillAssessmentModal
             isOpen={showAssessmentModal}
@@ -441,18 +441,18 @@ const LearningCenterPage: React.FC = () => {
             onComplete={handleSubmitAssessment}
           />
         )}
-        <header className="bg-white border-b border-gray-200 sticky top-0 z-30">
+        <header className="bg-surface/90 backdrop-blur-md border-b border-hairline sticky top-0 z-30">
           <div className="container mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-4">
                 <Link
                   to="/dashboard"
-                  className="p-2 text-gray-600 hover:text-gray-800 rounded-full hover:bg-gray-100 transition-colors"
+                  className="p-2 text-ink-muted hover:text-ink rounded-full hover:bg-subtle transition-colors focus-ring"
                 >
                   {renderIcon(LucideIcons['ArrowLeft'], "w-5 h-5")}
                 </Link>
                 <Logo size="sm" />
-                <h1 className="text-xl font-semibold text-gray-800">{t('learningPage.headerTitle')}</h1>
+                <h1 className="text-xl font-display font-bold text-ink">{t('learningPage.headerTitle')}</h1>
               </div>
             </div>
           </div>
@@ -464,10 +464,10 @@ const LearningCenterPage: React.FC = () => {
             <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-6">
               {renderIcon(LucideIcons['BookOpen'], "w-7 h-7 sm:w-10 sm:h-10 text-white")}
             </div>
-            <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-2 sm:mb-4">
+            <h2 className="text-xl sm:text-3xl md:text-4xl font-display font-bold text-ink mb-2 sm:mb-4">
               {t('learningPage.heroTitle')}
             </h2>
-            <p className="text-sm sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-4 sm:mb-8">
+            <p className="text-sm sm:text-lg md:text-xl text-ink-muted max-w-3xl mx-auto mb-4 sm:mb-8">
               {t('learningPage.heroSubtitle')}
             </p>
             {userData && userData.skillAssessmentResult && (
@@ -484,30 +484,30 @@ const LearningCenterPage: React.FC = () => {
           <div className="mb-8 sm:mb-12 flex flex-col items-center justify-center">
             <div className="card w-full max-w-md mx-auto p-4 sm:p-6 flex flex-col items-center">
               <div className="flex items-center space-x-2 mb-2">
-                {renderIcon(LucideIcons['Camera'], 'w-6 h-6 text-blue-600')}
-                <h3 className="font-semibold text-gray-800 text-base sm:text-lg">{t('learningPage.photoExplainer.title')}</h3>
+                {renderIcon(LucideIcons['Camera'], 'w-6 h-6 text-brand')}
+                <h3 className="font-display font-bold text-ink text-base sm:text-lg">{t('learningPage.photoExplainer.title')}</h3>
               </div>
-              <p className="text-xs sm:text-sm text-gray-600 mb-3 text-center">{t('learningPage.photoExplainer.description')}</p>
+              <p className="text-xs sm:text-sm text-ink-muted mb-3 text-center">{t('learningPage.photoExplainer.description')}</p>
               <div className="flex flex-col sm:flex-row gap-2 w-full justify-center">
                 <input
                   type="file"
                   accept="image/*"
                   capture="environment"
-                  className="block w-full sm:w-auto text-sm text-gray-700 border border-gray-300 rounded-lg p-2 mb-2 sm:mb-0"
+                  className="block w-full sm:w-auto text-sm text-ink-muted border border-hairline rounded-lg p-2 mb-2 sm:mb-0"
                   onChange={e => handlePhotoChange(e)}
                   style={{ maxWidth: '180px' }}
                 />
                 <input
                   type="file"
                   accept="image/*"
-                  className="block w-full sm:w-auto text-sm text-gray-700 border border-gray-300 rounded-lg p-2"
+                  className="block w-full sm:w-auto text-sm text-ink-muted border border-hairline rounded-lg p-2"
                   onChange={e => handlePhotoChange(e)}
                   style={{ maxWidth: '180px' }}
                 />
               </div>
               {photoPreview && (
                 <div className="mt-4 w-full flex flex-col items-center">
-                  <img src={photoPreview} alt="Preview" className="rounded-lg border border-gray-300 max-h-48 object-contain" />
+                  <img src={photoPreview} alt="Preview" className="rounded-lg border border-hairline max-h-48 object-contain" />
                   <button className="btn-primary mt-2 w-full" onClick={handleExplainPhoto}>{t('learningPage.photoExplainer.button')}</button>
                 </div>
               )}
@@ -518,13 +518,13 @@ const LearningCenterPage: React.FC = () => {
           {isLoadingPaths && (
             <div className="text-center py-10">
               <div className="w-10 h-10 sm:w-12 sm:h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto"></div>
-              <p className="mt-3 sm:mt-4 text-gray-600 text-sm sm:text-base">{t('learningPage.loadingPaths')}</p>
+              <p className="mt-3 sm:mt-4 text-ink-muted text-sm sm:text-base">{t('learningPage.loadingPaths')}</p>
             </div>
           )}
 
           {!isLoadingPaths && learningPaths.length === 0 && (
             <div className="text-center py-10">
-              <p className="text-gray-600 text-lg sm:text-xl">{t('learningPage.noPathsAvailable')}</p>
+              <p className="text-ink-muted text-lg sm:text-xl">{t('learningPage.noPathsAvailable')}</p>
             </div>
           )}
 
@@ -548,23 +548,23 @@ const LearningCenterPage: React.FC = () => {
                     setCurrentView('pathDetail');
                   }}
                 >
-                  <div className={`w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6`}>
-                    {renderIcon(IconComponent, 'w-6 h-6 sm:w-8 sm:h-8 text-blue-600')}
+                  <div className={`w-12 h-12 sm:w-16 sm:h-16 bg-brand-soft rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6`}>
+                    {renderIcon(IconComponent, 'w-6 h-6 sm:w-8 sm:h-8 text-brand')}
                   </div>
 
-                  <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2 text-center">{t(path.titleKey)}</h3>
-                  <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm text-center h-10 sm:h-12 overflow-hidden">
+                  <h3 className="text-lg sm:text-xl font-display font-bold text-ink mb-2 text-center">{t(path.titleKey)}</h3>
+                  <p className="text-ink-muted mb-3 sm:mb-4 text-xs sm:text-sm text-center h-10 sm:h-12 overflow-hidden">
                     {t(path.descriptionKey)}
                   </p>
 
-                  <div className="w-full bg-gray-200 rounded-full h-2 sm:h-2.5 mb-1 sm:mb-2">
+                  <div className="w-full bg-subtle rounded-full h-2 sm:h-2.5 mb-1 sm:mb-2">
                     <div
-                      className="bg-blue-600 h-2 sm:h-2.5 rounded-full"
+                      className="bg-brand h-2 sm:h-2.5 rounded-full"
                       style={{ width: `${progressPercent}%` }}
                     ></div>
                   </div>
                   <div className="flex justify-between items-center text-xs sm:text-sm">
-                    <p className="text-gray-500">{t('learningPage.progressComplete', { value: Math.round(progressPercent) })}</p>
+                    <p className="text-ink-muted/70">{t('learningPage.progressComplete', { value: Math.round(progressPercent) })}</p>
                     {isPathBadgeEarned && (
                       <div title={t(getBadgeById(path.badgeIdOnCompletion)?.nameKey || '')} className="text-yellow-500">
                         {renderIcon(LucideIcons['Award'], "w-3 h-3 sm:w-4 sm:h-4")}
@@ -586,8 +586,8 @@ const LearningCenterPage: React.FC = () => {
           </div>
 
           {/* Features Section */}
-          <div className="text-center mb-8 sm:mb-12 pt-8 sm:pt-12 border-t border-gray-200">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-3 sm:mb-4">{t('learningPage.featuresGridTitle')}</h2>
+          <div className="text-center mb-8 sm:mb-12 pt-8 sm:pt-12 border-t border-hairline">
+            <h2 className="text-2xl sm:text-3xl font-display font-bold text-ink mb-3 sm:mb-4">{t('learningPage.featuresGridTitle')}</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
             {[
@@ -599,11 +599,11 @@ const LearningCenterPage: React.FC = () => {
               const FeatureIcon = LucideIcons[feature.iconName as keyof typeof LucideIcons];
               return (
                 <div key={index} className="text-center p-4 sm:p-6">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                    {renderIcon(FeatureIcon, "w-5 h-5 sm:w-6 sm:h-6 text-blue-600")}
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-brand-soft rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                    {renderIcon(FeatureIcon, "w-5 h-5 sm:w-6 sm:h-6 text-brand")}
                   </div>
-                  <h3 className="font-semibold text-gray-800 mb-1 sm:mb-2 text-sm sm:text-base">{t(feature.titleKey)}</h3>
-                  <p className="text-xs sm:text-sm text-gray-600">{t(feature.descriptionKey)}</p>
+                  <h3 className="font-display font-bold text-ink mb-1 sm:mb-2 text-sm sm:text-base">{t(feature.titleKey)}</h3>
+                  <p className="text-xs sm:text-sm text-ink-muted">{t(feature.descriptionKey)}</p>
                 </div>
               );
             })}
@@ -618,13 +618,13 @@ const LearningCenterPage: React.FC = () => {
     // Add a button to start/continue the course
     return (
       <div>
-        <header className="bg-white border-b border-gray-200 sticky top-0 z-30">
+        <header className="bg-surface/90 backdrop-blur-md border-b border-hairline sticky top-0 z-30">
           <div className="container mx-auto px-4 sm:px-6 py-4 flex items-center space-x-3 sm:space-x-4">
-            <button onClick={() => setCurrentView('overview')} className="p-2 text-gray-600 hover:text-gray-800 rounded-full hover:bg-gray-100">
+            <button onClick={() => setCurrentView('overview')} className="p-2 text-ink-muted hover:text-ink rounded-full hover:bg-subtle focus-ring">
               {renderIcon(LucideIcons['ArrowLeft'], "w-5 h-5")}
             </button>
             <Logo size="sm" />
-            <h1 className="text-lg sm:text-xl font-semibold text-gray-800">{t(selectedPath.titleKey)}</h1>
+            <h1 className="text-lg sm:text-xl font-display font-bold text-ink">{t(selectedPath.titleKey)}</h1>
           </div>
         </header>
         <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-8">
@@ -634,8 +634,8 @@ const LearningCenterPage: React.FC = () => {
             {(selectedPath.modules as Module[]).map(module => (
               <div key={module.id} className="card p-3 sm:p-4">
                 <h3 className="text-base sm:text-lg font-semibold">{t(module.titleKey)}</h3>
-                <p className="text-xs sm:text-sm text-gray-600">{t(module.descriptionKey)}</p>
-                <p className="text-xs text-gray-500 mt-1">{t('learningPage.moduleTimeLabel')}{module.estimatedTime}</p>
+                <p className="text-xs sm:text-sm text-ink-muted">{t(module.descriptionKey)}</p>
+                <p className="text-xs text-ink-muted/70 mt-1">{t('learningPage.moduleTimeLabel')}{module.estimatedTime}</p>
               </div>
             ))}
           </div>
@@ -664,7 +664,7 @@ const LearningCenterPage: React.FC = () => {
       setCurrentLessonId(lessonId);
     }
     if (!lessonId) {
-      return <div className="p-8 text-center text-gray-500">{t('learningPage.noLessonAvailable')}</div>;
+      return <div className="p-8 text-center text-ink-muted/70">{t('learningPage.noLessonAvailable')}</div>;
     }
     const lessonIndex = (selectedPath.modules as Module[]).findIndex(m => m.id === lessonId);
     const lesson = (selectedPath.modules as Module[])[lessonIndex];
@@ -674,20 +674,20 @@ const LearningCenterPage: React.FC = () => {
     // --- Render real content if available ---
     return (
       <div>
-        <header className="bg-white border-b border-gray-200 sticky top-0 z-30">
+        <header className="bg-surface/90 backdrop-blur-md border-b border-hairline sticky top-0 z-30">
           <div className="container mx-auto px-4 sm:px-6 py-4 flex items-center space-x-3 sm:space-x-4">
-            <button onClick={() => setCurrentView('course')} className="p-2 text-gray-600 hover:text-gray-800 rounded-full hover:bg-gray-100">
+            <button onClick={() => setCurrentView('course')} className="p-2 text-ink-muted hover:text-ink rounded-full hover:bg-subtle focus-ring">
               {renderIcon(LucideIcons['ArrowLeft'], "w-5 h-5")}
             </button>
             <Logo size="sm" />
-            <h1 className="text-lg sm:text-xl font-semibold text-gray-800">{t(selectedPath.titleKey)}</h1>
+            <h1 className="text-lg sm:text-xl font-display font-bold text-ink">{t(selectedPath.titleKey)}</h1>
           </div>
         </header>
         <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-8 max-w-2xl">
           <h2 className="text-2xl font-bold mb-4">{t(lesson.titleKey)}</h2>
-          <p className="mb-6 text-gray-700">{t(lesson.descriptionKey)}</p>
+          <p className="mb-6 text-ink-muted">{t(lesson.descriptionKey)}</p>
           {/* Render real lesson content if available */}
-          <div className="mb-8 p-4 bg-gray-50 rounded border border-gray-200">
+          <div className="mb-8 p-4 bg-subtle rounded-xl border border-hairline">
             {lesson.content ? (
               <div>
                 {/* Example: allow HTML or JSX for rich content */}
@@ -731,7 +731,7 @@ const LearningCenterPage: React.FC = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <p className="text-gray-600">{t('learningPage.loadingCenter')}</p>
+      <p className="text-ink-muted">{t('learningPage.loadingCenter')}</p>
     </div>
   );
 };

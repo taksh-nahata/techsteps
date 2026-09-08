@@ -4,11 +4,18 @@ import { motion } from 'framer-motion';
 import {
   ArrowLeft,
   MessageSquare,
+  MessagesSquare,
   Plus,
   Search,
   ThumbsUp,
   Clock,
   X,
+  LayoutGrid,
+  Smartphone,
+  Monitor,
+  Puzzle,
+  Globe,
+  ShieldCheck,
 } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import Logo from '../components/layout/Logo';
@@ -67,13 +74,13 @@ const Community: React.FC = () => {
   }, [posts]);
 
   const categories = [
-    { id: 'all', name: t('community.sidebar.topics.all', 'All topics'), icon: '📋' },
-    { id: 'general', name: t('community.sidebar.topics.general', 'General'), icon: '💬' },
-    { id: 'mobile', name: t('community.sidebar.topics.mobile', 'Phones & tablets'), icon: '📱' },
-    { id: 'computer', name: t('community.sidebar.topics.computer', 'Computers'), icon: '💻' },
-    { id: 'apps', name: t('community.sidebar.topics.apps', 'Apps'), icon: '🧩' },
-    { id: 'internet', name: t('community.sidebar.topics.internet', 'Internet'), icon: '🌐' },
-    { id: 'safety', name: t('community.sidebar.topics.safety', 'Safety'), icon: '🔒' },
+    { id: 'all', name: t('community.sidebar.topics.all', 'All topics'), icon: LayoutGrid },
+    { id: 'general', name: t('community.sidebar.topics.general', 'General'), icon: MessagesSquare },
+    { id: 'mobile', name: t('community.sidebar.topics.mobile', 'Phones & tablets'), icon: Smartphone },
+    { id: 'computer', name: t('community.sidebar.topics.computer', 'Computers'), icon: Monitor },
+    { id: 'apps', name: t('community.sidebar.topics.apps', 'Apps'), icon: Puzzle },
+    { id: 'internet', name: t('community.sidebar.topics.internet', 'Internet'), icon: Globe },
+    { id: 'safety', name: t('community.sidebar.topics.safety', 'Safety'), icon: ShieldCheck },
   ];
 
   const handleNewPost = (e: React.FormEvent) => {
@@ -168,13 +175,13 @@ const Community: React.FC = () => {
                     key={cat.id}
                     type="button"
                     onClick={() => setSelectedCategory(cat.id)}
-                    className={`text-left px-3 py-2 rounded-xl text-sm font-medium transition-colors focus-ring ${
+                    className={`flex items-center text-left px-3 py-2 rounded-xl text-sm font-medium transition-colors focus-ring ${
                       selectedCategory === cat.id
                         ? 'bg-brand-soft text-brand'
                         : 'text-ink-muted hover:bg-subtle hover:text-ink'
                     }`}
                   >
-                    <span className="mr-2">{cat.icon}</span>
+                    <cat.icon className="mr-2.5 h-4 w-4 shrink-0" strokeWidth={1.75} />
                     {cat.name}
                   </button>
                 ))}

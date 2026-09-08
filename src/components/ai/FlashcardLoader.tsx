@@ -58,7 +58,7 @@ const FlashcardLoader: React.FC<FlashcardLoaderProps> = ({
                                         key={index}
                                         className="w-10 h-10 rounded-xl"
                                         style={{
-                                            background: 'linear-gradient(135deg, #c2502e 0%, #d98a2b 50%, #f4e5dc 100%)',
+                                            background: 'linear-gradient(135deg, #2f2963 0%, #429ea6 50%, #e3e1f0 100%)',
                                             boxShadow: 'var(--shadow-micro)',
                                         }}
                                         initial={{ opacity: 0, scale: 0.2, rotate: -10 }}
@@ -71,9 +71,9 @@ const FlashcardLoader: React.FC<FlashcardLoaderProps> = ({
                                             scale: [0.85, 1, 0.85],
                                             rotate: 0,
                                             background: [
-                                                'linear-gradient(135deg, #c2502e 0%, #d98a2b 50%, #f4e5dc 100%)',
-                                                'linear-gradient(135deg, #9f3d20 0%, #c2502e 50%, #d98a2b 100%)',
-                                                'linear-gradient(135deg, #c2502e 0%, #d98a2b 50%, #f4e5dc 100%)',
+                                                'linear-gradient(135deg, #2f2963 0%, #429ea6 50%, #e3e1f0 100%)',
+                                                'linear-gradient(135deg, #201c47 0%, #2f2963 50%, #429ea6 100%)',
+                                                'linear-gradient(135deg, #2f2963 0%, #429ea6 50%, #e3e1f0 100%)',
                                             ],
                                         }}
                                         transition={prefersReducedMotion ? {

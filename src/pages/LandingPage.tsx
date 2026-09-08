@@ -271,7 +271,7 @@ const LandingPage: React.FC = () => {
                       <div className="flex h-11 w-11 items-center justify-center rounded-full border border-hairline">
                         <Icon
                           className="h-5 w-5"
-                          style={{ color: index % 2 === 0 ? '#c2502e' : '#2e6a63' }}
+                          style={{ color: index % 2 === 0 ? '#2f2963' : '#429ea6' }}
                           strokeWidth={1.5}
                         />
                       </div>
@@ -377,7 +377,7 @@ const LandingPage: React.FC = () => {
             className="pointer-events-none absolute inset-0"
             style={{
               background:
-                'radial-gradient(ellipse 80% 60% at 50% 100%, rgba(194,80,46,0.22) 0%, transparent 70%)',
+                'radial-gradient(ellipse 80% 60% at 50% 100%, rgba(47,41,99,0.3) 0%, transparent 70%)',
             }}
           />
           <motion.div

@@ -13,9 +13,9 @@ export default {
     extend: {
       // Font family configuration
       fontFamily: {
-        'sans': ['Inter', 'Geist', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-        'display': ['Plus Jakarta Sans', 'Geist', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-        'body': ['Inter', 'Geist', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        'sans': ['Source Sans 3', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+        'display': ['Bricolage Grotesque', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        'body': ['Source Sans 3', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
       // Senior-friendly design tokens
       colors: {

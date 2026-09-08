@@ -21,7 +21,9 @@ export const DEFAULT_GEMINI_CONFIG = {
 
 export const GROQ_CONFIG = {
   apiKey: import.meta.env.VITE_GROQ_API_KEY || '',
-  model: 'llama-3.3-70b-versatile',
+  // llama-3.3-70b-versatile returns 404 model_not_found on this account as of 2026 —
+  // switched to Groq's recommended high-quality replacement.
+  model: 'openai/gpt-oss-120b',
   maxTokens: 2048,
   temperature: 0.6,
 };

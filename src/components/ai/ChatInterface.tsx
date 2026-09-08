@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { ArrowUp, Volume2, Paperclip, X, File as FileIcon } from 'lucide-react';
+import { ArrowUp, Volume2, Paperclip, X, File as FileIcon, AlertCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import MarkdownRenderer from './MarkdownRenderer';
 import TechyMark from '../layout/TechyMark';
@@ -222,10 +222,18 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
                     max-w-[90%] md:max-w-[82%] rounded-[20px] px-4 py-3 md:px-6 md:py-4 text-base md:text-lg leading-relaxed relative group transition-colors duration-200
                     ${message.sender === 'user'
                       ? 'bg-brand text-white rounded-br-md shadow-senior'
-                      : 'bg-surface text-ink rounded-bl-md border border-hairline shadow-micro'
+                      : message.isError
+                        ? 'bg-[#f9ebe6] text-[#7a2e18] rounded-bl-md border border-[#e8c4b8]'
+                        : 'bg-surface text-ink rounded-bl-md border border-hairline shadow-micro'
                     }
                   `}
                 >
+                  {message.isError && (
+                    <div className="mb-2 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-[#b23a1c]">
+                      <AlertCircle className="h-3.5 w-3.5" />
+                      {t('chat.answerFailedLabel', "Didn't go through")}
+                    </div>
+                  )}
                   <MarkdownRenderer content={showOriginal ? message.content : (translationMap[message.id] ?? message.content)} />
 
                   {message.sender === 'ai' && generatingGuideMessageId === message.id && (

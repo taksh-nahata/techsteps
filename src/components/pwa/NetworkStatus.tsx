@@ -9,10 +9,10 @@ export function NetworkStatus() {
   if (isOnline && !isSyncing) return null;
 
   return (
-    <div className={`fixed top-4 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded-full shadow-lg z-50 flex items-center gap-2 text-sm font-medium ${
-      isOnline 
-        ? 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200'
-        : 'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200'
+    <div className={`fixed top-4 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded-full shadow-senior z-50 flex items-center gap-2 text-sm font-medium ${
+      isOnline
+        ? 'bg-brand-soft text-brand-strong'
+        : 'bg-[#fdf6e8] text-[#8a6316]'
     }`}>
       {isSyncing ? (
         <>

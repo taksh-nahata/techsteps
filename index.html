@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="TechSteps">
-    <meta name="theme-color" content="#f1eee7">
+    <meta name="theme-color" content="#eaf9d9">
     <title>TechStep - Technology made simple, one step at a time</title>
     <meta name="description" content="Clear, step-by-step tech guidance for any device. Get confident answers in plain language — at your pace.">
     <meta name="keywords" content="tech help, step-by-step tutorials, smartphone help, computer basics, plain language tech support, digital literacy">
@@ -41,9 +42,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- Preload critical resources: Plus Jakarta Sans (display) + Inter (body) -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+    <!-- Preload critical resources: Bricolage Grotesque (display) + Source Sans 3 (body) -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Source+Sans+3:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Source+Sans+3:wght@400;500;600;700&display=swap"></noscript>
     
     <!-- DNS prefetch for external resources -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -54,13 +55,13 @@
     <style>
       /* Critical above-the-fold — matches AppLoader editorial tokens */
       :root {
-        --bg-canvas: #f1eee7;
-        --text-primary: #1a1712;
-        --brand-accent: #c2502e;
-        --brand-accent-soft: #f4e5dc;
-        --border-subtle: #e4decf;
-        --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-        --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        --bg-canvas: #eaf9d9;
+        --text-primary: #191735;
+        --brand-accent: #2f2963;
+        --brand-accent-soft: #e3e1f0;
+        --border-subtle: #d2e6c0;
+        --font-display: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
       }
       body { margin: 0; font-family: var(--font-body); background-color: var(--bg-canvas); color: var(--text-primary); }
       #root { min-height: 100vh; }
@@ -84,19 +85,11 @@
         gap: 0.625rem;
       }
       .app-loader-static__mark {
-        width: 3rem;
-        height: 3rem;
-        border-radius: 10px;
-        background: var(--brand-accent);
+        width: 2.6rem;
+        height: 2.6rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #fff;
-        font-family: var(--font-display);
-        font-weight: 800;
-        font-size: 1.125rem;
-        line-height: 1;
-        box-shadow: 0 1px 2px rgba(26, 23, 18, 0.05), 0 10px 30px -12px rgba(26, 23, 18, 0.10);
       }
       .app-loader-static__wordmark {
         font-family: var(--font-display);
@@ -163,7 +156,14 @@
       <div class="app-loader-static" role="status" aria-live="polite" aria-label="Loading TechSteps">
         <div class="app-loader-static__inner">
           <div class="app-loader-static__brand">
-            <div class="app-loader-static__mark" aria-hidden="true">T</div>
+            <div class="app-loader-static__mark" aria-hidden="true">
+              <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="21" width="6" height="8" rx="1.8" fill="#429ea6"/>
+                <rect x="10" y="15" width="6" height="14" rx="1.8" fill="#429ea6"/>
+                <rect x="16" y="9" width="6" height="20" rx="1.8" fill="#2f2963"/>
+                <rect x="22" y="3" width="6" height="26" rx="1.8" fill="#2f2963"/>
+              </svg>
+            </div>
             <span class="app-loader-static__wordmark">TECHSTEPS</span>
           </div>
           <div class="app-loader-static__progress-wrap" aria-hidden="true">

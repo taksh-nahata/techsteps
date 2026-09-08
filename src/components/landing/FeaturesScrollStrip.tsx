@@ -46,7 +46,7 @@ const FeaturesScrollStrip: React.FC = () => {
             <figcaption className="mt-auto flex items-center gap-3 pt-2 border-t border-hairline">
               <span
                 className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full font-display text-sm font-bold text-white"
-                style={{ backgroundColor: i % 2 === 0 ? '#c2502e' : '#2e6a63' }}
+                style={{ backgroundColor: i % 2 === 0 ? '#2f2963' : '#429ea6' }}
               >
                 {person.avatar}
               </span>
