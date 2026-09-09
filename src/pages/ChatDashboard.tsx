@@ -3,9 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { useUser } from '../contexts/UserContext';
 import { useAuth } from '../contexts/AuthContext';
 import { FlashcardStep, ConversationContext } from '../types/services';
-import { TroubleshootingGuide, GuideStep } from '../types/guides';
 import { Settings, BookOpen } from 'lucide-react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { LogOut } from 'lucide-react';
 import Logo from '../components/layout/Logo';
 import ChatInterface from '../components/ai/ChatInterface';
@@ -18,11 +17,11 @@ import { MemoryService, Message } from '../services/MemoryService';
 import { LocalStorageService, Conversation } from '../services/LocalStorageService';
 import { StorageService } from '../services/StorageService';
 import { MistralService } from '../services/ai';
-import { resolveFlashcardStepsForDevice, hasDeviceVariants } from '../services/guideUtils';
+import { resolveFlashcardStepsForDevice, hasDeviceVariants, persistGeneratedGuide } from '../services/guideUtils';
 import { GuideDeviceType } from '../utils/deviceDetection';
 import { useUserDevice } from '../hooks/useUserDevice';
-import { sanitizeFlashcardSteps } from '../services/FlashcardImageService';
 import { GuideStorageService } from '../services/GuideStorageService';
+import { sanitizeFlashcardSteps } from '../services/FlashcardImageService';
 import { GoogleSpeechToTextService } from '../services/GoogleSpeechToTextService';
 import ChatHistorySidebar from '../components/ai/ChatHistorySidebar';
 
@@ -31,6 +30,7 @@ const ChatDashboardContent: React.FC = () => {
   const { userData } = useUser();
   const { user, logout } = useAuth();
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
   const { state: avatarState, setEmotion, setListening, setSpeaking, setThinking, setMessage } = useAvatar();
 
   const [messages, setMessages] = useState<Message[]>([]);
@@ -219,6 +219,22 @@ const ChatDashboardContent: React.FC = () => {
     setShowFlashcards(true);
   };
 
+  // Hand-off from the voice-first home screen ("See the full steps" link):
+  // it persists a guide via the same persistGeneratedGuide() helper this page
+  // uses, then links here with ?openGuide=<id> so the existing guide-open path
+  // just picks it up — no separate flashcard-rendering code needed there.
+  useEffect(() => {
+    const guideId = searchParams.get('openGuide');
+    if (!guideId || !user) return;
+    handleOpenGuide(guideId);
+    setSearchParams((prev) => {
+      const next = new URLSearchParams(prev);
+      next.delete('openGuide');
+      return next;
+    }, { replace: true });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParams, user]);
+
   const deleteConversation = (id: string) => {
     const userId = user?.uid || 'guest';
     const filtered = conversations.filter(c => c.id !== id);
@@ -326,28 +342,26 @@ const ChatDashboardContent: React.FC = () => {
       if (mistralResponse.flashcards && mistralResponse.flashcards.length > 0) {
         setIsGeneratingFlashcards(true);
         setGeneratingGuideMessageId(aiMessageId);
-        const rawSteps = mistralResponse.flashcards as FlashcardStep[];
-        let cleaned = rawSteps;
+        let guideId: string, guideTitle: string, cleaned: FlashcardStep[];
         try {
-          cleaned = await sanitizeFlashcardSteps(rawSteps);
-        } catch (imgErr) {
-          console.warn('Flashcard sanitize failed, using text-only steps:', imgErr);
+          const rawSteps = mistralResponse.flashcards as FlashcardStep[];
+          let sanitized = rawSteps;
+          try {
+            sanitized = await sanitizeFlashcardSteps(rawSteps);
+          } catch (imgErr) {
+            console.warn('Flashcard sanitize failed, using text-only steps:', imgErr);
+          }
+          ({ guideId, guideTitle, steps: cleaned } = await persistGeneratedGuide(
+            userId,
+            messageContent,
+            aiMessageId,
+            mistralResponse,
+            sanitized
+          ));
         } finally {
           setIsGeneratingFlashcards(false);
           setGeneratingGuideMessageId(null);
         }
-
-        const guideId = `guide-${Date.now()}`;
-        const guideTitle =
-          messageContent.slice(0, 60) + (messageContent.length > 60 ? '…' : '') || 'Step-by-step guide';
-
-        GuideStorageService.save(userId, {
-          id: guideId,
-          messageId: aiMessageId,
-          title: guideTitle,
-          steps: cleaned,
-          createdAt: new Date().toISOString(),
-        });
 
         const withGuide: Message = {
           ...aiMessage,
@@ -357,39 +371,6 @@ const ChatDashboardContent: React.FC = () => {
         };
         setMessages((prev) => prev.map((m) => (m.id === aiMessageId ? withGuide : m)));
         await MemoryService.saveMessage(userId, withGuide);
-
-        // ========== NEW: Save to Pending Review Workflow ==========
-        // Only save if it's a fresh generation (not from cache)
-        if (mistralResponse.metadata?.model !== 'cached-guide') {
-          console.log('🤖 New AI generation detected. Saving to pending review...');
-          const newGuide: TroubleshootingGuide = {
-            id: `ai-${Date.now()}`,
-            title: messageContent.slice(0, 50) + (messageContent.length > 50 ? '...' : ''),
-            problemDescription: mistralResponse.content.slice(0, 200) + (mistralResponse.content.length > 200 ? '...' : ''),
-            keywords: messageContent.toLowerCase().split(/\W+/).filter(w => w.length > 3),
-            category: 'ai-chat',
-            steps: mistralResponse.flashcards.map((f: any) => {
-              const step: GuideStep = {
-                id: f.id || `step-${Date.now()}`,
-                title: f.title || '',
-                content: f.content || '',
-              };
-              if (f.image) step.image = f.image;
-              if (f.imageCaption) step.imageCaption = f.imageCaption;
-              if (f.annotations?.length) step.annotations = f.annotations;
-              return step;
-            }),
-            meta: {
-              created: new Date().toISOString(),
-              updated: new Date().toISOString(),
-              source: 'ai-chat',
-              originalQuery: messageContent,
-              confidenceScore: mistralResponse.confidence || 0.8,
-              difficulty: 'Medium'
-            }
-          };
-          await MemoryService.savePendingGuide(newGuide);
-        }
       }
 
       // Auto TTS disabled for now — voice will be reworked separately

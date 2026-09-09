@@ -1,10 +1,12 @@
 import { GuideStep, TroubleshootingGuide } from '../types/guides';
-import { FlashcardStep } from '../types/services';
+import { AIResponse, FlashcardStep } from '../types/services';
 import {
   getDirectionsForDevice,
   GuideDeviceType,
   GUIDE_DEVICE_TYPES,
 } from '../utils/deviceDetection';
+import { GuideStorageService } from './GuideStorageService';
+import { MemoryService } from './MemoryService';
 
 export const GUIDE_CATEGORIES = [
   'wifi',
@@ -179,6 +181,78 @@ export function hasDeviceVariants(steps: FlashcardStep[]): boolean {
     const populated = Object.entries(byDevice).filter(([key, lines]) => key !== 'all' && (lines?.length ?? 0) > 0);
     return populated.length > 0;
   });
+}
+
+export interface PersistedGuideResult {
+  guideId: string;
+  guideTitle: string;
+  steps: FlashcardStep[];
+}
+
+/**
+ * Persists an AI-generated step-by-step guide: saves it to GuideStorageService
+ * (so it can be reopened later via its guideId) and enters it into the
+ * pending-review workflow unless it came from the cached guide-matching fast
+ * path. Extracted from ChatDashboard's handleSendMessage so a guide generated
+ * from a different entry point (e.g. the voice-first home screen) is
+ * persisted identically instead of duplicating this logic.
+ *
+ * Takes already-sanitized `steps` (run them through sanitizeFlashcardSteps()
+ * from FlashcardImageService yourself first) rather than importing that
+ * service here — FlashcardImageService pulls in ImageLibraryService, which
+ * pulls in GuideLibraryService, which itself imports this file to reuse
+ * normalizeGuide(); importing FlashcardImageService from here would close
+ * that into a circular import.
+ */
+export async function persistGeneratedGuide(
+  userId: string,
+  messageContent: string,
+  aiMessageId: string,
+  response: AIResponse,
+  steps: FlashcardStep[]
+): Promise<PersistedGuideResult> {
+  const cleaned = steps;
+
+  const guideId = `guide-${Date.now()}`;
+  const guideTitle =
+    messageContent.slice(0, 60) + (messageContent.length > 60 ? '…' : '') || 'Step-by-step guide';
+
+  GuideStorageService.save(userId, {
+    id: guideId,
+    messageId: aiMessageId,
+    title: guideTitle,
+    steps: cleaned,
+    createdAt: new Date().toISOString(),
+  });
+
+  if (response.metadata?.model !== 'cached-guide') {
+    const newGuide: TroubleshootingGuide = {
+      id: `ai-${Date.now()}`,
+      title: messageContent.slice(0, 50) + (messageContent.length > 50 ? '...' : ''),
+      problemDescription:
+        response.content.slice(0, 200) + (response.content.length > 200 ? '...' : ''),
+      keywords: messageContent.toLowerCase().split(/\W+/).filter((w) => w.length > 3),
+      category: 'ai-chat',
+      steps: cleaned.map((f) => {
+        const step: GuideStep = { id: f.id, title: f.title, content: f.content };
+        if (f.image) step.image = f.image;
+        if (f.imageCaption) step.imageCaption = f.imageCaption;
+        if (f.annotations?.length) step.annotations = f.annotations;
+        return step;
+      }),
+      meta: {
+        created: new Date().toISOString(),
+        updated: new Date().toISOString(),
+        source: 'ai-chat',
+        originalQuery: messageContent,
+        confidenceScore: response.confidence || 0.8,
+        difficulty: 'Medium',
+      },
+    };
+    await MemoryService.savePendingGuide(newGuide);
+  }
+
+  return { guideId, guideTitle, steps: cleaned };
 }
 
 /** Update one device’s direction list on a step (preserves empty rows for editing) */

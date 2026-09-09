@@ -12,6 +12,7 @@ import Accessibility from './pages/Accessibility';
 import Community from './pages/Community';
 import LearningCenterPage from './pages/LearningCenterPage';
 import ChatDashboard from './pages/ChatDashboard';
+import VoiceHomePage from './pages/VoiceHomePage';
 import { GuideEditorPage } from './pages/GuideEditorPage';
 
 
@@ -163,6 +164,14 @@ function App() {
                       element={
                         <ProtectedRoute>
                           <ChatDashboard />
+                        </ProtectedRoute>
+                      }
+                    />
+                    <Route
+                      path="/talk"
+                      element={
+                        <ProtectedRoute>
+                          <VoiceHomePage />
                         </ProtectedRoute>
                       }
                     />
