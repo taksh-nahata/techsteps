@@ -26,13 +26,6 @@ body {
   line-height: 1.6;
 }
 
-.gradient-text {
-  background: linear-gradient(105deg, var(--accent-color) 0%, #429ea6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
 .card {
   background-color: var(--bg-surface, #f8fdf0);
   border: 1px solid var(--border-subtle, #d2e6c0);
@@ -94,10 +87,6 @@ body {
   animation: slideUp 0.6s ease-out;
 }
 
-.animate-bounce-gentle {
-  animation: bounceGentle 2s infinite;
-}
-
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -111,18 +100,6 @@ body {
   to { 
     opacity: 1; 
     transform: translateY(0); 
-  }
-}
-
-@keyframes bounceGentle {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
   }
 }
 
@@ -267,11 +244,6 @@ body {
 /* Enhanced testimonial styles */
 .testimonial-active {
   @apply scale-105 shadow-2xl;
-}
-
-/* Progress bar animations */
-.progress-bar {
-  transition: width 0.5s ease-in-out;
 }
 
 /* Icon hover effects */
