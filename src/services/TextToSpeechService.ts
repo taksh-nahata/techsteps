@@ -1,3 +1,5 @@
+import { wouldExceedSafeLimit, recordTTSUsage } from './ttsUsageGuard';
+
 export interface TTSOptions {
   rate?: number;
   pitch?: number;
@@ -176,6 +178,10 @@ class GoogleCloudTTSService implements TTSService {
   private onSpeakEnd?: () => void;
   private onAudioLevel?: (level: number) => void;
   private audioLevelInterval?: NodeJS.Timeout;
+  // Fallback used once this browser's tracked monthly usage nears the free
+  // tier ceiling — see ttsUsageGuard.ts for why this is a soft cap, not a
+  // real billing guarantee.
+  private fallback = new BrowserTTSService();
 
   constructor(apiKey: string) {
     this.apiKey = apiKey;
@@ -189,15 +195,24 @@ class GoogleCloudTTSService implements TTSService {
     this.onSpeakStart = callbacks.onSpeakStart;
     this.onSpeakEnd = callbacks.onSpeakEnd;
     this.onAudioLevel = callbacks.onAudioLevel;
+    this.fallback.setCallbacks(callbacks);
   }
 
   async speak(text: string, options: TTSOptions = {}): Promise<void> {
+    const cleanText = this.cleanText(text);
+
+    // Soft monthly cap, well under the real free-tier ceiling — see
+    // ttsUsageGuard.ts. This keeps a single browser from ever approaching the
+    // limit on its own; it is not a substitute for a Cloud Billing budget
+    // alert, which is the only real guarantee against being charged.
+    if (wouldExceedSafeLimit(cleanText.length)) {
+      console.warn('Google Cloud TTS safe usage cap reached this month — using free browser speech instead.');
+      return this.fallback.speak(text, options);
+    }
+
     try {
       // Stop any current audio
       this.stop();
-
-      // Clean text
-      const cleanText = this.cleanText(text);
 
       // Get the best voice for the language
       const voiceConfig = this.getVoiceForLanguage(options.lang || 'en-US');
@@ -236,6 +251,10 @@ class GoogleCloudTTSService implements TTSService {
         console.error('Google TTS API error response:', errorData);
         throw new Error(`Google TTS API error: ${response.status} ${response.statusText}`);
       }
+
+      // The API bills per synthesize call regardless of playback outcome, so
+      // record usage now rather than after playAudio() below.
+      recordTTSUsage(cleanText.length);
 
       const data = await response.json();
 
