@@ -33,18 +33,19 @@ export default {
           soft: 'var(--brand-accent-soft)',
         },
         hairline: 'var(--border-subtle)',
-        // High contrast color palette with 4.5:1 minimum ratios
+        // Brand indigo scale (anchored on --brand-accent / --brand-accent-strong).
+        // 500 vs white = 12.98:1, 600 vs white = 15.93:1 — both far above WCAG AA.
         primary: {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#1d4ed8', // Darker for better contrast - WCAG AA compliant
-          600: '#1e40af',
-          700: '#1e3a8a',
-          800: '#1e3a8a',
-          900: '#172554',
+          50: '#eeeef3',
+          100: '#dedde6',
+          200: '#bcbbcd',
+          300: '#9794b1',
+          400: '#69658f',
+          500: '#2f2963',
+          600: '#201c47',
+          700: '#181535',
+          800: '#100e24',
+          900: '#090814',
         },
         secondary: {
           50: '#f8fafc',
