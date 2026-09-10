@@ -1,12 +1,13 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useNavigate } from 'react-router-dom';
-import { Mic, Square, Loader2, Settings, LogOut } from 'lucide-react';
+import { Mic, Square, Loader2, Settings, LogOut, ScreenShare } from 'lucide-react';
 import { useUser } from '../contexts/UserContext';
 import { useAuth } from '../contexts/AuthContext';
 import Logo from '../components/layout/Logo';
 import { useUserDevice } from '../hooks/useUserDevice';
 import { useSpeechRecognition } from '../hooks/useSpeechRecognition';
+import { useScreenShareAssist } from '../hooks/useScreenShareAssist';
 import { ttsService } from '../services/TextToSpeechService';
 import { getAIService } from '../services/ai';
 import { ConversationContext } from '../types/services';
@@ -15,6 +16,7 @@ import { persistGeneratedGuide } from '../services/guideUtils';
 import { sanitizeFlashcardSteps } from '../services/FlashcardImageService';
 import { FlashcardStep } from '../types/services';
 import { MarkdownRenderer } from '../components/ai/MarkdownRenderer';
+import ScreenShareOverlay from '../components/screen-assist/ScreenShareOverlay';
 
 type Phase = 'idle' | 'listening' | 'thinking' | 'speaking';
 
@@ -53,6 +55,9 @@ const VoiceHomePage: React.FC = () => {
   );
   const [errorText, setErrorText] = useState<string | null>(null);
   const [guideOffer, setGuideOffer] = useState<{ guideId: string; stepCount: number } | null>(null);
+  const [showShareConsent, setShowShareConsent] = useState(false);
+
+  const screenAssist = useScreenShareAssist();
 
   // Governs whether finishing speaking automatically starts listening again —
   // a ref (not just state) because the TTS promise's `finally` reads it after
@@ -72,6 +77,39 @@ const VoiceHomePage: React.FC = () => {
       setGuideOffer(null);
       setCaption(trimmed);
       setIsThinking(true);
+
+      // While screen-sharing, every question is a "what do I click" moment
+      // about the shared frame, not a general chat turn -- route it to the
+      // vision assist instead of the normal AI call.
+      if (screenAssist.isSharing) {
+        try {
+          const response = await screenAssist.askQuestion(trimmed);
+          setIsThinking(false);
+          if (!response) {
+            // Debounced (asked again within 3s) -- say nothing, keep listening.
+            if (autoContinueRef.current) startListening();
+            return;
+          }
+          setCaption(response.displayText || response.spokenText);
+          try {
+            setIsSpeaking(true);
+            await ttsService.speak(stripForSpeech(response.spokenText), { lang: i18n.language });
+          } catch (speakErr) {
+            console.warn('TTS speak failed:', speakErr);
+          } finally {
+            setIsSpeaking(false);
+            if (autoContinueRef.current) startListening();
+          }
+        } catch (e) {
+          console.error('Screen assist error:', e);
+          setIsThinking(false);
+          setCaption(
+            t('screenAssist.error', "I couldn't look at your screen that time — please try again.")
+          );
+          setErrorText('error');
+        }
+        return;
+      }
 
       const userId = user?.uid || 'guest';
       try {
@@ -139,7 +177,7 @@ const VoiceHomePage: React.FC = () => {
       }
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [user, userData, userDevice, i18n.language, t]
+    [user, userData, userDevice, i18n.language, t, screenAssist.isSharing, screenAssist.askQuestion]
   );
 
   const { isListening, interimTranscript, startListening, stopListening } = useSpeechRecognition({
@@ -251,6 +289,52 @@ const VoiceHomePage: React.FC = () => {
         >
           {t('voiceHome.typeInstead', 'Type instead')}
         </Link>
+
+        {screenAssist.isSharing ? (
+          <ScreenShareOverlay
+            frameUrl={screenAssist.lastFrameUrl}
+            annotation={screenAssist.lastAnnotation}
+            isThinking={isThinking}
+            onStop={screenAssist.stopSharing}
+          />
+        ) : showShareConsent ? (
+          <div className="w-full max-w-md rounded-2xl border border-hairline bg-surface shadow-senior-lg p-5 text-left">
+            <p className="text-base text-ink mb-4">
+              {t(
+                'screenAssist.consent',
+                "TechSteps will look at the window you share, only when you ask, and never saves or records it."
+              )}
+            </p>
+            <div className="flex gap-3 justify-end">
+              <button onClick={() => setShowShareConsent(false)} className="btn-secondary px-4 py-2 text-sm">
+                {t('screenAssist.notNow', 'Not now')}
+              </button>
+              <button
+                onClick={async () => {
+                  setShowShareConsent(false);
+                  try {
+                    await screenAssist.startSharing();
+                  } catch (e) {
+                    console.warn('Screen share was not granted:', e);
+                  }
+                }}
+                className="btn-primary px-4 py-2 text-sm"
+              >
+                {t('screenAssist.shareMyScreen', 'Share my screen')}
+              </button>
+            </div>
+          </div>
+        ) : (
+          screenAssist.isSupported && (
+            <button
+              onClick={() => setShowShareConsent(true)}
+              className="inline-flex items-center gap-2 text-base md:text-lg text-ink-muted hover:text-brand transition-colors focus-ring"
+            >
+              <ScreenShare className="w-5 h-5" />
+              {t('screenAssist.shareMyScreen', 'Share my screen')}
+            </button>
+          )
+        )}
 
         {errorText && (
           <button

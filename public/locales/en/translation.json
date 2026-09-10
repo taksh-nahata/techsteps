@@ -728,6 +728,17 @@
     "seeFullSteps": "See the full {{count}} steps",
     "guideSpokenSummary": "I've put together {{count}} steps for you. Tap below to see them."
   },
+  "screenAssist": {
+    "shareMyScreen": "Share my screen",
+    "notNow": "Not now",
+    "consent": "TechSteps will look at the window you share, only when you ask, and never saves or records it.",
+    "sharing": "Sharing your screen",
+    "looking": "Looking at your screen…",
+    "stopSharing": "Stop Sharing",
+    "emptyState": "Ask what to click and I'll show you here.",
+    "frameAlt": "Last captured frame from your screen",
+    "error": "I couldn't look at your screen that time — please try again."
+  },
   "flashcards": {
     "title": "Step-by-Step Guide",
     "stepByStepGuide": "Step-by-Step Guide",
