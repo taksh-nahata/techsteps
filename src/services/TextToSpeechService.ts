@@ -218,7 +218,13 @@ class GroqTTSService implements TTSService {
         body: JSON.stringify({
           model: 'canopylabs/orpheus-v1-english',
           input: cleanText,
-          voice: 'autumn',
+          // Measured duration for identical text across all 6 voices: Daniel
+          // (3.68s) was fastest, our old default Autumn (4.72s) was near the
+          // slowest — a real, measured reason "sounds slow", not a guess.
+          // Note: the API's own `speed` field is accepted but silently has NO
+          // effect (tested at 0.7/1.0/1.3 -- byte-identical output every
+          // time), so pace is controlled below via audio.playbackRate instead.
+          voice: 'daniel',
           response_format: 'wav',
         }),
       });
@@ -229,17 +235,18 @@ class GroqTTSService implements TTSService {
       }
 
       const blob = await response.blob();
-      await this.playBlob(blob);
+      await this.playBlob(blob, options.rate ?? 1.05);
     } catch (error) {
       console.warn('Groq TTS failed, falling back:', error);
       return this.fallback.speak(text, options);
     }
   }
 
-  private async playBlob(blob: Blob): Promise<void> {
+  private async playBlob(blob: Blob, playbackRate = 1.05): Promise<void> {
     return new Promise((resolve, reject) => {
       const audio = new Audio();
       this.currentAudio = audio;
+      audio.playbackRate = playbackRate;
       const audioUrl = URL.createObjectURL(blob);
       audio.src = audioUrl;
 
