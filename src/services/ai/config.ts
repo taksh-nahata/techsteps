@@ -10,7 +10,12 @@ export interface AIConfig {
 
 export const DEFAULT_GEMINI_CONFIG = {
   apiKey: import.meta.env.VITE_GEMINI_API_KEY || '',
-  primaryModel: 'gemini-2.0-flash-exp',
+  // 'gemini-2.0-flash-exp' was retired -- confirmed via a live ListModels
+  // call against the current key that it 404s. 'gemini-flash-latest' is a
+  // stable alias Google keeps pointed at their current recommended Flash
+  // model (resolves to gemini-3.8-flash as of this fix), so it won't go
+  // stale the same way a pinned version eventually will.
+  primaryModel: 'gemini-flash-latest',
   stableModel: 'gemini-1.5-flash', // Use this when experimental hits limits
   maxTokens: 2048,
   temperature: 0.7,
