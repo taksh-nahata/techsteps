@@ -12,12 +12,6 @@ interface UseScreenShareAssistResult {
   isThinking: boolean;
   lastFrameUrl: string | null;
   lastAnnotation: GuideAnnotation | null;
-  /** Non-null only in browsers that support documentPictureInPicture (real
-   *  usage confirmed this matters: without it, the marker only ever shows on
-   *  the TechSteps tab, invisible the moment the senior switches to the
-   *  actual app to click, which is exactly the scenario this whole feature
-   *  exists for). Render the overlay into this window via a portal when set. */
-  pipWindow: Window | null;
   startSharing: () => Promise<void>;
   stopSharing: () => void;
   /** Returns null if not sharing, or if debounced -- callers should treat
@@ -25,53 +19,26 @@ interface UseScreenShareAssistResult {
   askQuestion: (question: string) => Promise<ScreenAssistResponse | null>;
 }
 
-// Not yet in TypeScript's DOM lib types.
-declare global {
-  interface Window {
-    documentPictureInPicture?: {
-      requestWindow(options?: { width?: number; height?: number }): Promise<Window>;
-      window: Window | null;
-    };
-  }
-}
-
-/** Copies same-origin stylesheet rules (e.g. Tailwind's compiled CSS) into
- *  the PiP window's own document, and re-links cross-origin ones (e.g.
- *  Google Fonts) since reading their cssRules throws. Without this the PiP
- *  window renders completely unstyled -- it's a separate document, not an
- *  iframe, so nothing carries over automatically. */
-function copyStylesInto(pipWindow: Window) {
-  for (const styleSheet of Array.from(document.styleSheets)) {
-    try {
-      const cssRules = Array.from(styleSheet.cssRules)
-        .map((rule) => rule.cssText)
-        .join('');
-      const style = document.createElement('style');
-      style.textContent = cssRules;
-      pipWindow.document.head.appendChild(style);
-    } catch {
-      if (styleSheet.href) {
-        const link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = styleSheet.href;
-        pipWindow.document.head.appendChild(link);
-      }
-    }
-  }
-}
-
 /**
  * Owns the getDisplayMedia session and the capture-on-ask loop. Frames are
  * captured only when askQuestion() is called (never polled) and only the
  * single most recent frame is ever held -- nothing is uploaded to Firebase
  * Storage/Firestore, matching the plan's privacy requirement.
+ *
+ * A documentPictureInPicture floating-window version of this was tried and
+ * pulled back out after real testing: even sized up and with styling fixed,
+ * it read as a disconnected "random popup" rather than a helper actually
+ * pointing at the shared app. See VoiceHomePage.tsx / the plan notes for
+ * where this is headed next (something closer to how Claude for Chrome
+ * shows its action indicators, which needs real page DOM access a plain
+ * web tab doesn't have -- likely a browser-extension companion, not a
+ * bigger/prettier version of this popup).
  */
 export function useScreenShareAssist(): UseScreenShareAssistResult {
   const [isSharing, setIsSharing] = useState(false);
   const [isThinking, setIsThinking] = useState(false);
   const [lastFrameUrl, setLastFrameUrl] = useState<string | null>(null);
   const [lastAnnotation, setLastAnnotation] = useState<GuideAnnotation | null>(null);
-  const [pipWindow, setPipWindow] = useState<Window | null>(null);
 
   const streamRef = useRef<MediaStream | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -86,10 +53,6 @@ export function useScreenShareAssist(): UseScreenShareAssistResult {
     setIsSharing(false);
     setLastFrameUrl(null);
     setLastAnnotation(null);
-    setPipWindow((current) => {
-      current?.close();
-      return null;
-    });
   }, []);
 
   const startSharing = useCallback(async () => {
@@ -107,21 +70,6 @@ export function useScreenShareAssist(): UseScreenShareAssistResult {
     stream.getVideoTracks()[0]?.addEventListener('ended', stopSharing);
 
     setIsSharing(true);
-
-    // Best-effort: Chrome/Edge only, and can fail if the transient user
-    // activation from the original click didn't survive the async gap while
-    // the native getDisplayMedia picker was open. Not fatal either way --
-    // the overlay still renders inline on the TechSteps tab as a fallback.
-    if (window.documentPictureInPicture) {
-      try {
-        const pip = await window.documentPictureInPicture.requestWindow({ width: 360, height: 320 });
-        copyStylesInto(pip);
-        pip.addEventListener('pagehide', () => setPipWindow(null), { once: true });
-        setPipWindow(pip);
-      } catch (e) {
-        console.warn('Could not open a floating picture-in-picture window; falling back to the in-tab overlay.', e);
-      }
-    }
   }, [stopSharing]);
 
   const askQuestion = useCallback(async (question: string): Promise<ScreenAssistResponse | null> => {
@@ -157,5 +105,5 @@ export function useScreenShareAssist(): UseScreenShareAssistResult {
   // Stop the real hardware capture if the component unmounts mid-share.
   useEffect(() => () => stopSharing(), [stopSharing]);
 
-  return { isSupported, isSharing, isThinking, lastFrameUrl, lastAnnotation, pipWindow, startSharing, stopSharing, askQuestion };
+  return { isSupported, isSharing, isThinking, lastFrameUrl, lastAnnotation, startSharing, stopSharing, askQuestion };
 }
