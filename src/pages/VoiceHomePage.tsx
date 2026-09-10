@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { useTranslation } from 'react-i18next';
 import { Link, useNavigate } from 'react-router-dom';
 import { Mic, Square, Loader2, Settings, LogOut, ScreenShare } from 'lucide-react';
@@ -291,12 +292,29 @@ const VoiceHomePage: React.FC = () => {
         </Link>
 
         {screenAssist.isSharing ? (
-          <ScreenShareOverlay
-            frameUrl={screenAssist.lastFrameUrl}
-            annotation={screenAssist.lastAnnotation}
-            isThinking={isThinking}
-            onStop={screenAssist.stopSharing}
-          />
+          screenAssist.pipWindow ? (
+            <>
+              {createPortal(
+                <ScreenShareOverlay
+                  frameUrl={screenAssist.lastFrameUrl}
+                  annotation={screenAssist.lastAnnotation}
+                  isThinking={isThinking}
+                  onStop={screenAssist.stopSharing}
+                />,
+                screenAssist.pipWindow.document.body
+              )}
+              <p className="text-sm text-ink-muted">
+                {t('screenAssist.floatingWindowOpen', "Keep the floating window visible — it'll show you where to click, even after you switch to the other app.")}
+              </p>
+            </>
+          ) : (
+            <ScreenShareOverlay
+              frameUrl={screenAssist.lastFrameUrl}
+              annotation={screenAssist.lastAnnotation}
+              isThinking={isThinking}
+              onStop={screenAssist.stopSharing}
+            />
+          )
         ) : showShareConsent ? (
           <div className="w-full max-w-md rounded-2xl border border-hairline bg-surface shadow-senior-lg p-5 text-left">
             <p className="text-base text-ink mb-4">
