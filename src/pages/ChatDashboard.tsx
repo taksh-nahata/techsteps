@@ -39,6 +39,13 @@ const ChatDashboardContent: React.FC = () => {
   const [rawFlashcardSteps, setRawFlashcardSteps] = useState<FlashcardStep[]>([]);
   const [viewDevice, setViewDevice] = useState<GuideDeviceType>(userDevice);
   const [showFlashcards, setShowFlashcards] = useState(false);
+  // True only when a guide was opened via the voice screen's "See the full
+  // steps" hand-off (?openGuide=) rather than by tapping a card in this
+  // page's own chat thread — shows the guide full-width with chat hidden
+  // entirely, instead of split next to whatever unrelated past conversation
+  // happens to be loaded, since the voice screen never had a chat thread to
+  // begin with.
+  const [guideOnlyMode, setGuideOnlyMode] = useState(false);
   useEffect(() => {
     setViewDevice(userDevice);
   }, [userDevice]);
@@ -227,6 +234,7 @@ const ChatDashboardContent: React.FC = () => {
     const guideId = searchParams.get('openGuide');
     if (!guideId || !user) return;
     handleOpenGuide(guideId);
+    setGuideOnlyMode(true);
     setSearchParams((prev) => {
       const next = new URLSearchParams(prev);
       next.delete('openGuide');
@@ -521,7 +529,7 @@ const ChatDashboardContent: React.FC = () => {
             progress dots, card, and nav into a box barely taller than its own
             content. Below lg, showing the guide now fully replaces chat instead
             of squeezing beside it; closing the guide brings chat back. */}
-        <div className={`flex-1 min-h-0 min-w-0 surface-card rounded-card overflow-hidden flex flex-col ${showFlashcards ? 'hidden lg:flex lg:w-1/2' : 'w-full'}`}>
+        <div className={`flex-1 min-h-0 min-w-0 surface-card rounded-card overflow-hidden flex flex-col ${guideOnlyMode ? 'hidden' : showFlashcards ? 'hidden lg:flex lg:w-1/2' : 'w-full'}`}>
           <ChatInterface
             className="flex-1 min-h-0"
             messages={messages}
@@ -552,7 +560,7 @@ const ChatDashboardContent: React.FC = () => {
         </div>
 
         {showFlashcards && (
-          <div className="flex-1 min-h-0 min-w-0 lg:w-1/2 surface-card rounded-card overflow-hidden">
+          <div className={`flex-1 min-h-0 min-w-0 surface-card rounded-card overflow-hidden ${guideOnlyMode ? 'w-full' : 'lg:w-1/2'}`}>
             {isGeneratingFlashcards || flashcardSteps.length === 0 ? (
               <div className="h-full min-h-[280px] flex items-center justify-center">
                 <FlashcardLoader isVisible message="Preparing your visual guide…" />
@@ -567,6 +575,13 @@ const ChatDashboardContent: React.FC = () => {
                 onClose={() => {
                   setShowFlashcards(false);
                   setActiveGuideId(null);
+                  // Came in from the voice screen with no chat thread behind
+                  // it — closing should send them back there, not reveal
+                  // whatever unrelated conversation happened to be loaded.
+                  if (guideOnlyMode) {
+                    setGuideOnlyMode(false);
+                    navigate('/talk');
+                  }
                 }}
                 onStepChange={setFlashcardActiveStep}
               />

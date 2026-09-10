@@ -14,8 +14,30 @@ import { MemoryService } from '../services/MemoryService';
 import { persistGeneratedGuide } from '../services/guideUtils';
 import { sanitizeFlashcardSteps } from '../services/FlashcardImageService';
 import { FlashcardStep } from '../types/services';
+import { MarkdownRenderer } from '../components/ai/MarkdownRenderer';
 
 type Phase = 'idle' | 'listening' | 'thinking' | 'speaking';
+
+/**
+ * Strips markdown and list-marker syntax before handing text to TTS. Guide
+ * answers in particular are numbered lists ("1. Click X\n2. Click Y") that,
+ * read verbatim, come out as a run-on "one click x two click y" with no
+ * pacing -- this is a defense-in-depth cleanup for any text reaching speech,
+ * on top of never speaking a full guide's list at all (see the flashcards
+ * branch below).
+ */
+function stripForSpeech(text: string): string {
+  return text
+    .replace(/\*\*(.*?)\*\*/g, '$1')
+    .replace(/\*(.*?)\*/g, '$1')
+    .replace(/`(.*?)`/g, '$1')
+    .replace(/#{1,6}\s*/g, '')
+    .replace(/^\s*[-*]\s+/gm, '')
+    .replace(/^\s*\d+[.)]\s+/gm, '')
+    .replace(/\n+/g, '. ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
 
 const VoiceHomePage: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -83,7 +105,16 @@ const VoiceHomePage: React.FC = () => {
           setGuideOffer({ guideId, stepCount: sanitized.length });
         }
 
-        const spokenText = response.spokenText || response.content;
+        // A guide's spoken_text often isn't populated distinctly from its
+        // numbered-list content -- reading that list aloud verbatim sounds
+        // terrible (no pacing, digits read as "one point"), so speak a short
+        // fixed summary instead and let the linked page carry the real steps.
+        const spokenText =
+          response.flashcards && response.flashcards.length > 0
+            ? t('voiceHome.guideSpokenSummary', "I've put together {{count}} steps for you. Tap below to see them.", {
+                count: response.flashcards.length,
+              })
+            : stripForSpeech(response.spokenText || response.content);
         try {
           setIsSpeaking(true);
           await ttsService.speak(spokenText, { lang: i18n.language });
@@ -193,9 +224,17 @@ const VoiceHomePage: React.FC = () => {
           )}
         </button>
 
-        <p className="text-lg sm:text-xl md:text-2xl font-medium max-w-xl leading-relaxed" role="status" aria-live="polite">
-          {displayCaption}
-        </p>
+        <div
+          className="text-lg sm:text-xl md:text-2xl font-medium max-w-xl leading-relaxed"
+          role="status"
+          aria-live="polite"
+        >
+          {phase === 'listening' || phase === 'thinking' ? (
+            displayCaption
+          ) : (
+            <MarkdownRenderer content={displayCaption} />
+          )}
+        </div>
 
         {guideOffer && (
           <Link

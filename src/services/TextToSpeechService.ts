@@ -229,8 +229,11 @@ class GoogleCloudTTSService implements TTSService {
           audioEncoding: 'MP3',
           speakingRate: options.rate || 0.95,
           pitch: options.pitch || 0,
-          volumeGainDb: 2,
-          effectsProfileId: ['headphone-class-device']
+          volumeGainDb: 2
+          // No effectsProfileId: 'headphone-class-device' applies an EQ curve
+          // tuned for headphones, which sounds off on laptop/desktop speakers
+          // (most likely playback device here) — the unprofiled default is
+          // more neutral across whatever device is actually playing it.
         }
       };
 
