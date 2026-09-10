@@ -170,6 +170,157 @@ class BrowserTTSService implements TTSService {
   }
 }
 
+// Groq TTS (Orpheus) — free tier, no billing account attached at all (unlike
+// Google Cloud TTS, which needs one linked even to stay under quota), so this
+// is the preferred provider whenever it can serve the request. Orpheus is
+// English/Arabic-only, so anything else — and any request that fails, e.g.
+// the free tier's 10 req/min or 100 req/day cap — hands off to `fallback`.
+class GroqTTSService implements TTSService {
+  private apiKey: string;
+  private fallback: TTSService;
+  private currentAudio: HTMLAudioElement | null = null;
+  private onSpeakStart?: () => void;
+  private onSpeakEnd?: () => void;
+  private onAudioLevel?: (level: number) => void;
+  private audioLevelInterval?: NodeJS.Timeout;
+
+  constructor(apiKey: string, fallback: TTSService) {
+    this.apiKey = apiKey;
+    this.fallback = fallback;
+  }
+
+  setCallbacks(callbacks: {
+    onSpeakStart?: () => void;
+    onSpeakEnd?: () => void;
+    onAudioLevel?: (level: number) => void;
+  }): void {
+    this.onSpeakStart = callbacks.onSpeakStart;
+    this.onSpeakEnd = callbacks.onSpeakEnd;
+    this.onAudioLevel = callbacks.onAudioLevel;
+    this.fallback.setCallbacks(callbacks);
+  }
+
+  async speak(text: string, options: TTSOptions = {}): Promise<void> {
+    const lang = (options.lang || 'en').toLowerCase();
+    if (!lang.startsWith('en')) {
+      return this.fallback.speak(text, options);
+    }
+
+    const cleanText = this.cleanText(text);
+    try {
+      this.stop();
+      const response = await fetch('https://api.groq.com/openai/v1/audio/speech', {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${this.apiKey}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          model: 'canopylabs/orpheus-v1-english',
+          input: cleanText,
+          voice: 'autumn',
+          response_format: 'wav',
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(`Groq TTS error: ${response.status} ${JSON.stringify(errorData)}`);
+      }
+
+      const blob = await response.blob();
+      await this.playBlob(blob);
+    } catch (error) {
+      console.warn('Groq TTS failed, falling back:', error);
+      return this.fallback.speak(text, options);
+    }
+  }
+
+  private async playBlob(blob: Blob): Promise<void> {
+    return new Promise((resolve, reject) => {
+      const audio = new Audio();
+      this.currentAudio = audio;
+      const audioUrl = URL.createObjectURL(blob);
+      audio.src = audioUrl;
+
+      audio.onloadstart = () => {
+        this.onSpeakStart?.();
+        this.startAudioLevelSimulation();
+      };
+      audio.onended = () => {
+        this.stopAudioLevelSimulation();
+        this.onSpeakEnd?.();
+        URL.revokeObjectURL(audioUrl);
+        this.currentAudio = null;
+        resolve();
+      };
+      audio.onerror = () => {
+        this.stopAudioLevelSimulation();
+        this.onSpeakEnd?.();
+        URL.revokeObjectURL(audioUrl);
+        this.currentAudio = null;
+        reject(new Error('Audio playback failed'));
+      };
+      audio.play().catch(reject);
+    });
+  }
+
+  private startAudioLevelSimulation(): void {
+    let time = 0;
+    this.audioLevelInterval = setInterval(() => {
+      if (this.currentAudio && !this.currentAudio.paused) {
+        time += 0.1;
+        const level = Math.max(0.1, Math.min(1.0, 0.4 + Math.sin(time * 3) * 0.2 + Math.random() * 0.4));
+        this.onAudioLevel?.(level);
+      }
+    }, 80);
+  }
+
+  private stopAudioLevelSimulation(): void {
+    if (this.audioLevelInterval) {
+      clearInterval(this.audioLevelInterval);
+      this.audioLevelInterval = undefined;
+    }
+    this.onAudioLevel?.(0);
+  }
+
+  stop(): void {
+    if (this.currentAudio) {
+      this.currentAudio.pause();
+      this.currentAudio.currentTime = 0;
+      this.currentAudio = null;
+      this.stopAudioLevelSimulation();
+      this.onSpeakEnd?.();
+    } else {
+      this.fallback.stop();
+    }
+  }
+
+  getVoices(): SpeechSynthesisVoice[] {
+    return this.fallback.getVoices();
+  }
+
+  isSupported(): boolean {
+    return true; // always at least falls back to browser speech
+  }
+
+  isSpeaking(): boolean {
+    return this.currentAudio ? !this.currentAudio.paused : this.fallback.isSpeaking();
+  }
+
+  private cleanText(text: string): string {
+    return text
+      .replace(/\*\*(.*?)\*\*/g, '$1')
+      .replace(/\*(.*?)\*/g, '$1')
+      .replace(/`(.*?)`/g, '$1')
+      .replace(/#{1,6}\s*(.*)/g, '$1')
+      .replace(/\[(.*?)\]\(.*?\)/g, '$1')
+      .replace(/<[^>]*>/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+}
+
 // Google Cloud TTS Service using API Key (for client-side use)
 class GoogleCloudTTSService implements TTSService {
   private apiKey: string;
@@ -441,10 +592,22 @@ class GoogleCloudTTSService implements TTSService {
   }
 }
 
-// Service factory - uses Google Cloud TTS API key if available
+// Service factory. Preference order: Groq (Orpheus, English/Arabic only, free
+// tier with no billing account attached at all) -> Google Cloud TTS (broader
+// language coverage, but needs a billing account linked even to stay under
+// quota) -> native browser speech (always free, always available).
 export const createTTSService = (): TTSService => {
-  // Check for Google Cloud TTS API key (preferred for high-quality audio)
+  const groqApiKey = import.meta.env.VITE_GROQ_API_KEY;
   const googleApiKey = import.meta.env.VITE_GOOGLE_TTS_API_KEY;
+
+  const otherLanguageFallback: TTSService = googleApiKey
+    ? new GoogleCloudTTSService(googleApiKey)
+    : new BrowserTTSService();
+
+  if (groqApiKey) {
+    console.log('🎙️ Groq TTS (Orpheus): Initializing — free tier, no billing account attached');
+    return new GroqTTSService(groqApiKey, otherLanguageFallback);
+  }
 
   if (googleApiKey) {
     console.log('🎙️ Google Cloud TTS: Initializing with API key');
@@ -452,7 +615,7 @@ export const createTTSService = (): TTSService => {
   }
 
   // Fallback to browser TTS
-  console.log('🎙️ Using Browser TTS (add VITE_GOOGLE_TTS_API_KEY for higher quality audio)');
+  console.log('🎙️ Using Browser TTS (add VITE_GROQ_API_KEY or VITE_GOOGLE_TTS_API_KEY for higher quality audio)');
   return new BrowserTTSService();
 };
 
