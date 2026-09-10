@@ -5,7 +5,7 @@ import { FocusRing } from './FocusRing';
 
 const buttonVariants = {
   primary: 'bg-primary-500 hover:bg-primary-600 text-white shadow-senior hover:shadow-senior-md',
-  secondary: 'bg-neutral-100 hover:bg-neutral-200 text-neutral-800 border border-neutral-300 hover:border-neutral-400',
+  secondary: 'bg-subtle hover:bg-hairline text-ink border border-hairline hover:border-ink-muted',
   outline: 'border-2 border-primary-500 text-primary-500 hover:bg-primary-50 hover:border-primary-600',
   ghost: 'text-primary-500 hover:bg-primary-50 hover:text-primary-600',
   danger: 'bg-error-500 hover:bg-error-600 text-white shadow-senior hover:shadow-senior-md',

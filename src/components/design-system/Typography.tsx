@@ -2,22 +2,22 @@ import React from 'react';
 import { TypographyProps } from './types';
 
 const typographyVariants = {
-    h1: 'text-8xl sm:text-10xl md:text-12xl lg:text-14xl font-bold text-neutral-900',
-    h2: 'text-5xl sm:text-6xl md:text-7xl font-bold text-neutral-900',
-    h3: 'text-4xl sm:text-5xl md:text-6xl font-semibold text-neutral-900',
-    h4: 'text-3xl sm:text-4xl md:text-5xl font-semibold text-neutral-900',
-    h5: 'text-2xl sm:text-3xl font-medium text-neutral-900',
-    h6: 'text-xl sm:text-2xl font-medium text-neutral-900',
-    'body-lg': 'text-lg sm:text-xl text-neutral-700',
-    'body': 'text-base sm:text-lg text-neutral-700',
-    'body-sm': 'text-sm sm:text-base text-neutral-600',
-    'caption': 'text-xs sm:text-sm text-neutral-500',
-    'overline': 'text-xs sm:text-sm font-medium text-neutral-500 uppercase tracking-wider',
+    h1: 'text-8xl sm:text-10xl md:text-12xl lg:text-14xl font-bold font-display text-ink',
+    h2: 'text-5xl sm:text-6xl md:text-7xl font-bold font-display text-ink',
+    h3: 'text-4xl sm:text-5xl md:text-6xl font-semibold font-display text-ink',
+    h4: 'text-3xl sm:text-4xl md:text-5xl font-semibold font-display text-ink',
+    h5: 'text-2xl sm:text-3xl font-medium text-ink',
+    h6: 'text-xl sm:text-2xl font-medium text-ink',
+    'body-lg': 'text-lg sm:text-xl text-ink',
+    'body': 'text-base sm:text-lg text-ink',
+    'body-sm': 'text-sm sm:text-base text-ink-muted',
+    'caption': 'text-xs sm:text-sm text-ink-muted',
+    'overline': 'text-xs sm:text-sm font-medium text-ink-muted uppercase tracking-wider',
 };
 
 const colorVariants = {
     primary: 'text-primary-600',
-    secondary: 'text-neutral-600',
+    secondary: 'text-ink-muted',
     success: 'text-success-600',
     warning: 'text-warning-600',
     error: 'text-error-600',

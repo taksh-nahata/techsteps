@@ -11,11 +11,11 @@ const iconSizes = {
 
 const iconColors = {
   primary: 'text-primary-600',
-  secondary: 'text-neutral-600',
+  secondary: 'text-ink-muted',
   success: 'text-success-600',
   warning: 'text-warning-600',
   error: 'text-error-600',
-  neutral: 'text-neutral-500',
+  neutral: 'text-ink-muted',
 };
 
 export const Icon: React.FC<IconProps> = ({

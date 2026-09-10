@@ -2,9 +2,9 @@ import React from 'react';
 import { CardProps } from './types';
 
 const cardVariants = {
-  default: 'bg-white border border-neutral-200 shadow-senior',
-  elevated: 'bg-white shadow-senior-lg',
-  outlined: 'bg-white border-2 border-neutral-300',
+  default: 'bg-surface border border-hairline shadow-senior',
+  elevated: 'bg-surface shadow-senior-lg',
+  outlined: 'bg-surface border-2 border-hairline',
 };
 
 const cardPadding = {
