@@ -32,6 +32,34 @@ function notifyExtension(annotation: GuideAnnotation | null): void {
   }
 }
 
+// Whether the extension is actually reachable right now -- previously this
+// was silent (notifyExtension() just no-ops on any failure), so a missing
+// VITE_TECHSTEPS_EXTENSION_ID, an uninstalled extension, or a non-Chrome
+// browser all looked identical to "it's working." Ping it for real so the UI
+// can say so instead of just drawing the in-page overlay and hoping.
+function pingExtension(): Promise<boolean> {
+  return new Promise((resolve) => {
+    if (!EXTENSION_ID) return resolve(false);
+    const runtime = (window as any).chrome?.runtime;
+    if (!runtime?.sendMessage) return resolve(false);
+    let settled = false;
+    const finish = (ok: boolean) => {
+      if (settled) return;
+      settled = true;
+      resolve(ok);
+    };
+    try {
+      runtime.sendMessage(EXTENSION_ID, { type: 'PING' }, (response: any) => {
+        void runtime.lastError;
+        finish(!!response?.ok);
+      });
+      setTimeout(() => finish(false), 1000);
+    } catch {
+      finish(false);
+    }
+  });
+}
+
 interface UseScreenShareAssistResult {
   isSupported: boolean;
   isSharing: boolean;
@@ -43,6 +71,9 @@ interface UseScreenShareAssistResult {
   /** Returns null if not sharing, or if debounced -- callers should treat
    *  null as "nothing to say this turn", not an error. */
   askQuestion: (question: string) => Promise<ScreenAssistResponse | null>;
+  /** null = not checked yet (or the extension isn't configured for this
+   *  build at all); true/false = a real, just-pinged answer. */
+  extensionConnected: boolean | null;
 }
 
 /**
@@ -65,6 +96,7 @@ export function useScreenShareAssist(): UseScreenShareAssistResult {
   const [isThinking, setIsThinking] = useState(false);
   const [lastFrameUrl, setLastFrameUrl] = useState<string | null>(null);
   const [lastAnnotation, setLastAnnotation] = useState<GuideAnnotation | null>(null);
+  const [extensionConnected, setExtensionConnected] = useState<boolean | null>(null);
 
   const streamRef = useRef<MediaStream | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -96,7 +128,20 @@ export function useScreenShareAssist(): UseScreenShareAssistResult {
     stream.getVideoTracks()[0]?.addEventListener('ended', stopSharing);
 
     setIsSharing(true);
+    pingExtension().then(setExtensionConnected);
   }, [stopSharing]);
+
+  // Also check once up front, so a "pointer extension not detected" hint can
+  // show before the senior even starts sharing, not just after.
+  useEffect(() => {
+    let cancelled = false;
+    pingExtension().then((ok) => {
+      if (!cancelled) setExtensionConnected(ok);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const askQuestion = useCallback(async (question: string): Promise<ScreenAssistResponse | null> => {
     const video = videoRef.current;
@@ -132,5 +177,15 @@ export function useScreenShareAssist(): UseScreenShareAssistResult {
   // Stop the real hardware capture if the component unmounts mid-share.
   useEffect(() => () => stopSharing(), [stopSharing]);
 
-  return { isSupported, isSharing, isThinking, lastFrameUrl, lastAnnotation, startSharing, stopSharing, askQuestion };
+  return {
+    isSupported,
+    isSharing,
+    isThinking,
+    lastFrameUrl,
+    lastAnnotation,
+    startSharing,
+    stopSharing,
+    askQuestion,
+    extensionConnected,
+  };
 }

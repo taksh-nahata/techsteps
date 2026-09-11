@@ -186,6 +186,23 @@ const VoiceHomePage: React.FC = () => {
     onFinalTranscript: handleFinalTranscript,
   });
 
+  // Auto-start listening once sharing actually turns on, rather than calling
+  // startListening() synchronously right after startSharing() resolves --
+  // that earlier version grabbed a startListening reference from before this
+  // render, whose onFinalTranscript closure still saw isSharing as false, so
+  // the very next question silently fell through to the normal chat path
+  // instead of screenAssist.askQuestion() (reported bug: no marker, got a
+  // flashcard guide instead). Keying off isSharing guarantees the listener
+  // is wired to the closure that actually knows sharing is on.
+  useEffect(() => {
+    if (screenAssist.isSharing) {
+      autoContinueRef.current = true;
+      setErrorText(null);
+      startListening();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [screenAssist.isSharing]);
+
   const phase: Phase = isListening ? 'listening' : isThinking ? 'thinking' : isSpeaking ? 'speaking' : 'idle';
   const isActive = phase !== 'idle';
 
@@ -296,6 +313,7 @@ const VoiceHomePage: React.FC = () => {
             annotation={screenAssist.lastAnnotation}
             isThinking={isThinking}
             onStop={screenAssist.stopSharing}
+            extensionConnected={screenAssist.extensionConnected}
           />
         ) : showShareConsent ? (
           <div className="w-full max-w-md rounded-2xl border border-hairline bg-surface shadow-senior-lg p-5 text-left">
@@ -314,12 +332,6 @@ const VoiceHomePage: React.FC = () => {
                   setShowShareConsent(false);
                   try {
                     await screenAssist.startSharing();
-                    // Start listening immediately -- sharing is the whole
-                    // reason they're here, no reason to make them tap the mic
-                    // as a separate second step right after.
-                    autoContinueRef.current = true;
-                    setErrorText(null);
-                    startListening();
                   } catch (e) {
                     console.warn('Screen share was not granted:', e);
                   }

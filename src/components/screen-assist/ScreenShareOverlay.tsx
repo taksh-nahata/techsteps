@@ -8,9 +8,20 @@ interface ScreenShareOverlayProps {
   annotation: GuideAnnotation | null;
   isThinking: boolean;
   onStop: () => void;
+  /** null = still checking; true/false = a real pinged result. Only shown
+   *  once known, and only as an fyi -- the frame/marker below always work
+   *  regardless, this just says whether a marker will ALSO appear on the
+   *  real page being shared. */
+  extensionConnected: boolean | null;
 }
 
-const ScreenShareOverlay: React.FC<ScreenShareOverlayProps> = ({ frameUrl, annotation, isThinking, onStop }) => {
+const ScreenShareOverlay: React.FC<ScreenShareOverlayProps> = ({
+  frameUrl,
+  annotation,
+  isThinking,
+  onStop,
+  extensionConnected,
+}) => {
   const { t } = useTranslation();
 
   return (
@@ -25,6 +36,14 @@ const ScreenShareOverlay: React.FC<ScreenShareOverlayProps> = ({ frameUrl, annot
           {t('screenAssist.stopSharing', 'Stop Sharing')}
         </button>
       </div>
+      {extensionConnected === false && (
+        <div className="px-4 py-2 text-xs text-ink-muted bg-subtle border-b border-hairline">
+          {t(
+            'screenAssist.extensionNotConnected',
+            "Pointer extension not detected — you'll see the marker here, but not on the page you're sharing."
+          )}
+        </div>
+      )}
       <div className="relative bg-subtle aspect-video">
         {frameUrl ? (
           <>
