@@ -46,8 +46,24 @@ Rules:
  * multi-step chat turn or a numbered guide, neither of which fits "point at
  * one spot on one image right now."
  */
+// This is a single, straightforward "find where to click" localization
+// call, not multi-step reasoning -- exactly what Gemini's own docs describe
+// as the low-thinking case. Verified empirically (not assumed) that
+// thinkingBudget: 0 actually eliminates the model's hidden "thinking"
+// tokens for this call shape: a plain test prompt went from 59
+// thoughtsTokenCount to 0 with nothing else changed. Deliberately scoped to
+// only this vision call, not the general chat's Gemini fallback -- that one
+// answers open-ended troubleshooting questions where genuine reasoning can
+// still help, so it keeps its default thinking budget.
+//
+// maxOutputTokens is also its own small, dedicated cap here (not the
+// shared DEFAULT_GEMINI_CONFIG.maxTokens meant for full conversational
+// answers) since this endpoint only ever returns one small, fixed-shape
+// JSON object.
+const MAX_OUTPUT_TOKENS = 512;
+
 export async function askAboutFrame(request: ScreenAssistRequest): Promise<ScreenAssistResponse> {
-  const { apiKey, primaryModel, maxTokens } = DEFAULT_GEMINI_CONFIG;
+  const { apiKey, primaryModel } = DEFAULT_GEMINI_CONFIG;
   if (!apiKey) {
     throw new Error('No Gemini API key configured (VITE_GEMINI_API_KEY).');
   }
@@ -63,7 +79,11 @@ export async function askAboutFrame(request: ScreenAssistRequest): Promise<Scree
         ],
       },
     ],
-    generationConfig: { maxOutputTokens: maxTokens, responseMimeType: 'application/json' },
+    generationConfig: {
+      maxOutputTokens: MAX_OUTPUT_TOKENS,
+      responseMimeType: 'application/json',
+      thinkingConfig: { thinkingBudget: 0 },
+    },
   };
 
   const res = await fetch(
