@@ -6,6 +6,32 @@ const DEBOUNCE_MS = 3000;
 const CAPTURE_TARGET_WIDTH = 1280;
 const CAPTURE_JPEG_QUALITY = 0.6;
 
+// Optional: if the TechSteps Screen Assist browser extension is installed
+// (see extension/), forward the annotation so it can draw the marker
+// directly on the real page being shared -- additive to, never a
+// replacement for, the in-page overlay below, since most users won't have
+// it installed. Silently no-ops if the extension isn't there, the id isn't
+// configured, or sendMessage isn't available (non-Chrome browsers, etc.) --
+// this integration must never be able to break the core flow.
+const EXTENSION_ID = import.meta.env.VITE_TECHSTEPS_EXTENSION_ID as string | undefined;
+
+function notifyExtension(annotation: GuideAnnotation | null): void {
+  if (!annotation || !EXTENSION_ID) return;
+  const runtime = (window as any).chrome?.runtime;
+  if (!runtime?.sendMessage) return;
+  try {
+    runtime.sendMessage(EXTENSION_ID, { type: 'HIGHLIGHT', annotation }, () => {
+      // Reading lastError (rather than ignoring it) prevents Chrome logging
+      // an "Unchecked runtime.lastError" console warning -- expected and
+      // harmless when the extension just isn't installed.
+      void runtime.lastError;
+    });
+  } catch {
+    // sendMessage can throw synchronously for a malformed extension id --
+    // never let this optional integration break screen-share assist itself.
+  }
+}
+
 interface UseScreenShareAssistResult {
   isSupported: boolean;
   isSharing: boolean;
@@ -96,6 +122,7 @@ export function useScreenShareAssist(): UseScreenShareAssistResult {
     try {
       const response = await askAboutFrame({ imageBase64: base64, question });
       setLastAnnotation(response.annotation);
+      notifyExtension(response.annotation);
       return response;
     } finally {
       setIsThinking(false);
