@@ -28,3 +28,10 @@ google-service-acct.json
 functions/lib
 .firebase
 .netlify
+
+# Browser extension (Plan C) -- private/derived key material and build output
+extension/node_modules
+extension/dist
+extension/dev-key.pem
+extension/dev-key-pub.der
+extension/dev-key-base64.txt

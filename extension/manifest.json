@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "TechSteps Screen Assist",
+  "version": "0.1.0",
+  "description": "Draws TechSteps' pointer directly on the page you're being helped with.",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["scripting"],
+  "externally_connectable": {
+    "matches": ["https://tech-steps.org/*", "http://localhost/*"]
+  },
+  "action": {
+    "default_title": "TechSteps Screen Assist"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn/+MezTGv6ovilOi31uMzjvSDKLXSS7LvQxXB1H9F9OFXLWGMRe2974zSoAFRSHTcEcc3UEwUEXDMmlvaRhn+LOXcBNMedz11g5UdOD8TOy3uUiNjOVSBrLKNYzZwa5ljk5cdqXTJJ2H/eIVKnM0JyH+IaZR6kg2+SmajQout9Hv/v2dwBzTWed/oOoX6jl3fwx1uUyvliYdtoBjulPh61Z7OyOVyxuFXt6Q8TI+avkI1KKhfY5rbtDQNrqtwN9/KaWXQXBzk3+ZknYaSSL3tAK7m86AczyiFx6v2VSx2xQT2K83lEJBCR1JWsUPyqKF8eKm7FWZVlzfeyiFwk4K1wIDAQAB"
+}
