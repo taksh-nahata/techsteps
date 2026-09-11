@@ -5,27 +5,25 @@
   <title>TechSteps Extension Test Harness</title>
   <style>
     body { font-family: sans-serif; padding: 2rem; max-width: 640px; }
-    button { font-size: 16px; padding: 10px 18px; margin-right: 8px; }
+    button { font-size: 16px; padding: 10px 18px; margin-right: 8px; margin-bottom: 8px; }
     #log { white-space: pre-wrap; background: #f2f2f2; padding: 12px; margin-top: 16px; border-radius: 8px; min-height: 60px; }
+    ol { line-height: 1.7; }
   </style>
 </head>
 <body>
   <h1>TechSteps Extension Test Harness</h1>
-  <p>
-    Phase 0 smoke test: not TechSteps itself, just proves messaging + injection
-    work in isolation. Open a <strong>second tab</strong> (e.g. a plain website)
-    before clicking a button below -- the dot draws on whichever tab is
-    currently active in this window, per Phase 0's scope (no tab-tracking yet).
-  </p>
-  <p>
-    Set <code>EXTENSION_ID</code> below to the id shown for this extension on
-    <code>chrome://extensions</code> (should match the deterministic id derived
-    from <code>manifest.json</code>'s pinned <code>key</code>, currently
-    <code>pmacfalaelebimfbkbbgjkhlhgjhfjea</code>, if loaded unpacked from this
-    exact folder).
-  </p>
+  <p>Tests the real Phase 1+2 path: passive tab-tracking + drawing an actual annotation, not just "whatever tab is active right now".</p>
+  <ol>
+    <li>Open a <strong>different</strong> tab (any real site, e.g. a news site or Wikipedia) -- this is your "target".</li>
+    <li>Switch back to <strong>this</strong> tab.</li>
+    <li>Click a button below.</li>
+    <li>Switch to the target tab -- the marker should be there, not here.</li>
+  </ol>
+  <p>Set <code>EXTENSION_ID</code> below to match this extension's id on <code>chrome://extensions</code> (should be <code>pmacfalaelebimfbkbbgjkhlhgjhfjea</code> if loaded unpacked from this exact folder's <code>dist/</code>).</p>
+
   <button id="ping">Send PING</button>
-  <button id="highlight">Send TEST_HIGHLIGHT</button>
+  <button id="circle">Highlight: circle (top-right, labeled)</button>
+  <button id="arrow">Highlight: arrow (center)</button>
   <div id="log">(no messages sent yet)</div>
 
   <script>
@@ -47,7 +45,10 @@
     }
 
     document.getElementById('ping').onclick = () => send({ type: 'PING' });
-    document.getElementById('highlight').onclick = () => send({ type: 'TEST_HIGHLIGHT' });
+    document.getElementById('circle').onclick = () =>
+      send({ type: 'HIGHLIGHT', annotation: { type: 'circle', x: 85, y: 15, color: '#ef4444', label: 'Click here' } });
+    document.getElementById('arrow').onclick = () =>
+      send({ type: 'HIGHLIGHT', annotation: { type: 'arrow', x: 50, y: 50, color: '#2f2963' } });
   </script>
 </body>
 </html>
